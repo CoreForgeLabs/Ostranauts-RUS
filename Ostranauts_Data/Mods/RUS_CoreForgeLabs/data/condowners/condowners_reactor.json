@@ -1,0 +1,2272 @@
+[
+  {
+    "strName": "ItmFusionABLWall01Loose",
+    "strNameShort": "ABL облицовка",
+    "strNameFriendly": "Сменная абляционная облицовка активной зоны (отдельно)",
+    "strItemDef": "ItmFusionABLWall01Loose",
+    "strDesc": "Сменная абляционная облицовка активной зоны для термоядерных реакторов Сулейман. Изготовлена из углерода и вольфрама, материал спроектирован для абляции при воздействии рентгеновских лучей, когда камера активной зоны ядерного реактора перегревается.\n\nВНИМАНИЕ: Выключите реактор перед заменой абляционной облицовки внутри активной зоны.\n\nПРЕДУПРЕЖДЕНИЕ: ABL облицовку следует заменить до полного износа.",
+    "strType": "Item",
+    "aInteractions": [
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds": [
+      "IsSulaiman=1.0x1",
+      "IsFusionABLWall=1.0x1",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1",
+      "IsCumbersome=1.0x1.0",
+      "StatBasePrice=1.0x7979.00",
+      "StatMass=1.0x28.0",
+      "StatDamageMax=1.0x6",
+      "IsCategoryFusionParts=1.0x1"
+    ],
+    "mapPoints": [],
+    "mapGUIPropMaps": [],
+    "aUpdateCommands": [
+      "Destructable,StatDamage,ACTMechDestroy,StatDamageMax,1.0"
+    ],
+    "mapSlotEffects": [
+      "drag",
+      "Blank"
+    ],
+    "strPortraitImg": "ItmFusionABLWall01Loose"
+  },
+  {
+    "strName": "ItmCanisterLHe01Loose",
+    "strNameShort": "Криобак",
+    "strNameFriendly": "Криогенный резервуар (отдельно)",
+    "strDesc": "Большой резервуар для хранения жидкого гелия, используемого в качестве криогенного агента для охлаждения и защиты магнитов и других компонентов термоядерного реактора с инерционным удержанием.",
+    "strItemDef": "ItmCanisterLHe01Loose",
+    "strType": "Item",
+    "aInteractions": [
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds": [
+      "IsAirtight=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsCumbersome=1.0x1.0",
+      "IsOversized=1.0x1.0",
+      "IsVesselHe=1.0x1",
+      "StatBasePrice=1.0x2542.0",
+      "StatGasMolN2=1.0x0.0001",
+      "StatGasPressureMax=1.0x500.0",
+      "StatGasTemp=1.0x4.00",
+      "StatInstallProgressMax=1.0x800",
+      "StatUninstallProgressMax=1.0x800",
+      "StatVolume=1.0x10.1",
+      "StatMass=1.0x300.0",
+      "IsGasMolChanged=1.0x1",
+      "StatDamageMax=1.0x40",
+      "IsMechanical=1.0x1",
+      "IsCategoryFusionParts=1.0x1"
+    ],
+    "aUpdateCommands": [
+      "Destructable,StatDamage,ACTMechDestroy,StatDamageMax,1.0"
+    ],
+    "mapSlotEffects": [
+      "drag",
+      "Blank"
+    ],
+    "aStartingCondRules": [
+      "DcGasTemp=1",
+      "DcGasPressure=1",
+      "DcGasPpCH4=1",
+      "DcGasPpCO2=1",
+      "DcGasPpH2SO4=1",
+      "DcGasPpNH3=1",
+      "DcGasPpN2=1",
+      "DcGasPpO2=1"
+    ],
+    "strPortraitImg": "ItmCanisterLHe01Loose"
+  },
+  {
+    "strName": "ItmCanisterLHe01",
+    "strNameShort": "Криобак",
+    "strNameFriendly": "Криогенный резервуар",
+    "strDesc": "Большой резервуар для хранения жидкого гелия, используемого в качестве криогенного агента для охлаждения и защиты магнитов и других компонентов термоядерного реактора с инерционным удержанием.",
+    "strItemDef": "ItmCanisterLHe01",
+    "strType": "Item",
+    "aInteractions": [],
+    "aStartingConds": [
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsAirtight=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsVesselHe=1.0x1",
+      "StatBasePrice=1.0x2542.0",
+      "StatGasMolN2=1.0x0.0001",
+      "StatGasPressureMax=1.0x500.0",
+      "StatGasTemp=1.0x4.00",
+      "StatInstallProgressMax=1.0x800",
+      "StatUninstallProgressMax=1.0x800",
+      "StatVolume=1.0x10.1",
+      "StatMass=1.0x300.0",
+      "StatLiqHe=1.0x1304.0",
+      "IsGasMolChanged=1.0x1",
+      "StatDamageMax=1.0x40",
+      "IsMechanical=1.0x1",
+      "IsCategoryFusionParts=1.0x1"
+    ],
+    "aUpdateCommands": [
+      "Destructable,StatDamage,ACTMechDestroy,StatDamageMax,1.0"
+    ],
+    "aStartingCondRules": [
+      "DcGasTemp=1",
+      "DcGasPressure=1",
+      "DcGasPpCH4=1",
+      "DcGasPpCO2=1",
+      "DcGasPpH2SO4=1",
+      "DcGasPpNH3=1",
+      "DcGasPpN2=1",
+      "DcGasPpO2=1"
+    ],
+    "strPortraitImg": "ItmCanisterLHe01",
+    "strAudioEmitter": "ItmCanisterLHe02Sound"
+  },
+  {
+    "strName": "ItmFusionReactorCore01Batt",
+    "strNameShort": "Активная зона",
+    "strNameFriendly": "Активная зона ИУ термоядерного реактора: Сулейман \"X(X) TW\" (режим батареи)",
+    "strDesc": "Термоядерный реактор с инерционным удержанием. Использует топливо в виде He3 и D2O. Работающий реактор способен вырабатывать огромное количество энергии и может использоваться как часть «факельного двигателя» для межпланетных перелётов.",
+    "strItemDef": "ItmFusionReactorCore01On",
+    "strType": "Item",
+    "aInteractions": [
+      "GUIReactor"
+    ],
+    "aStartingConds": [
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsReactorIC=1.0x1",
+      "IsFusionReactorCore=1.0x1",
+      "IsPowerConduit=1.0x1",
+      "IsPowerRecalc=1.0x1",
+      "IsReadyHeat=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsSulaiman=1.0x1.0",
+      "StatBasePrice=1.0x41000.00",
+      "StatDismantleProgressMax=1.0x750",
+      "StatInstallProgressMax=1.0x2000",
+      "StatUninstallProgressMax=1.0x2000",
+      "StatHeatArea=1.0x6.25",
+      "StatHeatVol=1.0x1.0",
+      "StatSolidTemp=1.0x333.0",
+      "StatMass=1.0x417.0",
+      "StatDamageMax=1.0x25",
+      "IsTechnology=1.0x1",
+      "IsCategoryFusionParts=1.0x1"
+    ],
+    "mapPoints": [
+      "use,32,-48",
+      "Module01,-16,32",
+      "Module02,0,32",
+      "Module03,16,32",
+      "Module04,32,16",
+      "Module05,32,0",
+      "Module06,32,-16",
+      "Module07,-16,-32",
+      "Module08,0,-32",
+      "Module09,16,-32",
+      "Module10,-32,16",
+      "Module11,-32,0",
+      "Module12,-32,-16",
+      "PowerOutput,-32,32",
+      "PowerSource,-32,-32"
+    ],
+    "mapGUIPropMaps": [
+      "Panel A",
+      "ReactorIC"
+    ],
+    "aUpdateCommands": [
+      "Heater,TIsAirtightNoHuman",
+      "Destructable,StatDamage,ACTFusionReactorCore01Damage,StatDamageMax,1.0"
+    ],
+    "strPortraitImg": "ItmFusionReactorCore01",
+    "aTickers": [
+      "Power"
+    ],
+    "aStartingCondRules": [
+      "DcABLWall=1"
+    ],
+    "jsonPI": "FusionReactorCore01Batt",
+    "strAudioEmitter": "ItmFusionReactorCore01BattSound"
+  },
+  {
+    "strName": "ItmFusionReactorCore01Ignition",
+    "strNameShort": "Активная зона",
+    "strNameFriendly": "Активная зона ИУ термоядерного реактора: Сулейман \"X(X) TW\" (работает)",
+    "strDesc": "Термоядерный реактор с инерционным удержанием. Использует топливо в виде He3 и D2O. Работающий реактор способен вырабатывать огромное количество энергии и может использоваться как часть «факельного двигателя» для межпланетных перелётов.",
+    "strItemDef": "ItmFusionReactorCore01On",
+    "strType": "Item",
+    "aInteractions": [
+      "GUIReactor"
+    ],
+    "aStartingConds": [
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsPowerGen=1.0x1",
+      "IsPowerRecalc=1.0x1",
+      "IsReactorIC=1.0x1",
+      "IsFusionReactorCore=1.0x1",
+      "IsReadyFusion=1.0x1",
+      "IsReadyHeat=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsSulaiman=1.0x1.0",
+      "IsTorchDrive=1.0x1.0",
+      "StatBasePrice=1.0x41000.00",
+      "StatDismantleProgressMax=1.0x750",
+      "StatHeatArea=1.0x6.25",
+      "StatHeatVol=1.0x1.0",
+      "StatSolidTemp=1.0x350.0",
+      "StatInstallProgressMax=1.0x2000",
+      "StatUninstallProgressMax=1.0x2000",
+      "StatMass=1.0x417.0",
+      "StatThrustThrottle=1.0x1.0",
+      "StatThrustTW=1.0x340.0",
+      "StatICVe=1.0x7.05e7",
+      "StatDamageMax=1.0x25",
+      "IsTechnology=1.0x1",
+      "IsCategoryFusionParts=1.0x1"
+    ],
+    "mapPoints": [
+      "use,32,-48",
+      "Module01,-16,32",
+      "Module02,0,32",
+      "Module03,16,32",
+      "Module04,32,16",
+      "Module05,32,0",
+      "Module06,32,-16",
+      "Module07,-16,-32",
+      "Module08,0,-32",
+      "Module09,16,-32",
+      "Module10,-32,16",
+      "Module11,-32,0",
+      "Module12,-32,-16",
+      "PowerOutput,-32,32",
+      "PowerSource,-32,-32"
+    ],
+    "mapGUIPropMaps": [
+      "Panel A",
+      "ReactorIC"
+    ],
+    "aUpdateCommands": [
+      "Heater,TIsAirtightNoHuman",
+      "Destructable,StatDamage,ACTFusionReactorCore01DamageExplode,StatDamageMax,1.0"
+    ],
+    "aStartingCondRules": [
+      "DcABLWall=1"
+    ],
+    "strPortraitImg": "ItmFusionReactorCore01",
+    "jsonPI": "FusionReactorCore01Ignition",
+    "strAudioEmitter": "ItmFusionReactorCore01IgnitionSound"
+  },
+  {
+    "strName": "ItmFusionReactorCore01Off",
+    "strNameShort": "Активная зона",
+    "strNameFriendly": "Активная зона ИУ термоядерного реактора: Сулейман \"X(X) TW\" (выкл.)",
+    "strDesc": "Термоядерный реактор с инерционным удержанием. Использует топливо в виде He3 и D2O. Работающий реактор способен вырабатывать огромное количество энергии и может использоваться как часть «факельного двигателя» для межпланетных перелётов.",
+    "strItemDef": "ItmFusionReactorCore01Off",
+    "strType": "Item",
+    "aInteractions": [
+      "GUIReactor"
+    ],
+    "aStartingConds": [
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsOff=1.0x1",
+      "IsReactorIC=1.0x1",
+      "IsFusionReactorCore=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsSulaiman=1.0x1.0",
+      "StatBasePrice=1.0x41000.00",
+      "StatDismantleProgressMax=1.0x750",
+      "StatInstallProgressMax=1.0x2000",
+      "StatUninstallProgressMax=1.0x2000",
+      "StatMass=1.0x417.0",
+      "StatDamageMax=1.0x25",
+      "IsTechnology=1.0x1",
+      "IsCategoryFusionParts=1.0x1"
+    ],
+    "mapPoints": [
+      "use,32,-48",
+      "Module01,-16,32",
+      "Module02,0,32",
+      "Module03,16,32",
+      "Module04,32,16",
+      "Module05,32,0",
+      "Module06,32,-16",
+      "Module07,-16,-32",
+      "Module08,0,-32",
+      "Module09,16,-32",
+      "Module10,-32,16",
+      "Module11,-32,0",
+      "Module12,-32,-16",
+      "PowerOutput,-32,32",
+      "PowerSource,-32,-32"
+    ],
+    "mapGUIPropMaps": [
+      "Panel A",
+      "ReactorIC"
+    ],
+    "aUpdateCommands": [
+      "Destructable,StatDamage,ACTFusionReactorCore01Damage,StatDamageMax,1.0"
+    ],
+    "strPortraitImg": "ItmFusionReactorCore01",
+    "aTickers": [
+      "Power"
+    ],
+    "aStartingCondRules": [
+      "DcABLWall=1"
+    ],
+    "jsonPI": "FusionReactorCore01Off",
+    "strAudioEmitter": "ItmFusionReactorCore01OffSound"
+  },
+  {
+    "strName": "ItmFusionReactorCore01Loose",
+    "strNameShort": "Активная зона",
+    "strNameFriendly": "Активная зона ИУ термоядерного реактора: Сулейман \"X(X) TW\" (отдельно)",
+    "strDesc": "Частичный корпус активной зоны термоядерного реактора с инерционным удержанием (1 из 4). Работающий реактор использует топливо в виде He3 и D2O и способен вырабатывать огромное количество энергии. Может использоваться как часть «факельного двигателя» для межпланетных перелётов.",
+    "strItemDef": "ItmFusionReactorCore01Loose",
+    "strType": "Item",
+    "aInteractions": [
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds": [
+      "IsOff=1.0x1",
+      "IsFusionReactorCore=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsSulaiman=1.0x1.0",
+      "IsCumbersome=1.0x1.0",
+      "IsOversized=1.0x1.0",
+      "StatBasePrice=1.0x10250.00",
+      "StatDismantleProgressMax=1.0x750",
+      "StatInstallProgressMax=1.0x2000",
+      "StatUninstallProgressMax=1.0x2000",
+      "StatMass=1.0x417.0",
+      "StatDamageMax=1.0x25",
+      "IsTechnology=1.0x1",
+      "IsCategoryFusionParts=1.0x1"
+    ],
+    "mapPoints": [
+      "use,0,0"
+    ],
+    "mapGUIPropMaps": [
+      "Panel A",
+      "ReactorIC"
+    ],
+    "mapSlotEffects": [
+      "drag",
+      "Blank"
+    ],
+    "aUpdateCommands": [
+      "Destructable,StatDamage,ACTFusionReactorCore01LooseDamage,StatDamageMax,1.0"
+    ],
+    "aStartingCondRules": [
+      "DcABLWall=1"
+    ],
+    "strPortraitImg": "ItmFusionReactorCore01Loose"
+  },
+  {
+    "strName": "ItmFusionReactorCore01Dmg",
+    "strNameShort": "Активная зона",
+    "strNameFriendly": "Активная зона ИУ термоядерного реактора: Сулейман \"X(X) TW\" (повреждена)",
+    "strDesc": "Термоядерный реактор с инерционным удержанием. Использует топливо в виде He3 и D2O. Работающий реактор способен вырабатывать огромное количество энергии и может использоваться как часть «факельного двигателя» для межпланетных перелётов.",
+    "strItemDef": "ItmFusionReactorCore01Dmg",
+    "strType": "Item",
+    "aInteractions": [
+      "GUIReactor"
+    ],
+    "aStartingConds": [
+      "IsDamaged=1.0x1",
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsOff=1.0x1",
+      "IsReactorIC=1.0x1",
+      "IsFusionReactorCore=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsSulaiman=1.0x1.0",
+      "StatBasePrice=1.0x8200.00",
+      "StatDismantleProgressMax=1.0x150",
+      "StatInstallProgressMax=1.0x2000",
+      "StatUninstallProgressMax=1.0x2000",
+      "StatRepairProgressMax=1.0x6000",
+      "StatMass=1.0x417.0",
+      "StatDamageMax=1.0x75",
+      "IsTechnology=1.0x1",
+      "IsCategoryFusionParts=1.0x1"
+    ],
+    "mapPoints": [
+      "use,32,-48"
+    ],
+    "mapGUIPropMaps": [
+      "Panel A",
+      "ReactorIC"
+    ],
+    "aUpdateCommands": [
+      "Destructable,StatDamage,ACTFusionReactorCore01Destroy,StatDamageMax,1.0"
+    ],
+    "aStartingCondRules": [
+      "DcABLWall=1"
+    ],
+    "strPortraitImg": "ItmFusionReactorCore01Dmg02",
+    "aTickers": []
+  },
+  {
+    "strName": "ItmFusionReactorCore01DmgLoose",
+    "strNameShort": "Активная зона",
+    "strNameFriendly": "Активная зона ИУ термоядерного реактора: Сулейман \"X(X) TW\" (отдельно, повреждена)",
+    "strDesc": "Частичный корпус активной зоны термоядерного реактора с инерционным удержанием (1 из 4). Работающий реактор использует топливо в виде He3 и D2O и способен вырабатывать огромное количество энергии. Может использоваться как часть «факельного двигателя» для межпланетных перелётов.",
+    "strItemDef": "ItmFusionReactorCore01DmgLoose",
+    "strType": "Item",
+    "aInteractions": [
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds": [
+      "IsDamaged=1.0x1",
+      "IsOff=1.0x1",
+      "IsFusionReactorCore=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsSulaiman=1.0x1.0",
+      "IsCumbersome=1.0x1.0",
+      "IsOversized=1.0x1.0",
+      "StatBasePrice=1.0x2050.00",
+      "StatDismantleProgressMax=1.0x150",
+      "StatInstallProgressMax=1.0x2000",
+      "StatUninstallProgressMax=1.0x2000",
+      "StatRepairProgressMax=1.0x6000",
+      "StatMass=1.0x417.0",
+      "StatDamageMax=1.0x75",
+      "IsTechnology=1.0x1",
+      "IsCategoryFusionParts=1.0x1"
+    ],
+    "mapPoints": [
+      "use,0,0"
+    ],
+    "mapGUIPropMaps": [
+      "Panel A",
+      "ReactorIC"
+    ],
+    "mapSlotEffects": [
+      "drag",
+      "Blank"
+    ],
+    "aUpdateCommands": [
+      "Destructable,StatDamage,ACTFusionReactorCore01LooseDestroy,StatDamageMax,1.0"
+    ],
+    "strPortraitImg": "ItmFusionReactorCore01Dmg02Loose"
+  },
+  {
+    "strName": "ItmFusionCorePump01Off",
+    "strNameShort": "Насос активной зоны",
+    "strNameFriendly": "Насос активной зоны Сулейман (выкл.)",
+    "strItemDef": "ItmFusionCorePump01Off",
+    "strDesc": "Насос активной зоны термоядерного реактора Сулейман. Откачивает все газы и остатки реакции из камеры активной зоны ядерного реактора для создания вакуумных условий, необходимых для термоядерной реакции.",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [],
+    "aStartingConds": [
+      "IsSulaiman=1.0x1",
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsNonHighlightable=1.0x1",
+      "IsOff=1.0x1",
+      "IsFusionCoreModule=1.0x1",
+      "IsFusionCorePump=1.0x1",
+      "IsPowerInputIgnore=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "StatBasePrice=1.0x5520.00",
+      "StatDismantleProgressMax=1.0x150",
+      "StatInstallProgressMax=1.0x1000",
+      "StatUninstallProgressMax=1.0x1000",
+      "StatMass=1.0x28.0",
+      "StatDamageMax=1.0x6",
+      "IsTechnology=1.0x1",
+      "IsCategoryFusionParts=1.0x1",
+      "IsSignalable=1.0x1"
+    ],
+    "mapCondTolerance": [],
+    "mapPoints": [
+      "Power,0,-16",
+      "ReactorPlug,0,-16"
+    ],
+    "mapGUIPropMaps": [
+      "Electrical"
+    ],
+    "strPortraitImg": "ItmFusionCorePump01",
+    "aUpdateCommands": [
+      "Destructable,StatDamage,ACTFusionCorePump01Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "aTickers": [
+      "Power"
+    ],
+    "jsonPI": "FusionCorePump01",
+    "strAudioEmitter": "ItmFusionCorePump01OffSound"
+  },
+  {
+    "strName": "ItmFusionCorePump01Loose",
+    "strNameShort": "Насос активной зоны",
+    "strNameFriendly": "Насос активной зоны Сулейман (отдельно)",
+    "strItemDef": "ItmFusionCorePump01Loose",
+    "strDesc": "Насос активной зоны термоядерного реактора Сулейман. Откачивает все газы и остатки реакции из камеры активной зоны ядерного реактора для создания вакуумных условий, необходимых для термоядерной реакции.",
+    "strType": "Item",
+    "aInteractions": [
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds": [
+      "IsSulaiman=1.0x1",
+      "IsOff=1.0x1",
+      "IsFusionCoreModule=1.0x1",
+      "IsFusionCorePump=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsCumbersome=1.0x1.0",
+      "StatBasePrice=1.0x5520.00",
+      "StatDismantleProgressMax=1.0x150",
+      "StatInstallProgressMax=1.0x1000",
+      "StatUninstallProgressMax=1.0x1000",
+      "StatMass=1.0x28.0",
+      "StatDamageMax=1.0x6",
+      "IsTechnology=1.0x1",
+      "IsCategoryFusionParts=1.0x1"
+    ],
+    "mapPoints": [],
+    "mapGUIPropMaps": [],
+    "aUpdateCommands": [
+      "Destructable,StatDamage,ACTFusionCorePump01LooseDamage,StatDamageMax,1.0"
+    ],
+    "mapSlotEffects": [
+      "drag",
+      "Blank"
+    ],
+    "strPortraitImg": "ItmFusionCorePump01Loose"
+  },
+  {
+    "strName": "ItmFusionCorePump01",
+    "strNameShort": "Насос активной зоны",
+    "strNameFriendly": "Насос активной зоны Сулейман",
+    "strItemDef": "ItmFusionCorePump01",
+    "strDesc": "Насос активной зоны термоядерного реактора Сулейман. Откачивает все газы и остатки реакции из камеры активной зоны ядерного реактора для создания вакуумных условий, необходимых для термоядерной реакции.",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [],
+    "aStartingConds": [
+      "IsSulaiman=1.0x1",
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsNonHighlightable=1.0x1",
+      "IsFusionCoreModule=1.0x1",
+      "IsFusionCorePump=1.0x1",
+      "IsPowerInputIgnore=1.0x1",
+      "IsReadyHeat=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "StatBasePrice=1.0x5520.00",
+      "StatDismantleProgressMax=1.0x150",
+      "StatHeatArea=1.0x1",
+      "StatHeatVol=1.0x1.0",
+      "StatSolidTemp=1.0x333.0",
+      "StatInstallProgressMax=1.0x1000",
+      "StatUninstallProgressMax=1.0x1000",
+      "StatMass=1.0x28.0",
+      "IsPowered=1.0x1",
+      "StatDamageMax=1.0x6",
+      "IsTechnology=1.0x1",
+      "IsCategoryFusionParts=1.0x1",
+      "IsSignalable=1.0x1"
+    ],
+    "mapCondTolerance": [],
+    "mapPoints": [
+      "Power,0,-16",
+      "ReactorPlug,0,-16"
+    ],
+    "mapGUIPropMaps": [
+      "Panel A",
+      "FusionModuleGeneric",
+      "Electrical"
+    ],
+    "strPortraitImg": "ItmFusionCorePump01",
+    "aTickers": [
+      "Power"
+    ],
+    "aUpdateCommands": [
+      "Heater,TIsAirtightNoHuman",
+      "Destructable,StatDamage,ACTFusionCorePump01Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "jsonPI": "FusionCorePump01",
+    "strAudioEmitter": "ItmFusionCorePump01Sound"
+  },
+  {
+    "strName": "ItmFusionCorePump01Dmg",
+    "strNameShort": "Насос активной зоны",
+    "strNameFriendly": "Насос активной зоны Сулейман (повреждён)",
+    "strItemDef": "ItmFusionCorePump01Dmg",
+    "strDesc": "Насос активной зоны термоядерного реактора Сулейман. Откачивает все газы и остатки реакции из камеры активной зоны ядерного реактора для создания вакуумных условий, необходимых для термоядерной реакции.",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [],
+    "aStartingConds": [
+      "IsDamaged=1.0x1",
+      "IsSulaiman=1.0x1",
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsNonHighlightable=1.0x1",
+      "IsOff=1.0x1",
+      "IsFusionCoreModule=1.0x1",
+      "IsFusionCorePump=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "StatBasePrice=1.0x1112.00",
+      "StatDismantleProgressMax=1.0x50",
+      "StatInstallProgressMax=1.0x1000",
+      "StatUninstallProgressMax=1.0x1000",
+      "StatRepairProgressMax=1.0x3000",
+      "StatMass=1.0x28.0",
+      "StatDamageMax=1.0x19",
+      "IsTechnology=1.0x1",
+      "IsCategoryFusionParts=1.0x1"
+    ],
+    "mapCondTolerance": [],
+    "mapPoints": [
+      "ReactorPlug,0,-16"
+    ],
+    "mapGUIPropMaps": [],
+    "strPortraitImg": "ItmFusionCorePump01Dmg02",
+    "aTickers": [],
+    "aUpdateCommands": [
+      "Destructable,StatDamage,ACTFusionCorePump01Destroy,StatDamageMax,1.0"
+    ],
+    "strAudioEmitter": null
+  },
+  {
+    "strName": "ItmFusionCorePump01DmgLoose",
+    "strNameShort": "Насос активной зоны",
+    "strNameFriendly": "Насос активной зоны Сулейман (отдельно, повреждён)",
+    "strItemDef": "ItmFusionCorePump01DmgLoose",
+    "strDesc": "Насос активной зоны термоядерного реактора Сулейман. Откачивает все газы и остатки реакции из камеры активной зоны ядерного реактора для создания вакуумных условий, необходимых для термоядерной реакции.",
+    "strType": "Item",
+    "aInteractions": [
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds": [
+      "IsDamaged=1.0x1",
+      "IsSulaiman=1.0x1",
+      "IsOff=1.0x1",
+      "IsFusionCoreModule=1.0x1",
+      "IsFusionCorePump=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsCumbersome=1.0x1.0",
+      "StatBasePrice=1.0x1112.00",
+      "StatDismantleProgressMax=1.0x50",
+      "StatInstallProgressMax=1.0x1000",
+      "StatUninstallProgressMax=1.0x1000",
+      "StatRepairProgressMax=1.0x3000",
+      "StatMass=1.0x28.0",
+      "StatDamageMax=1.0x19",
+      "IsTechnology=1.0x1",
+      "IsCategoryFusionParts=1.0x1"
+    ],
+    "mapPoints": [],
+    "mapGUIPropMaps": [],
+    "mapSlotEffects": [
+      "drag",
+      "Blank"
+    ],
+    "aUpdateCommands": [
+      "Destructable,StatDamage,ACTFusionCorePump01LooseDestroy,StatDamageMax,1.0"
+    ],
+    "strPortraitImg": "ItmFusionCorePump01Dmg02Loose"
+  },
+  {
+    "strName": "ItmFusionCryoPump01Off",
+    "strNameShort": "Крионасос",
+    "strNameFriendly": "Криогенный распределительный насос (выкл.)",
+    "strItemDef": "ItmFusionCryoPump01Off",
+    "strDesc": "Массовый криогенный распределительный регулятор от Сулейман. Охлаждает компоненты термоядерной активной зоны от интенсивных температур плазмы, циркулируя криогенный агент (обычно жидкий гелий) из установленного резервуара через смежную активную зону реактора.",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [],
+    "aStartingConds": [
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsNonHighlightable=1.0x1",
+      "IsSulaiman=1.0x1",
+      "IsOff=1.0x1",
+      "IsFusionCoreModule=1.0x1",
+      "IsFusionCryoPump=1.0x1",
+      "IsPowerInputIgnore=1.0x1",
+      "StatFusionCryoPumpRate=1.0x1.0",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "StatBasePrice=1.0x1692.00",
+      "StatDismantleProgressMax=1.0x130",
+      "StatInstallProgressMax=1.0x500",
+      "StatUninstallProgressMax=1.0x500",
+      "StatMass=1.0x28.0",
+      "StatDamageMax=1.0x5",
+      "IsMechanical=1.0x1",
+      "IsCategoryFusionParts=1.0x1",
+      "IsSignalable=1.0x1"
+    ],
+    "mapCondTolerance": [],
+    "mapPoints": [
+      "Power,8,-16",
+      "ReactorPlug,8,-16"
+    ],
+    "mapGUIPropMaps": [
+      "Electrical"
+    ],
+    "strPortraitImg": "ItmFusionCryoPump01",
+    "aUpdateCommands": [
+      "Destructable,StatDamage,ACTFusionCryoPump01Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "aTickers": [
+      "Power"
+    ],
+    "jsonPI": "FusionCryoPump01",
+    "strAudioEmitter": "ItmFusionCryoPump01OffSound"
+  },
+  {
+    "strName": "ItmFusionCryoPump01Loose",
+    "strNameShort": "Крионасос",
+    "strNameFriendly": "Криогенный распределительный насос (отдельно)",
+    "strItemDef": "ItmFusionCryoPump01Loose",
+    "strDesc": "Массовый криогенный распределительный регулятор от Сулейман. Охлаждает компоненты термоядерной активной зоны от интенсивных температур плазмы, циркулируя криогенный агент (обычно жидкий гелий) из установленного резервуара через смежную активную зону реактора.",
+    "strType": "Item",
+    "aInteractions": [
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds": [
+      "IsSulaiman=1.0x1",
+      "IsOff=1.0x1",
+      "IsFusionCryoPump=1.0x1",
+      "IsFusionCoreModule=1.0x1",
+      "StatFusionCryoPumpRate=1.0x1.0",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsCumbersome=1.0x1.0",
+      "StatBasePrice=1.0x1692.00",
+      "StatDismantleProgressMax=1.0x130",
+      "StatInstallProgressMax=1.0x500",
+      "StatUninstallProgressMax=1.0x500",
+      "StatMass=1.0x28.0",
+      "StatDamageMax=1.0x5",
+      "IsMechanical=1.0x1",
+      "IsCategoryFusionParts=1.0x1"
+    ],
+    "mapPoints": [],
+    "mapGUIPropMaps": [],
+    "mapSlotEffects": [
+      "drag",
+      "Blank"
+    ],
+    "aUpdateCommands": [
+      "Destructable,StatDamage,ACTFusionCryoPump01LooseDamage,StatDamageMax,1.0"
+    ],
+    "strPortraitImg": "ItmFusionCryoPump01Loose"
+  },
+  {
+    "strName": "ItmFusionCryoPump01",
+    "strNameShort": "Крионасос",
+    "strNameFriendly": "Криогенный распределительный насос",
+    "strItemDef": "ItmFusionCryoPump01",
+    "strDesc": "Массовый криогенный распределительный регулятор от Сулейман. Охлаждает компоненты термоядерной активной зоны от интенсивных температур плазмы, циркулируя криогенный агент (обычно жидкий гелий) из установленного резервуара через смежную активную зону реактора.",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [],
+    "aStartingConds": [
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsSulaiman=1.0x1",
+      "IsNonHighlightable=1.0x1",
+      "IsFusionCoreModule=1.0x1",
+      "IsFusionCryoPump=1.0x1",
+      "IsPowerInputIgnore=1.0x1",
+      "IsReadyHeat=1.0x1",
+      "StatFusionCryoPumpRate=1.0x1.0",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "StatBasePrice=1.0x1692.00",
+      "StatDismantleProgressMax=1.0x130",
+      "StatHeatArea=1.0x2",
+      "StatHeatVol=1.0x1.0",
+      "StatSolidTemp=1.0x333.0",
+      "StatInstallProgressMax=1.0x500",
+      "StatUninstallProgressMax=1.0x500",
+      "StatMass=1.0x28.0",
+      "IsPowered=1.0x1",
+      "StatDamageMax=1.0x5",
+      "IsMechanical=1.0x1",
+      "IsCategoryFusionParts=1.0x1",
+      "IsSignalable=1.0x1"
+    ],
+    "mapCondTolerance": [],
+    "mapPoints": [
+      "Power,8,-16",
+      "ReactorPlug,8,-16"
+    ],
+    "mapGUIPropMaps": [
+      "Panel A",
+      "FusionModuleGeneric",
+      "Electrical"
+    ],
+    "aUpdateCommands": [
+      "Heater,TIsAirtightNoHuman",
+      "Destructable,StatDamage,ACTFusionCryoPump01Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "strPortraitImg": "ItmFusionCryoPump01",
+    "aTickers": [
+      "Power"
+    ],
+    "jsonPI": "FusionCryoPump01",
+    "strAudioEmitter": "ItmFusionCryoPump01Sound"
+  },
+  {
+    "strName": "ItmFusionCryoPump01Dmg",
+    "strNameShort": "Крионасос",
+    "strNameFriendly": "Криогенный распределительный насос (повреждён)",
+    "strItemDef": "ItmFusionCryoPump01Dmg",
+    "strDesc": "Массовый криогенный распределительный регулятор от Сулейман. Охлаждает компоненты термоядерной активной зоны от интенсивных температур плазмы, циркулируя криогенный агент (обычно жидкий гелий) из установленного резервуара через смежную активную зону реактора.",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [],
+    "aStartingConds": [
+      "IsDamaged=1.0x1",
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsNonHighlightable=1.0x1",
+      "IsSulaiman=1.0x1",
+      "IsOff=1.0x1",
+      "IsFusionCoreModule=1.0x1",
+      "IsFusionCryoPump=1.0x1",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "StatBasePrice=1.0x355.00",
+      "StatDismantleProgressMax=1.0x30",
+      "StatInstallProgressMax=1.0x500",
+      "StatUninstallProgressMax=1.0x500",
+      "StatRepairProgressMax=1.0x1500",
+      "StatMass=1.0x28.0",
+      "StatDamageMax=1.0x15",
+      "IsMechanical=1.0x1",
+      "IsCategoryFusionParts=1.0x1"
+    ],
+    "mapCondTolerance": [],
+    "mapPoints": [
+      "ReactorPlug,8,-16"
+    ],
+    "mapGUIPropMaps": [],
+    "aUpdateCommands": [
+      "Destructable,StatDamage,ACTFusionCryoPump01Destroy,StatDamageMax,1.0"
+    ],
+    "strPortraitImg": "ItmFusionCryoPump01Dmg02",
+    "aTickers": [],
+    "strAudioEmitter": null
+  },
+  {
+    "strName": "ItmFusionCryoPump01DmgLoose",
+    "strNameShort": "Крионасос",
+    "strNameFriendly": "Криогенный распределительный насос (отдельно, повреждён)",
+    "strItemDef": "ItmFusionCryoPump01DmgLoose",
+    "strDesc": "Массовый криогенный распределительный регулятор от Сулейман. Охлаждает компоненты термоядерной активной зоны от интенсивных температур плазмы, циркулируя криогенный агент (обычно жидкий гелий) из установленного резервуара через смежную активную зону реактора.",
+    "strType": "Item",
+    "aInteractions": [
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds": [
+      "IsDamaged=1.0x1",
+      "IsSulaiman=1.0x1",
+      "IsOff=1.0x1",
+      "IsFusionCoreModule=1.0x1",
+      "IsFusionCryoPump=1.0x1",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsCumbersome=1.0x1.0",
+      "StatBasePrice=1.0x355.00",
+      "StatDismantleProgressMax=1.0x30",
+      "StatInstallProgressMax=1.0x500",
+      "StatUninstallProgressMax=1.0x500",
+      "StatRepairProgressMax=1.0x1500",
+      "StatMass=1.0x28.0",
+      "StatDamageMax=1.0x15",
+      "IsMechanical=1.0x1",
+      "IsCategoryFusionParts=1.0x1"
+    ],
+    "mapPoints": [],
+    "mapGUIPropMaps": [],
+    "mapSlotEffects": [
+      "drag",
+      "Blank"
+    ],
+    "aUpdateCommands": [
+      "Destructable,StatDamage,ACTFusionCryoPump01LooseDestroy,StatDamageMax,1.0"
+    ],
+    "strPortraitImg": "ItmFusionCryoPump01Dmg02Loose"
+  },
+  {
+    "strName": "ItmFusionFieldCoils01Off",
+    "strNameShort": "Катушки поля",
+    "strNameFriendly": "Сборка катушек поля термоядерного реактора (выкл.)",
+    "strItemDef": "ItmFusionFieldCoils01",
+    "strDesc": "Передняя и задняя сборки катушек поля Сулейман генерируют мощные магнитные поля, удерживающие и направляющие плазму термоядерной реакции как для инерционного удержания, так и для тяги двигателя.\n\nПРЕДУПРЕЖДЕНИЕ: Сборка катушек поля служит герметичным полом, поэтому демонтаж подвергает интерьер корабля воздействию вакуума.",
+    "strType": "Item",
+    "aInteractions": [],
+    "aStartingConds": [
+      "IsFusionCoreModule=1.0x1",
+      "IsFusionFieldCoils=1.0x1",
+      "IsSulaiman=1.0x1",
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsOff=1.0x1",
+      "IsCumbersome=1.0x1.0",
+      "IsOversized=1.0x1.0",
+      "IsPowerInputIgnore=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsCheckRoom=1.0x1",
+      "StatBasePrice=1.0x4740.00",
+      "StatDismantleProgressMax=1.0x480",
+      "StatInstallProgressMax=1.0x1300",
+      "StatUninstallProgressMax=1.0x1300",
+      "StatMass=1.0x40.0",
+      "StatDamageMax=1.0x20",
+      "IsTechnology=1.0x1",
+      "IsCategoryFusionParts=1.0x1"
+    ],
+    "mapPoints": [
+      "Power,-32,-32"
+    ],
+    "mapGUIPropMaps": [
+      "Electrical"
+    ],
+    "aUpdateCommands": [
+      "Destructable,StatDamage,ACTFusionFieldCoils01Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "strPortraitImg": "ItmFusionFieldCoils01",
+    "aTickers": [
+      "Power"
+    ],
+    "jsonPI": "FusionFieldCoils01",
+    "strAudioEmitter": null
+  },
+  {
+    "strName": "ItmFusionFieldCoils01",
+    "strNameShort": "Катушки поля",
+    "strNameFriendly": "Сборка катушек поля термоядерного реактора",
+    "strItemDef": "ItmFusionFieldCoils01",
+    "strDesc": "Передняя и задняя сборки катушек поля Сулейман генерируют мощные магнитные поля, удерживающие и направляющие плазму термоядерной реакции как для инерционного удержания, так и для тяги двигателя.\n\nПРЕДУПРЕЖДЕНИЕ: Сборка катушек поля служит герметичным полом, поэтому демонтаж подвергает интерьер корабля воздействию вакуума.",
+    "strType": "Item",
+    "aInteractions": [],
+    "aStartingConds": [
+      "IsFusionCoreModule=1.0x1",
+      "IsFusionFieldCoils=1.0x1",
+      "IsSulaiman=1.0x1",
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsCumbersome=1.0x1.0",
+      "IsOversized=1.0x1.0",
+      "IsPowered=1.0x1",
+      "IsPowerInputIgnore=1.0x1",
+      "IsReadyHeat=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsCheckRoom=1.0x1",
+      "StatBasePrice=1.0x4740.00",
+      "StatDismantleProgressMax=1.0x480",
+      "StatHeatArea=1.0x0.75",
+      "StatHeatVol=1.0x1.0",
+      "StatSolidTemp=1.0x500.0",
+      "StatInstallProgressMax=1.0x1300",
+      "StatUninstallProgressMax=1.0x1300",
+      "StatMass=1.0x40.0",
+      "StatDamageMax=1.0x20",
+      "IsTechnology=1.0x1",
+      "IsCategoryFusionParts=1.0x1"
+    ],
+    "mapPoints": [
+      "Power,-32,-32"
+    ],
+    "mapGUIPropMaps": [
+      "Panel A",
+      "FusionModuleGeneric",
+      "Electrical"
+    ],
+    "aUpdateCommands": [
+      "Heater,TIsAirtightNoHuman",
+      "Destructable,StatDamage,ACTFusionFieldCoils01Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "strPortraitImg": "ItmFusionFieldCoils01",
+    "aTickers": [
+      "Power"
+    ],
+    "jsonPI": "FusionFieldCoils01",
+    "strAudioEmitter": "ItmFusionFieldCoils01Sound"
+  },
+  {
+    "strName": "ItmFusionFieldCoils01Loose",
+    "strNameShort": "Катушки поля",
+    "strNameFriendly": "Сборка катушек поля термоядерного реактора (отдельно)",
+    "strItemDef": "ItmFusionFieldCoils01Loose",
+    "strDesc": "Частичная сборка катушек поля (1 из 2). Передняя и задняя сборки катушек поля Сулейман генерируют мощные магнитные поля, удерживающие и направляющие плазму термоядерной реакции как для инерционного удержания, так и для тяги двигателя.\n\nПРЕДУПРЕЖДЕНИЕ: Сборка катушек поля служит герметичным полом, поэтому демонтаж подвергает интерьер корабля воздействию вакуума.",
+    "strType": "Item",
+    "aInteractions": [
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds": [
+      "IsFusionFieldCoils=1.0x1",
+      "IsFusionCoreModule=1.0x1",
+      "IsSulaiman=1.0x1",
+      "IsEdged=1.0x1.0",
+      "IsRigid=1.0x1",
+      "IsTough=1.0x1.0",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsOff=1.0x1",
+      "IsSolid=1.0x1.0",
+      "IsCheckRoom=1.0x1",
+      "IsCumbersome=1.0x1.0",
+      "IsOversized=1.0x1.0",
+      "StatBasePrice=1.0x4740.00",
+      "StatDismantleProgressMax=1.0x480",
+      "StatInstallProgressMax=1.0x1300",
+      "StatUninstallProgressMax=1.0x1300",
+      "StatMass=1.0x40.0",
+      "StatDamageMax=1.0x20",
+      "IsTechnology=1.0x1",
+      "IsCategoryFusionParts=1.0x1"
+    ],
+    "mapGUIPropMaps": [],
+    "mapSlotEffects": [
+      "drag",
+      "Blank"
+    ],
+    "aUpdateCommands": [
+      "Destructable,StatDamage,ACTFusionFieldCoils01LooseDamage,StatDamageMax,1.0"
+    ],
+    "strPortraitImg": "ItmFusionFieldCoils01Loose"
+  },
+  {
+    "strName": "ItmFusionFieldCoils01Dmg",
+    "strNameShort": "Катушки поля",
+    "strNameFriendly": "Сборка катушек поля термоядерного реактора (повреждена)",
+    "strItemDef": "ItmFusionFieldCoils01Dmg",
+    "strDesc": "Передняя и задняя сборки катушек поля Сулейман генерируют мощные магнитные поля, удерживающие и направляющие плазму термоядерной реакции как для инерционного удержания, так и для тяги двигателя.\n\nПРЕДУПРЕЖДЕНИЕ: Сборка катушек поля служит герметичным полом, поэтому демонтаж подвергает интерьер корабля воздействию вакуума.",
+    "strType": "Item",
+    "aInteractions": [],
+    "aStartingConds": [
+      "IsDamaged=1.0x1",
+      "IsFusionFieldCoils=1.0x1",
+      "IsFusionCoreModule=1.0x1",
+      "IsSulaiman=1.0x1",
+      "IsEdged=1.0x1.0",
+      "IsRigid=1.0x1",
+      "IsTough=1.0x1.0",
+      "IsHiddenInv=1.0x1",
+      "IsOff=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsCumbersome=1.0x1.0",
+      "IsOversized=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsCheckRoom=1.0x1",
+      "StatBasePrice=1.0x871.00",
+      "StatDismantleProgressMax=1.0x380",
+      "StatInstallProgressMax=1.0x1300",
+      "StatUninstallProgressMax=1.0x1300",
+      "StatRepairProgressMax=1.0x1100",
+      "StatMass=1.0x40.0",
+      "StatDamageMax=1.0x45",
+      "IsTechnology=1.0x1",
+      "IsCategoryFusionParts=1.0x1"
+    ],
+    "mapPoints": [],
+    "aUpdateCommands": [
+      "Destructable,StatDamage,ACTMechDestroy,StatDamageMax,1.0"
+    ],
+    "mapGUIPropMaps": null,
+    "strPortraitImg": "ItmFusionFieldCoils01Dmg02",
+    "jsonPI": null
+  },
+  {
+    "strName": "ItmFusionFieldCoils01DmgLoose",
+    "strNameShort": "Катушки поля",
+    "strNameFriendly": "Сборка катушек поля термоядерного реактора (отдельно, повреждена)",
+    "strItemDef": "ItmFusionFieldCoils01DmgLoose",
+    "strDesc": "Частичная сборка катушек поля (1 из 2). Передняя и задняя сборки катушек поля Сулейман генерируют мощные магнитные поля, удерживающие и направляющие плазму термоядерной реакции как для инерционного удержания, так и для тяги двигателя.\n\nПРЕДУПРЕЖДЕНИЕ: Сборка катушек поля служит герметичным полом, поэтому демонтаж подвергает интерьер корабля воздействию вакуума.",
+    "strType": "Item",
+    "aInteractions": [
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds": [
+      "IsDamaged=1.0x1",
+      "IsFusionFieldCoils=1.0x1",
+      "IsFusionCoreModule=1.0x1",
+      "IsSulaiman=1.0x1",
+      "IsEdged=1.0x1.0",
+      "IsRigid=1.0x1",
+      "IsTough=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsOff=1.0x1",
+      "IsCheckRoom=1.0x1",
+      "IsCumbersome=1.0x1.0",
+      "IsOversized=1.0x1.0",
+      "StatBasePrice=1.0x871.00",
+      "StatDismantleProgressMax=1.0x380",
+      "StatInstallProgressMax=1.0x1300",
+      "StatUninstallProgressMax=1.0x1300",
+      "StatRepairProgressMax=1.0x1100",
+      "StatMass=1.0x40.0",
+      "StatDamageMax=1.0x45",
+      "IsTechnology=1.0x1",
+      "IsCategoryFusionParts=1.0x1"
+    ],
+    "mapPoints": [],
+    "mapSlotEffects": [
+      "drag",
+      "Blank"
+    ],
+    "aUpdateCommands": [
+      "Destructable,StatDamage,ACTMechDestroy,StatDamageMax,1.0"
+    ],
+    "strPortraitImg": "ItmFusionFieldCoils01Dmg02Loose"
+  },
+  {
+    "strName": "ItmFusionFuelRegulator01Off",
+    "strNameShort": "Регулятор топлива",
+    "strNameFriendly": "Регулятор топлива реактора (выкл.)",
+    "strDesc": "Сборка регулятора топлива Сулейман. Снабжает податчики гранул корабля, комбинируя и охлаждая реагенты D2O и He3 в твёрдые гранулы миллиметрового размера, используемые для запуска реакции в активной зоне реактора.",
+    "strItemDef": "ItmFusionFuelRegulator01Off",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [],
+    "aStartingConds": [
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsNonHighlightable=1.0x1",
+      "IsSulaiman=1.0x1",
+      "IsOff=1.0x1",
+      "IsFusionFuelRegulator=1.0x1",
+      "IsFusionCoreModule=1.0x1",
+      "IsPowerInputIgnore=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "StatBasePrice=1.0x13134.00",
+      "StatDismantleProgressMax=1.0x250",
+      "StatInstallProgressMax=1.0x1200",
+      "StatUninstallProgressMax=1.0x1200",
+      "StatMass=1.0x28.0",
+      "StatDamageMax=1.0x8",
+      "IsMechanical=1.0x1",
+      "IsCategoryFusionParts=1.0x1",
+      "IsSignalable=1.0x1"
+    ],
+    "mapCondTolerance": [],
+    "mapPoints": [
+      "use,0,16",
+      "Power,0,-32",
+      "ReactorPlug,0,-32"
+    ],
+    "mapGUIPropMaps": [
+      "Electrical"
+    ],
+    "aUpdateCommands": [
+      "Destructable,StatDamage,ACTFusionFuelRegulator01Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "strPortraitImg": "ItmFusionFuelRegulator01",
+    "aTickers": [
+      "Power"
+    ],
+    "jsonPI": "FusionFuelRegulator01",
+    "strAudioEmitter": null
+  },
+  {
+    "strName": "ItmFusionFuelRegulator01Loose",
+    "strNameShort": "Регулятор топлива",
+    "strNameFriendly": "Регулятор топлива реактора (отдельно)",
+    "strItemDef": "ItmFusionFuelRegulator01Loose",
+    "strDesc": "Сборка регулятора топлива Сулейман. Снабжает податчики гранул корабля, комбинируя и охлаждая реагенты D2O и He3 в твёрдые гранулы миллиметрового размера, используемые для запуска реакции в активной зоне реактора.",
+    "strType": "Item",
+    "aInteractions": [
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds": [
+      "IsSulaiman=1.0x1",
+      "IsOff=1.0x1",
+      "IsFusionCoreModule=1.0x1",
+      "IsFusionFuelRegulator=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsCumbersome=1.0x1.0",
+      "StatBasePrice=1.0x13134.00",
+      "StatDismantleProgressMax=1.0x250",
+      "StatInstallProgressMax=1.0x1200",
+      "StatUninstallProgressMax=1.0x1200",
+      "StatMass=1.0x28.0",
+      "StatDamageMax=1.0x8",
+      "IsMechanical=1.0x1",
+      "IsCategoryFusionParts=1.0x1"
+    ],
+    "mapPoints": [],
+    "mapGUIPropMaps": [],
+    "mapSlotEffects": [
+      "drag",
+      "Blank"
+    ],
+    "aUpdateCommands": [
+      "Destructable,StatDamage,ACTFusionFuelRegulator01LooseDamage,StatDamageMax,1.0"
+    ],
+    "strPortraitImg": "ItmFusionFuelRegulator01Loose"
+  },
+  {
+    "strName": "ItmFusionFuelRegulator01",
+    "strNameShort": "Регулятор топлива",
+    "strNameFriendly": "Регулятор топлива реактора",
+    "strItemDef": "ItmFusionFuelRegulator01",
+    "strDesc": "Сборка регулятора топлива Сулейман. Снабжает податчики гранул корабля, комбинируя и охлаждая реагенты D2O и He3 в твёрдые гранулы миллиметрового размера, используемые для запуска реакции в активной зоне реактора.",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [],
+    "aStartingConds": [
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsSulaiman=1.0x1",
+      "IsNonHighlightable=1.0x1",
+      "IsFusionCoreModule=1.0x1",
+      "IsFusionFuelRegulator=1.0x1",
+      "IsPowerInputIgnore=1.0x1",
+      "IsReadyHeat=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "StatBasePrice=1.0x13134.00",
+      "StatDismantleProgressMax=1.0x250",
+      "StatHeatArea=1.0x2",
+      "StatHeatVol=1.0x1.0",
+      "StatSolidTemp=1.0x333.0",
+      "StatInstallProgressMax=1.0x1200",
+      "StatUninstallProgressMax=1.0x1200",
+      "StatMass=1.0x28.0",
+      "IsPowered=1.0x1",
+      "StatDamageMax=1.0x8",
+      "IsMechanical=1.0x1",
+      "IsCategoryFusionParts=1.0x1",
+      "IsSignalable=1.0x1"
+    ],
+    "mapCondTolerance": [],
+    "mapPoints": [
+      "use,0,16",
+      "Power,0,-32",
+      "ReactorPlug,0,-32"
+    ],
+    "mapGUIPropMaps": [
+      "Panel A",
+      "FusionModuleGeneric",
+      "Electrical"
+    ],
+    "strPortraitImg": "ItmFusionFuelRegulator01",
+    "aTickers": [
+      "Power"
+    ],
+    "aUpdateCommands": [
+      "Heater,TIsAirtightNoHuman",
+      "Destructable,StatDamage,ACTFusionFuelRegulator01Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "jsonPI": "FusionFuelRegulator01",
+    "strAudioEmitter": null
+  },
+  {
+    "strName": "ItmFusionFuelRegulator01Dmg",
+    "strNameShort": "Регулятор топлива",
+    "strNameFriendly": "Регулятор топлива реактора (повреждён)",
+    "strItemDef": "ItmFusionFuelRegulator01Dmg",
+    "strDesc": "Сборка регулятора топлива Сулейман. Снабжает податчики гранул корабля, комбинируя и охлаждая реагенты D2O и He3 в твёрдые гранулы миллиметрового размера, используемые для запуска реакции в активной зоне реактора.",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [],
+    "aStartingConds": [
+      "IsDamaged=1.0x1",
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsNonHighlightable=1.0x1",
+      "IsSulaiman=1.0x1",
+      "IsOff=1.0x1",
+      "IsFusionCoreModule=1.0x1",
+      "IsFusionFuelRegulator=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "StatBasePrice=1.0x3283.00",
+      "StatDismantleProgressMax=1.0x50",
+      "StatInstallProgressMax=1.0x1200",
+      "StatUninstallProgressMax=1.0x1200",
+      "StatRepairProgressMax=1.0x3600",
+      "StatMass=1.0x28.0",
+      "StatDamageMax=1.0x22",
+      "IsMechanical=1.0x1",
+      "IsCategoryFusionParts=1.0x1"
+    ],
+    "mapCondTolerance": [],
+    "mapPoints": [
+      "use,0,16",
+      "ReactorPlug,0,-32"
+    ],
+    "mapGUIPropMaps": [],
+    "strPortraitImg": "ItmFusionFuelRegulator01Dmg02",
+    "aTickers": [],
+    "aUpdateCommands": [
+      "Destructable,StatDamage,ACTFusionFuelRegulator01Destroy,StatDamageMax,1.0"
+    ],
+    "strAudioEmitter": null
+  },
+  {
+    "strName": "ItmFusionFuelRegulator01DmgLoose",
+    "strNameShort": "Регулятор топлива",
+    "strNameFriendly": "Регулятор топлива реактора (отдельно, повреждён)",
+    "strItemDef": "ItmFusionFuelRegulator01DmgLoose",
+    "strDesc": "Сборка регулятора топлива Сулейман. Снабжает податчики гранул корабля, комбинируя и охлаждая реагенты D2O и He3 в твёрдые гранулы миллиметрового размера, используемые для запуска реакции в активной зоне реактора.",
+    "strType": "Item",
+    "aInteractions": [
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds": [
+      "IsDamaged=1.0x1",
+      "IsSulaiman=1.0x1",
+      "IsOff=1.0x1",
+      "IsFusionCoreModule=1.0x1",
+      "IsFusionFuelRegulator=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsCumbersome=1.0x1.0",
+      "StatBasePrice=1.0x3283.00",
+      "StatDismantleProgressMax=1.0x50",
+      "StatInstallProgressMax=1.0x1200",
+      "StatUninstallProgressMax=1.0x1200",
+      "StatRepairProgressMax=1.0x3600",
+      "StatMass=1.0x28.0",
+      "StatDamageMax=1.0x22",
+      "IsMechanical=1.0x1",
+      "IsCategoryFusionParts=1.0x1"
+    ],
+    "mapPoints": [],
+    "mapGUIPropMaps": [],
+    "mapSlotEffects": [
+      "drag",
+      "Blank"
+    ],
+    "aUpdateCommands": [
+      "Destructable,StatDamage,ACTFusionFuelRegulator01LooseDestroy,StatDamageMax,1.0"
+    ],
+    "strPortraitImg": "ItmFusionFuelRegulator01Dmg02Loose"
+  },
+  {
+    "strName": "ItmFusionLaserArray01Off",
+    "strNameShort": "Лазерная решётка",
+    "strNameFriendly": "Лазерная решётка Сулейман (выкл.)",
+    "strItemDef": "ItmFusionLaserArray01Off",
+    "strDesc": "Лазерная решётка зажигания термоядерного реактора Сулейман. Питаемая от лазерного конденсатора, эта решётка координирует выравнивание высокоэнергетических лазеров, предназначенных для перегрева и сжатия топливных гранул в плазму для запуска термоядерной реакции.",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [],
+    "aStartingConds": [
+      "IsSulaiman=1.0x1",
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsNonHighlightable=1.0x1",
+      "IsOff=1.0x1",
+      "IsFusionCoreModule=1.0x1",
+      "IsFusionLaserArray=1.0x1",
+      "IsPowerInputIgnore=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "StatFusionLaserArrayRate=1.0x1.0",
+      "StatBasePrice=1.0x5520.00",
+      "StatDismantleProgressMax=1.0x150",
+      "StatInstallProgressMax=1.0x1000",
+      "StatUninstallProgressMax=1.0x1000",
+      "StatMass=1.0x28.0",
+      "StatDamageMax=1.0x6",
+      "IsTechnology=1.0x1",
+      "IsCategoryFusionParts=1.0x1",
+      "IsSignalable=1.0x1"
+    ],
+    "mapCondTolerance": [],
+    "mapPoints": [
+      "Power,0,-16",
+      "ReactorPlug,0,-16"
+    ],
+    "mapGUIPropMaps": [
+      "Electrical"
+    ],
+    "strPortraitImg": "ItmFusionLaserArray01",
+    "aUpdateCommands": [
+      "Destructable,StatDamage,ACTFusionLaserArray01Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "aTickers": [
+      "Power"
+    ],
+    "jsonPI": "FusionLaserArray01",
+    "strAudioEmitter": null
+  },
+  {
+    "strName": "ItmFusionLaserArray01Loose",
+    "strNameShort": "Лазерная решётка",
+    "strNameFriendly": "Лазерная решётка Сулейман (отдельно)",
+    "strItemDef": "ItmFusionLaserArray01Loose",
+    "strDesc": "Лазерная решётка зажигания термоядерного реактора Сулейман. Питаемая от лазерного конденсатора, эта решётка координирует выравнивание высокоэнергетических лазеров, предназначенных для перегрева и сжатия топливных гранул в плазму для запуска термоядерной реакции.",
+    "strType": "Item",
+    "aInteractions": [
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds": [
+      "IsSulaiman=1.0x1",
+      "IsOff=1.0x1",
+      "IsFusionCoreModule=1.0x1",
+      "IsFusionLaserArray=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsCumbersome=1.0x1.0",
+      "StatFusionLaserArrayRate=1.0x1.0",
+      "StatBasePrice=1.0x5520.00",
+      "StatDismantleProgressMax=1.0x150",
+      "StatInstallProgressMax=1.0x1000",
+      "StatUninstallProgressMax=1.0x1000",
+      "StatMass=1.0x28.0",
+      "StatDamageMax=1.0x6",
+      "IsTechnology=1.0x1",
+      "IsCategoryFusionParts=1.0x1"
+    ],
+    "mapPoints": [],
+    "mapGUIPropMaps": [],
+    "aUpdateCommands": [
+      "Destructable,StatDamage,ACTFusionLaserArray01LooseDamage,StatDamageMax,1.0"
+    ],
+    "mapSlotEffects": [
+      "drag",
+      "Blank"
+    ],
+    "strPortraitImg": "ItmFusionLaserArray01Loose"
+  },
+  {
+    "strName": "ItmFusionLaserArray01",
+    "strNameShort": "Лазерная решётка",
+    "strNameFriendly": "Лазерная решётка Сулейман",
+    "strItemDef": "ItmFusionLaserArray01",
+    "strDesc": "Лазерная решётка зажигания термоядерного реактора Сулейман. Питаемая от лазерного конденсатора, эта решётка координирует выравнивание высокоэнергетических лазеров, предназначенных для перегрева и сжатия топливных гранул в плазму для запуска термоядерной реакции.",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [],
+    "aStartingConds": [
+      "IsSulaiman=1.0x1",
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsNonHighlightable=1.0x1",
+      "IsFusionCoreModule=1.0x1",
+      "IsFusionLaserArray=1.0x1",
+      "IsPowerInputIgnore=1.0x1",
+      "IsReadyHeat=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "StatFusionLaserArrayRate=1.0x1.0",
+      "StatBasePrice=1.0x5520.00",
+      "StatDismantleProgressMax=1.0x150",
+      "StatHeatArea=1.0x1",
+      "StatHeatVol=1.0x1.0",
+      "StatSolidTemp=1.0x1073.0",
+      "StatInstallProgressMax=1.0x1000",
+      "StatUninstallProgressMax=1.0x1000",
+      "StatMass=1.0x28.0",
+      "IsPowered=1.0x1",
+      "StatDamageMax=1.0x6",
+      "IsTechnology=1.0x1",
+      "IsCategoryFusionParts=1.0x1",
+      "IsSignalable=1.0x1"
+    ],
+    "mapCondTolerance": [],
+    "mapPoints": [
+      "Power,0,-16",
+      "ReactorPlug,0,-16"
+    ],
+    "mapGUIPropMaps": [
+      "Panel A",
+      "FusionModuleGeneric",
+      "Electrical"
+    ],
+    "strPortraitImg": "ItmFusionLaserArray01",
+    "aTickers": [
+      "Power"
+    ],
+    "aUpdateCommands": [
+      "Heater,TIsAirtightNoHuman",
+      "Destructable,StatDamage,ACTFusionLaserArray01Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "jsonPI": "FusionLaserArray01",
+    "strAudioEmitter": null
+  },
+  {
+    "strName": "ItmFusionLaserArray01Dmg",
+    "strNameShort": "Лазерная решётка",
+    "strNameFriendly": "Лазерная решётка Сулейман (повреждена)",
+    "strItemDef": "ItmFusionLaserArray01Dmg",
+    "strDesc": "Лазерная решётка зажигания термоядерного реактора Сулейман. Питаемая от лазерного конденсатора, эта решётка координирует выравнивание высокоэнергетических лазеров, предназначенных для перегрева и сжатия топливных гранул в плазму для запуска термоядерной реакции.",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [],
+    "aStartingConds": [
+      "IsDamaged=1.0x1",
+      "IsSulaiman=1.0x1",
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsNonHighlightable=1.0x1",
+      "IsOff=1.0x1",
+      "IsFusionCoreModule=1.0x1",
+      "IsFusionLaserArray=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "StatBasePrice=1.0x1112.00",
+      "StatDismantleProgressMax=1.0x50",
+      "StatInstallProgressMax=1.0x1000",
+      "StatUninstallProgressMax=1.0x1000",
+      "StatRepairProgressMax=1.0x3000",
+      "StatMass=1.0x28.0",
+      "StatDamageMax=1.0x19",
+      "IsTechnology=1.0x1",
+      "IsCategoryFusionParts=1.0x1"
+    ],
+    "mapCondTolerance": [],
+    "mapPoints": [
+      "ReactorPlug,0,-16"
+    ],
+    "mapGUIPropMaps": [],
+    "strPortraitImg": "ItmFusionLaserArray01Dmg02",
+    "aTickers": [],
+    "aUpdateCommands": [
+      "Destructable,StatDamage,ACTFusionLaserArray01Destroy,StatDamageMax,1.0"
+    ],
+    "strAudioEmitter": null
+  },
+  {
+    "strName": "ItmFusionLaserArray01DmgLoose",
+    "strNameShort": "Лазерная решётка",
+    "strNameFriendly": "Лазерная решётка Сулейман (отдельно, повреждена)",
+    "strItemDef": "ItmFusionLaserArray01DmgLoose",
+    "strDesc": "Лазерная решётка зажигания термоядерного реактора Сулейман. Питаемая от лазерного конденсатора, эта решётка координирует выравнивание высокоэнергетических лазеров, предназначенных для перегрева и сжатия топливных гранул в плазму для запуска термоядерной реакции.",
+    "strType": "Item",
+    "aInteractions": [
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds": [
+      "IsDamaged=1.0x1",
+      "IsSulaiman=1.0x1",
+      "IsOff=1.0x1",
+      "IsFusionCoreModule=1.0x1",
+      "IsFusionLaserArray=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsCumbersome=1.0x1.0",
+      "StatBasePrice=1.0x1112.00",
+      "StatDismantleProgressMax=1.0x50",
+      "StatInstallProgressMax=1.0x1000",
+      "StatUninstallProgressMax=1.0x1000",
+      "StatRepairProgressMax=1.0x3000",
+      "StatMass=1.0x28.0",
+      "StatDamageMax=1.0x19",
+      "IsTechnology=1.0x1",
+      "IsCategoryFusionParts=1.0x1"
+    ],
+    "mapPoints": [],
+    "mapGUIPropMaps": [],
+    "mapSlotEffects": [
+      "drag",
+      "Blank"
+    ],
+    "aUpdateCommands": [
+      "Destructable,StatDamage,ACTFusionLaserArray01LooseDestroy,StatDamageMax,1.0"
+    ],
+    "strPortraitImg": "ItmFusionLaserArray01Dmg02Loose"
+  },
+  {
+    "strName": "ItmFusionMHDGenerator01",
+    "strNameShort": "МГД-генератор",
+    "strNameFriendly": "Магнитогидродинамический (МГД) генератор",
+    "strDesc": "Магнитогидродинамический генератор от Сулейман. Использует магниты вдоль пути потока плазмы реактора и цикла выхлопа для выработки обычной электроэнергии.",
+    "strItemDef": "ItmFusionMHDGenerator01",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [],
+    "aStartingConds": [
+      "IsSulaiman=1.0x1",
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsFusionCoreModule=1.0x1",
+      "IsFusionMHDGenerator=1.0x1",
+      "IsPowered=1.0x1",
+      "IsPowerInputIgnore=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "StatBasePrice=1.0x12623.0",
+      "StatDismantleProgressMax=1.0x140",
+      "StatInstallProgressMax=1.0x1000",
+      "StatUninstallProgressMax=1.0x1000",
+      "StatMass=1.0x45.0",
+      "StatDamageMax=1.0x5",
+      "IsTechnology=1.0x1",
+      "IsElectronic=1.0x1",
+      "IsCategoryFusionParts=1.0x1"
+    ],
+    "mapCondTolerance": [],
+    "mapPoints": [
+      "use,0,0",
+      "PowerSource,-16,-16",
+      "ReactorPlug,-16,-16"
+    ],
+    "aUpdateCommands": [
+      "Destructable,StatDamage,ACTFusionMHDGenerator01Damage,StatDamageMax,1.0"
+    ],
+    "mapGUIPropMaps": [
+      "Panel A",
+      "MeterBattery"
+    ],
+    "aTickers": [
+      "Power"
+    ],
+    "strPortraitImg": "ItmFusionMHDGenerator01",
+    "jsonPI": "FusionMHDGenerator01",
+    "strAudioEmitter": "ItmBattery02Sound"
+  },
+  {
+    "strName": "ItmFusionMHDGenerator01Dmg",
+    "strNameShort": "МГД-генератор",
+    "strNameFriendly": "Магнитогидродинамический (МГД) генератор (повреждён)",
+    "strDesc": "Магнитогидродинамический генератор от Сулейман. Использует магниты вдоль пути потока плазмы реактора и цикла выхлопа для выработки обычной электроэнергии.",
+    "strItemDef": "ItmFusionMHDGenerator01Dmg",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [],
+    "aStartingConds": [
+      "IsSulaiman=1.0x1",
+      "IsDamaged=1.0x1",
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsFusionCoreModule=1.0x1",
+      "IsFusionMHDGenerator=1.0x1",
+      "IsPowerInputIgnore=1.0x1",
+      "IsSolid=1.0x1.0",
+      "StatBasePrice=1.0x3156.0",
+      "StatInstallProgressMax=1.0x1000",
+      "StatUninstallProgressMax=1.0x1000",
+      "StatRepairProgressMax=1.0x3000",
+      "StatMass=1.0x45.0",
+      "StatDamageMax=1.0x8",
+      "IsTechnology=1.0x1",
+      "IsElectronic=1.0x1",
+      "IsCategoryFusionParts=1.0x1"
+    ],
+    "mapCondTolerance": [],
+    "mapPoints": [
+      "use,0,0",
+      "ReactorPlug,-16,-16"
+    ],
+    "aUpdateCommands": [
+      "Destructable,StatDamage,ACTFusionMHDGenerator01Destroy,StatDamageMax,1.0"
+    ],
+    "mapGUIPropMaps": [],
+    "strPortraitImg": "ItmFusionMHDGenerator01Dmg02"
+  },
+  {
+    "strName": "ItmFusionMHDGenerator01Loose",
+    "strNameShort": "МГД-генератор",
+    "strNameFriendly": "Магнитогидродинамический (МГД) генератор (отдельно)",
+    "strDesc": "Магнитогидродинамический генератор от Сулейман. Использует магниты вдоль пути потока плазмы реактора и цикла выхлопа для выработки обычной электроэнергии.",
+    "strItemDef": "ItmFusionMHDGenerator01Loose",
+    "strType": "Item",
+    "aInteractions": [
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds": [
+      "IsSulaiman=1.0x1",
+      "IsFusionCoreModule=1.0x1",
+      "IsFusionMHDGenerator=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsCumbersome=1.0x1.0",
+      "StatBasePrice=1.0x12623.0",
+      "StatDismantleProgressMax=1.0x140",
+      "StatInstallProgressMax=1.0x1000",
+      "StatUninstallProgressMax=1.0x1000",
+      "StatMass=1.0x45.0",
+      "StatDamageMax=1.0x5",
+      "IsTechnology=1.0x1",
+      "IsElectronic=1.0x1",
+      "IsCategoryFusionParts=1.0x1"
+    ],
+    "aUpdateCommands": [
+      "Destructable,StatDamage,ACTFusionMHDGenerator01LooseDamage,StatDamageMax,1.0"
+    ],
+    "mapPoints": [
+      "use,0,-24"
+    ],
+    "mapSlotEffects": [
+      "drag",
+      "Blank"
+    ],
+    "mapGUIPropMaps": [
+      "Panel A",
+      "MeterBattery"
+    ],
+    "strPortraitImg": "ItmFusionMHDGenerator01Loose",
+    "jsonPI": "FusionMHDGenerator01Loose"
+  },
+  {
+    "strName": "ItmFusionMHDGenerator01Off",
+    "strNameShort": "МГД-генератор",
+    "strNameFriendly": "Магнитогидродинамический (МГД) генератор (выкл.)",
+    "strDesc": "Магнитогидродинамический генератор от Сулейман. Использует магниты вдоль пути потока плазмы реактора и цикла выхлопа для выработки обычной электроэнергии.",
+    "strItemDef": "ItmFusionMHDGenerator01Off",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [],
+    "aStartingConds": [
+      "IsSulaiman=1.0x1",
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsFusionCoreModule=1.0x1",
+      "IsFusionMHDGenerator=1.0x1",
+      "IsOff=1.0x1",
+      "IsPowerInputIgnore=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "StatBasePrice=1.0x12623.0",
+      "StatDismantleProgressMax=1.0x140",
+      "StatInstallProgressMax=1.0x1000",
+      "StatUninstallProgressMax=1.0x1000",
+      "StatMass=1.0x45.0",
+      "StatDamageMax=1.0x5",
+      "IsTechnology=1.0x1",
+      "IsElectronic=1.0x1",
+      "IsCategoryFusionParts=1.0x1"
+    ],
+    "mapCondTolerance": [],
+    "mapPoints": [
+      "use,0,0",
+      "PowerSource,-16,-16",
+      "ReactorPlug,-16,-16"
+    ],
+    "aUpdateCommands": [
+      "Destructable,StatDamage,ACTFusionMHDGenerator01Damage,StatDamageMax,1.0"
+    ],
+    "mapGUIPropMaps": [
+      "Panel A",
+      "MeterBattery"
+    ],
+    "aTickers": [
+      "Power"
+    ],
+    "strPortraitImg": "ItmFusionMHDGenerator01",
+    "jsonPI": "FusionMHDGenerator01",
+    "strAudioEmitter": null
+  },
+  {
+    "strName": "ItmFusionMHDGenerator01DmgLoose",
+    "strNameShort": "МГД-генератор",
+    "strNameFriendly": "Магнитогидродинамический (МГД) генератор (отдельно, повреждён)",
+    "strDesc": "Магнитогидродинамический генератор от Сулейман. Использует магниты вдоль пути потока плазмы реактора и цикла выхлопа для выработки обычной электроэнергии.",
+    "strItemDef": "ItmFusionMHDGenerator01DmgLoose",
+    "strType": "Item",
+    "aInteractions": [
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds": [
+      "IsFusionCoreModule=1.0x1",
+      "IsFusionMHDGenerator=1.0x1",
+      "IsDamaged=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsCumbersome=1.0x1.0",
+      "StatBasePrice=1.0x3156.0",
+      "StatDismantleProgressMax=1.0x140",
+      "StatInstallProgressMax=1.0x1000",
+      "StatUninstallProgressMax=1.0x1000",
+      "StatRepairProgressMax=1.0x3000",
+      "StatMass=1.0x45.0",
+      "StatDamageMax=1.0x8",
+      "IsTechnology=1.0x1",
+      "IsElectronic=1.0x1",
+      "IsCategoryFusionParts=1.0x1"
+    ],
+    "aUpdateCommands": [
+      "Destructable,StatDamage,ACTFusionMHDGenerator01LooseDestroy,StatDamageMax,1.0"
+    ],
+    "mapPoints": [
+      "use,0,-24"
+    ],
+    "mapSlotEffects": [
+      "drag",
+      "Blank"
+    ],
+    "mapGUIPropMaps": [],
+    "strPortraitImg": "ItmFusionMHDGenerator01Dmg02Loose"
+  },
+  {
+    "strName": "ItmCapacitor01",
+    "strNameShort": "Конденсатор",
+    "strNameFriendly": "Конденсатор лазера термоядерного класса",
+    "strDesc": "Массовый промышленный конденсатор от Коллектив Электрик. При подключении к источнику питания накапливает заряд для питания смежного высокоэнергетического оборудования, такого как лазерные решётки.",
+    "strItemDef": "ItmCapacitor01",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [],
+    "aStartingConds": [
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsFusionCoreModule=1.0x1",
+      "IsFusionCapacitor=1.0x1",
+      "IsPowerInputIgnore=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsCollectiveElectric=1.0x1",
+      "StatBasePrice=1.0x12623.0",
+      "StatDismantleProgressMax=1.0x140",
+      "StatInstallProgressMax=1.0x1000",
+      "StatUninstallProgressMax=1.0x1000",
+      "StatMass=1.0x45.0",
+      "StatDamageMax=1.0x5",
+      "IsTechnology=1.0x1",
+      "IsPowerObservable=1.0x1",
+      "IsCategoryFusionParts=1.0x1"
+    ],
+    "mapCondTolerance": [],
+    "mapPoints": [
+      "use,0,0",
+      "PowerSource,-8,-32",
+      "ReactorPlug,-8,-32"
+    ],
+    "aUpdateCommands": [
+      "Destructable,StatDamage,ACTCapacitor01Damage,StatDamageMax,1.0"
+    ],
+    "mapGUIPropMaps": [
+      "Panel A",
+      "MeterBattery"
+    ],
+    "strPortraitImg": "ItmCapacitor01",
+    "jsonPI": "Capacitor01",
+    "strAudioEmitter": "ItmBattery02Sound"
+  },
+  {
+    "strName": "ItmCapacitor01Dmg",
+    "strNameShort": "Конденсатор",
+    "strNameFriendly": "Конденсатор лазера термоядерного класса (повреждён)",
+    "strDesc": "Массовый промышленный конденсатор от Коллектив Электрик. При подключении к источнику питания накапливает заряд для питания смежного высокоэнергетического оборудования, такого как лазерные решётки.",
+    "strItemDef": "ItmCapacitor01Dmg",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [],
+    "aStartingConds": [
+      "IsDamaged=1.0x1",
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsFusionCoreModule=1.0x1",
+      "IsFusionCapacitor=1.0x1",
+      "IsPowerInputIgnore=1.0x1",
+      "IsSolid=1.0x1.0",
+      "IsCollectiveElectric=1.0x1",
+      "StatBasePrice=1.0x3156.0",
+      "StatInstallProgressMax=1.0x1000",
+      "StatUninstallProgressMax=1.0x1000",
+      "StatRepairProgressMax=1.0x3000",
+      "StatMass=1.0x45.0",
+      "StatDamageMax=1.0x8",
+      "IsTechnology=1.0x1",
+      "IsElectronic=1.0x1",
+      "IsCategoryFusionParts=1.0x1"
+    ],
+    "mapCondTolerance": [],
+    "mapPoints": [
+      "use,0,0",
+      "ReactorPlug,-8,-32"
+    ],
+    "aUpdateCommands": [
+      "Destructable,StatDamage,ACTCapacitor01Destroy,StatDamageMax,1.0"
+    ],
+    "mapGUIPropMaps": [],
+    "strPortraitImg": "ItmCapacitor01Dmg02"
+  },
+  {
+    "strName": "ItmCapacitor01Loose",
+    "strNameShort": "Конденсатор",
+    "strNameFriendly": "Конденсатор лазера термоядерного класса (отдельно)",
+    "strDesc": "Массовый промышленный конденсатор от Коллектив Электрик. При подключении к источнику питания накапливает заряд для питания смежного высокоэнергетического оборудования, такого как лазерные решётки.",
+    "strItemDef": "ItmCapacitor01Loose",
+    "strType": "Item",
+    "aInteractions": [
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds": [
+      "IsFusionCoreModule=1.0x1",
+      "IsFusionCapacitor=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsCollectiveElectric=1.0x1",
+      "IsCumbersome=1.0x1.0",
+      "StatBasePrice=1.0x12623.0",
+      "StatDismantleProgressMax=1.0x140",
+      "StatInstallProgressMax=1.0x1000",
+      "StatUninstallProgressMax=1.0x1000",
+      "StatMass=1.0x45.0",
+      "StatDamageMax=1.0x5",
+      "IsTechnology=1.0x1",
+      "IsElectronic=1.0x1",
+      "IsCategoryFusionParts=1.0x1"
+    ],
+    "aUpdateCommands": [
+      "Destructable,StatDamage,ACTCapacitor01LooseDamage,StatDamageMax,1.0"
+    ],
+    "mapPoints": [
+      "use,24,0"
+    ],
+    "mapSlotEffects": [
+      "drag",
+      "Blank"
+    ],
+    "mapGUIPropMaps": [
+      "Panel A",
+      "MeterBattery"
+    ],
+    "strPortraitImg": "ItmCapacitor01Loose",
+    "jsonPI": "Capacitor01Loose"
+  },
+  {
+    "strName": "ItmCapacitor01DmgLoose",
+    "strNameShort": "Конденсатор",
+    "strNameFriendly": "Конденсатор лазера термоядерного класса (отдельно, повреждён)",
+    "strDesc": "Массовый промышленный конденсатор от Коллектив Электрик. При подключении к источнику питания накапливает заряд для питания смежного высокоэнергетического оборудования, такого как лазерные решётки.",
+    "strItemDef": "ItmCapacitor01DmgLoose",
+    "strType": "Item",
+    "aInteractions": [
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds": [
+      "IsFusionCoreModule=1.0x1",
+      "IsFusionCapacitor=1.0x1",
+      "IsDamaged=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsCollectiveElectric=1.0x1",
+      "IsCumbersome=1.0x1.0",
+      "StatBasePrice=1.0x3156.0",
+      "StatDismantleProgressMax=1.0x140",
+      "StatInstallProgressMax=1.0x1000",
+      "StatUninstallProgressMax=1.0x1000",
+      "StatRepairProgressMax=1.0x3000",
+      "StatMass=1.0x45.0",
+      "StatDamageMax=1.0x8",
+      "IsTechnology=1.0x1",
+      "IsElectronic=1.0x1",
+      "IsCategoryFusionParts=1.0x1"
+    ],
+    "aUpdateCommands": [
+      "Destructable,StatDamage,ACTCapacitor01LooseDestroy,StatDamageMax,1.0"
+    ],
+    "mapPoints": [
+      "use,24,0"
+    ],
+    "mapSlotEffects": [
+      "drag",
+      "Blank"
+    ],
+    "mapGUIPropMaps": [],
+    "strPortraitImg": "ItmCapacitor01Dmg02Loose"
+  },
+  {
+    "strName": "ItmFusionPelletFeeder01Off",
+    "strNameShort": "Податчик гранул",
+    "strNameFriendly": "Топливоподатчик Сулейман (выкл)",
+    "strItemDef": "ItmFusionPelletFeeder01Off",
+    "strDesc": "Питатель гранул Сулейман. Совместно с топливным регулятором или запасом гранул корабля он подаёт твёрдые реагентные гранулы миллиметрового размера в позицию внутри ядра, где лазеры перегревают их в плазму и запускают термоядерную реакцию.",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [],
+    "aStartingConds": [
+      "IsSulaiman=1.0x1",
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsNonHighlightable=1.0x1",
+      "IsOff=1.0x1",
+      "IsFusionCoreModule=1.0x1",
+      "IsFusionPelletFeeder=1.0x1",
+      "IsPowerInputIgnore=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "StatFusionPelletFeederRate=1.0x1.0",
+      "StatBasePrice=1.0x5520.00",
+      "StatDismantleProgressMax=1.0x150",
+      "StatInstallProgressMax=1.0x1000",
+      "StatUninstallProgressMax=1.0x1000",
+      "StatMass=1.0x28.0",
+      "StatDamageMax=1.0x6",
+      "IsMechanical=1.0x1",
+      "IsCategoryFusionParts=1.0x1",
+      "IsSignalable=1.0x1"
+    ],
+    "mapCondTolerance": [],
+    "mapPoints": [
+      "Power,0,-16",
+      "ReactorPlug,0,-16"
+    ],
+    "mapGUIPropMaps": [
+      "Electrical"
+    ],
+    "strPortraitImg": "ItmFusionPelletFeeder01",
+    "aUpdateCommands": [
+      "Destructable,StatDamage,ACTFusionPelletFeeder01Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "aTickers": [
+      "Power"
+    ],
+    "jsonPI": "FusionPelletFeeder01",
+    "strAudioEmitter": "ItmFusionFuelRegulator01OffSound"
+  },
+  {
+    "strName": "ItmFusionPelletFeeder01Loose",
+    "strNameShort": "Податчик гранул",
+    "strNameFriendly": "Топливоподатчик Сулейман (отсоединён)",
+    "strItemDef": "ItmFusionPelletFeeder01Loose",
+    "strDesc": "Питатель гранул Сулейман. Совместно с топливным регулятором или запасом гранул корабля он подаёт твёрдые реагентные гранулы миллиметрового размера в позицию внутри ядра, где лазеры перегревают их в плазму и запускают термоядерную реакцию.",
+    "strType": "Item",
+    "aInteractions": [
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds": [
+      "IsSulaiman=1.0x1",
+      "IsOff=1.0x1",
+      "IsFusionCoreModule=1.0x1",
+      "IsFusionPelletFeeder=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsCumbersome=1.0x1.0",
+      "StatFusionPelletFeederRate=1.0x1.0",
+      "StatBasePrice=1.0x5520.00",
+      "StatDismantleProgressMax=1.0x150",
+      "StatInstallProgressMax=1.0x1000",
+      "StatUninstallProgressMax=1.0x1000",
+      "StatMass=1.0x28.0",
+      "StatDamageMax=1.0x6",
+      "IsMechanical=1.0x1",
+      "IsCategoryFusionParts=1.0x1"
+    ],
+    "mapPoints": [],
+    "mapGUIPropMaps": [],
+    "aUpdateCommands": [
+      "Destructable,StatDamage,ACTFusionPelletFeeder01LooseDamage,StatDamageMax,1.0"
+    ],
+    "mapSlotEffects": [
+      "drag",
+      "Blank"
+    ],
+    "strPortraitImg": "ItmFusionPelletFeeder01Loose"
+  },
+  {
+    "strName": "ItmFusionPelletFeeder01",
+    "strNameShort": "Податчик гранул",
+    "strNameFriendly": "Топливоподатчик Сулейман",
+    "strItemDef": "ItmFusionPelletFeeder01",
+    "strDesc": "Питатель гранул Сулейман. Совместно с топливным регулятором или запасом гранул корабля он подаёт твёрдые реагентные гранулы миллиметрового размера в позицию внутри ядра, где лазеры перегревают их в плазму и запускают термоядерную реакцию.",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [],
+    "aStartingConds": [
+      "IsSulaiman=1.0x1",
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsNonHighlightable=1.0x1",
+      "IsFusionCoreModule=1.0x1",
+      "IsFusionPelletFeeder=1.0x1",
+      "IsPowerInputIgnore=1.0x1",
+      "IsReadyHeat=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "StatFusionPelletFeederRate=1.0x1.0",
+      "StatBasePrice=1.0x5520.00",
+      "StatDismantleProgressMax=1.0x150",
+      "StatHeatArea=1.0x1",
+      "StatHeatVol=1.0x1.0",
+      "StatSolidTemp=1.0x333.0",
+      "StatInstallProgressMax=1.0x1000",
+      "StatUninstallProgressMax=1.0x1000",
+      "StatMass=1.0x28.0",
+      "IsPowered=1.0x1",
+      "StatDamageMax=1.0x6",
+      "IsMechanical=1.0x1",
+      "IsCategoryFusionParts=1.0x1",
+      "IsSignalable=1.0x1"
+    ],
+    "mapCondTolerance": [],
+    "mapPoints": [
+      "Power,0,-16",
+      "ReactorPlug,0,-16"
+    ],
+    "mapGUIPropMaps": [
+      "Panel A",
+      "FusionModuleGeneric",
+      "Electrical"
+    ],
+    "strPortraitImg": "ItmFusionPelletFeeder01",
+    "aTickers": [
+      "Power"
+    ],
+    "aUpdateCommands": [
+      "Heater,TIsAirtightNoHuman",
+      "Destructable,StatDamage,ACTFusionPelletFeeder01Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "jsonPI": "FusionPelletFeeder01",
+    "strAudioEmitter": "ItmFusionFuelRegulator01Sound"
+  },
+  {
+    "strName": "ItmFusionPelletFeeder01Dmg",
+    "strNameShort": "Податчик гранул",
+    "strNameFriendly": "Топливоподатчик Сулейман (повреждён)",
+    "strItemDef": "ItmFusionPelletFeeder01Dmg",
+    "strDesc": "Питатель гранул Сулейман. Совместно с топливным регулятором или запасом гранул корабля он подаёт твёрдые реагентные гранулы миллиметрового размера в позицию внутри ядра, где лазеры перегревают их в плазму и запускают термоядерную реакцию.",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [],
+    "aStartingConds": [
+      "IsDamaged=1.0x1",
+      "IsSulaiman=1.0x1",
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsNonHighlightable=1.0x1",
+      "IsOff=1.0x1",
+      "IsFusionCoreModule=1.0x1",
+      "IsFusionPelletFeeder=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "StatBasePrice=1.0x1112.00",
+      "StatDismantleProgressMax=1.0x50",
+      "StatInstallProgressMax=1.0x1000",
+      "StatUninstallProgressMax=1.0x1000",
+      "StatRepairProgressMax=1.0x3000",
+      "StatMass=1.0x28.0",
+      "StatDamageMax=1.0x19",
+      "IsMechanical=1.0x1",
+      "IsCategoryFusionParts=1.0x1"
+    ],
+    "mapCondTolerance": [],
+    "mapPoints": [
+      "ReactorPlug,0,-16"
+    ],
+    "mapGUIPropMaps": [],
+    "strPortraitImg": "ItmFusionPelletFeeder01Dmg02",
+    "aTickers": [],
+    "aUpdateCommands": [
+      "Destructable,StatDamage,ACTFusionPelletFeeder01Destroy,StatDamageMax,1.0"
+    ],
+    "strAudioEmitter": null
+  },
+  {
+    "strName": "ItmFusionPelletFeeder01DmgLoose",
+    "strNameShort": "Податчик гранул",
+    "strNameFriendly": "Топливоподатчик Сулейман (отсоединён, повреждён)",
+    "strItemDef": "ItmFusionPelletFeeder01DmgLoose",
+    "strDesc": "Питатель гранул Сулейман. Совместно с топливным регулятором или запасом гранул корабля он подаёт твёрдые реагентные гранулы миллиметрового размера в позицию внутри ядра, где лазеры перегревают их в плазму и запускают термоядерную реакцию.",
+    "strType": "Item",
+    "aInteractions": [
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds": [
+      "IsDamaged=1.0x1",
+      "IsSulaiman=1.0x1",
+      "IsOff=1.0x1",
+      "IsFusionCoreModule=1.0x1",
+      "IsFusionPelletFeeder=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsCumbersome=1.0x1.0",
+      "StatBasePrice=1.0x1112.00",
+      "StatDismantleProgressMax=1.0x50",
+      "StatInstallProgressMax=1.0x1000",
+      "StatUninstallProgressMax=1.0x1000",
+      "StatRepairProgressMax=1.0x3000",
+      "StatMass=1.0x28.0",
+      "StatDamageMax=1.0x19",
+      "IsMechanical=1.0x1",
+      "IsCategoryFusionParts=1.0x1"
+    ],
+    "mapPoints": [],
+    "mapGUIPropMaps": [],
+    "mapSlotEffects": [
+      "drag",
+      "Blank"
+    ],
+    "aUpdateCommands": [
+      "Destructable,StatDamage,ACTFusionPelletFeeder01LooseDestroy,StatDamageMax,1.0"
+    ],
+    "strPortraitImg": "ItmFusionPelletFeeder01Dmg02Loose"
+  }
+]

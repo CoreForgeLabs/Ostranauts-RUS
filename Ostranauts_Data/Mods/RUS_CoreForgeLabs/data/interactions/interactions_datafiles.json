@@ -1,0 +1,2356 @@
+[
+  {
+    "strName": "TEMPDataGeneric",
+    "strTitle": "Временные данные",
+    "strDesc": "Шаблонное взаимодействие для стандартных файлов данных.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": [],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "LootCondsUs": null,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataTXTHelioHoraInfo",
+    "strTitle": "PRISONER_INFO_HELIOHORA.TXT",
+    "strDesc": "Гелио Хора, бывший глава преступного синдиката «Шиповник». Поскольку Хора родился в 2023 году в Сан-Паулу на Земле, подробности его ранней жизни по большей части неизвестны. В ранний период развития венерианских аэростатов Хора работал в подрядных организациях и в итоге занялся закупкой материалов, что сделало его незаменимым в строительстве как Ньюкала, так и Энкантадо.\n\nИспользуя ресурсы и связи, накопленные при строительстве последнего, Хора основал Гран-при Энкантадо и в конечном итоге открыл неподалёку лаунж «Сол Вермельо». Согласно делу, возбуждённому против него правоохранительными органами, на момент ареста преступная империя Хоры включала подтасовку гонок, подкуп рабочих, хищение по контрактам, запугивание, пиратство и заказные убийства.\n\nВ рамках условий его ареста большая часть активов Хоры была передана влиятельному венерианскому бизнес-магнату, включая право собственности на лаунж «Сол Вермельо».",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIProkofiev",
+      "DataWIKIProkofievNotableInmates",
+      "DataWIKIProkofievHistory"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "LootCondsUs": "PLOT_Merga_IncreaseClue_Mogul",
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataBINPersonalAddressesOKLG",
+    "strTitle": "КОНТАКТЫ.BIN",
+    "strDesc": "Резервная копия базы данных с персональной адресной книгой менеджера на К-Лег.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIOKLG"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "LootCondsUs": null,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataBIN79",
+    "strTitle": "79.BIN",
+    "strDesc": "Похоже на какое-то демосценовое ПО, запускающее серию процедурных анимаций, зацикленных на числе 79.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": [],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "LootCondsUs": "CONDClueInspect",
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataVIDVlog10",
+    "strTitle": "VLOGYRINTH.VID",
+    "strDesc": "Видеодневник о повседневной жизни правозащитника, переживающего и документирующего убогие условия в Лабиринте.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKILabyrinth"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataVIDFilm01",
+    "strTitle": "THOSE_WITH_LOADED_GUNS.VID",
+    "strDesc": "Легальная копия боевика в жанре «равнины» от Пикок Пикчерз: «Те, кто с заряженными стволами: Унеси секрет в могилу».",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIPeacockPictures"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataVIDFilm02",
+    "strTitle": "THE_DISCONNECT(CLEAN).VID",
+    "strDesc": "Отредактированная копия жанрово-неопределимого фильма Пикок Пикчерз: «Разрыв связи: Те, кто знает — молчат. А те, кто говорит — не знают».",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIPeacockPictures"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataVIDFilm03",
+    "strTitle": "TIMELOCK1798_71215.VID",
+    "strDesc": "Пиратская копия популярного фильма Пикок Пикчерз о путешествиях во времени: «Таймлок: Это было просто ограбление. Теперь — что угодно, только не это».",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIPeacockPictures"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataVIDFilm04",
+    "strTitle": "DIAMONDS_CENSORED.VID",
+    "strDesc": "Отредактированная копия (с вырезанными пикантными сценами) знаменитого фильма Пикок Пикчерз без возрастного рейтинга: «Алмазы в грубой оправе: Он любил ту, которая любила только деньги».",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIPeacockPictures"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataVIDFilm05",
+    "strTitle": "SOUTHERN_HIGHLAND.VID",
+    "strDesc": "Легальная копия высокодраматичного фильма Пикок Пикчерз: «Южное нагорье: Долго, долго лететь вниз».",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIPeacockPictures"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataVIDFilm06",
+    "strTitle": "FAST&FULMINATING.VID",
+    "strDesc": "Пиратская нарезка всех экшн-сцен, гонок и любовных эпизодов из адреналинового фильма о банде венерианских облачных гонщиков: «Быстрые и яростные: С кастомными аэродинамическими крыльями и страстным протестом они никогда не перестают бороться за семью».",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKINewcal"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataTXTFanfic02",
+    "strTitle": "LOCUSPOCUS.TXT",
+    "strDesc": "Фанфик-повесть с экшеном и драмой, где главный герой — воплощение Локуса, ИИ-смотрителя Ханчжоу.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIHangzhou"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataSNDSilversmythRIP",
+    "strTitle": "SILVERSMYTH_RIP.SND",
+    "strDesc": "Низкокачественная запись с рук живого концерта популярной K-Pop сенсации «Сильверсмит», выступающей перед переполненной толпой на Ньюкале в атмосфере Венеры.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKINewcal"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataSNDSakuraNoir",
+    "strTitle": "SAKURANOIR.SND",
+    "strDesc": "Фьюжн-трек с классическими синьхуанскими инструментами и стилем в современной транс/панк-аранжировке: нынешний хит на Тарсис Лэндинг.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKITharsisLanding"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataSNDManifesto",
+    "strTitle": "MANIFESTO.SND",
+    "strDesc": "Вдумчивый, произнесённый вслух трактат о необходимости автономии и справедливом деле Галилеевой Конфедерации.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIFortSimpson"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataBINRoster_PMC",
+    "strTitle": "ROSTER_PMC.BIN",
+    "strDesc": "Детальный список участников одной из рьяных ЧВК, базирующейся на Кольцевой станции около Цереры.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIRingStation"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataBINPersonalAddressesVoltaire",
+    "strTitle": "КОНТАКТЫ.BIN",
+    "strDesc": "Резервная копия базы данных с персональной адресной книгой исследователя, работающего на Дивный Новый Мир ООО на Вольтере, Деймос, Марс.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIVoltaire"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataBINPersonalAddressesRingStation",
+    "strTitle": "КОНТАКТЫ.BIN",
+    "strDesc": "Резервная копия базы данных с персональной адресной книгой исследователя, работающего на пиратов-ставших-торговцами с Кольцевой станции около Цереры.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIRingStation"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataBINPersonalAddressesNewcal",
+    "strTitle": "КОНТАКТЫ.BIN",
+    "strDesc": "Резервная копия базы данных с персональной адресной книгой исследователя, работающего на жителей Ньюкала и соседних аэростатов.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKINewcal"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataBINPersonalAddressesProkofiev",
+    "strTitle": "КОНТАКТЫ.BIN",
+    "strDesc": "Резервная копия базы данных заключённых и персонала в зоне минимальной охраны исправительной колонии Прокофьев.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIProkofiev"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataBINPersonalAddressesFortSimpson",
+    "strTitle": "КОНТАКТЫ.BIN",
+    "strDesc": "Резервная копия базы данных контактов и друзей из Форт Симпсон, Ганимед, Юпитер.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIFortSimpson"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataBINPersonalAddressesAtlantis",
+    "strTitle": "КОНТАКТЫ.BIN",
+    "strDesc": "Резервная копия базы данных контактов и морских учёных из Атлантиды, Европа, Юпитер.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIAtlantis"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataBINAtlantisResearch",
+    "strTitle": "SIGHTINGS.BIN",
+    "strDesc": "Резервная копия базы данных наблюдений и отчётов о луске вблизи Атлантиды, Европа, Юпитер.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIAtlantis"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataBINPersonalAddressesJadeRabbit",
+    "strTitle": "КОНТАКТЫ.BIN",
+    "strDesc": "Резервная копия базы данных контактов и друзей из Нефритового Кролика, Луна.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIJadeRabbit"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataIMGSuperHarrison",
+    "strTitle": "HARRYMUSCLES.IMG",
+    "strDesc": "Приукрашенное изображение генерал-губернатора Титана Гаррисона «Гарри» Парра с подчёркнутой мускулатурой в позе героя боевика на фоне устаревших образов эпохи основания Старых Соединённых Штатов.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIVirginia"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataIMGThreeWolfMoons",
+    "strTitle": "3WOLFMOONS.IMG",
+    "strDesc": "Воющая волчья морда, драматично наложенная на три крупнейших спутника Юпитера: Ио, Европу и Ганимед.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIFortSimpson", "DataWIKIAtlantis"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataIMGXinhua",
+    "strTitle": "Хуанцзиньчжоу.IMG",
+    "strDesc": "Благодушное изображение Администратора Лао Дэна, лидера Тарсис Лэндинг, приглашающего зрителя на Золотую Неделю национальных праздников в честь 50-летия колонизации Тарсис Лэндинг.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKITharsisLanding"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataIMGXinhua02",
+    "strTitle": "Лай дэ хао! Буран ликай тунго цичжа!.IMG",
+    "strDesc": "Агрессивный пропагандистский плакат в старомодном тарсийском стиле с надписью «Приходи как положено! Или выходи через шлюз!».\n\nЭтот лозунг часто использовался протестующими в 30-х годах, когда марсианская иммиграция взлетела и Лабиринт был создан из Регионального центра обработки Ноктис.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKITharsisLanding", "DataWIKILabyrinth"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataIMGCryptid01",
+    "strTitle": "UFO_SIGHTING?!.IMG",
+    "strDesc": "До смешного размытое изображение странно выглядящего корабля, зависшего около Вольтера.\n\nУдивительно, как даже с технологиями на пороге 80-х никто не может получить более чёткие снимки НЛО, чем 100 лет назад.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIVoltaire"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataIMGMeat01",
+    "strTitle": "PPP.IMG",
+    "strDesc": "Закрытая схема генетически модифицированного мясного продукта с маркировкой «Проект Вечного Белка».\n\nПохоже на корпоративный прототип, который мог бы принести кругленькую сумму от недобросовестных покупателей.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": [],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "LootCondsUs": "CONDMeatDatafile",
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataIMGMeat02",
+    "strTitle": "INFESTATION.IMG",
+    "strDesc": "Плохо сфокусированное изображение с небрежной, наклонённой композицией, показывающее шкафчик, набитый до отказа сырым, волокнистым мясом.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": [],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "LootCondsUs": "CONDMeatDatafile",
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataSNDMeat01",
+    "strTitle": "SPACER_SHANTY.SND",
+    "strDesc": "Старая космическая песня неизвестного происхождения.\n\nДва рога, косой глаз и зуб в усмешке,\nНад раздвоенным копытом, как насмешка.\nИ из пустоты услышишь барабаны —\nТак приходит Козлочеловек из мрака.\nКозлочеловек идёт!\nКозлочеловек идёт!\nПод его взглядом разум твой падёт,\nВ его когтях душа твоя замрёт —\nТак Козлочеловек идёт!",
+    "strImage": "encounters/ENCPlanetSunrise",
+    "strColor": "Neutral",
+    "aInverse": [],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "LootCondsUs": "CONDMeatDatafile",
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataTXTFusionManual01",
+    "strTitle": "FUSION_AO_MANUAL_1_PARTS.TXT",
+    "strDesc": "КОМПОНЕНТЫ: Часть 1/3 оцифрованного Руководства по эксплуатации термоядерного реактора инерциального удержания Сулейман «Xx TW».\n\nЭтот реактор состоит из ядра и серии независимых модулей, необходимых для зажигания и поддержания термоядерной реакции. Список модулей включает:\n\n<b>Ядро:</b> Камера, где происходит реакция, и «головной» блок для связи модулей. Включает вход питания, выход питания и панель управления, а также серию из 12 входов для модулей (по 3 с каждой стороны). Каждый вход модуля может обеспечить все необходимые входы/выходы для подключённого модуля.\n\n<b>Лазерная решётка:</b> Используется для имплозии топливной таблетки, создавая термоядерную реакцию на мгновение. Требует большого количества энергии для выстрела, обеспечиваемой Лазерным конденсатором. Каждый лазер требует одного питателя таблеток. Подключается к входу модуля ядра.\n\n<b>Лазерный конденсатор:</b> Высокоэнергетический конденсатор для накопления энергии до достаточного уровня для выстрела лазеров. Один конденсатор может обслуживать до 2 лазеров. Подключается к входу модуля ядра.\n\n<b>Питатель таблеток:</b> Используется для подачи топливных таблеток в ядро реактора, где по ним стреляет лазер. Требует запаса D2O/He3 таблеток от Регулятора топлива. Каждому питателю нужен один лазер для наведения. Подключается к входу модуля ядра.\n\n<b>Регулятор топлива:</b> Модуль обработки реагентов, берущий D2O и He3 из соответствующих баков и формирующий таблетки для питателя. Один регулятор может обслуживать до 2 питателей. Подключается к входу модуля ядра.\n\n<b>Криопомпа:</b> Прокачивает криогенный He через реактор и компоненты для защиты от экстремального тепла реакции. Требует установленного где-то на корабле Криобака. Можно установить несколько криопомп для дополнительного охлаждения в режиме ЗАМКНУТОГО ЦИКЛА. Подключается к входу модуля ядра.\n\n<b>Полевая катушка:</b> Мощный электромагнит, устанавливаемый под ядром реактора для удержания и направления высокоэнергетической реакции от корабля. ПЕРЕДНЯЯ катушка — барьер между реакцией и кораблём, ЗАДНЯЯ — апертура для управления выхлопом/тягой.\n\n<b>МГД-генератор:</b> Опциональный магнитогидродинамический генератор, отводящий часть выхлопа реакции для производства электричества для перезарядки корабля. Подключается к входу модуля ядра.\n\n<b>Насос ядра:</b> Опциональный газовый насос для откачки ядра. Зажигание термоядерной реакции требует почти вакуума в ядре, и в случаях нахождения корабля в невакуумной среде (например, на планете) этот насос необходим для снижения давления в ядре ниже атмосферного. Подключается к входу модуля ядра.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": ["DataTXTFusionManual02", "DataTXTFusionManual03"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataTXTFusionManual02",
+    "strTitle": "FUSION_AO_MANUAL_2_OPS.TXT",
+    "strDesc": "ЭКСПЛУАТАЦИЯ: Часть 2/3 оцифрованного Руководства по эксплуатации термоядерного реактора инерциального удержания Сулейман «Xx TW».\n\n<b>Управление реактором</b>\nЗапуск реактора довольно прост с помощью индикаторных ламп в левом нижнем углу панели управления. Просто идите по списку, активируя каждый модуль по очереди, пока все лампы не загорятся зелёным. Лампы горят зелёным при нормальной работе системы, красным — когда система присутствует, но отключена, и не горят, если система повреждена или отсутствует.\n\nТехнически возможно запустить реактор без некоторых систем, таких как МГД, Крио, Насос ядра и Полевые катушки. Однако это следует делать только с полным пониманием связанных рисков.\n\n<b>Ползунок ПОТОК</b>\nПолзунок ПОТОК контролирует скорость подачи топливных таблеток в ядро и их зажигания лазерами. Минимальная настройка — количество, необходимое для поддержания реакции, максимальная — максимальная скорость обработки топлива таблетками и лазерами. Несоответствие числа питателей и лазеров ограничит максимальный ПОТОК по меньшему значению.\n\nУвеличение ПОТОКА увеличит расход топлива, а также температуру и давление в ядре.\n\n<b>Ползунок ЦИКЛ</b>\nПолзунок ЦИКЛ контролирует апертуру ЗАДНЕЙ Полевой катушки, позволяя выхлопу термоядерной реакции выходить из ядра, обеспечивая тягу. ЦИКЛ ЗАКРЫТ означает полное удержание реакции, ЦИКЛ ОТКРЫТ увеличивает апертуру для максимальной тяги.\n\nОткрытие ЦИКЛА вызовет снижение давления и температуры в ядре, уменьшая тягу и мощность ядра.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": ["DataTXTFusionManual01", "DataTXTFusionManual03"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataTXTFusionManual03",
+    "strTitle": "FUSION_AO_MANUAL_3_WARNINGS.TXT",
+    "strDesc": "ТЕХОБСЛУЖИВАНИЕ: Часть 3/3 оцифрованного Руководства по эксплуатации термоядерного реактора инерциального удержания Сулейман «Xx TW».\n\n<b>Разгерметизация реактора</b>\nЯдро реактора оснащено Абляционной облицовкой, поглощающей вредное рентгеновское излучение, проходящее через ПЕРЕДНЮЮ Полевую катушку. Эта стенка имеет ограниченный ресурс до замены.\n\nПока температура реактора в зелёной зоне или ниже, абляционная стенка может поглощать избыточное излучение с минимальным ущербом. Превышение зелёного диапазона температуры ядра начнёт истощать абляционную облицовку с возрастающей скоростью.\n\nЛампа ОБЛИЦОВКА ЯДРА начнёт мигать, когда придёт время замены. Лампа будет гореть постоянно, когда облицовка опасно ослаблена. Лампа РЕНТГЕН загорится при обнаружении опасного рентгеновского излучения снаружи ядра, обычно из-за полного истощения абляционной облицовки.\n\nЕсли реактор продолжит работать с истощённой облицовкой, повреждения будут накапливаться. При слишком сильных повреждениях ядра произойдёт разгерметизация, и ядро разорвётся в мощном взрыве, облучив всех на борту корабля.\n\n<b>Износ и повреждения модулей</b>\nЯдро и все модули могут изнашиваться со временем от использования, а также получать повреждения. В большинстве случаев изношенный модуль менее эффективен, чем новый. Поэтому может потребоваться регулировка управления реактором для компенсации.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": ["DataTXTFusionManual01", "DataTXTFusionManual02"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataTXTMeat01",
+    "strTitle": "PPP_History_01.TXT",
+    "strDesc": "Проект Вечного Белка был экспериментальной программой пищевой науки и биогенетики, направленной на создание здорового, долгохранящегося и самовоспроизводящегося источника белка для питания космолётчиков во время дальних перелётов. Совместная операция Дивный Новый Мир ООО (BNW) и «Хюн Ли Петвэр» (ХЛП) проводилась в основном в серии связанных марсианских лабораторий в отдалённом пустынном комплексе в нескольких сотнях километров от Тарсис Лэндинг.\n\nПроект получил известность сначала как предмет межпланетных этических дебатов, а затем как источник корпоративного позора после того, как несколько живых образцов каким-то образом вырвались из изоляции, покинули атмосферу и распространились по всей системе.",
+    "strImage": "encounters/ENCPlanetSunrise",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIHyunLeePetware",
+      "DataWIKIVoltaire",
+      "DataWIKITharsisLanding"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "LootCondsUs": "CONDMeatDatafile",
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataTXTMeat02",
+    "strTitle": "PPP_History_02.TXT",
+    "strDesc": "Проект Вечного Белка начался, когда доклад под названием «Содействие непрерывному клеточному росту в животных белках» начал распространяться в отделе Клонирования и Метабиологии Бета-комплекса объекта ДНМ в комплексе Вольтер на Деймосе. Теория, изложенная в докладе, гласила, что при правильном генетическом вмешательстве мясоподобный белок может приобрести свойства роста, аналогичные растениям, в частности способность поглощать углерод, кислород, азот и водород для стимуляции клеточного роста.",
+    "strImage": "encounters/ENCPlanetSunrise",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIVoltaire"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "LootCondsUs": "CONDMeatDatafile",
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataTXTMeat03",
+    "strTitle": "PPP_History_03.TXT",
+    "strDesc": "Увидев возможность конкурировать с корпоративным гигантом Фьючер Фудс, ДНМ основала отдел пищевой науки и начала серьёзно исследовать концепции, изложенные в докладе. Вскоре представители обратились к «Хюн Ли Петвэр» (ХЛП) для предоставления экспертизы в синтетическом разведении животных, а также производственной поддержки при масштабировании проекта. Профессор Пак Хён Ли, бывший сотрудник Корейской школы биотехнологии, в итоге вызвался стать руководителем проекта.",
+    "strImage": "encounters/ENCPlanetSunrise",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIHyunLeePetware", "DataWIKITrenchers"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "LootCondsUs": "CONDMeatDatafile",
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataTXTMeat04",
+    "strTitle": "PPP_History_04.TXT",
+    "strDesc": "К 2053 году корпоративное сотрудничество между ДНМ и HLP построило полностью функционирующий исследовательский и производственный комплекс в отдалённой пустыне за пределами Тарсис Лэндинг. Наполовину лаборатория, наполовину фабрика-ферма, комплекс Вечного Белка в итоге производил самовоспроизводящееся мясо, больше не требующее таких этапов, как животноводство и убой, позволяя более прямой, экономически эффективный и, возможно, этичный сбор продукта. Учитывая экологическую устойчивость вида, компактную клеточную структуру и привычность во многих культурных диетах, козы были выбраны в качестве вида-предшественника для самовоспроизводящегося белка.",
+    "strImage": "encounters/ENCPlanetSunrise",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIHyunLeePetware",
+      "DataWIKIVoltaire",
+      "DataWIKITharsisLanding"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "LootCondsUs": "CONDMeatDatafile",
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataTXTMeat05",
+    "strTitle": "PPP_History_05.TXT",
+    "strDesc": "Проект Вечного Белка подвергся широкой критике в марсианской системе, особенно со стороны христианских фундаменталистских групп со станции Капьонг, утверждавших, что ДНМ/ХЛП вмешивается в божественный замысел. Одна такая группа, «Ловцы человеков», начала протестовать у кампусов «Хюн Ли Петвэр» и частной резиденции Пак Хён Ли ещё до начала проекта.\n\nКогда движение сопротивления было на пике, «Ловцы» организовывали караваны в Тарсис Лэндинг и везли протестующих к пустынным объектам. В 2058 году им даже удалось внедрить крота на объект, который впоследствии слил тревожные кадры из инкубационных камер, изображающие бескостные мясные сгустки и, по-видимому, двуногих козлоподобных существ, подвешенных в химических резервуарах. ДНМ/ХЛП заявила, что кадры были подделаны, что совпало с эскалацией напряжённости и сообщениями о насилии против протестующих.",
+    "strImage": "encounters/ENCPlanetSunrise",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIHyunLeePetware", "DataWIKITharsisLanding"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "LootCondsUs": "CONDMeatDatafile",
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataTXTMeat06",
+    "strTitle": "PPP_History_06.TXT",
+    "strDesc": "Прорыв изоляции произошёл во время особенно жестокого протеста, когда ряд протестующих из «Ловцов человеков» сумел прорвать охрану лаборатории ДНМ/ХЛП. В ходе последовавшего хаоса протестующие проникли глубоко в объект, где они разгромили лаборатории, нанеся ущерб собственности на миллионы долларов.\n\nВ одном случае горстка протестующих разграбила генетическую лабораторию, где РНК различных видов выращивалась и сращивалась с зиготами коз-предшественников. В другом были разбиты инкубационные камеры, и полувыращенные образцы были оставлены задыхаться в атмосфере.",
+    "strImage": "encounters/ENCPlanetSunrise",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIHyunLeePetware",
+      "DataWIKIVoltaire",
+      "DataWIKITharsisLanding"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "LootCondsUs": "CONDMeatDatafile",
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataTXTMeat07",
+    "strTitle": "PPP_History_07.TXT",
+    "strDesc": "Как образцам ПВБ удалось покинуть планету, остаётся предметом чистых спекуляций. Однако, по данным местной диспетчерской службы, лабораторный корабль под названием <i>«Малый ключ Соломона»</i> покинул объект Тарсис вскоре после того, как протестующие прорвались на территорию. Корабль пропал без вести по сей день.",
+    "strImage": "encounters/ENCPlanetSunrise",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKITharsisLanding"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "LootCondsUs": "CONDMeatDatafile",
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataTXTMeat08",
+    "strTitle": "PPP_History_08.TXT",
+    "strDesc": "В годы после прорыва изоляции ДНМ/ХЛП сообщения о встречах с остатками образцов Вечного Белка распространились по всей системе. Космолётчики, по имеющимся данным, обнаруживали куски мяса на кораблях и дереликтах сначала в марсианской системе, а затем и далеко за её пределами. Свидетельства указывают, что хотя белок поначалу кажется дремлющим, контакт с атмосферными газами, такими как кислород, водород, азот и особенно углерод, способствует быстрому росту. Некоторые отчёты описывают, как у белка развиваются козлиные черты, включая зубы, рога, копыта и даже глаза.",
+    "strImage": "encounters/ENCPlanetSunrise",
+    "strColor": "Neutral",
+    "aInverse": [],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "LootCondsUs": "CONDMeatDatafile",
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataTXTMeat09",
+    "strTitle": "PPP_History_09.TXT",
+    "strDesc": "...Возможно, ещё более тревожными, чем остатки ПВБ, являются слухи о более развитом или даже прото-образце. Хотя никто не утверждает, что имел личный контакт с этим существом, истории описывают громадное двуногое козлоподобное создание. Свидетельства несколько различаются: изогнутые рога упоминаются изредка, а некоторые даже утверждают, что оно способно говорить. Суеверные космолётчики стали называть его Зигот-Человеком, хотя часто кажутся неохотными произносить это имя вслух.",
+    "strImage": "encounters/ENCPlanetSunrise",
+    "strColor": "Neutral",
+    "aInverse": [],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "LootCondsUs": "CONDMeatDatafile",
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataVIDMundane02",
+    "strTitle": "VISIT_TITAN.VID",
+    "strDesc": "Сенсационное туристическое видео, пытающееся привлечь посетителей в славную и патриотично выглядящую Виргинию, поднимающуюся изо льда Титана. «Больше и лучше Меркурия», — утверждает оно.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIVirginia"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataBINMergaSuspiciousGaps",
+    "strTitle": " .BIN",
+    "strDesc": "Файл с метаданными, указывающими на большое вложение, но без какого-либо содержимого.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": [],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "LootCondsUs": "CONDClueInspect",
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataBINMergaParanoidGaps",
+    "strTitle": "DEADMAN_SWITCH.TXT",
+    "strDesc": "Файл, указывающий, что он был настроен на отправку в случае смерти отправителя. Бессвязное содержимое включает параноидальный бред о призраках, преследующих их из-за того, что они знают.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": [],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "LootCondsUs": "CONDClueInspect",
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataIMGMergaLongFingerDeathMark",
+    "strTitle": "HAND_OF_DEATH.IMG",
+    "strDesc": "Низкокачественное изображение чьей-то кожи с синяком или почерневшей раной в форме руки с длинными пальцами.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": [],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "LootCondsUs": "CONDClueInspect",
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataTXTMergaLongFingerSerialKiller",
+    "strTitle": "BEWARE_THE_HAND.TXT",
+    "strDesc": "Бессвязная крипипаста о серийном убийце, повествующая о цепочке, вероятно, вымышленных людей, найденных мёртвыми без смертельных травм — только ожоги или синяки на коже в форме руки с длинными пальцами.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": [],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "LootCondsUs": "CONDClueInspect",
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataIMGMergaSingerObituary",
+    "strTitle": "DEATH_OF_A_LEGEND.TXT",
+    "strDesc": "Таблоидный некролог, сенсационно освещающий жизнь известной местной лаунж-певицы Чёрная Орхидея.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": [],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "LootCondsUs": "CONDClueInspect",
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIOKLG",
+    "strTitle": "Станция Ннамди Азикиве, 'К-Лег'",
+    "strDesc": "К-Лег — обиходное название станции Ннамди Азикиве, нелицензированной нигерийской колонии на астероиде 1036 Ганимед. Ганимед — астероид диаметром 33 км на эксцентричной околоземной орбите, подобно Эросу, который также проходит вблизи Марса. К-Лег служит как промежуточным пунктом для путешествий между Поясом/Марсом/Землёй, так и хабом для космолётчиков, но наиболее известен своими услугами и объектами по разборке кораблей.",
+    "strImage": "encounters/EncOKLGShipyard",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIOKLGStats",
+      "DataWIKIOKLGHistory",
+      "DataWIKIOKLGShipyard",
+      "DataWIKIOKLGBoneyard"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIOKLGStats",
+    "strTitle": "Статистика К-Лег",
+    "strDesc": "<b>Правительство:</b> Корпоративная республика\n<b>Глава государства:</b> Портовый смотритель Адейеми\n<b>Суверенитет:</b> Независимая (владелец — Айотимива Шипбрейкерс Компани)\n<b>Расположение:</b> 1036-Ганимед\n<b>Основана:</b> 2032\n<b>Основные порты:</b> Порт Азикиве\n<b>Промышленность:</b> Строительство космических кораблей\n<b>Валюта:</b> XNY, USD\n<b>Оценка населения:</b> 200 000\n<b>Языки:</b> Английский, мандарин\n<b>Религии:</b> Банту, буддизм",
+    "strImage": "encounters/EncFirstDockOKLG",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIOKLG",
+      "DataWIKIOKLGHistory",
+      "DataWIKIOKLGShipyard",
+      "DataWIKIOKLGBoneyard"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIOKLGHistory",
+    "strTitle": "История К-Лег",
+    "strDesc": "К-Лег был основан в 2032 году как промежуточная точка для Айотимива, нигерийской судоходной компании. Поселение состояло из пяти строений: заправочной станции, склада топлива и припасов, пузырчатого общежития и бара под названием Мескаформ. От первоначального поселения остались только заправочная станция и бар.\n\nВ 2036 году К-Лег вырос, когда практика Айотимива консервировать свои корабли на Ганимеде позволила корпорации успешно позиционировать себя как судоразборщика. Она принимала крупные контракты с Марса, Земли и Пояса и привлекала талантливых специалистов и иммигрантов со всей Системы. Позже корпорация приняла материальную и финансовую помощь от Тарсиса для модернизации инфраструктуры с целью превращения в официальную территорию Тарсиса. Однако после нескольких первоначальных платежей переговоры между сторонами застопорились. Материалы, предназначенные для командно-контрольного центра, предположительно были использованы для строительства Резиденции Портового смотрителя — роскошного служебного жилья для этой должности.\n\nПосле синдрома Кесслера и потери одного из крупнейших контрактов К-Лег активно инвестировал в свои верфи и услуги модернизации в попытке предотвратить долгосрочный экономический упадок.",
+    "strImage": "encounters/EncFirstDockOKLG_MES",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIOKLG",
+      "DataWIKIOKLGStats",
+      "DataWIKIOKLGShipyard",
+      "DataWIKIOKLGBoneyard"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIOKLGShipyard",
+    "strTitle": "Верфь разборщиков К-Лег",
+    "strDesc": "Корабли разбираются в одном из трёх Главных доков в центре Верфи разборщиков. Айотимива максимизирует прибыль, выполняя контракты как можно быстрее, снимая и утилизируя сырьё и легкодоступные компоненты. Это привело к возникновению вторичной экономики на Кладбище кораблей, где мусорщики охотятся за редкими деталями. Разборка может занять несколько недель для малых судов и до нескольких месяцев для крупных, таких как глубококосмические грузовики или баржи.",
+    "strImage": "encounters/EncOKLGShipyard",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIOKLG",
+      "DataWIKIOKLGStats",
+      "DataWIKIOKLGHistory",
+      "DataWIKIOKLGBoneyard"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIOKLGBoneyard",
+    "strTitle": "Кладбище кораблей К-Лег",
+    "strDesc": "Вокруг Верфи разборщиков располагается Кладбище кораблей, где десятки, даже сотни низкоприоритетных дереликтов ожидают разборки. Айотимива позволяет мусорщикам рыться в своих обломках в поисках редких или устаревших деталей — публично осуждая эту практику, но не предпринимая реальных усилий для её прекращения, — зная, что извлекает выгоду из вторичной экономики, которую их существование создаёт на К-Лег, и из трафика кораблей, ищущих их. Найти старые или редкие детали в Системе зачастую просто вопрос удачи на К-Лег — и гораздо дешевле, чем разыскивать оригинального производителя.",
+    "strImage": "encounters/EncFirstDockDerelict",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIOKLG",
+      "DataWIKIOKLGStats",
+      "DataWIKIOKLGHistory",
+      "DataWIKIOKLGShipyard"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIAtlantis",
+    "strTitle": "Станция Атлантида, Европа, спутник Юпитера",
+    "strDesc": "Атлантида — американская колония, расположенная в подповерхностном океане Европы. Нереанский океан стал местом открытия Луски — многоклеточных форм внеземной жизни. Атлантида — одна из немногих исключительно подводных колоний в Системе.",
+    "strImage": "encounters/ENCFirstDockAtlantis",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIAtlantisStats",
+      "DataWIKIAtlantisHistory",
+      "DataWIKIAtlantisInfrastructure"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIAtlantisStats",
+    "strTitle": "Статистика Атлантиды",
+    "strDesc": "<b>Правительство:</b> Президентская республика\n<b>Глава государства:</b> Президент Лидия Уокер\n<b>Суверенитет:</b> Независимая (ранее — собственность США)\n<b>Расположение:</b> Европа\n<b>Основана:</b> 2035\n<b>Основные порты:</b> Порту-Нуэво\n<b>Промышленность:</b> Добыча воды, ксенобиология\n<b>Валюта:</b> USD\n<b>Оценка населения:</b> 200 000\n<b>Языки:</b> Английский\n<b>Религии:</b> Христианство",
+    "strImage": "datafiles/ENCAtlantis_logo",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIAtlantis",
+      "DataWIKIAtlantisHistory",
+      "DataWIKIAtlantisInfrastructure"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIAtlantisHistory",
+    "strTitle": "История Атлантиды",
+    "strDesc": "Европа была заселена в 2035 году американской исследовательской экспедицией Нерей-3. Нерей-3 основала исследовательский форпост в подповерхностном океане Европы для поиска внеземной жизни. Поиск увенчался успехом: в точке Мосман, огромном термальном источнике, дистанционно управляемые аппараты обнаружили сложную биоморскую экосистему длинных, тонких морских существ, названных Луска.\n\nВо время Переворота на Ганимеде Атлантида оставалась нейтральной. Опросы, проведённые Бюро переписи Атлантиды, показали, что только 11% граждан имели твёрдые убеждения относительно продолжающегося конфликта на других галилеевых спутниках, и лишь 26% вообще были осведомлены о проблеме. Изоляционизм остаётся одной из определяющих черт атлантической политики, и многие представители молодого поколения вряд ли покинут колонию при жизни.\n\nВ результате этой позиции Галилеева Конфедерация поддерживает блокаду в Порто-Нуэво, призванную санкционировать внемировую торговлю с Атлантидой. На сегодняшний день это оказало мало влияния на в основном самодостаточную колонию, хотя, по сообщениям, создало прибыльные возможности для контрабанды для желающих и способных.",
+    "strImage": "encounters/ENCLusca",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIAtlantis",
+      "DataWIKIAtlantisStats",
+      "DataWIKIAtlantisInfrastructure"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIAtlantisInfrastructure",
+    "strTitle": "Инфраструктура Атлантиды",
+    "strDesc": "Атлантида — подводная колония в мезо- и батипелагических зонах океана. Океанское дно слишком глубоко для закрепления колонии, поэтому она крепится к ледяным щитам «над головой». Модульные жилища связаны вместе длинными нитями, уходящими в море. Зоны с высоким трафиком — торговля, промышленность и услуги — располагаются наверху, а жилые зоны и общественные сооружения вроде морских ферм и генераторов — внизу. Доки для субмарин разбросаны хаотично каждые несколько сотен метров.\n\nВнемировые посетители ограничены зонами с меткой «Лемурия», включающими вышеупомянутые торговые и промышленные районы. Зоны с меткой «Гиперборея» или «Гиперборейские» закрыты, включая военные базы, исследовательские институты и многие частные резиденции.",
+    "strImage": "encounters/ENCFirstDockAtlantis",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIAtlantis",
+      "DataWIKIAtlantisStats",
+      "DataWIKIAtlantisHistory"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIFortSimpson",
+    "strTitle": "Станция Форт Симпсон, Ганимед, спутник Юпитера",
+    "strDesc": "Форт-Симпсон — столичная колония революционного правительства Галилеевой Конфедерации. Она расположена на и под палимпсестным кратером Лагаш Сулькус на спутнике Юпитера Ганимеде.",
+    "strImage": "encounters/ENCPlanetSunrise",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIFortSimpsonStats",
+      "DataWIKIFortSimpsonHistory",
+      "DataWIKIGalileanConfederacyHistory",
+      "DataWIKIGalileanConfederacyHistory2",
+      "DataWIKIGalileanConfederacyHistory3"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIFortSimpsonStats",
+    "strTitle": "Статистика Форт Симпсон",
+    "strDesc": "<b>Правительство:</b> Федеральная демократия\n<b>Глава государства:</b> Президент Эдмунд Маркхэм\n<b>Суверенитет:</b> Собственность Галилеевой Конфедерации\n<b>Расположение:</b> Ганимед\n<b>Основана:</b> 2054\n<b>Основные порты:</b> Порт Независимости\n<b>Промышленность:</b> Текстиль, боеприпасы\n<b>Валюта:</b> USD, XNY\n<b>Оценка населения:</b> 1 200 000\n<b>Языки:</b> Английский, мандарин\n<b>Религии:</b> Христианство",
+    "strImage": "encounters/ENCPlanetSunrise",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIFortSimpson",
+      "DataWIKIFortSimpsonHistory",
+      "DataWIKIGalileanConfederacyHistory",
+      "DataWIKIGalileanConfederacyHistory2",
+      "DataWIKIGalileanConfederacyHistory3"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIFortSimpsonHistory",
+    "strTitle": "История Форт Симпсон",
+    "strDesc": "Американская колония в Лагаш Сулькус изначально называлась Город Ганимед и была основана в 2035 году вместе с другими внеземными колониями Китая, Бразилии и Нигерии. Относительно гостеприимные условия на Ганимеде — наличие магнитосферы, умеренный радиационный фон, нагретый реголит от приливных деформаций, а также поверхностный лёд и другие минералы, доступные малой промышленности — поощряли частную или «дикую» колонизацию. Отношения между Городом Ганимед, другими национальными колониями и дикими колониями поначалу были взаимовыгодными, но испортились, когда корпоративные интересы начали препятствовать исходящей помощи и/или торговле. Враждебное отношение корпораций к диким колониям нарастало десятилетиями и в итоге вылилось в то, что иногда называют Переворотом на Ганимеде или Войной за галилеево самоопределение.\n\nГалилеева Конфедерация, в основном состоящая из граждан Старой Америки, в настоящее время контролирует регион и объединённые поселения благодаря владению двумя из трёх космопортов на Ганимеде и Порто-Нуэво на Европе. Однако десятки малых и средних поселений всё ещё заявляют о суверенитете, вплоть до смежных кварталов в оригинальных куполах.",
+    "strImage": "encounters/ENCPlanetSunrise",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIFortSimpson",
+      "DataWIKIFortSimpsonStats",
+      "DataWIKIGalileanConfederacyHistory",
+      "DataWIKIGalileanConfederacyHistory2",
+      "DataWIKIGalileanConfederacyHistory3"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIGalileanConfederacyHistory",
+    "strTitle": "История Галилеевой Конфедерации ч.1",
+    "strDesc": "Американские и китайские корпорации в национальных колониях давили на местные власти, чтобы те объявили вне закона диких колонистов Ганимеда или обложили их налогами. Одновременно они нанимали детективов из агентств вроде Обейд для расследования диких участков. Эти детективы, часто выдавая себя за наёмных рабочих, искали на участках что-либо преступное или аморальное, что их заказчики могли использовать для настройки общественного мнения против колонистов и принуждения властей к действиям. Однако колонисты быстро привыкли к этим интригам, и их расправы над шпионами были жестокими.\n\n<b>Убийства в Макклоски</b>\nТрения между корпорациями и свободными поселенцами достигли апогея, когда Обейд ответила силой на казнь одного из своих агентов. Отряд из двенадцати тяжеловооружённых детективов вошёл в Макклоски, усмирил взрослых мужчин и женщин и один за другим снимал с них шлемы на площади поселения, смертельно подвергая их разрежённой атмосфере Ганимеда. Записи с микродронов просочились обратно в города. В ответ шесть других усадеб сформировали отряд из пятидесяти двух человек и отбили комплекс в одностороннем бою.\n\nКогда второй отряд отступал со спасёнными взрослыми и детьми, прибыли боевые корабли из Города Ганимед. После обстрела поселенцев ракетами «воздух-земля» корабли прекратили атаку, и немногие оставшиеся поселенцы бежали. Приказ о прекращении атаки, как выяснилось, исходил из канцелярии губернатора, а именно от самой губернатора Симпсон, что привело к её отставке через неделю.",
+    "strImage": "encounters/ENCPlanetSunrise",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIFortSimpson",
+      "DataWIKIFortSimpsonStats",
+      "DataWIKIFortSimpsonHistory",
+      "DataWIKIGalileanConfederacyHistory",
+      "DataWIKIGalileanConfederacyHistory2",
+      "DataWIKIGalileanConfederacyHistory3"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIGalileanConfederacyHistory2",
+    "strTitle": "История Галилеевых спутников ч.2: Гражданская война и переворот на Ганимеде",
+    "strDesc": "Дикие колонисты Ганимеда, зная, что дальнейшие репрессии неизбежны после убийств в Макклоски, организовались под знаменем Галилеевой Конфедерации. Они агитировали за насильственную революцию и запрет мегакорпораций вроде Эллайд Chemicals и Troy Jupiter на галилеевых спутниках. В городах революционеры, толпы и разрозненные фракции независимо объединялись под именем Конфедерации. Пока бывшая губернатор Симпсон присоединилась к диким колонистам в Эссексе, революционная толпа в Городе Ганимед линчевала её преемника Карла Ступиса, топ-менеджера Эллайд Chemicals. В Силае революционеры уничтожили гидрокс-объект и захватили три межпланетных грузовика в сухом доке. В Ново-Сальвадоре беспорядки и мародёрство конфедератов унесли шестнадцать жизней из-за декомпрессии.\n\nВласти Ганимеда были не готовы справиться с организованным инакомыслием и запросили помощь у частных военных сил на Церере. От запроса до прибытия этот процесс занял более месяца. За это время ополчения на Ганимеде связались друг с другом и начали партизанскую войну против крупных городов. Защитники, хотя и лучше вооружённые и обученные, уступали числом и быстро теряли общественную поддержку, пока про-революционная пропаганда заполняла местные ленты. Убийство изгнанной губернатора Симпсон детективами Обейд обернулось катастрофой, фактически сделав её мученицей. После падения Города Ганимед под натиском Конфедерации он был переименован в Форт Симпсон в её честь на фоне лихорадочных попыток укрепить колонию против приближающихся церерианских сил.\n\nКолонии на Ио и Каллисто объявили о верности новой Конфедерации, однако их относительный размер привёл к соразмерно меньшему числу и масштабу революционных действий. Порто-Нуэво на Европе вступило в союз с Конфедерацией, но гораздо более крупная колония Атлантида осталась нейтральной в конфликте.",
+    "strImage": "encounters/ENCPlanetSunrise",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIFortSimpson",
+      "DataWIKIFortSimpsonStats",
+      "DataWIKIFortSimpsonHistory",
+      "DataWIKIGalileanConfederacyHistory",
+      "DataWIKIGalileanConfederacyHistory2",
+      "DataWIKIGalileanConfederacyHistory3"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIGalileanConfederacyHistory3",
+    "strTitle": "История Галилеевых спутников ч.3: Конфедерация и пушки Ганимеда",
+    "strDesc": "К тому времени, когда церерианские силы достигли космоса Ганимеда после Переворота, ни один из городов Конфедерации не был готов к космической войне, не имея ни значительных возможностей для выхода на орбиту в виде кораблей и топлива, ни дальнобойного вооружения. Тем не менее города отвергли условия, предложенные враждебными военными, и решительно готовились к бою. Маловероятная победа Конфедерации приписывается разрушительному эффекту нескольких ключевых орбитальных оборонительных систем, замаскированных под астероиды или космический мусор. Пушки Ганимеда, как их называют, расфрагментировали многие тормозящие наёмничьи корабли, серьёзно ограничив их наступательные возможности, хотя пушки были быстро уничтожены захватчиками после обнаружения. В итоге, после высадок в Силае и Форт Симпсон и первоначально успешных наземных боёв, наёмники отступили, сославшись на контрактный спор и невыплаченные убытки. Старые колониальные интересы не желали продолжать военные действия. Галилеева Конфедерация выжила.\n\nВ течение следующего года Конфедерация разделила свою территорию на штаты в соответствии со своими фракциями и заключила под стражу как инакомыслящих, так и сочувствующих врагу. Нарушения прав человека ранней Конфедерацией, включая бессрочное содержание под стражей без суда, пытки и незаконные казни, зафиксированы за пределами планеты, хотя категорически отрицаются её нынешним руководством. В ответ на продолжающийся нейтралитет Европы корабли Конфедерации блокировали её космопорт, без видимого эффекта.\n\nПоблизости шахты, принадлежащие Troy Jupiter, пережили месячные забастовки в суперкластере L4 Юпитера — подражатели, вдохновлённые галилеевой сагой. Эти забастовки были в конечном итоге жестоко подавлены, поскольку шахтёры не имели ресурсов, персонала и других преимуществ галилеевых спутников.",
+    "strImage": "encounters/ENCPlanetSunrise",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIFortSimpson",
+      "DataWIKIFortSimpsonStats",
+      "DataWIKIFortSimpsonHistory",
+      "DataWIKIGalileanConfederacyHistory",
+      "DataWIKIGalileanConfederacyHistory2",
+      "DataWIKIGalileanConfederacyHistory3"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIHangzhou",
+    "strTitle": "Орбитальный Ханчжоу, цилиндр О'Нилла на орбите Марса",
+    "strDesc": "Орбитальный Ханчжоу (Ханчжоу Гун) — космическая среда обитания типа цилиндра О'Нейла. За два десятилетия она была построена из богатых минералами троянских астероидов в пятой точке Лагранжа Марса. Интерьер колонии был спроектирован так, чтобы напоминать и даже превосходить земную среду: гравитация вращения около 1G, 24-часовой земной день и устойчивая симбиотическая экосистема.",
+    "strImage": "encounters/ENCPlanetSunrise",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIHangzhouStats",
+      "DataWIKIHangzhouHistory",
+      "DataWIKIHangzhouTourismAndImmigration",
+      "DataWIKIHangzhouWestLake"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIHangzhouStats",
+    "strTitle": "Статистика Ханчжоу",
+    "strDesc": "<b>Правительство:</b> Плутократия\n<b>Глава государства:</b> Президент Бай Чжихао\n<b>Суверенитет:</b> Независимая\n<b>Расположение:</b> Марс L5\n<b>Основана:</b> Строительство начато в 2035, завершено в 2055\n<b>Основные порты:</b> Цяньтанмэнь (钱塘门)\n<b>Промышленность:</b> Финансовые услуги, сельское хозяйство\n<b>Валюта:</b> XNY\n<b>Оценка населения:</b> 3 000 000\n<b>Языки:</b> Мандарин, английский\n<b>Религии:</b> Буддизм, христианство, ислам, индуизм",
+    "strImage": "datafiles/ENCHangzhou_logo",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIHangzhou",
+      "DataWIKIHangzhouHistory",
+      "DataWIKIHangzhouTourismAndImmigration",
+      "DataWIKIHangzhouWestLake"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIHangzhouHistory",
+    "strTitle": "История Ханчжоу",
+    "strDesc": "Орбитальный Ханчжоу был построен совместным предприятием десятков земных наций и сотен частных инвесторов по всей Системе. Проектная фирма Апогей Мегаинжиниринг (ныне «Апогей») предложила идиллическую землеподобную среду, дом вдали от дома. От замысла до завершения Ханчжоу строился почти двадцать лет — и большинство инвесторов за этот период пережили одну или несколько смен руководства, так что энтузиазм к проекту то разгорался, то угасал — однако общепризнано, что ROI для тех немногих счастливчиков, кто вложился, невообразимо высок.",
+    "strImage": "encounters/ENCPlanetSunrise",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIHangzhou",
+      "DataWIKIHangzhouStats",
+      "DataWIKIHangzhouTourismAndImmigration",
+      "DataWIKIHangzhouWestLake"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIHangzhouTourismAndImmigration",
+    "strTitle": "Туризм и иммиграция Ханчжоу",
+    "strDesc": "Доступ к станции и внутри неё строго регламентирован. Граждане могут передвигаться свободно, но должны предъявлять удостоверение личности при пересечении границы у кольцевого хаба или на воздушном такси. Неграждане могут приобрести статус аффилированного лица, обычно зарезервированный для посетителей с постоянными делами на станции, что позволяет им по прибытии подать заявку на 72-часовую деловую визу HG-1. Пассажиры кораблей могут участвовать в лотерее на 24-часовую туристическую визу G-2. Превышение срока визы вызывает сигнал тревоги, крупный штраф и эскорт дроном безопасности обратно к судну или депортацию в Лабиринт.\n\nE-2A и E-2B — постоянные рабочие визы для квалифицированного и неквалифицированного труда. Хотя они были созданы для допуска инженеров и строителей для обслуживания станции и технически всё ещё используются для этой цели, на практике они применяются для кабального труда. Поместья могут спонсировать от одного до десятков проживающих работников E-2. Уровень жизни Ханчжоу по сравнению с остальной Системой настолько высок, что спрос намного превышает предложение. В околомарсианском пространстве существует очередь кандидатов на ближайшее десятилетие, и отчаявшиеся люди часто тратят последние средства на поездку в Цяньтанмэнь, надеясь произвести впечатление на жителей Ханчжоу, которых они встретят в пути.\n\nОбладатели E-2 должны носить тонкий серебряный браслет с RFID-чипом, содержащий данные их визы и биометрические данные.",
+    "strImage": "encounters/ENCPlanetSunrise",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIHangzhou",
+      "DataWIKIHangzhouStats",
+      "DataWIKIHangzhouHistory",
+      "DataWIKIHangzhouWestLake"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIHangzhouWestLake",
+    "strTitle": "Западное озеро Ханчжоу",
+    "strDesc": "Западное озеро — название водохранилища Ханчжоу и окружающего его ландшафта. Недвижимость на Западном озере и вокруг него — без сомнения, самая дорогая в Системе. Медианная цена продажи дома на Западном озере остаётся на уровне или около двухсот годовых зарплат (до налогов) ученика техника или младшего унтер-офицера флота Тарсис.\n\nТипичное домохозяйство располагается на объёмном участке почти в один акр, включая частное воздушное пространство и бесполётную зону. Главная структура — традиционная китайская планировка домов вокруг двора, и в зависимости от размера и богатства поместья может иметь множество внутренних дворов и крыльев, добавленных модульно. Нумерология включена в дизайн по древней имперской моде, и домохозяйства стараются иметь 9, 99 или 999 комнат где возможно. Дома обычно обращены к солнечному зеркалу Орбитали. В цветах красная черепица и стены — для счастья, и многие имеют жёлтую кровельную черепицу в имперском стиле.\n\nСады вокруг дома в основном самоподдерживающиеся, хотя E-2 часто видимо ухаживают за ними или за системами мониторинга. Нанотехнологический охранный ковёр слушает и ощущает вторжения, а дроны общественной безопасности патрулируют небо, сканируя территорию гиперспектральной съёмкой (тщательно избегая заглядывать в частные дома). Сами сады тщательно организованы вокруг определённых точек обзора и предлагаемых ими эмоциональных состояний, таких как лучшее место для наблюдения «рассвета» или где дождь на листьях наиболее впечатляющ. Другие части скрывают уединённые киоски и павильоны, гармонично сливающиеся с природой, где могут проводиться частные вечеринки и встречи.\n\nЗнаком большого статуса является частный причал, выходящий на само Западное озеро, чтобы можно было рыбачить. Закон там такой же, как в остальной Системе: что поймал — твоё.",
+    "strImage": "encounters/ENCPlanetSunrise",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIHangzhou",
+      "DataWIKIHangzhouStats",
+      "DataWIKIHangzhouHistory",
+      "DataWIKIHangzhouTourismAndImmigration"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIJadeRabbit",
+    "strTitle": "Нефритовый кролик, Луна, спутник Земли",
+    "strDesc": "Нефритовый кролик (Юйту) — старейшая внеземная колония в Системе помимо Международной космической станции. Она началась как исследовательская база, основанная в 2021 году, вскоре после завершения строительства китайского космического лифта. Она была названа в честь китайского лунохода, который сам был назван в честь домашнего кролика Чанъэ, богини Луны в китайской мифологии.",
+    "strImage": "encounters/ENGFirstDockJadeRabbit",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIJadeRabbitStats",
+      "DataWIKIJadeRabbitHistory",
+      "DataWIKIJadeRabbitDevelopmentAndDecay",
+      "DataWIKIJadeRabbitTourism"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIJadeRabbitStats",
+    "strTitle": "Статистика Нефритового Кролика",
+    "strDesc": "<b>Правительство:</b> Социалистическая республика\n<b>Глава государства:</b> Председатель Ли\n<b>Суверенитет:</b> Де-юре собственность Старого Китая, де-факто независимая\n<b>Расположение:</b> Море Дождей, Луна\n<b>Основана:</b> 2022\n<b>Основные порты:</b> Шацзян (Раствор, 砂浆)\n<b>Промышленность:</b> Добыча He3, туризм\n<b>Валюта:</b> CNY\n<b>Оценка населения:</b> 800 000\n<b>Языки:</b> Мандарин, английский\n<b>Религии:</b> Буддизм",
+    "strImage": "encounters/ENGFirstDockJadeRabbit",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIJadeRabbit",
+      "DataWIKIJadeRabbitHistory",
+      "DataWIKIJadeRabbitDevelopmentAndDecay",
+      "DataWIKIJadeRabbitTourism"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIJadeRabbitHistory",
+    "strTitle": "История Нефритового кролика",
+    "strDesc": "До колонизационной гонки Нефритовый кролик развивался одновременно как промежуточный пункт для миссий Земля-Марс и как туристическое направление для сверхбогатых. Однако космический туризм не стал жизнеспособной индустрией до гораздо более позднего периода века, и не на Луне, поскольку большинство ранних эмигрантов с Земли были рабочими, направлявшимися в Пояс, на Марс и к прибыльным участкам Внешней системы.\n\nКогда Синьхуа свергло Старый Китай в 2051 году, многие из Коммунистической партии бежали в Пакистан; ещё меньше смогли тайно добраться до Нефритового кролика, где руководство публично осудило новый режим. Дипломатические усилия Синьхуа по (повторному) утверждению права собственности на Нефритового кролика продолжались до 2059 года, когда были прерваны синдромом Кесслера. Периодическая связь Нефритового кролика с Синьхуа — один из немногих источников информации в Системе о Земле, хотя многие считают её ложной, учитывая отказ Нефритового кролика объяснить, как у них есть эта связь.",
+    "strImage": "encounters/ENGFirstDockJadeRabbit",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIJadeRabbit",
+      "DataWIKIJadeRabbitStats",
+      "DataWIKIJadeRabbitDevelopmentAndDecay",
+      "DataWIKIJadeRabbitTourism"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIJadeRabbitDevelopmentAndDecay",
+    "strTitle": "Развитие и упадок Нефритового кролика",
+    "strDesc": "Большая часть инфраструктуры Луны так и не была достроена и была заброшена, когда деловые интересы переместились на Марс и в Пояс. Рабочие уходили с раскопок посреди разработки, оставляя открытую проводку, огромные добывающие дроны простаивающими или даже активно копающими, обработанную еду и карточные игры лежащими в живых картинах, собирающими пыль, сохранённые вакуумом. Стартовые комплексы могли иметь две готовые площадки, но сетка зонирующих маяков показывала, где должны были быть ещё семь. Маглев-сеть между Нефритовым кроликом и крупными поселениями так и не была достроена, и основные линии обрываются в полувырытых траншеях, ожидающих опорных пилонов. Поселения, не связанные маглевом, в основном потерпели неудачу, что привело к экономической депрессии и городам-призракам.\n\nПреобладание пустых и недостроенных жилых районов и заброшенных стартовых комплексов сделало Луну привлекательной для сквоттеров и других людей, живущих вне закона. На Луне большое транзитное население, которое в целом ведёт опасную и отчаянную жизнь без поддержки социальных служб или базовых потребностей. Входя в заброшенные комплексы на Луне, есть неплохой шанс найти транзитное население мёртвым от голода или удушья, или живым, но враждебным и завидующим новичкам.\n\nОсновой жизни Луны являются предприятия по добыче и переработке гелия-3 в Нефритовом кролике. Нефритовый кролик не может конкурировать с изобилием ресурсов на Уране, Сатурне и Нептуне, но может похвастаться самым зрелым процессом извлечения в системе, поскольку добыча началась на заре космической колонизации. Меньшие накладные расходы при доставке топлива во Внутреннюю систему позволяют ему оставаться конкурентоспособным. Лунные транспортные компании выводят топливные баржи на низкоэнергетические переходные орбиты, позволяя этим «тихоходам» добираться до пунктов назначения во Внутренней системе за долю стоимости обычного разгона, но в течение недель или месяцев.",
+    "strImage": "encounters/ENGFirstDockJadeRabbit",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIJadeRabbit",
+      "DataWIKIJadeRabbitStats",
+      "DataWIKIJadeRabbitHistory",
+      "DataWIKIJadeRabbitTourism"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIJadeRabbitTourism",
+    "strTitle": "Туризм Нефритового кролика",
+    "strDesc": "Ранние части Нефритового кролика и близлежащих поселений были построены космическими службами в партнёрстве с международными гостиничными компаниями для космического туризма. Чтобы привлечь сверхбогатых инвесторов и клиентов, эти отели были спроектированы в классическом стиле ар-деко и предлагали комфорт на уровне пятизвёздочных и выше курортов на Земле.\n\nНекоторые просто не нашли достаточно клиентов. Другие, как отель Маре Имбриум, пережили странные, громкие эпизоды массового психоза и смерти. Расцвет космического туризма покинул Систему так же быстро, как и пришёл, и не вернулся почти тридцать лет — и не на Луну.",
+    "strImage": "encounters/ENGFirstDockJadeRabbit",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIJadeRabbit",
+      "DataWIKIJadeRabbitStats",
+      "DataWIKIJadeRabbitHistory",
+      "DataWIKIJadeRabbitDevelopmentAndDecay"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKINewcal",
+    "strTitle": "Ньюкал, город-аэростат в атмосфере Венеры",
+    "strDesc": "Новая Калифорния, Ньюкал, — де-факто столица аэростатных колоний Венеры и единственная достаточно крупная, чтобы считаться мегаполисом. Город — современный аэростат, спроектированный после первой волны экспериментальных жилищ в верхней атмосфере Венеры.",
+    "strImage": "encounters/ENCFirstDockNewcal",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKINewcalStats",
+      "DataWIKINewcalHistory",
+      "DataWIKINewcalDesign",
+      "DataWIKINewcalPiracy"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKINewcalStats",
+    "strTitle": "Статистика Ньюкала",
+    "strDesc": "<b>Правительство:</b> Президентская республика\n<b>Глава государства:</b> Президент Лусиана Альтман\n<b>Суверенитет:</b> Независимая (ранее — собственность США)\n<b>Расположение:</b> Верхняя атмосфера Венеры\n<b>Основана:</b> 2049\n<b>Основные порты:</b> Терминал Лонг-Бич\n<b>Промышленность:</b> Пластик, судостроение, медиа и развлечения\n<b>Валюта:</b> USD\n<b>Оценка населения:</b> 3 миллиона\n<b>Языки:</b> Английский, испанский, мандарин\n<b>Региональный диалект:</b> Фэнхуа («плавать»)\n<b>Религии:</b> Христианство, буддизм",
+    "strImage": "datafiles/ENCNewCal_logo",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKINewcal",
+      "DataWIKINewcalHistory",
+      "DataWIKINewcalDesign",
+      "DataWIKINewcalPiracy"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKINewcalHistory",
+    "strTitle": "История Ньюкала",
+    "strDesc": "В 2045 году Соединённые Штаты заказали обзор венерианских аэростатов первого поколения. Спорно, но они не уведомили суверенные колонии о своих намерениях и отказались делиться данными — данными, которые затем сильно помогли проектированию Ньюкала. В 2049 году США запустили первый из модульных аэростатов Ньюкала, «Сан-Франциско». За ним последовали «Сан-Хосе», «Сан-Бернардино» и «Сан-Диего», каждый расширяясь в размерах и функциональности. Последний аэростат, «Лос-Анджелес», должен присоединиться к городу в 2083 году.\n\nНьюкал объявил независимость от Старых Соединённых Штатов в 2059 году после того, как NCN «Стиви Никс», пытаясь связаться с правительством США на Земле, был уничтожен автоматическими защитными системами на низкой околоземной орбите. Выжившие астронавты Джейн Эриксон и Карлотта Вальдес сообщили о неудачных попытках связаться с Северным командованием много раз до атаки. Позиция правительства Ньюкала состоит в том, что командная структура США была скомпрометирована.",
+    "strImage": "encounters/ENCFirstDockNewcal",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKINewcal",
+      "DataWIKINewcalStats",
+      "DataWIKINewcalDesign",
+      "DataWIKINewcalPiracy"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKINewcalDesign",
+    "strTitle": "Технический дизайн Ньюкала",
+    "strDesc": "Подъёмные компоненты Ньюкала технически являются дирижаблями, а не аэростатами, поскольку они не привязаны и способны к самостоятельному передвижению; однако двигатели используются редко, и только для коррекции, подъёмники имеют неаэродинамическую форму для стабильности, а термин «аэростат» привычен. Все аэростаты заполнены пригодным для дыхания воздухом, который на высоте 50 км над поверхностью Венеры является подъёмным газом. Чтобы выдержать коррозийную венерианскую атмосферу и облака серной кислоты, аэростаты Ньюкала изготовлены из специально разработанного пластикового волокна Кайлон.",
+    "strImage": "encounters/ENCFirstDockVenus",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKINewcal",
+      "DataWIKINewcalStats",
+      "DataWIKINewcalHistory",
+      "DataWIKINewcalPiracy"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKINewcalPiracy",
+    "strTitle": "Пиратство Ньюкала",
+    "strDesc": "Ньюкал страдает от пиратства, направленного на грузы ресурсов и новых колонистов. Действуя из скрытой базы, пираты атакуют основные атмосферно-орбитальные переброски и местную венерианскую торговлю (Ньюкал страдает сначала от прямых потерь, затем от критической нехватки сырья и потребительских товаров, и наконец снова от снижения потребительского доверия). Другие пострадавшие аэростатные колонии включают Энкантадо, раннюю бразильскую колонию, и Клаудбрейк, принадлежащий и управляемый одноимённой контрактной исследовательской организацией, изучающей поверхность Венеры.\n\nИспользуя малые, быстрые штурмовики с неподвижным крылом и тактику «бей и беги», пираты способны вынудить любой недостаточно охраняемый груз к неприятному выбору: уступить контроль над грузом пиратам или быть «потопленным» — принудительно опущенным в сокрушающую атмосферу у поверхности Венеры. Если ВВС Ньюкала пытаются ответить силой, пираты исчезают в густом газе. При переговорах о своей жизни торговцы разговаривают с иконкой шиповатой розы, называющей себя «Шиповник». Личность Шиповника в остальном неизвестна.",
+    "strImage": "encounters/ENCFirstDockVenus",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKINewcal",
+      "DataWIKINewcalStats",
+      "DataWIKINewcalHistory",
+      "DataWIKINewcalDesign"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIVoltaire",
+    "strTitle": "Вольтер, Деймос, спутник Марса",
+    "strDesc": "Вольтер — сеть исследовательских объектов на спутнике Марса Деймосе, которая принадлежит и управляется китайской технологической корпорацией Дивный Новый Мир ООО. Помимо обслуживания объектов и проведения собственных исследований, ДНМ сдаёт в аренду исследовательские площади, обслуживает их для других технологических гигантов, включая Ренбао и Чжуан-цзы, производит высокотехнологичные электронные компоненты и поддерживает частный университет — Вольтерский университет науки и технологий.",
+    "strImage": "encounters/ENCPlanetSunrise",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIVoltaireStats",
+      "DataWIKIVoltaireHistory",
+      "DataWIKIVoltaireLayout",
+      "DataWIKIVoltaireTauComplex",
+      "DataWIKIVoltaireUniversity"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIVoltaireStats",
+    "strTitle": "Статистика Вольтера",
+    "strDesc": "<b>Правительство:</b> Корпоративная республика\n<b>Глава государства:</b> Академик Паркер Сюй\n<b>Суверенитет:</b> Независимая (владелец — Дивный Новый Мир, Gāngjìng xīn shìjiè, 刚劲新世界)\n<b>Расположение:</b> Кратер Вольтер, Деймос\n<b>Основана:</b> 2033\n<b>Основные порты:</b> Ипсилон (Силун, 西隆)\n<b>Промышленность:</b> Научные исследования, высшее образование, высокотехнологичное производство\n<b>Валюта:</b> CNY\n<b>Оценка населения:</b> 300 000\n<b>Языки:</b> Мандарин, английский, арабский\n<b>Религии:</b> Буддизм",
+    "strImage": "encounters/ENCPlanetSunrise",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIVoltaire",
+      "DataWIKIVoltaireHistory",
+      "DataWIKIVoltaireLayout",
+      "DataWIKIVoltaireTauComplex",
+      "DataWIKIVoltaireUniversity"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIVoltaireHistory",
+    "strTitle": "История Вольтера",
+    "strDesc": "В 2033 году Дивный Новый Мир построила первое поселение на Вольтере, Альфа-станцию, для размещения экспериментальных испытаний оружия. Примечательно, что два прототипа термоядерных боеголовок были взорваны в кратере Робинсон, что добавило новый слой к орбитальному мусору Деймоса; однако без атмосферной ударной волны эффекты были относительно незначительны.\n\nДругие мультинациональные технологические компании были привлечены в исследовательский парк ДНМ качеством объектов и отсутствием местного этического надзора. Они начали исследования в таких областях, как ракетостроение, передовая металлургия, автоматизация, физика высоких энергий, групповая психология и теория игр, клонирование, метабиология и информатика. Эксперименты на людях на ранней фазе стали обычным явлением после того, как стало ясно, что ДНМ не будет микроменеджить другие корпорации. Убедительная реклама транслировалась за пределами планеты, как кампания «Человек будущего» в Тарсисе и Поясе, которая недвусмысленно намекала, что добровольные испытуемые могут получить фантастические способности. В реальности большинство испытуемых не получало таких способностей; до двенадцати процентов подвергались диковинным наказаниям, таким как заражение странными болезнями, или получали травмы, даже погибали в испытаниях прототипов оружия или физических экспериментах. Современный процент снизился, хотя всё ещё сопоставим.",
+    "strImage": "encounters/ENCPlanetSunrise",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIVoltaire",
+      "DataWIKIVoltaireStats",
+      "DataWIKIVoltaireLayout",
+      "DataWIKIVoltaireTauComplex",
+      "DataWIKIVoltaireUniversity"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIVoltaireLayout",
+    "strTitle": "Планировка Вольтера",
+    "strDesc": "Базы в сети ДНМ названы по греческому алфавиту. Этот список, хотя и неполный, лаконично характеризует природу сети BNW:\n\n<b>Альфа:</b> Изначально полигон для испытаний оружия, теперь центральный административный хаб BNW.\n<b>Бета:</b> Информатика и биология.\n<b>Дельта:</b> Медицинская наука и крупная больница, а также учебная больница.\n<b>Лямбда:</b> Физика высоких энергий.\n<b>Мю:</b> Металлургия и производство.\n<b>Ро:</b> Ракетостроение и аэрокосмический дизайн.\n<b>Сигма:</b> Психология и социальные науки.\n<b>Тау:</b> Частный объект, парадоксально известный своей секретностью.\n<b>Ипсилон:</b> Главный стартовый комплекс и порт Вольтера.\n<b>Фи:</b> Местоположение Университета Вольтера. В непосредственной близости от Ипсилона.\n<b>Омега:</b> Расположена в кратере Робинсон, место экспериментов с тяжёлым оружием",
+    "strImage": "encounters/ENCPlanetSunrise",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIVoltaire",
+      "DataWIKIVoltaireStats",
+      "DataWIKIVoltaireHistory",
+      "DataWIKIVoltaireTauComplex",
+      "DataWIKIVoltaireUniversity"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIVoltaireTauComplex",
+    "strTitle": "Вольтер: Комплекс Тау",
+    "strDesc": "Комплекс Тау на Вольтере имеет определённую репутацию в Системе. Тау — крупнейшая закрытая зона на Деймосе, допускающая только одобренных ДНМ VIP-персон, хотя предполагается, что ДНМ на самом деле им не управляет. Тау имеет собственные стартовые комплексы, где постоянная орбитальная активность хорошо видна.\n\nПримечательный инцидент произошёл 16 марта 2062 года, когда яркий свет, исходящий из наземных куполов Тау, осветил остальную колонию настолько мощно, что платформы в пятидесяти километрах были отпечатаны радиационными тенями. Никакого объяснения дано не было, в том числе от персонала других комплексов и вице-канцлера Вольтера. Медицинский суборбитальный аппарат наблюдался направляющимся к Тау из комплекса Дельта через несколько минут после события.\n\nДесятки человек на Деймосе остались навсегда слепыми или с неисправными оптическими сенсорами; протезная замена или ремонт были предложены бесплатно пострадавшим медицинским комплексом Дельта. Никаких повреждений снаружи Тау не наблюдалось, и его работа продолжалась, по-видимому, без изменений.\n\nНикаких других необъяснимых явлений вокруг Тау с тех пор не наблюдалось, и научное сообщество не имеет надёжной теории о его причине.",
+    "strImage": "encounters/ENCPlanetSunrise",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIVoltaire",
+      "DataWIKIVoltaireStats",
+      "DataWIKIVoltaireHistory",
+      "DataWIKIVoltaireLayout",
+      "DataWIKIVoltaireUniversity"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIVoltaireUniversity",
+    "strTitle": "Университет Вольтера",
+    "strDesc": "Университет Вольтера — частное высшее учебное заведение в комплексе Фи на Деймосе.\n\nКак частный университет, он набирает большинство студентов из бизнес-партнёров и сети выпускников, но также ежегодно отправляет посланников в другие колонии для поиска исключительных получателей Мемориальной стипендии Хэ Сюэ Вэй. Глобальные академические тесты, как на Старой Земле, непрактичны, поэтому эти посланники ищут кандидатов по местной репутации и собственной интуиции, охотясь за исключительно одарённой молодёжью. Прошлые стипендиаты включают Фоласаде Оладеле, специалиста по искусственному интеллекту, владеющего более чем тремястами патентами Вольтера, и Мелани Дайонн, инженера-кинематика, изобретшего Томограф сверхвысокого разрешения — устройство для картирования состава астероидов и планетоидов.",
+    "strImage": "encounters/ENCPlanetSunrise",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIVoltaire",
+      "DataWIKIVoltaireStats",
+      "DataWIKIVoltaireHistory",
+      "DataWIKIVoltaireLayout",
+      "DataWIKIVoltaireTauComplex"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIVirginia",
+    "strTitle": "Вирджиния, Титан",
+    "strDesc": "Виргиния — столица Титана, спутника Сатурна, внеземной территории Соединённых Штатов. Титан известен своим технологическим превосходством, изобилием природных ресурсов и агрессивной внешней политикой.",
+    "strImage": "encounters/ENCPlanetSunrise",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIVirginiaStats",
+      "DataWIKIVirginiaHistory",
+      "DataWIKIVirginiaTechnology",
+      "DataWIKIVirginiaAnthem"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIVirginiaStats",
+    "strTitle": "Статистика Виргинии",
+    "strDesc": "<b>Правительство:</b> Президентская республика\n<b>Глава государства:</b> Генерал-губернатор Харрисон «Гарри» Парр\n<b>Суверенитет:</b> Де-юре собственность Старых Соединённых Штатов, де-факто независимая\n<b>Расположение:</b> Титан, Сатурн\n<b>Основана:</b> 2025/2031\n<b>Основные порты:</b> Космопорт Кассини\n<b>Промышленность:</b> Летучие вещества, судостроение\n<b>Валюта:</b> USD\n<b>Оценка населения:</b> 8 000 000\n<b>Языки:</b> Английский\n<b>Религии:</b> Христианство",
+    "strImage": "encounters/ENCPlanetSunrise",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIVirginia",
+      "DataWIKIVirginiaHistory",
+      "DataWIKIVirginiaTechnology",
+      "DataWIKIVirginiaAnthem"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIVirginiaHistory",
+    "strTitle": "История Виргинии",
+    "strDesc": "Соединённые Штаты отправили пилотируемую миссию Кронос-1 на Титан в 2025 году после завершения строительства космического лифта Армстронг. «Кронос» прибыл в 2026 году после восьмимесячного путешествия и основал базу Отрис. Кронос-2 и 3 последовали в 2027 и 2029 годах. В 2031 году Флот Дискавери прибыл на Титан с намерением превратить Отрис в постоянное поселение, Виргинию.\n\nРост Титана в ходе колонизационной гонки обычно приписывается общенациональному подтверждению американской исключительности и реализации межпоколенческого обещания космических путешествий, характерного для американцев со времён первой высадки на Луну. Двузначный рост ВВП США в 2032 году был связан с обещанием космической колонии, а также недавним возрождением штатов ржавого пояса, таких как Мичиган.\n\nПроцветание Титана продолжалось десятилетиями после упадка США, но закончилось с наступлением синдрома Кесслера. Влияние этого события на Титан сравнивают с влиянием террористических атак 11 сентября на Соединённые Штаты. Это ознаменовало переход к новой внешней политике, доктрине Тейлора, которая утверждала необходимость патрулирования транснептунового пространства для обеспечения выживания Титана. Титанианский конгресс принял чрезвычайные законы, реформирующие вооружённые силы, сделав Титан одной из немногих внеземных колоний с регулярной армией.",
+    "strImage": "encounters/ENCPlanetSunrise",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIVirginia",
+      "DataWIKIVirginiaStats",
+      "DataWIKIVirginiaTechnology",
+      "DataWIKIVirginiaAnthem"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIVirginiaTechnology",
+    "strTitle": "Технологии Виргинии",
+    "strDesc": "Корабли и жилища Титана — это вершина современных технологий, а богатство научной и инженерной мысли на Виргинии и других контролируемых Титаном колониях превосходило остальную Систему до совсем недавнего времени. Военно-промышленный комплекс США — мультинациональные военные подрядчики вроде Лэнгдон-Филлипс, Вебер Тулз энд Ойл и Смартлинк, а также Командование внешнего космоса NASA — сделали Титан своей внеземной штаб-квартирой.",
+    "strImage": "encounters/ENCPlanetSunrise",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIVirginia",
+      "DataWIKIVirginiaStats",
+      "DataWIKIVirginiaHistory",
+      "DataWIKIVirginiaAnthem"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIVirginiaAnthem",
+    "strTitle": "Виргиния: Последний отблеск сумерек",
+    "strDesc": "Основополагающий миф в идеалистическом размере.\n\nВ сад вне сезона пришли пилигримы со звёзд,\nСлабые телом, но разумом благословенны, сажая разобранные реи.\n\nЧто стало с тихой мечтой, честным трудом при раннем свете,\nВ конце концов, в сиянии сумерек, провозгласит мощь нации.\n\nИскусственная дикость, рай ещё не созданный,\nПостепенно породила наследницу, борозды без почвы или лопаты.\n\nНовая Вирджиния, Новый Доминион, самый дальний из спутников,\nВознесённый ввысь восковым крылом, хранимый ангельскими полётами.\n\nНа седьмой день мы отдыхали, урожай дома и стада в постели,\nБеспечные с непроверенной верой, под небом словно свинец.\n\nВо тьме будущего таилось зло змееподобное,\nСвернувшееся в священном шве, готовое ударить нашего палатина.\n\nКатаклизм! Геноцид! Триллион душ обречённых на ад!\nЗапертых под вульгарной шкурой хтонического заклятия Гекаты!\n\nНикто не предвидел лавину, свистящую шрапнельную канонаду,\nСрывающую листья с ствола до ветвей и погружающую Землю в смертельную тень.\n\nНикто не предвидел отклонение, освобождённое наконец от власти закона,\nОбратившее овец в волков в наших укрытиях из соломы и тростника.",
+    "strImage": "encounters/ENCPlanetSunrise",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIVirginia",
+      "DataWIKIVirginiaStats",
+      "DataWIKIVirginiaHistory",
+      "DataWIKIVirginiaTechnology"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKILabyrinth",
+    "strTitle": "Лабиринт, подземелья Марса",
+    "strDesc": "Лабиринт, также известный как «Лаба», — обнищавший город, расположенный в Лабиринте Ночи. Ранее лагерь обработки нелегальных иммигрантов в Тарсис, сегодня Лабиринт разделён межфракционным насилием — наследием его революционных истоков. Необычно для марсианских колоний, большая часть Лабиринта находится над поверхностью. Он использует крутые каньоны Лабиринта Ночи и во многих местах специализированный чёрный лишайник для снижения радиационного облучения. Большинство строений Лабиринта — временное жильё, которое по необходимости стало постоянным, поэтому самодельный ремонт вроде заплаток, проводки, проложенной жителями, и импровизированные раскопки — обычное дело.",
+    "strImage": "encounters/ENCPlanetSunrise",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKILabyrinthStats", "DataWIKILabyrinthHistory"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKILabyrinthStats",
+    "strTitle": "Статистика Лабиринта",
+    "strDesc": "<b>Правительство:</b> Оспаривается\n<b>Глава государства:</b> Оспаривается\n<b>Суверенитет:</b> Оспаривается — де-юре собственность Тарсис Лэндинга\n<b>Расположение:</b> Лабиринт Ночи, Марс\n<b>Основана:</b> Заселена в 2033. Город зарегистрирован в 2041.\n<b>Основные порты:</b> Терминал, станция маглева; Royal Carriers, стартовый комплекс (частная собственность)\n<b>Промышленность:</b> Одежда, электроника\n<b>Валюта:</b> USD, CNY\n<b>Оценка населения:</b> 2 000 000\n<b>Языки:</b> Английский, португальский\n<b>Религии:</b> Католицизм",
+    "strImage": "datafiles/ENCLabyrinth_logo",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKILabyrinth", "DataWIKILabyrinthHistory"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKILabyrinthHistory",
+    "strTitle": "История Лабиринта",
+    "strDesc": "В 2033 году Тарсис открыл Региональный центр обработки Ноктис на тогдашнем конце линии маглева в Лабиринте Ночи. За следующие два года расширения и строительства 50 000 нелегальных иммигрантов в Тарсисе и близлежащих марсианских колониях были перемещены в объект Ноктис для обработки и заключения, якобы до организации депортации на Землю. Эти 50 000 позже были названы Первым Набором. Хотя стоимость депортации реально препятствовала её осуществлению, ещё десятки тысяч «нелегалов» были идентифицированы, схвачены и отправлены на объект Ноктис под этим предлогом.\n\nДвижения за независимость в Ноктисе набирали популярность среди заключённых, число которых к 2040 году достигло сотен тысяч. Началась продолжительная кампания как ненасильственного, так и насильственного сопротивления. Четыре последовательных начальника Ноктиса либо ушли в отставку, либо стали жертвами насилия в Ноктисе. В 2041 году представители Тарсиса начали переговоры с лидерами сопротивления о предоставлении объекту Ноктис независимости. Победителем первых открытых выборов стало Гуманистическое движение. Это вызвало ещё один период нестабильности, поскольку считалось, что они симпатизируют Тарсису, а их оппозиция выдвинула официальные обвинения в фальсификации выборов.",
+    "strImage": "encounters/ENCPlanetSunrise",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKILabyrinth", "DataWIKILabyrinthStats"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKITharsisLanding",
+    "strTitle": "Посадка Тарсис, Марс",
+    "strDesc": "Тарсис Лэндинг (Тасицзинь) — старейший и самый населённый город-государство Марса. На поверхности он выглядит как несколько защищённых жилищ кластерами, часто в десятках километров друг от друга, но под ними находится большая часть самого города, проходящая через серию длинных, тонких лавовых трубок под плато Тарсис и горой Арсия. Тарсис и Орбитальный Ханчжоу вместе являются экономическим сердцем Внутренней системы.",
+    "strImage": "encounters/ENCFirstDockTharsisLanding",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKITharsisLandingStats",
+      "DataWIKITharsisLandingHistory",
+      "DataWIKITharsisLandingDevelopment",
+      "DataWIKITharsisLandingOrganizedCrime"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKITharsisLandingStats",
+    "strTitle": "Статистика Тарсис Лэндинг",
+    "strDesc": "<b>Правительство:</b> Социалистическая республика\n<b>Глава государства:</b> Администратор Лао Дэн\n<b>Суверенитет:</b> Де-юре Синьхуа, де-факто независимая.\n<b>Расположение:</b> Плато Тарсис, Марс\n<b>Основана:</b> 2029\n<b>Основные порты:</b> Порт Яншань (Yangshan Gang, 洋山港)\n<b>Промышленность:</b> Телекоммуникации, потребительская электроника, фармацевтика, развлечения\n<b>Валюта:</b> XNY\n<b>Оценка населения:</b> 12 000 000\n<b>Языки:</b> Мандарин, английский\n<b>Религии:</b> Буддизм, христианство",
+    "strImage": "datafiles/ENCTharsisLanding_logo",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKITharsisLanding",
+      "DataWIKITharsisLandingHistory",
+      "DataWIKITharsisLandingDevelopment",
+      "DataWIKITharsisLandingOrganizedCrime"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKITharsisLandingHistory",
+    "strTitle": "История Тарсис Лэндинг",
+    "strDesc": "Тарсис Лэндинг был основан в 2029 году по завершении первого крупного строительного этапа флота Сяфань Гуаньцзюнь, который возглавлял Кун Инь. Восемнадцать месяцев назад Тарсис был местом раскопок, его население жило в сборных пузырях на поверхности, работая над расширением подземной сети лавовых трубок. Переборки первого герметичного туннеля были возведены в 2029 году на месте нынешней площади Синьхуа. Администратор Кун умер в 2030 году от последствий переработки и длительного радиационного облучения, и многие части Тарсиса были названы в честь его памяти.\n\nТарсис быстро расширялся в течение следующего десятилетия, но даже так развитие часто не поспевало за иммиграцией. Для борьбы с проблемой незаконной иммиграции и бездомности Тарсис основал Региональный центр обработки Ноктис в 2033 году. Общественное мнение поддержало это решение даже после того, как Внемировая новостная группа раскрыла свидетельства суровых условий жизни и жестокого обращения с иммигрантами. Группы вроде «Граждане за выживание Тарсиса» собирались на улицах Тарсиса с лозунгами вроде Лай дэ хао! Буран ликай тунго цичжа! (láidé hǎo! bùrán líkāi tōngguò qì zhá!, «приходи как положено! или выходи через шлюз!»). Историческая вражда между Тарсисом и Лабиринтом продолжается по сей день.\n\nЭкономическая мощь Тарсиса резко возросла с завершением строительства космического лифта на горе Арсия в 2042 году. Население Тарсиса, промышленный выпуск, относительный уровень жизни и свобода передвижения на планете и за её пределами сделали его привлекательным для бизнеса. Многие линии внутреннего города подверглись джентрификации с приходом бизнеса, принеся приток богатых иммигрантов и вытесняя граждан в новые гетто.\n\nВ 2079 году Тарсис отмечает своё 50-летие Золотой Неделей (Хуанцзиньчжоу) национальных праздников.",
+    "strImage": "encounters/ENCFirstDockTharsisLanding",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKITharsisLanding",
+      "DataWIKITharsisLandingStats",
+      "DataWIKITharsisLandingDevelopment",
+      "DataWIKITharsisLandingOrganizedCrime"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKITharsisLandingDevelopment",
+    "strTitle": "Инфраструктура и развитие Тарсис Лэндинг",
+    "strDesc": "Тарсис проходит через сеть лавовых трубок, которые поколения марсианских колонистов расширяли, герметизировали, наполняли воздухом и делали пригодными для жизни. Огромные переборки стоят с километровыми интервалами для сохранения остального города в случае разгерметизации любого участка. Световые люки — большие отверстия в потолке лавовых трубок — закрыты закалёнными пластиковыми окнами. Изначально спланированные китайским правительством, длинные участки туннелей напоминают советские блочные дома, характерные для современного Китая. Одинаковые ряды сборных многоквартирных домов из базальтового волокна, серного бетона и стекла (три наиболее доступных строительных материала на Марсе) перемежаются с общественными площадями и станциями метро.\n\nМногие центральные пригороды (или «линии») были перестроены на частные деньги по мере роста значимости Тарсиса: многоквартирные дома сносились и заменялись одноэтажными сыхэюанями — традиционными дворовыми резиденциями — и хутунами — длинными сетками переулков между дворами. Хотя город расширялся горизонтально, а не вертикально, места для крупных зданий, подобных небоскрёбам («подскрёбы»), были вырыты в полу пещеры.\n\nМетро Тарсиса, система массового транспорта, связывает лавовые трубки. Воздушное сообщение возможно, но зарезервировано для грузовых дронов и экстренных служб, и ограничено на некоторых линиях из-за нерегулируемых и недокументированных коммуникаций вроде линий электропередач, ирригации и нелегальных штолен или поверхностных вентиляционных отверстий. Самый простой и дешёвый способ передвижения — метро или общий велосипед. Гиды-люди управляют велорикшами, зарабатывая на знании мест, не указанных на официальных картах.\n\n<b>Пригороды Тарсиса:</b>\nПригороды Тарсиса включают, но не ограничиваются:\n\n<b>Наньсянь:</b> центральный район\n<b>Хэйфэй:</b> центральный коммерческий район, известный насилием синдикатов\n<b>Синьчжэнь:</b> внешняя линия, превращённая в гетто из-за переполненности беженцами и склонная к плохому воздуху\n<b>Чжоукоу:</b> внешняя линия, один из многих участков раскопочного развития",
+    "strImage": "encounters/ENCFirstDockTharsisLanding",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKITharsisLanding",
+      "DataWIKITharsisLandingStats",
+      "DataWIKITharsisLandingHistory",
+      "DataWIKITharsisLandingOrganizedCrime"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKITharsisLandingOrganizedCrime",
+    "strTitle": "Организованная преступность Тарсис Лэндинг",
+    "strDesc": "Всем известный секрет, что «Змееголовы», изначально международная операция по контрабанде людей, контролируют преступный мир Тарсиса. Самое раннее преступное присутствие в городе, они использовали отсутствие оппозиции, чтобы начать другие традиционные криминальные операции вроде фальшивомонетничества и наркоторговли наряду со своим первоначальным призванием. Попытка Триад Старой Земли захватить контроль над городом в 50-х, «Вторжение Дракона», вывела борьбу преступного мира в открытую войну. Члены обеих групп были публично убиты в дневных уличных боях, включая перестрелку в чайной Сары Ма Линь и осаду здания Чжуанцзы.",
+    "strImage": "encounters/ENCCrime",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKITharsisLanding",
+      "DataWIKITharsisLandingStats",
+      "DataWIKITharsisLandingHistory",
+      "DataWIKITharsisLandingDevelopment"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIRingStation",
+    "strTitle": "Кольцевая станция, рядом с Церерой в Поясе",
+    "strDesc": "Кольцевая станция (Цюаньчжань) — большая центрифужная среда обитания в околоцерерианском пространстве и административный центр Коалиции по добыче ресурсов Цереры. Её сфера влияния включает город Калико, поселение на поверхности Цереры. CCRE поддерживает горнодобывающие операции Пояса, её членами являются тридцать крупнейших горнодобывающих корпораций региона. Меньшие корпорации должны подавать заявки на статус ассоциированных членов, одобряемые в индивидуальном порядке.",
+    "strImage": "encounters/ENCPlanetSunrise",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIRingStationStats",
+      "DataWIKIRingStationHistory",
+      "DataWIKIRingStationGovernment",
+      "DataWIKIRingStationCalicoCity"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIRingStationStats",
+    "strTitle": "Статистика Кольцевой станции",
+    "strDesc": "<b>Правительство:</b> Корпоративная олигархия\n<b>Глава государства:</b> Спикер Цянго Вэй\n<b>Суверенитет:</b> Независимая\n<b>Расположение:</b> Околоцерерианское пространство\n<b>Основана:</b> 2029\n<b>Основные порты:</b> Терминал Чжунхуамэнь (Врата Китая, 中华门), Кольцо; Порт Мохаве, город Калико\n<b>Промышленность:</b> Добыча, выплавка, металлургия, обогащение руды\n<b>Валюта:</b> XNY\n<b>Оценка населения:</b> 600 000\n<b>Языки:</b> Мандарин, английский, тагальский, арабский\n<b>Религии:</b> Буддизм, христианство, атеизм, ислам",
+    "strImage": "encounters/ENCPlanetSunrise",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIRingStation",
+      "DataWIKIRingStationHistory",
+      "DataWIKIRingStationGovernment",
+      "DataWIKIRingStationCalicoCity"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIRingStationHistory",
+    "strTitle": "История Кольцевой Станции",
+    "strDesc": "Кольцевая станция была построена в 2029 году компанией CRE («Добыча ресурсов Цереры»), ранней космической горнодобывающей корпорацией, основанной до современных космических полётов, которые в то время считались совершенно умозрительными. Однако по мере того как успехи Китая и США на Марсе и Титане изменили общественное мнение о будущем человечества в космосе, появилось представление, что за этим последует частная эксплуатация неиспользованных ресурсов Солнечной системы. С преимуществом кажущегося устоявшегося положения CRE смогла профинансировать строительство Кольцевой станции. Давнее общественное заблуждение о том, что богатство платины астероида обрушит её рыночную цену на Земле, реализовалось в 2032 году, хотя и с небольшими изменениями: первая поставка CRE вызвала рыночную панику из-за никеля и кобальта.\n\nCRE была внезапно вытеснена из бизнеса картелем её конкурентов в 2037 году, которые жаждали ресурсов Цереры и негодовали на успех CRE. В одном из первых зафиксированных актов космического пиратства горнодобывающий картель захватил Кольцевую станцию, а также несколько её кораблей; для CRE, вся ценность которой заключалась в этих активах, это был сокрушительный удар. Картель переименовал себя в CCRE, или Коалицию по добыче ресурсов Цереры, и перезаключил контракты с бывшими сотрудниками CRE, оставшимися на Кольцевой станции. Возможно, опасаясь использования собственной тактики против себя, CCRE начала нанимать частные военные компании для охраны Цереры и церерианских кораблей — практика, продолжающаяся по сей день.\n\nВ 40-х и 50-х CCRE направила часть производственных мощностей Кольцевой станции на строительство собственной замены, поскольку устаревшая среда обитания становилась небезопасной и склонной к утечкам. Вторая Кольцевая станция была построена вокруг первой и примерно на треть больше в диаметре. Она была спроектирована архитектором Гидеоном Пруиттом, чтобы представлять эффективность и профессионализм CCRE. Ярко-белый цвет, форма и репутация картеля в создании богатства привели к часто презрительному прозвищу новой станции — «Монетный двор».\n\nНесколько ЧВК с базой на Кольцевой станции были наняты юпитерианскими корпорациями для отвоевания Ганимеда во время Переворота на Ганимеде. Отчасти из-за этого, а также из-за подозрений, что юпитерианские и поясные центры капитала будут естественно симпатизировать друг другу, напряжённость между Галилеевой Конфедерацией и Кольцевой станцией заметно возросла в десятилетия после Переворота. Более того, обе стороны считают друг друга представителями более крупных, отдалённых сил — Конфедерация представляет интересы Титана, а CCRE — интересы Марса, то есть Тарсиса и Ханчжоу.",
+    "strImage": "encounters/ENCPlanetSunrise",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIRingStation",
+      "DataWIKIRingStationStats",
+      "DataWIKIRingStationGovernment",
+      "DataWIKIRingStationCalicoCity"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIRingStationGovernment",
+    "strTitle": "Правительство Кольцевой станции",
+    "strDesc": "CCRE — олигархия тридцати крупнейших региональных корпораций. Этот статус определяется Бюро оценки бизнеса Цереры, одной из немногих независимых ветвей её правительства. «Тридцатка» выбирает делегата для представления своих интересов в Коалиции. Делегаты избирают Спикера Коалиции и согласовывают и обсуждают политику Коалиции, которая теоретически должна приносить пользу всем участникам в равной мере или, по крайней мере, в совокупности не отдавать предпочтения никому. Голосование обычно тайное, а заседания проходят закрыто. На практике это означает, что неформальные сделки, голосующие блоки и обмен услугами — обычное дело в правительстве Коалиции.",
+    "strImage": "encounters/ENCPlanetSunrise",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIRingStation",
+      "DataWIKIRingStationStats",
+      "DataWIKIRingStationHistory",
+      "DataWIKIRingStationCalicoCity"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIRingStationCalicoCity",
+    "strTitle": "Кольцевая станция: город Калико",
+    "strDesc": "Город Калико — поселение на поверхности и под поверхностью Цереры. Хотя он находится на территории Коалиции, город Калико официально существует в классической анархии, не имея представительства в Коалиции, собственного правительства, конституции, официальных законов и легитимных гражданских полицейских сил. Попытки граждан Калико организоваться политически пресекаются Коалицией через её штрейкбрехеров, а организованное насилие или беспорядки останавливаются морпехами Коалиции. Власть и авторитет имеют тенденцию концентрироваться в крупных, богатых семьях; эти семьи действуют в форме современного трайбализма, имеющего сходство с мафиями, корпорациями и аристократиями.\n\nВ начале своего существования город Калико сравнивали с пограничным городком Дикого Запада, расположенным в шахте Дикого Запада. Сегодня, хотя элемент границы остаётся в духе, физический и социальный рост поселения сделал сравнение неуместным. Короче говоря, длительная задержка развития Калико Коалицией привела к тому, что многие инструменты общества и управления стали второй натурой, укоренившись в гражданах. Успешные граждане Калико считаются высоко эмоционально и социально осведомлёнными, с хорошей памятью на людей и лица, поскольку оскорбление не той семьи на Калико может иметь катастрофические последствия. Внемировые посетители Калико обычно находят сложные, невысказанные социальные нормы Калико трудными для навигации, особенно в темах вроде ухаживания, обязательств или обещаний, которые практически священны.\n\nВозможно, по иронии судьбы, хотя намерением Коалиции было держать Калико в состоянии, благоприятствующем производству дешёвой рабочей силы для её шахт, использование жителей Калико стало заметно дороже вместе с их культурной эволюцией благодаря их уникальным требованиям и частым трудностям в чужой среде.",
+    "strImage": "encounters/ENCPlanetSunrise",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIRingStation",
+      "DataWIKIRingStationStats",
+      "DataWIKIRingStationHistory",
+      "DataWIKIRingStationGovernment"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIProkofiev",
+    "strTitle": "Прокофьев, Меркурий",
+    "strDesc": "Исправительная колония Прокофьев — комбинированная горнодобывающая станция и исправительное учреждение максимальной безопасности, расположенное на поверхности планеты Меркурий. Тюрьма печально известна своими жестокими условиями и невозможностью побега, во многом из-за негостеприимного климата Меркурия.",
+    "strImage": "encounters/ENCPlanetSunrise",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIProkofievStats",
+      "DataWIKIProkofievHistory",
+      "DataWIKIProkofievSecurity",
+      "DataWIKIProkofievNotableInmates"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIProkofievStats",
+    "strTitle": "Статистика Прокофьева",
+    "strDesc": "<b>Правительство:</b> Автократия (тюремное государство)\n<b>Глава государства:</b> Начальник тюрьмы Изабелла Бранья\n<b>Суверенитет:</b> Собственность Исправительная колония «Прокофьев» ООО, корпорации с базой в Ханчжоу\n<b>Расположение:</b> Меркурий, кратер Прокофьев\n<b>Основана:</b> 2039\n<b>Основные порты:</b> Циньчэн (秦城)\n<b>Промышленность:</b> Заключение, добыча\n<b>Валюта:</b> XNY, Sigs (цифровой тюремный скрип)\n<b>Оценка населения:</b> 8 000\n<b>Языки:</b> Мандарин, английский\n<b>Религии:</b> Христианство",
+    "strImage": "encounters/ENCPlanetSunrise",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIProkofiev",
+      "DataWIKIProkofievHistory",
+      "DataWIKIProkofievSecurity",
+      "DataWIKIProkofievNotableInmates"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIProkofievHistory",
+    "strTitle": "История Прокофьева",
+    "strDesc": "Исправительная колония Прокофьев была основана в 2039 году после прекращения особых отношений Тарсиса с Лабиринтом. Условия во время строительства были жестокими: почти треть рабочей силы получила серьёзные травмы или погибла в течение года.\n\nВ 2055 году горнодобывающий флот заключённых завершил раскопки Вехи 1 — участка, предназначенного для частной колонизации. PPC рекламировала участок на внемировых рынках, где проспект не привлёк интереса. Не смутившись, PPC направила заключённых начать работу над Вехой 2, вторым колониальным участком, и Вехой 3, подземной железной дорогой, соединяющей 1, 2 и тюремный комплекс. В настоящее время работа продолжается над обоими этими проектами.\n\nТюрьма пережила первую и единственную попытку побега в 2060 году. Двери камерного блока вышли из строя, позволив пяти из восьми заключённых надеть аварийные скафандры и совершить опасное путешествие через вакуум к стартовой площадке Прокофьева. Не найдя транспорта за пределы планеты, трое вернулись в камеры, а двое остались в надежде, что приземлится корабль. Ни один не приземлился, и беглецы погибли от удушья.",
+    "strImage": "encounters/ENCPlanetSunrise",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIProkofiev",
+      "DataWIKIProkofievStats",
+      "DataWIKIProkofievSecurity",
+      "DataWIKIProkofievNotableInmates"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIProkofievSecurity",
+    "strTitle": "Безопасность Прокофьева",
+    "strDesc": "Первый уровень безопасности Прокофьева — негостеприимные условия Меркурия. На экваторе меркурианский день длится почти шестьдесят земных дней, а солнце более чем в шесть раз мощнее. Температура достигает свыше 500 градусов Цельсия и ночью падает ниже -150. В кратере Прокофьев температура остаётся ниже 0. Маловероятно, что поселение смогло бы выдержать условия за пределами полярных регионов.\n\nПрибывающие заключённые доставляются защищёнными баржами на станцию Циньчэн — торговый форпост и центр содержания на полярной орбите. Как только набирается достаточно для стандартного приёма или требуется пополнение запасов в Прокофьеве, посадочный модуль отстыковывается от станции и перевозит груз к наземному посадочному комплексу. Балет Прокофьева «Ромео и Джульетта» проигрывается для заключённых, особенно раздел «Танец рыцарей», который повторяется при отправлении и прибытии. Посадочный модуль автономен и не имеет тяговых возможностей сверх минимума, необходимого для наведения на посадочную площадку, где он выводится из эксплуатации и разбирается на запчасти для обслуживания станции. Корабли, способные выходить на орбиту, приземляются каждые шесть месяцев для ротации надзирателей.\n\nБлоки вмещают 16 заключённых и называются в шестнадцатеричной системе, от блока 0x0 до блока 0x1FF. Тюрьма — паноптикум. Тюрьма рекламирует «100 камер на каждого заключённого», включая несколько, установленных на одежде заключённого. Надзорные обязанности выполняются удалённо из комплекса начальника. Отдельные заключённые усмиряются седативами или болевыми индукторами, вводимыми через автоинъектор, который все заключённые обязаны носить. При массовом неповиновении персонал также может временно снизить содержание кислорода в воздушной смеси поражённых зон, вызывая вялость, гипоксию и обморок.\n\nСредняя продолжительность жизни заключённого в Прокофьеве — шесть лет. Переживание первого года, когда смертность самая высокая, значительно улучшает прогноз продолжительности жизни.",
+    "strImage": "encounters/ENCPlanetSunrise",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIProkofiev",
+      "DataWIKIProkofievStats",
+      "DataWIKIProkofievHistory",
+      "DataWIKIProkofievNotableInmates"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIProkofievNotableInmates",
+    "strTitle": "Прокофьев: известные заключённые",
+    "strDesc": "Заключённые в Прокофьеве обычно делятся на две категории: гипернасильственные рецидивисты, переведённые из других тюрем, и политические или беловоротничковые преступники, служащие показательным примером для своих могущественных врагов.\n\n<b>Сара Джейн Голдсман:</b> венерианская серийная убийца, перерабатывала жертв на частной свекольной ферме\n<b>Мао Шэхуй:</b> внутренний террорист из Тарсиса, планировавший уничтожить маглев\n<b>Евгений Коровьев:</b> капитан корабля и пират, продававший жертв в рабство в колонии Пояса\n<b>Энтони А Сэм:</b> тарсийский бизнесмен, ставший наркокурьером «Супера», нелегального боевого стимулятора\n<b>Франклин Ву:</b> высокопоставленный Змееголовый, пойманный при открытом подкупе Дэниела Ли, ханчжоуского бизнесмена\n<b>Дэниел Ли:</b> влиятельный ханчжоуский бизнесмен, получатель взятки\n<b>Анна Поттс-Ли и Майкл Поттс-Ли:</b> дочь и сын Дэниела Ли, заключённые из-за родственной связи\n<b>Сергей Курыленко:</b> церерианский профессиональный игрок в Брейкаут, обвиняемый в преступлениях против государства\n<b>Спирос Страту:</b> венерианский мотивационный спикер, обвиняемый в «развращении молодёжи»\n<b>Пай-фу Чань:</b> тарсийский массовый стрелок с предполагаемым числом жертв более ста\n<b>Хуан Куэрвос:</b> венерианский эксперт по безопасности, обвиняемый в демпинге рынка",
+    "strImage": "encounters/ENCPlanetSunrise",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIProkofiev",
+      "DataWIKIProkofievStats",
+      "DataWIKIProkofievHistory",
+      "DataWIKIProkofievSecurity"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIBismertnaya",
+    "strTitle": "Бессмертная Водка",
+    "strDesc": "«Бессмертная» — бренд пшеничной водки. Бренд был создан нефтяной компанией «Союзнефть», когда она начала снабжать Вооружённые силы России в 2024 году.\n\n\n<b>Продукт:</b> Водка\n<b>Производитель:</b> Союзнефть\n<b>Страна происхождения:</b> Старая Российская Федерация\n<b>Производится:</b> Старая Россия, База Соболев\n<b>Тикер:</b> SOYN\n\n<b>Слоганы:</b>\nбудь героем!\nваше здоровье!",
+    "strImage": "datafiles/ENCBismertnaya_logo",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIBismertnayaHistory"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIBismertnayaHistory",
+    "strTitle": "История Бисмертной Водки",
+    "strDesc": "Продолжающееся сокращение Вооружённых сил России на протяжении 2020-х годов вызвало неопределённость, поскольку многие корпоративные партнёры потеряли бизнес или ушли с рынка. После успеха в получении доступа к российским месторождениям сланцевой нефти, «Союзнефть» выросла, чтобы заполнить эти вакансии, прежде всего разрабатывая и поставляя топливо для российской Программы мобильного солдата (Programma Peredvishni Soldatov / Программа передвижных солдатов). Компания также добилась других уступок, таких как эксклюзивное право поставлять алкоголь в государственные учреждения, например военные базы. За пределами России её пренебрежительно прозвали «Красная этикетка» из-за ассоциации с российскими военнослужащими.\n\nВ гонке колонизации «Союзнефть» и «Бессмертная» последовали за Космическими войсками России к их первой колонии — шахте Соболева на 16 Психее в Поясе. Хотя добыча на Соболеве замедлилась перед лицом более крупных и дешёвых операций вокруг Юпитера, бренд и продукция «Бессмертной» распространились по всему Поясу, и сегодня ликёро-водочный завод на Соболеве — это индустрия почти такого же масштаба, как и шахта, которую он должен был обслуживать.",
+    "strImage": "datafiles/ENCBismertnaya_logo",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIBismertnaya"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIBlackBullKape",
+    "strTitle": "Блэк Булл Капе",
+    "strDesc": "Блэк Булл Капе — филиппинский бренд кофе, региональный сорт, известный как «капэнг барако». Его популярность распространилась по всей Системе вместе с филиппинским фастфудом. За пределами планеты смеси барако конкурируют со смесями робусты, тогда как арабика встречается реже из-за её хрупкости. Барако известен своим крепким вкусом и резким ароматом.\n\n<b>Продукт:</b> Кофе\n<b>Производитель:</b> Блэк Булл Капе Инкорпорейтед\n<b>Страна происхождения:</b> Филиппины\n<b>Тикер:</b> BLKB\n\n<b>Слоганы:</b>\n\n\nКофе с ударом.\nКогда видишь красное — пей чёрное.\nЗарядись от быка.\nДомашний капэ.\nХватай быка за рога!",
+    "strImage": "datafiles/ENCBlackBullKape_logo",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIBlackBullKapeHistory"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIBlackBullKapeHistory",
+    "strTitle": "История кофе Чёрный Бык",
+    "strDesc": "Космическая колонизация позволила Блэк Булл Капе расшириться за пределы местных операций. История Филиппин с мигрантами-рабочими означала, что нация была хорошо подготовлена к адаптации к внемировым трудовым условиям. Ранний приток филиппинцев на внемировые рынки труда означал, что филиппинская кухня стала нормой на многих станциях, и рынок фастфуда перенял эту тенденцию в других местах. Блэк Булл Капе смогла превратить свой ранний успех в поставках кофе для этих компаний в открытие собственной сети кофеен.\n\n<b>Маркетинг:</b>\n\nЛоготип Блэк Булл Капе — антропоморфный мускулистый чёрный бык. Слово «барако» имеет несколько значений на филиппинском, обозначая племенных животных и мужественность, на чём играет название бренда.\n\nМаркетинговая стратегия Блэк Булл Капе широко считается антиконкурентной. Помимо стремления к насыщению рынка своими сетевыми магазинами, Блэк Булл привлекает франчайзеров на рынки, куда не может проникнуть. Отношения с франчайзи часто натянутые, что приводит к отсутствию стандартов и вариации качества. Официальная позиция Блэк Булл — что она предлагает франчайзи свободу подстраиваться под местные обычаи.",
+    "strImage": "datafiles/ENCBlackBullKape_logo",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIBlackBullKape"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIBreakout",
+    "strTitle": "Брейкаут",
+    "strDesc": "Брейкаут — гибридный контактный спорт и командное боевое искусство, играемое в условиях микрогравитации, чаще всего по пять игроков на сторону. Цель — коснуться мячом свободно парящей мишени на любом конце площадки. Команда может забить гол, соединив мяч с мишенью, защищаемой противником во время игры.\n\nВозможно, из-за конкуренции с другим главным видом спорта системы — Чемпионатом по боям в невесомости (3FC) — профессиональный Брейкаут имеет мало правил, запрещающих контакт. Использование приёмов боевых искусств или грубой силы для нейтрализации других игроков поощряется. В большинстве матчей действия и позиционирование, необходимые для блокировки противника от забивания голов, предотвращают превращение матча в полную драку; однако в истории спорта есть несколько примечательных матчей, которые стали именно этим.\n\nСуществует две профессиональные лиги Брейкаут: Лига Брейкаут открытого космоса (OSBL) и Марсианская лига Брейкаут (MBL). Помимо незначительных различий в правилах, MBL играется исключительно при 0,38g марсианской поверхностной гравитации.<b>Происхождение:</b> Церера",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIBreakoutHistory", "DataWIKIBreakoutTeams"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIBreakoutHistory",
+    "strTitle": "История Брейкаут",
+    "strDesc": "Брейкаут был разработан в 2033 году тремя инженерами: Сантино «Сонни» Риччи, Тарой Шнайдер и Фам Май Линь. Работая в скрам-команде на раскопках Цереры, инженеры придумали способ развлечь себя во время перерыва. Версии создателей расходятся, но общепринятая версия событий такова: Сонни и Шнайдер пытались играть в баскетбол один на один в свободном грузовом отсеке, пока Линь наблюдала, давала обратную связь и предлагала изменения правил. Именно увлечение Линь растущей культурой 3FC привело к использованию боевых искусств для контроля контакта в невесомости, особенно дзюдо и других борцовских техник. К концу недели другие команды на станции сформировали круговой турнир, приняв правила трио. Второй такой турнир включал по пять игроков на сторону и транслировался по всей Церере.\n\nМерсер Энтертейнмент Групп обратилась к трём создателям в 2036 году, предложив рекламную сделку и широко разрекламированный показательный матч для представления Брейкаут более широкой аудитории. Сонни и Шнайдер согласились и создали Лигу Брейкаут открытого космоса — общесистемную профессиональную ассоциацию для этого спорта. К вызову споров, Фам Май Линь отказалась от предложения из-за потери творческого контроля над развитием спорта для трансляций. В конечном итоге она создала Марсианскую лигу Брейкаут в 2042 году в партнёрстве с Китайским министерством спорта в Тарсис Лэндинге.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIBreakout", "DataWIKIBreakoutTeams"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIBreakoutTeams",
+    "strTitle": "Команды Брейкаут",
+    "strDesc": "В Марсианской лиге Брейкаут (MBL) четырнадцать команд, в основном из крупных поселений. В Лиге Брейкаут открытого космоса (OSBL) их меньше — всего девять, возможно, из-за сложностей и расходов, связанных с поддержанием межпланетной спортивной команды. Однако этот спорт обычно гораздо глубже укоренён в местной станционной культуре. Внемировые низшие лиги распространены, особенно Церерианская низшая лига, которую часто сравнивают со старым студенческим баскетболом.\n\n<b>Знаменитые команды:</b>\n\n<b>Тарсийские Лесные Волки</b> выигрывали чемпионат MBL в общей сложности восемь лет и последние два года подряд. По завершении этого доминирующего выступления ключевые игроки вроде Анны «Мороз» Гостевой ушли на пенсию или перешли в другие команды.\n<b>Боги Олимпа</b> считаются «лучшей командой, никогда не выигравшей чемпионат». Проклятые вторым местом двенадцать раз за более чем 30-летнюю историю спорта, их профессионализм и мастерство тем не менее сделали их любимцами болельщиков.\n<b>Драконы Нового Сианя</b> имеют больше штрафов за жестокость, чем любые две другие команды вместе взятые.\n<b>Церерианские Бунтари</b> втянуты в междоусобную борьбу за популярность и игроков с другой крупной командой Цереры — Стрелками. Их вражда отражается в болельщиках на станции. Соперничество проводит разделительные линии через районы, дружбу, даже семьи.\n<b>Воины Ганимеда</b> — победители прошлогоднего вымпела OSBL. Их победа пришла после чрезмерного допингового скандала, уничтожившего предыдущий состав команды. Возвращение в форму рассматривается давними болельщиками как доказательство стойкого духа команды, и прошлые прегрешения уже забываются.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIBreakout", "DataWIKIBreakoutHistory"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIDamaskRose",
+    "strTitle": "Дамасская Роза",
+    "strDesc": "Дамаск Роуз — бренд марихуаны штамма сатива, производимый и распространяемый компанией Грин Энерджи Компани. Это ведущий бренд марихуаны за пределами планеты благодаря своей истории, качеству и доступности.\n\n<b>Продукт:</b> Марихуана\n<b>Производитель:</b> Грин Энерджи Компани\n<b>Страна происхождения:</b> Старые Соединённые Штаты\n<b>Варианты:</b> Юникорн Дрим (штамм индика)\n<b>Производится:</b> Старые Соединённые Штаты, Тарсис Лэндинг, Ньюкал\n<b>Продаётся:</b> Внутренняя система, Старая Земля\n<b>Тикер:</b> DAMA\n\n<b>Слоганы:</b>\n\nВыкури розу\nУплывай\nЦветок оазиса",
+    "strImage": "datafiles/ENCDamaskRose_logo",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIDamaskRoseHistory", "DataWIKIDamaskRoseMarketing"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIDamaskRoseHistory",
+    "strTitle": "История Дамасской Розы",
+    "strDesc": "После постепенного ослабления запрета на марихуану в Соединённых Штатах в 2012 году независимые производители и малый бизнес процветали, особенно на Западном побережье. Крупномасштабные инвестиции вызвали раскол между традиционными производителями и хорошо финансируемыми стартапами. Альянс производителей Калифорнии начинался как кооператив для защиты интересов производителей, но вскоре расширился до дистрибуции, продаж и медицинских исследований. В 2034 году Альянс производителей Калифорнии стал Грин Энерджи Компани. Одновременно компания запустила свой флагманский бренд Дамаск Роуз — чистый штамм сатива, выведенный для неблагоприятных условий выращивания.\n\nГрин Энерджи Компани приняла участие в основании колонии Тарсис Лэндинг на Марсе, а затем и аэростата Ньюкал на Венере. Внемировая штаб-квартира компании была спроектирована архитектором Шубхой Вайдьяр. Характерное здание имеет форму пяти перекрывающихся слоёв, напоминающих розу, освещённое восемьюдесятью тысячами красных огней, распределённых по экстерьеру. Жители Тарсиса прозвали его «Бутон розы».",
+    "strImage": "datafiles/ENCDamaskRose_logo",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIDamaskRose", "DataWIKIDamaskRoseMarketing"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIDamaskRoseMarketing",
+    "strTitle": "Скандал с маркетингом Дамасской Розы",
+    "strDesc": "В разоблачении, впервые опубликованном на ОУНГ Wilcox, было раскрыто, что основная часть денег, потраченных Грин Энерджи Компани на маркетинг Дамаск Роуз, пошла на спонсирование знаменитостей, политиков и даже лидеров индустрии для публичного курения или употребления марихуаны бренда Дамаск Роуз. Крупные медийные мероприятия проводились или были захвачены компанией для продвижения наркотика. В частности, Три Дэй Блоуаут был впервые задуман маркетинговыми представителями TGEC, хотя вероятно большинство участников не знали о происхождении фестиваля. Актриса Валерия Валенсия, получившая пять миллионов юаней за три года без раскрытия своих отношений с TGEC, утверждала, что никак не изменила своё поведение.",
+    "strImage": "datafiles/ENCDamaskRose_logo",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIDamaskRose", "DataWIKIDamaskRoseHistory"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIDNDCola",
+    "strTitle": "Кола DND",
+    "strDesc": "«Ду Нот Дринк Кола» — энергетический напиток, одноимённый бренд ДНД Групп. Это самый популярный энергетический напиток и второй по популярности газированный напиток, продаваемый в Системе. Он известен своей инновационной маркетинговой стратегией, которая использует риски для здоровья вместо их преуменьшения. Широко потребляется сменными работниками и дальнобойщиками.\n\n<b>Тип:</b> Энергетический напиток\n<b>Производитель:</b> ДНД Групп\n<b>Страна происхождения:</b> Швеция\n<b>Варианты:</b> ДНД-Токсик, ДНД-Лемон\n<b>Производится:</b> Сучжоу Орбитал; Дедалия Планум\n<b>Ключевые лица:</b> Анника Энгстрём (CEO)\n<b>Тикер:</b> DNDR\n\n<b>Слоганы:</b>\nНе пейте эту колу.\nНепригодно для потребления человеком.\nВнимание: Крайне опасно.\nИспользовать только в экстренных случаях",
+    "strImage": "datafiles/ENCDndCola_logo",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIDNDColaHistory"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIDNDColaHistory",
+    "strTitle": "История колы DND",
+    "strDesc": "Требования к безопасности продукции были одними из самых медленно распространяющихся законов Земли во время колониальной гонки, и химик Йенс Нюбург извлёк из этого выгоду. В чане, одолженном у своей компании, он сварил производную колы, смешанную с метилфенидатом, и продал напиток своей рабочей группе. Её взрывная популярность привлекла внимание дистрибьюторов, и Нюбург продал своё творение «Лагом Холдингс».\n\n<b>Маркетинг:</b>\n\nНеконвенциональный стиль бренда был разработан креативным маркетинговым агентством «Фаст Таймз».\n\nКогда регуляторные органы догнали колонизационные усилия, запрет оказался невозможным из-за укоренившейся популярности напитка, тогда называвшегося МПД Кола. Компромиссное соглашение привело к размещению заметных предупреждений о здоровье на банке. Маркетинговая стратегия «Фаст Таймз» перевернула соглашение с ног на голову, сделав риски для здоровья и предупреждения уникальным торговым предложением продукта. Комбинация постоянно слабеющих регуляторных органов, корпоративного влияния и общественной любви к продукту отложила дальнейшее регулирование.",
+    "strImage": "datafiles/ENCDndCola_logo",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIDNDCola"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIHyunLeePetware",
+    "strTitle": "Зоомагазин Хюн Ли",
+    "strDesc": "«Хюн Ли Петвэр» Инк. — компания прикладной генетики, специализирующаяся на синтезе и искусственном выращивании животных. Разработки Петвэр считаются передовыми, и их продукция пользуется большим спросом. Несмотря на высокий спрос, Петвэр создаёт животных на заказ, что привело к появлению множества подражателей.\n <b>Продукт:</b> Искусственные животные и питомцы\n <b>Происхождение:</b> Станция Капён\n <b>Ключевые лица:</b> Элис Дин (CEO), Пак Хён Ли (CDO, мажоритарный акционер)\n <b>Тикер:</b> HPET",
+    "strImage": "encounters/ENCHyunLeeПетвэр",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIHyunLeePetwareHistory",
+      "DataWIKIHyunLeePetwareCatalogue"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIHyunLeePetwareHistory",
+    "strTitle": "История питомцев «Хюн Ли»",
+    "strDesc": "Пак Хён Ли впервые привлёк общественное внимание как профессор генетики в Корейской школе биотехнологий, когда его взгляды и несанкционированные эксперименты над животными и сплайсингом генов стали достоянием общественности. Вскоре после этого его эксперименты были прекращены, а докторская степень отозвана. Примечательно и, возможно, иронично, что его резиденция была осквернена козьей кровью. Решив эмигрировать за пределы планеты, Хён Ли продолжил свою работу частным образом в мягкой правовой среде станции Капён. Будущий гендиректор Элис Дин, тогда финансовый аналитик, услышала о Хён Ли из станционных слухов. Она подошла к нему и предложила шесть месяцев бесплатной работы, взяв на себя личное обязательство изменить его имидж. Хён Ли был незаинтересован, но боялся нарваться на очередной скандал, поэтому принял её предложение. Шесть месяцев спустя выручка от IPO «Хюн Ли Петвэр» на ISSX достигла $5 миллиардов.",
+    "strImage": "encounters/ENCHyunLeeПетвэр",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIHyunLeePetware", "DataWIKIHyunLeePetwareCatalogue"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIHyunLeePetwareCatalogue",
+    "strTitle": "Каталог питомцев «Хюн Ли»",
+    "strDesc": "Этот список репрезентативен, но не исчерпывающ: <b>Собаки:</b>\nКлассический золотистый ретривер: для микро-G, не линяет\nСтаффи: спокойный\nВельш-корги: умный, для микро-G\nПитбуль: верный, для домашней защиты\nДата-пёс: Все ваши данные в одной собаке!\nБоевая лиса: Единственный шарф, защищающий от холода И потенциальных грабителей.\n\n<b>Кошки:</b>\nКлассическая полосатая: умная\nБурманская\nКалико: для микро-G\n\nСкладная: Складывается в сумочку для удобства переноски.<b>Лошади:</b>\nПаломино для скачек\nШайрская тяжеловозная, особо сильная\n\n<b>Змеи:</b>\nКлассический питон\nУдав\nЧёрная змея: особо ядовитая, для домашней защиты\n\n<b>Другое:</b>\nНосорогоосьминог: Мы были достаточно безумны, чтобы создать его, вы достаточно безумны, чтобы купить.\nЭко-рыба: Увольте чистильщика бассейна. Эко-рыба питается вашей грязью!",
+    "strImage": "encounters/ENCHyunLeeПетвэр",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIHyunLeePetware", "DataWIKIHyunLeePetwareHistory"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIMorettiCoffee",
+    "strTitle": "Кофе Моретти",
+    "strDesc": "Бренд Моретти был основан в 2023 году. Моретти Кофе сегодня — это ребрендинг Пан Юспрессо, который был ребрендингом оригинального Моретти Кофе. Бренд зависел от преобладающего мнения о сплочённости Европейского союза. Сначала он был переименован, чтобы апеллировать к утверждённой, воссоединённой Европе, затем переименован обратно во время упадка Европы в надежде, что имя Моретти всё ещё продаёт кофе. К удивлению инвесторов, так и было.\n\n<b>Продукт:</b> Кофе\n<b>Производитель:</b> Моретти Кофе Компани\n<b>Страна происхождения:</b> societas Europaea\n<b>Тикер:</b> MORC\n\n<b>Слоганы:</b>\nНасыщенный, тёмный, как вам нравится.\nБери больше. Бери Моретти.\nКогда можешь выбирать — выбирай Моретти.\nОсобая смесь, только для тебя.\nНаш бленд. Твой напиток.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIMorettiCoffeeHistory"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIMorettiCoffeeHistory",
+    "strTitle": "Маркетинг кофе Моретти",
+    "strDesc": "Моретти — персонификация, используемая как маскот бренда. В двадцатых он распространился по социальным сетям, ведя регулярные «беседы у камина» в заснеженном шале. Моретти бродил по шале, готовя кофе, рассказывая истории и играя в шашки со зрителями. Сегодня Моретти Кофе Компани продаёт голографические симуляции Моретти, предназначенные составлять компанию любителям кофе или развлекать аудиторию динамически генерируемыми историями о старой стране.\n\nКофе — это смесь робусты, ориентированная на потребителей с высоким доходом. Моретти Кофе сотрудничает с культурой элитных кафе и удовлетворяет масштабные корпоративные запросы.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIMorettiCoffee"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIOgisosRegister",
+    "strTitle": "Регистр Огисо",
+    "strDesc": "Реестр Огисо — страховой рынок, крупнейший страховой сервис для космических путешествий в Системе. Члены Огисо предоставляют капитал для андеррайтинга страховых полисов и объединяются в синдикаты для распределения рисков. Брокеры Огисо обеспечивают передачу рисков между синдикатами и страхователями. Огисо также оценивает техническое обслуживание и пригодность судов и станций и публикует эти оценки в титульном Регистре судов. Отдельные, неинкорпорированные члены рынка известны и упоминаются в СМИ как Агентства. Реестр Огисо славится как соблюдением своих контрактов, так и взысканием причитающихся долгов.\n\n<b>Отрасль:</b> Страхование\n<b>Страна происхождения:</b> Нигерия\n<b>Ключевые лица:</b> Адаку Темиле (CEO)\n<b>Штаб-квартира:</b> Ломбардия, Сучжоу Орбитал\n<b>Тикер:</b> OGIS\n\n<b>Слоганы:</b>\n\nPrimum inter pares («Первый среди равных»)\n\nДлинные руки и глубокие карманы",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIOgisosRegisterHistory",
+      "DataWIKIOgisosRegisterInsurance",
+      "DataWIKIOgisosRegisterShipRatings"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIOgisosRegisterHistory",
+    "strTitle": "История регистра Огисо",
+    "strDesc": "Строительство африканского космического лифта в планируемом городе Огисо сделало его естественным центром для космических путешественников, судоходных, строительных и страховых компаний. Хотя первые рейсы финансировались национальными банками или напрямую частными интересами, группа нигерийских брокеров стремилась повторить успех старых финансовых институтов, учредив Регистр судов. Хотя другие страховые компании последовали, Реестр Огисо стал первым страховым рынком, ориентированным на внемировое пространство. Сегодня почти половина всех внемировых страховых премий учитывается через Реестр Огисо.\n\nРеестр Огисо столкнулся с неудачей, когда недостроенный аэростат «Алжир» бесследно исчез в атмосфере Венеры. Огисо был вынужден подать иск против шестисот Агентств, отказавшихся выплачивать покрытие, поскольку они требовали публичного расследования. Представитель ответчиков заявил, что причиной потери, скорее всего, было пиратство или саботаж, от которых аэростат не был застрахован, поскольку контракт был создан до того, как уязвимость венерианской атмосферы для пиратства стала известной величиной. Судебная тяжба и поиск доказательств судьбы «Алжира» продолжаются.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIOgisosRegister",
+      "DataWIKIOgisosRegisterInsurance",
+      "DataWIKIOgisosRegisterShipRatings"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIOgisosRegisterInsurance",
+    "strTitle": "Страхование регистра Огисо",
+    "strDesc": "Реестр Огисо предлагает широкий спектр страховых полисов MAT, выходящий за рамки данной статьи. Список ниже не является исчерпывающим.\n\n<b>Только полная гибель</b>\nФорма страхования, которая выплачивает убытки только при полном уничтожении застрахованного груза или судна. Полисы TLO значительно дешевле других полисов, учитывая редкость a) наступления события b) выживания заявителей и c) доказательства потери. Контракты Огисо обычно включают, как часть полиса TLO, Конструктивную полную гибель, когда судно выживает, но расходы на ремонт оцениваются выше стоимости судна.\nНесмотря на это, отсутствие TLO может привести к потерям на миллионы, миллиарды, а в некоторых случаях триллионы. По этой причине это очень распространённый полис за пределами планеты.\n\n<b>Груз</b>\nПокрытие груза оплачивает убытки, соразмерные стоимости груза. Более комплексное покрытие включает ситуации вроде повреждений при погрузке и разгрузке.\n\n<b>Корпус</b>\nПокрытие корпуса оплачивает повреждения корпуса в случае столкновения (повреждение от межпланетного тела, микрометеоритов или обломков) или навала (повреждение от контакта с другим кораблём).\n\n<b>Рейс</b>\nРейсовые полисы действуют от точки отправления до пункта назначения — наиболее распространённый полис для груза.\n\n<b>Время</b>\nПолис на основе времени действует определённый период. Стандартный морской контракт длится один год. Полисы, покрывающие время и рейс, являются «смешанными».\n\n<b>Оценённый или Неоценённый/Открытый</b>\nВ оценённом полисе оценивается стоимость груза и определяется возмещение. В неоценённом или «открытом» полисе возмещение производится только после инспекции и оценки любых потерь.\n\n<b>Портовый риск</b>\nПолисы портового риска страхуют безопасность судна, пока оно находится в порту. Некоторые порты, такие как Атабаска в Поясе, Регистр категорически не покрывает из-за высокого уровня потерь, случайных и иных.\n\n<b>Забастовки, бунты и гражданские беспорядки</b>\nБольшинство полисов не покрывают SR&CC, поэтому эти дополнения должны оговариваться отдельно.\n\n<b>Военный риск</b>\nПокрывает ущерб от военных действий, включая вторжение, мятеж, восстание и захват.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIOgisosRegister",
+      "DataWIKIOgisosRegisterHistory",
+      "DataWIKIOgisosRegisterShipRatings"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIOgisosRegisterShipRatings",
+    "strTitle": "Рейтинги кораблей регистра Огисо",
+    "strDesc": "Суда оцениваются сначала по двум критериям технического обслуживания: качество и обслуживание корпуса, или рейтинг Судна, и качество и обслуживание систем, или рейтинг Материалов. Первоклассное обслуживание получает рейтинг «A», далее A-B-C-D-E, где «E» — худший. Среднее число указывает специализированные помещения, обычно герметизированные, а последняя буква оценивает управляемость и манёвренность, следуя A-B-C-D-E так же, как обслуживание.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIOgisosRegister",
+      "DataWIKIOgisosRegisterHistory",
+      "DataWIKIOgisosRegisterInsurance"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIOssifexPen",
+    "strTitle": "Перо Оссифекс",
+    "strDesc": "Оссифекс — торговое название комбинированного препарата, состоящего из антирезорбтивных агентов. Он обычно используется для поддержания костного гомеостаза во время длительных космических полётов. Также может использоваться для лечения лёгкой потери костной массы. Оссифекс обычно является профилактическим средством и считается ключевой частью медицинского режима для космических работников и дальнобойщиков. Стандартный способ введения — подкожная инъекторная ручка.\n\n<b>Продукт:</b> Лекарство (аэрокосмическое)\n<b>Производитель:</b> Ван Бюрен Фармасьютикалс\n<b>Происхождение:</b> Ханчжоу Орбитал\n\n<b>Слоганы:</b>\nМы прикроем вашу спину\nДля крепких, здоровых костей\nОстеокласты — дело прошлого!",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIOssifexPenHistory"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIOssifexPenHistory",
+    "strTitle": "История пера Оссифекс",
+    "strDesc": "Ван Бюрен Фармасьютикалс и маркетинговое агентство Лайон Глобал печально известны скандальной кампанией «Контрольная группа». Десять оплачиваемых добровольцев были помещены в условия микрогравитации на шесть месяцев, где пятерым регулярно вводили Оссифекс, а остальные получали «известный конкурентный бренд». Участники регулярно загружали лайвлоги.\n\nЧерез два месяца кампания была приостановлена на неопределённый срок, поскольку аномальный рост костей поразил четырёх из пяти участников контрольной группы. Последующий иск пяти членов контрольной группы был урегулирован во внесудебном порядке. Тем временем, несмотря на общественное осуждение Ван Бюрен Фармасьютикалс и критику кампании, продажи Оссифекс взлетели.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIOssifexPen"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIOWNG",
+    "strTitle": "Обзор ОУНГ",
+    "strDesc": "Офф Ворлд Ньюз Групп (ОУНГ) — беспроводная сетевая новостная служба, принадлежащая Олимпус Нетворкс, подразделению Харпер Сян. Она была создана медийной парой Бадди Харпером и Сяомэй Сян как первая новостная служба с базой за пределами планеты, чтобы противостоять местным филиалам, принадлежащим земной элитной медии и отчитывающимся перед ней. ОУНГ — новостная служба по умолчанию для более чем ста миллионов устройств, подключённых к беспроводным сетям Внутренней системы.\n\n<b>Отрасль:</b> Новостные медиа\n<b>Происхождение:</b> Марс\n<b>Материнская компания:</b> Олимпус Нетворкс\n<b>Тикер:</b> ОУНГ\n\n<b>Слоганы:</b>\nПроверенные и подтверждённые\nНовый дом новостей",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIOWNGHistory",
+      "DataWIKIOWNGControversy",
+      "DataWIKIOWNGAnalucia",
+      "DataWIKIOWNGChannelOneBroadcastSchedule"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIOWNGHistory",
+    "strTitle": "История ОУНГ",
+    "strDesc": "Офф Ворлд Ньюз Групп запустилась с первым развёртыванием единого беспроводного сетевого покрытия Олимпус Нетворкс в Тарсис Лэндинге в 2035 году. Запуску предшествовали как слияние Харпер Коммуникейшнс с Шанхай Ньюз Лимитед для создания Харпер Сян, так и звёздная свадьба руководящих медиамагнатов. ОУНГ начала с флагманской 24-часовой новостной службы «Канал Один» и с тех пор запустила «Канал Два» и «Канал Три» для развлечений и прямых спортивных трансляций соответственно.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIOWNG",
+      "DataWIKIOWNGControversy",
+      "DataWIKIOWNGAnalucia",
+      "DataWIKIOWNGChannelOneBroadcastSchedule"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIOWNGControversy",
+    "strTitle": "Противоречие ОУНГ",
+    "strDesc": "Новости ОУНГ получают приоритетный статус передачи во всех сетях, принадлежащих Харпер Сян, таких как спутники фиксированной связи серии «Афродита». Другие источники часто депреоритизируются или даже полностью блокируются, как прямая трансляция беспорядков Меридиана конкурентной новостной службой Нью Таймс в пользу интервью «Канал Один» с Морисом Капуром.\n\nХарпер Сян не отвечает на жалобы о троттлинге контента.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIOWNG",
+      "DataWIKIOWNGHistory",
+      "DataWIKIOWNGAnalucia",
+      "DataWIKIOWNGChannelOneBroadcastSchedule"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIOWNGAnalucia",
+    "strTitle": "ОУНГ Аналусия",
+    "strDesc": "После короткой бомбардировки горнодобывающий пузырь Аналусия в Северном каньоне на Марсе был уничтожен, а его колонисты принудительно изгнаны Цзянсу Энерджи Групп, добывающей компанией с предшествующими правами на территорию. Изгнанникам отказали в доступе к транспорту или достаточному снаряжению для холодной погоды, и им не оставалось ничего, кроме как пройти тридцать восемь километров до ближайшей исследовательской заставы. Несмотря на то что их перехватили по пути, только трое из пятидесяти колонистов пережили это испытание.\n\nОсвещение Аналусии Уорреном Килбрайдом заставило JEG лоббировать его увольнение. Вскоре после этого Килбрайд ушёл из ОУНГ, и его слот заняла Кейт Тянь.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIOWNG",
+      "DataWIKIOWNGHistory",
+      "DataWIKIOWNGControversy",
+      "DataWIKIOWNGChannelOneBroadcastSchedule"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIOWNGChannelOneBroadcastSchedule",
+    "strTitle": "ОУНГ Аналусия",
+    "strDesc": "Время указано по MTC (Координированное марсианское время).\n\n06:00 - Марсианский рассвет: Утренняя служба для Марса. Молитвенные службы по запросу.\n06:05 - Красный рассвет с Энн Мари Йи: Утренние актуальные события\n07:00 - Внемировой спорт: (Вне)мировые спортивные события. Лучшие моменты, командные драмы, профили атлетов. Ведёт Шри «Боксёр» Фритриани\n08:00 - Утренние новости: Премьерный новостной пакет «Канал Один» с Тревером Бэнком и Вэйханем Вингом\n08:25 - Новости кратко: Сегодняшние заголовки, сжато\n08:30 - Ньюсрум: Развёрнутые новости с акцентом на анализ и обсуждение. К Треверу и Вэйханю присоединяются знаменитые репортёры\n10:00 - Финансы с Файруз Абдуллой: (Вне)мировые финансы\n11:00 - В центре внимания: Специальный слот для профилей / интервью\n12:00 - Смена караула: Лёгкая сторона новостей в обсуждении комедийной панели\n13:00 - Доклад Ороско: Каллум Фост берёт интервью у пострадавших на месте после стихийных бедствий, форс-мажоров и т.д.\n14:00 - За Поясом: Новости из Пояса и далее. Ведёт Мэйр Ни Логарн\n15:00 - Это реально произошло: Вирусный или непостановочный контент из пользовательских материалов ОУНГ\n16:00 - Миры вокруг нас: Научно-популярные технические и экологические программы в стиле Natgeo для молодой аудитории\n18:00 - Земной закат: Вечерняя служба для Земли. Молитвенные службы по запросу\n18:05 - Вечерние новости: Премьерный новостной пакет «Канал Один» с Тревером Бэнком и Вэйханем Вингом\n18:30 - Ньюсрум: Относительно расслабленный анализ и обсуждение. К Треверу и Вэйханю присоединяются знаменитые репортёры\n19:30 - Внемировой спорт: Вечернее спортивное обновление\n20:00 - Уилкокс: Слот политического ведущего Пирса Уилкокса\n21:00 - Красная черта: Жёсткие журналистские расследования\n22:00 - Поздние новости: Финальная общая новостная программа марсианских суток\n23:00 - Навигационные Новости: Отраслевые новости космических путешествий\n00:00 - Война Кейт Тянь: Партизанские репортажи из зон конфликтов Системы\n01:00 - Ньюсрум: Первый выпуск суток\n02:00 - Слот регионального филиала: Местные языковые службы. Важно за пределами планеты.\n03:00 - Слот регионального филиала: Местные языковые службы. Важно за пределами планеты.\n04:00 - Ньюсрум: Склоняется к внемировым новостям для спящих марсианских зрителей\n05:00 - Вне сети с Аленом Касонго: Ален обрушивает свою язвительную личность на гостей",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIOWNG",
+      "DataWIKIOWNGHistory",
+      "DataWIKIOWNGControversy",
+      "DataWIKIOWNGAnalucia"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIPASS",
+    "strTitle": "Тихоокеанская космическая авиакомпания",
+    "strDesc": "Пасифик Эйрлайнс Спейс Сервис (PASS) — межпланетный шаттловый сервис, работающий на маршрутах Марс/Венера, Марс/Пояс и Луна/Марс. Это неофициальный национальный перевозчик Внутренней системы, тогда как материнская компания Пасифик Эйрлайнс является национальным перевозчиком Старых Филиппин.\n\n<b>Сервис:</b> Авиалиния, межпланетный шаттл\n<b>Страна происхождения:</b> Старые Филиппины\n<b>Ключевые лица:</b> Альтея Торрес (CEO)\n<b>Материнская компания:</b> Пасифик Эйрлайнс\n<b>Тикер:</b> IPAC\n\n<b>Слоганы:</b>\nНачни всё заново во внемировых колониях... (на Земле, устарел)\nДом — в одном билете... (за пределами планеты, устарел)\nОт моря к небу, мы летим",
+    "strImage": "datafiles/ENCPASS_logo",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIPASSHistory", "DataWIKIPASSMarketing"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIPASSHistory",
+    "strTitle": "История PASS",
+    "strDesc": "PASS была основана Пасифик Эйрлайнс в 2021 году для эксплуатации космического лифта Юньти. В партнёрстве с Ренске Хотел Интернешнл она открыла отель Маре Имбриум на поверхности Луны в 2025 году. Когда колонизационная гонка привела к историческому спросу на доступные межпланетные путешествия, PASS была хорошо позиционирована для обслуживания Внутренней системы и вскоре предложила пакетный сервис, доставлявший клиентов из крупнейших городов Земли прямо на поверхность Марса.\n\nПотеря Земли из-за синдрома Кесслера подорвала позиции PASS на рынке. Без стабильного бизнеса космического лифта коридор Земля-Луна-Марс фактически закрылся. PASS находится в процессе агрессивного разворота к маршрутам Марс/Венера и Марс/Пояс, хотя сталкивается с жёсткой конкуренцией от более устоявшихся сервисов в регионе.",
+    "strImage": "datafiles/ENCPASS_logo",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIPASS", "DataWIKIPASSMarketing"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIPASSMarketing",
+    "strTitle": "Маркетинг PASS",
+    "strDesc": "На терминале Си Цзиньпина на Марсе PASS поддерживает крупнейшую рекламную систему в известной вселенной — огромный экран под названием Panascope. При высоте пятьсот метров и ширине два километра он виден невооружённым глазом с приближающихся кораблей за несколько часов до остальной станции и поэтому часто используется как навигационный маркер. Помимо трансляции рекламных материалов PASS, это рекламная площадка, очень востребованная другими корпорациями. За счёт арендного дохода ожидается, что Panascope окупит свои огромные строительные затраты в начале следующего века.",
+    "strImage": "datafiles/ENCPASS_logo",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIPASS", "DataWIKIPASSHistory"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIPeacockPictures",
+    "strTitle": "Пикок Пикчерз",
+    "strDesc": "Пикок Пикчерз Инкорпорейтед — синьхуанская медиастудия, продюсерская компания и дистрибьютор. Это одна из крупнейших медиакомпаний в Системе и гибридный производитель «нового» и «старого» медиа. Она наиболее известна своими художественными фильмами и ассоциацией с группой режиссёров, актёров и технических директоров, известных как 右岸派, или «Правобережники».\n\nТип: Медиапроизводитель, дистрибьютор\nАльтернативные названия: Kongque Yingye Youxian Gongsi (孔雀影业有限公司)\n<b>Страна происхождения:</b> Синьхуа, Марс\n<b>Штаб-квартира:</b> Павонис Монс\n<b>Ключевые лица:</b> Вэй Чэн (президент), Ди Яотэ (главный креативный директор)\n<b>Тикер:</b> PECK\n\n<b>Фильмы и слоганы:</b>\n\nТе, у кого заряжены стволы\n«Унеси секрет в могилу.»\n\nРазрыв\n«Кто знает — не говорит. А кто говорит — не знает.»\n\nВременная блокировка\n«Это было просто ограбление. Теперь — всё что угодно, но не это.»\n\nАлмазы в грязи\n«Он любил ту, что любила только деньги.»\n\nЮжное нагорье\n«Падать ещё очень далеко.»",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKIPeacockPicturesHistory",
+      "DataWIKIPeacockPicturesMarketing"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIPeacockPicturesHistory",
+    "strTitle": "История Пикок Пикчерз",
+    "strDesc": "Пикок Пикчерз была основана Синьхуанским советом по искусству для привлечения кинематографистов в Павонис Монс с обещанием финансовой помощи и творческой свободы. Годами проект считался провалом представителями Синьхуа, а президенту Вэй Чэн угрожали увольнением четырнадцать раз, пока она сопротивлялась влиянию своего правительства. В пресс-заявлениях она называла этот период «оседлать тигра».\n\nУспех проекта был постепенным, а не мгновенным. Рост продолжался долго после выхода на прибыльность. Восхождению помогала растущая команда креативных продюсеров — Правый берег, включая режиссёров вроде Ди Яотэ и Чжоу Фэйфэй, а также актёрскую звёздную пару Бенедикт Лэм и Далисай. Прорывной успех степного триллера «Те, у кого заряжены стволы» считается переломным моментом Пикок Пикчерз и кодификацией, если не происхождением, жанра «степей».",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIPeacockPictures", "DataWIKIPeacockPicturesMarketing"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIPeacockPicturesMarketing",
+    "strTitle": "Маркетинг Пикок Пикчерз",
+    "strDesc": "Творческая свобода Пикок давала ей лицензию и бюджет делать что угодно, несмотря на голоса в Совете по искусству, требовавшие исторических драм и «классической научной фантастики» для конкуренции с продукцией западных студий. Вэй Чэн хотела создать визуальный язык и основополагающий миф для новых поколений, живущих на Марсе. Она вывела внутреннюю идеологическую битву на публику, где она нашла отклик у марсианских колонистов.\n\nЖизнь креативщиков подвержена постоянному вниманию таблоидов, папарацци и дебатам в социальных сетях. Это поощряется Пикок, которая курирует фандомы, приглашая аудиторию в производственный процесс и за кулисы. Эффект в том, что знаменитости кажутся близкими друзьями своих фанатов, а в некоторых случаях они таковыми и являются.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIPeacockPictures", "DataWIKIPeacockPicturesHistory"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIRenbao",
+    "strTitle": "Умные технологии Ренбао",
+    "strDesc": "Ренбао Смарт Текнолоджиз» Инк. (RST) — безграничная технологическая компания со штаб-квартирами в Шэньчжэне и Сучжоу Орбитал, с операциями в более чем двухстах странах, внемировых колониях и корпоративных территориях. Философия дизайна RST основана на принципах нейроморфологии, взаимосвязанности и симбиоза с пользователем. Её аппаратная продукция включает смартфон Portal, ноутбук 机 («Engine» или «G серия»), планшет 牖 («Lattice») и связанные периферийные устройства дополненной реальности. RST — ведущая дочерняя компания конгломерата Ренбао.\n\n<b>Отрасль:</b> Потребительская электроника\n<b>Страна происхождения:</b> Старый Китай\n<b>Ключевые лица:</b> Сюй Сян (CEO), Чэн Сяоли (CFO), Лай Ин Хо (CDO)\n<b>Материнская компания:</b> Ренбао\n<b>Тикер:</b> REST\n\n<b>Слоганы:</b>\nRST. Ключ к будущему.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIRenbaoHistory"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIRenbaoHistory",
+    "strTitle": "История Ренбао",
+    "strDesc": "RST была основана в 2027 году Ренбао «Семикондактор Фабрикейшн» на исходе бума фабрик 20-х годов. Её целью было исследование альтернативных вычислительных архитектур перед лицом растущих затрат на литографические процессы. Разрабатывая тесты для системы в разработке, Лай Ин Хо, тогда младший инженер, создала предиктивно-приоритетный интерфейс как инструмент для помощи в собственной работе, наполнив его данными наблюдения за собой. Её инструмент вскоре использовался коллегами. По анекдотическим свидетельствам, неизвестный менеджер неправильно понял происхождение интерфейса и угрожал уволить весь этаж за корпоративный шпионаж. Когда директора осознали, что интерфейс может стать массовым успехом, они интегрировали его в свои флагманские устройства следующего поколения. Первый крупный релиз RST, смартфон 公 式 («Formula»), опередил конкурентов, установив отраслевые стандарты удобства и производительности.\n\nRST вскоре расширилась в разнородные области программного и аппаратного обеспечения: искусственный интеллект, облачные вычисления, высокоскоростные данные, криптография, кибернетика и носимые технологии. В 2050 году Ренбао «Семикондактор Фабрикейшн» реструктурировалась для переориентации миссии компании, переименовавшись в «Ренбао» и дав RST полномочия сосредоточиться на среде потребительской электроники. Ренбао была одним из крупных инвесторов в строительство Сучжоу Орбитал и сегодня монополизирует 6% её внутренней площади.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIRenbao"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKISunguraViceroys",
+    "strTitle": "Вице-короли Сунгура",
+    "strDesc": "Сунгура Вайсройз — бренд сигарет, производимых Сунгура Лимитед, компанией из Старой Кении. Вайсройз известны своей грубой резкой и вкусом, характерным маскотом Сунгура и жестом «приказ вице-короля», связанным с их употреблением.\n\n<b>Продукт:</b> Сигареты\n<b>Производитель:</b> Сунгура Лимитед\n<b>Страна происхождения:</b> Старая Кения\n<b>Варианты:</b> «Вайсройз» Ментол, «Вайсройз» Грин\n<b>Тикер:</b> SUNG\n\n<b>Слоганы:</b>Перекур. Приказ вице-короля.\nДля долгого пути домой.\nТы заслужил передышку.\nСлаще кислорода.",
+    "strImage": "datafiles/ENCViceroys_logo",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKISunguraViceroysHistory",
+      "DataWIKISunguraViceroysMarketing"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKISunguraViceroysHistory",
+    "strTitle": "История Сунгура Вайсройз",
+    "strDesc": "Бренд Вайсройз был создан во время экономического бума Центральноафриканских государств в ранний период колонизационной гонки. Урбанизация и международные инвестиции в такие районы, как Найроби, Киншаса и Дар-эс-Салам, создали новый пригородный рабочий класс. Сунгура нацелила свою линейку сигарет на этот новый рынок.\n\nМассовая эмиграция из Африки принесла Вайсройз космическим и дальнорейсовым работникам. В 2062 году Колониальная торговая комиссия расследовала популярность сигарет среди техников по экологии и корреляцию между растущей долей рынка сигарет и растущими затратами на обслуживание и частотой отказов CO2-скрубберов. Расследование продолжается, хотя никаких мер против Сунгура по этому вопросу не принято.",
+    "strImage": "datafiles/ENCViceroys_logo",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKISunguraViceroys", "DataWIKISunguraViceroysMarketing"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKISunguraViceroysMarketing",
+    "strTitle": "Маркетинг Сунгура Вайсройз",
+    "strDesc": "Упаковка и реклама Вайсройз часто изображают маскота Сунгура — одноимённого красного зайца — и набор типовых персонажей компании. Хотя он изображается трикстером, он добродушен и разумен, наказывая напыщенность. Его уши образуют красную V в «Вайсройз» на сигаретных пачках.\n\nСигареты без фильтра и грубые. Они позиционируются как предпочтительный бренд для курильщиков, желающих сырой вкус после тяжёлой смены. Слоган бренда «приказ вице-короля» стал общепринятым выражением в рабочих сообществах для обозначения перекура, часто сопровождаемый жестом «V» рукой и/или большим пальцем через плечо.",
+    "strImage": "datafiles/ENCViceroys_logo",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKISunguraViceroys", "DataWIKISunguraViceroysHistory"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKITrenchers",
+    "strTitle": "Тренчерс",
+    "strDesc": "Тренчерс — зарегистрированный бренд готовых блюд, предназначенных для дальних рейсов. Они не требуют приготовления, уборки и предназначены для использования под тягой или в микрогравитации. Следуя своему тёзке, большая часть упаковки съедобна, хотя её поедание считается табу среди космических работников.\n\nТип: Продукт длительного хранения\n<b>Производитель:</b> Фьючер Фудс Компани\n<b>Страна происхождения:</b> Старые Соединённые Штаты\n<b>Тикер:</b> FUFO\n\n<b>Слоганы:</b>\nДостаточно голоден, чтобы съесть стол?\nПочти слишком просто.\nНе скажешь, что не сыт.\n«100% съедобно.»",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKITrenchersHistory",
+      "DataWIKITrenchersMarketing",
+      "DataWIKITrenchersSurvivor"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKITrenchersHistory",
+    "strTitle": "История Тренчерс",
+    "strDesc": "Тренчерс начались как секретный проект для доставки максимальной питательной ценности в определённом объёме и массе, предназначенный для дальнерейсовых операций. Результатом стал пакет MRE, который сам был съедобен, сделанный из запатентованного перевариваемого волокна. После месяцев исследований продукта волокно было окрашено в белый цвет и названо StyrofauxmTM.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKITrenchers",
+      "DataWIKITrenchersMarketing",
+      "DataWIKITrenchersSurvivor"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKITrenchersMarketing",
+    "strTitle": "Маркетинг Тренчерс",
+    "strDesc": "Астронавты, живущие с тонкими маржами прибыли и ненадёжными условиями во время колонизационной гонки, вызвали гонку ко дну для продовольственных товаров первой необходимости, что привело к созданию Тренчерс. Признавая как полезность, так и непривлекательную природу Тренчерс, Фьючер Фудс приняла стратегию анти-маркетинга, изображая свой продукт как жизненно необходимое средство, которое нужно терпеть, а не наслаждаться. Опрос, проведённый Фьючер Фудс, показал, что 71% потребителей оценили честность в маркетинге Тренчерс, и что 43% потребителей, купивших Тренчерс, купили бы их снова.\n\nПравовой спор из-за цен на акции привёл к статье в финансовом разделе Систем Аналист с комичным названием «Фьючерсная вражда Фьючер Фудс». Заголовок получил более восьми тысяч жалоб.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKITrenchers",
+      "DataWIKITrenchersHistory",
+      "DataWIKITrenchersSurvivor"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKITrenchersSurvivor",
+    "strTitle": "Сенсация выживших Тренчерс",
+    "strDesc": "Тренчерс стали предметом медийного внимания во время спасения рукава станции Наутилус, потерянного в катастрофе L3. Инженер синхронизации Радху Лагари-Пол выжил почти шесть месяцев в ловушке внутри рукава, питаясь Тренчерс и серой водой. Фьючер Фудс воспользовалась трендом, где медийные обновления о статусе Лагари-Пол совпадали со скачками спроса на Тренчерс по всей Системе.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKITrenchers",
+      "DataWIKITrenchersMarketing",
+      "DataWIKITrenchersHistory"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKITripura",
+    "strTitle": "Высший купаж Трипуры",
+    "strDesc": "Трипура — индийский производитель и дистрибьютор чая, работающий непрерывно более двухсот лет.\n\n<b>Продукт:</b> Чай\n<b>Производитель:</b> Трипура Ти Инкорпорейтед\n<b>Страна происхождения:</b> Старая Индия\n<b>Варианты:</b> Трипура «Утренний чай», Трипура «Церемониальный чай», Трипура «Очищающий купаж»\n<b>Производится:</b> Старая Индия, Синьхуа, Марс\n<b>Тикер:</b> TRIP\n<b>Слоганы:</b>\nОткрой блаженство\nЧай, заваренный с любовью",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKITripuraHistory",
+      "DataWIKITripuraMarketing",
+      "DataWIKITripuraVision"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKITripuraHistory",
+    "strTitle": "История Трипуры",
+    "strDesc": "Трипура была основана Британским Раджем до Первой опиумной войны. Опасаясь потерять доступ к китайским поставкам чая, британцы начали выращивать чай в Индии, пытаясь сломать монополию династии Цин. Когда исход Первой опиумной войны оказался благоприятным для Британии, многие производители чая, включая тех из изолированного штата Трипура, были почти забыты. В 20-м веке владение Трипура Ти впервые в истории перешло к индийской семье.\n\nПограничная напряжённость со Старым Бангладеш в 2030-х убедила Совет директоров Трипура в необходимости перенести операции за пределы Индии. В партнёрстве с ISRO, космическим агентством Индии, Трипура купила долю в экспедиции Mangalyaan 7 на Марс. Им выделили 100 кг полезной нагрузки экспедиции, которые Трипура использовала для отправки семенного материала и научного оборудования. Ботаники экспедиции подтвердили, что с незначительной модификацией чайные листья будут расти в марсианской почве.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKITripura",
+      "DataWIKITripuraMarketing",
+      "DataWIKITripuraVision"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKITripuraMarketing",
+    "strTitle": "Маркетинг Трипуры",
+    "strDesc": "Вся упаковка Трипура оформлена изображением богини Трипура Сундари металлическим листом на фоне Шри Нагары, города резиденции матери, нарисованного в стиле Каламкари. При просмотре через линзу дополненной реальности 2D-изображения становятся окнами в глубокие, эволюционирующие пейзажи, меняющиеся при каждом просмотре, созданные художником, известным как Маччар. По словам художника, можно бесконечно бродить по улицам Шри Нагары, к центру города, где обитает мать, но никогда его полностью не достигая.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKITripura",
+      "DataWIKITripuraHistory",
+      "DataWIKITripuraVision"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKITripuraVision",
+    "strTitle": "Маркетинговое видение Трипуры",
+    "strDesc": "<b>Общий брендинг:</b>\n\nЗаваренные со 100% натуральными ингредиентами и любовью, наши чаи возносят вас на более высокий план СОЗНАНИЯ и БЛАГОПОЛУЧИЯ с каждой чашкой :) Каждый собранный вручную чайный цветок — результат часов ЗАБОТЫ и ВНИМАНИЯ наших почтенных производителей :) Так что знайте, что покупая у TRIPURA, вы покупаете ДУШЕВНОЕ СПОКОЙСТВИЕ\n\nТРИПУРА: Есть ТРИ ГОРОДА творения Бога. ФИЗИЧЕСКИЙ, АСТРАЛЬНЫЙ и ПРИЧИННЫЙ. СУНДАРИ: КРАСОТА без равных. ТРИПУРА СУНДАРИ — это ВЕЛИКАЯ КОСМИЧЕСКАЯ МУДРОСТЬ, проявляющая фундаментальные аспекты БОЖЕСТВЕННОСТИ. Она с вами, когда вы БОДРСТВУЕТЕ, когда МЕЧТАЕТЕ, когда СПИТЕ БЕЗ СНОВИДЕНИЙ. Пьёте ли вы Трипура для ЧИСТОГО РАЗУМА или МИРНОГО СНА, вы входите в ОБЩЕНИЕ с ВЫСШЕЙ КРАСОТОЙ ЧИСТОГО ВОСПРИЯТИЯ",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": [
+      "DataWIKITripura",
+      "DataWIKITripuraHistory",
+      "DataWIKITripuraMarketing"
+    ],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIUbiqMobile",
+    "strTitle": "Юбик Мобайл",
+    "strDesc": "Юбик Мобайл — телекоммуникационная компания и беспроводной интернет-провайдер (WISP), предоставляющий интернет-услуги для колоний и корпоративных территорий по всей Внутренней системе. Её основной продукт — «сетка», производство и обслуживание сотен тысяч специализированных сетевых узлов, формирующих основу сетевой топологии. Из-за их массового производства и однородности Юбик называет свои узлы «Джо Чип».\n\n<b>Сервис:</b> WISP\n<b>Происхождение:</b> Марс\n\n<b>Слоган:</b>\nМы везде для вас",
+    "strImage": "datafiles/ENCUbiqMobile_logo",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIUbiqMobileRole", "DataWIKIUbiqMobileTechnology"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIUbiqMobileRole",
+    "strTitle": "Роль Юбик Мобайл в коммуникациях",
+    "strDesc": "Юбик Мобайл и крупные WISP в целом располагаются рядом и выше базового уровня точка-точка коммуникаций и ad-hoc mesh-сетей, и ниже региональных или межпланетных сервисов вроде Олимпус Нетворкс. По сравнению с первыми mesh-сетями колонизационной гонки и ранних поселений, Юбик и ответственна, и надёжна, предлагая договорные гарантии как безопасности, так и покрытия сетевым клиентам.\n\nСогласно пакту Тяньбянь, Юбик воздерживается от строительства конкурирующей спутниковой сети на Марсе и в Поясе и ей запрещено работать в магистрали Тарсиса.",
+    "strImage": "datafiles/ENCUbiqMobile_logo",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIUbiqMobile", "DataWIKIUbiqMobileTechnology"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIUbiqMobileTechnology",
+    "strTitle": "Технологии Юбик Мобайл",
+    "strDesc": "Узлы в сетке — это процессоры с радиотрансивером, фотоэлектрической ячейкой и аккумулятором. Узлы маленькие, прочные и лёгкие. Когда Юбик обнаруживает перегрузку сети, сбой или видит потенциал увеличенного трафика, тысячи узлов сбрасываются с воздуха для покрытия области — либо для заселения, либо для пересыщения mesh-сети. В средах, где избыточность ключевая, вроде космических кораблей или небольших станций, Юбик прокладывает кабель для дополнения сетки.",
+    "strImage": "datafiles/ENCUbiqMobile_logo",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIUbiqMobile", "DataWIKIUbiqMobileRole"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIZhuangzi",
+    "strTitle": "Феноменология Чжуан-цзы",
+    "strDesc": "Чжуан-цзы Феноменология — передовая коммуникационная компания, созданная для доставки сверхсветовых скоростей передачи информации клиентам. Запатентованная технология Чжуан-цзы использует последние разработки в области квантовой запутанности (QE) и контролируемого наблюдения кубитов. Все попытки конкурентов провести обратный инжиниринг этой функциональности провалились. Соответственно, Чжуан-цзы имеет частную монополию на FTL-коммуникации.\n\n<b>Сервис:</b> Коммуникации (сверхсветовые)\n<b>Происхождение:</b> Станция Хэнань\n<b>Материнская компания:</b> Чжуан-цзы\n<b>Тикер:</b> ZHZI\n\n<b>Слоганы:</b>\nБезграничное общение\nМы сделали невозможное. Мы мечтаем о немыслимом.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIZhuangziHistory", "DataWIKIZhuangziTechnology"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIZhuangziHistory",
+    "strTitle": "История Чжуан-цзы",
+    "strDesc": "Чжуан-цзы Феноменология — подразделение Чжуан-цзы, старейшего выжившего технологического гиганта Синьхуа.\n\n«Мудрец смотрит в пространство и не считает малое слишком маленьким, ни великое слишком большим, ибо он знает, что нет предела размерам.»\n--Мастер Чжуан",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIZhuangzi", "DataWIKIZhuangziTechnology"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  },
+  {
+    "strName": "DataWIKIZhuangziTechnology",
+    "strTitle": "Технические возможности Чжуан-цзы",
+    "strDesc": "Завеса секретности Чжуан-цзы вокруг дизайна своей сети и отказ публиковать окончательные операционные данные привели к публичным спекуляциям о возможностях и ограничениях продукта. По словам Клаудии Васконселос из Института высоких энергий Ганимеда, их технология не является «истинной» FTL в том смысле, что она, по-видимому, не нарушает теорию относительности.\n\nДля узла текущего поколения пропускная способность, достигаемая при обмене точка-точка, оценивается сторонними наблюдателями менее чем в 0,5 кб/с, или около 200 слов в минуту. Более высокий спрос удовлетворяется добавлением дополнительных узлов параллельно.\n\nСкорости передачи постоянно улучшаются с момента запуска продукта, когда узел мог доставлять около 40 слов в минуту. Некоторые теоретизируют, что вместо технологических инноваций Чжуан-цзы искусственно ограничила собственный продукт и постепенно наращивает его мощность.",
+    "strImage": "encounters/ENCHandset",
+    "strColor": "Neutral",
+    "aInverse": ["DataWIKIZhuangzi", "DataWIKIZhuangziHistory"],
+    "fDuration": 0.0,
+    "strThemType": "Other",
+    "nLogging": 0,
+    "bIgnoreFeelings": true
+  }
+]

@@ -1,0 +1,601 @@
+[
+    {
+        "strName": "ItmDocumentMeatPackaging",
+        "strNameShort": "Упаковка",
+        "strNameFriendly": "Упаковка: Мясопродукт «Вечный Белковый Проект»",
+        "strDesc": "Пустая промышленная упаковка от грязного мясного продукта. Внутри остались кусочки белка и крови, а снаружи красуется старомодная корпоративная реклама Дивный Новый Мир ООО",
+        "strItemDef": "ItmMeatPackaging01",
+        "strType": "Item",
+        "strLoot": null,
+        "aInteractions": [
+            "DropItem",
+            "DropItemStack",
+            "PickupItem",
+            "PickupItemStack"
+        ],
+        "aStartingConds": [
+            "IsEdged=1.0x1.0",
+            "IsFlammable=1.0x1",
+            "IsFlexible=1.0x1",
+            "IsPlot_Meat_Significant=1.0x1.0",
+            "IsHandheld=1.0x1.0",
+            "IsReadable=1.0x1.0",
+            "IsSheet=1.0x1",
+            "IsSolid=1.0x1.0",
+            "IsPocketable=1.0x1.0",
+            "StatBasePrice=1.0x0.1",
+            "IsNotForSale=1.0x1",
+            "IsTrash=1.0x1",
+            "StatMass=1.0x0.003",
+            "StatDamageMax=1.0x1",
+            "IsCategoryMisc=1.0x1"
+        ],
+        "mapCondTolerance": [],
+        "mapPoints": [],
+        "mapChargeProfiles": [
+            "Melee",
+            "MeleeAttackDefaultFragile"
+        ],
+        "aUpdateCommands": [
+            "Destructable,StatDamage,ACTDefaultDestroy,StatDamageMax,1.0"
+        ],
+        "mapGUIPropMaps": [],
+        "strPortraitImg": "ItmMeatPackaging01",
+        "strAudioEmitter": "ItmManualSound",
+        "mapSlotEffects": [
+            "heldL",
+            "HeldItmDefaultSoftL",
+            "heldR",
+            "HeldItmDefaultSoftR"
+        ]
+    },
+    {
+        "strName": "ItmMeat01",
+        "strNameShort": "Мясо",
+        "strItemDef": "ItmMeat01",
+        "strDesc": "Неподъёмная масса сырого полосатого мяса. Кажется, что она почти пульсирует.",
+        "strNameFriendly": "Мясо",
+        "strType": "Item",
+        "strLoot": null,
+        "nStackLimit": 1,
+        "aInteractions": [],
+        "aStartingConds": [
+            "IsAttackable=1.0x1",
+            "IsMeat=1.0x1",
+            "IsRaw=1.0x1",
+            "IsWet=1.0x1",
+            "IsMeatWall=1.0x1",
+            "IsPlot_Meat_Significant=1.0x1.0",
+            "StatAttDmgMult=1.0x0.5",
+            "IsReadyHeat=1.0x1",
+            "StatHeatArea=1.0x2.0",
+            "StatHeatVol=1.0x0.066",
+            "StatSolidTemp=1.0x310",
+            "IsHiddenInv=1.0x2",
+            "IsSolid=1.0x1.0",
+            "StatBasePrice=1.0x3510",
+            "StatMass=1.0x5",
+            "StatDamageMax=1.0x5",
+            "StatArmorBlunt=1.0x0.2",
+            "IsReadyEvolveTimer=1.0x1",
+            "IsReadyEvolveMax=1.0x1"
+        ],
+        "mapCondTolerance": [],
+        "mapPoints": [
+            "use,0,0",
+            "GasInput,0,0",
+            "GasOutput,0,9e99"
+        ],
+        "mapChargeProfiles": [
+            "Melee",
+            "MeleeAttackDefaultFragile"
+        ],
+        "aUpdateCommands": [
+            "Destructable,StatDamage,ACTMeat01Destroy,StatDamageMax,1.0",
+            "Destructable,IsReadyEvolve,ACTMeat01Evolve,IsReadyEvolveMax,1.0",
+            "Meat"
+        ],
+        "mapGUIPropMaps": [
+            "Panel A",
+            "HeaterItemGeneric"
+        ],
+        "strPortraitImg": "tiles/Meat01/ItmMeat01",
+        "strAudioEmitter": "ItmGeneralFoodSound",
+        "mapSlotEffects": [],
+        "aTickers": [
+            "Timer1s"
+        ],
+        "jsonPI": null
+    },
+    {
+        "strName": "ItmMeat01Loose",
+        "strNameShort": "Мясо",
+        "strItemDef": "ItmMeat01Loose",
+        "strDesc": "Горсть сырого полосатого мяса.",
+        "strNameFriendly": "Мясо (отделено)",
+        "strType": "Item",
+        "strLoot": null,
+        "nStackLimit": 5,
+        "aInteractions": [
+            "DropItem",
+            "DropItemStack",
+            "PickupItem",
+            "PickupItemStack",
+            "SeekFoodDirectMeatBlob"
+        ],
+        "aStartingConds": [
+            "IsEdible=1.0x1",
+            "IsFood=1.0x1",
+            "IsMeat=1.0x1",
+            "IsRaw=1.0x1",
+            "IsWet=1.0x1",
+            "IsPlot_Meat_Significant=1.0x1.0",
+            "IsHandheld=1.0x1",
+            "IsSolid=1.0x1.0",
+            "StatBasePrice=1.0x810",
+            "StatMass=1.0x0.2",
+            "StatDamageMax=1.0x3",
+            "IsCategoryFood=1.0x1"
+        ],
+        "mapCondTolerance": [],
+        "mapPoints": [],
+        "mapChargeProfiles": [
+            "Melee",
+            "MeleeAttackDefaultFragile"
+        ],
+        "aUpdateCommands": [
+            "Destructable,StatDamage,ACTMeat01Destroy,StatDamageMax,1.0"
+        ],
+        "mapGUIPropMaps": null,
+        "strPortraitImg": "tiles/Meat01/ItmMeat01Loose",
+        "strAudioEmitter": "ItmGeneralFoodSound",
+        "mapSlotEffects": [
+            "heldL",
+            "HeldItmDefaultSoftL",
+            "heldR",
+            "HeldItmDefaultSoftR"
+        ]
+    },
+    {
+        "strName": "ItmMeat01Eye",
+        "strNameShort": "Мясо",
+        "strItemDef": "ItmMeat01Eye",
+        "strDesc": "Неподъёмная масса сырого полосатого мяса. Внутри, кажется, что-то круглое и блестящее двигается.",
+        "strNameFriendly": "Мясо",
+        "strType": "Item",
+        "strLoot": null,
+        "nStackLimit": 1,
+        "aInteractions": [],
+        "aStartingConds": [
+            "IsAttackable=1.0x1",
+            "IsMeat=1.0x1",
+            "IsRaw=1.0x1",
+            "IsWet=1.0x1",
+            "IsMeatWall=1.0x1",
+            "IsPlot_Meat_Significant=1.0x1.0",
+            "StatAttDmgMult=1.0x0.5",
+            "IsReadyHeat=1.0x1",
+            "StatHeatArea=1.0x2.0",
+            "StatHeatVol=1.0x0.066",
+            "StatSolidTemp=1.0x310",
+            "IsHiddenInv=1.0x2",
+            "IsSolid=1.0x1.0",
+            "StatBasePrice=1.0x13960",
+            "StatMass=1.0x9",
+            "StatDamageMax=1.0x8",
+            "StatArmorBlunt=1.0x0.2",
+            "IsCategoryMisc=1.0x1"
+        ],
+        "mapCondTolerance": [],
+        "mapPoints": [
+            "use,0,0",
+            "GasInput,0,0",
+            "GasOutput,0,9e99"
+        ],
+        "mapChargeProfiles": [
+            "Melee",
+            "MeleeAttackDefaultFragile"
+        ],
+        "aUpdateCommands": [
+            "Destructable,StatDamage,ACTMeat01EyeDestroy,StatDamageMax,1.0",
+            "Meat"
+        ],
+        "aTickers": [
+            "Timer1s"
+        ],
+        "mapGUIPropMaps": [
+            "Panel A",
+            "HeaterItemGeneric"
+        ],
+        "strPortraitImg": "tiles/Meat01/ItmMeat01Eye",
+        "strAudioEmitter": "ItmGeneralFoodSound",
+        "mapSlotEffects": [],
+        "jsonPI": null
+    },
+    {
+        "strName": "ItmMeat01EyeLoose",
+        "strNameShort": "Глаз",
+        "strItemDef": "ItmMeat01EyeLoose",
+        "strDesc": "Огромный жёлтый козий глаз выглядывает из выпирающего куска сырого мяса.",
+        "strNameFriendly": "Глаз (отделён)",
+        "strType": "Item",
+        "strLoot": null,
+        "nStackLimit": 1,
+        "aInteractions": [
+            "DropItem",
+            "PickupItem"
+        ],
+        "aStartingConds": [
+            "IsGoatEye=1.0x1",
+            "IsRaw=1.0x1",
+            "IsWet=1.0x1",
+            "IsPlot_Meat_Significant=1.0x1.0",
+            "IsHandheld=1.0x1",
+            "IsSolid=1.0x1.0",
+            "StatBasePrice=1.0x13960",
+            "StatMass=1.0x8",
+            "StatDamageMax=1.0x6",
+            "StatInstallProgressMax=1.0x150",
+            "StatUninstallProgressMax=1.0x150",
+            "IsCategoryMisc=1.0x1"
+        ],
+        "mapCondTolerance": [],
+        "mapPoints": [
+            "use,0,0"
+        ],
+        "mapChargeProfiles": [
+            "Melee",
+            "MeleeAttackDefaultExtraFragile"
+        ],
+        "aUpdateCommands": [
+            "Destructable,StatDamage,ACTDefaultDestroy,StatDamageMax,1.0"
+        ],
+        "mapGUIPropMaps": null,
+        "strPortraitImg": "tiles/Meat01/ItmMeat01EyeLoose",
+        "strAudioEmitter": "ItmGeneralFoodSound",
+        "mapSlotEffects": [
+            "heldL",
+            "HeldItmDefaultSoftL",
+            "heldR",
+            "HeldItmDefaultSoftR"
+        ]
+    },
+    {
+        "strName": "ItmMeat01Altar",
+        "strNameShort": "Алтарь",
+        "strItemDef": "ItmMeat01Altar",
+        "strDesc": "Алтарь, состоящий из четырёх мускулистых козьих ног, двух массивных козьих рогов, пронзающих огромный жёлтый козий глаз, выглядывающий из выпирающего куска сырого мяса.",
+        "strNameFriendly": "Козий алтарь",
+        "strType": "Item",
+        "strLoot": null,
+        "nStackLimit": 1,
+        "aInteractions": [
+            "PLOT_Meat_PrayAltar"
+        ],
+        "aStartingConds": [
+            "IsAttackable=1.0x1",
+            "IsGoatAltar=1.0x1",
+            "IsInstalled=1.0x1",
+            "IsHiddenInv=1.0x2",
+            "IsRaw=1.0x1",
+            "IsWet=1.0x1",
+            "IsSolid=1.0x1.0",
+            "StatBasePrice=1.0x13960",
+            "StatMass=1.0x66.6",
+            "StatDamageMax=1.0x16",
+            "StatInstallProgressMax=1.0x150",
+            "IsCategoryLuxuryGoods=1.0x1"
+        ],
+        "mapCondTolerance": [],
+        "mapPoints": [
+            "use,0,0"
+        ],
+        "mapChargeProfiles": [],
+        "aUpdateCommands": [
+            "Destructable,StatDamage,ACTDefaultDestroy,StatDamageMax,1.0"
+        ],
+        "mapGUIPropMaps": null,
+        "strPortraitImg": "tiles/Meat01/ItmMeat01Altar",
+        "strAudioEmitter": "ItmGeneralFoodSound",
+        "mapSlotEffects": []
+    },
+    {
+        "strName": "ItmMeat01Hoof",
+        "strNameShort": "Мясо",
+        "strItemDef": "ItmMeat01Hoof",
+        "strDesc": "Неподъёмная масса сырого полосатого мяса. В одном месте видна твёрдая поверхность и шерсть с узором.",
+        "strNameFriendly": "Мясо",
+        "strType": "Item",
+        "strLoot": null,
+        "nStackLimit": 1,
+        "aInteractions": [],
+        "aStartingConds": [
+            "IsAttackable=1.0x1",
+            "IsMeat=1.0x1",
+            "IsRaw=1.0x1",
+            "IsWet=1.0x1",
+            "IsMeatWall=1.0x1",
+            "IsPlot_Meat_Significant=1.0x1.0",
+            "StatAttDmgMult=1.0x0.5",
+            "IsReadyHeat=1.0x1",
+            "StatHeatArea=1.0x2.0",
+            "StatHeatVol=1.0x0.066",
+            "StatSolidTemp=1.0x310",
+            "IsHiddenInv=1.0x2",
+            "IsSolid=1.0x1.0",
+            "StatBasePrice=1.0x4560",
+            "StatMass=1.0x15",
+            "StatDamageMax=1.0x8",
+            "StatArmorBlunt=1.0x0.2",
+            "IsReadyEvolveTimer=1.0x1",
+            "IsReadyEvolveMax=1.0x1",
+            "IsCategoryMisc=1.0x1"
+        ],
+        "mapCondTolerance": [],
+        "mapPoints": [
+            "use,0,0",
+            "GasInput,0,0",
+            "GasOutput,0,9e99"
+        ],
+        "mapChargeProfiles": [
+            "Melee",
+            "MeleeAttackDefaultFragile"
+        ],
+        "aUpdateCommands": [
+            "Destructable,StatDamage,ACTMeat01HoofDestroy,StatDamageMax,1.0",
+            "Destructable,IsReadyEvolve,ACTMeat01HoofEvolve,IsReadyEvolveMax,1.0",
+            "Meat"
+        ],
+        "aTickers": [
+            "Timer1s"
+        ],
+        "mapGUIPropMaps": [
+            "Panel A",
+            "HeaterItemGeneric"
+        ],
+        "strPortraitImg": "tiles/Meat01/ItmMeat01Hoof",
+        "strAudioEmitter": "ItmGeneralFoodSound",
+        "mapSlotEffects": [],
+        "jsonPI": null
+    },
+    {
+        "strName": "ItmMeat01HoofLoose",
+        "strNameShort": "Копыто",
+        "strItemDef": "ItmMeat01HoofLoose",
+        "strDesc": "Козья нога, торчащая из куска сырого мяса, покрытая свалявшейся шерстью.",
+        "strNameFriendly": "Копыто (отделено)",
+        "strType": "Item",
+        "strLoot": null,
+        "nStackLimit": 1,
+        "aInteractions": [
+            "DropItem",
+            "PickupItem"
+        ],
+        "aStartingConds": [
+            "IsGoatHoof=1.0x1",
+            "IsRaw=1.0x1",
+            "IsWet=1.0x1",
+            "IsHandheld=1.0x1",
+            "IsSolid=1.0x1.0",
+            "StatBasePrice=1.0x4560",
+            "StatMass=1.0x10",
+            "StatDamageMax=1.0x10",
+            "StatInstallProgressMax=1.0x150",
+            "StatUninstallProgressMax=1.0x150",
+            "IsCategoryMisc=1.0x1"
+        ],
+        "mapCondTolerance": [],
+        "mapPoints": [
+            "use,0,0"
+        ],
+        "mapChargeProfiles": [
+            "Melee",
+            "MeleeAttackDefault"
+        ],
+        "aUpdateCommands": [
+            "Destructable,StatDamage,ACTDefaultDestroy,StatDamageMax,1.0"
+        ],
+        "mapGUIPropMaps": null,
+        "strPortraitImg": "tiles/Meat01/ItmMeat01HoofLoose",
+        "strAudioEmitter": "ItmGeneralFoodSound",
+        "mapSlotEffects": [
+            "heldL",
+            "HeldItmDefaultShaftL",
+            "heldR",
+            "HeldItmDefaultShaftR"
+        ]
+    },
+    {
+        "strName": "ItmMeat01Horn",
+        "strNameShort": "Мясо",
+        "strItemDef": "ItmMeat01Horn",
+        "strDesc": "Неподъёмная масса сырого полосатого мяса. Из неё изгибается твёрдый острый выступ.",
+        "strNameFriendly": "Мясо",
+        "strType": "Item",
+        "strLoot": null,
+        "nStackLimit": 1,
+        "aInteractions": [],
+        "aStartingConds": [
+            "IsAttackable=1.0x1",
+            "IsMeat=1.0x1",
+            "IsRaw=1.0x1",
+            "IsWet=1.0x1",
+            "IsMeatWall=1.0x1",
+            "IsPlot_Meat_Significant=1.0x1.0",
+            "StatAttDmgMult=1.0x0.5",
+            "IsReadyHeat=1.0x1",
+            "StatHeatArea=1.0x2.0",
+            "StatHeatVol=1.0x0.066",
+            "StatSolidTemp=1.0x310",
+            "IsHiddenInv=1.0x2",
+            "IsSolid=1.0x1.0",
+            "StatBasePrice=1.0x8560",
+            "StatMass=1.0x15",
+            "StatDamageMax=1.0x8",
+            "StatArmorBlunt=1.0x0.2",
+            "IsReadyEvolveTimer=1.0x1",
+            "IsReadyEvolveMax=1.0x1",
+            "IsCategoryMisc=1.0x1"
+        ],
+        "mapCondTolerance": [],
+        "mapPoints": [
+            "use,0,0",
+            "GasInput,0,0",
+            "GasOutput,0,9e99"
+        ],
+        "mapChargeProfiles": [
+            "Melee",
+            "MeleeAttackDefaultFragile"
+        ],
+        "aUpdateCommands": [
+            "Destructable,StatDamage,ACTMeat01HornDestroy,StatDamageMax,1.0",
+            "Destructable,IsReadyEvolve,ACTMeat01HornEvolve,IsReadyEvolveMax,1.0",
+            "Meat"
+        ],
+        "aTickers": [
+            "Timer1s"
+        ],
+        "mapGUIPropMaps": [
+            "Panel A",
+            "HeaterItemGeneric"
+        ],
+        "strPortraitImg": "tiles/Meat01/ItmMeat01Horn",
+        "strAudioEmitter": "ItmGeneralFoodSound",
+        "mapSlotEffects": [],
+        "jsonPI": null
+    },
+    {
+        "strName": "ItmMeat01HornLoose",
+        "strNameShort": "Рог",
+        "strItemDef": "ItmMeat01HornLoose",
+        "strDesc": "Твёрдый острый рог, изгибающийся из куска сырого мяса.",
+        "strNameFriendly": "Рог (отделён)",
+        "strType": "Item",
+        "strLoot": null,
+        "nStackLimit": 1,
+        "aInteractions": [
+            "DropItem",
+            "PickupItem"
+        ],
+        "aStartingConds": [
+            "IsGoatHorn=1.0x1",
+            "IsRaw=1.0x1",
+            "IsWet=1.0x1",
+            "IsHandheld=1.0x1",
+            "IsSolid=1.0x1.0",
+            "StatBasePrice=1.0x8560",
+            "StatMass=1.0x10",
+            "StatDamageMax=1.0x10",
+            "StatInstallProgressMax=1.0x150",
+            "StatUninstallProgressMax=1.0x150",
+            "IsCategoryMisc=1.0x1"
+        ],
+        "mapCondTolerance": [],
+        "mapPoints": [
+            "use,0,0"
+        ],
+        "mapChargeProfiles": [
+            "Melee",
+            "MeleeAttackDefault"
+        ],
+        "aUpdateCommands": [
+            "Destructable,StatDamage,ACTDefaultDestroy,StatDamageMax,1.0"
+        ],
+        "mapGUIPropMaps": null,
+        "strPortraitImg": "tiles/Meat01/ItmMeat01HornLoose",
+        "strAudioEmitter": "ItmGeneralFoodSound",
+        "mapSlotEffects": [
+            "heldL",
+            "HeldItmDefaultSharpL",
+            "heldR",
+            "HeldItmDefaultSharpR"
+        ]
+    },
+    {
+        "strName": "ItmPlanterMeat01",
+        "strNameShort": "Мясной горшок",
+        "strNameFriendly": "Мясоферма (вкл)",
+        "strItemDef": "ItmPlanterMeat01",
+        "strType": "Item",
+        "strLoot": null,
+        "aInteractions": [
+            "ACTDecorAdmire"
+        ],
+        "aStartingConds": [
+            "IsHiddenInv=1.0x1",
+            "IsInstalled=1.0x1",
+            "IsMeat=1.0x1",
+            "IsLightSource=1.0x1",
+            "IsPlanter=1.0x1",
+            "IsNonHighlightable=1.0x1",
+            "IsSalvageValueHigh=1.0x1.0",
+            "IsSolid=1.0x1.0",
+            "IsDecor=1.0x1",
+            "IsNotForSale=1.0x1",
+            "StatBasePrice=1.0x15760",
+            "StatDismantleProgressMax=1.0x200",
+            "StatInstallProgressMax=1.0x250",
+            "StatUninstallProgressMax=1.0x250",
+            "StatMass=1.0x305",
+            "StatDamageMax=1.0x35",
+            "IsCategoryLuxuryGoods=1.0x1",
+            "IsReadyHarvestTimer=1.0x1",
+            "IsReadyHarvestMax=1.0x1"
+        ],
+        "aUpdateCommands": [
+            "Destructable,StatDamage,ACTDefaultDestroy,StatDamageMax,1.0",
+            "Destructable,IsReadyHarvest,ACTPlanterMeatProduceHarvest,IsReadyHarvestMax,1.0"
+        ],
+        "mapCondTolerance": [],
+        "mapPoints": [
+            "use,0,0"
+        ],
+        "mapGUIPropMaps": null,
+        "strPortraitImg": "tiles/Meat01/ItmPlanterMeat01",
+        "aTickers": [],
+        "jsonPI": null
+    },
+    {
+        "strName": "ItmPlanterMeat01Loose",
+        "strNameShort": "Мясной горшок",
+        "strNameFriendly": "Мясоферма (вкл, отсоединена)",
+        "strItemDef": "ItmPlanterMeat01Loose",
+        "strType": "Item",
+        "strLoot": null,
+        "aInteractions": [
+            "DropItem",
+            "PickupItem"
+        ],
+        "aStartingConds": [
+            "IsMeat=1.0x1",
+            "IsLightSource=1.0x1",
+            "IsPlanter=1.0x1",
+            "IsSalvageValueHigh=1.0x1.0",
+            "IsSolid=1.0x1.0",
+            "IsDecor=1.0x1",
+            "IsNotForSale=1.0x1",
+            "StatBasePrice=1.0x15760",
+            "StatDismantleProgressMax=1.0x200",
+            "StatInstallProgressMax=1.0x250",
+            "StatUninstallProgressMax=1.0x250",
+            "StatMass=1.0x305",
+            "StatDamageMax=1.0x35",
+            "IsCategoryLuxuryGoods=1.0x1"
+        ],
+        "aUpdateCommands": [
+            "Destructable,StatDamage,ACTDefaultDestroy,StatDamageMax,1.0"
+        ],
+        "mapCondTolerance": [],
+        "mapPoints": [
+            "use,0,0"
+        ],
+        "mapSlotEffects": [
+            "drag",
+            "Blank"
+        ],
+        "mapGUIPropMaps": null,
+        "strPortraitImg": "tiles/Meat01/ItmPlanterMeat01Loose",
+        "aTickers": [],
+        "jsonPI": null
+    }
+]

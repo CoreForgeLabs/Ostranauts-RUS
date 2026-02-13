@@ -1,0 +1,2580 @@
+[
+  {
+    "strName": "AirPump",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIAirPump",
+      "strFriendlyName",
+      "Воздушный насос",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strTitle",
+      "Поворот регулирует порог срабатывания датчика давления",
+      "strValidCOTrigger01",
+      "TIsAlarm2",
+      "strCondMonitor01",
+      "IsReadyPumpAir",
+      "strInput01",
+      ""
+    ]
+  },
+  {
+    "strName": "AlarmPressureCO2",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      null,
+      "strFriendlyName",
+      "Датчик давления CO₂",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strPoint",
+      "RoomA",
+      "strSignalCond",
+      "IsReadyPressureSense",
+      "strInteractionAlarm",
+      "MSAlarmCO2SwitchRedAllow",
+      "strInteractionClear",
+      "MSAlarmCO2SwitchGreenAllow",
+      "strCTClear",
+      "TIsGasPressureSafeCO2"
+    ]
+  },
+  {
+    "strName": "AlarmPressureCO2-2",
+    "dictGUIPropMap": [
+      "strPoint",
+      "RoomA",
+      "strFriendlyName",
+      "Датчик давления CO₂",
+      "mapTests",
+      "TIsGasPressureCO2Safe,MSAlarmCO2SwitchGreenAllow,TIsGasPressureCO2Mid,MSAlarmCO2SwitchYellowAllow,TIsGasPressureCO2High,MSAlarmCO2SwitchRedAllow"
+    ]
+  },
+  {
+    "strName": "AlarmPressureContaminants",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      null,
+      "strFriendlyName",
+      "Датчик загрязнений",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strPoint",
+      "RoomA",
+      "strSignalCond",
+      "IsReadyPressureSense",
+      "strInteractionAlarm",
+      "MSAlarmContaminantsSwitchRedAllow",
+      "strInteractionClear",
+      "MSAlarmContaminantsSwitchGreenAllow",
+      "strCTClear",
+      "TIsGasPressureSafeContaminants"
+    ]
+  },
+  {
+    "strName": "AlarmPressureN2",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      null,
+      "strFriendlyName",
+      "Датчик давления N₂",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strPoint",
+      "RoomA",
+      "strSignalCond",
+      "IsReadyPressureSense",
+      "strInteractionAlarm",
+      "MSAlarmN2SwitchRedAllow",
+      "strInteractionClear",
+      "MSAlarmN2SwitchGreenAllow",
+      "strCTClear",
+      "TIsGasPressureSafeN2"
+    ]
+  },
+  {
+    "strName": "AlarmPressureO2",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      null,
+      "strFriendlyName",
+      "Датчик давления O₂",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strPoint",
+      "RoomA",
+      "strSignalCond",
+      "IsReadyPressureSense",
+      "strInteractionAlarm",
+      "MSAlarmO2SwitchRedAllow",
+      "strInteractionClear",
+      "MSAlarmO2SwitchGreenAllow",
+      "strCTClear",
+      "TIsGasPressureSafeO2"
+    ]
+  },
+  {
+    "strName": "AlarmTemp",
+    "dictGUIPropMap": [
+      "strPoint",
+      "RoomA",
+      "strFriendlyName",
+      "Термостат",
+      "mapTests",
+      "TIsTempLow,MSAlarmTempSwitchBlueAllow,TIsTempHigh,MSAlarmTempSwitchRedAllow,TIsTempMid,MSAlarmTempSwitchWhiteAllow"
+    ]
+  },
+  {
+    "strName": "AlarmUI",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIOnOff",
+      "strFriendlyName",
+      "Сигнализация",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strTitle",
+      "Отключение сигнализации"
+    ]
+  },
+  {
+    "strName": "TransponderID",
+    "dictGUIPropMap": [
+      "strRegID",
+      ""
+    ]
+  },
+  {
+    "strName": "TransponderUI",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIXPDR",
+      "strFriendlyName",
+      "Транспондер XPDR",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null
+    ]
+  },
+  {
+    "strName": "AtmoScrubber",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIAirPump",
+      "strFriendlyName",
+      "Атмосферный скруббер",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strTitle",
+      "Поворот регулирует порог срабатывания датчика CO₂",
+      "strValidCOTrigger01",
+      "TIsAlarm2",
+      "strSubPoint",
+      "ignore",
+      "strCondMonitor01",
+      "IsReadyHeat",
+      "strInput01",
+      ""
+    ]
+  },
+  {
+    "strName": "AtmoScrubber02",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIAirPump",
+      "strFriendlyName",
+      "Скруббер загрязнений",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strTitle",
+      "Поворот регулирует порог срабатывания датчика загрязнений",
+      "strValidCOTrigger01",
+      "TIsAlarm2",
+      "strSubPoint",
+      "ignore",
+      "strCondMonitor01",
+      "IsReadyPumpAir",
+      "strInput01",
+      ""
+    ]
+  },
+  {
+    "strName": "ElectricalBox01",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIBreaker",
+      "strFriendlyName",
+      "Распределительный щит",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strTitle",
+      "",
+      "strValidCOTrigger01",
+      "TIsSignalOpen",
+      "strInput1",
+      "",
+      "strInput2",
+      "",
+      "strInput3",
+      "",
+      "strInput4",
+      "",
+      "strInput5",
+      "",
+      "strInput6",
+      "",
+      "strInput7",
+      "",
+      "strInput8",
+      ""
+    ]
+  },
+  {
+    "strName": "ChargenBodySink",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIChargenBody",
+      "strFriendlyName",
+      "Зеркало в умывальнике",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null
+    ]
+  },
+  {
+    "strName": "ChargenBodySinkStarter",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIChargenBody",
+      "strFriendlyName",
+      "Зеркало в умывальнике",
+      "strGUIPrefabRight",
+      "Panel Right",
+      "strGUIPrefabLeft",
+      "Panel Right",
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null
+    ]
+  },
+  {
+    "strName": "ChargenCareerKioskStarter",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIChargenCareer/GUIChargenCareer",
+      "strFriendlyName",
+      "Киоск карьеры",
+      "strGUIPrefabRight",
+      "Panel A",
+      "strGUIPrefabLeft",
+      "Panel A",
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null
+    ]
+  },
+  {
+    "strName": "ChargenCareerKiosk",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIChargenCareer/GUIChargenCareer",
+      "strFriendlyName",
+      "Киоск карьеры",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null
+    ]
+  },
+  {
+    "strName": "ChargenHomeworldKiosk",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIChargenHomeworld",
+      "strFriendlyName",
+      "Киоск родных миров",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null
+    ]
+  },
+  {
+    "strName": "ChargenLaunchKiosk",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIChargenLaunch",
+      "strFriendlyName",
+      "Зона запуска",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null
+    ]
+  },
+  {
+    "strName": "ChargenTraitsKiosk",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIChargenTraits/GUIChargenTraits",
+      "strFriendlyName",
+      "Киоск черт характера",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null
+    ]
+  },
+  {
+    "strName": "Computer",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIComputer/GUIComputer2",
+      "strFriendlyName",
+      "КПК",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null
+    ]
+  },
+  {
+    "strName": "PDA Home",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "Home",
+      "strFriendlyName",
+      "Главная КПК",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null
+    ]
+  },
+  {
+    "strName": "PDA NavLink",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "NavLink",
+      "strFriendlyName",
+      "Навлинк КПК",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null
+    ]
+  },
+  {
+    "strName": "Cooler",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIAirPump",
+      "strFriendlyName",
+      "Охладитель",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strTitle",
+      "Поворот регулирует порог срабатывания термостата",
+      "strValidCOTrigger01",
+      "TIsAlarmTemp",
+      "strCondMonitor01",
+      "DcGasTemp03",
+      "strSubPoint",
+      "Cool",
+      "strAddPoint",
+      "Heat",
+      "strInput01",
+      ""
+    ]
+  },
+  {
+    "strName": "DockSys",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIDockSys",
+      "strFriendlyName",
+      "Панель связи",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      "Panel A",
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null
+    ]
+  },
+  {
+    "strName": "Duties",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIDuties/GUIDuties",
+      "strFriendlyName",
+      "Обязанности экипажа",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      "Roster",
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null
+    ]
+  },
+  {
+    "strName": "Encounter",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIEncounter/GUIEncounter",
+      "strFriendlyName",
+      "Встреча",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null
+    ]
+  },
+  {
+    "strName": "FerryKiosk",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "Ferry",
+      "strFriendlyName",
+      "Киоск паромов",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null
+    ]
+  },
+  {
+    "strName": "Finances",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIFinance/GUIFinance",
+      "strFriendlyName",
+      "Финансы",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null
+    ]
+  },
+  {
+    "strName": "FFWD",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIFFWD",
+      "strFriendlyName",
+      "Суперускорение",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null
+    ]
+  },
+  {
+    "strName": "Heater",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIAirPump",
+      "strFriendlyName",
+      "Обогреватель",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strTitle",
+      "Поворот регулирует порог срабатывания термостата",
+      "strValidCOTrigger01",
+      "TIsAlarmTemp",
+      "strCondMonitor01",
+      "DcGasTemp01",
+      "strSubPoint",
+      "ignore",
+      "strAddPoint",
+      null,
+      "strInput01",
+      ""
+    ]
+  },
+  {
+    "strName": "HeavyLiftRotorUI",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIRotor",
+      "strFriendlyName",
+      "'Ротор тяжёлого подъёма'",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strTitle",
+      "Ротор тяжёлого подъёма"
+    ]
+  },
+  {
+    "strName": "Hire",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIHire",
+      "strFriendlyName",
+      "Найм",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null
+    ]
+  },
+  {
+    "strName": "Inventory",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "Инвентарь",
+      "strFriendlyName",
+      "Инвентарь",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null
+    ]
+  },
+  {
+    "strName": "JobKiosk",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIJobs/GUIJobs",
+      "strFriendlyName",
+      "Биржа подработок",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null
+    ]
+  },
+  {
+    "strName": "LockCrate01",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUILocks",
+      "strFriendlyName",
+      "Замок ящика",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strBrand",
+      "RAKOW",
+      "strBrandSub",
+      "Flight Cases",
+      "strMSLock",
+      "ItmCrate01Lock",
+      "strMSUnlock",
+      "ItmCrate01"
+    ]
+  },
+  {
+    "strName": "LockDoor01Closed",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUILocks",
+      "strFriendlyName",
+      "Дверной замок",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strBrand",
+      "Bieler",
+      "strBrandSub",
+      "Commercial Door Systems",
+      "strMSLock",
+      "ItmDoorInt01ClosedLocked",
+      "strMSUnlock",
+      "ItmDoorInt01Closed"
+    ]
+  },
+  {
+    "strName": "LockDoor01Open",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUILocks",
+      "strFriendlyName",
+      "Дверной замок",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strBrand",
+      "Bieler",
+      "strBrandSub",
+      "Commercial Door Systems",
+      "strMSLock",
+      "ItmDoorInt01OpenLocked",
+      "strMSUnlock",
+      "ItmDoorInt01Open"
+    ]
+  },
+  {
+    "strName": "LootSpawn",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUILootSpawn",
+      "strFriendlyName",
+      "Генератор добычи",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strType",
+      "Loot",
+      "strLoot",
+      "Blank",
+      "strRange",
+      "0"
+    ]
+  },
+  {
+    "strName": "LootSpawnProvisions",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUILootSpawn",
+      "strFriendlyName",
+      "Генератор добычи",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strType",
+      "Loot",
+      "strLoot",
+      "ItmLootSpawnProvisions",
+      "strRange",
+      "0",
+      "strCount",
+      "1",
+      "strNew",
+      "True",
+      "strDamaged",
+      "True",
+      "strDerelict",
+      "True"
+    ]
+  },
+  {
+    "strName": "LootSpawnCrewPersonal",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUILootSpawn",
+      "strFriendlyName",
+      "Генератор добычи",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strType",
+      "Loot",
+      "strLoot",
+      "ItmLootSpawnPersonal",
+      "strRange",
+      "0",
+      "strCount",
+      "1",
+      "strNew",
+      "True",
+      "strDamaged",
+      "True",
+      "strDerelict",
+      "True"
+    ]
+  },
+  {
+    "strName": "LootSpawnCrewRec",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUILootSpawn",
+      "strFriendlyName",
+      "Генератор добычи",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strType",
+      "Loot",
+      "strLoot",
+      "ItmLootSpawnCrewRec",
+      "strRange",
+      "0",
+      "strCount",
+      "1",
+      "strNew",
+      "True",
+      "strDamaged",
+      "True",
+      "strDerelict",
+      "True"
+    ]
+  },
+  {
+    "strName": "LootSpawnMedical",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUILootSpawn",
+      "strFriendlyName",
+      "Генератор добычи",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strType",
+      "Loot",
+      "strLoot",
+      "ItmLootSpawnMedical",
+      "strRange",
+      "0",
+      "strCount",
+      "1",
+      "strNew",
+      "True",
+      "strDamaged",
+      "True",
+      "strDerelict",
+      "True"
+    ]
+  },
+  {
+    "strName": "LootSpawnEngineering",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUILootSpawn",
+      "strFriendlyName",
+      "Генератор добычи",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strType",
+      "Loot",
+      "strLoot",
+      "ItmLootSpawnEngineering",
+      "strRange",
+      "0",
+      "strCount",
+      "1",
+      "strNew",
+      "True",
+      "strDamaged",
+      "True",
+      "strDerelict",
+      "True"
+    ]
+  },
+  {
+    "strName": "LootSpawnAirlock",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUILootSpawn",
+      "strFriendlyName",
+      "Генератор добычи",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strType",
+      "Loot",
+      "strLoot",
+      "ItmLootSpawnAirlock",
+      "strRange",
+      "0",
+      "strCount",
+      "1",
+      "strNew",
+      "True",
+      "strDamaged",
+      "True",
+      "strDerelict",
+      "True"
+    ]
+  },
+  {
+    "strName": "LootSpawnBulkCargo",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUILootSpawn",
+      "strFriendlyName",
+      "Генератор добычи",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strType",
+      "Loot",
+      "strLoot",
+      "ItmLootSpawnBulkCargo",
+      "strRange",
+      "0",
+      "strCount",
+      "1",
+      "strNew",
+      "True",
+      "strDamaged",
+      "True",
+      "strDerelict",
+      "True"
+    ]
+  },
+  {
+    "strName": "LootSpawnRandomFloor",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUILootSpawn",
+      "strFriendlyName",
+      "Генератор добычи",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strType",
+      "Loot",
+      "strLoot",
+      "ItmLootSpawnRandomFloor",
+      "strRange",
+      "0",
+      "strCount",
+      "1",
+      "strNew",
+      "True",
+      "strDamaged",
+      "True",
+      "strDerelict",
+      "True"
+    ]
+  },
+  {
+    "strName": "LootSpawnRandomWall",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUILootSpawn",
+      "strFriendlyName",
+      "Генератор добычи",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strType",
+      "Loot",
+      "strLoot",
+      "ItmLootSpawnRandomWall",
+      "strRange",
+      "0",
+      "strCount",
+      "1",
+      "strNew",
+      "True",
+      "strDamaged",
+      "True",
+      "strDerelict",
+      "True"
+    ]
+  },
+  {
+    "strName": "LootSpawnPartsScrap",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUILootSpawn",
+      "strFriendlyName",
+      "Генератор добычи",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strType",
+      "Loot",
+      "strLoot",
+      "ItmLootSpawnRandomScrap",
+      "strRange",
+      "0",
+      "strCount",
+      "1",
+      "strNew",
+      "True",
+      "strDamaged",
+      "True",
+      "strDerelict",
+      "True"
+    ]
+  },
+  {
+    "strName": "MeterAICargo",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIBattery",
+      "strFriendlyName",
+      "Аккумулятор",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strSubPoint",
+      "ignore",
+      "strCondMonitor01",
+      "IsReadyHeat"
+    ]
+  },
+  {
+    "strName": "MeterBattery",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIBattery",
+      "strFriendlyName",
+      "Аккумулятор",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strSubPoint",
+      "ignore",
+      "strCondMonitor01",
+      "IsReadyHeat"
+    ]
+  },
+  {
+    "strName": "MultiSheetEnvManual",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIMultiSheet",
+      "strFriendlyName",
+      "Сертификат экосистем",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strManual",
+      "Environmental"
+    ]
+  },
+  {
+    "strName": "MultiSheetFusionManual",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIMultiSheet",
+      "strFriendlyName",
+      "Сертификат термояда",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strManual",
+      "Fusion"
+    ]
+  },
+  {
+    "strName": "MultiSheetPolarisNavManual",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIMultiSheet",
+      "strFriendlyName",
+      "Руководство по навигации",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strManual",
+      "Nav Console"
+    ]
+  },
+  {
+    "strName": "PDANAV",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIOrbitDraw/GUIPDANAV",
+      "strFriendlyName",
+      "Навигация КПК",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null
+    ]
+  },
+  {
+    "strName": "NavStation",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIOrbitDraw/GUIOrbitDraw",
+      "strFriendlyName",
+      "Панель навигации",
+      "strGUIPrefabRight",
+      "Panel Right",
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strSubPoint",
+      "ignore",
+      "strCondMonitor01",
+      "IsReadyHeat"
+    ]
+  },
+  {
+    "strName": "OgisoShipRating",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIShipRating/GUIShipRating",
+      "strFriendlyName",
+      "Рейтинг корабля",
+      "strGUIPrefabRight",
+      "Panel A",
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null
+    ]
+  },
+  {
+    "strName": "OneSheetAtmoScrubberPoster",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIOneSheet",
+      "strFriendlyName",
+      "Руководство по скрубберу CO₂",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strPNG",
+      "manuals/CO2 AtmoScrubber User Guide/000.png"
+    ]
+  },
+  {
+    "strName": "OneSheetAyoSalvageNotice",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIOneSheet",
+      "strFriendlyName",
+      "Уведомление о спасательных работах Айотимива",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strPNG",
+      "manuals/Айотимива Salvage License Notice/000.png"
+    ]
+  },
+  {
+    "strName": "OneSheetDecorPoster00",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIOneSheet",
+      "strFriendlyName",
+      "Плакат: Новоземная острака",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strPNG",
+      "manuals/DecorPosters/Ostracon.png"
+    ]
+  },
+  {
+    "strName": "OneSheetDecorPoster01",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIOneSheet",
+      "strFriendlyName",
+      "Плакат: Гран-при Энкантадо",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strPNG",
+      "manuals/DecorPosters/encantado2079.png"
+    ]
+  },
+  {
+    "strName": "OneSheetDecorPoster02",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIOneSheet",
+      "strFriendlyName",
+      "Плакат: Поездка на Посадку Тарсис",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strPNG",
+      "manuals/DecorPosters/PASS_TharsisLanding.png"
+    ]
+  },
+  {
+    "strName": "OneSheetDecorPoster03",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIOneSheet",
+      "strFriendlyName",
+      "Плакат: Поездка в Атлантис",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strPNG",
+      "manuals/DecorPosters/PASS_Atlantis.png"
+    ]
+  },
+  {
+    "strName": "OneSheetDecorPoster04",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIOneSheet",
+      "strFriendlyName",
+      "Плакат: Реклама Вице-короля",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strPNG",
+      "manuals/DecorPosters/ViceroysAdvert.png"
+    ]
+  },
+  {
+    "strName": "OneSheetDecorPoster05",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIOneSheet",
+      "strFriendlyName",
+      "Плакат: Лаки говорит ПАНИКА",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strPNG",
+      "manuals/DecorPosters/LUCKY_SAYS_PANIC.png"
+    ]
+  },
+  {
+    "strName": "OneSheetDecorPoster06",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIOneSheet",
+      "strFriendlyName",
+      "Плакат: Лаки говорит УСТУПИ",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strPNG",
+      "manuals/DecorPosters/LUCKY_SAYS_YIELD.png"
+    ]
+  },
+  {
+    "strName": "OneSheetDecorPoster09",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIOneSheet",
+      "strFriendlyName",
+      "Плакат: Чёрный бык Кейп",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strPNG",
+      "manuals/DecorPosters/BlackBullKape.png"
+    ]
+  },
+  {
+    "strName": "OneSheetDecorPoster10",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIOneSheet",
+      "strFriendlyName",
+      "Плакат: Дамасская роза",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strPNG",
+      "manuals/DecorPosters/DamaskRose.png"
+    ]
+  },
+  {
+    "strName": "OneSheetDecorPoster11",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIOneSheet",
+      "strFriendlyName",
+      "Плакат: Бессмертная Классика",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strPNG",
+      "manuals/DecorPosters/Bismertnaya.png"
+    ]
+  },
+  {
+    "strName": "OneSheetDecorPoster12",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIOneSheet",
+      "strFriendlyName",
+      "Плакат: Бессмертная Психея",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strPNG",
+      "manuals/DecorPosters/BismertnayaPsyche.png"
+    ]
+  },
+  {
+    "strName": "OneSheetHullPatch",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIOneSheet",
+      "strFriendlyName",
+      "Заплатка корпуса",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strPNG",
+      "manuals/Холден Пэтч by Хальворсон/000.png"
+    ]
+  },
+  {
+    "strName": "OneSheetOgisoPoster",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIOneSheet",
+      "strFriendlyName",
+      "Регистр безопасности труда Огисо",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strPNG",
+      "manuals/Огисо's Register Work Safety Poster/000.png"
+    ]
+  },
+  {
+    "strName": "PanelToggle4x",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIToggle4x",
+      "strFriendlyName",
+      "Переключатели",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strInput01",
+      "",
+      "strInput02",
+      "",
+      "strInput03",
+      "",
+      "strInput04",
+      "",
+      "strInput01Interaction",
+      "",
+      "strInput02Interaction",
+      "",
+      "strInput03Interaction",
+      "",
+      "strInput04Interaction",
+      "",
+      "strTitle01",
+      "INPUT 1",
+      "strTitle02",
+      "INPUT 2",
+      "strTitle03",
+      "INPUT 3",
+      "strTitle04",
+      "INPUT 4",
+      "bToggle01",
+      "false",
+      "bToggle02",
+      "false",
+      "bToggle03",
+      "false",
+      "bToggle04",
+      "false"
+    ]
+  },
+  {
+    "strName": "RacingKiosk",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIRacing/GUIRaceKiosk",
+      "strFriendlyName",
+      "Гоночный киоск",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null
+    ]
+  },
+  {
+    "strName": "ReactorIC",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIReactor",
+      "strFriendlyName",
+      "Управление реактором",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "knobBus",
+      "0",
+      "knobPump",
+      "0",
+      "knobRatio",
+      "0",
+      "chkAlign",
+      "false",
+      "chkCoilFwd",
+      "false",
+      "chkCoilRear",
+      "false",
+      "chkCryo",
+      "false",
+      "chkFuelReg",
+      "false",
+      "chkIgnition",
+      "false",
+      "chkMHDOn",
+      "false",
+      "chkPellet",
+      "false",
+      "slidCycle",
+      "0",
+      "slidFlow",
+      "0",
+      "strSubPoint",
+      "ignore",
+      "strCondMonitor01",
+      "IsReadyHeat"
+    ]
+  },
+  {
+    "strName": "RefuelKiosk",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIStationRefuel",
+      "strFriendlyName",
+      "Заправочная станция",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null
+    ]
+  },
+  {
+    "strName": "Roster",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIRoster/GUIRoster",
+      "strFriendlyName",
+      "Список экипажа",
+      "strGUIPrefabRight",
+      "Duties",
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null
+    ]
+  },
+  {
+    "strName": "Sink01StationRestock",
+    "dictGUIPropMap": [
+      "strLoot",
+      "ItmSink01StationContents",
+      "strRestockCond",
+      "IsReadyRestock",
+      "strTicker",
+      "RestockSupplyKiosk"
+    ]
+  },
+  {
+    "strName": "Social",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUISocial/GUISocial",
+      "strFriendlyName",
+      "Социальные контакты",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null
+    ]
+  },
+  {
+    "strName": "SocialCombat",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "SocialCombat",
+      "strFriendlyName",
+      "Социальное противостояние",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null
+    ]
+  },
+  {
+    "strName": "StabilizerUI",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIOnOff",
+      "strFriendlyName",
+      "Стабилизатор",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strTitle",
+      "Стабилизатор"
+    ]
+  },
+  {
+    "strName": "Tasks",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUITaskList/GUITaskList",
+      "strFriendlyName",
+      "Список задач",
+      "strGUIPrefabRight",
+      "Roster",
+      "strGUIPrefabLeft",
+      "Duties",
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null
+    ]
+  },
+  {
+    "strName": "TicketPermitOKLGSalvage",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUITicket",
+      "strFriendlyName",
+      "Разрешение на спасательные работы Айотимива",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null
+    ]
+  },
+  {
+    "strName": "TicketPermitOKLGSalvageB",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUITicketB",
+      "strFriendlyName",
+      "Разрешение на спасательные работы Айотимива",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null
+    ]
+  },
+  {
+    "strName": "TicketPermitOKLGSalvageC",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUITicketC",
+      "strFriendlyName",
+      "Разрешение на спасательные работы Айотимива",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null
+    ]
+  },
+  {
+    "strName": "TicketPermitOKLGSalvageD",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUITicketD",
+      "strFriendlyName",
+      "Разрешение на спасательные работы Айотимива",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null
+    ]
+  },
+  {
+    "strName": "TicketPermitOKLGSalvageE",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUITicketE",
+      "strFriendlyName",
+      "Разрешение на спасательные работы Айотимива",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null
+    ]
+  },
+  {
+    "strName": "Trade",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUITrade/GUITrade",
+      "strFriendlyName",
+      "Торговый интерфейс",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      "Panel Left",
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null
+    ]
+  },
+  {
+    "strName": "BulkTrade",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIMarket/GUIBulkTrader",
+      "strFriendlyName",
+      "Интерфейс оптовой торговли",
+      "strGUIPrefabRight",
+      "Panel Right",
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null
+    ]
+  },
+  {
+    "strName": "TraderCargoKiosk",
+    "dictGUIPropMap": [
+      "strLoot",
+      null,
+      "strRestockCond",
+      null,
+      "strTicker",
+      null,
+      "strLootBuyDiscount",
+      "CONDTraderDiscountBuyKioskCargo",
+      "strLootSellDiscount",
+      "CONDTraderDiscountSellKioskCargo",
+      "strLootCTsBuy",
+      "TraderCTsBuyCargo",
+      "strLootCTsSell",
+      "TraderCTsSellCargo"
+    ]
+  },
+  {
+    "strName": "TraderChargenSupplyKiosk",
+    "dictGUIPropMap": [
+      "strLoot",
+      "ItmSupplyKioskInv",
+      "strRestockCond",
+      "IsReadyRestock",
+      "strTicker",
+      "RestockSupplyKiosk",
+      "strLootBuyDiscount",
+      "CONDTraderDiscountBuyKiosk",
+      "strLootSellDiscount",
+      "CONDTraderDiscountSellKiosk",
+      "strLootCTsBuy",
+      "TraderCTsBuyBartender",
+      "strLootCTsSell",
+      "TraderCTsSellChargen"
+    ]
+  },
+  {
+    "strName": "TraderFlotillaBroker",
+    "dictGUIPropMap": [
+      "strLoot",
+      "ItmFlotillaBrokerInv",
+      "strRestockCond",
+      "IsReadyRestock",
+      "strTicker",
+      "RestockSupplyKiosk",
+      "strLootBuyDiscount",
+      "CONDTraderDiscountBuyFlotillaBroker",
+      "strLootSellDiscount",
+      "CONDTraderDiscountSellFlotillaBroker",
+      "strLootCTsBuy",
+      "TraderCTsBuyFlotillaBroker",
+      "strLootCTsSell",
+      "TraderCTsSellFlotillaBroker"
+    ]
+  },
+  {
+    "strName": "TraderFlotillaOrganizer",
+    "dictGUIPropMap": [
+      "strLoot",
+      "ItmFlotillaOrganizerInv",
+      "strRestockCond",
+      "IsReadyRestock",
+      "strTicker",
+      "RestockSupplyKiosk",
+      "strLootBuyDiscount",
+      "CONDTraderDiscountBuyFlotillaOrganizer",
+      "strLootSellDiscount",
+      "CONDTraderDiscountSellFlotillaOrganizer",
+      "strLootCTsBuy",
+      "TraderCTsBuyFlotillaOrganizer",
+      "strLootCTsSell",
+      "TraderCTsSellFlotillaOrganizer"
+    ]
+  },
+  {
+    "strName": "TraderFlotillaScrapKiosk",
+    "dictGUIPropMap": [
+      "strLoot",
+      "ItmFlotillaScrapKioskInv",
+      "strRestockCond",
+      "IsReadyRestock",
+      "strTicker",
+      "RestockSupplyKiosk",
+      "strLootBuyDiscount",
+      "CONDTraderDiscountBuyFlotillaScrapKiosk",
+      "strLootSellDiscount",
+      "CONDTraderDiscountSellFlotillaScrapKiosk",
+      "strLootCTsBuy",
+      "TraderCTsBuyFlotillaScrapKiosk",
+      "strLootCTsSell",
+      "TraderCTsSellFlotillaScrapKiosk"
+    ]
+  },
+  {
+    "strName": "CargoPodDefault",
+    "dictGUIPropMap": [
+      "strMarketConfig",
+      "CargoPodDefault"
+    ]
+  },
+  {
+    "strName": "CargoPodClimate",
+    "dictGUIPropMap": [
+      "strMarketConfig",
+      "CargoPodClimate"
+    ]
+  },
+  {
+    "strName": "CargoPodRad",
+    "dictGUIPropMap": [
+      "strMarketConfig",
+      "CargoPodRad"
+    ]
+  },
+  {
+    "strName": "CargoPodSpec",
+    "dictGUIPropMap": [
+      "strMarketConfig",
+      "CargoPodSpec"
+    ]
+  },
+  {
+    "strName": "CargoPod01PanelA",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIMarket/GUICargoPod",
+      "strFriendlyName",
+      "Грузовой контейнер"
+    ]
+  },
+  {
+    "strName": "TraderOKLGBartender",
+    "dictGUIPropMap": [
+      "strLoot",
+      "ItmBartenderLoot",
+      "strRestockCond",
+      "IsReadyRestock",
+      "strTicker",
+      "RestockSupplyKiosk",
+      "strLootBuyDiscount",
+      null,
+      "strLootSellDiscount",
+      "CONDTraderDiscountSellFixer",
+      "strLootCTsBuy",
+      "TraderCTsBuyBartender",
+      "strLootCTsSell",
+      "TraderCTsSellBartender"
+    ]
+  },
+  {
+    "strName": "TraderOKLGFoodCart01",
+    "dictGUIPropMap": [
+      "strLoot",
+      "ItmOKLGFoodCart01KioskInv",
+      "strRestockCond",
+      "IsReadyRestock",
+      "strTicker",
+      "RestockNPCTrader",
+      "strLootBuyDiscount",
+      "CONDTraderDiscountBuyKiosk",
+      "strLootSellDiscount",
+      "CONDTraderDiscountSellKioskScrap",
+      "strLootCTsBuy",
+      "TraderCTsBuyFoodKiosk",
+      "strLootCTsSell",
+      "TraderCTsSellFoodKiosk"
+    ]
+  },
+  {
+    "strName": "TraderOKLGFoodCart02",
+    "dictGUIPropMap": [
+      "strLoot",
+      "ItmOKLGFoodCart02KioskInv",
+      "strRestockCond",
+      "IsReadyRestock",
+      "strTicker",
+      "RestockNPCTrader",
+      "strLootBuyDiscount",
+      "CONDTraderDiscountBuyKiosk",
+      "strLootSellDiscount",
+      "CONDTraderDiscountSellKioskScrap",
+      "strLootCTsBuy",
+      "TraderCTsBuyFoodKiosk",
+      "strLootCTsSell",
+      "TraderCTsSellFoodKiosk"
+    ]
+  },
+  {
+    "strName": "TraderOKLGFixer",
+    "dictGUIPropMap": [
+      "strLoot",
+      "ItmOKLGFixer",
+      "strRestockCond",
+      "IsReadyRestock",
+      "strTicker",
+      "RestockNPCTrader",
+      "strLootBuyDiscount",
+      "CONDTraderDiscountBuyFixer",
+      "strLootSellDiscount",
+      "CONDTraderDiscountSellFixer",
+      "strLootCTsBuy",
+      "TraderCTsBuyFixer",
+      "strLootCTsSell",
+      "TraderCTsSellFixer"
+    ]
+  },
+  {
+    "strName": "TraderOKLGFurnishingsKiosk",
+    "dictGUIPropMap": [
+      "strLoot",
+      "ItmOKLGFurnishingsKioskInv",
+      "strRestockCond",
+      "IsReadyRestock",
+      "strTicker",
+      "RestockSupplyKiosk",
+      "strLootBuyDiscount",
+      "CONDTraderDiscountBuyKioskOKLGFurnishings",
+      "strLootSellDiscount",
+      "CONDTraderDiscountSellKioskOKLGFurnishings",
+      "strLootCTsBuy",
+      "TraderCTsBuyOKLGFurnishingsKiosk",
+      "strLootCTsSell",
+      "TraderCTsSellOKLGFurnishingsKiosk"
+    ]
+  },
+  {
+    "strName": "TraderOKLGMedKiosk",
+    "dictGUIPropMap": [
+      "strLoot",
+      "ItmOKLGMedKioskInv",
+      "strRestockCond",
+      "IsReadyRestock",
+      "strTicker",
+      "RestockSupplyKiosk",
+      "strLootBuyDiscount",
+      "CONDTraderDiscountBuyKioskOKLGMed",
+      "strLootSellDiscount",
+      "CONDTraderDiscountSellKioskOKLGMed",
+      "strLootCTsBuy",
+      "TraderCTsBuyOKLGMedKiosk",
+      "strLootCTsSell",
+      "TraderCTsSellOKLGMedKiosk"
+    ]
+  },
+  {
+    "strName": "ResBroker",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIShipBroker/GUIShipBroker",
+      "strFriendlyName",
+      "Агент по недвижимости",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null
+    ]
+  },
+  {
+    "strName": "ShipBroker",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIShipBroker/GUIShipBroker",
+      "strFriendlyName",
+      "Торговец кораблями",
+      "strGUIPrefabRight",
+      "Panel Right",
+      "strGUIPrefabLeft",
+      "Panel Left",
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null
+    ]
+  },
+  {
+    "strName": "ShipXPDRBroker",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIShipBroker/GUIXPDRBroker",
+      "strFriendlyName",
+      "Продавец транспондеров",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      "Panel A",
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null
+    ]
+  },
+  {
+    "strName": "TraderAerostatScrapKiosk",
+    "dictGUIPropMap": [
+      "strLoot",
+      "ItmAerostatScrapKioskInv",
+      "strRestockCond",
+      "IsReadyRestock",
+      "strTicker",
+      "RestockSupplyKiosk",
+      "strLootBuyDiscount",
+      "CONDTraderDiscountBuyAerostatScrapKiosk",
+      "strLootSellDiscount",
+      "CONDTraderDiscountSellAerostatScrapKiosk",
+      "strLootCTsBuy",
+      "TraderCTsBuyAerostatScrap",
+      "strLootCTsSell",
+      "TraderCTsSellAerostatScrapKiosk"
+    ]
+  },
+  {
+    "strName": "TraderResBrokerOKLG",
+    "dictGUIPropMap": [
+      "strLoot",
+      "ItmOKLGResBrokerInv",
+      "strRestockCond",
+      "IsReadyRestock",
+      "strTicker",
+      "RestockSupplyKiosk",
+      "strLootBuyDiscount",
+      "CONDTraderDiscountBuyShipBrokerOKLG",
+      "strLootSellDiscount",
+      "CONDTraderDiscountSellShipBrokerOKLG",
+      "strLootResidence",
+      "CONDOKLGResBrokerConds"
+    ]
+  },
+  {
+    "strName": "TraderResBrokerVENC",
+    "dictGUIPropMap": [
+      "strLoot",
+      "ItmVENCResBrokerInv",
+      "strRestockCond",
+      "IsReadyRestock",
+      "strTicker",
+      "RestockSupplyKiosk",
+      "strLootBuyDiscount",
+      "CONDTraderDiscountBuyResBrokerVenus",
+      "strLootSellDiscount",
+      "CONDTraderDiscountSellResBrokerVenus",
+      "strLootResidence",
+      "CONDVENCResBrokerConds"
+    ]
+  },
+  {
+    "strName": "TraderResBrokerVNCA",
+    "dictGUIPropMap": [
+      "strLoot",
+      "ItmVNCAResBrokerInv",
+      "strRestockCond",
+      "IsReadyRestock",
+      "strTicker",
+      "RestockSupplyKiosk",
+      "strLootBuyDiscount",
+      "CONDTraderDiscountBuyResBrokerVenus",
+      "strLootSellDiscount",
+      "CONDTraderDiscountSellResBrokerVenus",
+      "strLootResidence",
+      "CONDVNCAResBrokerConds"
+    ]
+  },
+  {
+    "strName": "TraderOKLGShipBroker",
+    "dictGUIPropMap": [
+      "strLoot",
+      "ItmOKLGShipBrokerInv",
+      "strRestockCond",
+      "IsReadyRestock",
+      "strTicker",
+      "RestockSupplyKiosk",
+      "strLootBuyDiscount",
+      "CONDTraderDiscountBuyShipBrokerOKLG",
+      "strLootSellDiscount",
+      "CONDTraderDiscountSellShipBrokerOKLG"
+    ]
+  },
+  {
+    "strName": "TraderVENCShipBroker",
+    "dictGUIPropMap": [
+      "strLoot",
+      "ItmVENCShipBrokerInv",
+      "strRestockCond",
+      "IsReadyRestock",
+      "strTicker",
+      "RestockSupplyKiosk",
+      "strLootBuyDiscount",
+      "CONDTraderDiscountBuyShipBrokerOKLG",
+      "strLootSellDiscount",
+      "CONDTraderDiscountSellShipBrokerOKLG"
+    ]
+  },
+  {
+    "strName": "TraderVORBShipBroker",
+    "dictGUIPropMap": [
+      "strLoot",
+      "ItmVORBShipBrokerInv",
+      "strRestockCond",
+      "IsReadyRestock",
+      "strTicker",
+      "RestockSupplyKiosk",
+      "strLootBuyDiscount",
+      "CONDTraderDiscountBuyShipBrokerOKLG",
+      "strLootSellDiscount",
+      "CONDTraderDiscountSellShipBrokerOKLG"
+    ]
+  },
+  {
+    "strName": "TraderVNCAShipBroker",
+    "dictGUIPropMap": [
+      "strLoot",
+      "ItmVNCAShipBrokerInv",
+      "strRestockCond",
+      "IsReadyRestock",
+      "strTicker",
+      "RestockSupplyKiosk",
+      "strLootBuyDiscount",
+      "CONDTraderDiscountBuyShipBrokerOKLG",
+      "strLootSellDiscount",
+      "CONDTraderDiscountSellShipBrokerOKLG"
+    ]
+  },
+  {
+    "strName": "TraderOKLGSupplyKiosk",
+    "dictGUIPropMap": [
+      "strLoot",
+      "ItmOKLGSupplyKioskInv",
+      "strRestockCond",
+      "IsReadyRestock",
+      "strTicker",
+      "RestockSupplyKiosk",
+      "strLootBuyDiscount",
+      "CONDTraderDiscountBuyKiosk",
+      "strLootSellDiscount",
+      "CONDTraderDiscountSellKioskScrap",
+      "strLootCTsBuy",
+      "TraderCTsBuySupplyKiosk",
+      "strLootCTsSell",
+      "TraderCTsSellSupplyKiosk"
+    ]
+  },
+  {
+    "strName": "TraderVORBScrapKiosk",
+    "dictGUIPropMap": [
+      "strLoot",
+      "ItmVORBScrapKioskInv",
+      "strRestockCond",
+      "IsReadyRestock",
+      "strTicker",
+      "RestockSupplyKiosk",
+      "strLootBuyDiscount",
+      "CONDTraderDiscountBuyKioskScrapVORB",
+      "strLootSellDiscount",
+      "CONDTraderDiscountSellKioskScrapVORB",
+      "strLootCTsBuy",
+      "TraderCTsBuyScrapKioskVORB",
+      "strLootCTsSell",
+      "TraderCTsSellScrapKioskVORB"
+    ]
+  },
+  {
+    "strName": "BulkTrader",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIMarket/GUIBulkTrader",
+      "strFriendlyName",
+      "Торговец грузами",
+      "strGUIPrefabRight",
+      "Panel Right",
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null
+    ]
+  },
+  {
+    "strName": "BulkTraderInventory",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUITrade/GUITrade",
+      "strFriendlyName",
+      "Торговый интерфейс",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      "Panel A",
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null
+    ]
+  },
+  {
+    "strName": "TraderOKLGSupplyKioskLicensed",
+    "dictGUIPropMap": [
+      "strLoot",
+      "Blank",
+      "strRestockCond",
+      "IsReadyRestock",
+      "strTicker",
+      "RestockSupplyKiosk",
+      "strLootBuyDiscount",
+      "CONDTraderDiscountBuyKioskLicensed",
+      "strLootSellDiscount",
+      "CONDTraderDiscountSellKioskLicensed",
+      "strLootCTsBuy",
+      "TraderCTsBuySupplyKioskLicensed",
+      "strLootCTsSell",
+      "TraderCTsSellSupplyKioskLicensed"
+    ]
+  },
+  {
+    "strName": "TransitOKLG",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUITransit/GUITransit",
+      "strFriendlyName",
+      "Транзит OKLG",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null
+    ]
+  },
+  {
+    "strName": "TransitKiosk",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUITransit/GUITransit",
+      "strFriendlyName",
+      "Транзитный киоск",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null
+    ]
+  },
+  {
+    "strName": "TraderVenusBartender",
+    "dictGUIPropMap": [
+      "strLoot",
+      "ItmBartenderLootVenus",
+      "strRestockCond",
+      "IsReadyRestock",
+      "strTicker",
+      "RestockSupplyKiosk",
+      "strLootBuyDiscount",
+      null,
+      "strLootSellDiscount",
+      "CONDTraderDiscountSellFixer",
+      "strLootCTsBuy",
+      "TraderCTsBuyBartender",
+      "strLootCTsSell",
+      "TraderCTsSellBartender"
+    ]
+  },
+  {
+    "strName": "Vent02Pressure",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      null,
+      "strFriendlyName",
+      "Клапан сброса O₂",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strPoint",
+      "RoomB",
+      "strSignalCond",
+      "IsReadyPressureSense",
+      "strInteractionAlarm",
+      "MSVent02CloseO2Allow",
+      "strInteractionClear",
+      null,
+      "strCTClear",
+      "TIsGasPressureSafeO2"
+    ]
+  },
+  {
+    "strName": "Vent02Pressureb",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      null,
+      "strFriendlyName",
+      "Клапан сброса O₂",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null,
+      "strPoint",
+      "RoomA",
+      "strSignalCond",
+      "IsReadyPressureSense",
+      "strInteractionAlarm",
+      "MSVent02CloseO2Allow",
+      "strInteractionClear",
+      null,
+      "strCTClear",
+      "TIsGasPressureSafeO2"
+    ]
+  },
+  {
+    "strName": "Vote",
+    "dictGUIPropMap": [
+      "strGUIPrefab",
+      "GUIFeatureVote",
+      "strFriendlyName",
+      "Голосование за функции",
+      "strGUIPrefabRight",
+      null,
+      "strGUIPrefabLeft",
+      null,
+      "strGUIPrefabUp",
+      null,
+      "strGUIPrefabDown",
+      null
+    ]
+  },
+  {
+    "strName": "Electrical",
+    "dictGUIPropMap": [
+      "status",
+      "true",
+      "inputConnections",
+      "",
+      "outputConnections",
+      "",
+      "signalQueue",
+      "",
+      "sendQueue",
+      "",
+      "override",
+      "true",
+      "delay",
+      "0.0",
+      "gate",
+      "0"
+    ]
+  },
+  {
+    "strName": "FusionModuleGeneric",
+    "dictGUIPropMap": [
+      "strSubPoint",
+      "ignore",
+      "strCondMonitor01",
+      "IsReadyHeat"
+    ]
+  },
+  {
+    "strName": "HeaterItemGeneric",
+    "dictGUIPropMap": [
+      "strSubPoint",
+      "ignore",
+      "strCondMonitor01",
+      "IsReadyHeat"
+    ]
+  },
+  {
+    "strName": "PDAVizSettings",
+    "dictGUIPropMap": [
+      "strSettings",
+      ""
+    ]
+  },
+  {
+    "strName": "Rename",
+    "dictGUIPropMap": [
+      "strName",
+      ""
+    ]
+  }
+]

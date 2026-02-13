@@ -1,0 +1,3951 @@
+[
+  {
+    "strName": "OKLG_ONLY",
+    "dfEpoch": 65627498854.0278,
+    "aSpawnBodies": [
+      {
+        "strName": "Sol",
+        "strNameParent": null,
+        "fDegreesCW": 0.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 1.0,
+        "fRadiusKM": 695510.0,
+        "fMassKG": 1.9891e+30,
+        "fRotationPeriodDays": 24.47,
+        "nDrawFlagsTrack": 1,
+        "nDrawFlagsBody": 2,
+        "strParallax": "DeepSpace",
+        "fParallaxRadiusKM": 1e+24
+      },
+      {
+        "strName": "1036 Ganymed",
+        "strNameParent": "Sol",
+        "fDegreesCW": 215.556,
+        "fEccentricity": 0.5335,
+        "fOrbitalPeriodYears": 4.35,
+        "fRadiusKM": 17.5,
+        "fMassKG": 3.3e+16,
+        "fRotationPeriodDays": 0.416,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0,
+        "strParallax": "OKLGBoneyard",
+        "fParallaxRadiusKM": 4100,
+        "fVisibilityRangeMod": 0.5,
+        "fVisibilityRangeModGrav": 1.0
+      }
+    ],
+    "aSpawnStations": [
+      {
+        "strName": "OKLG",
+        "strNameParent": "1036 Ganymed",
+        "strShipType": "OKLG Entrance",
+        "strOrbitType": "GROUND",
+        "strClassification": "GroundStation",
+        "classification": 1,
+        "fDegreesCW": 0.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "bIsRegion": true,
+        "bIsNoFees": false,
+        "bNoCollisions": false,
+        "strParallax": "Blank",
+        "fDamageCap": 0.3,
+        "strLaw": "OKLG",
+        "strOwner": "OKLGCorp",
+        "aFactions": [
+          "OKLGLEO",
+          "OKLGCorp",
+          "OKLGCiv"
+        ],
+        "aStartingConds": [
+          "StationIsDerelictSpawner=1.0x1",
+          "StationAllowsAnchoring=1.0x1",
+          "StationIsDerelictCollector=1.0x1",
+          "StationMinScav=1.0x8",
+          "StationMaxScav=1.0x16",
+          "StationMinPirate=1.0x2",
+          "StationMaxPirate=1.0x8",
+          "StationMaxPopulation=1.0x10",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      }
+    ],
+    "aSpawnDerelictRings": [
+      {
+        "strLootShipType": "RandomShip",
+        "strSpawnAroundBody": "Sol",
+        "nSpawnCountMin": 0,
+        "nSpawnCountMax": 0,
+        "fSpawnRadiusMinKM": 46375339.917,
+        "fSpawnRadiusMaxKM": 74798935350.0,
+        "fVelMaxKMpS": 0.5,
+        "bIsBodyLocked": false
+      },
+      {
+        "strLootShipType": "RandomDerelict",
+        "strSpawnAroundBody": "1036 Ganymed",
+        "nSpawnCountMin": 5,
+        "nSpawnCountMax": 10,
+        "fSpawnRadiusMinKM": 90.0,
+        "fSpawnRadiusMaxKM": 200.0,
+        "fVelMaxKMpS": 0.0,
+        "bIsBodyLocked": true,
+        "strOwner": "OKLGCorp",
+        "aFactions": [
+          "OKLGCorp"
+        ]
+      }
+    ],
+    "aComps": [
+      {
+        "_strName": "Ayotimiwa Ship Breaking Co.",
+        "strRegID": "OKLG",
+        "mapRoster": {},
+        "NullShift": {
+          "nID": -1,
+          "strName": "Null Shift",
+          "clr": {
+            "r": 1,
+            "g": 0,
+            "b": 1,
+            "a": 1
+          }
+        }
+      },
+      {
+        "_strName": "AyoSec",
+        "jcrDefaultRules": {
+          "bAirlockPermission": true
+        }
+      }
+    ],
+    "aFactions": [
+      {
+        "strName": "OKLGCiv",
+        "strNameFriendly": "Гражданские ОКЛГ",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGCiv",
+        "dictFactionRels": {
+          "OKLGCorp": 25,
+          "OKLGLEO": 25,
+          "OKLGCrim": -50,
+          "OKLGFlotilla": -25,
+          "OKLGScav": 25
+        }
+      },
+      {
+        "strName": "OKLGCorp",
+        "strNameFriendly": "Айотимива Шип Брейкинг Ко.",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGCorp",
+        "dictFactionRels": {
+          "OKLGLEO": 100,
+          "OKLGCiv": 25,
+          "OKLGCrim": -50,
+          "OKLGFlotilla": -25,
+          "OKLGScav": 25
+        }
+      },
+      {
+        "strName": "OKLGCrim",
+        "strNameFriendly": "Преступники ОКЛГ",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGCrim",
+        "dictFactionRels": {
+          "OKLGCorp": -50,
+          "OKLGLEO": -100,
+          "OKLGCiv": 25,
+          "OKLGFlotilla": 50,
+          "OKLGScav": 0
+        }
+      },
+      {
+        "strName": "OKLGFlotilla",
+        "strNameFriendly": "Флотилия",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGFlotilla",
+        "dictFactionRels": {
+          "OKLGCorp": -50,
+          "OKLGLEO": -50,
+          "OKLGCiv": -25,
+          "OKLGCrim": 25,
+          "OKLGScav": 50
+        }
+      },
+      {
+        "strName": "OKLGLEO",
+        "strNameFriendly": "АйоСек",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGLEO",
+        "dictFactionRels": {
+          "OKLGCorp": 100,
+          "OKLGCiv": 100,
+          "OKLGCrim": -100,
+          "OKLGFlotilla": -25,
+          "OKLGScav": 0
+        }
+      },
+      {
+        "strName": "OKLGPirates",
+        "strNameFriendly": "Братство Огидан Паранта",
+        "aMembers": [],
+        "bAutoAdd": false,
+        "strInteractionTriggered": "AF_OKLGPirates",
+        "dictFactionRels": {
+          "OKLGCorp": -100,
+          "OKLGLEO": -100,
+          "OKLGCiv": -100,
+          "OKLGCrim": -100,
+          "OKLGFlotilla": -100,
+          "OKLGPirates": 200
+        }
+      },
+      {
+        "strName": "OKLGScav",
+        "strNameFriendly": "Утилизаторы ОКЛГ",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGScav",
+        "dictFactionRels": {
+          "OKLGCorp": 25,
+          "OKLGLEO": -25,
+          "OKLGCiv": 25,
+          "OKLGCrim": 0,
+          "OKLGFlotilla": 50
+        }
+      }
+    ]
+  },
+  {
+    "strName": "OKLG_FullRegion",
+    "dfEpoch": 65627498854.0278,
+    "aSpawnBodies": [
+      {
+        "strName": "Sol",
+        "strNameParent": null,
+        "fDegreesCW": 0.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 1.0,
+        "fRadiusKM": 695510.0,
+        "fMassKG": 1.9891e+30,
+        "fRotationPeriodDays": 24.47,
+        "nDrawFlagsTrack": 1,
+        "nDrawFlagsBody": 2,
+        "strParallax": "DeepSpace",
+        "fParallaxRadiusKM": 1e+24
+      },
+      {
+        "strName": "1036 Ganymed",
+        "strNameParent": "Sol",
+        "fDegreesCW": 215.556,
+        "fEccentricity": 0.5335,
+        "fOrbitalPeriodYears": 4.35,
+        "fRadiusKM": 17.5,
+        "fMassKG": 3.3e+16,
+        "fRotationPeriodDays": 0.416,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0,
+        "strParallax": "OKLGBoneyard",
+        "fParallaxRadiusKM": 4100,
+        "fVisibilityRangeMod": 0.5,
+        "fVisibilityRangeModGrav": 1.0
+      }
+    ],
+    "aSpawnStations": [
+      {
+        "strName": "OKLG",
+        "strNameParent": "1036 Ganymed",
+        "strShipType": "OKLG Entrance",
+        "strOrbitType": "GROUND",
+        "fDegreesCW": 0.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "bIsRegion": true,
+        "bIsNoFees": false,
+        "bNoCollisions": false,
+        "strParallax": "Blank",
+        "fDamageCap": 0.3,
+        "strLaw": "OKLG",
+        "strOwner": "OKLGCorp",
+        "aFactions": [
+          "OKLGLEO",
+          "OKLGCorp",
+          "OKLGCiv"
+        ],
+        "aStartingConds": [
+          "StationIsDerelictSpawner=1.0x60",
+          "StationAllowsAnchoring=1.0x1",
+          "StationIsDerelictCollector=1.0x40",
+          "StationMinScav=1.0x8",
+          "StationMaxScav=1.0x16",
+          "StationMinPirate=1.0x2",
+          "StationMaxPirate=1.0x8",
+          "StationMaxPopulation=1.0x10",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "OKLG_BIZ",
+        "strNameParent": "1036 Ganymed",
+        "strShipType": "OKLG Bureaus",
+        "strOrbitType": "GROUND",
+        "fDegreesCW": 355.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "bIsRegion": false,
+        "bIsNoFees": false,
+        "bNoCollisions": true,
+        "strParallax": "Blank",
+        "fDamageCap": 0.3,
+        "strLaw": "OKLG",
+        "strOwner": "OKLGCorp",
+        "aFactions": [
+          "OKLGLEO",
+          "OKLGCorp",
+          "OKLGCiv"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x10",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "OKLG_MES",
+        "strNameParent": "1036 Ganymed",
+        "strShipType": "OKLG Mescaform",
+        "strOrbitType": "GROUND",
+        "fDegreesCW": 5.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "bIsRegion": false,
+        "bIsNoFees": false,
+        "bNoCollisions": true,
+        "strParallax": "Blank",
+        "fDamageCap": 0.5,
+        "strLaw": "OKLG",
+        "strOwner": "OKLGCorp",
+        "aFactions": [
+          "OKLGLEO",
+          "OKLGCorp",
+          "OKLGCiv"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x10",
+          "StationMaintLvl=1.0x0.7"
+        ]
+      },
+      {
+        "strName": "OKLG_RES",
+        "strNameParent": "1036 Ganymed",
+        "strShipType": "OKLG_RES",
+        "strOrbitType": "GROUND",
+        "fDegreesCW": 352.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "bIsRegion": false,
+        "bIsNoFees": false,
+        "bNoCollisions": true,
+        "strParallax": "Blank",
+        "fDamageCap": 0.3,
+        "strLaw": "OKLG",
+        "strOwner": "OKLGCorp",
+        "aFactions": [
+          "OKLGLEO",
+          "OKLGCorp",
+          "OKLGCiv"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x4",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "OKLG_UNK",
+        "strNameParent": "1036 Ganymed",
+        "strShipType": "Station_Ground",
+        "strOrbitType": "GROUND",
+        "fDegreesCW": 10.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "bIsRegion": false,
+        "bIsNoFees": true,
+        "bNoCollisions": true,
+        "strParallax": "Blank",
+        "fDamageCap": 0.5,
+        "strLaw": "OKLG",
+        "strOwner": "OKLGCorp",
+        "aFactions": [
+          "OKLGLEO",
+          "OKLGCorp",
+          "OKLGCiv"
+        ]
+      },
+      {
+        "strName": "OKLG_FLOT",
+        "strNameParent": "1036 Ganymed",
+        "strShipType": "Flotilla",
+        "strOrbitType": "EX",
+        "fDegreesCW": 312.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 500,
+        "fPeriapsisAU": 1.0695339395629512e-05,
+        "fApoapsisAU": 1.0695339395629512e-05,
+        "bIsRegion": false,
+        "bIsNoFees": true,
+        "bNoCollisions": false,
+        "fDamageCap": 0.85,
+        "aFactions": [
+          "OKLGFlotilla"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x10",
+          "StationMaintLvl=1.0x0.5"
+        ]
+      },
+      {
+        "strName": "OKLG_ATC",
+        "strNameParent": "1036 Ganymed",
+        "strShipType": "ATC 01",
+        "strOrbitType": "EX",
+        "strClassification": "Buoy",
+        "fDegreesCW": 240.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 0.416,
+        "fPeriapsisAU": 2.6738348489073784e-05,
+        "fApoapsisAU": 2.6738348489073784e-05,
+        "bIsRegion": false,
+        "bIsNoFees": false,
+        "bNoCollisions": false,
+        "fDamageCap": 0.2,
+        "strLaw": "OKLG",
+        "strOwner": "OKLGLEO",
+        "aFactions": [
+          "OKLGLEO",
+          "OKLGCorp"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x5",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "OKLG_SEC",
+        "strNameParent": "1036 Ganymed",
+        "strShipType": "Security Station",
+        "strOrbitType": "EX",
+        "strClassification": "Outpost",
+        "fDegreesCW": 120.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 0.416,
+        "fPeriapsisAU": 2.6738348489073784e-05,
+        "fApoapsisAU": 2.6738348489073784e-05,
+        "bIsRegion": false,
+        "bIsNoFees": false,
+        "bNoCollisions": false,
+        "fDamageCap": 0.2,
+        "strLaw": "OKLG",
+        "strOwner": "OKLGLEO",
+        "aFactions": [
+          "OKLGLEO",
+          "OKLGCorp"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x10",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "OKLG_NAV0",
+        "strNameParent": "1036 Ganymed",
+        "strShipType": "Mooring Buoy",
+        "strOrbitType": "EX",
+        "strClassification": "Buoy",
+        "fDegreesCW": 0.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 0.416,
+        "fPeriapsisAU": 2.6738348489073784e-05,
+        "fApoapsisAU": 2.6738348489073784e-05,
+        "bIsRegion": false,
+        "bIsNoFees": false,
+        "bNoCollisions": false,
+        "fDamageCap": 0.4,
+        "strLaw": "OKLG",
+        "strOwner": "OKLGLEO",
+        "aFactions": [
+          "OKLGLEO",
+          "OKLGCorp"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x2",
+          "StationMaintLvl=1.0x0.7"
+        ]
+      },
+      {
+        "strName": "OKLG_NAV1",
+        "strNameParent": "1036 Ganymed",
+        "strPublicName": "ОКЛГ НАВ",
+        "strShipType": "Nav Buoy",
+        "strOrbitType": "EX",
+        "strClassification": "Buoy",
+        "fDegreesCW": 60.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 0.416,
+        "fPeriapsisAU": 2.6738348489073784e-05,
+        "fApoapsisAU": 2.6738348489073784e-05,
+        "bIsRegion": false,
+        "bIsNoFees": true,
+        "bNoCollisions": false,
+        "fDamageCap": 0.4,
+        "strLaw": "OKLG",
+        "strOwner": "OKLGLEO",
+        "aFactions": [
+          "OKLGLEO",
+          "OKLGCorp"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x2",
+          "StationMaintLvl=1.0x0.7"
+        ]
+      },
+      {
+        "strName": "OKLG_NAV2",
+        "strNameParent": "1036 Ganymed",
+        "strPublicName": "ОКЛГ НАВ2",
+        "strShipType": "Nav Buoy",
+        "strOrbitType": "EX",
+        "strClassification": "Buoy",
+        "fDegreesCW": 180.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 0.416,
+        "fPeriapsisAU": 2.6738348489073784e-05,
+        "fApoapsisAU": 2.6738348489073784e-05,
+        "bIsRegion": false,
+        "bIsNoFees": true,
+        "bNoCollisions": false,
+        "fDamageCap": 0.6,
+        "strLaw": "OKLG",
+        "strOwner": "OKLGLEO",
+        "aFactions": [
+          "OKLGLEO",
+          "OKLGCorp"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x2",
+          "StationMaintLvl=1.0x0.7"
+        ]
+      },
+      {
+        "strName": "OKLG_NAV3",
+        "strNameParent": "1036 Ganymed",
+        "strPublicName": "ОКЛГ НАВ3",
+        "strShipType": "Nav Buoy",
+        "strOrbitType": "EX",
+        "strClassification": "Buoy",
+        "fDegreesCW": 300.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 0.416,
+        "fPeriapsisAU": 2.6738348489073784e-05,
+        "fApoapsisAU": 2.6738348489073784e-05,
+        "bIsRegion": false,
+        "bIsNoFees": true,
+        "bNoCollisions": false,
+        "fDamageCap": 0.3,
+        "strLaw": "OKLG",
+        "strOwner": "OKLGLEO",
+        "aFactions": [
+          "OKLGLEO",
+          "OKLGCorp"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x2",
+          "StationMaintLvl=1.0x0.7"
+        ]
+      }
+    ],
+    "aSpawnDerelictRings": [
+      {
+        "strLootShipType": "RandomShip",
+        "strSpawnAroundBody": "Sol",
+        "nSpawnCountMin": 0,
+        "nSpawnCountMax": 0,
+        "fSpawnRadiusMinKM": 46375339.917,
+        "fSpawnRadiusMaxKM": 74798935350.0,
+        "fVelMaxKMpS": 0.5,
+        "bIsBodyLocked": false
+      },
+      {
+        "strLootShipType": "RandomDerelict",
+        "strSpawnAroundBody": "1036 Ganymed",
+        "nSpawnCountMin": 40,
+        "nSpawnCountMax": 60,
+        "fSpawnRadiusMinKM": 90.0,
+        "fSpawnRadiusMaxKM": 1600.0,
+        "fVelMaxKMpS": 0.0,
+        "bIsBodyLocked": true,
+        "strOwner": "OKLGCorp",
+        "aFactions": [
+          "OKLGCorp"
+        ]
+      }
+    ],
+    "aComps": [
+      {
+        "_strName": "Ayotimiwa Ship Breaking Co.",
+        "strRegID": "OKLG",
+        "mapRoster": {},
+        "NullShift": {
+          "nID": -1,
+          "strName": "Null Shift",
+          "clr": {
+            "r": 1,
+            "g": 0,
+            "b": 1,
+            "a": 1
+          }
+        }
+      },
+      {
+        "_strName": "AyoSec",
+        "jcrDefaultRules": {
+          "bAirlockPermission": true
+        }
+      }
+    ],
+    "aFactions": [
+      {
+        "strName": "OKLGCiv",
+        "strNameFriendly": "Гражданские ОКЛГ",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGCiv",
+        "dictFactionRels": {
+          "OKLGCorp": 25,
+          "OKLGLEO": 25,
+          "OKLGCrim": -50,
+          "OKLGFlotilla": -25,
+          "OKLGScav": 25
+        }
+      },
+      {
+        "strName": "OKLGCorp",
+        "strNameFriendly": "Айотимива Шип Брейкинг Ко.",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGCorp",
+        "dictFactionRels": {
+          "OKLGLEO": 100,
+          "OKLGCiv": 25,
+          "OKLGCrim": -50,
+          "OKLGFlotilla": -25,
+          "OKLGScav": 25
+        }
+      },
+      {
+        "strName": "OKLGCrim",
+        "strNameFriendly": "Преступники ОКЛГ",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGCrim",
+        "dictFactionRels": {
+          "OKLGCorp": -50,
+          "OKLGLEO": -100,
+          "OKLGCiv": 25,
+          "OKLGFlotilla": 50,
+          "OKLGScav": 0
+        }
+      },
+      {
+        "strName": "OKLGFlotilla",
+        "strNameFriendly": "Флотилия",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGFlotilla",
+        "dictFactionRels": {
+          "OKLGCorp": -50,
+          "OKLGLEO": -50,
+          "OKLGCiv": -25,
+          "OKLGCrim": 25,
+          "OKLGScav": 50
+        }
+      },
+      {
+        "strName": "OKLGLEO",
+        "strNameFriendly": "АйоСек",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGLEO",
+        "dictFactionRels": {
+          "OKLGCorp": 100,
+          "OKLGCiv": 100,
+          "OKLGCrim": -100,
+          "OKLGFlotilla": -25,
+          "OKLGScav": 0
+        }
+      },
+      {
+        "strName": "OKLGPirates",
+        "strNameFriendly": "Братство Огидан Паранта",
+        "aMembers": [],
+        "bAutoAdd": false,
+        "strInteractionTriggered": "AF_OKLGPirates",
+        "dictFactionRels": {
+          "OKLGCorp": -100,
+          "OKLGLEO": -100,
+          "OKLGCiv": -100,
+          "OKLGCrim": -100,
+          "OKLGFlotilla": -100,
+          "OKLGPirates": 200
+        }
+      },
+      {
+        "strName": "OKLGScav",
+        "strNameFriendly": "Утилизаторы ОКЛГ",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGScav",
+        "dictFactionRels": {
+          "OKLGCorp": 25,
+          "OKLGLEO": -25,
+          "OKLGCiv": 25,
+          "OKLGCrim": 0,
+          "OKLGFlotilla": 50
+        }
+      }
+    ]
+  },
+  {
+    "strName": "OKLG_AND_FLOT",
+    "dfEpoch": 65627498854.0278,
+    "aSpawnBodies": [
+      {
+        "strName": "Sol",
+        "strNameParent": null,
+        "fDegreesCW": 0.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 1.0,
+        "fRadiusKM": 695510.0,
+        "fMassKG": 1.9891e+30,
+        "fRotationPeriodDays": 24.47,
+        "nDrawFlagsTrack": 1,
+        "nDrawFlagsBody": 2,
+        "strParallax": "DeepSpace",
+        "fParallaxRadiusKM": 1e+24
+      },
+      {
+        "strName": "1036 Ganymed",
+        "strNameParent": "Sol",
+        "fDegreesCW": 215.556,
+        "fEccentricity": 0.5335,
+        "fOrbitalPeriodYears": 4.35,
+        "fRadiusKM": 17.5,
+        "fMassKG": 3.3e+16,
+        "fRotationPeriodDays": 0.416,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0,
+        "strParallax": "OKLGBoneyard",
+        "fParallaxRadiusKM": 4100,
+        "fVisibilityRangeMod": 0.5,
+        "fVisibilityRangeModGrav": 1.0
+      }
+    ],
+    "aSpawnStations": [
+      {
+        "strName": "OKLG",
+        "strNameParent": "1036 Ganymed",
+        "strShipType": "OKLG Entrance",
+        "strOrbitType": "GROUND",
+        "strClassification": "GroundStation",
+        "fDegreesCW": 0.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "bIsRegion": true,
+        "bIsNoFees": false,
+        "bNoCollisions": false,
+        "strParallax": "Blank",
+        "fDamageCap": 0.3,
+        "strLaw": "OKLG",
+        "strOwner": "OKLGCorp",
+        "aFactions": [
+          "OKLGLEO",
+          "OKLGCorp",
+          "OKLGCiv"
+        ],
+        "aStartingConds": [
+          "StationIsDerelictSpawner=1.0x1",
+          "StationAllowsAnchoring=1.0x1",
+          "StationIsDerelictCollector=1.0x1",
+          "StationMinScav=1.0x8",
+          "StationMaxScav=1.0x16",
+          "StationMinPirate=1.0x2",
+          "StationMaxPirate=1.0x8",
+          "StationMaxPopulation=1.0x10",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "OKLG_BIZ",
+        "strNameParent": "1036 Ganymed",
+        "strShipType": "OKLG Bureaus",
+        "strOrbitType": "GROUND",
+        "fDegreesCW": 355.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "bIsRegion": false,
+        "bIsNoFees": false,
+        "bNoCollisions": true,
+        "strParallax": "Blank",
+        "fDamageCap": 0.3,
+        "strLaw": "OKLG",
+        "strOwner": "OKLGCorp",
+        "aFactions": [
+          "OKLGLEO",
+          "OKLGCorp",
+          "OKLGCiv"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x10",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "OKLG_MES",
+        "strNameParent": "1036 Ganymed",
+        "strShipType": "OKLG Mescaform",
+        "strOrbitType": "GROUND",
+        "fDegreesCW": 5.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "bIsRegion": false,
+        "bIsNoFees": false,
+        "bNoCollisions": true,
+        "strParallax": "Blank",
+        "fDamageCap": 0.5,
+        "strLaw": "OKLG",
+        "strOwner": "OKLGCorp",
+        "aFactions": [
+          "OKLGLEO",
+          "OKLGCorp",
+          "OKLGCiv"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x10",
+          "StationMaintLvl=1.0x0.7"
+        ]
+      },
+      {
+        "strName": "OKLG_RES",
+        "strNameParent": "1036 Ganymed",
+        "strShipType": "OKLG_RES",
+        "strOrbitType": "GROUND",
+        "fDegreesCW": 352.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "bIsRegion": false,
+        "bIsNoFees": false,
+        "bNoCollisions": true,
+        "strParallax": "Blank",
+        "fDamageCap": 0.3,
+        "strLaw": "OKLG",
+        "strOwner": "OKLGCorp",
+        "aFactions": [
+          "OKLGLEO",
+          "OKLGCorp",
+          "OKLGCiv"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x4",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "OKLG_UNK",
+        "strNameParent": "1036 Ganymed",
+        "strShipType": "Station_Ground",
+        "strOrbitType": "GROUND",
+        "fDegreesCW": 10.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "bIsRegion": false,
+        "bIsNoFees": true,
+        "bNoCollisions": true,
+        "strParallax": "Blank",
+        "fDamageCap": 0.5,
+        "strLaw": "OKLG",
+        "strOwner": "OKLGCorp",
+        "aFactions": [
+          "OKLGLEO",
+          "OKLGCorp",
+          "OKLGCiv"
+        ]
+      },
+      {
+        "strName": "OKLG_FLOT",
+        "strNameParent": "1036 Ganymed",
+        "strShipType": "Flotilla",
+        "strOrbitType": "EX",
+        "strClassification": "OrbitalStation",
+        "fDegreesCW": 312.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 500,
+        "fPeriapsisAU": 1.0695339395629512e-05,
+        "fApoapsisAU": 1.0695339395629512e-05,
+        "bIsRegion": false,
+        "bIsNoFees": true,
+        "bNoCollisions": false,
+        "fDamageCap": 0.85,
+        "aFactions": [
+          "OKLGFlotilla"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x10",
+          "StationMaintLvl=1.0x0.5"
+        ]
+      }
+    ],
+    "aSpawnDerelictRings": [
+      {
+        "strLootShipType": "RandomShip",
+        "strSpawnAroundBody": "Sol",
+        "nSpawnCountMin": 0,
+        "nSpawnCountMax": 0,
+        "fSpawnRadiusMinKM": 46375339.917,
+        "fSpawnRadiusMaxKM": 74798935350.0,
+        "fVelMaxKMpS": 0.5,
+        "bIsBodyLocked": false
+      },
+      {
+        "strLootShipType": "RandomDerelict",
+        "strSpawnAroundBody": "1036 Ganymed",
+        "nSpawnCountMin": 5,
+        "nSpawnCountMax": 10,
+        "fSpawnRadiusMinKM": 90.0,
+        "fSpawnRadiusMaxKM": 1600.0,
+        "fVelMaxKMpS": 0.0,
+        "bIsBodyLocked": true,
+        "strOwner": "OKLGCorp",
+        "aFactions": [
+          "OKLGCorp"
+        ]
+      }
+    ],
+    "aComps": [
+      {
+        "_strName": "Ayotimiwa Ship Breaking Co.",
+        "strRegID": "OKLG",
+        "mapRoster": {},
+        "NullShift": {
+          "nID": -1,
+          "strName": "Null Shift",
+          "clr": {
+            "r": 1,
+            "g": 0,
+            "b": 1,
+            "a": 1
+          }
+        }
+      },
+      {
+        "_strName": "AyoSec",
+        "jcrDefaultRules": {
+          "bAirlockPermission": true
+        }
+      }
+    ],
+    "aFactions": [
+      {
+        "strName": "OKLGCiv",
+        "strNameFriendly": "Гражданские ОКЛГ",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGCiv",
+        "dictFactionRels": {
+          "OKLGCorp": 25,
+          "OKLGLEO": 25,
+          "OKLGCrim": -50,
+          "OKLGFlotilla": -25,
+          "OKLGScav": 25
+        }
+      },
+      {
+        "strName": "OKLGCorp",
+        "strNameFriendly": "Айотимива Шип Брейкинг Ко.",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGCorp",
+        "dictFactionRels": {
+          "OKLGLEO": 100,
+          "OKLGCiv": 25,
+          "OKLGCrim": -50,
+          "OKLGFlotilla": -25,
+          "OKLGScav": 25
+        }
+      },
+      {
+        "strName": "OKLGCrim",
+        "strNameFriendly": "Преступники ОКЛГ",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGCrim",
+        "dictFactionRels": {
+          "OKLGCorp": -50,
+          "OKLGLEO": -100,
+          "OKLGCiv": 25,
+          "OKLGFlotilla": 50,
+          "OKLGScav": 0
+        }
+      },
+      {
+        "strName": "OKLGFlotilla",
+        "strNameFriendly": "Флотилия",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGFlotilla",
+        "dictFactionRels": {
+          "OKLGCorp": -50,
+          "OKLGLEO": -50,
+          "OKLGCiv": -25,
+          "OKLGCrim": 25,
+          "OKLGScav": 50
+        }
+      },
+      {
+        "strName": "OKLGLEO",
+        "strNameFriendly": "АйоСек",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGLEO",
+        "dictFactionRels": {
+          "OKLGCorp": 100,
+          "OKLGCiv": 100,
+          "OKLGCrim": -100,
+          "OKLGFlotilla": -25,
+          "OKLGScav": 0
+        }
+      },
+      {
+        "strName": "OKLGPirates",
+        "strNameFriendly": "Братство Огидан Паранта",
+        "aMembers": [],
+        "bAutoAdd": false,
+        "strInteractionTriggered": "AF_OKLGPirates",
+        "dictFactionRels": {
+          "OKLGCorp": -100,
+          "OKLGLEO": -100,
+          "OKLGCiv": -100,
+          "OKLGCrim": -100,
+          "OKLGFlotilla": -100,
+          "OKLGPirates": 200
+        }
+      },
+      {
+        "strName": "OKLGScav",
+        "strNameFriendly": "Утилизаторы ОКЛГ",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGScav",
+        "dictFactionRels": {
+          "OKLGCorp": 25,
+          "OKLGLEO": -25,
+          "OKLGCiv": 25,
+          "OKLGCrim": 0,
+          "OKLGFlotilla": 50
+        }
+      }
+    ]
+  },
+  {
+    "strName": "OKLG_AND_NEARBYSTATION",
+    "dfEpoch": 65627498854.0278,
+    "aSpawnBodies": [
+      {
+        "strName": "Sol",
+        "strNameParent": null,
+        "fDegreesCW": 0.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 1.0,
+        "fRadiusKM": 695510.0,
+        "fMassKG": 1.9891e+30,
+        "fRotationPeriodDays": 24.47,
+        "nDrawFlagsTrack": 1,
+        "nDrawFlagsBody": 2,
+        "strParallax": "DeepSpace",
+        "fParallaxRadiusKM": 1e+24
+      },
+      {
+        "strName": "1036 Ganymed",
+        "strNameParent": "Sol",
+        "fDegreesCW": 215.556,
+        "fEccentricity": 0.5335,
+        "fOrbitalPeriodYears": 4.35,
+        "fRadiusKM": 17.5,
+        "fMassKG": 3.3e+16,
+        "fRotationPeriodDays": 0.416,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0,
+        "strParallax": "OKLGBoneyard",
+        "fParallaxRadiusKM": 4100,
+        "fVisibilityRangeMod": 0.5,
+        "fVisibilityRangeModGrav": 1.0
+      }
+    ],
+    "aSpawnStations": [
+      {
+        "strName": "OKLG",
+        "strNameParent": "1036 Ganymed",
+        "strShipType": "OKLG Entrance",
+        "strOrbitType": "GROUND",
+        "strClassification": "GroundStation",
+        "fDegreesCW": 0.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "bIsRegion": true,
+        "bIsNoFees": false,
+        "bNoCollisions": false,
+        "strParallax": "Blank",
+        "fDamageCap": 0.3,
+        "strLaw": "OKLG",
+        "strOwner": "OKLGCorp",
+        "aFactions": [
+          "OKLGLEO",
+          "OKLGCorp",
+          "OKLGCiv"
+        ],
+        "aStartingConds": [
+          "StationIsDerelictSpawner=1.0x1",
+          "StationAllowsAnchoring=1.0x1",
+          "StationIsDerelictCollector=1.0x1",
+          "StationMinScav=1.0x8",
+          "StationMaxScav=1.0x16",
+          "StationMinPirate=1.0x2",
+          "StationMaxPirate=1.0x8",
+          "StationMaxPopulation=1.0x10",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "OKLG_FLOT",
+        "strPublicName": "Целевая_Станция",
+        "strNameParent": "1036 Ganymed",
+        "strShipType": "Flotilla",
+        "strOrbitType": "EX",
+        "strClassification": "OrbitalStation",
+        "fDegreesCW": 300.0,
+        "fEccentricity": 0.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "fOrbitalPeriodYears": 500,
+        "bIsRegion": false,
+        "bIsNoFees": true,
+        "bNoCollisions": false,
+        "fPeriapsisAU": 6.673834848907378e-07,
+        "fApoapsisAU": 2.673834848907378e-07,
+        "fDamageCap": 0.2,
+        "strLaw": "OKLG",
+        "strOwner": "OKLGLEO",
+        "aFactions": [
+          "OKLGLEO",
+          "OKLGCorp"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x10",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      }
+    ],
+    "aSpawnDerelictRings": [
+      {
+        "strLootShipType": "RandomShip",
+        "strSpawnAroundBody": "Sol",
+        "nSpawnCountMin": 0,
+        "nSpawnCountMax": 0,
+        "fSpawnRadiusMinKM": 46375339.917,
+        "fSpawnRadiusMaxKM": 74798935350.0,
+        "fVelMaxKMpS": 0.5,
+        "bIsBodyLocked": false
+      }
+    ],
+    "aComps": [
+      {
+        "_strName": "Ayotimiwa Ship Breaking Co.",
+        "strRegID": "OKLG",
+        "mapRoster": {},
+        "NullShift": {
+          "nID": -1,
+          "strName": "Null Shift",
+          "clr": {
+            "r": 1,
+            "g": 0,
+            "b": 1,
+            "a": 1
+          }
+        }
+      },
+      {
+        "_strName": "AyoSec",
+        "jcrDefaultRules": {
+          "bAirlockPermission": true
+        }
+      }
+    ],
+    "aFactions": [
+      {
+        "strName": "OKLGCiv",
+        "strNameFriendly": "Гражданские ОКЛГ",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGCiv",
+        "dictFactionRels": {
+          "OKLGCorp": 25,
+          "OKLGLEO": 25,
+          "OKLGCrim": -50,
+          "OKLGFlotilla": -25,
+          "OKLGScav": 25
+        }
+      },
+      {
+        "strName": "OKLGCorp",
+        "strNameFriendly": "Айотимива Шип Брейкинг Ко.",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGCorp",
+        "dictFactionRels": {
+          "OKLGLEO": 100,
+          "OKLGCiv": 25,
+          "OKLGCrim": -50,
+          "OKLGFlotilla": -25,
+          "OKLGScav": 25
+        }
+      },
+      {
+        "strName": "OKLGCrim",
+        "strNameFriendly": "Преступники ОКЛГ",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGCrim",
+        "dictFactionRels": {
+          "OKLGCorp": -50,
+          "OKLGLEO": -100,
+          "OKLGCiv": 25,
+          "OKLGFlotilla": 50,
+          "OKLGScav": 0
+        }
+      },
+      {
+        "strName": "OKLGFlotilla",
+        "strNameFriendly": "Флотилия",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGFlotilla",
+        "dictFactionRels": {
+          "OKLGCorp": -50,
+          "OKLGLEO": -50,
+          "OKLGCiv": -25,
+          "OKLGCrim": 25,
+          "OKLGScav": 50
+        }
+      },
+      {
+        "strName": "OKLGLEO",
+        "strNameFriendly": "АйоСек",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGLEO",
+        "dictFactionRels": {
+          "OKLGCorp": 100,
+          "OKLGCiv": 100,
+          "OKLGCrim": -100,
+          "OKLGFlotilla": -25,
+          "OKLGScav": 0
+        }
+      },
+      {
+        "strName": "OKLGPirates",
+        "strNameFriendly": "Братство Огидан Паранта",
+        "aMembers": [],
+        "bAutoAdd": false,
+        "strInteractionTriggered": "AF_OKLGPirates",
+        "dictFactionRels": {
+          "OKLGCorp": -100,
+          "OKLGLEO": -100,
+          "OKLGCiv": -100,
+          "OKLGCrim": -100,
+          "OKLGFlotilla": -100,
+          "OKLGPirates": 200
+        }
+      },
+      {
+        "strName": "OKLGScav",
+        "strNameFriendly": "Утилизаторы ОКЛГ",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGScav",
+        "dictFactionRels": {
+          "OKLGCorp": 25,
+          "OKLGLEO": -25,
+          "OKLGCiv": 25,
+          "OKLGCrim": 0,
+          "OKLGFlotilla": 50
+        }
+      }
+    ]
+  },
+  {
+    "strName": "OKLG_AND_2STATIONS",
+    "dfEpoch": 65627498854.0278,
+    "aSpawnBodies": [
+      {
+        "strName": "Sol",
+        "strNameParent": null,
+        "fDegreesCW": 0.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 1.0,
+        "fRadiusKM": 695510.0,
+        "fMassKG": 1.9891e+30,
+        "fRotationPeriodDays": 24.47,
+        "nDrawFlagsTrack": 1,
+        "nDrawFlagsBody": 2,
+        "strParallax": "DeepSpace",
+        "fParallaxRadiusKM": 1e+24
+      },
+      {
+        "strName": "1036 Ganymed",
+        "strNameParent": "Sol",
+        "fDegreesCW": 215.556,
+        "fEccentricity": 0.5335,
+        "fOrbitalPeriodYears": 4.35,
+        "fRadiusKM": 17.5,
+        "fMassKG": 3.3e+16,
+        "fRotationPeriodDays": 0.416,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0,
+        "strParallax": "OKLGBoneyard",
+        "fParallaxRadiusKM": 4100,
+        "fVisibilityRangeMod": 0.5,
+        "fVisibilityRangeModGrav": 1.0
+      }
+    ],
+    "aSpawnStations": [
+      {
+        "strName": "OKLG",
+        "strNameParent": "1036 Ganymed",
+        "strShipType": "ATC 01",
+        "strOrbitType": "GROUND",
+        "strClassification": "GroundStation",
+        "fDegreesCW": 0.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "bIsRegion": true,
+        "bIsNoFees": false,
+        "bNoCollisions": false,
+        "strParallax": "Blank",
+        "fDamageCap": 0.3,
+        "strLaw": "OKLG",
+        "strOwner": "OKLGCorp",
+        "aFactions": [
+          "OKLGLEO",
+          "OKLGCorp",
+          "OKLGCiv"
+        ],
+        "aStartingConds": [
+          "StationIsDerelictSpawner=1.0x1",
+          "StationAllowsAnchoring=1.0x1",
+          "StationIsDerelictCollector=1.0x1",
+          "StationMinScav=1.0x8",
+          "StationMaxScav=1.0x16",
+          "StationMinPirate=1.0x2",
+          "StationMaxPirate=1.0x8"
+        ]
+      },
+      {
+        "strName": "Target_Station1",
+        "strPublicName": "Целевая_Станция1",
+        "strNameParent": "1036 Ganymed",
+        "strShipType": "ATC 01",
+        "strClassification": "Buoy",
+        "strOrbitType": "EX",
+        "fDegreesCW": 300.0,
+        "fEccentricity": 0.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "fOrbitalPeriodYears": 500,
+        "bIsRegion": false,
+        "bIsNoFees": true,
+        "bNoCollisions": false,
+        "fPeriapsisAU": 6.673834848907378e-07,
+        "fApoapsisAU": 2.673834848907378e-07,
+        "fDamageCap": 0.2,
+        "strLaw": "OKLG",
+        "strOwner": "OKLGLEO",
+        "aFactions": [
+          "OKLGLEO",
+          "OKLGCorp"
+        ]
+      },
+      {
+        "strName": "Target_Station2",
+        "strPublicName": "Целевая_Станция2",
+        "strNameParent": "1036 Ganymed",
+        "strShipType": "ATC 01",
+        "strOrbitType": "EX",
+        "strClassification": "Buoy",
+        "fDegreesCW": 360.0,
+        "fEccentricity": 0.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "fOrbitalPeriodYears": 500,
+        "bIsRegion": false,
+        "bIsNoFees": true,
+        "bNoCollisions": false,
+        "fPeriapsisAU": 6.673834848907378e-07,
+        "fApoapsisAU": 2.673834848907378e-07,
+        "fDamageCap": 0.2,
+        "strLaw": "OKLG",
+        "strOwner": "OKLGLEO",
+        "aFactions": [
+          "OKLGLEO",
+          "OKLGCorp"
+        ]
+      }
+    ],
+    "aSpawnDerelictRings": [
+      {
+        "strLootShipType": "RandomShip",
+        "strSpawnAroundBody": "Sol",
+        "nSpawnCountMin": 0,
+        "nSpawnCountMax": 0,
+        "fSpawnRadiusMinKM": 46375339.917,
+        "fSpawnRadiusMaxKM": 74798935350.0,
+        "fVelMaxKMpS": 0.5,
+        "bIsBodyLocked": false
+      }
+    ],
+    "aComps": [
+      {
+        "_strName": "Ayotimiwa Ship Breaking Co.",
+        "strRegID": "OKLG",
+        "mapRoster": {},
+        "NullShift": {
+          "nID": -1,
+          "strName": "Null Shift",
+          "clr": {
+            "r": 1,
+            "g": 0,
+            "b": 1,
+            "a": 1
+          }
+        }
+      },
+      {
+        "_strName": "AyoSec",
+        "jcrDefaultRules": {
+          "bAirlockPermission": true
+        }
+      }
+    ],
+    "aFactions": [
+      {
+        "strName": "OKLGCiv",
+        "strNameFriendly": "Гражданские ОКЛГ",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGCiv",
+        "dictFactionRels": {
+          "OKLGCorp": 25,
+          "OKLGLEO": 25,
+          "OKLGCrim": -50,
+          "OKLGFlotilla": -25,
+          "OKLGScav": 25
+        }
+      },
+      {
+        "strName": "OKLGCorp",
+        "strNameFriendly": "Айотимива Шип Брейкинг Ко.",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGCorp",
+        "dictFactionRels": {
+          "OKLGLEO": 100,
+          "OKLGCiv": 25,
+          "OKLGCrim": -50,
+          "OKLGFlotilla": -25,
+          "OKLGScav": 25
+        }
+      },
+      {
+        "strName": "OKLGCrim",
+        "strNameFriendly": "Преступники ОКЛГ",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGCrim",
+        "dictFactionRels": {
+          "OKLGCorp": -50,
+          "OKLGLEO": -100,
+          "OKLGCiv": 25,
+          "OKLGFlotilla": 50,
+          "OKLGScav": 0
+        }
+      },
+      {
+        "strName": "OKLGFlotilla",
+        "strNameFriendly": "Флотилия",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGFlotilla",
+        "dictFactionRels": {
+          "OKLGCorp": -50,
+          "OKLGLEO": -50,
+          "OKLGCiv": -25,
+          "OKLGCrim": 25,
+          "OKLGScav": 50
+        }
+      },
+      {
+        "strName": "OKLGLEO",
+        "strNameFriendly": "АйоСек",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGLEO",
+        "dictFactionRels": {
+          "OKLGCorp": 100,
+          "OKLGCiv": 100,
+          "OKLGCrim": -100,
+          "OKLGFlotilla": -25,
+          "OKLGScav": 0
+        }
+      },
+      {
+        "strName": "OKLGPirates",
+        "strNameFriendly": "Братство Огидан Паранта",
+        "aMembers": [],
+        "bAutoAdd": false,
+        "strInteractionTriggered": "AF_OKLGPirates",
+        "dictFactionRels": {
+          "OKLGCorp": -100,
+          "OKLGLEO": -100,
+          "OKLGCiv": -100,
+          "OKLGCrim": -100,
+          "OKLGFlotilla": -100,
+          "OKLGPirates": 200
+        }
+      },
+      {
+        "strName": "OKLGScav",
+        "strNameFriendly": "Утилизаторы ОКЛГ",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGScav",
+        "dictFactionRels": {
+          "OKLGCorp": 25,
+          "OKLGLEO": -25,
+          "OKLGCiv": 25,
+          "OKLGCrim": 0,
+          "OKLGFlotilla": 50
+        }
+      }
+    ]
+  },
+  {
+    "strName": "OKLG_AND_VENUS",
+    "dfEpoch": 65627498854.0278,
+    "aSpawnBodies": [
+      {
+        "strName": "Sol",
+        "strNameParent": null,
+        "fDegreesCW": 0.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 1.0,
+        "fRadiusKM": 695510.0,
+        "fMassKG": 1.9891e+30,
+        "fRotationPeriodDays": 24.47,
+        "nDrawFlagsTrack": 1,
+        "nDrawFlagsBody": 2,
+        "strParallax": "DeepSpace",
+        "fParallaxRadiusKM": 1e+24
+      },
+      {
+        "strName": "Venus",
+        "strNameParent": "Sol",
+        "fDegreesCW": 76.7,
+        "fEccentricity": 0.0067,
+        "fOrbitalPeriodYears": 0.615,
+        "fRadiusKM": 6052,
+        "fMassKG": 4.7e+24,
+        "fRotationPeriodDays": 243,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0,
+        "strParallax": "VenusAtmosphere",
+        "strGravParallax": "VenusGrav",
+        "fParallaxRadiusKM": 6222,
+        "fGravParallaxRadiusKM": 6222000,
+        "fVisibilityRangeMod": 0.125,
+        "fVisibilityRangeModGrav": 1.0,
+        "aAtmosphericValues": [
+          {
+            "strName": "Venus_Surface 0-5km",
+            "fMaxAltitude": 6057,
+            "fCO2": 8887,
+            "fN2": 322,
+            "fH2SO4": 0,
+            "fO2": 0.0,
+            "fTemp": 735
+          },
+          {
+            "strName": "Venus_Surface 5-10km",
+            "fMaxAltitude": 6062,
+            "fCO2": 4550,
+            "fN2": 190,
+            "fH2SO4": 0,
+            "fO2": 0.0,
+            "fTemp": 658
+          },
+          {
+            "strName": "Venus_Surface 10-20km",
+            "fMaxAltitude": 6072,
+            "fCO2": 2202,
+            "fN2": 80,
+            "fH2SO4": 0,
+            "fO2": 0.0,
+            "fTemp": 579
+          },
+          {
+            "strName": "Venus_Surface 20-30km",
+            "fMaxAltitude": 6082,
+            "fCO2": 965,
+            "fN2": 15,
+            "fH2SO4": 0,
+            "fO2": 0.0,
+            "fTemp": 495
+          },
+          {
+            "strName": "Venus_Troposphere 30-48km",
+            "fMaxAltitude": 6100,
+            "fCO2": 190,
+            "fN2": 7,
+            "fH2SO4": 0.5,
+            "fO2": 0.0,
+            "fTemp": 373
+          },
+          {
+            "strName": "Venus_Troposphere 48-52km",
+            "fMaxAltitude": 6104,
+            "fCO2": 96,
+            "fN2": 3.5,
+            "fH2SO4": 0.5,
+            "fO2": 0.0,
+            "fTemp": 308
+          },
+          {
+            "strName": "Venus_Troposphere 52-70km",
+            "fMaxAltitude": 6120,
+            "fCO2": 80.0,
+            "fN2": 2.89,
+            "fH2SO4": 0,
+            "fO2": 0,
+            "fTemp": 230
+          },
+          {
+            "strName": "Venus_Mesosphere 70-100km",
+            "fMaxAltitude": 6152,
+            "fCO2": 26.055,
+            "fN2": 0.94,
+            "fH2SO4": 0,
+            "fO2": 0,
+            "fTemp": 161
+          },
+          {
+            "strName": "Venus_Exosphere 100-200km",
+            "fMaxAltitude": 6252,
+            "fCO2": 1.0,
+            "fN2": 0.1,
+            "fH2SO4": 0,
+            "fO2": 0,
+            "fTemp": 212
+          },
+          {
+            "strName": "Venus_Exosphere 200-350km",
+            "fMaxAltitude": 6402,
+            "fCO2": 0.02,
+            "fN2": 0,
+            "fH2SO4": 0,
+            "fO2": 0,
+            "fTemp": 300
+          }
+        ]
+      },
+      {
+        "strName": "1036 Ganymed",
+        "strNameParent": "Sol",
+        "fDegreesCW": 215.556,
+        "fEccentricity": 0.5335,
+        "fOrbitalPeriodYears": 4.35,
+        "fRadiusKM": 17.5,
+        "fMassKG": 3.3e+16,
+        "fRotationPeriodDays": 0.416,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0,
+        "strParallax": "OKLGBoneyard",
+        "fParallaxRadiusKM": 4100,
+        "fVisibilityRangeMod": 0.5,
+        "fVisibilityRangeModGrav": 1.0
+      }
+    ],
+    "aSpawnStations": [
+      {
+        "strName": "VNCA",
+        "strPublicName": "Терминал Лонг-Бич",
+        "strNameParent": "Venus",
+        "strShipType": "Station_VNCA_Port",
+        "strOrbitType": "EX",
+        "strClassification": "GroundStation",
+        "fDegreesCW": 180.0,
+        "fRadiusKM": 1.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 0.0327626,
+        "fPeriapsisAU": 4.07910137e-05,
+        "fApoapsisAU": 4.07910137e-05,
+        "fMassKG": 100000.0,
+        "bIsRegion": true,
+        "bIsNoFees": false,
+        "bNoCollisions": false,
+        "fDamageCap": 0.3,
+        "strLaw": "Venus",
+        "strOwner": "VNCACiv",
+        "aFactions": [
+          "VNCALEO",
+          "VNCACiv",
+          "VenusCrim"
+        ],
+        "aStartingConds": [
+          "StationMinScav=1.0x8",
+          "StationMaxScav=1.0x16",
+          "StationMinPirate=1.0x2",
+          "StationMaxPirate=1.0x8",
+          "StationMaxPopulation=1.0x25",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "VNCA_SD",
+        "strPublicName": "Торговый центр Сан-Диего",
+        "strNameParent": "Venus",
+        "strShipType": "Station_VNCA_Mall",
+        "strOrbitType": "EX",
+        "fDegreesCW": 179.8,
+        "fRadiusKM": 1.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 0.0327626,
+        "fPeriapsisAU": 4.07910137e-05,
+        "fApoapsisAU": 4.07910137e-05,
+        "fMassKG": 100000.0,
+        "bIsRegion": false,
+        "bIsNoFees": true,
+        "bNoCollisions": true,
+        "fDamageCap": 0.3,
+        "strLaw": "Venus",
+        "strOwner": "VNCACiv",
+        "aFactions": [
+          "VNCALEO",
+          "VNCACiv",
+          "VenusCrim"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x30",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "VLA00",
+        "strPublicName": "Стройзона Лос-Анджелес: Мост",
+        "strNameParent": "Venus",
+        "strShipType": "LA_BRIDGE_1",
+        "strOrbitType": "EX",
+        "fDegreesCW": 180.5,
+        "fRadiusKM": 1.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 0.0327626,
+        "fPeriapsisAU": 4.07910137e-05,
+        "fApoapsisAU": 4.07910137e-05,
+        "fMassKG": 100000.0,
+        "bIsRegion": false,
+        "bIsNoFees": true,
+        "bNoCollisions": true,
+        "fDamageCap": 0.5,
+        "strLaw": "Venus",
+        "strOwner": "VNCACiv",
+        "aFactions": [
+          "VNCALEO",
+          "VNCACiv"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x4",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "VLA01",
+        "strPublicName": "Стройзона Лос-Анджелес #1",
+        "strNameParent": "Venus",
+        "strShipType": "LA_PORT_1",
+        "strOrbitType": "EX",
+        "fDegreesCW": 180.1,
+        "fRadiusKM": 1.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 0.0327626,
+        "fPeriapsisAU": 4.07910137e-05,
+        "fApoapsisAU": 4.07910137e-05,
+        "fMassKG": 100000.0,
+        "bIsRegion": false,
+        "bIsNoFees": true,
+        "bNoCollisions": true,
+        "bIsUnderConstruction": true,
+        "nConstructionProgress": 30,
+        "fDamageCap": 0.2,
+        "strLaw": "VenusLA",
+        "strOwner": "VNCACiv",
+        "aFactions": [
+          "VNCALEO",
+          "VNCACiv"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x5",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "VLA02",
+        "strPublicName": "Стройзона Лос-Анджелес #2",
+        "strNameParent": "Venus",
+        "strShipType": "LA_MAINTENANCE_1",
+        "strOrbitType": "EX",
+        "fDegreesCW": 182.0,
+        "fRadiusKM": 1.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 0.0327626,
+        "fPeriapsisAU": 4.07910137e-05,
+        "fApoapsisAU": 4.07910137e-05,
+        "fMassKG": 100000.0,
+        "bIsRegion": false,
+        "bIsNoFees": true,
+        "bNoCollisions": true,
+        "fDamageCap": 0.2,
+        "strLaw": "VenusLA",
+        "strOwner": "VNCACiv",
+        "aFactions": [
+          "VNCALEO",
+          "VNCACiv"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x10",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "VLA03",
+        "strPublicName": "Стройзона Лос-Анджелес #3",
+        "strNameParent": "Venus",
+        "strShipType": "LA_RESIDENTIAL_1",
+        "strOrbitType": "EX",
+        "fDegreesCW": 183.0,
+        "fRadiusKM": 1.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 0.0327626,
+        "fPeriapsisAU": 4.07910137e-05,
+        "fApoapsisAU": 4.07910137e-05,
+        "fMassKG": 100000.0,
+        "bIsRegion": false,
+        "bIsNoFees": true,
+        "bNoCollisions": true,
+        "fDamageCap": 0.2,
+        "strLaw": "VenusLA",
+        "strOwner": "VNCACiv",
+        "aFactions": [
+          "VNCALEO",
+          "VNCACiv"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x15",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "VLA04",
+        "strPublicName": "Стройзона Лос-Анджелес #4",
+        "strNameParent": "Venus",
+        "strShipType": "LA_MAINTENANCE_1",
+        "strOrbitType": "EX",
+        "fDegreesCW": 184.0,
+        "fRadiusKM": 1.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 0.0327626,
+        "fPeriapsisAU": 4.07910137e-05,
+        "fApoapsisAU": 4.07910137e-05,
+        "fMassKG": 100000.0,
+        "bIsRegion": false,
+        "bIsNoFees": true,
+        "bNoCollisions": true,
+        "fDamageCap": 0.4,
+        "strLaw": "VenusLA",
+        "strOwner": "VNCACiv",
+        "aFactions": [
+          "VNCALEO",
+          "VNCACiv"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x20",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "VLA05",
+        "strPublicName": "Стройзона Лос-Анджелес #5",
+        "strNameParent": "Venus",
+        "strShipType": "LA_BILGE_1",
+        "strOrbitType": "EX",
+        "fDegreesCW": 185.0,
+        "fRadiusKM": 1.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 0.0327626,
+        "fPeriapsisAU": 4.07910137e-05,
+        "fApoapsisAU": 4.07910137e-05,
+        "fMassKG": 100000.0,
+        "bIsRegion": false,
+        "bIsNoFees": true,
+        "bNoCollisions": true,
+        "fDamageCap": 0.5,
+        "strLaw": "VenusLA",
+        "strOwner": "VNCACiv",
+        "aFactions": [
+          "VNCALEO",
+          "VNCACiv"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x25",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "VCBR",
+        "strPublicName": "Клаудбрейк",
+        "strNameParent": "Venus",
+        "strShipType": "Station_VCBR",
+        "strOrbitType": "EX",
+        "fDegreesCW": 174.4,
+        "fRadiusKM": 1.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 0.0327626,
+        "fPeriapsisAU": 4.07910137e-05,
+        "fApoapsisAU": 4.07910137e-05,
+        "fMassKG": 100000.0,
+        "bIsRegion": false,
+        "bIsNoFees": false,
+        "bNoCollisions": false,
+        "fDamageCap": 0.3,
+        "strLaw": "Venus",
+        "strOwner": "VCBRCiv",
+        "aFactions": [
+          "VCBRLEO",
+          "VCBRCiv",
+          "VenusCrim"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x8",
+          "StationMaintLvl=1.0x0.9"
+        ]
+      },
+      {
+        "strName": "VENC",
+        "strPublicName": "Порту-ду-Энкантаду",
+        "strNameParent": "Venus",
+        "strShipType": "Station_VENC_Port",
+        "strOrbitType": "EX",
+        "strClassification": "GroundStation",
+        "fDegreesCW": 185.6,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 0.0327626,
+        "fPeriapsisAU": 4.07910137e-05,
+        "fApoapsisAU": 4.07910137e-05,
+        "bIsRegion": false,
+        "bIsNoFees": false,
+        "bNoCollisions": false,
+        "fDamageCap": 0.6,
+        "strLaw": "Venus",
+        "strOwner": "VENCCiv",
+        "aFactions": [
+          "VENCLEO",
+          "VENCCiv",
+          "VenusCrim"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x20",
+          "StationMaintLvl=1.0x0.7"
+        ]
+      },
+      {
+        "strName": "VENC_SVL",
+        "strNameParent": "Venus",
+        "strShipType": "Venus Club",
+        "strOrbitType": "EX",
+        "fDegreesCW": 185.65,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 0.0327626,
+        "fPeriapsisAU": 4.07910137e-05,
+        "fApoapsisAU": 4.07910137e-05,
+        "bIsRegion": false,
+        "bIsNoFees": false,
+        "bNoCollisions": true,
+        "fDamageCap": 0.5,
+        "strLaw": "Venus",
+        "strOwner": "VENCCiv",
+        "aFactions": [
+          "VENCLEO",
+          "VENCCiv",
+          "VenusCrim"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x20",
+          "StationMaintLvl=1.0x0.7"
+        ]
+      },
+      {
+        "strName": "VENC_GRN",
+        "strNameParent": "Venus",
+        "strShipType": "Green Room",
+        "strOrbitType": "EX",
+        "fDegreesCW": 185.66,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 0.0327626,
+        "fPeriapsisAU": 4.07910137e-05,
+        "fApoapsisAU": 4.07910137e-05,
+        "bIsRegion": false,
+        "bIsNoFees": false,
+        "bNoCollisions": true,
+        "fDamageCap": 0.5,
+        "strLaw": "Venus",
+        "strOwner": "VENCCiv",
+        "aFactions": [
+          "VENCLEO",
+          "VENCCiv",
+          "VenusCrim"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x8",
+          "StationMaintLvl=1.0x0.9"
+        ]
+      },
+      {
+        "strName": "VORB",
+        "strPublicName": "Орбитальная Венеры",
+        "strNameParent": "Venus",
+        "strShipType": "Station_VORB_Port",
+        "strOrbitType": "EX",
+        "strClassification": "OrbitalStation",
+        "fDegreesCW": 0.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "fPeriapsisAU": 4.345e-05,
+        "fApoapsisAU": 0.000116,
+        "bIsRegion": false,
+        "bIsNoFees": false,
+        "bNoCollisions": false,
+        "fDamageCap": 0.6,
+        "bDrawTrack": true,
+        "strLaw": "Venus",
+        "strOwner": "VENCCiv",
+        "aFactions": [
+          "VENCLEO",
+          "VENCCiv",
+          "VenusCrim"
+        ],
+        "aStartingConds": [
+          "StationIsDerelictSpawner=1.0x1",
+          "StationIsDerelictCollector=1.0x1",
+          "StationMaxPopulation=1.0x20",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "VORB|Aux",
+        "strNameParent": "Venus",
+        "strShipType": "VORB_Aux",
+        "strOrbitType": "EX",
+        "strClassification": "OrbitalStation",
+        "fDegreesCW": 0.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "fPeriapsisAU": 4.345e-05,
+        "fApoapsisAU": 0.000116,
+        "bIsRegion": false,
+        "bIsNoFees": false,
+        "bNoCollisions": true,
+        "fDamageCap": 0.6,
+        "strLaw": "Venus",
+        "strOwner": "VENCCiv",
+        "aFactions": [
+          "VENCLEO",
+          "VENCCiv",
+          "VenusCrim"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x8",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "VORB_HAB",
+        "strPublicName": "Орбитальная Венеры: Жилой сектор",
+        "strNameParent": "Venus",
+        "strShipType": "Station_VORB_Habitation",
+        "strOrbitType": "EX",
+        "strClassification": "OrbitalStation",
+        "fDegreesCW": 0.2,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "fPeriapsisAU": 4.345e-05,
+        "fApoapsisAU": 0.000116,
+        "bIsRegion": false,
+        "bIsNoFees": false,
+        "bNoCollisions": true,
+        "fDamageCap": 0.6,
+        "strLaw": "Venus",
+        "strOwner": "VENCCiv",
+        "aFactions": [
+          "VENCLEO",
+          "VENCCiv",
+          "VenusCrim"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x20",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "OKLG",
+        "strNameParent": "1036 Ganymed",
+        "strShipType": "OKLG Entrance",
+        "strOrbitType": "GROUND",
+        "strClassification": "GroundStation",
+        "fDegreesCW": 0.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "bIsRegion": true,
+        "bIsNoFees": false,
+        "bNoCollisions": false,
+        "strParallax": "Blank",
+        "fDamageCap": 0.3,
+        "strLaw": "OKLG",
+        "strOwner": "OKLGCorp",
+        "aFactions": [
+          "OKLGLEO",
+          "OKLGCorp",
+          "OKLGCiv"
+        ],
+        "aStartingConds": [
+          "StationIsDerelictSpawner=1.0x1",
+          "StationAllowsAnchoring=1.0x1",
+          "StationIsDerelictCollector=1.0x1",
+          "StationMinScav=1.0x8",
+          "StationMaxScav=1.0x16",
+          "StationMinPirate=1.0x2",
+          "StationMaxPirate=1.0x8",
+          "StationMaxPopulation=1.0x10",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      }
+    ],
+    "aSpawnDerelictRings": [
+      {
+        "strLootShipType": "RandomShip",
+        "strSpawnAroundBody": "Sol",
+        "nSpawnCountMin": 0,
+        "nSpawnCountMax": 0,
+        "fSpawnRadiusMinKM": 46375339.917,
+        "fSpawnRadiusMaxKM": 74798935350.0,
+        "fVelMaxKMpS": 0.5,
+        "bIsBodyLocked": false
+      },
+      {
+        "strLootShipType": "RandomDerelict",
+        "strSpawnAroundBody": "1036 Ganymed",
+        "nSpawnCountMin": 5,
+        "nSpawnCountMax": 10,
+        "fSpawnRadiusMinKM": 90.0,
+        "fSpawnRadiusMaxKM": 200.0,
+        "fVelMaxKMpS": 0.0,
+        "bIsBodyLocked": true,
+        "strOwner": "OKLGCorp",
+        "aFactions": [
+          "OKLGCorp"
+        ]
+      },
+      {
+        "strLootShipType": "RandomDerelictVenus",
+        "strSpawnAroundBody": "VORB",
+        "nSpawnCountMin": 9,
+        "nSpawnCountMax": 16,
+        "fSpawnRadiusMinKM": 500.0,
+        "fSpawnRadiusMaxKM": 1000.0,
+        "fVelMaxKMpS": 0.0,
+        "bIsBodyLocked": true,
+        "strOwner": "VNCACiv"
+      }
+    ],
+    "aComps": [
+      {
+        "_strName": "Ayotimiwa Ship Breaking Co.",
+        "strRegID": "OKLG",
+        "mapRoster": {},
+        "NullShift": {
+          "nID": -1,
+          "strName": "Null Shift",
+          "clr": {
+            "r": 1,
+            "g": 0,
+            "b": 1,
+            "a": 1
+          }
+        }
+      },
+      {
+        "_strName": "AyoSec",
+        "jcrDefaultRules": {
+          "bAirlockPermission": true
+        }
+      },
+      {
+        "_strName": "Newcal Police Dept.",
+        "jcrDefaultRules": {
+          "bAirlockPermission": true
+        }
+      }
+    ],
+    "aFactions": [
+      {
+        "strName": "OKLGCiv",
+        "strNameFriendly": "Гражданские ОКЛГ",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGCiv",
+        "dictFactionRels": {
+          "OKLGCorp": 25,
+          "OKLGLEO": 25,
+          "OKLGCrim": -50,
+          "OKLGFlotilla": -25,
+          "OKLGScav": 25
+        }
+      },
+      {
+        "strName": "OKLGCorp",
+        "strNameFriendly": "Айотимива Шип Брейкинг Ко.",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGCorp",
+        "dictFactionRels": {
+          "OKLGLEO": 100,
+          "OKLGCiv": 25,
+          "OKLGCrim": -50,
+          "OKLGFlotilla": -25,
+          "OKLGScav": 25
+        }
+      },
+      {
+        "strName": "OKLGCrim",
+        "strNameFriendly": "Преступники ОКЛГ",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGCrim",
+        "dictFactionRels": {
+          "OKLGCorp": -50,
+          "OKLGLEO": -100,
+          "OKLGCiv": 25,
+          "OKLGFlotilla": 50,
+          "OKLGScav": 0
+        }
+      },
+      {
+        "strName": "OKLGFlotilla",
+        "strNameFriendly": "Флотилия",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGFlotilla",
+        "dictFactionRels": {
+          "OKLGCorp": -50,
+          "OKLGLEO": -50,
+          "OKLGCiv": -25,
+          "OKLGCrim": 25,
+          "OKLGScav": 50
+        }
+      },
+      {
+        "strName": "OKLGLEO",
+        "strNameFriendly": "АйоСек",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGLEO",
+        "dictFactionRels": {
+          "OKLGCorp": 100,
+          "OKLGCiv": 100,
+          "OKLGCrim": -100,
+          "OKLGFlotilla": -25,
+          "OKLGScav": 0
+        }
+      },
+      {
+        "strName": "OKLGPirates",
+        "strNameFriendly": "Братство Огидан Паранта",
+        "aMembers": [],
+        "bAutoAdd": false,
+        "strInteractionTriggered": "AF_OKLGPirates",
+        "dictFactionRels": {
+          "OKLGCorp": -100,
+          "OKLGLEO": -100,
+          "OKLGCiv": -100,
+          "OKLGCrim": -100,
+          "OKLGFlotilla": -100,
+          "OKLGPirates": 200
+        }
+      },
+      {
+        "strName": "OKLGScav",
+        "strNameFriendly": "Утилизаторы ОКЛГ",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGScav",
+        "dictFactionRels": {
+          "OKLGCorp": 25,
+          "OKLGLEO": -25,
+          "OKLGCiv": 25,
+          "OKLGCrim": 0,
+          "OKLGFlotilla": 50
+        }
+      },
+      {
+        "strName": "VCBRCiv",
+        "strNameFriendly": "Гражданские Клаудбрейк",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_VCBRCiv",
+        "dictFactionRels": {
+          "VCBRLEO": 25,
+          "VENCLEO": 0,
+          "VNCALEO": -10,
+          "VNCACiv": -15,
+          "VENCCiv": 25,
+          "VenusCrim": -50
+        }
+      },
+      {
+        "strName": "VCBRLEO",
+        "strNameFriendly": "Корпоративная безопасность Клаудбрейк",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_VCBRLEO",
+        "dictFactionRels": {
+          "VCBRLEO": 100,
+          "VENCLEO": 25,
+          "VNCALEO": 25,
+          "VCBRCiv": 100,
+          "VENCCiv": 0,
+          "VNCACiv": 0,
+          "VenusCrim": -100,
+          "VenusPirates": -100
+        }
+      },
+      {
+        "strName": "VENCCiv",
+        "strNameFriendly": "Гражданские Энкантаду",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_VENCCiv",
+        "dictFactionRels": {
+          "VCBRLEO": 0,
+          "VENCLEO": 25,
+          "VNCALEO": -10,
+          "VNCACiv": -15,
+          "VCBRCiv": 25,
+          "VenusCrim": -50
+        }
+      },
+      {
+        "strName": "VENCLEO",
+        "strNameFriendly": "Федеральная полиция",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_VENCLEO",
+        "dictFactionRels": {
+          "VCBRLEO": 25,
+          "VENCLEO": 100,
+          "VNCALEO": 25,
+          "VCBRCiv": 0,
+          "VENCCiv": 100,
+          "VNCACiv": 0,
+          "VenusCrim": -50,
+          "VenusPirates": -100
+        }
+      },
+      {
+        "strName": "VenusCrim",
+        "strNameFriendly": "Венерианские преступные группировки",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_VenusCrim",
+        "dictFactionRels": {
+          "VCBRLEO": -40,
+          "VENCLEO": -25,
+          "VNCALEO": -100,
+          "VCBRCiv": 25,
+          "VENCCiv": 25,
+          "VNCACiv": 25
+        }
+      },
+      {
+        "strName": "VenusPirates",
+        "strNameFriendly": "Шиповник",
+        "aMembers": [],
+        "bAutoAdd": false,
+        "strInteractionTriggered": "AF_VenusPirates",
+        "dictFactionRels": {
+          "VCBRLEO": -100,
+          "VENCLEO": -50,
+          "VNCALEO": -100,
+          "VNCACiv": -100,
+          "VENCCiv": -25,
+          "VCBRCiv": -100,
+          "VenusCrim": -100,
+          "VenusPirates": 200
+        }
+      },
+      {
+        "strName": "VNCACiv",
+        "strNameFriendly": "Гражданские НовКал",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_VNCACiv",
+        "dictFactionRels": {
+          "VCBRLEO": -10,
+          "VENCLEO": -10,
+          "VNCALEO": 25,
+          "VENCCiv": -15,
+          "VCBRCiv": -15,
+          "VenusCrim": -30,
+          "VenusPirates": -50
+        }
+      },
+      {
+        "strName": "VNCALEO",
+        "strNameFriendly": "Полиция НовКал",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_VNCALEO",
+        "dictFactionRels": {
+          "VCBRLEO": 25,
+          "VENCLEO": 25,
+          "VNCALEO": 100,
+          "VCBRCiv": 0,
+          "VENCCiv": 0,
+          "VNCACiv": 100,
+          "VenusCrim": -100,
+          "VenusPirates": -100
+        },
+        "strCompany": "Newcal Police Dept."
+      }
+    ]
+  },
+  {
+    "strName": "SOL",
+    "dfEpoch": 65627498854.0278,
+    "aSpawnBodies": [
+      {
+        "strName": "Sol",
+        "strNameParent": null,
+        "fDegreesCW": 0.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 1.0,
+        "fRadiusKM": 695510.0,
+        "fMassKG": 1.9891e+30,
+        "fRotationPeriodDays": 24.47,
+        "nDrawFlagsTrack": 1,
+        "nDrawFlagsBody": 2,
+        "strParallax": "DeepSpace",
+        "fParallaxRadiusKM": 1e+24
+      }
+    ],
+    "aSpawnStations": [],
+    "aSpawnDerelictRings": [
+      {
+        "strLootShipType": "RandomShip",
+        "strSpawnAroundBody": "Sol",
+        "nSpawnCountMin": 0,
+        "nSpawnCountMax": 0,
+        "fSpawnRadiusMinKM": 46375339.917,
+        "fSpawnRadiusMaxKM": 74798935350.0,
+        "fVelMaxKMpS": 0.5,
+        "bIsBodyLocked": false
+      }
+    ],
+    "aComps": [
+      {
+        "_strName": "Ayotimiwa Ship Breaking Co.",
+        "strRegID": "OKLG",
+        "mapRoster": {},
+        "NullShift": {
+          "nID": -1,
+          "strName": "Null Shift",
+          "clr": {
+            "r": 1,
+            "g": 0,
+            "b": 1,
+            "a": 1
+          }
+        }
+      },
+      {
+        "_strName": "AyoSec",
+        "jcrDefaultRules": {
+          "bAirlockPermission": true
+        }
+      }
+    ],
+    "aFactions": [
+      {
+        "strName": "OKLGCiv",
+        "strNameFriendly": "Гражданские ОКЛГ",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGCiv",
+        "dictFactionRels": {
+          "OKLGCorp": 25,
+          "OKLGLEO": 25,
+          "OKLGCrim": -50,
+          "OKLGFlotilla": -25,
+          "OKLGScav": 25
+        }
+      },
+      {
+        "strName": "OKLGCorp",
+        "strNameFriendly": "Айотимива Шип Брейкинг Ко.",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGCorp",
+        "dictFactionRels": {
+          "OKLGLEO": 100,
+          "OKLGCiv": 25,
+          "OKLGCrim": -50,
+          "OKLGFlotilla": -25,
+          "OKLGScav": 25
+        }
+      },
+      {
+        "strName": "OKLGCrim",
+        "strNameFriendly": "Преступники ОКЛГ",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGCrim",
+        "dictFactionRels": {
+          "OKLGCorp": -50,
+          "OKLGLEO": -100,
+          "OKLGCiv": 25,
+          "OKLGFlotilla": 50,
+          "OKLGScav": 0
+        }
+      },
+      {
+        "strName": "OKLGLEO",
+        "strNameFriendly": "АйоСек",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGLEO",
+        "dictFactionRels": {
+          "OKLGCorp": 100,
+          "OKLGCiv": 100,
+          "OKLGCrim": -100,
+          "OKLGFlotilla": -25,
+          "OKLGScav": 0
+        }
+      },
+      {
+        "strName": "OKLGPirates",
+        "strNameFriendly": "Братство Огидан Паранта",
+        "aMembers": [],
+        "bAutoAdd": false,
+        "strInteractionTriggered": "AF_OKLGPirates",
+        "dictFactionRels": {
+          "OKLGCorp": -100,
+          "OKLGLEO": -100,
+          "OKLGCiv": -100,
+          "OKLGCrim": -100,
+          "OKLGFlotilla": -100,
+          "OKLGPirates": 200
+        }
+      },
+      {
+        "strName": "OKLGScav",
+        "strNameFriendly": "Утилизаторы ОКЛГ",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGScav",
+        "dictFactionRels": {
+          "OKLGCorp": 25,
+          "OKLGLEO": -25,
+          "OKLGCiv": 25,
+          "OKLGCrim": 0,
+          "OKLGFlotilla": 50
+        }
+      }
+    ]
+  },
+  {
+    "strName": "VORB_VNCA",
+    "dfEpoch": 65627498854.0278,
+    "aSpawnBodies": [
+      {
+        "strName": "Sol",
+        "strNameParent": null,
+        "fDegreesCW": 0.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 1.0,
+        "fRadiusKM": 695510.0,
+        "fMassKG": 1.9891e+30,
+        "fRotationPeriodDays": 24.47,
+        "nDrawFlagsTrack": 1,
+        "nDrawFlagsBody": 2,
+        "strParallax": "DeepSpace",
+        "fParallaxRadiusKM": 1e+24
+      },
+      {
+        "strName": "Venus",
+        "strNameParent": "Sol",
+        "fDegreesCW": 76.7,
+        "fEccentricity": 0.0067,
+        "fOrbitalPeriodYears": 0.615,
+        "fRadiusKM": 6052,
+        "fMassKG": 4.7e+24,
+        "fRotationPeriodDays": 243,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0,
+        "strParallax": "VenusAtmosphere",
+        "strGravParallax": "VenusGrav",
+        "fParallaxRadiusKM": 6222,
+        "fGravParallaxRadiusKM": 6222000,
+        "fVisibilityRangeMod": 0.125,
+        "fVisibilityRangeModGrav": 1.0,
+        "aAtmosphericValues": [
+          {
+            "strName": "Venus_Surface 0-5km",
+            "fMaxAltitude": 6057,
+            "fCO2": 8887,
+            "fN2": 322,
+            "fH2SO4": 0,
+            "fO2": 0.0,
+            "fTemp": 735
+          },
+          {
+            "strName": "Venus_Surface 5-10km",
+            "fMaxAltitude": 6062,
+            "fCO2": 4550,
+            "fN2": 190,
+            "fH2SO4": 0,
+            "fO2": 0.0,
+            "fTemp": 658
+          },
+          {
+            "strName": "Venus_Surface 10-20km",
+            "fMaxAltitude": 6072,
+            "fCO2": 2202,
+            "fN2": 80,
+            "fH2SO4": 0,
+            "fO2": 0.0,
+            "fTemp": 579
+          },
+          {
+            "strName": "Venus_Surface 20-30km",
+            "fMaxAltitude": 6082,
+            "fCO2": 965,
+            "fN2": 15,
+            "fH2SO4": 0,
+            "fO2": 0.0,
+            "fTemp": 495
+          },
+          {
+            "strName": "Venus_Troposphere 30-48km",
+            "fMaxAltitude": 6100,
+            "fCO2": 190,
+            "fN2": 7,
+            "fH2SO4": 0.5,
+            "fO2": 0.0,
+            "fTemp": 373
+          },
+          {
+            "strName": "Venus_Troposphere 48-52km",
+            "fMaxAltitude": 6104,
+            "fCO2": 96,
+            "fN2": 3.5,
+            "fH2SO4": 0.5,
+            "fO2": 0.0,
+            "fTemp": 308
+          },
+          {
+            "strName": "Venus_Troposphere 52-70km",
+            "fMaxAltitude": 6120,
+            "fCO2": 80.0,
+            "fN2": 2.89,
+            "fH2SO4": 0,
+            "fO2": 0,
+            "fTemp": 230
+          },
+          {
+            "strName": "Venus_Mesosphere 70-100km",
+            "fMaxAltitude": 6152,
+            "fCO2": 26.055,
+            "fN2": 0.94,
+            "fH2SO4": 0,
+            "fO2": 0,
+            "fTemp": 161
+          },
+          {
+            "strName": "Venus_Exosphere 100-200km",
+            "fMaxAltitude": 6252,
+            "fCO2": 1.0,
+            "fN2": 0.1,
+            "fH2SO4": 0,
+            "fO2": 0,
+            "fTemp": 212
+          },
+          {
+            "strName": "Venus_Exosphere 200-350km",
+            "fMaxAltitude": 6402,
+            "fCO2": 0.02,
+            "fN2": 0,
+            "fH2SO4": 0,
+            "fO2": 0,
+            "fTemp": 300
+          }
+        ]
+      }
+    ],
+    "aSpawnStations": [
+      {
+        "strName": "VNCA",
+        "strPublicName": "Терминал Лонг-Бич",
+        "strNameParent": "Venus",
+        "strShipType": "Station_VNCA_Port",
+        "strOrbitType": "EX",
+        "strClassification": "GroundStation",
+        "fDegreesCW": 180.0,
+        "fRadiusKM": 1.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 0.0327626,
+        "fPeriapsisAU": 4.07910137e-05,
+        "fApoapsisAU": 4.07910137e-05,
+        "fMassKG": 100000.0,
+        "bIsRegion": true,
+        "bIsNoFees": false,
+        "bNoCollisions": false,
+        "fDamageCap": 0.3,
+        "strLaw": "Venus",
+        "strOwner": "VNCACiv",
+        "aFactions": [
+          "VNCALEO",
+          "VNCACiv",
+          "VenusCrim"
+        ],
+        "aStartingConds": [
+          "StationMinScav=1.0x8",
+          "StationMaxScav=1.0x16",
+          "StationMinPirate=1.0x2",
+          "StationMaxPirate=1.0x8",
+          "StationMaxPopulation=1.0x25",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "VORB",
+        "strPublicName": "Орбитальная Венеры",
+        "strNameParent": "Venus",
+        "strShipType": "Station_VORB_Port",
+        "strOrbitType": "EX",
+        "strClassification": "OrbitalStation",
+        "fDegreesCW": 0.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "fPeriapsisAU": 4.345e-05,
+        "fApoapsisAU": 0.000116,
+        "bIsRegion": false,
+        "bIsNoFees": false,
+        "bNoCollisions": false,
+        "fDamageCap": 0.6,
+        "bDrawTrack": true,
+        "strLaw": "Venus",
+        "strOwner": "VENCCiv",
+        "aFactions": [
+          "VENCLEO",
+          "VENCCiv",
+          "VenusCrim"
+        ],
+        "aStartingConds": [
+          "StationIsDerelictSpawner=1.0x1",
+          "StationIsDerelictCollector=1.0x1",
+          "StationMaxPopulation=1.0x20",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      }
+    ],
+    "aSpawnDerelictRings": [
+      {
+        "strLootShipType": "RandomShip",
+        "strSpawnAroundBody": "Sol",
+        "nSpawnCountMin": 0,
+        "nSpawnCountMax": 0,
+        "fSpawnRadiusMinKM": 46375339.917,
+        "fSpawnRadiusMaxKM": 74798935350.0,
+        "fVelMaxKMpS": 0.5,
+        "bIsBodyLocked": false
+      },
+      {
+        "strLootShipType": "RandomDerelictVenus",
+        "strSpawnAroundBody": "VORB",
+        "nSpawnCountMin": 9,
+        "nSpawnCountMax": 16,
+        "fSpawnRadiusMinKM": 500.0,
+        "fSpawnRadiusMaxKM": 1000.0,
+        "fVelMaxKMpS": 0.0,
+        "bIsBodyLocked": true,
+        "strOwner": "VNCACiv"
+      }
+    ],
+    "aComps": [
+      {
+        "_strName": "Ayotimiwa Ship Breaking Co.",
+        "strRegID": "OKLG",
+        "mapRoster": {},
+        "NullShift": {
+          "nID": -1,
+          "strName": "Null Shift",
+          "clr": {
+            "r": 1,
+            "g": 0,
+            "b": 1,
+            "a": 1
+          }
+        }
+      },
+      {
+        "_strName": "AyoSec",
+        "jcrDefaultRules": {
+          "bAirlockPermission": true
+        }
+      },
+      {
+        "_strName": "Newcal Police Dept.",
+        "jcrDefaultRules": {
+          "bAirlockPermission": true
+        }
+      }
+    ],
+    "aFactions": [
+      {
+        "strName": "OKLGCiv",
+        "strNameFriendly": "Гражданские ОКЛГ",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGCiv",
+        "dictFactionRels": {
+          "OKLGCorp": 25,
+          "OKLGLEO": 25,
+          "OKLGCrim": -50,
+          "OKLGFlotilla": -25,
+          "OKLGScav": 25
+        }
+      },
+      {
+        "strName": "OKLGCorp",
+        "strNameFriendly": "Айотимива Шип Брейкинг Ко.",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGCorp",
+        "dictFactionRels": {
+          "OKLGLEO": 100,
+          "OKLGCiv": 25,
+          "OKLGCrim": -50,
+          "OKLGFlotilla": -25,
+          "OKLGScav": 25
+        }
+      },
+      {
+        "strName": "OKLGCrim",
+        "strNameFriendly": "Преступники ОКЛГ",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGCrim",
+        "dictFactionRels": {
+          "OKLGCorp": -50,
+          "OKLGLEO": -100,
+          "OKLGCiv": 25,
+          "OKLGFlotilla": 50,
+          "OKLGScav": 0
+        }
+      },
+      {
+        "strName": "OKLGFlotilla",
+        "strNameFriendly": "Флотилия",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGFlotilla",
+        "dictFactionRels": {
+          "OKLGCorp": -50,
+          "OKLGLEO": -50,
+          "OKLGCiv": -25,
+          "OKLGCrim": 25,
+          "OKLGScav": 50
+        }
+      },
+      {
+        "strName": "OKLGLEO",
+        "strNameFriendly": "АйоСек",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGLEO",
+        "dictFactionRels": {
+          "OKLGCorp": 100,
+          "OKLGCiv": 100,
+          "OKLGCrim": -100,
+          "OKLGFlotilla": -25,
+          "OKLGScav": 0
+        }
+      },
+      {
+        "strName": "OKLGPirates",
+        "strNameFriendly": "Братство Огидан Паранта",
+        "aMembers": [],
+        "bAutoAdd": false,
+        "strInteractionTriggered": "AF_OKLGPirates",
+        "dictFactionRels": {
+          "OKLGCorp": -100,
+          "OKLGLEO": -100,
+          "OKLGCiv": -100,
+          "OKLGCrim": -100,
+          "OKLGFlotilla": -100,
+          "OKLGPirates": 200
+        }
+      },
+      {
+        "strName": "OKLGScav",
+        "strNameFriendly": "Утилизаторы ОКЛГ",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGScav",
+        "dictFactionRels": {
+          "OKLGCorp": 25,
+          "OKLGLEO": -25,
+          "OKLGCiv": 25,
+          "OKLGCrim": 0,
+          "OKLGFlotilla": 50
+        }
+      },
+      {
+        "strName": "VCBRCiv",
+        "strNameFriendly": "Гражданские Клаудбрейк",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_VCBRCiv",
+        "dictFactionRels": {
+          "VCBRLEO": 25,
+          "VENCLEO": 20,
+          "VNCALEO": 0,
+          "VCBRCiv": 25,
+          "VNCACiv": 0,
+          "VENCCiv": 25,
+          "VenusCrim": 0
+        }
+      },
+      {
+        "strName": "VCBRLEO",
+        "strNameFriendly": "Корпоративная безопасность Клаудбрейк",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_VCBRLEO",
+        "dictFactionRels": {
+          "VCBRLEO": 100,
+          "VENCLEO": 25,
+          "VNCALEO": 25,
+          "VCBRCiv": 100,
+          "VENCCiv": 0,
+          "VNCACiv": 0,
+          "VenusCrim": -25,
+          "VenusPirates": -100
+        }
+      },
+      {
+        "strName": "VENCCiv",
+        "strNameFriendly": "Гражданские Энкантаду",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_VENCCiv",
+        "dictFactionRels": {
+          "VCBRLEO": 20,
+          "VENCLEO": 25,
+          "VNCALEO": 0,
+          "VNCACiv": 0,
+          "VCBRCiv": 25,
+          "VENCCiv": 25,
+          "VenusCrim": 0
+        }
+      },
+      {
+        "strName": "VENCLEO",
+        "strNameFriendly": "Федеральная полиция",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_VENCLEO",
+        "dictFactionRels": {
+          "VCBRLEO": 25,
+          "VENCLEO": 100,
+          "VNCALEO": 25,
+          "VCBRCiv": 0,
+          "VENCCiv": 100,
+          "VNCACiv": 0,
+          "VenusCrim": -25,
+          "VenusPirates": -100
+        }
+      },
+      {
+        "strName": "VenusCrim",
+        "strNameFriendly": "Венерианские преступные группировки",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_VenusCrim",
+        "dictFactionRels": {
+          "VCBRLEO": -20,
+          "VENCLEO": -10,
+          "VNCALEO": -20,
+          "VCBRCiv": 25,
+          "VENCCiv": 25,
+          "VNCACiv": 25
+        }
+      },
+      {
+        "strName": "VenusPirates",
+        "strNameFriendly": "Шиповник",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_VenusPirates",
+        "dictFactionRels": {
+          "VCBRLEO": -100,
+          "VENCLEO": -50,
+          "VNCALEO": -100,
+          "VNCACiv": -50,
+          "VENCCiv": 0,
+          "VCBRCiv": -25,
+          "VenusCrim": -25,
+          "VenusPirates": 200
+        }
+      },
+      {
+        "strName": "VNCACiv",
+        "strNameFriendly": "Гражданские НовКал",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_VNCACiv",
+        "dictFactionRels": {
+          "VCBRLEO": 10,
+          "VENCLEO": 10,
+          "VNCALEO": 25,
+          "VNCACiv": 25,
+          "VENCCiv": 0,
+          "VCBRCiv": 0,
+          "VenusCrim": 0,
+          "VenusPirates": -50
+        }
+      },
+      {
+        "strName": "VNCALEO",
+        "strNameFriendly": "Полиция НовКал",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_VNCALEO",
+        "dictFactionRels": {
+          "VCBRLEO": 25,
+          "VENCLEO": 25,
+          "VNCALEO": 100,
+          "VCBRCiv": 0,
+          "VENCCiv": 0,
+          "VNCACiv": 100,
+          "VenusCrim": -25,
+          "VenusPirates": -100
+        },
+        "strCompany": "Newcal Police Dept."
+      }
+    ]
+  },
+  {
+    "strName": "VENUS_NOSHIPS",
+    "dfEpoch": 65627498854.0278,
+    "aSpawnBodies": [
+      {
+        "strName": "Sol",
+        "strNameParent": null,
+        "fDegreesCW": 0.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 1.0,
+        "fRadiusKM": 695510.0,
+        "fMassKG": 1.9891e+30,
+        "fRotationPeriodDays": 24.47,
+        "nDrawFlagsTrack": 1,
+        "nDrawFlagsBody": 2,
+        "strParallax": "DeepSpace",
+        "fParallaxRadiusKM": 1e+24
+      },
+      {
+        "strName": "Venus",
+        "strNameParent": "Sol",
+        "fDegreesCW": 76.7,
+        "fEccentricity": 0.0067,
+        "fOrbitalPeriodYears": 0.615,
+        "fRadiusKM": 6052,
+        "fMassKG": 4.7e+24,
+        "fRotationPeriodDays": 243,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0,
+        "strParallax": "VenusAtmosphere",
+        "strGravParallax": "VenusGrav",
+        "fParallaxRadiusKM": 6222,
+        "fGravParallaxRadiusKM": 6222000,
+        "fVisibilityRangeMod": 0.125,
+        "fVisibilityRangeModGrav": 1.0,
+        "aAtmosphericValues": [
+          {
+            "strName": "Venus_Surface 0-5km",
+            "fMaxAltitude": 6057,
+            "fCO2": 8887,
+            "fN2": 322,
+            "fH2SO4": 0,
+            "fO2": 0.0,
+            "fTemp": 735
+          },
+          {
+            "strName": "Venus_Surface 5-10km",
+            "fMaxAltitude": 6062,
+            "fCO2": 4550,
+            "fN2": 190,
+            "fH2SO4": 0,
+            "fO2": 0.0,
+            "fTemp": 658
+          },
+          {
+            "strName": "Venus_Surface 10-20km",
+            "fMaxAltitude": 6072,
+            "fCO2": 2202,
+            "fN2": 80,
+            "fH2SO4": 0,
+            "fO2": 0.0,
+            "fTemp": 579
+          },
+          {
+            "strName": "Venus_Surface 20-30km",
+            "fMaxAltitude": 6082,
+            "fCO2": 965,
+            "fN2": 15,
+            "fH2SO4": 0,
+            "fO2": 0.0,
+            "fTemp": 495
+          },
+          {
+            "strName": "Venus_Troposphere 30-48km",
+            "fMaxAltitude": 6100,
+            "fCO2": 190,
+            "fN2": 7,
+            "fH2SO4": 0.5,
+            "fO2": 0.0,
+            "fTemp": 373
+          },
+          {
+            "strName": "Venus_Troposphere 48-52km",
+            "fMaxAltitude": 6104,
+            "fCO2": 96,
+            "fN2": 3.5,
+            "fH2SO4": 0.5,
+            "fO2": 0.0,
+            "fTemp": 308
+          },
+          {
+            "strName": "Venus_Troposphere 52-70km",
+            "fMaxAltitude": 6120,
+            "fCO2": 80.0,
+            "fN2": 2.89,
+            "fH2SO4": 0,
+            "fO2": 0,
+            "fTemp": 230
+          },
+          {
+            "strName": "Venus_Mesosphere 70-100km",
+            "fMaxAltitude": 6152,
+            "fCO2": 26.055,
+            "fN2": 0.94,
+            "fH2SO4": 0,
+            "fO2": 0,
+            "fTemp": 161
+          },
+          {
+            "strName": "Venus_Exosphere 100-200km",
+            "fMaxAltitude": 6252,
+            "fCO2": 1.0,
+            "fN2": 0.1,
+            "fH2SO4": 0,
+            "fO2": 0,
+            "fTemp": 212
+          },
+          {
+            "strName": "Venus_Exosphere 200-350km",
+            "fMaxAltitude": 6402,
+            "fCO2": 0.02,
+            "fN2": 0,
+            "fH2SO4": 0,
+            "fO2": 0,
+            "fTemp": 300
+          }
+        ]
+      }
+    ],
+    "aSpawnStations": [
+      {
+        "strName": "VNCA",
+        "strPublicName": "Терминал Лонг-Бич",
+        "strNameParent": "Venus",
+        "strShipType": "Station_VNCA_Port",
+        "strOrbitType": "EX",
+        "strClassification": "GroundStation",
+        "fDegreesCW": 180.0,
+        "fRadiusKM": 1.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 0.0327626,
+        "fPeriapsisAU": 4.07910137e-05,
+        "fApoapsisAU": 4.07910137e-05,
+        "fMassKG": 100000.0,
+        "bIsRegion": true,
+        "bIsNoFees": false,
+        "bNoCollisions": false,
+        "fDamageCap": 0.3,
+        "strLaw": "Venus",
+        "strOwner": "VNCACiv",
+        "aFactions": [
+          "VNCALEO",
+          "VNCACiv",
+          "VenusCrim"
+        ],
+        "aStartingConds": [
+          "StationMaxScav=1.0x1",
+          "StationMaxPopulation=1.0x25",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "VNCA_SD",
+        "strPublicName": "Торговый центр Сан-Диего",
+        "strNameParent": "Venus",
+        "strShipType": "Station_VNCA_Mall",
+        "strOrbitType": "EX",
+        "fDegreesCW": 179.8,
+        "fRadiusKM": 1.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 0.0327626,
+        "fPeriapsisAU": 4.07910137e-05,
+        "fApoapsisAU": 4.07910137e-05,
+        "fMassKG": 100000.0,
+        "bIsRegion": false,
+        "bIsNoFees": true,
+        "bNoCollisions": true,
+        "fDamageCap": 0.3,
+        "strLaw": "Venus",
+        "strOwner": "VNCACiv",
+        "aFactions": [
+          "VNCALEO",
+          "VNCACiv",
+          "VenusCrim"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x30",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "VLA00",
+        "strPublicName": "Стройзона Лос-Анджелес: Мост",
+        "strNameParent": "Venus",
+        "strShipType": "LA_BRIDGE_1",
+        "strOrbitType": "EX",
+        "fDegreesCW": 180.5,
+        "fRadiusKM": 1.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 0.0327626,
+        "fPeriapsisAU": 4.07910137e-05,
+        "fApoapsisAU": 4.07910137e-05,
+        "fMassKG": 100000.0,
+        "bIsRegion": false,
+        "bIsNoFees": true,
+        "bNoCollisions": true,
+        "fDamageCap": 0.5,
+        "strLaw": "Venus",
+        "strOwner": "VNCACiv",
+        "aFactions": [
+          "VNCALEO",
+          "VNCACiv"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x4",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "VLA01",
+        "strPublicName": "Стройзона Лос-Анджелес #1",
+        "strNameParent": "Venus",
+        "strShipType": "LA_PORT_1",
+        "strOrbitType": "EX",
+        "fDegreesCW": 180.1,
+        "fRadiusKM": 1.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 0.0327626,
+        "fPeriapsisAU": 4.07910137e-05,
+        "fApoapsisAU": 4.07910137e-05,
+        "fMassKG": 100000.0,
+        "bIsRegion": false,
+        "bIsNoFees": true,
+        "bNoCollisions": true,
+        "bIsUnderConstruction": true,
+        "nConstructionProgress": 30,
+        "fDamageCap": 0.2,
+        "strLaw": "VenusLA",
+        "strOwner": "VNCACiv",
+        "aFactions": [
+          "VNCALEO",
+          "VNCACiv"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x5",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "VLA02",
+        "strPublicName": "Стройзона Лос-Анджелес #2",
+        "strNameParent": "Venus",
+        "strShipType": "LA_MAINTENANCE_1",
+        "strOrbitType": "EX",
+        "fDegreesCW": 182.0,
+        "fRadiusKM": 1.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 0.0327626,
+        "fPeriapsisAU": 4.07910137e-05,
+        "fApoapsisAU": 4.07910137e-05,
+        "fMassKG": 100000.0,
+        "bIsRegion": false,
+        "bIsNoFees": true,
+        "bNoCollisions": true,
+        "fDamageCap": 0.2,
+        "strLaw": "VenusLA",
+        "strOwner": "VNCACiv",
+        "aFactions": [
+          "VNCALEO",
+          "VNCACiv"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x10",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "VLA03",
+        "strPublicName": "Стройзона Лос-Анджелес #3",
+        "strNameParent": "Venus",
+        "strShipType": "LA_RESIDENTIAL_1",
+        "strOrbitType": "EX",
+        "fDegreesCW": 183.0,
+        "fRadiusKM": 1.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 0.0327626,
+        "fPeriapsisAU": 4.07910137e-05,
+        "fApoapsisAU": 4.07910137e-05,
+        "fMassKG": 100000.0,
+        "bIsRegion": false,
+        "bIsNoFees": true,
+        "bNoCollisions": true,
+        "fDamageCap": 0.2,
+        "strLaw": "VenusLA",
+        "strOwner": "VNCACiv",
+        "aFactions": [
+          "VNCALEO",
+          "VNCACiv"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x15",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "VLA04",
+        "strPublicName": "Стройзона Лос-Анджелес #4",
+        "strNameParent": "Venus",
+        "strShipType": "LA_MAINTENANCE_1",
+        "strOrbitType": "EX",
+        "fDegreesCW": 184.0,
+        "fRadiusKM": 1.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 0.0327626,
+        "fPeriapsisAU": 4.07910137e-05,
+        "fApoapsisAU": 4.07910137e-05,
+        "fMassKG": 100000.0,
+        "bIsRegion": false,
+        "bIsNoFees": true,
+        "bNoCollisions": true,
+        "fDamageCap": 0.4,
+        "strLaw": "VenusLA",
+        "strOwner": "VNCACiv",
+        "aFactions": [
+          "VNCALEO",
+          "VNCACiv"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x20",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "VLA05",
+        "strPublicName": "Стройзона Лос-Анджелес #5",
+        "strNameParent": "Venus",
+        "strShipType": "LA_BILGE_1",
+        "strOrbitType": "EX",
+        "fDegreesCW": 185.0,
+        "fRadiusKM": 1.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 0.0327626,
+        "fPeriapsisAU": 4.07910137e-05,
+        "fApoapsisAU": 4.07910137e-05,
+        "fMassKG": 100000.0,
+        "bIsRegion": false,
+        "bIsNoFees": true,
+        "bNoCollisions": true,
+        "fDamageCap": 0.5,
+        "strLaw": "VenusLA",
+        "strOwner": "VNCACiv",
+        "aFactions": [
+          "VNCALEO",
+          "VNCACiv"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x25",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "VCBR",
+        "strPublicName": "Клаудбрейк",
+        "strNameParent": "Venus",
+        "strShipType": "Station_VCBR",
+        "strOrbitType": "EX",
+        "fDegreesCW": 174.4,
+        "fRadiusKM": 1.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 0.0327626,
+        "fPeriapsisAU": 4.07910137e-05,
+        "fApoapsisAU": 4.07910137e-05,
+        "fMassKG": 100000.0,
+        "bIsRegion": false,
+        "bIsNoFees": false,
+        "bNoCollisions": false,
+        "fDamageCap": 0.3,
+        "strLaw": "Venus",
+        "strOwner": "VCBRCiv",
+        "aFactions": [
+          "VCBRLEO",
+          "VCBRCiv",
+          "VenusCrim"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x8",
+          "StationMaintLvl=1.0x0.9"
+        ]
+      },
+      {
+        "strName": "VENC",
+        "strPublicName": "Порту-ду-Энкантаду",
+        "strNameParent": "Venus",
+        "strShipType": "Station_VENC_Port",
+        "strOrbitType": "EX",
+        "strClassification": "GroundStation",
+        "fDegreesCW": 185.6,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 0.0327626,
+        "fPeriapsisAU": 4.07910137e-05,
+        "fApoapsisAU": 4.07910137e-05,
+        "bIsRegion": false,
+        "bIsNoFees": false,
+        "bNoCollisions": false,
+        "fDamageCap": 0.6,
+        "strLaw": "Venus",
+        "strOwner": "VENCCiv",
+        "aFactions": [
+          "VENCLEO",
+          "VENCCiv",
+          "VenusCrim"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x20",
+          "StationMaintLvl=1.0x0.7"
+        ]
+      },
+      {
+        "strName": "VENC_SVL",
+        "strNameParent": "Venus",
+        "strShipType": "Venus Club",
+        "strOrbitType": "EX",
+        "fDegreesCW": 185.65,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 0.0327626,
+        "fPeriapsisAU": 4.07910137e-05,
+        "fApoapsisAU": 4.07910137e-05,
+        "bIsRegion": false,
+        "bIsNoFees": false,
+        "bNoCollisions": true,
+        "fDamageCap": 0.5,
+        "strLaw": "Venus",
+        "strOwner": "VENCCiv",
+        "aFactions": [
+          "VENCLEO",
+          "VENCCiv",
+          "VenusCrim"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x20",
+          "StationMaintLvl=1.0x0.7"
+        ]
+      },
+      {
+        "strName": "VENC_GRN",
+        "strNameParent": "Venus",
+        "strShipType": "Green Room",
+        "strOrbitType": "EX",
+        "fDegreesCW": 185.66,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 0.0327626,
+        "fPeriapsisAU": 4.07910137e-05,
+        "fApoapsisAU": 4.07910137e-05,
+        "bIsRegion": false,
+        "bIsNoFees": false,
+        "bNoCollisions": true,
+        "fDamageCap": 0.5,
+        "strLaw": "Venus",
+        "strOwner": "VENCCiv",
+        "aFactions": [
+          "VENCLEO",
+          "VENCCiv",
+          "VenusCrim"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x8",
+          "StationMaintLvl=1.0x0.9"
+        ]
+      },
+      {
+        "strName": "VORB",
+        "strPublicName": "Орбитальная Венеры",
+        "strNameParent": "Venus",
+        "strShipType": "Station_VORB_Port",
+        "strOrbitType": "EX",
+        "strClassification": "OrbitalStation",
+        "fDegreesCW": 0.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "fPeriapsisAU": 4.345e-05,
+        "fApoapsisAU": 0.000116,
+        "bIsRegion": false,
+        "bIsNoFees": false,
+        "bNoCollisions": false,
+        "fDamageCap": 0.6,
+        "strLaw": "Venus",
+        "strOwner": "VENCCiv",
+        "aFactions": [
+          "VENCLEO",
+          "VENCCiv",
+          "VenusCrim"
+        ],
+        "aStartingConds": [
+          "StationIsDerelictSpawner=1.0x1",
+          "StationIsDerelictCollector=1.0x1",
+          "StationMaxPopulation=1.0x20",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "VORB|Aux",
+        "strNameParent": "Venus",
+        "strShipType": "VORB_Aux",
+        "strOrbitType": "EX",
+        "strClassification": "OrbitalStation",
+        "fDegreesCW": 0.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "fPeriapsisAU": 4.345e-05,
+        "fApoapsisAU": 0.000116,
+        "bIsRegion": false,
+        "bIsNoFees": false,
+        "bNoCollisions": true,
+        "fDamageCap": 0.6,
+        "strLaw": "Venus",
+        "strOwner": "VENCCiv",
+        "aFactions": [
+          "VENCLEO",
+          "VENCCiv",
+          "VenusCrim"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x8",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "VORB_HAB",
+        "strPublicName": "Орбитальная Венеры: Жилой сектор",
+        "strNameParent": "Venus",
+        "strShipType": "Station_VORB_Habitation",
+        "strOrbitType": "EX",
+        "strClassification": "OrbitalStation",
+        "fDegreesCW": 0.2,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "fPeriapsisAU": 4.345e-05,
+        "fApoapsisAU": 0.000116,
+        "bIsRegion": false,
+        "bIsNoFees": false,
+        "bNoCollisions": true,
+        "fDamageCap": 0.6,
+        "strLaw": "Venus",
+        "strOwner": "VENCCiv",
+        "aFactions": [
+          "VENCLEO",
+          "VENCCiv",
+          "VenusCrim"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x20",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      }
+    ],
+    "aSpawnDerelictRings": [
+      {
+        "strLootShipType": "RandomShip",
+        "strSpawnAroundBody": "Sol",
+        "nSpawnCountMin": 0,
+        "nSpawnCountMax": 0,
+        "fSpawnRadiusMinKM": 46375339.917,
+        "fSpawnRadiusMaxKM": 74798935350.0,
+        "fVelMaxKMpS": 0.5,
+        "bIsBodyLocked": false
+      },
+      {
+        "strLootShipType": "RandomDerelictVenus",
+        "strSpawnAroundBody": "VORB",
+        "nSpawnCountMin": 9,
+        "nSpawnCountMax": 16,
+        "fSpawnRadiusMinKM": 500.0,
+        "fSpawnRadiusMaxKM": 1000.0,
+        "fVelMaxKMpS": 0.0,
+        "bIsBodyLocked": true,
+        "strOwner": "VNCACiv"
+      }
+    ],
+    "aComps": [
+      {
+        "_strName": "Ayotimiwa Ship Breaking Co.",
+        "strRegID": "OKLG",
+        "mapRoster": {},
+        "NullShift": {
+          "nID": -1,
+          "strName": "Null Shift",
+          "clr": {
+            "r": 1,
+            "g": 0,
+            "b": 1,
+            "a": 1
+          }
+        }
+      },
+      {
+        "_strName": "AyoSec",
+        "jcrDefaultRules": {
+          "bAirlockPermission": true
+        }
+      },
+      {
+        "_strName": "Newcal Police Dept.",
+        "jcrDefaultRules": {
+          "bAirlockPermission": true
+        }
+      }
+    ],
+    "aFactions": [
+      {
+        "strName": "OKLGCiv",
+        "strNameFriendly": "Гражданские ОКЛГ",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGCiv",
+        "dictFactionRels": {
+          "OKLGCorp": 25,
+          "OKLGLEO": 25,
+          "OKLGCrim": -50,
+          "OKLGFlotilla": -25,
+          "OKLGScav": 25
+        }
+      },
+      {
+        "strName": "OKLGCorp",
+        "strNameFriendly": "Айотимива Шип Брейкинг Ко.",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGCorp",
+        "dictFactionRels": {
+          "OKLGLEO": 100,
+          "OKLGCiv": 25,
+          "OKLGCrim": -50,
+          "OKLGFlotilla": -25,
+          "OKLGScav": 25
+        }
+      },
+      {
+        "strName": "OKLGCrim",
+        "strNameFriendly": "Преступники ОКЛГ",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGCrim",
+        "dictFactionRels": {
+          "OKLGCorp": -50,
+          "OKLGLEO": -100,
+          "OKLGCiv": 25,
+          "OKLGFlotilla": 50,
+          "OKLGScav": 0
+        }
+      },
+      {
+        "strName": "OKLGFlotilla",
+        "strNameFriendly": "Флотилия",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGFlotilla",
+        "dictFactionRels": {
+          "OKLGCorp": -50,
+          "OKLGLEO": -50,
+          "OKLGCiv": -25,
+          "OKLGCrim": 25,
+          "OKLGScav": 50
+        }
+      },
+      {
+        "strName": "OKLGLEO",
+        "strNameFriendly": "АйоСек",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGLEO",
+        "dictFactionRels": {
+          "OKLGCorp": 100,
+          "OKLGCiv": 100,
+          "OKLGCrim": -100,
+          "OKLGFlotilla": -25,
+          "OKLGScav": 0
+        }
+      },
+      {
+        "strName": "OKLGPirates",
+        "strNameFriendly": "Братство Огидан Паранта",
+        "aMembers": [],
+        "bAutoAdd": false,
+        "strInteractionTriggered": "AF_OKLGPirates",
+        "dictFactionRels": {
+          "OKLGCorp": -100,
+          "OKLGLEO": -100,
+          "OKLGCiv": -100,
+          "OKLGCrim": -100,
+          "OKLGFlotilla": -100,
+          "OKLGPirates": 200
+        }
+      },
+      {
+        "strName": "OKLGScav",
+        "strNameFriendly": "Утилизаторы ОКЛГ",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGScav",
+        "dictFactionRels": {
+          "OKLGCorp": 25,
+          "OKLGLEO": -25,
+          "OKLGCiv": 25,
+          "OKLGCrim": 0,
+          "OKLGFlotilla": 50
+        }
+      },
+      {
+        "strName": "VCBRCiv",
+        "strNameFriendly": "Гражданские Клаудбрейк",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_VCBRCiv",
+        "dictFactionRels": {
+          "VCBRLEO": 25,
+          "VENCLEO": 0,
+          "VNCALEO": -10,
+          "VNCACiv": -15,
+          "VENCCiv": 25,
+          "VenusCrim": -50
+        }
+      },
+      {
+        "strName": "VCBRLEO",
+        "strNameFriendly": "Корпоративная безопасность Клаудбрейк",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_VCBRLEO",
+        "dictFactionRels": {
+          "VCBRLEO": 100,
+          "VENCLEO": 25,
+          "VNCALEO": 25,
+          "VCBRCiv": 100,
+          "VENCCiv": 0,
+          "VNCACiv": 0,
+          "VenusCrim": -100,
+          "VenusPirates": -100
+        }
+      },
+      {
+        "strName": "VENCCiv",
+        "strNameFriendly": "Гражданские Энкантаду",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_VENCCiv",
+        "dictFactionRels": {
+          "VCBRLEO": 0,
+          "VENCLEO": 25,
+          "VNCALEO": -10,
+          "VNCACiv": -15,
+          "VCBRCiv": 25,
+          "VenusCrim": -50
+        }
+      },
+      {
+        "strName": "VENCLEO",
+        "strNameFriendly": "Федеральная полиция",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_VENCLEO",
+        "dictFactionRels": {
+          "VCBRLEO": 25,
+          "VENCLEO": 100,
+          "VNCALEO": 25,
+          "VCBRCiv": 0,
+          "VENCCiv": 100,
+          "VNCACiv": 0,
+          "VenusCrim": -50,
+          "VenusPirates": -100
+        }
+      },
+      {
+        "strName": "VenusCrim",
+        "strNameFriendly": "Венерианские преступные группировки",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_VenusCrim",
+        "dictFactionRels": {
+          "VCBRLEO": -40,
+          "VENCLEO": -25,
+          "VNCALEO": -100,
+          "VCBRCiv": 25,
+          "VENCCiv": 25,
+          "VNCACiv": 25
+        }
+      },
+      {
+        "strName": "VenusPirates",
+        "strNameFriendly": "Шиповник",
+        "aMembers": [],
+        "bAutoAdd": false,
+        "strInteractionTriggered": "AF_VenusPirates",
+        "dictFactionRels": {
+          "VCBRLEO": -100,
+          "VENCLEO": -50,
+          "VNCALEO": -100,
+          "VNCACiv": -100,
+          "VENCCiv": -25,
+          "VCBRCiv": -100,
+          "VenusCrim": -100,
+          "VenusPirates": 200
+        }
+      },
+      {
+        "strName": "VNCACiv",
+        "strNameFriendly": "Гражданские НовКал",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_VNCACiv",
+        "dictFactionRels": {
+          "VCBRLEO": -10,
+          "VENCLEO": -10,
+          "VNCALEO": 25,
+          "VENCCiv": -15,
+          "VCBRCiv": -15,
+          "VenusCrim": -30,
+          "VenusPirates": -50
+        }
+      },
+      {
+        "strName": "VNCALEO",
+        "strNameFriendly": "Полиция НовКал",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_VNCALEO",
+        "dictFactionRels": {
+          "VCBRLEO": 25,
+          "VENCLEO": 25,
+          "VNCALEO": 100,
+          "VCBRCiv": 0,
+          "VENCCiv": 0,
+          "VNCACiv": 100,
+          "VenusCrim": -100,
+          "VenusPirates": -100
+        },
+        "strCompany": "Newcal Police Dept."
+      }
+    ]
+  }
+]

@@ -1,0 +1,71 @@
+[
+    {
+		"strName" : "TEMP3ActMIDStart",
+		"strTemplateBeat" : "TEMP3ActBEGStart",
+		"strFind" : "TEMP3ActBEG",
+		"strReplace" : "TEMP3ActMID",
+        "aOverrideBeatValues" : [
+			"strIATrigger|PLOTTEMP3ActMIDStartTrigger,[protag],[contact],[target]"
+		],
+        "aOverrideTriggerIAValues" : [
+			"strDesc|[them] сообщает для [us], запрашивая TEMP3ActMID от [3rd]."
+		]
+	},
+    {
+		"strName" : "TEMP3ActMIDTarget",
+		"strTemplateBeat" : "TEMP3ActBEGTarget",
+		"strFind" : "TEMP3ActBEG",
+		"strReplace" : "TEMP3ActMID",
+        "aOverrideBeatValues" : [
+		],
+        "aOverrideTriggerIAValues" : [
+			"strDesc|[us] вынужденно говорит для [them], что [3rd] - TEMP3ActMIDed."
+		]
+	},
+    {
+		"strName" : "TEMP3ActMIDTurnIn",
+		"strTemplateBeat" : "TEMP3ActBEGTurnIn",
+		"strFind" : "TEMP3ActBEG",
+		"strReplace" : "TEMP3ActMID",
+        "aOverrideBeatValues" : [
+		],
+        "aOverrideTriggerIAValues" : [
+			"strDesc|[us] задействует TEMP3ActMID плот-бит 2, с целью [3rd] и контактом [them]."
+		]
+	},
+
+    {
+		"strName" : "TEMP3ActENDStart",
+		"strTemplateBeat" : "TEMP3ActBEGStart",
+		"strFind" : "TEMP3ActBEG",
+		"strReplace" : "TEMP3ActEND",
+        "aOverrideBeatValues" : [
+			"strIATrigger|PLOTTEMP3ActENDStartTrigger,[protag],[contact],[target]"
+		],
+        "aOverrideTriggerIAValues" : [
+			"strDesc|[them] сообщает для [us], запрашивая TEMP3ActEND от [3rd]."
+		]
+	},
+    {
+		"strName" : "TEMP3ActENDTarget",
+		"strTemplateBeat" : "TEMP3ActBEGTarget",
+		"strFind" : "TEMP3ActBEG",
+		"strReplace" : "TEMP3ActEND",
+        "aOverrideBeatValues" : [
+		],
+        "aOverrideTriggerIAValues" : [
+			"strDesc|[us] вынужденно говорит для [them], что [3rd] - TEMP3ActMIDed."
+		]
+	},
+    {
+		"strName" : "TEMP3ActENDTurnIn",
+		"strTemplateBeat" : "TEMP3ActBEGTurnIn",
+		"strFind" : "TEMP3ActBEG",
+		"strReplace" : "TEMP3ActEND",
+        "aOverrideBeatValues" : [
+		],
+        "aOverrideTriggerIAValues" : [
+			"strDesc|[us] задействует TEMP3ActEND плот-бит 2, с целью [3rd] и контактом [them]."
+		]
+	}
+]

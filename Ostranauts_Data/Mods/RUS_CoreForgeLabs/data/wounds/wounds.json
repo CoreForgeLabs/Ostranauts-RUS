@@ -1,0 +1,507 @@
+[
+    {
+		"strName" : "WoundArmFractureL",
+		"strPainPNG" : "paperdoll\\Wounds\\armFractureLPainBig",
+		"bBleeds" : false,
+		"fHitChance" : 1.0,
+		"strLootBluntVerbs" : "TXTBluntVerbs",
+		"strLootCutVerbs" : null,
+		"aSlotOverlaps" : [
+			"shirt_in",
+			"shirt_mid",
+			"shirt_out"
+		],
+        "mapEffects" : {
+			"DcWoundBlunt02" : "WoundArmFractureLBlunt02",
+			"DcWoundBlunt03" : "WoundArmFractureLBlunt03",
+			"DcWoundBlunt04" : "WoundArmFractureLBlunt04"
+		}
+	},
+    {
+		"strName" : "WoundArmFractureR",
+		"strPainPNG" : "paperdoll\\Wounds\\armFractureLPainBig",
+		"bBleeds" : false,
+		"fHitChance" : 1.0,
+		"strLootBluntVerbs" : "TXTBluntVerbs",
+		"strLootCutVerbs" : null,
+		"aSlotOverlaps" : [
+			"shirt_in",
+			"shirt_mid",
+			"shirt_out"
+		],
+        "mapEffects" : {
+			"DcWoundBlunt02" : "WoundArmFractureRBlunt02",
+			"DcWoundBlunt03" : "WoundArmFractureRBlunt03",
+			"DcWoundBlunt04" : "WoundArmFractureRBlunt04"
+		}
+	},
+
+    {
+		"strName" : "WoundArmLowerL",
+		"strPainPNG" : "paperdoll\\Wounds\\armLowerLPainBig",
+		"bBleeds" : true,
+		"fHitChance" : 1.0,
+		"strLootBluntVerbs" : "TXTBluntVerbs",
+		"strLootCutVerbs" : "TXTCutVerbs",
+		"aSlotOverlaps" : [
+			"shirt_in",
+			"shirt_mid",
+			"shirt_out"
+		],
+        "mapEffects" : {
+			"DcWoundBlood02" : "WoundArmLowerLBlood02",
+			"DcWoundBlood03" : "WoundArmLowerLBlood03",
+			"DcWoundBlood04" : "WoundArmLowerLBlood04",
+			"DcWoundBlunt02" : "WoundArmLowerLBlunt02",
+			"DcWoundBlunt03" : "WoundArmLowerLBlunt03",
+			"DcWoundBlunt03a" : "WoundArmLowerLBlunt04",
+			"DcWoundCut02" : "WoundArmLowerLCut02",
+			"DcWoundCut03" : "WoundArmLowerLCut03",
+			"DcWoundCut04" : "WoundArmLowerLCut04",
+			"DcWoundCut04a" : "WoundArmLowerLCut05",
+			"DcWoundInfect02" : "WoundArmLowerLInfect02",
+			"DcWoundInfect03" : "WoundArmLowerLInfect03",
+			"DcWoundInfect04" : "WoundArmLowerLInfect04"
+		}
+	},
+    {
+		"strName" : "WoundArmLowerR",
+		"strPainPNG" : "paperdoll\\Wounds\\armLowerLPainBig",
+		"bBleeds" : true,
+		"fHitChance" : 1.0,
+		"strLootBluntVerbs" : "TXTBluntVerbs",
+		"strLootCutVerbs" : "TXTCutVerbs",
+		"aSlotOverlaps" : [
+			"shirt_in",
+			"shirt_mid",
+			"shirt_out"
+		],
+        "mapEffects" : {
+			"DcWoundBlood02" : "WoundArmLowerRBlood02",
+			"DcWoundBlood03" : "WoundArmLowerRBlood03",
+			"DcWoundBlood04" : "WoundArmLowerRBlood04",
+			"DcWoundBlunt02" : "WoundArmLowerRBlunt02",
+			"DcWoundBlunt03" : "WoundArmLowerRBlunt03",
+			"DcWoundBlunt03a" : "WoundArmLowerRBlunt04",
+			"DcWoundCut02" : "WoundArmLowerRCut02",
+			"DcWoundCut03" : "WoundArmLowerRCut03",
+			"DcWoundCut04" : "WoundArmLowerRCut04",
+			"DcWoundCut04a" : "WoundArmLowerRCut05",
+			"DcWoundInfect02" : "WoundArmLowerRInfect02",
+			"DcWoundInfect03" : "WoundArmLowerRInfect03",
+			"DcWoundInfect04" : "WoundArmLowerRInfect04"
+		}
+	},
+
+    {
+		"strName" : "WoundArmUpperL",
+		"strPainPNG" : "paperdoll\\Wounds\\armUpperLPainBig",
+		"bBleeds" : true,
+		"fHitChance" : 1.0,
+		"strLootBluntVerbs" : "TXTBluntVerbs",
+		"strLootCutVerbs" : "TXTCutVerbs",
+		"aSlotOverlaps" : [
+			"shirt_in",
+			"shirt_mid",
+			"shirt_out"
+		],
+        "mapEffects" : {
+			"DcWoundBlood02" : "WoundArmUpperLBlood02",
+			"DcWoundBlood03" : "WoundArmUpperLBlood03",
+			"DcWoundBlood04" : "WoundArmUpperLBlood04",
+			"DcWoundBlunt02" : "WoundArmUpperLBlunt02",
+			"DcWoundBlunt03" : "WoundArmUpperLBlunt03",
+			"DcWoundBlunt03a" : "WoundArmUpperLBlunt04",
+			"DcWoundCut02" : "WoundArmUpperLCut02",
+			"DcWoundCut03" : "WoundArmUpperLCut03",
+			"DcWoundCut04" : "WoundArmUpperLCut04",
+			"DcWoundCut04a" : "WoundArmUpperLCut05",
+			"DcWoundInfect02" : "WoundArmUpperLInfect02",
+			"DcWoundInfect03" : "WoundArmUpperLInfect03",
+			"DcWoundInfect04" : "WoundArmUpperLInfect04"
+		}
+	},
+    {
+		"strName" : "WoundArmUpperR",
+		"strPainPNG" : "paperdoll\\Wounds\\armUpperLPainBig",
+		"bBleeds" : true,
+		"fHitChance" : 1.0,
+		"strLootBluntVerbs" : "TXTBluntVerbs",
+		"strLootCutVerbs" : "TXTCutVerbs",
+		"aSlotOverlaps" : [
+			"shirt_in",
+			"shirt_mid",
+			"shirt_out"
+		],
+        "mapEffects" : {
+			"DcWoundBlood02" : "WoundArmUpperRBlood02",
+			"DcWoundBlood03" : "WoundArmUpperRBlood03",
+			"DcWoundBlood04" : "WoundArmUpperRBlood04",
+			"DcWoundBlunt02" : "WoundArmUpperRBlunt02",
+			"DcWoundBlunt03" : "WoundArmUpperRBlunt03",
+			"DcWoundBlunt03a" : "WoundArmUpperRBlunt04",
+			"DcWoundCut02" : "WoundArmUpperRCut02",
+			"DcWoundCut03" : "WoundArmUpperRCut03",
+			"DcWoundCut04" : "WoundArmUpperRCut04",
+			"DcWoundCut04a" : "WoundArmUpperRCut05",
+			"DcWoundInfect02" : "WoundArmUpperRInfect02",
+			"DcWoundInfect03" : "WoundArmUpperRInfect03",
+			"DcWoundInfect04" : "WoundArmUpperRInfect04"
+		}
+	},
+
+    {
+		"strName" : "WoundAbdomenLower",
+		"strPainPNG" : "paperdoll\\Wounds\\abdomenLowerPainBig",
+		"bBleeds" : true,
+		"fHitChance" : 2.0,
+		"strLootBluntVerbs" : "TXTBluntVerbs",
+		"strLootCutVerbs" : "TXTCutVerbs",
+		"aSlotOverlaps" : [
+			"shirt_in",
+			"shirt_mid",
+			"shirt_out"
+		],
+        "mapEffects" : {
+			"DcWoundBlood02" : "WoundAbdomenLowerBlood02",
+			"DcWoundBlood03" : "WoundAbdomenLowerBlood03",
+			"DcWoundBlood04" : "WoundAbdomenLowerBlood04",
+			"DcWoundBlunt02" : "WoundAbdomenLowerBlunt02",
+			"DcWoundBlunt02a" : "WoundAbdomenLowerBlunt02a",
+			"DcWoundBlunt03" : "WoundAbdomenLowerBlunt03",
+			"DcWoundCut02" : "WoundAbdomenLowerCut02",
+			"DcWoundCut03" : "WoundAbdomenLowerCut03",
+			"DcWoundCut04" : "WoundAbdomenLowerCut04",
+			"DcWoundInfect02" : "WoundAbdomenLowerInfect02",
+			"DcWoundInfect03" : "WoundAbdomenLowerInfect03",
+			"DcWoundInfect04" : "WoundAbdomenLowerInfect04"
+		}
+	},
+
+    {
+		"strName" : "WoundAbdomenUpper",
+		"strPainPNG" : "paperdoll\\Wounds\\abdomenUpperPainBig",
+		"bBleeds" : true,
+		"fHitChance" : 2.0,
+		"strLootBluntVerbs" : "TXTBluntVerbs",
+		"strLootCutVerbs" : "TXTCutVerbs",
+		"aSlotOverlaps" : [
+			"shirt_in",
+			"shirt_mid",
+			"shirt_out"
+		],
+        "mapEffects" : {
+			"DcWoundBlood02" : "WoundAbdomenUpperBlood02",
+			"DcWoundBlood03" : "WoundAbdomenUpperBlood03",
+			"DcWoundBlood04" : "WoundAbdomenUpperBlood04",
+			"DcWoundBlunt02" : "WoundAbdomenUpperBlunt02",
+			"DcWoundBlunt02a" : "WoundAbdomenUpperBlunt02a",
+			"DcWoundBlunt03" : "WoundAbdomenUpperBlunt03",
+			"DcWoundCut02" : "WoundAbdomenUpperCut02",
+			"DcWoundCut03" : "WoundAbdomenUpperCut03",
+			"DcWoundCut04" : "WoundAbdomenUpperCut04",
+			"DcWoundInfect02" : "WoundAbdomenUpperInfect02",
+			"DcWoundInfect03" : "WoundAbdomenUpperInfect03",
+			"DcWoundInfect04" : "WoundAbdomenUpperInfect04"
+		}
+	},
+
+    {
+		"strName" : "WoundChestLower",
+		"strPainPNG" : "paperdoll\\Wounds\\chestLowerPainBig",
+		"bBleeds" : true,
+		"fHitChance" : 2.0,
+		"strLootBluntVerbs" : "TXTBluntVerbs",
+		"strLootCutVerbs" : "TXTCutVerbs",
+		"aSlotOverlaps" : [
+			"shirt_in",
+			"shirt_mid",
+			"shirt_out"
+		],
+        "mapEffects" : {
+			"DcWoundBlood02" : "WoundChestLowerBlood02",
+			"DcWoundBlood03" : "WoundChestLowerBlood03",
+			"DcWoundBlood04" : "WoundChestLowerBlood04",
+			"DcWoundBlunt02" : "WoundChestLowerBlunt02",
+			"DcWoundBlunt02a" : "WoundChestLowerBlunt02a",
+			"DcWoundBlunt02b" : "WoundChestLowerBlunt02b",
+			"DcWoundBlunt03" : "WoundChestLowerBlunt03",
+			"DcWoundBlunt03a" : "WoundChestLowerBlunt03a",
+			"DcWoundCut02" : "WoundChestLowerCut02",
+			"DcWoundCut02a" : "WoundChestLowerCut02a",
+			"DcWoundCut03" : "WoundChestLowerCut03",
+			"DcWoundCut03a" : "WoundChestLowerCut03a",
+			"DcWoundCut04" : "WoundChestLowerCut04",
+			"DcWoundCut04a" : "WoundChestLowerCut04a",
+			"DcWoundInfect02" : "WoundChestLowerInfect02",
+			"DcWoundInfect03" : "WoundChestLowerInfect03",
+			"DcWoundInfect04" : "WoundChestLowerInfect04"
+		}
+	},
+
+    {
+		"strName" : "WoundChestUpper",
+		"strPainPNG" : "paperdoll\\Wounds\\chestUpperPainBig",
+		"bBleeds" : true,
+		"fHitChance" : 2.0,
+		"strLootBluntVerbs" : "TXTBluntVerbs",
+		"strLootCutVerbs" : "TXTCutVerbs",
+		"aSlotOverlaps" : [
+			"shirt_in",
+			"shirt_mid",
+			"shirt_out"
+		],
+        "mapEffects" : {
+			"DcWoundBlood02" : "WoundChestUpperBlood02",
+			"DcWoundBlood03" : "WoundChestUpperBlood03",
+			"DcWoundBlood04" : "WoundChestUpperBlood04",
+			"DcWoundBlunt02" : "WoundChestUpperBlunt02",
+			"DcWoundBlunt02a" : "WoundChestUpperBlunt02a",
+			"DcWoundBlunt02b" : "WoundChestUpperBlunt02b",
+			"DcWoundBlunt03" : "WoundChestUpperBlunt03",
+			"DcWoundBlunt03a" : "WoundChestUpperBlunt03a",
+			"DcWoundCut02" : "WoundChestUpperCut02",
+			"DcWoundCut02a" : "WoundChestUpperCut02a",
+			"DcWoundCut03" : "WoundChestUpperCut03",
+			"DcWoundCut03a" : "WoundChestUpperCut03a",
+			"DcWoundCut04" : "WoundChestUpperCut04",
+			"DcWoundCut04a" : "WoundChestUpperCut04a",
+			"DcWoundInfect02" : "WoundChestUpperInfect02",
+			"DcWoundInfect03" : "WoundChestUpperInfect03",
+			"DcWoundInfect04" : "WoundChestUpperInfect04"
+		}
+	},
+
+    {
+		"strName" : "WoundHead",
+		"strPainPNG" : "paperdoll\\Wounds\\headPainBig",
+		"bBleeds" : true,
+		"fHitChance" : 1.0,
+		"strLootBluntVerbs" : "TXTBluntVerbs",
+		"strLootCutVerbs" : "TXTCutVerbs",
+		"aSlotOverlaps" : [
+			"head_glasses",
+			"head_in",
+			"head_mid",
+			"head_out"
+		],
+        "mapEffects" : {
+			"DcWoundBlood02" : "WoundHeadBlood02",
+			"DcWoundBlood03" : "WoundHeadBlood03",
+			"DcWoundBlood04" : "WoundHeadBlood04",
+			"DcWoundBlunt02" : "WoundHeadBlunt02",
+			"DcWoundBlunt02a" : "WoundHeadBlunt03",
+			"DcWoundBlunt03" : "WoundHeadBlunt04",
+			"DcWoundBlunt03a" : "WoundHeadBlunt05",
+			"DcWoundCut02" : "WoundHeadCut02",
+			"DcWoundCut03" : "WoundHeadCut03",
+			"DcWoundCut04" : "WoundHeadCut04",
+			"DcWoundCut04a" : "WoundHeadCut05",
+			"DcWoundInfect02" : "WoundHeadInfect02",
+			"DcWoundInfect03" : "WoundHeadInfect03",
+			"DcWoundInfect04" : "WoundHeadInfect04"
+		}
+	},
+
+    {
+		"strName" : "WoundLegFractureL",
+		"strPainPNG" : "paperdoll\\Wounds\\legFractureLPainBig",
+		"bBleeds" : false,
+		"fHitChance" : 1.0,
+		"strLootBluntVerbs" : "TXTBluntVerbs",
+		"strLootCutVerbs" : null,
+		"aSlotOverlaps" : [
+			"pants_in",
+			"pants_mid",
+			"pants_out"
+		],
+        "mapEffects" : {
+			"DcWoundBlunt02" : "WoundLegFractureLBlunt02",
+			"DcWoundBlunt03" : "WoundLegFractureLBlunt03",
+			"DcWoundBlunt04" : "WoundLegFractureLBlunt04"
+		}
+	},
+    {
+		"strName" : "WoundLegFractureR",
+		"strPainPNG" : "paperdoll\\Wounds\\legFractureLPainBig",
+		"bBleeds" : false,
+		"fHitChance" : 1.0,
+		"strLootBluntVerbs" : "TXTBluntVerbs",
+		"strLootCutVerbs" : null,
+		"aSlotOverlaps" : [
+			"pants_in",
+			"pants_mid",
+			"pants_out"
+		],
+        "mapEffects" : {
+			"DcWoundBlunt02" : "WoundLegFractureRBlunt02",
+			"DcWoundBlunt03" : "WoundLegFractureRBlunt03",
+			"DcWoundBlunt04" : "WoundLegFractureRBlunt04"
+		}
+	},
+
+    {
+		"strName" : "WoundLegLowerL",
+		"strPainPNG" : "paperdoll\\Wounds\\legLowerLPainBig",
+		"bBleeds" : true,
+		"fHitChance" : 1.0,
+		"strLootBluntVerbs" : "TXTBluntVerbs",
+		"strLootCutVerbs" : "TXTCutVerbs",
+		"aSlotOverlaps" : [
+			"pants_in",
+			"pants_mid",
+			"pants_out"
+		],
+        "mapEffects" : {
+			"DcWoundBlood02" : "WoundLegLowerLBlood02",
+			"DcWoundBlood03" : "WoundLegLowerLBlood03",
+			"DcWoundBlood04" : "WoundLegLowerLBlood04",
+			"DcWoundBlunt02" : "WoundLegLowerLBlunt02",
+			"DcWoundBlunt03" : "WoundLegLowerLBlunt03",
+			"DcWoundBlunt03a" : "WoundLegLowerLBlunt04",
+			"DcWoundCut02" : "WoundLegLowerLCut02",
+			"DcWoundCut03" : "WoundLegLowerLCut03",
+			"DcWoundCut04" : "WoundLegLowerLCut04",
+			"DcWoundCut04a" : "WoundLegLowerLCut05",
+			"DcWoundInfect02" : "WoundLegLowerLInfect02",
+			"DcWoundInfect03" : "WoundLegLowerLInfect03",
+			"DcWoundInfect04" : "WoundLegLowerLInfect04"
+		}
+	},
+    {
+		"strName" : "WoundLegLowerR",
+		"strPainPNG" : "paperdoll\\Wounds\\legLowerLPainBig",
+		"bBleeds" : true,
+		"fHitChance" : 1.0,
+		"strLootBluntVerbs" : "TXTBluntVerbs",
+		"strLootCutVerbs" : "TXTCutVerbs",
+		"aSlotOverlaps" : [
+			"pants_in",
+			"pants_mid",
+			"pants_out"
+		],
+        "mapEffects" : {
+			"DcWoundBlood02" : "WoundLegLowerRBlood02",
+			"DcWoundBlood03" : "WoundLegLowerRBlood03",
+			"DcWoundBlood04" : "WoundLegLowerRBlood04",
+			"DcWoundBlunt02" : "WoundLegLowerRBlunt02",
+			"DcWoundBlunt03" : "WoundLegLowerRBlunt03",
+			"DcWoundBlunt03a" : "WoundLegLowerRBlunt04",
+			"DcWoundCut02" : "WoundLegLowerRCut02",
+			"DcWoundCut03" : "WoundLegLowerRCut03",
+			"DcWoundCut04" : "WoundLegLowerRCut04",
+			"DcWoundCut04a" : "WoundLegLowerRCut05",
+			"DcWoundInfect02" : "WoundLegLowerRInfect02",
+			"DcWoundInfect03" : "WoundLegLowerRInfect03",
+			"DcWoundInfect04" : "WoundLegLowerRInfect04"
+		}
+	},
+	{
+		"strName" : "WoundRobotHead",
+		"strPainPNG" : "paperdoll\\Wounds\\headPainBig",
+		"bBleeds" : true,
+		"fHitChance" : 1.0,
+		"strLootBluntVerbs" : "TXTBluntVerbs",
+		"strLootCutVerbs" : "TXTCutVerbs",
+		"aSlotOverlaps" : [
+		],
+		"mapEffects" : {
+			"DcWoundBlunt02" : "WoundRobotHeadBlunt02",
+			"DcWoundBlunt03" : "WoundRobotHeadBlunt03",
+			"DcWoundCut02" : "WoundRobotHeadCut02",
+			"DcWoundCut03" : "WoundRobotHeadCut03"
+		}
+	},
+	{
+		"strName" : "WoundRobotMovementUnit",
+		"strPainPNG" : "paperdoll\\Wounds\\legUpperLPainBig",
+		"bBleeds" : false,
+		"fHitChance" : 1.0,
+		"strLootBluntVerbs" : "TXTBluntVerbs",
+		"strLootCutVerbs" : "TXTCutVerbs",
+		"aSlotOverlaps" : [
+		],
+		"mapEffects" : {
+			"DcWoundBlunt02" : "WoundRobotMovementUnitBlunt02",
+			"DcWoundBlunt03" : "WoundRobotMovementUnitBlunt03",
+			"DcWoundBlunt03a" : "WoundRobotMovementUnitBlunt04",
+			"DcWoundCut02" : "WoundRobotMovementUnitCut02",
+			"DcWoundCut03" : "WoundRobotMovementUnitCut03",
+			"DcWoundCut04" : "WoundRobotMovementUnitCut04"
+		}
+	},
+	{
+		"strName" : "WoundRobotTorso",
+		"strPainPNG" : "paperdoll\\Wounds\\abdomenLowerPainBig",
+		"bBleeds" : false,
+		"fHitChance" : 2.0,
+		"strLootBluntVerbs" : "TXTBluntVerbs",
+		"strLootCutVerbs" : "TXTCutVerbs",
+		"aSlotOverlaps" : [
+		],
+		"mapEffects" : {
+			"DcWoundBlunt02" : "WoundRobotTorsoBlunt02",
+			"DcWoundBlunt02a" : "WoundRobotTorsoBlunt02a",
+			"DcWoundBlunt03" : "WoundRobotTorsoBlunt03",
+			"DcWoundCut02" : "WoundRobotTorsoCut02",
+			"DcWoundCut03" : "WoundRobotTorsoCut03",
+			"DcWoundCut04" : "WoundRobotTorsoCut04"
+		}
+	},
+    {
+		"strName" : "WoundLegUpperL",
+		"strPainPNG" : "paperdoll\\Wounds\\legUpperLPainBig",
+		"bBleeds" : true,
+		"fHitChance" : 1.0,
+		"strLootBluntVerbs" : "TXTBluntVerbs",
+		"strLootCutVerbs" : "TXTCutVerbs",
+		"aSlotOverlaps" : [
+			"pants_in",
+			"pants_mid",
+			"pants_out"
+		],
+        "mapEffects" : {
+			"DcWoundBlood02" : "WoundLegUpperLBlood02",
+			"DcWoundBlood03" : "WoundLegUpperLBlood03",
+			"DcWoundBlood04" : "WoundLegUpperLBlood04",
+			"DcWoundBlunt02" : "WoundLegUpperLBlunt02",
+			"DcWoundBlunt03" : "WoundLegUpperLBlunt03",
+			"DcWoundBlunt03a" : "WoundLegUpperLBlunt04",
+			"DcWoundCut02" : "WoundLegUpperLCut02",
+			"DcWoundCut03" : "WoundLegUpperLCut03",
+			"DcWoundCut04" : "WoundLegUpperLCut04",
+			"DcWoundCut04a" : "WoundLegUpperLCut05",
+			"DcWoundInfect02" : "WoundLegUpperLInfect02",
+			"DcWoundInfect03" : "WoundLegUpperLInfect03",
+			"DcWoundInfect04" : "WoundLegUpperLInfect04"
+		}
+	},
+    {
+		"strName" : "WoundLegUpperR",
+		"strPainPNG" : "paperdoll\\Wounds\\legUpperLPainBig",
+		"bBleeds" : true,
+		"fHitChance" : 1.0,
+		"strLootBluntVerbs" : "TXTBluntVerbs",
+		"strLootCutVerbs" : "TXTCutVerbs",
+		"aSlotOverlaps" : [
+			"pants_in",
+			"pants_mid",
+			"pants_out"
+		],
+        "mapEffects" : {
+			"DcWoundBlood02" : "WoundLegUpperRBlood02",
+			"DcWoundBlood03" : "WoundLegUpperRBlood03",
+			"DcWoundBlood04" : "WoundLegUpperRBlood04",
+			"DcWoundBlunt02" : "WoundLegUpperRBlunt02",
+			"DcWoundBlunt03" : "WoundLegUpperRBlunt03",
+			"DcWoundBlunt03a" : "WoundLegUpperRBlunt04",
+			"DcWoundCut02" : "WoundLegUpperRCut02",
+			"DcWoundCut03" : "WoundLegUpperRCut03",
+			"DcWoundCut04" : "WoundLegUpperRCut04",
+			"DcWoundCut04a" : "WoundLegUpperRCut05",
+			"DcWoundInfect02" : "WoundLegUpperRInfect02",
+			"DcWoundInfect03" : "WoundLegUpperRInfect03",
+			"DcWoundInfect04" : "WoundLegUpperRInfect04"
+		}
+	}
+]

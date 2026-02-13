@@ -1,0 +1,2236 @@
+[
+ {
+ "strName": "SLOTWieldGrinder02L",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultL",
+ "LootCondsThem": "CONDWieldGrinder02",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTMeleeWeaponGrind;AModeGrinder;CTWieldedL",
+ "ACTMeleeWeapon;AModeDefault;CTWieldedL",
+ "ACTMeleeFinalBlowWeapon;AModeGrinderHelpless;CTWieldedL",
+ "ACTMeleeWeaponGrindTired;AModeGrinder;CTWieldedL",
+ "ACTMeleeWeaponTired;AModeDefault;CTWieldedL",
+ "ACTMeleeFinalBlowWeaponTired;AModeGrinderHelpless;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "SLOTWieldGrinder02R",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultR",
+ "LootCondsThem": "CONDWieldGrinder02",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTMeleeWeaponGrind;AModeGrinder;CTWieldedR",
+ "ACTMeleeWeapon;AModeDefault;CTWieldedR",
+ "ACTMeleeFinalBlowWeapon;AModeGrinderHelpless;CTWieldedR",
+ "ACTMeleeWeaponGrindTired;AModeGrinder;CTWieldedR",
+ "ACTMeleeWeaponTired;AModeDefault;CTWieldedR",
+ "ACTMeleeFinalBlowWeaponTired;AModeGrinderHelpless;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "SLOTWieldCrowbar01L",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultL",
+ "LootCondsThem": "CONDWieldCrowbar01",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTMeleeWeapon;AModeCrowbar;CTWieldedL",
+ "ACTMeleeFinalBlowWeapon;AModeCrowbarHelpless;CTWieldedL",
+ "ACTMeleeWeaponTired;AModeCrowbar;CTWieldedL",
+ "ACTMeleeFinalBlowWeaponTired;AModeCrowbarHelpless;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "SLOTWieldCrowbar01R",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultR",
+ "LootCondsThem": "CONDWieldCrowbar01",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTMeleeWeapon;AModeCrowbar;CTWieldedR",
+ "ACTMeleeFinalBlowWeapon;AModeCrowbarHelpless;CTWieldedR",
+ "ACTMeleeWeaponTired;AModeCrowbar;CTWieldedR",
+ "ACTMeleeFinalBlowWeaponTired;AModeCrowbarHelpless;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "SLOTWieldDefaultL",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultL",
+ "LootCondsThem": "CONDWieldDefault",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTMeleeWeapon;AModeDefault;CTWieldedL",
+ "ACTMeleeFinalBlowWeapon;AModeDefaultHelpless;CTWieldedL",
+ "ACTMeleeWeaponTired;AModeDefault;CTWieldedL",
+ "ACTMeleeFinalBlowWeaponTired;AModeDefaultHelpless;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "SLOTWieldDefaultR",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultR",
+ "LootCondsThem": "CONDWieldDefault",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTMeleeWeapon;AModeDefault;CTWieldedR",
+ "ACTMeleeFinalBlowWeapon;AModeDefaultHelpless;CTWieldedR",
+ "ACTMeleeWeaponTired;AModeDefault;CTWieldedR",
+ "ACTMeleeFinalBlowWeaponTired;AModeDefaultHelpless;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "SLOTWieldDefaultShaftL",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultL",
+ "LootCondsThem": "CONDWieldDefaultShaft",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTMeleeWeaponShaft;AModeDefaultShaft;CTWieldedL",
+ "ACTMeleeFinalBlowWeapon;AModeDefaultShaftHelpless;CTWieldedL",
+ "ACTMeleeWeaponShaftTired;AModeDefaultShaft;CTWieldedL",
+ "ACTMeleeFinalBlowWeaponTired;AModeDefaultShaftHelpless;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "SLOTWieldDefaultShaftR",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultR",
+ "LootCondsThem": "CONDWieldDefaultShaft",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTMeleeWeaponShaft;AModeDefaultShaft;CTWieldedR",
+ "ACTMeleeFinalBlowWeapon;AModeDefaultShaftHelpless;CTWieldedR",
+ "ACTMeleeWeaponShaftTired;AModeDefaultShaft;CTWieldedR",
+ "ACTMeleeFinalBlowWeaponTired;AModeDefaultShaftHelpless;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "SLOTWieldDefaultSharpL",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultL",
+ "LootCondsThem": "CONDWieldDefaultSharp",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTMeleeWeaponSharp;AModeDefaultSharp;CTWieldedL",
+ "ACTMeleeFinalBlowWeapon;AModeDefaultSharpHelpless;CTWieldedL",
+ "ACTMeleeWeaponSharpTired;AModeDefaultSharp;CTWieldedL",
+ "ACTMeleeFinalBlowWeaponTired;AModeDefaultSharpHelpless;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "SLOTWieldDefaultSharpR",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultR",
+ "LootCondsThem": "CONDWieldDefaultSharp",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTMeleeWeaponSharp;AModeDefaultSharp;CTWieldedR",
+ "ACTMeleeFinalBlowWeapon;AModeDefaultSharpHelpless;CTWieldedR",
+ "ACTMeleeWeaponSharpTired;AModeDefaultSharp;CTWieldedR",
+ "ACTMeleeFinalBlowWeaponTired;AModeDefaultSharpHelpless;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "SLOTWieldDefaultSharpStabL",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultL",
+ "LootCondsThem": "CONDWieldDefaultSharp",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTMeleeWeaponSharpStab;AModeDefaultSharpStab;CTWieldedL",
+ "ACTMeleeFinalBlowWeapon;AModeDefaultSharpStabHelpless;CTWieldedL",
+ "ACTMeleeWeaponSharpStabTired;AModeDefaultSharpStab;CTWieldedL",
+ "ACTMeleeFinalBlowWeaponTired;AModeDefaultSharpStabHelpless;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "SLOTWieldDefaultSharpStabR",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultR",
+ "LootCondsThem": "CONDWieldDefaultSharp",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTMeleeWeaponSharpStab;AModeDefaultSharpStab;CTWieldedR",
+ "ACTMeleeFinalBlowWeapon;AModeDefaultSharpStabHelpless;CTWieldedR",
+ "ACTMeleeWeaponSharpStabTired;AModeDefaultSharpStab;CTWieldedR",
+ "ACTMeleeFinalBlowWeaponTired;AModeDefaultSharpStabHelpless;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "SLOTWieldDefaultSoftL",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultL",
+ "LootCondsThem": "CONDWieldDefaultSoft",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTMeleeWeaponSoft;AModeDefaultSoft;CTWieldedL",
+ "ACTMeleeFinalBlowWeapon;AModeDefaultSoftHelpless;CTWieldedL",
+ "ACTMeleeWeaponSoftTired;AModeDefaultSoft;CTWieldedL",
+ "ACTMeleeFinalBlowWeaponTired;AModeDefaultSoftHelpless;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "SLOTWieldDefaultSoftR",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultR",
+ "LootCondsThem": "CONDWieldDefaultSoft",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTMeleeWeaponSoft;AModeDefaultSoft;CTWieldedR",
+ "ACTMeleeFinalBlowWeapon;AModeDefaultSoftHelpless;CTWieldedR",
+ "ACTMeleeWeaponSoftTired;AModeDefaultSoft;CTWieldedR",
+ "ACTMeleeFinalBlowWeaponTired;AModeDefaultSoftHelpless;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "SLOTWieldDrinkBottle01DmgL",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultL",
+ "LootCondsThem": "CONDWieldDefault",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTMeleeWeaponSharpStab;AModeDrinkBottle01DmgStab;CTDrinkBottleDmgWieldedL",
+ "ACTMeleeWeaponSharp;AModeDrinkBottle01DmgSlash;CTDrinkBottleDmgWieldedL",
+ "ACTMeleeFinalBlowWeapon;AModeDrinkBottle01DmgHelpless;CTDrinkBottleDmgWieldedL",
+ "ACTMeleeWeaponSharpStabTired;AModeDrinkBottle01DmgStab;CTDrinkBottleDmgWieldedL",
+ "ACTMeleeWeaponSharpTired;AModeDrinkBottle01DmgSlash;CTDrinkBottleDmgWieldedL",
+ "ACTMeleeFinalBlowWeaponTired;AModeDrinkBottle01DmgHelpless;CTDrinkBottleDmgWieldedL"
+ ]
+ },
+ {
+ "strName": "SLOTWieldDrinkBottle01DmgR",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultR",
+ "LootCondsThem": "CONDWieldDefault",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTMeleeWeaponSharpStab;AModeDrinkBottle01DmgStab;CTDrinkBottleDmgWieldedR",
+ "ACTMeleeWeaponSharp;AModeDrinkBottle01DmgSlash;CTDrinkBottleDmgWieldedR",
+ "ACTMeleeFinalBlowWeapon;AModeDrinkBottle01DmgHelpless;CTDrinkBottleDmgWieldedR",
+ "ACTMeleeWeaponSharpStabTired;AModeDrinkBottle01DmgStab;CTDrinkBottleDmgWieldedR",
+ "ACTMeleeWeaponSharpTired;AModeDrinkBottle01DmgSlash;CTDrinkBottleDmgWieldedR",
+ "ACTMeleeFinalBlowWeaponTired;AModeDrinkBottle01DmgHelpless;CTDrinkBottleDmgWieldedR"
+ ]
+ },
+ {
+ "strName": "SLOTWieldLaserTorch01L",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultL",
+ "LootCondsThem": "CONDWieldLaserTorch01",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTMeleeWeaponLaser;AModeLaserTorch;CTWieldedL",
+ "ACTMeleeWeaponShaft;AModeDefaultShaft;CTWieldedL",
+ "ACTMeleeFinalBlowWeapon;AModeLaserTorchHelpless;CTWieldedL",
+ "ACTMeleeWeaponLaserTired;AModeLaserTorch;CTWieldedL",
+ "ACTMeleeWeaponShaftTired;AModeDefaultShaft;CTWieldedL",
+ "ACTMeleeFinalBlowWeaponTired;AModeLaserTorchHelpless;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "SLOTWieldLaserTorch01R",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultR",
+ "LootCondsThem": "CONDWieldLaserTorch01",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTMeleeWeaponLaser;AModeLaserTorch;CTWieldedR",
+ "ACTMeleeWeaponShaft;AModeDefaultShaft;CTWieldedR",
+ "ACTMeleeFinalBlowWeapon;AModeLaserTorchHelpless;CTWieldedR",
+ "ACTMeleeWeaponLaserTired;AModeLaserTorch;CTWieldedR",
+ "ACTMeleeWeaponShaftTired;AModeDefaultShaft;CTWieldedR",
+ "ACTMeleeFinalBlowWeaponTired;AModeLaserTorchHelpless;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "SLOTWieldPunch",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": null,
+ "LootCondsThem": null,
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTMelee;AModePunch",
+ "ACTMeleeQuick;AModePunchQuick",
+ "ACTMeleeFinalBlow;AModePunchHelpless",
+ "ACTMeleeTired;AModePunch",
+ "ACTMeleeQuickTired;AModePunchQuick",
+ "ACTMeleeFinalBlowTired;AModePunchHelpless"
+ ]
+ },
+ {
+ "strName": "SLOTWieldScrewdriver01L",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultL",
+ "LootCondsThem": "CONDWieldDefault",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTMeleeWeaponSharpStab;AModeScrewdriver01Stab;CTWieldedL",
+ "ACTMeleeFinalBlowWeapon;AModeScrewdriver01Helpless;CTWieldedL",
+ "ACTMeleeWeaponSharpStabTired;AModeScrewdriver01Stab;CTWieldedL",
+ "ACTMeleeFinalBlowWeaponTired;AModeScrewdriver01Helpless;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "SLOTWieldScrewdriver01R",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultR",
+ "LootCondsThem": "CONDWieldDefault",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTMeleeWeaponSharpStab;AModeScrewdriver01Stab;CTWieldedR",
+ "ACTMeleeFinalBlowWeapon;AModeScrewdriver01Helpless;CTWieldedR",
+ "ACTMeleeWeaponSharpStabTired;AModeScrewdriver01Stab;CTWieldedR",
+ "ACTMeleeFinalBlowWeaponTired;AModeScrewdriver01Helpless;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "SLOTWieldSolderingIron01L",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultL",
+ "LootCondsThem": "CONDWieldDefault",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTMeleeWeaponSharpStab;AModeSolderingIron01Stab;CTWieldedL",
+ "ACTMeleeFinalBlowWeapon;AModeSolderingIron01Helpless;CTWieldedL",
+ "ACTMeleeWeaponSharpStabTired;AModeSolderingIron01Stab;CTWieldedL",
+ "ACTMeleeFinalBlowWeaponTired;AModeSolderingIron01Helpless;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "SLOTWieldSolderingIron01R",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultR",
+ "LootCondsThem": "CONDWieldDefault",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTMeleeWeaponSharpStab;AModeSolderingIron01Stab;CTWieldedR",
+ "ACTMeleeFinalBlowWeapon;AModeSolderingIron01Helpless;CTWieldedR",
+ "ACTMeleeWeaponSharpStabTired;AModeSolderingIron01Stab;CTWieldedR",
+ "ACTMeleeFinalBlowWeaponTired;AModeSolderingIron01Helpless;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "SLOTWieldWeaponBaseballBat01L",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultL",
+ "LootCondsThem": "CONDWieldWeaponBaseballBat01",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTMeleeWeaponShaft;AModeWeaponBaseballBat01;CTWieldedL",
+ "ACTMeleeFinalBlowWeapon;AModeWeaponBaseballBat01Helpless;CTWieldedL",
+ "ACTMeleeWeaponShaftTired;AModeWeaponBaseballBat01;CTWieldedL",
+ "ACTMeleeFinalBlowWeaponTired;AModeWeaponBaseballBat01Helpless;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "SLOTWieldWeaponBaseballBat01R",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultR",
+ "LootCondsThem": "CONDWieldWeaponBaseballBat01",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTMeleeWeaponShaft;AModeWeaponBaseballBat01;CTWieldedR",
+ "ACTMeleeFinalBlowWeapon;AModeWeaponBaseballBat01Helpless;CTWieldedR",
+ "ACTMeleeWeaponShaftTired;AModeWeaponBaseballBat01;CTWieldedR",
+ "ACTMeleeFinalBlowWeaponTired;AModeWeaponBaseballBat01Helpless;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "SLOTWieldWeaponBaseballBat02L",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultL",
+ "LootCondsThem": "CONDWieldWeaponBaseballBat02",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTMeleeWeaponShaft;AModeWeaponBaseballBat02;CTWieldedL",
+ "ACTMeleeFinalBlowWeapon;AModeWeaponBaseballBat02Helpless;CTWieldedL",
+ "ACTMeleeWeaponShaftTired;AModeWeaponBaseballBat02;CTWieldedL",
+ "ACTMeleeFinalBlowWeaponTired;AModeWeaponBaseballBat02Helpless;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "SLOTWieldWeaponBaseballBat02R",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultR",
+ "LootCondsThem": "CONDWieldWeaponBaseballBat02",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTMeleeWeaponShaft;AModeWeaponBaseballBat02;CTWieldedR",
+ "ACTMeleeFinalBlowWeapon;AModeWeaponBaseballBat02Helpless;CTWieldedR",
+ "ACTMeleeWeaponShaftTired;AModeWeaponBaseballBat02;CTWieldedR",
+ "ACTMeleeFinalBlowWeaponTired;AModeWeaponBaseballBat02Helpless;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "SLOTWieldWeaponCutlass01L",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultL",
+ "LootCondsThem": "CONDWieldWeaponCutlass01",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTMeleeWeaponSharp;AModeWeaponCutlass01;CTWieldedL",
+ "ACTMeleeWeaponSharpStab;AModeWeaponCutlass01Stab;CTWieldedL",
+ "ACTMeleeWeaponQuick;AModeWeaponCutlass01GripPunch;CTWieldedL",
+ "ACTMeleeFinalBlowWeapon;AModeWeaponCutlass01Helpless;CTWieldedL",
+ "ACTMeleeWeaponSharpTired;AModeWeaponCutlass01;CTWieldedL",
+ "ACTMeleeWeaponSharpStabTired;AModeWeaponCutlass01Stab;CTWieldedL",
+ "ACTMeleeWeaponQuickTired;AModeWeaponCutlass01GripPunch;CTWieldedL",
+ "ACTMeleeFinalBlowWeaponTired;AModeWeaponCutlass01Helpless;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "SLOTWieldWeaponCutlass01R",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultR",
+ "LootCondsThem": "CONDWieldWeaponCutlass01",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTMeleeWeaponSharp;AModeWeaponCutlass01;CTWieldedR",
+ "ACTMeleeWeaponSharpStab;AModeWeaponCutlass01Stab;CTWieldedR",
+ "ACTMeleeWeaponQuick;AModeWeaponCutlass01GripPunch;CTWieldedR",
+ "ACTMeleeFinalBlowWeapon;AModeWeaponCutlass01Helpless;CTWieldedR",
+ "ACTMeleeWeaponSharpTired;AModeWeaponCutlass01;CTWieldedR",
+ "ACTMeleeWeaponSharpStabTired;AModeWeaponCutlass01Stab;CTWieldedR",
+ "ACTMeleeWeaponQuickTired;AModeWeaponCutlass01GripPunch;CTWieldedR",
+ "ACTMeleeFinalBlowWeaponTired;AModeWeaponCutlass01Helpless;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "SLOTWieldWeaponGoat01L",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultL",
+ "LootCondsThem": "CONDWieldWeaponGoat01",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTMeleeWeaponShaft;AModeWeaponGoat01;CTWieldedL",
+ "ACTMeleeWeaponSharpStab;AModeWeaponGoat01Stab;CTWieldedL",
+ "ACTMeleeFinalBlowWeapon;AModeWeaponGoat01Helpless;CTWieldedL",
+ "ACTMeleeWeaponShaftTired;AModeWeaponGoat01;CTWieldedL",
+ "ACTMeleeWeaponSharpStabTired;AModeWeaponGoat01Stab;CTWieldedL",
+ "ACTMeleeFinalBlowWeaponTired;AModeWeaponGoat01Helpless;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "SLOTWieldWeaponGoat01R",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultR",
+ "LootCondsThem": "CONDWieldWeaponGoat01",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTMeleeWeaponShaft;AModeWeaponGoat01;CTWieldedR",
+ "ACTMeleeWeaponSharpStab;AModeWeaponGoat01Stab;CTWieldedR",
+ "ACTMeleeFinalBlowWeapon;AModeWeaponGoat01Helpless;CTWieldedR",
+ "ACTMeleeWeaponShaftTired;AModeWeaponGoat01;CTWieldedR",
+ "ACTMeleeWeaponSharpStabTired;AModeWeaponGoat01Stab;CTWieldedR",
+ "ACTMeleeFinalBlowWeaponTired;AModeWeaponGoat01Helpless;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "SLOTWieldWeaponKatana01L",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultL",
+ "LootCondsThem": "CONDWieldWeaponKatana01",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTMeleeWeaponSharp;AModeWeaponKatana01;CTWieldedL",
+ "ACTMeleeWeaponSharpStab;AModeWeaponKatana01Stab;CTWieldedL",
+ "ACTMeleeFinalBlowWeapon;AModeWeaponKatana01Helpless;CTWieldedL",
+ "ACTMeleeWeaponSharpTired;AModeWeaponKatana01;CTWieldedL",
+ "ACTMeleeWeaponSharpStabTired;AModeWeaponKatana01Stab;CTWieldedL",
+ "ACTMeleeFinalBlowWeaponTired;AModeWeaponKatana01Helpless;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "SLOTWieldWeaponKatana01R",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultR",
+ "LootCondsThem": "CONDWieldWeaponKatana01",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTMeleeWeaponSharp;AModeWeaponKatana01;CTWieldedR",
+ "ACTMeleeWeaponSharpStab;AModeWeaponKatana01Stab;CTWieldedR",
+ "ACTMeleeFinalBlowWeapon;AModeWeaponKatana01Helpless;CTWieldedR",
+ "ACTMeleeWeaponSharpTired;AModeWeaponKatana01;CTWieldedR",
+ "ACTMeleeWeaponSharpStabTired;AModeWeaponKatana01Stab;CTWieldedR",
+ "ACTMeleeFinalBlowWeaponTired;AModeWeaponKatana01Helpless;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "SLOTWieldWeaponKnife01L",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultL",
+ "LootCondsThem": "CONDWieldWeaponKnife01",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTMeleeWeaponSharp;AModeWeaponKnife01;CTWieldedL",
+ "ACTMeleeWeaponSharpStab;AModeWeaponKnife01Stab;CTWieldedL",
+ "ACTMeleeFinalBlowWeapon;AModeWeaponKnife01Helpless;CTWieldedL",
+ "ACTMeleeWeaponSharpTired;AModeWeaponKnife01;CTWieldedL",
+ "ACTMeleeWeaponSharpStabTired;AModeWeaponKnife01Stab;CTWieldedL",
+ "ACTMeleeFinalBlowWeaponTired;AModeWeaponKnife01Helpless;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "SLOTWieldWeaponKnife01R",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultR",
+ "LootCondsThem": "CONDWieldWeaponKnife01",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTMeleeWeaponSharp;AModeWeaponKnife01;CTWieldedR",
+ "ACTMeleeWeaponSharpStab;AModeWeaponKnife01Stab;CTWieldedR",
+ "ACTMeleeFinalBlowWeapon;AModeWeaponKnife01Helpless;CTWieldedR",
+ "ACTMeleeWeaponSharpTired;AModeWeaponKnife01;CTWieldedR",
+ "ACTMeleeWeaponSharpStabTired;AModeWeaponKnife01Stab;CTWieldedR",
+ "ACTMeleeFinalBlowWeaponTired;AModeWeaponKnife01Helpless;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "SLOTWieldWeaponKnuckles01L",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultL",
+ "LootCondsThem": "CONDWieldWeaponKnuckles01",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTMeleeWeaponQuick;AModeWeaponKnuckles01Quick;CTWieldedL",
+ "ACTMeleeWeapon;AModeWeaponKnuckles01;CTWieldedL",
+ "ACTMeleeFinalBlowWeapon;AModeWeaponKnuckles01Helpless;CTWieldedL",
+ "ACTMeleeWeaponQuickTired;AModeWeaponKnuckles01Quick;CTWieldedL",
+ "ACTMeleeWeaponTired;AModeWeaponKnuckles01;CTWieldedL",
+ "ACTMeleeFinalBlowWeaponTired;AModeWeaponKnuckles01Helpless;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "SLOTWieldWeaponKnuckles01R",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultR",
+ "LootCondsThem": "CONDWieldWeaponKnuckles01",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTMeleeWeaponQuick;AModeWeaponKnuckles01Quick;CTWieldedR",
+ "ACTMeleeWeapon;AModeWeaponKnuckles01;CTWieldedR",
+ "ACTMeleeFinalBlowWeapon;AModeWeaponKnuckles01Helpless;CTWieldedR",
+ "ACTMeleeWeaponQuickTired;AModeWeaponKnuckles01Quick;CTWieldedR",
+ "ACTMeleeWeaponTired;AModeWeaponKnuckles01;CTWieldedR",
+ "ACTMeleeFinalBlowWeaponTired;AModeWeaponKnuckles01Helpless;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "SLOTWieldWeaponMachete01L",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultL",
+ "LootCondsThem": "CONDWieldWeaponMachete01",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTMeleeWeaponChop;AModeWeaponMachete01;CTWieldedL",
+ "ACTMeleeWeaponSharpStab;AModeWeaponMachete01Stab;CTWieldedL",
+ "ACTMeleeWeaponSoft;AModeWeaponMachete01Slap;CTWieldedL",
+ "ACTMeleeFinalBlowWeapon;AModeWeaponMachete01Helpless;CTWieldedL",
+ "ACTMeleeWeaponChopTired;AModeWeaponMachete01;CTWieldedL",
+ "ACTMeleeWeaponSharpStabTired;AModeWeaponMachete01Stab;CTWieldedL",
+ "ACTMeleeWeaponSoftTired;AModeWeaponMachete01Slap;CTWieldedL",
+ "ACTMeleeFinalBlowWeaponTired;AModeWeaponMachete01Helpless;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "SLOTWieldWeaponMachete01R",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultR",
+ "LootCondsThem": "CONDWieldWeaponMachete01",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTMeleeWeaponChop;AModeWeaponMachete01;CTWieldedR",
+ "ACTMeleeWeaponSharpStab;AModeWeaponMachete01Stab;CTWieldedR",
+ "ACTMeleeWeaponSoft;AModeWeaponMachete01Slap;CTWieldedR",
+ "ACTMeleeFinalBlowWeapon;AModeWeaponMachete01Helpless;CTWieldedR",
+ "ACTMeleeWeaponChopTired;AModeWeaponMachete01;CTWieldedR",
+ "ACTMeleeWeaponSharpStabTired;AModeWeaponMachete01Stab;CTWieldedR",
+ "ACTMeleeWeaponSoftTired;AModeWeaponMachete01Slap;CTWieldedR",
+ "ACTMeleeFinalBlowWeaponTired;AModeWeaponMachete01Helpless;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "SLOTWieldWeaponNightstick01L",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultL",
+ "LootCondsThem": "CONDWieldWeaponNightstick01",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTMeleeWeaponShaft;AModeWeaponNightstick01;CTWieldedL",
+ "ACTMeleeFinalBlowWeapon;AModeWeaponNightstick01Helpless;CTWieldedL",
+ "ACTMeleeWeaponShaftTired;AModeWeaponNightstick01;CTWieldedL",
+ "ACTMeleeFinalBlowWeaponTired;AModeWeaponNightstick01Helpless;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "SLOTWieldWeaponNightstick01R",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultR",
+ "LootCondsThem": "CONDWieldWeaponNightstick01",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTMeleeWeaponShaft;AModeWeaponNightstick01;CTWieldedR",
+ "ACTMeleeFinalBlowWeapon;AModeWeaponNightstick01Helpless;CTWieldedR",
+ "ACTMeleeWeaponShaftTired;AModeWeaponNightstick01;CTWieldedR",
+ "ACTMeleeFinalBlowWeaponTired;AModeWeaponNightstick01Helpless;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "SLOTWieldWeaponNightstick02L",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultL",
+ "LootCondsThem": "CONDWieldWeaponNightstick02",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTMeleeWeaponShaft;AModeWeaponNightstick02;CTWieldedL",
+ "ACTMeleeFinalBlowWeapon;AModeWeaponNightstick02Helpless;CTWieldedL",
+ "ACTMeleeWeaponShaftTired;AModeWeaponNightstick02;CTWieldedL",
+ "ACTMeleeFinalBlowWeaponTired;AModeWeaponNightstick02Helpless;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "SLOTWieldWeaponNightstick02R",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultR",
+ "LootCondsThem": "CONDWieldWeaponNightstick02",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTMeleeWeaponShaft;AModeWeaponNightstick02;CTWieldedR",
+ "ACTMeleeFinalBlowWeapon;AModeWeaponNightstick02Helpless;CTWieldedR",
+ "ACTMeleeWeaponShaftTired;AModeWeaponNightstick02;CTWieldedR",
+ "ACTMeleeFinalBlowWeaponTired;AModeWeaponNightstick02Helpless;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "SLOTWieldWeaponPistol01L",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultL",
+ "LootCondsThem": "CONDWieldWeaponPistol01",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTRanged;AModePistol01;CTWieldedL",
+ "ACTMeleePistolWhip;AModePistolWhip;CTWieldedL",
+ "ACTMeleePistolWhipTired;AModePistolWhip;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "SLOTWieldWeaponPistol01R",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultR",
+ "LootCondsThem": "CONDWieldWeaponPistol01",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTRanged;AModePistol01;CTWieldedR",
+ "ACTMeleePistolWhip;AModePistolWhip;CTWieldedR",
+ "ACTMeleePistolWhipTired;AModePistolWhip;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "SLOTWieldWeaponPistol02L",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultL",
+ "LootCondsThem": "CONDWieldWeaponPistol02",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTRanged;AModePistol02;CTWieldedL",
+ "ACTMeleePistolWhip;AModePistolWhip;CTWieldedL",
+ "ACTMeleePistolWhipTired;AModePistolWhip;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "SLOTWieldWeaponPistol02R",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultR",
+ "LootCondsThem": "CONDWieldWeaponPistol02",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTRanged;AModePistol02;CTWieldedR",
+ "ACTMeleePistolWhip;AModePistolWhip;CTWieldedR",
+ "ACTMeleePistolWhipTired;AModePistolWhip;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "SLOTWieldWeaponPistol03L",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultL",
+ "LootCondsThem": "CONDWieldWeaponPistol03",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTRanged;AModePistol03;CTWieldedL",
+ "ACTMeleePistolWhip;AModePistolWhip;CTWieldedL",
+ "ACTMeleePistolWhipTired;AModePistolWhip;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "SLOTWieldWeaponPistol03R",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultR",
+ "LootCondsThem": "CONDWieldWeaponPistol03",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTRanged;AModePistol03;CTWieldedR",
+ "ACTMeleePistolWhip;AModePistolWhip;CTWieldedR",
+ "ACTMeleePistolWhipTired;AModePistolWhip;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "SLOTWieldWeaponPistol04L",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultL",
+ "LootCondsThem": "CONDWieldWeaponPistol04",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTRanged;AModePistol04;CTWieldedL",
+ "ACTMeleePistolWhip;AModePistolWhip;CTWieldedL",
+ "ACTMeleePistolWhipTired;AModePistolWhip;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "SLOTWieldWeaponPistol04R",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultR",
+ "LootCondsThem": "CONDWieldWeaponPistol04",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTRanged;AModePistol04;CTWieldedR",
+ "ACTMeleePistolWhip;AModePistolWhip;CTWieldedR",
+ "ACTMeleePistolWhipTired;AModePistolWhip;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "SLOTWieldWeaponPistolEnergy01L",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultL",
+ "LootCondsThem": "CONDWieldWeaponPistolEnergy01",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTRanged;AModePistolEnergy01;CTWieldedL",
+ "ACTMeleePistolWhip;AModePistolWhip;CTWieldedL",
+ "ACTMeleePistolWhipTired;AModePistolWhip;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "SLOTWieldWeaponPistolEnergy01R",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultR",
+ "LootCondsThem": "CONDWieldWeaponPistolEnergy01",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTRanged;AModePistolEnergy01;CTWieldedR",
+ "ACTMeleePistolWhip;AModePistolWhip;CTWieldedR",
+ "ACTMeleePistolWhipTired;AModePistolWhip;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "SLOTWieldWeaponPocketknife01L",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultL",
+ "LootCondsThem": "CONDWieldWeaponPocketknife01",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTMeleeWeaponSharp;AModeWeaponPocketknife01;CTWieldedL",
+ "ACTMeleeWeaponSharpStab;AModeWeaponPocketknife01Stab;CTWieldedL",
+ "ACTMeleeFinalBlowWeapon;AModeWeaponPocketknife01Helpless;CTWieldedL",
+ "ACTMeleeWeaponSharpTired;AModeWeaponPocketknife01;CTWieldedL",
+ "ACTMeleeWeaponSharpStabTired;AModeWeaponPocketknife01Stab;CTWieldedL",
+ "ACTMeleeFinalBlowWeaponTired;AModeWeaponPocketknife01Helpless;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "SLOTWieldWeaponPocketknife01R",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultR",
+ "LootCondsThem": "CONDWieldWeaponPocketknife01",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTMeleeWeaponSharp;AModeWeaponPocketknife01;CTWieldedR",
+ "ACTMeleeWeaponSharpStab;AModeWeaponPocketknife01Stab;CTWieldedR",
+ "ACTMeleeFinalBlowWeapon;AModeWeaponPocketknife01Helpless;CTWieldedR",
+ "ACTMeleeWeaponSharpTired;AModeWeaponPocketknife01;CTWieldedR",
+ "ACTMeleeWeaponSharpStabTired;AModeWeaponPocketknife01Stab;CTWieldedR",
+ "ACTMeleeFinalBlowWeaponTired;AModeWeaponPocketknife01Helpless;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "SLOTWieldWeaponRifle01L",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultL",
+ "LootCondsThem": "CONDWieldWeaponRifle01",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTRanged;AModeRifle01;CTWieldedL",
+ "ACTRanged3RB;AModeRifle01x3;CTWieldedL",
+ "ACTMeleeWeaponShaft;AModeRifle01Stock;CTWieldedL",
+ "ACTMeleeWeaponShaftTired;AModeRifle01Stock;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "SLOTWieldWeaponRifle01R",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultR",
+ "LootCondsThem": "CONDWieldWeaponRifle01",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTRanged;AModeRifle01;CTWieldedR",
+ "ACTRanged3RB;AModeRifle01x3;CTWieldedR",
+ "ACTMeleeWeaponShaft;AModeRifle01Stock;CTWieldedR",
+ "ACTMeleeWeaponShaftTired;AModeRifle01Stock;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "SLOTWieldWeaponShiv01L",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultL",
+ "LootCondsThem": "CONDWieldDefault",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTMeleeWeaponSharp;AModeWeaponShiv01;CTWieldedL",
+ "ACTMeleeWeaponSharpStab;AModeWeaponShiv01Stab;CTWieldedL",
+ "ACTMeleeFinalBlowWeapon;AModeWeaponShiv01Helpless;CTWieldedL",
+ "ACTMeleeWeaponSharpTired;AModeWeaponShiv01;CTWieldedL",
+ "ACTMeleeWeaponSharpStabTired;AModeWeaponShiv01Stab;CTWieldedL",
+ "ACTMeleeFinalBlowWeaponTired;AModeWeaponShiv01Helpless;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "SLOTWieldWeaponShiv01R",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultR",
+ "LootCondsThem": "CONDWieldDefault",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTMeleeWeaponSharp;AModeWeaponShiv01;CTWieldedR",
+ "ACTMeleeWeaponSharpStab;AModeWeaponShiv01Stab;CTWieldedR",
+ "ACTMeleeFinalBlowWeapon;AModeWeaponShiv01Helpless;CTWieldedR",
+ "ACTMeleeWeaponSharpTired;AModeWeaponShiv01;CTWieldedR",
+ "ACTMeleeWeaponSharpStabTired;AModeWeaponShiv01Stab;CTWieldedR",
+ "ACTMeleeFinalBlowWeaponTired;AModeWeaponShiv01Helpless;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "SLOTWieldWeaponShotgun01L",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultL",
+ "LootCondsThem": "CONDWieldWeaponShotgun01",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTRangedSpread;AModeShotgun01;CTWieldedL",
+ "ACTMeleeWeaponShaft;AModeShotgun01Stock;CTWieldedL",
+ "ACTMeleeWeaponShaftTired;AModeShotgun01Stock;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "SLOTWieldWeaponShotgun01R",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultR",
+ "LootCondsThem": "CONDWieldWeaponShotgun01",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTRangedSpread;AModeShotgun01;CTWieldedR",
+ "ACTMeleeWeaponShaft;AModeShotgun01Stock;CTWieldedR",
+ "ACTMeleeWeaponShaftTired;AModeShotgun01Stock;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "SLOTWieldWeaponSpear01L",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultL",
+ "LootCondsThem": "CONDWieldWeaponSpear01",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTMeleeWeapon;AModeWeaponSpear01;CTWieldedL",
+ "ACTMeleeWeaponSharpStab;AModeWeaponSpear01Stab;CTWieldedL",
+ "ACTMeleeFinalBlowWeapon;AModeWeaponSpear01Helpless;CTWieldedL",
+ "ACTMeleeWeaponTired;AModeWeaponSpear01;CTWieldedL",
+ "ACTMeleeWeaponSharpStabTired;AModeWeaponSpear01Stab;CTWieldedL",
+ "ACTMeleeFinalBlowWeaponTired;AModeWeaponSpear01Helpless;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "SLOTWieldWeaponSpear01R",
+ "strDesc": "[them-subj] держит в руках [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultR",
+ "LootCondsThem": "CONDWieldWeaponSpear01",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "ACTMeleeWeapon;AModeWeaponSpear01;CTWieldedR",
+ "ACTMeleeWeaponSharpStab;AModeWeaponSpear01Stab;CTWieldedR",
+ "ACTMeleeFinalBlowWeapon;AModeWeaponSpear01Helpless;CTWieldedR",
+ "ACTMeleeWeaponTired;AModeWeaponSpear01;CTWieldedR",
+ "ACTMeleeWeaponSharpStabTired;AModeWeaponSpear01Stab;CTWieldedR",
+ "ACTMeleeFinalBlowWeaponTired;AModeWeaponSpear01Helpless;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldCrowbar01L",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultLRemove",
+ "LootCondsThem": "CONDWieldCrowbar01Remove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTMeleeWeapon;AModeCrowbar;CTWieldedL",
+ "-ACTMeleeFinalBlowWeapon;AModeCrowbarHelpless;CTWieldedL",
+ "-ACTMeleeWeaponTired;AModeCrowbar;CTWieldedL",
+ "-ACTMeleeFinalBlowWeaponTired;AModeCrowbarHelpless;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldCrowbar01R",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultRRemove",
+ "LootCondsThem": "CONDWieldCrowbar01Remove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTMeleeWeapon;AModeCrowbar;CTWieldedR",
+ "-ACTMeleeFinalBlowWeapon;AModeCrowbarHelpless;CTWieldedR",
+ "-ACTMeleeWeaponTired;AModeCrowbar;CTWieldedR",
+ "-ACTMeleeFinalBlowWeaponTired;AModeCrowbarHelpless;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldGrinder02L",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultLRemove",
+ "LootCondsThem": "CONDWieldGrinder02Remove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTMeleeWeaponGrind;AModeGrinder;CTWieldedL",
+ "-ACTMeleeWeapon;AModeDefault;CTWieldedL",
+ "-ACTMeleeFinalBlowWeapon;AModeGrinderHelpless;CTWieldedL",
+ "-ACTMeleeWeaponGrindTired;AModeGrinder;CTWieldedL",
+ "-ACTMeleeWeaponTired;AModeDefault;CTWieldedL",
+ "-ACTMeleeFinalBlowWeaponTired;AModeGrinderHelpless;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldGrinder02R",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultRRemove",
+ "LootCondsThem": "CONDWieldGrinder02Remove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTMeleeWeaponGrind;AModeGrinder;CTWieldedR",
+ "-ACTMeleeWeapon;AModeDefault;CTWieldedR",
+ "-ACTMeleeFinalBlowWeapon;AModeGrinderHelpless;CTWieldedR",
+ "-ACTMeleeWeaponGrindTired;AModeGrinder;CTWieldedR",
+ "-ACTMeleeWeaponTired;AModeDefault;CTWieldedR",
+ "-ACTMeleeFinalBlowWeaponTired;AModeGrinderHelpless;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldDefaultL",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultLRemove",
+ "LootCondsThem": "CONDWieldDefaultRemove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTMeleeWeapon;AModeDefault;CTWieldedL",
+ "-ACTMeleeFinalBlowWeapon;AModeDefaultHelpless;CTWieldedL",
+ "-ACTMeleeWeaponTired;AModeDefault;CTWieldedL",
+ "-ACTMeleeFinalBlowWeaponTired;AModeDefaultHelpless;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldDefaultR",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultRRemove",
+ "LootCondsThem": "CONDWieldDefaultRemove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTMeleeWeapon;AModeDefault;CTWieldedR",
+ "-ACTMeleeFinalBlowWeapon;AModeDefaultHelpless;CTWieldedR",
+ "-ACTMeleeWeaponTired;AModeDefault;CTWieldedR",
+ "-ACTMeleeFinalBlowWeaponTired;AModeDefaultHelpless;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldDefaultShaftL",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultLRemove",
+ "LootCondsThem": "CONDWieldDefaultShaftRemove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTMeleeWeaponShaft;AModeDefaultShaft;CTWieldedL",
+ "-ACTMeleeFinalBlowWeapon;AModeDefaultShaftHelpless;CTWieldedL",
+ "-ACTMeleeWeaponShaftTired;AModeDefaultShaft;CTWieldedL",
+ "-ACTMeleeFinalBlowWeaponTired;AModeDefaultShaftHelpless;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldDefaultShaftR",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultRRemove",
+ "LootCondsThem": "CONDWieldDefaultShaftRemove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTMeleeWeaponShaft;AModeDefaultShaft;CTWieldedR",
+ "-ACTMeleeFinalBlowWeapon;AModeDefaultShaftHelpless;CTWieldedR",
+ "-ACTMeleeWeaponShaftTired;AModeDefaultShaft;CTWieldedR",
+ "-ACTMeleeFinalBlowWeaponTired;AModeDefaultShaftHelpless;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldDefaultSharpL",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultLRemove",
+ "LootCondsThem": "CONDWieldDefaultSharpRemove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTMeleeWeaponSharp;AModeDefaultSharp;CTWieldedL",
+ "-ACTMeleeFinalBlowWeapon;AModeDefaultSharpHelpless;CTWieldedL",
+ "-ACTMeleeWeaponSharpTired;AModeDefaultSharp;CTWieldedL",
+ "-ACTMeleeFinalBlowWeaponTired;AModeDefaultSharpHelpless;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldDefaultSharpR",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultRRemove",
+ "LootCondsThem": "CONDWieldDefaultSharpRemove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTMeleeWeaponSharp;AModeDefaultSharp;CTWieldedR",
+ "-ACTMeleeFinalBlowWeapon;AModeDefaultSharpHelpless;CTWieldedR",
+ "-ACTMeleeWeaponSharpTired;AModeDefaultSharp;CTWieldedR",
+ "-ACTMeleeFinalBlowWeaponTired;AModeDefaultSharpHelpless;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldDefaultSharpStabL",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultLRemove",
+ "LootCondsThem": "CONDWieldDefaultSharpRemove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTMeleeWeaponSharpStab;AModeDefaultSharpStab;CTWieldedL",
+ "-ACTMeleeFinalBlowWeapon;AModeDefaultSharpStabHelpless;CTWieldedL",
+ "-ACTMeleeWeaponSharpStabTired;AModeDefaultSharpStab;CTWieldedL",
+ "-ACTMeleeFinalBlowWeaponTired;AModeDefaultSharpStabHelpless;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldDefaultSharpStabR",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultRRemove",
+ "LootCondsThem": "CONDWieldDefaultSharpRemove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTMeleeWeaponSharpStab;AModeDefaultSharpStab;CTWieldedR",
+ "-ACTMeleeFinalBlowWeapon;AModeDefaultSharpStabHelpless;CTWieldedR",
+ "-ACTMeleeWeaponSharpStabTired;AModeDefaultSharpStab;CTWieldedR",
+ "-ACTMeleeFinalBlowWeaponTired;AModeDefaultSharpStabHelpless;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldDefaultSoftL",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultLRemove",
+ "LootCondsThem": "CONDWieldDefaultSoftRemove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTMeleeWeaponSoft;AModeDefaultSoft;CTWieldedL",
+ "-ACTMeleeFinalBlowWeapon;AModeDefaultSoftHelpless;CTWieldedL",
+ "-ACTMeleeWeaponSoftTired;AModeDefaultSoft;CTWieldedL",
+ "-ACTMeleeFinalBlowWeaponTired;AModeDefaultSoftHelpless;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldDefaultSoftR",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultRRemove",
+ "LootCondsThem": "CONDWieldDefaultSoftRemove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTMeleeWeaponSoft;AModeDefaultSoft;CTWieldedR",
+ "-ACTMeleeFinalBlowWeapon;AModeDefaultSoftHelpless;CTWieldedR",
+ "-ACTMeleeWeaponSoftTired;AModeDefaultSoft;CTWieldedR",
+ "-ACTMeleeFinalBlowWeaponTired;AModeDefaultSoftHelpless;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldDrinkBottle01DmgL",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultLRemove",
+ "LootCondsThem": "CONDWieldDefaultRemove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTMeleeWeaponSharpStab;AModeDrinkBottle01DmgStab;CTDrinkBottleDmgWieldedL",
+ "-ACTMeleeWeaponSharp;AModeDrinkBottle01DmgSlash;CTDrinkBottleDmgWieldedL",
+ "-ACTMeleeFinalBlowWeapon;AModeDrinkBottle01DmgHelpless;CTDrinkBottleDmgWieldedL",
+ "-ACTMeleeWeaponSharpStabTired;AModeDrinkBottle01DmgStab;CTDrinkBottleDmgWieldedL",
+ "-ACTMeleeWeaponSharpTired;AModeDrinkBottle01DmgSlash;CTDrinkBottleDmgWieldedL",
+ "-ACTMeleeFinalBlowWeaponTired;AModeDrinkBottle01DmgHelpless;CTDrinkBottleDmgWieldedL"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldDrinkBottle01DmgR",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultRRemove",
+ "LootCondsThem": "CONDWieldDefaultRemove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTMeleeWeaponSharpStab;AModeDrinkBottle01DmgStab;CTDrinkBottleDmgWieldedR",
+ "-ACTMeleeWeaponSharp;AModeDrinkBottle01DmgSlash;CTDrinkBottleDmgWieldedR",
+ "-ACTMeleeFinalBlowWeapon;AModeDrinkBottle01DmgHelpless;CTDrinkBottleDmgWieldedR",
+ "-ACTMeleeWeaponSharpStabTired;AModeDrinkBottle01DmgStab;CTDrinkBottleDmgWieldedR",
+ "-ACTMeleeWeaponSharpTired;AModeDrinkBottle01DmgSlash;CTDrinkBottleDmgWieldedR",
+ "-ACTMeleeFinalBlowWeaponTired;AModeDrinkBottle01DmgHelpless;CTDrinkBottleDmgWieldedR"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldLaserTorch01L",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultLRemove",
+ "LootCondsThem": "CONDWieldLaserTorch01Remove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTMeleeWeaponLaser;AModeLaserTorch;CTWieldedL",
+ "-ACTMeleeWeaponShaft;AModeDefaultShaft;CTWieldedL",
+ "-ACTMeleeFinalBlowWeapon;AModeLaserTorchHelpless;CTWieldedL",
+ "-ACTMeleeWeaponLaserTired;AModeLaserTorch;CTWieldedL",
+ "-ACTMeleeWeaponShaftTired;AModeDefaultShaft;CTWieldedL",
+ "-ACTMeleeFinalBlowWeaponTired;AModeLaserTorchHelpless;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldLaserTorch01R",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultRRemove",
+ "LootCondsThem": "CONDWieldLaserTorch01Remove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTMeleeWeaponLaser;AModeLaserTorch;CTWieldedR",
+ "-ACTMeleeWeaponShaft;AModeDefaultShaft;CTWieldedR",
+ "-ACTMeleeFinalBlowWeapon;AModeLaserTorchHelpless;CTWieldedR",
+ "-ACTMeleeWeaponLaserTired;AModeLaserTorch;CTWieldedR",
+ "-ACTMeleeWeaponShaftTired;AModeDefaultShaft;CTWieldedR",
+ "-ACTMeleeFinalBlowWeaponTired;AModeLaserTorchHelpless;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldScrewdriver01L",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultLRemove",
+ "LootCondsThem": "CONDWieldDefaultRemove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTMeleeWeaponSharpStab;AModeScrewdriver01Stab;CTWieldedL",
+ "-ACTMeleeFinalBlowWeapon;AModeScrewdriver01Helpless;CTWieldedL",
+ "-ACTMeleeWeaponSharpStabTired;AModeScrewdriver01Stab;CTWieldedL",
+ "-ACTMeleeFinalBlowWeaponTired;AModeScrewdriver01Helpless;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldScrewdriver01R",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultRRemove",
+ "LootCondsThem": "CONDWieldDefaultRemove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTMeleeWeaponSharpStab;AModeScrewdriver01Stab;CTWieldedR",
+ "-ACTMeleeFinalBlowWeapon;AModeScrewdriver01Helpless;CTWieldedR",
+ "-ACTMeleeWeaponSharpStabTired;AModeScrewdriver01Stab;CTWieldedR",
+ "-ACTMeleeFinalBlowWeaponTired;AModeScrewdriver01Helpless;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldSolderingIron01L",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultLRemove",
+ "LootCondsThem": "CONDWieldDefaultRemove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTMeleeWeaponSharpStab;AModeSolderingIron01Stab;CTWieldedL",
+ "-ACTMeleeFinalBlowWeapon;AModeSolderingIron01Helpless;CTWieldedL",
+ "-ACTMeleeWeaponSharpStabTired;AModeSolderingIron01Stab;CTWieldedL",
+ "-ACTMeleeFinalBlowWeaponTired;AModeSolderingIron01Helpless;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldSolderingIron01R",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultRRemove",
+ "LootCondsThem": "CONDWieldDefaultRemove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTMeleeWeaponSharpStab;AModeSolderingIron01Stab;CTWieldedR",
+ "-ACTMeleeFinalBlowWeapon;AModeSolderingIron01Helpless;CTWieldedR",
+ "-ACTMeleeWeaponSharpStabTired;AModeSolderingIron01Stab;CTWieldedR",
+ "-ACTMeleeFinalBlowWeaponTired;AModeSolderingIron01Helpless;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldPunch",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": null,
+ "LootCondsThem": null,
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTMelee;AModePunch",
+ "-ACTMeleeQuick;AModePunchQuick",
+ "-ACTMeleeFinalBlow;AModePunchHelpless",
+ "-ACTMeleeTired;AModePunch",
+ "-ACTMeleeQuickTired;AModePunchQuick",
+ "-ACTMeleeFinalBlowTired;AModePunchHelpless"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldWeaponBaseballBat01L",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultLRemove",
+ "LootCondsThem": "CONDWieldWeaponBaseballBat01Remove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTMeleeWeaponShaft;AModeWeaponBaseballBat01;CTWieldedL",
+ "-ACTMeleeFinalBlowWeapon;AModeWeaponBaseballBat01Helpless;CTWieldedL",
+ "-ACTMeleeWeaponShaftTired;AModeWeaponBaseballBat01;CTWieldedL",
+ "-ACTMeleeFinalBlowWeaponTired;AModeWeaponBaseballBat01Helpless;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldWeaponBaseballBat01R",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultRRemove",
+ "LootCondsThem": "CONDWieldWeaponBaseballBat01Remove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTMeleeWeaponShaft;AModeWeaponBaseballBat01;CTWieldedR",
+ "-ACTMeleeFinalBlowWeapon;AModeWeaponBaseballBat01Helpless;CTWieldedR",
+ "-ACTMeleeWeaponShaftTired;AModeWeaponBaseballBat01;CTWieldedR",
+ "-ACTMeleeFinalBlowWeaponTired;AModeWeaponBaseballBat01Helpless;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldWeaponBaseballBat02L",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultLRemove",
+ "LootCondsThem": "CONDWieldWeaponBaseballBat02Remove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTMeleeWeaponShaft;AModeWeaponBaseballBat02;CTWieldedL",
+ "-ACTMeleeFinalBlowWeapon;AModeWeaponBaseballBat02Helpless;CTWieldedL",
+ "-ACTMeleeWeaponShaftTired;AModeWeaponBaseballBat02;CTWieldedL",
+ "-ACTMeleeFinalBlowWeaponTired;AModeWeaponBaseballBat02Helpless;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldWeaponBaseballBat02R",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultRRemove",
+ "LootCondsThem": "CONDWieldWeaponBaseballBat02Remove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTMeleeWeaponShaft;AModeWeaponBaseballBat02;CTWieldedR",
+ "-ACTMeleeFinalBlowWeapon;AModeWeaponBaseballBat02Helpless;CTWieldedR",
+ "-ACTMeleeWeaponShaftTired;AModeWeaponBaseballBat02;CTWieldedR",
+ "-ACTMeleeFinalBlowWeaponTired;AModeWeaponBaseballBat02Helpless;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldWeaponCutlass01L",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultLRemove",
+ "LootCondsThem": "CONDWieldWeaponCutlass01Remove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTMeleeWeaponSharp;AModeWeaponCutlass01;CTWieldedL",
+ "-ACTMeleeWeaponSharpStab;AModeWeaponCutlass01Stab;CTWieldedL",
+ "-ACTMeleeWeaponQuick;AModeWeaponCutlass01GripPunch;CTWieldedL",
+ "-ACTMeleeFinalBlowWeapon;AModeWeaponCutlass01Helpless;CTWieldedL",
+ "-ACTMeleeWeaponSharpTired;AModeWeaponCutlass01;CTWieldedL",
+ "-ACTMeleeWeaponSharpStabTired;AModeWeaponCutlass01Stab;CTWieldedL",
+ "-ACTMeleeWeaponQuickTired;AModeWeaponCutlass01GripPunch;CTWieldedL",
+ "-ACTMeleeFinalBlowWeaponTired;AModeWeaponCutlass01Helpless;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldWeaponCutlass01R",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultRRemove",
+ "LootCondsThem": "CONDWieldWeaponCutlass01Remove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTMeleeWeaponSharp;AModeWeaponCutlass01;CTWieldedR",
+ "-ACTMeleeWeaponSharpStab;AModeWeaponCutlass01Stab;CTWieldedR",
+ "-ACTMeleeWeaponQuick;AModeWeaponCutlass01GripPunch;CTWieldedR",
+ "-ACTMeleeFinalBlowWeapon;AModeWeaponCutlass01Helpless;CTWieldedR",
+ "-ACTMeleeWeaponSharpTired;AModeWeaponCutlass01;CTWieldedR",
+ "-ACTMeleeWeaponSharpStabTired;AModeWeaponCutlass01Stab;CTWieldedR",
+ "-ACTMeleeWeaponQuickTired;AModeWeaponCutlass01GripPunch;CTWieldedR",
+ "-ACTMeleeFinalBlowWeaponTired;AModeWeaponCutlass01Helpless;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldWeaponGoat01L",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultLRemove",
+ "LootCondsThem": "CONDWieldWeaponGoat01Remove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTMeleeWeaponShaft;AModeWeaponGoat01;CTWieldedL",
+ "-ACTMeleeWeaponSharpStab;AModeWeaponGoat01Stab;CTWieldedL",
+ "-ACTMeleeFinalBlowWeapon;AModeWeaponGoat01Helpless;CTWieldedL",
+ "-ACTMeleeWeaponShaftTired;AModeWeaponGoat01;CTWieldedL",
+ "-ACTMeleeWeaponSharpStabTired;AModeWeaponGoat01Stab;CTWieldedL",
+ "-ACTMeleeFinalBlowWeaponTired;AModeWeaponGoat01Helpless;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldWeaponGoat01R",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultRRemove",
+ "LootCondsThem": "CONDWieldWeaponGoat01Remove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTMeleeWeaponShaft;AModeWeaponGoat01;CTWieldedR",
+ "-ACTMeleeWeaponSharpStab;AModeWeaponGoat01Stab;CTWieldedR",
+ "-ACTMeleeFinalBlowWeapon;AModeWeaponGoat01Helpless;CTWieldedR",
+ "-ACTMeleeWeaponShaftTired;AModeWeaponGoat01;CTWieldedR",
+ "-ACTMeleeWeaponSharpStabTired;AModeWeaponGoat01Stab;CTWieldedR",
+ "-ACTMeleeFinalBlowWeaponTired;AModeWeaponGoat01Helpless;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldWeaponKatana01L",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultLRemove",
+ "LootCondsThem": "CONDWieldWeaponKatana01Remove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTMeleeWeaponSharp;AModeWeaponKatana01;CTWieldedL",
+ "-ACTMeleeWeaponSharpStab;AModeWeaponKatana01Stab;CTWieldedL",
+ "-ACTMeleeFinalBlowWeapon;AModeWeaponKatana01Helpless;CTWieldedL",
+ "-ACTMeleeWeaponSharpTired;AModeWeaponKatana01;CTWieldedL",
+ "-ACTMeleeWeaponSharpStabTired;AModeWeaponKatana01Stab;CTWieldedL",
+ "-ACTMeleeFinalBlowWeaponTired;AModeWeaponKatana01Helpless;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldWeaponKatana01R",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultRRemove",
+ "LootCondsThem": "CONDWieldWeaponKatana01Remove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTMeleeWeaponSharp;AModeWeaponKatana01;CTWieldedR",
+ "-ACTMeleeWeaponSharpStab;AModeWeaponKatana01Stab;CTWieldedR",
+ "-ACTMeleeFinalBlowWeapon;AModeWeaponKatana01Helpless;CTWieldedR",
+ "-ACTMeleeWeaponSharpTired;AModeWeaponKatana01;CTWieldedR",
+ "-ACTMeleeWeaponSharpStabTired;AModeWeaponKatana01Stab;CTWieldedR",
+ "-ACTMeleeFinalBlowWeaponTired;AModeWeaponKatana01Helpless;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldWeaponKnife01L",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultLRemove",
+ "LootCondsThem": "CONDWieldWeaponKnife01Remove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTMeleeWeaponSharp;AModeWeaponKnife01;CTWieldedL",
+ "-ACTMeleeWeaponSharpStab;AModeWeaponKnife01Stab;CTWieldedL",
+ "-ACTMeleeFinalBlowWeapon;AModeWeaponKnife01Helpless;CTWieldedL",
+ "-ACTMeleeWeaponSharpTired;AModeWeaponKnife01;CTWieldedL",
+ "-ACTMeleeWeaponSharpStabTired;AModeWeaponKnife01Stab;CTWieldedL",
+ "-ACTMeleeFinalBlowWeaponTired;AModeWeaponKnife01Helpless;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldWeaponKnife01R",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultRRemove",
+ "LootCondsThem": "CONDWieldWeaponKnife01Remove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTMeleeWeaponSharp;AModeWeaponKnife01;CTWieldedR",
+ "-ACTMeleeWeaponSharpStab;AModeWeaponKnife01Stab;CTWieldedR",
+ "-ACTMeleeFinalBlowWeapon;AModeWeaponKnife01Helpless;CTWieldedR",
+ "-ACTMeleeWeaponSharpTired;AModeWeaponKnife01;CTWieldedR",
+ "-ACTMeleeWeaponSharpStabTired;AModeWeaponKnife01Stab;CTWieldedR",
+ "-ACTMeleeFinalBlowWeaponTired;AModeWeaponKnife01Helpless;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldWeaponKnuckles01L",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultLRemove",
+ "LootCondsThem": "CONDWieldWeaponKnuckles01Remove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTMeleeWeaponQuick;AModeWeaponKnuckles01Quick;CTWieldedL",
+ "-ACTMeleeWeapon;AModeWeaponKnuckles01;CTWieldedL",
+ "-ACTMeleeFinalBlowWeapon;AModeWeaponKnuckles01Helpless;CTWieldedL",
+ "-ACTMeleeWeaponQuickTired;AModeWeaponKnuckles01Quick;CTWieldedL",
+ "-ACTMeleeWeaponTired;AModeWeaponKnuckles01;CTWieldedL",
+ "-ACTMeleeFinalBlowWeaponTired;AModeWeaponKnuckles01Helpless;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldWeaponKnuckles01R",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultRRemove",
+ "LootCondsThem": "CONDWieldWeaponKnuckles01Remove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTMeleeWeaponQuick;AModeWeaponKnuckles01Quick;CTWieldedR",
+ "-ACTMeleeWeapon;AModeWeaponKnuckles01;CTWieldedR",
+ "-ACTMeleeFinalBlowWeapon;AModeWeaponKnuckles01Helpless;CTWieldedR",
+ "-ACTMeleeWeaponQuickTired;AModeWeaponKnuckles01Quick;CTWieldedR",
+ "-ACTMeleeWeaponTired;AModeWeaponKnuckles01;CTWieldedR",
+ "-ACTMeleeFinalBlowWeaponTired;AModeWeaponKnuckles01Helpless;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldWeaponMachete01L",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultLRemove",
+ "LootCondsThem": "CONDWieldWeaponMachete01Remove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTMeleeWeaponChop;AModeWeaponMachete01;CTWieldedL",
+ "-ACTMeleeWeaponSharpStab;AModeWeaponMachete01Stab;CTWieldedL",
+ "-ACTMeleeWeaponSoft;AModeWeaponMachete01Slap;CTWieldedL",
+ "-ACTMeleeFinalBlowWeapon;AModeWeaponMachete01Helpless;CTWieldedL",
+ "-ACTMeleeWeaponChopTired;AModeWeaponMachete01;CTWieldedL",
+ "-ACTMeleeWeaponSharpStabTired;AModeWeaponMachete01Stab;CTWieldedL",
+ "-ACTMeleeWeaponSoftTired;AModeWeaponMachete01Slap;CTWieldedL",
+ "-ACTMeleeFinalBlowWeaponTired;AModeWeaponMachete01Helpless;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldWeaponMachete01R",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultRRemove",
+ "LootCondsThem": "CONDWieldWeaponMachete01Remove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTMeleeWeaponChop;AModeWeaponMachete01;CTWieldedR",
+ "-ACTMeleeWeaponSharpStab;AModeWeaponMachete01Stab;CTWieldedR",
+ "-ACTMeleeWeaponSoft;AModeWeaponMachete01Slap;CTWieldedR",
+ "-ACTMeleeFinalBlowWeapon;AModeWeaponMachete01Helpless;CTWieldedR",
+ "-ACTMeleeWeaponChopTired;AModeWeaponMachete01;CTWieldedR",
+ "-ACTMeleeWeaponSharpStabTired;AModeWeaponMachete01Stab;CTWieldedR",
+ "-ACTMeleeWeaponSoftTired;AModeWeaponMachete01Slap;CTWieldedR",
+ "-ACTMeleeFinalBlowWeaponTired;AModeWeaponMachete01Helpless;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldWeaponNightstick01L",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultLRemove",
+ "LootCondsThem": "CONDWieldWeaponNightstick01Remove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTMeleeWeaponShaft;AModeWeaponNightstick01;CTWieldedL",
+ "-ACTMeleeFinalBlowWeapon;AModeWeaponNightstick01Helpless;CTWieldedL",
+ "-ACTMeleeWeaponShaftTired;AModeWeaponNightstick01;CTWieldedL",
+ "-ACTMeleeFinalBlowWeaponTired;AModeWeaponNightstick01Helpless;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldWeaponNightstick01R",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultRRemove",
+ "LootCondsThem": "CONDWieldWeaponNightstick01Remove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTMeleeWeaponShaft;AModeWeaponNightstick01;CTWieldedR",
+ "-ACTMeleeFinalBlowWeapon;AModeWeaponNightstick01Helpless;CTWieldedR",
+ "-ACTMeleeWeaponShaftTired;AModeWeaponNightstick01;CTWieldedR",
+ "-ACTMeleeFinalBlowWeaponTired;AModeWeaponNightstick01Helpless;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldWeaponNightstick02L",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultLRemove",
+ "LootCondsThem": "CONDWieldWeaponNightstick02Remove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTMeleeWeaponShaft;AModeWeaponNightstick02;CTWieldedL",
+ "-ACTMeleeFinalBlowWeapon;AModeWeaponNightstick02Helpless;CTWieldedL",
+ "-ACTMeleeWeaponShaftTired;AModeWeaponNightstick02;CTWieldedL",
+ "-ACTMeleeFinalBlowWeaponTired;AModeWeaponNightstick02Helpless;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldWeaponNightstick02R",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultRRemove",
+ "LootCondsThem": "CONDWieldWeaponNightstick02Remove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTMeleeWeaponShaft;AModeWeaponNightstick02;CTWieldedR",
+ "-ACTMeleeFinalBlowWeapon;AModeWeaponNightstick02Helpless;CTWieldedR",
+ "-ACTMeleeWeaponShaftTired;AModeWeaponNightstick02;CTWieldedR",
+ "-ACTMeleeFinalBlowWeaponTired;AModeWeaponNightstick02Helpless;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldWeaponPistolEnergy01L",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultLRemove",
+ "LootCondsThem": "CONDWieldWeaponPistolEnergy01Remove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTRanged;AModePistolEnergy01;CTWieldedL",
+ "-ACTMeleePistolWhip;AModePistolWhip;CTWieldedL",
+ "-ACTMeleePistolWhipTired;AModePistolWhip;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldWeaponPistolEnergy01R",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultRRemove",
+ "LootCondsThem": "CONDWieldWeaponPistolEnergy01Remove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTRanged;AModePistolEnergy01;CTWieldedR",
+ "-ACTMeleePistolWhip;AModePistolWhip;CTWieldedR",
+ "-ACTMeleePistolWhipTired;AModePistolWhip;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldWeaponPistol01L",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultLRemove",
+ "LootCondsThem": "CONDWieldWeaponPistol01Remove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTRanged;AModePistol01;CTWieldedL",
+ "-ACTMeleePistolWhip;AModePistolWhip;CTWieldedL",
+ "-ACTMeleePistolWhipTired;AModePistolWhip;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldWeaponPistol01R",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultRRemove",
+ "LootCondsThem": "CONDWieldWeaponPistol01Remove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTRanged;AModePistol01;CTWieldedR",
+ "-ACTMeleePistolWhip;AModePistolWhip;CTWieldedR",
+ "-ACTMeleePistolWhipTired;AModePistolWhip;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldWeaponPistol02L",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultLRemove",
+ "LootCondsThem": "CONDWieldWeaponPistol02Remove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTRanged;AModePistol02;CTWieldedL",
+ "-ACTMeleePistolWhip;AModePistolWhip;CTWieldedL",
+ "-ACTMeleePistolWhipTired;AModePistolWhip;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldWeaponPistol02R",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultRRemove",
+ "LootCondsThem": "CONDWieldWeaponPistol02Remove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTRanged;AModePistol02;CTWieldedR",
+ "-ACTMeleePistolWhip;AModePistolWhip;CTWieldedR",
+ "-ACTMeleePistolWhipTired;AModePistolWhip;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldWeaponPistol03L",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultLRemove",
+ "LootCondsThem": "CONDWieldWeaponPistol03Remove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTRanged;AModePistol03;CTWieldedL",
+ "-ACTMeleePistolWhip;AModePistolWhip;CTWieldedL",
+ "-ACTMeleePistolWhipTired;AModePistolWhip;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldWeaponPistol03R",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultRRemove",
+ "LootCondsThem": "CONDWieldWeaponPistol03Remove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTRanged;AModePistol03;CTWieldedR",
+ "-ACTMeleePistolWhip;AModePistolWhip;CTWieldedR",
+ "-ACTMeleePistolWhipTired;AModePistolWhip;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldWeaponPistol04L",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultLRemove",
+ "LootCondsThem": "CONDWieldWeaponPistol04Remove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTRanged;AModePistol04;CTWieldedL",
+ "-ACTMeleePistolWhip;AModePistolWhip;CTWieldedL",
+ "-ACTMeleePistolWhipTired;AModePistolWhip;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldWeaponPistol04R",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultRRemove",
+ "LootCondsThem": "CONDWieldWeaponPistol04Remove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTRanged;AModePistol04;CTWieldedR",
+ "-ACTMeleePistolWhip;AModePistolWhip;CTWieldedR",
+ "-ACTMeleePistolWhipTired;AModePistolWhip;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldWeaponPocketknife01L",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultLRemove",
+ "LootCondsThem": "CONDWieldWeaponPocketknife01Remove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTMeleeWeaponSharp;AModeWeaponPocketknife01;CTWieldedL",
+ "-ACTMeleeWeaponSharpStab;AModeWeaponPocketknife01Stab;CTWieldedL",
+ "-ACTMeleeFinalBlowWeapon;AModeWeaponPocketknife01Helpless;CTWieldedL",
+ "-ACTMeleeWeaponSharpTired;AModeWeaponPocketknife01;CTWieldedL",
+ "-ACTMeleeWeaponSharpStabTired;AModeWeaponPocketknife01Stab;CTWieldedL",
+ "-ACTMeleeFinalBlowWeaponTired;AModeWeaponPocketknife01Helpless;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldWeaponPocketknife01R",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultRRemove",
+ "LootCondsThem": "CONDWieldWeaponPocketknife01Remove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTMeleeWeaponSharp;AModeWeaponPocketknife01;CTWieldedR",
+ "-ACTMeleeWeaponSharpStab;AModeWeaponPocketknife01Stab;CTWieldedR",
+ "-ACTMeleeFinalBlowWeapon;AModeWeaponPocketknife01Helpless;CTWieldedR",
+ "-ACTMeleeWeaponSharpTired;AModeWeaponPocketknife01;CTWieldedR",
+ "-ACTMeleeWeaponSharpStabTired;AModeWeaponPocketknife01Stab;CTWieldedR",
+ "-ACTMeleeFinalBlowWeaponTired;AModeWeaponPocketknife01Helpless;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldWeaponRifle01L",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultLRemove",
+ "LootCondsThem": "CONDWieldWeaponRifle01Remove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTRanged;AModeRifle01;CTWieldedL",
+ "-ACTRanged3RB;AModeRifle01x3;CTWieldedL",
+ "-ACTMeleeWeaponShaft;AModeRifle01Stock;CTWieldedL",
+ "-ACTMeleeWeaponShaftTired;AModeRifle01Stock;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldWeaponRifle01R",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultRRemove",
+ "LootCondsThem": "CONDWieldWeaponRifle01Remove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTRanged;AModeRifle01;CTWieldedR",
+ "-ACTRanged3RB;AModeRifle01x3;CTWieldedR",
+ "-ACTMeleeWeaponShaft;AModeRifle01Stock;CTWieldedR",
+ "-ACTMeleeWeaponShaftTired;AModeRifle01Stock;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldWeaponShiv01L",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultLRemove",
+ "LootCondsThem": "CONDWieldDefaultRemove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTMeleeWeaponSharp;AModeWeaponShiv01;CTWieldedL",
+ "-ACTMeleeWeaponSharpStab;AModeWeaponShiv01Stab;CTWieldedL",
+ "-ACTMeleeFinalBlowWeapon;AModeWeaponShiv01Helpless;CTWieldedL",
+ "-ACTMeleeWeaponSharpTired;AModeWeaponShiv01;CTWieldedL",
+ "-ACTMeleeWeaponSharpStabTired;AModeWeaponShiv01Stab;CTWieldedL",
+ "-ACTMeleeFinalBlowWeaponTired;AModeWeaponShiv01Helpless;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldWeaponShiv01R",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultRRemove",
+ "LootCondsThem": "CONDWieldDefaultRemove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTMeleeWeaponSharp;AModeWeaponShiv01;CTWieldedR",
+ "-ACTMeleeWeaponSharpStab;AModeWeaponShiv01Stab;CTWieldedR",
+ "-ACTMeleeFinalBlowWeapon;AModeWeaponShiv01Helpless;CTWieldedR",
+ "-ACTMeleeWeaponSharpTired;AModeWeaponShiv01;CTWieldedR",
+ "-ACTMeleeWeaponSharpStabTired;AModeWeaponShiv01Stab;CTWieldedR",
+ "-ACTMeleeFinalBlowWeaponTired;AModeWeaponShiv01Helpless;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldWeaponShotgun01L",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultLRemove",
+ "LootCondsThem": "CONDWieldWeaponShotgun01Remove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTRangedSpread;AModeShotgun01;CTWieldedL",
+ "-ACTMeleeWeaponShaft;AModeShotgun01Stock;CTWieldedL",
+ "-ACTMeleeWeaponShaftTired;AModeShotgun01Stock;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldWeaponShotgun01R",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultRRemove",
+ "LootCondsThem": "CONDWieldWeaponShotgun01Remove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTRangedSpread;AModeShotgun01;CTWieldedR",
+ "-ACTMeleeWeaponShaft;AModeShotgun01Stock;CTWieldedR",
+ "-ACTMeleeWeaponShaftTired;AModeShotgun01Stock;CTWieldedR"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldWeaponSpear01L",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultLRemove",
+ "LootCondsThem": "CONDWieldWeaponSpear01Remove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTMeleeWeapon;AModeWeaponSpear01;CTWieldedL",
+ "-ACTMeleeWeaponSharpStab;AModeWeaponSpear01Stab;CTWieldedL",
+ "-ACTMeleeFinalBlowWeapon;AModeWeaponSpear01Helpless;CTWieldedL",
+ "-ACTMeleeWeaponTired;AModeWeaponSpear01;CTWieldedL",
+ "-ACTMeleeWeaponSharpStabTired;AModeWeaponSpear01Stab;CTWieldedL",
+ "-ACTMeleeFinalBlowWeaponTired;AModeWeaponSpear01Helpless;CTWieldedL"
+ ]
+ },
+ {
+ "strName": "UNSLOTWieldWeaponSpear01R",
+ "strDesc": "[them-subj] больше не держит [us].",
+ "strThemType": "Other",
+ "nLogging": 0,
+ "bOpener": true,
+ "LootCondsUs": "CONDWieldedDefaultRRemove",
+ "LootCondsThem": "CONDWieldWeaponSpear01Remove",
+ "CTTestUs": null,
+ "CTTestThem": "TIsWielder",
+ "aAModesAddedThem": [
+ "-ACTMeleeWeapon;AModeWeaponSpear01;CTWieldedR",
+ "-ACTMeleeWeaponSharpStab;AModeWeaponSpear01Stab;CTWieldedR",
+ "-ACTMeleeFinalBlowWeapon;AModeWeaponSpear01Helpless;CTWieldedR",
+ "-ACTMeleeWeaponTired;AModeWeaponSpear01;CTWieldedR",
+ "-ACTMeleeWeaponSharpStabTired;AModeWeaponSpear01Stab;CTWieldedR",
+ "-ACTMeleeFinalBlowWeaponTired;AModeWeaponSpear01Helpless;CTWieldedR"
+ ]
+ }
+]

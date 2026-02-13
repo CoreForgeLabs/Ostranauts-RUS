@@ -1,0 +1,46 @@
+[
+	{
+		"strName" : "TEMP3ActBEG",
+		"bNoCheck" : true,
+        "aPhases" : [
+			["TEMP3ActBEGStart"],
+			["TEMP3ActBEGTarget"],
+			["TEMP3ActBEGTurnIn"]
+		],
+        "aIADos" : [
+			[],
+			["PLOTTEMP3ActBEGTarget,[protag],[target],[contact]"],
+			["PLOTTEMP3ActBEGTurnIn,[protag],[contact],[target]"]
+		],
+		"strLootNextPlot" : "TXTPlotsNext_TEMP3ActBEG"
+	},
+	{
+		"strName" : "TEMP3ActMID",
+		"bNoCheck" : true,
+        "aPhases" : [
+			["TEMP3ActMIDStart"],
+			["TEMP3ActMIDTarget"],
+			["TEMP3ActMIDTurnIn"]
+		],
+        "aIADos" : [
+			[],
+			["PLOTTEMP3ActMIDTarget,[protag],[target],[contact]"],
+			["PLOTTEMP3ActMIDTurnIn,[protag],[contact],[target]"]
+		],
+		"strLootNextPlot" : "TXTPlotsNext_TEMP3ActMID"
+	},
+	{
+		"strName" : "TEMP3ActEND",
+		"bNoCheck" : true,
+        "aPhases" : [
+			["TEMP3ActENDStart"],
+			["TEMP3ActENDTarget"],
+			["TEMP3ActENDTurnIn"]
+		],
+        "aIADos" : [
+			[],
+			["PLOTTEMP3ActENDTarget,[protag],[target],[contact]"],
+			["PLOTTEMP3ActENDTurnIn,[protag],[contact],[target]"]
+		]
+	}
+]
