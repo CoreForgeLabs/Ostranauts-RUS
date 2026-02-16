@@ -1,4 +1,4 @@
-[
+﻿[
   {
     "strName": "BottleBismertnayaFull",
     "strFriendlyName": "бутылка «Бессмертная Ред Лейбл»",
@@ -11,89 +11,89 @@
   {
     "strName": "AIPowerItem",
     "strFriendlyName": "компьютер с продвинутым ИИ",
-    "strLootPickup": "ItmComputerAI01",
+    "strLootPickup": "ItmAICargo01Loose",
     "aCTsDeliver": [
-      "TIsAIPowerItem=1.0x1"
+      "TIsAICargo01Uninstalled=1.0x1"
     ]
   },
   {
     "strName": "HackedUbiqWISP",
     "strFriendlyName": "взломанный узел Юбик WISP",
-    "strLootPickup": "ItmSensorUbiqWISP01New",
+    "strLootPickup": "ItmUbiqWISPNode01HackedNew",
     "aCTsDeliver": [
-      "TIsHackedUbiqWISP=1.0x1"
+      "TIsUbiqWISPNode01Hacked=1.0x1"
     ]
   },
   {
     "strName": "ElectricalBox01LooseAftermarket",
     "strFriendlyName": "нештатный электрораспределительный блок",
-    "strLootPickup": "ItmElectricalBox01New",
+    "strLootPickup": "ItmElectricalBox01Loose",
     "aCTsDeliver": [
-      "TIsAftermarketEBox=1.0x1"
+      "TIsElectricalBox01Uninstalled=1.0x1"
     ]
   },
   {
     "strName": "LefthandLaserTorch",
     "strFriendlyName": "лазерный резак для левой руки",
-    "strLootPickup": "ItmToolLaserTorch01New",
+    "strLootPickup": "ItmToolLaserTorch01",
     "aCTsDeliver": [
-      "TIsLefthandLaserTorch=1.0x1"
+      "TIsToolLaserTorch=1.0x1"
     ]
   },
   {
     "strName": "PrototypeRCS",
     "strFriendlyName": "прототип впускного клапана РСУ",
-    "strLootPickup": "ItmAttiIntakeRCS01New",
+    "strLootPickup": "ItmRCSDistro01Loose",
     "aCTsDeliver": [
-      "TIsPrototypeRCS=1.0x1"
+      "TIsRCSDistro01Uninstalled=1.0x1"
     ]
   },
   {
     "strName": "PurpleJumpsuit",
     "strFriendlyName": "проклятый фиолетовый комбинезон",
-    "strLootPickup": "ItmTopJumpsuit01PurpleNew",
+    "strLootPickup": "OutfitSuit07",
     "aCTsDeliver": [
-      "TIsPurpleJumpsuit=1.0x1"
+      "TIsCursedJumpsuit=1.0x1"
     ]
   },
   {
     "strName": "PrototypeHoldenPatch",
     "strFriendlyName": "прототип заплатки Холден Пэтч",
-    "strLootPickup": "ItmSealantHolden01New",
+    "strLootPickup": "ItmHullPatch01x1",
     "aCTsDeliver": [
-      "TIsPrototypeHoldenPatch=1.0x1"
+      "TIsHullPatch=1.0x1"
     ]
   },
   {
     "strName": "PartScreenSpecialOrder",
     "strFriendlyName": "запасной экран по спецзаказу",
-    "strLootPickup": "ItmPartScreen01New",
+    "strLootPickup": "ItmPartsScreen01",
     "aCTsDeliver": [
-      "TIsPartScreenSpecialOrder=1.0x1"
+      "TIsScreen=1.0x1"
     ]
   },
   {
     "strName": "ScrapClothCleanBandages",
     "strFriendlyName": "партия стерильных бинтов",
-    "strLootPickup": "ItmScrapClothNew",
+    "strLootPickup": "ItmScrapClothCleanx10",
     "aCTsDeliver": [
-      "TIsSterileBandages=1.0x1"
+      "TIsScrapClothClean=1.0x10"
     ]
   },
   {
     "strName": "Switch01LooseYoruba",
     "strFriendlyName": "переключатель с маркировкой на йоруба",
-    "strLootPickup": "ItmSwitch01New",
+    "strLootPickup": "ItmSwitch01Loose",
     "aCTsDeliver": [
-      "TIsYorubaSwitch=1.0x1"
+      "TIsSwitch01Uninstalled=1.0x1"
     ]
   },
   {
     "strName": "UsedSalvageLicense",
     "strFriendlyName": "использованная лицензия утилизатора",
-    "strLootPickup": "ItmSalvageLicense01",
+    "strLootPickup": "ItmDocumentPermitOKLG01Used",
     "aCTsDeliver": [
-      "TIsUsedSalvageLicense=1.0x1"
+      "TIsOKLGPermitUsed=1.0x1"
     ]
   }
 ]
