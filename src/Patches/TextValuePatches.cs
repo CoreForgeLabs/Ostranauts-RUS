@@ -14,13 +14,28 @@ namespace OstranautsRusPatch
     /// </summary>
     public static class CleanResultPostfix
     {
+        // Diagnostic: log transformations to help debug game logic corruption.
+        // Only active during investigation; set to false to disable.
+        private const bool DiagLog = false;
+        private static int _diagCount = 0;
+        private const int MaxDiagLogs = 200;
+
         public static void Postfix(ref string __result)
         {
             RusPatchPlugin._postfixCalls++;
             if (string.IsNullOrEmpty(__result) || __result.Length < 3) { RusPatchPlugin._postfixSkipped++; return; }
 
-            // Strip {ls} tags ALWAYS — these appear in tooltip condition text
+            // GUARD: Skip strings without spaces/newlines — these are internal game IDs/codes.
+            // e.g. "ItmDockSys03Open", "MSPortalOpenStartRemoveAuto", "TIsDockSys03Closed"
+            // Translating internal IDs corrupts game logic lookups (ModeSwitch, CondOwner, etc.)
             bool hasLs = __result.IndexOf("{ls ") >= 0;
+            if (!hasLs && __result.IndexOf(' ') < 0 && __result.IndexOf('\n') < 0)
+            {
+                RusPatchPlugin._postfixSkipped++;
+                return;
+            }
+
+            // Strip {ls} tags ALWAYS — these appear in tooltip condition text
             if (hasLs)
             {
                 __result = RussianTextCleaner.StripLsBrackets(__result);
@@ -35,7 +50,20 @@ namespace OstranautsRusPatch
                     { RusPatchPlugin._postfixSkipped++; return; }
             }
             else
-                __result = RussianTextCleaner.Clean(__result);
+            {
+                if (DiagLog && _diagCount < MaxDiagLogs)
+                {
+                    string before = __result;
+                    __result = RussianTextCleaner.Clean(__result);
+                    if (before != __result && before.Length < 120)
+                    {
+                        _diagCount++;
+                        RusPatchPlugin.Log.LogInfo("[XFORM] '" + before + "' -> '" + __result + "'");
+                    }
+                }
+                else
+                    __result = RussianTextCleaner.Clean(__result);
+            }
         }
     }
 
