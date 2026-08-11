@@ -13,6 +13,9 @@ namespace OstraI18n
         public static string Language { get; private set; } = "en";
         public static int Applied;
         public static int Drifted;
+        public static bool QaMode;
+
+        private static string Wrap(string value) => QaMode ? "⟦" + value + "⟧" : value;
 
         internal static void Init(string pluginDir, string languageCode)
         {
@@ -35,7 +38,7 @@ namespace OstraI18n
             try
             {
                 var v = _pack?.Get(key);
-                return v ?? key;
+                return Wrap(v ?? key);
             }
             catch { return key; }
         }
@@ -45,7 +48,7 @@ namespace OstraI18n
             try
             {
                 var v = _pack?.Plural(key, count);
-                return v ?? key;
+                return Wrap(v ?? key);
             }
             catch { return key; }
         }

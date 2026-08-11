@@ -26,6 +26,7 @@ namespace OstraI18n
         internal static ConfigEntry<string> Language;
         internal static ConfigEntry<string> DataDir;
         internal static ConfigEntry<bool> FormalYou;
+        internal static ConfigEntry<bool> QaMode;
         private static SynchronizationContext unitySync;
 
         private void Awake()
@@ -37,6 +38,7 @@ namespace OstraI18n
             Language = Config.Bind("General", "Language", "Russian", "Target language. Needs grammar_<lang>.json + verbs_<lang>.json in DataDir.");
             DataDir = Config.Bind("General", "DataDir", Path.Combine(Paths.PluginPath, "OstraI18n"), "Folder with language packs.");
             FormalYou = Config.Bind("General", "FormalYou", false, "true = vy-form for player address.");
+            QaMode = Config.Bind("General", "QaMode", false, "true = псевдоязык ⟦...⟧ поверх переводов, для поиска непокрытых строк.");
 
             if (!Enabled.Value) { Log.LogInfo("[i18n] disabled by config"); return; }
 
@@ -49,6 +51,7 @@ namespace OstraI18n
             try
             {
                 I18n.Init(DataDir.Value, "ru");
+                I18n.QaMode = QaMode.Value;
                 if (LiteralPatcher.LoadCatalog(DataDir.Value) > 0)
                     LiteralPatcher.ApplyAll(new Harmony(GUID + ".literals"));
             }
