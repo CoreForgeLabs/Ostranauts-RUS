@@ -1,0 +1,94 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Text.Json;
+
+namespace OstraI18n.Core
+{
+    /// Читает langs/<code>/ui/*.json и meta.json. Значение ключа — строка либо
+    /// объект с формами множественного числа. Битый файл пропускается с записью
+    /// в errors, а не роняет загрузку: частично собранный язык лучше отсутствия языка.
+    public static class PackLoader
+    {
+        public static List<string> Errors { get; } = new List<string>();
+
+        public static LanguagePack Load(string langsDir, string languageCode)
+        {
+            return Load(langsDir, languageCode, new HashSet<string>());
+        }
+
+        private static LanguagePack Load(string langsDir, string code, HashSet<string> visited)
+        {
+            if (!visited.Add(code)) return null;   // защита от циклической цепочки fallback
+
+            var dir = Path.Combine(langsDir, code);
+            if (!Directory.Exists(dir))
+            {
+                Errors.Add("нет папки языка: " + dir);
+                return null;
+            }
+
+            LanguagePack fallback = null;
+            foreach (var fb in ReadFallback(Path.Combine(dir, "meta.json")))
+            {
+                fallback = Load(langsDir, fb, visited);
+                if (fallback != null) break;
+            }
+
+            var entries = new Dictionary<string, object>(StringComparer.Ordinal);
+            var uiDir = Path.Combine(dir, "ui");
+            if (Directory.Exists(uiDir))
+            {
+                foreach (var f in Directory.GetFiles(uiDir, "*.json"))
+                    MergeFile(f, entries);
+            }
+            return new LanguagePack(entries, code, fallback);
+        }
+
+        private static IEnumerable<string> ReadFallback(string metaPath)
+        {
+            var result = new List<string>();
+            try
+            {
+                if (!File.Exists(metaPath)) return result;
+                using var doc = JsonDocument.Parse(File.ReadAllText(metaPath));
+                if (doc.RootElement.TryGetProperty("fallback", out var fb)
+                    && fb.ValueKind == JsonValueKind.Array)
+                    foreach (var e in fb.EnumerateArray())
+                        if (e.ValueKind == JsonValueKind.String) result.Add(e.GetString());
+            }
+            catch (Exception ex) { Errors.Add(metaPath + ": " + ex.Message); }
+            return result;
+        }
+
+        private static void MergeFile(string path, Dictionary<string, object> into)
+        {
+            try
+            {
+                using var doc = JsonDocument.Parse(File.ReadAllText(path));
+                if (doc.RootElement.ValueKind != JsonValueKind.Array) return;
+                foreach (var block in doc.RootElement.EnumerateArray())
+                {
+                    if (!block.TryGetProperty("dict", out var dict)) continue;
+                    if (dict.ValueKind != JsonValueKind.Object) continue;
+                    foreach (var kv in dict.EnumerateObject())
+                    {
+                        if (kv.Value.ValueKind == JsonValueKind.String)
+                        {
+                            into[kv.Name] = kv.Value.GetString();
+                        }
+                        else if (kv.Value.ValueKind == JsonValueKind.Object)
+                        {
+                            var forms = new Dictionary<string, string>(StringComparer.Ordinal);
+                            foreach (var f in kv.Value.EnumerateObject())
+                                if (f.Value.ValueKind == JsonValueKind.String)
+                                    forms[f.Name] = f.Value.GetString();
+                            into[kv.Name] = forms;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex) { Errors.Add(path + ": " + ex.Message); }
+        }
+    }
+}

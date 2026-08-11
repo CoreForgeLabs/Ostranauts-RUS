@@ -59,6 +59,15 @@ static class Program
         Eq(ru2.Plural("GUI_ITEMS", 7), "{0} предметов", "плюрал many");
         Eq(ru2.Plural("GUI_OK", 5), "Хорошо", "плюрал на обычной строке возвращает строку");
 
+        Console.WriteLine("PackLoader");
+        var langsDir = System.IO.Path.GetFullPath(
+            System.IO.Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "..", "..", "langs"));
+        Console.WriteLine("  langs: " + langsDir);
+        var packRu = PackLoader.Load(langsDir, "ru");
+        Eq(packRu.Get("GUI_CHARGEN_AT_LARGE"), "На свободе", "русская строка загружена");
+        var packEn = PackLoader.Load(langsDir, "en");
+        Eq(packEn.Get("GUI_CHARGEN_AT_LARGE"), "At Large", "английская строка загружена");
+
         Console.WriteLine(failed == 0 ? "ALL PASS" : failed + " FAILED");
         return failed == 0 ? 0 : 1;
     }
