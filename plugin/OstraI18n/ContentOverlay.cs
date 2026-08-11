@@ -18,6 +18,8 @@ namespace OstraI18n
         private static readonly Dictionary<string, string> CategoryToField = new Dictionary<string, string>
         {
             { "interactions", "dictInteractions" },
+            { "careers", "dictCareers" },
+            { "conditions", "dictConds" },
         };
 
         private static readonly HashSet<string> TranslatableFields = new HashSet<string>
