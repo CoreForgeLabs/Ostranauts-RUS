@@ -1,0 +1,303 @@
+# Техническая архитектура
+
+## Движок
+
+- **Unity 6+** (Mono, не IL2CPP) — код декомпилируется в чистый C#
+- **LitJson** — парсинг JSON (Newtonsoft.Json есть, но используется для других целей)
+- **TextMeshPro** — рендеринг текста
+- **ModLoader** — система модов через `loading_order.json` зеркалит структуру `StreamingAssets/`
+
+## Классы текстовой системы (из Assembly-CSharp.dll)
+
+<aside>
+💡
+
+Ключевое открытие: в коде уже есть классы `JsonLocalisedStrings` и `Localisation` с полями `strLanguage`, `get_language`, `set_language`. Игра спроектирована под многоязычность, но сейчас захардкожена на English + зачаток Portuguese!
+
+</aside>
+
+| Класс | Назначение |
+| --- | --- |
+| `Localisation` | get_language, set_language, Get(key) |
+| `JsonLocalisedStrings` | strName, strLanguage, dict |
+| `JsonLocalisedStringsRaw` | strName, strLanguage, aValues[] |
+| `InflectedString` | Обработка токенов [us]/[them]/[verb] |
+| `ModLoader` | Загрузка модов |
+
+---
+
+# strings.json — главная база строк
+
+## Формат
+
+```json
+[{
+  "strName": "Game Strings",
+  "aValues": ["KEY1", "Value1", "KEY2", "Value2", ...]
+}]
+```
+
+## Статистика
+
+- **1,258** пар ключ-значение (1,179 уникальных ключей, 59 дубликатов)
+- **882** GUI-строк, **105** JOB, **60** Bounty, **25** PDA, **19** OBJV
+- Поле `strLanguage` **отсутствует** — игра загружает только одну таблицу
+
+## Многоязычный формат (заложен в коде!)
+
+```json
+[
+  {"strName":"Game Strings", "strLanguage":"English", "aValues":[...]},
+  {"strName":"Game Strings", "strLanguage":"Russian", "dict": {"KEY":"Значение"}}
+]
+```
+
+---
+
+# Система токенов (инфлексия)
+
+Игра использует квадратно-скобочные токены для грамматического согласования в реальном времени:
+
+| Токен | Значение |
+| --- | --- |
+| `[us]` | Субъект (персонаж игрока) |
+| `[them]` | Объект (цель) |
+| `[3rd]` | Третий участник |
+| `[verb]` | ~117 глаголов: adds, begins, checks, decides... |
+| `[us-pos]` | Притяжательное 's |
+
+Пример: `"[us] [adds] connection to [them]"` → `"John adds connection to Maria"`
+
+## 🚨 Критическая проблема для русского
+
+Английская система: **2 формы** глагола (add/adds).  
+
+Русская требует: **3 рода × 6 падежей × 2 числа × 3 времени** = взрывной рост комбинаций.
+
+**Решение**: заменить токен-систему на шаблонный движок с грамматическими слотами (`{SUBJ:NOM:M}`, `{OBJ:ACC}`, `{VERB:PAST:M}`).
+
+---
+
+# Шрифты и кириллица
+
+Из 44 вырезанных шрифтов:
+
+| Статус | Шрифты |
+| --- | --- |
+| ✅ Полная кириллица | **Roboto** (все 12 начертаний), **Noto Sans**, **Liberation Sans** |
+| ⚠️ Частичная | Montserrat (221/256), Comfortaa (176/256), Jura, Jost |
+| ❌ Нет кириллицы | MuseoModerno, Bangers, Anton, Oswald, PixelMid, Kode Mono |
+
+**Вывод**: основные UI-шрифты (Roboto!) полностью поддерживают русский. MuseoModerno (логотип) — нужна замена.
+
+---
+
+# Объём перевода
+
+| Категория | Строк | Символов |
+| --- | --- | --- |
+| strings.json | 1,258 | 90K |
+| interactions (диалоги/действия) | 30,699 | 762K |
+| installables (предметы) | 26,267 | 480K |
+| conditions + condowners (состояния) | 18,184 | 515K |
+| loot (добыча) | 18,430 | 295K |
+| items + cooverlays | 14,542 | 400K |
+| personspecs (персонажи) | 1,686 | 29K |
+| прочее | 34,193 | 851K |
+| **ВСЕГО** | **~145,000** | **3.4M** |
+
+Оценка русского текста: **~4.5M символов** (~750K слов). Обязательна автоматизация.
+
+---
+
+# План i18n: Путь C (комбинированный)
+
+## Шаг 1: Статические строки → Мод
+
+Создать `Mods/Ostranauts_i18n_RU/` с переведёнными JSON через `loading_order.json`:
+
+- Перезаписывает `strName`, `strDesc`, `strTitle` и т.д.
+- Не требует декомпиляции
+- ~50,000 уникальных строк
+
+## Шаг 2: Грамматика → BepInEx патч
+
+Harmony-патч `InflectedString` для русской грамматики:
+
+- Добавить падежи, роды, числа
+- Перехватывать `Localisation.Get()` для динамических строк
+- Требует декомпиляции (dnSpy) и написания C# плагина
+
+## Шаг 3: Шрифты → Замена
+
+Заменить MuseoModerno на Roboto через AssetRipper/FontAsset.
+
+---
+
+# Инструментарий
+
+<aside>
+🔧
+
+Все инструменты с ссылками и командами установки
+
+</aside>
+
+## Декомпиляция и анализ
+
+| Инструмент | Назначение | Установка |
+| --- | --- | --- |
+| **dnSpy** | Декомпиляция .NET DLL в C# | GitHub Releases |
+| **AssetRipper** | Распаковка Unity-ассетов | GitHub Releases |
+| **fonttools** | Анализ и модификация шрифтов | `pip install fonttools` |
+
+## Моддинг и патчинг
+
+| Инструмент | Назначение | Установка |
+| --- | --- | --- |
+| **BepInEx 5** | Инжектор модов (Mono) | GitHub Releases |
+| **HarmonyX** | Патчинг C# методов | GitHub |
+| **Unity Explorer** | In-game инспектор | GitHub |
+
+## Машинный перевод
+
+| Инструмент | Установка |
+| --- | --- |
+| **OpenAI API** | `pip install openai` |
+| **DeepL API** | `pip install deepl` |
+| **deep-translator** (бесплатный) | `pip install deep-translator` |
+| **googletrans** | `pip install googletrans==4.0.0rc1` |
+
+## Скрипт автоматизации перевода
+
+```bash
+# Создаём папку для инструментов
+mkdir ostranauts-i18n && cd ostranauts-i18n
+
+# Устанавливаем Python-зависимости
+pip install fonttools openai deepl deep-translator tqdm
+
+# Клонируем референсные репозитории
+git clone https://github.com/BepInEx/BepInEx.git
+git clone https://github.com/BepInEx/HarmonyX.git
+```
+
+## Python-скрипт перевода
+
+```python
+# translate_ostra.py
+import json, os, sys
+from deep_translator import GoogleTranslator
+
+def translate_json(input_path, output_path, lang='ru'):
+    with open(input_path, encoding='utf-8-sig') as f:
+        data = json.load(f)
+    
+    translator = GoogleTranslator(source='en', target=lang)
+    TEXT_KEYS = {'strName','strDesc','strTitle','strTooltip',
+                 'strNameFriendly','strNameShort','strFriendlyName'}
+    
+    def translate_item(item):
+        if isinstance(item, dict):
+            for k in list(item.keys()):
+                if k in TEXT_KEYS and isinstance(item[k], str) and item[k].strip():
+                    try:
+                        item[k] = translator.translate(item[k])
+                    except: pass
+        return item
+    
+    if isinstance(data, list):
+        data = [translate_item(it) for it in data]
+    
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    with open(output_path, 'w', encoding='utf-8') as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+
+# Использование:
+# python translate_ostra.py StreamingAssets/data/strings/strings.json Mods/Ostranauts_i18n_RU/
+```
+
+---
+
+# Файлы на Box
+
+📦 **Ostranauts → Ostranauts_Text_DB**
+
+- `i18n_analysis.md` — этот документ
+- `strings/` — основная база строк
+- `schemas/` — JSON-схемы для валидации
+- Архив с текстовыми данными: `ostranauts.zip` (прислан отдельно)
+
+---
+
+# Риски
+
+1. **Система токенов** — требует фундаментальной переработки для славянских языков
+2. **Шрифт MuseoModerno** — без кириллицы, используется для логотипа
+3. **Объём** — 145K строк, нужна автоматизация + ручная вычистка
+4. **Обновления игры** — перевод нужно синхронизировать с апдейтами
+5. **Имена NPC** — английские имена (John, Maria) в русском контексте
+
+---
+
+# 🔬 ВСКРЫТИЕ ДВИЖКА ПОДСТАНОВКИ (IL-дизассемблирование)
+
+*Получено собственным IL-дизассемблером из Assembly-CSharp.dll — все выводы доказаны кодом.*
+
+## Пайплайн текста
+
+```
+JSON (strDesc: "[us] [adds] connection to [them]")
+  → LOAD: DataHandler.LoadMod читает tokens/{aliases,grammar,verbs}.json
+  → LOAD: UnpackTokens раскладывает в словари; SetupDicts препарсит шаблоны
+  → RUNTIME: GrammarUtils.GetInflectedString(template, obj)
+      → PrepareString — привязка us/them/3rd к объектам
+      → GenerateString — цикл по токенам: Verb() / AttemptSubstitution() / …
+      → interactionOutput (StringBuilder) → UI (TextMeshPro)
+```
+
+## Ядро: класс GrammarUtils (30 методов, все сдамплены)
+
+`GetInflectedString` `PrepareString` `GenerateString` `AttemptSubstitution` `Verb` `COToPOSIndex` `SetCase` `Capitalise` `ProperName` `ShipName` `Custom` `GetHomeworld` `GetAge` `LogSentenceEntity` …
+
+## Местоимённая модель (COToPOSIndex)
+
+Индекс вычисляется из condition-флагов объекта:
+
+| Индекс | Форма | Условие |
+| --- | --- | --- |
+| 0 | I | fallback |
+| 1 | you | `IsPlayer` |
+| 2 | he | `IsMale` |
+| 3 | she | `IsFemale` |
+| 4 | they | `IsNB` |
+| 5 | it | не `IsHuman` |
+
+## Глагольная модель (Verb + verbs.json)
+
+- `verbs.json`: 446 глаголов, формат `["singular","base"]`; регулярные (396) — авто-отрезание последней буквы
+- `Verb` выбирает: base-форма при you(1)/they(4), иначе singular
+- Хардкод: вставка `no longer`
+
+## Главный задел для i18n
+
+`tokens/grammar.json` содержит поле **`"lang": "eng"`** и таблицы 8 категорий (subj/pos/obj/reflexive/contractIs/contractHas/contractWill/contractWould) — формат данных уже предусматривает языковые пакеты, но код их не выбирает.
+
+## Что зашито в коде (чек-лист переписывания)
+
+1. Таблицы местоимений в `.cctor` (английские массивы)
+2. Правило спряжения `Verb` (you/they → base)
+3. `COToPOSIndex` — только английская модель (нет падежей)
+4. `insertNoLonger` — хардкод строки
+5. `SetCase`/`Capitalise` — английская капитализация
+6. `Localisation.Get` — заглушка (всегда English)
+
+## Дизайн переписанной системы
+
+- **MorphContext** вместо POSIndex: gender (M/F/N), animacy, number, person
+- **grammar_rus.json**: +6 падежей (nom/gen/dat/acc/inst/prep), +прош. время по родам
+- **verbs_rus.json**: полная парадигма глагола (6 форм наст. + 4 прош.)
+- **7 Harmony-патчей** (BepInEx): Verb, COToPOSIndex, AttemptSubstitution (склонение имён!), SetCase, .cctor, Localisation.Get, UnpackTokens
+- **Обратная совместимость**: `[us]`, `[adds]` работают при lang=eng; новый синтаксис `[us:gen]` при lang=rus
+
+Полный документ: `engine_deepdive.md` на Box (Ostranauts → Ostranauts_Text_DB)

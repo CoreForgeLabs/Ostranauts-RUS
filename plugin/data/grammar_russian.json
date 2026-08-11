@@ -1,0 +1,15 @@
+{
+  "lang": "rus",
+  "comment": "Russian pronoun tables for OstraI18n. Index order: [I, you, he, she, they, it] = PronounInflection [First, Second, ThirdMasculine, ThirdFeminine, ThirdNeuter, ThirdNeuterNonHuman]. contract* categories collapse to plain subject pronouns (Russian has no contractions; copula/auxiliary handled by verbs pack). pos v1 = masculine-singular base forms (его/её/их are invariant); full case/gender agreement = v2.",
+  "you": "ты",
+  "pronouns": {
+    "subj":          ["я", "ты", "он", "она", "они", "оно"],
+    "pos":           ["мой", "твой", "его", "её", "их", "его"],
+    "obj":           ["меня", "тебя", "его", "её", "их", "его"],
+    "reflexive":     ["сам", "сам", "сам", "сама", "сами", "само"],
+    "contractIs":    ["я", "ты", "он", "она", "они", "оно"],
+    "contractHas":   ["я", "ты", "он", "она", "они", "оно"],
+    "contractWill":  ["я", "ты", "он", "она", "они", "оно"],
+    "contractWould": ["я", "ты", "он", "она", "они", "оно"]
+  }
+}
