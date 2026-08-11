@@ -54,11 +54,6 @@ namespace OstraI18n
             }
 
             Plugin.Log.LogInfo("[i18n] контент-оверлей: применено полей " + Applied + ", сирот " + Orphans);
-
-            if (DataHandler.dictInteractions.TryGetValue("ACTAddConnection", out var testEntry))
-            {
-                Plugin.Log.LogInfo("[i18n] контент-оверлей self-test: ACTAddConnection.strTitle = '" + testEntry.strTitle + "'");
-            }
         }
 
         private static void ApplyCategory(string category, string fieldName, string jsonPath)
