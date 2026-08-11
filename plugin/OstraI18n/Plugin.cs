@@ -62,6 +62,8 @@ namespace OstraI18n
                 }
             }
             catch (Exception ex) { Log.LogError("[i18n] prefab binder failed: " + ex); }
+            try { ContentOverlay.Init(DataDir.Value, "ru"); }
+            catch (Exception ex) { Log.LogError("[i18n] content overlay init failed: " + ex); }
             Log.LogInfo("[i18n] OstraI18n " + Version + ": " + ok + " patches ok, " + failed + " failed/skipped, lang=" + Language.Value);
 
             unitySync = SynchronizationContext.Current;
