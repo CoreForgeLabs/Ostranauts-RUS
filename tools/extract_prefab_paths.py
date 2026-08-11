@@ -3,9 +3,11 @@
 # стабилен для конкретной сцены), resources.assets/sharedassets* = "asset"
 # (объект — часть префаб-шаблона, инстанцируется многократно под разными
 # родителями; путь — от корня самого префаба, не от корня сцены).
-import json, os, re
+import json, os, re, sys, time
 import UnityPy
 from TypeTreeGeneratorAPI import TypeTreeGenerator
+
+sys.stdout.reconfigure(line_buffering=True)
 
 GAME = r"F:\Games\Steam\steamapps\common\Ostranauts\Ostranauts_Data"
 MANAGED = GAME + r"\Managed"
@@ -138,13 +140,24 @@ def analyze(fname, kind, out_entries, seen_keys):
     if not os.path.exists(path):
         print("нет файла, пропуск:", fname)
         return
+    print(f"--- {fname}: начинаю UnityPy.load() ---")
+    t0 = time.time()
     env = UnityPy.load(path)
+    print(f"--- {fname}: загружен за {time.time()-t0:.1f}с ---")
+    t0 = time.time()
     objs = {o.path_id: o for o in env.objects}
+    print(f"--- {fname}: индекс объектов построен за {time.time()-t0:.1f}с, объектов: {len(objs)} ---")
     cache = make_caches()
     found = 0
+    checked = 0
+    t0 = time.time()
     for o in env.objects:
         if o.type.name != "MonoBehaviour":
             continue
+        checked += 1
+        if checked % 2000 == 0:
+            print(f"    ...проверено {checked} MonoBehaviour, найдено текста {found}, "
+                  f"{time.time()-t0:.1f}с")
         t = try_read_text(o)
         if t is None:
             continue
