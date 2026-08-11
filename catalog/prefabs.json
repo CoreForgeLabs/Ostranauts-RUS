@@ -1,6 +1,2901 @@
 [
   {
     "kind": "scene",
+    "root": "Root",
+    "path": [
+      "Logo",
+      "txtVer"
+    ],
+    "literal": "Sample text",
+    "key": "GUI_ROOT_TXTVER_SAMPLE_TEXT",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "PAX2020 UI Button",
+      "TextMeshPro Text"
+    ],
+    "literal": "Show Pax 2020 UI",
+    "key": "GUI_CANVASSCREEN_TEXTMESHPRO_TEXT_SHOW_PAX_2020_UI",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlBlack",
+      "pnlBBG",
+      "pnlBy",
+      "bmpBBG",
+      "txtBBGBottom"
+    ],
+    "literal": "Developed\nby",
+    "key": "GUI_CANVASSCREEN_TXTBBGBOTTOM_DEVELOPED_BY",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlPAX2020",
+      "pnlCaptain",
+      "btn",
+      "txt"
+    ],
+    "literal": "Create\nYour Captain",
+    "key": "GUI_CANVASSCREEN_TXT_CREATE_YOUR_CAPTAIN",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlPAX2020",
+      "pnlSalvage",
+      "btn",
+      "txt"
+    ],
+    "literal": "Salvage\na Derelict",
+    "key": "GUI_CANVASSCREEN_TXT_SALVAGE_A_DERELICT",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlPAXIntro",
+      "txtON"
+    ],
+    "literal": "Beyond the orbital graveyard, millions grapple with the reality that Earth is gone for good. Colonies eye each other across the gulf of space. Amid the embarrassment of riches that is the System's raw resources, food rations and oxygenators are suddenly more valuable than an entire freighterhold of iron and nickel. In the darkness, lines are drawn.\n\nAs a captain, keep your ship running and your crew happy, in a future Solar System where Earth is inaccessible, and corporations have more rights than people.",
+    "key": "GUI_CANVASSCREEN_TXTON_BEYOND_THE_ORBITAL_GRAVEYARD_M",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlPAX2020",
+      "pnlNav",
+      "TextMeshPro Text"
+    ],
+    "literal": "EXPERIMENTAL",
+    "key": "GUI_CANVASSCREEN_TEXTMESHPRO_TEXT_EXPERIMENTAL",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlPAX2020",
+      "pnlSocial",
+      "btn",
+      "txt"
+    ],
+    "literal": "Recruit\nYour Crew",
+    "key": "GUI_CANVASSCREEN_TXT_RECRUIT_YOUR_CREW",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlBlack",
+      "pnlWarning",
+      "txtBody"
+    ],
+    "literal": "<b>Randomised names & Faces</b> \n<size=20>(Characters in-game use random combinations of common names, faces, and facial features. Resemblance to anyone real or otherwise is merely coincidence.)</size>\n\n<b>Flashing lights</b>\n<size=20>(The world and interfaces contain flashing colors which may be dangerous to those with photosensitive epilepsy.)</size>\n\n<b>Mature Topics</b>\n<size=20>(The game contains references to topics such as death, blood, injury, violence, drugs & alcohol, occult, coercion, corruption, and imprisonment.)</size>\n\n<b>Survival Gameplay</b>\n<size=20>(Staying alive is part of the challenge of Ostranauts. You will almost certainly die often at first. Careful preparation and clever problem-solving required ahead.)</size>",
+    "key": "GUI_CANVASSCREEN_TXTBODY_B_RANDOMISED_NAMES_FACES_B_SIZ",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlBlack",
+      "pnlBBG",
+      "pnlBy",
+      "txtCreditRandom"
+    ],
+    "literal": "Person - Role",
+    "key": "GUI_CANVASSCREEN_TXTCREDITRANDOM_PERSON_ROLE",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlBlack",
+      "pnlWarning",
+      "txtTitle"
+    ],
+    "literal": "CONTENT WARNINGS",
+    "key": "GUI_CANVASSCREEN_TXTTITLE_CONTENT_WARNINGS",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlPAX2020",
+      "pnlInfo",
+      "txt"
+    ],
+    "literal": "Choose your demo.\n\nClicking an image to the right will show you more info on each choice.",
+    "key": "GUI_CANVASSCREEN_TXT_CHOOSE_YOUR_DEMO_CLICKING_AN_I",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlPAXIntro",
+      "txtNS"
+    ],
+    "literal": "Twenty years ago, the Earth died.\n\nThe Kessler event transformed Earth's orbital space into a typhoon of debris and space junk, lethal to anything occupying or transiting orbit. Unknown numbers perished in the fallout, as worldwide networks collapsed, and meteorites ravaged the surface. A decaying planet pushed well beyond its breaking point.\n\nSome, like Philip Kindred, fight for meaning, and survival, amid the ruins of civilisation, scavenging, looting, taking to barbarism with disquieting ease. The furthest they can see is the next day, and they'll count themselves lucky to see it.",
+    "key": "GUI_CANVASSCREEN_TXTNS_TWENTY_YEARS_AGO_THE_EARTH_DIE",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlPAX2020",
+      "pnlDesc",
+      "txt"
+    ],
+    "literal": "Create\nYour Captain",
+    "key": "GUI_CANVASSCREEN_TXT_CREATE_YOUR_CAPTAIN_2",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlPAX2020",
+      "pnlReactor",
+      "btn",
+      "txt"
+    ],
+    "literal": "Start\nthe Reactor",
+    "key": "GUI_CANVASSCREEN_TXT_START_THE_REACTOR",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlBlack",
+      "pnlBBG",
+      "pnlBy",
+      "bmpMW",
+      "txtMWBottom"
+    ],
+    "literal": "Published\nby",
+    "key": "GUI_CANVASSCREEN_TXTMWBOTTOM_PUBLISHED_BY",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlPAX2020",
+      "pnlNav",
+      "btn",
+      "txt"
+    ],
+    "literal": "Pilot\nYour Ship",
+    "key": "GUI_CANVASSCREEN_TXT_PILOT_YOUR_SHIP",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "BugConsole",
+    "path": [
+      "DebugCanvasFPS",
+      "TextMeshPro Text"
+    ],
+    "literal": "FPS 00.00 UP 00.0",
+    "key": "GUI_BUGCONSOLE_TEXTMESHPRO_TEXT_FPS_00_00_UP_00_0",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlPAXIntro",
+      "txtON"
+    ],
+    "literal": "Others, like the millions waiting for word on Mars, Venus, and Saturn's moons, grapple with the reality that Earth is gone for good. Colonies eye each other across the gulf of space. Amid the embarrassment of riches that is the System's raw resources, food rations and oxygenators are suddenly more valuable than an entire freighterhold of iron and nickel. In the darkness, weapons are drawn.\n\nYou're the captain of a spaceship, one of few who hold their destiny in their own hands. In these desperate times, you must decide whom you can stand to trust, keep them close, and above all, keep your ship flying ... (this ending call to action is intentionally vague and we should adapt it to what gameplay elements we want to highlight)",
+    "key": "GUI_CANVASSCREEN_TXTON_OTHERS_LIKE_THE_MILLIONS_WAITI",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlAudio",
+      "pnlMeterEffects",
+      "pnlMeterItem",
+      "lblMeter"
+    ],
+    "literal": "10",
+    "key": "GUI_CANVASSCREEN_LBLMETER_10",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlPower",
+      "pnlMeterTotal",
+      "pnlMeterItem (9)",
+      "lblMeter"
+    ],
+    "literal": "-",
+    "key": "GUI_CANVASSCREEN_LBLMETER_TEXT",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlVideo",
+      "pnlTurbo",
+      "chkA",
+      "Background",
+      "Checkmark",
+      "lblOn"
+    ],
+    "literal": "A",
+    "key": "GUI_CANVASSCREEN_LBLON_A",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlVideo",
+      "pnlResolution",
+      "ddRes",
+      "Template",
+      "Viewport",
+      "Content",
+      "Item",
+      "Item Label"
+    ],
+    "literal": "Option A",
+    "key": "GUI_CANVASSCREEN_ITEM_LABEL_OPTION_A",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlFiles",
+      "btnAssets",
+      "boxFilePath",
+      "txt"
+    ],
+    "literal": "D:/JOB/BBG/CODE/space-prototype/Assets/StreamingAssets",
+    "key": "GUI_CANVASSCREEN_TXT_D_JOB_BBG_CODE_SPACE_PROTOTYPE",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlPower",
+      "lblTotal"
+    ],
+    "literal": "总电力\nTOTAL",
+    "key": "GUI_CANVASSCREEN_LBLTOTAL_TOTAL",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlAudio",
+      "pnlMeterMusic",
+      "pnlMeterItem (7)",
+      "lblMeter"
+    ],
+    "literal": "-",
+    "key": "GUI_CANVASSCREEN_LBLMETER_TEXT_2",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlPower",
+      "pnlMeterTotal",
+      "pnlMeterItem (8)",
+      "lblMeter"
+    ],
+    "literal": "1",
+    "key": "GUI_CANVASSCREEN_LBLMETER_1",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlControls",
+      "Header",
+      "lblDescr"
+    ],
+    "literal": "Left click key to begin adding new combo and right click to remove last combo.",
+    "key": "GUI_CANVASSCREEN_LBLDESCR_LEFT_CLICK_KEY_TO_BEGIN_ADDING",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlAudio",
+      "pnlMeterMaster",
+      "pnlMeterItem (6)",
+      "lblMeter"
+    ],
+    "literal": "4",
+    "key": "GUI_CANVASSCREEN_LBLMETER_4",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlInterface",
+      "ddautoSaveMaxCount",
+      "Template",
+      "Viewport",
+      "Content",
+      "Item",
+      "Item Label"
+    ],
+    "literal": "Option A",
+    "key": "GUI_CANVASSCREEN_ITEM_LABEL_OPTION_A_2",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlInterface",
+      "chkToggleBGRotation",
+      "Background",
+      "Left",
+      "txtLoading"
+    ],
+    "literal": "ON",
+    "key": "GUI_CANVASSCREEN_TXTLOADING_ON",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlFiles",
+      "btnSettings",
+      "boxFilePath",
+      "txt"
+    ],
+    "literal": "C:/Users/joshu/AppData/LocalLow/Blue Bottle Games/Ostranauts",
+    "key": "GUI_CANVASSCREEN_TXT_C_USERS_JOSHU_APPDATA_LOCALLOW",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlInterface",
+      "chkToggleBGRotation",
+      "Background",
+      "Right",
+      "txtLoading"
+    ],
+    "literal": "OFF",
+    "key": "GUI_CANVASSCREEN_TXTLOADING_OFF",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlAudio",
+      "pnlMeterEffects",
+      "pnlMeterItem (4)",
+      "lblMeter"
+    ],
+    "literal": "6",
+    "key": "GUI_CANVASSCREEN_LBLMETER_6",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlVideo",
+      "pnlScreenShake",
+      "lblOn"
+    ],
+    "literal": "On\n",
+    "key": "GUI_CANVASSCREEN_LBLON_ON",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlPower",
+      "lblFlowMax"
+    ],
+    "literal": "最大 / MAX",
+    "key": "GUI_CANVASSCREEN_LBLFLOWMAX_MAX",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlPower",
+      "lblTitle"
+    ],
+    "literal": "功率 / POWER (TW)",
+    "key": "GUI_CANVASSCREEN_LBLTITLE_POWER_TW",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlPower",
+      "pnlMeterTotal",
+      "pnlMeterItem (2)",
+      "lblMeter"
+    ],
+    "literal": "4",
+    "key": "GUI_CANVASSCREEN_LBLMETER_4_2",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlVideo",
+      "pnlStyle",
+      "lblScreenWin"
+    ],
+    "literal": "WINDOWED",
+    "key": "GUI_CANVASSCREEN_LBLSCREENWIN_WINDOWED",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlInterface",
+      "ddTempUnits",
+      "Template",
+      "Viewport",
+      "Content",
+      "Item",
+      "Item Label"
+    ],
+    "literal": "Option A",
+    "key": "GUI_CANVASSCREEN_ITEM_LABEL_OPTION_A_3",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlPower",
+      "pnlMeterTotal",
+      "pnlMeterItem (10)",
+      "lblMeter"
+    ],
+    "literal": "0",
+    "key": "GUI_CANVASSCREEN_LBLMETER_0",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlVideo",
+      "pnlParallax",
+      "lblParallax"
+    ],
+    "literal": "Parallax",
+    "key": "GUI_CANVASSCREEN_LBLPARALLAX_PARALLAX",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlInterface",
+      "lblDateFormat"
+    ],
+    "literal": "DATE AND TIME FORMAT",
+    "key": "GUI_CANVASSCREEN_LBLDATEFORMAT_DATE_AND_TIME_FORMAT",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlAudio",
+      "pnlMeterMaster",
+      "pnlMeterItem (8)",
+      "lblMeter"
+    ],
+    "literal": "2",
+    "key": "GUI_CANVASSCREEN_LBLMETER_2",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlInterface",
+      "ddDateFormat",
+      "Template",
+      "Viewport",
+      "Content",
+      "Item",
+      "Item Label"
+    ],
+    "literal": "Option A",
+    "key": "GUI_CANVASSCREEN_ITEM_LABEL_OPTION_A_4",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlManual",
+      "prefabBinderTabL03",
+      "txt"
+    ],
+    "literal": "Button",
+    "key": "GUI_CANVASSCREEN_TXT_BUTTON",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlVideo",
+      "pnlScreenShake",
+      "lblLoS"
+    ],
+    "literal": "SCREEN SHAKE",
+    "key": "GUI_CANVASSCREEN_LBLLOS_SCREEN_SHAKE",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlPower",
+      "pnlMeterTotal",
+      "pnlMeterItem (3)",
+      "lblMeter"
+    ],
+    "literal": "-",
+    "key": "GUI_CANVASSCREEN_LBLMETER_TEXT_3",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlFiles",
+      "btnSave1",
+      "txt"
+    ],
+    "literal": "SAVES",
+    "key": "GUI_CANVASSCREEN_TXT_SAVES",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlInterface",
+      "lblFlickerAmount"
+    ],
+    "literal": "Flicker Amount",
+    "key": "GUI_CANVASSCREEN_LBLFLICKERAMOUNT_FLICKER_AMOUNT",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlAudio",
+      "pnlMeterEffects",
+      "pnlMeterItem (10)",
+      "lblMeter"
+    ],
+    "literal": "0",
+    "key": "GUI_CANVASSCREEN_LBLMETER_0_2",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlMenu",
+      "btnFiles",
+      "txt"
+    ],
+    "literal": "FILES",
+    "key": "GUI_CANVASSCREEN_TXT_FILES",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlAudio",
+      "pnlMeterEffects",
+      "pnlMeterItem (5)",
+      "lblMeter"
+    ],
+    "literal": "-",
+    "key": "GUI_CANVASSCREEN_LBLMETER_TEXT_4",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlAudio",
+      "pnlMeterMusic",
+      "pnlMeterItem (5)",
+      "lblMeter"
+    ],
+    "literal": "-",
+    "key": "GUI_CANVASSCREEN_LBLMETER_TEXT_5",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlAudio",
+      "lblTitle"
+    ],
+    "literal": "AUDIO SETTINGS",
+    "key": "GUI_CANVASSCREEN_LBLTITLE_AUDIO_SETTINGS",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlInterface",
+      "ddAutoSaveInterval",
+      "Template",
+      "Viewport",
+      "Content",
+      "Item",
+      "Item Label"
+    ],
+    "literal": "Option A",
+    "key": "GUI_CANVASSCREEN_ITEM_LABEL_OPTION_A_5",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlMenu",
+      "btnQuit",
+      "txt"
+    ],
+    "literal": "DONE",
+    "key": "GUI_CANVASSCREEN_TXT_DONE",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlInterface",
+      "lblAutosaveInterval"
+    ],
+    "literal": "Autosave interval",
+    "key": "GUI_CANVASSCREEN_LBLAUTOSAVEINTERVAL_AUTOSAVE_INTERVAL",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlPower",
+      "pnlMeterTotal",
+      "pnlMeterItem",
+      "lblMeter"
+    ],
+    "literal": "5",
+    "key": "GUI_CANVASSCREEN_LBLMETER_5",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlAudio",
+      "pnlMeterMusic",
+      "pnlMeterItem (3)",
+      "lblMeter"
+    ],
+    "literal": "-",
+    "key": "GUI_CANVASSCREEN_LBLMETER_TEXT_6",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlAudio",
+      "pnlMeterMaster",
+      "pnlMeterItem (4)",
+      "lblMeter"
+    ],
+    "literal": "6",
+    "key": "GUI_CANVASSCREEN_LBLMETER_6_2",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlAudio",
+      "lblMaster"
+    ],
+    "literal": "MASTER",
+    "key": "GUI_CANVASSCREEN_LBLMASTER_MASTER",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlAudio",
+      "pnlMeterMusic",
+      "pnlMeterItem (4)",
+      "lblMeter"
+    ],
+    "literal": "6",
+    "key": "GUI_CANVASSCREEN_LBLMETER_6_3",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlManual",
+      "prefabBinderTabL02",
+      "txt"
+    ],
+    "literal": "Button",
+    "key": "GUI_CANVASSCREEN_TXT_BUTTON_2",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlInterface",
+      "ddFlickerAmount",
+      "Label"
+    ],
+    "literal": "Full",
+    "key": "GUI_CANVASSCREEN_LABEL_FULL",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlInterface",
+      "ddAutoSaveInterval",
+      "Label"
+    ],
+    "literal": "15 mins",
+    "key": "GUI_CANVASSCREEN_LABEL_15_MINS",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlVideo",
+      "pnlFPS",
+      "txtFPS"
+    ],
+    "literal": "60",
+    "key": "GUI_CANVASSCREEN_TXTFPS_60",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlPower",
+      "lblMHDOn"
+    ],
+    "literal": "I",
+    "key": "GUI_CANVASSCREEN_LBLMHDON_I",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlManual",
+      "prefabBinderTabR05",
+      "txt"
+    ],
+    "literal": "Button",
+    "key": "GUI_CANVASSCREEN_TXT_BUTTON_3",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlManual",
+      "prefabBinderTabR06",
+      "txt"
+    ],
+    "literal": "Button",
+    "key": "GUI_CANVASSCREEN_TXT_BUTTON_4",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlPAX2020",
+      "pnlDesc",
+      "btnGo",
+      "Off",
+      "lbl"
+    ],
+    "literal": "发射\nLAUNCH",
+    "key": "GUI_CANVASSCREEN_LBL_LAUNCH",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlPAX2020",
+      "pnlDesc",
+      "btnBack",
+      "Off",
+      "lbl"
+    ],
+    "literal": "取消\nCANCEL",
+    "key": "GUI_CANVASSCREEN_LBL_CANCEL",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlInterface",
+      "lblTitleInterface"
+    ],
+    "literal": "INTERFACE SETTINGS:",
+    "key": "GUI_CANVASSCREEN_LBLTITLEINTERFACE_INTERFACE_SETTINGS",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlPower",
+      "pnlMeterTotal",
+      "pnlMeterItem (6)",
+      "lblMeter"
+    ],
+    "literal": "2",
+    "key": "GUI_CANVASSCREEN_LBLMETER_2_2",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlVideo",
+      "pnlParallax",
+      "lblOn"
+    ],
+    "literal": "On\n",
+    "key": "GUI_CANVASSCREEN_LBLON_ON_2",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlFiles",
+      "btnMods",
+      "boxFilePath",
+      "txt"
+    ],
+    "literal": "C:/Program Files (x86)/Steam/steamapps/common/Ostranauts/Ostranauts_Data/Mods/loading_order.json",
+    "key": "GUI_CANVASSCREEN_TXT_C_PROGRAM_FILES_X86_STEAM_STEA",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlVideo",
+      "pnlOutputs",
+      "imgLCD",
+      "TextMeshPro - InputField",
+      "Text Area",
+      "Placeholder"
+    ],
+    "literal": "Enter Text...",
+    "key": "GUI_CANVASSCREEN_PLACEHOLDER_ENTER_TEXT",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlMenu",
+      "btnInterface",
+      "txt"
+    ],
+    "literal": "GENERAL",
+    "key": "GUI_CANVASSCREEN_TXT_GENERAL",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlAudio",
+      "pnlMeterMaster",
+      "pnlMeterItem (5)",
+      "lblMeter"
+    ],
+    "literal": "-",
+    "key": "GUI_CANVASSCREEN_LBLMETER_TEXT_7",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlFiles",
+      "btnMods",
+      "txt"
+    ],
+    "literal": "MODS",
+    "key": "GUI_CANVASSCREEN_TXT_MODS",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlAudio",
+      "pnlMeterMaster",
+      "pnlMeterItem (10)",
+      "lblMeter"
+    ],
+    "literal": "0",
+    "key": "GUI_CANVASSCREEN_LBLMETER_0_3",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlManual",
+      "prefabBinderTabL06",
+      "txt"
+    ],
+    "literal": "Button",
+    "key": "GUI_CANVASSCREEN_TXT_BUTTON_5",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlAudio",
+      "pnlMeterMusic",
+      "pnlMeterItem (10)",
+      "lblMeter"
+    ],
+    "literal": "0",
+    "key": "GUI_CANVASSCREEN_LBLMETER_0_4",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlVideo",
+      "pnlAO",
+      "txtAO"
+    ],
+    "literal": "8",
+    "key": "GUI_CANVASSCREEN_TXTAO_8",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlVideo",
+      "pnlOutputs",
+      "btnSave",
+      "txt"
+    ],
+    "literal": "Save",
+    "key": "GUI_CANVASSCREEN_TXT_SAVE",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlPower",
+      "lblMHDOn"
+    ],
+    "literal": "I",
+    "key": "GUI_CANVASSCREEN_LBLMHDON_I_2",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlAudio",
+      "pnlMeterMusic",
+      "pnlMeterItem",
+      "lblMeter"
+    ],
+    "literal": "10",
+    "key": "GUI_CANVASSCREEN_LBLMETER_10_2",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlAudio",
+      "pnlMeterEffects",
+      "pnlMeterItem (2)",
+      "lblMeter"
+    ],
+    "literal": "8",
+    "key": "GUI_CANVASSCREEN_LBLMETER_8",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlAudio",
+      "pnlMeterEffects",
+      "pnlMeterItem (9)",
+      "lblMeter"
+    ],
+    "literal": "-",
+    "key": "GUI_CANVASSCREEN_LBLMETER_TEXT_8",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlVideo",
+      "pnlKey",
+      "lblKey"
+    ],
+    "literal": "Key",
+    "key": "GUI_CANVASSCREEN_LBLKEY_KEY",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlAudio",
+      "pnlMeterMaster",
+      "pnlMeterItem (9)",
+      "lblMeter"
+    ],
+    "literal": "-",
+    "key": "GUI_CANVASSCREEN_LBLMETER_TEXT_9",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlAudio",
+      "pnlMeterMaster",
+      "pnlMeterItem",
+      "lblMeter"
+    ],
+    "literal": "10",
+    "key": "GUI_CANVASSCREEN_LBLMETER_10_3",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlAudio",
+      "pnlMeterMaster",
+      "pnlMeterItem (7)",
+      "lblMeter"
+    ],
+    "literal": "-",
+    "key": "GUI_CANVASSCREEN_LBLMETER_TEXT_10",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlInterface",
+      "ddautoSaveMaxCount",
+      "Label"
+    ],
+    "literal": "5",
+    "key": "GUI_CANVASSCREEN_LABEL_5",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlVideo",
+      "pnlScreenShake",
+      "lblOff"
+    ],
+    "literal": "Off",
+    "key": "GUI_CANVASSCREEN_LBLOFF_OFF",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlInterface",
+      "lblTitleAutoSave"
+    ],
+    "literal": "AUTOSAVE SETTINGS:",
+    "key": "GUI_CANVASSCREEN_LBLTITLEAUTOSAVE_AUTOSAVE_SETTINGS",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlVideo",
+      "pnlLoS",
+      "lblOff"
+    ],
+    "literal": "Off",
+    "key": "GUI_CANVASSCREEN_LBLOFF_OFF_2",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlFiles",
+      "btnScreenshots",
+      "txt"
+    ],
+    "literal": "SCREENSHOTS",
+    "key": "GUI_CANVASSCREEN_TXT_SCREENSHOTS",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlAudio",
+      "pnlMeterMusic",
+      "pnlMeterItem (2)",
+      "lblMeter"
+    ],
+    "literal": "8",
+    "key": "GUI_CANVASSCREEN_LBLMETER_8_2",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlPower",
+      "lblFlowMin"
+    ],
+    "literal": "零 / ZERO",
+    "key": "GUI_CANVASSCREEN_LBLFLOWMIN_ZERO",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlVideo",
+      "pnlParallax",
+      "lblOff"
+    ],
+    "literal": "Off",
+    "key": "GUI_CANVASSCREEN_LBLOFF_OFF_2_2",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlManual",
+      "prefabBinderTabR02",
+      "txt"
+    ],
+    "literal": "Button",
+    "key": "GUI_CANVASSCREEN_TXT_BUTTON_6",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlVideo",
+      "pnlOutputs",
+      "lblOutputs"
+    ],
+    "literal": "Custom Parameters",
+    "key": "GUI_CANVASSCREEN_LBLOUTPUTS_CUSTOM_PARAMETERS",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlAudio",
+      "pnlMeterMusic",
+      "pnlMeterItem (9)",
+      "lblMeter"
+    ],
+    "literal": "-",
+    "key": "GUI_CANVASSCREEN_LBLMETER_TEXT_11",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlVideo",
+      "pnlResolution",
+      "ddRes",
+      "Label"
+    ],
+    "literal": "1920x1080*",
+    "key": "GUI_CANVASSCREEN_LABEL_1920X1080",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlManual",
+      "prefabBinderTabR04",
+      "txt"
+    ],
+    "literal": "Button",
+    "key": "GUI_CANVASSCREEN_TXT_BUTTON_2_2",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlVideo",
+      "pnlTurbo",
+      "chkA",
+      "Background",
+      "lblOff"
+    ],
+    "literal": "A",
+    "key": "GUI_CANVASSCREEN_LBLOFF_A",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlAudio",
+      "pnlMeterMaster",
+      "pnlMeterItem (1)",
+      "lblMeter"
+    ],
+    "literal": "-",
+    "key": "GUI_CANVASSCREEN_LBLMETER_TEXT_2_2",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlInterface",
+      "lblTitle"
+    ],
+    "literal": "GENERAL SETTINGS:",
+    "key": "GUI_CANVASSCREEN_LBLTITLE_GENERAL_SETTINGS",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlVideo",
+      "pnlLoS",
+      "lblLoS"
+    ],
+    "literal": "Line of Sight",
+    "key": "GUI_CANVASSCREEN_LBLLOS_LINE_OF_SIGHT",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlVideo",
+      "lblTitle"
+    ],
+    "literal": "VIDEO SETTINGS",
+    "key": "GUI_CANVASSCREEN_LBLTITLE_VIDEO_SETTINGS",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlPower",
+      "chkCoilFwd",
+      "Background",
+      "lblOff"
+    ],
+    "literal": "面前\nFWD",
+    "key": "GUI_CANVASSCREEN_LBLOFF_FWD",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlVideo",
+      "pnlTurbo",
+      "chkB",
+      "Background",
+      "lblOff"
+    ],
+    "literal": "B",
+    "key": "GUI_CANVASSCREEN_LBLOFF_B",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlAudio",
+      "pnlMeterEffects",
+      "pnlMeterItem (8)",
+      "lblMeter"
+    ],
+    "literal": "2",
+    "key": "GUI_CANVASSCREEN_LBLMETER_2_3",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlMenu",
+      "btnControls",
+      "txt"
+    ],
+    "literal": "CONTROLS",
+    "key": "GUI_CANVASSCREEN_TXT_CONTROLS",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlFiles",
+      "btnSave1",
+      "boxFilePath",
+      "txt"
+    ],
+    "literal": "C:/Users/joshu/AppData/LocalLow/Blue Bottle Games/Ostranauts",
+    "key": "GUI_CANVASSCREEN_TXT_C_USERS_JOSHU_APPDATA_LOCALLOW_2",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlAudio",
+      "pnlMeterEffects",
+      "pnlMeterItem (7)",
+      "lblMeter"
+    ],
+    "literal": "-",
+    "key": "GUI_CANVASSCREEN_LBLMETER_TEXT_3_2",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlManual",
+      "prefabBinderTabL04",
+      "txt"
+    ],
+    "literal": "Button",
+    "key": "GUI_CANVASSCREEN_TXT_BUTTON_3_2",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlInterface",
+      "lblTitleAccessibility"
+    ],
+    "literal": "Accessibility Settings:",
+    "key": "GUI_CANVASSCREEN_LBLTITLEACCESSIBILITY_ACCESSIBILITY_SETTINGS",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlPower",
+      "pnlMeterTotal",
+      "pnlMeterItem (5)",
+      "lblMeter"
+    ],
+    "literal": "-",
+    "key": "GUI_CANVASSCREEN_LBLMETER_TEXT_4_2",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlPAX2020",
+      "pnlDesc",
+      "btnGo",
+      "On",
+      "lbl"
+    ],
+    "literal": "发射\nLAUNCH",
+    "key": "GUI_CANVASSCREEN_LBL_LAUNCH_2",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlPAX2020",
+      "pnlDesc",
+      "btnBack",
+      "On",
+      "lbl"
+    ],
+    "literal": "取消\nCANCEL",
+    "key": "GUI_CANVASSCREEN_LBL_CANCEL_2",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlAudio",
+      "lblEffects"
+    ],
+    "literal": "EFFECTS",
+    "key": "GUI_CANVASSCREEN_LBLEFFECTS_EFFECTS",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlFiles",
+      "btnManuals",
+      "boxFilePath",
+      "txt"
+    ],
+    "literal": "D:/JOB/BBG/CODE/space-prototype/Assets/StreamingAssets/images/manuals",
+    "key": "GUI_CANVASSCREEN_TXT_D_JOB_BBG_CODE_SPACE_PROTOTYPE_2",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlVideo",
+      "pnlFPS",
+      "lblFPS"
+    ],
+    "literal": "FPS Limit",
+    "key": "GUI_CANVASSCREEN_LBLFPS_FPS_LIMIT",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlAudio",
+      "pnlMeterMusic",
+      "pnlMeterItem (1)",
+      "lblMeter"
+    ],
+    "literal": "-",
+    "key": "GUI_CANVASSCREEN_LBLMETER_TEXT_5_2",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlVideo",
+      "pnlStyle",
+      "lblScreenFull"
+    ],
+    "literal": "FULLSCREEN",
+    "key": "GUI_CANVASSCREEN_LBLSCREENFULL_FULLSCREEN",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlPower",
+      "pnlMeterTotal",
+      "pnlMeterItem (4)",
+      "lblMeter"
+    ],
+    "literal": "3",
+    "key": "GUI_CANVASSCREEN_LBLMETER_3",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlAudio",
+      "pnlMeterMusic",
+      "pnlMeterItem (6)",
+      "lblMeter"
+    ],
+    "literal": "4",
+    "key": "GUI_CANVASSCREEN_LBLMETER_4_3",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "prefabGUIItemToolTip",
+    "path": [
+      "condHealthBar",
+      "txtName"
+    ],
+    "literal": "Special Ogiso Flooring Potato Flavoured with Extra Dip 50% discount SALE now! (Damaged)",
+    "key": "GUI_PREFABGUIITEMTOOLTIP_TXTNAME_SPECIAL_OGISO_FLOORING_POTATO",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlVideo",
+      "pnlAO",
+      "lblAO"
+    ],
+    "literal": "Ambient Occlusion",
+    "key": "GUI_CANVASSCREEN_LBLAO_AMBIENT_OCCLUSION",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlManual",
+      "prefabBinderTabR03",
+      "txt"
+    ],
+    "literal": "Button",
+    "key": "GUI_CANVASSCREEN_TXT_BUTTON_4_2",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlFiles",
+      "btnManuals",
+      "txt"
+    ],
+    "literal": "MANUALS",
+    "key": "GUI_CANVASSCREEN_TXT_MANUALS",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlFiles",
+      "lblTitle"
+    ],
+    "literal": "OPEN FOLDERS",
+    "key": "GUI_CANVASSCREEN_LBLTITLE_OPEN_FOLDERS",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlVideo",
+      "pnlResolution",
+      "lblRes"
+    ],
+    "literal": "Resolution",
+    "key": "GUI_CANVASSCREEN_LBLRES_RESOLUTION",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlVideo",
+      "pnlTurbo",
+      "chkB",
+      "Background",
+      "Checkmark",
+      "lblOn"
+    ],
+    "literal": "B",
+    "key": "GUI_CANVASSCREEN_LBLON_B",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlPower",
+      "lblMHDOff"
+    ],
+    "literal": "0",
+    "key": "GUI_CANVASSCREEN_LBLMHDOFF_0",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlAudio",
+      "lblMusic"
+    ],
+    "literal": "MUSIC",
+    "key": "GUI_CANVASSCREEN_LBLMUSIC_MUSIC",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlManual",
+      "prefabBinderTabR01",
+      "txt"
+    ],
+    "literal": "Button",
+    "key": "GUI_CANVASSCREEN_TXT_BUTTON_5_2",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlInterface",
+      "ddTempUnits",
+      "Label"
+    ],
+    "literal": "Celsius",
+    "key": "GUI_CANVASSCREEN_LABEL_CELSIUS",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlAudio",
+      "pnlMeterEffects",
+      "pnlMeterItem (1)",
+      "lblMeter"
+    ],
+    "literal": "-",
+    "key": "GUI_CANVASSCREEN_LBLMETER_TEXT_6_2",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlFiles",
+      "btnScreenshots",
+      "boxFilePath",
+      "txt"
+    ],
+    "literal": "C:/Users/joshu/AppData/LocalLow/Blue Bottle Games/Ostranauts/Screenshots",
+    "key": "GUI_CANVASSCREEN_TXT_C_USERS_JOSHU_APPDATA_LOCALLOW_2_2",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlAudio",
+      "pnlMeterEffects",
+      "pnlMeterItem (6)",
+      "lblMeter"
+    ],
+    "literal": "4",
+    "key": "GUI_CANVASSCREEN_LBLMETER_4_2_2",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlPower",
+      "pnlMeterTotal",
+      "pnlMeterItem (7)",
+      "lblMeter"
+    ],
+    "literal": "-",
+    "key": "GUI_CANVASSCREEN_LBLMETER_TEXT_7_2",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlPAX2020",
+      "pnlDesc",
+      "btnGo",
+      "Down",
+      "lbl"
+    ],
+    "literal": "发射\nLAUNCH",
+    "key": "GUI_CANVASSCREEN_LBL_LAUNCH_2_2",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlPAX2020",
+      "pnlDesc",
+      "btnBack",
+      "Down",
+      "lbl"
+    ],
+    "literal": "取消\nCANCEL",
+    "key": "GUI_CANVASSCREEN_LBL_CANCEL_2_2",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlAudio",
+      "pnlMeterMaster",
+      "pnlMeterItem (2)",
+      "lblMeter"
+    ],
+    "literal": "8",
+    "key": "GUI_CANVASSCREEN_LBLMETER_8_3",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlMenu",
+      "btnVideo",
+      "txt"
+    ],
+    "literal": "VIDEO",
+    "key": "GUI_CANVASSCREEN_TXT_VIDEO",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlControls",
+      "Header",
+      "lblTitle"
+    ],
+    "literal": "CONTROL SETTINGS",
+    "key": "GUI_CANVASSCREEN_LBLTITLE_CONTROL_SETTINGS",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlInterface",
+      "lblTitleBackgroundRotation"
+    ],
+    "literal": "Background Rotation",
+    "key": "GUI_CANVASSCREEN_LBLTITLEBACKGROUNDROTATION_BACKGROUND_ROTATION",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlVideo",
+      "pnlResolution",
+      "lblNote"
+    ],
+    "literal": "NOTE: FOR BEST RESULTS, USE A WIDESCREEN* ASPECT RATIO",
+    "key": "GUI_CANVASSCREEN_LBLNOTE_NOTE_FOR_BEST_RESULTS_USE_A_WI",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlFiles",
+      "btnSettings",
+      "txt"
+    ],
+    "literal": "SETTINGS",
+    "key": "GUI_CANVASSCREEN_TXT_SETTINGS",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlInterface",
+      "ddDateFormat",
+      "Label"
+    ],
+    "literal": "ISO 8601: YYYY-MM-DD",
+    "key": "GUI_CANVASSCREEN_LABEL_ISO_8601_YYYY_MM_DD",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlVideo",
+      "pnlKey",
+      "lblNote"
+    ],
+    "literal": "To work Custom Parameters must be formatted correctly as Key Value pairs separated by a colon. For example:\n\nKey:Value\nKey2:Value2",
+    "key": "GUI_CANVASSCREEN_LBLNOTE_TO_WORK_CUSTOM_PARAMETERS_MUST",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlMenu",
+      "btnAudio",
+      "txt"
+    ],
+    "literal": "AUDIO\n",
+    "key": "GUI_CANVASSCREEN_TXT_AUDIO",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlInterface",
+      "lblTempUnits"
+    ],
+    "literal": "TEMPERATURE UNITS",
+    "key": "GUI_CANVASSCREEN_LBLTEMPUNITS_TEMPERATURE_UNITS",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlFiles",
+      "btnAssets",
+      "txt"
+    ],
+    "literal": "ASSETS",
+    "key": "GUI_CANVASSCREEN_TXT_ASSETS",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlAudio",
+      "pnlMeterEffects",
+      "pnlMeterItem (3)",
+      "lblMeter"
+    ],
+    "literal": "-",
+    "key": "GUI_CANVASSCREEN_LBLMETER_TEXT_12",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlVideo",
+      "pnlStyle",
+      "lblScreen"
+    ],
+    "literal": "Window Style",
+    "key": "GUI_CANVASSCREEN_LBLSCREEN_WINDOW_STYLE",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlVideo",
+      "pnlLoS",
+      "lblOn"
+    ],
+    "literal": "On\n",
+    "key": "GUI_CANVASSCREEN_LBLON_ON_3",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlManual",
+      "prefabBinderTabL01",
+      "txt"
+    ],
+    "literal": "Button",
+    "key": "GUI_CANVASSCREEN_TXT_BUTTON_7",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlPower",
+      "lblFlow"
+    ],
+    "literal": "流量\nFLOW",
+    "key": "GUI_CANVASSCREEN_LBLFLOW_FLOW",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlAudio",
+      "pnlMeterMaster",
+      "pnlMeterItem (3)",
+      "lblMeter"
+    ],
+    "literal": "-",
+    "key": "GUI_CANVASSCREEN_LBLMETER_TEXT_2_3",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlInterface",
+      "ddFlickerAmount",
+      "Template",
+      "Viewport",
+      "Content",
+      "Item",
+      "Item Label"
+    ],
+    "literal": "Option A",
+    "key": "GUI_CANVASSCREEN_ITEM_LABEL_OPTION_A_6",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlInterface",
+      "lblautoSaveMaxCount"
+    ],
+    "literal": "Max Autosaves Count",
+    "key": "GUI_CANVASSCREEN_LBLAUTOSAVEMAXCOUNT_MAX_AUTOSAVES_COUNT",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlVideo",
+      "pnlTurbo",
+      "lblTurbo"
+    ],
+    "literal": "Turbo\n",
+    "key": "GUI_CANVASSCREEN_LBLTURBO_TURBO",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlPower",
+      "pnlMeterTotal",
+      "pnlMeterItem (1)",
+      "lblMeter"
+    ],
+    "literal": "-",
+    "key": "GUI_CANVASSCREEN_LBLMETER_TEXT_3_3",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlPower",
+      "chkCoilFwd",
+      "Background",
+      "Checkmark",
+      "lblOn"
+    ],
+    "literal": "前置\nFWD",
+    "key": "GUI_CANVASSCREEN_LBLON_FWD",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlManual",
+      "prefabBinderTabL05",
+      "txt"
+    ],
+    "literal": "Button",
+    "key": "GUI_CANVASSCREEN_TXT_BUTTON_2_3",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlAudio",
+      "pnlMeterMusic",
+      "pnlMeterItem (8)",
+      "lblMeter"
+    ],
+    "literal": "2",
+    "key": "GUI_CANVASSCREEN_LBLMETER_2_4",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlManual",
+      "pnlZoomed",
+      "btnPagePrev",
+      "txt"
+    ],
+    "literal": "Button",
+    "key": "GUI_CANVASSCREEN_TXT_BUTTON_3_3",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlCredits",
+      "scrL",
+      "Viewport",
+      "txtBodyL"
+    ],
+    "literal": "Main Credits",
+    "key": "GUI_CANVASSCREEN_TXTBODYL_MAIN_CREDITS",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlControls",
+      "Header",
+      "DeviceSelection",
+      "bg",
+      "txtCurrentDevice"
+    ],
+    "literal": "Keyboard",
+    "key": "GUI_CANVASSCREEN_TXTCURRENTDEVICE_KEYBOARD",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlManual",
+      "pnlZoomed",
+      "btnPageNext",
+      "txt"
+    ],
+    "literal": "Button",
+    "key": "GUI_CANVASSCREEN_TXT_BUTTON_8",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlInterface",
+      "lblTitleSaveOnExit"
+    ],
+    "literal": "Save on Close",
+    "key": "GUI_CANVASSCREEN_LBLTITLESAVEONEXIT_SAVE_ON_CLOSE",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlControls",
+      "Header",
+      "DeviceSelection",
+      "ButtonRight",
+      "Text (TMP)"
+    ],
+    "literal": "Button",
+    "key": "GUI_CANVASSCREEN_TEXT_TMP_BUTTON",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlInterface",
+      "btnResetSettings",
+      "txt"
+    ],
+    "literal": "Reset Settings",
+    "key": "GUI_CANVASSCREEN_TXT_RESET_SETTINGS",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlControls",
+      "Header",
+      "DeviceSelection",
+      "ToggleLock",
+      "Text (TMP)"
+    ],
+    "literal": "Lock Glyphs",
+    "key": "GUI_CANVASSCREEN_TEXT_TMP_LOCK_GLYPHS",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlControls",
+      "Header",
+      "DeviceSelection",
+      "ButtonLeft",
+      "Text (TMP)"
+    ],
+    "literal": "Button",
+    "key": "GUI_CANVASSCREEN_TEXT_TMP_BUTTON_2",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlInterface",
+      "chkToggleSaveOnExit",
+      "Background",
+      "Right",
+      "txtLoading"
+    ],
+    "literal": "OFF",
+    "key": "GUI_CANVASSCREEN_TXTLOADING_OFF_2",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlInterface",
+      "chkToggleSaveOnExit",
+      "Background",
+      "Left",
+      "txtLoading"
+    ],
+    "literal": "ON",
+    "key": "GUI_CANVASSCREEN_TXTLOADING_ON_2",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlOptions",
+      "pnl",
+      "pnlControls",
+      "Footer",
+      "btnReset",
+      "txt"
+    ],
+    "literal": "Reset",
+    "key": "GUI_CANVASSCREEN_TXT_RESET",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "CanvasScreen",
+    "path": [
+      "pnlCredits",
+      "txtTitle"
+    ],
+    "literal": "Credits",
+    "key": "GUI_CANVASSCREEN_TXTTITLE_CREDITS",
+    "sourceFile": "level0",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "LoadingScreen",
+    "path": [
+      "pnlBackground",
+      "txtLoading"
+    ],
+    "literal": "Loading...",
+    "key": "GUI_LOADINGSCREEN_TXTLOADING_LOADING",
+    "sourceFile": "level1",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "LoadingScreen",
+    "path": [
+      "pnlBackground",
+      "txtInfo"
+    ],
+    "literal": "Gameplay Tip:\n\nGas values only show at the cursor when they are at dangerours levels.\n\nPressing 'G' toggles on gas values all the time.",
+    "key": "GUI_LOADINGSCREEN_TXTINFO_GAMEPLAY_TIP_GAS_VALUES_ONLY_S",
+    "sourceFile": "level1",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "LoadingScreen",
+    "path": [
+      "pnlBackground",
+      "txtAttribution"
+    ],
+    "literal": "Ship_Interior - Charlie Martin",
+    "key": "GUI_LOADINGSCREEN_TXTATTRIBUTION_SHIP_INTERIOR_CHARLIE_MARTIN",
+    "sourceFile": "level1",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "LoadingScreen",
+    "path": [
+      "pnlEAMessage",
+      "txtFeedbackTitle"
+    ],
+    "literal": "We Love Feedback!",
+    "key": "GUI_LOADINGSCREEN_TXTFEEDBACKTITLE_WE_LOVE_FEEDBACK",
+    "sourceFile": "level1",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "LoadingScreen",
+    "path": [
+      "pnlEAMessage",
+      "txtFeedback1"
+    ],
+    "literal": "We're active on Discord and other communities, where players help us shape the game experience.",
+    "key": "GUI_LOADINGSCREEN_TXTFEEDBACK1_WE_RE_ACTIVE_ON_DISCORD_AND_OT",
+    "sourceFile": "level1",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "LoadingScreen",
+    "path": [
+      "pnlEAMessage",
+      "txtFeedback2"
+    ],
+    "literal": "You can find links to these resources on the main menu, and in-game through the Options menu.",
+    "key": "GUI_LOADINGSCREEN_TXTFEEDBACK2_YOU_CAN_FIND_LINKS_TO_THESE_RE",
+    "sourceFile": "level1",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "LoadingScreen",
+    "path": [
+      "pnlEAMessage",
+      "txtWhatsNew"
+    ],
+    "literal": "<indent=2.5em>\\u2022 New Plot and Endgames\n\\u2022 Bounty System\n\\u2022 New Station Maps\n\\u2022 Workshop Support\n\\u2022 Achievements</indent>",
+    "key": "GUI_LOADINGSCREEN_TXTWHATSNEW_INDENT_2_5EM_U2022_NEW_PLOT_AN",
+    "sourceFile": "level1",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "LoadingScreen",
+    "path": [
+      "pnlEAMessage",
+      "txtClickAnywhere"
+    ],
+    "literal": "( Click Anywhere to Dismiss )",
+    "key": "GUI_LOADINGSCREEN_TXTCLICKANYWHERE_CLICK_ANYWHERE_TO_DISMISS",
+    "sourceFile": "level1",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "LoadingScreen",
+    "path": [
+      "pnlEAMessage",
+      "txtWelcome"
+    ],
+    "literal": "Welcome To",
+    "key": "GUI_LOADINGSCREEN_TXTWELCOME_WELCOME_TO",
+    "sourceFile": "level1",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "LoadingScreen",
+    "path": [
+      "pnlEAMessage",
+      "txtEA"
+    ],
+    "literal": "Full Release!",
+    "key": "GUI_LOADINGSCREEN_TXTEA_FULL_RELEASE",
+    "sourceFile": "level1",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "LoadingScreen",
+    "path": [
+      "pnlEAMessage",
+      "txtWhatsNewTitle"
+    ],
+    "literal": "What's New?",
+    "key": "GUI_LOADINGSCREEN_TXTWHATSNEWTITLE_WHAT_S_NEW",
+    "sourceFile": "level1",
+    "approved": false
+  },
+  {
+    "kind": "scene",
     "root": "Canvas Stack",
     "path": [
       "Canvas Quit",
@@ -8877,6 +11772,1241 @@
     "literal": "-",
     "key": "GUI_CANVAS_STACK_TXTBOUNTY_TEXT",
     "sourceFile": "level2",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "Button",
+      "TextMeshPro Text"
+    ],
+    "literal": "TREE / NODE",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_TREE_NODE",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "NodeSearchResults",
+      "ResultsPane",
+      "GameObject",
+      "TextMeshPro Text"
+    ],
+    "literal": "Displaying 25 of 100 Matches",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_DISPLAYING_25_OF_100_MATCHES",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "UnlockGate",
+      "GameObject",
+      "UnlockGateFieldGroup A",
+      "TextMeshPro - InputField",
+      "Text Area",
+      "Placeholder"
+    ],
+    "literal": "Enter text...",
+    "key": "GUI_CANVAS_PLACEHOLDER_ENTER_TEXT",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "UIStatusText",
+      "SaveOnClose",
+      "TextMeshPro Text"
+    ],
+    "literal": "Save on quit",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_SAVE_ON_QUIT",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "SaveLayout",
+      "GameObject",
+      "TextMeshPro Text"
+    ],
+    "literal": "Example output",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_EXAMPLE_OUTPUT",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "UnlockGate",
+      "GameObject",
+      "UnlockGateFieldGroup CT",
+      "TextMeshPro - InputField",
+      "Text Area",
+      "Placeholder"
+    ],
+    "literal": "Enter text...",
+    "key": "GUI_CANVAS_PLACEHOLDER_ENTER_TEXT_2",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "UnlockGate",
+      "GameObject (1)",
+      "TextMeshPro Text (1)"
+    ],
+    "literal": "GO!",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_1_GO",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "UnlockGate",
+      "GameObject",
+      "UnlockGateFieldGroup CompletionA",
+      "TextMeshPro Text"
+    ],
+    "literal": "Cond A Completed",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_COND_A_COMPLETED",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "UnlockGate",
+      "GameObject (2)",
+      "TextMeshPro Text"
+    ],
+    "literal": "X",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_X",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "Toggle",
+      "TextMeshPro Text"
+    ],
+    "literal": "Load last layout?",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_LOAD_LAST_LAYOUT",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "LoadLayout",
+      "GameObject (2)",
+      "TextMeshPro Text"
+    ],
+    "literal": "X",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_X_2",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "SaveLayout",
+      "SaveAs",
+      "TextMeshPro Text"
+    ],
+    "literal": "Save as",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_SAVE_AS",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "NodeViewParent",
+      "TextMeshPro Text (1)"
+    ],
+    "literal": "Data class:",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_1_DATA_CLASS",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "UnlockGate",
+      "GameObject (1)",
+      "TextMeshPro Text"
+    ],
+    "literal": "GO!",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_GO",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "NodeViewParent",
+      "TextMeshPro Text"
+    ],
+    "literal": "What properties should be visible?",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_WHAT_PROPERTIES_SHOULD_BE_VISI",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "UnlockGate",
+      "GameObject",
+      "UnlockGateFieldGroup CT",
+      "TextMeshPro Text"
+    ],
+    "literal": "B CT Test Us",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_B_CT_TEST_US",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "SaveLayout",
+      "Save (1)",
+      "TextMeshPro Text"
+    ],
+    "literal": "Save",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_SAVE",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "SaveLayout",
+      "SaveFileInput",
+      "TextMeshPro Text"
+    ],
+    "literal": "Save As:",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_SAVE_AS_2",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "LoadLayout",
+      "ModularSearchlayout",
+      "TextMeshPro Text"
+    ],
+    "literal": "Load layout:",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_LOAD_LAYOUT",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "SaveLayout",
+      "New",
+      "TextMeshPro Text"
+    ],
+    "literal": "NEW",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_NEW",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "UIStatusText"
+    ],
+    "literal": "Layout Filename   |  Save On Close: ON",
+    "key": "GUI_CANVAS_UISTATUSTEXT_LAYOUT_FILENAME_SAVE_ON_CLOSE",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "filterlabel (1)"
+    ],
+    "literal": "node search:",
+    "key": "GUI_CANVAS_FILTERLABEL_1_NODE_SEARCH",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "UnlockGate",
+      "GameObject",
+      "UnlockGateFieldGroup B",
+      "TextMeshPro - InputField",
+      "Text Area",
+      "Placeholder"
+    ],
+    "literal": "Enter text...",
+    "key": "GUI_CANVAS_PLACEHOLDER_ENTER_TEXT_3",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "SaveLayout",
+      "Clear",
+      "TextMeshPro Text"
+    ],
+    "literal": "CLEAR",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_CLEAR",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "UnlockGate",
+      "GameObject",
+      "UnlockGateFieldGroup CompletionA",
+      "TextMeshPro - InputField",
+      "Text Area",
+      "Placeholder"
+    ],
+    "literal": "Enter text...",
+    "key": "GUI_CANVAS_PLACEHOLDER_ENTER_TEXT_4",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "PrefabsHiddenOnRun",
+      "MainUIPrefabButton",
+      "TextMeshPro Text"
+    ],
+    "literal": "Main UI Button",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_MAIN_UI_BUTTON",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "RebuildToggle",
+      "TextMeshPro Text"
+    ],
+    "literal": "Rebuild layout",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_REBUILD_LAYOUT",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "SaveLayout",
+      "GameObject (2)",
+      "TextMeshPro Text (1)"
+    ],
+    "literal": "X",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_1_X",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "UnlockGate",
+      "GameObject",
+      "UnlockGateFieldGroup Completion Loot",
+      "TextMeshPro - InputField",
+      "Text Area",
+      "Placeholder"
+    ],
+    "literal": "Enter text...",
+    "key": "GUI_CANVAS_PLACEHOLDER_ENTER_TEXT_5",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "UnlockGate",
+      "Image",
+      "interior",
+      "layout",
+      "TextMeshPro Text (2)"
+    ],
+    "literal": "- A Loot not found. Will create JSON for A Loot",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_2_A_LOOT_NOT_FOUND_WILL_CREATE_J",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "filterlabel"
+    ],
+    "literal": "type filter:",
+    "key": "GUI_CANVAS_FILTERLABEL_TYPE_FILTER",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "NodeViewParent",
+      "TextMeshPro Text (2)"
+    ],
+    "literal": "class name",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_2_CLASS_NAME",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "UnlockGate",
+      "GameObject",
+      "UnlockGateFieldGroup A",
+      "TextMeshPro Text"
+    ],
+    "literal": "Interaction A:",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_INTERACTION_A",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "LoadLayout",
+      "GameObject (2)",
+      "TextMeshPro Text (1)"
+    ],
+    "literal": "X",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_1_X_2",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "UnlockGate",
+      "GameObject (2)",
+      "TextMeshPro Text (1)"
+    ],
+    "literal": "X",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_1_X_3",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "SaveLayout",
+      "Save (1)",
+      "CurrentFile"
+    ],
+    "literal": "Current File Name",
+    "key": "GUI_CANVAS_CURRENTFILE_CURRENT_FILE_NAME",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "TextMeshPro Text"
+    ],
+    "literal": "Loading JSON",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_LOADING_JSON",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "UnlockGate",
+      "GameObject",
+      "UnlockGateFieldGroup B",
+      "TextMeshPro Text"
+    ],
+    "literal": "Interaction B:",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_INTERACTION_B",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "SaveLayout",
+      "GameObject (2)",
+      "TextMeshPro Text"
+    ],
+    "literal": "X",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_X_3",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "UnlockGate",
+      "TextMeshPro Text"
+    ],
+    "literal": "INTERACTION A UNLOCKS INTERACTION B",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_INTERACTION_A_UNLOCKS_INTERACT",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "UnlockGate",
+      "Image",
+      "interior",
+      "layout",
+      "TextMeshPro Text (4)"
+    ],
+    "literal": "- Interaction B CT Test Us not found. Will create CT Test",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_4_INTERACTION_B_CT_TEST_US_NOT_F",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "UnlockGate",
+      "Image",
+      "interior",
+      "layout",
+      "TextMeshPro Text"
+    ],
+    "literal": "- Interaction A not found",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_INTERACTION_A_NOT_FOUND",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "CopyBar",
+      "Text (TMP)"
+    ],
+    "literal": "Copied: Lorem Ipsum",
+    "key": "GUI_CANVAS_TEXT_TMP_COPIED_LOREM_IPSUM",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "UnlockGate",
+      "Image",
+      "interior",
+      "layout",
+      "TextMeshPro Text (1)"
+    ],
+    "literal": "- Completion Cond A not found. Will create JSON for Completion Cond A",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_1_COMPLETION_COND_A_NOT_FOUND_WI",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "UnlockGate",
+      "GameObject",
+      "UnlockGateFieldGroup Completion Loot",
+      "TextMeshPro Text"
+    ],
+    "literal": "A Loot",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_A_LOOT",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "UnlockGate",
+      "Image",
+      "interior",
+      "layout",
+      "TextMeshPro Text (3)"
+    ],
+    "literal": "- Interaction B not found",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_3_INTERACTION_B_NOT_FOUND",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "NodeSearchResults",
+      "SearchResult",
+      "TextMeshPro Text"
+    ],
+    "literal": "Search Result",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_SEARCH_RESULT",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "PrefabsHiddenOnRun",
+      "NodeWidget",
+      "Viewport",
+      "Header",
+      "Tabs",
+      "Nulls",
+      "TextMeshPro Text"
+    ],
+    "literal": "Nulls",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_NULLS",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "PrefabsHiddenOnRun",
+      "NodeWidget",
+      "Viewport",
+      "Header",
+      "Title",
+      "TextMeshPro Text"
+    ],
+    "literal": "EXAMPLE TITLE WITH VERY VERY LONG HEADLINE",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_EXAMPLE_TITLE_WITH_VERY_VERY_L",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "PrefabsHiddenOnRun",
+      "NodeWidget",
+      "Viewport",
+      "Header",
+      "Class and file (1)",
+      "File text"
+    ],
+    "literal": "FILE",
+    "key": "GUI_CANVAS_FILE_TEXT_FILE",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "NewNodeRoot",
+      "GameObject",
+      "TextMeshPro Text (1)"
+    ],
+    "literal": "Type",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_1_TYPE",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "PrefabsHiddenOnRun",
+      "PropParentPrefab",
+      "ArrayManip",
+      "Button",
+      "TextMeshPro Text"
+    ],
+    "literal": "+",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_TEXT",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "PrefabsHiddenOnRun",
+      "NodeDefaultPropertyGridElementPrefab",
+      "Property"
+    ],
+    "literal": "Property",
+    "key": "GUI_CANVAS_PROPERTY_PROPERTY",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "PrefabsHiddenOnRun",
+      "PropParentPrefab",
+      "ArrayManip",
+      "Button (1)",
+      "TextMeshPro Text"
+    ],
+    "literal": "—",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_TEXT_2",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "NewNodeRoot",
+      "GameObject",
+      "TextMeshPro Text (2)"
+    ],
+    "literal": "File",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_2_FILE",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "PrefabsHiddenOnRun",
+      "NodeWidget",
+      "Viewport",
+      "Header",
+      "Title",
+      "TextMeshPro Text"
+    ],
+    "literal": "*CHANGES PENDING*",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_CHANGES_PENDING",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "PrefabsHiddenOnRun",
+      "PropParentPrefab",
+      "PropParent",
+      "prop"
+    ],
+    "literal": "Property",
+    "key": "GUI_CANVAS_PROP_PROPERTY",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "NodeViewParent",
+      "SearchableInputField",
+      "SearchRoot",
+      "ResultsPane",
+      "GameObject",
+      "TextMeshPro Text"
+    ],
+    "literal": "Displaying 25 of 100 Matches",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_DISPLAYING_25_OF_100_MATCHES_2",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "SearchableInputField",
+      "SearchRoot",
+      "ResultsPane",
+      "GameObject",
+      "TextMeshPro Text"
+    ],
+    "literal": "Displaying 25 of 100 Matches",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_DISPLAYING_25_OF_100_MATCHES_3",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "PrefabsHiddenOnRun",
+      "NodeWidget",
+      "Viewport",
+      "Header",
+      "Tabs",
+      "MainHeading",
+      "TextMeshPro Text"
+    ],
+    "literal": "Main",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_MAIN",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "NewNodeRoot",
+      "GameObject",
+      "SearchableInputField (2)",
+      "SearchRoot",
+      "ResultsPane",
+      "GameObject",
+      "TextMeshPro Text"
+    ],
+    "literal": "Displaying 25 of 100 Matches",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_DISPLAYING_25_OF_100_MATCHES_4",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "PrefabsHiddenOnRun",
+      "NodeWidget",
+      "Viewport",
+      "Header",
+      "Class and file (1)",
+      "File text",
+      "Button",
+      "PosParent",
+      "TextMeshPro Text"
+    ],
+    "literal": "strNAME",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_STRNAME",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "PrefabsHiddenOnRun",
+      "NodeWidget",
+      "Viewport",
+      "Header",
+      "Tabs",
+      "Niche",
+      "TextMeshPro Text"
+    ],
+    "literal": "Niche",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_NICHE",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "PrefabsHiddenOnRun",
+      "NodeWidget",
+      "Viewport",
+      "Header",
+      "Class and file",
+      "ClassText"
+    ],
+    "literal": "INTERNAL DATA TYPE",
+    "key": "GUI_CANVAS_CLASSTEXT_INTERNAL_DATA_TYPE",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "NewNodeRoot",
+      "GameObject",
+      "SearchableInputField (1)",
+      "SearchRoot",
+      "ResultsPane",
+      "GameObject",
+      "TextMeshPro Text"
+    ],
+    "literal": "Displaying 25 of 100 Matches",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_DISPLAYING_25_OF_100_MATCHES_5",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "PrefabsHiddenOnRun",
+      "StringList",
+      "StringArrayGroupPrefab",
+      "ArrayManip",
+      "Button",
+      "TextMeshPro Text"
+    ],
+    "literal": "+",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_TEXT_3",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "PrefabsHiddenOnRun",
+      "ModularSearchPrefab",
+      "SearchRoot",
+      "ResultsPane",
+      "GameObject",
+      "TextMeshPro Text"
+    ],
+    "literal": "Displaying 25 of 100 Matches",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_DISPLAYING_25_OF_100_MATCHES_6",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "LoadLayout",
+      "ModularSearchlayout",
+      "SearchRoot",
+      "ResultsPane",
+      "GameObject",
+      "TextMeshPro Text"
+    ],
+    "literal": "Displaying 25 of 100 Matches",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_DISPLAYING_25_OF_100_MATCHES_7",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "PrefabsHiddenOnRun",
+      "NodeWidget",
+      "Viewport",
+      "Header",
+      "Class and file (1)",
+      "ClassText"
+    ],
+    "literal": "INTERNAL DATA TYPE",
+    "key": "GUI_CANVAS_CLASSTEXT_INTERNAL_DATA_TYPE_2",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "PrefabsHiddenOnRun",
+      "NodeWidget",
+      "Viewport",
+      "Header",
+      "Class and file",
+      "File text"
+    ],
+    "literal": "FILE",
+    "key": "GUI_CANVAS_FILE_TEXT_FILE_2",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "NewNodeRoot",
+      "GameObject",
+      "Image",
+      "TextMeshPro Text"
+    ],
+    "literal": "GO!",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_GO_2",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "PrefabsHiddenOnRun",
+      "StringList",
+      "StringArrayGroupPrefab",
+      "ArrayManip",
+      "Button (1)",
+      "TextMeshPro Text"
+    ],
+    "literal": "—",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_TEXT_4",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "NewNodeRoot",
+      "GameObject",
+      "SearchableInputField",
+      "SearchRoot",
+      "ResultsPane",
+      "GameObject",
+      "TextMeshPro Text"
+    ],
+    "literal": "Displaying 25 of 100 Matches",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_DISPLAYING_25_OF_100_MATCHES_8",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "NewNodeRoot",
+      "GameObject",
+      "TextMeshPro Text"
+    ],
+    "literal": "Name",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_NAME",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "NewNodeRoot",
+      "TextMeshPro Text"
+    ],
+    "literal": "NEW NODE CREATION KIT",
+    "key": "GUI_CANVAS_TEXTMESHPRO_TEXT_NEW_NODE_CREATION_KIT",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas",
+    "path": [
+      "PrefabsHiddenOnRun",
+      "PropParentPrefab",
+      "ValParent",
+      "Input",
+      "Text Area",
+      "Placeholder"
+    ],
+    "literal": "Enter text...",
+    "key": "GUI_CANVAS_PLACEHOLDER_ENTER_TEXT_6",
+    "sourceFile": "level3",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas End",
+    "path": [
+      "pnlCredits",
+      "txtTitle"
+    ],
+    "literal": "Credits",
+    "key": "GUI_CANVAS_END_TXTTITLE_CREDITS",
+    "sourceFile": "level4",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas End",
+    "path": [
+      "pnlCredits",
+      "scrL",
+      "Viewport",
+      "txtBodyL"
+    ],
+    "literal": "Main Credits",
+    "key": "GUI_CANVAS_END_TXTBODYL_MAIN_CREDITS",
+    "sourceFile": "level4",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas End",
+    "path": [
+      "prefabBtnRoundRed",
+      "txt"
+    ],
+    "literal": "MAIN MENU",
+    "key": "GUI_CANVAS_END_TXT_MAIN_MENU",
+    "sourceFile": "level4",
+    "approved": false
+  },
+  {
+    "kind": "scene",
+    "root": "Canvas End",
+    "path": [
+      "endingroot",
+      "slidetext"
+    ],
+    "literal": "hello!",
+    "key": "GUI_CANVAS_END_SLIDETEXT_HELLO",
+    "sourceFile": "level4",
+    "approved": false
+  },
+  {
+    "kind": "asset",
+    "root": "GUILoadMenu",
+    "path": [
+      "CloudSpace",
+      "lblSteamCloud"
+    ],
+    "literal": "Steam Cloud:",
+    "key": "GUI_GUILOADMENU_LBLSTEAMCLOUD_STEAM_CLOUD",
+    "sourceFile": "sharedassets0.assets",
+    "approved": false
+  },
+  {
+    "kind": "asset",
+    "root": "GUILoadMenu",
+    "path": [
+      "ChangePath",
+      "lblPath"
+    ],
+    "literal": "Save path:",
+    "key": "GUI_GUILOADMENU_LBLPATH_SAVE_PATH",
+    "sourceFile": "sharedassets0.assets",
+    "approved": false
+  },
+  {
+    "kind": "asset",
+    "root": "GUISaveMenu",
+    "path": [
+      "txtTitle"
+    ],
+    "literal": "Save Game",
+    "key": "GUI_GUISAVEMENU_TXTTITLE_SAVE_GAME",
+    "sourceFile": "sharedassets0.assets",
+    "approved": false
+  },
+  {
+    "kind": "asset",
+    "root": "Canvas Info",
+    "path": [
+      "Offset",
+      "DynamicCanvasO253-List&Controls",
+      "Parent",
+      "MainWindowParent",
+      "BGMimicForLayeringText",
+      "HeaderPos1Text"
+    ],
+    "literal": "WE MAY NEED A STYLE GUIDE ABOUT NOWISH",
+    "key": "GUI_CANVAS_INFO_HEADERPOS1TEXT_WE_MAY_NEED_A_STYLE_GUIDE_ABOU",
+    "sourceFile": "sharedassets0.assets",
+    "approved": false
+  },
+  {
+    "kind": "asset",
+    "root": "GUIConfirmDialogue",
+    "path": [
+      "ConfirmDeletion",
+      "ButtonContainer",
+      "btnCancel",
+      "Text"
+    ],
+    "literal": "Cancel",
+    "key": "GUI_GUICONFIRMDIALOGUE_TEXT_CANCEL",
+    "sourceFile": "sharedassets0.assets",
+    "approved": false
+  },
+  {
+    "kind": "asset",
+    "root": "GUISaveMenu",
+    "path": [
+      "TopPanel",
+      "txtCreateNew"
+    ],
+    "literal": "Create New Save:",
+    "key": "GUI_GUISAVEMENU_TXTCREATENEW_CREATE_NEW_SAVE",
+    "sourceFile": "sharedassets0.assets",
+    "approved": false
+  },
+  {
+    "kind": "asset",
+    "root": "NodeWidget",
+    "path": [
+      "Viewport",
+      "Header",
+      "Tabs",
+      "MainHeading",
+      "TextMeshPro Text"
+    ],
+    "literal": "Main",
+    "key": "GUI_NODEWIDGET_TEXTMESHPRO_TEXT_MAIN",
+    "sourceFile": "sharedassets3.assets",
+    "approved": false
+  },
+  {
+    "kind": "asset",
+    "root": "NodeWidget",
+    "path": [
+      "Viewport",
+      "Header",
+      "Class and file (1)",
+      "File text",
+      "Button",
+      "PosParent",
+      "TextMeshPro Text"
+    ],
+    "literal": "strNAME",
+    "key": "GUI_NODEWIDGET_TEXTMESHPRO_TEXT_STRNAME",
+    "sourceFile": "sharedassets3.assets",
     "approved": false
   }
 ]

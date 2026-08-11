@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 
@@ -13,6 +14,17 @@ namespace OstraI18n
 
         private void OnEnable()
         {
+            Apply();
+            // Компонент часто добавляется к уже активному объекту (PrefabBinder находит
+            // его через поллинг уже после инстанцирования) — собственный Start() объекта
+            // может выполниться ПОСЛЕ нашего OnEnable в том же кадре и перезаписать text
+            // родным значением. Повторное применение в конце кадра переживает эту гонку.
+            StartCoroutine(ApplyAtEndOfFrame());
+        }
+
+        private IEnumerator ApplyAtEndOfFrame()
+        {
+            yield return new WaitForEndOfFrame();
             Apply();
         }
 

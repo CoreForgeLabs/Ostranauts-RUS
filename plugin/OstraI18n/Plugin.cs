@@ -20,6 +20,7 @@ namespace OstraI18n
         public const string Name = "OstraI18n";
         public const string Version = "0.1.3";
 
+        internal static Plugin Instance;
         internal static ManualLogSource Log;
         internal static ConfigEntry<bool> Enabled;
         internal static ConfigEntry<string> Language;
@@ -29,6 +30,7 @@ namespace OstraI18n
 
         private void Awake()
         {
+            Instance = this;
             Application.runInBackground = true; // session-0/headless: keep player loop pumping without window focus
             Log = Logger;
             Enabled = Config.Bind("General", "Enabled", true, "Master switch. false = vanilla game.");
@@ -51,6 +53,10 @@ namespace OstraI18n
                     LiteralPatcher.ApplyAll(new Harmony(GUID + ".literals"));
             }
             catch (Exception ex) { Log.LogError("[i18n] literals failed: " + ex); }
+            try { PrefabBinder.BindSceneSlice(); }
+            catch (Exception ex) { Log.LogError("[i18n] prefab slice failed: " + ex); }
+            try { PrefabBinder.BindAssetSlice(); }
+            catch (Exception ex) { Log.LogError("[i18n] asset slice failed: " + ex); }
             Log.LogInfo("[i18n] OstraI18n " + Version + ": " + ok + " patches ok, " + failed + " failed/skipped, lang=" + Language.Value);
 
             unitySync = SynchronizationContext.Current;
