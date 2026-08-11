@@ -30,7 +30,12 @@ node_sets = [(label, json.loads(gen.get_nodes_as_json(asm, cls))) for label, asm
 def try_read_text(o):
     for label, nodes in node_sets:
         try:
-            t = o.read_typetree(nodes=nodes, check_read=False)
+            # check_read=True: если объект не соответствует этой схеме, чтение должно
+            # разойтись с фактическим размером байт и упасть быстрым исключением, а не
+            # интерпретировать чужие байты как валидные (мусорное число как счётчик
+            # элементов массива приводило к попыткам прочитать гигантские коллекции —
+            # это и было причиной катастрофического замедления с check_read=False).
+            t = o.read_typetree(nodes=nodes, check_read=True)
         except Exception:
             continue
         if not isinstance(t, dict):
@@ -150,19 +155,26 @@ def analyze(fname, kind, out_entries, seen_keys):
     cache = make_caches()
     found = 0
     checked = 0
+    time_in_read_text = 0.0
+    time_in_full_path = 0.0
     t0 = time.time()
     for o in env.objects:
         if o.type.name != "MonoBehaviour":
             continue
         checked += 1
-        if checked % 2000 == 0:
+        if checked % 200 == 0:
             print(f"    ...проверено {checked} MonoBehaviour, найдено текста {found}, "
-                  f"{time.time()-t0:.1f}с")
+                  f"{time.time()-t0:.1f}с общее | read_text: {time_in_read_text:.1f}с | "
+                  f"full_path: {time_in_full_path:.1f}с | кэш пути: {len(cache['path'])}")
+        _t1 = time.time()
         t = try_read_text(o)
+        time_in_read_text += time.time() - _t1
         if t is None:
             continue
         go_pid = t.get("m_GameObject", {}).get("m_PathID")
+        _t1 = time.time()
         segs = full_path(objs, go_pid, cache)
+        time_in_full_path += time.time() - _t1
         if not segs:
             continue
         root, rest = segs[0], segs[1:]
@@ -189,10 +201,17 @@ def analyze(fname, kind, out_entries, seen_keys):
 
 entries = []
 seen_keys = set()
-for f in ("level0", "level1", "level2", "level3", "level4"):
+SCENE_FILES = ("level0", "level1", "level2", "level3", "level4")
+ASSET_FILES = ("resources.assets", "sharedassets0.assets", "sharedassets1.assets",
+               "sharedassets2.assets", "sharedassets3.assets", "sharedassets4.assets")
+_only = os.environ.get("EXTRACT_ONLY")  # для быстрой диагностики: EXTRACT_ONLY=level2
+for f in SCENE_FILES:
+    if _only and f != _only:
+        continue
     analyze(f, "scene", entries, seen_keys)
-for f in ("resources.assets", "sharedassets0.assets", "sharedassets1.assets",
-          "sharedassets2.assets", "sharedassets3.assets", "sharedassets4.assets"):
+for f in ASSET_FILES:
+    if _only and f != _only:
+        continue
     analyze(f, "asset", entries, seen_keys)
 
 os.makedirs(os.path.dirname(OUT), exist_ok=True)

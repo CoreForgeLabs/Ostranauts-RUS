@@ -64,9 +64,25 @@ static class Program
             System.IO.Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "..", "..", "langs"));
         Console.WriteLine("  langs: " + langsDir);
         var packRu = PackLoader.Load(langsDir, "ru");
-        Eq(packRu.Get("GUI_CHARGEN_AT_LARGE"), "На свободе", "русская строка загружена");
+        Eq(packRu.Get("GUI_TEST_PACKLOADER_SENTINEL"), "тест-пакета", "русская строка загружена");
         var packEn = PackLoader.Load(langsDir, "en");
-        Eq(packEn.Get("GUI_CHARGEN_AT_LARGE"), "At Large", "английская строка загружена");
+        Eq(packEn.Get("GUI_TEST_PACKLOADER_SENTINEL"), "test-pack", "английская строка загружена");
+
+        Console.WriteLine("PathKey");
+        Eq(string.Join("/", PathKey.Segments("GUIBountyDetails", new[] { "LeftText", "txtDanger" })),
+           "GUIBountyDetails/LeftText/txtDanger", "полный путь из root+path");
+        var eq1 = PathKey.Matches(
+            new[] { "GUIBountyDetails(Clone)", "LeftText", "txtDanger" },
+            new[] { "GUIBountyDetails", "LeftText", "txtDanger" });
+        Eq(eq1 ? "yes" : "no", "yes", "суффикс (Clone) игнорируется");
+        var eq2 = PathKey.Matches(
+            new[] { "GUIBountyDetails(Clone)", "LeftText", "txtOther" },
+            new[] { "GUIBountyDetails", "LeftText", "txtDanger" });
+        Eq(eq2 ? "yes" : "no", "no", "разный последний сегмент не совпадает");
+        var eq3 = PathKey.Matches(
+            new[] { "Root", "A" },
+            new[] { "Root", "A", "B" });
+        Eq(eq3 ? "yes" : "no", "no", "разная длина пути не совпадает");
 
         Console.WriteLine(failed == 0 ? "ALL PASS" : failed + " FAILED");
         return failed == 0 ? 0 : 1;
