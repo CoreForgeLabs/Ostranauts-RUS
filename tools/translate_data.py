@@ -15,6 +15,7 @@ import json
 import os
 import re
 import sys
+import threading
 import time
 
 sys.path.insert(0, r"C:\Users\Low\Desktop\DEV\KWEN")
@@ -25,7 +26,7 @@ LANG = sys.argv[1] if len(sys.argv) > 1 else "ru"
 LANGNAME = {"ru": "русский"}.get(LANG, LANG)
 
 BATCH = 15
-MAX_WORKERS = 50
+MAX_WORKERS = 140
 LOG = os.path.join(ROOT, "lang_src", "translate_data_%s.log" % LANG)
 
 TRANSLATABLE = ("strTitle", "strDesc", "strTooltip", "strNameFriendly", "strNameShort", "strFriendlyName")
@@ -114,82 +115,48 @@ def load_current_category(category):
 BRACKET_RE = re.compile(r"\[[a-zA-Z][a-zA-Z0-9_]*\]")
 
 
-def translate_category(category):
+def collect_category(category, state):
+    """Собирает todo-элементы одной категории; ничего не переводит. state[category]
+    хранит (out_path, overlay-dict) — общий на все батчи этой категории, чтобы
+    инкрементальное сохранение писало в один и тот же объект/файл."""
     fname = category.replace("/", "_") + ".json"
     out_path = os.path.join(ROOT, "langs", LANG, "data", fname)
 
     cur = load_current_category(category)
     overlay = load_json(out_path) if os.path.exists(out_path) else {}
+    state[category] = {"out_path": out_path, "overlay": overlay, "lock": threading.Lock()}
 
     # Переводим (или переводим ЗАНОВО) поле, если: (а) записи нет в оверлее вовсе,
     # либо (б) есть, но набор токенов в скобках ([us]/[them]/[глагол-ключ]) разошёлся
     # с текущим английским — значит перевод сделан раньше исправления промпта и
     # потерял токен спряжения (см. docs/baseline.md, найдено вживую: "Ты начинает"
     # вместо "Ты начинаешь"). Не трогаем поля без токенов и с уже совпадающим набором.
-    todo = []
+    items = []
     missing_n = 0
     broken_n = 0
     for str_name, obj in cur.items():
-        fields = {}
-        existing = overlay.get(str_name, {})
         for f in TRANSLATABLE:
             en_val = obj.get(f)
             if not en_val or not isinstance(en_val, str):
                 continue
-            ru_val = existing.get(f)
+            ru_val = overlay.get(str_name, {}).get(f)
+            need = False
             if ru_val is None:
-                fields[f] = en_val
+                need = True
                 missing_n += 1
             else:
                 en_tok = set(BRACKET_RE.findall(en_val))
                 ru_tok = set(BRACKET_RE.findall(ru_val))
                 if en_tok != ru_tok:
-                    fields[f] = en_val
+                    need = True
                     broken_n += 1
-        if fields:
-            todo.append((str_name, fields))
+            if need:
+                items.append({"id": str_name + "::" + f, "en": en_val, "ctx": category + "/" + str_name,
+                              "_cat": category})
 
-    log("%s: %d записей (нет перевода: %d полей, сломанные токены: %d полей)" %
-        (category, len(todo), missing_n, broken_n))
-    if not todo:
-        return 0
-
-    # каждая (strName, field) пара — отдельный переводимый элемент, батчуется вместе
-    items = []
-    for str_name, fields in todo:
-        for field, val in fields.items():
-            items.append({"id": str_name + "::" + field, "en": val, "ctx": category + "/" + str_name})
-
-    batches = [items[i:i + BATCH] for i in range(0, len(items), BATCH)]
-
-    def run_batch(batch_items):
-        try:
-            res = chat_json(SYS_PROMPT, batch_items, model="qwen")
-        except Exception as e:
-            log("%s: batch ERROR: %s" % (category, e))
-            return {}
-        return res if isinstance(res, dict) else {}
-
-    done = 0
-    with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as ex:
-        futures = {ex.submit(run_batch, b): b for b in batches}
-        for fut in concurrent.futures.as_completed(futures):
-            batch_items = futures[fut]
-            res = fut.result()
-            got = 0
-            for it in batch_items:
-                v = res.get(it["id"])
-                if not v or not str(v).strip():
-                    continue
-                str_name, field = it["id"].rsplit("::", 1)
-                overlay.setdefault(str_name, {})[field] = str(v)
-                got += 1
-            done += got
-            log("%s: батч из %d -> +%d (всего готово %d/%d)" %
-                (category, len(batch_items), got, done, len(items)))
-            save_json(out_path, overlay)
-
-    return done
+    log("%s: %d полей (нет перевода: %d, сломанные токены: %d)" %
+        (category, len(items), missing_n, broken_n))
+    return items
 
 
 def main():
@@ -199,11 +166,58 @@ def main():
         log("ERROR: Qwen-прокси недоступен")
         sys.exit(1)
 
-    total = 0
+    # Собираем задания со ВСЕХ категорий заранее и переводим одним общим пулом
+    # потоков — иначе маленькие категории (десятки полей) не могут занять больше
+    # нескольких воркеров каждая, а крупные и мелкие никогда не работают
+    # одновременно (категории обрабатывались строго последовательно).
+    state = {}
+    all_items = []
     for cat in CATEGORIES:
-        total += translate_category(cat)
+        all_items.extend(collect_category(cat, state))
 
-    log("ГОТОВО: переведено %d полей суммарно" % total)
+    log("всего полей к переводу по всем категориям: %d" % len(all_items))
+    if not all_items:
+        log("ГОТОВО: переводить нечего")
+        return
+
+    batches = [all_items[i:i + BATCH] for i in range(0, len(all_items), BATCH)]
+
+    def run_batch(batch_items):
+        try:
+            res = chat_json(SYS_PROMPT, batch_items, model="qwen")
+        except Exception as e:
+            log("batch ERROR: %s" % e)
+            return {}
+        return res if isinstance(res, dict) else {}
+
+    done = 0
+    total = len(all_items)
+    with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as ex:
+        futures = {ex.submit(run_batch, b): b for b in batches}
+        for fut in concurrent.futures.as_completed(futures):
+            batch_items = futures[fut]
+            res = fut.result()
+            got = 0
+            touched_cats = set()
+            for it in batch_items:
+                v = res.get(it["id"])
+                if not v or not str(v).strip():
+                    continue
+                str_name, field = it["id"].rsplit("::", 1)
+                cat = it["_cat"]
+                cs = state[cat]
+                with cs["lock"]:
+                    cs["overlay"].setdefault(str_name, {})[field] = str(v)
+                touched_cats.add(cat)
+                got += 1
+            done += got
+            for cat in touched_cats:
+                cs = state[cat]
+                with cs["lock"]:
+                    save_json(cs["out_path"], cs["overlay"])
+            log("батч из %d -> +%d (всего готово %d/%d)" % (len(batch_items), got, done, total))
+
+    log("ГОТОВО: переведено %d полей суммарно" % done)
 
 
 if __name__ == "__main__":
