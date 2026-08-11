@@ -65,7 +65,7 @@ namespace OstraI18n
                 }
             }
             catch (Exception ex) { Log.LogError("[i18n] prefab binder failed: " + ex); }
-            try { ContentOverlay.Init(DataDir.Value, "ru"); }
+            try { ContentOverlay.Init(DataDir.Value, "ru", new Harmony(GUID + ".content")); }
             catch (Exception ex) { Log.LogError("[i18n] content overlay init failed: " + ex); }
             if (QaMode.Value)
             {

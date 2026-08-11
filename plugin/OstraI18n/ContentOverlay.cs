@@ -4,13 +4,25 @@ using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using System.Text.Json;
+using HarmonyLib;
 
 namespace OstraI18n
 {
     // Оверлей переводимых полей игровых данных поверх уже загруженных словарей
     // DataHandler.dict* — без патчинга загрузки, без копирования файлов игры.
-    // Точка привязки: DataHandler.LoadComplete (главный поток, все словари уже
-    // заполнены и слиты со всеми модами — см. план Фазы 3, Global Constraints).
+    //
+    // Точка привязки: Harmony-префикс перед DataHandler.AllPostLoadAsync (НЕ
+    // DataHandler.LoadComplete, как было раньше). Причина: AllPostLoadAsync
+    // вызывает PrepareConditionDescriptions()/PrepareInteractionInflections(),
+    // которые строят словарь GrammarUtils.inflectedStrings, ИНДЕКСИРУЯ ЕГО ПО
+    // ТЕКУЩЕМУ ЗНАЧЕНИЮ strDesc/strTooltip НА МОМЕНТ ВЫЗОВА. LoadComplete
+    // срабатывает ПОЗЖЕ (после AllPostLoadAsync) — если оверлей применяется там,
+    // строка уже переведена, а inflectedStrings проиндексирован по ОРИГИНАЛЬНОМУ
+    // английскому тексту; GrammarUtils.GetInflectedString ищет по точному
+    // совпадению строки, не находит переведённую и возвращает её как есть — токены
+    // [us]/[them] остаются сырыми, не подставленными (баг найден вживую в этой
+    // сессии, см. docs/baseline.md). Патчинг ПЕРЕД AllPostLoadAsync гарантирует,
+    // что подготовка словоформ построится уже по переведённому тексту.
     internal static class ContentOverlay
     {
         // категория (папка, которую игра грузит в один словарь через LoadModJsons)
@@ -46,13 +58,27 @@ namespace OstraI18n
         public static int Applied;
         public static int Orphans;
 
-        public static void Init(string pluginDir, string langCode)
+        private static string _pluginDir;
+        private static string _langCode;
+
+        public static void Init(string pluginDir, string langCode, Harmony harmony)
         {
-            DataHandler.LoadComplete += () =>
+            _pluginDir = pluginDir;
+            _langCode = langCode;
+            var target = AccessTools.Method(typeof(DataHandler), "AllPostLoadAsync");
+            if (target == null)
             {
-                try { Apply(pluginDir, langCode); }
-                catch (Exception ex) { Plugin.Log.LogError("[i18n] контент-оверлей упал: " + ex); }
-            };
+                Plugin.Log.LogError("[i18n] контент-оверлей: DataHandler.AllPostLoadAsync не найден, оверлей не будет применён");
+                return;
+            }
+            harmony.Patch(target, prefix: new HarmonyMethod(
+                typeof(ContentOverlay).GetMethod(nameof(ApplyPrefix), BindingFlags.NonPublic | BindingFlags.Static)));
+        }
+
+        private static void ApplyPrefix()
+        {
+            try { Apply(_pluginDir, _langCode); }
+            catch (Exception ex) { Plugin.Log.LogError("[i18n] контент-оверлей упал: " + ex); }
         }
 
         private static void Apply(string pluginDir, string langCode)
