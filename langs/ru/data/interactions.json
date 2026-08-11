@@ -16829,5 +16829,3255 @@
   "STKTemplate_All_Interactions": {
     "strTitle": "-",
     "strDesc": "========================================================================================================"
+  },
+  "ACTChairSitShim": {
+    "strTitle": "Сесть",
+    "strDesc": "[us] [sits] на [them].",
+    "strTooltip": "Садится."
+  },
+  "ACTChairSitSecureShim": {
+    "strTitle": "Сесть",
+    "strDesc": "[us] [sits] на [them], надёжно пристегнувшись.",
+    "strTooltip": "Садится и надёжно пристёгивается."
+  },
+  "ACTFireFightStart": {
+    "strTitle": "Потушить огонь",
+    "strDesc": "[us] [decides] потушить [them]."
+  },
+  "ACTFireExtinguish": {
+    "strTitle": "Потушить",
+    "strDesc": "[us] [is] собирается потушить [them].",
+    "strTooltip": "Пытается потушить огонь огнетушителем."
+  },
+  "ACTFireExtinguishAllow": {
+    "strTitle": "Тушение",
+    "strDesc": "[us] [extinguishes] [them]."
+  },
+  "ACTFireExtinguishCancel": {
+    "strTitle": "Прекратить тушение",
+    "strDesc": "[us] [stops] тушить [them]."
+  },
+  "GUITradeScripBCERBuy1000": {
+    "strTitle": "Купить 1000 скрипов ГалФеда ($50,000)",
+    "strDesc": "[us] [exchanges] обычную валюту на 1000 скрипов Галилейской конфедерации.",
+    "strTooltip": "Покупка 1000 единиц фракционной валюты Галилейской конфедерации — «скрипов» (по удручающему курсу).\nПримечание: этот обмен не влияет на репутацию."
+  },
+  "GUITradeScripBCRSSell100": {
+    "strTitle": "Продать 100 скрипов CCRE (+$1,000)",
+    "strDesc": "[us] [exchanges] 100 скрипов CCRE на обычную валюту.",
+    "strTooltip": "Продажа 100 единиц фракционной валюты CCRE — «скрипов» (по удручающему курсу).\nПримечание: этот обмен не влияет на репутацию."
+  },
+  "GUITradeScripBCRSSell1000": {
+    "strTitle": "Продать 1000 скрипов CCRE (+$15,000)",
+    "strDesc": "[us] [exchanges] 1000 скрипов CCRE на обычную валюту.",
+    "strTooltip": "Продажа 1000 единиц фракционной валюты CCRE — «скрипов» (по удручающему курсу).\nПримечание: этот обмен не влияет на репутацию."
+  },
+  "GUITradeScripBCERSell100": {
+    "strTitle": "Продать 100 скрипов ГалФеда (+$1,000)",
+    "strDesc": "[us] [exchanges] 100 скрипов Галилейской конфедерации на обычную валюту.",
+    "strTooltip": "Продажа 100 единиц фракционной валюты Галилейской конфедерации — «скрипов» (по удручающему курсу).\nПримечание: этот обмен не влияет на репутацию."
+  },
+  "GUITradeScripBCERSell1000": {
+    "strTitle": "Продать 1000 скрипов ГалФеда (+$15,000)",
+    "strDesc": "[us] [exchanges] 1000 скрипов Галилейской конфедерации на обычную валюту.",
+    "strTooltip": "Продажа 1000 единиц фракционной валюты Галилейской конфедерации — «скрипов» (по удручающему курсу).\nПримечание: этот обмен не влияет на репутацию."
+  },
+  "ACTReloadItem": {
+    "strDesc": "[us] [is] собирается перезарядить [them].",
+    "strTitle": "Перезарядка"
+  },
+  "ACTSwitchLightColorWhite": {
+    "strTitle": "Установить белый",
+    "strDesc": "[us] [decides] перевести [them] в белый цвет.",
+    "strTooltip": "Устанавливает выбранный цвет освещения."
+  },
+  "ACTSwitchLightColorWhiteAllow": {
+    "strTitle": "Установка белого света",
+    "strDesc": "[them] [sets] свет в белый цвет."
+  },
+  "ACTSwitchCeilingLightColorBlue": {
+    "strTitle": "Установить синий",
+    "strDesc": "[us] [decides] перевести [them] в синий цвет.",
+    "strTooltip": "Устанавливает выбранный цвет освещения."
+  },
+  "ACTSwitchCeilingLightColorBlueAllow": {
+    "strTitle": "Установка синего света",
+    "strDesc": "[them] [sets] свет в синий цвет."
+  },
+  "ACTSwitchCeilingLightColorOrange": {
+    "strTitle": "Установить оранжевый",
+    "strDesc": "[us] [decides] перевести [them] в оранжевый цвет.",
+    "strTooltip": "Устанавливает выбранный цвет освещения."
+  },
+  "ACTSwitchCeilingLightColorOrangeAllow": {
+    "strTitle": "Установка оранжевого света",
+    "strDesc": "[them] [sets] свет на оранжевый цвет."
+  },
+  "GiveUp": {
+    "strDesc": "[us] [throws] вверх [us-pos] руки. Кофе не предвидится. Всем лучше не стоять на [us-pos] пути."
+  },
+  "AF_BeltPirates": {
+    "strTitle": "Тест фракции пиратов Пояса"
+  },
+  "AF_GalConCiv": {
+    "strTitle": "Тест фракции Галилейской конфедерации"
+  },
+  "AF_GalCon": {
+    "strTitle": "Тест фракции Галилейской конфедерации (НОО)"
+  },
+  "AF_BCRS": {
+    "strTitle": "Тест фракции CCRE (НОО)"
+  },
+  "AF_BCRSCiv": {
+    "strTitle": "Тест фракции CCRE"
+  },
+  "AF_EJDRCiv": {
+    "strTitle": "Тест фракции Старого Китая"
+  },
+  "AF_EJDR": {
+    "strTitle": "Тест фракции Старого Китая (НОО)"
+  },
+  "AF_HQCHCiv": {
+    "strTitle": "Тест фракции Прокофьева"
+  },
+  "AF_HQCH": {
+    "strTitle": "Тест фракции Прокофьева (НОО)"
+  },
+  "AF_AtlantisCiv": {
+    "strTitle": "Тест фракции Атлантиды"
+  },
+  "AF_Atlantis": {
+    "strTitle": "Тест фракции Атлантиды (НОО)"
+  },
+  "AF_MHNGCiv": {
+    "strTitle": "Тест фракции Ханчжоу"
+  },
+  "AF_MHNG": {
+    "strTitle": "Тест фракции Ханчжоу (НОО)"
+  },
+  "AF_MSUZCiv": {
+    "strTitle": "Тест фракции Сучжоу"
+  },
+  "UnjamWeapon": {
+    "strTitle": "Устранить заклинивание оружия",
+    "strDesc": "[us] [unjams] [them]",
+    "strTooltip": "Устраняет заклинивание этого оружия"
+  },
+  "DeployStructureCCRE": {
+    "strTitle": "Развернуть маяк (фракция CCRE)",
+    "strDesc": "[us] [deploys] [them]",
+    "strTooltip": "Разворачивает сооружение в космосе"
+  },
+  "DeployStructureGalileanConfederacy": {
+    "strTitle": "Развернуть маяк (Галилейская Конфедерация)",
+    "strDesc": "[us] [deploys] [them]",
+    "strTooltip": "Разворачивает сооружение в космосе"
+  },
+  "JOBMVPTest01AbandonClient": {
+    "strTitle": "Разведка безопасности — отказ клиента",
+    "strDesc": "Обрабатывает изменения клиента при отказе игрока от заказа"
+  },
+  "JOBMVPTest01AbandonPlayer": {
+    "strTitle": "Разведка безопасности — отказ игрока"
+  },
+  "ClaimBounty": {
+    "strTitle": "Забрать награду",
+    "strDesc": "[us] [attempts] забрать награду за [them].",
+    "strTooltip": "Пытается получить награду"
+  },
+  "ACTSwitchCeilingLightColorRed": {
+    "strTitle": "Установить красный",
+    "strDesc": "[us] [decides] переключить [them] на красный цвет.",
+    "strTooltip": "Устанавливает выбранный цвет освещения."
+  },
+  "ACTSwitchCeilingLightColorRedAllow": {
+    "strTitle": "Установка красного света",
+    "strDesc": "[them] [sets] свет на красный цвет."
+  },
+  "ACTSwitchCeilingLightColorPurple": {
+    "strTitle": "Установить фиолетовый",
+    "strDesc": "[us] [decides] переключить [them] на [purple] цвет.",
+    "strTooltip": "Устанавливает выбранный цвет освещения."
+  },
+  "ACTSwitchCeilingLightColorPurpleAllow": {
+    "strTitle": "Установка фиолетового света",
+    "strDesc": "[them] [sets] свет на фиолетовый цвет."
+  },
+  "ACTSwitchCeilingLightColorGreen": {
+    "strTitle": "Установить зелёный",
+    "strDesc": "[us] [decides] переключить [them] на зелёный цвет.",
+    "strTooltip": "Устанавливает выбранный цвет освещения."
+  },
+  "ACTSwitchCeilingLightColorGreenAllow": {
+    "strTitle": "Установка зелёного света",
+    "strDesc": "[them] [sets] свет на зелёный цвет."
+  },
+  "ACTSwitchCeilingLightColorWhite": {
+    "strTitle": "Установить белый свет",
+    "strDesc": "[us] [decides] переключить [them] на белый цвет.",
+    "strTooltip": "Устанавливает выбранный цвет освещения."
+  },
+  "ACTSwitchCeilingLightColorWhiteAllow": {
+    "strTitle": "Установка белого света",
+    "strDesc": "[them] [sets] свет на белый цвет."
+  },
+  "ACTMaintenanceTechFireExtinguishNPC": {
+    "strTitle": "Потушить",
+    "strDesc": "[us] [starts] тушить [them]."
+  },
+  "ACTMaintenanceTechFireExtinguishNPCAllow": {
+    "strTitle": "Потушить",
+    "strDesc": "[us] больше не горит."
+  },
+  "ACTAlarmSmokeRepairNPC": {
+    "strTitle": "Починить",
+    "strDesc": "[us] [starts] устранять повреждения на [them]."
+  },
+  "ACTAlarmSmokeRepairNPCAllow": {
+    "strTitle": "Починить",
+    "strDesc": "[us] снова работает."
+  },
+  "ACTStudySkillEngExcavation": {
+    "strTitle": "Изучить раскопки",
+    "strDesc": "[us] [decides] изучить [them].",
+    "strTooltip": "Учёба медленно продвигает к освоению навыка горных работ. Даёт уединение и чувство выполненного долга, но может наскучить или вогнать в тоску."
+  },
+  "ENCHeatEJDRFineEnd": {
+    "strDesc": "Такое ощущение, будто они только и ждут, когда ты нарушишь правила — чтобы содрать побольше штрафов.\n\nТы подписываешь гору бумаг в тесных наручниках.\n\nЭто тоже своего рода приговор. Ещё одна гиря на шее.\n\nДобавлен новый штраф: $15 000.",
+    "strTitle": "Просить штраф (полная сумма)"
+  },
+  "ENCHeatEJDRFineDebtEnd": {
+    "strTitle": "Упросить о штрафе (рассрочка)",
+    "strDesc": "Такое ощущение, будто они только и ждут, когда ты нарушишь правила — чтобы поглубже загнать тебя в долговую яму.\n\nТы подписываешь гору бумаг в тесных наручниках.\n\nЭто тоже своего рода приговор. Ещё одна гиря на шее.\n\nДобавлен новый долг: $15 000, выплата каждую смену."
+  },
+  "ENCHeatEJDRFineFinish": {
+    "strTitle": "Продолжить",
+    "strDesc": "После оформления тебя бесцеремонно вышвыривают у офиса службы безопасности «Нефритового Кролика». Если на момент ареста ты не был пристыкован к станции, возможно, придётся воспользоваться паромом PASS (через КПК), чтобы добраться до корабля. Хорошо бы он ещё был на месте.\n\nПора вставать на ноги."
+  },
+  "ENCHeatEJDRPrisonStart": {
+    "strTitle": "В гауптвахту «Нефритового Кролика»",
+    "strDesc": "Тебя тащат в гауптвахту «Нефритового Кролика»."
+  },
+  "ENCHeatEJDRPrisonEnd": {
+    "strTitle": "Тяжёлый срок",
+    "strDesc": "Ты месяцами горбатишься за гроши среди изгоев — и кротких, и опасных. Делишь барак почти с сотней таких же душ, все вы навалены как дрова на трёхъярусных нарах.\n\nНо даже в таком аду есть свои возможности. Ты слышишь разное. Знакомишься с людьми. Влипаешь в пару передряг, находишь пару друзей. К концу срока ты проживаёшь с дюжину жизней — и у тебя хватает шрамов, чтобы это доказать.\n\nНу и бесплатное жильё с кормёжкой. Если посмотреть под определённым углом, оно того стоило ...\n\n"
+  },
+  "ENCHeatEJDRPrisonFinish": {
+    "strTitle": "Продолжить",
+    "strDesc": "После оформления тебя бесцеремонно вышвыривают у офиса службы безопасности «Нефритового Кролика». Если на момент ареста ты не был пристыкован к станции, возможно, придётся воспользоваться паромом PASS (через КПК), чтобы добраться до корабля. Хорошо бы он ещё был на месте.\n\nПора вставать на ноги."
+  },
+  "PLGAICrimeEJDRLEOArrest": {
+    "strTitle": "Правоохранитель EJDR начинает арест",
+    "strDesc": "«Подозреваемый обнаружен», — [says] [us], глядя на [them]."
+  },
+  "PLGAICrimeEJDRLEOInterruptSelf": {
+    "strTitle": "Преступление прерывает правоохранителя EJDR",
+    "strDesc": "Прервать."
+  },
+  "ClaimBountyAllow": {
+    "strTitle": "Получение награды",
+    "strDesc": "[us] [claims] награду за [them].",
+    "strTooltip": "Получает награду."
+  },
+  "ClaimBountyDeny": {
+    "strTitle": "Награда не получена",
+    "strDesc": "[us] не может получить награду за [them].",
+    "strTooltip": "Не удаётся получить награду."
+  },
+  "JOBMVPTest01Do": {
+    "strTitle": "Сделать фото",
+    "strDesc": "[us] [attempts] сделать фото [them].",
+    "strTooltip": "Делает фото цели для заказа."
+  },
+  "JOBMVPTest01DoAllow": {
+    "strTitle": "Съёмка фото",
+    "strDesc": "[us] [snaps] фото [them].",
+    "strTooltip": "Делает фото цели для заказа."
+  },
+  "JOBHeavy1TellThemWhoSentYouFaildead": {
+    "strTitle": "Отправить ясное послание",
+    "strDesc": "[them] [is] уже труп, так что [us] не в состоянии отправить ясное послание. Может, в следующий раз поменьше жестокости?"
+  },
+  "JOBMVPTest01FinishClient": {
+    "strTitle": "Заказ на разведку безопасности выполнен",
+    "strDesc": "[us] — заказчик, [them] — цель. Работа выполнена? Плюс применить эффекты отношений/соцэффекты."
+  },
+  "GUIBounties": {
+    "strDesc": "[us] [accesses] [them].",
+    "strTooltip": "Открывает доступ к доске заказов в киоске.",
+    "strTitle": "Доска розыска"
+  },
+  "GUISensor": {
+    "strTitle": "Панель управления",
+    "strDesc": "[us] [accesses] панель [them].",
+    "strTooltip": "Открывает доступ к настройкам переопределения, регуляторам и переключателям панели управления цели."
+  },
+  "GUISensorAllow": {
+    "strDesc": "[them] [checks] панель."
+  },
+  "GUITradeScripBCRSBuy100": {
+    "strTitle": "Купить 100 скрипов CCRE ($10,000)",
+    "strDesc": "[us] [exchanges] обычную валюту на 100 скрипов CCRE.",
+    "strTooltip": "Покупка 100 единиц фракционной валюты CCRE — «скрипов» (по удручающему курсу).\nПримечание: этот обмен не влияет на репутацию."
+  },
+  "GUITradeScripBCRSBuy1000": {
+    "strTitle": "Купить 1000 скрипов CCRE ($50,000)",
+    "strDesc": "[us] [exchanges] обычную валюту на 1000 скрипов CCRE.",
+    "strTooltip": "Покупка 1000 единиц фракционной валюты CCRE — «скрипов» (по удручающему курсу).\nПримечание: этот обмен не влияет на репутацию."
+  },
+  "GUITradeScripBCERBuy100": {
+    "strTitle": "Купить 100 скрипов ГалФеда ($10,000)",
+    "strDesc": "[us] [exchanges] обычную валюту на 100 скрипов Галилейской Конфедерации.",
+    "strTooltip": "Покупка 100 единиц фракционной валюты Галилейской Конфедерации — «скрипов» (по удручающему курсу).\nПримечание: этот обмен не влияет на репутацию."
+  },
+  "ACTStudySkillEngExcavationAllow": {
+    "strTitle": "Выбор следующего этапа обучения",
+    "strDesc": "[us] выбирает следующий этап изучения горного дела."
+  },
+  "ACTStudySkillDenyEngExcavationAlready": {
+    "strTitle": "Уже освоено",
+    "strDesc": "[us] [is] уже с опытом в горном деле."
+  },
+  "AIClearAttemptCO2": {
+    "strTitle": "Сброс попытки выжить: CO2",
+    "strDesc": "[us] [removes] состояние."
+  },
+  "AIClearAttemptO2": {
+    "strTitle": "Сброс попытки выжить: O2",
+    "strDesc": "[us] [removes] состояние."
+  },
+  "DEBUGNever": {
+    "strTitle": "Недоступно никогда.",
+    "strDesc": "[us] никогда не в состоянии это сделать.",
+    "strTooltip": "Используется как заглушка в TSV."
+  },
+  "DefecationFail": {
+    "strDesc": "[us] сейчас не в состоянии испражняться."
+  },
+  "AF_MSUZ": {
+    "strTitle": "Тест фракции Сучжоу (НОО)"
+  },
+  "AF_TitanCiv": {
+    "strTitle": "Тест фракции Титана"
+  },
+  "AF_Titan": {
+    "strTitle": "Тест фракции Титана (НОО)"
+  },
+  "AF_XinhuaCiv": {
+    "strTitle": "Тест фракции Синьхуа"
+  },
+  "AF_Xinhua": {
+    "strTitle": "Тест фракции Синьхуа (НОО)"
+  },
+  "ACTRangedHG": {
+    "strTitle": "Выстрел: HG ",
+    "strDesc": "[us] [attempts] выстрелить в [them].",
+    "strTooltip": "Попытка выстрелить в цель из заряженного дальнобойного оружия."
+  },
+  "ACTRangedRifle": {
+    "strTitle": "Выстрел: ",
+    "strDesc": "[us] [attempts] выстрелить в [them].",
+    "strTooltip": "Попытка выстрелить в цель из заряженного дальнобойного оружия."
+  },
+  "ACTRangedRifleHG": {
+    "strTitle": "Выстрел: HG ",
+    "strDesc": "[us] [attempts] выстрелить в [them].",
+    "strTooltip": "Попытка выстрелить в цель из заряженного дальнобойного оружия."
+  },
+  "ACTRanged3RBHG": {
+    "strTitle": "Выстрел (очередь): HG ",
+    "strDesc": "[us] [attempts] выстрелить в [them].",
+    "strTooltip": "Попытка выстрелить в цель очередью из заряженного дальнобойного оружия."
+  },
+  "ACTFireExtinguishDone": {
+    "strTitle": "Тушение завершено",
+    "strDesc": "[us] [is] завершено тушение [them]."
+  },
+  "ACTFireStamp": {
+    "strTitle": "Затоптать",
+    "strDesc": "[us] [is] собирается затоптать [them].",
+    "strTooltip": "Попытка затоптать огонь без специальных средств."
+  },
+  "ACTFireStampAllow": {
+    "strTitle": "Затаптывание",
+    "strDesc": "[us] [stamps], чтобы затоптать [them]."
+  },
+  "ACTDispenseLiquidDeny": {
+    "strDesc": "[us] не может выдать жидкость: пусто."
+  },
+  "ACTExcerciseSimpleAIReserve": {
+    "strTitle": "Упражнение",
+    "strDesc": "[us] [intends] зарезервировать [them].",
+    "strTooltip": "Цель резервируется для использования, чтобы несколько пользователей не пересекались."
+  },
+  "ACTExcerciseSimpleAIReserveSuccess": {
+    "strTitle": "Упражнение",
+    "strDesc": "[us] [intends] упражняться, используя [them].",
+    "strTooltip": "Упражняется, пока не устанет, не перегреется или намеренно не остановится.\nДля борьбы с атрофией без медикаментов нужно два часа упражнений в день."
+  },
+  "ACTRangedSpreadHG": {
+    "strTitle": "Залп: HG ",
+    "strDesc": "[us] [attempts] выстрелить залпом в [them].",
+    "strTooltip": "Попытка выстрелить в цель из дальнобойного оружия с разбросом, заряженного HG."
+  },
+  "ACTBountyArrestDemand": {
+    "strTitle": "Попытаться арестовать",
+    "strDesc": "[us] [tries] арестовать [them].",
+    "strTooltip": "Попытка вынудить цель сдаться. Если цель сдастся, она прекратит бой."
+  },
+  "ACTBountyArrestDemandAllowAI": {
+    "strTitle": "Согласиться сдаться",
+    "strDesc": "[us] [surrenders] [them], и будет выполнять то, что [them-subj] [says]."
+  },
+  "ACTBountyArrestDemandAllowAIScared": {
+    "strTitle": "Согласиться сдаться",
+    "strDesc": "[us] [surrenders] [them], и будет выполнять то, что [them-subj] [says]"
+  },
+  "ENCHeatEJDRBustedStart": {
+    "strTitle": "Повязали",
+    "strDesc": "Тебя тащат на суд к китайскому магистрату, а корабль и снаряжение остаются позади.\n\nНа слушании можно вымолить всего лишь штраф — $15,000, выплатить его полностью или в рассрочку, — а не то отправишься на бриг «Нефритовый кролик» на год-три каторжных работ."
+  },
+  "PLGAICrimeEJDRLEOArrestDo": {
+    "strTitle": "Арест преступника",
+    "strDesc": "\"Стоять! Ты под арестом!\" [us] [shouts] на [them]."
+  },
+  "PLGAICrimeEJDRLEOArrestDoAllow": {
+    "strTitle": "Сдаться полицейскому",
+    "strDesc": "[us] [goes] с [them] без сопротивления."
+  },
+  "PLGAICrimeEJDRLEOArrestDoDeny": {
+    "strTitle": "Заявить о невиновности",
+    "strDesc": "[us] [tells] [them], что [them-subj] [has] не тот человек."
+  },
+  "PLGAICrimeEJDRLEOArrestEnd": {
+    "strTitle": "Полицейский EJDR: арест завершён",
+    "strDesc": "\"Ещё одна победа закона\", [us] [says]."
+  },
+  "PLGAICrimeEJDRLEOArrestEndAI": {
+    "strTitle": "Арест",
+    "strDesc": "Служебное взаимодействие для проверки, что us = ИИ-персонаж, перед продолжением."
+  },
+  "PLGAICrimeEJDRLEOArrestEndPlayer": {
+    "strTitle": "Преступник арестован (игрок)",
+    "strDesc": "Полицейский завершает подавление угрозы со стороны игрока."
+  },
+  "PLGAICrimeEJDRLEOThreat": {
+    "strTitle": "Полицейский EJDR атакует преступника",
+    "strDesc": "\"Эй, это тот преступник! Взять его!\" [us-shouts] [us], указывая на [them]."
+  },
+  "PLGAICrimeEJDRLEOArrestStolenShip": {
+    "strTitle": "Полицейский EJDR начинает арест за угон корабля",
+    "strDesc": "«Нам сообщили, что ты летишь на угнанном корабле», — [us] [says], глядя на [them]. «Мы тебя забираем»."
+  },
+  "PLGAIReportCrimeEJDRArrest": {
+    "strTitle": "Сообщить о преступлении",
+    "strDesc": "[us] [speaks] в [us-pos] КПК, глядя на [them]."
+  },
+  "PLGAIReportCrimeEJDRArrestAllow": {
+    "strTitle": "Сообщить о преступлении: успех",
+    "strDesc": "[us] успешно [reports] о преступлении на [them]."
+  },
+  "PLGAIReportCrimeEJDRArrestDone": {
+    "strTitle": "Сообщение о преступлении завершено",
+    "strDesc": "[us] [is] больше не сообщает о преступлении."
+  },
+  "PLGAIReportCrimeEJDRTrespass": {
+    "strTitle": "Сообщить о преступлении",
+    "strDesc": "[us] [says] «Убирайся отсюда», а затем говорит в [us-pos] КПК, глядя на [them]."
+  },
+  "PLGAIReportCrimeEJDRTrespassAllow": {
+    "strTitle": "Сообщить о преступлении: успех",
+    "strDesc": "[us] успешно [reports] о преступлении на [them]."
+  },
+  "PLGAIReportCrimeEJDRTrespassDeny": {
+    "strTitle": "Сообщить о преступлении: неудача",
+    "strDesc": "[us] [fails] сообщить о преступлении на [them]."
+  },
+  "PLGAIReportCrimeEJDRTrespassDone": {
+    "strTitle": "Сообщение о преступлении завершено",
+    "strDesc": "[us] [is] больше не сообщает о преступлении."
+  },
+  "ENCHeatHQCHBustedStart": {
+    "strDesc": "Тебя волокут на суд к магистрату Синьхуа, а твой корабль и снаряжение остаются позади.\n\nНа слушании можно вымолить лишь штраф — $15,000, разом или в рассрочку, — или отправишься в изолятор Циньчэн на год-три каторжных работ.",
+    "strTitle": "Провал"
+  },
+  "ENCHeatHQCHFineEnd": {
+    "strTitle": "Просить штраф (единовременная выплата)",
+    "strDesc": "Похоже, они только и ждут, чтобы ты нарушил правила, — тогда с тебя можно содрать больше штрафов.\n\nТы подписываешь гору бумаг в тесных наручниках.\n\nЭто тоже срок, только другого рода. Ещё одна гиря на шее.\n\nДобавлен новый штраф: $15,000."
+  },
+  "ENCHeatHQCHFineDebtEnd": {
+    "strTitle": "Просить штраф (выплата в рассрочку)",
+    "strDesc": "Похоже, они только и ждут, чтобы ты нарушил правила, — тогда тебя можно загнать глубже в проценты.\n\nТы подписываешь гору бумаг в тесных наручниках.\n\nЭто тоже срок, только другого рода. Ещё одна гиря на шее.\n\nДобавлен новый долг: $15,000, с выплатой каждую смену."
+  },
+  "ENCHeatHQCHFineFinish": {
+    "strTitle": "Продолжить",
+    "strDesc": "После оформления тебя без церемоний выставляют за дверями офиса безопасности Циньчэн. Если на момент ареста не было стыковки со станцией, возможно, придётся воспользоваться паромной службой PASS (в КПК), чтобы снова добраться до своего корабля. Надеюсь, он ещё там.\n\nПора снова вставать на ноги."
+  },
+  "ENCHeatHQCHPrisonStart": {
+    "strTitle": "В изолятор Циньчэн",
+    "strDesc": "Тебя волокут в изолятор Циньчэн."
+  },
+  "ENCHeatHQCHPrisonEnd": {
+    "strTitle": "Отбыть каторгу",
+    "strDesc": "Месяцами ты вкалываешь без платы среди изгоев — и смирных, и опасных. Ты делишь барак почти с сотней других душ, и все вы уложены, как дрова, на трёхъярусных койках.\n\nНо даже в таком аду есть свои возможности. Ты слышишь разное. Ты знакомишься с людьми. Ты влипаешь в несколько передряг, находишь нескольких друзей. К концу срока ты проживаешь дюжину жизней, и все шрамы тому подтверждение.\n\nПлюс дармовая койка и кормёжка. Если посмотреть под определённым углом, оно, пожалуй, того стоит...\n\n"
+  },
+  "ENCHeatHQCHPrisonFinish": {
+    "strTitle": "Продолжить",
+    "strDesc": "После оформления тебя без церемоний выставляют за дверями офиса безопасности Циньчэн. Если на момент ареста не было стыковки со станцией, возможно, придётся воспользоваться паромной службой PASS (в КПК), чтобы снова добраться до своего корабля. Надеюсь, он ещё там.\n\nПора снова вставать на ноги."
+  },
+  "PLGAICrimeHQCHLEOArrest": {
+    "strTitle": "HQCH LEO начинает арест преступника",
+    "strDesc": "\"Подозреваемый замечен\", — [us] [says], глядя на [them]."
+  },
+  "PLGAICrimeHQCHLEOInterruptSelf": {
+    "strTitle": "Преступление прерывает офицера HQCH",
+    "strDesc": "Прервать их."
+  },
+  "PLGAICrimeHQCHLEOArrestDo": {
+    "strTitle": "Арест преступника",
+    "strDesc": "«Ни с места! Вы арестованы!» — [us] [shouts] на [them]."
+  },
+  "PLGAICrimeHQCHLEOArrestDoAllow": {
+    "strTitle": "Сдаться офицеру",
+    "strDesc": "[us] [goes] вместе с [them] без сопротивления."
+  },
+  "PLGAICrimeHQCHLEOArrestDoDeny": {
+    "strTitle": "Заявить о невиновности",
+    "strDesc": "[us] [tells] [them], что [them-subj] [has] не того человека."
+  },
+  "PLGAICrimeHQCHLEOArrestEnd": {
+    "strTitle": "Офицер HQCH завершил арест преступника",
+    "strDesc": "«Очередная победа закона», — [us] [says]."
+  },
+  "PLGAICrimeHQCHLEOArrestEndAI": {
+    "strTitle": "Арест",
+    "strDesc": "Вспомогательное взаимодействие: проверить, что us — ИИ-персонаж, прежде чем продолжать."
+  },
+  "PLGAICrimeHQCHLEOArrestEndPlayer": {
+    "strTitle": "Преступник арестован (игрок)",
+    "strDesc": "Офицер завершает подавление угрозы со стороны игрока."
+  },
+  "PLGAICrimeHQCHLEOThreat": {
+    "strTitle": "Офицер HQCH атакует преступника",
+    "strDesc": "«Эй, это тот преступник! Взять его!» [us-shouts] [us], указывая на [them]."
+  },
+  "PLGAIReportCrimeEJDRTrespassNPCDone": {
+    "strTitle": "Отменить сообщение о преступлении",
+    "strDesc": "[us] [is] больше не собирается сообщать о преступлении."
+  },
+  "PLGAIReportCrimeEJDRThreat": {
+    "strTitle": "Сообщить о преступлении",
+    "strDesc": "[us] [speaks] в [us-pos] КПК, глядя на [them]."
+  },
+  "PLGAIReportCrimeEJDRThreatAllow": {
+    "strTitle": "Сообщить о преступлении: успех",
+    "strDesc": "[us] успешно [reports] о преступлении, обвиняя [them]."
+  },
+  "PLGAIReportCrimeEJDRThreatDone": {
+    "strTitle": "Сообщение о преступлении завершено",
+    "strDesc": "[us] [is] закончил(а) сообщать о преступлении."
+  },
+  "PSPAIAICrimeEJDRLEOArrestAdd": {
+    "strTitle": "Добавляет нам задачу «Арест LEO EJDR»",
+    "strDesc": "[us] [gains] задачу «Арест LEO EJDR»."
+  },
+  "PSPAIAICrimeEJDRLEOArrestStolenShipAdd": {
+    "strTitle": "Добавляет нам задачу «Арест LEO EJDR за угон корабля»",
+    "strDesc": "[us] [gains] задачу «Арест LEO EJDR за угон корабля»."
+  },
+  "PSPAIAICrimeEJDRLEOThreatAdd": {
+    "strTitle": "Добавляет нам задачу «Угроза LEO EJDR»",
+    "strDesc": "[us] [gains] задачу «Угроза LEO EJDR»."
+  },
+  "PLGAICrimeJATLLEOArrest": {
+    "strTitle": "Полицейский JATL начинает арест преступника",
+    "strDesc": "«Подозреваемый обнаружен», — [us] [says], глядя на [them]."
+  },
+  "PLGAICrimeJATLLEOInterruptSelf": {
+    "strTitle": "Полицейский JATL прерван преступлением",
+    "strDesc": "Прервать их."
+  },
+  "PLGAICrimeJATLLEOArrestDo": {
+    "strTitle": "Арест преступника",
+    "strDesc": "«Стоять! Ты арестован!» — [us] [shouts] на [them]."
+  },
+  "PLGAICrimeJATLLEOArrestDoAllow": {
+    "strTitle": "Сдаться полицейскому",
+    "strDesc": "[us] [goes] с [them] без сопротивления."
+  },
+  "PLGAICrimeJATLLEOArrestDoDeny": {
+    "strTitle": "Заявить о невиновности",
+    "strDesc": "[us] [tells] [them], что [them-subj] [has] не того человека."
+  },
+  "PLGAICrimeJATLLEOArrestEnd": {
+    "strTitle": "Полицейский JATL завершил арест преступника",
+    "strDesc": "«Ещё одна победа закона», — [us] [says]."
+  },
+  "PLGAICrimeJATLLEOArrestEndAI": {
+    "strTitle": "Арестован",
+    "strDesc": "Служебное взаимодействие для проверки, что us = ИИ-персонаж, перед продолжением."
+  },
+  "PLGAICrimeJATLLEOArrestEndPlayer": {
+    "strTitle": "Преступник арестован (игрок)",
+    "strDesc": "Полицейский заканчивает подавлять угрозу со стороны игрока."
+  },
+  "JOBMVPTest01FinishPlayer": {
+    "strTitle": "Заказ на разведку безопасности выполнен",
+    "strDesc": "[us] — исполнитель заказа, [them] — заказчик. Работа выполнена? Плюс применить эффекты отношений/соцэффекты."
+  },
+  "JOBMVPTest01SetupPlayer": {
+    "strTitle": "Залог по заказу на разведку безопасности"
+  },
+  "SeekDrugAntiHypoVPrescDirect": {
+    "strTitle": "Ввести препарат",
+    "strDesc": "[us] решает сделать инъекцию [them].",
+    "strTooltip": "Вводит препарат: со временем это может облегчить симптомы гиповолемии в организме."
+  },
+  "SeekDrugAntiHypoVPrescDirectAllow": {
+    "strDesc": "[them] делает инъекцию [us]."
+  },
+  "SeekDrugAntiHypoVPrescDirectAllowDone": {
+    "strTitle": "Выброс использованного инъектора",
+    "strDesc": "[them] выбрасывает [us] как мусор после использования."
+  },
+  "SeekDrugAntiHypoVPrescDirectDeny": {
+    "strDesc": "[them] не может сделать инъекцию [us], пока не закончится действие предыдущей инъекции."
+  },
+  "SeekDrugAntiHypoVPrescDirectDenyCured": {
+    "strDesc": "[them] не нужно делать инъекцию [us], поскольку гиповолемии в условиях микрогравитации нет."
+  },
+  "ACTSmokeCigDeny": {
+    "strDesc": "[us] не может выкурить [them]."
+  },
+  "ACTSmokeCigStubDeny": {
+    "strDesc": "[us] не может выкурить [them]."
+  },
+  "ACTSeekHygieneTeethAllowEnd": {
+    "strDesc": "[us] [finishes] чистить [us-pos] зубы с помощью [them]."
+  },
+  "PSPAIAICrimeHQCHLEOThreatAdd": {
+    "strDesc": "[us] [gains] ИИ-задачу «Угроза HQCH на НОО».",
+    "strTitle": "Добавляет нам задачу угрозы HQCH LEO"
+  },
+  "ENCHeatJATLBustedStart": {
+    "strTitle": "Арест",
+    "strDesc": "Тебя волокут к атлантскому магистрату на суд, оставив корабль и снаряжение позади.\n\nНа слушании можно умолять, чтобы всё обошлось только штрафом — $15,000 сразу или в рассрочку, — а не то придётся отправиться в бриг Атлантиды на год-три каторжных работ."
+  },
+  "ENCHeatJATLFineEnd": {
+    "strTitle": "Просить штраф (одним платежом)",
+    "strDesc": "Такое чувство, что они сами хотят, чтобы ты нарушал правила, — так из тебя можно выжать побольше штрафов.\n\nТы подписываешь кипы бумаг в тесных наручниках.\n\nЭто приговор другого рода. Ещё одна гиря на шее.\n\nДобавлен новый штраф на $15,000."
+  },
+  "ENCHeatJATLFineDebtEnd": {
+    "strTitle": "Просить штраф (в рассрочку)",
+    "strDesc": "Такое чувство, что они сами хотят, чтобы ты нарушал правила, — так тебя можно глубже загнать в долговую кабалу с процентами.\n\nТы подписываешь кипы бумаг в тесных наручниках.\n\nЭто приговор другого рода. Ещё одна гиря на шее.\n\nДобавлен новый долг на $15,000, платежи вносятся каждую смену."
+  },
+  "ENCHeatJATLFineFinish": {
+    "strTitle": "Продолжить",
+    "strDesc": "После оформления тебя без церемоний вышвыривают за дверь офиса безопасности Атлантиды. Если на момент ареста твой корабль не был пристыкован к станции, возможно, придётся воспользоваться паромной службой PASS (в КПК), чтобы снова добраться до корабля. Будем надеяться, он ещё там.\n\nПора снова вставать на ноги."
+  },
+  "ENCHeatJATLPrisonStart": {
+    "strTitle": "В бриг Атлантиды",
+    "strDesc": "Тебя волокут в бриг Атлантиды."
+  },
+  "ENCHeatJATLPrisonEnd": {
+    "strTitle": "Отбыть каторгу",
+    "strDesc": "Ты месяцами гнёшь спину без оплаты среди изгоев — и смирных, и опасных. Ты делишь барак почти с сотней других душ, и все вы уложены, как дрова, на трёхъярусных нарах.\n\nНо даже в таком аду есть свои возможности. Ты слышишь всякое. Знакомишься с людьми. Влипаешь в несколько передряг, находишь несколько друзей. К концу срока за плечами дюжина жизней, и все шрамы тому доказательство.\n\nПлюс бесплатный кров и еда. Если взглянуть под определённым углом, оно, может, и того стоит ...\n\n"
+  },
+  "PLGAIReportCrimeHQCHTrespassDone": {
+    "strTitle": "Доклад о преступлении завершён",
+    "strDesc": "[us] [is] доклад о преступлении завершён."
+  },
+  "PLGAIReportCrimeHQCHTrespassNPCDone": {
+    "strTitle": "Отмена доклада о преступлении",
+    "strDesc": "[us] [is] больше не планирует докладывать о преступлении."
+  },
+  "PLGAIReportCrimeHQCHThreat": {
+    "strTitle": "Доложить о преступлении",
+    "strDesc": "[us] [speaks] в [us-pos] КПК, глядя на [them]."
+  },
+  "PLGAIReportCrimeHQCHThreatAllow": {
+    "strTitle": "Доложить о преступлении: успех",
+    "strDesc": "[us] успешно [reports] о преступлении со стороны [them]."
+  },
+  "PLGAIReportCrimeHQCHThreatDone": {
+    "strTitle": "Доклад о преступлении завершён",
+    "strDesc": "[us] [is] доклад о преступлении завершён."
+  },
+  "PSPAIAICrimeHQCHLEOArrestAdd": {
+    "strTitle": "Добавляет нам задачу ареста HQCH LEO",
+    "strDesc": "[us] [gains] задачу ареста HQCH LEO."
+  },
+  "PSPAIAICrimeHQCHLEOArrestStolenShipAdd": {
+    "strTitle": "Добавляет нам задачу ареста HQCH LEO за угнанный корабль",
+    "strDesc": "[us] [gains] задачу ареста HQCH LEO за угнанный корабль."
+  },
+  "PLGAIReportCrimeJATLTrespassDeny": {
+    "strTitle": "Заявить о преступлении: неудача",
+    "strDesc": "[us] [fails] заявить о преступлении в отношении [them]."
+  },
+  "PLGAIReportCrimeJATLTrespassDone": {
+    "strTitle": "Заявление о преступлении завершено",
+    "strDesc": "[us] [is] больше не занимается заявлением о преступлении."
+  },
+  "PLGAIReportCrimeJATLTrespassNPCDone": {
+    "strTitle": "Отмена заявления о преступлении",
+    "strDesc": "[us] [is] больше не планирует заявить о преступлении."
+  },
+  "PLGAIReportCrimeJATLThreat": {
+    "strTitle": "Заявить о преступлении",
+    "strDesc": "[us] [speaks] в [us-pos] КПК, глядя на [them]."
+  },
+  "PLGAIReportCrimeJATLThreatAllow": {
+    "strTitle": "Заявить о преступлении: успех",
+    "strDesc": "[us] успешно [reports] о преступлении в отношении [them]."
+  },
+  "PLGAIReportCrimeJATLThreatDone": {
+    "strTitle": "Заявление о преступлении завершено",
+    "strDesc": "[us] [is] больше не занимается заявлением о преступлении."
+  },
+  "PSPAIAICrimeJATLLEOArrestAdd": {
+    "strTitle": "Добавляет нам ИИ-задачу JATL LEO Arrest",
+    "strDesc": "[us] [gains] ИИ-задачу JATL LEO Arrest."
+  },
+  "PSPAIAICrimeJATLLEOArrestStolenShipAdd": {
+    "strTitle": "Добавляет нам ИИ-задачу JATL LEO Arrest: игрок украл корабль",
+    "strDesc": "[us] [gains] задачу JATL LEO «Арест за угнанный корабль»."
+  },
+  "PLGAICrimeJATLLEOThreat": {
+    "strTitle": "Полицейский JATL атакует преступника",
+    "strDesc": "«Эй, это тот преступник! Взять его!» [us-shouts] [us], указывая на [them]."
+  },
+  "PLGAICrimeJATLLEOArrestStolenShip": {
+    "strTitle": "Полицейский JATL начинает задержание преступника за угон корабля",
+    "strDesc": "«Поступил сигнал, что вы пилотируете угнанный корабль», [us] [says], глядя на [them]. «Мы вас задерживаем»."
+  },
+  "PLGAIReportCrimeJATLArrest": {
+    "strTitle": "Сообщить о преступлении",
+    "strDesc": "[us] [speaks] в [us-pos] КПК, глядя на [them]."
+  },
+  "PLGAIReportCrimeJATLArrestAllow": {
+    "strTitle": "Сообщить о преступлении: успех",
+    "strDesc": "[us] успешно [reports] о преступлении, указывая на [them]."
+  },
+  "PLGAIReportCrimeJATLArrestDone": {
+    "strTitle": "Сообщение о преступлении завершено",
+    "strDesc": "[us] [is] завершает сообщение о преступлении."
+  },
+  "PLGAIReportCrimeJATLTrespass": {
+    "strTitle": "Сообщить о преступлении",
+    "strDesc": "[us] [says] «Убирайся отсюда», затем говорит в [us-pos] КПК, глядя на [them]."
+  },
+  "PLGAIReportCrimeJATLTrespassAllow": {
+    "strTitle": "Сообщить о преступлении: успех",
+    "strDesc": "[us] успешно [reports] о преступлении, указывая на [them]."
+  },
+  "PSPAIAICrimeJATLLEOThreatAdd": {
+    "strTitle": "Добавляет нам задачу JATL LEO «Угроза»",
+    "strDesc": "[us] [gains] задачу JATL LEO «Угроза»."
+  },
+  "ENCHeatJFTSBustedStart": {
+    "strTitle": "Повязали",
+    "strDesc": "Тебя волокут на трибунал Галилейской Конфедерации, а корабль и снаряжение остаются позади.\n\nНа слушании можно вымолить хотя бы штраф — $15,000, сразу или в рассрочку, — или отправиться на гауптвахту Форт-Симпсона, на год или три каторжных работ."
+  },
+  "ENCHeatJFTSFineEnd": {
+    "strTitle": "Просить штраф (одним платежом)",
+    "strDesc": "Такое чувство, будто они только и ждут, чтобы ты нарушил правила — тогда из тебя можно выжать больше штрафов.\n\nТы подписываешь гору бумаг в тесных наручниках.\n\nЭто тоже срок, только другого сорта. Ещё один груз на шее.\n\nДобавлен новый штраф: $15,000."
+  },
+  "ENCHeatJFTSFineDebtEnd": {
+    "strTitle": "Просить штраф (в рассрочку)",
+    "strDesc": "Такое чувство, будто они только и ждут, чтобы ты нарушил правила — тогда тебя можно загнать поглубже в процентные выплаты.\n\nТы подписываешь гору бумаг в тесных наручниках.\n\nЭто тоже срок, только другого сорта. Ещё один груз на шее.\n\nДобавлен новый долг: $15,000, платежи вносятся каждую смену."
+  },
+  "ENCHeatJFTSFineFinish": {
+    "strTitle": "Продолжить",
+    "strDesc": "После оформления тебя бесцеремонно вышвыривают у офиса службы безопасности Форт-Симпсона. Если на момент ареста ты не был пристыкован к станции, возможно, придётся воспользоваться паромным сервисом PASS (в КПК), чтобы снова добраться до корабля. Хоть бы он всё ещё был там.\n\nПора подниматься на ноги."
+  },
+  "ENCHeatJFTSPrisonStart": {
+    "strTitle": "На гауптвахту Форт-Симпсона",
+    "strDesc": "Тебя тащат на гауптвахту Форт-Симпсона."
+  },
+  "ENCHeatJFTSPrisonEnd": {
+    "strTitle": "Отбыть каторгу",
+    "strDesc": "Ты месяцами вкалываешь без оплаты среди изгоев — и смирных, и опасных. Ты делишь барак почти с сотней других душ, и все вы сложены, как дрова, на трёхъярусных нарах.\n\nНо даже в таком аду есть свои возможности. Ты слышишь разное. Ты встречаешь людей. Влипаешь в пару передряг, заводишь пару друзей. К концу срока ты проживаешь дюжину жизней, и все шрамы тому подтверждение.\n\nК тому же бесплатные койка и пайка. При определённом взгляде оно, пожалуй, того стоит...\n\n"
+  },
+  "ENCHeatJFTSPrisonFinish": {
+    "strTitle": "Продолжить",
+    "strDesc": "После оформления тебя без церемоний вышвыривают у офиса службы безопасности Форт-Симпсона. Если на момент ареста твой корабль не был пристыкован к станции, возможно, придётся воспользоваться паромной службой PASS (на КПК), чтобы снова добраться до корабля. Будем надеяться, он всё ещё там.\n\nПора вставать на ноги."
+  },
+  "PLGAICrimeJFTSLEOArrest": {
+    "strTitle": "Офицер JFTS начинает арест преступника",
+    "strDesc": "«Подозреваемый обнаружен», — [us] [says], глядя на [them]."
+  },
+  "PLGAICrimeJFTSLEOInterruptSelf": {
+    "strTitle": "Преступление прерывает офицера JFTS",
+    "strDesc": "Прервать их."
+  },
+  "PLGAICrimeJFTSLEOArrestDo": {
+    "strTitle": "Арест преступника",
+    "strDesc": "«Ни с места! Ты арестован!» — [us] [shouts] на [them]."
+  },
+  "PLGAICrimeJFTSLEOArrestDoAllow": {
+    "strTitle": "Сдаться офицеру",
+    "strDesc": "[us] мирно [goes] с [them]."
+  },
+  "PLGAICrimeJFTSLEOArrestDoDeny": {
+    "strTitle": "Заявить о невиновности",
+    "strDesc": "[us] [tells] [them], что [them-subj] [has] не того человека."
+  },
+  "PLGAICrimeJFTSLEOArrestEnd": {
+    "strTitle": "Офицер JFTS завершил арест преступника",
+    "strDesc": "«Ещё одна победа закона», — [us] [says]."
+  },
+  "PLGAICrimeJFTSLEOArrestEndAI": {
+    "strTitle": "Арест",
+    "strDesc": "Вспомогательное взаимодействие: перед продолжением проверяет, что действующее лицо — ИИ-персонаж."
+  },
+  "PSPAIAICrimeJFTSLEOArrestAdd": {
+    "strDesc": "[us] [gains] задачу «Арест JFTS LEO».",
+    "strTitle": "Добавляет нам ИИ-задачу ареста JFTS LEO"
+  },
+  "PSPAIAICrimeJFTSLEOArrestStolenShipAdd": {
+    "strTitle": "Добавляет нам задачу «Арест JFTS LEO», если игрок угнал корабль.",
+    "strDesc": "[us] [gains] задачу «Арест JFTS LEO за угон корабля»."
+  },
+  "PSPAIAICrimeJFTSLEOThreatAdd": {
+    "strTitle": "Добавляет нам задачу «Угроза JFTS LEO».",
+    "strDesc": "[us] [gains] задачу «Угроза JFTS LEO»."
+  },
+  "ENCHeatMHNGBustedStart": {
+    "strTitle": "Повязали",
+    "strDesc": "Тебя волокут к магистрату Ханчжоу на суд, а корабль и барахло остаются позади.\n\nНа слушании можно выпросить только штраф — $15,000 сразу или в рассрочку — а не то отправишься на бриг «Фарсидская посадка» на год-три каторжных работ."
+  },
+  "ENCHeatMHNGFineEnd": {
+    "strTitle": "Просить штраф (единовременно)",
+    "strDesc": "Похоже, они только и ждут, когда ты нарушишь правила, чтобы выжать из тебя больше штрафов.\n\nТы подписываешь кипы бумаг в туго затянутых наручниках.\n\nЭто тоже тюремный срок, только другого рода. Ещё одна гиря на шее.\n\nДобавлен новый штраф на $15,000."
+  },
+  "ENCHeatMHNGFineDebtEnd": {
+    "strTitle": "Просить штраф (в рассрочку)",
+    "strDesc": "Похоже, они только и ждут, когда ты нарушишь правила, чтобы загнать тебя поглубже в процентные выплаты.\n\nТы подписываешь кипы бумаг в туго затянутых наручниках.\n\nЭто тоже тюремный срок, только другого рода. Ещё одна гиря на шее.\n\nДобавлен новый долг на $15,000; платить нужно каждую смену."
+  },
+  "ENCHeatMHNGFineFinish": {
+    "strTitle": "Продолжить",
+    "strDesc": "После оформления тебя без церемоний вышвыривают за дверь офиса безопасности «Фарсиды». Если во время ареста твой корабль не был пристыкован к станции, возможно, придётся воспользоваться паромной службой PASS (через КПК), чтобы снова добраться до корабля. Будем надеяться, он всё ещё там.\n\nПора вставать на ноги."
+  },
+  "ENCHeatMHNGPrisonStart": {
+    "strTitle": "На бриг «Ханчжоу»",
+    "strDesc": "Тебя волокут на бриг «Ханчжоу»."
+  },
+  "PLGAICrimeMHNGLEOArrestEnd": {
+    "strDesc": "«Ещё одна победа закона», — [us] [says].",
+    "strTitle": "Офицер СБ Ханчжоу завершил арест"
+  },
+  "PLGAICrimeMHNGLEOArrestEndAI": {
+    "strTitle": "Арест",
+    "strDesc": "Вспомогательное взаимодействие для проверки us = ИИ-персонажа перед продолжением."
+  },
+  "PLGAICrimeMHNGLEOArrestEndPlayer": {
+    "strTitle": "Преступник арестован (игрок)",
+    "strDesc": "Полицейский завершает подавление угрозы со стороны игрока."
+  },
+  "PLGAICrimeMHNGLEOThreat": {
+    "strTitle": "Полицейский MHNG атакует преступника",
+    "strDesc": "«Эй, это тот преступник! Взять его!» — [us-shouts] [us], указывая на [them]."
+  },
+  "PLGAICrimeMHNGLEOArrestStolenShip": {
+    "strTitle": "Полицейский MHNG начинает арест за угон корабля",
+    "strDesc": "«Поступил сигнал, что ты управляешь украденным кораблём», — [us] [says], глядя на [them]. «Мы тебя забираем»."
+  },
+  "PLGAIReportCrimeMHNGArrest": {
+    "strTitle": "Сообщить о преступлении",
+    "strDesc": "[us] [speaks] в [us-pos] ПДА, глядя на [them]."
+  },
+  "PLGAIReportCrimeMHNGArrestAllow": {
+    "strTitle": "Сообщить о преступлении: успех",
+    "strDesc": "[us] успешно [reports] о преступлении, указывая на [them]."
+  },
+  "PLGAIReportCrimeMHNGArrestDone": {
+    "strTitle": "Сообщение о преступлении завершено",
+    "strDesc": "[us] [is] — сообщение о преступлении завершено."
+  },
+  "PLGAIReportCrimeJFTSTrespassAllow": {
+    "strTitle": "Сообщить о преступлении: успех",
+    "strDesc": "[us] успешно [reports] о преступлении на [them]."
+  },
+  "PLGAIReportCrimeJFTSTrespassDeny": {
+    "strTitle": "Сообщить о преступлении: неудача",
+    "strDesc": "[us] [fails] сообщить о преступлении на [them]."
+  },
+  "PLGAIReportCrimeJFTSTrespassDone": {
+    "strTitle": "Сообщение о преступлении завершено",
+    "strDesc": "[us] [is] завершает сообщение о преступлении."
+  },
+  "PLGAIReportCrimeJFTSTrespassNPCDone": {
+    "strTitle": "Сообщение о преступлении отменено",
+    "strDesc": "[us] [is] больше не собирается сообщать о преступлении."
+  },
+  "PLGAIReportCrimeJFTSThreat": {
+    "strTitle": "Сообщить о преступлении",
+    "strDesc": "[us] [speaks] в [us-pos] КПК, глядя на [them]."
+  },
+  "PLGAIReportCrimeJFTSThreatAllow": {
+    "strTitle": "Сообщить о преступлении: успех",
+    "strDesc": "[us] успешно [reports] о преступлении на [them]."
+  },
+  "PLGAIReportCrimeJFTSThreatDone": {
+    "strTitle": "Сообщение о преступлении завершено",
+    "strDesc": "[us] [is] завершает сообщение о преступлении."
+  },
+  "ENCHeatMHNGPrisonEnd": {
+    "strTitle": "Суровый срок",
+    "strDesc": "Ты месяцами вкалываешь задаром среди изгоев — и смирных, и опасных. Ты делишь барак почти с сотней других душ, и все вы уложены, как растопка, на трёхъярусных койках.\n\nНо даже в таком аду есть свои возможности. Ты слышишь разное. Ты знакомишься с людьми. Ты влипаешь в передряги и находишь кое-каких друзей. К концу срока ты проживаешь дюжину жизней, и у тебя хватает шрамов, чтобы это доказать.\n\nПлюс бесплатное жильё и кормёжка. При определённом взгляде, может, оно того и стоит ...\n\n"
+  },
+  "ENCHeatMHNGPrisonFinish": {
+    "strTitle": "Продолжить",
+    "strDesc": "После оформления тебя без церемоний выставляют за двери офиса безопасности Ханчжоу. Если во время ареста твой корабль не был пристыкован к станции, возможно, придётся воспользоваться паромным сервисом PASS (через КПК), чтобы снова добраться до своего корабля. Хорошо бы он всё ещё был там.\n\nПора вставать на ноги."
+  },
+  "PLGAICrimeMHNGLEOArrest": {
+    "strTitle": "Офицер СБ Ханчжоу приступает к аресту преступника",
+    "strDesc": "«Подозреваемый обнаружен», — [us] [says], глядя на [them]."
+  },
+  "PLGAICrimeMHNGLEOInterruptSelf": {
+    "strTitle": "Офицер СБ Ханчжоу прерван преступлением",
+    "strDesc": "Прервать их."
+  },
+  "PLGAICrimeMHNGLEOArrestDo": {
+    "strTitle": "Арест преступника",
+    "strDesc": "«Стоять! Вы под арестом!» — [us] [shouts] на [them]."
+  },
+  "PLGAICrimeMHNGLEOArrestDoAllow": {
+    "strTitle": "Сдаться офицеру",
+    "strDesc": "[us] [goes] вместе с [them] без сопротивления."
+  },
+  "PLGAICrimeMHNGLEOArrestDoDeny": {
+    "strTitle": "Заявить о невиновности",
+    "strDesc": "[us] [tells] [them], что [them-subj] [has] не того человека."
+  },
+  "PLGAICrimeHQCHLEOArrestStolenShip": {
+    "strTitle": "Полиция HQCH начинает арест угонщика корабля",
+    "strDesc": "«Поступил сигнал, что ты пилотируешь угнанный корабль», — [us] [says], глядя на [them]. «Мы тебя задерживаем»."
+  },
+  "PLGAIReportCrimeHQCHArrest": {
+    "strTitle": "Сообщить о преступлении",
+    "strDesc": "[us] [speaks] в [us-pos] КПК, глядя на [them]."
+  },
+  "PLGAIReportCrimeHQCHArrestAllow": {
+    "strTitle": "Сообщить о преступлении: успех",
+    "strDesc": "[us] успешно [reports] о преступлении, совершённом [them]."
+  },
+  "PLGAIReportCrimeHQCHArrestDone": {
+    "strTitle": "Сообщение о преступлении завершено",
+    "strDesc": "[us] [is] больше не сообщает о преступлении."
+  },
+  "PLGAIReportCrimeHQCHTrespass": {
+    "strTitle": "Сообщить о преступлении",
+    "strDesc": "[us] [says]: «Убирайся отсюда», а затем говорит в [us-pos] КПК, глядя на [them]."
+  },
+  "PLGAIReportCrimeHQCHTrespassAllow": {
+    "strTitle": "Сообщить о преступлении: успех",
+    "strDesc": "[us] успешно [reports] о преступлении, совершённом [them]."
+  },
+  "PLGAIReportCrimeHQCHTrespassDeny": {
+    "strTitle": "Сообщить о преступлении: неудача",
+    "strDesc": "[us] [fails] сообщить о преступлении, совершённом [them]."
+  },
+  "ENCHeatMSUZPrisonStart": {
+    "strTitle": "В изолятор Сучжоу",
+    "strDesc": "Тебя волокут в изолятор Сучжоу."
+  },
+  "ENCHeatMSUZPrisonEnd": {
+    "strTitle": "Тяжёлый срок",
+    "strDesc": "Ты месяцами вкалываешь без платы среди изгоев — и смирных, и опасных. Ты делишь общий барак почти с сотней других душ, и все вы уложены, как дрова, на трёхъярусных нарах.\n\nНо даже в таком аду есть свои возможности. Ты слышишь всякое. Знакомишься с людьми. Влипаешь в переделки, находишь кое-каких друзей. К концу срока ты проживаешь дюжину жизней, и на тебе хватает шрамов, чтобы это доказать.\n\nПлюс, бесплатный кров и пайка. С определённого ракурса, оно, пожалуй, того стоит ...\n\n"
+  },
+  "ENCHeatMSUZPrisonFinish": {
+    "strTitle": "Продолжить",
+    "strDesc": "После оформления тебя без церемоний вышвыривают за пределы офиса службы безопасности Сучжоу. Если на момент ареста твой корабль не был пристыкован к станции, возможно, тебе придётся воспользоваться паромной службой PASS (через КПК), чтобы снова добраться до своего корабля. Остаётся надеяться, что он всё ещё там.\n\nПора снова вставать на ноги."
+  },
+  "PLGAICrimeMSUZLEOArrest": {
+    "strTitle": "Офицер MSUZ начинает арест преступника",
+    "strDesc": "\"Подозреваемый обнаружен\", [us] [says], глядя на [them]."
+  },
+  "PLGAICrimeMSUZLEOInterruptSelf": {
+    "strTitle": "Офицера MSUZ прерывает преступление",
+    "strDesc": "Прервать [them]."
+  },
+  "PLGAICrimeMSUZLEOArrestDo": {
+    "strTitle": "Арест преступника",
+    "strDesc": "\"Ни с места! Ты под арестом!\" [us] [shouts] на [them]."
+  },
+  "PLGAICrimeMSUZLEOArrestDoAllow": {
+    "strTitle": "Сдаться офицеру",
+    "strDesc": "[us] [goes] с [them] без сопротивления."
+  },
+  "PLGAICrimeMSUZLEOArrestDoDeny": {
+    "strTitle": "Отрицать вину",
+    "strDesc": "[us] [tells] [them], что [them-subj] [has] не того человека."
+  },
+  "PLGAICrimeJFTSLEOArrestEndPlayer": {
+    "strTitle": "Преступник арестован (игрок)",
+    "strDesc": "Офицер JFTS завершает подавление угрозы со стороны игрока."
+  },
+  "PLGAICrimeJFTSLEOThreat": {
+    "strTitle": "Офицер JFTS атакует преступника",
+    "strDesc": "«Эй, это тот преступник! Взять его!» [us-shouts] [us], указывая на [them]."
+  },
+  "PLGAICrimeJFTSLEOArrestStolenShip": {
+    "strTitle": "Офицер JFTS начинает арест преступника за угон корабля",
+    "strDesc": "«Нам сообщили, что ты летишь на угнанном корабле», [us] [says], глядя на [them]. «Мы забираем тебя.»"
+  },
+  "PLGAIReportCrimeJFTSArrest": {
+    "strTitle": "Сообщить о преступлении",
+    "strDesc": "[us] [speaks] в [us-pos] КПК, глядя на [them]."
+  },
+  "PLGAIReportCrimeJFTSArrestAllow": {
+    "strTitle": "Сообщить о преступлении: успех",
+    "strDesc": "[us] успешно [reports] о преступлении на [them]."
+  },
+  "PLGAIReportCrimeJFTSArrestDone": {
+    "strTitle": "Сообщение о преступлении завершено",
+    "strDesc": "[us] [is] заканчивает сообщение о преступлении."
+  },
+  "PLGAIReportCrimeJFTSTrespass": {
+    "strTitle": "Сообщить о преступлении",
+    "strDesc": "[us] [says] «Убирайся отсюда», затем говорит в [us-pos] КПК, глядя на [them]."
+  },
+  "ENCHeatMTRSFineFinish": {
+    "strTitle": "Продолжить",
+    "strDesc": "После оформления тебя бесцеремонно вышвыривают за дверь Бюро безопасности Фарсиды. Если на момент ареста ты не был пристыкован к станции, придётся вызывать паром PASS (через КПК), чтобы добраться до корабля. Будем надеяться, он ещё на месте.\n\nПора вставать на ноги."
+  },
+  "ENCHeatMTRSPrisonStart": {
+    "strTitle": "На гауптвахту Фарсиды",
+    "strDesc": "Тебя волокут на гауптвахту посадочного комплекса Фарсиды."
+  },
+  "ENCHeatMTRSPrisonEnd": {
+    "strTitle": "Тяжёлый срок",
+    "strDesc": "Месяцы каторжного труда без гроша среди изгоев — и забитых, и опасных. Общий барак на сотню душ, все навалены как хворост на трёхъярусных нарах.\n\nНо даже в таком аду есть свои возможности. Ты слышишь разное. Знакомишься с людьми. Влипаешь в переделки, находишь кое-каких друзей. К концу срока ты проживаёшь с десяток жизней, и шрамы тому доказательство.\n\nК тому же, бесплатная крыша и пайка. Если посмотреть под определённым углом, оно того стоит…\n\n"
+  },
+  "ENCHeatMTRSPrisonFinish": {
+    "strTitle": "Продолжить",
+    "strDesc": "После оформления тебя бесцеремонно вышвыривают за дверь Бюро безопасности Фарсиды. Если на момент ареста ты не был пристыкован к станции, придётся вызывать паром PASS (через КПК), чтобы добраться до корабля. Будем надеяться, он ещё на месте.\n\nПора вставать на ноги."
+  },
+  "PLGAICrimeMTRSLEOArrest": {
+    "strTitle": "MTRS LEO: начало задержания",
+    "strDesc": "«Подозреваемый обнаружен», — [us] [says], глядя на [them]."
+  },
+  "PLGAICrimeMTRSLEOInterruptSelf": {
+    "strTitle": "MTRS LEO: прервано преступлением",
+    "strDesc": "Прервать их."
+  },
+  "PLGAICrimeMTRSLEOArrestDo": {
+    "strTitle": "Задержание преступника",
+    "strDesc": "«Ни с места! Вы арестованы!» — [us] [shouts], обращаясь к [them]."
+  },
+  "PLGAICrimeMTRSLEOArrestDoAllow": {
+    "strTitle": "Сдаться офицеру",
+    "strDesc": "[us] [goes] мирно вместе с [them]."
+  },
+  "PLGAIReportCrimeMSUZArrestDone": {
+    "strTitle": "Сообщение о преступлении завершено",
+    "strDesc": "[us] [is] сообщение о преступлении завершено."
+  },
+  "PLGAIReportCrimeMSUZTrespass": {
+    "strTitle": "Сообщить о преступлении",
+    "strDesc": "[us] [says] «Проваливай отсюда», затем говорит в [us-pos] КПК, глядя на [them]."
+  },
+  "PLGAIReportCrimeMSUZTrespassAllow": {
+    "strTitle": "Сообщить о преступлении: успех",
+    "strDesc": "[us] успешно [reports] о преступлении, связанном с [them]."
+  },
+  "PLGAIReportCrimeMSUZTrespassDeny": {
+    "strTitle": "Сообщить о преступлении: неудача",
+    "strDesc": "[us] [fails] сообщить о преступлении, связанном с [them]."
+  },
+  "PLGAIReportCrimeMSUZTrespassDone": {
+    "strTitle": "Сообщение о преступлении завершено",
+    "strDesc": "[us] [is] сообщение о преступлении завершено."
+  },
+  "PLGAIReportCrimeMSUZTrespassNPCDone": {
+    "strTitle": "Отмена сообщения о преступлении",
+    "strDesc": "[us] [is] отказ от сообщения о преступлении."
+  },
+  "PLGAIReportCrimeMSUZThreat": {
+    "strTitle": "Сообщить о преступлении",
+    "strDesc": "[us] [speaks] в [us-pos] КПК, глядя на [them]."
+  },
+  "PLGAIReportCrimeMSUZThreatAllow": {
+    "strTitle": "Сообщить о преступлении: успех",
+    "strDesc": "[us] успешно [reports] о преступлении против [them]."
+  },
+  "PLGAICrimeMSUZLEOArrestEnd": {
+    "strTitle": "Полицейский МСУЗ завершил арест преступника",
+    "strDesc": "«Ещё одна победа закона», — [us] [says]."
+  },
+  "PLGAICrimeMSUZLEOArrestEndAI": {
+    "strTitle": "Арест",
+    "strDesc": "Вспомогательное взаимодействие: проверяет, что [us] — ИИ-персонаж, перед продолжением."
+  },
+  "PLGAICrimeMSUZLEOArrestEndPlayer": {
+    "strTitle": "Преступник арестован (игрок)",
+    "strDesc": "Полицейский завершает подавление угрозы со стороны игрока."
+  },
+  "PLGAICrimeMSUZLEOThreat": {
+    "strTitle": "Полицейский МСУЗ атакует преступника",
+    "strDesc": "«Эй, это тот преступник! Взять его!» — [us-shouts] [us], указывая в сторону [them]."
+  },
+  "PLGAICrimeMSUZLEOArrestStolenShip": {
+    "strTitle": "Полицейский МСУЗ начинает арест преступника за угон корабля",
+    "strDesc": "«Поступил сигнал, что вы летите на угнанном корабле», — [us] [says], глядя на [them]. «Мы вас забираем»."
+  },
+  "PLGAIReportCrimeMSUZArrest": {
+    "strTitle": "Сообщить о преступлении",
+    "strDesc": "[us] [speaks] в [us-pos] КПК, глядя на [them]."
+  },
+  "PLGAIReportCrimeMSUZArrestAllow": {
+    "strTitle": "Сообщить о преступлении: успешно",
+    "strDesc": "[us] успешно [reports] о преступлении, указывая на [them]."
+  },
+  "PLGAIReportCrimeMHNGTrespass": {
+    "strTitle": "Сообщить о преступлении",
+    "strDesc": "[us] [says] «Проваливай», затем говорит в [us-pos] КПК, глядя на [them]."
+  },
+  "PLGAIReportCrimeMHNGTrespassAllow": {
+    "strTitle": "Сообщить о преступлении: успех",
+    "strDesc": "[us] успешно [reports] о преступлении, указывая на [them]."
+  },
+  "PLGAIReportCrimeMHNGTrespassDeny": {
+    "strTitle": "Сообщить о преступлении: неудача",
+    "strDesc": "[us] [fails] сообщить о преступлении, указывая на [them]."
+  },
+  "PLGAIReportCrimeMHNGTrespassDone": {
+    "strTitle": "Сообщение о преступлении завершено",
+    "strDesc": "[us] [is] — сообщение о преступлении завершено."
+  },
+  "PLGAIReportCrimeMHNGTrespassNPCDone": {
+    "strTitle": "Отмена сообщения о преступлении",
+    "strDesc": "[us] [is] — сообщение о преступлении отменено."
+  },
+  "PLGAIReportCrimeMHNGThreat": {
+    "strTitle": "Сообщить о преступлении",
+    "strDesc": "[us] [speaks] в [us-pos] КПК, глядя на [them]."
+  },
+  "PLGAIReportCrimeMHNGThreatAllow": {
+    "strTitle": "Сообщить о преступлении: успех",
+    "strDesc": "[us] успешно [reports] о преступлении, указывая на [them]."
+  },
+  "PLGAIReportCrimeMHNGThreatDone": {
+    "strTitle": "Сообщение о преступлении завершено",
+    "strDesc": "[us] [is] доклад о преступлении завершён."
+  },
+  "PLGAIReportCrimeMTRSThreat": {
+    "strDesc": "[us] [speaks] в [us-pos] КПК, глядя на [them].",
+    "strTitle": "Сообщить о преступлении"
+  },
+  "PLGAIReportCrimeMTRSThreatAllow": {
+    "strTitle": "Донос о преступлении: успех",
+    "strDesc": "[us] успешно [reports] о преступлении [them]."
+  },
+  "PLGAIReportCrimeMTRSThreatDone": {
+    "strTitle": "Донос завершён",
+    "strDesc": "[us] [is] покончил(а) с доносом о преступлении."
+  },
+  "PSPAIAICrimeMTRSLEOArrestAdd": {
+    "strTitle": "Добавляет задачу «Арест LEO MTRS»",
+    "strDesc": "[us] [gains] задачу «Арест LEO MTRS»."
+  },
+  "PSPAIAICrimeMTRSLEOArrestStolenShipAdd": {
+    "strTitle": "Добавляет задачу «Арест LEO MTRS» за угон корабля",
+    "strDesc": "[us] [gains] задачу «Арест LEO MTRS за угон корабля»."
+  },
+  "PSPAIAICrimeMTRSLEOThreatAdd": {
+    "strTitle": "Добавляет задачу «Угроза LEO MTRS»",
+    "strDesc": "[us] [gains] задачу «Угроза LEO MTRS»."
+  },
+  "ENCHeatMVOLBustedStart": {
+    "strTitle": "Повязали",
+    "strDesc": "Тебя волокут к магистрату Синьхуа на разбор, а корабль и всё снаряжение остаются позади.\n\nНа слушании можно вымолить штраф — $15 000 разом или в рассрочку — либо отправиться на бриг «Вольтер» на год-три каторги."
+  },
+  "ENCHeatMVOLFineEnd": {
+    "strTitle": "Просить штраф (единовременно)",
+    "strDesc": "Такое ощущение, что они только и ждут, когда ты нарушишь правила, — чтобы содрать ещё один штраф.\n\nПодписываешь гору бумажек в тесных наручниках.\n\nЭто тоже приговор, только другого сорта. Ещё одна гиря на шее.\n\nДобавлен новый штраф: $15 000."
+  },
+  "ENCHeatSVIRFineEnd": {
+    "strTitle": "Просить штраф (единовременно)",
+    "strDesc": "Такое ощущение, что они только и ждут, когда ты нарушишь правила — чтобы содрать с тебя побольше штрафов.\n\nПодписываешь горы бумажек в тугих наручниках.\n\nЭто тоже приговор, только другого сорта. Ещё одна гиря на шее.\n\nНовый штраф: $15 000."
+  },
+  "ENCHeatSVIRFineDebtEnd": {
+    "strTitle": "Просить штраф (в рассрочку)",
+    "strDesc": "Такое ощущение, что они только и ждут, когда ты нарушишь правила — чтобы поглубже загнать тебя в проценты.\n\nПодписываешь горы бумажек в тугих наручниках.\n\nЭто тоже приговор, только другого сорта. Ещё одна гиря на шее.\n\nНовый долг: $15 000, выплаты каждую смену."
+  },
+  "ENCHeatSVIRFineFinish": {
+    "strTitle": "Продолжить",
+    "strDesc": "После оформления тебя без церемоний вышвыривают за двери Управления безопасности «Вирджинии». Если на момент ареста ты не был пристыкован к станции, придётся воспользоваться паромной службой PASS (через КПК), чтобы добраться до корабля. Будем надеяться, он ещё на месте.\n\nПора вставать на ноги."
+  },
+  "ENCHeatSVIRPrisonStart": {
+    "strTitle": "Отправка в тюрьму «Вирджиния»",
+    "strDesc": "Тебя волокут в исправительную колонию «Вирджиния»."
+  },
+  "ENCHeatSVIRPrisonEnd": {
+    "strTitle": "Отсидеть срок",
+    "strDesc": "Ты месяцами вкалываешь задаром среди отбросов — и забитых, и опасных. Делишь барак почти с сотней таких же душ, все навалены как дрова на трёхъярусных нарах.\n\nНо даже в таком аду есть свои возможности. Ты слышишь всякое. Знакомишься с людьми. Влипаешь в пару переделок, находишь пару друзей. К концу срока ты проживёшь с дюжину жизней, и шрамы тому доказательство.\n\nПлюс бесплатная крыша и баландка. Если посмотреть с определённой стороны, оно того стоит ...\n\n"
+  },
+  "ENCHeatSVIRPrisonFinish": {
+    "strTitle": "Продолжить",
+    "strDesc": "После оформления тебя без церемоний вышвыривают за двери Управления безопасности «Вирджинии». Если на момент ареста ты не был пристыкован к станции, придётся воспользоваться паромной службой PASS (через КПК), чтобы добраться до корабля. Будем надеяться, он ещё на месте.\n\nПора вставать на ноги."
+  },
+  "PLGAICrimeSVIRLEOArrest": {
+    "strTitle": "Полицейский SVIR приступает к аресту",
+    "strDesc": "«Подозреваемый обнаружен», — [us] [says], глядя на [them]."
+  },
+  "PLGAICrimeSVIRLEOInterruptSelf": {
+    "strTitle": "Полицейский SVIR прерван преступлением",
+    "strDesc": "Прервать их."
+  },
+  "PSPAIAICrimeMHNGLEOArrestAdd": {
+    "strTitle": "Добавляет нам ИИ-задачу «Арест MHNG LEO»",
+    "strDesc": "[us] [gains] ИИ-задачу «Арест MHNG LEO»."
+  },
+  "PSPAIAICrimeMHNGLEOArrestStolenShipAdd": {
+    "strTitle": "Добавляет нам ИИ-задачу «Арест MHNG LEO за кражу корабля»",
+    "strDesc": "[us] [gains] ИИ-задачу «Арест MHNG LEO за кражу корабля»."
+  },
+  "PSPAIAICrimeMHNGLEOThreatAdd": {
+    "strTitle": "Добавляет нам ИИ-задачу «Угроза MHNG LEO»",
+    "strDesc": "[us] [gains] ИИ-задачу «Угроза MHNG LEO»."
+  },
+  "ENCHeatMSUZBustedStart": {
+    "strTitle": "Повязали",
+    "strDesc": "Тебя волокут к магистрату Сучжоу на суд, оставив твой корабль и снаряжение позади.\n\nНа слушании можно вымолить только штраф — $15,000, выплатить полностью или в рассрочку, — а не то отправят на бриг Сучжоу, на год или три каторжных работ."
+  },
+  "ENCHeatMSUZFineEnd": {
+    "strTitle": "Просить штраф (единовременно)",
+    "strDesc": "Похоже, им только и нужно нарушение правил, чтобы содрать с тебя больше штрафов.\n\nТы подписываешь кипы бумаг в тугих наручниках.\n\nЭто тоже срок, только другого рода. Ещё один груз на шее.\n\nДобавлен новый штраф: $15,000."
+  },
+  "ENCHeatMSUZFineDebtEnd": {
+    "strTitle": "Просить штраф (в рассрочку)",
+    "strDesc": "Похоже, им только и нужно нарушение правил, чтобы поглубже загнать тебя в процентные выплаты.\n\nТы подписываешь кипы бумаг в тугих наручниках.\n\nЭто тоже срок, только другого рода. Ещё один груз на шее.\n\nДобавлен новый долг: $15,000, платить нужно каждую смену."
+  },
+  "ENCHeatMSUZFineFinish": {
+    "strTitle": "Продолжить",
+    "strDesc": "После оформления тебя без церемоний вышвыривают за дверь офиса безопасности Сучжоу. Если на момент ареста не было стыковки со станцией, возможно, придётся воспользоваться паромной службой PASS (через КПК), чтобы снова добраться до корабля. Хоть бы он всё ещё был там.\n\nПора снова вставать на ноги."
+  },
+  "PLGAIReportCrimeMSUZThreatDone": {
+    "strTitle": "Сообщение о преступлении завершено",
+    "strDesc": "[us] [is] сообщение о преступлении завершено."
+  },
+  "PSPAIAICrimeMSUZLEOArrestAdd": {
+    "strTitle": "Добавляет нам задачу «Арест MSUZ LEO»",
+    "strDesc": "[us] [gains] задачу «Арест MSUZ LEO»."
+  },
+  "PSPAIAICrimeMSUZLEOArrestStolenShipAdd": {
+    "strTitle": "Добавляет нам задачу «Арест MSUZ LEO» за угон корабля игроком",
+    "strDesc": "[us] [gains] задачу «Арест MSUZ LEO за угон корабля»."
+  },
+  "PSPAIAICrimeMSUZLEOThreatAdd": {
+    "strTitle": "Добавляет нам задачу «Угроза MSUZ LEO»",
+    "strDesc": "[us] [gains] задачу «Угроза MSUZ LEO»."
+  },
+  "ENCHeatMTRSBustedStart": {
+    "strTitle": "Повязали",
+    "strDesc": "Тебя волокут к судье Синьхуа на расправу, оставив корабль и снаряжение позади.\n\nНа слушании можно вымолить лишь штраф — $15,000, целиком или в рассрочку, — а не то отправят в тюремный блок Посадки Тарсис на год-три каторжного труда."
+  },
+  "ENCHeatMTRSFineEnd": {
+    "strTitle": "Просить о штрафе (единовременно)",
+    "strDesc": "Такое чувство, будто они только и ждут, когда нарушаешь правила, — так им проще выколачивать из тебя больше штрафов.\n\nТы подписываешь кипы бумаг в тесных наручниках.\n\nЭто тоже приговор, только другого сорта. Ещё одна гиря на шее.\n\nДобавлен новый штраф на $15,000."
+  },
+  "ENCHeatMTRSFineDebtEnd": {
+    "strTitle": "Просить о штрафе (в рассрочку)",
+    "strDesc": "Такое чувство, будто они только и ждут, когда нарушаешь правила, — так им проще загонять тебя глубже в проценты.\n\nТы подписываешь кипы бумаг в тесных наручниках.\n\nЭто тоже приговор, только другого сорта. Ещё одна гиря на шее.\n\nДобавлен новый долг на $15,000, платёж причитается каждую смену."
+  },
+  "PLGAICrimeMTRSLEOArrestDoDeny": {
+    "strTitle": "Заявить о невиновности",
+    "strDesc": "[us] [tells] [them], что [them-subj] [has] не того человека."
+  },
+  "PLGAICrimeMTRSLEOArrestEnd": {
+    "strTitle": "MTRS LEO завершил арест",
+    "strDesc": "«Ещё одна победа закона», — [us] [says]."
+  },
+  "PLGAICrimeMTRSLEOArrestEndAI": {
+    "strTitle": "Арест",
+    "strDesc": "Служебная заглушка: перед продолжением проверяет, что us = ИИ-персонаж."
+  },
+  "PLGAICrimeMTRSLEOArrestEndPlayer": {
+    "strTitle": "Преступник арестован (игрок)",
+    "strDesc": "LEO завершает подавление угрозы со стороны игрока."
+  },
+  "PLGAICrimeMTRSLEOThreat": {
+    "strTitle": "MTRS LEO атакует преступника",
+    "strDesc": "«Эй, это тот преступник! Взять его!» — [us-shouts] [us], указывая в сторону [them]."
+  },
+  "PLGAICrimeMTRSLEOArrestStolenShip": {
+    "strTitle": "MTRS LEO начинает арест за угон корабля",
+    "strDesc": "«Поступил сигнал, что ты летишь на угнанном корабле», — [us] [says], глядя на [them]. «Мы тебя забираем»."
+  },
+  "PLGAIReportCrimeMTRSArrest": {
+    "strTitle": "Сообщить о преступлении",
+    "strDesc": "[us] [speaks] в [us-pos] КПК, глядя на [them]."
+  },
+  "PLGAIReportCrimeMVOLArrest": {
+    "strTitle": "Сообщить о преступлении",
+    "strDesc": "[us] [speaks] в [us-pos] КПК, глядя на [them]."
+  },
+  "PLGAIReportCrimeMVOLArrestAllow": {
+    "strTitle": "Сообщить о преступлении: успех",
+    "strDesc": "[us] успешно [reports] о преступлении на [them]."
+  },
+  "PLGAIReportCrimeMVOLArrestDone": {
+    "strTitle": "Сообщение о преступлении завершено",
+    "strDesc": "[us] [is] в статусе «сообщение о преступлении завершено»."
+  },
+  "PLGAIReportCrimeMVOLTrespass": {
+    "strTitle": "Сообщить о преступлении",
+    "strDesc": "[us] [says] «Убирайся отсюда», затем говорит в [us-pos] КПК, глядя на [them]."
+  },
+  "PLGAIReportCrimeMVOLTrespassAllow": {
+    "strTitle": "Сообщить о преступлении: успех",
+    "strDesc": "[us] успешно [reports] о преступлении на [them]."
+  },
+  "PLGAIReportCrimeMVOLTrespassDeny": {
+    "strTitle": "Сообщить о преступлении: неудача",
+    "strDesc": "[us] [fails] сообщить о преступлении на [them]."
+  },
+  "PLGAIReportCrimeMVOLTrespassDone": {
+    "strTitle": "Сообщение о преступлении завершено",
+    "strDesc": "[us] [is] в статусе «сообщение о преступлении завершено»."
+  },
+  "PLGAIReportCrimeMVOLTrespassNPCDone": {
+    "strTitle": "Отменить сообщение о преступлении",
+    "strDesc": "[us] [is] больше не собирается сообщать о преступлениях."
+  },
+  "ENCHeatMVOLFineDebtEnd": {
+    "strTitle": "Выпросить штраф (в рассрочку)",
+    "strDesc": "Такое ощущение, будто они хотят, чтобы ты нарушал правила — так тебя можно глубже загнать в процентные выплаты.\n\nТы подписываешь кипы бумаг в тугих наручниках.\n\nЭто тоже срок, только другой. Ещё одна гиря на шее.\n\nДобавлен новый долг в $15,000: платёж каждую смену."
+  },
+  "ENCHeatMVOLFineFinish": {
+    "strTitle": "Продолжить",
+    "strDesc": "После оформления тебя без церемоний выставляют за дверь офиса службы безопасности Вольтера. Если в момент ареста твой корабль не был пристыкован к станции, возможно, придётся воспользоваться паромной службой PASS (через КПК), чтобы снова до него добраться. Надеюсь, он всё ещё там.\n\nПора снова вставать на ноги."
+  },
+  "ENCHeatMVOLPrisonStart": {
+    "strTitle": "В бриг Вольтера",
+    "strDesc": "Тебя тащат в бриг Вольтера."
+  },
+  "ENCHeatMVOLPrisonEnd": {
+    "strTitle": "Отбыть тяжёлый срок",
+    "strDesc": "Ты месяцами вкалываешь без платы среди изгоев — и смирных, и опасных. Ты делишь барак почти с сотней других душ, и все вы уложены, как дрова, на трёхъярусных шконках.\n\nНо даже в таком аду есть свои возможности. Ты слышишь всякое. Знакомишься с людьми. Влипаешь в переделки, находишь пару друзей. К концу срока ты проживаешь дюжину жизней, и шрамы тому подтверждение.\n\nПлюс бесплатный кров и еда. В определённом свете всё это, пожалуй, того стоит ...\n\n"
+  },
+  "ENCHeatMVOLPrisonFinish": {
+    "strTitle": "Продолжить",
+    "strDesc": "После оформления тебя без церемоний выставляют за дверь офиса службы безопасности Вольтера. Если в момент ареста твой корабль не был пристыкован к станции, возможно, придётся воспользоваться паромной службой PASS (через КПК), чтобы снова до него добраться. Надеюсь, он всё ещё там.\n\nПора снова вставать на ноги."
+  },
+  "PLGAICrimeMVOLLEOArrest": {
+    "strTitle": "Офицер MVOL начинает арест преступника",
+    "strDesc": "«Подозреваемый обнаружен», [us] [says], глядя на [them]."
+  },
+  "PLGAICrimeMVOLLEOInterruptSelf": {
+    "strTitle": "Офицер MVOL прерван преступлением",
+    "strDesc": "Прервать [them]."
+  },
+  "PLGAICrimeMVOLLEOArrestDo": {
+    "strTitle": "Арест преступника",
+    "strDesc": "«Стоять на месте! Вы арестованы!» [us] [shouts] на [them]."
+  },
+  "ENCEmbassyServicesBCERKioskTut": {
+    "strTitle": "Узнать о визах Галилеевой конфедерации",
+    "strTooltip": "Изучить и купить бланки для оформления визы Галилеевой конфедерации (порт Мохаве)."
+  },
+  "ENCEmbassyServicesBCERKiosk": {
+    "strTitle": "Узнать о визах Галилеевой конфедерации",
+    "strTooltip": "Изучить и купить бланки для оформления визы Галилеевой конфедерации (порт Мохаве)."
+  },
+  "ENCEmbassyServicesBCER": {
+    "strTitle": "Выберите услуги (ГалКон: Церера и Ганимед)",
+    "strDesc": "Большинство суверенитетов в Системе признают многоуровневый иммиграционный статус, или «страты». От нелегальных иммигрантов до полноценных граждан — страта человека определяет, какими правами он обладает в пределах суверенитета.\n\nПрава могут включать доступ к определенным зонам или услугам, право на частное жилье или стыковку корабля, льготные цены на торговые лицензии, а также юридическую защиту и разрешения.\n\nОбычно такие права передаются от родителей при рождении (право крови), а в некоторых случаях — по факту рождения на территории (право почвы).\n\nПолучение легального статуса после рождения обычно требует подачи заявления на визу, поиска спонсора и/или уплаты значительной пошлины."
+  },
+  "ENCEmbassyServicesBCERVisaInvestor": {
+    "strTitle": "Инфо: Инвесторская виза: $5 000 000",
+    "strDesc": "Стоимость: $5 000 000\n\nПрограмма «Платиновый кандидат» (ПК) Галилеевой конфедерации нацелена на иммигрантов-предпринимателей, обладающих навыками и потенциалом для создания инновационного бизнеса в порту Мохаве, который будет создавать рабочие места в пределах Конфедерации и конкурировать в масштабах всей Системы.\n\nЕсть инновационная бизнес-идея и средства для её развития? Если вы сможете доказать свою способность внести вклад в развитие Галилеевой конфедерации, вы сможете иммигрировать по этому классу виз."
+  },
+  "ENCEmbassyServicesBCERVisaInvestorAccept": {
+    "strTitle": "Оплатить инвесторскую визу ГалКона",
+    "strDesc": "После уплаты пошлины за заявление ваши данные проходят поверхностную проверку биографии. Управление иммиграции и натурализации Галилеевой конфедерации (УИН) все еще может выявить проблемы с вашим заявлением в ходе полного расследования, но хотя бы первичная проверка пройдена.\n\nПоздравляем! Теперь вы гордый обладатель статуса постоянного жителя Галилеевой конфедерации!\n\nНаслаждайтесь торговыми скидками и возможностями частного жилья."
+  },
+  "ENCEmbassyServicesBCERVisaSkilledLabor": {
+    "strTitle": "Инфо: Виза квалифицированного рабочего: $750 000",
+    "strDesc": "Стоимость: $750 000\n\nПрограмма «Квалифицированный рабочий» (КР) — это одна из систем Платинового совета развития (ПСР) Галилеевой конфедерации для обработки иммиграционных заявлений. Программа КР позволяет кандидатам с зарубежным опытом работы и отсутствием связей в Галилеевой конфедерации подать заявление на получение постоянного вида на жительство.\n\nЧтобы претендовать на статус КР, кандидат должен иметь опыт работы в одной из следующих востребованных специальностей:\n\n-Горные работы\n-Гражданское строительство\n-Электротехника\n\nТе, кто соответствует требованиям к навыкам и имеет достаточно средств, могут приобрести этот статус."
+  },
+  "ENCEmbassyServicesBCERVisaSkilledLaborAccept": {
+    "strTitle": "Оплатить визу квалифицированного рабочего ГалКона",
+    "strDesc": "После уплаты пошлины за заявление ваши данные проходят поверхностную проверку биографии. Управление иммиграции и натурализации Галилеевой конфедерации (УИН) оценивает ваше владение требуемыми навыками с помощью серии тестов.\n\nПоздравляем! Теперь вы гордый обладатель статуса постоянного жителя Галилеевой конфедерации!\n\nНаслаждайтесь торговыми скидками и возможностями частного жилья."
+  },
+  "ENCEmbassyServicesBCERVisaFaction": {
+    "strTitle": "Инфо: Виза за нац. службу: $250 000",
+    "strDesc": "Стоимость: $250 000\n\nИммигранты могут также ускорить рассмотрение заявки через трек Службы призыва (СП). Внося реальный вклад в военные усилия — будь то добыча, расстановка маяков или уничтожение вражеского имущества, — заявители могут повысить уровень допуска и получить право стать военнослужащим.\n\nТе, кто соответствует требованиям допуска и располагает достаточными средствами, могут подать заявку на этот статус."
+  },
+  "ENCEmbassyServicesBCERVisaFactionAccept": {
+    "strTitle": "Оплатить спонсируемую властями визу ГК",
+    "strDesc": "После уплаты пошлины, проверки биографии и оценки вашего материального вклада, ваша кандидатура признана пригодной для зачисления в СП.\n\nПоздравляем! Теперь вы гордый обладатель статуса ПМЖ в Галилеевой Конфедерации!\n\nСтупайте, наслаждайтесь торговыми скидками и возможностями частного жилья."
+  },
+  "ENCEmbassyServicesBCERVisaLocalSponsored": {
+    "strTitle": "Инфо: Местная спонсорская виза: $500 000",
+    "strDesc": "Стоимость: $500 000\n\nПрограмма спонсорства наследия (ПСН) в Галилеевой Конфедерации — это часть иммиграционной системы ГК, позволяющая гражданам и постоянным жителям Конфедерации спонсировать супругов, родственников или доверенных друзей для получения ПМЖ в ГК. Цель программы — облегчить воссоединение семей, позволяя гражданам или постоянным жителям ГК перевозить своих близких для совместного проживания.\n\n(Требуется, чтобы резидент Галилеевой Конфедерации сначала согласился стать спонсором заявителя.)"
+  },
+  "ENCEmbassyServicesBCERVisaLocalSponsoredAccept": {
+    "strTitle": "Оплатить местную спонсорскую визу ГК",
+    "strDesc": "После уплаты пошлины, проверки биографии и обязательного собеседования с вашим спонсором, ваша кандидатура признана пригодной для зачисления в ПСН.\n\nПоздравляем! Теперь вы гордый обладатель статуса ПМЖ в Галилеевой Конфедерации!\n\nСтупайте, наслаждайтесь торговыми скидками и возможностями частного жилья."
+  },
+  "ENCEmbassyServicesBCERVisaCitAlready": {
+    "strTitle": "Инфо: Визы",
+    "strDesc": "Услуги по оформлению виз актуальны только для тех, у кого еще нет легального статуса в Галилеевой Конфедерации.\n\nКак гражданину Галилеевой Конфедерации, эта услуга вам не нужна."
+  },
+  "ENCEmbassyServicesBCERVisaPRAlready": {
+    "strTitle": "Инфо: Визы",
+    "strDesc": "Услуги по оформлению виз актуальны только для тех, у кого еще нет легального статуса в Галилеевой Конфедерации.\n\nКак постоянному жителю Галилеевой Конфедерации, эта услуга вам не нужна."
+  },
+  "ENCEmbassyServicesBCRSKioskTut": {
+    "strTitle": "Справка по визам для ККС",
+    "strTooltip": "Просмотр и покупка материалов для оформления визы на ККС (Кольцевая станция)."
+  },
+  "ENCEmbassyServicesBCRSKiosk": {
+    "strTitle": "Справка по визам для ККС",
+    "strTooltip": "Просмотр и покупка материалов для оформления визы на ККС (Кольцевая станция)."
+  },
+  "ENCEmbassyServicesBCRS": {
+    "strTitle": "Выберите услуги (CCRE/Кольцевая станция, Церера)",
+    "strDesc": "Большинство суверенитетов в Системе признают многоуровневый иммиграционный статус, или «страты». От нелегалов без документов до полноправных граждан — страта определяет, какие права человек имеет в пределах суверенитета.\n\nПрава могут включать доступ к определенным зонам и услугам, возможность снимать частное жилье или ставить корабль на причал, скидки на торговые лицензии, а то и юридическую защиту с особыми разрешениями.\n\nОбычно такие права передаются от родителей при рождении (право крови), а иногда — по факту рождения на территории (право почвы).\n\nПолучение легального статуса после рождения обычно сводится к подаче на визу, что требует наличия спонсора и/или уплаты немалой пошлины."
+  },
+  "ENCEmbassyServicesBCRSVisaInvestor": {
+    "strTitle": "Инфо: Инвестиционная виза: $5 000 000",
+    "strDesc": "Стоимость: $5 000 000\n\nИнвестиционная программа (ИП) CCRE ищет иммигрантов-предпринимателей со смекалкой и потенциалом, чтобы открыть на Кольцевой станции дело. Оно должно быть инновационным, создавать рабочие места в CCRE и выдерживать конкуренцию в масштабах всей Системы.\n\nЕсть свежая идея и средства на её раскрутку? Если докажете, что ваш бизнес пойдет на пользу CCRE, сможете получить вид на жительство по этой категории."
+  },
+  "ENCEmbassyServicesBCRSVisaInvestorAccept": {
+    "strTitle": "Оплатить визу инвестора BCRS",
+    "strDesc": "После уплаты пошлины ваши данные проходят поверхностную проверку. Управление иммиграции и КПП CCRE (ICA) еще может накопать компромат при полной проверке, но хотя бы первичный фильтр вы прошли.\n\nПоздравляем! Теперь вы гордый обладатель статуса постоянного жителя Кольцевой станции!\n\nПользуйтесь торговыми скидками и снимайте частное жилье."
+  },
+  "ENCEmbassyServicesBCRSVisaSkilledLabor": {
+    "strTitle": "Инфо: Виза квалифицированного специалиста: $750 000",
+    "strDesc": "Стоимость: $750 000\n\nПрограмма квалифицированных специалистов (КР) — одна из систем Совета по экономическому развитию (EDB) CCRE для обработки иммиграционных заявлений. Программа КР позволяет кандидатам с зарубежным опытом работы, но без связей в CCRE, претендовать на ПМЖ.\n\nЧтобы пройти по КР, у кандидата должен быть опыт работы в одной из следующих востребованных областей:\n\n-Добыча\n-Гражданское строительство\n-Электротехника\n\nТе, кто подходит по навыкам и имеет достаточно средств, могут просто купить этот статус."
+  },
+  "ENCEmbassyServicesBCRSVisaSkilledLaborAccept": {
+    "strTitle": "Оплатить визу квалифицированного специалиста BCRS",
+    "strDesc": "После уплаты пошлины ваши данные проходят поверхностную проверку. Управление иммиграции и КПП CCRE (ICA) оценивает ваши навыки с помощью целой батареи тестов.\n\nПоздравляем! Теперь вы гордый обладатель статуса постоянного жителя Кольцевой станции!\n\nПользуйтесь торговыми скидками и снимайте частное жилье."
+  },
+  "ENCEmbassyServicesBCRSVisaFaction": {
+    "strTitle": "Инфо: Виза за службу: $250 000",
+    "strDesc": "Стоимость: $250 000\n\nИммигранты также могут ускорить получение визы через трек Оперативной службы (ОС). Внося материальный вклад в военные усилия — будь то добыча руды, расстановка маяков или уничтожение вражеских припасов, — заявители могут повысить свой уровень допуска и получить статус оперативника.\n\nТе, кто подходит по уровню допуска и имеет достаточно средств, могут подать заявку на этот статус."
+  },
+  "ENCEmbassyServicesBCRSVisaFactionAccept": {
+    "strTitle": "Оплатить визу BCRS при поддержке властей",
+    "strDesc": "После уплаты пошлины, проверки биографии и оценки вашего материального вклада, ваш профиль признают пригодным для зачисления в ОС.\n\nПоздравляем! Теперь вы гордый обладатель статуса постоянного жителя Кольцевой станции!\n\nПользуйтесь торговыми скидками и снимайте частное жилье."
+  },
+  "ENCEmbassyServicesBCRSVisaLocalSponsored": {
+    "strTitle": "Инфо: Виза по местному поручительству: $500 000",
+    "strDesc": "Стоимость: $500,000\n\nПрограмма семейного спонсорства (FSP) в CCRE — часть иммиграционной системы CCRE, позволяющая гражданам и постоянным жителям CCRE спонсировать супругов, родственников или доверенных друзей для получения постоянного вида на жительство на станции Кольцо. Программа призвана облегчить воссоединение семей, позволяя гражданам или постоянным жителям CCRE перевезти близких к себе на станцию Кольцо.\n\n(Сначала житель станции Кольцо должен согласиться стать спонсором заявителя.)"
+  },
+  "PLGAIReportCrimeMTRSArrestAllow": {
+    "strTitle": "Сообщить о преступлении: успех",
+    "strDesc": "[us] успешно [reports] о преступлении со стороны [them]."
+  },
+  "PLGAIReportCrimeMTRSArrestDone": {
+    "strTitle": "Сообщение о преступлении завершено",
+    "strDesc": "[us] [is] завершил(а) сообщение о преступлении."
+  },
+  "PLGAIReportCrimeMTRSTrespass": {
+    "strTitle": "Сообщить о преступлении",
+    "strDesc": "[us] [says] «Убирайся отсюда», а затем говорит в [us-pos] КПК, глядя на [them]."
+  },
+  "PLGAIReportCrimeMTRSTrespassAllow": {
+    "strTitle": "Сообщить о преступлении: успех",
+    "strDesc": "[us] успешно [reports] о преступлении со стороны [them]."
+  },
+  "PLGAIReportCrimeMTRSTrespassDeny": {
+    "strTitle": "Сообщить о преступлении: неудача",
+    "strDesc": "[us] [fails] сообщить о преступлении со стороны [them]."
+  },
+  "PLGAIReportCrimeMTRSTrespassDone": {
+    "strTitle": "Сообщение о преступлении завершено",
+    "strDesc": "[us] [is] завершил(а) сообщение о преступлении."
+  },
+  "PLGAIReportCrimeMTRSTrespassNPCDone": {
+    "strTitle": "Отмена сообщения о преступлении",
+    "strDesc": "[us] [is] больше не будет сообщать о преступлении."
+  },
+  "ENCEmbassyServicesMVOLVisaCitAlready": {
+    "strTitle": "Инфо: Визы",
+    "strDesc": "Услуги по оформлению виз актуальны только для тех, у кого еще нет легального статуса на Вольтере.\n\nКак полноправный гражданин орбитали Вольтера, вы не нуждаетесь в этой услуге."
+  },
+  "ENCEmbassyServicesMVOLVisaPRAlready": {
+    "strTitle": "Инфо: Визы",
+    "strDesc": "Услуги по оформлению виз актуальны только для тех, у кого еще нет легального статуса на Вольтере.\n\nКак признанный постоянный житель Вольтера, вы не нуждаетесь в этой услуге."
+  },
+  "ENCEmbassyServicesSVIRKioskTut": {
+    "strTitle": "Узнать о визах Титана",
+    "strTooltip": "Просмотр и покупка материалов для оформления визы на Титан."
+  },
+  "ENCEmbassyServicesSVIRKiosk": {
+    "strTitle": "Узнать о визах Титана",
+    "strTooltip": "Просмотр и покупка материалов для оформления визы на Титан."
+  },
+  "ENCEmbassyServicesSVIR": {
+    "strTitle": "Выберите нужные услуги (Титан, Сатурн)",
+    "strDesc": "Большинство суверенитетов в Системе придерживаются многоуровневой иммиграционной системы, или «страт». Обычно они варьируются от нелегального иммигранта до полноправного гражданина, и страта человека диктует, какими правами он обладает в пределах суверенитета.\n\nПрава могут включать доступ к определенным зонам или услугам, право на частное жилье или стыковку корабля, льготные расценки на торговые разрешения или даже юридическую защиту и разрешения.\n\nОбычно такие права передаются от родителей при рождении (право крови), а в некоторых случаях — по факту рождения на данной территории (право почвы).\n\nПолучение легального статуса после рождения обычно требует подачи заявления на визу и может включать поиск спонсора и/или уплату значительной пошлины."
+  },
+  "ENCEmbassyServicesSVIRVisaInvestor": {
+    "strTitle": "Инфо: Инвестиционная виза: $7,999,999",
+    "strDesc": "Стоимость: $7,999,999\n\nПрограмма кандидатов «Истинный патриот» (TPC) на Титане нацелена на иммигрантов-предпринимателей, обладающих навыками и потенциалом для создания инновационного бизнеса на Титане (и в более широком транснептуновом пространстве), который создает рабочие места и может конкурировать в масштабах всей Системы.\n\nУ вас есть инновационная бизнес-идея и средства для развития своего дела? Если вы сможете доказать свою способность внести вклад в продвижение титанской исключительности, вы сможете иммигрировать по этой визовой категории."
+  },
+  "ENCEmbassyServicesSVIRVisaInvestorAccept": {
+    "strTitle": "Оплатить инвестиционную визу Титана",
+    "strDesc": "После уплаты пошлины за подачу заявления ваши данные проходят первичную поверхностную проверку. Печально известная своей суровостью Иммиграционная и таможенная служба Титана (ICE) — под неусыпным надзором Департамента патриотического воспитания и Командования дальним космосом Титана — все еще может выявить проблемы в ходе полного расследования, но хотя бы предварительная проверка пройдена.\n\nПоздравляем! Теперь вы обладатель статуса постоянного жителя колоний Титана!\n\nПользуйтесь торговыми скидками и преимуществами частного жилья."
+  },
+  "ENCEmbassyServicesSVIRVisaCitAlready": {
+    "strTitle": "Инфо: Визы",
+    "strDesc": "Услуги по оформлению виз нужны только тем, у кого ещё нет законного статуса на Титане.\n\nКак гордый и патриотичный американский гражданин Титана, ты не нуждаешься в этой услуге."
+  },
+  "PLGAICrimeSVIRLEOArrestDo": {
+    "strTitle": "Арест преступника",
+    "strDesc": "«Стоять! Вы арестованы!» — [us] [shouts] на [them]."
+  },
+  "PLGAICrimeSVIRLEOArrestDoAllow": {
+    "strTitle": "Сдаться офицеру",
+    "strDesc": "[us] [goes] вместе с [them] без сопротивления."
+  },
+  "PLGAICrimeSVIRLEOArrestDoDeny": {
+    "strTitle": "Заявить о невиновности",
+    "strDesc": "[us] [tells] [them], что [them-subj] [has] не тот человек."
+  },
+  "PLGAICrimeSVIRLEOArrestEnd": {
+    "strTitle": "Офицер SVIR: арест завершён",
+    "strDesc": "«Ещё одна победа закона», — [us] [says]."
+  },
+  "PLGAICrimeSVIRLEOArrestEndAI": {
+    "strTitle": "Арест",
+    "strDesc": "Заглушка взаимодействия для проверки us = ИИ-персонаж перед продолжением."
+  },
+  "PLGAICrimeSVIRLEOArrestEndPlayer": {
+    "strTitle": "Преступник арестован (игрок)",
+    "strDesc": "Офицер завершает нейтрализацию угрозы игрока."
+  },
+  "PLGAICrimeSVIRLEOThreat": {
+    "strTitle": "Офицер SVIR атакует преступника",
+    "strDesc": "«Эй, это тот преступник! Взять его!» — [us-shouts] [us], указывая на [them]."
+  },
+  "PLGAICrimeSVIRLEOArrestStolenShip": {
+    "strTitle": "SVIR LEO начинает арест за угон корабля",
+    "strDesc": "«Поступил сигнал, что ты управляешь угнанным кораблём», — [us] [says], глядя на [them]. — «Мы тебя задерживаем»."
+  },
+  "PLGAIReportCrimeSVIRArrest": {
+    "strTitle": "Сообщить о преступлении",
+    "strDesc": "[us] [speaks] в [us-pos] КПК, глядя на [them]."
+  },
+  "PLGAIReportCrimeSVIRArrestAllow": {
+    "strTitle": "Сообщить о преступлении: успех",
+    "strDesc": "[us] успешно [reports] о преступлении, указывая на [them]."
+  },
+  "PLGAIReportCrimeSVIRArrestDone": {
+    "strTitle": "Сообщение о преступлении завершено",
+    "strDesc": "[us] [is] в статусе «сообщение о преступлении завершено»."
+  },
+  "PLGAIReportCrimeSVIRTrespass": {
+    "strTitle": "Сообщить о преступлении",
+    "strDesc": "[us] [says]: «Убирайся отсюда», затем — разговор в [us-pos] КПК, глядя на [them]."
+  },
+  "PLGAIReportCrimeSVIRTrespassAllow": {
+    "strTitle": "Сообщить о преступлении: успех",
+    "strDesc": "[us] успешно [reports] о преступлении, указывая на [them]."
+  },
+  "PLGAIReportCrimeSVIRTrespassDeny": {
+    "strTitle": "Сообщить о преступлении: неудача",
+    "strDesc": "[us] [fails] сообщить о преступлении, указывая на [them]."
+  },
+  "PLGAIReportCrimeSVIRTrespassDone": {
+    "strTitle": "Сообщение о преступлении завершено",
+    "strDesc": "[us] [is] закончил(а) сообщение о преступлении."
+  },
+  "PLGAIReportCrimeSVIRTrespassNPCDone": {
+    "strTitle": "Отменить сообщение о преступлении",
+    "strDesc": "[us] [is] больше не собирается сообщать о преступлении."
+  },
+  "PLGAIReportCrimeSVIRThreat": {
+    "strTitle": "Сообщить о преступлении",
+    "strDesc": "[us] [speaks] в [us-pos] КПК, глядя на [them]."
+  },
+  "PLGAIReportCrimeSVIRThreatAllow": {
+    "strTitle": "Сообщить о преступлении: успех",
+    "strDesc": "[us] успешно [reports] о преступлении на [them]."
+  },
+  "PLGAIReportCrimeSVIRThreatDone": {
+    "strTitle": "Сообщение о преступлении завершено",
+    "strDesc": "[us] [is] закончил(а) сообщение о преступлении."
+  },
+  "PSPAIAICrimeSVIRLEOArrestAdd": {
+    "strTitle": "Добавляет нам задачу SVIR LEO: арест",
+    "strDesc": "[us] [gains] задачу SVIR LEO: арест."
+  },
+  "PSPAIAICrimeSVIRLEOArrestStolenShipAdd": {
+    "strTitle": "Добавляет нам задачу SVIR LEO: арест, потому что игрок украл корабль",
+    "strDesc": "[us] [gains] задачу SVIR LEO: арест за угон корабля."
+  },
+  "PSPAIAICrimeSVIRLEOThreatAdd": {
+    "strTitle": "Добавляет нам задачу SVIR LEO: угроза",
+    "strDesc": "[us] [gains] задачу SVIR LEO: угроза."
+  },
+  "ENCMemoryFoliage": {
+    "strTitle": "Накрыло воспоминанием о зелени",
+    "strDesc": "Образ зелёной растительности — настоящей, живой — накатывает из прошлого без предупреждения. Листья блестели от росы, корни сидели в жирной чёрной земле, а вокруг кишела мелкая жизнь: мошки, комары, крохотные пауки, чья почти невидимая паутина создавала иллюзию, будто они застыли в воздухе.\n\nВсего поколение назад такое зрелище не значило бы ровным счётом ничего. Одна картинка из тысяч, собранных в ходе обычной жизни. Но здесь, в мёртвой стылой пустоте космоса, где монотонность чёрного ничто разбавляют только сталь и пластик, это воспоминание давит утратой так же сильно, как манит обещанием.\n\nТы ловишь себя на том, что всерьёз задаёшься вопросом: доведётся ли увидеть такое снова. Да, в Системе есть места, где ещё что-то растёт. Но раз Земля превратилась в пустое обещание, эти места существуют в таком доходном диапазоне, что для тебя они — практически легенда.\n\nНо их всё ещё можно представить. И если корпорации что-то и не в силах убить, так это твой дух. Вот ты и сидишь. Представляешь."
+  },
+  "ENCMemoryFoliageDeeperClobber": {
+    "strTitle": "Проработать воспоминание о зелени",
+    "strDesc": "Ты делаешь тяжёлую работу — прорабатываешь это жёсткое воспоминание. Прямо сейчас оно причиняет боль, но ты приближаешься к тому, чтобы разрешить его и связанные с ним травмы окончательно. Такая работа, ты уверен, в итоге принесёт глубокое облегчение."
+  },
+  "ENCMemoryFoliageRevisit": {
+    "strTitle": "Воспоминание о зелени возвращается",
+    "strDesc": "Тяжёлое воспоминание снова приходит без приглашения. Можно подавить его и получить краткую передышку от страха, который оно порождает. А можно проделать трудную работу проработки — растревожить болезненные эмоции сейчас в надежде, что это приведёт к настоящему росту потом."
+  },
+  "ENCMemoryFoliageDeeperRevisit": {
+    "strTitle": "Проработать повторное воспоминание о зелени",
+    "strDesc": "Ты делаешь тяжёлую работу — прорабатываешь это жёсткое воспоминание. Прямо сейчас оно причиняет боль, но ты приближаешься к тому, чтобы разрешить его и связанные с ним травмы окончательно. Такая работа, ты уверен, в итоге принесёт глубокое облегчение."
+  },
+  "ENCMemoryFoliageFinal": {
+    "strTitle": "Последнее воспоминание о зелени",
+    "strDesc": "Тяжёлое воспоминание снова приходит без приглашения. Можно подавить его и получить краткую передышку от страха, который оно порождает. А можно проделать трудную работу проработки — растревожить болезненные эмоции сейчас в надежде, что это приведёт к настоящему росту потом."
+  },
+  "ENCMemoryFoliageDeeperFinal": {
+    "strTitle": "Отпустить воспоминание о зелени",
+    "strDesc": "После долгой внутренней борьбы тебе удалось проработать это жёсткое воспоминание и его травму до конца. Ты вырос как личность и обрёл ценную черту. Она ещё не раз сослужит тебе службу."
+  },
+  "ENCMemoryFirstSuppressFoliage": {
+    "strTitle": "Подавить воспоминание о зелени",
+    "strDesc": "Ты задавливаешь это воспоминание в надежде, что оно отстанет хоть на время.\n\nЭто приносит временный покой, даже лёгкий подъём настроения.\n\nВ конце концов, кому нужна рефлексия?"
+  },
+  "ENCMemorySecondSuppressFoliage": {
+    "strTitle": "Снова подавить воспоминание о зелени",
+    "strDesc": "Ты снова подавляешь это воспоминание, зная, что хотя бы сейчас станет полегче.\n\nБежать от него уже не так спокойно, как раньше, но всё равно безопаснее, чем копаться в таком уродливом моменте.\n\nНаверняка так можно делать вечно. Правда ведь?"
+  },
+  "ENCEmbassyServicesMTRSVisaInvestorAccept": {
+    "strTitle": "Оплатить визу инвестора Синьхуа",
+    "strDesc": "После уплаты сбора за подачу заявления ваши данные проходят первичную поверхностную проверку. Министерство иммиграции и натурализации Синьхуа (XMIN) всё ещё может выявить проблемы в вашем заявлении во время полного рассмотрения, но хотя бы предварительная проверка пройдена.\n\nПоздравляем! Теперь вы гордый обладатель статуса постоянного резидента в Тарсис-Лендинге на Марсе!\n\nПриумножайте добродетель, укрепляйте гармонию и пользуйтесь торговыми скидками и возможностями получения частного жилья."
+  },
+  "ENCEmbassyServicesMTRSVisaCitAlready": {
+    "strTitle": "Инфо: визы",
+    "strDesc": "Услуги по оформлению виз предназначены только для тех, у кого ещё нет законного статуса в обществе Синьхуа.\n\nЕсли вы гражданин Синьхуа, эта услуга вам не нужна."
+  },
+  "ENCEmbassyServicesMTRSVisaPRAlready": {
+    "strTitle": "Инфо: визы",
+    "strDesc": "Услуги по оформлению виз предназначены только для тех, у кого ещё нет законного статуса в обществе Синьхуа.\n\nЕсли вы постоянный резидент Синьхуа, эта услуга вам не нужна."
+  },
+  "ENCEmbassyServicesMSUZKioskTut": {
+    "strTitle": "Узнать о визах Сучжоу",
+    "strTooltip": "Просматривайте и покупайте материалы для оформления визы на Орбитальную станцию Сучжоу."
+  },
+  "ENCEmbassyServicesMSUZKiosk": {
+    "strTitle": "Узнать о визах Сучжоу",
+    "strTooltip": "Просматривайте и покупайте материалы для оформления визы на Орбитальную станцию Сучжоу."
+  },
+  "ENCEmbassyServicesMSUZ": {
+    "strTitle": "Выберите нужные услуги (Орбитальная станция Сучжоу)",
+    "strDesc": "Большинство суверенитетов в Системе придерживается многоуровневой системы иммиграционных статусов, или «страт». Обычно они варьируются от недокументированного (нелегального) иммигранта до полного гражданства, и страта человека определяет, какие права ему доступны в этом суверенитете.\n\nПрава могут включать доступ к определённым зонам или услугам, право на частное жильё или стыковку корабля, льготные расценки на торговые разрешения или даже правовую защиту и специальные разрешения.\n\nОбычно такие права передаются родителями по рождению (jus sanguinis), а в некоторых случаях — по рождению на территории (jus soli).\n\nПолучение законного статуса после рождения обычно требует подачи заявления на визу и может включать поиск спонсора и/или уплату значительной пошлины."
+  },
+  "ENCEmbassyServicesMSUZVisaInvestor": {
+    "strTitle": "Инфо: виза инвестора: $5,000,000",
+    "strDesc": "Стоимость: $5,000,000\n\nКампания Сучжоу по привлечению посевного капитала (SCPC) нацелена на иммигрантов-предпринимателей, обладающих навыками и потенциалом для создания на Орбитальной станции Сучжоу инновационных предприятий, способных создавать рабочие места, достраивать незавершённые части станции и конкурировать в масштабах всей Системы.\n\nЕсть ли у вас инновационная бизнес-идея и средства для её развития? Если вы сможете доказать свою способность внести вклад в развитие Орбитальной станции Сучжоу, вы можете иммигрировать по этой категории визы."
+  },
+  "ENCEmbassyServicesMSUZVisaInvestorAccept": {
+    "strTitle": "Оплатить визу инвестора Сучжоу",
+    "strDesc": "После уплаты сбора за подачу заявления твои данные прогоняют через первичную поверхностную проверку биографии. Бюро иммиграции и натурализации Сучжоу (BINA) всё ещё может выявить проблему в твоём заявлении при полной проверке, но хотя бы предварительная проверка пройдена.\n\nПоздравляем! Теперь ты гордый обладатель статуса временного резидента E2B в Сучжоу-Орбитал!\n\nИди наслаждайся торговыми скидками и возможностями получения частного жилья."
+  },
+  "ENCMemoryLoveDeeperClobber": {
+    "strDesc": "Ты берёшься за тяжёлую работу — перерабатываешь это жестокое воспоминание. Прямо сейчас оно причиняет боль, но так ты приближаешься к тому, чтобы окончательно отпустить его и все сопутствующие травмы. Такая работа, ты это точно знаешь, со временем принесёт настоящее внутреннее облегчение.",
+    "strTitle": "Осмыслить воспоминание о любви, которой больше нет"
+  },
+  "ENCMemoryLoveRevisit": {
+    "strTitle": "Воспоминание об утраченной любви возвращается",
+    "strDesc": "Тяжёлое воспоминание снова приходит без приглашения. Можно подавить его — и получить короткую передышку от страха, который оно порождает. А можно взяться за трудную работу и переработать его, поднимая со дна болезненные чувства в надежде, что когда-нибудь это приведёт к настоящему росту."
+  },
+  "ENCMemoryLoveDeeperRevisit": {
+    "strTitle": "Переработать вернувшееся воспоминание об утраченной любви",
+    "strDesc": "Ты берёшься за тяжёлую работу — перерабатываешь это жестокое воспоминание. Прямо сейчас оно причиняет боль, но так ты приближаешься к тому, чтобы окончательно отпустить его и все сопутствующие травмы. Такая работа, ты это точно знаешь, со временем принесёт настоящее внутреннее облегчение."
+  },
+  "ENCMemoryLoveFinal": {
+    "strTitle": "Последнее воспоминание об утраченной любви",
+    "strDesc": "Тяжёлое воспоминание снова приходит без приглашения. Можно подавить его — и получить короткую передышку от страха, который оно порождает. А можно взяться за трудную работу и переработать его, поднимая со дна болезненные чувства в надежде, что когда-нибудь это приведёт к настоящему росту."
+  },
+  "ENCMemoryLoveDeeperFinal": {
+    "strTitle": "Отпустить воспоминание об утраченной любви",
+    "strDesc": "После долгой внутренней борьбы тебе удалось переработать это жестокое воспоминание и его травму. Это закалило тебя, и ты получаешь ценную черту характера. Она ещё не раз пригодится."
+  },
+  "ENCMemoryFirstSuppressLove": {
+    "strTitle": "Подавить воспоминание об утраченной любви",
+    "strDesc": "Ты заглушаешь это воспоминание в надежде, что оно отстанет хоть на время.\n\nЭто приносит временный покой и даже лёгкий подъём настроения.\n\nВ конце концов, кому нужна эта рефлексия?"
+  },
+  "ENCMemorySecondSuppressLove": {
+    "strTitle": "Снова подавить воспоминание об утраченной любви",
+    "strDesc": "Ты опять заглушаешь это воспоминание, зная, что сейчас станет легче.\n\nУбегать от него уже не так спокойно, как в первый раз, но это всё равно проще, чем копаться в таком уродливом моменте.\n\nНаверняка так можно делать вечно. Правда ведь?"
+  },
+  "ENCMemoryThirdSuppressLove": {
+    "strTitle": "Опять подавить воспоминание об утраченной любви",
+    "strDesc": "Уже в третий раз ты заглушаешь это воспоминание, зная, что какое-то время оно не вернётся. Но после стольких побегов от собственного прошлого бегство больше не приносит покоя.\n\nБолее того, уклонение от этого воспоминания изменило тебя. Возможно, необратимо.\n\nЗдесь есть урок — если захочешь его увидеть."
+  },
+  "PLGAICrimeMVOLLEOArrestDoAllow": {
+    "strTitle": "Сдаться офицеру",
+    "strDesc": "[us] [goes] с [them] без сопротивления."
+  },
+  "PLGAICrimeMVOLLEOArrestDoDeny": {
+    "strTitle": "Заявить о невиновности",
+    "strDesc": "[us] [tells] [them], что [them-subj] [has] не того человека."
+  },
+  "PLGAICrimeMVOLLEOArrestEnd": {
+    "strTitle": "MVOL LEO: арест преступника завершён",
+    "strDesc": "«Ещё одна победа закона», — [us] [says]."
+  },
+  "PLGAICrimeMVOLLEOArrestEndAI": {
+    "strTitle": "Арест",
+    "strDesc": "Вспомогательное взаимодействие: проверка us = ИИ-персонаж перед продолжением."
+  },
+  "PLGAICrimeMVOLLEOArrestEndPlayer": {
+    "strTitle": "Преступник арестован (игрок)",
+    "strDesc": "Офицер LEO завершает подавление угрозы со стороны игрока."
+  },
+  "PLGAICrimeMVOLLEOThreat": {
+    "strTitle": "MVOL LEO: атака на преступника",
+    "strDesc": "«Эй, это тот преступник! Взять его!» [us-shouts] [us], указывая на [them]."
+  },
+  "PLGAICrimeMVOLLEOArrestStolenShip": {
+    "strTitle": "MVOL LEO: начало ареста за угон корабля",
+    "strDesc": "«Поступил сигнал, что вы пилотируете украденный корабль», — [us] [says], глядя на [them]. «Мы вас задерживаем»."
+  },
+  "ENCEmbassyServicesBCRSVisaLocalSponsoredAccept": {
+    "strTitle": "Оплатить визу BCRS с местным спонсорством",
+    "strDesc": "После уплаты сбора за заявку, проверки благонадёжности и обязательного интервью с вашим спонсором ваш профиль признают подходящим для участия в FSP.\n\nПоздравляем! Теперь у вас статус постоянного жителя станции Кольцо.\n\nПользуйтесь торговыми скидками и возможностями получения частного жилья."
+  },
+  "ENCEmbassyServicesBCRSVisaCitAlready": {
+    "strTitle": "Информация: визы",
+    "strDesc": "Услуги по оформлению виз нужны только тем, у кого ещё нет законного статуса на станции Кольцо.\n\nКак гражданину CCRE, эта услуга вам не требуется."
+  },
+  "ENCEmbassyServicesBCRSVisaPRAlready": {
+    "strTitle": "Информация: визы",
+    "strDesc": "Услуги по оформлению виз нужны только тем, у кого ещё нет законного статуса на станции Кольцо.\n\nКак постоянному жителю CCRE, эта услуга вам не требуется."
+  },
+  "ENCEmbassyServicesMTRSKioskTut": {
+    "strTitle": "Запросить информацию о визах Синьхуа",
+    "strTooltip": "Просмотреть и приобрести материалы для оформления визы в Тарсис-Лендинг, Марс."
+  },
+  "ENCEmbassyServicesMTRSKiosk": {
+    "strTitle": "Запросить информацию о визах Синьхуа",
+    "strTooltip": "Просмотреть и приобрести материалы для оформления визы в Тарсис-Лендинг, Марс."
+  },
+  "ENCEmbassyServicesMTRS": {
+    "strTitle": "Выбрать нужные услуги (Тарсис-Лендинг, Марс)",
+    "strDesc": "Большинство суверенных образований в Системе придерживается многоуровневой системы иммиграционных статусов, или «страт». Страта человека — от иммигранта без документов (нелегала) до полного гражданства — определяет, какими правами он пользуется у данного суверенного образования.\n\nПрава могут включать доступ к определённым зонам или услугам, право на частное жильё или стыковку корабля, льготные цены на торговые разрешения, а также юридическую защиту или разрешения.\n\nТакие права обычно передаются родителями при рождении (jus sanguinis), а в некоторых случаях — даются по факту рождения на территории (jus soli).\n\nПолучение законного статуса после рождения обычно связано с подачей заявления на визу и может включать поиск спонсора и/или уплату значительной пошлины."
+  },
+  "ENCEmbassyServicesMTRSVisaInvestor": {
+    "strTitle": "Информация: виза инвестора: $10,000,000",
+    "strDesc": "Стоимость: $10,000,000\n\nПрограмма привилегированных кандидатов Синьхуа (FCP) нацелена на иммигрантов-предпринимателей, у которых есть навыки и потенциал для создания инновационных предприятий в обществе Синьхуа, способных создавать рабочие места в экономике Синьхуа и конкурировать в масштабах всей Системы.\n\nУ вас есть инновационная бизнес-идея и средства для её развития? Если вы сможете доказать свою благонадёжность и способность внести вклад в развитие цивилизации Синьхуа, вы можете иммигрировать по этой категории визы."
+  },
+  "ENCMemoryFirstSuppressDeadFriend": {
+    "strTitle": "Подавить воспоминание об ушедшем друге",
+    "strDesc": "Ты подавляешь это воспоминание в надежде, что оно отстанет хотя бы на время.\n\nЭто приносит временный покой, даже лёгкий подъём настроения.\n\nВ конце концов, кому нужна рефлексия?"
+  },
+  "ENCMemorySecondSuppressDeadFriend": {
+    "strTitle": "Снова подавить воспоминание об ушедшем друге",
+    "strDesc": "Ты снова подавляешь это воспоминание, зная, что это даст хотя бы краткий подъём настроения.\n\nПобег от него уже не приносит такого покоя, как раньше, но всё равно кажется безопаснее, чем проживать столь мерзкий момент.\n\nТы наверняка сможешь делать это вечно. Правда ведь?"
+  },
+  "ENCMemoryThirdSuppressDeadFriend": {
+    "strTitle": "Опять подавить воспоминание об ушедшем друге",
+    "strDesc": "В третий раз ты подавляешь это воспоминание, зная, что сбежишь от него ещё ненадолго. Но после всех этих побегов от прошлого ты больше не чувствуешь покоя в бегстве.\n\nБолее того, уклонение от воспоминания изменило тебя. Возможно, необратимо.\n\nЗдесь есть урок, если ты соизволишь его увидеть."
+  },
+  "ENCMemoryProject": {
+    "strTitle": "Накрыло воспоминанием о Проекте, который ты никогда не закончишь",
+    "strDesc": "Потом. Скоро. Завтра возьмёшься, говоришь ты себе, когда всё немного уляжется. Когда жизнь перестанет происходить с тобой и вдруг решит — по какой-то невообразимой причине — начать уважать твой список дел.\n\nА тем временем твой Большой Проект покрывается плесенью, как громадный валун посреди реки, совершенно безразличный к бурным потокам времени, плещущим у его основания. Каждый день промедления порождает новые проекты, новые проблемы, выросшие из игнорирования первой, — каждая как ползучий плющ, и заросли теперь такие густые, что изначальный камень едва разглядеть.\n\nТы уже потерял счёт обещаниям, которые нарушил перед самим собой. На этом этапе у тебя даже нет сил дать ещё одно.\n\nИ вот, в момент ясности, накативший на волне презрения к себе, ты начинаешь задумываться: а может, ты просто не создан для этого."
+  },
+  "ENCMemoryProjectDeeperClobber": {
+    "strTitle": "Проработать воспоминание о Проекте, который ты никогда не закончишь",
+    "strDesc": "Ты делаешь трудную работу — прорабатываешь тяжёлое воспоминание. Это причиняет немедленную эмоциональную боль, но приближает тебя к окончательному разрешению этого воспоминания и сопутствующих ему травм. Такая работа, ты уверен, в конечном счёте принесёт глубокое эмоциональное облегчение."
+  },
+  "ENCMemoryProjectRevisit": {
+    "strTitle": "Воспоминание о Проекте, который ты никогда не закончишь, вернулось",
+    "strDesc": "Тяжёлое воспоминание снова возвращается без приглашения. Ты можешь подавить его, получив краткую передышку от страха, который оно порождает. Или можешь проделать трудную работу по его проработке, всколыхнув болезненные эмоции сейчас в надежде, что это приведёт к постоянному росту в будущем."
+  },
+  "ENCMemoryProjectDeeperRevisit": {
+    "strTitle": "Проработать возвращение воспоминания о Проекте, который ты никогда не закончишь",
+    "strDesc": "Ты делаешь трудную работу — прорабатываешь тяжёлое воспоминание. Это причиняет немедленную эмоциональную боль, но приближает тебя к окончательному разрешению этого воспоминания и сопутствующих ему травм. Такая работа, ты уверен, в конечном счёте принесёт глубокое эмоциональное облегчение."
+  },
+  "ENCMemoryProjectFinal": {
+    "strTitle": "Последнее воспоминание о Проекте, который ты никогда не закончишь",
+    "strDesc": "Тяжёлое воспоминание снова возвращается без приглашения. Можно подавить его и получить минутную передышку от страха, который оно порождает. Или проделать трудную работу и проработать его, поднимая со дна тяжёлые чувства сейчас — в надежде, что это приведёт к прочному росту в будущем."
+  },
+  "ENCMemoryThirdSuppressFoliage": {
+    "strTitle": "Снова подавить воспоминание о листве",
+    "strDesc": "Уже в третий раз ты подавляешь это воспоминание, зная, что на какое-то время от него сбежишь. Но после всех этих побегов от прошлого бегство больше не приносит покоя.\n\nБолее того, уклонение от памяти изменило тебя. Возможно, необратимо.\n\nТут есть урок, если ты решишь его разглядеть."
+  },
+  "ENCMemoryDeadFriend": {
+    "strTitle": "Накрыло воспоминанием об ушедшем друге",
+    "strDesc": "Говорят, горе — как камень в кармане. Но сейчас, когда память об умершем друге накатывает снова, это скорее жернов на шее.\n\nКогда вы были вместе, всё давалось легко. Вы были на одной волне, полностью. Не нужно было ни играть роль, ни защищаться, ни сбегать от разговора в поисках тишины. Видеопоток, в котором ничего не происходит, мог занять вас на часы — благодаря общим шуткам и придиркам, которые вы нарабатывали. Мелкий ручеёк пустой болтовни перетекал в глубокие воды настоящего разговора так естественно, что ты и не замечал, где кончается одно и начинается другое.\n\nА теперь что? Остался только мёртвый профиль на RinRin. И ты пересматривал тамошние видео столько раз, что они стали похожи на кадры из документалки о незнакомце.\n\nСтоишь вот так, в эту самую минуту, и думаешь: можно ли такое вернуть? Заменить? И с холодной уверенностью понимаешь — нет."
+  },
+  "ENCMemoryDeadFriendDeeperClobber": {
+    "strTitle": "Прожить воспоминание об ушедшем друге",
+    "strDesc": "Впервые ты позволяешь certeza потери опуститься на тебя целиком. Смотришь, как все твои отрицания, вся ярость, все горькие торги облетают, как осенние листья, оставляя лишь голый ствол твоего одиночества.\n\nЧего тебе сейчас хочется — не любви, не смысла и даже не радости. Просто присутствия того, кто тебе дорог. Напоминания, что система — не просто сложная галлюцинация свихнувшегося разума, а мир, в котором есть другие. Не такие уж непохожие на тебя.\n\nЭта новая уверенность, что друг не вернётся, — боль, которую еле выносишь. Но это та боль, что приходит вместе с ростом. И где-то в глубине сознания ты знаешь: пройдёт достаточно времени, и за этот рост ты будешь благодарен."
+  },
+  "ENCMemoryDeadFriendRevisit": {
+    "strTitle": "Воспоминание об ушедшем друге вернулось",
+    "strDesc": "Правда о твоей потере возвращается внезапно. Ты снова видишь его: голый ствол горя, когда-то покрытый листвой, теперь — голый и мрачный. На горизонте за ним тёмные тучи мигают белыми вспышками молний, будто питающие их цепи перегружены и вот-вот сгорят.\n\nТы уже признал, что эта потеря — навсегда. И решил не отмахиваться от такой тяжёлой правды. Но боль одиночества никуда не делась, и, судя по тем тучам, станет хуже, прежде чем станет легче. Что ты с этим будешь делать?"
+  },
+  "ENCMemoryDeadFriendDeeperRevisit": {
+    "strTitle": "Прожить возвращение воспоминания об ушедшем друге",
+    "strDesc": "Ты стоишь и смотришь на дерево, пока тучи подступают и сгущаются. Почему-то дождь начинается раньше, чем они доходят до тебя: длинные плети воды хлещут по земле и ветвям, каждая выбивает облачка пыли, которая быстро оседает густой чёрной грязью у твоих ног.\n\nЖивотная часть разума вопит, требуя укрытия, пока реальность потери колотит по тебе. Как друг мог оставить тебя здесь, одного, в таком жестоком и безразличном мире? Перед внутренним взором мелькает убежище: пещера, скорее нора. Ты знаешь, что если готов ползти по грязи — там можно переждать бурю.\n\nНо ты не идёшь. Каким-то образом, сквозь всё это, ты набрал достаточно мудрости, чтобы понять: спрятаться не выйдет. И ты стоишь, позволяя дождю хлестать. Смотришь на тёмные тучи, как они ревут и сверкают.\n\nИ вскоре видишь: солнце. Прямо там, за всей этой истерикой бури. Если бы ты сбежал в нору, ты бы его никогда не нашёл."
+  },
+  "ENCMemoryDeadFriendFinal": {
+    "strTitle": "Последнее воспоминание об ушедшем друге",
+    "strDesc": "Вот оно снова: горе, тот самый камень в кармане. Проводишь пальцами по острым граням, идёшь по ним туда, где они становятся округлыми и гладкими.\n\nВ прошлый раз это была буря печали, в которой ты едва выжил. Знаешь, что можешь зайти туда снова — если хватит сил выстоять. Что будешь делать?"
+  },
+  "ENCMemoryDeadFriendDeeperFinal": {
+    "strTitle": "Отпустить воспоминание об ушедшем друге",
+    "strDesc": "Когда человечество сорвалось с Земли всего несколько поколений назад, этот рывок питала наивная вера: стоит вырваться из дома — и мы поднимем вид выше базовых нужд.\n\nНо теперь, стоя у дерева своего горя и глядя, как солнце выпаривает дождь в мягкую дымку, которая поднимается в небо над тобой, ты наконец понимаешь: этому не бывать.\n\nНужда есть. Нужда спать. И самая глубокая нужда — быть рядом с другим существом, у которого свои нужды; это цепляние, от которого никогда не избавиться полностью. Да и не стоит.\n\nТвоего друга больше нет. Он ушёл в дымку того, что дальше, — если там вообще что-то есть. Но само желание снова быть рядом с ним, когда-то невыносимая боль, теперь ощущается как лёгкое натяжение в груди, мягкое сжатие пустой ладони. Это напоминание: раз тебя любили — ты никогда по-настоящему не будешь один.\n\nДолгой внутренней борьбой ты полностью прожил воспоминание о смерти друга. Благодаря этому ты обрёл редкое и новое чувство — терпение. В будущем оно тебе пригодится."
+  },
+  "ENCMemoryBetrayalDeeperRevisit": {
+    "strTitle": "Проработать вернувшуюся память о преданном",
+    "strDesc": "Ты берёшься за тяжёлую работу — пережить это жёсткое воспоминание до конца. Сейчас оно обжигает, но каждый такой шаг приближает к тому, чтобы навсегда закрыть эту рану и всю ту дрянь, что вокруг неё наросла. Ты точно знаешь: рано или поздно эта возня окупится. Глубоко окупится."
+  },
+  "ENCMemoryBetrayalFinal": {
+    "strTitle": "Последнее воспоминание о преданном",
+    "strDesc": "Тяжёлое воспоминание снова приходит без приглашения. Можно подавить его — получить короткую передышку от страха, который оно несёт. А можно взяться за грязную работу и прожить его, вороша старые чувства в надежде, что однажды это приведёт к чему-то настоящему. К росту. К чему угодно, кроме этой петли."
+  },
+  "ENCMemoryBetrayalDeeperFinal": {
+    "strTitle": "Закрыть память о преданном",
+    "strDesc": "После долгой внутренней грызни тебе удалось разобраться с этим воспоминанием и всей травмой, что за ним стояла. Ты стал другим — глубже, крепче. И получил кое-что ценное, черту, которая не раз пригодится в том дерьме, что впереди."
+  },
+  "ENCMemoryFirstSuppressBetrayal": {
+    "strTitle": "Подавить память о преданном",
+    "strDesc": "Ты заглушаешь это воспоминание в надежде, что оно отвалится на какое-то время.\n\nИ оно правда даёт передышку — даже лёгкий подъём настроения.\n\nКому вообще нужна эта копаться-в-себе чушь?"
+  },
+  "ENCMemorySecondSuppressBetrayal": {
+    "strTitle": "Снова подавить память о преданном",
+    "strDesc": "Ты опять глушишь это воспоминание, зная, что сейчас станет чуть легче.\n\nУже не так спокойно, как в первый раз — бежать от этого воспоминания. Но всё равно безопаснее, чем разбирать тот уродливый момент по косточкам.\n\nНаверняка можно делать так вечно. Ведь правда?"
+  },
+  "ENCMemoryThirdSuppressBetrayal": {
+    "strTitle": "Опять подавить память о преданном",
+    "strDesc": "В третий раз ты заглушаешь это воспоминание, зная, что опять уйдёшь от него на время. Но после всех этих побегов от собственного прошлого бежать уже не сладко.\n\nБолее того — уклонение изменило тебя. Возможно, необратимо.\n\nТут есть урок, если захочешь его увидеть."
+  },
+  "ENCMemoryMasses": {
+    "strTitle": "Накрыло воспоминанием о Толпе",
+    "strDesc": "Внезапно накатывает: ты зажат среди тел. Десятки, сотни — все бегут от одной угрозы. Или мнимой угрозы. Потому что спусковой крючок щёлкнул где-то вне твоего поля зрения, и в ту секунду, когда тебя подхватила давка, это перестало иметь значение.\n\nТогда было важно только одно: ты заперт. Загнан в котёл головорезами с НОО, которые орали, что нелетальные заряды всё равно испортят тебе весь день.\n\nА сейчас ты помнишь другое: ты — одна голова в море голов. Тела жмутся, толкаются, прут вперёд, потому что вперёд — единственное направление, куда можно. Жара. Пот. Коктейль феромонов такой густой, что ощущаешь его на корне языка.\n\nТолпа двигалась с такой неотвратимостью, что можно было просто поднять ноги и плыть в ней без собственного участия. Никогда ты не чувствовал себя настолько атомом. Просто частицей твёрдого вещества. Значимой лишь в теории. Различимой лишь в скоплении.\n\nИ сейчас, сидя в этом воспоминании, ты начинаешь думать: а есть ли в тебе вообще что-то своё? Или ты просто каждый миг сдаёшься силам покрупнее — корпоративным, рыночным, социальным, космическим."
+  },
+  "ENCMemoryMassesDeeperClobber": {
+    "strTitle": "Проработать воспоминание о Толпе",
+    "strDesc": "Ты делаешь трудную работу: прорабатываешь это суровое воспоминание. Оно сразу же причиняет душевную боль, но приближает тебя к тому, чтобы навсегда справиться с ним и сопутствующими травмами. Такая работа, ты твёрдо знаешь, со временем даст глубокую эмоциональную отдачу."
+  },
+  "ENCMemoryFirstSuppressViolence": {
+    "strTitle": "Подавить воспоминание о насилии",
+    "strDesc": "Ты подавляешь это воспоминание в надежде, что оно на время отступит.\n\nИ в этом есть какой-то временный покой — настроение даже чуть приподнимается.\n\nКому вообще нужно самокопание?"
+  },
+  "ENCMemorySecondSuppressViolence": {
+    "strTitle": "Снова подавить воспоминание о насилии",
+    "strDesc": "Ты снова подавляешь это воспоминание, зная, что сейчас это хоть немного поднимет настроение.\n\nБежать от него уже не так спокойно, как в первый раз, но всё равно безопаснее, чем разбираться с такой мерзостью.\n\nТы ведь можешь делать это вечно. Правда ведь?"
+  },
+  "ENCMemoryThirdSuppressViolence": {
+    "strTitle": "Опять подавить воспоминание о насилии",
+    "strDesc": "В третий раз ты подавляешь это воспоминание, зная, что на время от него сбежишь. Но после всех этих побегов от прошлого бегство уже не приносит покоя.\n\nБолее того, уклонение от этого воспоминания изменило тебя — возможно, необратимо.\n\nТут есть урок, если ты готов его увидеть."
+  },
+  "ENCHeatCCREBustedStart": {
+    "strTitle": "Попался",
+    "strDesc": "Тебя тащат к магистрату ККРЭ на разбирательство, оставив корабль и снаряжение где были.\n\nНа слушании можно умолять хотя бы о штрафе — 15 000 $ разом или в рассрочку, — иначе отправят на гауптвахту Кольцевой станции, на год-три каторжных работ."
+  },
+  "ENCHeatCCREFineEnd": {
+    "strTitle": "Просить штраф (единовременно)",
+    "strDesc": "Такое ощущение, что им только и надо, чтобы ты нарушал правила — тогда можно выжать из тебя побольше.\n\nТы подписываешь гору бумаг в тесных наручниках.\n\nЭто тоже приговор, только другого рода. Ещё одна гиря на шее.\n\nНовый штраф: 15 000 $."
+  },
+  "ENCHeatCCREFineDebtEnd": {
+    "strTitle": "Просить штраф (в рассрочку)",
+    "strDesc": "Такое ощущение, что им только и надо, чтобы ты нарушал правила — тогда можно загнать тебя поглубже в проценты.\n\nТы подписываешь гору бумаг в тесных наручниках.\n\nЭто тоже приговор, только другого рода. Ещё одна гиря на шее.\n\nНовый долг: 15 000 $, выплата каждую смену."
+  },
+  "ENCHeatCCREFineFinish": {
+    "strTitle": "Продолжить",
+    "strDesc": "После оформления тебя бесцеремонно вышвыривают у офиса безопасности ККРЭ. Если во время ареста ты не был пристыкован к станции, возможно, придётся добираться до корабля паромной службой PASS (через КПК). Хорошо бы он ещё был на месте.\n\nПора вставать на ноги."
+  },
+  "ENCHeatCCREPrisonStart": {
+    "strTitle": "На гауптвахту Кольцевой станции",
+    "strDesc": "Тебя волокут в тюремный блок Кольцевой станции."
+  },
+  "ENCHeatCCREPrisonEnd": {
+    "strTitle": "Тяжёлый срок",
+    "strDesc": "Ты месяцами гнёшь спину без гроша среди изгоев — кто забитый, кто опасный. Делишь барак почти с сотней таких же бедолаг, все уложены, как растопка, на трёхъярусных койках.\n\nНо даже в таком аду есть свои возможности. Ты слышишь разное. Знакомишься с людьми. Влипаешь в переделки, находишь друзей. К концу срока за плечами — с дюжину жизней, и шрамы тому подтверждение.\n\nК тому же — бесплатный кров и кормёжка. Если прищуриться, оно, может, и того стоило..."
+  },
+  "ENCHeatCCREPrisonFinish": {
+    "strTitle": "Продолжить",
+    "strDesc": "После оформления тебя бесцеремонно вышвыривают за дверь службы безопасности ККРЭ. Если на момент ареста ты не был пристыкован к станции, до корабля придётся добираться на пароме ПАСС (через КПК). Хорошо бы он ещё был на месте.\n\nПора вставать на ноги."
+  },
+  "ENCMedServicesKioskAdv": {
+    "strTitle": "Медицинские услуги",
+    "strTooltip": "Оплати расширенную первую помощь или процедуры, способные избавить от хронических недугов."
+  },
+  "ENCOKLGMedServicesStart": {
+    "strTitle": "Медуслуги для космиков",
+    "strDesc": "Ты прекрасно понимаешь, что всё это скорее плацебо или лейкопластырь по сравнению с передовыми методами, которыми пользуются богачи на Ханчжоу или Марсе.\n\nЭто больно, скорее всего нестерильно и не по карману большинству космиков, но это единственный доступный способ хоть немного подлатать твоё изношенное космосом тело."
+  },
+  "ENCMedServicesAdvStart": {
+    "strTitle": "Премиальная медицина",
+    "strDesc": "В отличие от большинства уголков Солнечной системы, здесь передовые биомедицинские процедуры хотя бы стерильны, хорошо изучены (ну или хотя бы хорошо разрекламированы) и стоят неприлично дорого. Лучший вариант из доступных, чтобы твоё изношенное космосом тело стало совершеннее, желаннее... человечнее."
+  },
+  "ENCOKLGMedServiceNanoFirstAidAlready": {
+    "strTitle": "Проверить статус нанороботической первой помощи",
+    "strDesc": "Нанороботическая первая помощь уже активна. Повторная процедура недоступна, пока не закончится действие текущей."
+  },
+  "ENCMedServiceNanoFirstAidAdv": {
+    "strTitle": "Нанороботическая первая помощь ($25 000, 24 ч)",
+    "strDesc": "Стоимость: $25 000 (24 часа)\n\nЛечение травм инъекцией нанороботов, ускоряющих заживление ран и поддерживающих иммунитет против инфекций и ряда заболеваний в течение 24 часов.\n\n(Доступны только варианты по средствам)"
+  },
+  "ENCMemorySecondSuppressChildhood": {
+    "strDesc": "Ты снова подавляешь это воспоминание, зная, что оно даст хотя бы краткую передышку.\n\nБежать от него уже не так легко, как раньше, но это всё равно безопаснее, чем разбирать такой уродливый момент по кусочкам.\n\nНаверняка так можно тянуть вечно. Верно ведь?",
+    "strTitle": "Снова подавить воспоминание о детстве"
+  },
+  "ENCMemoryThirdSuppressChildhood": {
+    "strTitle": "Снова подавить воспоминание о детстве",
+    "strDesc": "В третий раз ты подавляешь это воспоминание, зная, что на какое-то время от него сбежишь. Но после всех этих побегов от прошлого бегство уже не приносит покоя.\n\nБолее того — уклонение от памяти изменило тебя. Возможно, необратимо.\n\nЗдесь есть урок, если ты решишь его увидеть."
+  },
+  "ENCMemoryViolence": {
+    "strTitle": "Накрыло воспоминанием о насилии",
+    "strDesc": "Воспоминание — если это вообще можно так назвать — проявляется как провал, вакуум, лакуна в памяти, которая выбрасывает обрывки образов и звуков, не связанных ни в какую историю. Вот кровь — и пустота. Вот рассечение, запах металла и соли — и снова пустота. Каждую вспышку сопровождают звуки: крики, гортанные стоны, скулящие мольбы о помощи, которая так и не придёт.\n\nУжас, который тебя сейчас сковывает, растёт из одной конкретной уверенности: тело хрупкое, дырявое, набитое жизненно важными механизмами, которые могут отказать в одно мгновение. Не мысль о смерти тебя пугает. С неизбежностью ты давно смирился.\n\nПугает размышление о том, как именно ты умрёшь. Каким способом тебя не станет?\n\nГде-то в твоём будущем есть причина смерти, и вопрос, какой она будет, парализует тебя."
+  },
+  "ENCMemoryViolenceDeeperClobber": {
+    "strTitle": "Осмыслить воспоминание о насилии",
+    "strDesc": "Как бы тяжело ни было вспоминать, ты уверен: в тот день что-то <i>действительно</i> произошло. Образы насилия слишком конкретны, слишком навязчивы, слишком устойчивы, чтобы быть просто игрой воображения. Особенно цепляют искажённые лица: они размыты, но всё равно почему-то знакомы.\n\nТы ловишь себя на мысли, что попытка заглянуть в это воспоминание похожа на заброс удочки в затянутый туманом пруд. Приманка взлетает по дуге и исчезает в мгле, и ты гадаешь, коснулась ли она вообще воды.\n\nНо пока ждёшь — чувствуешь лёгкие поклёвки. Чуть подрагивает удилище, и с каждым толчком воспоминание становится чётче. Кровь, раньше заполнявшая весь обзор, теперь собирается в лужи у тел. Крики, раньше сливавшиеся в один гул, обретают тембр и высоту. Размытые лица постепенно обретают черты.\n\nИ вот ты сидишь и ждёшь, медленно вспоминая, надеясь, что лёгкая поклёвка обернётся настоящей хваткой. И хотя ты понимаешь, что это займёт время, есть горькое утешение в том, что этот момент из твоего прошлого — пусть и чудовищный — абсолютно реален."
+  },
+  "ENCMemoryViolenceRevisit": {
+    "strTitle": "Воспоминание о насилии возвращается",
+    "strDesc": "Катастрофическая сцена насилия снова настигает тебя. Кровь, вой, смрад смерти. Все детали проступают, как и прежде, в той же безжалостной чёткости.\n\nНо на этот раз воспоминание приходит не хаосом образов без контекста, а историей. Последовательностью событий с причинами и следствиями. Мрачная история, без сомнений, но с началом, серединой и страшным концом.\n\nОни были живы, целы, невредимы. Потом обрушилось насилие, и их тела изуродовало. Потом они лежали, истекая кровью. Некоторые нашли свой конец.\n\nИ хотя в тот день тебе повезло, ты знаешь, что однажды найдёшь и свой. От этого конца можно бежать, а можно его обдумывать.\n\nВ любом случае этот конец останется — причина, таящаяся в тёмном коридоре твоего будущего, притаившаяся, как хищник перед прыжком. Далёк этот конец или совсем близко — ты не узнаешь никогда."
+  },
+  "ENCMemoryViolenceDeeperRevisit": {
+    "strTitle": "Осмыслить возвращение воспоминания о насилии",
+    "strDesc": "Ты смотришь вперёд, в коридор, щуришься в его темноту. Каждое мгновение — шаг вперёд. Назад не повернёшь. Время ведь движется только в одном направлении.\n\nТы вдруг понимаешь: да, каждое мгновение приближает тебя к концу, но в каждом из них заложен выбор. А из этого выбора ветвятся другие, каждый дробится на новые варианты, новые мгновения — и так до бесконечности, бесконечный фрактал возможных будущих.\n\nЗначит, время — не коридор только потому, что ведёт к смерти. Это вечно расступающийся горизонт, бесконечная мерцающая пустыня мгновений, и в каждом из них — какая-то версия тебя.\n\nДа, ты умрёшь. Но до этого — будешь жить. Что ты сделаешь в это мгновение? Единственное мгновение, которое тебе, по крайней мере прямо сейчас, гарантировано?"
+  },
+  "ENCMemoryViolenceFinal": {
+    "strTitle": "Последнее воспоминание о насилии",
+    "strDesc": "Воспоминание о том дне насилия снова приходит к тебе — но уже другое. Не бессвязная череда образов и не неотвратимое следствие судьбы.\n\nТеперь ты видишь его ясно: катастрофический момент, который тебя изменил, но не обязан тебя определять. Это не пустота и не открытая рана, а шрам.\n\nА что теперь с будущим? Как ты пойдёшь дальше, изувеченный близостью со смертью?"
+  },
+  "ENCMemoryViolenceDeeperFinal": {
+    "strTitle": "Отпустить воспоминание о насилии",
+    "strDesc": "На венерианском аэростате «Энкантадо» небольшая община ремесленников посвятила жизнь сохранению старинных японских и бразильских ремёсел своих прежних домов.\n\nОдно из таких ремёсел — кинцуги: восстановление треснувшей и повреждённой керамики с помощью золотой фольги. Не чтобы скрыть изъяны разбитой вещи, а чтобы подчеркнуть их, сделать предмет снова целым — теперь с историей его былых травм, прочитываемой на поверхности.\n\nТы вдруг понимаешь, что ты — один из таких сосудов. Вместо того чтобы сжиматься от страха перед жестоким моментом из прошлого, ты принял его. Вместо того чтобы прятать шрамы того дня, ты решил покрыть их золотом, вплести их целиком и красиво в то, кем ты являешься сейчас.\n\nС каждым мгновением мы копим вещественные следы времени. Пыль. Шрамы. Морщины у глаз — глаз, которые однажды помутнеют и закроются навсегда.\n\nНо эти следы и есть сама жизнь. Патина жизни — теперь уже протест против смерти. Вещественное свидетельство твоего прошлого и твоего присутствия — пусть и мимолётного — в этой Системе.\n\nПосле долгой внутренней борьбы тебе удалось полностью пережить воспоминание о насилии. Благодаря этому ты обрёл новый, редкий оптимизм. Он сослужит тебе хорошую службу."
+  },
+  "MSAlarmSmokeDmgLoose": {
+    "strDesc": "[us] [is] повреждён."
+  },
+  "MSAlarmCO2SwitchRedAllow": {
+    "strTitle": "Тревога: CO2",
+    "strDesc": "Внимание: датчик обнаружил высокую концентрацию CO2."
+  },
+  "MSAlarmContaminantsSwitchRedAllow": {
+    "strTitle": "Тревога: загрязнение",
+    "strDesc": "Внимание: датчик обнаружил опасный уровень H2SO4 и/или NH3."
+  },
+  "MSAlarmN2SwitchRedAllow": {
+    "strTitle": "Тревога: низкое давление N2",
+    "strDesc": "Внимание: датчик обнаружил давление N2 ниже оптимального уровня."
+  },
+  "MSAlarmO2SwitchRedAllow": {
+    "strTitle": "Тревога: низкое давление O2",
+    "strDesc": "Внимание: датчик обнаружил давление O2 ниже безопасного уровня."
+  },
+  "MSAlarmSmokeSwitchGreenAllow": {
+    "strDesc": "[us] [switches] в зелёный режим."
+  },
+  "MSAlarmSmokeSwitchOffAllow": {
+    "strDesc": "[us] [switches] в положение «Выкл»."
+  },
+  "MSAlarmSmokeSwitchOnAllow": {
+    "strDesc": "[us] [switches] в положение «Вкл»."
+  },
+  "MSAlarmSmokeSwitchRedAllow": {
+    "strTitle": "Тревога: задымление",
+    "strDesc": "Внимание: датчик обнаружил дым и/или CO."
+  },
+  "MSChairCube01bDamage": {
+    "strDesc": "[us] [is] повреждён."
+  },
+  "ENCEmbassyServicesMSUZVisaCitAlready": {
+    "strTitle": "Инфо: визы",
+    "strDesc": "Услуги подачи заявлений на визу нужны лишь тем, у кого ещё нет законного статуса в Сучжоу-Орбитал.\n\nПоскольку у тебя уже есть гражданство Сучжоу-Орбитал, эта услуга тебе не нужна."
+  },
+  "ENCEmbassyServicesMSUZVisaPRAlready": {
+    "strTitle": "Инфо: визы",
+    "strDesc": "Услуги подачи заявлений на визу нужны лишь тем, у кого ещё нет законного статуса в Сучжоу-Орбитал.\n\nПоскольку у тебя уже есть статус временного резидента E2B в Сучжоу-Орбитал, эта услуга тебе не нужна."
+  },
+  "ENCEmbassyServicesMVOLKioskTut": {
+    "strTitle": "Узнать о визах Вольтера",
+    "strTooltip": "Просматривай и покупай материалы для подачи заявлений на визу: Вольтер, Деймос."
+  },
+  "ENCEmbassyServicesMVOLKiosk": {
+    "strTitle": "Узнать о визах Вольтера",
+    "strTooltip": "Просматривай и покупай материалы для подачи заявлений на визу: Вольтер, Деймос."
+  },
+  "ENCEmbassyServicesMVOL": {
+    "strTitle": "Выбери нужные услуги (Вольтер, Деймос)",
+    "strDesc": "Большинство суверенов Системы придерживаются многоуровневой системы иммиграционных статусов — так называемых «страт». Обычно они тянутся от недокументированного (нелегального) иммигранта до полного гражданства, а страта человека определяет, какие права ему полагаются у данного суверена.\n\nПрава могут включать доступ к определённым зонам или услугам, право на частное жильё или стыковку корабля, улучшенные расценки на торговые разрешения и даже правовую защиту или допуски.\n\nОбычно такие права передаются от родителей по рождению (jus sanguinis), а в некоторых случаях — по факту рождения на территории (jus soli).\n\nПолучение законного статуса после рождения обычно требует подачи заявления на визу и может включать поиск спонсора и/или уплату внушительного сбора."
+  },
+  "ENCEmbassyServicesMVOLVisaInvestor": {
+    "strTitle": "Инфо: виза инвестора: $5,000,000",
+    "strDesc": "Стоимость: $5,000,000\n\nПрограмма «Перспективный кандидат-технократ» (PTC) Вольтера нацелена на иммигрантов-предпринимателей, у которых есть навыки и потенциал, чтобы строить бизнес или вести исследования на Вольтере, стимулируя инновации, создавая рабочие места и конкурируя в масштабе всей Системы.\n\nЕсть у тебя инновационная исследовательская или бизнес-идея и средства, чтобы подкрепить амбиции? Если сможешь доказать свою способность внести вклад в развитие Вольтера и его Университета, возможно, сможешь иммигрировать по этой категории визы."
+  },
+  "ENCEmbassyServicesMVOLVisaInvestorAccept": {
+    "strTitle": "Оплатить визу инвестора Вольтера",
+    "strDesc": "После уплаты сбора за подачу заявления твои данные прогоняют через первичную поверхностную проверку биографии. Институциональный комитет по приёму, грантам и зачислению Вольтера (ICAGM) всё ещё может выявить проблему в твоём заявлении при полной проверке, но хотя бы предварительная проверка пройдена.\n\nПоздравляем! Теперь ты гордый обладатель права на въезд и статуса постоянного резидента в самом передовом исследовательском университете Солнечной системы!\n\nИди наслаждайся торговыми скидками и возможностями получения частного жилья."
+  },
+  "ENCMemoryDumbRevisit": {
+    "strTitle": "Снова воспоминание о глупейшей твоей фразе",
+    "strDesc": "Тяжёлое воспоминание снова приходит непрошеным. Можно подавить его и получить краткую передышку от страха, который оно вызывает. Или взяться за трудную работу по его осмыслению, растревожив тяжёлые эмоции в настоящем в надежде, что это приведёт к устойчивому росту в будущем."
+  },
+  "ENCMemoryDumbDeeperRevisit": {
+    "strTitle": "Осмыслить повторное воспоминание о глупейшей твоей фразе",
+    "strDesc": "Ты берёшься за трудную работу по осмыслению жестокого воспоминания. Это причиняет немедленную эмоциональную боль, но приближает тебя к окончательному избавлению от воспоминания и сопутствующих травм. Нет сомнений: такая работа со временем принесёт глубокую эмоциональную отдачу."
+  },
+  "ENCMemoryDumbFinal": {
+    "strTitle": "Последнее воспоминание о глупейшей твоей фразе",
+    "strDesc": "Тяжёлое воспоминание снова приходит непрошеным. Можно подавить его и получить краткую передышку от страха, который оно вызывает. Или взяться за трудную работу по его осмыслению, растревожив тяжёлые эмоции в настоящем в надежде, что это приведёт к устойчивому росту в будущем."
+  },
+  "ENCMemoryDumbDeeperFinal": {
+    "strTitle": "Закрыть воспоминание о глупейшей твоей фразе",
+    "strDesc": "После долгой внутренней борьбы тебе удалось проработать это жестокое воспоминание и связанную с ним травму. Справившись с этим, ты становишься глубже как личность и получаешь ценную черту. Она не раз пригодится тебе в будущем."
+  },
+  "ENCMemoryFirstSuppressDumb": {
+    "strTitle": "Подавить воспоминание о глупейшей твоей фразе",
+    "strDesc": "Ты подавляешь это воспоминание в надежде, что оно на время отступит.\n\nЭто даёт временное спокойствие и даже лёгкий подъём настроения.\n\nВ конце концов, кому нужна эта рефлексия?"
+  },
+  "ENCMemorySecondSuppressDumb": {
+    "strTitle": "Снова подавить воспоминание о глупейшей твоей фразе",
+    "strDesc": "Ты снова подавляешь это воспоминание, зная, что это хоть немного поднимет настроение сейчас.\n\nБегство от него уже не приносит прежнего покоя, но всё равно кажется безопаснее, чем разбирать такой мерзкий момент.\n\nТы ведь можешь делать это вечно. Правда?"
+  },
+  "ENCMemoryThirdSuppressDumb": {
+    "strTitle": "Опять подавить воспоминание о глупейшей твоей фразе",
+    "strDesc": "Уже в третий раз ты подавляешь это воспоминание, зная, что ненадолго от него скроешься. Но после всего этого бегства от прошлого в побеге больше нет покоя.\n\nБегство от воспоминания изменило тебя — возможно, безвозвратно.\n\nВ этом есть урок, если захочешь его разглядеть."
+  },
+  "MSSensorEOIR01LooseDamage": {
+    "strDesc": "[us] повреждён."
+  },
+  "MSSensorEOIR01LooseDestroy": {
+    "strDesc": "[us] уничтожен."
+  },
+  "MSSensorEOIR01OffAllow": {
+    "strDesc": "[us] отключается."
+  },
+  "MSSensorEOIR01OnAllow": {
+    "strDesc": "[us] включается."
+  },
+  "MSSensorIR01Damage": {
+    "strDesc": "[us] повреждён."
+  },
+  "MSSensorIR01Destroy": {
+    "strDesc": "[us] уничтожен."
+  },
+  "MSSensorIR01LooseDamage": {
+    "strDesc": "[us] повреждён."
+  },
+  "MSSensorIR01LooseDestroy": {
+    "strDesc": "[us] уничтожен."
+  },
+  "MSSensorIR01OffAllow": {
+    "strDesc": "[us] отключается."
+  },
+  "MSSensorIR01OnAllow": {
+    "strDesc": "[us] включается."
+  },
+  "MSSensorIR02Damage": {
+    "strDesc": "[us] повреждён."
+  },
+  "MSSensorIR02Destroy": {
+    "strDesc": "[us] уничтожен."
+  },
+  "MSSensorIR02LooseDamage": {
+    "strDesc": "[us] повреждён."
+  },
+  "MSSensorIR02LooseDestroy": {
+    "strDesc": "[us] уничтожен."
+  },
+  "MSSensorIR02OffAllow": {
+    "strDesc": "[us] отключается."
+  },
+  "ENCMemoryChildhood": {
+    "strTitle": "Накрыло воспоминанием о детстве",
+    "strDesc": "Воспоминание о том, как ты снова ребёнок, настигает без предупреждения и бьёт как обухом по голове. После всех лет, когда ты сам за себя и выжимаешь каждый доллар из корпоративной каторги, ты почти забыл, что было время, когда для выживания тебе нужен был кто-то ещё.\n\nНо это было так. И для всех вокруг тоже. Поэтому корпорации и строили работные дома, интернаты, отделения интенсивной терапии новорождённых размером с гимнастический зал. И с каждым новым таким жестом они требуют благодарности, хотя все прекрасно понимают, что они делают: защищают свои активы.\n\nЧеловек, которого ты сейчас вспоминаешь, был последним, кто защищал тебя, проявлял к тебе настоящую доброту и смотрел на тебя не как на вложение, а как на человека — с надеждами, мечтами и страхом перед завтрашним днём.\n\nСтоя на похоронах, ты ощутил тягостное чувство: ничто уже не будет прежним. После нескольких слов тело без лишних церемоний унесли на переработку — ещё один актив для корпорации, — а ты остался один.\n\nС тех пор ты сам за себя."
+  },
+  "ENCMemoryChildhoodDeeperClobber": {
+    "strTitle": "Проработать воспоминание о детстве",
+    "strDesc": "Ты проделываешь тяжёлую работу по проработке этого жестокого воспоминания. Хотя это причиняет немедленную эмоциональную боль, это приближает тебя к окончательной проработке этого воспоминания и сопутствующих травм. Ты точно знаешь, что такая работа со временем принесёт глубокую эмоциональную отдачу."
+  },
+  "ENCMemoryChildhoodRevisit": {
+    "strTitle": "Снова накрыло воспоминанием о детстве",
+    "strDesc": "Тяжёлое воспоминание снова возвращается без приглашения. Ты можешь подавить его, получив краткую передышку от страха, который оно вызывает. Или можешь проделать трудную работу по его проработке, бередя тяжёлые эмоции в настоящем в надежде, что это приведёт к устойчивому росту в будущем."
+  },
+  "ENCMemoryChildhoodDeeperRevisit": {
+    "strTitle": "Проработать вернувшееся воспоминание о детстве",
+    "strDesc": "Ты проделываешь тяжёлую работу по проработке этого жестокого воспоминания. Хотя это причиняет немедленную эмоциональную боль, это приближает тебя к окончательной проработке этого воспоминания и сопутствующих травм. Ты точно знаешь, что такая работа со временем принесёт глубокую эмоциональную отдачу."
+  },
+  "ENCMemoryChildhoodFinal": {
+    "strTitle": "Последнее воспоминание о детстве",
+    "strDesc": "Тяжёлое воспоминание снова возвращается без приглашения. Ты можешь подавить его, получив краткую передышку от страха, который оно вызывает. Или можешь проделать трудную работу по его проработке, бередя тяжёлые эмоции в настоящем в надежде, что это приведёт к устойчивому росту в будущем."
+  },
+  "ENCMemoryChildhoodDeeperFinal": {
+    "strTitle": "Завершить проработку воспоминания о детстве",
+    "strDesc": "После долгой внутренней борьбы тебе удалось проработать это жестокое воспоминание и его травму. Это помогло тебе глубоко измениться как личности и обрести ценную черту. Она не раз послужит тебе в будущем."
+  },
+  "ENCMemoryFirstSuppressChildhood": {
+    "strTitle": "Подавить воспоминание о детстве",
+    "strDesc": "Ты подавляешь это воспоминание в надежде, что оно на время отступит.\n\nЭто даёт временный покой и даже лёгкий подъём настроения.\n\nВ конце концов, кому нужна рефлексия?"
+  },
+  "ENCMemoryProjectDeeperFinal": {
+    "strTitle": "Разобраться с воспоминанием о проекте, который тебе никогда не закончить",
+    "strDesc": "После долгой внутренней борьбы тебе удалось проработать это жестокое воспоминание и его травму. Ты стал намного сильнее как личность и получил ценную черту. Она не раз пригодится в будущем."
+  },
+  "ENCMemoryFirstSuppressProject": {
+    "strTitle": "Подавить воспоминание о проекте, который тебе никогда не закончить",
+    "strDesc": "Ты подавляешь это воспоминание в надежде, что оно на время уйдёт.\n\nЭто даёт временный покой и даже лёгкий подъём настроения.\n\nВ конце концов, кому нужна рефлексия?"
+  },
+  "ENCMemorySecondSuppressProject": {
+    "strTitle": "Снова подавить воспоминание о проекте, который тебе никогда не закончить",
+    "strDesc": "Ты вновь подавляешь это воспоминание, зная, что сейчас оно поднимет тебе настроение.\n\nБежать от него уже не так покойно, как раньше, но это всё равно кажется безопаснее, чем прорабатывать такой гадкий момент.\n\nТы ведь сможешь делать это вечно. Правда?"
+  },
+  "ENCMemoryThirdSuppressProject": {
+    "strTitle": "Опять подавить воспоминание о проекте, который тебе никогда не закончить",
+    "strDesc": "Уже в третий раз ты подавляешь это воспоминание, зная, что на время от него сбежишь. Но после всех этих побегов от прошлого в бегстве больше нет покоя.\n\nНа деле попытки увернуться от этого воспоминания изменили тебя, возможно, безвозвратно.\n\nВ этом есть урок, если захочешь его увидеть."
+  },
+  "ENCMemoryBetrayal": {
+    "strTitle": "Накрыло воспоминанием о том, кого ты предал",
+    "strDesc": "Тогда это казалось таким простым. Как открытая дверь — бери и иди.\n\nХватило пяти-шести слов. Сами по себе слова — хрупкие штуки. Но стоило подкрепить их нужным выражением лица — той кривоватой ухмылкой, которую с трудом удалось выдавить, — как посыл вдруг стал железобетонным: «Эй. Разве я тебе вру?»\n\nНо ложь сорвалась с твоих губ. И твой друг пошёл вниз, всё ниже по тёмной дорожке, которую тебе удалось проложить, — к верной гибели.\n\nИ знаешь, что хуже всего? Он до сих пор не знает, что это ты продал его с потрохами. Бедняга.\n\nНет, не это хуже всего. Хуже всего то, что, стоя здесь, когда воспоминание возвращается, ты понимаешь: ты в состоянии сделать всё это снова."
+  },
+  "ENCMemoryBetrayalDeeperClobber": {
+    "strTitle": "Проработать воспоминание о том, кого ты предал",
+    "strDesc": "Ты проделываешь трудную работу по проработке тяжёлого воспоминания. Это причиняет immediate emotional pain, но приближает к тому, чтобы окончательно разобраться с воспоминанием и его травмами. Ты уверен: такая работа со временем принесёт глубокое облегчение."
+  },
+  "ENCMemoryBetrayalRevisit": {
+    "strTitle": "Снова накрыло воспоминанием о том, кого ты предал",
+    "strDesc": "Тяжёлое воспоминание снова возвращается без приглашения. Можно подавить его и получить минутную передышку от страха, который оно порождает. Или проделать трудную работу и проработать его, поднимая со дна тяжёлые чувства сейчас — в надежде, что это приведёт к прочному росту в будущем."
+  },
+  "MSSensorIR02OnAllow": {
+    "strDesc": "[us] включается."
+  },
+  "MSSensorOptical01Damage": {
+    "strDesc": "[us] повреждён."
+  },
+  "MSSensorOptical01Destroy": {
+    "strDesc": "[us] уничтожен."
+  },
+  "MSSensorOptical01LooseDamage": {
+    "strDesc": "[us] повреждён."
+  },
+  "MSSensorOptical01LooseDestroy": {
+    "strDesc": "[us] уничтожен."
+  },
+  "MSSensorOptical01OffAllow": {
+    "strDesc": "[us] отключается."
+  },
+  "MSSensorOptical01OnAllow": {
+    "strDesc": "[us] включается."
+  },
+  "MSSensorLidar01Damage": {
+    "strDesc": "[us] повреждён."
+  },
+  "MSSensorLidar01Destroy": {
+    "strDesc": "[us] уничтожен."
+  },
+  "MSSensorLidar01LooseDamage": {
+    "strDesc": "[us] повреждён."
+  },
+  "MSSensorLidar01LooseDestroy": {
+    "strDesc": "[us] уничтожен."
+  },
+  "MSSensorLidar01OffAllow": {
+    "strDesc": "[us] отключается."
+  },
+  "MSSensorLidar01OnAllow": {
+    "strDesc": "[us] включается."
+  },
+  "MSSensorLidar02Damage": {
+    "strDesc": "[us] повреждён."
+  },
+  "MSSensorLidar02Destroy": {
+    "strDesc": "[us] уничтожен."
+  },
+  "ENCEmbassyServicesSVIRVisaPRAlready": {
+    "strTitle": "Инфо: визы",
+    "strDesc": "Услуги по оформлению виз нужны только тем, у кого ещё нет законного статуса на Титане.\n\nКак постоянный житель титанского общества, ты не нуждаешься в этой услуге."
+  },
+  "ENCFinishTitleLeave": {
+    "strTitle": "Уйти",
+    "strDesc": "Ты продолжаешь игру."
+  },
+  "ENCFinishTitleCancel": {
+    "strTitle": "Отмена",
+    "strDesc": "Ты продолжаешь игру."
+  },
+  "ENCFinishTitleQuit": {
+    "strTitle": "Выход",
+    "strDesc": "Ты продолжаешь игру."
+  },
+  "ENCFirstDockBWVN": {
+    "strTitle": "Игла Ткача",
+    "strDesc": "Ты ступаешь на борт странного судна, гадая, что оно вообще может делать так далеко от OKLG.\n\nОсматриваясь, ты понимаешь, что, как и разваливающиеся отношения, этот корабль явно был построен с любовью, но теперь отчаянно нуждается в заботе. Ты узнаёшь в нём обводы тяжёлого тягача Testudo, но его сильно переделали. Все стены и полы покрыты несколькими слоями приторной жёлто-золотой краски, причём часть слоёв свежее других. Пол усыпан окурками, обломками породы и наполовину съеденными транчерами «Начо-Фиеста».\n\nИз центрального коридора доносится ритмичный грохот, служащий ударным аккомпанементом к мелодии а капелла, которую кто-то с энтузиазмом орёт во всё горло. Ты напрягаешь слух, разбирая слова:\n\n«Огонь на горе!» <i>*БАХ*</i>\n«Помехи в черноте!» <i>*БАХ.*</i>\n«Сияющий пласт зовёт, я подчиняюсь и больше не вернусь!» <i>*БАХ БАХ!</i>\n\nТы на миг замираешь, размышляя, мудро ли прерывать того, кто так глубоко в потоке. Но песня всё же зовёт тебя с оптимизмом. Трудно не поддаться её обаянию.\n\n«Народ скажет, что ты спятил». <i>*БАХ*</i>\n«Но они не видали золота!» <i>*БАХ.*</i>\n«Я вскрою жилу, что купит мне Марс, и там я состарюсь!» <i>*БАХ БАХ*</i>"
+  },
+  "ENCFirstDockEJDRContd": {
+    "strTitle": "Добыча He3",
+    "strDesc": "Основной заработок Луны — предприятия по добыче и переработке гелия-3 на «Нефритовом кролике».\n\n«Нефритовый кролик» не может соперничать с изобилием ресурсов Урана, Сатурна и Нептуна, но может похвастаться самым отработанным процессом добычи в системе: здесь её начали ещё на заре космической колонизации. Меньшие накладные расходы при доставке топлива во Внутреннюю систему позволяют ему оставаться конкурентоспособным.\n\nЛунные транспортные компании выводят топливные баржи на низкоэнергетические траектории, позволяя этим «тихоходам» добираться до пунктов назначения во Внутренней системе за малую долю стоимости обычного разгона, но за недели или месяцы."
+  },
+  "ENCMemoryDumbDeeperClobber": {
+    "strTitle": "Обработать воспоминание о самой глупой фразе, когда-либо произнесённой тобой",
+    "strDesc": "Ты выполняешь тяжёлую работу по обработке болезненного воспоминания. Хотя это причиняет немедленную эмоциональную боль, ты становишься ближе к тому, чтобы навсегда разобраться с этим воспоминанием и сопутствующими ему травмами. Ты не сомневаешься, что такой труд в итоге принесёт глубокое эмоциональное удовлетворение."
+  },
+  "MSSignalBeacon01LooseDestroy": {
+    "strDesc": "[us] [is] уничтожен."
+  },
+  "MSSensorEM01Damage": {
+    "strDesc": "[us] повреждён."
+  },
+  "MSSensorEM01Destroy": {
+    "strDesc": "[us] уничтожен."
+  },
+  "MSSensorEM01LooseDamage": {
+    "strDesc": "[us] повреждён."
+  },
+  "MSSensorEM01LooseDestroy": {
+    "strDesc": "[us] уничтожен."
+  },
+  "MSSensorEM01OffAllow": {
+    "strDesc": "[us] отключается."
+  },
+  "MSSensorEM01OnAllow": {
+    "strDesc": "[us] включается."
+  },
+  "MSSensorEM02Damage": {
+    "strDesc": "[us] повреждён."
+  },
+  "MSSensorEM02Destroy": {
+    "strDesc": "[us] уничтожен."
+  },
+  "MSSensorEM02LooseDamage": {
+    "strDesc": "[us] повреждён."
+  },
+  "MSSensorEM02LooseDestroy": {
+    "strDesc": "[us] уничтожен."
+  },
+  "MSSensorEM02OffAllow": {
+    "strDesc": "[us] отключается."
+  },
+  "MSSensorEM02OnAllow": {
+    "strDesc": "[us] включается."
+  },
+  "MSSensorEOIR01Damage": {
+    "strDesc": "[us] повреждён."
+  },
+  "MSSensorEOIR01Destroy": {
+    "strDesc": "[us] уничтожен."
+  },
+  "MSShipWeaponMassThrower02Damage": {
+    "strDesc": "[us] повреждён."
+  },
+  "MSShipWeaponMassThrower02Destroy": {
+    "strDesc": "[us] уничтожен."
+  },
+  "MSShipWeaponMassThrower02LooseDamage": {
+    "strDesc": "[us] повреждён."
+  },
+  "MSShipWeaponMassThrower02LooseDestroy": {
+    "strDesc": "[us] уничтожен."
+  },
+  "MSShipWeaponMassThrower02OffAllow": {
+    "strDesc": "[us] отключается."
+  },
+  "MSShipWeaponMassThrower02OnAllow": {
+    "strDesc": "[us] включается."
+  },
+  "MSShipWeaponMassThrower03Damage": {
+    "strDesc": "[us] повреждён."
+  },
+  "MSShipWeaponMassThrower03Destroy": {
+    "strDesc": "[us] уничтожен."
+  },
+  "MSShipWeaponMassThrower03LooseDamage": {
+    "strDesc": "[us] повреждён."
+  },
+  "MSShipWeaponMassThrower03LooseDestroy": {
+    "strDesc": "[us] уничтожен."
+  },
+  "MSShipWeaponMassThrower03OffAllow": {
+    "strDesc": "[us] отключается."
+  },
+  "MSShipWeaponMassThrower03OnAllow": {
+    "strDesc": "[us] включается."
+  },
+  "MSShipWeaponDecoyLauncher01Damage": {
+    "strDesc": "[us] повреждён."
+  },
+  "MSShipWeaponDecoyLauncher01Destroy": {
+    "strDesc": "[us] уничтожен."
+  },
+  "MSShipWeaponDecoyLauncher01LooseDamage": {
+    "strDesc": "[us] повреждён."
+  },
+  "ENCMemoryMassesRevisit": {
+    "strTitle": "Нахлынувшее воспоминание о массах",
+    "strDesc": "Тяжёлое воспоминание снова возвращается без приглашения. Ты можешь подавить его, получив краткую передышку от страха, который оно вызывает. Или можешь проделать трудную работу по его проработке, поднимая тяжёлые чувства сейчас, в надежде, что это приведёт к устойчивому личностному росту в будущем."
+  },
+  "ENCMemoryMassesDeeperRevisit": {
+    "strTitle": "Проработать нахлынувшее воспоминание о массах",
+    "strDesc": "Ты делаешь трудную работу: прорабатываешь это суровое воспоминание. Оно сразу же причиняет душевную боль, но приближает тебя к тому, чтобы навсегда справиться с ним и сопутствующими травмами. Такая работа, ты твёрдо знаешь, со временем даст глубокую эмоциональную отдачу."
+  },
+  "ENCMemoryMassesFinal": {
+    "strTitle": "Последнее воспоминание о массах",
+    "strDesc": "Тяжёлое воспоминание снова возвращается без приглашения. Ты можешь подавить его, получив краткую передышку от страха, который оно вызывает. Или можешь проделать трудную работу по его проработке, поднимая тяжёлые чувства сейчас, в надежде, что это приведёт к устойчивому личностному росту в будущем."
+  },
+  "ENCMemoryMassesDeeperFinal": {
+    "strTitle": "Изжить воспоминание о массах",
+    "strDesc": "После долгой внутренней борьбы тебе удалось проработать это конкретное суровое воспоминание и связанную с ним травму. Это углубило тебя как личность и дало ценную черту. Она ещё не раз пригодится тебе в будущем."
+  },
+  "ENCMemoryFirstSuppressMasses": {
+    "strTitle": "Подавить воспоминание о массах",
+    "strDesc": "Ты подавляешь это воспоминание в надежде, что оно на время исчезнет.\n\nТы находишь в этом временный покой и даже лёгкий подъём настроения.\n\nВ конце концов, кому сдалось самокопание?"
+  },
+  "ENCMemorySecondSuppressMasses": {
+    "strTitle": "Снова подавить воспоминание о массах",
+    "strDesc": "Ты снова подавляешь это воспоминание, зная, что оно поднимет настроение прямо сейчас.\n\nБегство от него уже не приносит прежнего покоя, но всё равно кажется безопаснее, чем прорабатывать такой гадкий момент.\n\nТы ведь наверняка сможешь делать это вечно. Правда?"
+  },
+  "ENCMemoryThirdSuppressMasses": {
+    "strTitle": "Опять подавить воспоминание о массах",
+    "strDesc": "Ты уже в третий раз подавляешь это воспоминание, зная, что на время от него сбежишь. Но после всей этой беготни от прошлого побег больше не приносит покоя.\n\nПо правде, уклонение от этого воспоминания изменило тебя, возможно, безвозвратно.\n\nВ этом есть урок, если решишь его разглядеть."
+  },
+  "MSSensorLidar02LooseDamage": {
+    "strDesc": "[us] поврежден."
+  },
+  "MSSensorLidar02LooseDestroy": {
+    "strDesc": "[us] уничтожен."
+  },
+  "MSSensorLidar02OffAllow": {
+    "strDesc": "[us] отключается."
+  },
+  "MSSensorLidar02OnAllow": {
+    "strDesc": "[us] включается."
+  },
+  "MSSensorRadar01Damage": {
+    "strDesc": "[us] поврежден."
+  },
+  "MSSensorRadar01Destroy": {
+    "strDesc": "[us] уничтожен."
+  },
+  "MSSensorRadar01LooseDamage": {
+    "strDesc": "[us] поврежден."
+  },
+  "MSSensorRadar01LooseDestroy": {
+    "strDesc": "[us] уничтожен."
+  },
+  "MSSensorRadar01OffAllow": {
+    "strDesc": "[us] отключается."
+  },
+  "MSSensorRadar01OnAllow": {
+    "strDesc": "[us] включается."
+  },
+  "MSSensorRadar02Damage": {
+    "strDesc": "[us] поврежден."
+  },
+  "MSSensorRadar02Destroy": {
+    "strDesc": "[us] уничтожен."
+  },
+  "MSSensorRadar02LooseDamage": {
+    "strDesc": "[us] поврежден."
+  },
+  "MSSensorRadar02LooseDestroy": {
+    "strDesc": "[us] уничтожен."
+  },
+  "MSSensorRadar02OffAllow": {
+    "strDesc": "[us] отключается."
+  },
+  "MSShipWeaponPDC02LooseDestroy": {
+    "strDesc": "[us] уничтожен."
+  },
+  "MSShipWeaponPDC02OffAllow": {
+    "strDesc": "[us] отключается."
+  },
+  "MSShipWeaponPDC02OnAllow": {
+    "strDesc": "[us] включается."
+  },
+  "MSShipWeaponPDC03Damage": {
+    "strDesc": "[us] поврежден."
+  },
+  "MSShipWeaponPDC03Destroy": {
+    "strDesc": "[us] уничтожен."
+  },
+  "MSShipWeaponPDC03LooseDamage": {
+    "strDesc": "[us] поврежден."
+  },
+  "MSShipWeaponPDC03LooseDestroy": {
+    "strDesc": "[us] уничтожен."
+  },
+  "MSShipWeaponPDC03OffAllow": {
+    "strDesc": "[us] отключается."
+  },
+  "MSShipWeaponPDC03OnAllow": {
+    "strDesc": "[us] включается."
+  },
+  "MSShipWeaponMassThrower01Damage": {
+    "strDesc": "[us] поврежден."
+  },
+  "MSShipWeaponMassThrower01Destroy": {
+    "strDesc": "[us] уничтожен."
+  },
+  "MSShipWeaponMassThrower01LooseDamage": {
+    "strDesc": "[us] поврежден."
+  },
+  "MSShipWeaponMassThrower01LooseDestroy": {
+    "strDesc": "[us] уничтожен."
+  },
+  "MSShipWeaponMassThrower01OffAllow": {
+    "strDesc": "[us] отключается."
+  },
+  "MSShipWeaponMassThrower01OnAllow": {
+    "strDesc": "[us] включается."
+  },
+  "MSShipWeaponDecoyLauncher01LooseDestroy": {
+    "strDesc": "[us] уничтожается."
+  },
+  "MSShipWeaponDecoyLauncher01OffAllow": {
+    "strDesc": "[us] отключается."
+  },
+  "MSShipWeaponDecoyLauncher01OnAllow": {
+    "strDesc": "[us] включается."
+  },
+  "MSShipWeaponMissileLauncher01Damage": {
+    "strDesc": "[us] повреждается."
+  },
+  "MSShipWeaponMissileLauncher01Destroy": {
+    "strDesc": "[us] уничтожается."
+  },
+  "MSShipWeaponMissileLauncher01LooseDamage": {
+    "strDesc": "[us] повреждается."
+  },
+  "MSShipWeaponMissileLauncher01LooseDestroy": {
+    "strDesc": "[us] уничтожается."
+  },
+  "MSShipWeaponMissileLauncher01OffAllow": {
+    "strDesc": "[us] отключается."
+  },
+  "MSShipWeaponMissileLauncher01OnAllow": {
+    "strDesc": "[us] включается."
+  },
+  "MSShipWeaponMissileLauncher02Damage": {
+    "strDesc": "[us] повреждается."
+  },
+  "MSShipWeaponMissileLauncher02Destroy": {
+    "strDesc": "[us] уничтожается."
+  },
+  "MSShipWeaponMissileLauncher02LooseDamage": {
+    "strDesc": "[us] повреждается."
+  },
+  "MSShipWeaponMissileLauncher02LooseDestroy": {
+    "strDesc": "[us] уничтожается."
+  },
+  "MSShipWeaponMissileLauncher02OffAllow": {
+    "strDesc": "[us] отключается."
+  },
+  "MSShipWeaponMissileLauncher02OnAllow": {
+    "strDesc": "[us] включается."
+  },
+  "PLGAIReportCrimeMVOLThreat": {
+    "strTitle": "Сообщить о преступлении",
+    "strDesc": "[us] [speaks] в [us-pos] КПК, глядя на [them]."
+  },
+  "PLGAIReportCrimeMVOLThreatAllow": {
+    "strTitle": "Сообщить о преступлении: успех",
+    "strDesc": "[us] успешно [reports] о преступлении, совершённом [them]."
+  },
+  "PLGAIReportCrimeMVOLThreatDone": {
+    "strTitle": "Сообщение о преступлении завершено",
+    "strDesc": "[us] [is] сообщение о преступлении завершено."
+  },
+  "PSPAIAICrimeMVOLLEOArrestAdd": {
+    "strTitle": "Добавляет нам ИИ-задачу экипажа «Арест MVOL LEO»",
+    "strDesc": "[us] [gains] ИИ-задачу экипажа «Арест MVOL LEO»."
+  },
+  "PSPAIAICrimeMVOLLEOArrestStolenShipAdd": {
+    "strTitle": "Добавляет нам ИИ-задачу экипажа «Арест MVOL LEO» за украденный корабль",
+    "strDesc": "[us] [gains] ИИ-задачу экипажа «Арест MVOL LEO за украденный корабль»."
+  },
+  "PSPAIAICrimeMVOLLEOThreatAdd": {
+    "strTitle": "Добавляет нам ИИ-задачу экипажа «Угроза MVOL LEO»",
+    "strDesc": "[us] [gains] ИИ-задачу экипажа «Угроза MVOL LEO»."
+  },
+  "ENCHeatSVIRBustedStart": {
+    "strTitle": "Повязали",
+    "strDesc": "Тебя волокут к военному судье Титана, оставив твой корабль и снаряжение позади.\n\nНа слушании можно вымолить просто штраф — $15,000 сразу или в рассрочку, — а не то отправишься в Виргинскую тюрьму на год-три каторги."
+  },
+  "MSCeilingLightSwitchOnVibrantRedAllow": {
+    "strDesc": "[us] [switches] на включение."
+  },
+  "MSCeilingLightSwitchOffVibrantPurpleAllow": {
+    "strDesc": "[us] [switches] на выключение."
+  },
+  "MSCeilingLightSwitchOnVibrantPurpleAllow": {
+    "strDesc": "[us] [switches] на включение."
+  },
+  "MSCeilingLightSwitchOffVibrantGreenAllow": {
+    "strDesc": "[us] [switches] на выключение."
+  },
+  "MSCeilingLightSwitchOnVibrantGreenAllow": {
+    "strDesc": "[us] [switches] на включение."
+  },
+  "MSCeilingLightSwitchOffWhiteAllow": {
+    "strDesc": "[us] [switches] на выключение."
+  },
+  "MSCeilingLightSwitchOnWhiteAllow": {
+    "strDesc": "[us] [switches] на включение."
+  },
+  "MSLightSwitchOffWhiteAllow": {
+    "strDesc": "[us] [switches] на выключение."
+  },
+  "MSLightSwitchOnWhiteAllow": {
+    "strDesc": "[us] [switches] на включение."
+  },
+  "MSLitCeilingDmg": {
+    "strDesc": "[us] [is] разрушен."
+  },
+  "MSMissile01Destroy": {
+    "strDesc": "[us] разрушен."
+  },
+  "MSMissile02Destroy": {
+    "strDesc": "[us] разрушен."
+  },
+  "MSSignalBeacon01Damage": {
+    "strDesc": "[us] [is] повреждён."
+  },
+  "MSSignalBeacon01Destroy": {
+    "strDesc": "[us] [is] разрушен."
+  },
+  "MSSignalBeacon01LooseDamage": {
+    "strDesc": "[us] [is] повреждён."
+  },
+  "PLGAIFirefightEmergency": {
+    "strTitle": "ИИ: проверка на возгорание",
+    "strDesc": "[us] [checks] наличие возгорания."
+  },
+  "PLGAIHygiene": {
+    "strTitle": "ИИ: коррекция гигиены",
+    "strDesc": "[us] [checks] [us-pos] гигиену."
+  },
+  "PLGAIUnwearSuit": {
+    "strTitle": "ИИ: снятие скафандра",
+    "strDesc": "[us] [checks] состояние [us-pos] скафандра."
+  },
+  "PLGRechargeBatteriesDo": {
+    "strTitle": "Подзарядка батарей",
+    "strDesc": "Подзаряжает батареи"
+  },
+  "PLGReplaceO2BottlesDo": {
+    "strTitle": "Замена баллонов O2",
+    "strDesc": "Заменяет баллоны O2"
+  },
+  "PLGAIFirefightDo": {
+    "strTitle": "Потушить пожар",
+    "strDesc": "[us] [decides] потушить [them]."
+  },
+  "PLGAIGreetCaptainDo": {
+    "strTitle": "Заметить капитана",
+    "strDesc": "[us] решает отдать честь своему капитану, [them]."
+  },
+  "PLGAIGreetEnemyDo": {
+    "strTitle": "Заметить врага",
+    "strDesc": "[us] решает поприветствовать [them]."
+  },
+  "MSCeilingLightSwitchOffOrangeCustomAllow": {
+    "strDesc": "[us] [switches] в положение «выкл»."
+  },
+  "MSCeilingLightSwitchOnOrangeCustomAllow": {
+    "strDesc": "[us] [switches] в положение «вкл»."
+  },
+  "MSCeilingLightSwitchOffVibrantRedCustomAllow": {
+    "strDesc": "[us] [switches] в положение «выкл»."
+  },
+  "MSCeilingLightSwitchOnVibrantRedCustomAllow": {
+    "strDesc": "[us] [switches] в положение «вкл»."
+  },
+  "MSCeilingLightSwitchOffVibrantPurpleCustomAllow": {
+    "strDesc": "[us] [switches] в положение «выкл»."
+  },
+  "MSCeilingLightSwitchOnVibrantPurpleCustomAllow": {
+    "strDesc": "[us] [switches] в положение «вкл»."
+  },
+  "MSCeilingLightSwitchOffVibrantGreenCustomAllow": {
+    "strDesc": "[us] [switches] в положение «выкл»."
+  },
+  "MSCeilingLightSwitchOnVibrantGreenCustomAllow": {
+    "strDesc": "[us] [switches] в положение «вкл»."
+  },
+  "MSLightSwitchOffWhiteCustomAllow": {
+    "strDesc": "[us] [switches] в положение «выкл»."
+  },
+  "MSLightSwitchOnWhiteCustomAllow": {
+    "strDesc": "[us] [switches] в положение «вкл»."
+  },
+  "MSCeilingLightSwitchOffAllow": {
+    "strDesc": "[us] [switches] в положение «выкл»."
+  },
+  "MSCeilingLightSwitchOnAllow": {
+    "strDesc": "[us] [switches] в положение «вкл»."
+  },
+  "MSCeilingLightSwitchOffOrangeAllow": {
+    "strDesc": "[us] [switches] в положение «выкл»."
+  },
+  "MSCeilingLightSwitchOnOrangeAllow": {
+    "strDesc": "[us] [switches] в положение «вкл»."
+  },
+  "MSCeilingLightSwitchOffVibrantRedAllow": {
+    "strDesc": "[us] [switches] в положение «выкл»."
+  },
+  "PLGAICrimeCCRELEOArrest": {
+    "strTitle": "Офицер CCRE начинает арест преступника",
+    "strDesc": "«Подозреваемый обнаружен», — [us] [says], глядя на [them]."
+  },
+  "PLGAICrimeCCRELEOInterruptSelf": {
+    "strTitle": "Офицер CCRE прерван преступлением",
+    "strDesc": "Прервать их."
+  },
+  "PLGAICrimeCCRELEOArrestDo": {
+    "strTitle": "Арест преступника",
+    "strDesc": "«Стоять! Вы арестованы!» — [us] [shouts] на [them]."
+  },
+  "PLGAICrimeCCRELEOArrestDoAllow": {
+    "strTitle": "Сдаться офицеру",
+    "strDesc": "[us] [goes] с [them] без сопротивления."
+  },
+  "PLGAICrimeCCRELEOArrestDoDeny": {
+    "strTitle": "Заявить о невиновности",
+    "strDesc": "[us] [tells] [them], что [them-subj] [has] не того человека."
+  },
+  "PLGAICrimeCCRELEOArrestEnd": {
+    "strTitle": "Офицер CCRE завершил арест преступника",
+    "strDesc": "«Ещё одна победа закона», — [us] [says]."
+  },
+  "PLGAICrimeCCRELEOArrestEndAI": {
+    "strTitle": "Арест",
+    "strDesc": "Служебное взаимодействие: перед продолжением проверяет, что us — ИИ-персонаж."
+  },
+  "PLGAICrimeCCRELEOArrestEndPlayer": {
+    "strTitle": "Преступник арестован (игрок)",
+    "strDesc": "Полицейский CCRE завершает подавление угрозы со стороны игрока."
+  },
+  "MSChairCube01bDestroy": {
+    "strDesc": "[us] [is] в разрушенном состоянии."
+  },
+  "MSChairCube01bLooseDamage": {
+    "strDesc": "[us] [is] в поврежденном состоянии."
+  },
+  "MSDockSys03AutoCloseAllow": {
+    "strDesc": "[us] автоматически закрывается."
+  },
+  "MSDockSys03CloseAllow": {
+    "strDesc": "[us] [closes]."
+  },
+  "MSDockSys03CloseAllowAddAuto": {
+    "strDesc": "[us] [closes]."
+  },
+  "MSDockSys03OpenAllow": {
+    "strDesc": "[us] [opens]."
+  },
+  "MSDockSys03OpenAllowRemoveAuto": {
+    "strDesc": "[us] [opens]."
+  },
+  "MSDockSys03ClosedDamage": {
+    "strDesc": "[us] [is] в поврежденном состоянии."
+  },
+  "MSDockSys03ClosedDestroy": {
+    "strDesc": "[us] [is] в разрушенном состоянии."
+  },
+  "MSDockSys03ClosedLooseDamage": {
+    "strDesc": "[us] [is] в поврежденном состоянии."
+  },
+  "MSDockSys03ClosedLooseDestroy": {
+    "strDesc": "[us] [is] в разрушенном состоянии."
+  },
+  "MSCeilingLightSwitchOffWhiteCustomAllow": {
+    "strDesc": "[us] [switches] выкл."
+  },
+  "MSCeilingLightSwitchOnWhiteCustomAllow": {
+    "strDesc": "[us] [switches] вкл."
+  },
+  "MSCeilingLightSwitchOffCustomAllow": {
+    "strDesc": "[us] [switches] выкл."
+  },
+  "MSCeilingLightSwitchOnCustomAllow": {
+    "strDesc": "[us] [switches] вкл."
+  },
+  "MSSensorRadar02OnAllow": {
+    "strDesc": "[us] включается."
+  },
+  "MSShipCladding01Damage": {
+    "strDesc": "[us] повреждён."
+  },
+  "MSShipCladding01LooseDamage": {
+    "strDesc": "[us] повреждён."
+  },
+  "MSAmmoMissile01DamageExplode": {
+    "strDesc": "[us] [is] повреждён."
+  },
+  "MSAmmoMissile02DamageExplode": {
+    "strDesc": "[us] [is] повреждён."
+  },
+  "MSAmmoMissile03DamageExplode": {
+    "strDesc": "[us] [is] повреждён."
+  },
+  "MSShipWeaponPDC01Damage": {
+    "strDesc": "[us] повреждён."
+  },
+  "MSShipWeaponPDC01Destroy": {
+    "strDesc": "[us] уничтожен."
+  },
+  "MSShipWeaponPDC01LooseDamage": {
+    "strDesc": "[us] повреждён."
+  },
+  "MSShipWeaponPDC01LooseDestroy": {
+    "strDesc": "[us] уничтожен."
+  },
+  "MSShipWeaponPDC01OffAllow": {
+    "strDesc": "[us] отключается."
+  },
+  "MSShipWeaponPDC01OnAllow": {
+    "strDesc": "[us] включается."
+  },
+  "MSShipWeaponPDC02Damage": {
+    "strDesc": "[us] повреждён."
+  },
+  "MSShipWeaponPDC02Destroy": {
+    "strDesc": "[us] уничтожен."
+  },
+  "MSShipWeaponPDC02LooseDamage": {
+    "strDesc": "[us] повреждён."
+  },
+  "SHIPMultiDockingStart": {
+    "strDesc": "<Настройка процедуры стыковки>",
+    "strTitle": "Стыковка"
+  },
+  "SHIPMultiDockingStartAllow": {
+    "strTitle": "Передача параметров",
+    "strDesc": "<Получено подтверждение связи>"
+  },
+  "SHIPDockToggleOwnDock[DOCKID]": {
+    "strTitle": "Активный порт: [DOCKID]",
+    "strDesc": "Обновление стыковочного порта."
+  },
+  "SHIPDockToggleOwnDockForced[DOCKID]": {
+    "strTitle": "Активный порт: [DOCKID]",
+    "strDesc": "Обновление стыковочного порта."
+  },
+  "SHIPMultiDockSelectAllow": {
+    "strTitle": "Выбор порта",
+    "strDesc": "[them-regID], выберите стыковочный порт."
+  },
+  "SHIPProceedToDocking": {
+    "strTitle": "Инициализация стыковки",
+    "strDesc": "[them-shipfriendly], готовность к продолжению"
+  },
+  "SHIPMultiDockingStartForced": {
+    "strTitle": "Стыковка",
+    "strDesc": "<Настройка процедуры стыковки>"
+  },
+  "SHIPMultiDockingStartAllowForced": {
+    "strTitle": "Передача параметров",
+    "strDesc": "<...>"
+  },
+  "PLGAIGreetFriendDo": {
+    "strTitle": "Заметить друга",
+    "strDesc": "[us] радостно решает поприветствовать [them]."
+  },
+  "PLGAIGreetLoverDo": {
+    "strTitle": "Заметить возлюбленного",
+    "strDesc": "[us] радостно решает поприветствовать [them]."
+  },
+  "PLGAIMaintenanceTechWorkFireExtinguishDo": {
+    "strTitle": "Устранить возгорание",
+    "strDesc": "[us] [decides] устранить [them]."
+  },
+  "PLGAIMaintenanceTechWorkRetrieveDeadDoEndOffShip": {
+    "strTitle": "Отмена: подбор погибшего на станции",
+    "strDesc": "[us] [abandons] подбирать [them]."
+  },
+  "PLGAICombatBoarding": {
+    "strTitle": "Абордаж корабля",
+    "strDesc": "Поиск врагов на пристыкованном корабле."
+  },
+  "PLGAICombatBoardingEnd": {
+    "strTitle": "Боевой абордаж завершён",
+    "strDesc": "«Контакт!» — [us] [says]."
+  },
+  "PLGAIReportCrimeImmuneDone": {
+    "strTitle": "Цель невосприимчива к доносам о преступлениях",
+    "strDesc": "[them] [is] вне досягаемости доносов о преступлениях."
+  },
+  "ENCMedServiceNanoFirstAidAdvAccept": {
+    "strTitle": "Оплатить нанороботическую первую помощь",
+    "strDesc": "Ты подписываешь отказ от права предъявлять претензии по поводу грабительских цен и возможных побочных эффектов, затем стискиваешь зубы и терпишь необходимые процедуры."
+  },
+  "ENCMedServiceNanoFirstAidAdvAlready": {
+    "strTitle": "Проверить статус активной нанороботической первой помощи",
+    "strDesc": "Ты уже находишься под действием активной нанороботической первой помощи и не можешь получить новый сеанс, пока эффект текущего не закончится."
+  },
+  "ENCMedServiceAntiHypoV": {
+    "strTitle": "Купить дозу против гиповолемии ($1 млн)",
+    "strDesc": "Цена: $1,000,000\n\n(Требуется легальная страта Вольтера)\n\nКупи инъекционную дозу экспериментального препарата, который обращает вспять гиповолемию, вызванную микрогравитацией, и стимулирует нормальное кроветворение.\n\nПолный курс: 5 доз (каждая доза действует 72 часа)\n\n(Доступны только те варианты, которые тебе по карману и которым ты соответствуешь)"
+  },
+  "ENCMedServiceAntiHypoVAccept": {
+    "strTitle": "Оплатить дозу против гиповолемии",
+    "strDesc": "Ты подписываешь отказ от права предъявлять претензии поставщику из-за грабительских цен и возможных побочных эффектов, затем забираешь свой драгоценный инъектор. Береги его как собственную жизнь."
+  },
+  "ENCFirstDockBCRS1": {
+    "strTitle": "Продолжить",
+    "strDesc": "Живые агенты тоже работают с толпой. Привлекательные молодые мужчины и женщины дежурят у входов в каждую торговую точку, отчаянно пытаясь впарить прохожему услугу по преобразованию личности. Комиссия низкая, но альтернатива — голод, поэтому они следуют за тобой так далеко, как ты позволишь. \n\nОдин из них целых три минуты тащится за тобой по променаду, отчаянно надеясь брызнуть на тебя из флакона духов. Ты угрожаешь вызвать службу безопасности станции; тот с надеждой сообщает тебе о групповой скидке. В отвращении ты ныряешь за погрузочную тележку, доверху заваленную бутылками воды и презервативами, и цепляешься за неё, чтобы прокатиться.\n\nТы спрыгиваешь в незнакомой части променада, которая ничем не отличается от тех, что ты знаешь."
+  },
+  "EVTCollisionBigShallow": {
+    "strTitle": "Столкновение: вступление (касательное)",
+    "strDesc": "[us] только что столкнулся."
+  },
+  "Tick1HourStudyEngExcavation": {
+    "strTitle": "Тренировка выемки грунта",
+    "strDesc": "Сосредоточься на тренировке выемки грунта во время простоя."
+  },
+  "MSAlarmSmokeDmg": {
+    "strDesc": "[us] [is] в повреждённом состоянии."
+  },
+  "PLGAICrimeCCRELEOThreat": {
+    "strTitle": "Полицейский CCRE атакует преступника",
+    "strDesc": "\"Эй, это тот преступник! Взять его!\" [us-shouts] [us], указывая на [them]."
+  },
+  "PLGAICrimeCCRELEOArrestStolenShip": {
+    "strTitle": "Полицейский CCRE приступает к аресту преступника за угон корабля",
+    "strDesc": "\"Поступило сообщение, что вы пилотируете угнанный корабль\", [us] [says], глядя на [them]. \"Мы вас задерживаем.\""
+  },
+  "PLGAIReportCrimeCCREArrest": {
+    "strTitle": "Сообщить о преступлении",
+    "strDesc": "[us] [speaks] в [us-pos] КПК, глядя на [them]."
+  },
+  "PLGAIReportCrimeCCREArrestAllow": {
+    "strTitle": "Сообщить о преступлении: успех",
+    "strDesc": "[us] успешно [reports] о преступлении со стороны [them]."
+  },
+  "PLGAIReportCrimeCCREArrestDone": {
+    "strTitle": "Сообщение о преступлении завершено",
+    "strDesc": "[us] [is] сообщение о преступлении завершено."
+  },
+  "PLGAIReportCrimeCCRETrespass": {
+    "strTitle": "Сообщить о преступлении",
+    "strDesc": "[us] [says] \"Убирайся отсюда\", затем говорит в [us-pos] КПК, глядя на [them]."
+  },
+  "PLGAIReportCrimeCCRETrespassAllow": {
+    "strTitle": "Сообщить о преступлении: успех",
+    "strDesc": "[us] успешно [reports] о преступлении со стороны [them]."
+  },
+  "SHIPMultiDockSelectForced": {
+    "strTitle": "Стыковка",
+    "strDesc": "[them-shipfriendly], готов продолжить"
+  },
+  "STATIONMultiDockingStart": {
+    "strTitle": "Стыковка",
+    "strDesc": "<Настройка процедуры стыковки>"
+  },
+  "STATIONMultiDockingStartAllow": {
+    "strTitle": "Запросить стыковку",
+    "strDesc": "Принято, [them-regID], выберите стыковочный узел."
+  },
+  "SHIPMultiDockSelect": {
+    "strTitle": "Стыковка",
+    "strDesc": "[them-shipfriendly], готов продолжить"
+  },
+  "SHIPMultiDockSelectForcedAllow": {
+    "strTitle": "Выбрать порт",
+    "strDesc": "<...>"
+  },
+  "PASSDockWithCOHO": {
+    "strTitle": "PASS может пристыковаться к COHO",
+    "strDesc": "PASS может пристыковаться к COHO."
+  },
+  "SHIPDockAIWStation": {
+    "strTitle": "Запросить разрешение на стыковку",
+    "strDesc": "[them-shipfriendly], это [us-shipfriendly], запрашиваю разрешение на сближение и стыковку."
+  },
+  "SHIPDockWithShipDenyDoesNotFit": {
+    "strTitle": "В стыковке отказано. Нет места",
+    "strDesc": "Отрицательно, [them-captain]. Ваш корабль не проходит по габаритам к нашему стыковочному узлу."
+  },
+  "PSPAIMaintenanceTechWorkFireExtinguishAdd": {
+    "strTitle": "Добавляет нам ИИ-задачу экипажа: техобслуживание OKLG — тушение пожара",
+    "strDesc": "[us] [gains] ИИ-задачу экипажа: техобслуживание OKLG — тушение пожара."
+  },
+  "PSPAIFirefightAdd": {
+    "strTitle": "Добавляет нам ИИ-задачу экипажа: тушение пожара",
+    "strDesc": "[us] [gains] ИИ-задачу экипажа: тушение пожара."
+  },
+  "PSPAIRechargeAdd": {
+    "strTitle": "Добавляет нам ИИ-задачу экипажа: подзарядка",
+    "strDesc": "[us] [gains] ИИ-задачу экипажа: подзарядка."
+  },
+  "PSPAIReplaceO2BottleAdd": {
+    "strTitle": "Добавляет нам ИИ-задачу экипажа: замена баллонов O2",
+    "strDesc": "[us] [gains] ИИ-задачу экипажа: замена баллонов O2."
+  },
+  "PSPAIHygieneAdd": {
+    "strTitle": "Добавляет нам ИИ-задачу экипажа: гигиена",
+    "strDesc": "[us] [gains] ИИ-задачу экипажа: гигиена."
+  },
+  "PSPAIUnwearSuitAdd": {
+    "strTitle": "Добавляет нам ИИ-задачу экипажа: снятие скафандра",
+    "strDesc": "[us] [gains] ИИ-задачу экипажа: снятие скафандра."
+  },
+  "NPCAssignFundsCareer": {
+    "strTitle": "Добавляет нам стартовые средства карьеры",
+    "strDesc": "[us] [gains] средства."
+  },
+  "NPCAssignFundsStrata": {
+    "strTitle": "Добавляет нам стартовые средства страты",
+    "strDesc": "[us] [gains] средства."
+  },
+  "MSShipWeaponMissileLauncher03Damage": {
+    "strDesc": "[us] повреждён."
+  },
+  "MSShipWeaponMissileLauncher03Destroy": {
+    "strDesc": "[us] разрушен."
+  },
+  "MSShipWeaponMissileLauncher03LooseDamage": {
+    "strDesc": "[us] повреждён."
+  },
+  "MSShipWeaponMissileLauncher03LooseDestroy": {
+    "strDesc": "[us] разрушен."
+  },
+  "MSShipWeaponMissileLauncher03OffAllow": {
+    "strDesc": "[us] отключается."
+  },
+  "MSShipWeaponMissileLauncher03OnAllow": {
+    "strDesc": "[us] включается."
+  },
+  "MSVent03Dmg": {
+    "strDesc": "[us] разрушен."
+  },
+  "MSVent03OffAllow": {
+    "strDesc": "[us] отключается и закрывается."
+  },
+  "MSVent03OnAllow": {
+    "strDesc": "[us] включается и открывается."
+  },
+  "MSNavModDamage": {
+    "strDesc": "[us] повреждён."
+  },
+  "MSNavModDestroy": {
+    "strDesc": "[us] повреждён."
+  },
+  "MSNavModMoboDamage": {
+    "strDesc": "[us] повреждён."
+  },
+  "MSNavModMoboDestroy": {
+    "strDesc": "[us] повреждён."
+  },
+  "MSNavModMoboScreenDamage": {
+    "strDesc": "[us] повреждён."
+  },
+  "MSNavModMoboScreenDestroy": {
+    "strDesc": "[us] повреждён."
+  },
+  "SHIPHailAllowDislikes": {
+    "strTitle": "Разрешить вызов: симпатия",
+    "strDesc": "Надеюсь, это того стоит."
+  },
+  "SHIPHailAllowAltruismBad": {
+    "strTitle": "Разрешить вызов: альтруизм (плохо)",
+    "strDesc": "Чем могу помочь?"
+  },
+  "SHIPHailAllowAltruismGood": {
+    "strTitle": "Разрешить вызов: альтруизм (хорошо)",
+    "strDesc": "Ещё один капитан в беде?"
+  },
+  "SHIPHailAllowPrivacyBad": {
+    "strTitle": "Разрешить вызов: приватность (плохо)",
+    "strDesc": "Что."
+  },
+  "SHIPHailAllowPrivacyGood": {
+    "strTitle": "Разрешить вызов: приватность (хорошо)",
+    "strDesc": "С кем имею удовольствие говорить сегодня?"
+  },
+  "SHIPHailAllowSecurityBad": {
+    "strTitle": "Разрешить вызов: безопасность (плохо)",
+    "strDesc": "Ч-что такое?"
+  },
+  "SHIPHailAllowSecurityGood": {
+    "strTitle": "Разрешить вызов: безопасность (хорошо)",
+    "strDesc": "Что у нас тут?"
+  },
+  "SHIPHailAllowLEOWantedOKLG": {
+    "strTitle": "Разрешить вызов: розыск (OKLG)"
+  },
+  "SHIPDockWithShipDenyDoesNotFitForced": {
+    "strTitle": "Стыковка заблокирована. Нет места",
+    "strDesc": "Стыковка невозможна! Корабль не подходит ни к одному стыковочному порту"
+  },
+  "SHIPDockWithStationDenyEnemy": {
+    "strTitle": "Отказ станции в допуске к стыковке",
+    "strDesc": "Проваливай!"
+  },
+  "SHIPDockDenyPortDoesNotFit": {
+    "strTitle": "Отказ: активный порт корабля не подходит",
+    "strDesc": "КОД 7400: Активный порт корабля не подходит к целевому порту"
+  },
+  "SHIPHailAllowTarget": {
+    "strTitle": "Вызов: разрешено, цель захвачена",
+    "strDesc": "Зачем вы берёте нас на прицел?"
+  },
+  "SHIPHailAllowClose": {
+    "strTitle": "Вызов: разрешено, сближение",
+    "strDesc": "Привет, [them-friendly], как дела?"
+  },
+  "SHIPHailAllowEnemy": {
+    "strTitle": "Вызов: разрешено, враг",
+    "strDesc": "Вздох. Чего вы хотите?"
+  },
+  "SHIPHailAllowLikes": {
+    "strTitle": "Вызов: разрешено, симпатия",
+    "strDesc": "Приятно видеть, [them-regID]."
+  },
+  "STKTemplate_Gambit_BeautifulSelf_Allow": {
+    "strTitle": "Согласиться сделать одолжение",
+    "strDesc": "[us] говорит: ладно, я сделаю тебе это одолжение."
+  },
+  "STKTemplate_Gambit_BeautifulSelf_Fail_Soft": {
+    "strTitle": "Отказаться сделать одолжение",
+    "strDesc": "[us] говорит: прямо сейчас я не хочу делать это одолжение, но мы можем продолжить разговор."
+  },
+  "STKTemplate_Gambit_BeautifulSelf_Fail_Hard": {
+    "strTitle": "Отказаться сделать одолжение",
+    "strDesc": "[us] говорит: я не хочу делать это одолжение, и этот разговор окончен."
+  },
+  "STKTemplate_Gambit_SharedCareer": {
+    "strTitle": "Сравнить шрамы",
+    "strDesc": "[us] пытается поговорить об общем опыте работы разборщиком кораблей."
+  },
+  "STKTemplate_Gambit_SharedCareer_Allow": {
+    "strTitle": "Согласиться сделать одолжение",
+    "strDesc": "[us] говорит: ладно, я сделаю тебе это одолжение."
+  },
+  "STKTemplate_Gambit_SharedCareer_Fail_Soft": {
+    "strTitle": "Отказаться сделать одолжение",
+    "strDesc": "[us] говорит: прямо сейчас я не хочу делать это одолжение, но мы можем продолжить разговор."
+  },
+  "STKTemplate_Gambit_SharedCareer_Fail_Hard": {
+    "strTitle": "Отказаться сделать одолжение",
+    "strDesc": "[us] говорит: я не хочу делать это одолжение, и этот разговор окончен."
+  },
+  "STKTemplate_Gambit_SharedCrew": {
+    "strTitle": "Поговорить о работе"
+  },
+  "PLGAIReportCrimeVenusTrespassDeny": {
+    "strDesc": "[us] [fails] сообщить о преступлении со стороны [them].",
+    "strTitle": "Заявить о преступлении: неудача"
+  },
+  "PSPAIAICrimeCCRELEOArrestAdd": {
+    "strTitle": "Добавляет нам задачу «Арест CCRE LEO»",
+    "strDesc": "[us] [gains] задачу «Арест CCRE LEO»."
+  },
+  "PSPAIAICrimeCCRELEOArrestStolenShipAdd": {
+    "strTitle": "Добавляет нам задачу «Арест CCRE LEO за угнанный корабль»",
+    "strDesc": "[us] [gains] задачу «Арест CCRE LEO за угнанный корабль»."
+  },
+  "PSPAIAICrimeCCRELEOThreatAdd": {
+    "strTitle": "Добавляет нам задачу «Угроза CCRE LEO»",
+    "strDesc": "[us] [gains] задачу «Угроза CCRE LEO»."
+  },
+  "PSPAIGreetCaptainAdd": {
+    "strTitle": "Добавляет нам задачу «Приветствие капитана»",
+    "strDesc": "[us] получает задачу «Приветствие капитана»."
+  },
+  "PSPAIGreetEnemyAdd": {
+    "strTitle": "Добавляет нам задачу «Приветствие врага»",
+    "strDesc": "[us] получает задачу «Приветствие врага»."
+  },
+  "PSPAIGreetFriendAdd": {
+    "strTitle": "Добавляет нам задачу «Приветствие друга»",
+    "strDesc": "[us] получает задачу «Приветствие друга»."
+  },
+  "PSPAIGreetLoverAdd": {
+    "strTitle": "Добавляет нам задачу «Приветствие партнёра»",
+    "strDesc": "[us] получает задачу «Приветствие партнёра»."
+  },
+  "PSPAssignFundsBasic": {
+    "strTitle": "Добавляет цели базовые средства."
+  },
+  "PSPAssignFundsStrataPR": {
+    "strTitle": "Добавляет цели средства постоянного резидента."
+  },
+  "PSPAssignFundsStrataCit": {
+    "strTitle": "Добавляет цели средства гражданина."
+  },
+  "PSPAssignFundsCareerLEO": {
+    "strTitle": "Добавляет цели средства LEO."
+  },
+  "PSPAssignFundsCareerMgr": {
+    "strTitle": "Добавляет цели средства менеджера."
+  },
+  "PSPAssignFundsCareerInfluencer": {
+    "strTitle": "Добавляет цели средства инфлюенсера."
+  },
+  "PSPAssignFundsCareerTechnician": {
+    "strTitle": "Добавляет цели средства техника."
+  },
+  "PSPAssignFundsCareerBartender": {
+    "strTitle": "Добавляет цели средства бармена."
+  },
+  "PSPAssignFundsCareerScientist": {
+    "strTitle": "Добавляет цели средства учёного."
+  },
+  "MarkAsScrap": {
+    "strTitle": "Пометить как лом",
+    "strDesc": "[us] [marks] [them] как лом."
+  },
+  "MarkAsNotScrap": {
+    "strTitle": "Снять пометку «лом»",
+    "strDesc": "[us] [unmarks] [them] из лома."
+  },
+  "STKTemplate_Gambit_ContactVPrivacy_Divider": {
+    "strTitle": "-",
+    "strDesc": "========================================================================================================"
+  },
+  "STKTemplate_Gambit_ContactVPrivacy": {
+    "strTitle": "Тебе нужно человеческое общение",
+    "strDesc": "[us]: тебе нужна поддержка, чтобы оказать услугу."
+  },
+  "STKTemplate_Gambit_ContactVPrivacy_Allow": {
+    "strTitle": "Согласиться оказать услугу",
+    "strDesc": "[us]: ладно, я окажу тебе эту услугу."
+  },
+  "STKTemplate_Gambit_ContactVPrivacy_Fail_Soft": {
+    "strTitle": "Отказаться оказать услугу",
+    "strDesc": "[us]: я пока не хочу оказывать эту услугу, но мы можем продолжить разговор."
+  },
+  "STKTemplate_Gambit_ContactVPrivacy_Fail_Hard": {
+    "strTitle": "Отказаться оказать услугу",
+    "strDesc": "[us]: я не хочу оказывать эту услугу, и разговор окончен."
+  },
+  "STKTemplate_Gambit_Conditions_Divider": {
+    "strTitle": "-",
+    "strDesc": "========================================================================================================"
+  },
+  "STKTemplate_Gambit_SharedHomeworld": {
+    "strTitle": "Общая родина",
+    "strDesc": "[us]: у нас общая родина."
+  },
+  "STKTemplate_Gambit_SharedHomeworld_Allow": {
+    "strTitle": "Согласиться оказать услугу",
+    "strDesc": "[us]: ладно, я окажу тебе эту услугу."
+  },
+  "PLGAIReportCrimeCCRETrespassDeny": {
+    "strTitle": "Заявить о преступлении: неудача",
+    "strDesc": "[us] [fails] заявить о преступлении на [them]."
+  },
+  "PLGAIReportCrimeCCRETrespassDone": {
+    "strTitle": "Заявление о преступлении завершено",
+    "strDesc": "[us] [is] завершил(а) заявление о преступлении."
+  },
+  "PLGAIReportCrimeCCRETrespassNPCDone": {
+    "strTitle": "Отмена заявления о преступлении",
+    "strDesc": "[us] [is] больше не собирается заявлять о преступлении."
+  },
+  "PLGAIReportCrimeCCREThreat": {
+    "strTitle": "Заявить о преступлении",
+    "strDesc": "[us] [speaks] в [us-pos] КПК, глядя на [them]."
+  },
+  "PLGAIReportCrimeCCREThreatAllow": {
+    "strTitle": "Заявить о преступлении: успех",
+    "strDesc": "[us] успешно [reports] о преступлении на [them]."
+  },
+  "PLGAIReportCrimeCCREThreatDone": {
+    "strTitle": "Заявление о преступлении завершено",
+    "strDesc": "[us] [is] завершил(а) заявление о преступлении."
+  },
+  "PLGAICrimeLEOArrestCancelScan": {
+    "strTitle": "Сканирование в поисках преступника",
+    "strDesc": "\"Сканирую район\", — [us] [says]."
+  },
+  "SHIPSurrender": {
+    "strTitle": "Предложить сдачу",
+    "strDesc": "[us] прекращает сопротивление."
+  },
+  "SHIPAcceptSurrender": {
+    "strTitle": "Принять сдачу",
+    "strDesc": "[us-regID] прекращает сопротивление."
+  },
+  "SHIPDenySurrender": {
+    "strTitle": "Отклонить сдачу",
+    "strDesc": "Отрицательно, мы покончим с этим здесь и сейчас!"
+  },
+  "SHIPDenySurrenderBreakLock": {
+    "strTitle": "Требовать разблокировки",
+    "strDesc": "Сначала разблокируйте нас, потом мы рассмотрим ваш запрос!"
+  },
+  "SHIPComeHereDeny": {
+    "strTitle": "Корабль не подойдёт",
+    "strDesc": "Отрицательно, запрос отклонён"
+  },
+  "SHIPBlockadeComing": {
+    "strTitle": "Предупреждение о блокаде",
+    "strDesc": "Судно [them-regID], вы находитесь в закрытой зоне. Немедленно покиньте её, иначе будете уничтожены."
+  },
+  "SLOTWieldWeaponRifle02L": {
+    "strDesc": "[them-subj] [is] держит [us]."
+  },
+  "SLOTWieldWeaponRifle02R": {
+    "strDesc": "[them-subj] [is] держит [us]."
+  },
+  "SLOTWieldWeaponShotgun02L": {
+    "strDesc": "[them-subj] [is] держит [us]."
+  },
+  "STKTemplate_Gambit_SharedHomeworld_Fail_Soft": {
+    "strTitle": "Отказаться оказать услугу",
+    "strDesc": "[us]: сейчас я не хочу оказывать эту услугу, но мы можем продолжить разговор."
+  },
+  "STKTemplate_Gambit_SharedHomeworld_Fail_Hard": {
+    "strTitle": "Отказаться оказать услугу",
+    "strDesc": "[us]: я не хочу оказывать эту услугу, и разговор окончен."
+  },
+  "STKTemplate_Gambit_SharedScar": {
+    "strTitle": "Сравнить шрамы",
+    "strDesc": "[us] пытается сравнить свой шрам со шрамом [them]."
+  },
+  "STKTemplate_Gambit_SharedScar_Allow": {
+    "strTitle": "Согласиться оказать услугу",
+    "strDesc": "[us]: ладно, я окажу тебе эту услугу."
+  },
+  "STKTemplate_Gambit_SharedScar_Fail_Soft": {
+    "strTitle": "Отказаться оказать услугу",
+    "strDesc": "[us]: сейчас я не хочу оказывать эту услугу, но мы можем продолжить разговор."
+  },
+  "STKTemplate_Gambit_SharedScar_Fail_Hard": {
+    "strTitle": "Отказаться оказать услугу",
+    "strDesc": "[us]: я не хочу оказывать эту услугу, и разговор окончен."
+  },
+  "STKTemplate_Gambit_BeautifulSelf": {
+    "strTitle": "Показать красоту",
+    "strDesc": "[us] пытается поделиться своей физической красотой с [them]."
+  },
+  "SLOTWieldWeaponShotgun02R": {
+    "strDesc": "[them-subj] [is] использует [us]."
+  },
+  "UNSLOTWieldWeaponRifle02L": {
+    "strDesc": "[them-subj] [is] больше не использует [us]."
+  },
+  "UNSLOTWieldWeaponRifle02R": {
+    "strDesc": "[them-subj] [is] больше не использует [us]."
+  },
+  "UNSLOTWieldWeaponShotgun02L": {
+    "strDesc": "[them-subj] [is] больше не использует [us]."
+  },
+  "UNSLOTWieldWeaponShotgun02R": {
+    "strDesc": "[them-subj] [is] больше не использует [us]."
+  },
+  "ShowSocialCore": {
+    "strTitle": "Неловкий треп",
+    "strDesc": "[us] [feels], что неловкий треп — это нормально.",
+    "strTooltip": "Показывает варианты неловкого трепа. То есть то, что может сказать любой, независимо от навыков, черт и отношений, — только толку от этого мало."
+  },
+  "HideSocialCore": {
+    "strTitle": "Скрыть неловкий треп",
+    "strDesc": "[us] [doesn't] считает, что неловкий треп — это нормально.",
+    "strTooltip": "Скрывает варианты неловкого трепа."
+  },
+  "STKTemplate_Intro_Allow_Faction_Different": {
+    "strTitle": "Согласиться обсудить услуги с враждебной фракцией",
+    "strDesc": "[us] говорит, что мы из разных фракций. Но ладно, давай поговорим об услугах."
+  },
+  "STKTemplate_Intro_Allow_Faction_Dislikes": {
+    "strTitle": "Согласиться обсудить услуги с враждебной фракцией",
+    "strDesc": "[us] говорит: тьфу, ваша фракция мне не нравится. Но ладно, давай поговорим об услугах."
   }
 }

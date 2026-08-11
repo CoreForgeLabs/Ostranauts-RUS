@@ -21,7 +21,16 @@ CUR_DATA = os.path.join(GAME, "Ostranauts_Data", "StreamingAssets", "data")
 
 TRANSLATABLE = ("strTitle", "strDesc", "strTooltip", "strNameFriendly", "strNameShort", "strFriendlyName")
 
-TOKEN_RE = re.compile(r"\[(us|them|verb|cap)\]")
+
+# ЛЮБОЕ слово в квадратных скобках — грамматический токен (не только [us]/[them]/
+# [verb]/[cap]): игра использует [<английский_глагол>] как ключ поиска в таблице
+# спряжений (RuData.Verbs), например "[starts]", "[adds]", "[removes]" — движок
+# на лету заменяет его правильной формой под фактическое лицо в рантайме
+# (см. Patches.cs VerbPrefix). Перевод НЕ должен заменять токен готовой русской
+# формой — тогда согласование ломается для любого лица, кроме того, что
+# случайно совпало с формой на момент перевода (найдено вживую: "Ты начинает"
+# вместо "Ты начинаешь" — токен [starts] был схлопнут в статичное "начинает").
+TOKEN_RE = re.compile(r"\[[a-zA-Z][a-zA-Z0-9_]*\]")
 PLACEHOLDER_RE = re.compile(r"\{\d+\}")
 TAG_RE = re.compile(r"</?[a-zA-Z][a-zA-Z0-9]*>")
 
