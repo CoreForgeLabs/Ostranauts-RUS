@@ -14,7 +14,18 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(__file__))
-from import_old_translation import load_category, validate, CUR_DATA, TRANSLATABLE  # noqa: E402
+from import_old_translation import (  # noqa: E402
+    load_category, load_simple_category, validate, CUR_DATA, TRANSLATABLE, SIMPLE_SCHEMAS, output_category_for,
+)
+
+# category simple-формата (например "conditions_simple") -> категория, в файл которой
+# она сливается ("conditions") — обратная сторона той же карты, что и в
+# import_old_translation/translate_data: игра сама объединяет их в один словарь
+# движка, поэтому при проверке "conditions" нужно ЗНАТЬ про strName из
+# conditions_simple, иначе они все окажутся ложными сиротами.
+MERGE_SOURCES = {}
+for _simple_cat in SIMPLE_SCHEMAS:
+    MERGE_SOURCES.setdefault(output_category_for(_simple_cat), []).append(_simple_cat)
 
 ROOT = r"F:\DEV2\ostra_i18n"
 RU_DATA = os.path.join(ROOT, "langs", "ru", "data")
@@ -42,7 +53,10 @@ def main():
             continue
         category = fn[:-5]
         overlay = json.loads(io.open(os.path.join(RU_DATA, fn), encoding="utf-8").read())
-        cur = load_category(CUR_DATA, FILENAME_TO_CATEGORY.get(category, category))
+        real_category = FILENAME_TO_CATEGORY.get(category, category)
+        cur = load_category(CUR_DATA, real_category)
+        for simple_cat in MERGE_SOURCES.get(real_category, []):
+            cur.update(load_simple_category(CUR_DATA, simple_cat))
         print("=== %s: %d записей в оверлее ===" % (category, len(overlay)))
 
         for str_name, fields in overlay.items():

@@ -20,6 +20,8 @@ import time
 
 sys.path.insert(0, r"C:\Users\Low\Desktop\DEV\KWEN")
 from llm_client import chat_json, check_api  # noqa: E402
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from import_old_translation import SIMPLE_SCHEMAS, load_simple_category, is_simple, output_category_for  # noqa: E402
 
 ROOT = r"F:\DEV2\ostra_i18n"
 LANG = sys.argv[1] if len(sys.argv) > 1 else "ru"
@@ -33,7 +35,8 @@ TRANSLATABLE = ("strTitle", "strDesc", "strTooltip", "strNameFriendly", "strName
 
 CATEGORIES = ["interactions", "careers", "conditions", "pda_apps", "installables", "cooverlays",
               "condowners", "ledgerdefs", "pledges", "slots", "headlines", "plots",
-              "market/CoCollections", "ads", "rooms", "jobitems", "racing/tracks", "context", "racing/leagues"]
+              "market/CoCollections", "ads", "rooms", "jobitems", "racing/tracks", "context", "racing/leagues",
+              "conditions_simple"]
 
 SYS_PROMPT = (
     "Ты локализатор игровых данных Ostranauts — суровый hard sci-fi симулятор разборки "
@@ -89,10 +92,12 @@ def save_json(path, data):
     os.replace(tmp, path)
 
 
+CUR_DATA_ROOT = r"F:\Games\Steam\steamapps\common\Ostranauts\Ostranauts_Data\StreamingAssets\data"
+
+
 def load_current_category(category):
     """Копия logики import_old_translation.load_category без импорта (та завязана на OLD_DATA)."""
-    base = r"F:\Games\Steam\steamapps\common\Ostranauts\Ostranauts_Data\StreamingAssets\data"
-    folder = os.path.join(base, category)
+    folder = os.path.join(CUR_DATA_ROOT, category)
     result = {}
     if not os.path.isdir(folder):
         return result
@@ -116,15 +121,21 @@ BRACKET_RE = re.compile(r"\[[a-zA-Z][a-zA-Z0-9_]*\]")
 
 
 def collect_category(category, state):
-    """Собирает todo-элементы одной категории; ничего не переводит. state[category]
-    хранит (out_path, overlay-dict) — общий на все батчи этой категории, чтобы
-    инкрементальное сохранение писало в один и тот же объект/файл."""
-    fname = category.replace("/", "_") + ".json"
+    """Собирает todo-элементы одной категории; ничего не переводит. state[out_category]
+    хранит (out_path, overlay-dict) — ОБЩИЙ на все логические категории, которые
+    сливаются в один файл (см. output_category_for — например conditions_simple
+    пишет в conditions.json, т.к. игра сама сливает их в один словарь движка,
+    см. docs/architecture-audit.md). Ключ item["_cat"] всегда = out_category,
+    чтобы запись при сохранении батча попадала в общий state[out_category]."""
+    out_category = output_category_for(category)
+    fname = out_category.replace("/", "_") + ".json"
     out_path = os.path.join(ROOT, "langs", LANG, "data", fname)
 
-    cur = load_current_category(category)
-    overlay = load_json(out_path) if os.path.exists(out_path) else {}
-    state[category] = {"out_path": out_path, "overlay": overlay, "lock": threading.Lock()}
+    cur = load_simple_category(CUR_DATA_ROOT, category) if is_simple(category) else load_current_category(category)
+    if out_category not in state:
+        overlay = load_json(out_path) if os.path.exists(out_path) else {}
+        state[out_category] = {"out_path": out_path, "overlay": overlay, "lock": threading.Lock()}
+    overlay = state[out_category]["overlay"]
 
     # Переводим (или переводим ЗАНОВО) поле, если: (а) записи нет в оверлее вовсе,
     # либо (б) есть, но набор токенов в скобках ([us]/[them]/[глагол-ключ]) разошёлся
@@ -152,7 +163,7 @@ def collect_category(category, state):
                     broken_n += 1
             if need:
                 items.append({"id": str_name + "::" + f, "en": en_val, "ctx": category + "/" + str_name,
-                              "_cat": category})
+                              "_cat": out_category})
 
     log("%s: %d полей (нет перевода: %d, сломанные токены: %d)" %
         (category, len(items), missing_n, broken_n))

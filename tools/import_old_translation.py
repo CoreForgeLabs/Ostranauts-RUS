@@ -65,6 +65,78 @@ def load_category(base_dir, category):
     return result
 
 
+# Категории в "плоском" формате: {"aValues": [v1,v2,v3,...]} вместо списка объектов,
+# записи идут подряд фиксированными группами полей, внутри файла бывают комментарии
+# "//" (невалидный JSON без предобработки). Обычный load_category() ловит на этом
+# исключение и молча пропускает файл — отсюда системная дыра (см.
+# docs/architecture-audit.md, "Уровень 1.1"). SIMPLE_SCHEMAS даёт для каждой такой
+# категории (число полей на запись, индексы переводимых полей, их имена) —
+# схема снята с DataHandler.cs (комментарий в самом conditions_simple.json плюс
+# ParseConditionsSimple/ParseSimpleIntoStringDict).
+SIMPLE_SCHEMAS = {
+    # [strName],[strNameFriendly],[strDesc],[nDisplaySelf],[nDisplayOther],[strColor],[bInvert]
+    # ParseConditionsSimple распаковывает эти записи ПРЯМО В dictConds (тот же словарь,
+    # что обслуживает категория "conditions") — поэтому пишем в conditions.json, не
+    # в отдельный файл, и рантайм-код трогать не нужно.
+    "conditions_simple": {"width": 7, "fields": {1: "strNameFriendly", 2: "strDesc"},
+                            "merge_into": "conditions"},
+}
+
+
+def load_simple_category(base_dir, category):
+    """Разбирает плоский aValues-формат в тот же вид, что load_category() —
+    dict strName -> {переводимое_поле: значение}."""
+    schema = SIMPLE_SCHEMAS[category]
+    width, fields = schema["width"], schema["fields"]
+    folder = os.path.join(base_dir, category)
+    result = {}
+    if not os.path.isdir(folder):
+        return result
+    for root, _, files in os.walk(folder):
+        for fn in sorted(files):
+            if not fn.endswith(".json"):
+                continue
+            path = os.path.join(root, fn)
+            try:
+                raw = io.open(path, encoding="utf-8-sig").read()
+                raw = re.sub(r"//[^\n]*", "", raw)
+                data = json.loads(raw, strict=False)
+            except Exception as e:
+                print("  ПРОПУСК (bad JSON, simple) %s: %s" % (path, e))
+                continue
+            if not isinstance(data, list):
+                continue
+            for block in data:
+                if not isinstance(block, dict):
+                    continue
+                values = block.get("aValues")
+                if not isinstance(values, list):
+                    continue
+                for i in range(0, len(values) - width + 1, width):
+                    str_name = values[i]
+                    if not str_name:
+                        continue
+                    entry = {}
+                    for offset, field_name in fields.items():
+                        v = values[i + offset]
+                        if v:
+                            entry[field_name] = v
+                    if entry:
+                        result[str_name] = entry
+    return result
+
+
+def is_simple(category):
+    return category in SIMPLE_SCHEMAS
+
+
+def output_category_for(category):
+    """Категория simple-формата пишется в файл ДРУГОЙ (обычной) категории, если
+    игра сама сливает её в тот же словарь движка (см. SIMPLE_SCHEMAS)."""
+    schema = SIMPLE_SCHEMAS.get(category)
+    return schema["merge_into"] if schema else category
+
+
 def validate(old_val, cur_val, field):
     """Возвращает None если ок, иначе строку с причиной для корзины 'подозрительно'."""
     old_tokens = sorted(TOKEN_RE.findall(old_val))
@@ -86,8 +158,9 @@ def validate(old_val, cur_val, field):
 
 def import_category(category):
     print("=== %s ===" % category)
-    old = load_category(OLD_DATA, category)
-    cur = load_category(CUR_DATA, category)
+    loader = load_simple_category if is_simple(category) else load_category
+    old = loader(OLD_DATA, category)
+    cur = loader(CUR_DATA, category)
     print("старый перевод: %d записей, текущие данные игры: %d записей" % (len(old), len(cur)))
 
     accepted = {}
@@ -115,11 +188,18 @@ def import_category(category):
         if entry:
             accepted[str_name] = entry
 
-    out_path = os.path.join(ROOT, "langs", "ru", "data", category.replace("/", "_") + ".json")
+    out_category = output_category_for(category)
+    out_path = os.path.join(ROOT, "langs", "ru", "data", out_category.replace("/", "_") + ".json")
     existing = {}
     if os.path.exists(out_path):
         existing = json.loads(io.open(out_path, encoding="utf-8").read())
-    existing.update(accepted)
+    # Слияние по ПОЛЯМ, не по strName целиком — иначе перевод strTitle, сделанный
+    # отдельным проходом (например Qwen), стирается при повторном импорте, если
+    # для этого же strName сейчас приходит только strDesc (актуально особенно для
+    # merge_into-категорий: conditions.json уже содержит обычные записи "conditions",
+    # сюда же домешиваются conditions_simple).
+    for str_name, fields in accepted.items():
+        existing.setdefault(str_name, {}).update(fields)
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
     io.open(out_path, "w", encoding="utf-8").write(json.dumps(existing, ensure_ascii=False, indent=2))
 
