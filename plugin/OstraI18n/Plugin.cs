@@ -45,8 +45,13 @@ namespace OstraI18n
             PatchRunner.ApplyAll(ref ok, ref failed);
             PatchRunner.ApplyGuiHooks(ref ok, ref failed);
             VersionGuard.CheckAndLog(Log);
-            try { LiteralPatcher.ApplySlice(new Harmony(GUID + ".literals")); }
-            catch (Exception ex) { Log.LogError("[i18n] slice failed: " + ex); }
+            try
+            {
+                I18n.Init(DataDir.Value, "ru");
+                if (LiteralPatcher.LoadCatalog(DataDir.Value) > 0)
+                    LiteralPatcher.ApplyAll(new Harmony(GUID + ".literals"));
+            }
+            catch (Exception ex) { Log.LogError("[i18n] literals failed: " + ex); }
             Log.LogInfo("[i18n] OstraI18n " + Version + ": " + ok + " patches ok, " + failed + " failed/skipped, lang=" + Language.Value);
 
             unitySync = SynchronizationContext.Current;

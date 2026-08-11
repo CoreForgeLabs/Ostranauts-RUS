@@ -4,4 +4,14 @@
     <LangVersion>latest</LangVersion>
     <AssemblyName>OstraI18n.Core</AssemblyName>
   </PropertyGroup>
+  <!-- net8.0 несёт System.Text.Json во фреймворке; netstandard2.1 — нет.
+       CopyLocalLockFileAssemblies обязателен: BepInEx грузит плагин голым
+       Assembly.LoadFrom без разрешения NuGet-пакетов, транзитивные DLL
+       нужно физически положить рядом с плагином при деплое. -->
+  <PropertyGroup Condition="'$(TargetFramework)' == 'netstandard2.1'">
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.1'">
+    <PackageReference Include="System.Text.Json" Version="8.0.5" />
+  </ItemGroup>
 </Project>
