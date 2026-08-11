@@ -1,20 +1,25 @@
-# Worker: обрабатывает ОДИН файл ассетов, пишет найденные записи построчно
-# (JSONL, flush после каждой) в файл рядом с выходным каталогом. При
-# принудительном убийстве процесса (родитель бьёт по таймауту) всё, что было
-# записано до точки зависания, остаётся на диске — теряется только хвост.
+# Worker: обрабатывает ДИАПАЗОН [start,end) MonoBehaviour-объектов ОДНОГО
+# файла ассетов, пишет найденные записи построчно (JSONL, flush после
+# каждой) в файл, уникальный для этого чанка. Изоляция на уровне процесса
+# ПО ЧАНКУ (не по файлу целиком) — некоторые отдельные объекты заставляют
+# UnityPy уходить в аномально долгое чтение (см. docs/baseline.md); при
+# коротком таймауте на маленький чанк теряется максимум сам чанк, а не
+# весь остаток большого файла.
 #
-# Аргументы: <sourceFile> <kind> <outJsonlPath>
+# Аргументы: <sourceFile> <kind> <outJsonlPath> <startIdx> <endIdx>
 import json, os, re, sys, time
 import UnityPy
 from TypeTreeGeneratorAPI import TypeTreeGenerator
 
 sys.stdout.reconfigure(line_buffering=True)
 
-if len(sys.argv) != 4:
-    print("использование: extract_prefab_paths_worker.py <файл> <scene|asset> <выход.jsonl>", file=sys.stderr)
+if len(sys.argv) != 6:
+    print("использование: extract_prefab_paths_worker.py <файл> <scene|asset> <выход.jsonl> <start> <end>",
+          file=sys.stderr)
     sys.exit(2)
 
 FNAME, KIND, OUT_JSONL = sys.argv[1], sys.argv[2], sys.argv[3]
+START_IDX, END_IDX = int(sys.argv[4]), int(sys.argv[5])
 GAME = r"F:\Games\Steam\steamapps\common\Ostranauts\Ostranauts_Data"
 MANAGED = GAME + r"\Managed"
 
@@ -35,10 +40,6 @@ node_sets = [(label, json.loads(gen.get_nodes_as_json(asm, cls))) for label, asm
 def try_read_text(o):
     for label, nodes in node_sets:
         try:
-            # check_read=True: неправильная схема должна разойтись с фактическим
-            # размером байт и упасть исключением, а не интерпретировать чужие байты
-            # как валидные (мусорный счётчик элементов массива без этой проверки
-            # давал попытки прочитать гигантские коллекции — источник замедления).
             t = o.read_typetree(nodes=nodes, check_read=True)
         except Exception:
             continue
@@ -146,26 +147,20 @@ if not os.path.exists(path):
     print("нет файла:", FNAME, file=sys.stderr)
     sys.exit(3)
 
-print(f"--- {FNAME}: начинаю UnityPy.load() ---")
-t0 = time.time()
 env = UnityPy.load(path)
-print(f"--- {FNAME}: загружен за {time.time()-t0:.1f}с ---")
+# Полный индекс ВСЕХ объектов файла нужен для построения пути даже у объектов
+# вне текущего чанка (иерархия — GameObject/Transform, не MonoBehaviour, диапазон
+# чанка их не ограничивает).
 objs = {o.path_id: o for o in env.objects}
-print(f"--- {FNAME}: объектов: {len(objs)} ---")
+mono = [o for o in env.objects if o.type.name == "MonoBehaviour"]
+chunk = mono[START_IDX:END_IDX]
 
 cache = make_caches()
 seen_keys = set()
 found = 0
-checked = 0
-t0 = time.time()
 
 out_f = open(OUT_JSONL, "w", encoding="utf-8")
-for o in env.objects:
-    if o.type.name != "MonoBehaviour":
-        continue
-    checked += 1
-    if checked % 500 == 0:
-        print(f"    ...проверено {checked}, найдено {found}, {time.time()-t0:.1f}с")
+for o in chunk:
     t = try_read_text(o)
     if t is None:
         continue
@@ -191,4 +186,4 @@ for o in env.objects:
     found += 1
 
 out_f.close()
-print(f"{FNAME} ({KIND}): найдено {found} из {checked} проверенных, готово")
+print(f"{FNAME}[{START_IDX}:{END_IDX}]: найдено {found} из {len(chunk)}, готово")
