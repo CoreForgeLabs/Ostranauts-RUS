@@ -65,6 +65,8 @@ static class Program
                         ["literal"] = lit,
                         ["ordinal"] = ord,
                         ["candidate"] = LooksLikeUiText(lit),
+                        ["key"] = MakeKey(type.FullName, lit),
+                        ["approved"] = false,
                     });
                 }
             }
@@ -84,6 +86,43 @@ static class Program
         Console.WriteLine($"кандидатов в UI-текст: {cand}");
         Console.WriteLine("записано: " + outPath);
         return 0;
+    }
+
+    // Ключ строится из имени типа и текста литерала, чтобы быть читаемым
+    // и совпадать по стилю с существующими ключами игры (GUI_QUIT_CONFIRM).
+    static string MakeKey(string typeName, string literal)
+    {
+        var screen = typeName;
+        int dot = screen.LastIndexOf('.');
+        if (dot >= 0) screen = screen.Substring(dot + 1);
+        screen = screen.Replace("GUI", "").Replace("Panel", "").Replace("Popup", "");
+        screen = Slug(screen);
+
+        var body = Slug(literal);
+        if (body.Length > 40) body = body.Substring(0, 40).TrimEnd('_');
+        if (body.Length == 0) body = "TEXT";
+
+        return "GUI_" + (screen.Length > 0 ? screen + "_" : "") + body;
+    }
+
+    static string Slug(string s)
+    {
+        var sb = new System.Text.StringBuilder();
+        bool lastUnderscore = false;
+        foreach (var ch in s)
+        {
+            if (char.IsLetterOrDigit(ch) && ch < 128)
+            {
+                sb.Append(char.ToUpperInvariant(ch));
+                lastUnderscore = false;
+            }
+            else if (!lastUnderscore && sb.Length > 0)
+            {
+                sb.Append('_');
+                lastUnderscore = true;
+            }
+        }
+        return sb.ToString().Trim('_');
     }
 
     // Отсекает идентификаторы, имена ассетов и коды — они не показываются игроку.
