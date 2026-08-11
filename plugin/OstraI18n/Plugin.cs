@@ -67,6 +67,11 @@ namespace OstraI18n
             catch (Exception ex) { Log.LogError("[i18n] prefab binder failed: " + ex); }
             try { ContentOverlay.Init(DataDir.Value, "ru"); }
             catch (Exception ex) { Log.LogError("[i18n] content overlay init failed: " + ex); }
+            if (QaMode.Value)
+            {
+                LocalizedText.OverflowReportPath = Path.Combine(Paths.PluginPath, "OstraI18n", "overflow_report.tsv");
+                File.WriteAllText(LocalizedText.OverflowReportPath, "key\tpath\twidth\theight\n");
+            }
             Log.LogInfo("[i18n] OstraI18n " + Version + ": " + ok + " patches ok, " + failed + " failed/skipped, lang=" + Language.Value);
 
             unitySync = SynchronizationContext.Current;
