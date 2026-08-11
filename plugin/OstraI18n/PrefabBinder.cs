@@ -1,143 +1,121 @@
-using System.Collections;
-using System.Linq;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Reflection;
+using System.Text.Json;
+using HarmonyLib;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using OstraI18n.Core;
 
 namespace OstraI18n
 {
-    // Находит объекты сцены по абсолютному пути из каталога и вешает LocalizedText.
-    // Task 2 — вертикальный срез на одной scene-записи.
-    // Task 4 — вертикальный срез на одной asset-записи (динамически инстанцируемый префаб,
-    // не являющийся root-объектом сцены — например, всплывающее меню сохранения).
     internal static class PrefabBinder
     {
-        private const string SliceRoot = "Canvas Stack";
-        private static readonly string[] SlicePath = { "Canvas GUI", "GUIZones", "Scrollview", "TitleContainer", "DescriptionLabel" };
-        private const string SliceKey = "GUI_SLICE_TEST";
-        private const string SliceReplacement = "ПРОВЕРКА_ПРЕФАБА";
+        private class Entry { public string[] Path; public string Key; }
 
-        public static void BindSceneSlice()
+        private static readonly List<Entry> SceneEntries = new List<Entry>();
+        private static readonly List<Entry> AssetEntries = new List<Entry>();
+
+        public static int LoadCatalog(string pluginDir)
         {
-            SceneManager.sceneLoaded += (scene, mode) => TryBindSlice(scene);
-            var active = SceneManager.GetActiveScene();
-            if (active.IsValid()) TryBindSlice(active);
+            var path = Path.Combine(pluginDir, "catalog", "prefabs.json");
+            if (!File.Exists(path))
+            {
+                Plugin.Log.LogWarning("[i18n] каталог префабов не найден: " + path);
+                return 0;
+            }
+            int n = 0;
+            using var doc = JsonDocument.Parse(File.ReadAllText(path));
+            foreach (var e in doc.RootElement.EnumerateArray())
+            {
+                if (!e.TryGetProperty("approved", out var ap) || !ap.GetBoolean()) continue;
+                var kind = e.GetProperty("kind").GetString();
+                var root = e.GetProperty("root").GetString();
+                var key = e.GetProperty("key").GetString();
+                var segs = new List<string> { root };
+                foreach (var p in e.GetProperty("path").EnumerateArray()) segs.Add(p.GetString());
+
+                var entry = new Entry { Path = segs.ToArray(), Key = key };
+                if (kind == "scene") SceneEntries.Add(entry); else AssetEntries.Add(entry);
+                n++;
+            }
+            Plugin.Log.LogInfo("[i18n] каталог префабов: " + n + " записей ("
+                               + SceneEntries.Count + " scene, " + AssetEntries.Count + " asset)");
+            return n;
         }
 
-        private static void TryBindSlice(Scene scene)
+        public static void BindScenes()
+        {
+            SceneManager.sceneLoaded += (scene, mode) => TryBindAll(scene);
+            var active = SceneManager.GetActiveScene();
+            if (active.IsValid()) TryBindAll(active);
+        }
+
+        private static void TryBindAll(Scene scene)
+        {
+            int bound = 0;
+            foreach (var root in scene.GetRootGameObjects())
+            {
+                foreach (var entry in SceneEntries)
+                {
+                    if (entry.Path[0] != root.name) continue;
+                    var t = root.transform;
+                    bool ok = true;
+                    for (int i = 1; i < entry.Path.Length; i++)
+                    {
+                        t = t.Find(entry.Path[i]);
+                        if (t == null) { ok = false; break; }
+                    }
+                    if (!ok || t.GetComponent<LocalizedText>() != null) continue;
+                    var lt = t.gameObject.AddComponent<LocalizedText>();
+                    lt.Key = entry.Key;
+                    bound++;
+                }
+            }
+            if (bound > 0) Plugin.Log.LogInfo("[i18n] scene-привязка: " + bound + " объектов в сцене " + scene.name);
+        }
+
+        public static void ApplyAssetHook(Harmony harmony)
+        {
+            if (AssetEntries.Count == 0) return;
+            var target = AccessTools.Method(typeof(UnityEngine.UI.MaskableGraphic), "OnEnable", Type.EmptyTypes);
+            if (target == null) return;
+            harmony.Patch(target, postfix: new HarmonyMethod(
+                typeof(PrefabBinder).GetMethod(nameof(OnEnablePostfix), BindingFlags.NonPublic | BindingFlags.Static)));
+        }
+
+        private static void OnEnablePostfix(UnityEngine.UI.MaskableGraphic __instance)
         {
             try
             {
-                var roots = scene.GetRootGameObjects();
-                var root = roots.FirstOrDefault(r => r.name == SliceRoot);
-                if (root == null)
+                if (!(__instance is TMP_Text) && !(__instance is UnityEngine.UI.Text)) return;
+                if (__instance.GetComponent<LocalizedText>() != null) return;
+
+                foreach (var entry in AssetEntries)
                 {
-                    Plugin.Log.LogInfo("[i18n] slice: сцена '" + scene.name + "' не содержит root '" + SliceRoot +
-                        "' (roots: " + string.Join(", ", roots.Select(r => r.name)) + ")");
+                    var path = BuildPath(__instance.transform, entry.Path.Length);
+                    if (path == null) continue;
+                    if (!PathKey.Matches(path, entry.Path)) continue;
+
+                    var lt = __instance.gameObject.AddComponent<LocalizedText>();
+                    lt.Key = entry.Key;
+                    lt.Apply();
                     return;
                 }
-
-                var t = root.transform;
-                foreach (var seg in SlicePath)
-                {
-                    t = t.Find(seg);
-                    if (t == null)
-                    {
-                        Plugin.Log.LogWarning("[i18n] slice: путь не разрешился на '" + seg + "'");
-                        return;
-                    }
-                }
-
-                var lt = t.gameObject.AddComponent<LocalizedText>();
-                lt.Key = SliceKey;
-                Plugin.Log.LogInfo("[i18n] slice: привязан " + SliceRoot + "/" + string.Join("/", SlicePath));
             }
-            catch (System.Exception ex)
-            {
-                Plugin.Log.LogError("[i18n] slice bind failed: " + ex);
-            }
+            catch (Exception ex) { Plugin.Log.LogError("[i18n] asset hook failed: " + ex); }
         }
 
-        // Task 4 — asset-объект: экземпляр появляется где-то в иерархии сцены
-        // (не как root, с суффиксом "(Clone)") только когда игрок открывает
-        // соответствующее меню. Поллинг ограничен по времени — это тестовый
-        // срез, не производственный механизм привязки всех asset-записей.
-        private const string AssetSliceRoot = "GUISaveMenu";
-        private static readonly string[] AssetSlicePath = { "txtTitle" };
-        private const string AssetSliceKey = "GUI_ASSET_SLICE_TEST";
-        private const float AssetPollTimeoutSeconds = 300f;
-        private const float AssetPollIntervalSeconds = 0.5f;
-
-        public static void BindAssetSlice()
+        private static string[] BuildPath(Transform leaf, int maxLen)
         {
-            if (Plugin.Instance == null)
-            {
-                Plugin.Log.LogWarning("[i18n] asset-slice: Plugin.Instance == null, поллинг не запущен");
-                return;
-            }
-            Plugin.Instance.StartCoroutine(PollForAssetRoot());
-        }
-
-        private static IEnumerator PollForAssetRoot()
-        {
-            float elapsed = 0f;
-            while (elapsed < AssetPollTimeoutSeconds)
-            {
-                Transform found = null;
-                try { found = FindTransformAnywhere(AssetSliceRoot); }
-                catch (System.Exception ex) { Plugin.Log.LogError("[i18n] asset-slice poll failed: " + ex); yield break; }
-
-                if (found != null)
-                {
-                    TryBindAssetPath(found);
-                    yield break;
-                }
-                yield return new WaitForSeconds(AssetPollIntervalSeconds);
-                elapsed += AssetPollIntervalSeconds;
-            }
-            Plugin.Log.LogWarning("[i18n] asset-slice: '" + AssetSliceRoot + "' не появился за " +
-                AssetPollTimeoutSeconds + "с — тест отменён");
-        }
-
-        private static Transform FindTransformAnywhere(string name)
-        {
-            for (int i = 0; i < SceneManager.sceneCount; i++)
-            {
-                var scene = SceneManager.GetSceneAt(i);
-                if (!scene.isLoaded) continue;
-                foreach (var root in scene.GetRootGameObjects())
-                {
-                    foreach (var t in root.GetComponentsInChildren<Transform>(true))
-                    {
-                        if (t.name == name || t.name == name + "(Clone)") return t;
-                    }
-                }
-            }
-            return null;
-        }
-
-        private static void TryBindAssetPath(Transform root)
-        {
-            try
-            {
-                var t = root;
-                foreach (var seg in AssetSlicePath)
-                {
-                    t = t.Find(seg);
-                    if (t == null)
-                    {
-                        Plugin.Log.LogWarning("[i18n] asset-slice: путь не разрешился на '" + seg + "'");
-                        return;
-                    }
-                }
-
-                var lt = t.gameObject.AddComponent<LocalizedText>();
-                lt.Key = AssetSliceKey;
-                Plugin.Log.LogInfo("[i18n] asset-slice: привязан " + AssetSliceRoot + "/" + string.Join("/", AssetSlicePath));
-            }
-            catch (System.Exception ex)
-            {
-                Plugin.Log.LogError("[i18n] asset-slice bind failed: " + ex);
-            }
+            var stack = new List<string>();
+            var t = leaf;
+            for (int i = 0; i < maxLen && t != null; i++) { stack.Add(t.name); t = t.parent; }
+            if (t != null) return null;
+            stack.Reverse();
+            return stack.ToArray();
         }
     }
 }

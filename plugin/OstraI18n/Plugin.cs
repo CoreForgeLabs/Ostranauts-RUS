@@ -53,10 +53,15 @@ namespace OstraI18n
                     LiteralPatcher.ApplyAll(new Harmony(GUID + ".literals"));
             }
             catch (Exception ex) { Log.LogError("[i18n] literals failed: " + ex); }
-            try { PrefabBinder.BindSceneSlice(); }
-            catch (Exception ex) { Log.LogError("[i18n] prefab slice failed: " + ex); }
-            try { PrefabBinder.BindAssetSlice(); }
-            catch (Exception ex) { Log.LogError("[i18n] asset slice failed: " + ex); }
+            try
+            {
+                if (PrefabBinder.LoadCatalog(DataDir.Value) > 0)
+                {
+                    PrefabBinder.BindScenes();
+                    PrefabBinder.ApplyAssetHook(new Harmony(GUID + ".prefabs"));
+                }
+            }
+            catch (Exception ex) { Log.LogError("[i18n] prefab binder failed: " + ex); }
             Log.LogInfo("[i18n] OstraI18n " + Version + ": " + ok + " patches ok, " + failed + " failed/skipped, lang=" + Language.Value);
 
             unitySync = SynchronizationContext.Current;
