@@ -142,7 +142,13 @@ namespace OstraI18n
                     if (match != null)
                     {
                         I18n.Applied++;
-                        yield return new CodeInstruction(OpCodes.Ldstr, match.Key);
+                        // Метки переходов и границы try/catch, указывавшие на исходный ldstr,
+                        // должны остаться на первой инструкции замены — иначе branch/EH-блок
+                        // ссылается в никуда и HarmonyX не может собрать метод (IL Compile Error).
+                        var replacement = new CodeInstruction(OpCodes.Ldstr, match.Key);
+                        replacement.MoveLabelsFrom(instr);
+                        replacement.MoveBlocksFrom(instr);
+                        yield return replacement;
                         yield return new CodeInstruction(OpCodes.Call,
                             AccessTools.Method(typeof(I18n), nameof(I18n.Get), new[] { typeof(string) }));
                         continue;

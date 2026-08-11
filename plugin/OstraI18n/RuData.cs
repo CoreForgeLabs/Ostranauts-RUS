@@ -91,13 +91,6 @@ namespace OstraI18n
                 Verbs[vname] = vf;
             }
 
-            var guiPath = Path.Combine(pack, "gui.json");
-            if (File.Exists(guiPath))
-            {
-                var gj = JsonMapper.ToObject(File.ReadAllText(guiPath));
-                foreach (string k in gj.Keys) GuiText.Map[k] = (string)gj[k];
-            }
-
             var strPath = Path.Combine(pack, "strings.json");
             if (File.Exists(strPath))
             {
@@ -106,7 +99,7 @@ namespace OstraI18n
             }
 
             Plugin.Log.LogInfo("[i18n] pack " + lang + " [" + folder + "]: " + Pronouns.Count + " pronoun cats, "
-                + Verbs.Count + " verbs, " + Strings.Count + " strings, " + GuiText.Map.Count + " gui");
+                + Verbs.Count + " verbs, " + Strings.Count + " strings");
         }
 
         private static string[] ToStrArray(JsonData arr)

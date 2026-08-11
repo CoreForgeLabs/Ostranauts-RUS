@@ -43,7 +43,6 @@ namespace OstraI18n
 
             int ok = 0, failed = 0;
             PatchRunner.ApplyAll(ref ok, ref failed);
-            PatchRunner.ApplyGuiHooks(ref ok, ref failed);
             VersionGuard.CheckAndLog(Log);
             try
             {
@@ -59,23 +58,6 @@ namespace OstraI18n
 
             var th = new Thread(Orchestrator) { IsBackground = true, Name = "OstraI18nOrchestrator" };
             th.Start();
-
-            var sweepTh = new Thread(GuiSweepLoop) { IsBackground = true, Name = "OstraI18nGuiSweep" };
-            sweepTh.Start();
-        }
-
-        // Periodic fallback: some panels keep their GameObjects alive for the whole session and only
-        // toggle a CanvasGroup's alpha/interactable, so their text's OnEnable never fires again after
-        // the very first scene load (see GuiText.SweepScene for the full story). A cheap poll catches
-        // those where the event hooks can't.
-        private void GuiSweepLoop()
-        {
-            while (true)
-            {
-                Thread.Sleep(2000);
-                if (!Enabled.Value || !RuData.Active) continue;
-                PostToMain("gui-sweep", GuiText.SweepScene, quiet: true);
-            }
         }
 
         private void Start()
@@ -413,50 +395,6 @@ namespace OstraI18n
             }
         }
 
-        // GUI runtime text translation hooks: catch text NOT in data files (hardcoded C# + prefab-baked).
-        // Covers TMP_Text.set_text (runtime assignments, TMP-specific — safe per-type patch) and
-        // MaskableGraphic.OnEnable (prefab-baked on show). OnEnable is NOT declared on TMP_Text itself —
-        // it lives on the shared base MaskableGraphic (also used by legacy UI.Text, Image, etc.), so it
-        // is patched ONCE, explicitly, on the base type. GuiText.OnEnablePostfix filters to TMP_Text
-        // internally via `as`. Patching it per-TMP-subtype resolved to the same base method anyway but
-        // via reflection walking up the hierarchy — Harmony then bound the postfix's TMP_Text parameter
-        // straight to non-TMP callers (e.g. UnityEngine.UI.Text) with no type check, which crashed the
-        // process (invalid instance coercion at the IL level, not a catchable managed exception).
-        public static void ApplyGuiHooks(ref int ok, ref int failed)
-        {
-            var h = new Harmony(Plugin.GUID + ".gui");
-            var gt = typeof(GuiText);
-            var setPre = gt.GetMethod(nameof(GuiText.SetTextPrefix));
-            var onEnPost = gt.GetMethod(nameof(GuiText.OnEnablePostfix));
-            var done = new HashSet<MethodBase>();
-            var flagsInstPub = BindingFlags.Public | BindingFlags.Instance;
-            var flagsInstNonPub = BindingFlags.NonPublic | BindingFlags.Instance;
-            var uiTypes = new[] { typeof(TMPro.TMP_Text), typeof(TMPro.TextMeshProUGUI), typeof(TMPro.TextMeshPro), typeof(UnityEngine.UI.Text) };
-            foreach (var ty in uiTypes)
-                TryPatchOnce(h, ty, "set_text", flagsInstPub, setPre, null, done, ref ok, ref failed);
-
-            TryPatchOnce(h, typeof(UnityEngine.UI.MaskableGraphic), "OnEnable", flagsInstNonPub, null, onEnPost, done, ref ok, ref failed);
-        }
-
-        private static void TryPatchOnce(Harmony h, Type type, string method, BindingFlags flags,
-            MethodInfo prefix, MethodInfo postfix, HashSet<MethodBase> done, ref int ok, ref int failed)
-        {
-            try
-            {
-                var target = type.GetMethod(method, flags);
-                if (target == null || !done.Add(target)) return;  // missing, or already patched (shared base method)
-                h.Patch(target,
-                    prefix == null ? null : new HarmonyMethod(prefix),
-                    postfix == null ? null : new HarmonyMethod(postfix));
-                ok++;
-                Plugin.Log.LogInfo("[i18n] gui hook " + type.Name + "." + method);
-            }
-            catch (Exception ex)
-            {
-                failed++;
-                Plugin.Log.LogError("[i18n] gui hook FAILED " + type.Name + "." + method + ": " + ex);
-            }
-        }
     }
 
     // Detects game updates by hashing Assembly-CSharp.dll; on change logs a warning
