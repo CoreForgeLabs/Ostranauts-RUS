@@ -49,8 +49,16 @@ namespace OstraI18n
         public static void BindScenes()
         {
             SceneManager.sceneLoaded += (scene, mode) => TryBindAll(scene);
-            var active = SceneManager.GetActiveScene();
-            if (active.IsValid()) TryBindAll(active);
+            // При Awake() плагина, помимо активной сцены, могут быть уже загружены
+            // (аддитивно) другие сцены, чьё событие sceneLoaded успело сработать ДО
+            // подписки выше — например "LoadingScreen", транзитная сцена, показанная
+            // очень рано в загрузке (см. docs/baseline.md). GetActiveScene() ловит
+            // только одну сцену; перебор всех загруженных ловит и такие случаи.
+            for (int i = 0; i < SceneManager.sceneCount; i++)
+            {
+                var scene = SceneManager.GetSceneAt(i);
+                if (scene.isLoaded) TryBindAll(scene);
+            }
         }
 
         private static void TryBindAll(Scene scene)
