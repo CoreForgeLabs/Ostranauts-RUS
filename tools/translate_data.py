@@ -25,7 +25,7 @@ LANG = sys.argv[1] if len(sys.argv) > 1 else "ru"
 LANGNAME = {"ru": "русский"}.get(LANG, LANG)
 
 BATCH = 15
-MAX_WORKERS = 12
+MAX_WORKERS = 50
 LOG = os.path.join(ROOT, "lang_src", "translate_data_%s.log" % LANG)
 
 TRANSLATABLE = ("strTitle", "strDesc", "strTooltip", "strNameFriendly", "strNameShort", "strFriendlyName")
