@@ -106,7 +106,7 @@ def import_category(category):
         if entry:
             accepted[str_name] = entry
 
-    out_path = os.path.join(ROOT, "langs", "ru", "data", category + ".json")
+    out_path = os.path.join(ROOT, "langs", "ru", "data", category.replace("/", "_") + ".json")
     existing = {}
     if os.path.exists(out_path):
         existing = json.loads(io.open(out_path, encoding="utf-8").read())

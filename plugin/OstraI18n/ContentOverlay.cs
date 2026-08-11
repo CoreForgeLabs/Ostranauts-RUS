@@ -20,6 +20,22 @@ namespace OstraI18n
             { "interactions", "dictInteractions" },
             { "careers", "dictCareers" },
             { "conditions", "dictConds" },
+            { "pda_apps", "dictPDAAppIcons" },
+            { "installables", "dictInstallables" },
+            { "cooverlays", "dictCOOverlays" },
+            { "condowners", "dictCOs" },
+            { "ledgerdefs", "dictLedgerDefs" },
+            { "pledges", "dictPledges" },
+            { "slots", "dictSlots" },
+            { "headlines", "dictHeadlines" },
+            { "plots", "dictPlots" },
+            { "market/CoCollections", "dictSupersTemp" },
+            { "ads", "dictAds" },
+            { "rooms", "dictRoomSpecsTemp" },
+            { "jobitems", "dictJobitems" },
+            { "racing/tracks", "dictRaceTracks" },
+            { "context", "dictContext" },
+            { "racing/leagues", "dictRacingLeagues" },
         };
 
         private static readonly HashSet<string> TranslatableFields = new HashSet<string>
@@ -50,7 +66,8 @@ namespace OstraI18n
 
             foreach (var kv in CategoryToField)
             {
-                var jsonPath = Path.Combine(dataDir, kv.Key + ".json");
+                var fileName = kv.Key.Replace("/", "_") + ".json";
+                var jsonPath = Path.Combine(dataDir, fileName);
                 if (!File.Exists(jsonPath)) continue;
                 ApplyCategory(kv.Key, kv.Value, jsonPath);
             }

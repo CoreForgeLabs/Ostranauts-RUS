@@ -19,6 +19,16 @@ from import_old_translation import load_category, validate, CUR_DATA, TRANSLATAB
 ROOT = r"F:\DEV2\ostra_i18n"
 RU_DATA = os.path.join(ROOT, "langs", "ru", "data")
 
+# Категории с "/" в исходном пути (например racing/tracks) сохраняются на диск как
+# racing_tracks.json (см. import_old_translation.py: category.replace("/", "_")) —
+# обратное сопоставление нужно, чтобы найти реальные текущие данные игры по правильному
+# вложенному пути, а не по имени файла буквально.
+FILENAME_TO_CATEGORY = {
+    "market_CoCollections": "market/CoCollections",
+    "racing_tracks": "racing/tracks",
+    "racing_leagues": "racing/leagues",
+}
+
 
 def main():
     if not os.path.isdir(RU_DATA):
@@ -32,7 +42,7 @@ def main():
             continue
         category = fn[:-5]
         overlay = json.loads(io.open(os.path.join(RU_DATA, fn), encoding="utf-8").read())
-        cur = load_category(CUR_DATA, category)
+        cur = load_category(CUR_DATA, FILENAME_TO_CATEGORY.get(category, category))
         print("=== %s: %d записей в оверлее ===" % (category, len(overlay)))
 
         for str_name, fields in overlay.items():
