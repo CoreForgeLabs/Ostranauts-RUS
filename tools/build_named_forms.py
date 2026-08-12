@@ -10,15 +10,24 @@ build_named_forms.py — строит langs/ru/named_forms.json: таблицу 
 род/одушевлённость/число. См. .superpowers/sdd/2026-08-13-i18n-architecture-v2/
 task-6.2-brief.md для полного обоснования и разбора ключевой схемы.
 
-Ключевая схема (см. отчёт task-6.2-report.md за обоснование): файл кладём по
-ТЕКСТУ strNameShort (338 ключей), а не по strName записи (1116 записей,
-338 уникальных strNameShort) — потому что рантайм (Patches.cs,
-AttemptSubstitutionPrefix/AttemptProperNamePrefix) на месте подстановки имеет
-только `ent.CondOwner.ShortName`, который у подавляющего большинства записей
-(там, где pspec == null, см. decompiled/CondOwner.cs:957) УЖЕ РАВЕН
-strNameShort — то есть тексту, а не ID записи condowners. Ключ по тексту —
-единственный, который резолвер Task 6.3 сможет использовать без дополнительной
-записи->текст индирекции.
+Ключевая схема (см. отчёт task-6.2-report.md, раздел "Fix round 2", за полное
+обоснование и историю исправления): финальный `named_forms.json` кладём по
+`strName` ЗАПИСИ condowners (как и требует план, раздел Р2) — до ~1058 ключей
+(по числу записей с непустым `strNameShort`), а не по тексту `strNameShort`
+(338 уникальных строк). Первая версия этого скрипта ошибочно ключевала по
+тексту, аргументируя это тем, что `ent.CondOwner.strName` якобы недоступен в
+`Patches.cs`; это было ФАКТИЧЕСКИ НЕВЕРНО — `strName` (decompiled/CondOwner.cs:39)
+это обычное всегда заполненное публичное поле `CondOwner`, не зависящее от
+pspec-логики свойства `ShortName`, и `ent.CondOwner` уже полностью в руках в
+обеих точках подстановки (`AttemptSubstitutionPrefix`/`AttemptProperNamePrefix`)
+— значит `ent.CondOwner.strName` так же напрямую доступен, как и
+`ent.CondOwner.ShortName`, реверс-маппинга текст->ID не требуется. Кроме
+того, ключ по тексту рискует молча схлопнуть разные записи с одинаковым
+отображаемым текстом, но разной грамматикой (например разным родом) в одну
+запись. Поэтому: Qwen вызывается один раз на каждую из 338 уникальных
+строк (экономия вызовов остаётся), а РЕЗУЛЬТАТ фан-аутится обратно на каждую
+запись condowners, чья `strNameShort` совпадает с этой строкой — чистый join,
+без повторных вызовов Qwen.
 
 Запуск: python build_named_forms.py
 """
@@ -221,16 +230,34 @@ def main():
             else:
                 failed[s] = reason
 
-    # Финальный файл: ключ = ТЕКСТ strNameShort (см. докстринг модуля и отчёт
-    # за обоснование этой ключевой схемы вместо strName записи).
-    out = {}
+    # form-set по тексту strNameShort (338 максимум) -- отдельно от финального
+    # файла, нужен только как промежуточный шаг для фан-аута ниже.
+    forms_by_shortname = {}
     for s, resp in resolved.items():
-        out[s] = {
+        forms_by_shortname[s] = {
             "forms": {c: resp[c] for c in CASES},
             "gender": resp["gender"],
             "animate": bool(resp["animate"]),
             "plural": bool(resp["plural"]),
         }
+
+    # Финальный файл: ключ = strName ЗАПИСИ condowners (см. докстринг модуля
+    # за обоснование). Чистый join condowners[strName].strNameShort ->
+    # forms_by_shortname -- без повторных вызовов Qwen. Запись без
+    # strNameShort или чей strNameShort не резолвился пропускается (не
+    # попадёт в файл; Task 6.3 падает на именительный падеж / morph_rules.json
+    # фолбэк для таких, как и описано в плане).
+    out = {}
+    fanout_skipped_unresolved = 0
+    for str_name, rec in condowners.items():
+        short = rec.get("strNameShort")
+        if not short:
+            continue
+        fs = forms_by_shortname.get(short)
+        if fs is None:
+            fanout_skipped_unresolved += 1
+            continue
+        out[str_name] = fs
     save_json(OUT_PATH, out)
 
     with io.open(UNRESOLVED_PATH, "w", encoding="utf-8") as f:
@@ -248,7 +275,9 @@ def main():
     log("резолвлено (валидный полный набор форм) = %d" % n_resolved)
     log("нерезолвлено (-> unresolved_forms.tsv) = %d" % n_failed)
     log("resolution rate = %.2f%%" % rate)
-    log("named_forms.json: %d ключей -> %s" % (len(out), OUT_PATH))
+    log("named_forms.json: %d ключей (записи condowners, фан-аут из %d уникальных strNameShort; "
+        "пропущено записей с нерезолвленным strNameShort: %d) -> %s" %
+        (len(out), n_resolved, fanout_skipped_unresolved, OUT_PATH))
     log("unresolved_forms.tsv -> %s" % UNRESOLVED_PATH)
 
     if rate < 95.0:
