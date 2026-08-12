@@ -20,16 +20,30 @@ namespace OstraI18n
             if (LangPack.Active) __result = LangPack.Lang;
         }
 
-        // After tokens are unpacked: force-override pronoun tables.
-        // (Game uses TryAdd, so core "subj"/"pos"/etc. can't be overridden by mod JSON alone.)
+        // After tokens are unpacked: force-override pronoun tables, and register
+        // every pronoun category the pack declares in DataHandler.categories so the
+        // game's own token parser (PrepareToken) recognizes e.g. [them-gen] as a
+        // category substitution at all, instead of falling through to the switch
+        // below it. Mirrors the game's own "categories" case-loader pattern
+        // (Contains-guarded Add into the List<string>, TryAdd-free overwrite into
+        // partsOfSpeechStr) since TryAdd there can't be used to override core entries.
         public static void UnpackTokensPostfix()
         {
             if (!LangPack.Active) return;
             try
             {
+                int newlyRegistered = 0;
                 foreach (var kv in LangPack.Pronouns)
+                {
+                    if (!DataHandler.categories.Contains(kv.Key))
+                    {
+                        DataHandler.categories.Add(kv.Key);
+                        newlyRegistered++;
+                    }
                     GrammarUtils.partsOfSpeechStr[kv.Key] = kv.Value;
+                }
                 Plugin.Log.LogInfo("[i18n] pronoun tables overridden: " + LangPack.Pronouns.Count + " categories");
+                Plugin.Log.LogInfo("[i18n] DataHandler.categories registered: " + newlyRegistered + " new (of " + LangPack.Pronouns.Count + " total)");
             }
             catch (Exception ex) { Plugin.Log.LogError("[i18n] UnpackTokensPostfix: " + ex); }
         }
