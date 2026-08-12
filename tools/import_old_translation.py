@@ -35,33 +35,52 @@ PLACEHOLDER_RE = re.compile(r"\{\d+\}")
 TAG_RE = re.compile(r"</?[a-zA-Z][a-zA-Z0-9]*>")
 
 
+# Некоторые категории физически хранятся в НЕСКОЛЬКИХ папках, которые игра сливает
+# в один и тот же словарь движка через отдельные вызовы LoadModJsons (см.
+# decompiled/DataHandler.cs:1002-1005: tsv/output/stakes/{interactions,conditions,
+# contexts} грузятся ДОПОЛНИТЕЛЬНО к interactions/, conditions/, context/ в те же
+# dictInteractions/dictConds/dictContext). Файлы внутри названы не по имени
+# категории (interactions_STKMedHeistDissuade.json), поэтому load_category уже их
+# находит рекурсивным сканированием по расширению — не хватало только знать про
+# сам путь. Как и SIMPLE_SCHEMAS, это не требует правок в плагине: наш
+# ContentOverlay мутирует те же dict-объекты, что бы их ни заполнило.
+EXTRA_SOURCE_FOLDERS = {
+    "interactions": ["tsv/output/stakes/interactions"],
+    "conditions": ["tsv/output/stakes/conditions"],
+    "context": ["tsv/output/stakes/contexts"],
+}
+
+
 def load_category(base_dir, category):
-    """Собирает все *.json из папки категории в единый dict strName -> object,
-    так же, как это делает игра через DataHandler.LoadModJsons (последний файл
-    в алфавитном порядке обхода Directory.GetFiles побеждает при коллизии —
-    здесь неважно, т.к. коллизии внутри категории уже есть в самой игре)."""
-    folder = os.path.join(base_dir, category)
+    """Собирает все *.json из папки категории (+ EXTRA_SOURCE_FOLDERS) в единый
+    dict strName -> object, так же, как это делает игра через
+    DataHandler.LoadModJsons (последний файл в алфавитном порядке обхода
+    Directory.GetFiles побеждает при коллизии — здесь неважно, т.к. коллизии
+    внутри категории уже есть в самой игре)."""
+    folders = [os.path.join(base_dir, category)]
+    folders += [os.path.join(base_dir, extra) for extra in EXTRA_SOURCE_FOLDERS.get(category, [])]
     result = {}
-    if not os.path.isdir(folder):
-        return result
-    for root, _, files in os.walk(folder):
-        for fn in sorted(files):
-            if not fn.endswith(".json"):
-                continue
-            path = os.path.join(root, fn)
-            try:
-                data = json.loads(io.open(path, encoding="utf-8-sig").read(), strict=False)
-            except Exception as e:
-                print("  ПРОПУСК (bad JSON) %s: %s" % (path, e))
-                continue
-            if isinstance(data, list):
-                for e in data:
-                    if isinstance(e, dict) and e.get("strName"):
-                        result[e["strName"]] = e
-            elif isinstance(data, dict):
-                for k, v in data.items():
-                    if isinstance(v, dict):
-                        result[k] = v
+    for folder in folders:
+        if not os.path.isdir(folder):
+            continue
+        for root, _, files in os.walk(folder):
+            for fn in sorted(files):
+                if not fn.endswith(".json"):
+                    continue
+                path = os.path.join(root, fn)
+                try:
+                    data = json.loads(io.open(path, encoding="utf-8-sig").read(), strict=False)
+                except Exception as e:
+                    print("  ПРОПУСК (bad JSON) %s: %s" % (path, e))
+                    continue
+                if isinstance(data, list):
+                    for e in data:
+                        if isinstance(e, dict) and e.get("strName"):
+                            result[e["strName"]] = e
+                elif isinstance(data, dict):
+                    for k, v in data.items():
+                        if isinstance(v, dict):
+                            result[k] = v
     return result
 
 

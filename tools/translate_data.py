@@ -21,7 +21,9 @@ import time
 sys.path.insert(0, r"C:\Users\Low\Desktop\DEV\KWEN")
 from llm_client import chat_json, check_api  # noqa: E402
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from import_old_translation import SIMPLE_SCHEMAS, load_simple_category, is_simple, output_category_for  # noqa: E402
+from import_old_translation import (  # noqa: E402
+    load_category, SIMPLE_SCHEMAS, load_simple_category, is_simple, output_category_for,
+)
 
 ROOT = r"F:\DEV2\ostra_i18n"
 LANG = sys.argv[1] if len(sys.argv) > 1 else "ru"
@@ -96,25 +98,7 @@ CUR_DATA_ROOT = r"F:\Games\Steam\steamapps\common\Ostranauts\Ostranauts_Data\Str
 
 
 def load_current_category(category):
-    """Копия logики import_old_translation.load_category без импорта (та завязана на OLD_DATA)."""
-    folder = os.path.join(CUR_DATA_ROOT, category)
-    result = {}
-    if not os.path.isdir(folder):
-        return result
-    for root, _, files in os.walk(folder):
-        for fn in sorted(files):
-            if not fn.endswith(".json"):
-                continue
-            path = os.path.join(root, fn)
-            try:
-                data = json.loads(io.open(path, encoding="utf-8-sig").read(), strict=False)
-            except Exception:
-                continue
-            if isinstance(data, list):
-                for e in data:
-                    if isinstance(e, dict) and e.get("strName"):
-                        result[e["strName"]] = e
-    return result
+    return load_category(CUR_DATA_ROOT, category)
 
 
 BRACKET_RE = re.compile(r"\[[a-zA-Z][a-zA-Z0-9_]*\]")
