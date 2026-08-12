@@ -63,8 +63,39 @@ namespace OstraI18n
                 }
                 Plugin.Log.LogInfo("[i18n] pronoun tables overridden: " + LangPack.Pronouns.Count + " categories");
                 Plugin.Log.LogInfo("[i18n] DataHandler.categories registered: " + newlyRegistered + " new (of " + LangPack.Pronouns.Count + " total)");
+
+                RegisterSyntheticVerbs();
             }
             catch (Exception ex) { Plugin.Log.LogError("[i18n] UnpackTokensPostfix: " + ex); }
+        }
+
+        // Task 6.5: the game's own token parser (PrepareToken) only routes a token to
+        // GrammarUtils.Verb if DataHandler.dictVerbs.ContainsKey(text) is true, where
+        // dictVerbs is the GAME's own verb dictionary (built from its "verbs" data,
+        // completely separate from LangPack.Verbs / verbs.json). Our synthetic
+        // disambiguated verb keys (is.cop/is.aux/has.obj/has.qual) never appear in the
+        // game's own English verb data, so without this step [is.aux] etc. would never
+        // reach VerbPrefix at all -- exactly parallel to Task 6.1's DataHandler.categories
+        // registration, but for the verb dictionary. Content of the placeholder string[]
+        // doesn't matter: VerbPrefix (above) always looks the key up in LangPack.Verbs
+        // first and intercepts before vanilla could ever consume dictVerbs' own value;
+        // this array only needs to exist so PrepareToken's dictVerbs.ContainsKey(text)
+        // check succeeds and t.verbForms[0] ends up equal to our key string.
+        // Force-overwrite (not TryAdd) since these are OUR synthetic keys with dots in
+        // them (is.cop, is.aux, has.obj, has.qual) -- nothing in the game's own English
+        // verb data could ever legitimately already own one, so there's nothing to
+        // accidentally clobber, and force-overwrite guarantees our registration wins even
+        // if some future game update or another mod happens to add the same literal key.
+        private static readonly string[] SyntheticVerbKeys = { "is.cop", "is.aux", "has.obj", "has.qual" };
+        private static void RegisterSyntheticVerbs()
+        {
+            int registered = 0;
+            foreach (var key in SyntheticVerbKeys)
+            {
+                DataHandler.dictVerbs[key] = new[] { key, key };
+                registered++;
+            }
+            Plugin.Log.LogInfo("[i18n] DataHandler.dictVerbs registered: " + registered + " synthetic verb keys");
         }
 
         // GrammarUtils.Verb -> Russian conjugation.

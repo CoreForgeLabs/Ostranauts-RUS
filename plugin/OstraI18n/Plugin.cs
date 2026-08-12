@@ -330,7 +330,17 @@ namespace OstraI18n
                     "[us-subj] [was] late.",
                     "[us] [waves] back.",
                     "I see [us-obj]. [us-subj] [smiles].",
-                    "[us-subj] [wants] [us-obj] back."
+                    "[us-subj] [wants] [us-obj] back.",
+                    // Task 6.5: live-verify the 4 new synthetic pseudo-verb keys through the
+                    // real production GrammarUtils.GetInflectedString path (no UI clicking --
+                    // this harness already runs automatically at startup, see class comment
+                    // above). "[us] [is] ready." above must stay unchanged (plain [is] regression
+                    // check); these new lines confirm each new key routes through dictVerbs/
+                    // VerbPrefix and renders its own distinct paradigm.
+                    "[us-subj] [is.aux] dismantle [us-obj].",
+                    "[us-subj] [is.cop] ready.",
+                    "[us-subj] [has.obj] a crowbar.",
+                    "У [us-gen] [has.qual] mediocre piloting skills."
                 };
                 foreach (var t in templates)
                 {

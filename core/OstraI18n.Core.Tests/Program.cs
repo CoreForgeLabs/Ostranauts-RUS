@@ -161,8 +161,21 @@ static class Program
             Eq(oldPack.Pronouns.Count.ToString(), newPack.Pronouns.Count.ToString(), "число категорий местоимений совпадает");
             True(PronounsEqual(oldPack.Pronouns, newPack.Pronouns), "словарь Pronouns идентичен между раскладками");
 
-            Eq(oldPack.Verbs.Count.ToString(), newPack.Verbs.Count.ToString(), "число глаголов совпадает");
-            True(VerbsEqual(oldPack.Verbs, newPack.Verbs), "словарь Verbs идентичен между раскладками");
+            // Task 6.5 added 4 new synthetic disambiguation keys (is.cop/is.aux/has.obj/
+            // has.qual) directly to the production pack only -- they're intentionally
+            // NOT in the frozen pre-migration legacy_ru fixture (that fixture exists to
+            // prove the Task 5.2 migration was lossless, not to track every subsequent
+            // feature addition). Exclude them here so this test keeps verifying migration
+            // fidelity for every verb that predates Task 6.5, while still asserting the
+            // new keys exist as exactly +4 on top of that unchanged set.
+            var task65NewVerbKeys = new[] { "is.cop", "is.aux", "has.obj", "has.qual" };
+            var newPackVerbsMinusTask65 = new Dictionary<string, VerbForms>(newPack.Verbs);
+            foreach (var k in task65NewVerbKeys) newPackVerbsMinusTask65.Remove(k);
+
+            Eq(oldPack.Verbs.Count.ToString(), newPackVerbsMinusTask65.Count.ToString(), "число глаголов совпадает (за вычетом новых ключей Task 6.5)");
+            True(VerbsEqual(oldPack.Verbs, newPackVerbsMinusTask65), "словарь Verbs идентичен между раскладками (за вычетом новых ключей Task 6.5)");
+            foreach (var k in task65NewVerbKeys)
+                True(newPack.Verbs.ContainsKey(k), "Task 6.5: новый ключ '" + k + "' присутствует в production verbs.json");
 
             Eq(oldPack.Strings.Count.ToString(), newPack.Strings.Count.ToString(), "число строк совпадает");
             True(StringsEqual(oldPack.Strings, newPack.Strings), "словарь Strings идентичен между раскладками");

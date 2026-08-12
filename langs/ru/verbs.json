@@ -10,6 +10,29 @@
       "были"
     ]
   },
+  "is.cop": {
+    "_comment": "Task 6.5: explicit pure-copula sense, identical paradigm to 'is'. New translations that specifically mean 'to be [adjective/noun]' (not 'to be about to X') should prefer this key over the overloaded plain 'is' so intent is unambiguous in the source text; existing '[is]' usages are untouched.",
+    "kind": "copula",
+    "omitPresent": true,
+    "past": [
+      "был",
+      "была",
+      "было",
+      "были"
+    ]
+  },
+  "is.aux": {
+    "_comment": "Task 6.5: 'to be going to / to be about to' auxiliary sense. Unlike 'is'/'is.cop' this is a REAL present-tense verb ('собираться'), not an omitted copula -- English 'is going to demolish' needs an actual Russian verb, not silence.",
+    "kind": "verb",
+    "present": [
+      "собираюсь",
+      "собираешься",
+      "собирается",
+      "собирается",
+      "собираются",
+      "собирается"
+    ]
+  },
   "was": {
     "present": [
       "был",
@@ -69,6 +92,23 @@
       "имеют",
       "имеет"
     ]
+  },
+  "has.obj": {
+    "_comment": "Task 6.5: explicit 'owns a physical object' sense, identical paradigm to 'has' ('имеет лом' = has a crowbar). New translations that specifically mean object-possession should prefer this key over the overloaded plain 'has'; existing '[has]' usages are untouched.",
+    "kind": "verb",
+    "present": [
+      "имею",
+      "имеешь",
+      "имеет",
+      "имеет",
+      "имеют",
+      "имеет"
+    ]
+  },
+  "has.qual": {
+    "_comment": "Task 6.5: 'has a quality/attribute' sense (e.g. 'has poor piloting skills'). Russian expresses this idiom as 'U <genitive pronoun> <noun phrase>' (у тебя плохие навыки), a possessive prepositional phrase, NOT a conjugated verb -- there is no Russian verb slot to fill at the '[has.qual]' token position at all. Modeled as an omit-present copula (kind=copula, omitPresent=true, like 'is'/'is.cop') so VerbPrefix silently drops the token and absorbs the preceding space, exactly like it already does for a dropped 'is' copula. CONVENTION for Task 6.7: the translator writes the 'У [us-gen]' possessive phrase directly in the surrounding RU sentence themselves, BEFORE the '[has.qual]' token; '[has.qual]' itself renders nothing and exists only so the token still parses/dispatches to GrammarUtils.Verb (routing through dictVerbs) instead of falling through as an unrecognized literal. Example: EN '[us] [has.qual] poor piloting skills.' -> RU 'У [us-gen] [has.qual] плохие навыки пилотирования.' -> 'У тебя плохие навыки пилотирования.'",
+    "kind": "copula",
+    "omitPresent": true
   },
   "had": {
     "present": [
