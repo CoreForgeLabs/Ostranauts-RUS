@@ -190,6 +190,44 @@ static class Program
             new[] { "Root", "A", "B" });
         Eq(eq3 ? "yes" : "no", "no", "разная длина пути не совпадает");
 
+        Console.WriteLine("TokenResolver / MorphRules (Task 6.3)");
+        {
+            // Table + rules loaded from the real production data (langs/ru/named_forms.json,
+            // langs/ru/morph_rules.json) via the same langsDir used by the PackLoader section above.
+            var resolver = TokenResolver.Load(langsDir, "ru");
+
+            // (a) лемма из таблицы отдаёт запрошенный падеж.
+            Eq(resolver.Resolve("AABarTechnoLowPass", null, "gen"), "Раковины", "таблица: strName в named_forms.json отдаёт запрошенный падеж (gen)");
+            Eq(resolver.Resolve("AABarTechnoLowPass", null, "dat"), "Раковине", "таблица: тот же strName, другой падеж (dat)");
+            Eq(resolver.Resolve("AABarTechnoLowPass", null, "nom"), "Раковина", "таблица: nom отдаёт исходный текст без изменений");
+
+            var missBefore = resolver.MissCount;
+
+            // (b) лемма вне таблицы, но текст подходит под правило MorphRules -- склонённая форма, не именительный.
+            var declinedMasc = resolver.Resolve("QA_NOT_IN_TABLE_SAILOR", "Матрос", "gen");
+            Eq(declinedMasc, "Матроса", "правило: муж.р. согласная основа, gen через суффикс");
+            True(declinedMasc != "Матрос", "правило: результат отличается от исходного nom (не просто фолбэк)");
+
+            var declinedFem = resolver.Resolve("QA_NOT_IN_TABLE_ROOM", "Комната", "gen");
+            Eq(declinedFem, "Комнаты", "правило: жен.р. основа на -а, gen через суффикс");
+
+            Eq(resolver.MissCount.ToString(), missBefore.ToString(), "правило сработало -- счётчик промахов не увеличился");
+
+            // (c) неизвестное окончание -- ни таблицы, ни правила; nom без изменений + счётчик промахов +1.
+            var missBeforeUnknown = resolver.MissCount;
+            var unresolved = resolver.Resolve("QA_NOT_IN_TABLE_UNKNOWN", "Xyz", "gen");
+            Eq(unresolved, "Xyz", "неизвестное окончание: возвращается nom (исходный текст) без изменений");
+            Eq(resolver.MissCount.ToString(), (missBeforeUnknown + 1).ToString(), "неизвестное окончание: счётчик промахов увеличился ровно на 1");
+
+            var missBeforeSecond = resolver.MissCount;
+            resolver.Resolve("QA_NOT_IN_TABLE_UNKNOWN2", "Qwerty", "ins");
+            Eq(resolver.MissCount.ToString(), (missBeforeSecond + 1).ToString(), "повторный промах увеличивает счётчик ещё на 1 (не защёлкивается)");
+
+            // Доп. проверки устойчивости: пустой/null вход не должен падать с исключением.
+            Eq(resolver.Resolve(null, null, "gen"), "", "null strName и null shortName не роняют резолвер, отдают пустую строку");
+            Eq(resolver.Resolve("QA_EMPTY", "", "gen"), "", "пустая строка ShortName возвращается как есть, без исключения");
+        }
+
         Console.WriteLine(failed == 0 ? "ALL PASS" : failed + " FAILED");
         return failed == 0 ? 0 : 1;
     }
