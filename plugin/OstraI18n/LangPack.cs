@@ -53,6 +53,17 @@ namespace OstraI18n
         internal static readonly List<string> OverlayTranslatableFields = new List<string>();
         internal static bool OverlayValid;
 
+        // Task 6.4: table/rule/fallback declension for NAMED objects (e.g. condowners
+        // like "стеллаж"), built from langs/<code>/named_forms.json (Task 6.2) +
+        // morph_rules.json (Task 6.3's MorphRules) via Core's TokenResolver (Task
+        // 6.3). Distinct from Pronouns above: Pronouns handles pronoun-role
+        // substitution (subj/obj/gen/...), Resolver handles declining an actual
+        // noun's text for a requested grammatical case. Null until Load() runs;
+        // never null afterwards -- TokenResolver.Load degrades to empty
+        // table/rules (not an exception) if the JSON files are missing/malformed,
+        // so callers can always call LangPack.Resolver.Resolve(...) once Active.
+        internal static TokenResolver Resolver;
+
         internal static void Load(string dir, string lang, bool formalYou)
         {
             Lang = lang;
@@ -133,6 +144,19 @@ namespace OstraI18n
 
             Plugin.Log.LogInfo("[i18n] pack " + lang + " [" + packDir + "]: " + Pronouns.Count + " pronoun cats, "
                 + Verbs.Count + " verbs, " + Strings.Count + " strings");
+
+            // Task 6.4: load named_forms.json/morph_rules.json (Task 6.2/6.3 outputs)
+            // and build the live TokenResolver. TokenResolver.Load takes the langs/
+            // dir + short code convention (same "code" resolved above), always
+            // matching the SAME packDir this LangPack load just used -- so if this
+            // ever loaded the legacy layout (preferNew=false), the resolver would
+            // look for named_forms.json/morph_rules.json in langsDir/<code>/ which
+            // may not exist for that language; TokenResolver.Load degrades to an
+            // empty table/ruleset rather than throwing in that case, and Resolve()
+            // just falls through to nominative (MissCount increments).
+            Resolver = TokenResolver.Load(langsDir, code);
+            Plugin.Log.LogInfo("[i18n] token resolver [" + code + "]: loaded (named_forms.json + morph_rules.json under "
+                + Path.Combine(langsDir, code) + ")");
         }
     }
 }

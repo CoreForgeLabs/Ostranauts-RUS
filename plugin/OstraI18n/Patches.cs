@@ -14,6 +14,25 @@ namespace OstraI18n
             if (_warned.Add(key)) Plugin.Log.LogWarning(msg);
         }
 
+        // Task 6.4: grammatical CASE codes (mirrors pack.json's "cases" array) --
+        // NOT person-role pronoun categories like "subj"/"pos"/"obj"/"reflexive"/
+        // "contractIs" etc. A token category in this set means "decline the actual
+        // noun text for this case" (TokenResolver.Resolve against named_forms.json/
+        // morph_rules.json); a category NOT in this set means "this is a pronoun
+        // role, not a case" and the existing role-lookup logic below (LangPack.
+        // Pronouns / GrammarUtils.partsOfSpeechStr, indexed by person) applies
+        // unchanged. "nom" is deliberately excluded: no data file emits a literal
+        // "[x-nom]" token (nominative is the unmarked/default token form, e.g.
+        // plain "[them]"), so there is nothing that would ever need to look it up
+        // here -- and the first-mention branch's existing ShortName-append
+        // behavior is already correct nominative Russian. Only "gen" has live pack
+        // data behind it as of this task (Task 6.4 scope); dat/acc/ins/prep are
+        // listed for when future tasks add pronoun-category/named-forms data for
+        // them, but with no such data yet TokenResolver.Resolve would just fall
+        // through to its own nominative/no-op fallback (layer C) for those codes.
+        private static readonly HashSet<string> DeclinableCases =
+            new HashSet<string> { "gen", "dat", "acc", "ins", "prep" };
+
         // Localisation.Get -> report configured language to anything that asks
         public static void LocalisationGetPostfix(ref string __result)
         {
@@ -117,7 +136,17 @@ namespace OstraI18n
 
                 if (!ent.named && ent.CondOwner != null && ent.InflectionIndex != GrammarUtils.PronounInflection.Second)
                 {
-                    GrammarUtils.interactionOutput.Append(GrammarUtils.SetCase(ent.CondOwner.ShortName));
+                    // Task 6.4: first mention of a named object used to always append
+                    // ShortName unconditionally, i.e. nominative regardless of which
+                    // case the token actually requested -- that's the bug this task
+                    // fixes. If the requested category is a real grammatical case
+                    // (see DeclinableCases above), decline the noun via the resolver
+                    // instead of appending it unchanged.
+                    string text = ent.CondOwner.ShortName;
+                    if (DeclinableCases.Contains(tokenData.category) && LangPack.Resolver != null)
+                        text = LangPack.Resolver.Resolve(ent.CondOwner.strName, ent.CondOwner.ShortName, tokenData.category);
+
+                    GrammarUtils.interactionOutput.Append(GrammarUtils.SetCase(text));
                     if (tokenData.category == "subj") ent.lastSubjectiveWasPronoun = false;
                     GrammarUtils.caret = GrammarUtils.interactionOutput.Length - 1;
                     ent.named = true;
