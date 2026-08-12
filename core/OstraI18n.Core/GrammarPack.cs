@@ -27,6 +27,15 @@ namespace OstraI18n.Core
         // true, если каталог не содержал pack.json и пришлось читать старую раскладку
         // (grammar.json + verbs.json + strings.json).
         public bool UsedLegacyLayout;
+
+        // Task 5.4: декларативные карты контент-оверлея (ContentOverlay.cs), читаемые
+        // из pack.json -> "overlay" -> {categoryToField, translatableFields}.
+        // Заполняются только если раскладка новая (pack.json) И секция "overlay"
+        // присутствует и оба подполя непусты — иначе OverlayValid остаётся false и
+        // вызывающий код (ContentOverlay) обязан использовать встроенный дефолт.
+        public readonly Dictionary<string, string> OverlayCategoryToField = new Dictionary<string, string>(StringComparer.Ordinal);
+        public readonly List<string> OverlayTranslatableFields = new List<string>();
+        public bool OverlayValid;
     }
 
     /// Читает языковой пакет из каталога `dir`, поддерживая обе раскладки:
@@ -52,6 +61,32 @@ namespace OstraI18n.Core
                 if (root.TryGetProperty("pronounCategories", out var cats) && cats.ValueKind == JsonValueKind.Object)
                     foreach (var kv in cats.EnumerateObject())
                         result.Pronouns[kv.Name] = ToStrArray(kv.Value);
+
+                if (root.TryGetProperty("overlay", out var overlay) && overlay.ValueKind == JsonValueKind.Object)
+                {
+                    Dictionary<string, string> c2f = null;
+                    List<string> fields = null;
+                    if (overlay.TryGetProperty("categoryToField", out var c2fEl) && c2fEl.ValueKind == JsonValueKind.Object)
+                    {
+                        c2f = new Dictionary<string, string>(StringComparer.Ordinal);
+                        foreach (var kv in c2fEl.EnumerateObject())
+                            if (kv.Value.ValueKind == JsonValueKind.String) c2f[kv.Name] = kv.Value.GetString();
+                    }
+                    if (overlay.TryGetProperty("translatableFields", out var tfEl) && tfEl.ValueKind == JsonValueKind.Array)
+                    {
+                        fields = new List<string>();
+                        foreach (var e in tfEl.EnumerateArray())
+                            if (e.ValueKind == JsonValueKind.String) fields.Add(e.GetString());
+                    }
+                    // Malformed/empty overlay section -> treated as absent; OverlayValid
+                    // stays false and the caller falls back to its built-in default.
+                    if (c2f != null && c2f.Count > 0 && fields != null && fields.Count > 0)
+                    {
+                        foreach (var kv in c2f) result.OverlayCategoryToField[kv.Key] = kv.Value;
+                        result.OverlayTranslatableFields.AddRange(fields);
+                        result.OverlayValid = true;
+                    }
+                }
             }
             else
             {

@@ -27,7 +27,14 @@ namespace OstraI18n
     {
         // категория (папка, которую игра грузит в один словарь через LoadModJsons)
         // -> имя публичного статического поля DataHandler
-        private static readonly Dictionary<string, string> CategoryToField = new Dictionary<string, string>
+        //
+        // Task 5.4: это теперь только встроенный ДЕФОЛТ. Основной источник —
+        // langs/ru/pack.json -> "overlay" (см. LangPack.OverlayCategoryToField /
+        // OverlayTranslatableFields, читается GrammarPackLoader). Если секция
+        // overlay в pack.json отсутствует/пуста/повреждена, Init() ниже оставляет
+        // CategoryToField/TranslatableFields указывающими на эти дефолтные
+        // таблицы — деплой не ломается даже с повреждённым pack.json.
+        private static readonly Dictionary<string, string> DefaultCategoryToField = new Dictionary<string, string>
         {
             { "interactions", "dictInteractions" },
             { "careers", "dictCareers" },
@@ -53,12 +60,18 @@ namespace OstraI18n
             { "tips", "dictTips" },
         };
 
-        private static readonly HashSet<string> TranslatableFields = new HashSet<string>
+        private static readonly HashSet<string> DefaultTranslatableFields = new HashSet<string>
         {
             "strTitle", "strDesc", "strTooltip", "strNameFriendly", "strNameShort", "strFriendlyName",
             "strArticleBody", "strArticleTitle", "strNodeLabel", "strBody", "strDescription",
             "strRequirementDescription", "strFriendlyDescription", "description",
         };
+
+        // Эффективные таблицы, используемые при применении оверлея. По умолчанию
+        // указывают на встроенный дефолт; Init() переключает их на данные из
+        // pack.json, если те валидны (см. LangPack.OverlayValid).
+        private static Dictionary<string, string> CategoryToField = DefaultCategoryToField;
+        private static HashSet<string> TranslatableFields = DefaultTranslatableFields;
 
         public static int Applied;
         public static int Orphans;
@@ -70,6 +83,23 @@ namespace OstraI18n
         {
             _pluginDir = pluginDir;
             _langCode = langCode;
+
+            if (LangPack.OverlayValid && LangPack.OverlayCategoryToField.Count > 0 && LangPack.OverlayTranslatableFields.Count > 0)
+            {
+                CategoryToField = LangPack.OverlayCategoryToField;
+                TranslatableFields = new HashSet<string>(LangPack.OverlayTranslatableFields);
+                Plugin.Log.LogInfo("[i18n] контент-оверлей: карты загружены из pack.json (categoryToField="
+                    + CategoryToField.Count + ", translatableFields=" + TranslatableFields.Count + ")");
+            }
+            else
+            {
+                CategoryToField = DefaultCategoryToField;
+                TranslatableFields = DefaultTranslatableFields;
+                Plugin.Log.LogInfo("[i18n] контент-оверлей: секция overlay в pack.json отсутствует/пуста/повреждена, "
+                    + "используется встроенный дефолт (categoryToField=" + CategoryToField.Count
+                    + ", translatableFields=" + TranslatableFields.Count + ")");
+            }
+
             var target = AccessTools.Method(typeof(DataHandler), "AllPostLoadAsync");
             if (target == null)
             {

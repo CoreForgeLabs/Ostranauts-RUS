@@ -145,6 +145,12 @@ static class Program
 
             Eq(oldPack.Strings.Count.ToString(), newPack.Strings.Count.ToString(), "число строк совпадает");
             True(StringsEqual(oldPack.Strings, newPack.Strings), "словарь Strings идентичен между раскладками");
+
+            Console.WriteLine("GrammarPackLoader overlay (Task 5.4)");
+            True(!oldPack.OverlayValid, "старая раскладка (grammar.json) не содержит overlay -> OverlayValid=false");
+            True(newPack.OverlayValid, "новая раскладка (pack.json) содержит overlay -> OverlayValid=true");
+            Eq(newPack.OverlayCategoryToField.Count.ToString(), "22", "categoryToField: 22 записи");
+            Eq(newPack.OverlayTranslatableFields.Count.ToString(), "14", "translatableFields: 14 записей");
         }
 
         Console.WriteLine("PathKey");

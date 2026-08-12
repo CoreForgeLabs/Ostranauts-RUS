@@ -30,6 +30,14 @@ namespace OstraI18n
         // key = English template form as written in verbs.json / templates (e.g. "adds", "is")
         internal static readonly Dictionary<string, VerbForms> Verbs = new Dictionary<string, VerbForms>();
 
+        // Task 5.4: декларативные карты контент-оверлея (ContentOverlay.CategoryToField /
+        // TranslatableFields), считанные из pack.json -> "overlay". OverlayValid=false
+        // means pack.json's overlay section was absent/empty/malformed - ContentOverlay
+        // must fall back to its own built-in default in that case.
+        internal static readonly Dictionary<string, string> OverlayCategoryToField = new Dictionary<string, string>();
+        internal static readonly List<string> OverlayTranslatableFields = new List<string>();
+        internal static bool OverlayValid;
+
         internal static void Load(string dir, string lang, bool formalYou)
         {
             Lang = lang;
@@ -74,6 +82,10 @@ namespace OstraI18n
             foreach (var kv in result.Pronouns) Pronouns[kv.Key] = kv.Value;
             foreach (var kv in result.Verbs) Verbs[kv.Key] = kv.Value;
             foreach (var kv in result.Strings) Strings[kv.Key] = kv.Value;
+
+            OverlayValid = result.OverlayValid;
+            foreach (var kv in result.OverlayCategoryToField) OverlayCategoryToField[kv.Key] = kv.Value;
+            OverlayTranslatableFields.AddRange(result.OverlayTranslatableFields);
 
             Plugin.Log.LogInfo("[i18n] pack " + lang + " [" + packDir + "]: " + Pronouns.Count + " pronoun cats, "
                 + Verbs.Count + " verbs, " + Strings.Count + " strings");
