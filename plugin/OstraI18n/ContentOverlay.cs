@@ -100,6 +100,8 @@ namespace OstraI18n
                     + ", translatableFields=" + TranslatableFields.Count + ")");
             }
 
+            CheckFieldDiscovery();
+
             var target = AccessTools.Method(typeof(DataHandler), "AllPostLoadAsync");
             if (target == null)
             {
@@ -108,6 +110,75 @@ namespace OstraI18n
             }
             harmony.Patch(target, prefix: new HarmonyMethod(
                 typeof(ContentOverlay).GetMethod(nameof(ApplyPrefix), BindingFlags.NonPublic | BindingFlags.Static)));
+        }
+
+        // Task 5.5: рефлексией перечисляет публичные статические поля
+        // Dictionary<string,*> у DataHandler и для каждой записи CategoryToField,
+        // чьё целевое поле среди них не найдено, логирует предупреждение. Это
+        // ловит переименование/удаление поля в DataHandler при обновлении игры
+        // (риск из Р6: "Переименование поля в DataHandler -> Категория молча
+        // отвалится") ДО того, как категория молча перестанет применяться —
+        // не дожидаясь запуска ApplyCategory (который предупреждает только для
+        // категорий, у которых есть файл данных в data/).
+        private static void CheckFieldDiscovery()
+        {
+            var discovered = new HashSet<string>();
+            foreach (var f in typeof(DataHandler).GetFields(BindingFlags.Public | BindingFlags.Static))
+            {
+                if (!f.FieldType.IsGenericType) continue;
+                if (f.FieldType.GetGenericTypeDefinition() != typeof(Dictionary<,>)) continue;
+                if (f.FieldType.GetGenericArguments()[0] != typeof(string)) continue;
+                discovered.Add(f.Name);
+            }
+
+            foreach (var kv in CategoryToField)
+            {
+                if (!discovered.Contains(kv.Value))
+                {
+                    Plugin.Log.LogWarning("[i18n] контент-оверлей: WARN: категория " + kv.Key + " -> поле " + kv.Value + " отсутствует");
+                }
+            }
+        }
+
+        // Task 5.5: сравнивает счётчик Applied с эталоном из baseline.json и
+        // предупреждает, если он упал ниже 90% (Р6: "Applied ниже 90% от
+        // записанного в baseline.json -> предупреждение в лог"). Диагностика
+        // read-only: не бросает исключений и не является фатальной ни при
+        // отсутствии, ни при повреждении файла — в этом случае просто
+        // пропускает проверку и объясняет почему.
+        private static void CheckBaseline(string pluginDir, string langCode)
+        {
+            try
+            {
+                var baselinePath = Path.Combine(pluginDir, "langs", langCode, "baseline.json");
+                if (!File.Exists(baselinePath))
+                {
+                    Plugin.Log.LogInfo("[i18n] контент-оверлей: baseline.json не найден (" + baselinePath
+                        + "), проверка регрессии Applied пропущена");
+                    return;
+                }
+
+                using var doc = JsonDocument.Parse(File.ReadAllText(baselinePath));
+                if (!doc.RootElement.TryGetProperty("appliedReference", out var refEl)
+                    || refEl.ValueKind != JsonValueKind.Number || !refEl.TryGetInt32(out var reference) || reference <= 0)
+                {
+                    Plugin.Log.LogWarning("[i18n] контент-оверлей: baseline.json повреждён или не содержит "
+                        + "положительного числового поля appliedReference, проверка регрессии Applied пропущена");
+                    return;
+                }
+
+                if (Applied < 0.9 * reference)
+                {
+                    var pct = (100.0 * Applied / reference).ToString("F1");
+                    Plugin.Log.LogWarning("[i18n] контент-оверлей: WARN: Applied=" + Applied
+                        + " ниже 90% от эталона baseline.json (reference=" + reference + ", " + pct + "%)");
+                }
+            }
+            catch (Exception ex)
+            {
+                Plugin.Log.LogWarning("[i18n] контент-оверлей: не удалось прочитать baseline.json, "
+                    + "проверка регрессии Applied пропущена: " + ex.Message);
+            }
         }
 
         private static void ApplyPrefix()
@@ -134,6 +205,8 @@ namespace OstraI18n
             }
 
             Plugin.Log.LogInfo("[i18n] контент-оверлей: применено полей " + Applied + ", сирот " + Orphans);
+
+            CheckBaseline(pluginDir, langCode);
         }
 
         private static void ApplyCategory(string category, string fieldName, string jsonPath)
