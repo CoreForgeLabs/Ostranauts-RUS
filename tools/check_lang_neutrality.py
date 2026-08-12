@@ -113,17 +113,26 @@ controller decisions):
      что и для скобок вызова) и исключает всё, что внутри. НАМЕРЕННО не
      распространяется на весь файл/класс — только на конкретный
      перечисленный метод.
-  4. Config.Bind description-текст (мод-конфиг UI, BepInEx config-меню,
-     не игровой контент): кириллица на строке, содержащей "Config.Bind" —
-     тот же построчный механизм, что уже использовался в раунде 1 для
-     литералов "Russian"/"ru" на такой строке (см. RU_LITERAL_RE-секцию
-     ниже), теперь применяется и к кириллице. Построчно, а не по всему
-     файлу/вызову: в этой кодовой базе каждый вызов Config.Bind занимает
-     ровно одну строку, так что построчная и argument-span-версии сейчас
-     дают идентичный результат; если это когда-нибудь перестанет быть так
-     (многострочный Config.Bind, или ДРУГОЕ, несвязанное нарушение на той
-     же строке) — граница станет менее точной, это осознанное упрощение,
-     а не недосмотр.
+  4. Config.Bind (мод-конфиг UI, BepInEx config-меню, не игровой контент):
+     дефолтное значение конфига (например "Russian" в Config.Bind(...,
+     "Language", "Russian", ...) — legitимate по формулировке исходного
+     брифа Task 5.6) и текст-описание опции для config-меню (например
+     кириллица в Config.Bind(..., "QaMode", false, "true = псевдоязык...")).
+     ИСПРАВЛЕНО в четвёртом раунде (finding ревью: было построчным —
+     "любая кириллица/лит-литерал НА ТОЙ ЖЕ СТРОКЕ, что и текст
+     Config.Bind" — конкретно продемонстрированная дыра: строка вида
+     `Config.Bind("G","K",1,"desc") + "Привет игрок это не Config.Bind
+     текст"` целиком исключалась бы, включая НЕСВЯЗАННУЮ хардкоженную
+     строку после вызова). Теперь — ТОЧНО ТАКОЙ ЖЕ span-механизм, что и
+     категории 1/2 (`find_call_argument_spans()`), только с отдельным
+     регэкспом `CONFIG_BIND_RE` и отдельной, не смешиваемой с
+     internal-tooling меткой в выводе ("Config.Bind argument"): находится
+     сам вызов `Config.Bind(`, скобки сопоставляются посимвольным
+     автоматом (тот же, что и для Log/Errors.Add), исключение — только
+     диапазон [открывающая '(' ; закрывающая ')'] ЭТОГО КОНКРЕТНОГО
+     вызова. Всё, что физически лежит СНАРУЖИ скобок этого вызова (даже
+     на той же строке — до или после `;`), больше НЕ исключается и
+     репортится как обычная находка.
 
 Запуск: python check_lang_neutrality.py
 """
@@ -145,6 +154,12 @@ INTERNAL_TOOLING_CALL_RE = re.compile(
     r'|Errors\.Add'                                     # diagnostic-collection sink
     r')\s*\('
 )
+
+# Category 4 from the docstring above: BepInEx Config.Bind(...) calls -- kept
+# as its OWN regex/exemption category (not folded into
+# INTERNAL_TOOLING_CALL_RE) because it's conceptually different (mod-config
+# UI text, not developer diagnostics) and gets its own label in the output.
+CONFIG_BIND_RE = re.compile(r'(?<![A-Za-z0-9_.])Config\.Bind\s*\(')
 
 # Category 3 from the docstring above: methods that exist ONLY to write
 # QA/debug-only diagnostic output (never game-facing translated text), where
@@ -393,13 +408,15 @@ def _find_matching_close_brace(text, open_idx):
     return n - 1
 
 
-def find_call_argument_spans(stripped_text):
+def find_call_argument_spans(stripped_text, call_re):
     """Returns a list of (open_paren_idx, close_paren_idx) character-offset
-    spans covering the argument list of every INTERNAL_TOOLING_CALL_RE match
-    (Plugin.Log.Log*/Log.Log*/log.Log*/Errors.Add) found in the
-    (comment-stripped) file text."""
+    spans covering the argument list of every `call_re` match found in the
+    (comment-stripped) file text. Generic over the call-matching regex so
+    the same precise, string/nesting-aware paren-matching logic backs every
+    call-based exemption category (INTERNAL_TOOLING_CALL_RE, CONFIG_BIND_RE)
+    instead of duplicating it per category."""
     spans = []
-    for m in INTERNAL_TOOLING_CALL_RE.finditer(stripped_text):
+    for m in call_re.finditer(stripped_text):
         open_idx = m.end() - 1
         assert stripped_text[open_idx] == "("
         close_idx = _find_matching_close_paren(stripped_text, open_idx)
@@ -429,38 +446,48 @@ def _in_any_span(offset, spans):
     return any(lo <= offset <= hi for lo, hi in spans)
 
 
+def _all_in_any_span(offsets, spans):
+    return all(_in_any_span(o, spans) for o in offsets)
+
+
 def check_file(path, rel_posix_path):
     """Возвращает (findings, exceptions) — оба списки (line_no, text)."""
     findings = []
     exceptions = []
     raw = io.open(path, encoding="utf-8-sig").read()
     stripped = strip_comments(raw)
-    tooling_spans = find_call_argument_spans(stripped) + find_whitelisted_method_body_spans(rel_posix_path, stripped)
+    tooling_spans = (find_call_argument_spans(stripped, INTERNAL_TOOLING_CALL_RE)
+                      + find_whitelisted_method_body_spans(rel_posix_path, stripped))
+    config_bind_spans = find_call_argument_spans(stripped, CONFIG_BIND_RE)
 
     stripped_lines = stripped.split("\n")
     line_offset = 0
     for idx, line in enumerate(stripped_lines):
         line_no = idx + 1
-        is_config_bind_line = "Config.Bind" in line  # category 4: mod-config UI text, see docstring
 
         cyr_matches = list(CYRILLIC_RE.finditer(line))
         if cyr_matches:
             offsets = [line_offset + m.start() for m in cyr_matches]
             snippet = line.strip()
-            if is_config_bind_line or all(_in_any_span(o, tooling_spans) for o in offsets):
+            if _all_in_any_span(offsets, config_bind_spans):
+                exceptions.append((line_no, "cyrillic (Config.Bind argument): " + snippet))
+            elif _all_in_any_span(offsets, tooling_spans):
+                exceptions.append((line_no, "cyrillic (internal-tooling text): " + snippet))
+            elif _all_in_any_span(offsets, tooling_spans + config_bind_spans):
+                # Mixed: some chars fall in one exempted category, some in
+                # the other, but every char is in SOME exempted span.
                 exceptions.append((line_no, "cyrillic (internal-tooling text): " + snippet))
             else:
-                # At least one Cyrillic char on this line sits outside any
+                # At least one Cyrillic char on this line sits outside every
                 # exempted span -> real finding, not swallowed just because
                 # the line ALSO happens to contain an exempted call.
                 findings.append((line_no, "cyrillic: " + snippet))
 
         for m in RU_LITERAL_RE.finditer(line):
-            if is_config_bind_line:
-                exceptions.append((line_no, "lang-literal (Config.Bind default value): " + line.strip()))
-                continue  # legitimate config default value, C2's explicit exclusion
             offset = line_offset + m.start()
-            if _in_any_span(offset, tooling_spans):
+            if _in_any_span(offset, config_bind_spans):
+                exceptions.append((line_no, "lang-literal (Config.Bind argument): " + line.strip()))
+            elif _in_any_span(offset, tooling_spans):
                 exceptions.append((line_no, "lang-literal (internal-tooling text): " + line.strip()))
             else:
                 findings.append((line_no, "lang-literal: " + line.strip()))
