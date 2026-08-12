@@ -9,12 +9,15 @@ namespace OstraI18n.Core
     {
         private readonly Dictionary<string, object> _entries;
         private readonly string _languageCode;
+        private readonly string _pluralRuleFamily;
         private readonly LanguagePack _fallback;
 
-        public LanguagePack(Dictionary<string, object> entries, string languageCode, LanguagePack fallback)
+        public LanguagePack(Dictionary<string, object> entries, string languageCode, LanguagePack fallback,
+            string pluralRuleFamily = null)
         {
             _entries = entries ?? new Dictionary<string, object>();
             _languageCode = languageCode;
+            _pluralRuleFamily = pluralRuleFamily;
             _fallback = fallback;
         }
 
@@ -38,7 +41,7 @@ namespace OstraI18n.Core
             {
                 if (v is Dictionary<string, string> forms)
                 {
-                    var cat = PluralRule.Category(_languageCode, count);
+                    var cat = PluralRule.Category(_pluralRuleFamily, count);
                     if (forms.TryGetValue(cat, out var form)) return form;
                     if (forms.TryGetValue("other", out var other)) return other;
                 }

@@ -71,21 +71,28 @@ static class Program
         Eq(MethodKey.Normalize("A.B"), "A.B", "plain type unchanged");
         Eq(MethodKey.Make("A.B/Nested", "Refresh", 2), "A.B+Nested::Refresh/2", "make key");
 
-        Console.WriteLine("PluralRule (русский)");
-        const string ru = "ru";
-        Eq(PluralRule.Category(ru, 1),   "one",  "1 предмет");
-        Eq(PluralRule.Category(ru, 2),   "few",  "2 предмета");
-        Eq(PluralRule.Category(ru, 5),   "many", "5 предметов");
-        Eq(PluralRule.Category(ru, 11),  "many", "11 предметов");
-        Eq(PluralRule.Category(ru, 21),  "one",  "21 предмет");
-        Eq(PluralRule.Category(ru, 22),  "few",  "22 предмета");
-        Eq(PluralRule.Category(ru, 0),   "many", "0 предметов");
-        Eq(PluralRule.Category(ru, 114), "many", "114 предметов");
+        Console.WriteLine("PluralRule (slavic family)");
+        // Task 5.6 (C2 fix round): PluralRule.Category now takes a plural-rule
+        // FAMILY id (declared by pack data, e.g. langs/ru/meta.json's
+        // "pluralRuleFamily") instead of a raw language code -- see
+        // PluralRule.cs. Exercise it via the family constant, not a literal
+        // "ru"/"uk"/"pl".
+        const string slavic = PluralRule.Slavic;
+        Eq(PluralRule.Category(slavic, 1),   "one",  "1 предмет");
+        Eq(PluralRule.Category(slavic, 2),   "few",  "2 предмета");
+        Eq(PluralRule.Category(slavic, 5),   "many", "5 предметов");
+        Eq(PluralRule.Category(slavic, 11),  "many", "11 предметов");
+        Eq(PluralRule.Category(slavic, 21),  "one",  "21 предмет");
+        Eq(PluralRule.Category(slavic, 22),  "few",  "22 предмета");
+        Eq(PluralRule.Category(slavic, 0),   "many", "0 предметов");
+        Eq(PluralRule.Category(slavic, 114), "many", "114 предметов");
 
-        Console.WriteLine("PluralRule (английский)");
-        Eq(PluralRule.Category("en", 1), "one",   "1 item");
-        Eq(PluralRule.Category("en", 2), "other", "2 items");
-        Eq(PluralRule.Category("en", 0), "other", "0 items");
+        Console.WriteLine("PluralRule (default family)");
+        Eq(PluralRule.Category("default", 1), "one",   "1 item");
+        Eq(PluralRule.Category("default", 2), "other", "2 items");
+        Eq(PluralRule.Category("default", 0), "other", "0 items");
+        Eq(PluralRule.Category(null, 1), "one",   "null family falls back to default (1)");
+        Eq(PluralRule.Category(null, 2), "other", "null family falls back to default (2)");
 
         Console.WriteLine("LanguagePack");
         var en = new LanguagePack(
@@ -100,7 +107,7 @@ static class Program
                     ["one"] = "{0} предмет", ["few"] = "{0} предмета", ["many"] = "{0} предметов"
                 }
             },
-            "ru", en);
+            "ru", en, PluralRule.Slavic);
 
         Eq(ru2.Get("GUI_OK"), "Хорошо", "прямое попадание");
         Eq(ru2.Get("GUI_ONLY_EN"), "English only", "fallback в английский");

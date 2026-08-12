@@ -20,7 +20,22 @@ namespace OstraI18n
     {
         internal static bool Active;
         internal static string Lang = "English";
-        internal static string YouWord = "ты";
+        // Task 5.6 (C2 fix round): emergency-only fallback for the catastrophic
+        // case where the pack provides no "you" field at all. Deliberately a
+        // language-neutral English placeholder, not a hardcoded Russian word
+        // ("ты"/"вы") -- if this ever actually shows up in-game it is instantly
+        // recognizable as "pack data failed to load", instead of silently
+        // masquerading as correct Russian text. See Load() below: this is only
+        // used when the pack genuinely omits "you", and that case now also
+        // logs a warning (matching how GrammarPackLoader/ContentOverlay already
+        // log-and-fall-back rather than throw on other kinds of missing data).
+        internal static string YouWord = "you";
+        // Resolved short ISO code the active pack was actually loaded from
+        // (e.g. "ru"), computed once in Load() below from the same manifest/
+        // convention logic used to find the pack directory. Exposed so callers
+        // that need a language code (I18n.Init, ContentOverlay.Init) reuse this
+        // instead of hardcoding a language literal of their own (C2, Task 5.6).
+        internal static string Code = "en";
 
         // pronoun category -> 6 forms indexed by PronounInflection: [I, you, he, she, they, it]
         internal static readonly Dictionary<string, string[]> Pronouns = new Dictionary<string, string[]>();
@@ -43,7 +58,17 @@ namespace OstraI18n
             Lang = lang;
             Active = !string.Equals(lang, "English", StringComparison.OrdinalIgnoreCase);
             if (!Active) return;
-            if (formalYou) YouWord = "вы";
+            // FormalYou (vy-form) is not yet a field the pack format supports
+            // (langs/ru/pack.json has a single "you", no formal variant) --
+            // previously this hardcoded a Russian "вы" override here, which
+            // both violated C2 AND was silently discarded a few lines down
+            // whenever the pack itself provided "you" (which it always does
+            // for ru today), i.e. it never actually took effect. Rather than
+            // re-add a hardcoded Russian word, surface the gap loudly so it's
+            // visible instead of silently doing nothing.
+            if (formalYou)
+                Plugin.Log.LogWarning("[i18n] FormalYou=true, but the active pack format has no formal-address "
+                    + "field yet - config option currently has no effect (tracked for a future grammar-data task)");
 
             var langsDir = Path.Combine(dir, "langs");
             var manifestPath = Path.Combine(langsDir, "languages.json");
@@ -66,6 +91,7 @@ namespace OstraI18n
             string code = folder.StartsWith("lang_", StringComparison.OrdinalIgnoreCase)
                 ? folder.Substring("lang_".Length)
                 : lang.ToLowerInvariant();
+            Code = code;
 
             var newDir = Path.Combine(langsDir, code);
             var oldDir = Path.Combine(langsDir, folder);
@@ -79,6 +105,8 @@ namespace OstraI18n
                 Plugin.Log.LogWarning("[i18n] " + packDir + ": no pack.json found - legacy layout fallback (grammar.json)");
 
             if (result.YouWord != null) YouWord = result.YouWord;
+            else Plugin.Log.LogWarning("[i18n] " + packDir + ": pack has no \"you\" field - keeping placeholder '"
+                + YouWord + "' (grammar output for 2nd person will look wrong until pack.json is fixed)");
             foreach (var kv in result.Pronouns) Pronouns[kv.Key] = kv.Value;
             foreach (var kv in result.Verbs) Verbs[kv.Key] = kv.Value;
             foreach (var kv in result.Strings) Strings[kv.Key] = kv.Value;

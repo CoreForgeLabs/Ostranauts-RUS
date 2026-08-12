@@ -50,7 +50,7 @@ namespace OstraI18n
             VersionGuard.CheckAndLog(Log);
             try
             {
-                I18n.Init(DataDir.Value, "ru");
+                I18n.Init(DataDir.Value, LangPack.Code);
                 I18n.QaMode = QaMode.Value;
                 if (LiteralPatcher.LoadCatalog(DataDir.Value) > 0)
                     LiteralPatcher.ApplyAll(new Harmony(GUID + ".literals"));
@@ -65,7 +65,7 @@ namespace OstraI18n
                 }
             }
             catch (Exception ex) { Log.LogError("[i18n] prefab binder failed: " + ex); }
-            try { ContentOverlay.Init(DataDir.Value, "ru", new Harmony(GUID + ".content")); }
+            try { ContentOverlay.Init(DataDir.Value, LangPack.Code, new Harmony(GUID + ".content")); }
             catch (Exception ex) { Log.LogError("[i18n] content overlay init failed: " + ex); }
             if (QaMode.Value)
             {

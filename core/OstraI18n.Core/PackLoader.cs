@@ -42,7 +42,8 @@ namespace OstraI18n.Core
                 foreach (var f in Directory.GetFiles(uiDir, "*.json"))
                     MergeFile(f, entries);
             }
-            return new LanguagePack(entries, code, fallback);
+            var pluralRuleFamily = ReadPluralRuleFamily(Path.Combine(dir, "meta.json"));
+            return new LanguagePack(entries, code, fallback, pluralRuleFamily);
         }
 
         private static IEnumerable<string> ReadFallback(string metaPath)
@@ -59,6 +60,25 @@ namespace OstraI18n.Core
             }
             catch (Exception ex) { Errors.Add(metaPath + ": " + ex.Message); }
             return result;
+        }
+
+        // Task 5.6 (C2 fix round): plural-rule family is data the pack declares
+        // (e.g. "slavic"), not something PluralRule.cs infers from the language
+        // code itself -- see PluralRule.cs for why. Absent/malformed meta.json
+        // simply yields null, which PluralRule.Category treats as the default
+        // (western two-form) family.
+        private static string ReadPluralRuleFamily(string metaPath)
+        {
+            try
+            {
+                if (!File.Exists(metaPath)) return null;
+                using var doc = JsonDocument.Parse(File.ReadAllText(metaPath));
+                if (doc.RootElement.TryGetProperty("pluralRuleFamily", out var v)
+                    && v.ValueKind == JsonValueKind.String)
+                    return v.GetString();
+            }
+            catch (Exception ex) { Errors.Add(metaPath + ": " + ex.Message); }
+            return null;
         }
 
         private static void MergeFile(string path, Dictionary<string, object> into)

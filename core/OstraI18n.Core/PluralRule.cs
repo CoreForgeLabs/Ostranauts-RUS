@@ -1,23 +1,30 @@
 namespace OstraI18n.Core
 {
-    /// Категории множественного числа по CLDR. Правило выбирается по коду языка,
-    /// а не зашивается в вызывающий код: добавление языка не требует правки C#.
+    /// Категории множественного числа по CLDR. Правило выбирается по СЕМЕЙСТВУ
+    /// плюрализации (pluralRuleFamily), которое языковой пакет объявляет в
+    /// своих данных (meta.json), а НЕ по жёстко зашитому коду языка (C2, Task
+    /// 5.6): чтобы добавить украинский или польский (тоже "slavic"), достаточно
+    /// пометить их meta.json тем же значением "pluralRuleFamily" — правка этого
+    /// файла не требуется. Конечный набор самих АЛГОРИТМОВ (не языков) —
+    /// legitimate код: CLDR определяет фиксированное конечное число таких
+    /// плюральных семейств, это не языко-специфичная ветка, а компактная
+    /// таблица общего назначения.
     public static class PluralRule
     {
-        public static string Category(string languageCode, long n)
+        public const string Slavic = "slavic";
+
+        public static string Category(string pluralRuleFamily, long n)
         {
-            switch (languageCode)
+            switch (pluralRuleFamily)
             {
-                case "ru":
-                case "uk":
-                case "pl":
-                    return Slavic(n);
+                case Slavic:
+                    return SlavicCategory(n);
                 default:
                     return n == 1 ? "one" : "other";
             }
         }
 
-        private static string Slavic(long n)
+        private static string SlavicCategory(long n)
         {
             long abs = n < 0 ? -n : n;
             long mod10 = abs % 10;
