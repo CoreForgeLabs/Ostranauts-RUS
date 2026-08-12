@@ -336,11 +336,17 @@ namespace OstraI18n
                     // this harness already runs automatically at startup, see class comment
                     // above). "[us] [is] ready." above must stay unchanged (plain [is] regression
                     // check); these new lines confirm each new key routes through dictVerbs/
-                    // VerbPrefix and renders its own distinct paradigm.
+                    // VerbPrefix and renders its own distinct paradigm. All templates in this
+                    // array are deliberately EN-only scaffolding (like every template above) --
+                    // has.qual's real "У [x-gen] [has.qual] ..." convention (see verbs.json's
+                    // has.qual _comment and the Task 6.5 report) belongs in actual RU translation
+                    // data under langs/ru/data/, not hardcoded here as a Cyrillic literal; this
+                    // template instead uses an EN placeholder ("AT") in the same slot purely to
+                    // confirm has.qual drops silently with correct space handling, same as [is].
                     "[us-subj] [is.aux] dismantle [us-obj].",
                     "[us-subj] [is.cop] ready.",
                     "[us-subj] [has.obj] a crowbar.",
-                    "У [us-gen] [has.qual] mediocre piloting skills."
+                    "AT [us-gen] [has.qual] mediocre piloting skills."
                 };
                 foreach (var t in templates)
                 {
