@@ -108,7 +108,23 @@ namespace OstraI18n
             else Plugin.Log.LogWarning("[i18n] " + packDir + ": pack has no \"you\" field - keeping placeholder '"
                 + YouWord + "' (grammar output for 2nd person will look wrong until pack.json is fixed)");
             foreach (var kv in result.Pronouns) Pronouns[kv.Key] = kv.Value;
-            foreach (var kv in result.Verbs) Verbs[kv.Key] = kv.Value;
+            int missingNoLonger = 0;
+            foreach (var kv in result.Verbs)
+            {
+                Verbs[kv.Key] = kv.Value;
+                // Task 5.6 (C2 fix round 3): count verbs that fell back to the
+                // language-neutral VerbForms.DefaultNoLongerBefore because
+                // verbs.json didn't declare an explicit "noLonger" override
+                // for them -- same "log loud, don't silently ship a
+                // hardcoded-looking-like-pack-data string" pattern as YouWord
+                // above. One aggregate warning, not one per verb (417 verbs
+                // in the ru pack -- per-verb would be log spam).
+                if (kv.Value.NoLongerBefore == VerbForms.DefaultNoLongerBefore) missingNoLonger++;
+            }
+            if (missingNoLonger > 0)
+                Plugin.Log.LogWarning("[i18n] " + packDir + ": " + missingNoLonger + " of " + result.Verbs.Count
+                    + " verbs have no \"noLonger\" override in verbs.json - using placeholder '"
+                    + VerbForms.DefaultNoLongerBefore + "' (negated grammar output will look wrong until fixed)");
             foreach (var kv in result.Strings) Strings[kv.Key] = kv.Value;
 
             OverlayValid = result.OverlayValid;

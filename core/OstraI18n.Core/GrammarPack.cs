@@ -9,11 +9,24 @@ namespace OstraI18n.Core
     /// связки "быть" (в настоящем времени по-русски опускается).
     public class VerbForms
     {
+        // Task 5.6 (C2 fix round 3): language-neutral placeholder, not a
+        // hardcoded Russian default -- same reasoning as LangPack.YouWord in
+        // the plugin project (see plugin/OstraI18n/LangPack.cs). This text is
+        // appended directly into game-facing translated output
+        // (Patches.cs:69, GrammarUtils.interactionOutput.Append(vf.NoLongerBefore))
+        // whenever a verb's pack data doesn't declare an explicit "noLonger"
+        // override in verbs.json -- today NO verb in langs/ru/verbs.json does,
+        // so this default is what actually ships. Kept as a public const so
+        // the plugin-side loader (LangPack.cs) can detect "still the
+        // placeholder" and log a loud, aggregate warning instead of silently
+        // shipping a Russian string that LOOKS like it came from the pack.
+        public const string DefaultNoLongerBefore = "no longer ";
+
         public string Kind = "verb";          // "verb" | "copula"
         public bool OmitPresent;              // copula: dropped in present tense (Russian)
         public string[] Present;              // [1s, 2s, 3m, 3f, 3pl, 3n]
         public string[] Past;                 // [m, f, n, pl]
-        public string NoLongerBefore = "больше не ";
+        public string NoLongerBefore = DefaultNoLongerBefore;
     }
 
     /// Результат загрузки одного языкового пакета (грамматика+глаголы+строки),
