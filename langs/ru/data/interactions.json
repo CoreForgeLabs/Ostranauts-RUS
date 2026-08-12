@@ -2904,7 +2904,7 @@
     "strDesc": "У [us] нет сигареты для затяжки."
   },
   "SeekDrawCigDenyAirtight": {
-    "strDesc": "[them] не может дотянуться до [them-pos] рта, будучи загерметизированным."
+    "strDesc": "[them] не может дотянуться, будучи загерметизированным: [them-pos] рот вне досягаемости."
   },
   "DrawCig": {
     "strTitle": "Достать сигарету",
@@ -4160,7 +4160,7 @@
   },
   "SOCAskFamilyAcceptSiblings3": {
     "strTitle": "Поговорить о близости с братьями/сёстрами.",
-    "strDesc": "[us] [tells] [them], что [us-subj] [is] очень близок с кем-то из [us-pos] братьев или сестёр."
+    "strDesc": "[us] [tells] [them], что [us-subj] [is] очень близок с кем-то — [us-pos] брат или сестра."
   },
   "SOCAskFamilyAcceptSiblings4": {
     "strTitle": "Поговорить о близости с братьями/сёстрами.",
@@ -6918,7 +6918,7 @@
   },
   "SOCTradeFixerConvoStartBusy": {
     "strTitle": "Признать их (занят)",
-    "strDesc": "[us] [tells] [them], что [us-subj] [is] сейчас по горло в делах, а до кого-то, кроме [us-pos] завсегдатаев, дела нет."
+    "strDesc": "[us] [tells] [them], что [us-subj] [is] сейчас по горло в делах, а [us-pos] круг общения — единственные, до кого есть дело."
   },
   "SOCTradeFixerConvoStartCooldown": {
     "strTitle": "Отшить их",
@@ -9706,7 +9706,7 @@
   },
   "PLOT_Messenger_Offer": {
     "strTitle": "Спросить о карьерных проблемах",
-    "strDesc": "[us] [asks] [them], какая помощь [them-subj] [them-needs] для [them-pos] проблемы."
+    "strDesc": "[us] [asks] [them], какая помощь [them-subj] [them-needs], чтобы [them-pos] вопрос был решён."
   },
   "PLOT_Messenger_OfferReply": {
     "strTitle": "Предложение",
@@ -9802,7 +9802,7 @@
   },
   "PLOT_Messenger_QuestionPay": {
     "strTitle": "Запросить награду за помощь с карьерой",
-    "strDesc": "В надежде на выплату покрупнее, [us] [asks] [them], сколько эта просьба стоит для [them-pos].",
+    "strDesc": "В надежде на выплату покрупнее, [us] [asks] [them], сколько [them-pos] запрос будет стоить.",
     "strTooltip": "[us] просит [them] пообещать награду за помощь. Этот запрос может заставить [them-obj] отказаться или почувствовать негатив к [us]."
   },
   "PLOT_Messenger_QuestionPayReply": {
@@ -10495,19 +10495,19 @@
   },
   "PLOT_MessengerLegal_OfferReply01": {
     "strTitle": "Предложение",
-    "strDesc": "[us] [uses] код, чтобы объяснить щекотливую ситуацию с шантажом, где грозит расправа, если [us-subj] [goes] к властям. [us-subj] [asks] [them] без лишнего шума поговорить с офицером [3rd] от [us-pos] имени."
+    "strDesc": "[us] [uses] код, чтобы объяснить щекотливую ситуацию с шантажом, где грозит расправа, если [us-subj] [goes] к властям. [us-subj] [asks] [them] без лишнего шума поговорить с офицером [3rd] как [us-pos] представитель."
   },
   "PLOT_MessengerLegal_OfferReply02": {
     "strTitle": "Предложение",
-    "strDesc": "[us] [explains] запутанный юридический клубок; [us-subj] [is] в нём из-за владения редким ломом. [us-subj] [says], что [us-obj] очень помогли бы переговоры между [them] и офицером [3rd] от [us-pos] имени."
+    "strDesc": "[us] [explains] запутанный юридический клубок; [us-subj] [is] в нём из-за владения редким ломом. [us-subj] [says], что [us-obj] очень помогли бы переговоры между [them] и офицером [3rd], на которых будет [us-pos] представитель."
   },
   "PLOT_MessengerLegal_OfferReply03": {
     "strTitle": "Предложение",
-    "strDesc": "[us] [describes] сложную проблему юридической ответственности: [us-subj] [is] в тяжелом положении из-за недавней аварии. [us-subj] [says], что [us-obj] это очень помогло бы, если бы [them] не против поговорить с офицером [3rd] от [us-pos] имени."
+    "strDesc": "[us] [describes] сложную проблему юридической ответственности: [us-subj] [is] в тяжелом положении из-за недавней аварии. [us-subj] [says], что [us-obj] это очень помогло бы, если бы [them] не против поговорить с офицером [3rd] как [us-pos] представитель."
   },
   "PLOT_MessengerLegal_OfferReply04": {
     "strTitle": "Предложение",
-    "strDesc": "[us] [needs] в помощи с обеспечением исполнения юридического договора. [us-subj] [asks] [them] поговорить с офицером [3rd] от [us-pos] имени."
+    "strDesc": "[us] [needs] в помощи с обеспечением исполнения юридического договора. [us-subj] [asks] [them] поговорить с офицером [3rd] как [us-pos] представитель."
   },
   "PLOT_MessengerLegal_OfferReply05": {
     "strTitle": "Предложение",
@@ -10515,15 +10515,15 @@
   },
   "PLOT_MessengerLegal_OfferReply06": {
     "strTitle": "Предложение",
-    "strDesc": "[us] [needs] в помощи, чтобы понять юридические тонкости торгового спора, которым манипулируют в интересах Xinhua. [us-subj] [asks] [them] поговорить с офицером [3rd] от [us-pos] имени."
+    "strDesc": "[us] [needs] в помощи, чтобы понять юридические тонкости торгового спора, которым манипулируют в интересах Xinhua. [us-subj] [asks] [them] поговорить с офицером [3rd] как [us-pos] представитель."
   },
   "PLOT_MessengerLegal_OfferReply07": {
     "strTitle": "Предложение",
-    "strDesc": "[us] [claims], что [us-pos] права на интеллектуальную собственность нарушены конкурентом. [us-subj] [asks] [them] поговорить с офицером [3rd] от [us-pos] имени."
+    "strDesc": "[us] [claims], что [us-pos] объект интеллектуальной собственности используется конкурентом. [us-subj] [asks] [them] поговорить с офицером [3rd] как [us-pos] представитель."
   },
   "PLOT_MessengerLegal_OfferReply08": {
     "strTitle": "Предложение",
-    "strDesc": "[us] [is] в неприятной ситуации из-за несоблюдения новых правил местной администрации. [us-subj] [asks] [them] поговорить с офицером [3rd] от [us-pos] имени."
+    "strDesc": "[us] [is] в неприятной ситуации из-за несоблюдения новых правил местной администрации. [us-subj] [asks] [them] поговорить с офицером [3rd] как [us-pos] представитель."
   },
   "PLOT_MessengerLegal_OfferReply09": {
     "strTitle": "Предложение",
@@ -10531,7 +10531,7 @@
   },
   "PLOT_MessengerLegal_OfferReply10": {
     "strTitle": "Предложение",
-    "strDesc": "[us] [requires] помощи в переговорах об отсрочке досрочного погашения долгов. [us-subj] [asks] [them] поговорить с офицером [3rd] от [us-pos] имени."
+    "strDesc": "[us] [requires] помощи в переговорах об отсрочке досрочного погашения долгов. [us-subj] [asks] [them] поговорить с офицером [3rd] как [us-pos] представитель."
   },
   "PLOT_MessengerLegal_OfferReply11": {
     "strTitle": "Предложение",
@@ -10547,15 +10547,15 @@
   },
   "PLOT_MessengerLegal_OfferReply14": {
     "strTitle": "Предложение",
-    "strDesc": "[us] [needs] в помощи с оформлением страхового иска по недавно утраченному лому и другим грузам. [us-subj] [asks] [them] поговорить с офицером [3rd] от [us-pos] имени."
+    "strDesc": "[us] [needs] в помощи с оформлением страхового иска по недавно утраченному лому и другим грузам. [us-subj] [asks] [them] поговорить с офицером [3rd] как [us-pos] представитель."
   },
   "PLOT_MessengerLegal_OfferReply15": {
     "strTitle": "Предложение",
-    "strDesc": "[us] — обладатель прав на освоенную часть станции, и [wants] начать получать ренту и дивиденды, но [needs] в поддержке местной администрации, чтобы делать это безопасно. [us-subj] [asks] [them] поговорить с офицером [3rd] от [us-pos] имени."
+    "strDesc": "[us] — обладатель прав на освоенную часть станции, и [wants] начать получать ренту и дивиденды, но [needs] в поддержке местной администрации, чтобы делать это безопасно. [us-subj] [asks] [them] поговорить с офицером [3rd] как [us-pos] представитель."
   },
   "PLOT_MessengerLegal_OfferReply16": {
     "strTitle": "Предложение",
-    "strDesc": "[us] [has] дело с местными бандами, вымогающими плату за «защиту» [us-pos] бизнеса, и это уже переходит всякие границы. [us-subj] [asks] [them] поговорить с офицером [3rd] от [us-pos] имени."
+    "strDesc": "[us] [has] дело с местными бандами, обкладывающими [us-pos] бизнес данью за «защиту», и это уже переходит всякие границы. [us-subj] [asks] [them] поговорить с офицером [3rd] как [us-pos] представитель."
   },
   "PLOT_MessengerLegal_OfferReply17": {
     "strTitle": "Предложение",
@@ -10937,7 +10937,7 @@
   },
   "PLOT_MessengerTechnical_OfferReply": {
     "strTitle": "Предложение",
-    "strDesc": "[us] [explains] сложную техническую проблему, которая мешает одному из [us-pos] проектов, и [asks] [them] поговорить с [3rd], чтобы выручить [us-obj]."
+    "strDesc": "[us] [explains] сложную техническую проблему, которая тормозит [us-pos] проект, и [asks] [them] поговорить с [3rd], чтобы выручить [us-obj]."
   },
   "PLOT_MessengerTechnical_OfferReply01": {
     "strTitle": "Предложение",
@@ -11735,7 +11735,7 @@
   },
   "PLOT_ScavFetch_Offer": {
     "strTitle": "Спросить о нуждах исследовательского проекта",
-    "strDesc": "[us] [asks] [them], какая помощь [them-subj] [them-needs] для [them-pos] инженерно-исследовательского проекта."
+    "strDesc": "[us] [asks] [them], какая помощь [them-subj] [them-needs], чтобы продвинуть [them-pos] инженерно-исследовательский проект."
   },
   "PLOT_ScavFetch_OfferReply": {
     "strTitle": "Предложение",
@@ -11779,7 +11779,7 @@
   },
   "PLOT_ScavFetch02_Offer": {
     "strTitle": "Спросить о нуждах исследовательского проекта",
-    "strDesc": "[us] [asks] [them], какая помощь [them-subj] [them-needs] для [them-pos] инженерно-исследовательского проекта."
+    "strDesc": "[us] [asks] [them], какая помощь [them-subj] [them-needs], чтобы продвинуть [them-pos] инженерно-исследовательский проект."
   },
   "PLOT_ScavFetch02_OfferReply": {
     "strTitle": "Предложение",
@@ -11831,7 +11831,7 @@
   },
   "PLOT_ScavFetch03_Offer": {
     "strTitle": "Спросить о нуждах исследовательского проекта",
-    "strDesc": "[us] [asks] [them], в какой помощи [them-subj] [them-needs] для [them-pos] исследовательского проекта."
+    "strDesc": "[us] [asks] [them], в какой помощи [them-subj] [them-needs], чтобы продвинуть [them-pos] исследовательский проект."
   },
   "PLOT_ScavFetch03_OfferReply": {
     "strTitle": "Предложение",
@@ -13739,7 +13739,7 @@
   },
   "Plot_WhodunnitBasics": {
     "strTitle": "Определить причину смерти",
-    "strDesc": "Раскрывает одну из [them-pos] смертельных травм."
+    "strDesc": "Раскрывает одну из смертельных травм — [them-pos]."
   },
   "Plot_WhodunnitBasicsDeathHandprint": {
     "strDesc": "[them] не [has] видимой причины смерти, но [them-pos] кожа некротизирована и почернела в форме руки с чрезмерно длинными пальцами. Эта смерть явно неестественна."
@@ -14131,7 +14131,7 @@
   },
   "Plot_Whodunnit_AccuseMurderNotEnough": {
     "strTitle": "Обвинить со слабыми уликами",
-    "strDesc": "[us] [has] слишком мало улик, чтобы выбить признание из [3rd-pos] убийцы."
+    "strDesc": "[us] [has] слишком мало улик, чтобы [3rd-pos] убийца дал признание."
   },
   "Plot_Whodunnit_AccuseMurderNotEnoughReply": {
     "strTitle": "О, пожалуйста",
@@ -14139,7 +14139,7 @@
   },
   "Plot_Whodunnit_AccuseMurderEnough": {
     "strTitle": "Обвинить с твёрдыми уликами",
-    "strDesc": "[us] [has] достаточно улик, чтобы выбить признание из [3rd-pos] убийцы."
+    "strDesc": "[us] [has] достаточно улик, чтобы [3rd-pos] убийца дал признание."
   },
   "Plot_Whodunnit_AccuseMurderEnoughReplyRemorseAccident": {
     "strTitle": "Признаётся",
@@ -14592,11 +14592,11 @@
   },
   "SOCPortAuthorityConnectFail": {
     "strTitle": "Проигнорировать историю",
-    "strDesc": "[us] [is] не в восторге от [them-pos] срочности."
+    "strDesc": "[us] [is] не в восторге: [them-pos] срочность не радует."
   },
   "SOCPortAuthorityConnectSucceed": {
     "strTitle": "Установить контакт",
-    "strDesc": "[us] [appears] под впечатлением от [them-pos] истории. [us-subj] [wishes], чтобы нашлось что-то, чем [us-subj] в силах помочь."
+    "strDesc": "[us] [appears] под впечатлением: [them-pos] история производит сильное впечатление. [us-subj] [wishes], чтобы нашлось что-то, чем [us-subj] в силах помочь."
   },
   "SOCPortAuthorityBluffAuthority": {
     "strTitle": "Притвориться важной шишкой",
@@ -14620,7 +14620,7 @@
   },
   "SOCPortAuthorityFinisherAskForBreakResist": {
     "strTitle": "Отказать: просьба о поблажке",
-    "strDesc": "[us] [says], что если тут каждому комику давать поблажку, [us-subj] останется без [us-pos] работы. [us] [asks] [them] оплатить свой сбор, если есть желание покинуть станцию."
+    "strDesc": "[us] [says], что если тут каждому комику давать поблажку, [us-subj] потеряет [us-pos] пост. [us] [asks] [them] оплатить свой сбор, если есть желание покинуть станцию."
   },
   "SOCPortAuthorityFinisherPromise": {
     "strTitle": "Пообещать заплатить позже",
@@ -15027,7 +15027,7 @@
   },
   "SOCInviteToLoopDenyRepeat": {
     "strTitle": "Отклонить романтическую петлю",
-    "strDesc": "[us] [repeats] свой отказ от [them-pos] предложения, всё сильнее раздражаясь: \"Ты серьёзно пристаёшь ко мне с этим?\""
+    "strDesc": "[us] [repeats], что отказывается принять [them-pos] предложение, всё сильнее раздражаясь: \"Ты серьёзно пристаёшь ко мне с этим?\""
   },
   "SOCInviteToLoopDenyMonoNotSingle": {
     "strTitle": "Отклонить романтическую петлю",
@@ -20345,7 +20345,7 @@
   },
   "PLOT_MedHeist_ResistReturn_Succeed": {
     "strTitle": "Возвращение после успешного дела без поддержки",
-    "strDesc": "[us] [returns], успешно провернув дело даже без [them-pos] поддержки."
+    "strDesc": "[us] [returns], успешно провернув дело: [them-pos] поддержка даже не понадобилась."
   },
   "PLOT_ProspectorFetchGold_PreStartTrigger": {
     "strTitle": "Триггер начала сюжета «Золото старателя»",
@@ -20570,7 +20570,7 @@
   },
   "PLOT_ProspectorFetchGold_Offer": {
     "strTitle": "Обсудить проект по разведке",
-    "strDesc": "[us] [asks] [them], какая помощь [them-subj] [them-needs] для [them-pos] проекта по разведке.",
+    "strDesc": "[us] [asks] [them], какая помощь [them-subj] [them-needs], чтобы [them-pos] проект по разведке продвигался.",
     "strTooltip": "Снова завести разговор о работе за деньги."
   },
   "ChoongPainRoom_1_1_1_1_1_1": {
@@ -21177,7 +21177,7 @@
   },
   "PLOT_ProspectorFetchGold_OfferOpenConvo": {
     "strTitle": "Обсудить проект разведки",
-    "strDesc": "[us] [tells] [them], какая помощь [us-subj] [us-needs] для [us-pos] проекта по разведке."
+    "strDesc": "[us] [tells] [them], какая помощь [us-subj] [us-needs], чтобы [us-pos] проект по разведке продвигался."
   },
   "PLOT_ProspectorFetchGold_AskQuestions": {
     "strTitle": "Задать пару вопросов",
@@ -21186,7 +21186,7 @@
   },
   "PLOT_ProspectorFetchGold_OfferOpenConvo2": {
     "strTitle": "Обсудить проект разведки",
-    "strDesc": "[us] [tells] [them], какая помощь [us-subj] [us-needs] для [us-pos] проекта по разведке."
+    "strDesc": "[us] [tells] [them], какая помощь [us-subj] [us-needs], чтобы [us-pos] проект по разведке продвигался."
   },
   "PLOT_ProspectorFetchGold_OfferReply": {
     "strTitle": "Предложение",
@@ -22129,7 +22129,7 @@
   },
   "PLOT_MedHeist_ResistReturn_Fail": {
     "strTitle": "Вернуться после провала ограбления без поддержки",
-    "strDesc": "[us] [returns], провалив ограбление без [them-pos] поддержки."
+    "strDesc": "[us] [returns], провалив ограбление: [them-pos] поддержка отсутствовала."
   },
   "AVClub_The_Return_Cops_MakeBreak_RunAway": {
     "strDesc": "Ты полагаешься на мудрость толпы.\n\nФлотилия — это лабиринт, и далеко не самый знакомый. Если у кого-то и есть цель, они не останавливаются, чтобы сказать тебе. Ты вступаешь в безумную свалку, время от времени останавливаясь, чтобы прислушаться к звукам АйоСека позади, а на одном запутанном перекрестке — и впереди.\n\nСлипшиеся корабли эхом отзываются на выстрелы и крики. Для АйоСека необычно действовать за пределами их вотчины вокруг Ганимеда, но, как знают хорошо вооруженные обитатели Флотилии, не беспрецедентно. Ты слышишь, когда Айо натыкается на очаг сопротивления: темп стрельбы возрастает, а звучание ответных боеприпасов обретает откровенно незаконный оттенок.\n\nОторвавшись на приличное расстояние от наступающих корпоративных сил, толпа сбавляет ход, и паника сменяется настороженностью. Люди сбиваются в медленно движущиеся кучки, координируя действия, следя за обстановкой и отчаянно пытаясь подключиться к беспроводной mesh-сети.",
@@ -22385,7 +22385,7 @@
   },
   "PLOT_ProspectorBCRSFetchGold_Offer": {
     "strTitle": "Спросить о проекте добычи",
-    "strDesc": "[us] [asks] [them], какая помощь [them-subj] [them-needs] для [them-pos] проектов по добыче."
+    "strDesc": "[us] [asks] [them], какая помощь [them-subj] [them-needs], чтобы [them-pos] проекты по добыче продвигались."
   },
   "PLOT_ProspectorBCRSFetchGold_OfferReply": {
     "strTitle": "Предложение",
@@ -22551,7 +22551,7 @@
   },
   "PLOT_ProspectorBCERFetchGold_Offer": {
     "strTitle": "Спросить о проекте добычи",
-    "strDesc": "[us] [asks] [them], в какой помощи [them-subj] [them-needs] для [them-pos] проектов добычи."
+    "strDesc": "[us] [asks] [them], в какой помощи [them-subj] [them-needs], чтобы [them-pos] проекты добычи продвигались."
   },
   "PLOT_ProspectorBCERFetchGold_OfferReply": {
     "strTitle": "Предложить",
@@ -22872,15 +22872,15 @@
   },
   "PLOT_MedHeist_ApproachTrigger": {
     "strTitle": "Триггер этапа сближения сюжета «Мед-ограбление»",
-    "strDesc": "[us] — переубедить [them] или отговорить от [them-pos] рискованного плана."
+    "strDesc": "[us] — переубедить [them] или отговорить: [them-pos] рискованный план — затея опасная."
   },
   "PLOT_MedHeist_PersuadeTrigger": {
     "strTitle": "Триггер этапа уговора сюжета «Мед-ограбление»",
-    "strDesc": "[us] — переубедить [them] или отговорить от [them-pos] рискованного плана."
+    "strDesc": "[us] — переубедить [them] или отговорить: [them-pos] рискованный план — затея опасная."
   },
   "PLOT_MedHeist_DissuadeTrigger": {
     "strTitle": "Триггер этапа отговора сюжета «Мед-ограбление»",
-    "strDesc": "[us] — переубедить [them] или отговорить от [them-pos] рискованного плана."
+    "strDesc": "[us] — переубедить [them] или отговорить: [them-pos] рискованный план — затея опасная."
   },
   "PLOT_MedHeist_PlanInMotionSupportTrigger": {
     "strTitle": "Триггер этапа поддержки сюжета «Мед-ограбление»",
@@ -23448,11 +23448,11 @@
   },
   "STKStrangerMeet_Gambit_RecentlyRestoredSelf_Fail_Hard": {
     "strTitle": "Отказаться от недавнего занятия (восстановление)",
-    "strDesc": "[us] [is] не в восторге от [them-pos] инженерной болтовни, и на этом разговор заканчивается."
+    "strDesc": "[us] [is] не в восторге: [them-pos] инженерная болтовня не впечатляет, и на этом разговор заканчивается."
   },
   "STKStrangerMeet_Gambit_RecentlyRestoredSelf_Allow": {
     "strTitle": "Продолжить разговор на основе недавнего занятия (восстановление)",
-    "strDesc": "[us] [is] под впечатлением от [them-pos] инженерных познаний, и разговор продолжается."
+    "strDesc": "[us] [is] под впечатлением: [them-pos] инженерные познания впечатляют, и разговор продолжается."
   },
   "STKStrangerMeet_Gambit_RecentlyWatchNewsSelf": {
     "strTitle": "Обсудить новости на экране",
@@ -23464,11 +23464,11 @@
   },
   "STKStrangerMeet_Gambit_RecentlyWatchNewsSelf_Fail_Hard": {
     "strTitle": "Отказаться от недавнего занятия (просмотр новостей)",
-    "strDesc": "[us] [is] не в восторге от [them-pos] понимания текущих событий, и на этом разговор заканчивается."
+    "strDesc": "[us] [is] не в восторге: [them-pos] понимание текущих событий не впечатляет, и на этом разговор заканчивается."
   },
   "STKStrangerMeet_Gambit_RecentlyWatchNewsSelf_Allow": {
     "strTitle": "Продолжить разговор на основе недавнего занятия (просмотр новостей)",
-    "strDesc": "[us] [is] под впечатлением от [them-pos] понимания текущих событий, и появляется готовность к дальнейшему разговору."
+    "strDesc": "[us] [is] под впечатлением: [them-pos] понимание текущих событий впечатляет, и появляется готовность к дальнейшему разговору."
   },
   "STKStrangerMeet_Gambit_RecentlyAdmireSelf": {
     "strTitle": "Обсудить недавнее занятие (восстановление)",
@@ -23532,11 +23532,11 @@
   },
   "STKStrangerMeet_Gambit_RecentlyUninstalledSelf_Fail_Hard": {
     "strTitle": "Отказаться от недавней работы (демонтаж)",
-    "strDesc": "[us] [is] не в восторге от [them-pos] инженерной болтовни, обрывая разговор."
+    "strDesc": "[us] [is] не в восторге: [them-pos] инженерная болтовня не впечатляет, и разговор обрывается."
   },
   "STKStrangerMeet_Gambit_RecentlyUninstalledSelf_Allow": {
     "strTitle": "Продолжить разговор о недавней работе (демонтаж)",
-    "strDesc": "[us] [is] в восторге от [them-pos] инженерных знаний, продолжая разговор."
+    "strDesc": "[us] [is] в восторге: [them-pos] инженерные знания впечатляют, и разговор продолжается."
   },
   "STKStrangerMeet_Gambit_RecentlyRepairedSelf": {
     "strTitle": "Обсудить недавнюю работу (ремонт)",
@@ -23548,11 +23548,11 @@
   },
   "STKStrangerMeet_Gambit_RecentlyRepairedSelf_Fail_Hard": {
     "strTitle": "Отказаться от недавней работы (ремонт)",
-    "strDesc": "[us] [is] не в восторге от [them-pos] инженерной болтовни, обрывая разговор."
+    "strDesc": "[us] [is] не в восторге, обрывая разговор: [them-pos] инженерный треп."
   },
   "STKStrangerMeet_Gambit_RecentlyRepairedSelf_Allow": {
     "strTitle": "Продолжить разговор о недавней работе (ремонт)",
-    "strDesc": "[us] [is] в восторге от [them-pos] инженерных знаний, продолжая разговор."
+    "strDesc": "[us] [is] в восторге, продолжая разговор: [them-pos] инженерный талант."
   },
   "STKStrangerMeet_Gambit_RecentlyRestoredSelf": {
     "strTitle": "Обсудить недавнюю работу (восстановление)",
@@ -23576,11 +23576,11 @@
   },
   "STKStrangerMeet_Gambit_RecentlyInstalledSelf_Fail_Hard": {
     "strTitle": "Отклонить недавнюю работу (установка)",
-    "strDesc": "[us] [is] без восторга от [them-pos] инженерной болтовни — и разговор окончен."
+    "strDesc": "[us] [is] без восторга — и разговор окончен: [them-pos] инженерный треп."
   },
   "STKStrangerMeet_Gambit_RecentlyInstalledSelf_Allow": {
     "strTitle": "Продолжить разговор о недавней работе (установка)",
-    "strDesc": "[us] [is] под впечатлением от [them-pos] инженерных знаний, и разговор продолжается."
+    "strDesc": "[us] [is] под впечатлением, и разговор продолжается: [them-pos] инженерный талант."
   },
   "STKStrangerMeet_Gambit_RecentlyUninstalledSelf": {
     "strTitle": "Обсудить недавнюю работу (демонтаж)",
@@ -23648,7 +23648,7 @@
   },
   "STKStrangerMeet_Intro_Allow_HygieneBad": {
     "strTitle": "Поздороваться с вонючкой",
-    "strDesc": "[us] [recoils] от [them-pos] вони, когда [them-subj] [approaches]."
+    "strDesc": "[us] [recoils]: [them-pos] смрад невыносим, когда [them-subj] [approaches]."
   },
   "STKStrangerMeet_Intro_Allow_PhysioBad": {
     "strTitle": "Поздороваться с раненым",

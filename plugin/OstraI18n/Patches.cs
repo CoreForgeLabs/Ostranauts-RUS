@@ -70,7 +70,19 @@ namespace OstraI18n
                     GrammarUtils.caret = GrammarUtils.interactionOutput.Length - 1;
                 }
                 if (form.Length > 0)
+                {
                     GrammarUtils.interactionOutput.Append(GrammarUtils.SetCase(form));
+                }
+                else
+                {
+                    // Dropped copula leaves the surrounding template spaces adjacent to each
+                    // other (source text is "[us] [is] голоден" -> "Ты" + " " + "" + " голоден").
+                    // Absorb the space that was written just before this token so only the
+                    // one that follows survives, producing "Ты голоден" instead of "Ты  голоден".
+                    var sb = GrammarUtils.interactionOutput;
+                    if (sb.Length > 0 && sb[sb.Length - 1] == ' ')
+                        sb.Length -= 1;
+                }
                 return false;
             }
             catch (Exception ex)
