@@ -36,6 +36,7 @@ RU_DATA = os.path.join(ROOT, "langs", "ru", "data")
 # вложенному пути, а не по имени файла буквально.
 FILENAME_TO_CATEGORY = {
     "market_CoCollections": "market/CoCollections",
+    "market_Production": "market/Production",
     "racing_tracks": "racing/tracks",
     "racing_leagues": "racing/leagues",
 }

@@ -1,0 +1,719 @@
+{
+  "BCERTextilesAndElectronicsToSpaceSuitsConverter": {
+    "strFriendlyDescription": "Производит Скафандр из Текстиль и Электроника"
+  },
+  "BCERVolatilesToWaterConverter": {
+    "strFriendlyDescription": "Производит Вода из Летучие вещества"
+  },
+  "BCERElectronicsToMediaConverter": {
+    "strFriendlyDescription": "Производит Медиа из Электроника"
+  },
+  "BCERConsumerGoodsToMediaConverter": {
+    "strFriendlyDescription": "Производит Медиа из Потребительские товары"
+  },
+  "BCERLifeSupportConsumer": {
+    "strFriendlyDescription": "Потребляет Системы жизнеобеспечения"
+  },
+  "BCERIntoxicantsConsumer": {
+    "strFriendlyDescription": "Потребляет Интоксиканты"
+  },
+  "BCERWeaponsConsumer": {
+    "strFriendlyDescription": "Потребляет Оружие"
+  },
+  "BCRSOreToMetal": {
+    "strFriendlyDescription": "Производит Металла из Руда"
+  },
+  "BCRSIndustrialProductsToOre": {
+    "strFriendlyDescription": "Производит Руда из Промышленные товары"
+  },
+  "BCRSFoodToTrash": {
+    "strFriendlyDescription": "Производит Мусор из Пища"
+  },
+  "BCRSIntoxicantsToTrash": {
+    "strFriendlyDescription": "Производит Мусор из Интоксиканты"
+  },
+  "BCRSMediaToTrash": {
+    "strFriendlyDescription": "Производит Мусор из Медиа"
+  },
+  "BCRSConsumerGoodsToTrash": {
+    "strFriendlyDescription": "Производит Мусор из Потребительские товары"
+  },
+  "ConsumerGoodsConsumer": {
+    "strFriendlyDescription": "Потребляет Потребительские товары"
+  },
+  "ConsumerGoodsConsumerx3": {
+    "strFriendlyDescription": "Потребляет много х3 Потребительские товары"
+  },
+  "ConsumerGoodsProducer": {
+    "strFriendlyDescription": "Производит Потребительские товары"
+  },
+  "ConsumerGoodsProducerx3": {
+    "strFriendlyDescription": "Производит много х3 Потребительские товары"
+  },
+  "ConsumerGoodsProducerx5": {
+    "strFriendlyDescription": "Производит очень много х5 Потребительские товары"
+  },
+  "ControlSystemsConsumer": {
+    "strFriendlyDescription": "Потребляет Системы управления"
+  },
+  "ControlSystemsConsumerx3": {
+    "strFriendlyDescription": "Потребляет много х3 Системы управления"
+  },
+  "ControlSystemsProducer": {
+    "strFriendlyDescription": "Производит Системы управления"
+  },
+  "ControlSystemsProducerx3": {
+    "strFriendlyDescription": "Производит много х3 Системы управления"
+  },
+  "D2OConsumer": {
+    "strFriendlyDescription": "Потребляет D2O"
+  },
+  "D2OConsumerx3": {
+    "strFriendlyDescription": "Потребляет много х3  D2O"
+  },
+  "D2OProducer": {
+    "strFriendlyDescription": "Производит D2O"
+  },
+  "D2OProducerx3": {
+    "strFriendlyDescription": "Производит много х3 D2O"
+  },
+  "EJDRFoodAndIndustrialGoodsToHe3Converter": {
+    "strFriendlyDescription": "Производит He3 из Пища и Промышленные товары"
+  },
+  "EJDRMediaToLuxuryGoodsConverter": {
+    "strFriendlyDescription": "Производит Предметы роскоши из Медиа"
+  },
+  "EJDRConsumerGoodsToTrashConverter": {
+    "strFriendlyDescription": "Производит Мусор от Потребительские товары"
+  },
+  "EJDRLuxuryGoodsToTrashConverter": {
+    "strFriendlyDescription": "Производит Мусор от Предметы роскоши"
+  },
+  "EJDRIntoxicantsToTrashConverter": {
+    "strFriendlyDescription": "Производит Мусор из Интоксиканты"
+  },
+  "ElectronicsConsumer": {
+    "strFriendlyDescription": "Потребляет Электроника"
+  },
+  "ElectronicsConsumerx3": {
+    "strFriendlyDescription": "Потребляет много х3 Электроника"
+  },
+  "ElectronicsProducer": {
+    "strFriendlyDescription": "Производит Электроника"
+  },
+  "ElectronicsProducerx3": {
+    "strFriendlyDescription": "Производит много х3 Электроника"
+  },
+  "ElectronicsProducerx5": {
+    "strFriendlyDescription": "Производит очень много х5 Электроника"
+  },
+  "FoodConsumer": {
+    "strFriendlyDescription": "Потребляет Пища"
+  },
+  "FoodConsumerx3": {
+    "strFriendlyDescription": "Потребляет много х3 Пища"
+  },
+  "FoodProducer": {
+    "strFriendlyDescription": "Производит Пища"
+  },
+  "FoodProducerx3": {
+    "strFriendlyDescription": "Производит много х3 Пища"
+  },
+  "FoodProducerx5": {
+    "strFriendlyDescription": "Производит очень много х5 Пища"
+  },
+  "FurnitureConsumer": {
+    "strFriendlyDescription": "Потребляет Мебель"
+  },
+  "FurnitureConsumerx3": {
+    "strFriendlyDescription": "Потребляет много х3 Мебель"
+  },
+  "FurnitureProducer": {
+    "strFriendlyDescription": "Производит Мебель"
+  },
+  "FurnitureProducerx3": {
+    "strFriendlyDescription": "Производит много х3 Мебель"
+  },
+  "FusionPartsConsumer": {
+    "strFriendlyDescription": "Потребляет Детали термояда"
+  },
+  "FusionPartsConsumerx3": {
+    "strFriendlyDescription": "Потребляет много х3 Детали термояда"
+  },
+  "FusionPartsProducer": {
+    "strFriendlyDescription": "Производит Детали термояда"
+  },
+  "FusionPartsProducerx3": {
+    "strFriendlyDescription": "Производит много х3 Детали термояда"
+  },
+  "He3Consumer": {
+    "strFriendlyDescription": "Потребляет He3"
+  },
+  "He3Consumerx3": {
+    "strFriendlyDescription": "Потребляет много х3 He3"
+  },
+  "He3Producer": {
+    "strFriendlyDescription": "Производит He3"
+  },
+  "He3Producerx3": {
+    "strFriendlyDescription": "Производит много х3 He3"
+  },
+  "He3Producerx5": {
+    "strFriendlyDescription": "Производит очень много х5 He3"
+  },
+  "HQCHTrashToConsumerGoodsConverter": {
+    "strFriendlyDescription": "Производит Потребительские товары из Мусор"
+  },
+  "HQCHTrashToMetalConverter": {
+    "strFriendlyDescription": "Производит Металл из Мусор"
+  },
+  "HQCHMedicalToScienceConverter": {
+    "strFriendlyDescription": "Производит Наука из Медицина"
+  },
+  "HQCHWeaponsToScienceConverter": {
+    "strFriendlyDescription": "Производит Наука из Оружие"
+  },
+  "HQCHToolsToOresConverter": {
+    "strFriendlyDescription": "Производит Руда из Инструмент"
+  },
+  "HQCHIndustrialProductsToOresConverter": {
+    "strFriendlyDescription": "Производит Руда из Промышленные товары"
+  },
+  "HQCHLifeSupportConsumer": {
+    "strFriendlyDescription": "Потребляет Системы жизнеобеспечения"
+  },
+  "HQCHFoodConsumer": {
+    "strFriendlyDescription": "Потребляет Пища"
+  },
+  "HullProducer": {
+    "strFriendlyDescription": "Производит Корпус"
+  },
+  "HullProducerx3": {
+    "strFriendlyDescription": "Производит много х3 Корпус"
+  },
+  "HullProducerx5": {
+    "strFriendlyDescription": "Производит очень много х5 Корпус"
+  },
+  "HullConsumer": {
+    "strFriendlyDescription": "Потребляет Корпус"
+  },
+  "HullConsumerx3": {
+    "strFriendlyDescription": "Потребляет много х3 Корпус"
+  },
+  "HVACConsumer": {
+    "strFriendlyDescription": "Потребляет HVAC"
+  },
+  "HVACConsumerx3": {
+    "strFriendlyDescription": "Потребляет много х3 HVAC"
+  },
+  "HVACProducer": {
+    "strFriendlyDescription": "Производит HVAC"
+  },
+  "HVACProducerx3": {
+    "strFriendlyDescription": "Производит много х3 HVAC"
+  },
+  "IndustrialProductsConsumer": {
+    "strFriendlyDescription": "Потребляет Промышленные товары"
+  },
+  "IndustrialProductsConsumerx3": {
+    "strFriendlyDescription": "Потребляет много х3 Промышленные товары"
+  },
+  "IndustrialProductsProducer": {
+    "strFriendlyDescription": "Производит Промышленные товары"
+  },
+  "IndustrialProductsProducerx3": {
+    "strFriendlyDescription": "Производит много х3 Промышленные товары"
+  },
+  "IntoxicantsConsumer": {
+    "strFriendlyDescription": "Потребляет Интоксиканты"
+  },
+  "IntoxicantsConsumerx3": {
+    "strFriendlyDescription": "Потребляет много х3 Интоксиканты"
+  },
+  "IntoxicantsProducer": {
+    "strFriendlyDescription": "Производит Интоксиканты"
+  },
+  "IntoxicantsProducerx3": {
+    "strFriendlyDescription": "Производит много х3 Интоксиканты"
+  },
+  "JATLMedicalToScienceConverter": {
+    "strFriendlyDescription": "Производит Наука из Медицина"
+  },
+  "JATLWaterToScienceConverter": {
+    "strFriendlyDescription": "Производит Наука из Вода"
+  },
+  "JATLWaterToLifeSupportConverter": {
+    "strFriendlyDescription": "Производит Системы жизнеобеспечения из Вода"
+  },
+  "JATLElectronicsToSensorsConverter": {
+    "strFriendlyDescription": "Производит Сенсоры из Электроника"
+  },
+  "JATLElectronicsHVACMetalAndIndustrialProductsToFusionPartsConverter": {
+    "strFriendlyDescription": "Производит Детали термояда из Электроника, HVAC, Металл, и Промышленные товары"
+  },
+  "JATLWaterProducer": {
+    "strFriendlyDescription": "Производит много Вода"
+  },
+  "JFTSPlasticsAndMetalToFurnitureConverter": {
+    "strFriendlyDescription": "Производит Мебель из Металла и Пластмасса"
+  },
+  "JFTSTextilesAndElectronicsToSpaceSuitsConverter": {
+    "strFriendlyDescription": "Производит Скафандр из Текстиль и Электроника"
+  },
+  "JFTSIndustrialProductsToToolsConverter": {
+    "strFriendlyDescription": "Производит Инструмент из Промышленные товары"
+  },
+  "JFTSOreProducer": {
+    "strFriendlyDescription": "Производит Руда"
+  },
+  "JFTSMetalToWeaponsConverter": {
+    "strFriendlyDescription": "Производит Оружие"
+  },
+  "JPTNMetalToFurniture": {
+    "strFriendlyDescription": "Производит Мебель из Металла"
+  },
+  "JPTNTextilesAndElectronicsToSpaceSuits": {
+    "strFriendlyDescription": "Производит Скафандр из Текстиль и Электроника"
+  },
+  "JPTNHVACAndIndustrialProductsToScience": {
+    "strFriendlyDescription": "Производит Наука из HVAC и Промышленные товары"
+  },
+  "LifeSupportConsumer": {
+    "strFriendlyDescription": "Потребляет Системы жизнеобеспечения"
+  },
+  "LifeSupportConsumerx3": {
+    "strFriendlyDescription": "Потребляет много х3 Системы жизнеобеспечения"
+  },
+  "LifeSupportProducer": {
+    "strFriendlyDescription": "Производит Системы жизнеобеспечения"
+  },
+  "LifeSupportProducerx3": {
+    "strFriendlyDescription": "Производит много х3 Системы жизнеобеспечения"
+  },
+  "LuxuryGoodsConsumer": {
+    "strFriendlyDescription": "Потребляет Предметы роскоши"
+  },
+  "LuxuryGoodsConsumerx3": {
+    "strFriendlyDescription": "Потребляет много х3 Предметы роскоши"
+  },
+  "LuxuryGoodsProducer": {
+    "strFriendlyDescription": "Производит Предметы роскоши"
+  },
+  "MediaConsumer": {
+    "strFriendlyDescription": "Потребляет Медиа"
+  },
+  "MediaConsumerx3": {
+    "strFriendlyDescription": "Потребляет много х3 Медиа"
+  },
+  "MediaProducer": {
+    "strFriendlyDescription": "Производит Медиа"
+  },
+  "MediaProducerx3": {
+    "strFriendlyDescription": "Производит много х3 Медиа"
+  },
+  "MediaProducerx5": {
+    "strFriendlyDescription": "Производит очень много х5 Медиа"
+  },
+  "MedicalConsumer": {
+    "strFriendlyDescription": "Потребляет Медицина"
+  },
+  "MedicalConsumerx3": {
+    "strFriendlyDescription": "Потребляет много х3 Медицина"
+  },
+  "MedicalProducer": {
+    "strFriendlyDescription": "Производит Медицина"
+  },
+  "MedicalProducerx3": {
+    "strFriendlyDescription": "Производит много х3 Медицина"
+  },
+  "MedicalProducerx5": {
+    "strFriendlyDescription": "Производит очень много х5 Медицина"
+  },
+  "MetalConsumer": {
+    "strFriendlyDescription": "Потребляет Металл"
+  },
+  "MetalConsumerx3": {
+    "strFriendlyDescription": "Потребляет много х3 Металл"
+  },
+  "MetalProducer": {
+    "strFriendlyDescription": "Производит Металл"
+  },
+  "MetalProducerx3": {
+    "strFriendlyDescription": "Производит много х3 Металла"
+  },
+  "MHNGWaterToFoodConverter": {
+    "strFriendlyDescription": "Производит Пища из Вода"
+  },
+  "MHNGVolatilesToLifeSupportConverter": {
+    "strFriendlyDescription": "Производит Системы жизнеобеспечения из Летучие вещества"
+  },
+  "MHNGLuxuryGoodsToTrashConverter": {
+    "strFriendlyDescription": "Производит Мусор из Предметы роскоши"
+  },
+  "MHNGMedicalToTrashConverter": {
+    "strFriendlyDescription": "Производит Мусор из Медицина"
+  },
+  "MHNGMediaToScienceConverter": {
+    "strFriendlyDescription": "Производит Наука из Медиа"
+  },
+  "MHNGTextilesToConsumerGoodsConverter": {
+    "strFriendlyDescription": "Производит Потребительские товары из Текстиль"
+  },
+  "MLABFoodToTextilesConverter": {
+    "strFriendlyDescription": "Производит Текстиль из Пища"
+  },
+  "MLABFoodToConsumerGoodsConverter": {
+    "strFriendlyDescription": "Производит Потребительские товары из Пища"
+  },
+  "MLABIndustrialProductsToElectronicsConverter": {
+    "strFriendlyDescription": "Производит Электроника из Промышленные товары"
+  },
+  "MLABIndustrialProductsToHVACConverter": {
+    "strFriendlyDescription": "Производит HVAC оборудование из Промышленные товары"
+  },
+  "MLABMedicalToTrashConverter": {
+    "strFriendlyDescription": "Производит Мусор из Медицина"
+  },
+  "MLABFoodToTrashConverter": {
+    "strFriendlyDescription": "Производит Мусор из Пища"
+  },
+  "MLABConsumeMedia": {
+    "strFriendlyDescription": "Потребляет Медиа"
+  },
+  "MSUZWaterToFoodConverter": {
+    "strFriendlyDescription": "Производит пища из Вода"
+  },
+  "MSUZPlasticsAndMetalsToElectronicsConverter": {
+    "strFriendlyDescription": "Производит Электроника из Пластмасса и Металлов"
+  },
+  "MSUZIndustrialProductsToFurnitureConverter": {
+    "strFriendlyDescription": "Производит Мебель из Промышленные товары"
+  },
+  "MSUZIndustrialProductsToToolsConverter": {
+    "strFriendlyDescription": "Производит Инструмент из Промышленные товары"
+  },
+  "MTRSElectronicsToConsumerGoodsConverter": {
+    "strFriendlyDescription": "Производит Потребительские товары из Электроника"
+  },
+  "MTRSIntoxicantsToMedicalConverter": {
+    "strFriendlyDescription": "Производит Медицина из Интоксиканты"
+  },
+  "MTRSMetalsAndIndustrialProductsAndToolsToFusionPartsConverter": {
+    "strFriendlyDescription": "Производит Детали термояда из Металлов и Инструмент"
+  },
+  "MTRSPlasticsToConsumerGoodsConverter": {
+    "strFriendlyDescription": "Производит Потребительские товары из Пластмасса"
+  },
+  "MTRSPlasticsToTextilesConverter": {
+    "strFriendlyDescription": "Производит Текстиль из Пластмасса"
+  },
+  "MTRSPlasticsAndMetalsToElectronicsConverter": {
+    "strFriendlyDescription": "Производит Электроника из Пластмасса и Металлов"
+  },
+  "MTRSPlasticsAndMetalsToLuxuryGoodsConverter": {
+    "strFriendlyDescription": "Производит Предметы роскоши из Пластмасса, Металлов и Электроника"
+  },
+  "MTRSWaterToFoodConverter": {
+    "strFriendlyDescription": "Производит пища из Вода"
+  },
+  "MTRSWaterToIntoxicantsConverter": {
+    "strFriendlyDescription": "Производит Интоксиканты из Вода"
+  },
+  "MTRSMetalsToIndustrialProductsConverter": {
+    "strFriendlyDescription": "Производит Промышленные товары из Металлов"
+  },
+  "MTRSVolatilesToLifeSupportConverter": {
+    "strFriendlyDescription": "Производит Системы жизнеобеспечения из Летучие вещества"
+  },
+  "MVOLScienceToMedicalConverter": {
+    "strFriendlyDescription": "Производит Медицина из Наука"
+  },
+  "MVOLScienceToIndustrialProductsConverter": {
+    "strFriendlyDescription": "Производит Промышленные товары из Наука"
+  },
+  "MVOLScienceToControlSystemsConverter": {
+    "strFriendlyDescription": "Производит Системы управления из Наука"
+  },
+  "MVOLPlasticsToControlSystemsConverter": {
+    "strFriendlyDescription": "Производит Системы управления из Пластмасса"
+  },
+  "MVOLMetalToWeaponsConverter": {
+    "strFriendlyDescription": "Производит Оружие из Металла"
+  },
+  "MVOLElectronicsToToolsConverter": {
+    "strFriendlyDescription": "Производит Инструмент из Электроника"
+  },
+  "MVOLElectronicsToSensorsConverter": {
+    "strFriendlyDescription": "Производит Сенсоры из Электроника"
+  },
+  "MVOLVolatilesToLifeSupportConverter": {
+    "strFriendlyDescription": "Производит Системы жизнеобеспечения из Летучие вещества"
+  },
+  "MVOLScienceAndIndustrialProductsToFusionPartsConverter": {
+    "strFriendlyDescription": "Производит Детали термояда из Наука"
+  },
+  "OFLTWaterToIntoxicantsConverter": {
+    "strFriendlyDescription": "Производит Интоксиканты из Вода"
+  },
+  "OFLTTrashToIntoxicantsConverter": {
+    "strFriendlyDescription": "Производит Интоксиканты из Мусор"
+  },
+  "OFLTTrashToFurnitureConverter": {
+    "strFriendlyDescription": "Производит Мебель из Мусор"
+  },
+  "OFLTTrashToWeaponsConverter": {
+    "strFriendlyDescription": "Производит Оружие из Мусор"
+  },
+  "OKLGToolsToHullsConverter": {
+    "strFriendlyDescription": "Производит Корпус из Инструмент"
+  },
+  "OKLGToolsToSensorsConverter": {
+    "strFriendlyDescription": "Производит Сенсоры из Инструмент"
+  },
+  "OKLGIndustrialProductsToControlSystemsConverter": {
+    "strFriendlyDescription": "Производит Системы управления из Промышленные товары"
+  },
+  "OKLGIndustrialProductsToFurnitureConverter": {
+    "strFriendlyDescription": "Производит Мебель из Промышленные товары"
+  },
+  "OKLGIndustrialProductsToHVACConverter": {
+    "strFriendlyDescription": "Производит HVAC из Промышленные товары"
+  },
+  "OKLGOreProducer": {
+    "strFriendlyDescription": "Производит Руда"
+  },
+  "OreConsumer": {
+    "strFriendlyDescription": "Потребляет Руда"
+  },
+  "OreProducer": {
+    "strFriendlyDescription": "Производит Руда"
+  },
+  "OreProducerx3": {
+    "strFriendlyDescription": "Производит много х3 Руда"
+  },
+  "OreProducerx5": {
+    "strFriendlyDescription": "Производит очень много х5 Руда"
+  },
+  "PlasticsConsumer": {
+    "strFriendlyDescription": "Потребляет Пластмасса"
+  },
+  "PlasticsConsumerx3": {
+    "strFriendlyDescription": "Потребляет много х3 Пластмасса"
+  },
+  "PlasticsProducer": {
+    "strFriendlyDescription": "Производит Пластмасса"
+  },
+  "PlasticsProducerx3": {
+    "strFriendlyDescription": "Производит много х3 Пластмасса"
+  },
+  "ScienceConsumer": {
+    "strFriendlyDescription": "Потребляет Наука"
+  },
+  "ScienceConsumerx3": {
+    "strFriendlyDescription": "Потребляет много х3 научное обеспечение"
+  },
+  "ScienceConsumerx5": {
+    "strFriendlyDescription": "Потребляет очень много х5 Наука"
+  },
+  "ScienceProducer": {
+    "strFriendlyDescription": "Производит Наука"
+  },
+  "ScienceProducerx3": {
+    "strFriendlyDescription": "Производит много х3 Наука"
+  },
+  "ScienceProducerx5": {
+    "strFriendlyDescription": "Производит очень много х5 Наука"
+  },
+  "SensorsConsumer": {
+    "strFriendlyDescription": "Потребляет Сенсоры"
+  },
+  "SensorsConsumerx3": {
+    "strFriendlyDescription": "Потребляет много х3 Сенсоры"
+  },
+  "SensorsProducer": {
+    "strFriendlyDescription": "Производит Сенсоры"
+  },
+  "SensorsProducerx3": {
+    "strFriendlyDescription": "Производит много х3 Сенсоры"
+  },
+  "SpaceSuitsConsumer": {
+    "strFriendlyDescription": "Потребляет Скафандр"
+  },
+  "SpaceSuitsConsumerx3": {
+    "strFriendlyDescription": "Потребляет много х3 Скафандр"
+  },
+  "SpaceSuitsProducer": {
+    "strFriendlyDescription": "Производит Скафандр"
+  },
+  "SpaceSuitsProducerx3": {
+    "strFriendlyDescription": "Производит много х3 Скафандр"
+  },
+  "SVIRMetalToIndustrialProductsConverter": {
+    "strFriendlyDescription": "Производит Промышленные товары из Металла"
+  },
+  "SVIRScienceToLuxuryGoodsConverter": {
+    "strFriendlyDescription": "Производит Предметы роскоши из Наука"
+  },
+  "SVIRTextilesToLuxuryGoodsConverter": {
+    "strFriendlyDescription": "Производит Предметы роскоши из Текстиль"
+  },
+  "SVIRMetalToLuxuryGoodsConverter": {
+    "strFriendlyDescription": "Производит Предметы роскоши из Металла"
+  },
+  "SVIRLifeSupportToTrashConverter": {
+    "strFriendlyDescription": "Производит Мусор из Системы жизнеобеспечения"
+  },
+  "SVIRMedicalToTrashConverter": {
+    "strFriendlyDescription": "Производит Мусор из Медицина"
+  },
+  "SVIRToolsToHe3Converter": {
+    "strFriendlyDescription": "Производит He3 из Инструмент через добычу газа на Уране"
+  },
+  "SVIRHVACToD2OConverter": {
+    "strFriendlyDescription": "Производит D2O из HVAS через добычу газа на Уране и Нептуне"
+  },
+  "SVIRVolatilesProducer": {
+    "strFriendlyDescription": "Производит много Летучие вещества"
+  },
+  "SVIRWaterProducer": {
+    "strFriendlyDescription": "Производит много Вода"
+  },
+  "SVIRWeaponConsumer": {
+    "strFriendlyDescription": "Потребляет много Оружие"
+  },
+  "SVIRHullConsumer": {
+    "strFriendlyDescription": "Потребляет много Корпус"
+  },
+  "SVIRShipbuildingConsumer": {
+    "strFriendlyDescription": "Потребляет Корпус, Системы управления, Мебель, Сенсоры и HVAC"
+  },
+  "TextilesConsumer": {
+    "strFriendlyDescription": "Потребляет Текстиль"
+  },
+  "TextilesConsumerx3": {
+    "strFriendlyDescription": "Потребляет много х3 Текстиль"
+  },
+  "TextilesProducer": {
+    "strFriendlyDescription": "Производит Текстиль"
+  },
+  "TextilesProducerx3": {
+    "strFriendlyDescription": "Производит много х3 Текстиль"
+  },
+  "TrashConsumer": {
+    "strFriendlyDescription": "Потребляет Мусор"
+  },
+  "TrashConsumerx3": {
+    "strFriendlyDescription": "Потребляет много х3 Мусор"
+  },
+  "TrashProducer": {
+    "strFriendlyDescription": "Производит Мусор"
+  },
+  "TrashProducerx3": {
+    "strFriendlyDescription": "Производит много х3 Мусор"
+  },
+  "TrashProducerx5": {
+    "strFriendlyDescription": "Производит очень много х5 Мусор"
+  },
+  "ToolsConsumer": {
+    "strFriendlyDescription": "Потребляет Инструмент"
+  },
+  "ToolsConsumerx3": {
+    "strFriendlyDescription": "Потребляет много х3 Инструмент"
+  },
+  "ToolsProducer": {
+    "strFriendlyDescription": "Производит Инструмент"
+  },
+  "ToolsProducerx3": {
+    "strFriendlyDescription": "Производит много х3 Инструмент"
+  },
+  "VCBRSensorsToScienceConverter": {
+    "strFriendlyDescription": "Производит Наука из Сенсоры"
+  },
+  "VCBRIndustrialProductsToHVACConverter": {
+    "strFriendlyDescription": "Производит HVAC из Промышленные товары"
+  },
+  "VCBRPlasticsToScienceConverter": {
+    "strFriendlyDescription": "Производит Наука из Пластмасса"
+  },
+  "VCBRElectronicsToScienceConverter": {
+    "strFriendlyDescription": "Производит Наука из Электроника"
+  },
+  "VCBRHullsConsumer": {
+    "strFriendlyDescription": "Потребляет Корпус"
+  },
+  "VCBRControlSystemsConsumer": {
+    "strFriendlyDescription": "Потребляет Системы управления"
+  },
+  "VENCConsumerGoodsToMediaConverter": {
+    "strFriendlyDescription": "Производит Медиа из Потребительские товары"
+  },
+  "VENCFoodToLuxuryGoodsConverter": {
+    "strFriendlyDescription": "Производит Предметы роскоши из Пища"
+  },
+  "VENCTextilesToLuxuryGoodsConverter": {
+    "strFriendlyDescription": "Производит Предметы роскоши из Текстиль"
+  },
+  "VENCScienceAndHullsToHVACConverter": {
+    "strFriendlyDescription": "Производит HVAC из Наука и Корпус"
+  },
+  "VNCAIndustrialProductsToPlasticsConverter": {
+    "strFriendlyDescription": "Производит Пластмасса из Промышленные товары"
+  },
+  "VNCALuxuryGoodsToMediaConverter": {
+    "strFriendlyDescription": "Производит Медиа из Предметы роскоши"
+  },
+  "VNCAPlasticsToTextilesConverter": {
+    "strFriendlyDescription": "Производит Текстиль из Пластмасса"
+  },
+  "VNCAVolatilesToLifeSupportConverter": {
+    "strFriendlyDescription": "Производит Системы жизнеобеспечения из Летучие вещества"
+  },
+  "VNCAMetalToConsumerGoodsConverter": {
+    "strFriendlyDescription": "Производит Потребительские товары из Металла"
+  },
+  "VNCAMetalToIndustrialProductsConverter": {
+    "strFriendlyDescription": "Производит Промышленные товары из Металлов"
+  },
+  "VORBMetalToIndustrialProductsConverter": {
+    "strFriendlyDescription": "Производит Промышленные товары из Металлов"
+  },
+  "VolatilesConsumer": {
+    "strFriendlyDescription": "Потребляет Летучие вещества"
+  },
+  "VolatilesConsumerx3": {
+    "strFriendlyDescription": "Потребляет много х3 Летучие вещества"
+  },
+  "VolatilesProducer": {
+    "strFriendlyDescription": "Производит Летучие вещества"
+  },
+  "VolatilesProducerx3": {
+    "strFriendlyDescription": "Производит много х3 Летучие вещества"
+  },
+  "WaterConsumer": {
+    "strFriendlyDescription": "Потребляет Вода"
+  },
+  "WaterConsumerx3": {
+    "strFriendlyDescription": "Потребляет много х3 Вода"
+  },
+  "WaterProducer": {
+    "strFriendlyDescription": "Производит Вода"
+  },
+  "WaterProducerx3": {
+    "strFriendlyDescription": "Производит много х3 Вода"
+  },
+  "WaterProducerx5": {
+    "strFriendlyDescription": "Производит очень много х5 Вода"
+  },
+  "WeaponsConsumer": {
+    "strFriendlyDescription": "Потребляет Оружие"
+  },
+  "WeaponsConsumerx3": {
+    "strFriendlyDescription": "Потребляет много х3 Оружие"
+  },
+  "WeaponsProducer": {
+    "strFriendlyDescription": "Производит Оружие"
+  },
+  "WeaponsProducerx3": {
+    "strFriendlyDescription": "Производит много х3 Оружие"
+  }
+}

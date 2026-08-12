@@ -30,15 +30,17 @@ LANG = sys.argv[1] if len(sys.argv) > 1 else "ru"
 LANGNAME = {"ru": "русский"}.get(LANG, LANG)
 
 BATCH = 15
-MAX_WORKERS = 140
+MAX_WORKERS = 200
 LOG = os.path.join(ROOT, "lang_src", "translate_data_%s.log" % LANG)
 
-TRANSLATABLE = ("strTitle", "strDesc", "strTooltip", "strNameFriendly", "strNameShort", "strFriendlyName")
+TRANSLATABLE = ("strTitle", "strDesc", "strTooltip", "strNameFriendly", "strNameShort", "strFriendlyName",
+                 "strArticleBody", "strArticleTitle", "strNodeLabel", "strBody", "strDescription",
+                 "strRequirementDescription", "strFriendlyDescription", "description")
 
 CATEGORIES = ["interactions", "careers", "conditions", "pda_apps", "installables", "cooverlays",
               "condowners", "ledgerdefs", "pledges", "slots", "headlines", "plots",
               "market/CoCollections", "ads", "rooms", "jobitems", "racing/tracks", "context", "racing/leagues",
-              "conditions_simple"]
+              "conditions_simple", "info", "market/Production", "tips"]
 
 SYS_PROMPT = (
     "Ты локализатор игровых данных Ostranauts — суровый hard sci-fi симулятор разборки "

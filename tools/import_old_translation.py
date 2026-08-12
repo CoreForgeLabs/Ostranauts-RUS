@@ -19,7 +19,9 @@ GAME = r"F:\Games\Steam\steamapps\common\Ostranauts"
 OLD_DATA = os.path.join(GAME, "old", "Ostranauts_Data", "Mods", "RUS_CoreForgeLabs", "data")
 CUR_DATA = os.path.join(GAME, "Ostranauts_Data", "StreamingAssets", "data")
 
-TRANSLATABLE = ("strTitle", "strDesc", "strTooltip", "strNameFriendly", "strNameShort", "strFriendlyName")
+TRANSLATABLE = ("strTitle", "strDesc", "strTooltip", "strNameFriendly", "strNameShort", "strFriendlyName",
+                 "strArticleBody", "strArticleTitle", "strNodeLabel", "strBody", "strDescription",
+                 "strRequirementDescription", "strFriendlyDescription", "description")
 
 
 # ЛЮБОЕ слово в квадратных скобках — грамматический токен (не только [us]/[them]/

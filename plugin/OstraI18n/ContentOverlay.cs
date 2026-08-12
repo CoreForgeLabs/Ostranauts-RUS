@@ -48,11 +48,16 @@ namespace OstraI18n
             { "racing/tracks", "dictRaceTracks" },
             { "context", "dictContext" },
             { "racing/leagues", "dictRacingLeagues" },
+            { "info", "dictInfoNodes" },
+            { "market/Production", "dictProductionMaps" },
+            { "tips", "dictTips" },
         };
 
         private static readonly HashSet<string> TranslatableFields = new HashSet<string>
         {
             "strTitle", "strDesc", "strTooltip", "strNameFriendly", "strNameShort", "strFriendlyName",
+            "strArticleBody", "strArticleTitle", "strNodeLabel", "strBody", "strDescription",
+            "strRequirementDescription", "strFriendlyDescription", "description",
         };
 
         public static int Applied;
