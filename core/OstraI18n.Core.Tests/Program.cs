@@ -128,12 +128,26 @@ static class Program
 
         Console.WriteLine("GrammarPackLoader (старая vs новая раскладка ru)");
         {
+            // Task 5.7 follow-up: langs/lang_ru/ (the production legacy-layout
+            // directory) was deleted once the pack.json migration was confirmed
+            // safe (Task 5.7 gate). The legacy-layout CODE PATH in
+            // GrammarPackLoader/LangPack stays -- it's the generic fallback for
+            // any future language pack that hasn't been migrated to pack.json
+            // yet -- so it still needs a real old-shape fixture to load and
+            // compare against the new layout. Rather than depending on deleted
+            // production data, the old side now reads a self-contained
+            // test-only fixture (testdata/legacy_ru/) reconstructed verbatim
+            // from git history (commit a278168~1, the last commit before the
+            // deletion) -- same content as the production ru pack had before
+            // Task 5.2 migrated it, just still in the old three-file shape.
             var langsDir2 = System.IO.Path.GetFullPath(
                 System.IO.Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "..", "..", "langs"));
-            var oldDir = System.IO.Path.Combine(langsDir2, "lang_ru");
+            var testDataDir = System.IO.Path.GetFullPath(
+                System.IO.Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "testdata"));
+            var oldDir = System.IO.Path.Combine(testDataDir, "legacy_ru");
             var newDir = System.IO.Path.Combine(langsDir2, "ru");
-            Console.WriteLine("  old: " + oldDir);
-            Console.WriteLine("  new: " + newDir);
+            Console.WriteLine("  old (fixture): " + oldDir);
+            Console.WriteLine("  new (production): " + newDir);
 
             var oldPack = GrammarPackLoader.Load(oldDir);
             var newPack = GrammarPackLoader.Load(newDir);
