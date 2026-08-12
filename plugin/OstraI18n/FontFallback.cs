@@ -17,7 +17,7 @@ namespace OstraI18n
         // Harmony postfix on TMP_Settings.get_instance — fires on main thread when TMP initializes.
         public static void AfterSettingsInit(TMPro.TMP_Settings __instance)
         {
-            if (_done || !RuData.Active || _attempts >= 5) return;
+            if (_done || !LangPack.Active || _attempts >= 5) return;
             _attempts++;
             try
             {

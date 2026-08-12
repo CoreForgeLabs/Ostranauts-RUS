@@ -12,6 +12,57 @@ static class Program
         else { failed++; Console.WriteLine("  FAIL " + name + ": ожидалось '" + expected + "', получено '" + actual + "'"); }
     }
 
+    static void True(bool cond, string name)
+    {
+        if (cond) { Console.WriteLine("  PASS " + name); }
+        else { failed++; Console.WriteLine("  FAIL " + name); }
+    }
+
+    static bool PronounsEqual(Dictionary<string, string[]> a, Dictionary<string, string[]> b)
+    {
+        if (a.Count != b.Count) return false;
+        foreach (var kv in a)
+        {
+            if (!b.TryGetValue(kv.Key, out var other)) return false;
+            if (kv.Value.Length != other.Length) return false;
+            for (int i = 0; i < kv.Value.Length; i++)
+                if (kv.Value[i] != other[i]) return false;
+        }
+        return true;
+    }
+
+    static bool StringsEqual(Dictionary<string, string> a, Dictionary<string, string> b)
+    {
+        if (a.Count != b.Count) return false;
+        foreach (var kv in a)
+        {
+            if (!b.TryGetValue(kv.Key, out var other)) return false;
+            if (kv.Value != other) return false;
+        }
+        return true;
+    }
+
+    static bool VerbsEqual(Dictionary<string, VerbForms> a, Dictionary<string, VerbForms> b)
+    {
+        if (a.Count != b.Count) return false;
+        foreach (var kv in a)
+        {
+            if (!b.TryGetValue(kv.Key, out var v)) return false;
+            var u = kv.Value;
+            if (u.Kind != v.Kind || u.OmitPresent != v.OmitPresent || u.NoLongerBefore != v.NoLongerBefore) return false;
+            if (!ArrEqual(u.Present, v.Present) || !ArrEqual(u.Past, v.Past)) return false;
+        }
+        return true;
+    }
+
+    static bool ArrEqual(string[] a, string[] b)
+    {
+        if (a == null || b == null) return a == b;
+        if (a.Length != b.Length) return false;
+        for (int i = 0; i < a.Length; i++) if (a[i] != b[i]) return false;
+        return true;
+    }
+
     static int Main()
     {
         Console.WriteLine("MethodKey");
@@ -67,6 +118,34 @@ static class Program
         Eq(packRu.Get("GUI_TEST_PACKLOADER_SENTINEL"), "тест-пакета", "русская строка загружена");
         var packEn = PackLoader.Load(langsDir, "en");
         Eq(packEn.Get("GUI_TEST_PACKLOADER_SENTINEL"), "test-pack", "английская строка загружена");
+
+        Console.WriteLine("GrammarPackLoader (старая vs новая раскладка ru)");
+        {
+            var langsDir2 = System.IO.Path.GetFullPath(
+                System.IO.Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "..", "..", "langs"));
+            var oldDir = System.IO.Path.Combine(langsDir2, "lang_ru");
+            var newDir = System.IO.Path.Combine(langsDir2, "ru");
+            Console.WriteLine("  old: " + oldDir);
+            Console.WriteLine("  new: " + newDir);
+
+            var oldPack = GrammarPackLoader.Load(oldDir);
+            var newPack = GrammarPackLoader.Load(newDir);
+
+            True(oldPack.UsedLegacyLayout, "старая раскладка (grammar.json) помечена UsedLegacyLayout");
+            True(!newPack.UsedLegacyLayout, "новая раскладка (pack.json) НЕ помечена UsedLegacyLayout");
+
+            Eq(oldPack.YouWord, newPack.YouWord, "YouWord совпадает между раскладками");
+            Eq(oldPack.YouWord, "ты", "YouWord = 'ты'");
+
+            Eq(oldPack.Pronouns.Count.ToString(), newPack.Pronouns.Count.ToString(), "число категорий местоимений совпадает");
+            True(PronounsEqual(oldPack.Pronouns, newPack.Pronouns), "словарь Pronouns идентичен между раскладками");
+
+            Eq(oldPack.Verbs.Count.ToString(), newPack.Verbs.Count.ToString(), "число глаголов совпадает");
+            True(VerbsEqual(oldPack.Verbs, newPack.Verbs), "словарь Verbs идентичен между раскладками");
+
+            Eq(oldPack.Strings.Count.ToString(), newPack.Strings.Count.ToString(), "число строк совпадает");
+            True(StringsEqual(oldPack.Strings, newPack.Strings), "словарь Strings идентичен между раскладками");
+        }
 
         Console.WriteLine("PathKey");
         Eq(string.Join("/", PathKey.Segments("GUIBountyDetails", new[] { "LeftText", "txtDanger" })),

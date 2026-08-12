@@ -42,7 +42,7 @@ namespace OstraI18n
 
             if (!Enabled.Value) { Log.LogInfo("[i18n] disabled by config"); return; }
 
-            try { RuData.Load(DataDir.Value, Language.Value, FormalYou.Value); }
+            try { LangPack.Load(DataDir.Value, Language.Value, FormalYou.Value); }
             catch (Exception ex) { Log.LogError("[i18n] data load failed, plugin off: " + ex); return; }
 
             int ok = 0, failed = 0;

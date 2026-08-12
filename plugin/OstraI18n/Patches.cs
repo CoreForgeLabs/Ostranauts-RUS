@@ -17,19 +17,19 @@ namespace OstraI18n
         // Localisation.Get -> report configured language to anything that asks
         public static void LocalisationGetPostfix(ref string __result)
         {
-            if (RuData.Active) __result = RuData.Lang;
+            if (LangPack.Active) __result = LangPack.Lang;
         }
 
         // After tokens are unpacked: force-override pronoun tables.
         // (Game uses TryAdd, so core "subj"/"pos"/etc. can't be overridden by mod JSON alone.)
         public static void UnpackTokensPostfix()
         {
-            if (!RuData.Active) return;
+            if (!LangPack.Active) return;
             try
             {
-                foreach (var kv in RuData.Pronouns)
+                foreach (var kv in LangPack.Pronouns)
                     GrammarUtils.partsOfSpeechStr[kv.Key] = kv.Value;
-                Plugin.Log.LogInfo("[i18n] pronoun tables overridden: " + RuData.Pronouns.Count + " categories");
+                Plugin.Log.LogInfo("[i18n] pronoun tables overridden: " + LangPack.Pronouns.Count + " categories");
             }
             catch (Exception ex) { Plugin.Log.LogError("[i18n] UnpackTokensPostfix: " + ex); }
         }
@@ -38,14 +38,14 @@ namespace OstraI18n
         // InflectionIndex: 0=I, 1=you, 2=he, 3=she, 4=they, 5=it
         public static bool VerbPrefix(TokenData tokenData)
         {
-            if (!RuData.Active) return true;
+            if (!LangPack.Active) return true;
             try
             {
                 if (!GrammarUtils.entityMap.TryGetValue(tokenData.alias, out var ent)) return false;
                 var key = (tokenData.verbForms != null && tokenData.verbForms.Length > 0) ? tokenData.verbForms[0] : null;
                 if (key == null) return false;
 
-                if (!RuData.Verbs.TryGetValue(key, out var vf))
+                if (!LangPack.Verbs.TryGetValue(key, out var vf))
                 {
                     WarnOnce("verb:" + key, "[i18n] no RU paradigm for verb: " + key);
                     var fallback = tokenData.verbForms[tokenData.verbForms.Length > 1 ? 1 : 0];
@@ -95,7 +95,7 @@ namespace OstraI18n
         // GrammarUtils.AttemptSubstitution -> Russian pronouns; English 's possessive removed
         public static bool AttemptSubstitutionPrefix(TokenData tokenData)
         {
-            if (!RuData.Active) return true;
+            if (!LangPack.Active) return true;
             try
             {
                 if (tokenData.alias.IsNullOrEmpty() || tokenData.category.IsNullOrEmpty()) return false;
@@ -110,7 +110,7 @@ namespace OstraI18n
                     return false;
                 }
 
-                if (RuData.Pronouns.TryGetValue(tokenData.category, out var forms))
+                if (LangPack.Pronouns.TryGetValue(tokenData.category, out var forms))
                 {
                     GrammarUtils.interactionOutput.Append(GrammarUtils.SetCase(forms[(int)ent.InflectionIndex]));
                 }
@@ -131,14 +131,14 @@ namespace OstraI18n
         // GrammarUtils.AttemptProperName -> no English article, Russian "you"
         public static bool AttemptProperNamePrefix(TokenData tokenData)
         {
-            if (!RuData.Active) return true;
+            if (!LangPack.Active) return true;
             try
             {
                 if (tokenData.alias.IsNullOrEmpty() || !GrammarUtils.entityMap.TryGetValue(tokenData.alias, out var ent)) return false;
 
                 if (ent.InflectionIndex == GrammarUtils.PronounInflection.Second)
                 {
-                    GrammarUtils.interactionOutput.Append(GrammarUtils.SetCase(RuData.YouWord));
+                    GrammarUtils.interactionOutput.Append(GrammarUtils.SetCase(LangPack.YouWord));
                     if (tokenData.category == "subj") ent.lastSubjectiveWasPronoun = true;
                     return false;
                 }
@@ -159,11 +159,11 @@ namespace OstraI18n
         // Makes the language folder self-contained for GUI strings (no separate mod needed for them).
         public static void GetStringPostfix(string strName, ref string __result)
         {
-            if (!RuData.Active) return;
+            if (!LangPack.Active) return;
             try
             {
                 string t;
-                if (RuData.Strings.TryGetValue(strName, out t)) __result = t;
+                if (LangPack.Strings.TryGetValue(strName, out t)) __result = t;
             }
             catch { }
         }
