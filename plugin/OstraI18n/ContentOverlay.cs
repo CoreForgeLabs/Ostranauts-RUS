@@ -64,7 +64,7 @@ namespace OstraI18n
         {
             "strTitle", "strDesc", "strTooltip", "strNameFriendly", "strNameShort", "strFriendlyName",
             "strArticleBody", "strArticleTitle", "strNodeLabel", "strBody", "strDescription",
-            "strRequirementDescription", "strFriendlyDescription", "description",
+            "strRequirementDescription", "strFriendlyDescription", "description", "strTutorialKey",
         };
 
         // Эффективные таблицы, используемые при применении оверлея. По умолчанию

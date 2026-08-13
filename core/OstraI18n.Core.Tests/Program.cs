@@ -184,7 +184,7 @@ static class Program
             True(!oldPack.OverlayValid, "старая раскладка (grammar.json) не содержит overlay -> OverlayValid=false");
             True(newPack.OverlayValid, "новая раскладка (pack.json) содержит overlay -> OverlayValid=true");
             Eq(newPack.OverlayCategoryToField.Count.ToString(), "22", "categoryToField: 22 записи");
-            Eq(newPack.OverlayTranslatableFields.Count.ToString(), "14", "translatableFields: 14 записей");
+            Eq(newPack.OverlayTranslatableFields.Count.ToString(), "15", "translatableFields: 15 записей");
         }
 
         Console.WriteLine("PathKey");

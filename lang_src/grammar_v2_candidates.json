@@ -1,420 +1,12 @@
 {
   "class_a": [
     {
-      "file": "conditions.json",
-      "name": "Ebullism",
-      "field": "strDesc",
-      "matched_word": "слюна",
-      "gender": "fem",
-      "text": "[us] [has] отёк тела, а [us-pos] слюна пузырится."
-    },
-    {
-      "file": "conditions.json",
-      "name": "ForceRestock",
-      "field": "strDesc",
-      "matched_word": "торговые",
-      "gender": "pl",
-      "text": "[us] [has] [us-pos] торговые товары, назначенные к пополнению."
-    },
-    {
-      "file": "conditions.json",
-      "name": "NanoFirstAid2",
-      "field": "strDesc",
-      "matched_word": "нанороботическая",
-      "gender": "fem",
-      "text": "[us] [is] с ощущением, что [us-pos] нанороботическая первая помощь перестаёт действовать."
-    },
-    {
-      "file": "conditions.json",
-      "name": "PainkillerMinor2",
-      "field": "strDesc",
-      "matched_word": "безрецептурного",
-      "gender": "neut",
-      "text": "[us] [is] в состоянии ослабления действия [us-pos] безрецептурного обезболивающего."
-    },
-    {
-      "file": "conditions.json",
-      "name": "TeethBrushed",
-      "field": "strDesc",
-      "matched_word": "зубы",
-      "gender": "pl",
-      "text": "[us] [has] недавно чищенные [us-pos] зубы."
-    },
-    {
-      "file": "conditions.json",
-      "name": "ChronicTornACL2",
-      "field": "strDesc",
-      "matched_word": "разрыва",
-      "gender": "fem",
-      "text": "[us] [is] в состоянии острого приступа боли и скованности в колене из-за [us-pos] разрыва передней крестообразной связки."
-    },
-    {
-      "file": "conditions.json",
-      "name": "ChronicTornMCL2",
-      "field": "strDesc",
-      "matched_word": "разрыва",
-      "gender": "fem",
-      "text": "[us] [is] в состоянии острого приступа боли и скованности в колене из-за [us-pos] разрыва медиальной коллатеральной связки."
-    },
-    {
-      "file": "conditions.json",
-      "name": "ChronicTornMeniscus2",
-      "field": "strDesc",
-      "matched_word": "разрыва",
-      "gender": "fem",
-      "text": "[us] [is] в состоянии острого приступа боли и скованности в колене из-за [us-pos] разрыва мениска."
-    },
-    {
-      "file": "conditions.json",
-      "name": "ChronicPatellerTendonitis2",
-      "field": "strDesc",
-      "matched_word": "тендинита",
-      "gender": "fem",
-      "text": "[us] [is] в состоянии острого приступа боли и скованности в колене из-за [us-pos] тендинита связки надколенника."
-    },
-    {
-      "file": "conditions.json",
-      "name": "ChronicCarpalTunnelSyndrome2",
-      "field": "strDesc",
-      "matched_word": "синдрома",
-      "gender": "fem",
-      "text": "[us] [is] в состоянии острого приступа боли и скованности в кисти из-за [us-pos] синдрома запястного канала."
-    },
-    {
-      "file": "conditions.json",
-      "name": "ChronicTendonitis2",
-      "field": "strDesc",
-      "matched_word": "тендинита",
-      "gender": "fem",
-      "text": "[us] [is] в состоянии острого приступа суставной боли и скованности из-за [us-pos] тендинита."
-    },
-    {
-      "file": "conditions.json",
-      "name": "DcAutonomy02",
-      "field": "strDesc",
-      "matched_word": "судьба",
-      "gender": "fem",
-      "text": "[us] [feels], что [us-pos] судьба под контролем."
-    },
-    {
-      "file": "conditions.json",
-      "name": "DcBlood02",
-      "field": "strDesc",
-      "matched_word": "активность",
-      "gender": "fem",
-      "text": "[us] [has] небольшую кровопотерю, которая немного влияет на [us-pos] активность."
-    },
-    {
-      "file": "conditions.json",
-      "name": "DcH2SO4Poisoning01",
-      "field": "strDesc",
-      "matched_word": "глаза",
-      "gender": "fem",
-      "text": "[us] [feels], как кислотный воздух режет [us-pos] глаза и горло."
-    },
-    {
-      "file": "conditions.json",
-      "name": "DcH2SO4Poisoning02",
-      "field": "strDesc",
-      "matched_word": "глаза",
-      "gender": "fem",
-      "text": "[us] [feels], как кислотный воздух обжигает [us-pos] глаза и горло."
-    },
-    {
-      "file": "conditions.json",
-      "name": "DcH2SO4Poisoning03",
-      "field": "strDesc",
-      "matched_word": "кожи",
-      "gender": "pl",
-      "text": "[us] [has] смертельные кислотные ожоги [us-pos] кожи, глаз и горла. Смерть неминуема."
-    },
-    {
-      "file": "conditions.json",
-      "name": "DcNH3Poisoning03",
-      "field": "strDesc",
-      "matched_word": "кожи",
-      "gender": "pl",
-      "text": "[us] [has] смертельные ожоги [us-pos] кожи, глаз и горла, вызванные вяжущим воздухом. Смерть неминуема."
-    },
-    {
-      "file": "conditions.json",
-      "name": "DcEncumbrance02",
-      "field": "strDesc",
-      "matched_word": "скорость",
-      "gender": "fem",
-      "text": "[us] [is] с умеренным грузом, и [us-pos] скорость передвижения ниже. [us] также [fatigues] быстрее."
-    },
-    {
-      "file": "conditions.json",
-      "name": "DcEncumbrance03",
-      "field": "strDesc",
-      "matched_word": "скорость",
-      "gender": "fem",
-      "text": "[us] [is] с тяжёлым грузом, и [us-pos] скорость передвижения намного ниже. [us] также [fatigues] намного быстрее."
-    },
-    {
-      "file": "conditions.json",
-      "name": "DcInfection03",
-      "field": "strDesc",
-      "matched_word": "тела",
-      "gender": "fem",
-      "text": "[us] [is] в воспалительном, потенциально смертельном состоянии всего [us-pos] тела."
-    },
-    {
-      "file": "conditions.json",
-      "name": "DcMeaning01",
-      "field": "strDesc",
-      "matched_word": "мечты",
-      "gender": "pl",
-      "text": "[us] [feels], что [us-pos] мечты синхронизированы с реальностью."
-    },
-    {
-      "file": "conditions.json",
-      "name": "DcPoison01",
-      "field": "strDesc",
-      "matched_word": "организме",
-      "gender": "neut",
-      "text": "[us] [has] нулевое содержание яда в [us-pos] организме."
-    },
-    {
-      "file": "conditions.json",
-      "name": "DcSecurity02",
-      "field": "strDesc",
-      "matched_word": "самообладание",
-      "gender": "pl",
-      "text": "[us] [is] в состоянии сохранять [us-pos] самообладание."
-    },
-    {
-      "file": "conditions.json",
-      "name": "DcSecurity03",
-      "field": "strDesc",
-      "matched_word": "страхи",
-      "gender": "pl",
-      "text": "[us] [has] [us-pos] страхи под контролем."
-    },
-    {
-      "file": "conditions.json",
-      "name": "IsAIManual",
-      "field": "strDesc",
-      "matched_word": "поведение",
-      "gender": "pl",
-      "text": "[us] [has] [us-pos] поведение в ручном режиме."
-    },
-    {
-      "file": "conditions.json",
-      "name": "IsDiligent",
-      "field": "strDesc",
-      "matched_word": "работе",
-      "gender": "neut",
-      "text": "[us] [shows] значительно больше старания в [us-pos] работе, чем у остальных."
-    },
-    {
-      "file": "conditions.json",
-      "name": "IsExercisingCardio",
-      "field": "strDesc",
-      "matched_word": "сердечно",
-      "gender": "neut",
-      "text": "[us] [is] в процессе кардиотренировки для улучшения [us-pos] сердечно-сосудистой системы."
-    },
-    {
-      "file": "conditions.json",
-      "name": "IsExercisingCardioHot",
-      "field": "strDesc",
-      "matched_word": "сердечно",
-      "gender": "neut",
-      "text": "[us] [is] в усиленных кардиотренировках для улучшения [us-pos] сердечно-сосудистого здоровья."
-    },
-    {
-      "file": "conditions.json",
-      "name": "IsOblivious",
-      "field": "strDesc",
-      "matched_word": "окружения",
-      "gender": "fem",
-      "text": "[us] [is] совершенно не в курсе [us-pos] окружения и деталей."
-    },
-    {
-      "file": "conditions.json",
-      "name": "IsObliviousTemp",
-      "field": "strDesc",
-      "matched_word": "окружения",
-      "gender": "fem",
-      "text": "[us] [is] сейчас совершенно не в курсе [us-pos] окружения и деталей."
-    },
-    {
-      "file": "conditions.json",
-      "name": "StatDefense",
-      "field": "strDesc",
-      "matched_word": "способность",
-      "gender": "fem",
-      "text": "[us-pos] способность защищаться в бою."
-    },
-    {
-      "file": "conditions.json",
-      "name": "StatPiloting",
-      "field": "strDesc",
-      "matched_word": "способность",
-      "gender": "fem",
-      "text": "[us-pos] способность пилотировать корабль"
-    },
-    {
-      "file": "conditions.json",
-      "name": "StatPrivacy",
-      "field": "strDesc",
-      "matched_word": "личное",
-      "gender": "neut",
-      "text": "[us-pos] личное пространство."
-    },
-    {
-      "file": "conditions.json",
-      "name": "StatSelfRespect",
-      "field": "strDesc",
-      "matched_word": "самоуважение",
-      "gender": "pl",
-      "text": "[us-pos] самоуважение."
-    },
-    {
-      "file": "conditions.json",
-      "name": "DcCOPoisoning06",
-      "field": "strDesc",
-      "matched_word": "тело",
-      "gender": "neut",
-      "text": "[us] [is] страдает от мышечного тремора, и [us-pos] тело [is] отказывает из-за гиперкапнии."
-    },
-    {
-      "file": "conditions.json",
-      "name": "DcSmokePoisoning03",
-      "field": "strDesc",
-      "matched_word": "кожи",
-      "gender": "pl",
-      "text": "[us] [has] получил смертельное отравление дымом [us-pos] кожи, глаз и горла. Смерть неизбежна."
-    },
-    {
-      "file": "conditions.json",
-      "name": "NanoFirstAidAdv",
-      "field": "strDesc",
-      "matched_word": "раны",
-      "gender": "pl",
-      "text": "[us] после применения нанороботической первой помощи: [us-pos] раны начали заживать."
-    },
-    {
-      "file": "conditions.json",
-      "name": "StatAtrophy",
-      "field": "strDesc",
-      "matched_word": "мышцы",
-      "gender": "pl",
-      "text": "Насколько атрофированы [us-pos] мышцы."
-    },
-    {
-      "file": "conditions.json",
-      "name": "StatMass",
-      "field": "strDesc",
-      "matched_word": "масса",
-      "gender": "fem",
-      "text": "[us-pos] масса в кг."
-    },
-    {
-      "file": "conditions.json",
-      "name": "StatPoison",
-      "field": "strDesc",
-      "matched_word": "организме",
-      "gender": "neut",
-      "text": "Количество яда в [us-pos] организме."
-    },
-    {
-      "file": "conditions.json",
-      "name": "StatSleep",
-      "field": "strDesc",
-      "matched_word": "недосыпание",
-      "gender": "pl",
-      "text": "[us-pos] недосыпание."
-    },
-    {
-      "file": "conditions.json",
-      "name": "StatAtrophyRate",
-      "field": "strDesc",
-      "matched_word": "мышцы",
-      "gender": "pl",
-      "text": "Скорость, с которой [us-pos] мышцы атрофируются из-за микрогравитации."
-    },
-    {
-      "file": "conditions.json",
-      "name": "StatBloodHealRate",
-      "field": "strDesc",
-      "matched_word": "кровоснабжение",
-      "gender": "pl",
-      "text": "Скорость, с которой [us-pos] кровоснабжение восстанавливается."
-    },
-    {
-      "file": "conditions.json",
-      "name": "IsBodySealed",
-      "field": "strDesc",
-      "matched_word": "тело",
-      "gender": "neut",
-      "text": "[us] [has] [us-pos] тело, упакованное в нечто вроде одежды."
-    },
-    {
-      "file": "conditions.json",
-      "name": "IsHarrassExsNewDone",
-      "field": "strDesc",
-      "matched_word": "бывшего",
-      "gender": "neut",
-      "text": "[us] [has] отметку о домогательстве к новому увлечению [us-pos] бывшего."
-    },
-    {
-      "file": "conditions.json",
-      "name": "StatHeatArea",
-      "field": "strDesc",
-      "matched_word": "нагревательного",
-      "gender": "neut",
-      "text": "Площадь поверхности [us-pos] нагревательного элемента в m2."
-    },
-    {
-      "file": "conditions.json",
-      "name": "StatSafeTempMax",
-      "field": "strDesc",
-      "matched_word": "температура",
-      "gender": "fem",
-      "text": "Максимальная температура окружающей среды, при которой [us-pos] температура тела остаётся в равновесии (K)."
-    },
-    {
-      "file": "conditions.json",
-      "name": "StatSafeTempMin",
-      "field": "strDesc",
-      "matched_word": "температура",
-      "gender": "fem",
-      "text": "Минимальная температура окружающей среды, при которой [us-pos] температура тела остаётся в равновесии (K)."
-    },
-    {
-      "file": "conditions.json",
-      "name": "ToldMemoryEarth",
-      "field": "strDesc",
-      "matched_word": "доме",
-      "gender": "neut",
-      "text": "[us] [has] поделился воспоминанием о [us-pos] доме на Земле"
-    },
-    {
-      "file": "interactions.json",
-      "name": "CancelAction",
-      "field": "strDesc",
-      "matched_word": "текущее",
-      "gender": "neut",
-      "text": "[us] [cancels] [us-pos] текущее действие."
-    },
-    {
       "file": "interactions.json",
       "name": "GUITradeAllow",
       "field": "strDesc",
       "matched_word": "доступные",
       "gender": "pl",
       "text": "[us] [shows] [us-pos] доступные товары [them]."
-    },
-    {
-      "file": "interactions.json",
-      "name": "GUITradeAllowOKLGFixer",
-      "field": "strDesc",
-      "matched_word": "товары",
-      "gender": "pl",
-      "text": "[us] [shows] [us-pos] товары чёрного рынка [them]."
     },
     {
       "file": "interactions.json",
@@ -426,27 +18,11 @@
     },
     {
       "file": "interactions.json",
-      "name": "GUITradeAllowOKLGLicensed",
-      "field": "strDesc",
-      "matched_word": "разрешение",
-      "gender": "pl",
-      "text": "[us] [uses] [us-pos] разрешение, чтобы начать торговлю с [them]."
-    },
-    {
-      "file": "interactions.json",
       "name": "SeekHygieneTeeth",
       "field": "strDesc",
       "matched_word": "зубы",
       "gender": "pl",
       "text": "[us] [decides] почистить [us-pos] зубы, используя [them]."
-    },
-    {
-      "file": "interactions.json",
-      "name": "ACTSeekHygieneTeethAllow",
-      "field": "strDesc",
-      "matched_word": "зубы",
-      "gender": "pl",
-      "text": "[them] [brushes] [us-pos] зубы с помощью [us]."
     },
     {
       "file": "interactions.json",
@@ -458,27 +34,11 @@
     },
     {
       "file": "interactions.json",
-      "name": "SOCOrgToDos",
-      "field": "strDesc",
-      "matched_word": "расписание",
-      "gender": "pl",
-      "text": "[us] [pulls] [us-pos] расписание и [updates] [us-pos] список дел."
-    },
-    {
-      "file": "interactions.json",
       "name": "SOCOrgToDosWithPDANotes",
       "field": "strDesc",
       "matched_word": "расписание",
       "gender": "pl",
       "text": "[us] [pulls] [us-pos] расписание и [updates] [us-pos] список дел."
-    },
-    {
-      "file": "interactions.json",
-      "name": "SOCGiveUp",
-      "field": "strDesc",
-      "matched_word": "руки",
-      "gender": "pl",
-      "text": "[us] [throws] [us-pos] руки вверх и [gives]."
     },
     {
       "file": "interactions.json",
@@ -490,23 +50,7 @@
     },
     {
       "file": "interactions.json",
-      "name": "SOCRollEyes",
-      "field": "strDesc",
-      "matched_word": "глаза",
-      "gender": "fem",
-      "text": "[us] [rolls] [us-pos] глаза, издавая вздох."
-    },
-    {
-      "file": "interactions.json",
       "name": "SOCFlirtStartAllow",
-      "field": "strDesc",
-      "matched_word": "брови",
-      "gender": "pl",
-      "text": "[us] [raises] [us-pos] брови, многозначительно глядя на [them]."
-    },
-    {
-      "file": "interactions.json",
-      "name": "SOCFlirtStartPlayerAllow",
       "field": "strDesc",
       "matched_word": "брови",
       "gender": "pl",
@@ -562,43 +106,11 @@
     },
     {
       "file": "interactions.json",
-      "name": "SOCPoliceShakedownBasicBribeAcceptCritSuccess",
-      "field": "strDesc",
-      "matched_word": "контакты",
-      "gender": "pl",
-      "text": "[us] [grins], [adds] взятку в [us-pos] журнал и [gives] [them] [us-pos] контакты на случай, если [them-subj] когда-нибудь [needs] в «друге» в ближайшем будущем."
-    },
-    {
-      "file": "interactions.json",
-      "name": "SOCPoliceShakedownScowl",
-      "field": "strDesc",
-      "matched_word": "контроля",
-      "gender": "fem",
-      "text": "[us] [appears] раздражённо: ситуация вышла из-под [us-pos] контроля. [us-subj] [scowls] на [them], молча кипя от злости."
-    },
-    {
-      "file": "interactions.json",
       "name": "SOCPoliceShakedownSecurityFail",
       "field": "strDesc",
       "matched_word": "точки",
       "gender": "pl",
       "text": "[us] [reaches] [us-pos] точки кипения и [lashes] на [them] со зверским разносом."
-    },
-    {
-      "file": "interactions.json",
-      "name": "SOCBullshitFine",
-      "field": "strDesc",
-      "matched_word": "терпение",
-      "gender": "pl",
-      "text": "[us] [has] окончательно [us-pos] терпение и [says], что [us-subj] [isn't] даже тратить время на поиск законного нарушения. [us] [assigns] [them] здоровенный, липовый штраф."
-    },
-    {
-      "file": "interactions.json",
-      "name": "SOCAskHomeDetailMarsAccept3",
-      "field": "strDesc",
-      "matched_word": "родители",
-      "gender": "pl",
-      "text": "[us] [recalls] тысячи низких одноэтажных домов, окружённых зелёными дворами-сихэюанями. [us] катался на педикэбах по хутунам, потому что [us-pos] родители не пускали [us-obj] в метро."
     },
     {
       "file": "interactions.json",
@@ -634,22 +146,6 @@
     },
     {
       "file": "interactions.json",
-      "name": "SOCAskFamilyAcceptParents8",
-      "field": "strDesc",
-      "matched_word": "жизни",
-      "gender": "pl",
-      "text": "[us] [says], что [us-pos] отец то появляется, то исчезает в [us-pos] жизни, когда ему вздумается."
-    },
-    {
-      "file": "interactions.json",
-      "name": "SOCAskFamilyAcceptChildren4",
-      "field": "strDesc",
-      "matched_word": "собственная",
-      "gender": "fem",
-      "text": "[us] [says], что [us-pos] ребёнок с особыми потребностями, на которые уходит целое состояние. [us-subj] [insists], что [us-pos] собственная жизнь от этого обретает больший смысл."
-    },
-    {
-      "file": "interactions.json",
       "name": "SOCBragToEnemy2",
       "field": "strDesc",
       "matched_word": "время",
@@ -666,51 +162,11 @@
     },
     {
       "file": "interactions.json",
-      "name": "FFWDEventDiligent",
-      "field": "strDesc",
-      "matched_word": "усердные",
-      "gender": "pl",
-      "text": "[us] [earns] комплимент от [them] за [us-pos] усердные усилия."
-    },
-    {
-      "file": "interactions.json",
-      "name": "SOCTradeFixerConvoIntimidate",
-      "field": "strDesc",
-      "matched_word": "костяшками",
-      "gender": "pl",
-      "text": "[us] [says], что [us-pos] правый хук может поручиться за [us-obj], и [cracks] [us-pos] костяшками."
-    },
-    {
-      "file": "interactions.json",
-      "name": "SOCHoneypotDemonstrateVulnerability",
-      "field": "strDesc",
-      "matched_word": "личности",
-      "gender": "pl",
-      "text": "[us] на мгновение [exposes] уязвимую сторону [us-pos] личности, которую большинство обычно держит под замком."
-    },
-    {
-      "file": "interactions.json",
-      "name": "PLGAISurviveCO2",
-      "field": "strDesc",
-      "matched_word": "показатели",
-      "gender": "pl",
-      "text": "[us] [checks] [us-pos] показатели CO2."
-    },
-    {
-      "file": "interactions.json",
       "name": "PLGAISurviveCO2Emergency",
       "field": "strDesc",
       "matched_word": "показатели",
       "gender": "pl",
       "text": "[us] [checks] [us-pos] показатели CO2 при аварии."
-    },
-    {
-      "file": "interactions.json",
-      "name": "PLGAISurviveO2",
-      "field": "strDesc",
-      "matched_word": "показатели",
-      "gender": "pl",
-      "text": "[us] [checks] [us-pos] показатели O2."
     },
     {
       "file": "interactions.json",
@@ -722,35 +178,11 @@
     },
     {
       "file": "interactions.json",
-      "name": "PLGAIEat",
-      "field": "strDesc",
-      "matched_word": "показатели",
-      "gender": "pl",
-      "text": "[us] [checks] [us-pos] показатели сытости."
-    },
-    {
-      "file": "interactions.json",
       "name": "PLOT_Messenger_OfferReply02",
       "field": "strDesc",
       "matched_word": "работы",
       "gender": "pl",
       "text": "[us] [describes] опасности [us-pos] работы и необходимость улучшить меры безопасности и оснащение, и [asks] [them] поговорить с [3rd], чтобы помочь [us-obj]."
-    },
-    {
-      "file": "interactions.json",
-      "name": "PLOT_Messenger_OfferReply09",
-      "field": "strDesc",
-      "matched_word": "карьеры",
-      "gender": "pl",
-      "text": "[us] [explains] желание получить конкретные указания по развитию [us-pos] карьеры и [asks] [them] поговорить с [3rd], чтобы выручить [us-obj]."
-    },
-    {
-      "file": "interactions.json",
-      "name": "PLOT_Messenger_Agree",
-      "field": "strDesc",
-      "matched_word": "возвращения",
-      "gender": "fem",
-      "text": "[us] [agrees] выручить. Взамен [them] [offers] благодарность, пожелания удачи и [awaits] [us-pos] возвращения."
     },
     {
       "file": "interactions.json",
@@ -770,27 +202,11 @@
     },
     {
       "file": "interactions.json",
-      "name": "PLOT_Messenger02_Agree",
-      "field": "strDesc",
-      "matched_word": "возвращения",
-      "gender": "fem",
-      "text": "[us] [agrees] помочь. [them] [offers] благодарность, желает удачи и [awaits] [us-pos] возвращения."
-    },
-    {
-      "file": "interactions.json",
       "name": "PLOT_Messenger02_TargetReplyPersuasion",
       "field": "strDesc",
       "matched_word": "соперничестве",
       "gender": "neut",
       "text": "Вняв убедительным доводам [them], [us] неохотно [agrees] пойти на уступки в [us-pos] соперничестве с [3rd]."
-    },
-    {
-      "file": "interactions.json",
-      "name": "PLOT_Messenger02_TargetReplyEasy",
-      "field": "strDesc",
-      "matched_word": "соперничестве",
-      "gender": "neut",
-      "text": "[us] [folds] как мокрая бумага, соглашаясь пойти на уступки в [us-pos] соперничестве с [3rd]. Это было почти жалко."
     },
     {
       "file": "interactions.json",
@@ -802,14 +218,6 @@
     },
     {
       "file": "interactions.json",
-      "name": "PLOT_Messenger02_TargetReplyForce",
-      "field": "strDesc",
-      "matched_word": "соперничестве",
-      "gender": "neut",
-      "text": "После силового убеждения [us] охотно [vows] пойти на уступки в [us-pos] соперничестве с [3rd]."
-    },
-    {
-      "file": "interactions.json",
       "name": "PLOT_Messenger02_TurnInPayTriggerDead",
       "field": "strDesc",
       "matched_word": "старания",
@@ -818,35 +226,11 @@
     },
     {
       "file": "interactions.json",
-      "name": "PLOT_Messenger02_TurnInFailTrigger",
-      "field": "strDesc",
-      "matched_word": "старания",
-      "gender": "fem",
-      "text": "[them] [thanks] [us] за [us-pos] старания, несмотря на отсутствие успеха."
-    },
-    {
-      "file": "interactions.json",
-      "name": "PLOT_MessengerFamily_Agree",
-      "field": "strDesc",
-      "matched_word": "возвращения",
-      "gender": "fem",
-      "text": "[us] [agrees] помочь. Взамен [them] [offers] благодарность, удачи и [awaits] [us-pos] возвращения."
-    },
-    {
-      "file": "interactions.json",
       "name": "PLOT_MessengerFamily_TurnInSplit",
       "field": "strDesc",
       "matched_word": "разговоре",
       "gender": "neut",
       "text": "[us] [reports] [them] о [us-pos] разговоре с [3rd]."
-    },
-    {
-      "file": "interactions.json",
-      "name": "PLOT_MessengerLegal_Agree",
-      "field": "strDesc",
-      "matched_word": "возвращения",
-      "gender": "fem",
-      "text": "[us] [agrees] помочь. Взамен [them] [offers] благодарность, пожелания удачи и [awaits] [us-pos] возвращения."
     },
     {
       "file": "interactions.json",
@@ -866,35 +250,11 @@
     },
     {
       "file": "interactions.json",
-      "name": "PLOT_MessengerRomantic_OfferReplyMenWomen",
-      "field": "strDesc",
-      "matched_word": "желание",
-      "gender": "pl",
-      "text": "[us] [explains] [us-pos] желание перемен в [us-pos] личной жизни и [asks] [them] о помощи в поиске партнёра мужского или женского пола без предрассудков."
-    },
-    {
-      "file": "interactions.json",
       "name": "PLOT_MessengerRomantic_OfferReplyMenNB",
       "field": "strDesc",
       "matched_word": "желании",
       "gender": "pl",
       "text": "[us] [explains] о [us-pos] желании перемен в [us-pos] личной жизни и [asks] [them] помочь найти мужчину или небинарную персону с широкими взглядами."
-    },
-    {
-      "file": "interactions.json",
-      "name": "PLOT_MessengerRomantic_OfferReplyNBWomen",
-      "field": "strDesc",
-      "matched_word": "желании",
-      "gender": "pl",
-      "text": "[us] [explains] о [us-pos] желании перемен в [us-pos] личной жизни и [asks] [them] помочь найти женщину или небинарную персону с широкими взглядами."
-    },
-    {
-      "file": "interactions.json",
-      "name": "PLOT_MessengerRomantic_OfferReplyMen",
-      "field": "strDesc",
-      "matched_word": "желании",
-      "gender": "pl",
-      "text": "[us] [explains] о [us-pos] желании перемен в [us-pos] личной жизни и [asks] [them] помочь найти мужчину с широкими взглядами."
     },
     {
       "file": "interactions.json",
@@ -914,22 +274,6 @@
     },
     {
       "file": "interactions.json",
-      "name": "PLOT_MessengerRomantic_Agree",
-      "field": "strDesc",
-      "matched_word": "возвращения",
-      "gender": "fem",
-      "text": "[us] [agrees] помочь. Взамен [them] [offers] благодарность, пожелания удачи и [awaits] [us-pos] возвращения."
-    },
-    {
-      "file": "interactions.json",
-      "name": "PLOT_MessengerTechnical_Agree",
-      "field": "strDesc",
-      "matched_word": "возвращения",
-      "gender": "fem",
-      "text": "[us] [agrees] помочь. В обмен [them] [offers] благодарность, пожелание удачи и [awaits] [us-pos] возвращения."
-    },
-    {
-      "file": "interactions.json",
       "name": "PLOT_MessengerTechnical_TurnInSplit",
       "field": "strDesc",
       "matched_word": "разговоре",
@@ -938,23 +282,7 @@
     },
     {
       "file": "interactions.json",
-      "name": "PLOTChoiceFanBreakoutTeam02dReply",
-      "field": "strDesc",
-      "matched_word": "восторженные",
-      "gender": "pl",
-      "text": "[us-pos] восторженные глаза меркнут от недоверия, прежде чем [us-subj] [shrugs] и [moves] дальше. «3FC? Да пофиг.»"
-    },
-    {
-      "file": "interactions.json",
       "name": "PLOTOKLGCritter02",
-      "field": "strDesc",
-      "matched_word": "пальцами",
-      "gender": "pl",
-      "text": "[us] [reaches] [us-pos] пальцами между ржавыми ламелями затвора [them]. Что-то острое укусывает пальцы."
-    },
-    {
-      "file": "interactions.json",
-      "name": "PLOTOKLGCritter03b",
       "field": "strDesc",
       "matched_word": "пальцами",
       "gender": "pl",
@@ -970,27 +298,11 @@
     },
     {
       "file": "interactions.json",
-      "name": "PLOT_Lonesome_02gReplyPartner",
-      "field": "strDesc",
-      "matched_word": "напарнике",
-      "gender": "neut",
-      "text": "[us] [tells] [them] о [us-pos] напарнике по петле [3rd]."
-    },
-    {
-      "file": "interactions.json",
       "name": "PLOT_Lonesome_02gReplyPartnerMore",
       "field": "strDesc",
       "matched_word": "напарнике",
       "gender": "neut",
       "text": "[us] [elaborates] [them] о [us-pos] напарнике по петле [3rd]."
-    },
-    {
-      "file": "interactions.json",
-      "name": "PLOT_Lonesome_02gReplyLover",
-      "field": "strDesc",
-      "matched_word": "симпатии",
-      "gender": "pl",
-      "text": "[us] [tells] [them] о [us-pos] симпатии к [3rd]."
     },
     {
       "file": "interactions.json",
@@ -1018,35 +330,11 @@
     },
     {
       "file": "interactions.json",
-      "name": "PLOT_ScavFetch02_OfferReply",
-      "field": "strDesc",
-      "matched_word": "потребность",
-      "gender": "fem",
-      "text": "[us] [thanks] [them] за [them-pos] предыдущую помощь и [reiterates] [us-pos] потребность в независимом напарнике, который хорошо разбирается в кораблях.\n[us-subj] [is] не прочь заплатить $10,000 за четыре неповреждённых регулятора воздухозаборника RCS марки Kang."
-    },
-    {
-      "file": "interactions.json",
       "name": "PLOT_Merga_SignsDiscussed02_Racing_Icon_Alibi",
       "field": "strDesc",
       "matched_word": "приятелями",
       "gender": "pl",
       "text": "[us] [says], что [us-subj] [was] в стельку пьян с [us-pos] приятелями — праздновал [us-pos] третью подряд победу на Гран-при Энкантадо."
-    },
-    {
-      "file": "interactions.json",
-      "name": "PLOT_Merga_MergaEngaged06_Reply",
-      "field": "strDesc",
-      "matched_word": "и",
-      "gender": "pl",
-      "text": "[us] [says], что [3rd] [is] назойливый мелкий фрик. К тому же запись не доказывает, что [us-subj] [was] трезв. [us-contractHas] всегда мог пить [us-pos] и не пьянеть."
-    },
-    {
-      "file": "interactions.json",
-      "name": "Plot_Whodunnit_AccuseMurderEnoughManager",
-      "field": "strDesc",
-      "matched_word": "положении",
-      "gender": "pl",
-      "text": "[us] [asks] [them], [realizes] ли [them-subj], с кем [them-contractIs] говорит, и [warns] [them] следить за [them-pos] языком. Кто поверит диким обвинениям, а не слову человека в [us-pos] положении?"
     },
     {
       "file": "interactions.json",
@@ -1066,51 +354,11 @@
     },
     {
       "file": "interactions.json",
-      "name": "Plot_Whodunnit_ReportMurderToOKLGLEO",
-      "field": "strDesc",
-      "matched_word": "записи",
-      "gender": "pl",
-      "text": "[us] [shares] [us-pos] записи расследования, сужающие круг подозреваемых в убийстве [3rd-pos]."
-    },
-    {
-      "file": "interactions.json",
-      "name": "Plot_Whodunnit_ReportMurderToOKLGLEOSubmitCase",
-      "field": "strDesc",
-      "matched_word": "дело",
-      "gender": "neut",
-      "text": "[us] [finalizes] [us-pos] дело. [us] [doesn't] больше собирать улики об убийстве [3rd-pos]."
-    },
-    {
-      "file": "interactions.json",
-      "name": "Plot_Whodunnit_CloseCasefile",
-      "field": "strDesc",
-      "matched_word": "дело",
-      "gender": "neut",
-      "text": "[us] [concludes] [us-pos] дело на [3rd], расчищая место для нового расследования."
-    },
-    {
-      "file": "interactions.json",
       "name": "Plot_Whodunnit_CloseCaseNoBodyOrVictim",
       "field": "strDesc",
       "matched_word": "текущее",
       "gender": "neut",
       "text": "[us] [concludes] [us-pos] текущее расследование, расчищая место для нового."
-    },
-    {
-      "file": "interactions.json",
-      "name": "SOCPortAuthorityManagerAcknowledgeFriend",
-      "field": "strDesc",
-      "matched_word": "терминала",
-      "gender": "fem",
-      "text": "[us] [looks] поверх [us-pos] терминала и сразу [recognizes] [them]."
-    },
-    {
-      "file": "interactions.json",
-      "name": "SOCFlirtStartMan",
-      "field": "strTooltip",
-      "matched_word": "брови",
-      "gender": "pl",
-      "text": "[us] [raises] [us-pos] брови, намекающе глядя на [them]"
     },
     {
       "file": "interactions.json",
@@ -1130,27 +378,11 @@
     },
     {
       "file": "interactions.json",
-      "name": "SOCFlirtStart",
-      "field": "strTooltip",
-      "matched_word": "брови",
-      "gender": "pl",
-      "text": "[us] [raises] [us-pos] брови, намекающе глядя на [them]"
-    },
-    {
-      "file": "interactions.json",
       "name": "GiveUp",
       "field": "strDesc",
       "matched_word": "пути",
       "gender": "pl",
       "text": "[us] [throws] вверх [us-pos] руки. Кофе не предвидится. Всем лучше не стоять на [us-pos] пути."
-    },
-    {
-      "file": "interactions.json",
-      "name": "ACTSeekHygieneTeethAllowEnd",
-      "field": "strDesc",
-      "matched_word": "зубы",
-      "gender": "pl",
-      "text": "[us] [finishes] чистить [us-pos] зубы с помощью [them]."
     },
     {
       "file": "interactions.json",
@@ -1162,27 +394,11 @@
     },
     {
       "file": "interactions.json",
-      "name": "PLGAIUnwearSuit",
-      "field": "strDesc",
-      "matched_word": "скафандра",
-      "gender": "fem",
-      "text": "[us] [checks] состояние [us-pos] скафандра."
-    },
-    {
-      "file": "interactions.json",
       "name": "STKStrangerMeet_Intro_Allow_Enemy",
       "field": "strDesc",
       "matched_word": "глаза",
       "gender": "fem",
       "text": "[us] [rolls] [us-pos] глаза, когда [them] приближается."
-    },
-    {
-      "file": "interactions.json",
-      "name": "STKStrangerMeet_Intro_Allow_Friendly",
-      "field": "strDesc",
-      "matched_word": "лице",
-      "gender": "neut",
-      "text": "На [us-pos] лице мелькает узнавание, когда [them] [approaches]."
     }
   ],
   "class_b": [
