@@ -54,12 +54,14 @@ CUR_DATA_ROOT = r"F:\Games\Steam\steamapps\common\Ostranauts\Ostranauts_Data\Str
 
 TRANSLATABLE = ("strTitle", "strDesc", "strTooltip", "strNameFriendly", "strNameShort", "strFriendlyName",
                  "strArticleBody", "strArticleTitle", "strNodeLabel", "strBody", "strDescription",
-                 "strRequirementDescription", "strFriendlyDescription", "description", "strTutorialKey")
+                 "strRequirementDescription", "strFriendlyDescription", "description", "strTutorialKey",
+                 "strColonyName", "strMetonym", "designation", "model", "make", "origin")
 
 CATEGORIES = ["interactions", "careers", "conditions", "pda_apps", "installables", "cooverlays",
               "condowners", "ledgerdefs", "pledges", "slots", "headlines", "plots",
               "market/CoCollections", "ads", "rooms", "jobitems", "racing/tracks", "context",
-              "racing/leagues", "conditions_simple", "info", "market/Production", "tips"]
+              "racing/leagues", "conditions_simple", "info", "market/Production", "tips",
+              "attackmodes/coAttacks", "ships", "homeworlds"]
 
 _log_lock = threading.Lock()
 

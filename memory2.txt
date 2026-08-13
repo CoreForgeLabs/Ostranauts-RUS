@@ -83,17 +83,20 @@
 - Живой запуск с автозагрузкой подтвердил: строка `manual-assets: ...\langs\ru\ зарегистрирован в aModPaths (приоритет над оригиналом)`, 0 исключений, overlay-baseline не изменился (24894/0). Автозагрузка возвращена в false.
 - Код закоммичен в master: коммит `8419f13` (файлы: `.gitignore`, `plugin/OstraI18n/Plugin.cs`, `plugin/OstraI18n/ManualAssets.cs`).
 
-Незавершённые задачи и дальнейшие шаги:
-- Сами переводы мануалов не выполняются автоматически — пользователь переведёт их вручную в `langs/ru/images/manuals` и `langs/de/images/manuals`.
-- Открыта отдельная задача-чип `task_640d906a` «Add manpages category to i18n overlay» — не начинать, не блокирует текущую работу.
-- Второй язык проекта: выбран немецкий (`langs/lang_de` уже существует с файлами `grammar.json`, `gui.json`, `strings.json`, `verbs.json`). Это язык по умолчанию для второго пакета.
-- В `langs/languages.json` уже прописаны коды `de` и `german` → `lang_de`.
+--- сообщения #3005–#3050 ---
+- Сохранены переведённые пользователем мануалы из игры (`F:\Games\Steam\steamapps\common\Ostranauts\BepInEx\plugins\OstraI18n\langs\ru\images\manuals`) в проект `langs/ru/images/manuals/` (99 файлов).
+- Расширено покрытие игровых данных: подключены новые категории `attackmodes/coAttacks` (`dictAModes`), `ships` (`dictShips`), `homeworlds` (`dictHomeworlds`).
+- Обновлены `langs/ru/pack.json` (`categoryToField` выросло до 26, `translatableFields` до 21), `plugin/OstraI18n/ContentOverlay.cs`, `tools/import_old_translation.py`, `tools/validate_content_overlay.py`, `tools/ensemble_full_retranslate.py`.
+- Прогнан полноценный `a+b+c` ensemble-перевод (2 независимых Qwen 3.8 Max + Qwen Арбитр, 150 воркеров) по всем новым полям (899 полей обработано): созданы `langs/ru/data/attackmodes_coAttacks.json` (96 записей), `langs/ru/data/homeworlds.json` (21 запись), `langs/ru/data/ships.json` (212 записей).
+- Валидация `tools/validate_content_overlay.py` по всем 25 категориям: 0 ошибок!
+- Сборка C# `OstraI18n.csproj` прошла успешно (0 ошибок).
+- Деплой в игру и живой запуск подтвердили: `применено полей 25763, сирот 0`, 0 исключений! Baseline повышен с 24894 до 25763 (`langs/ru/baseline.json`).
 
 Договорённости:
-- Git identity локально в репо: `user.name=CoreForgeLabs`, `user.email=CoreForgeLabs@gmail.com` (подтверждено пользователем).
-- Картинки/PDF — чужой копирайтный арт, в git не кладём; только `.gitignore`, сами файлы на диске остаются.
+- Git identity локально в репо: `user.name=CoreForgeLabs`, `user.email=CoreForgeLabs@gmail.com`.
+- Картинки/PDF — в `.gitignore`, на диске остаются.
+- Обязательно делать git push после коммитов.
 
 Технические детали:
-- Проверка запуска производится через существующий автозагрузчик `Run.dll`, конфиг `com.coreforgelabs.run.cfg`, параметр `AutoLoadLastSave`. Включение на один запуск, затем возврат.
+- Проверка запуска: через `Run.dll` (`com.coreforgelabs.run.cfg`, `AutoLoadLastSave`).
 - Логи: `F:\Games\Steam\steamapps\common\Ostranauts\BepInEx\LogOutput.log`.
-- Упоминания в `decompiled/DataHandler.cs`: `LoadPNG` (1572), `LoadPNGFolder` (1618), `aModPaths` (54, инициализация 661, вставка 913). `decompiled/CrewSim.cs`: `Application.OpenURL` для мануалов на строках 322 и 1851 (жёстко `streamingAssetsPath + "/images/manuals/"`).

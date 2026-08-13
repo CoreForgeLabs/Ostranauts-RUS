@@ -58,6 +58,10 @@ namespace OstraI18n
             { "info", "dictInfoNodes" },
             { "market/Production", "dictProductionMaps" },
             { "tips", "dictTips" },
+            { "attackmodes/coAttacks", "dictAModes" },
+            { "attackmodes/shipAttacks", "dictShipAttacks" },
+            { "ships", "dictShips" },
+            { "homeworlds", "dictHomeworlds" },
         };
 
         private static readonly HashSet<string> DefaultTranslatableFields = new HashSet<string>
@@ -65,6 +69,7 @@ namespace OstraI18n
             "strTitle", "strDesc", "strTooltip", "strNameFriendly", "strNameShort", "strFriendlyName",
             "strArticleBody", "strArticleTitle", "strNodeLabel", "strBody", "strDescription",
             "strRequirementDescription", "strFriendlyDescription", "description", "strTutorialKey",
+            "strColonyName", "strMetonym", "designation", "model", "make", "origin",
         };
 
         // Эффективные таблицы, используемые при применении оверлея. По умолчанию

@@ -50,6 +50,8 @@ FILENAME_TO_CATEGORY = {
     "market_Production": "market/Production",
     "racing_tracks": "racing/tracks",
     "racing_leagues": "racing/leagues",
+    "attackmodes_coAttacks": "attackmodes/coAttacks",
+    "attackmodes_shipAttacks": "attackmodes/shipAttacks",
 }
 
 
