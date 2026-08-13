@@ -1117,7 +1117,7 @@
   },
   "CancelAction": {
     "strTitle": "Отменить действие",
-    "strDesc": "[us] [cancels] [us-pos] текущее действие."
+    "strDesc": "[us] [cancels] своё текущее действие."
   },
   "QABRecovering": {
     "strTitle": "Восстановление...",
@@ -1954,7 +1954,7 @@
   "GUITradeAllowOKLGFixer": {
     "strTitle": "Просмотреть чёрный рынок OKLG",
     "strTooltip": "Позволяет покупать или продавать предметы из инвентаря или торговых зон на вашем корабле.",
-    "strDesc": "[us] [shows] [us-pos] товары чёрного рынка [them]."
+    "strDesc": "[us] [shows] свои товары чёрного рынка [them]."
   },
   "GUITradeAllowOKLGFixerTrustIssues": {
     "strTitle": "Просмотреть чёрный рынок OKLG",
@@ -1963,7 +1963,7 @@
   },
   "GUITradeAllowOKLGLicensed": {
     "strTitle": "Просмотреть лицензионный киоск OKLG",
-    "strDesc": "[us] [uses] [us-pos] разрешение, чтобы начать торговлю с [them].",
+    "strDesc": "[us] [uses] своё разрешение, чтобы начать торговлю с [them].",
     "strTooltip": "Позволяет покупать или продавать предметы из инвентаря или торговых зон на вашем корабле."
   },
   "GUITradeBuyOKLGLicense": {
@@ -3000,7 +3000,7 @@
   },
   "ACTSeekHygieneTeethAllow": {
     "strTitle": "Чистка зубов",
-    "strDesc": "[them] [brushes] [us-pos] зубы с помощью [us]."
+    "strDesc": "[them] [brushes] зубы у [us-gen] с помощью [us]."
   },
   "ACTSeekHygieneTeethAllow2": {
     "strTitle": "Чистка зубов",
@@ -3031,7 +3031,7 @@
   },
   "SOCOrgToDos": {
     "strTitle": "Организовать дела",
-    "strDesc": "[us] [pulls] [us-pos] расписание и [updates] [us-pos] список дел."
+    "strDesc": "[us] [pulls] расписание и [updates] список дел."
   },
   "SOCOrgToDosWithPDANotes": {
     "strTitle": "Организовать дела (с заметкой)",
@@ -3103,7 +3103,7 @@
   },
   "SOCGiveUp": {
     "strTitle": "Сдаться",
-    "strDesc": "[us] [throws] [us-pos] руки вверх и [gives]."
+    "strDesc": "[us] [throws] руки вверх и [gives]."
   },
   "SOCIntimidate": {
     "strTitle": "Запугать",
@@ -3223,7 +3223,7 @@
   },
   "SOCRollEyes": {
     "strTitle": "Закатить глаза",
-    "strDesc": "[us] [rolls] [us-pos] глаза, издавая вздох."
+    "strDesc": "[us] [rolls] глаза и вздыхаешь."
   },
   "SOCBreakoutBanter": {
     "strTitle": "Шутка: Брейкаут",
@@ -3259,7 +3259,7 @@
   },
   "SOCFlirtStartPlayerAllow": {
     "strTitle": "Флиртовать",
-    "strDesc": "[us] [raises] [us-pos] брови, многозначительно глядя на [them]."
+    "strDesc": "[us] [raises] брови, многозначительно глядя на [them]."
   },
   "SOCFlirtContinueAllow": {
     "strTitle": "Флиртовать в ответ",
@@ -3431,7 +3431,7 @@
   },
   "SOCAskCareer": {
     "strTitle": "Спросить о навыках",
-    "strDesc": "[us] [asks] [them], [has] ли [them-subj] какие-нибудь интересные навыки."
+    "strDesc": "[us] [asks] [them], есть ли у [them-gen] [has.qual] какие-нибудь интересные навыки."
   },
   "SOCBackAwaySlow": {
     "strTitle": "Медленно отступить",
@@ -3968,7 +3968,7 @@
   },
   "SOCPoliceShakedownBasicBribeAcceptCritSuccess": {
     "strTitle": "Принять взятку (крит. успех)",
-    "strDesc": "[us] [grins], [adds] взятку в [us-pos] журнал и [gives] [them] [us-pos] контакты на случай, если [them-subj] когда-нибудь [needs] в «друге» в ближайшем будущем."
+    "strDesc": "[us] [grins], [adds] взятку в свой журнал и [gives] [them] свои контакты на случай, если [them] когда-нибудь [needs] в «друге» в ближайшем будущем."
   },
   "SOCPoliceShakedownBasicBribeDenyAutonomy": {
     "strTitle": "Отклонить взятку (автономия)",
@@ -3984,7 +3984,7 @@
   },
   "SOCPoliceShakedownScowl": {
     "strTitle": "Хмуро молчать",
-    "strDesc": "[us] [appears] раздражённо: ситуация вышла из-под [us-pos] контроля. [us-subj] [scowls] на [them], молча кипя от злости."
+    "strDesc": "[us] [appears] раздражённо: ситуация вышла у [us-gen] из-под контроля. [us] [scowls] на [them], молча кипя от злости."
   },
   "SOCPoliceShakedownSuddenMoves": {
     "strTitle": "Успокоить их",
@@ -3996,7 +3996,7 @@
   },
   "SOCBullshitFine": {
     "strTitle": "Ударить их дурацким штрафом",
-    "strDesc": "[us] [has] окончательно [us-pos] терпение и [says], что [us-subj] [isn't] даже тратить время на поиск законного нарушения. [us] [assigns] [them] здоровенный, липовый штраф."
+    "strDesc": "У [us-gen] [has.qual] окончательно лопнуло терпение, и [us] [says], что [us] даже [isn't] тратить время на поиск законного нарушения. [us] [assigns] [them] здоровенный, липовый штраф."
   },
   "SOCPoliceShakedownBullshitFinePayFineAngry": {
     "strTitle": "Заплатить штраф и оскорбить",
@@ -4056,7 +4056,7 @@
   },
   "SOCAskHomeDetailMarsAccept3": {
     "strTitle": "Описать воспоминание с Марса",
-    "strDesc": "[us] [recalls] тысячи низких одноэтажных домов, окружённых зелёными дворами-сихэюанями. [us] катался на педикэбах по хутунам, потому что [us-pos] родители не пускали [us-obj] в метро."
+    "strDesc": "[us] [recalls] тысячи низких одноэтажных домов, окружённых зелёными дворами-сихэюанями. [us] катался на педикэбах по хутунам, потому что родители не пускали [us-gen] в метро."
   },
   "SOCAskHomeAcceptVenus": {
     "strTitle": "Сказать что ты с Венеры",
@@ -4148,7 +4148,7 @@
   },
   "SOCAskFamilyAcceptParents8": {
     "strTitle": "Поговорить об одиночестве.",
-    "strDesc": "[us] [says], что [us-pos] отец то появляется, то исчезает в [us-pos] жизни, когда ему вздумается."
+    "strDesc": "[us] [says], что [us-pos] отец то появляется, то исчезает в жизни у [us-gen], когда ему вздумается."
   },
   "SOCAskFamilyAcceptSiblings1": {
     "strTitle": "Поговорить об отсутствии братьев и сестёр.",
@@ -4184,7 +4184,7 @@
   },
   "SOCAskFamilyAcceptChildren4": {
     "strTitle": "Поговорить о вашем ребёнке.",
-    "strDesc": "[us] [says], что [us-pos] ребёнок с особыми потребностями, на которые уходит целое состояние. [us-subj] [insists], что [us-pos] собственная жизнь от этого обретает больший смысл."
+    "strDesc": "[us] [says], что [us-pos] ребёнок с особыми потребностями, на которые уходит целое состояние. [us-subj] [insists], что от этого жизнь у [us-gen] обретает больший смысл."
   },
   "SOCBadmouthEnemy": {
     "strTitle": "Ругать своих врагов",
@@ -6664,7 +6664,7 @@
   },
   "FFWDEventDiligent": {
     "strTitle": "Получает комплимент (Усердный)",
-    "strDesc": "[us] [earns] комплимент от [them] за [us-pos] усердные усилия."
+    "strDesc": "[us] [earns] комплимент от [them] за свои усердные усилия."
   },
   "FFWDEventFinicky": {
     "strTitle": "Жалуется (Придирчивый)",
@@ -6930,7 +6930,7 @@
   },
   "SOCTradeFixerConvoIntimidate": {
     "strTitle": "Угрожать барыге насилием",
-    "strDesc": "[us] [says], что [us-pos] правый хук может поручиться за [us-obj], и [cracks] [us-pos] костяшками."
+    "strDesc": "[us] [says], что [us-pos] правый хук может за [us-gen] поручиться, и [cracks] костяшками."
   },
   "SOCTradeFixerConvoIntimidateResist": {
     "strTitle": "Сопротивляться запугиванию",
@@ -7144,7 +7144,7 @@
   },
   "SOCHoneypotDemonstrateVulnerability": {
     "strTitle": "Показать уязвимость",
-    "strDesc": "[us] на мгновение [exposes] уязвимую сторону [us-pos] личности, которую большинство обычно держит под замком.",
+    "strDesc": "[us] на мгновение [exposes] уязвимую сторону своей личности, которую большинство обычно держит под замком.",
     "strTooltip": "Делится слабостью с целью для построения более сильной эмоциональной связи."
   },
   "SOCHoneypotMirrorBehavior": {
@@ -8950,7 +8950,7 @@
   },
   "PLGAISurviveCO2": {
     "strTitle": "ИИ проверяет CO2",
-    "strDesc": "[us] [checks] [us-pos] показатели CO2."
+    "strDesc": "[us] [checks] свои показатели CO2."
   },
   "PLGAISurviveCO2Emergency": {
     "strTitle": "ИИ проверяет аварийный CO2",
@@ -8958,7 +8958,7 @@
   },
   "PLGAISurviveO2": {
     "strTitle": "ИИ проверяет O2",
-    "strDesc": "[us] [checks] [us-pos] показатели O2."
+    "strDesc": "[us] [checks] свои показатели O2."
   },
   "PLGAISurviveO2Emergency": {
     "strTitle": "ИИ проверяет аварийный O2",
@@ -8966,7 +8966,7 @@
   },
   "PLGAIEat": {
     "strTitle": "ИИ проверяет питание",
-    "strDesc": "[us] [checks] [us-pos] показатели сытости."
+    "strDesc": "[us] [checks] свои показатели сытости."
   },
   "PLGAIDrink": {
     "strTitle": "ИИ проверяет жажду",
@@ -9746,7 +9746,7 @@
   },
   "PLOT_Messenger_OfferReply09": {
     "strTitle": "Предложение",
-    "strDesc": "[us] [explains] желание получить конкретные указания по развитию [us-pos] карьеры и [asks] [them] поговорить с [3rd], чтобы выручить [us-obj]."
+    "strDesc": "[us] [explains] желание получить конкретные указания по развитию своей карьеры и [asks] [them] поговорить с [3rd], чтобы выручить [us-obj]."
   },
   "PLOT_Messenger_OfferReply10": {
     "strTitle": "Предложение",
@@ -9766,7 +9766,7 @@
   },
   "PLOT_Messenger_Agree": {
     "strTitle": "Согласиться помочь с карьерой",
-    "strDesc": "[us] [agrees] выручить. Взамен [them] [offers] благодарность, пожелания удачи и [awaits] [us-pos] возвращения."
+    "strDesc": "[us] [agrees] выручить. Взамен [them] [offers] благодарность, пожелания удачи и [awaits] возвращения."
   },
   "PLOT_Messenger_AgreeTrigger": {
     "strTitle": "Триггер согласия на задание",
@@ -9904,7 +9904,7 @@
   },
   "PLOT_Messenger02_Agree": {
     "strTitle": "Согласиться помочь с карьерой",
-    "strDesc": "[us] [agrees] помочь. [them] [offers] благодарность, желает удачи и [awaits] [us-pos] возвращения."
+    "strDesc": "[us] [agrees] помочь. [them] [offers] благодарность, пожелания удачи и [awaits] возвращения."
   },
   "PLOT_Messenger02_AgreeTrigger": {
     "strTitle": "Триггер согласия на задание",
@@ -9981,7 +9981,7 @@
     "strDesc": "Вняв убедительным доводам [them], [us] неохотно [agrees] пойти на уступки в [us-pos] соперничестве с [3rd]."
   },
   "PLOT_Messenger02_TargetReplyEasy": {
-    "strDesc": "[us] [folds] как мокрая бумага, соглашаясь пойти на уступки в [us-pos] соперничестве с [3rd]. Это было почти жалко."
+    "strDesc": "[us] [folds] как мокрая бумага, соглашаясь пойти на уступки в своём соперничестве с [3rd]. Это было почти жалко."
   },
   "PLOT_Messenger02_TargetReplyHard": {
     "strDesc": "[us] [is] явно не из тех, кто отступает от соперничества. Словами вряд ли добьёшься того, чего хочет [3rd]."
@@ -9994,7 +9994,7 @@
     "strDesc": "[us] [threatens] [them], если [them-subj] [refuses] прекратить [them-pos] карьерное соперничество с [3rd]."
   },
   "PLOT_Messenger02_TargetReplyForce": {
-    "strDesc": "После силового убеждения [us] охотно [vows] пойти на уступки в [us-pos] соперничестве с [3rd]."
+    "strDesc": "После силового убеждения [us] охотно [vows] пойти на уступки в своём соперничестве с [3rd]."
   },
   "PLOT_Messenger02_TargetReplyForceUnc": {
     "strDesc": "[them] [is] едва в сознании, но от [them] поступает ясный сигнал: соперничество с [3rd] окончено."
@@ -10067,7 +10067,7 @@
   },
   "PLOT_Messenger02_TurnInFailTrigger": {
     "strTitle": "Триггер сдачи задания",
-    "strDesc": "[them] [thanks] [us] за [us-pos] старания, несмотря на отсутствие успеха."
+    "strDesc": "[them] [thanks] [us] за старания, несмотря на отсутствие успеха."
   },
   "PLOT_Messenger02_EndTrigger": {
     "strTitle": "Триггер завершения задания",
@@ -10357,7 +10357,7 @@
   },
   "PLOT_MessengerFamily_Agree": {
     "strTitle": "Согласиться помочь с семейными делами",
-    "strDesc": "[us] [agrees] помочь. Взамен [them] [offers] благодарность, удачи и [awaits] [us-pos] возвращения."
+    "strDesc": "[us] [agrees] помочь. Взамен [them] [offers] благодарность, пожелания удачи и [awaits] возвращения."
   },
   "PLOT_MessengerFamily_AgreeTrigger": {
     "strTitle": "Триггер согласия на задание",
@@ -10571,7 +10571,7 @@
   },
   "PLOT_MessengerLegal_Agree": {
     "strTitle": "Согласиться помочь с юридическими вопросами",
-    "strDesc": "[us] [agrees] помочь. Взамен [them] [offers] благодарность, пожелания удачи и [awaits] [us-pos] возвращения."
+    "strDesc": "[us] [agrees] помочь. Взамен [them] [offers] благодарность, пожелания удачи и [awaits] возвращения."
   },
   "PLOT_MessengerLegal_AgreeTrigger": {
     "strTitle": "Триггер согласия юридического посыльного",
@@ -10724,7 +10724,7 @@
   },
   "PLOT_MessengerRomantic_OfferReplyMenWomen": {
     "strTitle": "Предложение",
-    "strDesc": "[us] [explains] [us-pos] желание перемен в [us-pos] личной жизни и [asks] [them] о помощи в поиске партнёра мужского или женского пола без предрассудков."
+    "strDesc": "[us] [explains], что хочет перемен в своей личной жизни, и [asks] [them] о помощи в поиске партнёра мужского или женского пола без предрассудков."
   },
   "PLOT_MessengerRomantic_OfferReplyMenNB": {
     "strTitle": "Предложение",
@@ -10732,11 +10732,11 @@
   },
   "PLOT_MessengerRomantic_OfferReplyNBWomen": {
     "strTitle": "Предложение",
-    "strDesc": "[us] [explains] о [us-pos] желании перемен в [us-pos] личной жизни и [asks] [them] помочь найти женщину или небинарную персону с широкими взглядами."
+    "strDesc": "[us] [explains] своё желание перемен в личной жизни и [asks] [them] помочь найти женщину или небинарную персону с широкими взглядами."
   },
   "PLOT_MessengerRomantic_OfferReplyMen": {
     "strTitle": "Предложение",
-    "strDesc": "[us] [explains] о [us-pos] желании перемен в [us-pos] личной жизни и [asks] [them] помочь найти мужчину с широкими взглядами."
+    "strDesc": "[us] [explains], что хочет перемен в своей личной жизни, и [asks] [them] помочь найти мужчину с широкими взглядами."
   },
   "PLOT_MessengerRomantic_OfferReplyNB": {
     "strTitle": "Предложение",
@@ -10752,7 +10752,7 @@
   },
   "PLOT_MessengerRomantic_Agree": {
     "strTitle": "Согласиться помочь с поиском пары",
-    "strDesc": "[us] [agrees] помочь. Взамен [them] [offers] благодарность, пожелания удачи и [awaits] [us-pos] возвращения."
+    "strDesc": "[us] [agrees] помочь. Взамен [them] [offers] благодарность, пожелания удачи и [awaits] возвращения."
   },
   "PLOT_MessengerRomantic_AgreeTrigger": {
     "strTitle": "Триггер согласия на задание",
@@ -10989,7 +10989,7 @@
   },
   "PLOT_MessengerTechnical_Agree": {
     "strTitle": "Согласиться помочь с техническими вопросами",
-    "strDesc": "[us] [agrees] помочь. В обмен [them] [offers] благодарность, пожелание удачи и [awaits] [us-pos] возвращения."
+    "strDesc": "[us] [agrees] помочь. В обмен [them] [offers] благодарность, пожелание удачи и [awaits] возвращения."
   },
   "PLOT_MessengerTechnical_AgreeTrigger": {
     "strTitle": "Триггер согласия на задание",
@@ -11209,7 +11209,7 @@
   },
   "PLOTChoiceFanBreakoutTeam02dReply": {
     "strTitle": "Пожать плечами",
-    "strDesc": "[us-pos] восторженные глаза меркнут от недоверия, прежде чем [us-subj] [shrugs] и [moves] дальше. «3FC? Да пофиг.»"
+    "strDesc": "У [us-gen] восторженные глаза меркнут от недоверия, прежде чем [us-subj] [shrugs] и [moves] дальше. «3FC? Да пофиг.»"
   },
   "PLOTChoiceFanBreakoutTeamReplyWarriorsYes": {
     "strTitle": "Согласиться",
@@ -11291,7 +11291,7 @@
   },
   "PLOTOKLGCritter03b": {
     "strTitle": "Засунуть руку внутрь",
-    "strDesc": "[us] [reaches] [us-pos] пальцами между ржавыми ламелями затвора [them]. Что-то острое укусывает пальцы."
+    "strDesc": "[us] [reaches] своими пальцами между ржавыми ламелями затвора [them]. Что-то острое укусывает пальцы."
   },
   "PLOTOKLGCritter03Trigger": {
     "strTitle": "Триггер для стадии 3 существа",
@@ -11592,7 +11592,7 @@
   },
   "PLOT_Lonesome_02gReplyPartner": {
     "strTitle": "Поговорить о соседе по петле",
-    "strDesc": "[us] [tells] [them] о [us-pos] напарнике по петле [3rd]."
+    "strDesc": "[us] [tells] [them] о своём напарнике по петле [3rd]."
   },
   "PLOT_Lonesome_02gReplyPartnerMore": {
     "strTitle": "Поговорить о соседе по петле",
@@ -11600,7 +11600,7 @@
   },
   "PLOT_Lonesome_02gReplyLover": {
     "strTitle": "Поговорить о влюблённости",
-    "strDesc": "[us] [tells] [them] о [us-pos] симпатии к [3rd]."
+    "strDesc": "[us] [tells] [them] о своей симпатии к [3rd]."
   },
   "PLOT_Lonesome_02gReplyLoverMore": {
     "strTitle": "Поговорить о влюблённости",
@@ -11783,7 +11783,7 @@
   },
   "PLOT_ScavFetch02_OfferReply": {
     "strTitle": "Предложение",
-    "strDesc": "[us] [thanks] [them] за [them-pos] предыдущую помощь и [reiterates] [us-pos] потребность в независимом напарнике, который хорошо разбирается в кораблях.\n[us-subj] [is] не прочь заплатить $10,000 за четыре неповреждённых регулятора воздухозаборника RCS марки Kang."
+    "strDesc": "[us] [thanks] [them] за [them-pos] предыдущую помощь и [reiterates] свою потребность в независимом напарнике, который хорошо разбирается в кораблях.\n[us-subj] [is] не прочь заплатить $10,000 за четыре неповреждённых регулятора воздухозаборника RCS марки Kang."
   },
   "PLOT_ScavFetch02_OfferTrigger": {
     "strTitle": "Триггер предложения утилизации",
@@ -13092,7 +13092,7 @@
   },
   "PLOT_Merga_MergaEngaged06_Reply": {
     "strTitle": "Ответить опровержением алиби",
-    "strDesc": "[us] [says], что [3rd] [is] назойливый мелкий фрик. К тому же запись не доказывает, что [us-subj] [was] трезв. [us-contractHas] всегда мог пить [us-pos] и не пьянеть."
+    "strDesc": "[us] [says], что [3rd] [is] назойливый мелкий фрик. К тому же запись не доказывает, что [us-subj] [was] трезв. [us-contractHas] всегда мог пить и не пьянеть."
   },
   "PLOT_Merga_MergaEngaged07": {
     "strTitle": "Опровергнуть алиби",
@@ -14167,7 +14167,7 @@
   },
   "Plot_Whodunnit_AccuseMurderEnoughManager": {
     "strTitle": "О, пожалуйста",
-    "strDesc": "[us] [asks] [them], [realizes] ли [them-subj], с кем [them-contractIs] говорит, и [warns] [them] следить за [them-pos] языком. Кто поверит диким обвинениям, а не слову человека в [us-pos] положении?"
+    "strDesc": "[us] [asks] [them], [realizes] ли [them-subj], с кем [them-contractIs] говорит, и [warns] [them] следить за [them-pos] языком. Кто поверит диким обвинениям, а не слову человека с таким уважаемым положением, как у [us-gen]?"
   },
   "Plot_Whodunnit_AccuseMurderOther": {
     "strTitle": "Обвинить другого",
@@ -14243,7 +14243,7 @@
   },
   "Plot_Whodunnit_ReportMurderToOKLGLEO": {
     "strTitle": "Поделиться обоснованным делом об убийстве",
-    "strDesc": "[us] [shares] [us-pos] записи расследования, сужающие круг подозреваемых в убийстве [3rd-pos]."
+    "strDesc": "[us] [shares] свои записи расследования, сужающие круг подозреваемых в убийстве [3rd-pos]."
   },
   "Plot_Whodunnit_ReportMurderToOKLGLEOKillerReply": {
     "strTitle": "Упираться",
@@ -14259,7 +14259,7 @@
   },
   "Plot_Whodunnit_ReportMurderToOKLGLEOSubmitCase": {
     "strTitle": "Подать итоговое дело",
-    "strDesc": "[us] [finalizes] [us-pos] дело. [us] [doesn't] больше собирать улики об убийстве [3rd-pos]."
+    "strDesc": "[us] [finalizes] своё дело. [us] [doesn't] больше собирать улики об убийстве [3rd-pos]."
   },
   "Plot_Whodunnit_ReportMurderToOKLGLEODeadShipbreaker": {
     "strTitle": "Подаёт отчёт об инциденте",
@@ -14492,7 +14492,7 @@
   },
   "Plot_Whodunnit_CloseCasefile": {
     "strTitle": "Закрыть дело",
-    "strDesc": "[us] [concludes] [us-pos] дело на [3rd], расчищая место для нового расследования."
+    "strDesc": "[us] [concludes] своё дело на [3rd], расчищая место для нового расследования."
   },
   "Plot_Whodunnit_CloseCasefileRemove": {
     "strTitle": "Дело закрыто",
@@ -14560,7 +14560,7 @@
   },
   "SOCPortAuthorityManagerAcknowledgeFriend": {
     "strTitle": "Признать посетителя-друга",
-    "strDesc": "[us] [looks] поверх [us-pos] терминала и сразу [recognizes] [them]."
+    "strDesc": "[us] [looks] поверх терминала и сразу [recognizes] [them]."
   },
   "SOCPortAuthorityFinisherFriendFavor": {
     "strTitle": "Попросить друга об услуге",
@@ -14778,7 +14778,7 @@
   "SOCFlirtStartMan": {
     "strTitle": "Флиртовать",
     "strDesc": "[us] [checks], [us-contractIs] ли влечение к [them].",
-    "strTooltip": "[us] [raises] [us-pos] брови, намекающе глядя на [them]"
+    "strTooltip": "[us] [raises] брови, намекающе глядя на [them]"
   },
   "SOCFlirtStartWoman": {
     "strTitle": "Флиртовать",
@@ -14808,7 +14808,7 @@
   "SOCFlirtStart": {
     "strTitle": "Флиртовать",
     "strDesc": "[us] [checks], есть ли влечение к [them].",
-    "strTooltip": "[us] [raises] [us-pos] брови, намекающе глядя на [them]"
+    "strTooltip": "[us] [raises] брови, намекающе глядя на [them]"
   },
   "SOCBawdyCommentaryMen": {
     "strTitle": "Размышлять о привлекательных мужчинах",
@@ -17650,7 +17650,7 @@
     "strDesc": "[us] не может выкурить [them]."
   },
   "ACTSeekHygieneTeethAllowEnd": {
-    "strDesc": "[us] [finishes] чистить [us-pos] зубы с помощью [them]."
+    "strDesc": "[us] [finishes] чистить свои зубы с помощью [them]."
   },
   "PSPAIAICrimeHQCHLEOThreatAdd": {
     "strDesc": "[us] [gains] ИИ-задачу «Угроза HQCH на НОО».",
@@ -19549,7 +19549,7 @@
   },
   "PLGAIUnwearSuit": {
     "strTitle": "ИИ: снятие скафандра",
-    "strDesc": "[us] [checks] состояние [us-pos] скафандра."
+    "strDesc": "[us] [checks] состояние своего скафандра."
   },
   "PLGRechargeBatteriesDo": {
     "strTitle": "Подзарядка батарей",
@@ -23524,7 +23524,7 @@
   },
   "STKStrangerMeet_Intro_Allow_Friendly": {
     "strTitle": "Поздороваться с другом",
-    "strDesc": "На [us-pos] лице мелькает узнавание, когда [them] [approaches]."
+    "strDesc": "У [us-gen] на лице мелькает узнавание, когда [them] [approaches]."
   },
   "STKStrangerMeet_Intro_Allow_Drunk": {
     "strTitle": "Поздороваться по-пьяному",
