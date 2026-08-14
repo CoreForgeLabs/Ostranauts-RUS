@@ -1,0 +1,96 @@
+[
+  {
+    "strName" : "CONDCrimeMTRSLEOArrestDoThem",
+    "aCOs"    : [
+      "StatCrimeMTRSArrestWarning=1.0x1-2"
+    ],
+    "aLoots"  : [
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "CONDCrimeMTRSLEOArrestDoAllowThem",
+    "aCOs"    : [
+      "-StatAltruism=1.0x12",
+      "-StatAutonomy=1.0x6",
+      "-StatFamily=1.0x3",
+      "-StatSelfRespect=1.0x6"
+    ],
+    "aLoots"  : [
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "CONDCrimeMTRSLEOArrestDoAllowUs",
+    "aCOs"    : [
+      "IsSubdued=1.0x1",
+      "StatEsteem=1.0x6",
+      "-StatFamily=1.0x6",
+      "-StatMeaning=1.0x6",
+      "-StatSecurity=1.0x12"
+    ],
+    "aLoots"  : [
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "CONDENCHeatMTRSFineEnd",
+    "aCOs"    : [
+      "-CrimeMTRSArrest=1.0x1",
+      "-CrimeMTRSStolenShip=1.0x1",
+      "-CrimeMTRSNoUndock=1.0x1",
+      "-CrimeMTRSTrespass=1.0x1",
+      "-CrimeMTRSThreat=1.0x1",
+      "-StatCrimeMTRSArrestWarning=1.0x1",
+      "IsReportingCrimeImmune=1.0x1",
+      "-IsSubdued=1.0x1",
+      "-IsInCombat=1.0x1"
+    ],
+    "aLoots"  : [
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "CONDENCHeatMTRSPrisonEnd",
+    "aCOs"    : [
+      "StatAge=1.0x1-3",
+      "-CrimeMTRSArrest=1.0x1",
+      "-CrimeMTRSNoUndock=1.0x1",
+      "-CrimeMTRSStolenShip=1.0x1",
+      "-CrimeMTRSTrespass=1.0x1",
+      "-CrimeMTRSThreat=1.0x1",
+      "-StatCrimeMTRSArrestWarning=1.0x1",
+      "IsReportingCrimeImmune=1.0x1",
+      "-IsSubdued=1.0x1",
+      "-IsInCombat=1.0x1",
+      "-IsTeleportPrison=1.0x1",
+      "CareerPrisonerPast=1.0x1",
+      "TraitChronicScarCuffs=0.7x1",
+      "IsCraven=0.2x1|IsBrave=0.2x1|IsSuspicious=0.2x1|IsPushover=0.1x1|IsTough=0.1x1",
+      "IsPatient=0.2x1|IsImpatient=0.2x1",
+      "StatHygiene=1.0x80"
+    ],
+    "aLoots"  : [
+      "CONDEncRandomInjuryPastFight=1.0x1",
+      "CONDEncRandomInjuryPastFight=0.3x1",
+      "CONDEncRandomInjuryPastFight=0.3x1",
+      "CONDAgingChanceRandomChronicCondition=0.3x1"
+    ],
+    "strType" : "condition"
+  },
+  { "strName" : "CrimeMTRSArrest", "aCOs" : [ "CrimeMTRSArrest=1.0x1" ], "aLoots" : [ ], "strType" : "condition"  },
+  { "strName" : "CrimeMTRSArrestNoUndock", "aCOs" : [ "CrimeMTRSNoUndock=1.0x1" ], "aLoots" : [ "CrimeMTRSArrest=1.0x1" ], "strType" : "condition"  },
+  { "strName" : "CrimeMTRSThreat", "aCOs" : [ "CrimeMTRSThreat=1.0x1" ], "aLoots" : [ ], "strType" : "condition"  },
+  {
+    "strName" : "PSPIAAddNPCPoliceMTRS",
+    "aCOs"    : [
+      "PSPAIAICrimeMTRSLEOArrestAdd=1.0x1",
+      "PSPAIAICrimeMTRSLEOThreatAdd=1.0x1",
+      "PSPAIAICrimeMTRSLEOArrestStolenShipAdd=1.0x1"
+    ],
+    "aLoots"  : [
+      "PSPIAAddNPCBasic=1.0x1"
+    ],
+    "strType" : "interaction"
+  }
+]

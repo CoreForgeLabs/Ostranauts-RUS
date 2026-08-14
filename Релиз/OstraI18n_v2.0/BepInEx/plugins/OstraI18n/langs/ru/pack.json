@@ -1,0 +1,144 @@
+{
+  "code": "ru",
+  "name": "Russian",
+  "_notes": {
+    "pronounCategories.gen": "Task 6.4: deliberately IDENTICAL to 'obj'. Russian personal pronouns are syncretic for accusative/genitive (меня/тебя/его/её/их/его serve BOTH cases) -- this is not a placeholder or a copy/paste mistake, do not 'fix' it into separate data. This category only fires for the PRONOUN branch of Patches.AttemptSubstitutionPrefix (subsequent mentions of an entity); the first-mention/named-object branch instead calls LangPack.Resolver (TokenResolver, Task 6.3) against named_forms.json for real per-noun genitive declension (e.g. Стеллаж -> Стеллажа). This key is ignored by GrammarPackLoader (only known top-level fields are read)."
+  },
+  "you": "ты",
+  "cases": [
+    "nom",
+    "gen",
+    "dat",
+    "acc",
+    "ins",
+    "prep"
+  ],
+  "pronounCategories": {
+    "subj": [
+      "я",
+      "ты",
+      "он",
+      "она",
+      "они",
+      "оно"
+    ],
+    "pos": [
+      "мой",
+      "твой",
+      "его",
+      "её",
+      "их",
+      "его"
+    ],
+    "obj": [
+      "меня",
+      "тебя",
+      "его",
+      "её",
+      "их",
+      "его"
+    ],
+    "gen": [
+      "меня",
+      "тебя",
+      "его",
+      "её",
+      "их",
+      "его"
+    ],
+    "reflexive": [
+      "сам",
+      "сам",
+      "сам",
+      "сама",
+      "сами",
+      "само"
+    ],
+    "contractIs": [
+      "я",
+      "ты",
+      "он",
+      "она",
+      "они",
+      "оно"
+    ],
+    "contractHas": [
+      "я",
+      "ты",
+      "он",
+      "она",
+      "они",
+      "оно"
+    ],
+    "contractWill": [
+      "я",
+      "ты",
+      "он",
+      "она",
+      "они",
+      "оно"
+    ],
+    "contractWould": [
+      "я",
+      "ты",
+      "он",
+      "она",
+      "они",
+      "оно"
+    ]
+  },
+  "overlay": {
+    "categoryToField": {
+      "interactions": "dictInteractions",
+      "careers": "dictCareers",
+      "conditions": "dictConds",
+      "pda_apps": "dictPDAAppIcons",
+      "installables": "dictInstallables",
+      "cooverlays": "dictCOOverlays",
+      "condowners": "dictCOs",
+      "ledgerdefs": "dictLedgerDefs",
+      "pledges": "dictPledges",
+      "slots": "dictSlots",
+      "headlines": "dictHeadlines",
+      "plots": "dictPlots",
+      "market/CoCollections": "dictSupersTemp",
+      "ads": "dictAds",
+      "rooms": "dictRoomSpecsTemp",
+      "jobitems": "dictJobitems",
+      "racing/tracks": "dictRaceTracks",
+      "context": "dictContext",
+      "racing/leagues": "dictRacingLeagues",
+      "info": "dictInfoNodes",
+      "market/Production": "dictProductionMaps",
+      "tips": "dictTips",
+      "attackmodes/coAttacks": "dictAModes",
+      "attackmodes/shipAttacks": "dictShipAttacks",
+      "ships": "dictShips",
+      "homeworlds": "dictHomeworlds"
+    },
+    "translatableFields": [
+      "strTitle",
+      "strDesc",
+      "strTooltip",
+      "strNameFriendly",
+      "strNameShort",
+      "strFriendlyName",
+      "strArticleBody",
+      "strArticleTitle",
+      "strNodeLabel",
+      "strBody",
+      "strDescription",
+      "strRequirementDescription",
+      "strFriendlyDescription",
+      "description",
+      "strTutorialKey",
+      "strColonyName",
+      "strMetonym",
+      "designation",
+      "model",
+      "make",
+      "origin",
+      "aPhaseTitles"
+    ]
+  }
+}

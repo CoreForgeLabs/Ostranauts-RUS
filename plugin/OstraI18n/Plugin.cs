@@ -18,7 +18,7 @@ namespace OstraI18n
     {
         public const string GUID = "com.coreforge.ostra.i18n";
         public const string Name = "OstraI18n";
-        public const string Version = "0.1.3";
+        public const string Version = "2.0.0";
 
         internal static Plugin Instance;
         internal static ManualLogSource Log;

@@ -1,0 +1,8 @@
+[
+{ "strName" : "StatCrimeMHNGArrestWarning", "strNameFriendly" : "MHNG Arrest Warning Count", "strColor" : "Bad", "strDesc"  : "[us] [has] been warned of arrest this many times.", "nDisplaySelf" : 0, "nDisplayOther" : 0, "fDuration" : 0.0, "bRemoveAll" : true },
+{ "strName" : "CrimeMHNGArrest", "strNameFriendly" : "MHNG Arrest Warrant", "strColor" : "Bad", "strDesc"  : "[us] [has] an outstanding arrest warrant in Hangzhou.", "nDisplaySelf" : 2, "nDisplayOther" : 2, "fDuration" : 0.0, "bRemoveAll" : true, "bInvert" : true },
+{ "strName" : "CrimeMHNGThreat", "strNameFriendly" : "MHNG Public Enemy", "strColor" : "Bad", "strDesc"  : "[us] [is] wanted dead or alive by Hangzhou LAs, and [is] considered a Public Enemy.", "nDisplaySelf" : 2, "nDisplayOther" : 2, "fDuration" : 0.0, "bRemoveAll" : true, "bInvert" : true },
+{ "strName" : "CrimeMHNGTrespass", "strNameFriendly" : "MHNG Trespass Warrant", "strColor" : "Bad", "strDesc"  : "[us] [has] an outstanding trespass warrant with Hangzhou.", "nDisplaySelf" : 0, "nDisplayOther" : 0, "fDuration" : 0.00001, "bRemoveAll" : true, "aNext" : ["TUpCrimeMHNGTrespassNext"] },
+{ "strName" : "CrimeMHNGStolenShip", "strNameFriendly" : "MHNG Arrest Warrant for Stolen Ship", "strColor" : "Bad", "strDesc"  : "[us] [has] an outstanding arrest warrant with Hangzhou for Stealing a Ship", "nDisplaySelf" : 2, "nDisplayOther" : 2, "fDuration" : 0.0, "bRemoveAll" : true },
+{ "strName" : "CrimeMHNGNoUndock", "strNameFriendly" : "MHNG Arrest Warrant for Failure to Undock", "strColor" : "Bad", "strDesc"  : "[us] [has] an outstanding arrest warrant in Hangzhou for Failure to Undock During Officer Inspection", "nDisplaySelf" : 2, "nDisplayOther" : 2, "fDuration" : 0.0, "bRemoveAll" : true }
+]

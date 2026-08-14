@@ -1,0 +1,2265 @@
+[
+    {
+        "strName" : "ItmToolDrillMining01",
+        "strNameShort" : "Mining Tool",
+        "strNameFriendly" : "Gott Mining Tool",
+        "strDesc" : "A Gott handheld power mining pick with inertial compensators. Baseline tool to mine most mineral deposits in micro-gravity.",
+        "strItemDef" : "ItmToolDrillMining01",
+        "strType"    : "Item",
+        "strLoot"    : null,
+        "aInteractions" : [
+          "Inventory",
+          "DropItem",
+          "PickupItem"
+        ],
+        "aStartingConds" : [
+          "IsHandheld=1.0x1.0",
+          "IsClippable=1.0x1.0",
+          "IsGott=1.0x1",
+          "IsEdged=1.0x1.0",
+          "IsShaft=1.0x1.0",
+          "IsRigid=1.0x1.0",
+          "IsSolid=1.0x1.0",
+          "IsTough=1.0x1.0",
+          "IsToolBoring=1.0x1.0",
+          "IsToolMining=1.0x1.0",
+          "StatMass=1.0x8.0",
+          "StatBasePrice=1.0x2500.0",
+          "StatDamageMax=1.0x5",
+          "StatDismantleProgressMax=1.0x130",
+          "IsPowerObservable=1.0x1",
+          "IsMechanical=1.0x1",
+          "IsTechnology=1.0x1",
+          "IsCategoryTools=1.0x1"
+        ],
+        "aUpdateCommands" : [
+          "Destructable,StatDamage,ACTDrillMiningDamage01,StatDamageMax,1.0"
+        ],
+        "mapCondTolerance"       : [
+        ],
+        "strContainerCT"    : "TIsFitContainerDrill01Battery",
+        "nContainerHeight"   : 1,
+        "nContainerWidth"   : 1,
+        "mapAltItemDefs"  : [
+          "IsBatteryDrill01","ItmToolDrillMining01Full"
+        ],
+        "mapChargeProfiles"  : [
+          "Normal","ItmToolDrillMining01Normal",
+          "Melee","MeleeAttackDefaultTough"
+        ],
+        "strPortraitImg"  : "paperdoll/held/portToolDrillMining01Full",
+        "mapSlotEffects" : [
+          "heldL","HeldItmToolDrillMining01L",
+          "heldR","HeldItmToolDrillMining01R"
+        ],
+        "mapAltSlotImgs"  : [
+          "ItmToolDrillMining01Full","paperdoll/held/bodyToolDrillMining01Full"
+        ],
+        "jsonPI"            : null,
+        "strAudioEmitter": "ItmToolGrinder02Sound"
+      },
+      {
+        "strName" : "ItmToolDrillMining01Dmg",
+        "strNameShort" : "Mining Tool",
+        "strNameFriendly" : "Gott Mining Tool (Damaged)",
+        "strDesc" : "A Gott handheld power mining pick with inertial compensators. Baseline tool to mine most mineral deposits in micro-gravity.",
+        "strItemDef" : "ItmToolDrillMining01Dmg",
+        "strType"    : "Item",
+        "strLoot"    : null,
+        "aInteractions" : [
+          "Inventory",
+          "DropItem",
+          "PickupItem"
+        ],
+        "aStartingConds" : [
+          "IsDamaged=1.0x1",
+          "IsClippable=1.0x1.0",
+          "IsGott=1.0x1",
+          "IsEdged=1.0x1.0",
+          "IsShaft=1.0x1.0",
+          "IsHandheld=1.0x1.0",
+          "IsRigid=1.0x1.0",
+          "IsSolid=1.0x1.0",
+          "IsTough=1.0x1.0",
+          "IsToolBoring=1.0x1.0",
+          "IsToolMining=1.0x1.0",
+          "StatMass=1.0x7.0",
+          "StatBasePrice=1.0x500.0",
+          "StatDamageMax=1.0x5",
+          "StatRepairProgressMax=1.0x450",
+          "IsPowerObservable=1.0x1",
+          "IsMechanical=1.0x1",
+          "IsTechnology=1.0x1",
+          "IsCategoryTools=1.0x1"
+        ],
+        "aUpdateCommands" : [
+          "Destructable,StatDamage,ACTDrillMiningDestroy01,StatDamageMax,1.0"
+        ],
+        "mapCondTolerance"       : [
+        ],
+        "strContainerCT"    : "TIsFitContainerDrill01Battery",
+        "nContainerHeight"   : 1,
+        "nContainerWidth"   : 1,
+        "mapAltItemDefs"  : [
+          "IsBatteryDrill01","ItmToolDrillMining01FullDmg"
+        ],
+        "mapChargeProfiles"  : [
+          "Melee","MeleeAttackDefault"
+        ],
+        "strPortraitImg"  : "paperdoll/held/portToolDrillMining01DmgFull",
+        "mapSlotEffects" : [
+          "heldL","HeldItmToolDrillMining01DmgL",
+          "heldR","HeldItmToolDrillMining01DmgR"
+        ],
+        "mapAltSlotImgs"  : [
+          "ItmToolDrillMining01FullDmg","paperdoll/held/bodyToolDrillMining01DmgFull"
+        ],
+        "jsonPI"            : null,
+        "strAudioEmitter": "ItmToolGrinder02Sound"
+      },
+    
+      {
+        "strName" : "ItmToolDrillMining02",
+        "strNameShort" : "Mining Laser",
+        "strNameFriendly" : "Halvorson Mining Laser",
+        "strDesc" : "A Halvorson mining laser, now with collapsible second-hand grip and dust reduction vents.\n\nThe more ergonomic tool of choice for health-conscious micro-gravity mineral extractors.",
+        "strItemDef" : "ItmToolDrillMining02",
+        "strType"    : "Item",
+        "strLoot"    : null,
+        "aInteractions" : [
+          "Inventory",
+          "DropItem",
+          "PickupItem"
+        ],
+        "aStartingConds" : [
+          "IsClippable=1.0x1.0",
+          "IsHalvorson=1.0x1",
+          "IsEdged=1.0x1.0",
+          "IsHandheld=1.0x1.0",
+          "IsRigid=1.0x1.0",
+          "IsSolid=1.0x1.0",
+          "IsIgniter=1.0x1.0",
+          "IsLightSource=1.0x1.0",
+          "IsToolBoring=1.0x2.0",
+          "IsToolMining=1.0x2.0",
+          "IsToolDrillMining02=1.0x1.0",
+          "StatMass=1.0x17.0",
+          "StatBasePrice=1.0x13250.0",
+          "StatDamageMax=1.0x10",
+          "StatDismantleProgressMax=1.0x130",
+          "IsPowerObservable=1.0x1",
+          "IsTechnology=1.0x1",
+          "IsCategoryTools=1.0x1"
+        ],
+        "aUpdateCommands" : [
+          "Destructable,StatDamage,ACTDrillMiningDamage02,StatDamageMax,1.0"
+        ],
+        "mapCondTolerance"       : [
+        ],
+        "strContainerCT"    : "TIsFitContainerWelder01Battery",
+        "nContainerHeight"   : 1,
+        "nContainerWidth"   : 1,
+        "mapAltItemDefs"  : [
+          "IsBatteryWelder01","ItmToolDrillMining02Full"
+        ],
+        "mapChargeProfiles"  : [
+          "Normal","ItmToolDrillMining02Normal",
+          "MeleeLaser","ItmToolLaserTorch01Melee",
+          "Melee","MeleeAttackDefaultFragile"
+        ],
+        "strPortraitImg"  : "paperdoll/held/portToolDrillMining02Full",
+        "mapSlotEffects" : [
+          "heldL","HeldItmToolDrillMining02L",
+          "heldR","HeldItmToolDrillMining02R"
+        ],
+        "mapAltSlotImgs"  : [
+          "ItmToolDrillMining02Full","paperdoll/held/bodyToolDrillMining02Full"
+        ],
+        "jsonPI"            : null,
+        "strAudioEmitter": "ItmToolGeneralSound"
+      },
+      {
+        "strName" : "ItmToolDrillMining02Dmg",
+        "strNameShort" : "Mining Laser",
+        "strNameFriendly" : "Halvorson Laser Mining Tool (Damaged)",
+        "strDesc" : "A Halvorson mining laser, now with collapsible second-hand grip and dust reduction vents.\n\nThe more ergonomic tool of choice for health-conscious micro-gravity mineral extractors.",
+        "strItemDef" : "ItmToolDrillMining02Dmg",
+        "strType"    : "Item",
+        "strLoot"    : null,
+        "aInteractions" : [
+          "Inventory",
+          "DropItem",
+          "PickupItem"
+        ],
+        "aStartingConds" : [
+          "IsClippable=1.0x1.0",
+          "IsDamaged=1.0x1",
+          "IsHalvorson=1.0x1",
+          "IsEdged=1.0x1.0",
+          "IsHandheld=1.0x1.0",
+          "IsRigid=1.0x1.0",
+          "IsSolid=1.0x1.0",
+          "IsIgniter=1.0x1.0",
+          "IsLightSource=1.0x1.0",
+          "IsToolBoring=1.0x2.0",
+          "IsToolMining=1.0x2.0",
+          "StatMass=1.0x15.0",
+          "StatBasePrice=1.0x2650.0",
+          "StatDamageMax=1.0x10",
+          "StatRepairProgressMax=1.0x250",
+          "IsPowerObservable=1.0x1",
+          "IsMechanical=1.0x1",
+          "IsTechnology=1.0x1",
+          "IsCategoryTools=1.0x1"
+        ],
+        "aUpdateCommands" : [
+          "Destructable,StatDamage,ACTDrillMiningDestroy02,StatDamageMax,1.0"
+        ],
+        "mapCondTolerance"       : [
+        ],
+        "strContainerCT"    : "TIsFitContainerWelder01Battery",
+        "nContainerHeight"   : 1,
+        "nContainerWidth"   : 1,
+        "mapAltItemDefs"  : [
+          "IsBatteryWelder01","ItmToolDrillMining02FullDmg"
+        ],
+        "mapChargeProfiles"  : [
+          "Normal","ItmToolDrillMining02Normal",
+          "Melee","MeleeAttackDefaultFragile"
+        ],
+        "strPortraitImg"  : "paperdoll/held/portToolDrillMining02DmgFull",
+        "mapSlotEffects" : [
+          "heldL","HeldItmToolDrillMining02DmgL",
+          "heldR","HeldItmToolDrillMining02DmgR"
+        ],
+        "mapAltSlotImgs"  : [
+          "ItmToolDrillMining02FullDmg","paperdoll/held/bodyToolDrillMining02DmgFull"
+        ],
+        "jsonPI"            : null,
+        "strAudioEmitter": "ItmToolGeneralSound"
+      },
+    
+    
+    
+    
+      {
+        "strName" : "ItmExplosiveCharge01",
+        "strNameShort" : "Explosive",
+        "strNameFriendly" : "Weber 'Core' Explosive (Deactivated)",
+        "strDesc" : "A Weber canister high-yield explosive: Place, arm, and evacuate. Commonly used for rapidly displacing asteroid regolith.\n\nWARNING: While damage activates a failsafe killswitch, neglect and disrepair can be hazardous to organic and vehicular integrity.",
+        "strItemDef" : "ItmExplosiveCharge01",
+        "strType"    : "Item",
+        "strLoot"    : null,
+        "aInteractions" : [
+          "DropItem",
+          "PickupItem",
+          "ACTArmExplosive"
+        ],
+        "aStartingConds" : [
+          "IsWeber=1.0x1",
+          "IsExplosive=1.0x1",
+          "IsExplosiveArmable=1.0x1",
+          "IsExplosiveCharge01=1.0x1",
+          "IsHandheld=1.0x1.0",
+          "IsRigid=1.0x1.0",
+          "IsSolid=1.0x1.0",
+          "IsFragile=1.0x1.0",
+          "StatMass=1.0x8.0",
+          "StatBasePrice=1.0x350.0",
+          "StatDamageMax=1.0x5",
+          "StatDismantleProgressMax=1.0x130",
+          "IsMechanical=1.0x1",
+          "IsCategoryTools=1.0x1"
+        ],
+        "aUpdateCommands" : [
+          "Destructable,StatDamage,ACTDefaultDestroy,StatDamageMax,1.0"
+        ],
+        "mapCondTolerance"       : [
+        ],
+        "mapAltItemDefs"  : [
+        ],
+        "strPortraitImg"  : "paperdoll/held/portExplosiveCharge01",
+        "mapSlotEffects" : [
+          "heldL","HeldItmExplosiveCharge01L",
+          "heldR","HeldItmExplosiveCharge01R",
+          "drag", "Blank"
+        ],
+        "strAudioEmitter" : "ItmDetonator01",
+        "jsonPI"            : null
+      },
+      {
+        "strName" : "ItmExplosiveCharge01Armed",
+        "strNameShort" : "Explosive (Armed)",
+        "strNameFriendly" : "Weber 'Core' Explosive (Armed)",
+        "strDesc" : "A Weber canister high-yield explosive: Place, arm, and evacuate. Commonly used for rapidly displacing asteroid regolith.\n\nWARNING: While damage activates a failsafe killswitch, neglect and disrepair can be hazardous to organic and vehicular integrity.",
+        "strItemDef" : "ItmExplosiveCharge01Armed",
+        "strType"    : "Item",
+        "strLoot"    : null,
+        "aInteractions" : [
+          "ACTDisarmExplosive01",
+          "ACTDetonateExplosive01",
+          "ACTDetonateExplosive02",
+          "DropItem",
+          "PickupItem"
+        ],
+        "aStartingConds" : [
+          "IsWeber=1.0x1",
+          "IsExplosive=1.0x1",
+          "IsExplosiveArmable=1.0x1",
+          "IsExplosiveCharge01=1.0x1",
+          "IsExplosiveArmed=1.0x1",
+          "IsHandheld=1.0x1.0",
+          "IsRigid=1.0x1.0",
+          "IsSolid=1.0x1.0",
+          "IsFragile=1.0x1.0",
+          "StatMass=1.0x8.0",
+          "StatBasePrice=1.0x350.0",
+          "StatDamageMax=1.0x5",
+          "StatDismantleProgressMax=1.0x130",
+          "IsMechanical=1.0x1",
+          "StatFuseMax=1.0x25"
+        ],
+        "aUpdateCommands" : [
+          "Destructable,StatDamage,ACTDefaultDestroy,StatDamageMax,1.0",
+          "Destructable,StatFuse,ACTExplosiveChargeExplode,StatFuseMax,1.0"
+        ],
+        "mapCondTolerance"       : [
+        ],
+        "mapAltItemDefs"  : [
+        ],
+        "strPortraitImg"  : "paperdoll/held/portExplosiveCharge01",
+        "mapSlotEffects" : [          
+          "heldL","HeldItmExplosiveCharge01L",
+          "heldR","HeldItmExplosiveCharge01R",
+          "drag", "Blank"
+        ],
+        "aTickers"  : [
+          "MiningExplosive"
+        ],
+        "strAudioEmitter" : "ItmDetonator01Armed",
+        "jsonPI"            : null
+      },
+      {
+        "strName" : "ItmExplosiveCharge02",
+        "strNameShort" : "Sap Explosive",
+        "strNameFriendly" : "Weber 'Sap' Breaching Charge",
+        "strDesc" : "A Weber precision charge: A compact, \"safer\" demolition charge that is highly effective against objects in direct contact, but less destructive beyond a small air gap. The top brand in forced hull ingress and micro-grav shaft-mining.\n\n\"Weber makes way\"\n\nWARNING: While damage activates a failsafe killswitch, Weber accepts no liability for damages caused by neglect or product disrepair.",
+        "strItemDef" : "ItmExplosiveCharge02",
+        "strType"    : "Item",
+        "nStackLimit"    : 5,
+        "strLoot"    : null,
+        "aInteractions" : [
+          "DropItem",
+          "PickupItem",
+          "ACTArmExplosive02"
+        ],
+        "aStartingConds" : [
+          "IsWeber=1.0x1",
+          "IsExplosive=1.0x1",
+          "IsExplosiveArmable=1.0x1",
+          "IsExplosiveCharge02=1.0x1",
+          "IsHandheld=1.0x1.0",
+          "IsRigid=1.0x1.0",
+          "IsSolid=1.0x1.0",
+          "IsFragile=1.0x1.0",
+          "StatMass=1.0x2.0",
+          "StatBasePrice=1.0x60.0",
+          "StatDamageMax=1.0x3",
+          "StatDismantleProgressMax=1.0x130",
+          "IsMechanical=1.0x1",
+          "IsCategoryTools=1.0x1"
+        ],
+        "aUpdateCommands" : [
+          "Destructable,StatDamage,ACTDefaultDestroy,StatDamageMax,1.0"
+        ],
+        "mapCondTolerance"       : [
+        ],
+        "mapAltItemDefs"  : [
+        ],
+        "strPortraitImg"  : "paperdoll/held/portExplosiveCharge02",
+        "mapSlotEffects" : [          
+          "heldL","HeldItmExplosiveCharge02L",
+          "heldR","HeldItmExplosiveCharge02R",
+          "drag", "Blank"
+        ],
+        "strAudioEmitter" : "ItmDetonator01",
+        "jsonPI"            : null
+      },
+      {
+        "strName" : "ItmExplosiveCharge02Armed",
+        "strNameShort" : "Explosive (Armed)",
+        "strNameFriendly" : "Weber 'Sap' Breaching Charge (Armed)",
+        "strDesc" : "A Weber precision charge: A compact, \"safer\" demolition charge that is highly effective against objects in direct contact, but less destructive beyond a small air gap. The top brand in forced hull ingress and micro-grav shaft-mining.\n\n\"Weber makes way\"\n\nWARNING: While damage activates a failsafe killswitch, Weber accepts no liability for damages caused by neglect or product disrepair.",
+        "strItemDef" : "ItmExplosiveCharge02Armed",
+        "strType"    : "Item",
+        "strLoot"    : null,
+        "aInteractions" : [
+          "ACTDisarmExplosive02",
+          "ACTDetonateExplosive02",
+          "DropItem",
+          "PickupItem"
+        ],
+        "aStartingConds" : [
+          "IsWeber=1.0x1",
+          "IsExplosive=1.0x1",
+          "IsExplosiveArmable=1.0x1",
+          "IsExplosiveCharge02=1.0x1",
+          "IsExplosiveArmed=1.0x1",
+          "IsHandheld=1.0x1.0",
+          "IsRigid=1.0x1.0",
+          "IsSolid=1.0x1.0",
+          "IsFragile=1.0x1.0",
+          "StatMass=1.0x2.0",
+          "StatBasePrice=1.0x60.0",
+          "StatDamageMax=1.0x3",
+          "StatDismantleProgressMax=1.0x130",
+          "IsMechanical=1.0x1",
+          "StatFuseMax=1.0x25"
+        ],
+        "aUpdateCommands" : [
+          "Destructable,StatDamage,ACTDefaultDestroy,StatDamageMax,1.0",
+          "Destructable,StatFuse,ACTExplosiveChargeExplode2,StatFuseMax,1.0"
+        ],
+        "mapCondTolerance"       : [
+        ],
+        "mapAltItemDefs"  : [
+        ],
+        "strPortraitImg"  : "paperdoll/held/portExplosiveCharge02",
+        "mapSlotEffects" : [          
+          "heldL","HeldItmExplosiveCharge02L",
+          "heldR","HeldItmExplosiveCharge02R",
+          "drag", "Blank"
+        ],
+        "aTickers"  : [
+          "MiningExplosive"
+        ],
+        "strAudioEmitter" : "ItmDetonator01Armed",
+        "jsonPI"            : null
+      },
+    
+    
+      {
+        "strName" : "ItmMineralStone01",
+        "strNameShort" : "Regolith",
+        "strNameFriendly" : "Regolith (Loose)",
+        "strDesc" : "Broken rock, dust, and other common byproducts of mining.",
+        "strItemDef" : "ItmMineralStone01",
+        "strType"    : "Item",
+        "nStackLimit"    : 6,
+        "aInteractions" : [
+          "DropItem",
+          "DropItemStack",
+          "PickupItem",
+          "PickupItemStack"
+        ],
+        "aStartingConds" : [
+          "IsNonHighlightable=1.0x1",
+          "IsSolid=1.0x1.0",
+          "IsMineralStone01=1.0x1",
+          "IsMineral=1.0x1",
+          "IsEdged=1.0x1",
+          "IsTough=1.0x1",
+          "StatMass=1.0x20.0",
+          "StatBasePrice=1.0x35.0",
+          "StatDamage=0.8x1-30",
+          "StatDamageMax=1.0x60",
+          "IsCategoryOre=1.0x1"
+        ],
+        "aUpdateCommands" : [
+          "Destructable,StatDamage,ACTMineralDestroy,StatDamageMax,1.0"
+        ],
+          "strPortraitImg"  : "paperdoll/held/portMineralStone01",
+          "mapSlotEffects" : [          
+            "heldL","HeldItmMineralStone01L",
+            "heldR","HeldItmMineralStone01R",
+            "drag", "Blank"
+          ],
+        "strAudioEmitter"   : "ItmRock01Sound"
+      },
+      {
+        "strName" : "ItmMineral01",
+        "strNameShort" : "Ore: Iron",
+        "strNameFriendly" : "Ore: Meteoric Iron",
+        "strDesc" : "Meteoric Iron: A common iron-nickel alloy with a whitish crystalline structure, and the telltale reddish hue of iron oxide.",
+        "strItemDef" : "ItmMineral01",
+        "strType"    : "Item",
+        "nStackLimit"    : 6,
+        "aInteractions" : [
+          "DropItem",
+          "DropItemStack",
+          "PickupItem",
+          "PickupItemStack"
+        ],
+        "aStartingConds" : [
+          "IsNonHighlightable=1.0x1",
+          "IsSolid=1.0x1.0",
+          "IsMineral01=1.0x1",
+          "IsMineral=1.0x1",  
+          "IsEdged=1.0x1",
+          "IsTough=1.0x1",
+          "IsImmuneAnnihilation=1.0x1", 
+          "IsOre=1.0x1.0",
+          "StatMass=1.0x20.0",
+          "StatBasePrice=1.0x450.0",
+          "StatDamage=0.5x1-50",
+          "StatDamageMax=1.0x101",
+          "IsCategoryOre=1.0x1"
+        ],
+        "aUpdateCommands" : [
+          "Destructable,StatDamage,ACTMineralDestroy,StatDamageMax,1.0"
+        ],
+          "strPortraitImg"  : "paperdoll/held/portMineralOre01",
+          "mapSlotEffects" : [          
+            "heldL","HeldItmMineralOre01L",
+            "heldR","HeldItmMineralOre01R",
+            "drag", "Blank"
+          ],
+        "strAudioEmitter"   : "ItmRock01Sound"
+      },
+      {
+        "strName" : "ItmMineral02",
+        "strNameShort" : "Ore: Olivine",
+        "strNameFriendly" : "Ore: Olivine",
+        "strDesc" : "Olivine, a magnesium-iron silicate common in asteroids, appearing as translucent green, brittle, quartz-like crystal that easily weathers and absorbs CO2.",
+        "strItemDef" : "ItmMineral02",
+        "strType"    : "Item",
+        "nStackLimit"    : 6,
+        "aInteractions" : [
+          "DropItem",
+          "DropItemStack",
+          "PickupItem",
+          "PickupItemStack"
+        ],
+        "aStartingConds" : [
+          "IsNonHighlightable=1.0x1",
+          "IsSolid=1.0x1.0",
+          "IsMineral02=1.0x1",
+          "IsMineral=1.0x1.0",
+          "IsEdged=1.0x1",
+          "IsTough=1.0x1",
+          "IsImmuneAnnihilation=1.0x1",
+          "IsOre=1.0x1.0",
+          "StatMass=1.0x10.0",
+          "StatBasePrice=1.0x180.0",
+          "StatDamage=0.5x1-50",
+          "StatDamageMax=1.0x101",
+          "IsCategoryOre=1.0x1"
+        ],
+        "aUpdateCommands" : [
+          "Destructable,StatDamage,ACTMineralDestroy,StatDamageMax,1.0"
+        ],
+          "strPortraitImg"  : "paperdoll/held/portMineralOre02",
+          "mapSlotEffects" : [          
+            "heldL","HeldItmMineralOre02L",
+            "heldR","HeldItmMineralOre02R",
+            "drag", "Blank"
+          ],
+        "strAudioEmitter"   : "ItmRock01Sound"
+      },
+      {
+        "strName" : "ItmMineral03",
+        "strNameShort" : "Ore: Carbon",
+        "strNameFriendly" : "Ore: Carbon/Carbides",
+        "strDesc" : "Carbon. A dark element vital for organic life, featuring prominent, often hydrated, carbon or carbides.",
+        "strItemDef" : "ItmMineral03",
+        "strType"    : "Item",
+        "nStackLimit"    : 6,
+        "aInteractions" : [
+          "DropItem",
+          "DropItemStack",
+          "PickupItem",
+          "PickupItemStack"
+        ],
+        "aStartingConds" : [
+          "IsNonHighlightable=1.0x1",
+          "IsSolid=1.0x1.0",
+          "IsMineral03=1.0x1",
+          "IsMineral=1.0x1.0",
+          "IsEdged=1.0x1",
+          "IsTough=1.0x1",
+          "IsImmuneAnnihilation=1.0x1",
+          "IsOre=1.0x1.0",
+          "StatMass=1.0x10.0",
+          "StatBasePrice=1.0x99.0",
+          "StatDamage=0.5x1-50",
+          "StatDamageMax=1.0x101",
+          "IsCategoryOre=1.0x1"
+        ],
+        "aUpdateCommands" : [
+          "Destructable,StatDamage,ACTMineralDestroy,StatDamageMax,1.0"
+        ],
+          "strPortraitImg"  : "paperdoll/held/portMineralOre03",
+          "mapSlotEffects" : [          
+            "heldL","HeldItmMineralOre03L",
+            "heldR","HeldItmMineralOre03R",
+            "drag", "Blank"
+          ],
+        "strAudioEmitter"   : "ItmRock01Sound"
+      },
+      {
+        "strName" : "ItmMineral04",
+        "strNameShort" : "Ore: Silicates",
+        "strNameFriendly" : "Ore: Silicates",
+        "strDesc" : "Silicates form a wide variety of crystalline minerals common in asteroids, composed of silicon and oxygen bonded with various metals (often Fe or Al).",
+        "strItemDef" : "ItmMineral04",
+        "strType"    : "Item",
+        "nStackLimit"    : 6,
+        "aInteractions" : [
+          "DropItem",
+          "DropItemStack",
+          "PickupItem",
+          "PickupItemStack"
+        ],
+        "aStartingConds" : [
+          "IsNonHighlightable=1.0x1",
+          "IsSolid=1.0x1.0",
+          "IsMineral04=1.0x1",
+          "IsMineral=1.0x1.0",
+          "IsEdged=1.0x1",
+          "IsTough=1.0x1",
+          "IsImmuneAnnihilation=1.0x1",
+          "IsOre=1.0x1.0",
+          "StatMass=1.0x10.0",
+          "StatBasePrice=1.0x200.0",
+          "StatDamage=0.5x1-50",
+          "StatDamageMax=1.0x101",
+          "IsCategoryOre=1.0x1"
+        ],
+        "aUpdateCommands" : [
+          "Destructable,StatDamage,ACTMineralDestroy,StatDamageMax,1.0"
+        ],
+          "strPortraitImg"  : "paperdoll/held/portMineralOre04",
+          "mapSlotEffects" : [          
+            "heldL","HeldItmMineralOre04L",
+            "heldR","HeldItmMineralOre04R",
+            "drag", "Blank"
+          ],
+        "strAudioEmitter"   : "ItmRock01Sound"
+      },
+      {
+        "strName" : "ItmMineral05",
+        "strNameShort" : "Ore: Platinum",
+        "strNameFriendly" : "Ore: Platinum",
+        "strDesc" : "Platinum. The rock that launched a thousand ships. Still draws a hefty price at the commodity exchange.",
+        "strItemDef" : "ItmMineral05",
+        "strType"    : "Item",
+        "nStackLimit"    : 6,
+        "aInteractions" : [
+          "DropItem",
+          "DropItemStack",
+          "PickupItem",
+          "PickupItemStack"
+        ],
+        "aStartingConds" : [
+          "IsNonHighlightable=1.0x1",
+          "IsSolid=1.0x1.0",
+          "IsMineral05=1.0x1",
+          "IsMineral=1.0x1.0",
+          "IsEdged=1.0x1",
+          "IsTough=1.0x1",
+          "IsImmuneAnnihilation=1.0x1",
+          "IsOre=1.0x1.0",
+          "StatMass=1.0x10.0",
+          "StatBasePrice=1.0x15000.0",
+          "StatDamage=0.5x1-50",
+          "StatDamageMax=1.0x101",
+          "IsCategoryOre=1.0x1"
+        ],
+        "aUpdateCommands" : [
+          "Destructable,StatDamage,ACTMineralDestroy,StatDamageMax,1.0"
+        ],
+          "strPortraitImg"  : "paperdoll/held/portMineralOre05",
+          "mapSlotEffects" : [          
+            "heldL","HeldItmMineralOre05L",
+            "heldR","HeldItmMineralOre05R",
+            "drag", "Blank"
+          ],
+        "strAudioEmitter"   : "ItmRock01Sound"
+      },
+      {
+        "strName" : "ItmMineral06",
+        "strNameShort" : "Ore: Iridium",
+        "strNameFriendly" : "Ore: Iridium",
+        "strDesc" : "Iridium. A highly corrosion-resistant and dense metal, it is useful for applications involving strong acids, bases, or other chemicals, but brittle and challenging to machine except at extreme temperatures. Sometimes contains Os, Ru, Rh, and rarely Pt.",
+        "strItemDef" : "ItmMineral06",
+        "strType"    : "Item",
+        "nStackLimit"    : 6,
+        "aInteractions" : [
+          "DropItem",
+          "DropItemStack",
+          "PickupItem",
+          "PickupItemStack"
+        ],
+        "aStartingConds" : [
+          "IsNonHighlightable=1.0x1",
+          "IsSolid=1.0x1.0",
+          "IsMineral06=1.0x1",
+          "IsMineral=1.0x1.0",
+          "IsEdged=1.0x1",
+          "IsTough=1.0x1",
+          "IsImmuneAnnihilation=1.0x1",
+          "IsOre=1.0x1.0",
+          "StatMass=1.0x10.0",
+          "StatBasePrice=1.0x12000.0",
+          "StatDamage=0.5x1-50",
+          "StatDamageMax=1.0x101",
+          "IsCategoryOre=1.0x1"
+        ],
+        "aUpdateCommands" : [
+          "Destructable,StatDamage,ACTMineralDestroy,StatDamageMax,1.0"
+        ],
+            "strPortraitImg"  : "paperdoll/held/portMineralOre06",
+            "mapSlotEffects" : [          
+              "heldL","HeldItmMineralOre06L",
+              "heldR","HeldItmMineralOre06R",
+              "drag", "Blank"
+            ],
+        "strAudioEmitter"   : "ItmRock01Sound"
+      },
+      {
+        "strName" : "ItmMineral07",
+        "strNameShort" : "Ore: Palladium",
+        "strNameFriendly" : "Ore: Palladium",
+        "strDesc" : "Palladium. The second-hand member of the Platinum Group Metals (PGMs) much coveted by asteroid miners.",
+        "strItemDef" : "ItmMineral07",
+        "strType"    : "Item",
+        "nStackLimit"    : 6,
+        "aInteractions" : [
+          "DropItem",
+          "DropItemStack",
+          "PickupItem",
+          "PickupItemStack"
+        ],
+        "aStartingConds" : [
+          "IsNonHighlightable=1.0x1",
+          "IsSolid=1.0x1.0",
+          "IsMineral07=1.0x1",
+          "IsMineral=1.0x1.0",
+          "IsEdged=1.0x1",
+          "IsTough=1.0x1",
+          "IsImmuneAnnihilation=1.0x1",
+          "IsOre=1.0x1.0",
+          "StatMass=1.0x10.0",
+          "StatBasePrice=1.0x8000.0",
+          "StatDamage=0.5x1-50",
+          "StatDamageMax=1.0x101",
+          "IsCategoryOre=1.0x1"
+        ],
+        "aUpdateCommands" : [
+          "Destructable,StatDamage,ACTMineralDestroy,StatDamageMax,1.0"
+        ],
+            "strPortraitImg"  : "paperdoll/held/portMineralOre07",
+            "mapSlotEffects" : [          
+              "heldL","HeldItmMineralOre07L",
+              "heldR","HeldItmMineralOre07R",
+              "drag", "Blank"
+            ],
+        "strAudioEmitter"   : "ItmRock01Sound"
+      },
+      {
+        "strName" : "ItmMineral08",
+        "strNameShort" : "Ore: Cobalt",
+        "strNameFriendly" : "Ore: Cobalt",
+        "strDesc" : "Cobalt. A vibrant blue mineral that turns red when hydrated. Demanded in numerous industrial applications.",
+        "strItemDef" : "ItmMineral08",
+        "strType"    : "Item",
+        "nStackLimit"    : 6,
+        "aInteractions" : [
+          "DropItem",
+          "DropItemStack",
+          "PickupItem",
+          "PickupItemStack"
+        ],
+        "aStartingConds" : [
+          "IsNonHighlightable=1.0x1",
+          "IsSolid=1.0x1.0",
+          "IsMineral08=1.0x1",
+          "IsMineral=1.0x1.0",
+          "IsEdged=1.0x1",
+          "IsTough=1.0x1",
+          "IsImmuneAnnihilation=1.0x1",
+          "IsOre=1.0x1.0",
+          "StatMass=1.0x10.0",
+          "StatBasePrice=1.0x4000.0",
+          "StatDamage=0.5x1-50",
+          "StatDamageMax=1.0x101",
+          "IsCategoryOre=1.0x1"
+        ],
+        "aUpdateCommands" : [
+          "Destructable,StatDamage,ACTMineralDestroy,StatDamageMax,1.0"
+        ],
+            "strPortraitImg"  : "paperdoll/held/portMineralOre08",
+            "mapSlotEffects" : [          
+              "heldL","HeldItmMineralOre08L",
+              "heldR","HeldItmMineralOre08R",
+              "drag", "Blank"
+            ],
+        "strAudioEmitter"   : "ItmRock01Sound"
+      },
+      {
+        "strName" : "ItmMineral09",
+        "strNameShort" : "Ore: Gold",
+        "strNameFriendly" : "Ore: Gold",
+        "strDesc" : "Gold. Shiny, soft. Intoxicant of Old Earth civilizations. Still treasured for nostalgia, finery, and some fusion reactor fuels.",
+        "strItemDef" : "ItmMineral09",
+        "strType"    : "Item",
+        "nStackLimit"    : 6,
+        "aInteractions" : [
+          "DropItem",
+          "DropItemStack",
+          "PickupItem",
+          "PickupItemStack"
+        ],
+        "aStartingConds" : [
+          "IsNonHighlightable=1.0x1",
+          "IsSolid=1.0x1.0",
+          "IsMineral09=1.0x1",
+          "IsMineral=1.0x1.0",
+          "IsEdged=1.0x1",
+          "IsTough=1.0x1",
+          "IsImmuneAnnihilation=1.0x1",
+          "IsOre=1.0x1.0",
+          "StatMass=1.0x10.0",
+          "StatBasePrice=1.0x10000.0",
+          "StatDamage=0.5x1-50",
+          "StatDamageMax=1.0x101",
+          "IsCategoryOre=1.0x1"
+        ],
+        "aUpdateCommands" : [
+          "Destructable,StatDamage,ACTMineralDestroy,StatDamageMax,1.0"
+        ],
+            "strPortraitImg"  : "paperdoll/held/portMineralOre09",
+            "mapSlotEffects" : [          
+              "heldL","HeldItmMineralOre09L",
+              "heldR","HeldItmMineralOre09R",
+              "drag", "Blank"
+            ],
+        "strAudioEmitter"   : "ItmRock01Sound"
+      },
+      {
+        "strName" : "ItmMineral10",
+        "strNameShort" : "Ore: Wolfram",
+        "strNameFriendly" : "Ore: Wolfram",
+        "strDesc" : "Wolfram. A remarkably dense, robust metal with a high melting point. Suitable for a wide range of applications in industry, electronics, and weapons.",
+        "strItemDef" : "ItmMineral10",
+        "strType"    : "Item",
+        "nStackLimit"    : 6,
+        "aInteractions" : [
+          "DropItem",
+          "DropItemStack",
+          "PickupItem",
+          "PickupItemStack"
+        ],
+        "aStartingConds" : [
+          "IsNonHighlightable=1.0x1",
+          "IsSolid=1.0x1.0",
+          "IsMineral10=1.0x1",
+          "IsMineral=1.0x1.0",
+          "IsEdged=1.0x1",
+          "IsTough=1.0x1",
+          "IsImmuneAnnihilation=1.0x1",
+          "IsOre=1.0x1.0",
+          "StatMass=1.0x10.0",
+          "StatBasePrice=1.0x2000.0",
+          "StatDamage=0.5x1-50",
+          "StatDamageMax=1.0x101",
+          "IsCategoryOre=1.0x1"
+        ],
+        "aUpdateCommands" : [
+          "Destructable,StatDamage,ACTMineralDestroy,StatDamageMax,1.0"
+        ],
+            "strPortraitImg"  : "paperdoll/held/portMineralOre10",
+            "mapSlotEffects" : [          
+              "heldL","HeldItmMineralOre10L",
+              "heldR","HeldItmMineralOre10R",
+              "drag", "Blank"
+            ],
+        "strAudioEmitter"   : "ItmRock01Sound"
+      },
+      {
+        "strName" : "ItmMineral11",
+        "strNameShort" : "Ore: Hydrates",
+        "strNameFriendly" : "Hydrates",
+        "strDesc" : "Hydrates: A class of assorted hydrous minerals and compounds made of elements bonded with water or its component parts. Valuable for potential processing into liquid water.",
+        "strItemDef" : "ItmMineral11",
+        "strType"    : "Item",
+        "nStackLimit"    : 6,
+        "aInteractions" : [
+          "DropItem",
+          "DropItemStack",
+          "PickupItem",
+          "PickupItemStack"
+        ],
+        "aStartingConds" : [
+          "IsNonHighlightable=1.0x1",
+          "IsSolid=1.0x1.0",
+          "IsMineral11=1.0x1",
+          "IsMineral=1.0x1.0",
+          "IsEdged=1.0x1",
+          "IsTough=1.0x1",
+          "IsImmuneAnnihilation=1.0x1",
+          "IsOre=1.0x1.0",
+          "StatMass=1.0x10.0",
+          "StatBasePrice=1.0x150.0",
+          "StatDamage=0.5x1-50",
+          "StatDamageMax=1.0x101",
+          "IsCategoryOre=1.0x1"
+        ],
+        "aUpdateCommands" : [
+          "Destructable,StatDamage,ACTMineralDestroy,StatDamageMax,1.0"
+        ],
+            "strPortraitImg"  : "paperdoll/held/portMineralOre11",
+            "mapSlotEffects" : [          
+              "heldL","HeldItmMineralOre11L",
+              "heldR","HeldItmMineralOre11R",
+              "drag", "Blank"
+            ],
+        "strAudioEmitter"   : "ItmRock01Sound"
+      },
+
+      {
+        "strName" : "ItmMineral79",
+        "strNameShort" : "Ore: Void Opal",
+        "strNameFriendly" : "Void Opal",
+        "strDesc" : "While not a true opal, its unique visual properties are similar enough to opal's play-of-color to have garnered it the name 'void opal.' It has only been found in space, and is rarely seen on any commodities market, fueling speculation and conspiracies by many.",
+        "strItemDef" : "ItmMineral79",
+        "strType"    : "Item",
+        "nStackLimit"    : 6,
+        "aInteractions" : [
+          "DropItem",
+          "DropItemStack",
+          "PickupItem",
+          "PickupItemStack"
+        ],
+        "aStartingConds" : [
+          "IsNonHighlightable=1.0x1",
+          "IsSolid=1.0x1.0",
+          "IsMineral79=1.0x1",
+          "IsMineral=1.0x1.0",
+          "IsEdged=1.0x1",
+          "IsTough=1.0x1",
+          "IsImmuneAnnihilation=1.0x1",
+          "IsOre=1.0x1.0",
+          "StatMass=1.0x10.0",
+          "StatBasePrice=1.0x112000.00",
+          "IsNotForSale=1.0x1",
+          "StatDamage=0.5x1-50",
+          "StatDamageMax=1.0x101",
+          "IsCategoryOre=1.0x1"
+        ],
+        "aUpdateCommands" : [
+          "Destructable,StatDamage,ACTMineralDestroy,StatDamageMax,1.0"
+        ],
+            "strPortraitImg"  : "paperdoll/held/portMineralOre79",
+            "mapSlotEffects" : [          
+              "heldL","HeldItmMineralOre79L",
+              "heldR","HeldItmMineralOre79R",
+              "drag", "Blank"
+            ],
+        "strAudioEmitter"   : "ItmRock01Sound"
+      },
+    
+      {
+        "strName" : "ItmMiningTrash",
+        "strNameShort" : "Gangue",
+        "strNameFriendly" : "Gangue Material",
+        "strDesc" : "Loose, commercially worthless material surrounding more valuable minerals and ores.",
+        "strItemDef" : "ItmMiningTrash01",
+        "strType"    : "Item",
+        "nStackLimit"    : 15,
+        "aInteractions" : [
+          "DropItem",
+          "DropItemStack",
+          "PickupItem",
+          "PickupItemStack"
+        ],
+        "aStartingConds" : [
+          "IsNonHighlightable=1.0x1",
+          "IsSolid=1.0x1.0",
+          "IsTrash=1.0x1",
+          "IsMineral=1.0x1",
+          "IsPocketable=1.0x1",
+          "StatMass=1.0x3.0",
+          "StatBasePrice=1.0x2.0",
+          "IsIndestructable=1.0x1",
+          "IsCategoryTrash=1.0x1"
+        ],
+        "strPortraitImg"  : "paperdoll/held/portMiningTrash01",
+        "mapSlotEffects" : [          
+          "heldL","HeldItmMineralTrash01L",
+          "heldR","HeldItmMineralTrash01R",
+          "drag", "Blank"
+        ],
+        "strAudioEmitter"   : "ItmRock02Sound"
+      },
+      
+      {
+        "strName" : "ItmFloorRock021x1",
+        "strNameShort" : "Stony Core",
+        "strNameFriendly" : "Stony Rock Core",
+        "strDesc" : "Bulk asteroid material, with a stony appearance.",
+        "strItemDef" : "ItmFloorRock021x1",
+        "strType"    : "Item",
+        "strLoot"    : null,
+        "aInteractions" : [
+          "ACTMine",
+          "ACTBash"
+        ],
+        "aStartingConds" : [
+          "IsNonHighlightable=1.0x1",
+          "IsFloorRock=1.0x1",
+          "IsFloorRock021x1=1.0x1",
+          "IsHiddenInv=1.0x1",
+          "IsInstalled=1.0x1",
+          "IsMineral=1.0x1",
+          "IsMineable=1.0x1",
+          "IsImmuneAnnihilation=1.0x1",
+          "IsCheckRoom=1.0x1",
+          "IsSolid=1.0x1.0",
+          "StatMass=1.0x73.0",
+          "StatDamageMax=1.0x73"
+        ],
+        "mapCondTolerance"       : [
+        ],
+        "mapPoints"      : [
+        ],
+        "aUpdateCommands" : [
+          "Destructable,StatDamage,ACTMineralDestroy,StatDamageMax,1.0"
+        ],
+        "strPortraitImg"  : "tiles/Mining/ItmFloorRock021x1",
+        "jsonPI"            : null,
+        "strAudioEmitter"   : "ItmRock03Sound"
+      },
+      {
+        "strName" : "ItmFloorRock021x1C",
+        "strNameShort" : "Dark Core",
+        "strNameFriendly" : "Dark Rock Core",
+        "strItemDef" : "ItmFloorRock021x1C",
+        "strType"    : "Item",
+        "strLoot"    : null,
+        "aInteractions" : [
+          "ACTMine",
+          "ACTBash"
+        ],
+        "aStartingConds" : [
+          "IsNonHighlightable=1.0x1",
+          "IsFloorRock=1.0x1",
+          "IsFloorRock021x1C=1.0x1",
+          "IsHiddenInv=1.0x1",
+          "IsInstalled=1.0x1",
+          "IsMineral=1.0x1",
+          "IsMineable=1.0x1",
+          "IsImmuneAnnihilation=1.0x1",
+          "IsCheckRoom=1.0x1",
+          "IsSolid=1.0x1.0",
+          "StatMass=1.0x37.0",
+          "StatDamageMax=1.0x37"
+        ],
+        "mapCondTolerance"       : [
+        ],
+        "mapPoints"      : [
+        ],
+        "aUpdateCommands" : [
+          "Destructable,StatDamage,ACTMineralDestroy,StatDamageMax,1.0"
+        ],
+        "strPortraitImg"  : "tiles/Mining/ItmFloorRock021x1C",
+        "jsonPI"            : null,
+        "strAudioEmitter"   : "ItmRock03Sound"
+      },
+      {
+        "strName" : "ItmFloorRock021x1M",
+        "strNameShort" : "Shiny Core",
+        "strNameFriendly" : "Shiny Rock Core",
+        "strItemDef" : "ItmFloorRock021x1M",
+        "strType"    : "Item",
+        "strLoot"    : null,
+        "aInteractions" : [
+          "ACTMine",
+          "ACTBash"
+        ],
+        "aStartingConds" : [
+          "IsNonHighlightable=1.0x1",
+          "IsFloorRock=1.0x1",
+          "IsFloorRock021x1M=1.0x1",
+          "IsHiddenInv=1.0x1",
+          "IsInstalled=1.0x1",
+          "IsMineral=1.0x1",
+          "IsMineable=1.0x1",
+          "IsImmuneAnnihilation=1.0x1",
+          "IsCheckRoom=1.0x1",
+          "IsSolid=1.0x1.0",
+          "StatMass=1.0x144.0",
+          "StatDamageMax=1.0x144"
+        ],
+        "mapCondTolerance"       : [
+        ],
+        "mapPoints"      : [
+        ],
+        "aUpdateCommands" : [
+          "Destructable,StatDamage,ACTMineralDestroy,StatDamageMax,1.0"
+        ],
+        "strPortraitImg"  : "tiles/Mining/ItmFloorRock021x1M",
+        "jsonPI"            : null,
+        "strAudioEmitter"   : "ItmRock03Sound"
+      },
+    
+    
+      {
+        "strName" : "ItmFloorRock02",
+        "strNameShort" : "Stony Core",
+        "strNameFriendly" : "Stony Rock Core (Deposit)",
+        "strDesc" : "Bulk asteroid material, with a stony appearance. This area may contain a rich deposit.",
+        "strItemDef" : "ItmFloorRock02",
+        "strType"    : "Item",
+        "strLoot"    : null,
+        "aInteractions" : [
+          "ACTMine"
+        ],
+        "aStartingConds" : [
+          "IsNonHighlightable=1.0x1",
+          "IsFloorRock=1.0x1",
+          "IsFloorRock022x2=1.0x1",
+          "IsHiddenInv=1.0x1",
+          "IsInstalled=1.0x1",
+          "IsMineral=1.0x1",
+          "IsMineable=1.0x1",
+          "IsImmuneAnnihilation=1.0x1",
+          "IsCheckRoom=1.0x1",
+          "IsSolid=1.0x1.0",
+          "StatMass=1.0x584.0",
+          "StatDamageMax=1.0x58"
+        ],
+        "mapCondTolerance"       : [
+        ],
+        "mapPoints"      : [
+        ],
+        "aUpdateCommands" : [
+          "Destructable,StatDamage,ACTFloorRockSDamage,StatDamageMax,1.0"
+        ],
+        "strPortraitImg"  : "tiles/Mining/ItmFloorRock02",
+        "jsonPI"            : null,
+        "strAudioEmitter"   : "ItmRock03Sound"
+      },
+      {
+        "strName" : "ItmFloorRock02C",
+        "strNameShort" : "Dark Core",
+        "strNameFriendly" : "Dark Rock Core (Deposit)",
+        "strDesc" : "Bulk asteroid material, with a dark appearance. This area may contain a rich deposit.",
+        "strItemDef" : "ItmFloorRock02C",
+        "strType"    : "Item",
+        "strLoot"    : null,
+        "aInteractions" : [
+          "ACTMine"
+        ],
+        "aStartingConds" : [
+          "IsNonHighlightable=1.0x1",
+          "IsFloorRock=1.0x1",
+          "IsFloorRock022x2C=1.0x1",
+          "IsHiddenInv=1.0x1",
+          "IsInstalled=1.0x1",
+          "IsMineral=1.0x1",
+          "IsMineable=1.0x1",
+          "IsImmuneAnnihilation=1.0x1",
+          "IsCheckRoom=1.0x1",
+          "IsSolid=1.0x1.0",
+          "StatMass=1.0x296.0",
+          "StatDamageMax=1.0x29"
+        ],
+        "mapCondTolerance"       : [
+        ],
+        "mapPoints"      : [
+        ],
+        "aUpdateCommands" : [
+          "Destructable,StatDamage,ACTFloorRockCDamage,StatDamageMax,1.0"
+        ],
+        "strPortraitImg"  : "tiles/Mining/ItmFloorRock02C",
+        "jsonPI"            : null,
+        "strAudioEmitter"   : "ItmRock03Sound"
+      },
+      {
+        "strName" : "ItmFloorRock02M",
+        "strNameShort" : "Shiny Core",
+        "strNameFriendly" : "Shiny Rock Core (Deposit)",
+        "strDesc" : "Bulk asteroid material, with a shiny appearance. This area may contain a rich deposit.",
+        "strItemDef" : "ItmFloorRock02M",
+        "strType"    : "Item",
+        "strLoot"    : null,
+        "aInteractions" : [
+          "ACTMine"
+        ],
+        "aStartingConds" : [
+          "IsNonHighlightable=1.0x1",
+          "IsFloorRock=1.0x1",
+          "IsFloorRock022x2=1.0x1",
+          "IsHiddenInv=1.0x1",
+          "IsInstalled=1.0x1",
+          "IsMineral=1.0x1",
+          "IsMineable=1.0x1",
+          "IsImmuneAnnihilation=1.0x1",
+          "IsCheckRoom=1.0x1",
+          "IsSolid=1.0x1.0",
+          "StatMass=1.0x1152.0",
+          "StatDamageMax=1.0x115"
+        ],
+        "mapCondTolerance"       : [
+        ],
+        "mapPoints"      : [
+        ],
+        "aUpdateCommands" : [
+          "Destructable,StatDamage,ACTFloorRockMDamage,StatDamageMax,1.0"
+        ],
+        "strPortraitImg"  : "tiles/Mining/ItmFloorRock02M",
+        "jsonPI"            : null,
+        "strAudioEmitter"   : "ItmRock03Sound"
+      },
+    
+    
+      {
+        "strName" : "ItmFloorRock02Dmg",
+        "strNameShort" : "Stony Core",
+        "strNameFriendly" : "Stony Rock Core (Cracked)",
+        "strDesc" : "Bulk asteroid material, with a stony appearance.",
+        "strItemDef" : "ItmFloorRock02Dmg",
+        "strType"    : "Item",
+        "strLoot"    : null,
+        "aInteractions" : [
+          "ACTMineBig",
+          "ACTBashBig"
+        ],
+        "aStartingConds" : [
+          "IsDamaged=1.0x1",
+          "IsNonHighlightable=1.0x1",
+          "IsFloorRock=1.0x1",
+          "IsFloorRock022x2=1.0x1",
+          "IsHiddenInv=1.0x1",
+          "IsInstalled=1.0x1",
+          "IsMineral=1.0x1",
+          "IsMineable=1.0x1",
+          "IsImmuneAnnihilation=1.0x1",
+          "IsCheckRoom=1.0x1",
+          "IsSolid=1.0x1.0",
+          "StatMass=1.0x292.0",
+          "StatDamageMax=1.0x584"
+        ],
+        "mapCondTolerance"       : [
+        ],
+        "mapPoints"      : [
+          "RoomA,0,0",
+          "RoomB,0,9e99"
+        ],
+        "aUpdateCommands" : [
+          "Destructable,StatDamage,ACTMineralDestroy,StatDamageMax,1.0",
+          "GasExchange,RoomA,RoomB,0.16"
+        ],
+        "strPortraitImg"  : "tiles/Mining/ItmFloorRock02Dmg",
+        "jsonPI"            : null,
+        "strAudioEmitter"   : "ItmRock03Sound"
+      },
+      {
+        "strName" : "ItmFloorRock02CDmg",
+        "strNameShort" : "Dark Core",
+        "strNameFriendly" : "Dark Rock Core (Cracked)",
+        "strItemDef" : "ItmFloorRock02CDmg",
+        "strType"    : "Item",
+        "strLoot"    : null,
+        "aInteractions" : [
+          "ACTMineBig",
+          "ACTBashBig"
+        ],
+        "aStartingConds" : [
+          "IsDamaged=1.0x1",
+          "IsNonHighlightable=1.0x1",
+          "IsFloorRock=1.0x1",
+          "IsFloorRock022x2C=1.0x1",
+          "IsHiddenInv=1.0x1",
+          "IsInstalled=1.0x1",
+          "IsMineral=1.0x1",
+          "IsMineable=1.0x1",
+          "IsImmuneAnnihilation=1.0x1",
+          "IsCheckRoom=1.0x1",
+          "IsSolid=1.0x1.0",
+          "StatMass=1.0x148.0",
+          "StatDamageMax=1.0x296"
+        ],
+        "mapCondTolerance"       : [
+        ],
+        "mapPoints"      : [
+          "RoomA,0,0",
+          "RoomB,0,9e99"
+        ],
+        "aUpdateCommands" : [
+          "Destructable,StatDamage,ACTMineralDestroy,StatDamageMax,1.0",
+          "GasExchange,RoomA,RoomB,0.16"
+        ],
+        "strPortraitImg"  : "tiles/Mining/ItmFloorRock02CDmg",
+        "jsonPI"            : null,
+        "strAudioEmitter"   : "ItmRock03Sound"
+      },
+      {
+        "strName" : "ItmFloorRock02MDmg",
+        "strNameShort" : "Shiny Core",
+        "strNameFriendly" : "Shiny Rock Core (Cracked)",
+        "strItemDef" : "ItmFloorRock02MDmg",
+        "strType"    : "Item",
+        "strLoot"    : null,
+        "aInteractions" : [
+          "ACTMineBig",
+          "ACTBashBig"
+        ],
+        "aStartingConds" : [
+          "IsDamaged=1.0x1",
+          "IsNonHighlightable=1.0x1",
+          "IsFloorRock=1.0x1",
+          "IsFloorRock022x2=1.0x1",
+          "IsHiddenInv=1.0x1",
+          "IsInstalled=1.0x1",
+          "IsMineral=1.0x1",
+          "IsMineable=1.0x1",
+          "IsImmuneAnnihilation=1.0x1",
+          "IsCheckRoom=1.0x1",
+          "IsSolid=1.0x1.0",
+          "StatMass=1.0x576.0",
+          "StatDamageMax=1.0x1152"
+        ],
+        "mapCondTolerance"       : [
+        ],
+        "mapPoints"      : [
+          "RoomA,0,0",
+          "RoomB,0,9e99"
+        ],
+        "aUpdateCommands" : [
+          "Destructable,StatDamage,ACTMineralDestroy,StatDamageMax,1.0",
+          "GasExchange,RoomA,RoomB,0.16"
+        ],
+        "strPortraitImg"  : "tiles/Mining/ItmFloorRock02MDmg",
+        "jsonPI"            : null,
+        "strAudioEmitter"   : "ItmRock03Sound"
+      },
+    
+      
+      {
+        "strName" : "ItmFloorRock02DepositDmg",
+        "strNameShort" : "Stony Deposit",
+        "strNameFriendly" : "Stony Rock Core (Deposit)",
+        "strDesc" : "Bulk asteroid material, with a stony appearance. This area may contain a rich deposit.",
+        "strItemDef" : "ItmFloorRock02DepositDmg",
+        "strType"    : "Item",
+        "strLoot"    : null,
+        "aInteractions" : [
+          "ACTMineDeposit"
+        ],
+        "aStartingConds" : [
+          "IsDamaged=1.0x1",
+          "IsNonHighlightable=1.0x1",
+          "IsFloorRock=1.0x1",
+          "IsFloorRock022x2=1.0x1",
+          "IsOreDeposit=1.0x1",
+          "IsSClassAsteroid=1.0x1",
+          "IsHiddenInv=1.0x1",
+          "IsInstalled=1.0x1",
+          "IsMineral=1.0x1",
+          "IsMineable=1.0x1",
+          "IsImmuneAnnihilation=1.0x1",
+          "IsCheckRoom=1.0x1",
+          "IsSolid=1.0x1.0",
+          "StatMass=1.0x292.0",
+          "StatDamageMax=1.0x146"
+        ],
+        "mapCondTolerance"       : [
+        ],
+        "mapPoints"      : [
+        ],
+        "aUpdateCommands" : [
+          "Destructable,StatDamage,ACTMineralDestroy,StatDamageMax,1.0"
+        ],
+        "strPortraitImg"  : "tiles/Mining/ItmFloorRock02DepositDmg",
+        "jsonPI"            : null,
+        "strAudioEmitter"   : "ItmRock03Sound"
+      },
+      {
+        "strName" : "ItmFloorRock02CDepositDmg",
+        "strNameShort" : "Dark Deposit",
+        "strNameFriendly" : "Dark Rock Core (Deposit)",
+        "strDesc" : "Bulk asteroid material, with a dark appearance. This area may contain a rich deposit.",
+        "strItemDef" : "ItmFloorRock02CDepositDmg",
+        "strType"    : "Item",
+        "strLoot"    : null,
+        "aInteractions" : [
+          "ACTMineDeposit"
+        ],
+        "aStartingConds" : [
+          "IsDamaged=1.0x1",
+          "IsNonHighlightable=1.0x1",
+          "IsFloorRock=1.0x1",
+          "IsFloorRock022x2C=1.0x1",
+          "IsOreDeposit=1.0x1",
+          "IsCClassAsteroid=1.0x1",
+          "IsHiddenInv=1.0x1",
+          "IsInstalled=1.0x1",
+          "IsMineral=1.0x1",
+          "IsMineable=1.0x1",
+          "IsImmuneAnnihilation=1.0x1",
+          "IsCheckRoom=1.0x1",
+          "IsSolid=1.0x1.0",
+          "StatMass=1.0x148.0",
+          "StatDamageMax=1.0x74"
+        ],
+        "mapCondTolerance"       : [
+        ],
+        "mapPoints"      : [
+        ],
+        "aUpdateCommands" : [
+          "Destructable,StatDamage,ACTMineralDestroy,StatDamageMax,1.0"
+        ],
+        "strPortraitImg"  : "tiles/Mining/ItmFloorRock02CDepositDmg",
+        "jsonPI"            : null,
+        "strAudioEmitter"   : "ItmRock03Sound"
+      },
+      {
+        "strName" : "ItmFloorRock02MDepositDmg",
+        "strNameShort" : "Shiny Deposit",
+        "strNameFriendly" : "Shiny Rock Core (Deposit)",
+        "strDesc" : "Bulk asteroid material, with a shiny appearance. This area may contain a rich deposit.",
+        "strItemDef" : "ItmFloorRock02MDepositDmg",
+        "strType"    : "Item",
+        "strLoot"    : null,
+        "aInteractions" : [
+          "ACTMineDeposit"
+        ],
+        "aStartingConds" : [
+          "IsDamaged=1.0x1",
+          "IsNonHighlightable=1.0x1",
+          "IsFloorRock=1.0x1",
+          "IsFloorRock022x2=1.0x1",
+          "IsOreDeposit=1.0x1",
+          "IsMClassAsteroid=1.0x1",
+          "IsHiddenInv=1.0x1",
+          "IsInstalled=1.0x1",
+          "IsMineral=1.0x1",
+          "IsMineable=1.0x1",
+          "IsImmuneAnnihilation=1.0x1",
+          "IsCheckRoom=1.0x1",
+          "IsSolid=1.0x1.0",
+          "StatMass=1.0x576.0",
+          "StatDamageMax=1.0x288"
+        ],
+        "mapCondTolerance"       : [
+        ],
+        "mapPoints"      : [
+        ],
+        "aUpdateCommands" : [
+          "Destructable,StatDamage,ACTMineralDestroy,StatDamageMax,1.0"
+        ],
+        "strPortraitImg"  : "tiles/Mining/ItmFloorRock02MDepositDmg",
+        "jsonPI"            : null,
+        "strAudioEmitter"   : "ItmRock03Sound"
+      },
+    
+    
+    
+    
+    
+      {
+        "strName" : "ItmWallRock011x1",
+        "strNameShort" : "Regolith",
+        "strNameFriendly" : "Stony Regolith",
+        "strDesc" : "Bulk asteroid material, with a stony appearance.",
+        "strItemDef" : "ItmWallRock011x1",
+        "strType"    : "Item",
+        "strLoot"    : "",
+        "aInteractions" : [
+          "ACTMine",
+          "ACTBash"
+        ],
+        "aStartingConds" : [
+          "IsNonHighlightable=1.0x1",
+          "IsWall=1.0x1",
+          "IsWallRock011x1=1.0x1",
+          "IsHiddenInv=1.0x1",
+          "IsInstalled=1.0x1",
+          "IsMineable=1.0x1",
+          "IsImmuneAnnihilation=1.0x1",
+          "IsMineral=1.0x1",
+          "IsCheckRoom=1.0x1",
+          "IsSolid=1.0x1.0",
+          "StatBasePrice=1.0x0.0",
+          "StatDamageMax=1.0x15",
+          "StatMass=1.0x52.0"
+        ],
+        "mapCondTolerance"       : [
+        ],
+    
+        "mapPoints"      : [
+          "use,0,0"
+        ],
+        "aUpdateCommands" : [
+          "Destructable,StatDamage,ACTWallRock011x1Dmg,StatDamageMax,1.0"
+        ],
+        "strPortraitImg"  : "tiles/Mining/ItmWallRock011x1",
+        "jsonPI"            : null,
+        "strAudioEmitter"   : "ItmRock04Sound"
+      },
+      {
+        "strName" : "ItmWallRock011x1Dmg",
+        "strNameShort" : "Regolith",
+        "strNameFriendly" : "Stony Regolith (Cracked)",
+        "strDesc" : "Bulk asteroid material, with a stony appearance.",
+        "strItemDef" : "ItmWallRock011x1Dmg",
+        "strType"    : "Item",
+        "strLoot"    : "",
+        "aInteractions" : [
+          "ACTMine",
+          "ACTBash"
+        ],
+        "aStartingConds" : [
+          "IsNonHighlightable=1.0x1",
+          "IsWall=1.0x1",
+          "IsWallRock011x1=1.0x1",
+          "IsHiddenInv=1.0x1",
+          "IsInstalled=1.0x1",
+          "IsMineable=1.0x1",
+          "IsImmuneAnnihilation=1.0x1",
+          "IsDamaged=1.0x1",
+          "IsMineral=1.0x1",
+          "IsCheckRoom=1.0x1",
+          "IsSolid=1.0x1.0",
+          "StatBasePrice=1.0x0",
+          "StatDamageMax=1.0x29",
+          "StatMass=1.0x24.0"
+        ],
+        "mapCondTolerance"       : [
+        ],
+    
+        "mapPoints"      : [
+          "RoomA,16,0",
+          "RoomB,-16,0",
+          "RoomC,0,16",
+          "RoomD,0,-16"
+        ],
+        "aUpdateCommands" : [
+          "Destructable,StatDamage,ACTWallRock011x1Destroy,StatDamageMax,1.0",
+          "GasExchange,RoomA,RoomB,0.16",
+          "GasExchange,RoomC,RoomD,0.16"
+        ],
+        "strPortraitImg"  : "tiles/Mining/ItmWallRock011x1Dmg",
+        "jsonPI"            : null,
+        "strAudioEmitter"   : "ItmRock04Sound"
+      },
+
+      {
+        "strName" : "ItmWallRock021x1",
+        "strNameShort" : "Regolith",
+        "strNameFriendly" : "Stony Regolith",
+        "strDesc" : "Bulk asteroid material, with a stony appearance.",
+        "strItemDef" : "ItmWallRock021x1",
+        "strType"    : "Item",
+        "strLoot"    : "",
+        "aInteractions" : [
+          "ACTMine",
+          "ACTBash"
+        ],
+        "aStartingConds" : [
+          "IsNonHighlightable=1.0x1",
+          "IsWall=1.0x1",
+          "IsWallRock021x1=1.0x1",
+          "IsHiddenInv=1.0x1",
+          "IsInstalled=1.0x1",
+          "IsMineable=1.0x1",
+          "IsImmuneAnnihilation=1.0x1",
+          "IsMineral=1.0x1",
+          "IsCheckRoom=1.0x1",
+          "IsSolid=1.0x1.0",
+          "StatBasePrice=1.0x0.0",
+          "StatDamageMax=1.0x15",
+          "StatMass=1.0x79.0"
+        ],
+        "mapCondTolerance"       : [
+        ],
+    
+        "mapPoints"      : [
+        ],
+        "aUpdateCommands" : [
+          "Destructable,StatDamage,ACTWallRock021x1Dmg,StatDamageMax,1.0"
+        ],
+        "strPortraitImg"  : "tiles/Mining/ItmWallRock021x1",
+        "jsonPI"            : null,
+        "strAudioEmitter"   : "ItmRock04Sound"
+      },
+      {
+        "strName" : "ItmWallRock021x1Dmg",
+        "strNameShort" : "Regolith",
+        "strNameFriendly" : "Stony Regolith (Cracked)",
+        "strDesc" : "Bulk asteroid material, with a stony appearance.",
+        "strItemDef" : "ItmWallRock021x1Dmg",
+        "strType"    : "Item",
+        "strLoot"    : "",
+        "aInteractions" : [
+          "ACTMine",
+          "ACTBash"
+        ],
+        "aStartingConds" : [
+          "IsNonHighlightable=1.0x1",
+          "IsWall=1.0x1",
+          "IsWallRock021x1=1.0x1",
+          "IsHiddenInv=1.0x1",
+          "IsInstalled=1.0x1",
+          "IsMineable=1.0x1",
+          "IsImmuneAnnihilation=1.0x1",
+          "IsDamaged=1.0x1",
+          "IsMineral=1.0x1",
+          "IsCheckRoom=1.0x1",
+          "IsSolid=1.0x1.0",
+          "StatBasePrice=1.0x0",
+          "StatDamageMax=1.0x30",
+          "StatMass=1.0x45.0",
+          "IsDamaged=1.0x1"
+        ],
+        "mapCondTolerance"       : [
+        ],
+    
+        "mapPoints"      : [
+          "RoomA,16,0",
+          "RoomB,-16,0",
+          "RoomC,0,16",
+          "RoomD,0,-16"
+        ],
+        "aUpdateCommands" : [
+          "Destructable,StatDamage,ACTWallRock021x1Destroy,StatDamageMax,1.0",
+          "GasExchange,RoomA,RoomB,0.16",
+          "GasExchange,RoomC,RoomD,0.16"
+        ],
+        "strPortraitImg"  : "tiles/Mining/ItmWallRock021x1Dmg",
+        "jsonPI"            : null,
+        "strAudioEmitter"   : "ItmRock04Sound"
+      },
+      
+      {
+        "strName" : "ItmWallRock031x1",
+        "strNameShort" : "Regolith",
+        "strNameFriendly" : "Shiny Regolith",
+        "strDesc" : "Bulk asteroid material, with a shiny appearance.",
+        "strItemDef" : "ItmWallRock031x1",
+        "strType"    : "Item",
+        "strLoot"    : "",
+        "aInteractions" : [
+          "ACTMine",
+          "ACTBash"
+        ],
+        "aStartingConds" : [
+          "IsNonHighlightable=1.0x1",
+          "IsWall=1.0x1",
+          "IsWallRock031x1=1.0x1",
+          "IsHiddenInv=1.0x1",
+          "IsInstalled=1.0x1",
+          "IsMineable=1.0x1",
+          "IsImmuneAnnihilation=1.0x1",
+          "IsMineral=1.0x1",
+          "IsCheckRoom=1.0x1",
+          "IsSolid=1.0x1.0",
+          "StatBasePrice=1.0x0.0",
+          "StatDamageMax=1.0x15",
+          "StatMass=1.0x88.0"
+        ],
+        "mapCondTolerance"       : [
+        ],
+    
+        "mapPoints"      : [
+        ],
+        "aUpdateCommands" : [
+          "Destructable,StatDamage,ACTWallRock031x1Dmg,StatDamageMax,1.0"
+        ],
+        "strPortraitImg"  : "tiles/Mining/ItmWallRock031x1",
+        "jsonPI"            : null,
+        "strAudioEmitter"   : "ItmRock04Sound"
+      },
+      {
+        "strName" : "ItmWallRock031x1Dmg",
+        "strNameShort" : "Regolith",
+        "strNameFriendly" : "Shiny Regolith (Cracked)",
+        "strDesc" : "Bulk asteroid material, with a shiny appearance.",
+        "strItemDef" : "ItmWallRock031x1Dmg",
+        "strType"    : "Item",
+        "strLoot"    : "",
+        "aInteractions" : [
+          "ACTMine",
+          "ACTBash"
+        ],
+        "aStartingConds" : [
+          "IsNonHighlightable=1.0x1",
+          "IsWall=1.0x1",
+          "IsWallRock031x1=1.0x1",
+          "IsHiddenInv=1.0x1",
+          "IsInstalled=1.0x1",
+          "IsMineable=1.0x1",
+          "IsImmuneAnnihilation=1.0x1",
+          "IsDamaged=1.0x1",
+          "IsMineral=1.0x1",
+          "IsCheckRoom=1.0x1",
+          "IsSolid=1.0x1.0",
+          "StatBasePrice=1.0x0",
+          "StatDamageMax=1.0x30",
+          "StatMass=1.0x53.0",
+          "IsDamaged=1.0x1"
+        ],
+        "mapCondTolerance"       : [
+        ],
+    
+        "mapPoints"      : [
+          "RoomA,16,0",
+          "RoomB,-16,0",
+          "RoomC,0,16",
+          "RoomD,0,-16"
+        ],
+        "aUpdateCommands" : [
+          "Destructable,StatDamage,ACTWallRock031x1Destroy,StatDamageMax,1.0",
+          "GasExchange,RoomA,RoomB,0.16",
+          "GasExchange,RoomC,RoomD,0.16"
+        ],
+        "strPortraitImg"  : "tiles/Mining/ItmWallRock031x1Dmg",
+        "jsonPI"            : null,
+        "strAudioEmitter"   : "ItmRock04Sound"
+      },
+      
+      {
+        "strName" : "ItmWallRock041x1",
+        "strNameShort" : "Regolith",
+        "strNameFriendly" : "Shiny Regolith",
+        "strDesc" : "Bulk asteroid material, with a shiny appearance.",
+        "strItemDef" : "ItmWallRock041x1",
+        "strType"    : "Item",
+        "strLoot"    : "",
+        "aInteractions" : [
+          "ACTMine",
+          "ACTBash"
+        ],
+        "aStartingConds" : [
+          "IsNonHighlightable=1.0x1",
+          "IsWall=1.0x1",
+          "IsWallRock041x1=1.0x1",
+          "IsHiddenInv=1.0x1",
+          "IsInstalled=1.0x1",
+          "IsMineable=1.0x1",
+          "IsImmuneAnnihilation=1.0x1",
+          "IsMineral=1.0x1",
+          "IsCheckRoom=1.0x1",
+          "IsSolid=1.0x1.0",
+          "StatBasePrice=1.0x0.0",
+          "StatDamageMax=1.0x15",
+          "StatMass=1.0x110.0"
+        ],
+        "mapCondTolerance"       : [
+        ],
+    
+        "mapPoints"      : [
+        ],
+        "aUpdateCommands" : [
+          "Destructable,StatDamage,ACTWallRock041x1Dmg,StatDamageMax,1.0"
+        ],
+        "strPortraitImg"  : "tiles/Mining/ItmWallRock041x1",
+        "jsonPI"            : null,
+        "strAudioEmitter"   : "ItmRock04Sound"
+      },
+      {
+        "strName" : "ItmWallRock041x1Dmg",
+        "strNameShort" : "Regolith",
+        "strNameFriendly" : "Shiny Regolith (Cracked)",
+        "strDesc" : "Bulk asteroid material, with a shiny appearance.",
+        "strItemDef" : "ItmWallRock041x1Dmg",
+        "strType"    : "Item",
+        "strLoot"    : "",
+        "aInteractions" : [
+          "ACTMine",
+          "ACTBash"
+        ],
+        "aStartingConds" : [
+          "IsNonHighlightable=1.0x1",
+          "IsWall=1.0x1",
+          "IsWallRock041x1=1.0x1",
+          "IsHiddenInv=1.0x1",
+          "IsInstalled=1.0x1",
+          "IsMineable=1.0x1",
+          "IsImmuneAnnihilation=1.0x1",
+          "IsDamaged=1.0x1",
+          "IsMineral=1.0x1",
+          "IsCheckRoom=1.0x1",
+          "IsSolid=1.0x1.0",
+          "StatBasePrice=1.0x0",
+          "StatDamageMax=1.0x30",
+          "StatMass=1.0x65.0",
+          "IsDamaged=1.0x1"
+        ],
+        "mapCondTolerance"       : [
+        ],
+    
+        "mapPoints"      : [
+          "RoomA,16,0",
+          "RoomB,-16,0",
+          "RoomC,0,16",
+          "RoomD,0,-16"
+        ],
+        "aUpdateCommands" : [
+          "Destructable,StatDamage,ACTWallRock041x1Destroy,StatDamageMax,1.0",
+          "GasExchange,RoomA,RoomB,0.16",
+          "GasExchange,RoomC,RoomD,0.16"
+        ],
+        "strPortraitImg"  : "tiles/Mining/ItmWallRock041x1Dmg",
+        "jsonPI"            : null,
+        "strAudioEmitter"   : "ItmRock04Sound"
+      },
+      
+      {
+        "strName" : "ItmWallRock051x1",
+        "strNameShort" : "Regolith",
+        "strNameFriendly" : "Dark Regolith",
+        "strDesc" : "Bulk asteroid material, with a dark appearance.",
+        "strItemDef" : "ItmWallRock051x1",
+        "strType"    : "Item",
+        "strLoot"    : "",
+        "aInteractions" : [
+          "ACTMine",
+          "ACTBash"
+        ],
+        "aStartingConds" : [
+          "IsNonHighlightable=1.0x1",
+          "IsWall=1.0x1",
+          "IsWallRock051x1=1.0x1",
+          "IsHiddenInv=1.0x1",
+          "IsInstalled=1.0x1",
+          "IsMineable=1.0x1",
+          "IsImmuneAnnihilation=1.0x1",
+          "IsMineral=1.0x1",
+          "IsCheckRoom=1.0x1",
+          "IsSolid=1.0x1.0",
+          "StatBasePrice=1.0x0.0",
+          "StatDamageMax=1.0x15",
+          "StatMass=1.0x30.0"
+        ],
+        "mapCondTolerance"       : [
+        ],
+    
+        "mapPoints"      : [
+        ],
+        "aUpdateCommands" : [
+          "Destructable,StatDamage,ACTWallRock051x1Dmg,StatDamageMax,1.0"
+        ],
+        "strPortraitImg"  : "tiles/Mining/ItmWallRock051x1",
+        "jsonPI"            : null,
+        "strAudioEmitter"   : "ItmRock04Sound"
+      },
+      {
+        "strName" : "ItmWallRock051x1Dmg",
+        "strNameShort" : "Regolith",
+        "strNameFriendly" : "Dark Regolith (Cracked)",
+        "strDesc" : "Bulk asteroid material, with a dark appearance.",
+        "strItemDef" : "ItmWallRock051x1Dmg",
+        "strType"    : "Item",
+        "strLoot"    : "",
+        "aInteractions" : [
+          "ACTMine",
+          "ACTBash"
+        ],
+        "aStartingConds" : [
+          "IsNonHighlightable=1.0x1",
+          "IsWall=1.0x1",
+          "IsWallRock051x1=1.0x1",
+          "IsHiddenInv=1.0x1",
+          "IsInstalled=1.0x1",
+          "IsMineable=1.0x1",
+          "IsImmuneAnnihilation=1.0x1",
+          "IsDamaged=1.0x1",
+          "IsMineral=1.0x1",
+          "IsCheckRoom=1.0x1",
+          "IsSolid=1.0x1.0",
+          "StatBasePrice=1.0x0",
+          "StatDamageMax=1.0x30",
+          "StatMass=1.0x21.0",
+          "IsDamaged=1.0x1"
+        ],
+        "mapCondTolerance"       : [
+        ],
+    
+        "mapPoints"      : [
+          "RoomA,16,0",
+          "RoomB,-16,0",
+          "RoomC,0,16",
+          "RoomD,0,-16"
+        ],
+        "aUpdateCommands" : [
+          "Destructable,StatDamage,ACTWallRock051x1Destroy,StatDamageMax,1.0",
+          "GasExchange,RoomA,RoomB,0.16",
+          "GasExchange,RoomC,RoomD,0.16"
+        ],
+        "strPortraitImg"  : "tiles/Mining/ItmWallRock051x1Dmg",
+        "jsonPI"            : null,
+        "strAudioEmitter"   : "ItmRock04Sound"
+      },
+      
+      {
+        "strName" : "ItmWallRock061x1",
+        "strNameShort" : "Regolith",
+        "strNameFriendly" : "Dark Regolith",
+        "strDesc" : "Bulk asteroid material, with a dark appearance.",
+        "strItemDef" : "ItmWallRock061x1",
+        "strType"    : "Item",
+        "strLoot"    : "",
+        "aInteractions" : [
+          "ACTMine",
+          "ACTBash"
+        ],
+        "aStartingConds" : [
+          "IsNonHighlightable=1.0x1",
+          "IsWall=1.0x1",
+          "IsWallRock061x1=1.0x1",
+          "IsHiddenInv=1.0x1",
+          "IsInstalled=1.0x1",
+          "IsMineable=1.0x1",
+          "IsImmuneAnnihilation=1.0x1",
+          "IsMineral=1.0x1",
+          "IsCheckRoom=1.0x1",
+          "IsSolid=1.0x1.0",
+          "StatBasePrice=1.0x0.0",
+          "StatDamageMax=1.0x15",
+          "StatMass=1.0x45.0"
+        ],
+        "mapCondTolerance"       : [
+        ],
+    
+        "mapPoints"      : [
+        ],
+        "aUpdateCommands" : [
+          "Destructable,StatDamage,ACTWallRock061x1Dmg,StatDamageMax,1.0"
+        ],
+        "strPortraitImg"  : "tiles/Mining/ItmWallRock061x1",
+        "jsonPI"            : null,
+        "strAudioEmitter"   : "ItmRock04Sound"
+      },
+      {
+        "strName" : "ItmWallRock061x1Dmg",
+        "strNameShort" : "Regolith",
+        "strNameFriendly" : "Dark Regolith (Cracked)",
+        "strDesc" : "Bulk asteroid material, with a dark appearance.",
+        "strItemDef" : "ItmWallRock061x1Dmg",
+        "strType"    : "Item",
+        "strLoot"    : "",
+        "aInteractions" : [
+          "ACTMine",
+          "ACTBash"
+        ],
+        "aStartingConds" : [
+          "IsNonHighlightable=1.0x1",
+          "IsWall=1.0x1",
+          "IsWallRock061x1=1.0x1",
+          "IsHiddenInv=1.0x1",
+          "IsInstalled=1.0x1",
+          "IsMineable=1.0x1",
+          "IsImmuneAnnihilation=1.0x1",
+          "IsDamaged=1.0x1",
+          "IsMineral=1.0x1",
+          "IsCheckRoom=1.0x1",
+          "IsSolid=1.0x1.0",
+          "StatBasePrice=1.0x0",
+          "StatDamageMax=1.0x30",
+          "StatMass=1.0x29.0",
+          "IsDamaged=1.0x1"
+        ],
+        "mapCondTolerance"       : [
+        ],
+    
+        "mapPoints"      : [
+          "RoomA,16,0",
+          "RoomB,-16,0",
+          "RoomC,0,16",
+          "RoomD,0,-16"
+        ],
+        "aUpdateCommands" : [
+          "Destructable,StatDamage,ACTWallRock061x1Destroy,StatDamageMax,1.0",
+          "GasExchange,RoomA,RoomB,0.16",
+          "GasExchange,RoomC,RoomD,0.16"
+        ],
+        "strPortraitImg"  : "tiles/Mining/ItmWallRock061x1Dmg",
+        "jsonPI"            : null,
+        "strAudioEmitter"   : "ItmRock04Sound"
+      },
+    
+    
+    
+      {
+        "strName" : "ItmWallIce011x1",
+        "strNameShort" : "Ice Wall",
+        "strNameFriendly" : "Ice Wall",
+        "strItemDef" : "ItmWallIce011x1",
+        "strType"    : "Item",
+        "strLoot"    : null,
+        "aInteractions" : [
+          "ACTMine",
+          "ACTBash"
+        ],
+        "aStartingConds" : [
+          "IsNonHighlightable=1.0x1",
+          "IsWall=1.0x1",
+          "IsWallIce011x1=1.0x1",
+          "IsHiddenInv=1.0x1",
+          "IsInstalled=1.0x1",
+          "IsMineable=1.0x1",
+          "IsImmuneAnnihilation=1.0x1",
+          "IsIce=1.0x1",
+          "IsCheckRoom=1.0x1",
+          "IsSolid=1.0x1.0",
+          "StatBasePrice=1.0x0",
+          "StatDamageMax=1.0x10",
+          "StatMass=1.0x24.0"
+        ],
+        "mapCondTolerance"       : [
+        ],
+        "mapPoints"      : [
+          "RoomA,16,0",
+          "RoomB,-16,0",
+          "RoomC,0,16",
+          "RoomD,0,-16"
+        ],
+        "aUpdateCommands" : [
+          "Destructable,StatDamage,ACTWallIce011x1Dmg,StatDamageMax,1.0",
+          "GasExchange,RoomA,RoomB,0.16",
+          "GasExchange,RoomC,RoomD,0.16"
+        ],
+        "strPortraitImg"  : "tiles/Mining/ItmWallIce011x1",
+        "jsonPI"            : null,
+        "strAudioEmitter"   : "ItmRock04Sound"
+      },
+      {
+        "strName" : "ItmWallIce011x1Dmg",
+        "strNameShort" : "Ice Wall",
+        "strNameFriendly" : "Ice Wall (Cracked)",
+        "strItemDef" : "ItmWallIce011x1Dmg",
+        "strType"    : "Item",
+        "strLoot"    : null,
+        "aInteractions" : [
+          "ACTMine",
+          "ACTBash"
+        ],
+        "aStartingConds" : [
+          "IsNonHighlightable=1.0x1",
+          "IsWall=1.0x1",
+          "IsWallIce011x1=1.0x1",
+          "IsHiddenInv=1.0x1",
+          "IsInstalled=1.0x1",
+          "IsMineable=1.0x1",
+          "IsImmuneAnnihilation=1.0x1",
+          "IsIce=1.0x1",
+          "IsCheckRoom=1.0x1",
+          "IsSolid=1.0x1.0",
+          "StatBasePrice=1.0x0",
+          "StatDamageMax=1.0x30",
+          "StatMass=1.0x15.0",
+          "IsDamaged=1.0x1"
+        ],
+        "mapCondTolerance"       : [
+        ],
+        "mapPoints"      : [
+        ],
+        "aUpdateCommands" : [
+          "Destructable,StatDamage,ACTWallIce011x1Destroy,StatDamageMax,1.0"
+        ],
+        "strPortraitImg"  : "tiles/Mining/ItmWallIce011x1Dmg",
+        "jsonPI"            : null,
+        "strAudioEmitter"   : "ItmRock04Sound"
+      },
+      {
+        "strName" : "ItmIce01",
+        "strNameShort" : "Ice",
+        "strNameFriendly" : "Water Ice",
+        "strDesc" : "Chunky, cold, and deliciously life supporting, at least after industrial processing.",
+        "strItemDef" : "ItmIce01",
+        "strType"    : "Item",
+        "nStackLimit"    : 6,
+        "aInteractions" : [
+          "DropItem",
+          "DropItemStack",
+          "PickupItem",
+          "PickupItemStack"
+        ],
+        "aStartingConds" : [
+          "IsSolid=1.0x1.0",
+          "IsIce=1.0x1",
+          "StatMass=1.0x24.7",
+          "StatBasePrice=1.0x1200.0",
+          "StatDamageMax=1.0x10"
+        ],
+        "aUpdateCommands" : [
+          "Destructable,StatDamage,ACTIceDestroy,StatDamageMax,1.0"
+        ],
+            "strPortraitImg"  : "paperdoll/held/portIce01",
+            "mapSlotEffects" : [          
+              "heldL","HeldItmIce01L",
+              "heldR","HeldItmIce01R",
+              "drag", "Blank"
+            ],
+        "strAudioEmitter" : "ItmRock01Sound"
+      },
+      {
+        "strName" : "ItmIce02",
+        "strNameShort" : "CH4 Ice",
+        "strNameFriendly" : "Methane Ice",
+        "strDesc" : "Cold, wet, but not great for drinking.",
+        "strItemDef" : "ItmIce02",
+        "strType"    : "Item",
+        "nStackLimit"    : 6,
+        "aInteractions" : [
+          "PickupItem",
+          "PickupItemStack"
+        ],
+        "aStartingConds" : [
+          "IsSolid=1.0x1.0",
+          "IsIce=1.0x1",
+          "IsIce02=1.0x1",
+          "StatMass=1.0x24.84",
+          "StatBasePrice=1.0x20.0",
+          "StatDamageMax=1.0x7"
+        ],
+        "aUpdateCommands" : [
+          "Destructable,StatDamage,ACTIceDestroy,StatDamageMax,1.0"
+        ],
+            "strPortraitImg"  : "paperdoll/held/portIce02",
+            "mapSlotEffects" : [          
+              "heldL","HeldItmIce02L",
+              "heldR","HeldItmIce02R",
+              "drag", "Blank"
+            ],
+        "strAudioEmitter" : "ItmRock01Sound"
+      },
+      {
+        "strName" : "ItmIceTrash01",
+        "strNameShort" : "Gangue",
+        "strNameFriendly" : "Ice Gangue",
+        "strDesc" : "Flakes and shards of cold, cast off ice.",
+        "strItemDef" : "ItmIceTrash01",
+        "strType"    : "Item",
+        "nStackLimit"    : 10,
+        "aInteractions" : [
+          "PickupItem"
+        ],
+        "aStartingConds" : [
+          "IsIndestructable=1.0x1",
+          "IsNonHighlightable=1.0x1",
+          "IsSolid=1.0x1.0",
+          "IsIce=1.0x1",
+          "IsIceTrash=1.0x1",
+          "IsTrash=1.0x1",
+          "StatMass=1.0x2.0",
+          "StatBasePrice=1.0x0.0",
+          "StatDamageMax=1.0x5"
+        ],
+        "strPortraitImg"  : "paperdoll/held/portIceTrash01",
+        "mapSlotEffects" : [          
+          "heldL","HeldItmIceTrash01L",
+          "heldR","HeldItmIceTrash01R",
+          "drag", "Blank"
+        ],
+        "strAudioEmitter"   : "ItmRock02Sound"
+      },
+      {
+        "strName" : "ItmFloorIce021x1",
+        "strNameShort" : "Ice Core",
+        "strNameFriendly" : "Ice Core",
+        "strItemDef" : "ItmFloorIce021x1",
+        "strType"    : "Item",
+        "strLoot"    : null,
+        "aInteractions" : [
+          "ACTMine",
+          "ACTBash"
+        ],
+        "aStartingConds" : [
+          "IsNonHighlightable=1.0x1",
+          "IsFloorGrate=1.0x1",
+          "IsFloorIce021x1=1.0x1",
+          "IsHiddenInv=1.0x1",
+          "IsInstalled=1.0x1",
+          "IsMineable=1.0x1",
+          "IsImmuneAnnihilation=1.0x1",
+          "IsIce=1.0x1",
+          "IsCheckRoom=1.0x1",
+          "IsSolid=1.0x1.0",
+          "StatMass=1.0x18.0",
+          "StatDamageMax=1.0x5"
+        ],
+        "mapCondTolerance"       : [
+        ],
+        "mapPoints"      : [
+        ],
+        "aUpdateCommands" : [      
+          "Destructable,StatDamage,ACTIceDestroy,StatDamageMax,1.0"
+        ],
+        "strPortraitImg"  : "tiles/Mining/ItmFloorIce021x1",
+        "jsonPI"            : null,
+        "strAudioEmitter"   : "ItmRock04Sound"
+      },
+      {
+        "strName" : "ItmFloorIce02",
+        "strNameShort" : "Ice Core",
+        "strNameFriendly" : "Ice Core 2x2",
+        "strItemDef" : "ItmFloorIce02",
+        "strType"    : "Item",
+        "strLoot"    : null,
+        "aInteractions" : [
+          "ACTMine",
+          "ACTBash"
+        ],
+        "aStartingConds" : [
+          "IsNonHighlightable=1.0x1",
+          "IsFloorGrate=1.0x1",
+          "IsFloorIce022x2=1.0x1",
+          "IsHiddenInv=1.0x1",
+          "IsInstalled=1.0x1",
+          "IsMineable=1.0x1",
+          "IsImmuneAnnihilation=1.0x1",
+          "IsIce=1.0x1",
+          "IsCheckRoom=1.0x1",
+          "IsSolid=1.0x1.0",
+          "StatMass=1.0x18.0",
+          "StatDamageMax=1.0x5"
+        ],
+        "mapCondTolerance"       : [
+        ],
+        "mapPoints"      : [
+        ],
+        "aUpdateCommands" : [      
+          "Destructable,StatDamage,ACTIceDestroy,StatDamageMax,1.0"
+        ],
+        "strPortraitImg"  : "tiles/Mining/ItmFloorIce02",
+        "jsonPI"            : null,
+        "strAudioEmitter"   : "ItmRock04Sound"
+      },
+    
+    
+    
+    
+      {
+        "strName" : "SysExplosionMining",
+        "strNameShort" : "Mining Charge Explosion",
+        "strItemDef" : "SysExplosionMining",
+        "strType"    : "Item",
+        "aStartingConds" : [
+          "IsNonHighlightable=1.0x1",
+          "IsSystem=1.0x1"
+        ],
+        "aUpdateCommands" : [
+          "Explosion,Mining"
+        ],
+        "strPortraitImg"  : "blank"
+      },
+      {
+        "strName" : "SysExplosionMiningSmall",
+        "strNameShort" : "Explosion",
+        "strNameFriendly" : "Mining Charge Explosion (Small)",    
+        "strItemDef" : "SysExplosionMiningSmall",
+        "strType"    : "Item",
+        "aStartingConds" : [
+          "IsNonHighlightable=1.0x1",
+          "IsSystem=1.0x1"
+        ],
+        "aUpdateCommands" : [
+          "Explosion,MiningSmall"
+        ],
+        "strPortraitImg"  : "blank"
+      }
+]

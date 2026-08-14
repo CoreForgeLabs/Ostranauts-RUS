@@ -1,0 +1,163 @@
+[
+  {
+    "strName" : "Blank", "strPattern" : "RoundRobin", "fLayerScaleFactor" : 1, "fDistortion" : 0, 
+    "fRateX" : 0, "fRateY" : 0, "nLayers" : 1, "strLootSpriteList" : "TXTParallaxBlank"
+  },
+  {
+    "strName" : "AsteroidField", "strPattern" : "RoundRobin", "fLayerScaleFactor" : 1, "fDistortion" : 1, 
+    "fRateX" : 0.0001, "fRateY" : 0.0001, "nLayers" : 10, "strLootSpriteList" : "TXTParallaxAsteroidField",
+    "aSunLights" : [ "SunDeepSpaceYellow" ]
+  },
+  {
+    "strName" : "BCERField", "strPattern" : "RoundRobin", "fLayerScaleFactor" : 1, "fDistortion" : 0, 
+    "fRateX" : 0.0, "fRateY" : 0.0, "nLayers" : 2, "strLootSpriteList" : "TXTParallaxBCERField",
+    "aSunLights" : [ "SunDeepSpaceYellow" ], "aNoWrap" : [ 1 ]
+  },
+  {
+    "strName" : "BCERGrav", "strPattern" : "RoundRobin", "fLayerScaleFactor" : 1, "fDistortion" : 1,
+    "fRateX" : 0.0005, "fRateY" : 0.0005, "nLayers" : 6, "strLootSpriteList" : "TXTParallaxBCERGrav",
+    "aSunLights" : [ "SunDeepSpaceYellow" ], "aNoWrap" : [ 1 ]
+  },  
+  {
+    "strName" : "BCRSField", "strPattern" : "RoundRobin", "fLayerScaleFactor" : 1, "fDistortion" : 1, 
+    "fRateX" : 0.0001, "fRateY" : 0.0001, "nLayers" : 5, "strLootSpriteList" : "TXTParallaxBCRSBelt",
+    "aSunLights" : [ "SunDeepSpaceYellow" ]
+  },
+  {
+    "strName" : "CeresField", "strPattern" : "RoundRobin", "fLayerScaleFactor" : 1, "fDistortion" : 1, 
+    "fRateX" : 0.0001, "fRateY" : 0.0001, "nLayers" : 5, "strLootSpriteList" : "TXTParallaxBCRSBelt",
+    "aSunLights" : [ "SunDeepSpaceYellow" ]
+  },
+  {
+    "strName" : "DeepSpace", "strPattern" : "RoundRobin", "fLayerScaleFactor" : 1.2, "fDistortion" : 1, 
+    "fRateX" : 0.0, "fRateY" : 0.0, "nLayers" : 1, "strLootSpriteList" : "TXTParallaxDeepSpace",
+    "aSunLights" : [ "SunDeepSpaceYellow" ]
+  },
+  {
+    "strName" : "EJDRGrav", "strPattern" : "RoundRobin", "fLayerScaleFactor" : 1, "fDistortion" : 0, 
+    "fRateX" : 0.0, "fRateY" : 0.0, "nLayers" : 2, "strLootSpriteList" : "TXTParallaxEJDRGrav",
+    "aSunLights" : [ "SunDeepSpaceYellow" ], "aNoWrap" : [ 1 ]
+  },  
+  {
+    "strName" : "OKLGBoneyard", "strPattern" : "RoundRobin", "fLayerScaleFactor" : 1, "fDistortion" : 1, 
+    "fRateX" : 0.0001, "fRateY" : 0.0001, "nLayers" : 7, "strLootSpriteList" : "TXTParallaxOKLGBoneyard",
+    "aSunLights" : [ "SunDeepSpaceYellow" ]
+  },   
+  {
+    "strName" : "MercuryAtmosphere", "strPattern" : "RoundRobin", "fLayerScaleFactor" : 1, "fDistortion" : 0, 
+    "fRateX" : 0.0, "fRateY" : 0.0, "nLayers" : 1, "strLootSpriteList" : "TXTParallaxMercuryAtmosphere", "aNoWrap" : [ 1 ]
+  },
+  {
+    "strName" : "MercuryGrav", "strPattern" : "RoundRobin", "fLayerScaleFactor" : 1, "fDistortion" : 0,
+    "fRateX" : 0.0005, "fRateY" : 0.0005, "nLayers" : 2, "strLootSpriteList" : "TXTParallaxMercuryGrav",
+    "aSunLights" : [ "SunDeepSpaceYellow" ], "aNoWrap" : [ 1 ]
+  },
+  {
+    "strName" : "VenusAtmosphere", "strPattern" : "RoundRobin", "fLayerScaleFactor" : 1, "fDistortion" : 2, 
+    "fRateX" : 0.0005, "fRateY" : 0.0005, "nLayers" : 7, "strLootSpriteList" : "TXTParallaxVenusAtmosphere",
+    "aSunLights" : [ "SunVenusYellow", "SunVenusYellow02", "SunVenusYellow03", "SunVenusYellow04", "SunVenusYellow05", "SunVenusYellow06", "SunVenusYellow07", "SunVenusBlue01", "SunVenusBlue02", "SunVenusBlue03" ]
+  },
+  {
+    "strName" : "VenusGrav", "strPattern" : "RoundRobin", "fLayerScaleFactor" : 1, "fDistortion" : 0,
+    "fRateX" : 0.0005, "fRateY" : 0.0005, "nLayers" : 2, "strLootSpriteList" : "TXTParallaxVenusGrav",
+    "aSunLights" : [ "SunDeepSpaceYellow" ], "aNoWrap" : [ 1 ]
+  },    
+  {
+    "strName" : "EarthAtmosphere", "strPattern" : "RoundRobin", "fLayerScaleFactor" : 1, "fDistortion" : 2, 
+    "fRateX" : 0.0005, "fRateY" : 0.0005, "nLayers" : 10, "strLootSpriteList" : "TXTParallaxEarthAtmosphere",
+    "aSunLights" : [ "SunVenusYellow", "SunVenusYellow02", "SunVenusYellow03", "SunVenusYellow04", "SunVenusYellow05", "SunVenusYellow06", "SunVenusYellow07", "SunVenusBlue01", "SunVenusBlue02", "SunVenusBlue03" ]
+  },
+  {
+    "strName" : "EarthGrav", "strPattern" : "RoundRobin", "fLayerScaleFactor" : 1, "fDistortion" : 0,
+    "fRateX" : 0.0005, "fRateY" : 0.0005, "nLayers" : 2, "strLootSpriteList" : "TXTParallaxEarthGrav",
+    "aSunLights" : [ "SunDeepSpaceYellow" ], "aNoWrap" : [ 1 ]
+  },    
+  {
+    "strName" : "MHNGInterior", "strPattern" : "RoundRobin", "fLayerScaleFactor" : 1.1, "fDistortion" : 0, 
+    "fRateX" : 0.0001, "fRateY" : 0.0001, "nLayers" : 4, "strLootSpriteList" : "TXTParallaxMHNG", "aNoWrap" : [1]
+  },
+  {
+    "strName" : "MSUZInterior", "strPattern" : "RoundRobin", "fLayerScaleFactor" : 1.1, "fDistortion" : 0, 
+    "fRateX" : 0.0001, "fRateY" : 0.0001, "nLayers" : 4, "strLootSpriteList" : "TXTParallaxMSUZ", "aNoWrap" : [ 1 ]
+  },
+  {
+    "strName" : "MarsAtmosphere", "strPattern" : "RoundRobin", "fLayerScaleFactor" : 1, "fDistortion" : 0, 
+    "fRateX" : 0.0, "fRateY" : 0.0, "nLayers" : 1, "strLootSpriteList" : "TXTParallaxMarsSurface",
+    "aSunLights" : [ "SunFaintPale", "SunFaintPale02", "SunFaintPale03", "SunFaintPale04" ], "aNoWrap" : [ 1 ]
+  },
+  {
+    "strName" : "MarsGrav", "strPattern" : "RoundRobin", "fLayerScaleFactor" : 1, "fDistortion" : 0,
+    "fRateX" : 0.0005, "fRateY" : 0.0005, "nLayers" : 2, "strLootSpriteList" : "TXTParallaxMarsGrav",
+    "aSunLights" : [ "SunDeepSpaceYellow" ], "aNoWrap" : [ 1 ]
+  },
+  {
+    "strName" : "MarsSub", "strPattern" : "RoundRobin", "fLayerScaleFactor" : 1.01, "fDistortion" : 0, 
+    "fRateX" : 0.00001, "fRateY" : 0.00001, "nLayers" : 20, "strLootSpriteList" : "TXTParallaxMarsSub", "aNoWrap" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+  },
+  {
+    "strName" : "MarsSurface", "strPattern" : "RoundRobin", "fLayerScaleFactor" : 1, "fDistortion" : 0, 
+    "fRateX" : 0.0, "fRateY" : 0.0, "nLayers" : 1, "strLootSpriteList" : "TXTParallaxBlank",
+    "aSunLights" : [ "SunFaintPale", "SunFaintPale02", "SunFaintPale03", "SunFaintPale04", "SunFaintPale05", "SunFaintPale06", "SunFaintPale07", "SunFaintPale08" ], "aNoWrap" : [ 1 ]
+  },
+  {
+    "strName" : "JupiterAtmosphere", "strPattern" : "RoundRobin", "fLayerScaleFactor" : 1, "fDistortion" : 0, 
+    "fRateX" : 0.0, "fRateY" : 0.0, "nLayers" : 1, "strLootSpriteList" : "TXTParallaxJupiterAtmosphere", "aNoWrap" : [ 1 ]
+  },
+  {
+    "strName" : "JupiterGrav", "strPattern" : "RoundRobin", "fLayerScaleFactor" : 1, "fDistortion" : 0,
+    "fRateX" : 0.0005, "fRateY" : 0.0005, "nLayers" : 2, "strLootSpriteList" : "TXTParallaxJupiterGrav",
+    "aSunLights" : [ "SunDeepSpaceYellow" ], "aNoWrap" : [ 1 ]
+  },  
+  {
+    "strName" : "EuropaGrav", "strPattern" : "RoundRobin", "fLayerScaleFactor" : 1, "fDistortion" : 0,
+    "fRateX" : 0.0005, "fRateY" : 0.0005, "nLayers" : 2, "strLootSpriteList" : "TXTParallaxEuropaGrav",
+    "aSunLights" : [ "SunDeepSpaceYellow" ]
+  },  
+  {
+    "strName" : "EuropaAtmosphere", "strPattern" : "RoundRobin", "fLayerScaleFactor" : 1, "fDistortion" : 0,
+    "fRateX" : 0.0, "fRateY" : 0.0, "nLayers" : 1, "strLootSpriteList" : "TXTParallaxEuropaSurface",
+    "aSunLights" : [ "SunFaintPale" ], "aNoWrap" : [ 1 ]
+  },  
+  {
+    "strName" : "EuropaUnderwater", "strPattern" : "RoundRobin", "fLayerScaleFactor" : 1, "fDistortion" : 0,
+    "fRateX" : 0.0001, "fRateY" : 0.0001, "nLayers" : 7, "strLootSpriteList" : "TXTParallaxEuropaUnderwater"
+  },  
+  {
+    "strName" : "GanymedeGrav", "strPattern" : "RoundRobin", "fLayerScaleFactor" : 1, "fDistortion" : 0,
+    "fRateX" : 0.0005, "fRateY" : 0.0005, "nLayers" : 2, "strLootSpriteList" : "TXTParallaxGanymedeGrav",
+    "aSunLights" : [ "SunDeepSpaceYellow" ], "aNoWrap" : [ 1 ]
+  },
+  {
+    "strName" : "SaturnAtmosphere", "strPattern" : "RoundRobin", "fLayerScaleFactor" : 1, "fDistortion" : 0, 
+    "fRateX" : 0.0, "fRateY" : 0.0, "nLayers" : 1, "strLootSpriteList" : "TXTParallaxSaturnAtmosphere", "aNoWrap" : [ 1 ]
+  },
+  {
+    "strName" : "SaturnGrav", "strPattern" : "RoundRobin", "fLayerScaleFactor" : 1, "fDistortion" : 0,
+    "fRateX" : 0.0005, "fRateY" : 0.0005, "nLayers" : 2, "strLootSpriteList" : "TXTParallaxSaturnGrav",
+    "aSunLights" : [ "SunDeepSpaceYellow" ], "aNoWrap" : [ 1 ]
+  },
+    {
+      "strName" : "TitanGrav", "strPattern" : "RoundRobin", "fLayerScaleFactor" : 1, "fDistortion" : 0,
+      "fRateX" : 0.0005, "fRateY" : 0.0005, "nLayers" : 2, "strLootSpriteList" : "TXTParallaxTitanGrav",
+      "aSunLights" : [ "SunDeepSpaceYellow" ], "aNoWrap" : [ 1 ]
+    },
+  {
+    "strName" : "UranusAtmosphere", "strPattern" : "RoundRobin", "fLayerScaleFactor" : 1, "fDistortion" : 0, 
+    "fRateX" : 0.0, "fRateY" : 0.0, "nLayers" : 1, "strLootSpriteList" : "TXTParallaxUranusAtmosphere", "aNoWrap" : [ 1 ]
+  },
+  {
+    "strName" : "UranusGrav", "strPattern" : "RoundRobin", "fLayerScaleFactor" : 1, "fDistortion" : 0,
+    "fRateX" : 0.0005, "fRateY" : 0.0005, "nLayers" : 2, "strLootSpriteList" : "TXTParallaxUranusGrav",
+    "aSunLights" : [ "SunDeepSpaceYellow" ], "aNoWrap" : [ 1 ]
+  }, 
+  {
+    "strName" : "NeptuneAtmosphere", "strPattern" : "RoundRobin", "fLayerScaleFactor" : 1, "fDistortion" : 0, 
+    "fRateX" : 0.0, "fRateY" : 0.0, "nLayers" : 1, "strLootSpriteList" : "TXTParallaxNeptuneAtmosphere", "aNoWrap" : [ 1 ]
+  },
+  {
+    "strName" : "NeptuneGrav", "strPattern" : "RoundRobin", "fLayerScaleFactor" : 1, "fDistortion" : 0,
+    "fRateX" : 0.0005, "fRateY" : 0.0005, "nLayers" : 2, "strLootSpriteList" : "TXTParallaxNeptuneGrav",
+    "aSunLights" : [ "SunDeepSpaceYellow" ], "aNoWrap" : [ 1 ]
+  }
+  
+]

@@ -1,0 +1,55 @@
+﻿[
+  {
+    "strName" : "ALL_NoShip_Harmless",
+    "strLootClientFaction" : "TXTRandomFaction",
+    "strPSpecTarget" : "RandomAdultBountyTargetLiving",
+    "strLootTargetRegion" : "TXTALLATC",
+    "nWantedState" : -1,
+    "strLootRegIDDropOff" : "TXTALLATC",
+    "enumAIType" : 16,
+    "strLootTxt1" : "TXTBountySetupClient01Txt1",
+    "fPayoutDead" : 50000,
+    "fPayoutAlive" : 100000,
+    "nDangerLevel": 0
+  },
+  {
+    "strName" : "ALL_Civ_Harmless",
+    "strLootClientFaction" : "TXTRandomFaction",
+    "strPSpecTarget" : "RandomAdultBountyTargetLiving",
+    "strLootTargetShip" : "RandomScavShip",
+    "strLootTargetRegion" : "TXTALLATC",
+    "nWantedState" : -1,
+    "strLootRegIDDropOff" : "TXTALLATC",
+    "enumAIType" : 1024,
+    "strLootTxt1" : "TXTBountySetupClient01Txt1",
+    "fPayoutDead" : 100000,
+    "fPayoutAlive" : 200000,
+    "nDangerLevel": 1
+  },
+  {
+    "strName" : "ALL_Pirate_Moderate",
+    "strPSpecTarget" : "RandomAdultBountyTargetLiving",
+    "strLootTargetShip" : "RandomScavShip",
+    "strLootTargetRegion" : "TXTALLATC",
+    "nWantedState" : -1,
+    "strLootRegIDDropOff" : "TXTALLATC",
+    "enumAIType" : 32,
+    "strLootTxt1" : "TXTBountySetupClient01Txt1",
+    "fPayoutDead" : 200000,
+    "fPayoutAlive" : 400000,
+    "nDangerLevel": 1
+  },
+  {
+    "strName" : "ALL_Navy_High",
+    "strPSpecTarget" : "RandomAdultBountyTargetLiving",
+    "strLootTargetShip" : "RandomNavyShip",
+    "strLootTargetRegion" : "TXTNavyFriendlyATC",
+    "nWantedState" : -1,
+    "strLootRegIDDropOff" : "TXTALLATC",
+    "enumAIType" : 512,
+    "strLootTxt1" : "TXTBountySetupClient01Txt1",
+    "fPayoutDead" : 400000,
+    "fPayoutAlive" : 800000,
+    "nDangerLevel": 2
+  }
+]

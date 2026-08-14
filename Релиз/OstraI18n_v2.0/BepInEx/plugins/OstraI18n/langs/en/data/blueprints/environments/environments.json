@@ -1,0 +1,1434 @@
+﻿[
+  {
+    "strName": "1000",
+    "strDescription": "EJDR - Ground - Half circle of buoys with a variety of outposts for ground stations",
+    "aEntities": 
+    [
+      {
+        "strName": "Nav Buoy Ext",
+        "strRegIDSuffix": "3500P",
+        "fAngle": 30,
+        "fDistanceKM": 3500,
+        "strShipName": "Nav Buoy",
+        "strRegIDRoot" : "EJDR_GEO",
+        "strClassification": "Outpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Freight Dock",
+        "strRegIDSuffix": "FRD1",
+        "fAngle": 90,
+        "fDistanceKM": 3500,
+        "strShipName": "Freight Dock",
+        "strRegIDRoot" : "EJDR_GEO",
+        "strClassification": "Infrastructure",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Freight Dock",
+        "strRegIDSuffix": "FRD2",
+        "fAngle": 250,
+        "fDistanceKM": 3500,
+        "strShipName": "Freight Dock",
+        "strRegIDRoot" : "EJDR_GEO",
+        "strClassification": "Infrastructure",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Repair Dock",
+        "strRegIDSuffix": "MD01",
+        "fAngle": 190,
+        "fDistanceKM": 2000,
+        "strShipName": "MaintenanceDock",
+        "strRegIDRoot" : "EJDR_GEO",
+        "strClassification": "Infrastructure",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Nav Buoy",
+        "strRegIDSuffix": "500A",
+        "fAngle": 0,
+        "fDistanceKM": 500,
+        "strShipName": "Nav Buoy",
+        "strRegIDRoot" : "EJDR_GEO",
+        "strClassification": "Outpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Nav Buoy",
+        "strRegIDSuffix": "500B",
+        "fAngle": 120,
+        "fDistanceKM": 500,
+        "strShipName": "Nav Buoy",
+        "strRegIDRoot" : "EJDR_GEO",
+        "strClassification": "Outpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Nav Buoy",
+        "strRegIDSuffix": "500C",
+        "fAngle": 240,
+        "fDistanceKM": 500,
+        "strShipName": "Nav Buoy",
+        "strRegIDRoot" : "EJDR_GEO",
+        "strClassification": "Outpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Fuel Depot",
+        "strRegIDSuffix": "FD1",
+        "fAngle": 160,
+        "fDistanceKM": 1600,
+        "strShipName": "FuelDepot",
+        "strRegIDRoot" : "EJDR_GEO",
+        "strClassification": "Infrastructure",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Fuel Depot",
+        "strRegIDSuffix": "FD2",
+        "fAngle": -121,
+        "fDistanceKM": 1500,
+        "strShipName": "FuelDepot",
+        "strRegIDRoot" : "EJDR_GEO",
+        "strClassification": "Infrastructure",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Fuel Depot",
+        "strRegIDSuffix": "FD3",
+        "fAngle": 70,
+        "fDistanceKM": 1515,
+        "strShipName": "FuelDepot",
+        "strRegIDRoot" : "EJDR_GEO",
+        "strClassification": "Infrastructure",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Nav Buoy Ext",
+        "strRegIDSuffix": "3500M",
+        "fAngle": 210,
+        "fDistanceKM": 3500,
+        "strShipName": "Nav Buoy",
+        "strRegIDRoot" : "EJDR_GEO",
+        "strClassification": "Outpost",
+        "bIsStation" : true
+      }
+    ]
+  },
+  {
+    "strName": "1001",
+    "strDescription": "MVOL - Ground - V shaped buoys with central fuel depot",
+    "aEntities":
+    [
+      {
+        "strName": "Nav Buoy Ext",
+        "strRegIDSuffix": "30A",
+        "fAngle": 24,
+        "fDistanceKM": 3500,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Outpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Nav Buoy",
+        "strRegIDSuffix": "1500A",
+        "fAngle": 21,
+        "fDistanceKM": 1500,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Outpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Nav Buoy",
+        "strRegIDSuffix": "1000A",
+        "fAngle": 18,
+        "fDistanceKM": 1000,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Outpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Nav Buoy",
+        "strRegIDSuffix": "500A",
+        "fAngle": 15,
+        "fDistanceKM": 500,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Outpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Nav Buoy",
+        "strRegIDSuffix": "500B",
+        "fAngle": -15,
+        "fDistanceKM": 500,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Outpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Nav Buoy",
+        "strRegIDSuffix": "1000B",
+        "fAngle": -18,
+        "fDistanceKM": 1000,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Outpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Nav Buoy",
+        "strRegIDSuffix": "1500B",
+        "fAngle": -21,
+        "fDistanceKM": 1500,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Outpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Nav Buoy Ext",
+        "strRegIDSuffix": "30B",
+        "fAngle": -24,
+        "fDistanceKM": 3500,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Outpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Fuel Depot",
+        "strRegIDSuffix": "FD01",
+        "fAngle": 0,
+        "fDistanceKM": 4000,
+        "strShipName": "FuelDepot",
+        "strClassification": "Infrastructure",
+        "bIsStation" : true
+      }
+    ]
+  },
+  {
+    "strName": "10010",
+    "strDescription": "MVOL - Ground - V shaped buoys with central fuel depot. Titan blockade",
+    "aEntities":
+    [
+      {
+        "strName": "Nav Buoy Ext",
+        "strRegIDSuffix": "30A",
+        "fAngle": 24,
+        "fDistanceKM": 3500,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Outpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Nav Buoy",
+        "strRegIDSuffix": "1500A",
+        "fAngle": 21,
+        "fDistanceKM": 1500,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Outpost",
+        "strOwner": "Titan",
+        "strLootStartingConds": "CONDMVOLBlockadeSpawner",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Nav Buoy",
+        "strRegIDSuffix": "1000A",
+        "fAngle": 18,
+        "fDistanceKM": 1000,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Outpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Nav Buoy",
+        "strRegIDSuffix": "500A",
+        "fAngle": 15,
+        "fDistanceKM": 500,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Outpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Nav Buoy",
+        "strRegIDSuffix": "500B",
+        "fAngle": -15,
+        "fDistanceKM": 500,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Outpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Nav Buoy",
+        "strRegIDSuffix": "1000B",
+        "fAngle": -18,
+        "fDistanceKM": 1000,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Outpost",
+        "strOwner": "Titan",
+        "strLootStartingConds": "CONDMVOLBlockadeSpawner",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Nav Buoy",
+        "strRegIDSuffix": "1500B",
+        "fAngle": -21,
+        "fDistanceKM": 1500,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Outpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Nav Buoy Ext",
+        "strRegIDSuffix": "30B",
+        "fAngle": -24,
+        "fDistanceKM": 3500,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Outpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Fuel Depot",
+        "strRegIDSuffix": "FD01",
+        "fAngle": 0,
+        "fDistanceKM": 4000,
+        "strShipName": "FuelDepot",
+        "strClassification": "Infrastructure",
+        "bIsStation" : true
+      }
+    ]
+  },
+  {
+    "strName": "1002",
+    "strDescription": "MTRS + MLAB - Ground - Half circle of buoys spanning both stations + 2 security platforms",
+    "aEntities":
+    [
+      {
+        "strName": "Nav Buoy",
+        "strRegIDSuffix": "15B",
+        "fAngle": -15,
+        "fDistanceKM": 550,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Outpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Nav Buoy",
+        "strRegIDSuffix": "00",
+        "fAngle": 0,
+        "fDistanceKM": 550,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Outpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Nav Buoy",
+        "strRegIDSuffix": "15A",
+        "fAngle": 15,
+        "fDistanceKM": 575,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Outpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Nav Buoy",
+        "strRegIDSuffix": "30A",
+        "fAngle": 30,
+        "fDistanceKM": 650,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Outpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Security Checkpoint",
+        "strRegIDSuffix": "SEC01",
+        "fAngle": 20,
+        "fDistanceKM": 875,
+        "strShipName": "SecurityOutpost",
+        "strClassification": "SecurityOutpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Security Checkpoint",
+        "strRegIDSuffix": "SEC02",
+        "fAngle": 45,
+        "fDistanceKM": 1080,
+        "strShipName": "SecurityOutpost",
+        "strClassification": "SecurityOutpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Nav Buoy",
+        "strRegIDSuffix": "41A",
+        "fAngle": 41,
+        "fDistanceKM": 720,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Outpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Nav Buoy",
+        "strRegIDSuffix": "51A",
+        "fAngle": 51,
+        "fDistanceKM": 820,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Outpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Nav Buoy",
+        "strRegIDSuffix": "57A",
+        "fAngle": 57,
+        "fDistanceKM": 930,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Outpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Nav Buoy",
+        "strRegIDSuffix": "62A",
+        "fAngle": 62,
+        "fDistanceKM": 1000,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Outpost",
+        "bIsStation" : true
+      }
+    ]
+  },
+  {
+    "strName": "10020",
+    "strDescription": "MTRS + MLAB - Ground - Half circle of buoys spanning both stations + 2 security platforms. Titan Blockade",
+    "aEntities":
+    [
+      {
+        "strName": "Nav Buoy",
+        "strRegIDSuffix": "15B",
+        "fAngle": -15,
+        "fDistanceKM": 550,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Outpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Nav Buoy",
+        "strRegIDSuffix": "00",
+        "fAngle": 0,
+        "fDistanceKM": 550,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Outpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Nav Buoy",
+        "strRegIDSuffix": "15A",
+        "fAngle": 15,
+        "fDistanceKM": 575,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Outpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Nav Buoy",
+        "strRegIDSuffix": "30A",
+        "fAngle": 30,
+        "fDistanceKM": 650,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Outpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Security Checkpoint",
+        "strRegIDSuffix": "SEC01",
+        "fAngle": 20,
+        "fDistanceKM": 875,
+        "strShipName": "SecurityOutpost",
+        "strClassification": "SecurityOutpost",
+        "strOwner": "Titan",
+        "strLootStartingConds": "CONDMTRSBlockadeSpawner",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Security Checkpoint",
+        "strRegIDSuffix": "SEC02",
+        "fAngle": 45,
+        "fDistanceKM": 1080,
+        "strShipName": "SecurityOutpost",
+        "strClassification": "SecurityOutpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Nav Buoy",
+        "strRegIDSuffix": "41A",
+        "fAngle": 41,
+        "fDistanceKM": 720,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Outpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Nav Buoy",
+        "strRegIDSuffix": "51A",
+        "fAngle": 51,
+        "fDistanceKM": 820,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Outpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Nav Buoy",
+        "strRegIDSuffix": "57A",
+        "fAngle": 57,
+        "fDistanceKM": 930,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Outpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Nav Buoy",
+        "strRegIDSuffix": "62A",
+        "fAngle": 62,
+        "fDistanceKM": 1000,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Outpost",
+        "strOwner": "Titan",
+        "strLootStartingConds": "CONDMTRSBlockadeSpawner",
+        "bIsStation" : true
+      }
+    ]
+  },
+  {
+    "strName": "1004",
+    "strDescription": "BPAL - Ground - Half circle of buoys",
+    "aEntities":
+    [
+      {
+        "strName": "Nav Buoy Ext",
+        "strRegIDSuffix": "30P",
+        "fAngle": 30,
+        "fDistanceKM": 3500,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Outpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Nav Buoy",
+        "strRegIDSuffix": "500B",
+        "fAngle": 0,
+        "fDistanceKM": 500,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Outpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Nav Buoy",
+        "strRegIDSuffix": "1000B",
+        "fAngle": 0,
+        "fDistanceKM": 1000,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Outpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Nav Buoy",
+        "strRegIDSuffix": "1500B",
+        "fAngle": 0,
+        "fDistanceKM": 1500,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Outpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Nav Buoy Ext",
+        "strRegIDSuffix": "30M",
+        "fAngle": -30,
+        "fDistanceKM": 3500,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Outpost",
+        "bIsStation" : true
+      }
+    ]
+  },
+  {
+    "strName": "1005",
+    "strDescription": "JFTS - Ground - no buoys, diamond shaped infra only",
+    "aEntities":
+    [
+      {
+        "strName": "Fuel Depot",
+        "strRegIDSuffix": "FD01",
+        "fAngle": -5,
+        "fDistanceKM": 750,
+        "strShipName": "FuelDepot",
+        "strClassification": "Infrastructure",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Freight Dock",
+        "strRegIDSuffix": "FRD01",
+        "fAngle": 15,
+        "fDistanceKM": 500,
+        "strShipName": "Freight Dock",
+        "strClassification": "Infrastructure",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Freight Dock",
+        "strRegIDSuffix": "FRD02",
+        "fAngle": -25,
+        "fDistanceKM": 500,
+        "strShipName": "Freight Dock",
+        "strClassification": "Infrastructure",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Repair Dock",
+        "strRegIDSuffix": "MAN01",
+        "fAngle": 5,
+        "fDistanceKM": 250,
+        "strShipName": "MaintenanceDock",
+        "strClassification": "Infrastructure",
+        "bIsStation" : true
+      }
+    ]
+  },
+  {
+    "strName": "1006",
+    "strDescription": "SVIR - Ground - 3 maintenance docks + 1 freight + 2 refuel + buoy line outwards",
+    "aEntities":
+    [
+      {
+        "strName": "Repair Dock",
+        "strRegIDSuffix": "MAN01",
+        "fAngle": 10,
+        "fDistanceKM": 300,
+        "strShipName": "MaintenanceDock",
+        "strClassification": "Infrastructure",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Repair Dock",
+        "strRegIDSuffix": "MAN02",
+        "fAngle": 100,
+        "fDistanceKM": 300,
+        "strShipName": "MaintenanceDock",
+        "strClassification": "Infrastructure",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Repair Dock",
+        "strRegIDSuffix": "MAN03",
+        "fAngle": -80,
+        "fDistanceKM": 300,
+        "strShipName": "MaintenanceDock",
+        "strClassification": "Infrastructure",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Freight Dock",
+        "strRegIDSuffix": "FRD01",
+        "fAngle": -170,
+        "fDistanceKM": 300,
+        "strShipName": "Freight Dock",
+        "strClassification": "Infrastructure",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Fuel Depot",
+        "strRegIDSuffix": "FD01",
+        "fAngle": 45,
+        "fDistanceKM": 350,
+        "strShipName": "FuelDepot",
+        "strClassification": "Infrastructure",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Fuel Depot",
+        "strRegIDSuffix": "FD02",
+        "fAngle": -135,
+        "fDistanceKM": 350,
+        "strShipName": "FuelDepot",
+        "strClassification": "Infrastructure",
+        "bIsStation" : true
+      },
+      {
+        "strName": "NAV",
+        "strRegIDSuffix": "NAV1",
+        "fAngle": 1,
+        "fDistanceKM": 1000,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Buoy",
+        "bIsStation" : true
+      },
+      {
+        "strName": "NAV",
+        "strRegIDSuffix": "NAV2",
+        "fAngle": -179,
+        "fDistanceKM": 1000,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Buoy",
+        "bIsStation" : true
+      }
+    ]
+  },
+  {
+    "strName": "1007",
+    "strDescription": "SVIR Blockaded by Xinhua - Ground - 3 maintenance docks + 1 freight + 2 refuel + buoy line outwards",
+    "aEntities":
+    [
+      {
+        "strName": "Repair Dock",
+        "strRegIDSuffix": "MAN01",
+        "fAngle": 10,
+        "fDistanceKM": 300,
+        "strShipName": "MaintenanceDock",
+        "strClassification": "Infrastructure",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Repair Dock",
+        "strRegIDSuffix": "MAN02",
+        "fAngle": 100,
+        "fDistanceKM": 300,
+        "strShipName": "MaintenanceDock",
+        "strClassification": "Infrastructure",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Repair Dock",
+        "strRegIDSuffix": "MAN03",
+        "fAngle": -80,
+        "fDistanceKM": 300,
+        "strShipName": "MaintenanceDock",
+        "strClassification": "Infrastructure",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Freight Dock",
+        "strRegIDSuffix": "FRD01",
+        "fAngle": -170,
+        "fDistanceKM": 300,
+        "strShipName": "Freight Dock",
+        "strClassification": "Infrastructure",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Fuel Depot",
+        "strRegIDSuffix": "FD01",
+        "fAngle": 45,
+        "fDistanceKM": 350,
+        "strShipName": "FuelDepot",
+        "strClassification": "Infrastructure",
+        "strOwner": "Xinhua",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Fuel Depot",
+        "strRegIDSuffix": "FD02",
+        "fAngle": -135,
+        "fDistanceKM": 350,
+        "strShipName": "FuelDepot",
+        "strClassification": "Infrastructure",
+        "bIsStation" : true
+      },
+      {
+        "strName": "NAV",
+        "strRegIDSuffix": "NAV1",
+        "fAngle": 1,
+        "fDistanceKM": 1000,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Buoy",
+        "bIsStation" : true
+      },
+      {
+        "strName": "NAV",
+        "strRegIDSuffix": "NAV2",
+        "fAngle": -179,
+        "fDistanceKM": 1000,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Buoy",
+        "strOwner": "Xinhua",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Xinhua SPAWN",
+        "strRegIDSuffix": "Xinhua",
+        "fAngle": -2,
+        "fDistanceKM": 1000,
+        "strShipName": "SignalBeacon",
+        "strClassification": "Buoy",
+        "strOwner": "Xinhua",
+        "strLootStartingConds": "CONDSVIRBlockadeSpawner",
+        "bIsStation" : true
+      }
+    ]
+  },
+  {
+    "strName": "1008",
+    "strDescription": "JFTS Xinhua Blockade - Ground - no buoys, diamond shaped infra only",
+    "aEntities":
+    [
+      {
+        "strName": "Fuel Depot",
+        "strRegIDSuffix": "FD01",
+        "fAngle": -5,
+        "fDistanceKM": 750,
+        "strShipName": "FuelDepot",
+        "strClassification": "Infrastructure",
+        "strOwner": "Xinhua",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Freight Dock",
+        "strRegIDSuffix": "FRD01",
+        "fAngle": 15,
+        "fDistanceKM": 500,
+        "strShipName": "Freight Dock",
+        "strClassification": "Infrastructure",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Freight Dock",
+        "strRegIDSuffix": "FRD02",
+        "fAngle": -25,
+        "fDistanceKM": 500,
+        "strShipName": "Freight Dock",
+        "strClassification": "Infrastructure",
+        "strOwner": "Xinhua",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Repair Dock",
+        "strRegIDSuffix": "MAN01",
+        "fAngle": 5,
+        "fDistanceKM": 250,
+        "strShipName": "MaintenanceDock",
+        "strClassification": "Infrastructure",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Xinhua SPAWN",
+        "strRegIDSuffix": "Xinhua",
+        "fAngle": -2,
+        "fDistanceKM": 800,
+        "strShipName": "SignalBeacon",
+        "strClassification": "Buoy",
+        "strOwner": "Xinhua",
+        "strLootStartingConds": "CONDJFTSBlockadeSpawner",
+        "bIsStation" : true
+      }
+    ]
+  },
+  {
+    "strName": "100",
+    "strDescription": "HQCH - orbital - Hexagon Nav buoy ring + 4 security checkpoints",
+    "aEntities":
+    [
+      {
+        "strName": "Security Checkpoint",
+        "strRegIDSuffix": "SEC1",
+        "fAngle": 0,
+        "fDistanceKM": 150,
+        "strShipName": "SecurityOutpost",
+        "strClassification": "SecurityOutpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Security Checkpoint",
+        "strRegIDSuffix": "SEC2",
+        "fAngle": 88,
+        "fDistanceKM": 150,
+        "strShipName": "SecurityOutpost",
+        "strClassification": "SecurityOutpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Security Checkpoint",
+        "strRegIDSuffix": "SEC3",
+        "fAngle": 180,
+        "fDistanceKM": 150,
+        "strShipName": "SecurityOutpost",
+        "strClassification": "SecurityOutpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Security Checkpoint",
+        "strRegIDSuffix": "SEC4",
+        "fAngle": -88,
+        "fDistanceKM": 150,
+        "strShipName": "SecurityOutpost",
+        "strClassification": "SecurityOutpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "NAV",
+        "strRegIDSuffix": "NAV1",
+        "fAngle": 30,
+        "fDistanceKM": 750,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Buoy",
+        "bIsStation" : true
+      },
+      {
+        "strName": "NAV",
+        "strRegIDSuffix": "NAV2",
+        "fAngle": 90,
+        "fDistanceKM": 750,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Buoy",
+        "bIsStation" : true
+      },
+      {
+        "strName": "NAV",
+        "strRegIDSuffix": "NAV3",
+        "fAngle": 150,
+        "fDistanceKM": 750,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Buoy",
+        "bIsStation" : true
+      },
+      {
+        "strName": "NAV",
+        "strRegIDSuffix": "NAV4",
+        "fAngle": -150,
+        "fDistanceKM": 750,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Buoy",
+        "bIsStation" : true
+      },
+      {
+        "strName": "NAV",
+        "strRegIDSuffix": "NAV5",
+        "fAngle": -90,
+        "fDistanceKM": 750,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Buoy",
+        "bIsStation" : true
+      },
+      {
+        "strName": "NAV",
+        "strRegIDSuffix": "NAV6",
+        "fAngle": -30,
+        "fDistanceKM": 750,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Buoy",
+        "bIsStation" : true
+      }
+    ]
+  },
+  {
+    "strName": "101",
+    "strDescription": "MHNG - orbital - Cubic Nav buoy ring with security + maintenance",
+    "aEntities":
+    [
+      {
+        "strName": "NAV",
+        "strRegIDSuffix": "NAV1",
+        "fAngle": 45,
+        "fDistanceKM": 750,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Buoy",
+        "bIsStation" : true
+      },
+      {
+        "strName": "NAV",
+        "strRegIDSuffix": "NAV2",
+        "fAngle": 135,
+        "fDistanceKM": 750,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Buoy",
+        "bIsStation" : true
+      },
+      {
+      "strName": "Security Checkpoint",
+      "strRegIDSuffix": "SEC01",
+      "fAngle": 88,
+      "fDistanceKM": 400,
+      "strShipName": "SecurityOutpost",
+      "strClassification": "SecurityOutpost",
+      "bIsStation" : true
+      },
+      {
+        "strName": "Repair Dock",
+        "strRegIDSuffix": "MAN01",
+        "fAngle": -88,
+        "fDistanceKM": 400,
+        "strShipName": "MaintenanceDock",
+        "strClassification": "Infrastructure",
+        "bIsStation" : true
+      },
+      {
+        "strName": "NAV",
+        "strRegIDSuffix": "NAV3",
+        "fAngle": -135,
+        "fDistanceKM": 750,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Buoy",
+        "bIsStation" : true
+      },
+      {
+        "strName": "NAV",
+        "strRegIDSuffix": "NAV4",
+        "fAngle": -45,
+        "fDistanceKM": 750,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Buoy",
+        "bIsStation" : true
+      }
+    ]
+  },
+  {
+    "strName": "1010",
+    "strDescription": "MHNG - orbital - Cubic Nav buoy ring with security + maintenance. Titan blockade",
+    "aEntities":
+    [
+      {
+        "strName": "NAV",
+        "strRegIDSuffix": "NAV1",
+        "fAngle": 45,
+        "fDistanceKM": 750,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Buoy",
+        "strOwner": "Titan",
+        "strLootStartingConds": "CONDMHNGBlockadeSpawner",
+        "bIsStation" : true
+      },
+      {
+        "strName": "NAV",
+        "strRegIDSuffix": "NAV2",
+        "fAngle": 135,
+        "fDistanceKM": 750,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Buoy",
+        "bIsStation" : true
+      },
+      {
+      "strName": "Security Checkpoint",
+      "strRegIDSuffix": "SEC01",
+      "fAngle": 88,
+      "fDistanceKM": 400,
+      "strShipName": "SecurityOutpost",
+      "strClassification": "SecurityOutpost",
+      "bIsStation" : true
+      },
+      {
+        "strName": "Repair Dock",
+        "strRegIDSuffix": "MAN01",
+        "fAngle": -88,
+        "fDistanceKM": 400,
+        "strShipName": "MaintenanceDock",
+        "strClassification": "Infrastructure",
+        "strOwner": "Titan",
+        "strLootStartingConds": "CONDMHNGBlockadeSpawner",
+        "bIsStation" : true
+      },
+      {
+        "strName": "NAV",
+        "strRegIDSuffix": "NAV3",
+        "fAngle": -135,
+        "fDistanceKM": 750,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Buoy",
+        "bIsStation" : true
+      },
+      {
+        "strName": "NAV",
+        "strRegIDSuffix": "NAV4",
+        "fAngle": -45,
+        "fDistanceKM": 750,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Buoy",
+        "bIsStation" : true
+      }
+    ]
+  },
+  {
+    "strName": "102",
+    "strDescription": "MSUZ - orbital - plus shaped Nav buoy ring with 6 freight docks in clusters of 3",
+    "aEntities":
+    [
+      {
+        "strName": "NAV",
+        "strRegIDSuffix": "NAV1",
+        "fAngle": 0,
+        "fDistanceKM": 750,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Buoy",
+        "bIsStation" : true
+      },
+      {
+        "strName": "NAV",
+        "strRegIDSuffix": "NAV2",
+        "fAngle": 90,
+        "fDistanceKM": 750,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Buoy",
+        "bIsStation" : true
+      },
+      {
+        "strName": "NAV",
+        "strRegIDSuffix": "NAV3",
+        "fAngle": 180,
+        "fDistanceKM": 750,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Buoy",
+        "bIsStation" : true
+      },
+      {
+        "strName": "NAV",
+        "strRegIDSuffix": "NAV4",
+        "fAngle": -90,
+        "fDistanceKM": 750,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Buoy",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Freight Dock",
+        "strRegIDSuffix": "FD01",
+        "fAngle": 40,
+        "fDistanceKM": 150,
+        "strShipName": "Freight Dock",
+        "strClassification": "Infrastructure",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Freight Dock",
+        "strRegIDSuffix": "FD02",
+        "fAngle": 45,
+        "fDistanceKM": 150,
+        "strShipName": "Freight Dock",
+        "strClassification": "Infrastructure",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Freight Dock",
+        "strRegIDSuffix": "FD03",
+        "fAngle": 50,
+        "fDistanceKM": 150,
+        "strShipName": "Freight Dock",
+        "strClassification": "Infrastructure",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Freight Dock",
+        "strRegIDSuffix": "FD04",
+        "fAngle": -130,
+        "fDistanceKM": 150,
+        "strShipName": "Freight Dock",
+        "strClassification": "Infrastructure",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Freight Dock",
+        "strRegIDSuffix": "FD05",
+        "fAngle": -135,
+        "fDistanceKM": 150,
+        "strShipName": "Freight Dock",
+        "strClassification": "Infrastructure",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Freight Dock",
+        "strRegIDSuffix": "FD06",
+        "fAngle": -140,
+        "fDistanceKM": 150,
+        "strShipName": "Freight Dock",
+        "strClassification": "Infrastructure",
+        "bIsStation" : true
+      }
+    ]
+  },
+  {
+    "strName": "1020",
+    "strDescription": "MSUZ - orbital - plus shaped Nav buoy ring with 6 freight docks in clusters of 3. Titan blockade",
+    "aEntities":
+    [
+      {
+        "strName": "NAV",
+        "strRegIDSuffix": "NAV1",
+        "fAngle": 0,
+        "fDistanceKM": 750,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Buoy",
+        "bIsStation" : true
+      },
+      {
+        "strName": "NAV",
+        "strRegIDSuffix": "NAV2",
+        "fAngle": 90,
+        "fDistanceKM": 750,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Buoy",
+        "bIsStation" : true
+      },
+      {
+        "strName": "NAV",
+        "strRegIDSuffix": "NAV3",
+        "fAngle": 180,
+        "fDistanceKM": 750,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Buoy",
+        "bIsStation" : true
+      },
+      {
+        "strName": "NAV",
+        "strRegIDSuffix": "NAV4",
+        "fAngle": -90,
+        "fDistanceKM": 750,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Buoy",
+        "strOwner": "Titan",
+        "strLootStartingConds": "CONDMSUZBlockadeSpawner",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Freight Dock",
+        "strRegIDSuffix": "FD01",
+        "fAngle": 40,
+        "fDistanceKM": 150,
+        "strShipName": "Freight Dock",
+        "strClassification": "Infrastructure",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Freight Dock",
+        "strRegIDSuffix": "FD02",
+        "fAngle": 45,
+        "fDistanceKM": 150,
+        "strShipName": "Freight Dock",
+        "strClassification": "Infrastructure",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Freight Dock",
+        "strRegIDSuffix": "FD03",
+        "fAngle": 50,
+        "fDistanceKM": 150,
+        "strShipName": "Freight Dock",
+        "strClassification": "Infrastructure",
+        "strOwner": "Titan",
+        "strLootStartingConds": "CONDMSUZBlockadeSpawner",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Freight Dock",
+        "strRegIDSuffix": "FD04",
+        "fAngle": -130,
+        "fDistanceKM": 150,
+        "strShipName": "Freight Dock",
+        "strClassification": "Infrastructure",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Freight Dock",
+        "strRegIDSuffix": "FD05",
+        "fAngle": -135,
+        "fDistanceKM": 150,
+        "strShipName": "Freight Dock",
+        "strClassification": "Infrastructure",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Freight Dock",
+        "strRegIDSuffix": "FD06",
+        "fAngle": -140,
+        "fDistanceKM": 150,
+        "strShipName": "Freight Dock",
+        "strClassification": "Infrastructure",
+        "bIsStation" : true
+      }
+    ]
+  },
+  {
+    "strName": "103",
+    "strDescription": "JPTN - orbital - 2 buoys on a line + hexa ring of security checkpoints and galcon blockade",
+    "aEntities":
+    [
+      {
+        "strName": "NAV",
+        "strRegIDSuffix": "NAV1",
+        "fAngle": 0,
+        "fDistanceKM": 750,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Buoy",
+        "bIsStation" : true
+      },
+      {
+        "strName": "NAV",
+        "strRegIDSuffix": "NAV2",
+        "fAngle": 180,
+        "fDistanceKM": 750,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Buoy",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Security Checkpoint",
+        "strRegIDSuffix": "SEC01",
+        "fAngle": 30,
+        "fDistanceKM": 300,
+        "strShipName": "SecurityOutpost",
+        "strClassification": "SecurityOutpost",
+        "strOwner": "GalileanConfederacy",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Security Checkpoint",
+        "strRegIDSuffix": "SEC02",
+        "fAngle": 90,
+        "fDistanceKM": 300,
+        "strShipName": "SecurityOutpost",
+        "strClassification": "SecurityOutpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Security Checkpoint",
+        "strRegIDSuffix": "SEC03",
+        "fAngle": 150,
+        "fDistanceKM": 300,
+        "strShipName": "SecurityOutpost",
+        "strClassification": "SecurityOutpost",
+        "strOwner": "GalileanConfederacy",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Security Checkpoint",
+        "strRegIDSuffix": "SEC04",
+        "fAngle": -150,
+        "fDistanceKM": 300,
+        "strShipName": "SecurityOutpost",
+        "strClassification": "SecurityOutpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Security Checkpoint",
+        "strRegIDSuffix": "SEC05",
+        "fAngle": -90,
+        "fDistanceKM": 300,
+        "strShipName": "SecurityOutpost",
+        "strClassification": "SecurityOutpost",
+        "strOwner": "GalileanConfederacy",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Security Checkpoint",
+        "strRegIDSuffix": "SEC06",
+        "fAngle": -30,
+        "fDistanceKM": 300,
+        "strShipName": "SecurityOutpost",
+        "strClassification": "SecurityOutpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "GalCon SPAWN",
+        "strRegIDSuffix": "GalCon1",
+        "fAngle": -2,
+        "fDistanceKM": 330,
+        "strShipName": "SignalBeacon",
+        "strClassification": "Buoy",
+        "strOwner": "GalileanConfederacy",
+        "strLootStartingConds": "CONDJPTNBlockadeSpawner",
+        "bIsStation" : true
+      },
+      {
+        "strName": "GalCon SPAWN",
+        "strRegIDSuffix": "GalCon2",
+        "fAngle": -122,
+        "fDistanceKM": 310,
+        "strShipName": "SignalBeacon",
+        "strClassification": "Buoy",
+        "strOwner": "GalileanConfederacy",
+        "strLootStartingConds": "CONDJPTNBlockadeSpawner",
+        "bIsStation" : true
+      },
+      {
+        "strName": "GalCon SPAWN",
+        "strRegIDSuffix": "GalCon3",
+        "fAngle": -242,
+        "fDistanceKM": 320,
+        "strShipName": "SignalBeacon",
+        "strClassification": "Buoy",
+        "strOwner": "GalileanConfederacy",
+        "strLootStartingConds": "CONDJPTNBlockadeSpawner",
+        "bIsStation" : true
+      }
+    ]
+  },
+  {
+    "strName": "104",
+    "strDescription": "JPTN - orbital - 2 buoys on a line + hexa ring of security checkpoints",
+    "aEntities":
+    [
+      {
+        "strName": "NAV",
+        "strRegIDSuffix": "NAV1",
+        "fAngle": 0,
+        "fDistanceKM": 750,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Buoy",
+        "bIsStation" : true
+      },
+      {
+        "strName": "NAV",
+        "strRegIDSuffix": "NAV2",
+        "fAngle": 180,
+        "fDistanceKM": 750,
+        "strShipName": "Nav Buoy",
+        "strClassification": "Buoy",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Security Checkpoint",
+        "strRegIDSuffix": "SEC01",
+        "fAngle": 30,
+        "fDistanceKM": 300,
+        "strShipName": "SecurityOutpost",
+        "strClassification": "SecurityOutpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Security Checkpoint",
+        "strRegIDSuffix": "SEC02",
+        "fAngle": 90,
+        "fDistanceKM": 300,
+        "strShipName": "SecurityOutpost",
+        "strClassification": "SecurityOutpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Security Checkpoint",
+        "strRegIDSuffix": "SEC03",
+        "fAngle": 150,
+        "fDistanceKM": 300,
+        "strShipName": "SecurityOutpost",
+        "strClassification": "SecurityOutpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Security Checkpoint",
+        "strRegIDSuffix": "SEC04",
+        "fAngle": -150,
+        "fDistanceKM": 300,
+        "strShipName": "SecurityOutpost",
+        "strClassification": "SecurityOutpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Security Checkpoint",
+        "strRegIDSuffix": "SEC05",
+        "fAngle": -90,
+        "fDistanceKM": 300,
+        "strShipName": "SecurityOutpost",
+        "strClassification": "SecurityOutpost",
+        "bIsStation" : true
+      },
+      {
+        "strName": "Security Checkpoint",
+        "strRegIDSuffix": "SEC06",
+        "fAngle": -30,
+        "fDistanceKM": 300,
+        "strShipName": "SecurityOutpost",
+        "strClassification": "SecurityOutpost",
+        "bIsStation" : true
+      }
+    ]
+  }
+]

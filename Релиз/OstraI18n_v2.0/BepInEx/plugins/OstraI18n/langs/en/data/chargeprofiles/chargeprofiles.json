@@ -1,0 +1,358 @@
+[  
+    
+    {
+        "strName" : "FireExCheck",
+        "strCondName" : "StatFireChem",
+        "fCondAmount" : 1.0,
+        "fDmgAmountUs" : 0.0000125,
+        "fDmgAmountCharge" : 0.0025,
+        "strItemCT" : null,
+        "nItemAmount" : 0,
+        "bUseContained" : false,
+        "bUseSelf" : true
+    },
+    {
+        "strName" : "FireExNormal",
+        "strCondName" : "StatFireChem",
+        "fCondAmount" : 1.0,
+        "fDmgAmountUs" : 0.0000125,
+        "fDmgAmountCharge" : 0.0025,
+        "strItemCT" : null,
+        "nItemAmount" : 0,
+        "bUseContained" : false,
+        "bUseSelf" : true
+    },
+    {
+        "strName" : "MeleeAttackDefault",
+        "strCondName" : null,
+        "fCondAmount" : 0.0,
+        "fDmgAmountUs" : 0.1,
+        "fDmgAmountCharge" : 0.125,
+        "strItemCT" : null,
+        "nItemAmount" : 0,
+        "bUseContained" : true,
+        "bUseSelf" : false
+    },
+    {
+        "strName" : "MeleeAttackDefaultTough",
+        "strCondName" : null,
+        "fCondAmount" : 0.0,
+        "fDmgAmountUs" : 0.01,
+        "fDmgAmountCharge" : 0.125,
+        "strItemCT" : null,
+        "nItemAmount" : 0,
+        "bUseContained" : true,
+        "bUseSelf" : false
+    },
+    {
+        "strName" : "MeleeAttackDefaultExtraFragile",
+        "strCondName" : null,
+        "fCondAmount" : 0.0,
+        "fDmgAmountUs" : 2.0,
+        "fDmgAmountCharge" : 0.125,
+        "strItemCT" : null,
+        "nItemAmount" : 0,
+        "bUseContained" : true,
+        "bUseSelf" : false
+    },
+    {
+        "strName" : "MeleeAttackDefaultFragile",
+        "strCondName" : null,
+        "fCondAmount" : 0.0,
+        "fDmgAmountUs" : 0.5,
+        "fDmgAmountCharge" : 0.125,
+        "strItemCT" : null,
+        "nItemAmount" : 0,
+        "bUseContained" : true,
+        "bUseSelf" : false
+    },
+    {
+        "strName" : "RangedWeaponAmmoNormal",
+        "strCondName" : null,
+        "fCondAmount" : 0.0,
+        "fDmgAmountUs" : 0.0000125,
+        "fDmgAmountCharge" : 3.0,
+        "strItemCT" : "TIsAmmo",
+        "nItemAmount" : 1,
+        "bUseContained" : true,
+        "bUseSelf" : false
+    },
+    {
+        "strName" : "RangedWeaponAmmo12GaugeHG",
+        "strCondName" : null,
+        "fCondAmount" : 0.0,
+        "fDmgAmountUs" : 0.0000125,
+        "fDmgAmountCharge" : 3.0,
+        "strItemCT" : "TIsFitAmmo12GaugeHG",
+        "nItemAmount" : 1,
+        "bUseContained" : true,
+        "bUseSelf" : false
+    },
+    {
+        "strName" : "RangedWeaponAmmo12Gauge00",
+        "strCondName" : null,
+        "fCondAmount" : 0.0,
+        "fDmgAmountUs" : 0.0000125,
+        "fDmgAmountCharge" : 3.0,
+        "strItemCT" : "TIsFitAmmo12Gauge00",
+        "nItemAmount" : 1,
+        "bUseContained" : true,
+        "bUseSelf" : false
+    },
+    {
+        "strName" : "RangedWeaponAmmo556FMJ",
+        "strCondName" : null,
+        "fCondAmount" : 0.0,
+        "fDmgAmountUs" : 0.0000125,
+        "fDmgAmountCharge" : 3.0,
+        "strItemCT" : "TIsFitAmmo556FMJ",
+        "nItemAmount" : 1,
+        "bUseContained" : true,
+        "bUseSelf" : false
+    },
+    {
+        "strName" : "RangedWeaponAmmo556HG",
+        "strCondName" : null,
+        "fCondAmount" : 0.0,
+        "fDmgAmountUs" : 0.0000125,
+        "fDmgAmountCharge" : 3.0,
+        "strItemCT" : "TIsFitAmmo556HG",
+        "nItemAmount" : 1,
+        "bUseContained" : true,
+        "bUseSelf" : false
+    },
+    {
+        "strName" : "RangedWeaponAmmo9mmFMJ",
+        "strCondName" : null,
+        "fCondAmount" : 0.0,
+        "fDmgAmountUs" : 0.0000125,
+        "fDmgAmountCharge" : 3.0,
+        "strItemCT" : "TIsFitAmmo9mmFMJ",
+        "nItemAmount" : 1,
+        "bUseContained" : true,
+        "bUseSelf" : false
+    },
+    {
+        "strName" : "RangedWeaponAmmo9mmHG",
+        "strCondName" : null,
+        "fCondAmount" : 0.0,
+        "fDmgAmountUs" : 0.0000125,
+        "fDmgAmountCharge" : 3.0,
+        "strItemCT" : "TIsFitAmmo9mmHG",
+        "nItemAmount" : 1,
+        "bUseContained" : true,
+        "bUseSelf" : false
+    },
+    {
+        "strName" : "RangedWeaponAmmo556FMJ3RB",
+        "strCondName" : null,
+        "fCondAmount" : 0.0,
+        "fDmgAmountUs" : 0.0000125,
+        "fDmgAmountCharge" : 3.0,
+        "strItemCT" : "TIsFitAmmo556FMJ",
+        "nItemAmount" : 3,
+        "bUseContained" : true,
+        "bUseSelf" : false
+    },
+    {
+        "strName" : "RangedWeaponAmmo556HG3RB",
+        "strCondName" : null,
+        "fCondAmount" : 0.0,
+        "fDmgAmountUs" : 0.0000125,
+        "fDmgAmountCharge" : 3.0,
+        "strItemCT" : "TIsFitAmmo556HG",
+        "nItemAmount" : 3,
+        "bUseContained" : true,
+        "bUseSelf" : false
+    },
+    {
+        "strName" : "RangedWeaponAmmoNormal3RB",
+        "strCondName" : null,
+        "fCondAmount" : 0.0,
+        "fDmgAmountUs" : 0.0000125,
+        "fDmgAmountCharge" : 3.0,
+        "strItemCT" : "TIsAmmo",
+        "nItemAmount" : 3,
+        "bUseContained" : true,
+        "bUseSelf" : false
+    },
+    {
+        "strName" : "RangedWeaponPistol04Normal",
+        "strCondName" : null,
+        "fCondAmount" : 0.0,
+        "fDmgAmountUs" : 1.8,
+        "fDmgAmountCharge" : 0.0,
+        "strItemCT" : null,
+        "nItemAmount" : 0,
+        "bUseContained" : true,
+        "bUseSelf" : false
+    },
+    {
+        "strName" : "WearAndTearDefault",
+        "strCondName" : null,
+        "fCondAmount" : 0.0,
+        "fDmgAmountUs" : 0.1,
+        "fDmgAmountCharge" : 0.0,
+        "strItemCT" : null,
+        "nItemAmount" : 0,
+        "bUseContained" : true,
+        "bUseSelf" : false
+    },
+    {
+        "strName" : "EnergyWeaponNormal01",
+        "strCondName" : "StatPower",
+        "fCondAmount" : 0.0025,
+        "fDmgAmountUs" : 0.0000125,
+        "fDmgAmountCharge" : 0.0025,
+        "strItemCT" : null,
+        "nItemAmount" : 0,
+        "bUseContained" : true,
+        "bUseSelf" : false
+    },
+    {
+        "strName" : "EnergyWeaponPistolWhip01",
+        "strCondName" : null,
+        "fCondAmount" : 0.0,
+        "fDmgAmountUs" : 0.1,
+        "fDmgAmountCharge" : 0.125,
+        "strItemCT" : null,
+        "nItemAmount" : 0,
+        "bUseContained" : true,
+        "bUseSelf" : false
+    },
+    {
+        "strName" : "ItmAtmoScrubber01Normal",
+        "strCondName" : "StatDamage",
+        "fCondAmount" : 1,
+        "fDmgAmountUs" : 0.0000125,
+        "fDmgAmountCharge" : 0.125,
+        "strItemCT" : "TIsFilterCO2",
+        "nItemAmount" : 0,
+        "bUseContained" : true,
+        "bUseSelf" : false
+    },
+    {
+        "strName" : "ItmToolDrill01Normal",
+        "strCondName" : "StatPower",
+        "fCondAmount" : 0.000016,
+        "fDmgAmountUs" : 0.0000125,
+        "fDmgAmountCharge" : 0.0000125,
+        "strItemCT" : null,
+        "nItemAmount" : 0,
+        "bUseContained" : true,
+        "bUseSelf" : false
+    },
+    {
+        "strName" : "ItmToolDrillMining01Normal",
+        "strCondName" : "StatPower",
+        "fCondAmount" : 0.00016,
+        "fDmgAmountUs" : 0.000125,
+        "fDmgAmountCharge" : 0.0000125,
+        "strItemCT" : null,
+        "nItemAmount" : 0,
+        "bUseContained" : true,
+        "bUseSelf" : false
+    },
+    {
+        "strName" : "ItmToolDrillMining02Normal",
+        "strCondName" : "StatPower",
+        "fCondAmount" : 0.00016,
+        "fDmgAmountUs" : 0.000125,
+        "fDmgAmountCharge" : 0.0000125,
+        "strItemCT" : null,
+        "nItemAmount" : 0,
+        "bUseContained" : true,
+        "bUseSelf" : false
+    },
+    {
+        "strName" : "ItmToolGrinder02Melee",
+        "strCondName" : "StatPower",
+        "fCondAmount" : 0.000016,
+        "fDmgAmountUs" : 0.5,
+        "fDmgAmountCharge" : 0.0125,
+        "strItemCT" : null,
+        "nItemAmount" : 0,
+        "bUseContained" : true,
+        "bUseSelf" : false
+    },
+    {
+        "strName" : "ItmToolGrinder02Normal",
+        "strCondName" : "StatPower",
+        "fCondAmount" : 0.000016,
+        "fDmgAmountUs" : 0.0000125,
+        "fDmgAmountCharge" : 0.0000125,
+        "strItemCT" : null,
+        "nItemAmount" : 0,
+        "bUseContained" : true,
+        "bUseSelf" : false
+    },
+    {
+        "strName" : "ItmToolLaserTorch01Melee",
+        "strCondName" : "StatPower",
+        "fCondAmount" : 0.032,
+        "fDmgAmountUs" : 0.75,
+        "fDmgAmountCharge" : 0.0125,
+        "strItemCT" : null,
+        "nItemAmount" : 0,
+        "bUseContained" : true,
+        "bUseSelf" : false
+    },
+    {
+        "strName" : "ItmToolLaserTorch01Normal",
+        "strCondName" : "StatPower",
+        "fCondAmount" : 0.000016,
+        "fDmgAmountUs" : 0.0000125,
+        "fDmgAmountCharge" : 0.0000125,
+        "strItemCT" : null,
+        "nItemAmount" : 0,
+        "bUseContained" : true,
+        "bUseSelf" : false
+    },
+    {
+        "strName" : "ItmToolSolderingIron01Melee",
+        "strCondName" : "StatPower",
+        "fCondAmount" : 0.000016,
+        "fDmgAmountUs" : 0.5,
+        "fDmgAmountCharge" : 0.0125,
+        "strItemCT" : null,
+        "nItemAmount" : 0,
+        "bUseContained" : true,
+        "bUseSelf" : false
+    },
+    {
+        "strName" : "ItmToolSolderingIron01Normal",
+        "strCondName" : "StatPower",
+        "fCondAmount" : 0.000016,
+        "fDmgAmountUs" : 0.0000125,
+        "fDmgAmountCharge" : 0.0000125,
+        "strItemCT" : null,
+        "nItemAmount" : 0,
+        "bUseContained" : true,
+        "bUseSelf" : false
+    },
+    {
+        "strName" : "ItmToolWelder01Normal",
+        "strCondName" : "StatPower",
+        "fCondAmount" : 0.0000875,
+        "fDmgAmountUs" : 0.000012125,
+        "fDmgAmountCharge" : 0.000012125,
+        "strItemCT" : null,
+        "nItemAmount" : 0,
+        "bUseContained" : true,
+        "bUseSelf" : false
+    },
+    {
+        "strName" : "ItmWristPDAHackPDA",
+        "strItemCT" : "TIsDataItemPDACracker",
+        "nItemAmount" : 1,
+        "bSkipRemove" : true,
+        "bUseSelf" : false
+    },
+    {
+        "strName" : "ItmWristPDAHackRobot",
+        "strItemCT" : "TIsDataItemRobotCracker",
+        "nItemAmount" : 1,
+        "bSkipRemove" : true,
+        "bUseSelf" : false
+    }
+]

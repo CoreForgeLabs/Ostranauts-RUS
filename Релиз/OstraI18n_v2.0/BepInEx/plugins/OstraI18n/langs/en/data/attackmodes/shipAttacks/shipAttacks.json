@@ -1,0 +1,116 @@
+﻿[
+  {
+    "strName" : "DefaultExplosion",
+    "strType" : "circularBlast",
+    "fTotalDamage"  : 300.0,
+    "fRadius" : 4,
+    "nSoftEdgeTileRadius"  : 1,
+    "strJsonAttackMode" : "AModeRandomWoundFatal",
+    "strAudioAttack" : "ShipWeaponMissileLaunchUI",
+    "strAudioImpactLoot" : "TXTRandomMissile01Audio",
+    "fCamShakeAmount" : 1,
+    "fFireChanceCoeff" : 0.25
+  },
+  {
+    "strName" : "MassDriverAttack",
+    "strType" : "ray",
+    "fMaxRange"  : 10,
+    "fSpread" : 0,
+    "fTotalDamage"  : 350.0,
+    "nSoftEdgeTileRadius"  : 0,
+    "fRadius" : 0,
+    "strJsonAttackMode" : "AModeRandomWoundFatal",
+    "strAudioAttack" : "ShipWeaponProjectileLaunchUI",
+    "strAudioImpactLoot" : "TXTRandomBangAudio",
+    "fCamShakeAmount" : 0.2,
+    "fFireChanceCoeff" : 0.1
+  },
+  {
+    "strName" : "MissileAttack01",
+    "strType" : "circularBlast",
+    "fTotalDamage"  : 600.0,
+    "fRadius" : 11,
+    "nSoftEdgeTileRadius"  : 3,
+    "strJsonAttackMode" : "AModeRandomWoundFatal",
+    "strAudioAttack" : "ShipWeaponMissileLaunchUI",
+    "strAudioImpactLoot" : "TXTRandomMissile01Audio",
+    "fCamShakeAmount" : 1,
+    "fFireChanceCoeff" : 0.25,
+    "aTriggerConds" : [
+      "IsWall",
+      "IsRigid",
+      "IsPortal"
+    ]
+  },
+  {
+    "strName" : "MissileAttack02",
+    "strType" : "circularBlast",
+    "fTotalDamage"  : 450.0,
+    "fRadius" : 9,
+    "nSoftEdgeTileRadius"  : 3,
+    "strJsonAttackMode" : "AModeRandomWoundFatal",
+    "strAudioAttack" : "ShipWeaponMissileLaunchUI",
+    "strAudioImpactLoot" : "TXTRandomMissile02Audio",
+    "fCamShakeAmount" : 0.75,
+    "fFireChanceCoeff" : 0.25,
+    "aTriggerConds" : [
+      "IsWall",
+      "IsRigid",
+      "IsPortal"
+    ]
+  },
+  {
+    "strName" : "MissileAttack03",
+    "strType" : "circularBlast",
+    "fTotalDamage"  : 300.0,
+    "fRadius" : 6,
+    "nSoftEdgeTileRadius"  : 3,
+    "strJsonAttackMode" : "AModeRandomWoundFatal",
+    "strAudioAttack" : "ShipWeaponMissileLaunchUI",
+    "strAudioImpactLoot" : "TXTRandomMissile03Audio",
+    "fCamShakeAmount" : 0.5,
+    "fFireChanceCoeff" : 0.25,
+    "aTriggerConds" : [
+      "IsWall",
+      "IsRigid",
+      "IsPortal"
+    ]
+  },
+  {
+    "strName" : "PointDefenseImpact",
+    "strType" : "point",
+    "fTotalDamage"  : 15,
+    "fRadius" : 1,
+    "strJsonAttackMode" : "AModeRandomWoundFatal",
+    "strAudioAttack" : "ShipWeaponPDCLaunchUI",
+    "strAudioImpactLoot" : "TXTRandomBangAudio",
+    "fCamShakeAmount" : 0.1,
+    "fFireChanceCoeff" : 0.1,
+    "nSoftEdgeTileRadius"  : 2
+  },
+  {
+    "strName" : "ScuttleImpact",
+    "strType" : "ray",
+    "fMaxRange"  : 10,
+    "fSpread" : 0,
+    "fTotalDamage"  : 500.0,
+    "nSoftEdgeTileRadius"  : 1,
+    "fRadius" : 1,
+    "strJsonAttackMode" : "AModeRandomWoundFatal",
+    "strAudioAttack" : "",
+    "strAudioImpact" : null,
+    "fCamShakeAmount" : 0.2
+  },
+  {
+    "strName" : "MissileDecoy01",
+    "strType" : "point",
+    "fTotalDamage"  : 15,
+    "fRadius" : 1,
+    "strJsonAttackMode" : "AModeRandomWoundFatal",
+    "strAudioAttack" : "ShipWeaponMissileLaunchUI",
+    "strAudioImpactLoot" : "TXTRandomBangAudio",
+    "fCamShakeAmount" : 0.1,
+    "fFireChanceCoeff" : 0.1,
+    "nSoftEdgeTileRadius"  : 2
+  }
+]

@@ -1,0 +1,217 @@
+
+[
+  {
+    "strName" : "CT_STKMedHeistPersuade_Intro_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aReqs"       : [
+      "IsSocialGreeted"
+    ],
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKMedHeistPersuade_Intro_Them",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aReqs"       : [
+      "IsSocialGreeted"
+    ],
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKMedHeistPersuade_Intro_Allow_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKMedHeistPersuade_Intro_Allow_Them",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKMedHeistPersuade_Fail_Hard_DcAutonomyBad_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aReqs"       : [
+      "DcAutonomy05"
+    ],
+    "aTriggersForbid" : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : false,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKMedHeistPersuade_Fail_Hard_DcAutonomyBad_Them",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggersForbid" : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : false,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKMedHeistPersuade_Gambit_SecurityVAutonomy_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKMedHeistPersuade_Gambit_SecurityVAutonomy_Them",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKMedHeistPersuade_Gambit_SecurityVAutonomy_Allow_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aReqs"       : [
+      "DcSecurity05",
+      "DcSecurity04"
+    ],
+    "aTriggersForbid" : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : false,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKMedHeistPersuade_Gambit_SecurityVAutonomy_Allow_Them",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggersForbid" : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : false,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKMedHeistPersuade_Gambit_SecurityVAutonomy_Fail_Soft_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aReqs"       : [
+      "DcAutonomy03",
+      "DcAutonomy04",
+      "DcAutonomy05"
+    ],
+    "aTriggersForbid" : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : false,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKMedHeistPersuade_Gambit_SecurityVAutonomy_Fail_Soft_Them",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggersForbid" : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : false,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKMedHeistPersuade_Gambit_SecurityVAutonomy_Fail_Hard_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aReqs"       : [
+      "DcAutonomy01",
+      "DcAutonomy02"
+    ],
+    "aTriggersForbid" : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : false,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKMedHeistPersuade_Gambit_SecurityVAutonomy_Fail_Hard_Them",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggersForbid" : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : false,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKMedHeistPersuade_Exit_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKMedHeistPersuade_Exit_Them",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  }
+]

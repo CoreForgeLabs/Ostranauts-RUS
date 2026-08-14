@@ -1,0 +1,6803 @@
+
+[
+  {
+    "strName" : "_test_zone",
+    "strRegID" : "O-GUST",
+    "nCurrentWaypoint" : -1,
+    "fTimeEngaged"     : 2.760578,
+    "fWearManeuver"    : 0.0,
+    "fWearAccrued"     : 0.0,
+    "shipCO"           : {
+      "strID" : "CO-O-GUST",
+      "strCODef" : "ShipCO",
+      "bAlive"   : true,
+      "aConds"   : [
+        "StatInstallProgressMax=1.0x1000",
+        "StatUninstallProgressMax=1.0x1000",
+        "StatRepairProgressMax=1.0x1000",
+        "DEFAULT"
+      ],
+      "strCondID" : "O-GUST",
+      "inventoryX" : 0,
+      "inventoryY" : 0,
+      "fDGasTemp"  : 0.0,
+      "fLastICOUpdate" : 65627498854.0278,
+      "nDestTile"      : 0,
+      "strIdleAnim"    : "Idle",
+      "aMyShips"       : [
+        "B-EEMA",
+        "O-GUST"
+      ],
+      "strFriendlyName" : "CO-O-GUST",
+      "strRegIDLast"    : "O-GUST",
+      "fMSRedamageAmount" : 0.0
+    },
+    "aItems"           : [
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -2.0,
+        "fY"      : -2.0,
+        "fRotation" : 0.0,
+        "strID"     : "fc5c3549-3dfd-442f-aa13-d83b878ad6b3"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -2.0,
+        "fY"      : -1.0,
+        "fRotation" : 0.0,
+        "strID"     : "57fce60e-e1fd-44d8-9028-e41a63f759be"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -2.0,
+        "fY"      : 0.0,
+        "fRotation" : 0.0,
+        "strID"     : "d6895989-9784-411a-8b43-a20a959cb0b8"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -1.0,
+        "fY"      : -2.0,
+        "fRotation" : 0.0,
+        "strID"     : "ea105c22-12e1-4908-8660-d6548f87ae66"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -1.0,
+        "fY"      : -1.0,
+        "fRotation" : 0.0,
+        "strID"     : "7c6133f1-b52d-46a3-819e-efab7382da98"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -1.0,
+        "fY"      : 0.0,
+        "fRotation" : 0.0,
+        "strID"     : "3987d9c8-079d-49cd-96f2-4543a7a9cdad"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 0.0,
+        "fY"      : -2.0,
+        "fRotation" : 0.0,
+        "strID"     : "2c00f785-ddb6-4de1-ba36-08067af8781e"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 0.0,
+        "fY"      : -1.0,
+        "fRotation" : 0.0,
+        "strID"     : "c9d1ca1e-c659-4174-bec0-f50f11a00e63"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 0.0,
+        "fY"      : 0.0,
+        "fRotation" : 0.0,
+        "strID"     : "f703b7cd-8d28-4dc0-a2f5-98bbf77e7b8f"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -2.0,
+        "fY"      : -4.0,
+        "fRotation" : 180.0,
+        "strID"     : "68772ed0-39ae-4f1b-9404-895bdb2d52c9",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00188154946006409,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -2.0,
+        "fY"      : -3.0,
+        "fRotation" : 0.0,
+        "strID"     : "d05eecde-2714-4837-a6f3-786de92917c1"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -1.0,
+        "fY"      : -4.0,
+        "fRotation" : 180.0,
+        "strID"     : "3c7a1511-c9ba-482e-b52b-ce20b86a2fca",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187713084437185,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -1.0,
+        "fY"      : -3.0,
+        "fRotation" : 0.0,
+        "strID"     : "fbc7e873-0b50-4ce3-a463-1d5c2f412849"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 0.0,
+        "fY"      : -4.0,
+        "fRotation" : 180.0,
+        "strID"     : "8b680740-6c76-4cde-adce-0723dc59a5f4",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187862768636182,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 0.0,
+        "fY"      : -3.0,
+        "fRotation" : 0.0,
+        "strID"     : "25ecd306-4301-4e55-969b-96da11b877de"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 1.0,
+        "fY"      : -4.0,
+        "fRotation" : 180.0,
+        "strID"     : "6a7d38b5-3544-4928-9bc8-4a3cc91e3d18",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00188007756862808,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 1.0,
+        "fY"      : -3.0,
+        "fRotation" : 0.0,
+        "strID"     : "0e1f9186-ba9e-47e8-bb2d-0b240698d998"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 1.0,
+        "fY"      : -2.0,
+        "fRotation" : 0.0,
+        "strID"     : "3fa4fe00-b9e0-4460-8ba3-f72518c9b141"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 1.0,
+        "fY"      : -1.0,
+        "fRotation" : 0.0,
+        "strID"     : "7683ddcd-dec5-4c6f-80db-15bbcf29735c"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 1.0,
+        "fY"      : 0.0,
+        "fRotation" : 0.0,
+        "strID"     : "ee7fa47a-563d-40b4-9576-5b8c3413b0bc"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 2.0,
+        "fY"      : -4.0,
+        "fRotation" : 180.0,
+        "strID"     : "5bd72c2b-1e22-49bc-89a4-f38e663dae84",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00188200187053951,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 2.0,
+        "fY"      : -3.0,
+        "fRotation" : 0.0,
+        "strID"     : "fee47384-6829-4589-af00-af4727f41cbb"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 2.0,
+        "fY"      : -2.0,
+        "fRotation" : 0.0,
+        "strID"     : "090e5342-a228-49ca-b393-bc2bd67665a4"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 2.0,
+        "fY"      : -1.0,
+        "fRotation" : 0.0,
+        "strID"     : "68470ad8-d256-4158-a2f8-b99a8d999758"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 2.0,
+        "fY"      : 0.0,
+        "fRotation" : 0.0,
+        "strID"     : "e87d0f04-0a87-411f-991c-8a6569205855"
+      },
+      {
+        "strName" : "ItmFloorMSHG09C",
+        "fX"      : -10.0,
+        "fY"      : 3.0,
+        "fRotation" : 90.0,
+        "strID"     : "1b00b27a-1542-499a-b281-757966fd7ba1"
+      },
+      {
+        "strName" : "ItmFloorMSHG09C",
+        "fX"      : 17.0,
+        "fY"      : 3.0,
+        "fRotation" : 180.0,
+        "strID"     : "3d6a3e1e-f726-48b8-b2b7-90c242c93675"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -10.0,
+        "fY"      : -3.0,
+        "fRotation" : 90.0,
+        "strID"     : "912d96d8-1a2a-407b-ac2b-db9a4a128be2",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187717550700241,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -10.0,
+        "fY"      : -2.0,
+        "fRotation" : 90.0,
+        "strID"     : "b381b7da-eb04-437a-8f60-1b23a83e70d6",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00188009908522966,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -10.0,
+        "fY"      : -1.0,
+        "fRotation" : 90.0,
+        "strID"     : "29223f3c-9d42-472a-8b1c-d07c4384f093",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00188034093152544,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -10.0,
+        "fY"      : 0.0,
+        "fRotation" : 90.0,
+        "strID"     : "9cab2141-8b2a-48f2-879f-cfb0bfd84f3f",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187688829938576,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -10.0,
+        "fY"      : 1.0,
+        "fRotation" : 90.0,
+        "strID"     : "bfa9b28d-e8f7-42fe-a2a4-1b94b2d9f162",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.001877355431657,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09C",
+        "fX"      : 17.0,
+        "fY"      : -4.0,
+        "fRotation" : 180.0,
+        "strID"     : "52f8891d-fea2-4cf0-80e3-dfa11e5f7906"
+      },
+      {
+        "strName" : "ItmFloorMSHG09C",
+        "fX"      : 17.0,
+        "fY"      : -11.0,
+        "fRotation" : 180.0,
+        "strID"     : "283ef7d8-6188-4a14-a069-cce348226c25"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -10.0,
+        "fY"      : 4.0,
+        "fRotation" : 90.0,
+        "strID"     : "4b256ec7-77c7-4b62-b553-16169691e26a",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187568124600165,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -10.0,
+        "fY"      : 5.0,
+        "fRotation" : 90.0,
+        "strID"     : "7157e9b9-4df3-42eb-927b-a2a20bf5d6d7",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187814251309079,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -10.0,
+        "fY"      : 6.0,
+        "fRotation" : 90.0,
+        "strID"     : "9df02da6-e374-49f1-b2b3-e09fd84a1da1",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00188027449134692,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -10.0,
+        "fY"      : 7.0,
+        "fRotation" : 90.0,
+        "strID"     : "c97a9a3b-e13d-41d5-865c-f5206512b072",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187682177675838,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -10.0,
+        "fY"      : 8.0,
+        "fRotation" : 90.0,
+        "strID"     : "68d3e2b7-0327-4379-883d-9ef2bb221a4f",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00188182211843253,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09C",
+        "fX"      : -10.0,
+        "fY"      : -4.0,
+        "fRotation" : 90.0,
+        "strID"     : "6af51e59-62a5-4e8f-976e-23f7350e2ad2"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -9.0,
+        "fY"      : -5.0,
+        "fRotation" : 0.0,
+        "strID"     : "dca12b69-4261-4b57-9ec9-22afd0fbfc21",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.0018794888897426,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -9.0,
+        "fY"      : -4.0,
+        "fRotation" : 180.0,
+        "strID"     : "1c95f74c-e5ff-4983-855c-0b1339373896",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187788119356509,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -9.0,
+        "fY"      : -3.0,
+        "fRotation" : 0.0,
+        "strID"     : "7fee59d0-7963-4e7b-bb21-a919279201ae"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -9.0,
+        "fY"      : -2.0,
+        "fRotation" : 0.0,
+        "strID"     : "949e2402-af5b-4d29-9ee0-446ed0dd540a"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -9.0,
+        "fY"      : -1.0,
+        "fRotation" : 0.0,
+        "strID"     : "99b52385-985a-4607-8005-a3ee521149a3"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -9.0,
+        "fY"      : 0.0,
+        "fRotation" : 0.0,
+        "strID"     : "f4bb238d-f724-403e-927b-8fef067b0ebc"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -9.0,
+        "fY"      : 1.0,
+        "fRotation" : 0.0,
+        "strID"     : "66c9e9ca-5847-4558-b199-1a221b286088"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -9.0,
+        "fY"      : 2.0,
+        "fRotation" : 0.0,
+        "strID"     : "87384fd4-b0bf-48b5-9f0e-dedd91de886f",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187963943370467,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -9.0,
+        "fY"      : 3.0,
+        "fRotation" : 180.0,
+        "strID"     : "0b55d200-1111-4608-9229-8167eacff7e7",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00188102973477228,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -9.0,
+        "fY"      : 4.0,
+        "fRotation" : 0.0,
+        "strID"     : "9fac3687-db74-48e8-b7f7-144cf66d9a3a"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -9.0,
+        "fY"      : 5.0,
+        "fRotation" : 0.0,
+        "strID"     : "7eef47cb-4cc7-4073-b69d-510c862750ea"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -9.0,
+        "fY"      : 6.0,
+        "fRotation" : 0.0,
+        "strID"     : "39ac7a8b-b6da-496d-a41a-e69edc82581e"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -9.0,
+        "fY"      : 7.0,
+        "fRotation" : 0.0,
+        "strID"     : "477fa494-b7e2-4182-9e29-12ffeb1c393c"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -9.0,
+        "fY"      : 8.0,
+        "fRotation" : 0.0,
+        "strID"     : "7784ddce-c3f7-496f-9d52-363339e87563"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -9.0,
+        "fY"      : 9.0,
+        "fRotation" : 0.0,
+        "strID"     : "6b83893b-e76c-4745-a44f-169e203fe4df",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187928938603456,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -8.0,
+        "fY"      : -5.0,
+        "fRotation" : 0.0,
+        "strID"     : "edc4e7c7-b009-4901-b87a-63838548b2b1",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00188055662198398,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -8.0,
+        "fY"      : -4.0,
+        "fRotation" : 180.0,
+        "strID"     : "c267f59a-4c6a-424e-aa8c-e99585728240",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00188085875284366,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -8.0,
+        "fY"      : -3.0,
+        "fRotation" : 0.0,
+        "strID"     : "9cf6b90f-db4d-4d2f-9ac5-50ea5966f7d8"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -8.0,
+        "fY"      : -2.0,
+        "fRotation" : 0.0,
+        "strID"     : "6f04d2ac-76b5-4fb6-8848-bdef8c5058ad"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -8.0,
+        "fY"      : -1.0,
+        "fRotation" : 0.0,
+        "strID"     : "89ab1f18-c3c3-42e0-93b1-26f18e1d8518"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -8.0,
+        "fY"      : 0.0,
+        "fRotation" : 0.0,
+        "strID"     : "f226714b-9a1a-4e5a-95d1-0ee29bebad19"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -8.0,
+        "fY"      : 1.0,
+        "fRotation" : 0.0,
+        "strID"     : "68a04731-7e55-45e4-ac94-f10f4ecebacb"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -8.0,
+        "fY"      : 2.0,
+        "fRotation" : 0.0,
+        "strID"     : "02e7b6e8-932d-407c-a19a-4a04e2e6f820",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00188055184845019,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -8.0,
+        "fY"      : 3.0,
+        "fRotation" : 180.0,
+        "strID"     : "1a120c02-e370-4bcf-bd78-4cd6a1ccab34",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00188122158306149,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -8.0,
+        "fY"      : 4.0,
+        "fRotation" : 0.0,
+        "strID"     : "c73c4fc0-9e49-4995-b8a0-04b73f57c13e"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -8.0,
+        "fY"      : 5.0,
+        "fRotation" : 0.0,
+        "strID"     : "a89e83cb-ad2b-485a-9fc7-43616d11c300"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -8.0,
+        "fY"      : 6.0,
+        "fRotation" : 0.0,
+        "strID"     : "e197fcc4-b830-4313-922c-a145cf22feae"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -8.0,
+        "fY"      : 7.0,
+        "fRotation" : 0.0,
+        "strID"     : "c5915d98-197c-4eb2-9844-f277a509aaf2"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -8.0,
+        "fY"      : 8.0,
+        "fRotation" : 0.0,
+        "strID"     : "2619ed19-58e6-4a19-95cc-f8c0f3da25d6"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -8.0,
+        "fY"      : 9.0,
+        "fRotation" : 0.0,
+        "strID"     : "c189306f-b816-4f0d-bc41-e8e620dca5d0",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187647612862725,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -7.0,
+        "fY"      : -5.0,
+        "fRotation" : 0.0,
+        "strID"     : "47cc2202-81ed-4f35-9f05-eabb318328de",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00188172811738626,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -7.0,
+        "fY"      : -4.0,
+        "fRotation" : 180.0,
+        "strID"     : "58faaa1c-f7cf-4350-bedb-9ef0bc928b53",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187724575597811,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -7.0,
+        "fY"      : -3.0,
+        "fRotation" : 0.0,
+        "strID"     : "4eca5e25-b7bf-4325-89c1-4b479173dacb"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -7.0,
+        "fY"      : -2.0,
+        "fRotation" : 0.0,
+        "strID"     : "ea613cbe-83ee-41e9-bea7-001e923313a5"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -7.0,
+        "fY"      : -1.0,
+        "fRotation" : 0.0,
+        "strID"     : "2a303fa2-7397-4faf-a624-21e780b1ebaa"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -7.0,
+        "fY"      : 0.0,
+        "fRotation" : 0.0,
+        "strID"     : "85dfa3db-e3b5-4785-8ee3-7e8524d1d9fa"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -7.0,
+        "fY"      : 1.0,
+        "fRotation" : 0.0,
+        "strID"     : "2c9c27ea-7cf4-4365-89a8-8ee6226eeeb8"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -7.0,
+        "fY"      : 2.0,
+        "fRotation" : 0.0,
+        "strID"     : "381f2911-a8dc-4d7f-aaf7-fa32b67721cf",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187528075960608,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -7.0,
+        "fY"      : 3.0,
+        "fRotation" : 180.0,
+        "strID"     : "6f0f14ab-158f-44dc-8c01-84d31df4f872",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187597577541676,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -7.0,
+        "fY"      : 4.0,
+        "fRotation" : 0.0,
+        "strID"     : "13794e44-2caf-4546-b172-9a80326eee99"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -7.0,
+        "fY"      : 5.0,
+        "fRotation" : 0.0,
+        "strID"     : "1ee1b76f-6e9a-49fc-b03a-90fba67ddcb0"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -7.0,
+        "fY"      : 6.0,
+        "fRotation" : 0.0,
+        "strID"     : "42ba2db4-16d0-4078-a22a-6fe47f724c2c"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -7.0,
+        "fY"      : 7.0,
+        "fRotation" : 0.0,
+        "strID"     : "fc761f6e-bac6-4feb-94e5-d96d98a586f7"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -7.0,
+        "fY"      : 8.0,
+        "fRotation" : 0.0,
+        "strID"     : "3ba0c6e1-1b50-464e-94ee-12c56bba8632"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -7.0,
+        "fY"      : 9.0,
+        "fRotation" : 0.0,
+        "strID"     : "59c76b11-0bf5-41d8-9c20-32f61259bf6d",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187891070013664,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -6.0,
+        "fY"      : -5.0,
+        "fRotation" : 0.0,
+        "strID"     : "d3927ee1-b743-4d48-af90-b08b72239472",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187720014986064,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -6.0,
+        "fY"      : -4.0,
+        "fRotation" : 180.0,
+        "strID"     : "b6bc763a-0901-47bb-aeb2-0011a2654bb0",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00188137112743743,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -6.0,
+        "fY"      : -3.0,
+        "fRotation" : 0.0,
+        "strID"     : "d2d1d6d5-14d7-4583-9114-5a1e251439b4"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -6.0,
+        "fY"      : -2.0,
+        "fRotation" : 0.0,
+        "strID"     : "fa86e205-9c67-44ae-a9f6-019ee0bb992d"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -6.0,
+        "fY"      : -1.0,
+        "fRotation" : 0.0,
+        "strID"     : "cff1076f-1406-4daa-8fd6-1e7a10ee8365"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -6.0,
+        "fY"      : 0.0,
+        "fRotation" : 0.0,
+        "strID"     : "8ba9efc7-c400-45d2-816b-8a7c5eaefb4a"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -6.0,
+        "fY"      : 1.0,
+        "fRotation" : 0.0,
+        "strID"     : "d00360d5-b933-4e28-ac82-865b69cd15ff"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -6.0,
+        "fY"      : 2.0,
+        "fRotation" : 0.0,
+        "strID"     : "8763162e-16d4-4890-badd-02fb65c59247",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00188133788354849,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -6.0,
+        "fY"      : 3.0,
+        "fRotation" : 180.0,
+        "strID"     : "2c62d706-cfd7-42a8-8f51-166d140704bd",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187849470400618,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -6.0,
+        "fY"      : 4.0,
+        "fRotation" : 0.0,
+        "strID"     : "5d581ba8-50d3-4823-b9fd-8054b628da1a"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -6.0,
+        "fY"      : 5.0,
+        "fRotation" : 0.0,
+        "strID"     : "6758d1e3-8838-49b0-a129-0c13dc46caa3"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -6.0,
+        "fY"      : 6.0,
+        "fRotation" : 0.0,
+        "strID"     : "37bf47a0-cc74-4b31-a440-a3a3295cbd73"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -6.0,
+        "fY"      : 7.0,
+        "fRotation" : 0.0,
+        "strID"     : "46cb0386-3a78-42e6-8236-05e4ce5ba7fc"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -6.0,
+        "fY"      : 8.0,
+        "fRotation" : 0.0,
+        "strID"     : "05f07427-5ad6-449a-a2fe-692dd5b3f42f"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -6.0,
+        "fY"      : 9.0,
+        "fRotation" : 0.0,
+        "strID"     : "f993f3bf-4e93-4e45-a620-a6f194ecae08",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187548870157209,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -5.0,
+        "fY"      : -5.0,
+        "fRotation" : 0.0,
+        "strID"     : "1af89775-4868-4909-b6ce-c11233b97ad5",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00188147553233941,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -5.0,
+        "fY"      : -4.0,
+        "fRotation" : 180.0,
+        "strID"     : "f952e057-df1b-4d8b-ac82-3f61aec1437a",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187574940315636,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -5.0,
+        "fY"      : -3.0,
+        "fRotation" : 0.0,
+        "strID"     : "9fe17c9c-6e9d-4684-bb84-79b94559f100"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -5.0,
+        "fY"      : -2.0,
+        "fRotation" : 0.0,
+        "strID"     : "8bf4bd2e-58d2-453d-b419-8df1a733c599"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -5.0,
+        "fY"      : -1.0,
+        "fRotation" : 0.0,
+        "strID"     : "c68ff653-7c34-4472-941c-d7bf4d794458"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -5.0,
+        "fY"      : 0.0,
+        "fRotation" : 0.0,
+        "strID"     : "27ece743-517c-4886-9604-4751973730fb"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -5.0,
+        "fY"      : 1.0,
+        "fRotation" : 0.0,
+        "strID"     : "350154fe-83ea-4204-8129-2fed11df8e39"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -5.0,
+        "fY"      : 2.0,
+        "fRotation" : 0.0,
+        "strID"     : "1136df04-223c-4581-a554-13373176115e",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.0018781411429098,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -5.0,
+        "fY"      : 3.0,
+        "fRotation" : 180.0,
+        "strID"     : "8e4fc3e6-7438-4c08-bddc-0486bb42faf3",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187513430748726,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -5.0,
+        "fY"      : 4.0,
+        "fRotation" : 0.0,
+        "strID"     : "f962f148-deb7-44d6-9c6c-e0a61047efe8"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -5.0,
+        "fY"      : 5.0,
+        "fRotation" : 0.0,
+        "strID"     : "2adaa7e5-ff8f-4397-bd69-d685a62b1c6b"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -5.0,
+        "fY"      : 6.0,
+        "fRotation" : 0.0,
+        "strID"     : "76be28ef-3219-47c1-b135-1a4c55792d05"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -5.0,
+        "fY"      : 7.0,
+        "fRotation" : 0.0,
+        "strID"     : "596a621b-06e6-46bd-a9fe-df3df20882cd"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -5.0,
+        "fY"      : 8.0,
+        "fRotation" : 0.0,
+        "strID"     : "8c21b712-0fdb-4b76-856a-bc427dcec8aa"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -5.0,
+        "fY"      : 9.0,
+        "fRotation" : 0.0,
+        "strID"     : "86432566-f755-4c82-b93e-638481206e1f",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187770192765137,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09C",
+        "fX"      : 11.0,
+        "fY"      : -5.0,
+        "fRotation" : 0.0,
+        "strID"     : "877ea1c2-1406-45f7-bc40-0894e34d0a5f"
+      },
+      {
+        "strName" : "ItmFloorMSHG09C",
+        "fX"      : 11.0,
+        "fY"      : 2.0,
+        "fRotation" : 0.0,
+        "strID"     : "fe7553f8-4446-47de-ba2d-6e8bbc94d080"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -4.0,
+        "fY"      : -3.0,
+        "fRotation" : 270.0,
+        "strID"     : "377d13b2-e76b-49fa-9ccf-8f8607e47225",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00375660294387231,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -4.0,
+        "fY"      : -2.0,
+        "fRotation" : 270.0,
+        "strID"     : "5ea7f4be-50c6-488b-aa3d-745f84d8e17d",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00375294504127957,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -4.0,
+        "fY"      : -1.0,
+        "fRotation" : 270.0,
+        "strID"     : "7b466f28-124d-4a8d-97af-15042c194d5b",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.0037562423695232,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -4.0,
+        "fY"      : 0.0,
+        "fRotation" : 270.0,
+        "strID"     : "bcb50f30-3ffa-4af1-9d8e-b93c0642a70c",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00375245138087626,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -4.0,
+        "fY"      : 1.0,
+        "fRotation" : 270.0,
+        "strID"     : "d063e7b3-48b9-4373-8320-8b180260f6e4",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00375125965447957,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09C",
+        "fX"      : -3.0,
+        "fY"      : 3.0,
+        "fRotation" : 90.0,
+        "strID"     : "df8e7c47-912d-4844-8165-7e2b4793148d"
+      },
+      {
+        "strName" : "ItmFloorMSHG09C",
+        "fX"      : -3.0,
+        "fY"      : -4.0,
+        "fRotation" : 90.0,
+        "strID"     : "53662252-4157-4a24-87db-7f6caaf455bb"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -4.0,
+        "fY"      : 4.0,
+        "fRotation" : 270.0,
+        "strID"     : "d1a5e9b9-e49d-46c9-90aa-12755146803e",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187693013920547,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -4.0,
+        "fY"      : 5.0,
+        "fRotation" : 270.0,
+        "strID"     : "a7f7af77-8382-47c9-b0c4-0e976760e28d",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.0018750375006299,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -4.0,
+        "fY"      : 6.0,
+        "fRotation" : 270.0,
+        "strID"     : "c5200509-5005-4d39-b6e1-b69078923027",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187695810721758,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -4.0,
+        "fY"      : 7.0,
+        "fRotation" : 270.0,
+        "strID"     : "7393d310-b65e-492f-aeb7-9689ddd2f950",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00188107882839139,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -4.0,
+        "fY"      : 8.0,
+        "fRotation" : 270.0,
+        "strID"     : "2b9c0777-ac4e-4bcd-a3b5-f82390c75e70",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187948145659569,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09C",
+        "fX"      : 4.0,
+        "fY"      : 9.0,
+        "fRotation" : 0.0,
+        "strID"     : "78b86531-8e8e-4bf4-9996-b309f7557e99"
+      },
+      {
+        "strName" : "ItmFloorMSHG09C",
+        "fX"      : 4.0,
+        "fY"      : 2.0,
+        "fRotation" : 0.0,
+        "strID"     : "553e21b0-8881-4f55-8bdc-397cdc4cc916"
+      },
+      {
+        "strName" : "ItmFloorMSHG09C",
+        "fX"      : -3.0,
+        "fY"      : 2.0,
+        "fRotation" : 0.0,
+        "strID"     : "115d3163-ec6d-4d60-b1d8-263679d36929"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -3.0,
+        "fY"      : -3.0,
+        "fRotation" : 90.0,
+        "strID"     : "324b9394-54aa-4eac-b44a-b74e9541f446",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187899483196979,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -3.0,
+        "fY"      : -2.0,
+        "fRotation" : 90.0,
+        "strID"     : "ed232fb7-60ae-40ff-8c43-45a95b933dc6",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00188069631074661,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -3.0,
+        "fY"      : -1.0,
+        "fRotation" : 90.0,
+        "strID"     : "80244e64-9266-450b-ba12-3253884ea3c2",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00188126793546862,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -3.0,
+        "fY"      : 0.0,
+        "fRotation" : 90.0,
+        "strID"     : "d531863b-a9c0-45cf-a0b4-c73a7ecc5061",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187859322783973,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -3.0,
+        "fY"      : 1.0,
+        "fRotation" : 90.0,
+        "strID"     : "3754cdb6-3f1f-48bb-9500-b3307c56b801",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187967950809887,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09C",
+        "fX"      : 4.0,
+        "fY"      : -4.0,
+        "fRotation" : 90.0,
+        "strID"     : "4cb01a81-5b17-4cc8-b8de-f354fb45b4d8"
+      },
+      {
+        "strName" : "ItmFloorMSHG09C",
+        "fX"      : 4.0,
+        "fY"      : 3.0,
+        "fRotation" : 90.0,
+        "strID"     : "2fb2a990-42cb-4c37-b921-1c5ae2e5280f"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -3.0,
+        "fY"      : 4.0,
+        "fRotation" : 90.0,
+        "strID"     : "d694f9c5-5cd7-413d-b4a0-688a84ad7fa7",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.0018762010333426,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -3.0,
+        "fY"      : 5.0,
+        "fRotation" : 90.0,
+        "strID"     : "35fbd991-face-4880-80a8-8616f6d547b3",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187772215822079,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -3.0,
+        "fY"      : 6.0,
+        "fRotation" : 90.0,
+        "strID"     : "7daac4ae-2c6e-4b43-885f-53a6116c8dd6",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00188207143697468,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -3.0,
+        "fY"      : 7.0,
+        "fRotation" : 90.0,
+        "strID"     : "a2f47eda-a20b-46c0-89ba-c503c2569b06",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187647435555184,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -3.0,
+        "fY"      : 8.0,
+        "fRotation" : 90.0,
+        "strID"     : "af672ceb-9fab-4a50-ac69-d3ae6ee34c8a",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.001876825192861,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09C",
+        "fX"      : -3.0,
+        "fY"      : 9.0,
+        "fRotation" : 0.0,
+        "strID"     : "937aae03-7715-4bbd-9803-d1f1b62702ed"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -2.0,
+        "fY"      : -5.0,
+        "fRotation" : 0.0,
+        "strID"     : "c3156489-99ee-4e9f-84b6-cfb0ee7bbae7",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187926580481161,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -2.0,
+        "fY"      : 1.0,
+        "fRotation" : 0.0,
+        "strID"     : "e0c11ab6-1945-4bb9-94c2-6c38fab2ceb6"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -2.0,
+        "fY"      : 2.0,
+        "fRotation" : 0.0,
+        "strID"     : "396a37bf-11b1-4d4c-b21f-950eb4a411cf",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187960613116655,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -2.0,
+        "fY"      : 3.0,
+        "fRotation" : 180.0,
+        "strID"     : "fd8d3a1f-091b-4246-893c-0b39dc3bc7f6",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187889118270733,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -2.0,
+        "fY"      : 4.0,
+        "fRotation" : 0.0,
+        "strID"     : "4d5a92e1-7937-4a8a-ac94-73b421b71420"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -2.0,
+        "fY"      : 5.0,
+        "fRotation" : 0.0,
+        "strID"     : "ff889649-e0c3-4826-bbd8-d3f9b16c2bf1"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -2.0,
+        "fY"      : 6.0,
+        "fRotation" : 0.0,
+        "strID"     : "a96c179b-62b9-47be-9652-f37d25813191"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -2.0,
+        "fY"      : 7.0,
+        "fRotation" : 0.0,
+        "strID"     : "e70ec0a9-3ffd-4617-b6fc-a7988195a55f"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -2.0,
+        "fY"      : 8.0,
+        "fRotation" : 0.0,
+        "strID"     : "9998181b-089a-462c-be24-ab8d4704a115"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -2.0,
+        "fY"      : 9.0,
+        "fRotation" : 0.0,
+        "strID"     : "dd44aa92-8047-45d1-a00a-b6f059fc7191",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187838503087726,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -1.0,
+        "fY"      : -5.0,
+        "fRotation" : 0.0,
+        "strID"     : "3dbd18e3-4ae0-4840-96a6-fc6dfde9f03f",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187502642868345,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -1.0,
+        "fY"      : 1.0,
+        "fRotation" : 0.0,
+        "strID"     : "3c9b9fa9-ee56-4599-b585-178b3f0eab06"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -1.0,
+        "fY"      : 2.0,
+        "fRotation" : 0.0,
+        "strID"     : "de8b72d9-d31e-4e97-9909-6a97a0c5d2d1",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00188203478463302,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -1.0,
+        "fY"      : 3.0,
+        "fRotation" : 180.0,
+        "strID"     : "7bdc2a28-ab54-4000-8446-966b1e6a1e07",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187555184889629,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -1.0,
+        "fY"      : 4.0,
+        "fRotation" : 0.0,
+        "strID"     : "eb2e572b-a468-44e9-8f52-1085b1c93ac4"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -1.0,
+        "fY"      : 5.0,
+        "fRotation" : 0.0,
+        "strID"     : "14b8324a-e05e-495c-a798-a0b172eb7aa5"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -1.0,
+        "fY"      : 6.0,
+        "fRotation" : 0.0,
+        "strID"     : "27829ff0-24fa-4a97-b64a-a3ab02f0a128"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -1.0,
+        "fY"      : 7.0,
+        "fRotation" : 0.0,
+        "strID"     : "3880b455-2845-4b61-98cd-329ef33fb641"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -1.0,
+        "fY"      : 8.0,
+        "fRotation" : 0.0,
+        "strID"     : "e33a0f87-d5bb-48d1-843c-2a447b71a64d"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -1.0,
+        "fY"      : 9.0,
+        "fRotation" : 0.0,
+        "strID"     : "aebe4115-cbbe-4c24-8dee-b1a6be566e8b",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00188207673920114,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 0.0,
+        "fY"      : -5.0,
+        "fRotation" : 0.0,
+        "strID"     : "5ae30199-9b3f-44b9-b4ea-85b908818e18",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00188108252244015,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 0.0,
+        "fY"      : 1.0,
+        "fRotation" : 0.0,
+        "strID"     : "df1f85d4-f3ea-440f-8d7a-0858fd9e59c3"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 0.0,
+        "fY"      : 2.0,
+        "fRotation" : 0.0,
+        "strID"     : "c042cb56-6522-479d-a3a8-b31823f9c07b",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187694915174178,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 0.0,
+        "fY"      : 3.0,
+        "fRotation" : 180.0,
+        "strID"     : "efbb8bb2-2b23-4a95-b326-9d7ed32cba6f",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187659271131034,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 0.0,
+        "fY"      : 4.0,
+        "fRotation" : 0.0,
+        "strID"     : "652dfdfc-5408-441d-abfa-b980d205a99b"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 0.0,
+        "fY"      : 5.0,
+        "fRotation" : 0.0,
+        "strID"     : "99b48efc-fae0-46fc-8aaa-bb14fc2e1b33"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 0.0,
+        "fY"      : 6.0,
+        "fRotation" : 0.0,
+        "strID"     : "d0c5d2b6-a22c-47a1-98e4-e45d6e57d114"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 0.0,
+        "fY"      : 7.0,
+        "fRotation" : 0.0,
+        "strID"     : "5b2c969b-9690-4e05-b550-a5509a42d2cc"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 0.0,
+        "fY"      : 8.0,
+        "fRotation" : 0.0,
+        "strID"     : "86c9b224-2db5-44a9-aee4-962c9c3303a8"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 0.0,
+        "fY"      : 9.0,
+        "fRotation" : 0.0,
+        "strID"     : "a7573756-dee7-4db8-a5af-b37684b51e07",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187833062228186,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 1.0,
+        "fY"      : -5.0,
+        "fRotation" : 0.0,
+        "strID"     : "fb07879c-ca47-4f79-96e9-3f53f0c2ca3f",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187587587885224,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 1.0,
+        "fY"      : 1.0,
+        "fRotation" : 0.0,
+        "strID"     : "0b6dc72f-6922-4246-b0de-f21b6eacf9d9"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 1.0,
+        "fY"      : 2.0,
+        "fRotation" : 0.0,
+        "strID"     : "88b0cbd1-b6ae-4848-9eaa-90080aac3573",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187881288519325,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 1.0,
+        "fY"      : 3.0,
+        "fRotation" : 180.0,
+        "strID"     : "272b18a0-bccc-441f-b38c-9f1d14a6ae58",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00188200750511137,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 1.0,
+        "fY"      : 4.0,
+        "fRotation" : 0.0,
+        "strID"     : "7168bf33-bedf-45e3-af90-01f6f400eea2"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 1.0,
+        "fY"      : 5.0,
+        "fRotation" : 0.0,
+        "strID"     : "0b4226e2-dee1-455b-b0db-bde39a50cced"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 1.0,
+        "fY"      : 6.0,
+        "fRotation" : 0.0,
+        "strID"     : "d78e6cfe-5715-41f6-bbdb-fc56e1b1d037"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 1.0,
+        "fY"      : 7.0,
+        "fRotation" : 0.0,
+        "strID"     : "4b61d69c-ef3f-4ea5-ad4c-51fd4c8298fc"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 1.0,
+        "fY"      : 8.0,
+        "fRotation" : 0.0,
+        "strID"     : "e1c7dcc6-a23e-48f6-8c10-cfeacd526d9a"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 1.0,
+        "fY"      : 9.0,
+        "fRotation" : 0.0,
+        "strID"     : "e2004d4f-9e17-4cd3-a518-c45d40cb4e4a",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00188161079011349,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 2.0,
+        "fY"      : -5.0,
+        "fRotation" : 0.0,
+        "strID"     : "40b03310-46cf-476d-99eb-f002e890cf1b",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187658261175041,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 2.0,
+        "fY"      : 1.0,
+        "fRotation" : 0.0,
+        "strID"     : "18790c94-81b7-4b12-82cc-079c3723a527"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 2.0,
+        "fY"      : 2.0,
+        "fRotation" : 0.0,
+        "strID"     : "83802636-ffdf-4766-9055-84066b2ada64",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.0018793910828741,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 2.0,
+        "fY"      : 3.0,
+        "fRotation" : 180.0,
+        "strID"     : "3fb3191e-481b-4eea-80dc-fb1ede4c3736",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00188064773902026,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 2.0,
+        "fY"      : 4.0,
+        "fRotation" : 0.0,
+        "strID"     : "72dd5131-f063-4a4f-a834-d51900bc591f"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 2.0,
+        "fY"      : 5.0,
+        "fRotation" : 0.0,
+        "strID"     : "d8820d00-abfb-4017-a2a7-171b86412749"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 2.0,
+        "fY"      : 6.0,
+        "fRotation" : 0.0,
+        "strID"     : "d76ad657-080e-422a-89eb-50541e522ef9"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 2.0,
+        "fY"      : 7.0,
+        "fRotation" : 0.0,
+        "strID"     : "c1275d6b-035a-4670-9608-5b745f050ee8"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 2.0,
+        "fY"      : 8.0,
+        "fRotation" : 0.0,
+        "strID"     : "bf8b70ad-39a9-4ccf-bebe-2835779248c9"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 2.0,
+        "fY"      : 9.0,
+        "fRotation" : 0.0,
+        "strID"     : "74e462db-6f88-4f7b-b7f5-316e51542adc",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187623886886785,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09C",
+        "fX"      : -4.0,
+        "fY"      : 2.0,
+        "fRotation" : 270.0,
+        "strID"     : "4febf6e9-e9a8-4ae6-92be-bf5f27c241b3"
+      },
+      {
+        "strName" : "ItmFloorMSHG09C",
+        "fX"      : -4.0,
+        "fY"      : -5.0,
+        "fRotation" : 270.0,
+        "strID"     : "a2bfa7a7-7433-4785-a178-6100d79d758e"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 3.0,
+        "fY"      : -3.0,
+        "fRotation" : 270.0,
+        "strID"     : "8dbb149e-a038-469c-a37a-ffa92a0b779a",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187900767869162,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 3.0,
+        "fY"      : -2.0,
+        "fRotation" : 270.0,
+        "strID"     : "55b498a4-8b81-4677-a0c1-ce66974a18a7",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187947971581983,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 3.0,
+        "fY"      : -1.0,
+        "fRotation" : 270.0,
+        "strID"     : "14266f72-a555-4ae4-9b33-88c1f88e0e22",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187846482267061,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 3.0,
+        "fY"      : 0.0,
+        "fRotation" : 270.0,
+        "strID"     : "95041816-b36c-4884-af8e-dac138dfccb0",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.0018764374711634,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 3.0,
+        "fY"      : 1.0,
+        "fRotation" : 270.0,
+        "strID"     : "f20a1207-01c1-4288-a30e-6da63bbab0aa",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187816306325578,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09C",
+        "fX"      : 11.0,
+        "fY"      : 3.0,
+        "fRotation" : 90.0,
+        "strID"     : "a50dd5c3-8b55-4ee5-b6c5-bf416a20f965"
+      },
+      {
+        "strName" : "ItmFloorMSHG09C",
+        "fX"      : 11.0,
+        "fY"      : -4.0,
+        "fRotation" : 90.0,
+        "strID"     : "0700dfed-f3d5-4b02-a9b1-b9bc60f593c6"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 3.0,
+        "fY"      : 4.0,
+        "fRotation" : 270.0,
+        "strID"     : "fc0c5c85-c4fb-4fa6-a3a9-04ac01b3f533",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00188041394976274,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 3.0,
+        "fY"      : 5.0,
+        "fRotation" : 270.0,
+        "strID"     : "e1c85a81-0928-42f5-a505-17cc7f82cf90",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187941355146248,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 3.0,
+        "fY"      : 6.0,
+        "fRotation" : 270.0,
+        "strID"     : "6f6946e7-ba1d-4bc0-9a43-c1b7d04981a7",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187655825958815,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 3.0,
+        "fY"      : 7.0,
+        "fRotation" : 270.0,
+        "strID"     : "3614bd09-9c61-4f82-9edb-ed14b76b829c",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187800127819961,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 3.0,
+        "fY"      : 8.0,
+        "fRotation" : 270.0,
+        "strID"     : "96be0abf-1dc6-474e-9c0c-c712286970ba",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187974670646688,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09C",
+        "fX"      : 10.0,
+        "fY"      : 9.0,
+        "fRotation" : 270.0,
+        "strID"     : "f8f88959-2b9a-4065-a9c5-8be997724e4f"
+      },
+      {
+        "strName" : "ItmFloorMSHG09C",
+        "fX"      : -3.0,
+        "fY"      : -5.0,
+        "fRotation" : 0.0,
+        "strID"     : "a0052ad2-cfd3-4d31-af17-b0e562cd92ba"
+      },
+      {
+        "strName" : "ItmFloorMSHG09C",
+        "fX"      : 4.0,
+        "fY"      : -5.0,
+        "fRotation" : 0.0,
+        "strID"     : "0eacf060-0788-4ddf-ad17-f76eb11e7458"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 4.0,
+        "fY"      : -3.0,
+        "fRotation" : 90.0,
+        "strID"     : "6555b176-4a05-42fe-bbb6-ec12536dca01",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187852912597877,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 4.0,
+        "fY"      : -2.0,
+        "fRotation" : 90.0,
+        "strID"     : "33c10aac-fe8c-47f3-8efc-075ff6c0c455",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187842460717837,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 4.0,
+        "fY"      : -1.0,
+        "fRotation" : 90.0,
+        "strID"     : "5463dc39-fd08-4c32-a34e-521f8fbe9390",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187910042940524,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 4.0,
+        "fY"      : 0.0,
+        "fRotation" : 90.0,
+        "strID"     : "a117ee5b-9f62-4204-81b8-a404a0dba181",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187507410792218,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 4.0,
+        "fY"      : 1.0,
+        "fRotation" : 90.0,
+        "strID"     : "86c34aa5-78e8-401c-8554-12ba4a13c550",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187855902686407,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09C",
+        "fX"      : 10.0,
+        "fY"      : -4.0,
+        "fRotation" : 180.0,
+        "strID"     : "11a8f438-907b-4675-a25d-4b6a5609dd6c"
+      },
+      {
+        "strName" : "ItmFloorMSHG09C",
+        "fX"      : 3.0,
+        "fY"      : -4.0,
+        "fRotation" : 180.0,
+        "strID"     : "c3a396c2-c6b2-4401-aa92-1cc2a39e82f8"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 4.0,
+        "fY"      : 4.0,
+        "fRotation" : 90.0,
+        "strID"     : "72be60b9-ef9c-4519-b0be-b7ea51e8fafb",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187934328208706,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 4.0,
+        "fY"      : 5.0,
+        "fRotation" : 90.0,
+        "strID"     : "bd04a10f-83de-40d8-955a-2b000164badd",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187828207010525,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 4.0,
+        "fY"      : 6.0,
+        "fRotation" : 90.0,
+        "strID"     : "336be9b9-7482-4041-b789-8df2c79ffd07",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187837091087309,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 4.0,
+        "fY"      : 7.0,
+        "fRotation" : 90.0,
+        "strID"     : "152987c3-3b50-49bc-8050-de3bc77bb0a6",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00188026368714676,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 4.0,
+        "fY"      : 8.0,
+        "fRotation" : 90.0,
+        "strID"     : "3b6be810-6cad-45dd-9e35-971d45556d1a",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187824378663621,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09C",
+        "fX"      : 11.0,
+        "fY"      : 9.0,
+        "fRotation" : 0.0,
+        "strID"     : "73589ac0-8134-47d8-9d73-28c89b93ac91"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 5.0,
+        "fY"      : -5.0,
+        "fRotation" : 0.0,
+        "strID"     : "c0e0af43-dcac-48e2-8230-fcc416842ce2",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.0018773023354434,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 5.0,
+        "fY"      : -4.0,
+        "fRotation" : 180.0,
+        "strID"     : "b5c60953-70b6-4a09-97a0-9e7ffbfb73aa",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.0018784297819066,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 5.0,
+        "fY"      : -3.0,
+        "fRotation" : 0.0,
+        "strID"     : "8ccb5fd1-1cfa-4eee-a051-c815b93a69f9"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 5.0,
+        "fY"      : -2.0,
+        "fRotation" : 0.0,
+        "strID"     : "4c711fc7-8814-4684-a200-edc5480fee74"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 5.0,
+        "fY"      : -1.0,
+        "fRotation" : 0.0,
+        "strID"     : "5e27994b-9081-4640-82a1-ba6ad947ac58"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 5.0,
+        "fY"      : 0.0,
+        "fRotation" : 0.0,
+        "strID"     : "3f1a9a67-bee0-43f1-a1c3-c8be8bbe88f5"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 5.0,
+        "fY"      : 1.0,
+        "fRotation" : 0.0,
+        "strID"     : "dbb5d8cc-db22-470f-aeb4-a74c352dfd8c"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 5.0,
+        "fY"      : 2.0,
+        "fRotation" : 0.0,
+        "strID"     : "9a25904e-582c-4f69-a95f-3a27cccff636",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187694263828212,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 5.0,
+        "fY"      : 3.0,
+        "fRotation" : 180.0,
+        "strID"     : "889f8644-55e9-4b21-85a4-5ba15c30ef68",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.0018817690392187,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 5.0,
+        "fY"      : 4.0,
+        "fRotation" : 0.0,
+        "strID"     : "c82afc89-a5b2-4b41-b05e-610197515741"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 5.0,
+        "fY"      : 5.0,
+        "fRotation" : 0.0,
+        "strID"     : "ead6f071-db34-4b42-8cf2-7cc67a9b96a8"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 5.0,
+        "fY"      : 6.0,
+        "fRotation" : 0.0,
+        "strID"     : "57798fe4-7a6b-4099-8625-d6648049b59c"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 5.0,
+        "fY"      : 7.0,
+        "fRotation" : 0.0,
+        "strID"     : "32d6523b-5f65-4991-93e0-f923141778d3"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 5.0,
+        "fY"      : 8.0,
+        "fRotation" : 0.0,
+        "strID"     : "cf0f5e4a-9319-444d-8133-381cd8f1434e"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 5.0,
+        "fY"      : 9.0,
+        "fRotation" : 0.0,
+        "strID"     : "91158960-393f-4ffb-ab42-e22bb0c07ea1",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187631736697915,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 6.0,
+        "fY"      : -5.0,
+        "fRotation" : 0.0,
+        "strID"     : "17627c9e-b589-4da7-832f-bf46f1dda254",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.0018774682352925,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 6.0,
+        "fY"      : -4.0,
+        "fRotation" : 180.0,
+        "strID"     : "735ede77-a06c-4849-9d45-611285f41176",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187854640623911,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 6.0,
+        "fY"      : -3.0,
+        "fRotation" : 0.0,
+        "strID"     : "89b2d87d-4343-496a-a152-8d14badaf904"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 6.0,
+        "fY"      : -2.0,
+        "fRotation" : 0.0,
+        "strID"     : "793e9642-bd32-43a5-9b7e-1edac781fc22"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 6.0,
+        "fY"      : -1.0,
+        "fRotation" : 0.0,
+        "strID"     : "c7e29a87-0ff1-4474-b583-5a0c3c8c6edc"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 6.0,
+        "fY"      : 0.0,
+        "fRotation" : 0.0,
+        "strID"     : "05014414-637d-489b-9e49-96ff7b548178"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 6.0,
+        "fY"      : 1.0,
+        "fRotation" : 0.0,
+        "strID"     : "59141cb5-bf78-47ec-985b-3deda2f9d973"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 6.0,
+        "fY"      : 2.0,
+        "fRotation" : 0.0,
+        "strID"     : "f9beeb95-5486-4324-92f7-d32c654efeec",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187868253440112,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 6.0,
+        "fY"      : 3.0,
+        "fRotation" : 180.0,
+        "strID"     : "d7decb26-daff-4f38-87b9-f9910dfcc86a",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187845830241104,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 6.0,
+        "fY"      : 4.0,
+        "fRotation" : 0.0,
+        "strID"     : "ac533df0-0b5d-4e44-8524-0e6276bea2a0"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 6.0,
+        "fY"      : 5.0,
+        "fRotation" : 0.0,
+        "strID"     : "c78f660c-1d3c-45c6-bf0f-8a4b8d1f503f"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 6.0,
+        "fY"      : 6.0,
+        "fRotation" : 0.0,
+        "strID"     : "b5ae502e-5e75-4227-912f-c3bf447c1865"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 6.0,
+        "fY"      : 7.0,
+        "fRotation" : 0.0,
+        "strID"     : "f6736b5b-7279-4599-be6b-f9765b630350"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 6.0,
+        "fY"      : 8.0,
+        "fRotation" : 0.0,
+        "strID"     : "ad2fd8a5-2927-409c-bbc4-2029d52dc7e0"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 6.0,
+        "fY"      : 9.0,
+        "fRotation" : 0.0,
+        "strID"     : "788fcea8-1e6e-4058-9279-c9a555c11067",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00188198772418571,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 7.0,
+        "fY"      : -5.0,
+        "fRotation" : 0.0,
+        "strID"     : "a0d77048-1791-4936-8d98-c6e2d7497d01",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187999218306231,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 7.0,
+        "fY"      : -4.0,
+        "fRotation" : 180.0,
+        "strID"     : "a0171ecf-4fae-4031-8899-acc401a19186",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00188124875548463,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 7.0,
+        "fY"      : -3.0,
+        "fRotation" : 0.0,
+        "strID"     : "629d6df4-f39c-4ae2-87ed-9b8eafbdd9e2"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 7.0,
+        "fY"      : -2.0,
+        "fRotation" : 0.0,
+        "strID"     : "944411f3-0013-4d22-9f43-f8a5fcaac1a2"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 7.0,
+        "fY"      : -1.0,
+        "fRotation" : 0.0,
+        "strID"     : "69955d94-7293-447a-8bd6-60d937e55df8"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 7.0,
+        "fY"      : 0.0,
+        "fRotation" : 0.0,
+        "strID"     : "4b1bdb5e-c389-4e3c-a71d-ac31f25d5511"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 7.0,
+        "fY"      : 1.0,
+        "fRotation" : 0.0,
+        "strID"     : "f2cabc85-57f6-48f1-a025-d06be68465f3"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 7.0,
+        "fY"      : 2.0,
+        "fRotation" : 0.0,
+        "strID"     : "616067bc-f43f-4b8b-b040-dd89a77dd9f6",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187928307232212,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 7.0,
+        "fY"      : 3.0,
+        "fRotation" : 180.0,
+        "strID"     : "067e9bf6-dc39-45a4-8a3f-3dd7d03ea703",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187607418875184,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 7.0,
+        "fY"      : 4.0,
+        "fRotation" : 0.0,
+        "strID"     : "3e61af51-459d-4318-85eb-c6a3ef139c3a"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 7.0,
+        "fY"      : 5.0,
+        "fRotation" : 0.0,
+        "strID"     : "49e8a464-f476-4a7a-8220-bc63f2f1d34f"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 7.0,
+        "fY"      : 6.0,
+        "fRotation" : 0.0,
+        "strID"     : "2087e4e6-b609-4635-a18f-f7360a9c9cc2"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 7.0,
+        "fY"      : 7.0,
+        "fRotation" : 0.0,
+        "strID"     : "1ba6b83b-be0d-444b-a91a-3dc9d3621b08"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 7.0,
+        "fY"      : 8.0,
+        "fRotation" : 0.0,
+        "strID"     : "794dcdee-b16b-4022-98b4-d974aa92c5dc"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 7.0,
+        "fY"      : 9.0,
+        "fRotation" : 0.0,
+        "strID"     : "d9c23e1c-ea30-45f1-bd82-78569dd2a69d",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187514965062446,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 8.0,
+        "fY"      : -5.0,
+        "fRotation" : 0.0,
+        "strID"     : "75d061bf-25d7-489f-8da6-713c4fad12f2",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187872979289568,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 8.0,
+        "fY"      : -4.0,
+        "fRotation" : 180.0,
+        "strID"     : "2b094674-3c29-43ec-ae6b-3047d509f0a5",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187540341800491,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 8.0,
+        "fY"      : -3.0,
+        "fRotation" : 0.0,
+        "strID"     : "ddb6d7d2-e046-4ef4-b147-4b5f57e3e248"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 8.0,
+        "fY"      : -2.0,
+        "fRotation" : 0.0,
+        "strID"     : "4121c244-2125-4a78-8999-f96d65289e17"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 8.0,
+        "fY"      : -1.0,
+        "fRotation" : 0.0,
+        "strID"     : "9c6442b5-d669-4156-9029-67559255852b"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 8.0,
+        "fY"      : 0.0,
+        "fRotation" : 0.0,
+        "strID"     : "0555492f-d042-406e-b6a1-d25299d757f8"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 8.0,
+        "fY"      : 1.0,
+        "fRotation" : 0.0,
+        "strID"     : "de357763-4588-4525-90d6-e8038b38cdb7"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 8.0,
+        "fY"      : 2.0,
+        "fRotation" : 0.0,
+        "strID"     : "55b588fd-e327-45ed-8667-6ae5b9dd3b93",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00188074069288106,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 8.0,
+        "fY"      : 3.0,
+        "fRotation" : 180.0,
+        "strID"     : "c9855583-81db-4b9c-bcf9-dad68f56fc73",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187829413738788,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 8.0,
+        "fY"      : 4.0,
+        "fRotation" : 0.0,
+        "strID"     : "be69df5a-a1cb-44e8-a34a-d2e2ecc87173"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 8.0,
+        "fY"      : 5.0,
+        "fRotation" : 0.0,
+        "strID"     : "5155b33e-8c71-43bc-a094-89d5bb39a6ca"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 8.0,
+        "fY"      : 6.0,
+        "fRotation" : 0.0,
+        "strID"     : "67771d5a-e733-492c-af75-89e3acb44c96"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 8.0,
+        "fY"      : 7.0,
+        "fRotation" : 0.0,
+        "strID"     : "abf53007-3510-4cb8-909f-9cfef90d6d74"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 8.0,
+        "fY"      : 8.0,
+        "fRotation" : 0.0,
+        "strID"     : "9fa84234-4382-4bab-bd0f-a666561402a7"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 8.0,
+        "fY"      : 9.0,
+        "fRotation" : 0.0,
+        "strID"     : "172f3c28-4bc6-4dff-86f8-0fd085dbff9d",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187945119829035,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 9.0,
+        "fY"      : -5.0,
+        "fRotation" : 0.0,
+        "strID"     : "1be7362e-fb01-4b4f-9a64-6f564f9dbb31",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187735446352043,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 9.0,
+        "fY"      : -4.0,
+        "fRotation" : 180.0,
+        "strID"     : "29332847-bd9d-492e-a1a1-e40938d8d5b2",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187816514232694,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 9.0,
+        "fY"      : -3.0,
+        "fRotation" : 0.0,
+        "strID"     : "0bffd490-12f3-4719-aa60-ddbe9ab3ff06"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 9.0,
+        "fY"      : -2.0,
+        "fRotation" : 0.0,
+        "strID"     : "ab992fcf-abe2-4fac-a13c-b40ecf475baa"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 9.0,
+        "fY"      : -1.0,
+        "fRotation" : 0.0,
+        "strID"     : "396e6275-5d1f-461e-8006-647963995c0a"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 9.0,
+        "fY"      : 0.0,
+        "fRotation" : 0.0,
+        "strID"     : "ff512ed8-9454-4527-8ca6-0f88b7898dad"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 9.0,
+        "fY"      : 1.0,
+        "fRotation" : 0.0,
+        "strID"     : "e986c350-a167-418d-ba52-6e28f0eaa4ef"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 9.0,
+        "fY"      : 2.0,
+        "fRotation" : 0.0,
+        "strID"     : "2b92e77a-5e41-4617-b8b9-a9759b5b7314",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187636416563009,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 9.0,
+        "fY"      : 3.0,
+        "fRotation" : 180.0,
+        "strID"     : "83cef5c5-c976-4700-857a-c19c39ac1b14",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187703353262149,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 9.0,
+        "fY"      : 4.0,
+        "fRotation" : 0.0,
+        "strID"     : "79e1ee85-f5bb-4a19-b71f-2f7a86ce61a5"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 9.0,
+        "fY"      : 5.0,
+        "fRotation" : 0.0,
+        "strID"     : "f49485e5-d571-439c-a162-9930a8f71880"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 9.0,
+        "fY"      : 6.0,
+        "fRotation" : 0.0,
+        "strID"     : "dab6a5e7-82eb-446e-9c1f-81b470ca21ba"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 9.0,
+        "fY"      : 7.0,
+        "fRotation" : 0.0,
+        "strID"     : "fa60238f-4e76-4b3b-b81f-b7160363d908"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 9.0,
+        "fY"      : 8.0,
+        "fRotation" : 0.0,
+        "strID"     : "66785ba0-7dd7-4a32-aef5-2a3b3ddda43f"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 9.0,
+        "fY"      : 9.0,
+        "fRotation" : 0.0,
+        "strID"     : "e458a7cc-0775-4524-b602-a59aed7f5a0f",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187983118424524,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09C",
+        "fX"      : -4.0,
+        "fY"      : -4.0,
+        "fRotation" : 180.0,
+        "strID"     : "1abaef0e-4485-4ef8-b50c-de7ec21d4f07"
+      },
+      {
+        "strName" : "ItmFloorMSHG09C",
+        "fX"      : 3.0,
+        "fY"      : -5.0,
+        "fRotation" : 270.0,
+        "strID"     : "7851fbd7-bb1d-4687-a4f6-ae7d1a9436e9"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 10.0,
+        "fY"      : -3.0,
+        "fRotation" : 270.0,
+        "strID"     : "c3232fb9-82ab-4e49-9cf8-442eebebd166",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187892870033699,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 10.0,
+        "fY"      : -2.0,
+        "fRotation" : 270.0,
+        "strID"     : "f71b60ac-2577-4e40-8c87-5c9ffdc229c6",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187723597686374,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 10.0,
+        "fY"      : -1.0,
+        "fRotation" : 270.0,
+        "strID"     : "50571fc7-05a1-42ba-a27f-783861b65746",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187897636682589,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 10.0,
+        "fY"      : 0.0,
+        "fRotation" : 270.0,
+        "strID"     : "47d40d5a-57b1-4043-80f8-4169e4c4ab58",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00188189585150991,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 10.0,
+        "fY"      : 1.0,
+        "fRotation" : 270.0,
+        "strID"     : "2f32cac4-6e84-4428-b2ce-4105980e6158",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187751414315579,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09C",
+        "fX"      : 10.0,
+        "fY"      : -5.0,
+        "fRotation" : 270.0,
+        "strID"     : "6f353f9b-b6db-4c2b-9392-6af379cbc568"
+      },
+      {
+        "strName" : "ItmFloorMSHG09C",
+        "fX"      : 10.0,
+        "fY"      : 3.0,
+        "fRotation" : 180.0,
+        "strID"     : "0edffb69-b29e-462c-8a29-0e9c7373eb33"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 10.0,
+        "fY"      : 4.0,
+        "fRotation" : 270.0,
+        "strID"     : "6888f176-fc3c-457d-9376-9a52230971db",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00188134187594312,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 10.0,
+        "fY"      : 5.0,
+        "fRotation" : 270.0,
+        "strID"     : "306a854d-6a57-4f1a-832a-64918efa3993",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187827898804799,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 10.0,
+        "fY"      : 6.0,
+        "fRotation" : 270.0,
+        "strID"     : "0ced7044-a9c0-4aa3-ac8c-f88df0e6da31",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187581787735668,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 10.0,
+        "fY"      : 7.0,
+        "fRotation" : 270.0,
+        "strID"     : "90d40e0c-c433-4bbb-8b88-690e5f131c8f",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187994610265141,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 10.0,
+        "fY"      : 8.0,
+        "fRotation" : 270.0,
+        "strID"     : "112de028-7ca8-4b41-81c3-fab168e497ae",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.0018820927920785,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09C",
+        "fX"      : -4.0,
+        "fY"      : 9.0,
+        "fRotation" : 270.0,
+        "strID"     : "bc2f1b75-62d5-4ac5-b26b-408b1218e2cb"
+      },
+      {
+        "strName" : "ItmFloorMSHG09C",
+        "fX"      : 10.0,
+        "fY"      : 2.0,
+        "fRotation" : 270.0,
+        "strID"     : "855976a4-2e54-4196-af84-badb87ea019e"
+      },
+      {
+        "strName" : "ItmFloorMSHG09C",
+        "fX"      : 3.0,
+        "fY"      : 2.0,
+        "fRotation" : 270.0,
+        "strID"     : "3b30c007-439b-4b77-8ccd-9d62378ef772"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 11.0,
+        "fY"      : -3.0,
+        "fRotation" : 90.0,
+        "strID"     : "8c01611f-0651-4104-b2e4-fa9719b3d9c4",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187784166571331,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 11.0,
+        "fY"      : -2.0,
+        "fRotation" : 90.0,
+        "strID"     : "338637bb-f876-4134-b355-957c0e92506b",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00188068855205422,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 11.0,
+        "fY"      : -1.0,
+        "fRotation" : 90.0,
+        "strID"     : "0a4e951d-d358-4384-a6d5-299e08c7170f",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187571933992332,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 11.0,
+        "fY"      : 0.0,
+        "fRotation" : 90.0,
+        "strID"     : "71d28ed4-7ef6-4d0c-a11e-bab764af61b9",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187841810476855,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 11.0,
+        "fY"      : 1.0,
+        "fRotation" : 90.0,
+        "strID"     : "6ec4d07f-b2e7-4101-bb4d-9f8657fc4c40",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187974174338571,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09C",
+        "fX"      : 3.0,
+        "fY"      : 3.0,
+        "fRotation" : 180.0,
+        "strID"     : "66e1243c-f199-4b4a-8415-0917c1cf043b"
+      },
+      {
+        "strName" : "ItmFloorMSHG09C",
+        "fX"      : -4.0,
+        "fY"      : 3.0,
+        "fRotation" : 180.0,
+        "strID"     : "dd4f5bf7-f6b1-48aa-ab3f-75ef49737a27"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 11.0,
+        "fY"      : 4.0,
+        "fRotation" : 90.0,
+        "strID"     : "2fd8cb31-34eb-4800-980b-c6e902d1b602",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187534088777215,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 11.0,
+        "fY"      : 5.0,
+        "fRotation" : 90.0,
+        "strID"     : "d8686968-0f8f-4a28-b1ef-f90ae028ad18",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.0018790154025345,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 11.0,
+        "fY"      : 6.0,
+        "fRotation" : 90.0,
+        "strID"     : "1b2a97aa-5851-4c3e-b15c-5075623db26f",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187904802423206,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 11.0,
+        "fY"      : 7.0,
+        "fRotation" : 90.0,
+        "strID"     : "d6ca6b19-69fc-430d-8e47-6596c07e9536",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187940013609854,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 11.0,
+        "fY"      : 8.0,
+        "fRotation" : 90.0,
+        "strID"     : "96ca3e52-4e48-4af6-8704-752850d0e127",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187641053503698,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09C",
+        "fX"      : 3.0,
+        "fY"      : 9.0,
+        "fRotation" : 270.0,
+        "strID"     : "9efcee62-4c50-45ef-b747-b5852a17bed0"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 12.0,
+        "fY"      : -5.0,
+        "fRotation" : 0.0,
+        "strID"     : "2c43b0ce-638d-497d-a498-eb1c22f34484",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00188122569785442,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 12.0,
+        "fY"      : -4.0,
+        "fRotation" : 180.0,
+        "strID"     : "22691053-436a-493d-bcc3-dd89ef0f48d4",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00188073681778481,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 12.0,
+        "fY"      : -3.0,
+        "fRotation" : 0.0,
+        "strID"     : "914595f5-eb37-4cb3-91e0-e2ea51c88448"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 12.0,
+        "fY"      : -2.0,
+        "fRotation" : 0.0,
+        "strID"     : "1767f2ea-8e6a-4e0a-b7e1-755c6b48ff01"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 12.0,
+        "fY"      : -1.0,
+        "fRotation" : 0.0,
+        "strID"     : "1c9eb668-ec4b-4e21-96be-167b9e82b944"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 12.0,
+        "fY"      : 0.0,
+        "fRotation" : 0.0,
+        "strID"     : "7c82bce4-c890-4220-b952-87a855e0c407"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 12.0,
+        "fY"      : 1.0,
+        "fRotation" : 0.0,
+        "strID"     : "95736b04-8021-4608-90cb-b65e770d3089"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 12.0,
+        "fY"      : 2.0,
+        "fRotation" : 0.0,
+        "strID"     : "86676adb-f4f9-4980-a2b9-239de05d5407",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187818287308103,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 12.0,
+        "fY"      : 3.0,
+        "fRotation" : 180.0,
+        "strID"     : "99aee87b-fab7-461a-8872-a04904c94b99",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.0018804025454709,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 12.0,
+        "fY"      : 4.0,
+        "fRotation" : 0.0,
+        "strID"     : "bba6a495-f57b-427c-b274-ba08fc0c667a"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 12.0,
+        "fY"      : 5.0,
+        "fRotation" : 0.0,
+        "strID"     : "450cfb8f-4131-43e2-b54c-e940c0be208f"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 12.0,
+        "fY"      : 6.0,
+        "fRotation" : 0.0,
+        "strID"     : "5b38de37-3a26-4b77-8d6a-68548afba465"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 12.0,
+        "fY"      : 7.0,
+        "fRotation" : 0.0,
+        "strID"     : "b65b2d81-0c53-41ca-be9f-954dd3a016e6"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 12.0,
+        "fY"      : 8.0,
+        "fRotation" : 0.0,
+        "strID"     : "9bc453b6-213d-4e15-8934-364c43f161f9"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 12.0,
+        "fY"      : 9.0,
+        "fRotation" : 0.0,
+        "strID"     : "bb1403c2-d535-4374-a019-4d5521f10d32",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00188132499177729,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 13.0,
+        "fY"      : -5.0,
+        "fRotation" : 0.0,
+        "strID"     : "2a6a9baf-34f9-4cd9-986e-cb1caf4a3ce4",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187545676496503,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 13.0,
+        "fY"      : -4.0,
+        "fRotation" : 180.0,
+        "strID"     : "7935f5d4-0e13-4744-8565-a3a2e5234844",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187617489705509,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 13.0,
+        "fY"      : -3.0,
+        "fRotation" : 0.0,
+        "strID"     : "253dffe6-7292-4059-bd58-48e215130a32"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 13.0,
+        "fY"      : -2.0,
+        "fRotation" : 0.0,
+        "strID"     : "80000efc-9114-4b9b-9761-26a4107647d0"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 13.0,
+        "fY"      : -1.0,
+        "fRotation" : 0.0,
+        "strID"     : "bfec5ae0-d9c4-4af5-bf47-5f0cb973f478"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 13.0,
+        "fY"      : 0.0,
+        "fRotation" : 0.0,
+        "strID"     : "c36fac92-c665-4988-b15f-b42c1c6e3931"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 13.0,
+        "fY"      : 1.0,
+        "fRotation" : 0.0,
+        "strID"     : "176620e0-d92b-4b80-90e3-5a3eec44945b"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 13.0,
+        "fY"      : 2.0,
+        "fRotation" : 0.0,
+        "strID"     : "a4d19c60-c5da-4b03-95b7-4a60a206405f",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187896076189232,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 13.0,
+        "fY"      : 3.0,
+        "fRotation" : 180.0,
+        "strID"     : "d8ebd381-ecb7-485a-ad98-790fd07463e9",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00188044549367525,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 13.0,
+        "fY"      : 4.0,
+        "fRotation" : 0.0,
+        "strID"     : "43902dc7-707a-406a-8e63-8950b20c9ab8"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 13.0,
+        "fY"      : 5.0,
+        "fRotation" : 0.0,
+        "strID"     : "38eb2676-ca3c-474b-9326-a2fa139ef6a4"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 13.0,
+        "fY"      : 6.0,
+        "fRotation" : 0.0,
+        "strID"     : "bca3d404-e54b-4ca6-b8af-e25116ebd6e2"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 13.0,
+        "fY"      : 7.0,
+        "fRotation" : 0.0,
+        "strID"     : "a8afe563-70af-40d8-bf74-7fd822bd9eed"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 13.0,
+        "fY"      : 8.0,
+        "fRotation" : 0.0,
+        "strID"     : "bcee3453-950a-471c-bdce-b5debe76265e"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 13.0,
+        "fY"      : 9.0,
+        "fRotation" : 0.0,
+        "strID"     : "8cbfd585-3888-45d0-8be2-bed604d17784",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187825613441495,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 14.0,
+        "fY"      : -5.0,
+        "fRotation" : 0.0,
+        "strID"     : "259bdb6a-07fc-4f54-9b9c-494294bc66c8",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187803506778098,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 14.0,
+        "fY"      : -4.0,
+        "fRotation" : 180.0,
+        "strID"     : "df5a59cf-90f8-4195-8bf8-f64b51b2befd",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187702157073739,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 14.0,
+        "fY"      : -3.0,
+        "fRotation" : 0.0,
+        "strID"     : "775ebdaa-d4e3-4625-921b-9f78fa56bb2a"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 14.0,
+        "fY"      : -2.0,
+        "fRotation" : 0.0,
+        "strID"     : "54f24827-5328-4d88-89fd-62470cf3d2b6"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 14.0,
+        "fY"      : -1.0,
+        "fRotation" : 0.0,
+        "strID"     : "64e647cf-aae9-4d1f-bc5b-42c69ea15f93"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 14.0,
+        "fY"      : 0.0,
+        "fRotation" : 0.0,
+        "strID"     : "a9154c1b-aa6d-4df3-9894-33638b84426d"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 14.0,
+        "fY"      : 1.0,
+        "fRotation" : 0.0,
+        "strID"     : "5c1e5712-3bc5-4586-b69e-2e49819f5593"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 14.0,
+        "fY"      : 2.0,
+        "fRotation" : 0.0,
+        "strID"     : "c233f572-6dce-4e5a-8270-8ccb60700a50",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187588450623259,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 14.0,
+        "fY"      : 3.0,
+        "fRotation" : 180.0,
+        "strID"     : "1d8c1267-b9e1-492a-8202-2c702e034b03",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00188076894223927,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 14.0,
+        "fY"      : 4.0,
+        "fRotation" : 0.0,
+        "strID"     : "64e2afea-f4d4-4ac9-9b7a-a6e2d5133477"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 14.0,
+        "fY"      : 5.0,
+        "fRotation" : 0.0,
+        "strID"     : "1f171bbb-2051-45f1-b190-28b106412554"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 14.0,
+        "fY"      : 6.0,
+        "fRotation" : 0.0,
+        "strID"     : "6ede699e-4096-4f64-9097-5f59669a3cc5"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 14.0,
+        "fY"      : 7.0,
+        "fRotation" : 0.0,
+        "strID"     : "a02e5101-e633-4b55-b777-bbdea8027a99"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 14.0,
+        "fY"      : 8.0,
+        "fRotation" : 0.0,
+        "strID"     : "9b4972e9-4b70-4c34-8d51-70ddcc5759b4"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 14.0,
+        "fY"      : 9.0,
+        "fRotation" : 0.0,
+        "strID"     : "9b81ffc3-41ab-4d05-a280-def4425d2d2a",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187640417882513,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09C",
+        "fX"      : -10.0,
+        "fY"      : -11.0,
+        "fRotation" : 90.0,
+        "strID"     : "f926f147-d84c-4dca-8682-fdd0b08c200a",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00750116865304169,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -10.0,
+        "fY"      : -10.0,
+        "fRotation" : 90.0,
+        "strID"     : "0c590e4b-6ca7-45fe-8a35-3fc3673231e6",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187534395792957,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -10.0,
+        "fY"      : -9.0,
+        "fRotation" : 90.0,
+        "strID"     : "0293404b-4986-4441-b134-d9d7064878bd",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187533723537281,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -10.0,
+        "fY"      : -8.0,
+        "fRotation" : 90.0,
+        "strID"     : "4ab41f31-1773-4b61-a142-b8a0c261d57a",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187945162413444,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -10.0,
+        "fY"      : -7.0,
+        "fRotation" : 90.0,
+        "strID"     : "ca2c497d-4e65-4c9b-ab7a-a435255620b6",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00188104517820809,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -10.0,
+        "fY"      : -6.0,
+        "fRotation" : 90.0,
+        "strID"     : "dfc573e6-31d1-483d-b92f-ce1856fee5b7",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187825762444429,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -9.0,
+        "fY"      : -11.0,
+        "fRotation" : 180.0,
+        "strID"     : "1fceaabe-808b-4c59-a88f-4959e986ce0d",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00375682551753539,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -9.0,
+        "fY"      : -10.0,
+        "fRotation" : 0.0,
+        "strID"     : "298ec1ea-dd3a-4ade-8bc5-6c1d33ed1c3a"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -9.0,
+        "fY"      : -9.0,
+        "fRotation" : 0.0,
+        "strID"     : "21cca553-0664-4b1a-9e16-c3be4550f692"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -9.0,
+        "fY"      : -8.0,
+        "fRotation" : 0.0,
+        "strID"     : "656a244f-6b6c-46e6-b085-727daaea140a"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -9.0,
+        "fY"      : -7.0,
+        "fRotation" : 0.0,
+        "strID"     : "2e96d15d-2a5e-4c15-8057-43d5d0a0bb28"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -9.0,
+        "fY"      : -6.0,
+        "fRotation" : 0.0,
+        "strID"     : "ed218e4b-e347-418d-84b9-a2b7cc1d9549"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -8.0,
+        "fY"      : -11.0,
+        "fRotation" : 180.0,
+        "strID"     : "122dd199-5819-488b-ab2b-89b60e9b4e60",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00375296972748719,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -8.0,
+        "fY"      : -10.0,
+        "fRotation" : 0.0,
+        "strID"     : "bf327253-4a1a-4209-993e-acc95b887b04"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -8.0,
+        "fY"      : -9.0,
+        "fRotation" : 0.0,
+        "strID"     : "141213be-893c-43b3-b92f-53b0c1019995"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -8.0,
+        "fY"      : -8.0,
+        "fRotation" : 0.0,
+        "strID"     : "815d562b-c2d0-4d8e-8ed1-7c5f33b04461"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -8.0,
+        "fY"      : -7.0,
+        "fRotation" : 0.0,
+        "strID"     : "0b165b73-371f-42ea-adf2-27af493317f1"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -8.0,
+        "fY"      : -6.0,
+        "fRotation" : 0.0,
+        "strID"     : "57dbd2ac-7dc2-468e-be78-7992717db0f7"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -7.0,
+        "fY"      : -11.0,
+        "fRotation" : 180.0,
+        "strID"     : "b1ca2200-a0b0-438e-a810-a9b78710c2a5",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00375279812081725,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -7.0,
+        "fY"      : -10.0,
+        "fRotation" : 0.0,
+        "strID"     : "fd462940-b6a2-4044-8515-92c36e5473aa"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -7.0,
+        "fY"      : -9.0,
+        "fRotation" : 0.0,
+        "strID"     : "1459ed2a-5f87-48f0-9b9a-7ce71db962d8"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -7.0,
+        "fY"      : -8.0,
+        "fRotation" : 0.0,
+        "strID"     : "6400da3d-a7e0-4176-93b2-0c1799496eac"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -7.0,
+        "fY"      : -7.0,
+        "fRotation" : 0.0,
+        "strID"     : "559b5af5-880e-4421-ae6a-c762500be4cf"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -7.0,
+        "fY"      : -6.0,
+        "fRotation" : 0.0,
+        "strID"     : "924321fc-55ca-4c2a-92df-d33ee93dc176"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -6.0,
+        "fY"      : -11.0,
+        "fRotation" : 180.0,
+        "strID"     : "443ae769-40f6-440c-9621-943efa01b962",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.0037532684821937,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -6.0,
+        "fY"      : -10.0,
+        "fRotation" : 0.0,
+        "strID"     : "0b7e5aa6-95e6-477b-a44c-7b1465274803"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -6.0,
+        "fY"      : -9.0,
+        "fRotation" : 0.0,
+        "strID"     : "965c68d5-0193-4b02-9248-a30bd13ecf3b"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -6.0,
+        "fY"      : -8.0,
+        "fRotation" : 0.0,
+        "strID"     : "e170398d-5552-4f20-bdf2-8d10e7befa9c"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -6.0,
+        "fY"      : -7.0,
+        "fRotation" : 0.0,
+        "strID"     : "2783c27b-7d54-4e59-9eec-ce02fd193968"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -6.0,
+        "fY"      : -6.0,
+        "fRotation" : 0.0,
+        "strID"     : "95efb33a-5bce-417c-b5b4-cb989bfcf283"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -5.0,
+        "fY"      : -11.0,
+        "fRotation" : 180.0,
+        "strID"     : "9f460e2f-a8ea-4d4c-aa2d-3407d02a508c",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00375384199473953,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -5.0,
+        "fY"      : -10.0,
+        "fRotation" : 0.0,
+        "strID"     : "38d995e1-5282-4f93-beaa-1787c48d2629"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -5.0,
+        "fY"      : -9.0,
+        "fRotation" : 0.0,
+        "strID"     : "98f1e4a0-1a41-4edd-a53d-cf2e65fe63ed"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -5.0,
+        "fY"      : -8.0,
+        "fRotation" : 0.0,
+        "strID"     : "91d6727e-eb90-4ca5-be14-104b48a195ac"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -5.0,
+        "fY"      : -7.0,
+        "fRotation" : 0.0,
+        "strID"     : "0ca873d0-d2a3-4573-8b1a-55cec7fd617d"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -5.0,
+        "fY"      : -6.0,
+        "fRotation" : 0.0,
+        "strID"     : "3069e458-5c06-4904-bcb0-6834369ee8a2"
+      },
+      {
+        "strName" : "ItmFloorMSHG09C",
+        "fX"      : -4.0,
+        "fY"      : -11.0,
+        "fRotation" : 180.0,
+        "strID"     : "f8bc46fa-b71f-4ee8-8f70-78c073ae0e1b",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00562670794081219,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -4.0,
+        "fY"      : -10.0,
+        "fRotation" : 270.0,
+        "strID"     : "35d9ffd9-eca1-42aa-9798-4ed574ad3bfc",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.0018757400345863,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -4.0,
+        "fY"      : -9.0,
+        "fRotation" : 270.0,
+        "strID"     : "aeb7cbb9-6895-4fc6-baea-6c484d98105d",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187816821333435,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -4.0,
+        "fY"      : -8.0,
+        "fRotation" : 270.0,
+        "strID"     : "8a5c4c85-2397-4764-bf62-cbb22e1573b0",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.0018768704870328,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -4.0,
+        "fY"      : -7.0,
+        "fRotation" : 270.0,
+        "strID"     : "75ca0e5b-dd29-4f9d-97ee-41f1c56d8135",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187924691807356,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -4.0,
+        "fY"      : -6.0,
+        "fRotation" : 270.0,
+        "strID"     : "a6a9e302-ccf7-48d5-bb89-babbe6aaf363",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187860475622984,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09C",
+        "fX"      : 17.0,
+        "fY"      : 9.0,
+        "fRotation" : 270.0,
+        "strID"     : "860b21e1-1949-4f6f-8c9a-25a29f8f1b69",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.001875,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09C",
+        "fX"      : -3.0,
+        "fY"      : -11.0,
+        "fRotation" : 90.0,
+        "strID"     : "21d61dfa-2218-4da6-9216-beb2f7d4155e",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00562631818806776,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -3.0,
+        "fY"      : -10.0,
+        "fRotation" : 90.0,
+        "strID"     : "3e29b66c-2963-424b-ad89-c6560d8b3b01",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187647574613255,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -3.0,
+        "fY"      : -9.0,
+        "fRotation" : 90.0,
+        "strID"     : "72ab6866-7ea0-44a0-a25f-166b25b43242",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00188046429796445,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -3.0,
+        "fY"      : -8.0,
+        "fRotation" : 90.0,
+        "strID"     : "33641473-0488-446d-bede-bc0969365ed4",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187811384383841,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -3.0,
+        "fY"      : -7.0,
+        "fRotation" : 90.0,
+        "strID"     : "2a1ecddd-0105-4875-ae19-543d301c6117",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187772421519226,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -3.0,
+        "fY"      : -6.0,
+        "fRotation" : 90.0,
+        "strID"     : "28ed1987-ba55-4e36-8c6d-58636614ab85",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187857917158468,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 17.0,
+        "fY"      : 8.0,
+        "fRotation" : 270.0,
+        "strID"     : "f7ea48d5-26de-466f-8dc6-9d568875ebdd"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -2.0,
+        "fY"      : -11.0,
+        "fRotation" : 180.0,
+        "strID"     : "b4220bda-7d17-4cba-b753-1406d266bee6",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00375084259501386,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -2.0,
+        "fY"      : -10.0,
+        "fRotation" : 0.0,
+        "strID"     : "66d4e470-1781-449b-940b-bb14dba748c4"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -2.0,
+        "fY"      : -9.0,
+        "fRotation" : 0.0,
+        "strID"     : "d4b46d69-5c64-4f0b-8802-e0f259fa94dc"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -2.0,
+        "fY"      : -8.0,
+        "fRotation" : 0.0,
+        "strID"     : "af07adc3-23d4-4133-bd80-dc8f7b6ed3d3"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -2.0,
+        "fY"      : -7.0,
+        "fRotation" : 0.0,
+        "strID"     : "de067c53-b0db-45fe-a34a-9419a2907a60"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -2.0,
+        "fY"      : -6.0,
+        "fRotation" : 0.0,
+        "strID"     : "c64d4e72-8ecd-4c86-87e7-de431c0641e1"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 17.0,
+        "fY"      : 7.0,
+        "fRotation" : 270.0,
+        "strID"     : "f2d58c9c-652a-4066-adf5-ceac5455b62c"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : -1.0,
+        "fY"      : -11.0,
+        "fRotation" : 180.0,
+        "strID"     : "5eb1bbb8-1baa-46f5-978c-f904c609a6c6",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00375467798576998,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -1.0,
+        "fY"      : -10.0,
+        "fRotation" : 0.0,
+        "strID"     : "f3e8b0c3-53db-4457-b6e2-c30f91052143"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -1.0,
+        "fY"      : -9.0,
+        "fRotation" : 0.0,
+        "strID"     : "94d56f76-b715-4e2d-9b97-7ead46d0c351"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -1.0,
+        "fY"      : -8.0,
+        "fRotation" : 0.0,
+        "strID"     : "e8a2bb70-0fa3-4813-8947-6e6fb04aa2a3"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -1.0,
+        "fY"      : -7.0,
+        "fRotation" : 0.0,
+        "strID"     : "de0fa93a-4ab9-4331-a5f4-c4412896493d"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : -1.0,
+        "fY"      : -6.0,
+        "fRotation" : 0.0,
+        "strID"     : "dfa83a3c-3154-4f74-9df1-ad3e32ce7312"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 17.0,
+        "fY"      : 6.0,
+        "fRotation" : 270.0,
+        "strID"     : "aec22a39-1ac7-4732-b53a-3a7262866aea"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 0.0,
+        "fY"      : -11.0,
+        "fRotation" : 180.0,
+        "strID"     : "9e31174c-2f8c-4848-9a91-dacb9fc245db",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00375667538241765,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 0.0,
+        "fY"      : -10.0,
+        "fRotation" : 0.0,
+        "strID"     : "3be2a461-2f49-4f3c-8b6a-2d38ce39cd9f"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 0.0,
+        "fY"      : -9.0,
+        "fRotation" : 0.0,
+        "strID"     : "a7406a28-79e2-4198-982a-89764a2687ed"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 0.0,
+        "fY"      : -8.0,
+        "fRotation" : 0.0,
+        "strID"     : "0b73dab1-6533-4753-9d78-601210aa5766"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 0.0,
+        "fY"      : -7.0,
+        "fRotation" : 0.0,
+        "strID"     : "be852ce3-b41d-49bf-a7b2-ccbd289bb7d5"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 0.0,
+        "fY"      : -6.0,
+        "fRotation" : 0.0,
+        "strID"     : "b26d8c7f-09d1-461d-9944-10df6ffc8b00"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 17.0,
+        "fY"      : 5.0,
+        "fRotation" : 270.0,
+        "strID"     : "0c4f26d4-2f00-48a3-8306-fdb453f9b46d"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 1.0,
+        "fY"      : -11.0,
+        "fRotation" : 180.0,
+        "strID"     : "6de10dd5-a2dc-4607-bd82-664826e201d5",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00375266859621365,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 1.0,
+        "fY"      : -10.0,
+        "fRotation" : 0.0,
+        "strID"     : "b29e41f2-7375-47a3-953e-ad9ef7dac0cf"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 1.0,
+        "fY"      : -9.0,
+        "fRotation" : 0.0,
+        "strID"     : "a7e7010c-29c0-48a0-8923-1495f974c75b"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 1.0,
+        "fY"      : -8.0,
+        "fRotation" : 0.0,
+        "strID"     : "d8d7ce34-accb-4f1e-9755-8f13a87daca3"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 1.0,
+        "fY"      : -7.0,
+        "fRotation" : 0.0,
+        "strID"     : "f5dff60f-9d59-47aa-94c5-f869d6c47c34"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 1.0,
+        "fY"      : -6.0,
+        "fRotation" : 0.0,
+        "strID"     : "f4e7f964-076d-4401-9782-151adb82afaa"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 17.0,
+        "fY"      : 4.0,
+        "fRotation" : 270.0,
+        "strID"     : "583afcf0-a9a9-4ac7-9952-3a1bc39b3386"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 2.0,
+        "fY"      : -11.0,
+        "fRotation" : 180.0,
+        "strID"     : "a297d15f-0c6e-4052-a773-6e10ff5ebcef",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00375137898092461,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 2.0,
+        "fY"      : -10.0,
+        "fRotation" : 0.0,
+        "strID"     : "b34ba89c-7a8e-41b1-9919-b3a5aac388d7"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 2.0,
+        "fY"      : -9.0,
+        "fRotation" : 0.0,
+        "strID"     : "139de49d-527d-440c-ae6c-fd59bbee00e9"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 2.0,
+        "fY"      : -8.0,
+        "fRotation" : 0.0,
+        "strID"     : "cb4dbce1-4aec-4734-9618-e9bfbe485582"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 2.0,
+        "fY"      : -7.0,
+        "fRotation" : 0.0,
+        "strID"     : "74381160-eb97-4051-8ece-c24c2399b279"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 2.0,
+        "fY"      : -6.0,
+        "fRotation" : 0.0,
+        "strID"     : "d607f021-5e51-43da-a5f2-44dd3af9490d"
+      },
+      {
+        "strName" : "ItmFloorMSHG09C",
+        "fX"      : 17.0,
+        "fY"      : -5.0,
+        "fRotation" : 270.0,
+        "strID"     : "f85c814b-7612-45d3-a516-3e8bb0e5cecf"
+      },
+      {
+        "strName" : "ItmFloorMSHG09C",
+        "fX"      : 11.0,
+        "fY"      : -11.0,
+        "fRotation" : 90.0,
+        "strID"     : "e6ab2435-3f12-4f08-8276-ef69e5e1dda8"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 3.0,
+        "fY"      : -10.0,
+        "fRotation" : 270.0,
+        "strID"     : "a6f85db7-6f7b-4541-8d71-54b8410bc91a",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00188108988843799,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 3.0,
+        "fY"      : -9.0,
+        "fRotation" : 270.0,
+        "strID"     : "ead189fd-f65f-4b87-9ea9-794abfa74818",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00188039657515371,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 3.0,
+        "fY"      : -8.0,
+        "fRotation" : 270.0,
+        "strID"     : "ddd9df82-30de-4ef8-b305-b1b1d6baeb53",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187941585408055,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 3.0,
+        "fY"      : -7.0,
+        "fRotation" : 270.0,
+        "strID"     : "0a732323-6c79-49aa-a6ce-851f17dc3df6",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187555647283216,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 3.0,
+        "fY"      : -6.0,
+        "fRotation" : 270.0,
+        "strID"     : "53231e2b-bbe7-4aba-80be-ec7e5aa20d5c",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187889047721711,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09C",
+        "fX"      : 17.0,
+        "fY"      : 2.0,
+        "fRotation" : 270.0,
+        "strID"     : "8c3ed264-a354-433b-81a0-258f9fd55599"
+      },
+      {
+        "strName" : "ItmFloorMSHG09C",
+        "fX"      : 4.0,
+        "fY"      : -11.0,
+        "fRotation" : 90.0,
+        "strID"     : "f4834f94-c493-48c6-bed2-30fc395f7e89"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 4.0,
+        "fY"      : -10.0,
+        "fRotation" : 90.0,
+        "strID"     : "3d821723-663b-431d-b1da-eb112d2fde27",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187749324279567,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 4.0,
+        "fY"      : -9.0,
+        "fRotation" : 90.0,
+        "strID"     : "a0d3bba4-31cd-41e1-98ce-72f76ed1e99f",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187715857013731,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 4.0,
+        "fY"      : -8.0,
+        "fRotation" : 90.0,
+        "strID"     : "352ff4d1-2024-4261-a88e-0c0598695c7c",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187948521779352,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 4.0,
+        "fY"      : -7.0,
+        "fRotation" : 90.0,
+        "strID"     : "190b6250-6425-4d3d-8509-e1a4b3acb3d6",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187866588993196,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 4.0,
+        "fY"      : -6.0,
+        "fRotation" : 90.0,
+        "strID"     : "5eca5d7d-aaf4-44ff-8589-8ea91f5907a7",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187935671445077,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 17.0,
+        "fY"      : 0.9999999,
+        "fRotation" : 270.0,
+        "strID"     : "a4270566-0c3c-4cb5-a0e2-98d1778ababe"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 5.0,
+        "fY"      : -11.0,
+        "fRotation" : 180.0,
+        "strID"     : "76bf7113-e3f0-4d5f-9cff-2e0325bdb8d3",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00375387294536027,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 5.0,
+        "fY"      : -10.0,
+        "fRotation" : 0.0,
+        "strID"     : "b01590c7-395e-4a3c-9436-9d86d0d565de"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 5.0,
+        "fY"      : -9.0,
+        "fRotation" : 0.0,
+        "strID"     : "b9c5f76b-849a-4a53-9576-0e95d478de54"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 5.0,
+        "fY"      : -8.0,
+        "fRotation" : 0.0,
+        "strID"     : "4c61d3f1-bac8-4c0a-b305-7c201234f208"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 5.0,
+        "fY"      : -7.0,
+        "fRotation" : 0.0,
+        "strID"     : "52639f89-f435-4cd5-8626-f74376fd0b4e"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 5.0,
+        "fY"      : -6.0,
+        "fRotation" : 0.0,
+        "strID"     : "349b101b-dbb3-4eac-a72e-8f9f9fb60102"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 17.0,
+        "fY"      : -1.192093E-07,
+        "fRotation" : 270.0,
+        "strID"     : "67305dcd-29a3-4c08-b183-33cc7bfa231d"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 6.0,
+        "fY"      : -11.0,
+        "fRotation" : 180.0,
+        "strID"     : "39e197cc-1ab1-4b3a-9beb-cf04f3956244",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00375348551053369,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 6.0,
+        "fY"      : -10.0,
+        "fRotation" : 0.0,
+        "strID"     : "9b402310-711f-4ed8-80ee-39f1bc80ebdb"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 6.0,
+        "fY"      : -9.0,
+        "fRotation" : 0.0,
+        "strID"     : "163c116c-367f-485b-ab31-323be8e5926f"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 6.0,
+        "fY"      : -8.0,
+        "fRotation" : 0.0,
+        "strID"     : "2fe9d02c-6bd3-4dae-adc3-b539b73d1579"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 6.0,
+        "fY"      : -7.0,
+        "fRotation" : 0.0,
+        "strID"     : "5f38b896-8bfc-422c-afc5-d8e0c849d861"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 6.0,
+        "fY"      : -6.0,
+        "fRotation" : 0.0,
+        "strID"     : "ef577dec-aab7-4afb-90dc-8d2202dd76c7"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 17.0,
+        "fY"      : -1.0,
+        "fRotation" : 270.0,
+        "strID"     : "213e67c6-ae2f-40ea-89af-6ec5914931b2"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 7.0,
+        "fY"      : -11.0,
+        "fRotation" : 180.0,
+        "strID"     : "479ea05f-c0c9-40a0-a377-e8df6ba63a65",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00375289800633191,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 7.0,
+        "fY"      : -10.0,
+        "fRotation" : 0.0,
+        "strID"     : "383eb0cf-8027-4a8c-b957-7fb3025dad3b"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 7.0,
+        "fY"      : -9.0,
+        "fRotation" : 0.0,
+        "strID"     : "d5f27a05-8eb8-40f3-a5b5-18b4e5380eb9"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 7.0,
+        "fY"      : -8.0,
+        "fRotation" : 0.0,
+        "strID"     : "9371d1c1-0112-450c-9c04-e3f50bb79ffc"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 7.0,
+        "fY"      : -7.0,
+        "fRotation" : 0.0,
+        "strID"     : "c1841089-07ec-4b94-8b10-6d39c3d43112"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 7.0,
+        "fY"      : -6.0,
+        "fRotation" : 0.0,
+        "strID"     : "7fc8eb2e-b020-4fed-946c-9f95d7142b34"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 17.0,
+        "fY"      : -2.0,
+        "fRotation" : 270.0,
+        "strID"     : "56215c93-6715-42bc-99fe-0638e5cf3549"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 8.0,
+        "fY"      : -11.0,
+        "fRotation" : 180.0,
+        "strID"     : "75421af1-3f24-46fd-84e6-f251d6107252",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00375584446114188,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 8.0,
+        "fY"      : -10.0,
+        "fRotation" : 0.0,
+        "strID"     : "178aafd4-c3d2-4018-9f78-b6167a364bf1"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 8.0,
+        "fY"      : -9.0,
+        "fRotation" : 0.0,
+        "strID"     : "b3748159-731d-4f56-b22d-7505ecd3d630"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 8.0,
+        "fY"      : -8.0,
+        "fRotation" : 0.0,
+        "strID"     : "5bd8b55f-e518-4631-8495-2ef552ec3b7d"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 8.0,
+        "fY"      : -7.0,
+        "fRotation" : 0.0,
+        "strID"     : "45e1713f-ba62-499a-ac61-ae5238e95079"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 8.0,
+        "fY"      : -6.0,
+        "fRotation" : 0.0,
+        "strID"     : "e373935a-570d-4271-a8da-9863812d6d61"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 17.0,
+        "fY"      : -3.0,
+        "fRotation" : 270.0,
+        "strID"     : "6076eabb-f375-4e24-97a7-20e28663b205"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 9.0,
+        "fY"      : -11.0,
+        "fRotation" : 180.0,
+        "strID"     : "212f017f-96fe-46da-a018-44090bbfbb3e",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00375631505456511,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 9.0,
+        "fY"      : -10.0,
+        "fRotation" : 0.0,
+        "strID"     : "8aeca36f-ff46-4764-b614-d4880d698ef2"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 9.0,
+        "fY"      : -9.0,
+        "fRotation" : 0.0,
+        "strID"     : "e2e0e672-e156-4cb2-9594-2c6ae4570d42"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 9.0,
+        "fY"      : -8.0,
+        "fRotation" : 0.0,
+        "strID"     : "1376f068-59a4-4072-badd-fddc4110bdb5"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 9.0,
+        "fY"      : -7.0,
+        "fRotation" : 0.0,
+        "strID"     : "f2b2cb1d-a227-4127-8966-e42370484741"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 9.0,
+        "fY"      : -6.0,
+        "fRotation" : 0.0,
+        "strID"     : "9c386907-a535-4349-b08e-e43550688a90"
+      },
+      {
+        "strName" : "ItmFloorMSHG09C",
+        "fX"      : -10.0,
+        "fY"      : 9.0,
+        "fRotation" : 0.0,
+        "strID"     : "45b22d3c-d0ba-4017-8ed4-f3210eb4007b"
+      },
+      {
+        "strName" : "ItmFloorMSHG09C",
+        "fX"      : 10.0,
+        "fY"      : -11.0,
+        "fRotation" : 180.0,
+        "strID"     : "b9423a28-65a9-4cd7-b142-a39f1ab42b17"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 10.0,
+        "fY"      : -10.0,
+        "fRotation" : 270.0,
+        "strID"     : "97336d1d-dfff-4c76-808c-501bbf263662",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187878314920567,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 10.0,
+        "fY"      : -9.0,
+        "fRotation" : 270.0,
+        "strID"     : "fd0afe0c-6d30-4d02-b866-e20ff94c6560",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187686105556361,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 10.0,
+        "fY"      : -8.0,
+        "fRotation" : 270.0,
+        "strID"     : "60dd1c43-8f41-455d-80ab-3e48d9de3e08",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187829996830701,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 10.0,
+        "fY"      : -7.0,
+        "fRotation" : 270.0,
+        "strID"     : "294dd17c-45c4-4876-a8b5-55d5d5b8b9c9",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187909545102429,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 10.0,
+        "fY"      : -6.0,
+        "fRotation" : 270.0,
+        "strID"     : "5adde5c3-4ce7-4047-bc08-eec4bf6bdb15",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187804532543871,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09C",
+        "fX"      : -10.0,
+        "fY"      : 2.0,
+        "fRotation" : 0.0,
+        "strID"     : "7366d8aa-c3d9-4f23-8f2e-0ffe2295c7f2"
+      },
+      {
+        "strName" : "ItmFloorMSHG09C",
+        "fX"      : 3.0,
+        "fY"      : -11.0,
+        "fRotation" : 180.0,
+        "strID"     : "25a5393e-8072-4874-8b8e-204fc23d907e"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 11.0,
+        "fY"      : -10.0,
+        "fRotation" : 90.0,
+        "strID"     : "f7175669-015f-4242-a462-65aacb39b5c8",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187793083712657,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 11.0,
+        "fY"      : -9.0,
+        "fRotation" : 90.0,
+        "strID"     : "d978e47b-7644-471f-8884-48b4415b1407",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.0018783899234094,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 11.0,
+        "fY"      : -8.0,
+        "fRotation" : 90.0,
+        "strID"     : "0ad4d3fd-e1f6-4112-ad33-bc9d35329107",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187721493115563,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 11.0,
+        "fY"      : -7.0,
+        "fRotation" : 90.0,
+        "strID"     : "1a524f5a-2f7f-4d46-8bcf-1716040c521a",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187748198130185,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 11.0,
+        "fY"      : -6.0,
+        "fRotation" : 90.0,
+        "strID"     : "5c69b4fd-534b-45d7-9a25-8db5740fa067",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187971402017021,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 17.0,
+        "fY"      : -6.0,
+        "fRotation" : 270.0,
+        "strID"     : "bdddb171-a7d8-4f6c-b005-7a877aeb6280"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 12.0,
+        "fY"      : -11.0,
+        "fRotation" : 180.0,
+        "strID"     : "4a1afbb6-09f8-4487-af5c-c899e014c1e2",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00375673559898249,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 12.0,
+        "fY"      : -10.0,
+        "fRotation" : 0.0,
+        "strID"     : "7d11972f-2924-4744-937f-c646110c1482"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 12.0,
+        "fY"      : -9.0,
+        "fRotation" : 0.0,
+        "strID"     : "d2529739-857c-4188-9752-a6cbce3e907d"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 12.0,
+        "fY"      : -8.0,
+        "fRotation" : 0.0,
+        "strID"     : "4d3b7561-e212-44c0-a360-afaeafc69d90"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 12.0,
+        "fY"      : -7.0,
+        "fRotation" : 0.0,
+        "strID"     : "a643613f-08a2-4b04-8161-9cafee5afa44"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 12.0,
+        "fY"      : -6.0,
+        "fRotation" : 0.0,
+        "strID"     : "79246d94-c5bf-4d25-90ae-023843ef063b"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 17.0,
+        "fY"      : -7.0,
+        "fRotation" : 270.0,
+        "strID"     : "9308d1eb-5ed4-4f92-9b8b-557351ffb394"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 13.0,
+        "fY"      : -11.0,
+        "fRotation" : 180.0,
+        "strID"     : "5a10c9b8-c967-4eb6-bbea-ac3fac3dd3b7",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.003756419827512,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 13.0,
+        "fY"      : -10.0,
+        "fRotation" : 0.0,
+        "strID"     : "9a845d91-9296-455e-8fa0-f16ab85a9352"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 13.0,
+        "fY"      : -9.0,
+        "fRotation" : 0.0,
+        "strID"     : "eaeb824c-f362-4125-a16e-90032ec3bba9"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 13.0,
+        "fY"      : -8.0,
+        "fRotation" : 0.0,
+        "strID"     : "2d2e519d-f95d-4629-9821-b705a4ba6cfa"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 13.0,
+        "fY"      : -7.0,
+        "fRotation" : 0.0,
+        "strID"     : "6b64aa53-de43-4686-b59e-796a2fc6f46e"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 13.0,
+        "fY"      : -6.0,
+        "fRotation" : 0.0,
+        "strID"     : "f638c3e7-15b3-48ed-856e-443dec7891c3"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 17.0,
+        "fY"      : -8.0,
+        "fRotation" : 270.0,
+        "strID"     : "e95067e3-0449-4949-9176-936ab23744f7"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 14.0,
+        "fY"      : -11.0,
+        "fRotation" : 180.0,
+        "strID"     : "a0505fdb-6d20-4b43-b11d-d238785d3ecf",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00375503036113281,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 14.0,
+        "fY"      : -10.0,
+        "fRotation" : 0.0,
+        "strID"     : "78545dc1-09d9-41aa-8bf4-21a990b31400"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 14.0,
+        "fY"      : -9.0,
+        "fRotation" : 0.0,
+        "strID"     : "ebe4a913-fa2e-4640-8785-c05708e14863"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 14.0,
+        "fY"      : -8.0,
+        "fRotation" : 0.0,
+        "strID"     : "10761e6f-36bf-418e-900b-22f3024ea554"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 14.0,
+        "fY"      : -7.0,
+        "fRotation" : 0.0,
+        "strID"     : "36adbd56-8785-4f6e-94d8-0575e9ff113f"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 14.0,
+        "fY"      : -6.0,
+        "fRotation" : 0.0,
+        "strID"     : "0e9a76ff-a803-4e40-98fc-fe120f8cfbf3"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 17.0,
+        "fY"      : -9.0,
+        "fRotation" : 270.0,
+        "strID"     : "75710f50-5a82-41fc-9fe1-5272dd8d6a4c"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 15.0,
+        "fY"      : -11.0,
+        "fRotation" : 180.0,
+        "strID"     : "981debc4-dc45-478b-aa9a-8a65010e90f8",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00375617399647148,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 15.0,
+        "fY"      : -10.0,
+        "fRotation" : 0.0,
+        "strID"     : "5f23231e-f40f-4d7a-9044-7533310b258d"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 15.0,
+        "fY"      : -9.0,
+        "fRotation" : 0.0,
+        "strID"     : "6d7c6c85-4d96-46ae-b482-1232a7670844"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 15.0,
+        "fY"      : -8.0,
+        "fRotation" : 0.0,
+        "strID"     : "a7062057-16b9-4073-aab2-7cf5e0954d87"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 15.0,
+        "fY"      : -7.0,
+        "fRotation" : 0.0,
+        "strID"     : "23b89e57-7d2c-4e60-b661-11ec7d06bd61"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 15.0,
+        "fY"      : -6.0,
+        "fRotation" : 0.0,
+        "strID"     : "c0e11878-a995-4e0a-b38e-897d0d1de395"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 15.0,
+        "fY"      : -5.0,
+        "fRotation" : 0.0,
+        "strID"     : "ec33cd57-9ce5-4e66-860f-3449031a5acd",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187729888449126,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 15.0,
+        "fY"      : -4.0,
+        "fRotation" : 180.0,
+        "strID"     : "37a52314-269d-401a-ade2-d930f12f769f",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187549322095941,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 15.0,
+        "fY"      : -3.0,
+        "fRotation" : 0.0,
+        "strID"     : "f0a2c873-cdc9-41c8-aabd-e1a5e575b4bc"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 15.0,
+        "fY"      : -2.0,
+        "fRotation" : 0.0,
+        "strID"     : "cf1cda55-5f63-41db-a87a-7a0362199619"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 15.0,
+        "fY"      : -1.0,
+        "fRotation" : 0.0,
+        "strID"     : "1423c3c4-22a4-4aa2-ba82-54750af798f2"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 15.0,
+        "fY"      : 0.0,
+        "fRotation" : 0.0,
+        "strID"     : "5bf4fd54-c891-4a05-8137-b3b0eb004076"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 15.0,
+        "fY"      : 1.0,
+        "fRotation" : 0.0,
+        "strID"     : "075c9bf4-0148-4fa2-ba97-4ba94f6e6c54"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 15.0,
+        "fY"      : 2.0,
+        "fRotation" : 0.0,
+        "strID"     : "74135e62-fef1-42b5-80e4-eff604321254",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187609424167372,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 15.0,
+        "fY"      : 3.0,
+        "fRotation" : 180.0,
+        "strID"     : "ecd09c2e-3d5a-4596-8da7-fe34796b75a5",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00188156120860115,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 15.0,
+        "fY"      : 4.0,
+        "fRotation" : 0.0,
+        "strID"     : "c05fd23a-4fcc-491f-be1a-cb0258882ed9"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 15.0,
+        "fY"      : 5.0,
+        "fRotation" : 0.0,
+        "strID"     : "7941ab93-049b-4a66-93e2-cbecafb36b5d"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 15.0,
+        "fY"      : 6.0,
+        "fRotation" : 0.0,
+        "strID"     : "afa3b0ea-fa25-4058-b669-4edc900cebb8"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 15.0,
+        "fY"      : 7.0,
+        "fRotation" : 0.0,
+        "strID"     : "17a8d231-5f04-4828-9558-8b03bf8b3f3f"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 15.0,
+        "fY"      : 8.0,
+        "fRotation" : 0.0,
+        "strID"     : "cebc144d-be68-4252-a057-2c33b79b8ab2"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 15.0,
+        "fY"      : 9.0,
+        "fRotation" : 0.0,
+        "strID"     : "1553193c-9c82-459c-aa6f-e4bddd4abf9e",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187588101958095,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 17.0,
+        "fY"      : -10.0,
+        "fRotation" : 270.0,
+        "strID"     : "fce2300f-1813-42ea-92be-5a458b112342"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 16.0,
+        "fY"      : -11.0,
+        "fRotation" : 180.0,
+        "strID"     : "3e50cb82-6ed7-4716-8f1a-b6686139a49d",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.0037509667884914,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 16.0,
+        "fY"      : -10.0,
+        "fRotation" : 0.0,
+        "strID"     : "661adbfa-fcf8-4b4a-a6a9-6e4ee2012bee"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 16.0,
+        "fY"      : -9.0,
+        "fRotation" : 0.0,
+        "strID"     : "607fb092-20b6-45e5-a001-8d17a3e72c28"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 16.0,
+        "fY"      : -8.0,
+        "fRotation" : 0.0,
+        "strID"     : "d0b56cce-22e9-4d91-acfc-b5b7d79359bc"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 16.0,
+        "fY"      : -7.0,
+        "fRotation" : 0.0,
+        "strID"     : "2aa5d34c-bc7c-441b-8a2c-e97829b5c641"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 16.0,
+        "fY"      : -6.0,
+        "fRotation" : 0.0,
+        "strID"     : "1761b759-c894-444a-acba-51e332e072c8"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 16.0,
+        "fY"      : -5.0,
+        "fRotation" : 0.0,
+        "strID"     : "b1ebde91-80b3-4119-89c6-884a0a0b2e9d",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.001877999303677,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 16.0,
+        "fY"      : -4.0,
+        "fRotation" : 180.0,
+        "strID"     : "2aee1436-e846-41bc-852d-cb40a3069dec",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.0018812736975387,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 16.0,
+        "fY"      : -3.0,
+        "fRotation" : 0.0,
+        "strID"     : "ad29408e-1c69-4643-b103-4157a985f512"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 16.0,
+        "fY"      : -2.0,
+        "fRotation" : 0.0,
+        "strID"     : "f2dcf217-3cc2-4c80-b81b-5dca0554b7ee"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 16.0,
+        "fY"      : -1.0,
+        "fRotation" : 0.0,
+        "strID"     : "a00aacce-6a4b-4b6b-9240-dab48d3bac17"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 16.0,
+        "fY"      : 0.0,
+        "fRotation" : 0.0,
+        "strID"     : "d466d3d6-0df6-4f6c-a80c-935569de708b"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 16.0,
+        "fY"      : 1.0,
+        "fRotation" : 0.0,
+        "strID"     : "d9727d50-99f6-4df4-b9eb-e0983e79d2ac"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 16.0,
+        "fY"      : 2.0,
+        "fRotation" : 0.0,
+        "strID"     : "4f891237-9155-4b0c-b3cb-14505cc36c9c",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187683260730816,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 16.0,
+        "fY"      : 3.0,
+        "fRotation" : 180.0,
+        "strID"     : "a38eb19c-5957-43bc-b9f5-2fd9c2cca2a6",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187527575742546,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 16.0,
+        "fY"      : 4.0,
+        "fRotation" : 0.0,
+        "strID"     : "4ec4913f-550e-4ec0-a95b-1eb22d43b744"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 16.0,
+        "fY"      : 5.0,
+        "fRotation" : 0.0,
+        "strID"     : "d990b80b-01d4-4320-acd6-490634b376b8"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 16.0,
+        "fY"      : 6.0,
+        "fRotation" : 0.0,
+        "strID"     : "af1ec26d-5ba4-4a73-802f-e935b66287af"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 16.0,
+        "fY"      : 7.0,
+        "fRotation" : 0.0,
+        "strID"     : "41e8b0f2-af70-4e19-85e5-f9ead3c437fe"
+      },
+      {
+        "strName" : "ItmFloorTSDO46_04",
+        "fX"      : 16.0,
+        "fY"      : 8.0,
+        "fRotation" : 0.0,
+        "strID"     : "7c7f5ed2-7e15-45b6-861c-246b05e3573c"
+      },
+      {
+        "strName" : "ItmFloorMSHG09B",
+        "fX"      : 16.0,
+        "fY"      : 9.0,
+        "fRotation" : 0.0,
+        "strID"     : "f4c53c6e-7841-443e-af40-cb688183133b",
+        "aCondOverrides" : [
+          {
+            "CondName" : "StatDamage",
+            "Chance"   : 1.0,
+            "Amount"   : 0.00187750956596928,
+            "NegativeValue" : false
+          }
+        ]
+      },
+      {
+        "strName" : "ItmFloorMSHG09C",
+        "fX"      : -10.0,
+        "fY"      : -5.0,
+        "fRotation" : 0.0,
+        "strID"     : "ec06abc5-be63-4d5e-a1f1-05100bd41dc1"
+      },
+      {
+        "strName" : "Compartment",
+        "fX"      : -11.0,
+        "fY"      : 10.0,
+        "fRotation" : 0.0,
+        "strID"     : "34599bcf-e3fe-4dfc-b4a4-ff92c08f49a0"
+      }
+    ],
+    "vShipPos"         : {
+      "x" : -11.0,
+      "y" : 10.0
+    },
+    "objSS"            : {
+      "boPORShip" : "Sol",
+      "vPosx"     : -8.84883430233803E-06,
+      "vPosy"     : -1.29093107036763E-05,
+      "vBOOffsetx" : 0.0,
+      "vBOOffsety" : 0.0,
+      "vVelX"      : -6.78919155813213E-06,
+      "vVelY"      : -9.90455921676065E-06,
+      "fPathLastEpoch" : 0.0,
+      "vAccIn"         : {
+        "x" : 0.0,
+        "y" : 0.0
+      },
+      "vAccRCS"        : {
+        "x" : 0.0,
+        "y" : 0.0
+      },
+      "vAccEx"         : {
+        "x" : 0.0,
+        "y" : 0.0
+      },
+      "aPathRecentT"   : [
+        65627498856.422,
+        65627498854.4119
+      ],
+      "aPathRecentX"   : [
+        -6.27626491209957E-06,
+        -1.22571180862342E-07
+      ],
+      "aPathRecentY"   : [
+        -9.15626231753162E-06,
+        -1.78815523968264E-07
+      ],
+      "vAccLift"       : {
+        "x" : 0.0,
+        "y" : 0.0
+      },
+      "vAccDrag"       : {
+        "x" : 0.0,
+        "y" : 0.0
+      },
+      "fRot"           : 0.0,
+      "fW"             : 0.0,
+      "fA"             : 0.0,
+      "bBOLocked"      : false,
+      "bOrbitLocked"   : false,
+      "bIsBO"          : false,
+      "bIsRegion"      : false,
+      "bIsNoFees"      : true,
+      "bGrounded"      : false,
+      "size"           : 540,
+      "bIgnoreGrav"    : false,
+      "fDockOffsetPosX" : 0.0,
+      "fDockOffsetPosY" : 0.0,
+      "fDockOffsetRot"  : 0.0
+    },
+    "aRooms"           : [
+      {
+        "strID" : "34599bcf-e3fe-4dfc-b4a4-ff92c08f49a0",
+        "bVoid" : true,
+        "aTiles" : [
+          0,
+          1,
+          30,
+          2,
+          31,
+          60,
+          3,
+          32,
+          61,
+          90,
+          4,
+          33,
+          62,
+          91,
+          120,
+          5,
+          34,
+          63,
+          92,
+          121,
+          150,
+          6,
+          35,
+          64,
+          93,
+          122,
+          151,
+          180,
+          7,
+          36,
+          65,
+          94,
+          123,
+          152,
+          181,
+          210,
+          8,
+          37,
+          66,
+          95,
+          124,
+          153,
+          182,
+          211,
+          240,
+          9,
+          38,
+          67,
+          96,
+          125,
+          154,
+          183,
+          212,
+          241,
+          270,
+          10,
+          39,
+          68,
+          97,
+          126,
+          155,
+          184,
+          213,
+          242,
+          271,
+          300,
+          11,
+          40,
+          69,
+          98,
+          127,
+          156,
+          185,
+          214,
+          243,
+          272,
+          301,
+          330,
+          12,
+          41,
+          70,
+          99,
+          128,
+          157,
+          186,
+          215,
+          244,
+          273,
+          302,
+          331,
+          360,
+          13,
+          42,
+          71,
+          100,
+          129,
+          158,
+          187,
+          216,
+          245,
+          274,
+          303,
+          332,
+          361,
+          390,
+          14,
+          43,
+          72,
+          101,
+          130,
+          159,
+          188,
+          217,
+          246,
+          275,
+          304,
+          333,
+          362,
+          391,
+          420,
+          15,
+          44,
+          73,
+          102,
+          131,
+          160,
+          189,
+          218,
+          247,
+          276,
+          305,
+          334,
+          363,
+          392,
+          421,
+          450,
+          16,
+          45,
+          74,
+          103,
+          132,
+          161,
+          190,
+          219,
+          248,
+          277,
+          306,
+          335,
+          364,
+          393,
+          422,
+          451,
+          480,
+          17,
+          46,
+          75,
+          104,
+          133,
+          162,
+          191,
+          220,
+          249,
+          278,
+          307,
+          336,
+          365,
+          394,
+          423,
+          452,
+          481,
+          510,
+          18,
+          47,
+          76,
+          105,
+          134,
+          163,
+          192,
+          221,
+          250,
+          279,
+          308,
+          337,
+          366,
+          395,
+          424,
+          453,
+          482,
+          511,
+          540,
+          19,
+          48,
+          77,
+          106,
+          135,
+          164,
+          193,
+          222,
+          251,
+          280,
+          309,
+          338,
+          367,
+          396,
+          425,
+          454,
+          483,
+          512,
+          541,
+          570,
+          20,
+          49,
+          78,
+          107,
+          136,
+          165,
+          194,
+          223,
+          252,
+          281,
+          310,
+          339,
+          368,
+          397,
+          426,
+          455,
+          484,
+          513,
+          542,
+          571,
+          600,
+          21,
+          50,
+          79,
+          108,
+          137,
+          166,
+          195,
+          224,
+          253,
+          282,
+          311,
+          340,
+          369,
+          398,
+          427,
+          456,
+          485,
+          514,
+          543,
+          572,
+          601,
+          630,
+          22,
+          51,
+          80,
+          109,
+          138,
+          167,
+          196,
+          225,
+          254,
+          283,
+          312,
+          341,
+          370,
+          399,
+          428,
+          457,
+          486,
+          515,
+          544,
+          573,
+          602,
+          631,
+          660,
+          23,
+          52,
+          81,
+          110,
+          139,
+          168,
+          197,
+          226,
+          255,
+          284,
+          313,
+          342,
+          371,
+          400,
+          429,
+          458,
+          487,
+          516,
+          545,
+          574,
+          603,
+          632,
+          661,
+          24,
+          53,
+          82,
+          111,
+          140,
+          169,
+          198,
+          227,
+          256,
+          285,
+          314,
+          343,
+          372,
+          401,
+          430,
+          459,
+          488,
+          517,
+          546,
+          575,
+          604,
+          633,
+          662,
+          25,
+          54,
+          83,
+          112,
+          141,
+          170,
+          199,
+          228,
+          257,
+          286,
+          315,
+          344,
+          373,
+          402,
+          431,
+          460,
+          489,
+          518,
+          547,
+          576,
+          605,
+          634,
+          663,
+          26,
+          55,
+          84,
+          113,
+          142,
+          171,
+          200,
+          229,
+          258,
+          287,
+          316,
+          345,
+          374,
+          403,
+          432,
+          461,
+          490,
+          519,
+          548,
+          577,
+          606,
+          635,
+          664,
+          27,
+          56,
+          85,
+          114,
+          143,
+          172,
+          201,
+          230,
+          259,
+          288,
+          317,
+          346,
+          375,
+          404,
+          433,
+          462,
+          491,
+          520,
+          549,
+          578,
+          607,
+          636,
+          665,
+          28,
+          57,
+          86,
+          115,
+          144,
+          173,
+          202,
+          231,
+          260,
+          289,
+          318,
+          347,
+          376,
+          405,
+          434,
+          463,
+          492,
+          521,
+          550,
+          579,
+          608,
+          637,
+          666,
+          29,
+          58,
+          87,
+          116,
+          145,
+          174,
+          203,
+          232,
+          261,
+          290,
+          319,
+          348,
+          377,
+          406,
+          435,
+          464,
+          493,
+          522,
+          551,
+          580,
+          609,
+          638,
+          667,
+          59,
+          88,
+          117,
+          146,
+          175,
+          204,
+          233,
+          262,
+          291,
+          320,
+          349,
+          378,
+          407,
+          436,
+          465,
+          494,
+          523,
+          552,
+          581,
+          610,
+          639,
+          668,
+          89,
+          118,
+          147,
+          176,
+          205,
+          234,
+          263,
+          292,
+          321,
+          350,
+          379,
+          408,
+          437,
+          466,
+          495,
+          524,
+          553,
+          582,
+          611,
+          640,
+          669,
+          119,
+          148,
+          177,
+          206,
+          235,
+          264,
+          293,
+          322,
+          351,
+          380,
+          409,
+          438,
+          467,
+          496,
+          525,
+          554,
+          583,
+          612,
+          641,
+          670,
+          149,
+          178,
+          207,
+          236,
+          265,
+          294,
+          323,
+          352,
+          381,
+          410,
+          439,
+          468,
+          497,
+          526,
+          555,
+          584,
+          613,
+          642,
+          671,
+          179,
+          208,
+          237,
+          266,
+          295,
+          324,
+          353,
+          382,
+          411,
+          440,
+          469,
+          498,
+          527,
+          556,
+          585,
+          614,
+          643,
+          672,
+          209,
+          238,
+          267,
+          296,
+          325,
+          354,
+          383,
+          412,
+          441,
+          470,
+          499,
+          528,
+          557,
+          586,
+          615,
+          644,
+          673,
+          239,
+          268,
+          297,
+          326,
+          355,
+          384,
+          413,
+          442,
+          471,
+          500,
+          529,
+          558,
+          587,
+          616,
+          645,
+          674,
+          269,
+          298,
+          327,
+          356,
+          385,
+          414,
+          443,
+          472,
+          501,
+          530,
+          559,
+          588,
+          617,
+          646,
+          675,
+          299,
+          328,
+          357,
+          386,
+          415,
+          444,
+          473,
+          502,
+          531,
+          560,
+          589,
+          618,
+          647,
+          676,
+          329,
+          358,
+          387,
+          416,
+          445,
+          474,
+          503,
+          532,
+          561,
+          590,
+          619,
+          648,
+          677,
+          359,
+          388,
+          417,
+          446,
+          475,
+          504,
+          533,
+          562,
+          591,
+          620,
+          649,
+          678,
+          389,
+          418,
+          447,
+          476,
+          505,
+          534,
+          563,
+          592,
+          621,
+          650,
+          679,
+          419,
+          448,
+          477,
+          506,
+          535,
+          564,
+          593,
+          622,
+          651,
+          680,
+          449,
+          478,
+          507,
+          536,
+          565,
+          594,
+          623,
+          652,
+          681,
+          479,
+          508,
+          537,
+          566,
+          595,
+          624,
+          653,
+          682,
+          509,
+          538,
+          567,
+          596,
+          625,
+          654,
+          683,
+          539,
+          568,
+          597,
+          626,
+          655,
+          684,
+          569,
+          598,
+          627,
+          656,
+          685,
+          599,
+          628,
+          657,
+          686,
+          629,
+          658,
+          687,
+          659,
+          688,
+          689
+        ],
+        "roomSpec" : "Blank",
+        "roomValue" : 21240.0
+      }
+    ],
+    "DMGStatus"        : 0,
+    "fLastVisit"       : 0.0,
+    "fFirstVisit"      : 0.0,
+    "fAIDockingExpire" : 0.0,
+    "fAIPauseTimer"    : 0.0,
+    "bPrefill"         : false,
+    "bBreakInUsed"     : false,
+    "bNoCollisions"    : false,
+    "dLastScanTime"    : 0.0,
+    "bLocalAuthority"  : false,
+    "bAIShip"          : false,
+    "strParallax"      : "null",
+    "make"             : "",
+    "model"            : "",
+    "year"             : "",
+    "origin"           : "$TEMPLATE",
+    "description"      : "",
+    "designation"      : "",
+    "publicName"       : "$TEMPLATE",
+    "dimensions"       : "9.60m x 7.36m",
+    "fShallowMass"     : 4548.0,
+    "fShallowRCSRemass" : 0.0,
+    "fShallowRCSRemassMax" : 0.0,
+    "fShallowFusionRemain" : 0.0,
+    "fFusionThrustMax"     : 0.0,
+    "fFusionPelletMax"     : 0.0,
+    "fLastQuotedPrice"     : 0.0,
+    "fEpochNextGrav"       : 65627499385.1098,
+    "fBreakInMultiplier"   : 0.0,
+    "nRCSCount"            : 0.0,
+    "fShallowRotorStrength" : 0.0,
+    "nRCSDistroCount"       : 0,
+    "fAeroCoefficient"      : 0.0,
+    "bFusionTorch"          : false,
+    "bXPDRAntenna"          : false,
+    "bShipHidden"           : false,
+    "bIsUnderConstruction"  : false,
+    "nO2PumpCount"          : 0,
+    "commData"              : {
+      "dClearanceRequestTime" : 0.0,
+      "dClearanceIssueTimestamp" : 0.0,
+      "bClearanceSquawkID"       : false
+    },
+    "ShipType"              : 0,
+    "nConstructionProgress" : 100,
+    "nInitConstructionProgress" : 0,
+    "nRows"                     : 23,
+    "nCols"                     : 30,
+    "nGridRotation"             : 0,
+    "bRemove"                   : false
+  }
+]

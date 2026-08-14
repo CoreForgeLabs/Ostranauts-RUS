@@ -1,0 +1,98 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "strName": {
+                "type": "string"
+            },
+            "strNameFriendly": {
+                "type": "string"
+            },
+            "strColor": {
+                "type": "string"
+            },
+            "strDesc": {
+                "type": "string"
+            },
+            "bResetTimer": {
+                "type": "boolean"
+            },
+            "nDisplaySelf": {
+                "type": "integer"
+            },
+            "nDisplayOther": {
+                "type": "integer"
+            },
+            "bFatal": {
+                "type": "boolean"
+            },
+            "bRemoveAll": {
+                "type": "boolean"
+            },
+            "aNext": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            },
+            "fDuration": {
+                "type": "number"
+            },
+            "bRemoveOnLoad": {
+                "type": "boolean"
+            },
+            "aPer": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            },
+            "fClampMax": {
+                "type": "number"
+            },
+            "bKO": {
+                "type": "boolean"
+            },
+            "bAlert": {
+                "type": "boolean"
+            },
+            "strAnti": {
+                "type": "string"
+            },
+            "bPersists": {
+                "type": "boolean"
+            },
+            "pairFaceSprite": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                    "nValue": {
+                        "type": "integer"
+                    },
+                    "strName": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "nValue",
+                    "strName"
+                ]
+            },
+            "bRoom": {
+                "type": "boolean"
+            },
+            "strCTImmune": {
+                "type": "string"
+            }
+        },
+        "required": [
+            "strColor",
+            "strDesc",
+            "strName",
+            "strNameFriendly"
+        ]
+    }
+}

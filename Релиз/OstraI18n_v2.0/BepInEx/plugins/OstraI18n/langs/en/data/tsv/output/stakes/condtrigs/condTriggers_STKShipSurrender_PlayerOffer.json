@@ -1,0 +1,596 @@
+
+[
+  {
+    "strName" : "CT_STKShipSurrender_PlayerOffer_Intro_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_PlayerOffer_Intro_Them",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_PlayerOffer_Intro_Deny_BreakLock_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_PlayerOffer_Intro_Deny_Enemy_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_PlayerOffer_Intro_Deny_DcPrivacyBad_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aReqs"       : [
+      "DcPrivacy05"
+    ],
+    "aTriggersForbid" : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : false,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_PlayerOffer_Intro_Deny_DcPrivacyBad_Them",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggersForbid" : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : false,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_PlayerOffer_Intro_Deny_Cooldown_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aReqs"       : [
+      "IsSTKShipSurrender_PlayerOffer_Fail_Cooldown"
+    ],
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_PlayerOffer_Intro_Deny_Cooldown_Them",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_PlayerOffer_Intro_Deny_Violated_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aReqs"       : [
+      "IsAngryCeasefireViolated"
+    ],
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_PlayerOffer_Intro_Deny_Violated_Them",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_PlayerOffer_Intro_Deny_Faction_Dislikes_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_PlayerOffer_Intro_Deny_TraitUs_Cruel_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aReqs"       : [
+      "IsCruel"
+    ],
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_PlayerOffer_Intro_Deny_TraitUs_Cruel_Them",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_PlayerOffer_Intro_Deny_TraitUs_Vengeful_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aReqs"       : [
+      "IsVengeful"
+    ],
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_PlayerOffer_Intro_Deny_TraitUs_Vengeful_Them",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_PlayerOffer_Intro_Deny_Default_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_PlayerOffer_Intro_Deny_Default_Them",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_PlayerOffer_Intro_Allow_Friendly_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aForbids"    : [
+      "IsSTKShipSurrender_PlayerOffer_Fail_Cooldown"
+    ],
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_PlayerOffer_Intro_Allow_DcAltruismBad_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aReqs"       : [
+      "DcAltruism04",
+      "DcAltruism05"
+    ],
+    "aTriggersForbid" : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : false,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_PlayerOffer_Intro_Allow_DcAltruismBad_Them",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggersForbid" : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : false,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_PlayerOffer_Intro_Allow_DcSecurityBad_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aReqs"       : [
+      "DcSecurity04",
+      "DcSecurity05"
+    ],
+    "aTriggersForbid" : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : false,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_PlayerOffer_Intro_Allow_DcSecurityBad_Them",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggersForbid" : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : false,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_PlayerOffer_Intro_Allow_Faction_Likes_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aForbids"    : [
+      "IsSTKShipSurrender_PlayerOffer_Fail_Cooldown"
+    ],
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_PlayerOffer_Intro_Allow_TraitUs_Kind_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aReqs"       : [
+      "IsKind"
+    ],
+    "aForbids"    : [
+      "IsSTKShipSurrender_PlayerOffer_Fail_Cooldown"
+    ],
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_PlayerOffer_Intro_Allow_TraitUs_Kind_Them",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_PlayerOffer_Intro_Allow_TraitUs_Forgiving_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aReqs"       : [
+      "IsForgiving"
+    ],
+    "aForbids"    : [
+      "IsSTKShipSurrender_PlayerOffer_Fail_Cooldown"
+    ],
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_PlayerOffer_Intro_Allow_TraitUs_Forgiving_Them",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_PlayerOffer_Intro_Allow_TraitUs_Agliophobic_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aReqs"       : [
+      "IsAgliophobic"
+    ],
+    "aForbids"    : [
+      "IsSTKShipSurrender_PlayerOffer_Fail_Cooldown"
+    ],
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_PlayerOffer_Intro_Allow_TraitUs_Agliophobic_Them",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_PlayerOffer_Gambit_Altruism_1M_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_PlayerOffer_Gambit_Altruism_1M_Them",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_PlayerOffer_Gambit_Altruism_500k_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_PlayerOffer_Gambit_Altruism_500k_Them",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_PlayerOffer_Gambit_Altruism_100k_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_PlayerOffer_Gambit_Altruism_100k_Them",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_PlayerOffer_Gambit_Altruism_50k_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_PlayerOffer_Gambit_Altruism_50k_Them",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_PlayerOffer_Gambit_Altruism_10k_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_PlayerOffer_Gambit_Altruism_10k_Them",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_PlayerOffer_Gambit_AltruismSecurity_SkillPersuade_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aReqs"       : [
+      "SkillPersuade"
+    ],
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_PlayerOffer_Gambit_AltruismSecurity_SkillPersuade_Them",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_PlayerOffer_Gambit_AltruismSecurity_SkillSciencePsychology_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aReqs"       : [
+      "SkillSciencePsychology"
+    ],
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_PlayerOffer_Gambit_AltruismSecurity_SkillSciencePsychology_Them",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_PlayerOffer_Gambit_Altruism_Beg_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_PlayerOffer_Gambit_Altruism_Beg_Them",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  }
+]

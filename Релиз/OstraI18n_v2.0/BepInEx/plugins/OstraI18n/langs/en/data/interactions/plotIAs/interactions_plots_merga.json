@@ -1,0 +1,2616 @@
+[
+{ "strName" : "PLOT_Merga_StartTrigger", "strTitle" : "Trigger for the Merga Plot Start Beat", "strDesc" : "[us] [senses] disturbances near Venus.",  "strActionGroup" : "Use",
+  "bIgnoreFeelings" : true, "aInverse" : [ ], "fDuration" : 0.0, "strThemType" : "Other", "nLogging" : 0, "strColor" : "Dialogue", "bRecheckThisPlot" : true,
+  "LootCondsUs" : "CONDPLOT_Merga_StartUs", "LootCondsThem" : "CONDPLOT_Merga_Suspect_Detective", "CTTestUs" : "CTPLOT_Merga_Protag_MakeReady", "CTTestThem" : null,
+  "PSpecTestThem" : "Plot_Merga_LeadDetective_Make", "ShipTestThem" : "VENC_SVL"
+},
+  { "strName" : "PLOT_Merga_StartTrigger2", "strTitle" : "Trigger for the Merga Plot Start Beat", "strDesc" : "[us] [senses] disturbances near Venus.",  "strActionGroup" : "Use",
+    "bIgnoreFeelings" : true, "aInverse" : [ ], "fDuration" : 0.0, "strThemType" : "Other", "nLogging" : 0, "strColor" : "Dialogue", "bRecheckThisPlot" : true,
+    "LootCondsUs" : "CONDPLOT_Merga_Start2Us", "LootCondsThem" : "CONDPLOT_Merga_Suspect_RacingIcon", "CTTestUs" : "CTPLOT_Merga_Protag_MakeReady2", "CTTestThem" : null,
+    "PSpecTestThem" : "Plot_Merga_RacingIcon_Find", "ShipTestThem" : "VENC"
+  },
+    { "strName" : "PLOT_Merga_StartTrigger3", "strTitle" : "Trigger for the Merga Plot Start Beat", "strDesc" : "[us] [senses] disturbances near Venus.",  "strActionGroup" : "Use",
+      "bIgnoreFeelings" : true, "aInverse" : [ ], "fDuration" : 0.0, "strThemType" : "Other", "nLogging" : 0, "strColor" : "Dialogue", "bRecheckThisPlot" : true,
+      "LootCondsUs" : "CONDPLOT_Merga_Start3Us", "LootCondsThem" : "CONDPLOT_Merga_Suspect_Mogul", "LootConds3rd" : null, "CTTestUs" : "CTPLOT_Merga_Protag_MakeReady3", "CTTestThem" : null,
+      "PSpecTestThem" : "Plot_Merga_Mogul_Make","ShipTestThem" : "VENC"
+    },
+      { "strName" : "PLOT_Merga_StartTrigger4", "strTitle" : "Trigger for the Merga Plot Start Beat", "strDesc" : "[us] [senses] disturbances near Venus.",  "strActionGroup" : "Use",
+      "bIgnoreFeelings" : true, "aInverse" : [ ], "fDuration" : 0.0, "strThemType" : "Other", "nLogging" : 0, "strColor" : "Dialogue", "bRecheckThisPlot" : true,
+      "LootCondsUs" : "CONDPLOT_Merga_Start4Us", "LootCondsThem" : "CONDPLOT_Merga_Suspect_Superfan", "LootConds3rd" : null, "CTTestUs" : "CTPLOT_Merga_Protag_MakeReady4", "CTTestThem" : null,
+      "PSpecTestThem" : "Plot_Merga_Superfan_Make","ShipTestThem" : "VENC"
+
+      },
+        { "strName" : "PLOT_Merga_StartTrigger5", "strTitle" : "Trigger for the Merga Plot Start Beat", "strDesc" : "[us] [senses] disturbances near Venus.",  "strActionGroup" : "Use",
+        "bIgnoreFeelings" : true, "aInverse" : [ ], "fDuration" : 0.0, "strThemType" : "Other", "nLogging" : 0, "strColor" : "Dialogue", "bRecheckThisPlot" : true,
+        "LootCondsUs" : "CONDPLOT_Merga_Start5Us", "LootCondsThem" : "CONDPLOT_Merga_Suspect_Journalist", "LootConds3rd" : null, "CTTestUs" : "CTPLOT_Merga_Protag_MakeReady5", "CTTestThem" : null,
+        "PSpecTestThem" : "Plot_Merga_Journalist_Make","ShipTestThem" : "VENC_SVL"
+        },
+{   "strName" : "PLOT_Merga_WhispersFoundTrigger", "strTitle" : "Strange Call from Ursula K.", 
+    "strDesc" : "[us] [receives] a strange call from Ursula K. pointing [us-obj] to meet a detective on Venus named [3rd].",  
+    "strActionGroup" : "Use",
+    "bIgnoreFeelings" : true, "aInverse" : [ "PLOT_Merga_WhispersFoundTriggerReply" ], 
+    "fDuration" : 0.0, "strThemType" : "Self", "nLogging" : 1, "strColor" : "Dialogue", "bRecheckThisPlot" : true, 
+    "LootCondsUs" : "CONDPLOT_Merga_WhispersFoundTriggerUs", "LootCondsThem" : null, "LootConds3rd" : null,
+    "CTTestUs" : "CTPLOT_Merga_WhispersFoundTriggerUsReady", "CTTestThem" : null,
+    "strLootRELChangeUsSees3rd" : "RELContact", "strLootRELChange3rdSeesUs" : "RELContact"
+},
+    { "strName" : "PLOT_Merga_WhispersFoundTriggerReply", "strTitle" : "Strange Call from Ursula K.", 
+      "strDesc" : "Ursula K. says she noticed [us] [was] looking closely into black handprint deaths and the Camellia Middlemist case. They're connected, and Detective [3rd] knows more. You should visit the Detective in a bar called Sol Vermelho Lounge, on Encantado aerostat.",
+      "strActionGroup" : "Use",
+      "bIgnoreFeelings" : true, "aInverse" : [ ], 
+      "fDuration" : 0.0, "strThemType" : "Self", "nLogging" : 1, "strColor" : "Dialogue",
+      "LootCondsUs" : null, "LootCondsThem" : null, "LootConds3rd" : null, "CTTestUs" : null, "CTTestThem" : null
+    },
+ 
+{ "strName" : "PLOT_Merga_SignsDiscussedTrigger", "strTitle" : "Trigger for advancing to Merga Plot's Signs Discussed Beat", "strDesc" : "[us] [begins] investigating the Middlemist case. Start by visiting suspects (around Encantado), then check their alibis.",  "strActionGroup" : "Use",
+    "bIgnoreFeelings" : true, "aInverse" : [ ], "fDuration" : 0.0, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue", "bRecheckThisPlot" : true,
+    "LootCondsUs" : "CONDPLOT_Merga_SignsDiscussedTriggerUs", "LootCondsThem" : null, "CTTestUs" : "CTPLOT_Merga_SignsDiscussedTriggerUsReady", "CTTestThem" : null
+}, 
+{ "strName" : "PLOT_Merga_MergaEngagedTrigger", "strTitle" : "Trigger for advancing to Merga Plot's Merga Engaged Beat", "strDesc" : "[us] [has] gathered clues to a Middlemist suspect. Take the findings to the Detective",  "strActionGroup" : "Use",
+    "bIgnoreFeelings" : true, "aInverse" : [ ], "fDuration" : 0.0, "strThemType" : "Other", "nLogging" : 0, "strColor" : "Dialogue", "bRecheckThisPlot" : true,
+    "LootCondsUs" : "CONDPLOT_Merga_MergaEngagedTriggerUs", "LootCondsThem" : null, "CTTestUs" : "CTPLOT_Merga_MergaEngagedTriggerUsReady", "CTTestThem" : null
+}, 
+{ "strName" : "PLOT_Merga_MergaKnownTrigger", "strTitle" : "Trigger for advancing to Merga Plot's Merga Known Beat", "strDesc" : "[us] [has] risked harm to engage products of a deeper truth.",  "strActionGroup" : "Use",
+    "bIgnoreFeelings" : true, "aInverse" : [ ], "fDuration" : 0.0, "strThemType" : "Other", "nLogging" : 0, "strColor" : "Dialogue", "bRecheckThisPlot" : true,
+    "LootCondsUs" : "CONDPLOT_Merga_MergaKnownTriggerUs", "LootCondsThem" : null, "CTTestUs" : "CTPLOT_Merga_MergaKnownTriggerUsReady", "CTTestThem" : null
+}, 
+{ "strName" : "PLOT_Merga_EndgamePreparedTrigger", "strTitle" : "Trigger for advancing to Merga Plot's Endgame Prepared Beat", "strDesc" : "[us] [has] collected and prepared an Endgame related to a deeper truth.",  "strActionGroup" : "Use",
+    "bIgnoreFeelings" : true, "aInverse" : [ ], "fDuration" : 0.0, "strThemType" : "Other", "nLogging" : 0, "strColor" : "Dialogue", "bRecheckThisPlot" : true,
+    "LootCondsUs" : "CONDPLOT_Merga_EndgamePreparedTriggerUs", "LootCondsThem" : null, "CTTestUs" : "CTPLOT_Merga_EndgamePreparedTriggerUsReady", "CTTestThem" : null
+}, 
+{ "strName" : "PLOT_Merga_EndgameCompletedTrigger", "strTitle" : "Trigger for advancing to Merga Plot's Endgame Completed Beat", "strDesc" : "[us] [has] met a conclusion of a deeper truth.",  "strActionGroup" : "Use",
+    "bIgnoreFeelings" : true, "aInverse" : [ ], "fDuration" : 0.0, "strThemType" : "Other", "nLogging" : 0, "strColor" : "Dialogue", "bRecheckThisPlot" : true,
+    "LootCondsUs" : "CONDPLOT_Merga_EndgameCompletedTriggerUs", "LootCondsThem" : null, "CTTestUs" : "CTPLOT_Merga_EndgameCompletedTriggerUsReady", "CTTestThem" : null
+},
+{ "strName" : "PLOT_Merga_EndTrigger", "strTitle" : "Trigger for advancing to Merga Plot's End Beat", "strDesc" : "[us] [has] ended the Merga plot.",  "strActionGroup" : "Use",
+    "bIgnoreFeelings" : true, "aInverse" : [ ], "fDuration" : 0.0, "strThemType" : "Other", "nLogging" : 0, "strColor" : "Dialogue", "bRecheckThisPlot" : true,
+    "LootCondsUs" : "CONDPLOT_Merga_EndTriggerUs", "LootCondsThem" : null, "CTTestUs" : "CTPLOT_Merga_EndTriggerUsReady", "CTTestThem" : null
+}, 
+{ "strName" : "PLOT_Merga_WhispersFound01", "strTitle" : "View News: Beloved Entertainer Missing", "strDesc" : "A knot of curious spacers gather around the television and murmur to one another as the OWNG \"News in Brief\" program updates the Inner Planets on the latest goings on. 
+
+You cram yourself between two distraught union workers in EVA suits to catch a glimpse of what is causing such a stir. On screen you see footage of a beautiful woman in a red dress. The montage moves through sequences in rapid pace: the woman on stage singing in a moody lounge ahead of velvet drapes, the same woman fleeing paparazzi photographers and pulling her sunglasses down over her eyes, a sequence of photographs of her arm-in-arm with a dashing athlete you don't recognize. 
+
+Superimposed above all of this is an alarming chyron scrolling in bold letters: 
+
+VENUSIAN POP ICON CAMILLIA MIDDLEMIST, AKA MISS M, STILL MISSING.
+
+Beside you a young woman lowers her head and brings her hand to her eyes.
+
+\"That arrogant fucker,\" she mutters to nobody in particular.
+
+\"Who?\" you ask.
+
+\"Who do you think,\" she says, and nods towards the screen. The footage shows the dashing athlete again, Rex Korin, this time stepping into a nimble RCS racer at the Encantado Grand Prix. Later footage shows Korin hoisting the trophy.
+
+\"Those hotshit nitro-burners are all the same,\" the woman says, and then walks away to gather herself. 
+
+A sidebar shows a schedule for the upcoming broadcast. Most of the spacers gathered seem glued to the TV.
+",  "strActionGroup" : "Use",
+    "strTooltip" : "Pay more attention to the news to learn details about a beloved entertainer missing from Venus.",
+    "bIgnoreFeelings" : true, "aInverse" : [ "PLOT_Merga_WhispersFound01Reply" ], "fDuration" : 0.0005, "strColor" : "Dialogue",
+    "strTargetPoint" : "use", "fTargetPointRange" : 5.0, "strAnim" : "Yes", "bHumanOnly" : true, "bRecheckThisPlot" : true,
+    "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : "CTPLOT_Merga_WhispersFound01Ready", "CTTestThem" : "TIsTV01News",
+		"fForcedChance" : 1,
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bPause" : true
+},
+    { "strName" : "PLOT_Merga_WhispersFound01Reply", "strTitle" : "Newsroom with Trevor Bank: Who Was Miss M?", "strDesc" : "The program begins as it always does: a brief animation of the title that zooms in on the host's name before it races off through a render of the Inner System, passing above all the planets until eventually landing on Mars and falling into an austere studio where Banks sits beside his cohost, Weihan Wing. 
+
+Banks, usually a model of stoicism and state-enforced Martian \"objectivity,\" seems tired and sad. The host reports that the hour will be dedicated to a history of the missing Miss M. The proceedings carry a distinct elegiac tone. 
+
+Before this, Banks restates the obvious: Camellia Middlemist, famed Venusian pop icon beloved system wide, has been missing for nearly four days. The authorities have brought in Rex Korin, her recent spouse, for questioning. No leads have been made in the case. 
+
+The host throws to Weihan, who offers a survey of Middlemist's rich biography.
+",  "strActionGroup" : "Use",
+    "bIgnoreFeelings" : true, "strColor" : "Dialogue",
+    "bRecheckThisPlot" : true,
+    "LootCondsUs" : null, "LootCondsThem" : "CONDPLOT_Merga_WhispersFound01", "CTTestUs" : null, "CTTestThem" : null,
+		"fForcedChance" : 1,
+		"aInverse" : [ "PLOT_Merga_WhispersFound01Reply3" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+    "strThemType" : "Self",
+		"bPause" : true},
+
+  { "strName" : "PLOT_Merga_WhispersFound02", "strTitle" : "View News: String of Deaths", "strDesc" : "[us] [watches] [them] more closely and [learns] about a mysterious string of deaths in the OKLG region and beyond. Apparently spacers are being found deceased with no obvious cause beyond a blackened handprint on their body.",  "strActionGroup" : "Use",
+    "strTooltip" : "Pay more attention to the news to learn details about a strange string of deaths.",
+    "bIgnoreFeelings" : true, "aInverse" : [ "PLOT_Merga_WhispersFound02Reply" ], "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+    "strTargetPoint" : "use", "fTargetPointRange" : 5.0, "strAnim" : "Yes", "bHumanOnly" : true, "bRecheckThisPlot" : true,
+    "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : "CTPLOT_Merga_WhispersFound02Ready", "CTTestThem" : "TIsTV01News"
+  },
+    { "strName" : "PLOT_Merga_WhispersFound02Reply", "strTitle" : "View News: Handprint Murders", "strDesc" : "[them] [finds] more coverage of the strange deaths. In addition to the necrotized skin tissue in the shape of a hand with inhumanly long fingers, many of the victims appear to be loners and outcasts. In one case, a victim's entire residence had been ransacked, and certain storage drives were stolen.",  "strActionGroup" : "Use",
+    "bIgnoreFeelings" : true, "aInverse" : [ ], "fDuration" : 0.0, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+    "strTargetPoint" : "use", "fTargetPointRange" : 5.0, "strAnim" : "Yes",  "bRecheckThisPlot" : true,
+    "LootCondsUs" : null, "LootCondsThem" : "CONDPLOT_Merga_WhispersFound02", "CTTestUs" : null, "CTTestThem" : null
+    },
+  { "strName" : "PLOT_Merga_WhispersFound03", "strTitle" : "Damn Hands Rumor", "strDesc" : "Another one of those bodies was found with the black handprint on their body, this time around Venus. Was it that missing celebrity? Damndest thing...",  
+  "strActionGroup" : "Ship",
+  "bIgnoreFeelings" : true,  "bSocial" : true, "bOpener" : false, "nLogging" : 1,
+  "strColor" : "SocialStatusGreen",
+  "LootCondsThem" : "CONDPLOT_Merga_WhispersFound03", "CTTestThem" : "CTPLOT_Merga_WhispersFound03Ready"
+  },
+  { "strName" : "PLOT_Merga_WhispersFound04", "strTitle" : "Miss M Rumor", 
+  "strDesc" : "I can't stop thinking about Miss M going missing from her home on Encantado aerostat, over on Venus? My money says [3rd] had something to do with it. I don't care how many Grande Prêmio races [3rd-contractHas] nabbed. That one is shady.",  
+  "strActionGroup" : "Ship",
+  "bIgnoreFeelings" : true,  "bSocial" : true, "bOpener" : false, "nLogging" : 1,
+  "strColor" : "SocialStatusGreen",
+  "LootCondsThem" : "CONDPLOT_Merga_WhispersFound04", "CTTestThem" : "CTPLOT_Merga_WhispersFound04Ready"
+  },
+
+  { "strName" : "PLOT_Merga_WhispersFound05", "strTitle" : "View News: Champion RCS Racer", "strDesc" : "[us] [watches] [them] more closely and [learns] about Venusian racing icon [3rd], and [3rd-pos] recent scandals.",  "strActionGroup" : "Use",
+  "bIgnoreFeelings" : true, "aInverse" : [ "PLOT_Merga_WhispersFound05Reply" ], "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+  "strTargetPoint" : "use", "fTargetPointRange" : 5.0, "strAnim" : "Yes", "bHumanOnly" : true, "bRecheckThisPlot" : true,
+  "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : "CTPLOT_Merga_WhispersFound05Ready", "CTTestThem" : "TIsTV01News"
+  },
+      { "strName" : "PLOT_Merga_WhispersFound05Reply", "strTitle" : "View News: Champion RCS Racer", "strDesc" : "Phenom RCS racer [3rd] won a record fourth Grande Prêmio do Encantado this week. Suspicion and intrigue surround the otherwise joyous occasion as the racer's spouse, lounge singer Camellia Middlemist, remains missing.",  "strActionGroup" : "Use",
+      "bIgnoreFeelings" : true, "aInverse" : [ ], "fDuration" : 0.0, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+      "strTargetPoint" : "use", "fTargetPointRange" : 5.0, "strAnim" : "Yes",  "bRecheckThisPlot" : true,
+      "LootCondsUs" : null, "LootCondsThem" : "CONDPLOT_Merga_WhispersFound05", "CTTestUs" : null, "CTTestThem" : null
+      },
+    { "strName" : "PLOT_Merga_WhispersFound06", "strTitle" : "Ask about Missing Celebrity", "strDesc" : "[us] [discusses] with [them] news and rumors surrounding the fate of a Venusian entertainer.",  "strActionGroup" : "Talk",
+    "bSocial" : true, "aInverse" : [ "PLOT_Merga_WhispersFound06ReplyManager","PLOT_Merga_WhispersFound06ReplyLEO", "PLOT_Merga_WhispersFound06Reply"
+    ], "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue", "bInterrupt" : true, "bRandomInverse" : true,
+    "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk",  
+    "LootCondsUs" : "CONDPLOT_Merga_WhispersFound06", "LootCondsThem" : null, "CTTestUs" : "CTPLOT_Merga_WhispersFound06Ready", "CTTestThem" : "TIsValidSocialTargetNotInCombat"
+    },
+      { "strName" : "PLOT_Merga_WhispersFound06ReplyManager", "strTitle" : "Complain About Productivity", "strDesc" : "[us] [grumbles] to [them] about the loss of productivity in [us-pos] work force since Miss M's dissappearance. It's like nobody wants to work anymore...",  "strActionGroup" : "Talk",
+      "aInverse" : [ ], "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue", "fForcedChance" : 0.5,
+      "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk", "bRecheckThisPlot" : true,
+      "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : "TIsManager", "CTTestThem" : null,
+      "strLootRELChangeUsSeesThem" : "RELAcquaintance"
+      },
+      { "strName" : "PLOT_Merga_WhispersFound06ReplyLEO", "strTitle" : "Discuss Popular Case", "strDesc" : "[us] [assures] [them] that local authorities are investigating, so no need to panic. Sure, the circumstances are strange, and everybody loved them, but any perpetrators will be found and punishment will follow.",  "strActionGroup" : "Talk",
+      "aInverse" : [ ], "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+      "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk", "bRecheckThisPlot" : true,
+      "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : "TIsLEOAwake", "CTTestThem" : "TIsValidSocialTargetNotInCombat",
+      "strLootRELChangeUsSeesThem" : "RELAcquaintance"
+      },        
+      { "strName" : "PLOT_Merga_WhispersFound06Reply", "strTitle" : "Discuss Celebrity Being Gone", "strDesc" : "[us] gladly [gossips] with [them] about the missing celebrity, including salacious rumors about foul play, superstitious possible causes, and personal stories of relationships with them before they died.",  "strActionGroup" : "Talk",
+      "aInverse" : [ ], "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+      "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk", "bRecheckThisPlot" : true,
+      "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : null, "CTTestThem" : "TIsValidSocialTargetNotInCombat",
+      "strLootRELChangeUsSeesThem" : "RELAcquaintance"
+      },
+
+      { "strName" : "PLOT_Merga_WhispersFound07", "strTitle" : "Ask for Theories on Camellia Middlemist", "strDesc" : "[us] [asks] [them] for [them-pos] current theory on where the missing lounge singer might be.",  "strActionGroup" : "Talk",
+      "bSocial" : true, "aInverse" : [ "PLOT_Merga_WhispersFound07ReplyLEO","PLOT_Merga_WhispersFound07ReplyAngry", "PLOT_Merga_WhispersFound07Reply1", "PLOT_Merga_WhispersFound07Reply2", "PLOT_Merga_WhispersFound07Reply3", "PLOT_Merga_WhispersFound07Reply4"],
+      "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue", "bInterrupt" : true, "bRandomInverse" : true,
+      "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk",  
+      "LootCondsUs" : "CONDPLOT_Merga_WhispersFound07", "LootCondsThem" : null, "CTTestUs" : "CTPLOT_Merga_WhispersFound07Ready", "CTTestThem" : "TIsValidSocialTargetNotInCombat"
+      },
+        { "strName" : "PLOT_Merga_WhispersFound07ReplyAngry", "strTitle" : "Blow Off Theory", "strDesc" : "[us] [says] [us-subj] [tries] not to pay attention to the tabloid rags.",  "strActionGroup" : "Talk",
+        "aInverse" : [ ], "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue", "fForcedChance" : 0.5,
+        "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk", "bRecheckThisPlot" : true,
+        "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : "TLowDiscomforts", "CTTestThem" : null,
+        "strLootRELChangeUsSeesThem" : "RELAcquaintance"
+        },
+        { "strName" : "PLOT_Merga_WhispersFound07ReplyLEO", "strTitle" : "Discuss Missing Persons", "strDesc" : "[us] [says] [us-contractHas] seen people go missing before. After 72 hours, you should probably assume the worst.",  "strActionGroup" : "Talk",
+        "aInverse" : [ ], "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+        "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk", "bRecheckThisPlot" : true,
+        "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : "TIsLEOAwake", "CTTestThem" : "TIsValidSocialTargetNotInCombat",
+        "strLootRELChangeUsSeesThem" : "RELAcquaintance"
+        },        
+        { "strName" : "PLOT_Merga_WhispersFound07Reply1", "strTitle" : "Discuss first Theory on Missing Celeb", "strDesc" : "[us] enthusiastically [replies] with an elaborate tale involving a conspiracy between Middlemist's spouse, a famous RCS racer, and the man who owns the club where she sings.",  "strActionGroup" : "Talk",
+        "aInverse" : [ ], "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+        "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk", "bRecheckThisPlot" : true,
+        "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : null, "CTTestThem" : "TIsValidSocialTargetNotInCombat",
+        "strLootRELChangeUsSeesThem" : "RELAcquaintance"
+        },
+        { "strName" : "PLOT_Merga_WhispersFound07Reply2", "strTitle" : "Discuss second Theory on Missing Celeb", "strDesc" : "[us] [says] [us-subj] [has] been watching concert splices made by someone who seems legitimately unhinged. [us-subj] [insists] this person is somehow involved.",  "strActionGroup" : "Talk",
+        "aInverse" : [ ], "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+        "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk", "bRecheckThisPlot" : true,
+        "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : null, "CTTestThem" : "TIsValidSocialTargetNotInCombat",
+        "strLootRELChangeUsSeesThem" : "RELAcquaintance"
+        },
+        { "strName" : "PLOT_Merga_WhispersFound07Reply3", "strTitle" : "Discuss third Theory on Missing Celeb", "strDesc" : "[us] read on a forum that Middlemist was having an affair with someone in law enforcement. [us-subj] also [insists] she is a clone.",  "strActionGroup" : "Talk",
+        "aInverse" : [ ], "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+        "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk", "bRecheckThisPlot" : true,
+        "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : null, "CTTestThem" : "TIsValidSocialTargetNotInCombat",
+        "strLootRELChangeUsSeesThem" : "RELAcquaintance"
+        },
+        { "strName" : "PLOT_Merga_WhispersFound07Reply4", "strTitle" : "Discuss fourth Theory on Missing Celeb", "strDesc" : "[us] [says] Middlemist probably couldn't handle the attention and ran off. She's done it before, after all.",  "strActionGroup" : "Talk",
+        "aInverse" : [ ], "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+        "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk", "bRecheckThisPlot" : true,
+        "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : null, "CTTestThem" : "TIsValidSocialTargetNotInCombat",
+        "strLootRELChangeUsSeesThem" : "RELAcquaintance"
+        },
+
+        { "strName" : "PLOT_Merga_WhispersFound08", "strTitle" : "Express Personal Theory on Camellia Middlemist", "strDesc" : "[us] [describes] [us-pos] current theory on where the missing lounge singer might be to [them].",  "strActionGroup" : "Talk",
+        "bSocial" : true, "aInverse" : ["PLOT_Merga_WhispersFound08_Agree","PLOT_Merga_WhispersFound08_Disagree"],
+        "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue", "bInterrupt" : true,
+        "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk","bRandomInverse" : true,
+        "LootCondsUs" : "CONDPLOT_Merga_WhispersFound08", "LootCondsThem" : null, "CTTestUs" : "CTPLOT_Merga_WhispersFound08Ready", "CTTestThem" : "TIsValidSocialTargetNotInCombat"
+        },
+          { "strName" : "PLOT_Merga_WhispersFound08_Agree", "strTitle" : "Support Theory", "strDesc" : "[us] [listens] to [them-pos] theory and [adds] details to support the possibility.",  "strActionGroup" : "Talk",
+          "bSocial" : true, "aInverse" : [],
+          "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue", "bInterrupt" : true,
+          "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk",  
+          "LootCondsUs" : "", "LootCondsThem" : null, "CTTestUs" : "", "CTTestThem" : ""
+          },
+          { "strName" : "PLOT_Merga_WhispersFound08_Disagree", "strTitle" : "Support Theory", "strDesc" : "[us] [listens] closely, and [offers] several crucial details that contradict and challenge [them-pos] theory.",  "strActionGroup" : "Talk",
+          "bSocial" : true, "aInverse" : [],
+          "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue", "bInterrupt" : true,
+          "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk",  
+          "LootCondsUs" : "", "LootCondsThem" : null, "CTTestUs" : "", "CTTestThem" : ""
+          },
+
+          { "strName" : "PLOT_Merga_WhispersFound09", "strTitle" : "Ask for Theories on the Black Hand Deaths", "strDesc" : "[us] [asks] [them] [them-pos] theory as to why people keep turning up dead with black handprints on their bodies.",  "strActionGroup" : "Talk",
+          "bSocial" : true, "aInverse" : [ "PLOT_Merga_WhispersFound09ReplyLEO","PLOT_Merga_WhispersFound09ReplyAngry", "PLOT_Merga_WhispersFound09Reply1", "PLOT_Merga_WhispersFound09Reply2", "PLOT_Merga_WhispersFound09Reply3", "PLOT_Merga_WhispersFound09Reply4"],
+          "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue", "bInterrupt" : true, "bRandomInverse" : true,
+          "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk",  
+          "LootCondsUs" : "CONDPLOT_Merga_WhispersFound09", "LootCondsThem" : null, "CTTestUs" : "CTPLOT_Merga_WhispersFound09Ready", "CTTestThem" : "TIsValidSocialTargetNotInCombat"
+          },
+              { "strName" : "PLOT_Merga_WhispersFound09ReplyAngry", "strTitle" : "Blow Off Theory", "strDesc" : "[us] [insists] it is just a rumor. People wind up dead all the time around here.",  "strActionGroup" : "Talk",
+              "aInverse" : [ ], "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue", "fForcedChance" : 0.5,
+              "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk", "bRecheckThisPlot" : true,
+              "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : "TLowDiscomforts", "CTTestThem" : null,
+              "strLootRELChangeUsSeesThem" : "RELAcquaintance"
+              },
+              { "strName" : "PLOT_Merga_WhispersFound09ReplyLEO", "strTitle" : "Angry Theory Replay", "strDesc" : "[us] [says] that is meant to be privileged information, and suggests [them] [doesn't] talk about it anymore.",  "strActionGroup" : "Talk",
+              "aInverse" : [ ], "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+              "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk", "bRecheckThisPlot" : true,
+              "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : "TIsLEOAwake", "CTTestThem" : "TIsValidSocialTargetNotInCombat",
+              "strLootRELChangeUsSeesThem" : "RELAcquaintance"
+              },        
+              { "strName" : "PLOT_Merga_WhispersFound09Reply1", "strTitle" : "Black Hand Reply Pattern", "strDesc" : "[us] [says] there is a pattern to the victims, and anyone who looks close enough will find it.",  "strActionGroup" : "Talk",
+              "aInverse" : [ ], "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+              "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk", "bRecheckThisPlot" : true,
+              "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : null, "CTTestThem" : "TIsValidSocialTargetNotInCombat",
+              "strLootRELChangeUsSeesThem" : "RELAcquaintance"
+              },
+              { "strName" : "PLOT_Merga_WhispersFound09Reply2", "strTitle" : "Black Hand Reply Nervous", "strDesc" : "[us] [glances] around the room and [starts] to say something before waving [them] off.",  "strActionGroup" : "Talk",
+              "aInverse" : [ ], "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+              "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk", "bRecheckThisPlot" : true,
+              "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : null, "CTTestThem" : "TIsValidSocialTargetNotInCombat",
+              "strLootRELChangeUsSeesThem" : "RELAcquaintance"
+              },
+              { "strName" : "PLOT_Merga_WhispersFound09Reply3", "strTitle" : "Black Hand Reply Ayo", "strDesc" : "[us] [says] Ayotimiwa has to be involved somehow.",  "strActionGroup" : "Talk",
+              "aInverse" : [ ], "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+              "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk", "bRecheckThisPlot" : true,
+              "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : null, "CTTestThem" : "TIsValidSocialTargetNotInCombat",
+              "strLootRELChangeUsSeesThem" : "RELAcquaintance"
+              },
+              { "strName" : "PLOT_Merga_WhispersFound09Reply4", "strTitle" : "Black Hand Reply Earth", "strDesc" : "[us] [says] [us-pos] grandfather saw something like this before, back on Earth.",  "strActionGroup" : "Talk",
+              "aInverse" : [ ], "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+              "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk", "bRecheckThisPlot" : true,
+              "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : null, "CTTestThem" : "TIsValidSocialTargetNotInCombat",
+              "strLootRELChangeUsSeesThem" : "RELAcquaintance"
+              },
+
+
+
+              { "strName" : "PLOT_Merga_WhispersFound10", "strTitle" : "Express Personal Theory on Black Hand Deaths", "strDesc" : "[us] [describes] [us-pos] current theory to [them], regarding the bodies turning up dead on OKLG with black hand prints on them.",  "strActionGroup" : "Talk",
+              "bSocial" : true, "aInverse" : ["PLOT_Merga_WhispersFound10_Agree","PLOT_Merga_WhispersFound10_Disagree"],
+              "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue", "bInterrupt" : true,
+              "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk","bRandomInverse" : true,
+              "LootCondsUs" : "CONDPLOT_Merga_WhispersFound10", "LootCondsThem" : null, "CTTestUs" : "CTPLOT_Merga_WhispersFound10Ready", "CTTestThem" : "TIsValidSocialTargetNotInCombat"
+              },
+                { "strName" : "PLOT_Merga_WhispersFound10_Agree", "strTitle" : "Support Theory", "strDesc" : "[us] [listens] to [them-pos] theory and [adds] details to support the possibility.",  "strActionGroup" : "Talk",
+                "bSocial" : true, "aInverse" : [],
+                "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue", "bInterrupt" : true,
+                "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk",  
+                "LootCondsUs" : "", "LootCondsThem" : null, "CTTestUs" : "", "CTTestThem" : ""
+                },
+                { "strName" : "PLOT_Merga_WhispersFound10_Disagree", "strTitle" : "Support Theory", "strDesc" : "[us] [listens] closely and [offers] several crucial details that contradict and challenge [them-pos] theory.",  "strActionGroup" : "Talk",
+                "bSocial" : true, "aInverse" : [],
+                "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue", "bInterrupt" : true,
+                "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk",  
+                "LootCondsUs" : "", "LootCondsThem" : null, "CTTestUs" : "", "CTTestThem" : ""
+                },
+
+
+
+
+
+
+
+{ "strName" : "PLOT_Merga_SignsDiscussed01", "strTitle" : "Ask about Middlemist Suspects", "strDesc" : "[us] [asks] Detective [them] about the six major suspects in the Middlemist case.",  "strActionGroup" : "Talk",
+    "bIgnoreFeelings" : true, "aInverse" : ["PLOT_Merga_SuspectList"], "bImmediateReply" : true, 
+    "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+    "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk", "bHumanOnly" : true,   "aLootItms" : [ ],
+    "LootCondsUs" : "CONDPLOT_Merga_SignsDiscussed01", "LootCondsThem" : null, "CTTestUs" : "CTPLOT_Merga_SignsDiscussed01Ready", "CTTestThem" : "CTPLOT_Merga_Is_Lead_Detective"
+},
+  { "strName" : "PLOT_Merga_SuspectList", "strTitle" : "Reply Suspects", "strDesc" : "Detective [us] [offers] information on the six main suspects in the Middlemist case. \"Take some notes, kid.\"",  "strActionGroup" : "Talk",
+      "bIgnoreFeelings" : false, "aInverse" : [
+        "PLOT_Merga_Suspect_Racing_Icon",
+        "PLOT_Merga_Suspect_Journalist",
+        "PLOT_Merga_Suspect_Superfan",
+        "PLOT_Merga_Suspect_Middlemist",
+        "PLOT_Merga_Suspect_Tanner",
+        "PLOT_Merga_Suspect_Mogul",
+        "PLOT_Merga_Suspect_Return"],
+      "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue", "bRecheckThisPlot" : true,
+      "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk", "bHumanOnly" : false,
+      "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : null, "CTTestThem" : null
+  },
+        { "strName" : "PLOT_Merga_Suspect_Racing_Icon", "strTitle" : "Ask About Racing Icon", "strDesc" : "[us] [asks] Detective [them] about the racing icon.",  "strActionGroup" : "Talk",
+        "bIgnoreFeelings" : true, "aInverse" : ["PLOT_Merga_Suspect_Racing_Icon_Reply,[them],[us],[3rd]"],
+        "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue", "b3rdReset" : true,
+        "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk", "bHumanOnly" : true,
+        "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : null, "CTTestThem" : null,
+        "CTTest3rd" : "CTPLOT_Merga_Is_Racing_Icon",
+         "strLootRELChangeUsSees3rd" : "RELContact"
+        },
+            { "strName" : "PLOT_Merga_Suspect_Racing_Icon_Reply", "strTitle" : "Racing Icon Suspect Brief",
+            "strDesc" : "Detective [us] [says] that one major suspect is [3rd], a five-time Grande Prêmio do Encantado winner and Middlemist's current spouse. [3rd-pos] tumultuous relationship is the subject of many a tabloid reel.",  
+            "strActionGroup" : "Talk", "bIgnoreFeelings" : false, "aInverse" : [
+        "PLOT_Merga_Suspect_Journalist",
+        "PLOT_Merga_Suspect_Superfan",
+        "PLOT_Merga_Suspect_Middlemist",
+        "PLOT_Merga_Suspect_Tanner",
+        "PLOT_Merga_Suspect_Mogul",
+        "PLOT_Merga_Suspect_Return"],
+            "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+            "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk", "bHumanOnly" : false,
+            "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : null, "CTTestThem" : null
+            },
+        { "strName" : "PLOT_Merga_Suspect_Journalist", "strTitle" : "Ask About Journalist", "strDesc" : "[us] [asks] Detective [them] about the journalist.",  "strActionGroup" : "Talk",
+        "bIgnoreFeelings" : true, "aInverse" : ["PLOT_Merga_Suspect_Journalist_Reply,[them],[us],[3rd]"],
+        "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue", "b3rdReset" : true,
+        "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk", "bHumanOnly" : true,
+        "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : null, "CTTestThem" : null,
+        "CTTest3rd" : "CTPLOT_Merga_Is_Journalist",
+        "strLootRELChangeUsSees3rd" : "RELContact"
+        },
+            { "strName" : "PLOT_Merga_Suspect_Journalist_Reply", "strTitle" : "Journalist Suspect Brief",
+            "strDesc" : "Detective [us] [describes] that [3rd] produces a rumor rag that is wildly popular, especially in NewCal. Middlemist has been [3rd-pos] sole subject since the case began.  ",  
+            "strActionGroup" : "Talk", "bIgnoreFeelings" : false, "aInverse" : [
+        "PLOT_Merga_Suspect_Racing_Icon",
+        "PLOT_Merga_Suspect_Superfan",
+        "PLOT_Merga_Suspect_Middlemist",
+        "PLOT_Merga_Suspect_Tanner",
+        "PLOT_Merga_Suspect_Mogul",
+        "PLOT_Merga_Suspect_Return"],
+            "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+            "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk", "bHumanOnly" : false,
+            "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : null, "CTTestThem" : null
+            },
+        { "strName" : "PLOT_Merga_Suspect_Superfan", "strTitle" : "Ask About Superfan", "strDesc" : "[us] [asks] Detective [them] about the Superfan.",  "strActionGroup" : "Talk",
+        "bIgnoreFeelings" : true, "aInverse" : ["PLOT_Merga_Suspect_Superfan_Reply,[them],[us],[3rd]"],
+        "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue", "b3rdReset" : true,
+        "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk", "bHumanOnly" : true,
+        "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : null, "CTTestThem" : null,
+        "CTTest3rd" : "CTPLOT_Merga_Is_Superfan",
+        "strLootRELChangeUsSees3rd" : "RELContact"
+        },
+            { "strName" : "PLOT_Merga_Suspect_Superfan_Reply", "strTitle" : "Superfan Suspect Brief",
+            "strDesc" : "Detective [us] [says] that [3rd] is absolutely obsessed with Miss M and appeared at nearly every show until Middlemist put out a restraining order against them.",  
+            "strActionGroup" : "Talk", "bIgnoreFeelings" : false, "aInverse" : [
+        "PLOT_Merga_Suspect_Racing_Icon",
+        "PLOT_Merga_Suspect_Journalist",
+        "PLOT_Merga_Suspect_Middlemist",
+        "PLOT_Merga_Suspect_Tanner",
+        "PLOT_Merga_Suspect_Mogul",
+        "PLOT_Merga_Suspect_Return"],
+            "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+            "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk", "bHumanOnly" : false,
+            "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : null, "CTTestThem" : null
+            },
+        { "strName" : "PLOT_Merga_Suspect_Mogul", "strTitle" : "Ask About Mogul", "strDesc" : "[us] [asks] Detective [them] about the Mogul.",  "strActionGroup" : "Talk",
+        "bIgnoreFeelings" : true, "aInverse" : ["PLOT_Merga_Suspect_Mogul_Reply,[them],[us],[3rd]"],
+        "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue", "b3rdReset" : true,
+        "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk", "bHumanOnly" : true,
+        "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : null, "CTTestThem" : null,
+        "CTTest3rd" : "CTPLOT_Merga_Is_Mogul",
+        "strLootRELChangeUsSees3rd" : "RELContact"
+        },
+            { "strName" : "PLOT_Merga_Suspect_Mogul_Reply", "strTitle" : "Mogul Suspect Brief",
+            "strDesc" : "Detective [us] [says] that [3rd] is a prominent business exec on Encantado who owns, among many other things, the lounge where Miss M used to sing.",  
+            "strActionGroup" : "Talk", "bIgnoreFeelings" : false, "aInverse" : [
+        "PLOT_Merga_Suspect_Racing_Icon",
+        "PLOT_Merga_Suspect_Journalist",
+        "PLOT_Merga_Suspect_Superfan",
+        "PLOT_Merga_Suspect_Middlemist",
+        "PLOT_Merga_Suspect_Tanner",
+        "PLOT_Merga_Suspect_Return"],
+            "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+            "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk", "bHumanOnly" : false,
+            "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : null, "CTTestThem" : null
+            },
+        { "strName" : "PLOT_Merga_Suspect_Tanner", "strTitle" : "Ask About Tanner", "strDesc" : "[us] [asks] Detective [them] about the ex-cop.",  "strActionGroup" : "Talk",
+        "bIgnoreFeelings" : true, "aInverse" : ["PLOT_Merga_Suspect_Tanner_Reply"],
+        "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue", "b3rdReset" : true,
+        "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk", "bHumanOnly" : true,
+        "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : null, "CTTestThem" : null
+        },
+            { "strName" : "PLOT_Merga_Suspect_Tanner_Reply", "strTitle" : "Tanner Suspect Brief",
+            "strDesc" : "Detective [us] [says] that Josephus Tanner is their former partner, someone who went off the deep end chasing down leads for a strange case. For reasons [us-subj] [doesn't] fully understand, Middlemist recently became a part of that investigation.",  
+            "strActionGroup" : "Talk", "bIgnoreFeelings" : false, "aInverse" : [
+        "PLOT_Merga_Suspect_Racing_Icon",
+        "PLOT_Merga_Suspect_Journalist",
+        "PLOT_Merga_Suspect_Superfan",
+        "PLOT_Merga_Suspect_Middlemist",
+        "PLOT_Merga_Suspect_Mogul",
+        "PLOT_Merga_Suspect_Return"],
+            "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+            "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk", "bHumanOnly" : false,
+            "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : null, "CTTestThem" : null
+            },    
+        { "strName" : "PLOT_Merga_Suspect_Middlemist", "strTitle" : "Ask About Middlemist", "strDesc" : "[us] [asks] Detective [them] about Middlemist",  "strActionGroup" : "Talk",
+        "bIgnoreFeelings" : true, "aInverse" : ["PLOT_Merga_Suspect_Middlemist_Reply"],
+        "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue", "b3rdReset" : true,
+        "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk", "bHumanOnly" : true,
+        "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : null, "CTTestThem" : null
+        },
+            { "strName" : "PLOT_Merga_Suspect_Middlemist_Reply", "strTitle" : "Middlemist Suspect Brief",
+            "strDesc" : "Detective [us] [says] the famous singer Camellia Middlemist, Miss M, was recently found dead in her green room at the Sol Vermelho Lounge on Encantado. There was a black handprint on her lower back but otherwise no clear cause of death.",  
+            "strActionGroup" : "Talk", "bIgnoreFeelings" : false, "aInverse" : [
+        "PLOT_Merga_Suspect_Racing_Icon",
+        "PLOT_Merga_Suspect_Journalist",
+        "PLOT_Merga_Suspect_Superfan",
+        "PLOT_Merga_Suspect_Tanner",
+        "PLOT_Merga_Suspect_Mogul",
+        "PLOT_Merga_Suspect_Return"],
+            "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+            "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk", "bHumanOnly" : false,
+            "LootCondsUs" : null, "LootCondsThem" : "CONDPLOT_Merga_WhispersFound02", "CTTestUs" : null, "CTTestThem" : null
+            },
+        { "strName" : "PLOT_Merga_Suspect_Return", "strTitle" : "Done Asking About Suspects", "strDesc" : "[us] [says] [us-contractWill] think further on this. Next, Detective [them] [advises] talking to suspects and checking their alibis.",  "strActionGroup" : "Talk",
+        "bIgnoreFeelings" : true, "aInverse" : [ ],
+        "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+        "strTargetPoint" : "talk", "fTargetPointRange" : 0.0, "strAnim" : "Talk", "bHumanOnly" : true,
+        "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : null, "CTTestThem" : null
+        },
+        
+
+    { "strName" : "PLOT_Merga_SignsDiscussed02", "strTitle" : "Ask for Alibi", 
+    "strDesc" : "[us] [asks] [them] where [them-subj] [was] the night Middlemist went missing.",  
+    "strActionGroup" : "Talk", "bIgnoreFeelings" : true, "aInverse" : ["PLOT_Merga_SignsDiscussed02_Racing_Icon_Alibi"], 
+      "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue", "bImmediateReply": true,
+      "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk",
+      "LootCondsUs" : "CONDPLOT_Merga_SignsDiscussed02", "LootCondsThem" : null, "CTTestUs" : "CTPLOT_Merga_SignsDiscussed02Ready", "CTTestThem" : "CTPLOT_Merga_Is_Racing_Icon"
+    },
+      { "strName" : "PLOT_Merga_SignsDiscussed02_Racing_Icon_Alibi", "strTitle" : "Reply with Alibi", 
+      "strDesc" : "[us] [says] [us-subj] [was] blackout drunk with [us-pos] buddies celebrating [us-pos] recent threepeat Grande Prêmio do Encantado win.",  
+      "strActionGroup" : "Talk", "bIgnoreFeelings" : false, "aInverse" : ["PLOT_Merga_SignsDiscussed02_Racing_Icon_Alibi_Threat","PLOT_Merga_SignsDiscussed02_Racing_Icon_Alibi_Charm"], 
+        "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+        "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk",
+        "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : null, "CTTestThem" : null
+      },
+        { "strName" : "PLOT_Merga_SignsDiscussed02_Racing_Icon_Alibi_Threat", "strTitle" : "Interrogate with Fear", 
+        "strDesc" : "[us] [leans] hard on [them], threatening all kinds of harm if [them-subj] [doesn't] start talking.",  
+        "strActionGroup" : "Talk", "bIgnoreFeelings" : false, "aInverse" : ["PLOT_Merga_SignsDiscussed02_Racing_Icon_Alibi_Threat_Fail","PLOT_Merga_SignsDiscussed02_Racing_Icon_Alibi_Threat_Succeed"], 
+          "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue", "bImmediateReply": true,
+          "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk",
+          "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : null, "CTTestThem" : null
+        },
+          { "strName" : "PLOT_Merga_SignsDiscussed02_Racing_Icon_Alibi_Threat_Fail", "strTitle" : "Resist Fear", 
+          "strDesc" : "[us] [says] folks from Venus don't scare easy and that maybe [them] should head back to the dark corner [them-subj] crawled out of on OKLG.",  
+          "strActionGroup" : "Talk", "bIgnoreFeelings" : true, "aInverse" : [], 
+            "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+            "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk",
+            "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : "SOCRacerConvoIntimidateResist", "CTTestThem" : null
+          },        
+          { "strName" : "PLOT_Merga_SignsDiscussed02_Racing_Icon_Alibi_Threat_Succeed", "strTitle" : "Succumb to Fear", 
+          "strDesc" : "[us] [shrinks] away and [says] the person to look into is officer Josephus Tanner. He couldn't stay away from her before she disappeared.",  
+          "strActionGroup" : "Talk", "bIgnoreFeelings" : true, "aInverse" : [], 
+            "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+            "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk",
+            "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : "SOCRacerConvoIntimidateSuccomb", "CTTestThem" : null
+          },
+        { "strName" : "PLOT_Merga_SignsDiscussed02_Racing_Icon_Alibi_Charm", "strTitle" : "Interroate with Charm", 
+        "strDesc" : "[us] [speaks] softly to [them], making [them-obj] feel like a friend before asking what else [them-subj] [knows] about the night Miss M disappeared.",  
+        "strActionGroup" : "Talk", "bIgnoreFeelings" : true, "aInverse" : ["PLOT_Merga_SignsDiscussed02_Racing_Icon_Alibi_Charm_Fail","PLOT_Merga_SignsDiscussed02_Racing_Icon_Alibi_Charm_Succeed"], 
+          "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue", "bImmediateReply": true,
+          "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk",
+          "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : null, "CTTestThem" : null
+        },
+          { "strName" : "PLOT_Merga_SignsDiscussed02_Racing_Icon_Alibi_Charm_Succeed", "strTitle" : "Succumb to Charm", 
+          "strDesc" : "[us] [smiles] and [says] that before M went missing she was being followed around by officer Josephus Tanner.",  
+          "strActionGroup" : "Talk", "bIgnoreFeelings" : true, "aInverse" : [], 
+            "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+            "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk",
+            "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : "SOCRacerConvoCharmSuccomb", "CTTestThem" : null
+          },
+          { "strName" : "PLOT_Merga_SignsDiscussed02_Racing_Icon_Alibi_Charm_Fail", "strTitle" : "Resist Charm", 
+          "strDesc" : "[us] [scowls] and [says] [us-subj] [doesn't] have any reason to talk to a stranger from OKLG.",  
+          "strActionGroup" : "Talk", "bIgnoreFeelings" : true, "aInverse" : [], 
+            "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+            "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk",
+            "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : "SOCRacerConvoCharmResist", "CTTestThem" : null
+          },
+
+        { "strName" : "PLOT_Merga_SignsDiscussed03", "strTitle" : "Ask for Alibi", 
+        "strDesc" : "[us] [asks] [them] where [them-subj] [was] the night Middlemist went missing.",  
+        "strActionGroup" : "Talk", "bIgnoreFeelings" : true, "aInverse" : ["PLOT_Merga_SignsDiscussed03_Superfan_Alibi"], 
+          "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+          "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk", "bImmediateReply": true,
+          "LootCondsUs" : "CONDPLOT_Merga_SignsDiscussed03", "LootCondsThem" : null, "CTTestUs" : "CTPLOT_Merga_SignsDiscussed03Ready", "CTTestThem" : "CTPLOT_Merga_Is_Superfan"
+        },
+            { "strName" : "PLOT_Merga_SignsDiscussed03_Superfan_Alibi", "strTitle" : "Reply with Alibi", 
+            "strDesc" : "[us] [flashes] a strange grin, and [says] [us-subj] [was] at home editing video of Middlemist's recent performances that night.",  
+            "strActionGroup" : "Talk", "bIgnoreFeelings" : false, "aInverse" : ["PLOT_Merga_SignsDiscussed03_Superfan_Alibi_SeeVid_Threat","PLOT_Merga_SignsDiscussed03_Superfan_Alibi_SeeVid_Charm"], 
+              "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+              "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk",
+              "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : null, "CTTestThem" : null
+            },
+              { "strName" : "PLOT_Merga_SignsDiscussed03_Superfan_Alibi_SeeVid_Charm", "strTitle" : "Charm Them into Sharing Video", 
+              "strDesc" : "[us] [says] [us-subj] are a fan of [them-pos] reels and [us-asks] if [us-subj] can see the one [them-subj] made that night.",  
+              "strActionGroup" : "Talk", "bIgnoreFeelings" : false, "aInverse" : ["PLOT_Merga_SignsDiscussed02_Superfan_Alibi_Charm_Fail","PLOT_Merga_SignsDiscussed02_Superfan_Alibi_Charm_Succeed"], 
+                "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue", "bImmediateReply": true,
+                "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk",
+                "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : null, "CTTestThem" : null
+              },
+                { "strName" : "PLOT_Merga_SignsDiscussed02_Superfan_Alibi_Charm_Succeed", "strTitle" : "Succumb to Charm", 
+                "strDesc" : "[us] eagerly [retrieves] [us-pos] PDA and [shows] [them] a montage of shaky cam footage set to bubbly pop music. One shot stands out: [3rd] leaving Encantado on the night of [3rd-pos] most recent Grande Prêmio win. [3rd-subj] [steps] soberly into [3rd-pos] racer, undock, and dart nimbly into the clouds.",  
+                "strActionGroup" : "Talk", "bIgnoreFeelings" : true, "aInverse" : [], 
+                  "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+                  "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk",
+                  "LootCondsUs" : null, "LootCondsThem" : "CONDPLOT_RacerAlibiBroken", "CTTestUs" : "SOCRacerConvoCharmSuccomb", "CTTestThem" : null
+                },
+                { "strName" : "PLOT_Merga_SignsDiscussed02_Superfan_Alibi_Charm_Fail", "strTitle" : "Resist Charm", 
+                "strDesc" : "[us] [says] [us-contractHas] never seen you in the comments and then retrieves [us-pos] PDA. The video is a montage of shaky cam footage set to bubbly pop music. One shot stands out: [3rd] leaving Encantado on the night of [3rd-pos] most recent Grande Prêmio win. [3rd-subj] [steps] soberly into [3rd-pos] racer, undock, and dart nimbly into the void.",  
+                "strActionGroup" : "Talk", "bIgnoreFeelings" : true, "aInverse" : [], 
+                  "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+                  "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk",
+                  "LootCondsUs" : null, "LootCondsThem" : "CONDPLOT_RacerAlibiBroken", "CTTestUs" : "SOCRacerConvoCharmResist", "CTTestThem" : null
+                },
+                { "strName" : "PLOT_Merga_SignsDiscussed03_Superfan_Alibi_SeeVid_Threat", "strTitle" : "Scare Them into Sharing Video", 
+                "strDesc" : "[us] [plays] the bad cop card and [tries] to intimidate [them] into showing the reel.", "bImmediateReply": true,  
+                "strActionGroup" : "Talk", "bIgnoreFeelings" : true, "aInverse" : ["PLOT_Merga_SignsDiscussed02_Superfan_Alibi_Threat_Fail","PLOT_Merga_SignsDiscussed02_Superfan_Alibi_Threat_Succeed"], 
+                  "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+                  "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk",
+                  "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : null, "CTTestThem" : null
+                },
+                  { "strName" : "PLOT_Merga_SignsDiscussed02_Superfan_Alibi_Threat_Succeed", "strTitle" : "Succumb to Threat", 
+                  "strDesc" : "[us] quickly [retrieves] [us-pos] PDA and [shows] [them] a montage of shaky cam footage set to bubbly pop music. One shot stands out: [3rd] leaving Encantado on the night of [3rd-pos] most recent Grande Prêmio win. [3rd-subj] [steps] soberly into [3rd-pos] racer, undock, and dart nimbly into the void.",  
+                  "strActionGroup" : "Talk", "bIgnoreFeelings" : true, "aInverse" : [], 
+                    "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+                    "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk",
+                    "LootCondsUs" : null, "LootCondsThem" : "CONDPLOT_RacerAlibiBroken", "CTTestUs" : "SOCRacerConvoIntimidateSuccomb", "CTTestThem" : null
+                  },
+                  { "strName" : "PLOT_Merga_SignsDiscussed02_Superfan_Alibi_Threat_Fail", "strTitle" : "Resist Threat", 
+                  "strDesc" : "[us] [says] [us-subj] [doesn't] scare easy but is always happy to have a new fan. [us-subj] [shows] a montage of shaky cam footage set to bubbly pop music. One shot stands out: [3rd] leaving Encantado on the night of [3rd-pos] most recent Grande Prêmio win. [3rd-subj] [steps] soberly into [3rd-pos] racer, [undocks], and [darts] nimbly into the void.",  
+                  "strActionGroup" : "Talk", "bIgnoreFeelings" : true, "aInverse" : [], 
+                    "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+                    "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk",
+                    "LootCondsUs" : null, "LootCondsThem" : "CONDPLOT_RacerAlibiBroken", "CTTestUs" : "SOCRacerConvoIntimidateResist", "CTTestThem" : null
+                  },
+  
+            { "strName" : "PLOT_Merga_SignsDiscussed04", "strTitle" : "Ask for Alibi", 
+            "strDesc" : "[us] [asks] [them] where [them-subj] [was] the night Middlemist went missing.",  
+            "strActionGroup" : "Talk", "bIgnoreFeelings" : true, "aInverse" : ["PLOT_Merga_SignsDiscussed04_Mogul_Alibi"], 
+              "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+              "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk",
+              "LootCondsUs" : "CONDPLOT_Merga_SignsDiscussed04", "LootCondsThem" : null, "CTTestUs" : "CTPLOT_Merga_SignsDiscussed04Ready", "CTTestThem" : "CTPLOT_Merga_Is_Mogul"
+            },
+                { "strName" : "PLOT_Merga_SignsDiscussed04_Mogul_Alibi", "strTitle" : "Reply with Alibi", 
+                "strDesc" : "[us] [says] [us-subj] [was] out to dinner with [us-pos] Lead Counsel at a prominent NewCal restaurant that night.",  
+                "strActionGroup" : "Talk", "bIgnoreFeelings" : true, "aInverse" : [], 
+                  "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+                  "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk",
+                  "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : null, "CTTestThem" : null
+                },
+            { "strName" : "PLOT_Merga_SignsDiscussed05", "strTitle" : "Ask for Alibi", 
+            "strDesc" : "[us] [asks] [them] where [them-subj] [was] the night Middlemist went missing.",  
+            "strActionGroup" : "Talk", "bIgnoreFeelings" : true, "aInverse" : ["PLOT_Merga_SignsDiscussed05_Journalist_Alibi"], 
+              "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+              "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk",
+              "LootCondsUs" : "CONDPLOT_Merga_SignsDiscussed05", "LootCondsThem" : null, "CTTestUs" : "CTPLOT_Merga_SignsDiscussed05Ready", "CTTestThem" : "CTPLOT_Merga_Is_Journalist"
+            },
+                { "strName" : "PLOT_Merga_SignsDiscussed05_Journalist_Alibi", "strTitle" : "Ask for Alibi", 
+                "strDesc" : "[us] [says] [us-subj] [was] at the office in NewCal interviewing the lead counsel representing the owner of the Sol Vermelho Lounge for an upcoming story about race fixing. The interview was several hours long and video taped.",  
+                "strActionGroup" : "Talk", "bIgnoreFeelings" : true, "aInverse" : [], 
+                  "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+                  "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk",
+                  "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : null, "CTTestThem" : null
+                },
+
+    { "strName" : "PLOT_Merga_SignsDiscussed06", "strTitle" : "Examine Strange Stain", "strDesc" : "[us] [finds] a deep purple residue seemingly burned into the bartop in front of [3rd-pos] favorite bar seat.",  "strActionGroup" : "Use",
+      "bIgnoreFeelings" : true, "aInverse" : [ ], "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+      "strTargetPoint" : "use", "fTargetPointRange" : 3.0, "strAnim" : "Talk", "bHumanOnly" : true,
+      "LootCondsUs" : "CONDPLOT_Merga_SignsDiscussed06", "LootCondsThem" : null, "CTTestUs" : "CTPLOT_Merga_SignsDiscussed06Ready", "CTTestThem" : "CTPLOT_Merga_Is_StainedPurple"
+    },
+
+    { "strName" : "PLOT_Merga_SignsDiscussed07", "strTitle" : "Track Superfan Location", "strDesc" : "[us] [uses] the LEO login to track [3rd-pos] location. On the night of Middlemist's disappearance local networks pinged [3rd-obj] all over San Diego making what appears to be repeat visits to different shops in the area.",  "strActionGroup" : "Use",
+    "bIgnoreFeelings" : true, "aInverse" : [ ], "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+    "strTargetPoint" : "use", "fTargetPointRange" : 3.0, "strAnim" : "Talk", "bHumanOnly" : true,
+    "LootCondsUs" : "CONDPLOT_Merga_SignsDiscussed07", "LootCondsThem" : null, "CTTestUs" : "CTPLOT_Merga_SignsDiscussed07Ready", "CTTestThem" : "TIsTerminal01Installed"
+    },
+
+
+   { "strName" : "PLOT_Merga_SignsDiscussed08", "strTitle" : "Ask About Superfan Shopping Spree", "strDesc" : "[us] [asks] [them] if [them-subj] [remembers] seeing [3rd] on the night in question.",  "strActionGroup" : "Talk",
+   "aInverse" : ["PLOT_Merga_SD_Trader_ReplyNegative1","PLOT_Merga_SD_Trader_ReplyNegative2","PLOT_Merga_SD_Trader_ReplyNegative3","PLOT_Merga_SD_Trader_ReplyRenbao","PLOT_Merga_SD_Trader_ReplyShoes","PLOT_Merga_SD_Trader_ReplyClothes","PLOT_Merga_SD_Trader_ReplyCurio","PLOT_Merga_SD_Trader_ReplySulaiman"], 
+   "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue", "bIgnoreFeelings" : true, "bRandomInverse": true,
+   "strTargetPoint" : "use", "fTargetPointRange" : 3.0, "strAnim" : "Talk", "bHumanOnly" : true,
+   "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : "CTPLOT_Merga_SignsDiscussed08Ready", "CTTestThem" : "TIsSanDiegoTrader"
+   },
+      { "strName" : "PLOT_Merga_SD_Trader_ReplyNegative1", "strTitle" : "Spree No Reply One", "strDesc" : "[us] [says] [us-subj] [sees] so many people in a day there's no way [us-subj] could remember someone like that.",  "strActionGroup" : "Use",
+      "aInverse" : [], 
+      "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue", "bIgnoreFeelings" : true,
+      "strTargetPoint" : "use", "fTargetPointRange" : 3.0, "strAnim" : "Talk", "bHumanOnly" : false, 
+      "LootCTsUs" : "CTSOCLightTouchThem", "LootCondsThem" : null, "CTTestUs" : "TIsSanDiegoTraderNoClue", "CTTestThem" : null
+      },
+      { "strName" : "PLOT_Merga_SD_Trader_ReplyNegative2", "strTitle" : "Spree No Reply Two", "strDesc" : "[us] [says] [us-subj] [wishes] [us-subj] could help but [us-subj] didn't see anyone who matches that description.",  "strActionGroup" : "Use",
+      "aInverse" : [], 
+      "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue", "bIgnoreFeelings" : true,
+      "strTargetPoint" : "use", "fTargetPointRange" : 3.0, "strAnim" : "Talk", "bHumanOnly" : false, 
+      "LootCTsUs" : "CTSOCTalkWeatherThem", "LootCondsThem" : null, "CTTestUs" : "TIsSanDiegoTraderNoClue", "CTTestThem" : null
+      },
+      { "strName" : "PLOT_Merga_SD_Trader_ReplyNegative3", "strTitle" : "Spree No Reply Three", "strDesc" : "[us] [appears] annoyed at the intrusion and [says] [us-subj] [is] very confident that person didn't come to [us-pos] shop that day.",  "strActionGroup" : "Use",
+      "aInverse" : [], 
+      "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue", "bIgnoreFeelings" : true,
+      "strTargetPoint" : "use", "fTargetPointRange" : 3.0, "strAnim" : "Talk", "bHumanOnly" : false, 
+      "LootCTsUs" : "CTSOCLookBusyUs", "LootCondsThem" : null, "CTTestUs" : "TIsSanDiegoTraderNoClue", "CTTestThem" : null
+      },
+
+
+
+      { "strName" : "PLOT_Merga_SD_Trader_ReplyRenbao", "strTitle" : "Spree Reply Renbao", "strDesc" : "[us] [says], actually yes. A disturbed seeming person returned many times to purchase high end electronics that night.",  "strActionGroup" : "Use",
+      "aInverse" : [], 
+      "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue", "bIgnoreFeelings" : true,
+      "strTargetPoint" : "use", "fTargetPointRange" : 3.0, "strAnim" : "Talk", "bHumanOnly" : false, 
+      "LootCTsUs" : "CTSOCComplainAboutLAsThem", "LootCondsThem" : "CONDPLOT_Merga_SignsDiscussed08", "CTTestUs" : "TIsSanDiegoTraderRenbao", "CTTestThem" : null
+      },
+      { "strName" : "PLOT_Merga_SD_Trader_ReplyShoes", "strTitle" : "Spree Reply Shoes", "strDesc" : "[us] [remembers] them well. They purchased three pairs of expensive heels in a very particular size and had them all gift wrapped.",  "strActionGroup" : "Use",
+      "aInverse" : [], 
+      "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue", "bIgnoreFeelings" : true,
+      "strTargetPoint" : "use", "fTargetPointRange" : 3.0, "strAnim" : "Talk", "bHumanOnly" : false, 
+      "LootCTsUs" : "CTSOCComplainAboutLAsThem", "LootCondsThem" : "CONDPLOT_Merga_SignsDiscussed08", "CTTestUs" : "TIsSanDiegoTraderShoes", "CTTestThem" : null
+      },
+      { "strName" : "PLOT_Merga_SD_Trader_ReplyClothes", "strTitle" : "Spree Reply Clothes", "strDesc" : "[us] [says] yes. This person was extremely sweaty and bought evening wear and lingerie from the private stock.",  "strActionGroup" : "Use",
+      "aInverse" : [], 
+      "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue", "bIgnoreFeelings" : true,
+      "strTargetPoint" : "use", "fTargetPointRange" : 3.0, "strAnim" : "Talk", "bHumanOnly" : false, 
+      "LootCTsUs" : "CTSOCComplainAboutLAsThem", "LootCondsThem" : "CONDPLOT_Merga_SignsDiscussed08", "CTTestUs" : "TIsSanDiegoTraderClothes", "CTTestThem" : null
+      },
+      { "strName" : "PLOT_Merga_SD_Trader_ReplyCurio", "strTitle" : "Spree Reply Curio", "strDesc" : "[us] gazes into the distance and recalls a person of this description asking what the most expensive thing in stock was. They couldn't afford it and left very, very angry.",  "strActionGroup" : "Use",
+      "aInverse" : [], 
+      "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue", "bIgnoreFeelings" : true,
+      "strTargetPoint" : "use", "fTargetPointRange" : 3.0, "strAnim" : "Talk", "bHumanOnly" : false, 
+      "LootCTsUs" : "CTSOCComplainAboutLAsThem", "LootCondsThem" : "CONDPLOT_Merga_SignsDiscussed08", "CTTestUs" : "TIsSanDiegoTraderCurio", "CTTestThem" : null
+      },
+      { "strName" : "PLOT_Merga_SD_Trader_ReplySulaiman", "strTitle" : "Spree Reply Sulaiman", "strDesc" : "Oh yes, [us] [remembers]. Someone matching this description kept demanding to see the most expensive thing in the store. They then asked if the item would appeal to a woman with discerning taste.",  "strActionGroup" : "Use",
+      "aInverse" : [], 
+      "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue", "bIgnoreFeelings" : true,
+      "strTargetPoint" : "use", "fTargetPointRange" : 3.0, "strAnim" : "Talk", "bHumanOnly" : false, 
+      "LootCTsUs" : "CTSOCComplainAboutLAsThem", "LootCondsThem" : "CONDPLOT_Merga_SignsDiscussed08", "CTTestUs" : "TIsSanDiegoTraderSulaiman", "CTTestThem" : null
+      },
+      
+      
+      
+
+{ "strName" : "PLOT_Merga_MergaEngaged01", "strTitle" : "Ask to Present Evidence", "strDesc" : "[us] [asks] [them] if [us-subj] can present evidence on a certain suspect in the Middlemist case.",  "strActionGroup" : "Talk",
+"bIgnoreFeelings" : true, 
+"aInverse" : [
+"PLOT_Merga_MergaEngaged01_Present_Suspects"
+ ], 
+"fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue","bImmediateReply": true,
+"strTargetPoint" : "talk", "fTargetPointRange" : 0.0, "strAnim" : "Talk", "bHumanOnly" : true, "bRecheckThisPlot" : true,
+"LootCondsUs" : "CONDPLOT_Merga_MergaEngaged01", "LootCondsThem" : null, "CTTestUs" : "CTPLOT_Merga_MergaEngaged01Ready", "CTTestThem" : null
+},
+
+  { "strName" : "PLOT_Merga_MergaEngaged_Done_Present_Evidence", "strTitle" : "Done Presenting Evidence For Now", "strDesc" : "[us] [finishes] up presenting evidence, for now.",  "strActionGroup" : "Talk",
+  "bIgnoreFeelings" : true, "aInverse" : [  ], 
+  "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue","bImmediateReply": true,
+  "strTargetPoint" : "talk", "fTargetPointRange" : 0.0, "strAnim" : "Talk", "bHumanOnly" : true, "bRecheckThisPlot" : true,
+  "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : null, "CTTestThem" : null
+  },
+
+  { "strName" : "PLOT_Merga_MergaEngaged01_Present_Suspects", "strTitle" : "Ask Who They Want to Hear About", "strDesc" : "[us] [asks] who [them] [has] evidence on.",  "strActionGroup" : "Talk",
+  "bIgnoreFeelings" : false, 
+  "aInverse" : [
+  "PLOT_Merga_Present_Evidence_RacingIcon",
+  "PLOT_Merga_Present_Evidence_Mogul",
+  "PLOT_Merga_Present_Evidence_Superfan",
+  "PLOT_Merga_Present_Evidence_Journalist",
+  "PLOT_Merga_Present_Evidence_Tanner",
+  "PLOT_Merga_MergaEngaged_Done_Present_Evidence"
+  ], 
+  "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue", "bRecheckThisPlot" : true,
+  "strTargetPoint" : "talk", "fTargetPointRange" : 0.0, "strAnim" : "Talk", "bHumanOnly" : false, 
+  "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : null, "CTTestThem" : null
+  },
+
+    { "strName" : "PLOT_Merga_Present_Evidence_RacingIcon", "strTitle" : "Offer Evidence on Racing Icon", 
+    "strDesc" : "[us] [offers] [them] the evidence gathered so far to support the famous racing icon as the potential killer of Camellia Middlemist.",
+    "aInverse" : [
+    "PLOT_Merga_Present_Evidence_RacingIcon_Clue0",
+    "PLOT_Merga_Present_Evidence_RacingIcon_Clue1",
+    "PLOT_Merga_Present_Evidence_RacingIcon_Clue2",
+    "PLOT_Merga_Present_Evidence_RacingIcon_Clue3"
+  ],  
+    "strActionGroup" : "Talk", "bIgnoreFeelings" : false,  "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+    "strTargetPoint" : "talk", "fTargetPointRange" : 0.0, "strAnim" : "Talk", "bHumanOnly" : true, "bImmediateReply": true, "bInterrupt": true,
+    "LootCondsUs" : "", "LootCondsThem" : null, "CTTestUs" : "", "CTTestThem" : null
+    },
+      { "strName" : "PLOT_Merga_Present_Evidence_RacingIcon_Clue0", "strTitle" : "Racing Icon No Clues", 
+      "strDesc" : "[us] [says] you don't have much. Try pressing them for an alibi as a start.",
+      "aInverse" : ["PLOT_Merga_MergaEngaged01_Present_Suspects,[us],[them]"],  
+      "strActionGroup" : "Talk", "bIgnoreFeelings" : true,  "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+      "strTargetPoint" : "talk", "fTargetPointRange" : 0.0, "strAnim" : "Talk", "bHumanOnly" : false,
+      "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : null, "CTTestThem" : "TIsPlot_Merga_RacingIcon_CluesFound00"
+      },
+      { "strName" : "PLOT_Merga_Present_Evidence_RacingIcon_Clue1", "strTitle" : "Racing Icon One Clue", 
+      "strDesc" : "[us] [says] being three sheets after a win like that is reasonable enough. If they were that drunk somebody would have seen it. We should ask around.",
+      "aInverse" : ["PLOT_Merga_MergaEngaged01_Present_Suspects,[us],[them]"],  
+      "strActionGroup" : "Talk", "bIgnoreFeelings" : true,  "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+      "strTargetPoint" : "talk", "fTargetPointRange" : 0.0, "strAnim" : "Talk", "bHumanOnly" : false,
+      "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : null, "CTTestThem" : "TIsPlot_Merga_RacingIcon_CluesFound01"
+      },
+      { "strName" : "PLOT_Merga_Present_Evidence_RacingIcon_Clue2", "strTitle" : "Racing Icon Two Clues", 
+      "strDesc" : "Detective [us] [says] the footage is certainly suspicious. Try confronting them about it. The racer is also a constant presence in the Sol Vermelho Lounge center bar. Maybe looking around there will yield more information.",
+      "aInverse" : ["PLOT_Merga_MergaEngaged01_Present_Suspects,[us],[them]"],  
+      "strActionGroup" : "Talk", "bIgnoreFeelings" : true,  "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+      "strTargetPoint" : "talk", "fTargetPointRange" : 0.0, "strAnim" : "Talk", "bHumanOnly" : false,
+      "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : null, "CTTestThem" : "TIsPlot_Merga_RacingIcon_CluesFound02"
+      },
+      { "strName" : "PLOT_Merga_Present_Evidence_RacingIcon_Clue3", "strTitle" : "Racing Icon Three Clues", 
+      "strDesc" : "[us] [says] [us-contractHas] heard enough. [us-subj] [is] going to examine the bar, and then together you can confront the racer.",
+      "aInverse" : ["PLOT_Merga_EndgamePrepared01"],  
+      "strActionGroup" : "Talk", "bIgnoreFeelings" : true,  "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+      "strTargetPoint" : "talk", "fTargetPointRange" : 0.0, "strAnim" : "Talk", "bHumanOnly" : false,
+      "LootCondsUs" : null, "LootCondsThem" : "CONDPLOT_Merga_Present_Evidence_RacingIconEnd", "CTTestUs" : null, "CTTestThem" : "TIsPlot_Merga_RacingIcon_CluesFound03"
+      },
+
+      { "strName" : "PLOT_Merga_Present_Evidence_Mogul", "strTitle" : "Offer Evidence on Business Mogul", 
+      "strDesc" : "[us] [offers] [them] the evidence gathered so far to support the wealthy business mogul as the potential killer of Camellia Middlemist.",
+      "aInverse" : [
+      "PLOT_Merga_Present_Evidence_Mogul_Clue0",
+      "PLOT_Merga_Present_Evidence_Mogul_Clue1",
+      "PLOT_Merga_Present_Evidence_Mogul_Clue2",
+      "PLOT_Merga_Present_Evidence_Mogul_Clue3",
+      "PLOT_Merga_Present_Evidence_Mogul_Clue4",
+      "PLOT_Merga_Present_Evidence_Mogul_Clue5",
+      "PLOT_Merga_Present_Evidence_Mogul_Clue6"
+    ],  
+      "strActionGroup" : "Talk", "bIgnoreFeelings" : false,  "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+      "strTargetPoint" : "talk", "fTargetPointRange" : 0.0, "strAnim" : "Talk", "bHumanOnly" : true, "bImmediateReply": true, "bInterrupt": true,
+      "LootCondsUs" : "", "LootCondsThem" : null, "CTTestUs" : "", "CTTestThem" : null
+      },
+        { "strName" : "PLOT_Merga_Present_Evidence_Mogul_Clue0", "strTitle" : "Mogul Clue Zero", 
+        "strDesc" : "[us] [says] you don't have much. Try pressing them for an alibi as a start.",
+        "aInverse" : ["PLOT_Merga_MergaEngaged01_Present_Suspects,[us],[them]"],  
+        "strActionGroup" : "Talk", "bIgnoreFeelings" : true,  "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+        "strTargetPoint" : "talk", "fTargetPointRange" : 0.0, "strAnim" : "Talk", "bHumanOnly" : false,
+        "LootCondsUs" : "", "LootCondsThem" : null, "CTTestUs" : null, "CTTestThem" : "TIsPlot_Merga_Mogul_CluesFound00"
+        },
+        { "strName" : "PLOT_Merga_Present_Evidence_Mogul_Clue1", "strTitle" : "Mogul Clue One", 
+        "strDesc" : "[us] [says] breaking an alibi with a lawyer involved is almost impossible, especially that lawyer. Sounds like a dead end, for now.",
+        "aInverse" : ["PLOT_Merga_MergaEngaged01_Present_Suspects,[us],[them]"],  
+        "strActionGroup" : "Talk", "bIgnoreFeelings" : true,  "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+        "strTargetPoint" : "talk", "fTargetPointRange" : 0.0, "strAnim" : "Talk", "bHumanOnly" : false,
+        "LootCondsUs" : "", "LootCondsThem" : null, "CTTestUs" : null, "CTTestThem" : "TIsPlot_Merga_Mogul_CluesFound01"
+        },
+        { "strName" : "PLOT_Merga_Present_Evidence_Mogul_Clue2", "strTitle" : "", 
+        "strDesc" : "",
+        "aInverse" : ["PLOT_Merga_MergaEngaged01_Present_Suspects,[us],[them]"],  
+        "strActionGroup" : "Talk", "bIgnoreFeelings" : true,  "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+        "strTargetPoint" : "talk", "fTargetPointRange" : 0.0, "strAnim" : "Talk", "bHumanOnly" : false,
+        "LootCondsUs" : "", "LootCondsThem" : null, "CTTestUs" : "TIsPlot_Merga_Mogul_CluesFound02", "CTTestThem" : null
+        },
+        { "strName" : "PLOT_Merga_Present_Evidence_Mogul_Clue3", "strTitle" : "", 
+        "strDesc" : "",
+        "aInverse" : ["PLOT_Merga_MergaEngaged01_Present_Suspects,[us],[them]"],  
+        "strActionGroup" : "Talk", "bIgnoreFeelings" : true,  "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+        "strTargetPoint" : "talk", "fTargetPointRange" : 0.0, "strAnim" : "Talk", "bHumanOnly" : false,
+        "LootCondsUs" : "", "LootCondsThem" : null, "CTTestUs" : "TIsPlot_Merga_Mogul_CluesFound03", "CTTestThem" : null
+        },
+        { "strName" : "PLOT_Merga_Present_Evidence_Mogul_Clue4", "strTitle" : "", 
+        "strDesc" : "",
+        "aInverse" : ["PLOT_Merga_MergaEngaged01_Present_Suspects,[us],[them]"],  
+        "strActionGroup" : "Talk", "bIgnoreFeelings" : true,  "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+        "strTargetPoint" : "talk", "fTargetPointRange" : 0.0, "strAnim" : "Talk", "bHumanOnly" : false,
+        "LootCondsUs" : "", "LootCondsThem" : null, "CTTestUs" : "TIsPlot_Merga_Mogul_CluesFound04", "CTTestThem" : null
+        },
+        { "strName" : "PLOT_Merga_Present_Evidence_Mogul_Clue5", "strTitle" : "", 
+        "strDesc" : "",
+        "aInverse" : ["PLOT_Merga_MergaEngaged01_Present_Suspects,[us],[them]"],  
+        "strActionGroup" : "Talk", "bIgnoreFeelings" : true,  "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+        "strTargetPoint" : "talk", "fTargetPointRange" : 0.0, "strAnim" : "Talk", "bHumanOnly" : false,
+        "LootCondsUs" : "", "LootCondsThem" : null, "CTTestUs" : "TIsPlot_Merga_Mogul_CluesFound05", "CTTestThem" : null
+        },
+        { "strName" : "PLOT_Merga_Present_Evidence_Mogul_Clue6", "strTitle" : "", 
+        "strDesc" : "",
+        "aInverse" : ["PLOT_Merga_MergaEngaged01_Present_Suspects,[us],[them]"],  
+        "strActionGroup" : "Talk", "bIgnoreFeelings" : true,  "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+        "strTargetPoint" : "talk", "fTargetPointRange" : 0.0, "strAnim" : "Talk", "bHumanOnly" : false,
+        "LootCondsUs" : "", "LootCondsThem" : null, "CTTestUs" : "TIsPlot_Merga_Mogul_CluesFound06", "CTTestThem" : null
+        },
+
+        { "strName" : "PLOT_Merga_Present_Evidence_Superfan", "strTitle" : "Offer Evidence on Superfan", 
+      "strDesc" : "[us] [offers] [them] the evidence gathered so far to support the superfan as the potential killer of Camellia Middlemist.",
+      "aInverse" : [
+      "PLOT_Merga_Present_Evidence_Superfan_Clue0",
+      "PLOT_Merga_Present_Evidence_Superfan_Clue1",
+      "PLOT_Merga_Present_Evidence_Superfan_Clue2",
+      "PLOT_Merga_Present_Evidence_Superfan_Clue3",
+      "PLOT_Merga_Present_Evidence_Superfan_Clue4",
+      "PLOT_Merga_Present_Evidence_Superfan_Clue5",
+      "PLOT_Merga_Present_Evidence_Superfan_Clue6"
+    ],  
+      "strActionGroup" : "Talk", "bIgnoreFeelings" : false,  "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+      "strTargetPoint" : "talk", "fTargetPointRange" : 0.0, "strAnim" : "Talk", "bHumanOnly" : true, "bImmediateReply": true, "bInterrupt": true,
+      "LootCondsUs" : "", "LootCondsThem" : null, "CTTestUs" : "", "CTTestThem" : null
+      },
+        { "strName" : "PLOT_Merga_Present_Evidence_Superfan_Clue0", "strTitle" : "Superfan No Clues", 
+        "strDesc" : "[us] [says] you don't have much. Try pressing them for an alibi as a start.",
+        "aInverse" : ["PLOT_Merga_MergaEngaged01_Present_Suspects,[us],[them]"],  
+        "strActionGroup" : "Talk", "bIgnoreFeelings" : true,  "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+        "strTargetPoint" : "talk", "fTargetPointRange" : 0.0, "strAnim" : "Talk", "bHumanOnly" : false,
+        "LootCondsUs" : "", "LootCondsThem" : null, "CTTestUs" : null, "CTTestThem" : "TIsPlot_Merga_Superfan_CluesFound00"
+        },
+        { "strName" : "PLOT_Merga_Present_Evidence_Superfan_Clue1", "strTitle" : "Superfan One Clue", 
+        "strDesc" : "[us] [says] the video isn't proof [us-subj] [was] home all night. Besides, being at home is hardly an alibi. The detective gives [them] login credentials for LEO software and says to use any terminal to check the superfan's network access point log data to get a sense of where they were that night.",
+        "aInverse" : ["PLOT_Merga_MergaEngaged01_Present_Suspects,[us],[them]"],  
+        "strActionGroup" : "Talk", "bIgnoreFeelings" : true,  "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+        "strTargetPoint" : "talk", "fTargetPointRange" : 0.0, "strAnim" : "Talk", "bHumanOnly" : false,
+        "LootCondsUs" : "", "LootCondsThem" : "CONDPLOT_LEONetworkSoftware", "CTTestThem" : "TIsPlot_Merga_Superfan_CluesFound01", "CTTestUs" : null
+        },
+        { "strName" : "PLOT_Merga_Present_Evidence_Superfan_Clue2", "strTitle" : "Superfan Two Clues", 
+        "strDesc" : "[us] [says] the next step is obviously retracing the superfan's moves that night. Go to San Diego and talk to the shopkeepers there to see if they remember seeing anyone suspicious.",
+        "aInverse" : ["PLOT_Merga_MergaEngaged01_Present_Suspects,[us],[them]"],  
+        "strActionGroup" : "Talk", "bIgnoreFeelings" : true,  "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+        "strTargetPoint" : "talk", "fTargetPointRange" : 0.0, "strAnim" : "Talk", "bHumanOnly" : false,
+        "LootCondsUs" : "", "LootCondsThem" : null, "CTTestThem" : "TIsPlot_Merga_Superfan_CluesFound02", "CTTestUs" : null
+        },
+        { "strName" : "PLOT_Merga_Present_Evidence_Superfan_Clue3", "strTitle" : "Superfan Three Clues", 
+        "strDesc" : "[us] [says] this is suspicious enough to at least have a hard chat with the superfan. Together you find and confront them. ",
+        "aInverse" : ["PLOT_Merga_EndgamePrepared02"],  
+        "strActionGroup" : "Talk", "bIgnoreFeelings" : true,  "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+        "strTargetPoint" : "talk", "fTargetPointRange" : 0.0, "strAnim" : "Talk", "bHumanOnly" : false,
+        "LootCondsUs" : null, "LootCondsThem" : "CONDPLOT_Merga_Present_Evidence_SuperfanEnd", "CTTestThem" : "TIsPlot_Merga_Superfan_CluesFound03", "CTTestUs" : null
+        },
+
+        { "strName" : "PLOT_Merga_Present_Evidence_Journalist", "strTitle" : "Offer Evidence on Journalist", 
+      "strDesc" : "[us] [offers] [them] the evidence gathered so far to support the Journalist as the potential killer of Camellia Middlemist.",
+      "aInverse" : [
+      "PLOT_Merga_Present_Evidence_Journalist_Clue0",
+      "PLOT_Merga_Present_Evidence_Journalist_Clue1",
+      "PLOT_Merga_Present_Evidence_Journalist_Clue2",
+      "PLOT_Merga_Present_Evidence_Journalist_Clue3",
+      "PLOT_Merga_Present_Evidence_Journalist_Clue4",
+      "PLOT_Merga_Present_Evidence_Journalist_Clue5",
+      "PLOT_Merga_Present_Evidence_Journalist_Clue6"
+    ],  
+      "strActionGroup" : "Talk", "bIgnoreFeelings" : false,  "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+      "strTargetPoint" : "talk", "fTargetPointRange" : 0.0, "strAnim" : "Talk", "bHumanOnly" : true, "bImmediateReply": true, "bInterrupt": true,
+      "LootCondsUs" : "", "LootCondsThem" : null, "CTTestUs" : "", "CTTestThem" : null
+      },
+        { "strName" : "PLOT_Merga_Present_Evidence_Journalist_Clue0", "strTitle" : "Journalist Clue Zero", 
+        "strDesc" : "[us] [says] you don't have much. Try pressing them for an alibi as a start.",
+        "aInverse" : ["PLOT_Merga_MergaEngaged01_Present_Suspects,[us],[them]"],  
+        "strActionGroup" : "Talk", "bIgnoreFeelings" : true,  "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+        "strTargetPoint" : "talk", "fTargetPointRange" : 0.0, "strAnim" : "Talk", "bHumanOnly" : false,
+        "LootCondsUs" : "", "LootCondsThem" : null, "CTTestUs" : null, "CTTestThem" : "TIsPlot_Merga_Journalist_CluesFound00"
+        },
+        { "strName" : "PLOT_Merga_Present_Evidence_Journalist_Clue1", "strTitle" : "Journalist Clue One", 
+        "strDesc" : "[us] [says] running that alibi against the lawyer of a big shot club owner might be an uphill climb. Sounds like a dead end, for now.",
+        "aInverse" : ["PLOT_Merga_MergaEngaged01_Present_Suspects,[us],[them]"],  
+        "strActionGroup" : "Talk", "bIgnoreFeelings" : true,  "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+        "strTargetPoint" : "talk", "fTargetPointRange" : 0.0, "strAnim" : "Talk", "bHumanOnly" : false,
+        "LootCondsUs" : "", "LootCondsThem" : null, "CTTestUs" : null, "CTTestThem" : "TIsPlot_Merga_Journalist_CluesFound01"
+        },
+        { "strName" : "PLOT_Merga_Present_Evidence_Journalist_Clue2", "strTitle" : "", 
+        "strDesc" : "",
+        "aInverse" : ["PLOT_Merga_MergaEngaged01_Present_Suspects,[us],[them]"],  
+        "strActionGroup" : "Talk", "bIgnoreFeelings" : true,  "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+        "strTargetPoint" : "talk", "fTargetPointRange" : 0.0, "strAnim" : "Talk", "bHumanOnly" : false,
+        "LootCondsUs" : "", "LootCondsThem" : null, "CTTestUs" : "TIsPlot_Merga_Journalist_CluesFound02", "CTTestThem" : null
+        },
+        { "strName" : "PLOT_Merga_Present_Evidence_Journalist_Clue3", "strTitle" : "", 
+        "strDesc" : "",
+        "aInverse" : ["PLOT_Merga_MergaEngaged01_Present_Suspects,[us],[them]"],  
+        "strActionGroup" : "Talk", "bIgnoreFeelings" : true,  "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+        "strTargetPoint" : "talk", "fTargetPointRange" : 0.0, "strAnim" : "Talk", "bHumanOnly" : false,
+        "LootCondsUs" : "", "LootCondsThem" : null, "CTTestUs" : "TIsPlot_Merga_Journalist_CluesFound03", "CTTestThem" : null
+        },
+        { "strName" : "PLOT_Merga_Present_Evidence_Journalist_Clue4", "strTitle" : "", 
+        "strDesc" : "",
+        "aInverse" : ["PLOT_Merga_MergaEngaged01_Present_Suspects,[us],[them]"],  
+        "strActionGroup" : "Talk", "bIgnoreFeelings" : true,  "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+        "strTargetPoint" : "talk", "fTargetPointRange" : 0.0, "strAnim" : "Talk", "bHumanOnly" : false,
+        "LootCondsUs" : "", "LootCondsThem" : null, "CTTestUs" : "TIsPlot_Merga_Journalist_CluesFound04", "CTTestThem" : null
+        },
+        { "strName" : "PLOT_Merga_Present_Evidence_Journalist_Clue5", "strTitle" : "", 
+        "strDesc" : "",
+        "aInverse" : ["PLOT_Merga_MergaEngaged01_Present_Suspects,[us],[them]"],  
+        "strActionGroup" : "Talk", "bIgnoreFeelings" : true,  "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+        "strTargetPoint" : "talk", "fTargetPointRange" : 0.0, "strAnim" : "Talk", "bHumanOnly" : false,
+        "LootCondsUs" : "", "LootCondsThem" : null, "CTTestUs" : "TIsPlot_Merga_Journalist_CluesFound05", "CTTestThem" : null
+        },
+        { "strName" : "PLOT_Merga_Present_Evidence_Journalist_Clue6", "strTitle" : "", 
+        "strDesc" : "",
+        "aInverse" : ["PLOT_Merga_MergaEngaged01_Present_Suspects,[us],[them]"],  
+        "strActionGroup" : "Talk", "bIgnoreFeelings" : true,  "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+        "strTargetPoint" : "talk", "fTargetPointRange" : 0.0, "strAnim" : "Talk", "bHumanOnly" : false,
+        "LootCondsUs" : "", "LootCondsThem" : null, "CTTestUs" : "TIsPlot_Merga_Journalist_CluesFound06", "CTTestThem" : null
+        },
+
+        { "strName" : "PLOT_Merga_Present_Evidence_Tanner", "strTitle" : "Offer Evidence on Detective Josephus Tanner", 
+        "strDesc" : "[us] [offers] [them] the evidence gathered so far to support Detective Josephus Tanner as the potential killer of Camellia Middlemist.",
+        "aInverse" : [
+        "PLOT_Merga_Present_Evidence_Tanner_Clue0",
+        "PLOT_Merga_Present_Evidence_Tanner_Clue1",
+        "PLOT_Merga_Present_Evidence_Tanner_Clue2",
+        "PLOT_Merga_Present_Evidence_Tanner_Clue3",
+        "PLOT_Merga_Present_Evidence_Tanner_Clue4",
+        "PLOT_Merga_Present_Evidence_Tanner_Clue5",
+        "PLOT_Merga_Present_Evidence_Tanner_Clue6"
+      ],  
+        "strActionGroup" : "Talk", "bIgnoreFeelings" : false,  "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+        "strTargetPoint" : "talk", "fTargetPointRange" : 0.0, "strAnim" : "Talk", "bHumanOnly" : true, "bImmediateReply": true, "bInterrupt": true,
+        "LootCondsUs" : "", "LootCondsThem" : null, "CTTestUs" : "", "CTTestThem" : null
+        },
+          { "strName" : "PLOT_Merga_Present_Evidence_Tanner_Clue0", "strTitle" : "", 
+          "strDesc" : "",
+          "aInverse" : ["PLOT_Merga_MergaEngaged01_Present_Suspects,[us],[them]"],  
+          "strActionGroup" : "Talk", "bIgnoreFeelings" : true,  "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+          "strTargetPoint" : "talk", "fTargetPointRange" : 0.0, "strAnim" : "Talk", "bHumanOnly" : false,
+          "LootCondsUs" : "", "LootCondsThem" : null, "CTTestUs" : "TIsPlot_Merga_Tanner_CluesFound00", "CTTestThem" : null
+          },
+          { "strName" : "PLOT_Merga_Present_Evidence_Tanner_Clue1", "strTitle" : "", 
+          "strDesc" : "",
+          "aInverse" : ["PLOT_Merga_MergaEngaged01_Present_Suspects,[us],[them]"],  
+          "strActionGroup" : "Talk", "bIgnoreFeelings" : true,  "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+          "strTargetPoint" : "talk", "fTargetPointRange" : 0.0, "strAnim" : "Talk", "bHumanOnly" : false,
+          "LootCondsUs" : "", "LootCondsThem" : null, "CTTestUs" : "TIsPlot_Merga_Tanner_CluesFound01", "CTTestThem" : null
+          },
+          { "strName" : "PLOT_Merga_Present_Evidence_Tanner_Clue2", "strTitle" : "", 
+          "strDesc" : "",
+          "aInverse" : ["PLOT_Merga_MergaEngaged01_Present_Suspects,[us],[them]"],  
+          "strActionGroup" : "Talk", "bIgnoreFeelings" : true,  "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+          "strTargetPoint" : "talk", "fTargetPointRange" : 0.0, "strAnim" : "Talk", "bHumanOnly" : false,
+          "LootCondsUs" : "", "LootCondsThem" : null, "CTTestUs" : "TIsPlot_Merga_Tanner_CluesFound02", "CTTestThem" : null
+          },
+          { "strName" : "PLOT_Merga_Present_Evidence_Tanner_Clue3", "strTitle" : "", 
+          "strDesc" : "",
+          "aInverse" : ["PLOT_Merga_MergaEngaged01_Present_Suspects,[us],[them]"],  
+          "strActionGroup" : "Talk", "bIgnoreFeelings" : true,  "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+          "strTargetPoint" : "talk", "fTargetPointRange" : 0.0, "strAnim" : "Talk", "bHumanOnly" : false,
+          "LootCondsUs" : "", "LootCondsThem" : null, "CTTestUs" : "TIsPlot_Merga_Tanner_CluesFound03", "CTTestThem" : null
+          },
+          { "strName" : "PLOT_Merga_Present_Evidence_Tanner_Clue4", "strTitle" : "", 
+          "strDesc" : "",
+          "aInverse" : ["PLOT_Merga_MergaEngaged01_Present_Suspects,[us],[them]"],  
+          "strActionGroup" : "Talk", "bIgnoreFeelings" : true,  "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+          "strTargetPoint" : "talk", "fTargetPointRange" : 0.0, "strAnim" : "Talk", "bHumanOnly" : false,
+          "LootCondsUs" : "", "LootCondsThem" : null, "CTTestUs" : "TIsPlot_Merga_Tanner_CluesFound04", "CTTestThem" : null
+          },
+          { "strName" : "PLOT_Merga_Present_Evidence_Tanner_Clue5", "strTitle" : "", 
+          "strDesc" : "",
+          "aInverse" : ["PLOT_Merga_MergaEngaged01_Present_Suspects,[us],[them]"],  
+          "strActionGroup" : "Talk", "bIgnoreFeelings" : true,  "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+          "strTargetPoint" : "talk", "fTargetPointRange" : 0.0, "strAnim" : "Talk", "bHumanOnly" : false,
+          "LootCondsUs" : "", "LootCondsThem" : null, "CTTestUs" : "TIsPlot_Merga_Tanner_CluesFound06", "CTTestThem" : null
+          },
+          { "strName" : "PLOT_Merga_Present_Evidence_Tanner_Clue6", "strTitle" : "", 
+          "strDesc" : "",
+          "aInverse" : ["PLOT_Merga_MergaEngaged01_Present_Suspects,[us],[them]"],  
+          "strActionGroup" : "Talk", "bIgnoreFeelings" : true,  "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+          "strTargetPoint" : "talk", "fTargetPointRange" : 0.0, "strAnim" : "Talk", "bHumanOnly" : false,
+          "LootCondsUs" : "", "LootCondsThem" : null, "CTTestUs" : "TIsPlot_Merga_Tanner_CluesFound06", "CTTestThem" : null
+          },
+
+
+
+
+      { "strName" : "PLOT_Merga_MergaEngaged02", "strTitle" : "Consider Racing Icon as Suspect", "strDesc" : "It's always the spouse. With associates in the Briar Rose and money to spare, [racing_icon-surname] certainly has the means to kill Middlemist. But why would they risk their reputation so publicly?",  "strActionGroup" : "Talk",
+      "bIgnoreFeelings" : true, "aInverse" : [  ], 
+      "fDuration" : 0.0005, "strThemType" : "Self", "nLogging" : 1, "strColor" : "Dialogue", "bHumanOnly" :true,
+      "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk",
+      "LootCondsUs" : "CONDPLOT_Merga_MergaEngaged02", "LootCondsThem" : null, "CTTestUs" : "CTPLOT_Merga_MergaEngaged02Ready", "CTTestThem" : null
+      },
+
+      { "strName" : "PLOT_Merga_MergaEngaged03", "strTitle" : "", "strDesc" : "XXX",  "strActionGroup" : "Talk",
+      "bIgnoreFeelings" : true, "aInverse" : [  ], 
+      "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+      "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk",
+      "LootCondsUs" : "CONDPLOT_Merga_MergaEngaged03", "CTTestUs" : "CTPLOT_Merga_MergaEngaged03Ready", "CTTestThem" : "TNever"
+      },
+
+      { "strName" : "PLOT_Merga_MergaEngaged04", "strTitle" : "", "strDesc" : "XXX",  "strActionGroup" : "Talk",
+      "bIgnoreFeelings" : true, "aInverse" : [ ], "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+      "strTargetPoint" : "talk", "fTargetPointRange" : 0.0, "strAnim" : "Talk", 
+      "LootCondsUs" : "CONDPLOT_Merga_MergaEngaged04", "LootCondsThem" : null, "CTTestUs" : "CTPLOT_Merga_MergaEngaged04Ready", "CTTestThem" : "TNever"
+      },
+
+      { "strName" : "PLOT_Merga_MergaEngaged05", "strTitle" : "Nurture Hunch for Racing Icon", "strDesc" : "[racing_icon] almost certainly lied about [racing_icon-pos] alibi, as [racing_icon-subj] was likely sober on the night of Middlemist's disappearance. But where was [racing_icon-subj] going in such a hurry?",  "strActionGroup" : "Talk",
+      "bIgnoreFeelings" : true, "aInverse" : [ ], "fDuration" : 0.0005, "strThemType" : "Self", "nLogging" : 1, "strColor" : "Dialogue",
+      "strTargetPoint" : "talk", "fTargetPointRange" : 0.0, "strAnim" : "Talk", "bHumanOnly" : true,
+      "LootCondsUs" : "CONDPLOT_Merga_MergaEngaged05", "LootCondsThem" : null, "CTTestUs" : "CTPLOT_Merga_MergaEngaged05Ready", "CTTestThem" : null
+      },
+
+    { "strName" : "PLOT_Merga_MergaEngaged06", "strTitle" : "Disprove Alibi",
+    "strDesc" : "[us] [shows] [them] the footage [3rd] made of [racing_icon-surname] sober on the night of Middlemist's disappearance and [us-asks] why [them-subj] would lie about being drunk.",  
+    "strActionGroup" : "Talk",
+    "bIgnoreFeelings" : true, "aInverse" : ["PLOT_Merga_MergaEngaged06_Reply"], "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+    "strTargetPoint" : "talk", "fTargetPointRange" : 0.0, "strAnim" : "Talk", 
+    "LootCondsUs" : "CONDPLOT_Merga_MergaEngaged06", "LootCondsThem" : null, "CTTestUs" : "CTPLOT_Merga_MergaEngaged06Ready"
+    },
+      { "strName" : "PLOT_Merga_MergaEngaged06_Reply", "strTitle" : "Reply Disprove Alibi",
+      "strDesc" : "[us] [says] [3rd] [is] a nosy little freak. Besides, the footage doesn't prove [us-subj] [was] sober. [us-contractHas] always been able to hold [us-pos] liquor.",  
+      "strActionGroup" : "Talk",
+      "bIgnoreFeelings" : true, "aInverse" : [], "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+      "strTargetPoint" : "talk", "fTargetPointRange" : 0.0, "strAnim" : "Talk", 
+      "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : null
+      },
+
+
+
+
+      { "strName" : "PLOT_Merga_MergaEngaged07", "strTitle" : "Disprove Alibi",
+      "strDesc" : "[us] [asks] [them] why [them-subj] lied, and why [them-subj] made so many visits to the shops in San Diego on the might of Miss M's disappearance.",  
+      "strActionGroup" : "Talk",
+      "bIgnoreFeelings" : true, "aInverse" : ["PLOT_Merga_MergaEngaged07_Reply"], "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+      "strTargetPoint" : "talk", "fTargetPointRange" : 0.0, "strAnim" : "Talk", 
+      "LootCondsUs" : "CONDPLOT_Merga_MergaEngaged07", "LootCondsThem" : null, "CTTestUs" : "CTPLOT_Merga_MergaEngaged07Ready"
+      },
+        { "strName" : "PLOT_Merga_MergaEngaged07_Reply", "strTitle" : "Reply Disprove Alibi",
+        "strDesc" : "[them] [giggles] and [speaks] at length about how there's nothing [them-subj] [loves] more than shopping.",  
+        "strActionGroup" : "Talk",
+        "bIgnoreFeelings" : true, "aInverse" : [], "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+        "strTargetPoint" : "talk", "fTargetPointRange" : 0.0, "strAnim" : "Talk", 
+        "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : null
+        },
+  
+
+
+
+
+
+
+  
+{ "strName" : "PLOT_Merga_MergaKnown01", "strTitle" : "XXX", "strDesc" : "XXX",   "strActionGroup" : "Talk",
+    "bIgnoreFeelings" : true, "aInverse" : [ ], "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+    "strTargetPoint" : "talk", "fTargetPointRange" : 0.0, "strAnim" : "Talk", "bHumanOnly" : true, "bRecheckThisPlot" : true,
+    "LootCondsUs" : "CONDPLOT_Merga_MergaKnown01", "LootCondsThem" : null, "CTTestUs" : "CTPLOT_Merga_MergaKnown01Ready", "CTTestThem" : "TNever"
+},
+
+
+
+    { "strName" : "PLOT_Merga_MergaKnown02", "strTitle" : "XXX", "strDesc" : "XXX",  "strActionGroup" : "Talk",
+    "bIgnoreFeelings" : true, "aInverse" : [  ], 
+    "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+    "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk",
+    "LootCondsUs" : "CONDPLOT_Merga_MergaKnown02", "LootCondsThem" : null, "CTTestUs" : "CTPLOT_Merga_MergaKnown02Ready", "CTTestThem" : "TNever"
+    },
+    { "strName" : "PLOT_Merga_MergaKnown03", "strTitle" : "XXX", "strDesc" : "XXX",  "strActionGroup" : "Talk",
+    "bIgnoreFeelings" : true, "aInverse" : [  ], 
+    "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+    "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk",
+    "LootCondsUs" : "CONDPLOT_Merga_MergaKnown03", "CTTestUs" : "CTPLOT_Merga_MergaKnown03Ready", "CTTestThem" : "TNever"
+    },
+    { "strName" : "PLOT_Merga_MergaKnown04", "strTitle" : "XXX", "strDesc" : "XXX",  "strActionGroup" : "Talk",
+    "bIgnoreFeelings" : true, "aInverse" : [ ], "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+    "strTargetPoint" : "talk", "fTargetPointRange" : 0.0, "strAnim" : "Talk", "bHumanOnly" : true,
+    "LootCondsUs" : "CONDPLOT_Merga_MergaKnown04", "LootCondsThem" : null, "CTTestUs" : "CTPLOT_Merga_MergaKnown04Ready", "CTTestThem" : "TNever"
+    },
+    { "strName" : "PLOT_Merga_MergaKnown05", "strTitle" : "XXX", "strDesc" : "XXX",  "strActionGroup" : "Talk",
+    "bIgnoreFeelings" : true, "aInverse" : [ ], "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+    "strTargetPoint" : "talk", "fTargetPointRange" : 0.0, "strAnim" : "Talk", "bHumanOnly" : true,
+    "LootCondsUs" : "CONDPLOT_Merga_MergaKnown05", "LootCondsThem" : null, "CTTestUs" : "CTPLOT_Merga_MergaKnown05Ready", "CTTestThem" : "TNever"
+    },
+    { "strName" : "PLOT_Merga_MergaKnown06", "strTitle" : "XXX", "strDesc" : "XXX",  "strActionGroup" : "Talk",
+    "bIgnoreFeelings" : true, "aInverse" : [ ], "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+    "strTargetPoint" : "talk", "fTargetPointRange" : 0.0, "strAnim" : "Talk", "bHumanOnly" : true,
+    "LootCondsUs" : "CONDPLOT_Merga_MergaKnown06", "LootCondsThem" : null, "CTTestUs" : "CTPLOT_Merga_MergaKnown06Ready", "CTTestThem" : "TNever"
+    },
+
+
+{ "strName" : "PLOT_Merga_EndgamePrepared01", "strTitle" : "Start Racer Encounter", "strDesc" : "Together you leave to confront the suspect.",  "strActionGroup" : "Talk",
+    "bIgnoreFeelings" : true, "aInverse" : [ "ENCPLOT_Merga_RacerBossStart,[us],[us]"], "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+    "strTargetPoint" : "talk", "fTargetPointRange" : 0.0, "strAnim" : "Talk", "bHumanOnly" : true, "bRecheckThisPlot" : true,
+    "LootCondsUs" : "CONDPLOT_Merga_EndgamePrepared01", "LootCondsThem" : null, "CTTestUs" : "CTPLOT_Merga_EndgamePrepared01Ready", "CTTestThem" : null
+}, 
+{ "strName" : "PLOT_Merga_EndgamePrepared02", "strTitle" : "Start Superfan Encounter", "strDesc" : "Together you leave to confront the suspect.",  "strActionGroup" : "Talk",
+    "bIgnoreFeelings" : true, "aInverse" : [ "ENCPLOT_Merga_SuperfanBossStart,[us],[us]"], "fDuration" : 0.0005, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+    "strTargetPoint" : "talk", "fTargetPointRange" : 0.0, "strAnim" : "Talk", "bHumanOnly" : true, "bRecheckThisPlot" : true,
+    "LootCondsUs" : "CONDPLOT_Merga_EndgamePrepared02", "LootCondsThem" : null, "CTTestUs" : "CTPLOT_Merga_EndgamePrepared02Ready", "CTTestThem" : null
+}, 
+
+
+      
+    {
+      "strName" : "ENCPLOT_Merga_SuperfanBossStart",
+      "strTitle" : "Confronting the Superfan",
+      "strDesc" : "You find the superfan and grill them about the footage you found. It's a strange interrogation at first. Every question and demand is met with a giggle or coy smile, no matter how serious the matter at hand.\n\nMaybe sensing an angle, your detective partner lays on the bad cop act, lacing their tone with parental admonishments and scolding. The dam breaks. In an instant the superfan's eerie smile melts into an expression of childish rage and confusion.\n\n\"He promised,\" the superfan manages through bitter tears. \"He promised to make her love me.\"\n\n\"Who promised?\"\n\n\"The cloaked one. With hollow eyes.\"\n\n\"I need you to tell me exactly what he said.\"\n\n\"He said if I told him where Miss M was that night that he would give her the gifts I bought her. That she wouldn't refuse them anymore. That she would take me instead of that awful cop she was always with.\"\n\n\"What cop,\" the detective asks.\n\n\"You know what cop,\" the superfan replies. \"Your little friend. Tanner.\"\n\n\"And if he couldn't? Couldn't convince her?\"\n\n \"He promised,\" the superfan tries. \"That he would make her pay. For choosing Tanner instead of me. Oh god I'm so sorry...\"\n\nThe superfan breaks into racking sobs and continues pleading the detective and Miss M for forgiveness for what they've done.",
+      "strColor"      : "Dialogue",
+      "aInverse"          : [
+        "ENCPlot_Merga_Superfan_Arrest",
+        "ENCPlot_Merga_Superfan_Kill"
+      ],
+      "fDuration"         : 0.00000001,
+      "strThemType"       : "Self",
+      "strRaiseUI"        : "SocialCombat",
+      "strSubUI"        : "Landscape01",
+      "strImage"        : "encounters/ENCPlanetSunrise",
+      "nLogging"         : 0,
+      "bHumanOnly"     : true,
+      "bIgnoreFeelings"	: true,
+      "LootCondsUs"       : null,
+      "LootCTsThem"     : null,
+      "CTTestUs"           : null,
+      "CTTestThem"         : null
+    },
+        {
+          "strName" : "ENCPlot_Merga_Superfan_Arrest",
+          "strTitle" : "Arrest Them",
+          "strDesc" : "You cuff the sniveling superfan and take them in for processing.\n\nYou lead with the suspect's access to the victim and failed alibi and leave out their crazed tale of the cloaked accomplice. It's more than enough to convince the upper LEO brass and with the entire system begging for a head to roll in the case, you're certain the NewCal DA will convict without much difficulty.\n\nNews of your work on the case circulates quickly among the ranks of the Venusian police. After a meeting with a handful of the department upper brass, you're assured that if you ever find yourself in trouble with the law in and around Venus, it will turn out to be no trouble at all. \n\nWhen the dust settles the detective thanks you for your help and offers their assistance if you ever need it in the future.\n\n\"One more thing,\" they say before you leave. \"What our suspect said about the cloaked figure reminds me of something Josephus Tanner told me about when he was at his worst. Come with me. We should tie up one last loose end.\"",
+          "strColor"      : "Dialogue",
+          "aInverse"          : [
+            "ENCPlot_Merga_Boss_GoXXX1"
+          ],
+          "fDuration"         : 0.00000001,
+          "strThemType"       : "Self",
+          "strRaiseUI"        : "SocialCombat",
+          "strSubUI"        : "Landscape01",
+          "strImage"        : "encounters/ENCPlanetSunrise",
+          "nLogging"         : 0,
+          "bHumanOnly"     : true,
+          "bIgnoreFeelings"	: true,
+          "strTeleportRegID" : "OKLG_UNK",
+          "strTeleportTarget" : "3rd",
+          "PSpecTest3rd"      : "Plot_Merga_Superfan_Find",
+          "LootCondsUs"       : "CONDPLOT_VenusImmunity",
+          "LootCTsThem"     : null,
+          "CTTestUs"           : null,
+          "CTTestThem"         : null
+        },
+        {
+          "strName" : "ENCPlot_Merga_Superfan_Kill",
+          "strTitle" : "Kill Them",
+          "strDesc" : "Together you lead the blubbering superfan through non trafficked maintenance corridors towards the LA Aerostat, ignoring their pleas all the way. As you do so you're met with the uncanny feeling that this is something your detective friend has done before. \n\nYou reach an abandoned garbage airlock and stuff the superfan inside. There's a brief moment when you wonder who will open the trap door on the other side. You suddenly realize it doesn't matter. You press the button to open the floor and the sniveling accomplice to murder falls to their certain death through Venus's sulfurous, caustic fog.\n\nThe detective turns to you with a look in their eyes you've never seen before.\n\n\"You're mine now,\" they say. \"Forever. Whatever I ask of you. No questions. When I say jump, you say how high. And if you ever speak of this to anyone, you'll find yourself begging for the mercy we just showed that scumbag. \n\nLastly, you'll need this. For when shit hits the fan.\"\n\nThe detective hands you a briefcase. You're surprised by how heavy it is and wonder what could be inside.\n\n\"First order of business: what our suspect said about the cloaked figure reminds me of something Josephus Tanner told me about when he was at his worst. Come with me.\"" ,
+          "strColor"      : "Dialogue",
+          "aInverse"          : [
+            "ENCPlot_Merga_Boss_GoXXX1"
+          ],
+          "fDuration"         : 0.00000001,
+          "strThemType"       : "Self",
+          "strRaiseUI"        : "SocialCombat",
+          "strSubUI"        : "Landscape01",
+          "strImage"        : "encounters/ENCPlanetSunrise",
+          "nLogging"         : 0,
+          "bHumanOnly"     : true,
+          "bIgnoreFeelings"	: true,
+          "strTeleportRegID" : "OKLG_UNK",
+          "strTeleportTarget" : "3rd",
+          "PSpecTest3rd"      : "Plot_Merga_Superfan_Find",
+          "LootCondsUs"       : "CONDPLOT_DetectivePuppet",
+          "aLootItms"         : ["addus,ItmPLOT_DetectiveShotgun"],
+          "LootCTsThem"     : null,
+          "CTTestUs"           : null,
+          "CTTestThem"         : null
+        },
+
+
+
+
+
+  {
+    "strName" : "ENCPLOT_Merga_RacerBossStart",
+    "strTitle" : "Confronting the Racer",
+    "strDesc" : "You find the racing icon sipping Cachaca and lime in a dark corner of the Sol Vermelho Lounge. He raises the glass to you as you approach. \n\n\"Rare Earth vintage,\" he says. \"Might be the last bottle in the System.\"\n\n\"Lime ain't cheap, either,\" the detective mutters. \n\n\"So?\" the racer asks. \"This better be quick. I have a shuttle headed to Hangzhou in an hour.\"\n\nYou tell him about the false alibi, how nobody could fly like that while drunk, even them.\n\n\"Proves nothing,\" the racer says before taking a sip. \"She died with a handprint like the rest of them.\"\n\n\"Faked,\" the detective says. \"Checked the body an hour ago. Whatever you used to stain it on matches what we found all over your favorite seat here in the bar. I'm sure we'll find traces of it in your ship when we seize it tonight.\"\n\nThe racing icon stares at you for a long moment, drains his drink, then looks up at the stage.\n\n\"This is where we fell in love, you know\" they say. \"She was singing Mas Que Nada.\"\n\n\"Why, then?\" you ask. \"Why kill her?\"\n\nThe racer wheels towards the detective, tears of rage welling in his eyes. \n\n\"Why don't you ask your partner, you son of a bitch?\"\n\n\"Tanner?\"\n\n\"Pigs,\" the racer scoffs. \"You're all the same. Think everything in the world belongs to you.\"\n\nThe racing icon wipes his eyes and takes a long look at the detective. \"But I have a feeling Tanner isn't going to be much of a problem to anyone anymore.",
+    "strColor"      : "Dialogue",
+    "aInverse"          : [
+      "ENCPlot_Merga_Racer_Arrest",
+      "ENCPlot_Merga_Racer_Kill"
+    ],
+    "fDuration"         : 0.00000001,
+    "strThemType"       : "Self",
+    "strRaiseUI"        : "SocialCombat",
+    "strSubUI"        : "Landscape01",
+    "strImage"        : "encounters/ENCPlanetSunrise",
+    "nLogging"         : 0,
+    "bHumanOnly"     : true,
+    "bIgnoreFeelings"	: true,
+    "LootCondsUs"       : null,
+    "LootCTsThem"     : null,
+    "CTTestUs"           : null,
+    "CTTestThem"         : null
+  },
+      {
+        "strName" : "ENCPlot_Merga_Racer_Arrest",
+        "strTitle" : "Arrest Him",
+        "strDesc" : "You cuff Korin and take him in for processing. Sure enough, a material analysis of his champion racing vessel yields trace amounts of the same compound stained on Middlemist's hip. It's not a job he could have done alone, but even without accomplices, the evidence is enough to put the champion racer away for a long time.\n\nNews of your work on the case circulates quickly among the ranks of the Venusian police. After a meeting with a handful of the department upper brass, you're assured that if you ever find yourself in trouble with the law in and around Venus, it will turn out to be no trouble at all.\n\nWhen the dust settles the detective thanks you for your help and offers their assistance if you ever need it in the future.\n\n \"One more thing,\" they say before you leave. \"What Korin said about Tanner still isn't sitting right. Come with me. We should tie up one last loose end.\"",
+        "strColor"      : "Dialogue",
+        "aInverse"          : [
+          "ENCPlot_Merga_Boss_GoXXX1"
+        ],
+        "fDuration"         : 0.00000001,
+        "strThemType"       : "Self",
+        "strRaiseUI"        : "SocialCombat",
+        "strSubUI"        : "Landscape01",
+        "strImage"        : "encounters/ENCPlanetSunrise",
+        "nLogging"         : 0,
+        "bHumanOnly"     : true,
+        "bIgnoreFeelings"	: true,
+        "strTeleportRegID" : "OKLG_UNK",
+        "strTeleportTarget" : "3rd",
+        "PSpecTest3rd"      : "Plot_Merga_Racer_Find",
+        "LootCondsUs"       : "CONDPLOT_VenusImmunity",
+        "LootCTsThem"     : null,
+        "CTTestUs"           : null,
+        "CTTestThem"         : null
+      },
+
+        {
+          "strName" : "ENCPlot_Merga_Racer_Kill",
+          "strTitle" : "Kill Him",
+          "strDesc" : "The detective cuffs a defiant Rex Korin, and together, you lead him through non-trafficked maintenance corridors towards the LA Aerostat. Ignoring his insults on the way, you're faced with the uncanny feeling that this is something the detective has done before.\n\nYou reach an abandoned garbage airlock, and it's only then Rex drops his tough guy act. Against his pleas, you stuff him inside. There's a brief moment when you wonder who will open the trap door on the other side. You suddenly realize it doesn't matter. You press the button to open the floor, and the arrogant accomplice to murder disappears through Venus's sulfurous, caustic fog.\n\nThe detective turns to you with a look in their eyes you've never seen before.\n\n\"You're mine now,\" they say. \"Forever. Whatever I ask of you. No questions. When I say jump, you say how high. And if you ever speak of this to anyone, you'll find yourself begging for the mercy we just showed that scumbag.\"\n\n Lastly, you'll need this. For when shit hits the fan.\"\n\nThe detective hands you a briefcase. You're surprised by how heavy it is and wonder what could possibly be inside.\n\n\"First order of business: what was said about the cloaked figure reminds me of something Josephus Tanner told me about when he was at his worst. Come with me.\"",
+          "strColor"      : "Dialogue",
+          "aInverse"          : [
+            "ENCPlot_Merga_Boss_GoXXX1"
+          ],
+          "fDuration"         : 0.00000001,
+          "strThemType"       : "Self",
+          "strRaiseUI"        : "SocialCombat",
+          "strSubUI"        : "Landscape01",
+          "strImage"        : "encounters/ENCPlanetSunrise",
+          "nLogging"         : 0,
+          "bHumanOnly"     : true,
+          "bIgnoreFeelings"	: true,
+          "strTeleportRegID" : "OKLG_UNK",
+          "strTeleportTarget" : "3rd",
+          "PSpecTest3rd"      : "Plot_Merga_RacingIcon_Find",
+          "LootCondsUs"       : "CONDPLOT_DetectivePuppet",
+          "aLootItms"         : ["addus,ItmPLOT_DetectiveShotgun"],
+          "LootCTsThem"     : null,
+          "CTTestUs"           : null,
+          "CTTestThem"         : null
+        },
+
+        {
+          "strName" : "ENCPlot_Merga_Racer_Extort",
+          "strTitle" : "Extort Them",
+          "strDesc" : "XXX",
+          "strColor"      : "Dialogue",
+          "aInverse"          : [
+            "ENCPlot_Merga_Boss_GoXXX1"
+          ],
+          "fDuration"         : 0.00000001,
+          "strThemType"       : "Self",
+          "strRaiseUI"        : "SocialCombat",
+          "strSubUI"        : "Landscape01",
+          "strImage"        : "encounters/ENCPlanetSunrise",
+          "nLogging"         : 0,
+          "bHumanOnly"     : true,
+          "bIgnoreFeelings"	: true,
+          "LootCondsUs"       : null,
+          "LootCTsThem"     : null,
+          "CTTestUs"           : null,
+          "CTTestThem"         : null
+        },
+{
+"strName" : "ENCPlot_Merga_Boss_GoXXX1",
+"strTitle" : "Meet Josephus Tanner",
+"strDesc" : "The detective is silent as you follow them down increasingly shabby corridors deep in the Encantado favelas. Far from the bright and airy world of the aerostat in the upper levels, the world you find yourself in now is dim, the air fouled by the aroma of industries most Venusians pretend don't exist: the acrid tang of formaldehyde in the morgue, earthy notes from food processing plants, all of it laced with sickly sulfurous tones emanating from nearby waste processing facilities. \n\nThe journey terminates in front of a huge red door in what appears to be a warehouse repurposed for illegal housing. The detective approaches the keypad and pauses.\n\n\"I wish I could tell you what we're in for, but the truth is I have no idea,\" they say.\"Tanner started in the deep end with the handprint murders, and only fell deeper after getting involved with Miss M. He kept saying there was a danger he could never share. Brace yourself.\"",
+"strColor"      : "Dialogue",
+"aInverse"          : [
+"ENCPlot_Merga_Boss_GoXXX2"
+],
+"fDuration"         : 0.00000001,
+"strThemType"       : "Self",
+"strRaiseUI"        : "SocialCombat",
+"strSubUI"        : "Landscape01",
+"strImage"        : "encounters/ENCPlanetSunrise",
+"nLogging"         : 0,
+"bHumanOnly"     : true,
+"bIgnoreFeelings"	: true,
+"LootCondsUs"       : null,
+"LootCTsThem"     : null,
+"CTTestUs"           : null,
+"CTTestThem"         : null
+},
+{
+"strName" : "ENCPlot_Merga_Boss_GoXXX2",
+"strTitle" : "Enter the Apartment",
+"strDesc" : "You enter the space and learn that if Josephus Tanner was once a respected law enforcement officer his home makes it clear he's since fallen far from grace. The walls are invisible behind stacks of boxes overflowing with papers and data files. The ground is littered with discarded take out cartons. A shabby sleeping sack is bundled in one corner.\n\nThe filth is ringed around three huge boards festooned with photographs and paraphernalia connected by a crazed web of red string. Before the board stands a hunched black form leaking shadows from its edges. The air around it dances with tongues of black flame. You watch as the form plucks a photograph like a ripe fruit, examines it, then sets it ablaze with a dark and smokeless fire.",
+"strColor"      : "Dialogue",
+"aInverse"          : [
+"ENCPlot_Merga_Boss_GoXXX3"
+],
+"fDuration"         : 0.00000001,
+"strThemType"       : "Self",
+"strRaiseUI"        : "SocialCombat",
+"strSubUI"        : "Landscape01",
+"strImage"        : "encounters/ENCMergaCleaner",
+"nLogging"         : 0,
+"bHumanOnly"     : true,
+"bIgnoreFeelings"	: true,
+"LootCondsUs"       : null,
+"LootCTsThem"     : null,
+"CTTestUs"           : null,
+"CTTestThem"         : null
+},
+{
+"strName" : "ENCPlot_Merga_Boss_GoXXX3",
+"strTitle" : "Confront the Form",
+"strDesc" : "\"Police! Hands behind your head,\" shouts the detective before drawing their weapon. In an instant the form blinks a hundred and eighty degrees and freezes as still as a photograph. A pale face sits atop the creature and stares through you with enormous hollow eyes. Your entire body goes cold and you are unable to move. Your vision blurs and in a second instant the form is gone, leaving behind it nothing but the distinct odor of burned carbon. \n\nOn closer inspection the board reveals a nearly incomprehensible conspiracy stretching across the entire system over decades. Just when the story seems to coalesce there are pieces missing, some leaving behind charred remains. The longer you stare at the story the less sense it seems to make. Two names stand out, however: Ursula and Philip.\n\nWhen you finally tear yourself away from the board you see the detective standing in a dark corner above a filthy cot surrounded by jars of various fluids. The body on the makeshift bed is in the fetal position, turned away from you, its pale lower back exposed.\n\nA black bruise stares up at you from Josephus Tanner's long dead body. It is in the shape of a long fingered hand.\n\nThe detective turns to you with a grim expression, their eyes welling up with tears.\n\n\"I have no idea what Tanner was looking into here. But it was dangerous. And that...thing we just saw? I never want to see anything like it again. I don't know how you feel about it but I suggest we bury this. All of it. It's the only way I'd feel safe.\"",
+"strColor"      : "Dialogue",
+"aInverse"          : [
+"ENCPlot_Merga_Boss_BuryEnding",
+"ENCPlot_Merga_Boss_PublicEnding"
+],
+"fDuration"         : 0.00000001,
+"strThemType"       : "Self",
+"strRaiseUI"        : "SocialCombat",
+"strSubUI"        : "Landscape01",
+"strImage"        : "encounters/ENCMergaCleaner",
+"nLogging"         : 0,
+"bHumanOnly"     : true,
+"bIgnoreFeelings"	: true,
+"LootCondsUs"       : null,
+"LootCTsThem"     : null,
+"CTTestUs"           : null,
+"CTTestThem"         : null
+},
+
+    {
+      "strName" : "ENCPlot_Merga_Boss_BuryEnding",
+      "strTitle" : "Bury the Story",
+      "strDesc" : "You scrub the warehouse of all traces of Tanner's work. The detective places their former partner's body on a dolly and carts it to a nearby industrial district. With that grim work out of mind, you dismantle Tanner's evidence board without another thought of what story it might tell. You pile it on a second dolly and meet the detective at an incinerator.\n\nTogether you shovel Tanner's obsession onto the blazing pyre where it disappears alongside his body. You shake the detective's hand and part ways, knowing that you'll never speak of this to them, or anyone, ever again.\n\nYour life moves forward accompanied by a strange sense that you're being watched. No matter what you do, you can't shake the feeling that one day the story you destroyed will catch up with you. That you'll be asked to return to it, and that you won't have the bravery to refuse.",
+      "strColor"      : "Dialogue",
+      "aInverse"          : ["ENCPlot_Merga_Boss_CFinal"
+      ],
+      "fDuration"         : 0.00000001,
+      "strThemType"       : "Self",
+      "strRaiseUI"        : "SocialCombat",
+      "strSubUI"        : "Landscape01",
+      "strImage"        : "encounters/ENCMergaCleaner",
+      "nLogging"         : 0,
+      "bHumanOnly"     : true,
+      "bIgnoreFeelings"	: true,
+      "LootCondsUs"       : "CONDPLOT_MergaPuppet",
+      "LootCTsThem"     : null,
+      "CTTestUs"           : null,
+      "CTTestThem"         : null
+    },
+
+    {
+      "strName" : "ENCPlot_Merga_Boss_PublicEnding",
+      "strTitle" : "Go Public",
+      "strDesc" : "Ignoring the detective's pleas you dismantle Tanner's conspiracy board and pile the remaining documents into boxes. You collate them as best you can, but the truth is that it is impossible to make sense of sprawling narrative, especially with vital pieces missing or partially burned. But you know someone who can. \n\nThe journalist is surprised to see you given that they were a prime suspect in M's murder. But even if you can't fully trust them, you both understand nobody else in the system has the skills and knowledge to understand the story Tanner was trying to tell. You leave the boxes with them, along with all your hope that anyone will ever know why Middlemist died the way she did.\n\nOver the next few days the journalist releases a slow trickle of news about what are now dubbed The Tanner Files. Based on what you read in those articles, you know it will take months, even years before anything has the chance of making sense.\n\nSoon after you receive another strange message from Ursula. She thanks you for your work on the case, and tells you that you now play a part in something bigger than yourself. The message ends with a cryptic note that you'll be hearing from her again.",
+      "strColor"      : "Dialogue",
+      "aInverse"          : ["ENCPlot_Merga_Boss_CFinal"
+      ],
+      "fDuration"         : 0.00000001,
+      "strThemType"       : "Self",
+      "strRaiseUI"        : "SocialCombat",
+      "strSubUI"        : "Landscape01",
+      "strImage"        : "encounters/ENCMergaCleaner",
+      "nLogging"         : 0,
+      "bHumanOnly"     : true,
+      "bIgnoreFeelings"	: true,
+      "LootCondsUs"       : "CONDPLOT_PlotUrsulaAlly",
+      "LootCTsThem"     : null,
+      "CTTestUs"           : null,
+      "CTTestThem"         : null
+    },
+
+
+
+      {
+        "strName" : "ENCPlot_Merga_Boss_Flee",
+        "strTitle" : "Flee",
+        "strDesc" : "XXX",
+        "strColor"      : "Dialogue",
+        "aInverse"          : [
+          "ENCFinish"
+        ],
+        "fDuration"         : 0.00000001,
+        "strThemType"       : "Self",
+        "strRaiseUI"        : "SocialCombat",
+        "strSubUI"        : "Landscape01",
+        "strImage"        : "encounters/ENCPlanetSunrise",
+        "nLogging"         : 0,
+        "bHumanOnly"     : true,
+        "bIgnoreFeelings"	: true,
+        "LootCondsUs"       : "CONDENCPlot_Merga_Boss_Flee",
+        "LootCTsThem"     : null,
+        "CTTestUs"           : null,
+        "CTTestThem"         : null
+      },
+  {
+    "strName" : "ENCPlot_Merga_Boss_Z1",
+    "strTitle" : "XXX",
+    "strDesc" : "XXX",
+    "strColor"      : "Dialogue",
+    "aInverse"          : [
+      "ENCPlot_Merga_Boss_Z1a",
+      "ENCPlot_Merga_Boss_Z1b",
+      "ENCPlot_Merga_Boss_Z1c",
+      "ENCPlot_Merga_Boss_Z1d"
+    ],
+    "fDuration"         : 0.00000001,
+    "strThemType"       : "Self",
+    "strRaiseUI"        : "SocialCombat",
+    "strSubUI"        : "Landscape01",
+    "strImage"        : "encounters/ENCPlanetSunrise",
+    "nLogging"         : 0,
+    "bHumanOnly"     : true,
+    "bIgnoreFeelings"	: true,
+    "LootCondsUs"       : null,
+    "LootCTsThem"     : null,
+    "CTTestUs"           : null,
+    "CTTestThem"         : null
+  },
+      {
+        "strName" : "ENCPlot_Merga_Boss_Z1a",
+        "strTitle" : "XXX",
+        "strDesc" : "XXX",
+        "strColor"      : "Dialogue",
+        "aInverse"          : [
+          "ENCPlot_Merga_Boss_Z2"
+        ],
+        "fDuration"         : 0.00000001,
+        "strThemType"       : "Self",
+        "strRaiseUI"        : "SocialCombat",
+        "strSubUI"        : "Landscape01",
+        "strImage"        : "encounters/ENCPlanetSunrise",
+        "nLogging"         : 0,
+        "bHumanOnly"     : true,
+        "bIgnoreFeelings"	: true,
+        "LootCondsUs"       : "CONDENCPlot_Merga_Boss_Z1a",
+        "LootCTsThem"     : null,
+        "CTTestUs"           : null,
+        "CTTestThem"         : null
+      },
+          {
+            "strName" : "ENCPlot_Merga_Boss_Z1b",
+            "strTitle" : "XXX",
+            "strDesc" : "XXX",
+            "strColor"      : "Dialogue",
+            "aInverse"          : [
+              "ENCPlot_Merga_Boss_Z2"
+            ],
+            "fDuration"         : 0.00000001,
+            "strThemType"       : "Self",
+            "strRaiseUI"        : "SocialCombat",
+            "strSubUI"        : "Landscape01",
+            "strImage"        : "encounters/ENCPlanetSunrise",
+            "nLogging"         : 0,
+            "bHumanOnly"     : true,
+            "bIgnoreFeelings"	: true,
+            "LootCondsUs"       : "CONDENCPlot_Merga_Boss_Z1b",
+            "LootCTsThem"     : null,
+            "CTTestUs"           : null,
+            "CTTestThem"         : null
+          },
+          {
+            "strName" : "ENCPlot_Merga_Boss_Z1c",
+            "strTitle" : "XXX",
+            "strDesc" : "XXX",
+            "strColor"      : "Dialogue",
+            "aInverse"          : [
+              "ENCPlot_Merga_Boss_Z2"
+            ],
+            "fDuration"         : 0.00000001,
+            "strThemType"       : "Self",
+            "strRaiseUI"        : "SocialCombat",
+            "strSubUI"        : "Landscape01",
+            "strImage"        : "encounters/ENCPlanetSunrise",
+            "nLogging"         : 0,
+            "bHumanOnly"     : true,
+            "bIgnoreFeelings"	: true,
+            "LootCondsUs"       : "CONDENCPlot_Merga_Boss_Z1c",
+            "LootCTsThem"     : null,
+            "CTTestUs"           : null,
+            "CTTestThem"         : null
+          },
+          {
+            "strName" : "ENCPlot_Merga_Boss_Z1d",
+            "strTitle" : "XXX",
+            "strDesc" : "XXX",
+            "strColor"      : "Dialogue",
+            "aInverse"          : [
+              "ENCPlot_Merga_Boss_Z2"
+            ],
+            "fDuration"         : 0.00000001,
+            "strThemType"       : "Self",
+            "strRaiseUI"        : "SocialCombat",
+            "strSubUI"        : "Landscape01",
+            "strImage"        : "encounters/ENCPlanetSunrise",
+            "nLogging"         : 0,
+            "bHumanOnly"     : true,
+            "bIgnoreFeelings"	: true,
+            "LootCondsUs"       : "CONDENCPlot_Merga_Boss_Z1d",
+            "LootCTsThem"     : null,
+            "CTTestUs"           : null,
+            "CTTestThem"         : null
+          },
+  {
+    "strName" : "ENCPlot_Merga_Boss_Z2",
+    "strTitle" : "XXX",
+    "strDesc" : "XXX",
+    "strColor"      : "Dialogue",
+    "aInverse"          : [
+      "ENCPlot_Merga_Boss_Z2a",
+      "ENCPlot_Merga_Boss_Z2b",
+      "ENCPlot_Merga_Boss_Z2c",
+      "ENCPlot_Merga_Boss_Z2d"
+    ],
+    "fDuration"         : 0.00000001,
+    "strThemType"       : "Self",
+    "strRaiseUI"        : "SocialCombat",
+    "strSubUI"        : "Landscape01",
+    "strImage"        : "encounters/ENCPlanetSunrise",
+    "nLogging"         : 0,
+    "bHumanOnly"     : true,
+    "bIgnoreFeelings"	: true,
+    "LootCondsUs"       : null,
+    "LootCTsThem"     : null,
+    "CTTestUs"           : null,
+    "CTTestThem"         : null
+  },
+      {
+        "strName" : "ENCPlot_Merga_Boss_Z2a",
+        "strTitle" : "XXX",
+        "strDesc" : "XXX",
+        "strColor"      : "Dialogue",
+        "aInverse"          : [
+          "ENCPlot_Merga_Boss_Z3"
+        ],
+        "fDuration"         : 0.00000001,
+        "strThemType"       : "Self",
+        "strRaiseUI"        : "SocialCombat",
+        "strSubUI"        : "Landscape01",
+        "strImage"        : "encounters/ENCPlanetSunrise",
+        "nLogging"         : 0,
+        "bHumanOnly"     : true,
+        "bIgnoreFeelings"	: true,
+        "LootCondsUs"       : "CONDENCPlot_Merga_Boss_Z2a",
+        "LootCTsThem"     : null,
+        "CTTestUs"           : null,
+        "CTTestThem"         : null
+      },
+          {
+            "strName" : "ENCPlot_Merga_Boss_Z2b",
+            "strTitle" : "XXX",
+            "strDesc" : "XXX",
+            "strColor"      : "Dialogue",
+            "aInverse"          : [
+              "ENCPlot_Merga_Boss_Z3"
+            ],
+            "fDuration"         : 0.00000001,
+            "strThemType"       : "Self",
+            "strRaiseUI"        : "SocialCombat",
+            "strSubUI"        : "Landscape01",
+            "strImage"        : "encounters/ENCPlanetSunrise",
+            "nLogging"         : 0,
+            "bHumanOnly"     : true,
+            "bIgnoreFeelings"	: true,
+            "LootCondsUs"       : "CONDENCPlot_Merga_Boss_Z2b",
+            "LootCTsThem"     : null,
+            "CTTestUs"           : null,
+            "CTTestThem"         : null
+          },
+          {
+            "strName" : "ENCPlot_Merga_Boss_Z2c",
+            "strTitle" : "XXX",
+            "strDesc" : "XXX",
+            "strColor"      : "Dialogue",
+            "aInverse"          : [
+              "ENCPlot_Merga_Boss_Z3"
+            ],
+            "fDuration"         : 0.00000001,
+            "strThemType"       : "Self",
+            "strRaiseUI"        : "SocialCombat",
+            "strSubUI"        : "Landscape01",
+            "strImage"        : "encounters/ENCPlanetSunrise",
+            "nLogging"         : 0,
+            "bHumanOnly"     : true,
+            "bIgnoreFeelings"	: true,
+            "LootCondsUs"       : "CONDENCPlot_Merga_Boss_Z2c",
+            "LootCTsThem"     : null,
+            "CTTestUs"           : null,
+            "CTTestThem"         : null
+          },
+          {
+            "strName" : "ENCPlot_Merga_Boss_Z2d",
+            "strTitle" : "XXX",
+            "strDesc" : "XXX",
+            "strColor"      : "Dialogue",
+            "aInverse"          : [
+              "ENCFinish"
+            ],
+            "fDuration"         : 0.00000001,
+            "strThemType"       : "Self",
+            "strRaiseUI"        : "SocialCombat",
+            "strSubUI"        : "Landscape01",
+            "strImage"        : "encounters/ENCPlanetSunrise",
+            "nLogging"         : 0,
+            "bHumanOnly"     : true,
+            "bIgnoreFeelings"	: true,
+            "LootCondsUs"       : "CONDENCPlot_Merga_Boss_Z2d",
+            "LootCTsThem"     : null,
+            "CTTestUs"           : null,
+            "CTTestThem"         : null
+          },
+{
+  "strName" : "ENCPlot_Merga_Boss_Z3",
+  "strTitle" : "XXX",
+  "strDesc" : "XXX",
+  "strColor"      : "Dialogue",
+  "aInverse"          : [
+    "ENCPlot_Merga_Boss_Z3a",
+    "ENCPlot_Merga_Boss_Z3b",
+    "ENCPlot_Merga_Boss_Z3c",
+    "ENCPlot_Merga_Boss_Z3d"
+  ],
+  "fDuration"         : 0.00000001,
+  "strThemType"       : "Self",
+  "strRaiseUI"        : "SocialCombat",
+  "strSubUI"        : "Landscape01",
+  "strImage"        : "encounters/ENCPlanetSunrise",
+  "nLogging"         : 0,
+  "bHumanOnly"     : true,
+  "bIgnoreFeelings"	: true,
+  "LootCondsUs"       : null,
+  "LootCTsThem"     : null,
+  "CTTestUs"           : null,
+  "CTTestThem"         : null
+},
+    {
+      "strName" : "ENCPlot_Merga_Boss_Z3a",
+      "strTitle" : "XXX",
+      "strDesc" : "XXX",
+      "strColor"      : "Dialogue",
+      "aInverse"          : [
+        "ENCPlot_Merga_Boss_Z4"
+      ],
+      "fDuration"         : 0.00000001,
+      "strThemType"       : "Self",
+      "strRaiseUI"        : "SocialCombat",
+      "strSubUI"        : "Landscape01",
+      "strImage"        : "encounters/ENCPlanetSunrise",
+      "nLogging"         : 0,
+      "bHumanOnly"     : true,
+      "bIgnoreFeelings"	: true,
+      "LootCondsUs"       : "CONDENCPlot_Merga_Boss_Z3a",
+      "LootCTsThem"     : null,
+      "CTTestUs"           : null,
+      "CTTestThem"         : null,
+      "strUseCase"        : "Melee"
+    },
+        {
+          "strName" : "ENCPlot_Merga_Boss_Z3b",
+          "strTitle" : "XXX",
+          "strDesc" : "XXX",
+          "strColor"      : "Dialogue",
+          "aInverse"          : [
+            "ENCPlot_Merga_Boss_Z4"
+          ],
+          "fDuration"         : 0.00000001,
+          "strThemType"       : "Self",
+          "strRaiseUI"        : "SocialCombat",
+          "strSubUI"        : "Landscape01",
+          "strImage"        : "encounters/ENCPlanetSunrise",
+          "nLogging"         : 0,
+          "bHumanOnly"     : true,
+          "bIgnoreFeelings"	: true,
+          "LootCondsUs"       : "CONDENCPlot_Merga_Boss_Z3b",
+          "LootCTsThem"     : null,
+          "CTTestUs"           : null,
+          "CTTestThem"         : null,
+          "strUseCase"        : "Normal"
+        },
+        {
+          "strName" : "ENCPlot_Merga_Boss_Z3c",
+          "strTitle" : "XXX",
+          "strDesc" : "XXX",
+          "strColor"      : "Dialogue",
+          "aInverse"          : [
+            "ENCPlot_Merga_Boss_Z4"
+          ],
+          "fDuration"         : 0.00000001,
+          "strThemType"       : "Self",
+          "strRaiseUI"        : "SocialCombat",
+          "strSubUI"        : "Landscape01",
+          "strImage"        : "encounters/ENCPlanetSunrise",
+          "nLogging"         : 0,
+          "bHumanOnly"     : true,
+          "bIgnoreFeelings"	: true,
+          "LootCondsUs"       : "CONDENCPlot_Merga_Boss_Z3c",
+          "LootCTsThem"     : null,
+          "CTTestUs"           : null,
+          "CTTestThem"         : null
+        },
+        {
+          "strName" : "ENCPlot_Merga_Boss_Z3d",
+          "strTitle" : "XXX",
+          "strDesc" : "XXX",
+          "strColor"      : "Dialogue",
+          "aInverse"          : [
+            "ENCPlot_Merga_Boss_Z4"
+          ],
+          "fDuration"         : 0.00000001,
+          "strThemType"       : "Self",
+          "strRaiseUI"        : "SocialCombat",
+          "strSubUI"        : "Landscape01",
+          "strImage"        : "encounters/ENCPlanetSunrise",
+          "nLogging"         : 0,
+          "bHumanOnly"     : true,
+          "bIgnoreFeelings"	: true,
+          "LootCondsUs"       : "CONDENCPlot_Merga_Boss_Z3d",
+          "LootCTsThem"     : null,
+          "CTTestUs"           : null,
+          "CTTestThem"         : null,
+          "strUseCase"        : "Normal"
+        },
+        {
+          "strName" : "ENCPlot_Merga_Boss_Z3e",
+          "strTitle" : "XXX",
+          "strDesc" : "XXX",
+          "strColor"      : "Dialogue",
+          "aInverse"          : [
+            "ENCPlot_Merga_Boss_Z4"
+          ],
+          "fDuration"         : 0.00000001,
+          "strThemType"       : "Self",
+          "strRaiseUI"        : "SocialCombat",
+          "strSubUI"        : "Landscape01",
+          "strImage"        : "encounters/ENCPlanetSunrise",
+          "nLogging"         : 0,
+          "bHumanOnly"     : true,
+          "bIgnoreFeelings"	: true,
+          "LootCondsUs"       : "CONDENCPlot_Merga_Boss_Z3e",
+          "LootCTsThem"     : null,
+          "CTTestUs"           : null,
+          "CTTestThem"         : null
+        },
+    {
+      "strName" : "ENCPlot_Merga_Boss_Z4",
+      "strTitle" : "XXX",
+      "strDesc" : "XXX",
+      "strColor"      : "Dialogue",
+      "aInverse"          : [
+        "ENCPlot_Merga_Boss_ZFinal"
+      ],
+      "fDuration"         : 0.00000001,
+      "strThemType"       : "Self",
+      "strRaiseUI"        : "SocialCombat",
+      "strSubUI"        : "Landscape01",
+      "strImage"        : "encounters/ENCPlanetSunrise",
+      "nLogging"         : 0,
+      "bHumanOnly"     : true,
+      "bIgnoreFeelings"	: true,
+      "LootCondsUs"       : null,
+      "LootCTsThem"     : null,
+      "CTTestUs"           : null,
+      "CTTestThem"         : null
+    },
+  {
+    "strName" : "ENCPlot_Merga_Boss_M1",
+    "strTitle" : "XXX",
+    "strDesc" : "XXX",
+    "strColor"      : "Dialogue",
+    "aInverse"          : [
+      "ENCPlot_Merga_Boss_M1a",
+      "ENCPlot_Merga_Boss_M1b",
+      "ENCPlot_Merga_Boss_M1c",
+      "ENCPlot_Merga_Boss_M1d"
+    ],
+    "fDuration"         : 0.00000001,
+    "strThemType"       : "Self",
+    "strRaiseUI"        : "SocialCombat",
+    "strSubUI"        : "Landscape01",
+    "strImage"        : "encounters/ENCPlanetSunrise",
+    "nLogging"         : 0,
+    "bHumanOnly"     : true,
+    "bIgnoreFeelings"	: true,
+    "LootCondsUs"       : null,
+    "LootCTsThem"     : null,
+    "CTTestUs"           : null,
+    "CTTestThem"         : null
+  },
+      {
+        "strName" : "ENCPlot_Merga_Boss_M1a",
+        "strTitle" : "XXX",
+        "strDesc" : "XXX",
+        "strColor"      : "Dialogue",
+        "aInverse"          : [
+          "ENCPlot_Merga_Boss_M3"
+        ],
+        "fDuration"         : 0.00000001,
+        "strThemType"       : "Self",
+        "strRaiseUI"        : "SocialCombat",
+        "strSubUI"        : "Landscape01",
+        "strImage"        : "encounters/ENCPlanetSunrise",
+        "nLogging"         : 0,
+        "bHumanOnly"     : true,
+        "bIgnoreFeelings"	: true,
+        "LootCondsUs"       : "CONDENCPlot_Merga_Boss_M1a",
+        "LootCTsThem"     : null,
+        "CTTestUs"           : null,
+        "CTTestThem"         : null
+      },
+          {
+            "strName" : "ENCPlot_Merga_Boss_M1b",
+            "strTitle" : "XXX",
+            "strDesc" : "XXX",
+            "strColor"      : "Dialogue",
+            "aInverse"          : [
+              "ENCPlot_Merga_Boss_M3"
+            ],
+            "fDuration"         : 0.00000001,
+            "strThemType"       : "Self",
+            "strRaiseUI"        : "SocialCombat",
+            "strSubUI"        : "Landscape01",
+            "strImage"        : "encounters/ENCPlanetSunrise",
+            "nLogging"         : 0,
+            "bHumanOnly"     : true,
+            "bIgnoreFeelings"	: true,
+            "LootCondsUs"       : "CONDENCPlot_Merga_Boss_M1b",
+            "LootCTsThem"     : null,
+            "CTTestUs"           : null,
+            "CTTestThem"         : null
+          },
+          {
+            "strName" : "ENCPlot_Merga_Boss_M1c",
+            "strTitle" : "XXX",
+            "strDesc" : "XXX",
+            "strColor"      : "Dialogue",
+            "aInverse"          : [
+              "ENCPlot_Merga_Boss_M3"
+            ],
+            "fDuration"         : 0.00000001,
+            "strThemType"       : "Self",
+            "strRaiseUI"        : "SocialCombat",
+            "strSubUI"        : "Landscape01",
+            "strImage"        : "encounters/ENCPlanetSunrise",
+            "nLogging"         : 0,
+            "bHumanOnly"     : true,
+            "bIgnoreFeelings"	: true,
+            "LootCondsUs"       : "CONDENCPlot_Merga_Boss_M1c",
+            "LootCTsThem"     : null,
+            "CTTestUs"           : null,
+            "CTTestThem"         : null
+          },
+          {
+            "strName" : "ENCPlot_Merga_Boss_M1d",
+            "strTitle" : "XXX",
+            "strDesc" : "XXX",
+            "strColor"      : "Dialogue",
+            "aInverse"          : [
+              "ENCPlot_Merga_Boss_M3"
+            ],
+            "fDuration"         : 0.00000001,
+            "strThemType"       : "Self",
+            "strRaiseUI"        : "SocialCombat",
+            "strSubUI"        : "Landscape01",
+            "strImage"        : "encounters/ENCPlanetSunrise",
+            "nLogging"         : 0,
+            "bHumanOnly"     : true,
+            "bIgnoreFeelings"	: true,
+            "LootCondsUs"       : "CONDENCPlot_Merga_Boss_M1d",
+            "LootCTsThem"     : null,
+            "CTTestUs"           : null,
+            "CTTestThem"         : null
+          },
+  {
+    "strName" : "ENCPlot_Merga_Boss_M2",
+    "strTitle" : "XXX",
+    "strDesc" : "XXX",
+    "strColor"      : "Dialogue",
+    "aInverse"          : [
+      "ENCPlot_Merga_Boss_M2a",
+      "ENCPlot_Merga_Boss_M2b",
+      "ENCPlot_Merga_Boss_M2c",
+      "ENCPlot_Merga_Boss_M2d"
+    ],
+    "fDuration"         : 0.00000001,
+    "strThemType"       : "Self",
+    "strRaiseUI"        : "SocialCombat",
+    "strSubUI"        : "Landscape01",
+    "strImage"        : "encounters/ENCPlanetSunrise",
+    "nLogging"         : 0,
+    "bHumanOnly"     : true,
+    "bIgnoreFeelings"	: true,
+    "LootCondsUs"       : null,
+    "LootCTsThem"     : null,
+    "CTTestUs"           : null,
+    "CTTestThem"         : null
+  },
+      {
+        "strName" : "ENCPlot_Merga_Boss_M2a",
+        "strTitle" : "XXX",
+        "strDesc" : "XXX",
+        "strColor"      : "Dialogue",
+        "aInverse"          : [
+          "ENCPlot_Merga_Boss_M3"
+        ],
+        "fDuration"         : 0.00000001,
+        "strThemType"       : "Self",
+        "strRaiseUI"        : "SocialCombat",
+        "strSubUI"        : "Landscape01",
+        "strImage"        : "encounters/ENCPlanetSunrise",
+        "nLogging"         : 0,
+        "bHumanOnly"     : true,
+        "bIgnoreFeelings"	: true,
+        "LootCondsUs"       : "CONDENCPlot_Merga_Boss_M2a",
+        "LootCTsThem"     : null,
+        "CTTestUs"           : null,
+        "CTTestThem"         : null
+      },
+          {
+            "strName" : "ENCPlot_Merga_Boss_M2b",
+            "strTitle" : "XXX",
+            "strDesc" : "XXX",
+            "strColor"      : "Dialogue",
+            "aInverse"          : [
+              "ENCPlot_Merga_Boss_M3"
+            ],
+            "fDuration"         : 0.00000001,
+            "strThemType"       : "Self",
+            "strRaiseUI"        : "SocialCombat",
+            "strSubUI"        : "Landscape01",
+            "strImage"        : "encounters/ENCPlanetSunrise",
+            "nLogging"         : 0,
+            "bHumanOnly"     : true,
+            "bIgnoreFeelings"	: true,
+            "LootCondsUs"       : "CONDENCPlot_Merga_Boss_M2b",
+            "LootCTsThem"     : null,
+            "CTTestUs"           : null,
+            "CTTestThem"         : null
+          },
+          {
+            "strName" : "ENCPlot_Merga_Boss_M2c",
+            "strTitle" : "XXX",
+            "strDesc" : "XXX",
+            "strColor"      : "Dialogue",
+            "aInverse"          : [
+              "ENCPlot_Merga_Boss_M3"
+            ],
+            "fDuration"         : 0.00000001,
+            "strThemType"       : "Self",
+            "strRaiseUI"        : "SocialCombat",
+            "strSubUI"        : "Landscape01",
+            "strImage"        : "encounters/ENCPlanetSunrise",
+            "nLogging"         : 0,
+            "bHumanOnly"     : true,
+            "bIgnoreFeelings"	: true,
+            "LootCondsUs"       : "CONDENCPlot_Merga_Boss_M2c",
+            "LootCTsThem"     : null,
+            "CTTestUs"           : null,
+            "CTTestThem"         : null
+          },
+          {
+            "strName" : "ENCPlot_Merga_Boss_M2d",
+            "strTitle" : "XXX",
+            "strDesc" : "XXX",
+            "strColor"      : "Dialogue",
+            "aInverse"          : [
+              "ENCPlot_Merga_Boss_CFinal"
+            ],
+            "fDuration"         : 0.00000001,
+            "strThemType"       : "Self",
+            "strRaiseUI"        : "SocialCombat",
+            "strSubUI"        : "Landscape01",
+            "strImage"        : "encounters/ENCPlanetSunrise",
+            "nLogging"         : 0,
+            "bHumanOnly"     : true,
+            "bIgnoreFeelings"	: true,
+            "LootCondsUs"       : "CONDENCPlot_Merga_Boss_M2d",
+            "LootCTsThem"     : null,
+            "CTTestUs"           : null,
+            "CTTestThem"         : null
+          },
+{
+  "strName" : "ENCPlot_Merga_Boss_M3",
+  "strTitle" : "XXX",
+  "strDesc" : "XXX",
+  "strColor"      : "Dialogue",
+  "aInverse"          : [
+    "ENCPlot_Merga_Boss_M3a",
+    "ENCPlot_Merga_Boss_M3b",
+    "ENCPlot_Merga_Boss_M3c",
+    "ENCPlot_Merga_Boss_M3d"
+  ],
+  "fDuration"         : 0.00000001,
+  "strThemType"       : "Self",
+  "strRaiseUI"        : "SocialCombat",
+  "strSubUI"        : "Landscape01",
+  "strImage"        : "encounters/ENCPlanetSunrise",
+  "nLogging"         : 0,
+  "bHumanOnly"     : true,
+  "bIgnoreFeelings"	: true,
+  "LootCondsUs"       : null,
+  "LootCTsThem"     : null,
+  "CTTestUs"           : null,
+  "CTTestThem"         : null
+},
+    {
+      "strName" : "ENCPlot_Merga_Boss_M3a",
+      "strTitle" : "XXX",
+      "strDesc" : "XXX",
+      "strColor"      : "Dialogue",
+      "aInverse"          : [
+        "ENCPlot_Merga_Boss_M4"
+      ],
+      "fDuration"         : 0.00000001,
+      "strThemType"       : "Self",
+      "strRaiseUI"        : "SocialCombat",
+      "strSubUI"        : "Landscape01",
+      "strImage"        : "encounters/ENCPlanetSunrise",
+      "nLogging"         : 0,
+      "bHumanOnly"     : true,
+      "bIgnoreFeelings"	: true,
+      "LootCondsUs"       : "CONDENCPlot_Merga_Boss_M3a",
+      "LootCTsThem"     : null,
+      "CTTestUs"           : null,
+      "CTTestThem"         : null
+    },
+        {
+          "strName" : "ENCPlot_Merga_Boss_M3b",
+          "strTitle" : "XXX",
+          "strDesc" : "XXX",
+          "strColor"      : "Dialogue",
+          "aInverse"          : [
+            "ENCPlot_Merga_Boss_M4"
+          ],
+          "fDuration"         : 0.00000001,
+          "strThemType"       : "Self",
+          "strRaiseUI"        : "SocialCombat",
+          "strSubUI"        : "Landscape01",
+          "strImage"        : "encounters/ENCPlanetSunrise",
+          "nLogging"         : 0,
+          "bHumanOnly"     : true,
+          "bIgnoreFeelings"	: true,
+          "LootCondsUs"       : "CONDENCPlot_Merga_Boss_M3b",
+          "LootCTsThem"     : null,
+          "CTTestUs"           : null,
+          "CTTestThem"         : null
+        },
+        {
+          "strName" : "ENCPlot_Merga_Boss_M3c",
+          "strTitle" : "XXX",
+          "strDesc" : "XXX",
+          "strColor"      : "Dialogue",
+          "aInverse"          : [
+            "ENCPlot_Merga_Boss_M4"
+          ],
+          "fDuration"         : 0.00000001,
+          "strThemType"       : "Self",
+          "strRaiseUI"        : "SocialCombat",
+          "strSubUI"        : "Landscape01",
+          "strImage"        : "encounters/ENCPlanetSunrise",
+          "nLogging"         : 0,
+          "bHumanOnly"     : true,
+          "bIgnoreFeelings"	: true,
+          "LootCondsUs"       : "CONDENCPlot_Merga_Boss_M3c",
+          "LootCTsThem"     : null,
+          "CTTestUs"           : null,
+          "CTTestThem"         : null
+        },
+        {
+          "strName" : "ENCPlot_Merga_Boss_M3d",
+          "strTitle" : "XXX",
+          "strDesc" : "XXX",
+          "strColor"      : "Dialogue",
+          "aInverse"          : [
+            "ENCPlot_Merga_Boss_M4"
+          ],
+          "fDuration"         : 0.00000001,
+          "strThemType"       : "Self",
+          "strRaiseUI"        : "SocialCombat",
+          "strSubUI"        : "Landscape01",
+          "strImage"        : "encounters/ENCPlanetSunrise",
+          "nLogging"         : 0,
+          "bHumanOnly"     : true,
+          "bIgnoreFeelings"	: true,
+          "LootCondsUs"       : "CONDENCPlot_Merga_Boss_M3d",
+          "LootCTsThem"     : null,
+          "CTTestUs"           : null,
+          "CTTestThem"         : null
+        },
+{
+  "strName" : "ENCPlot_Merga_Boss_M4",
+  "strTitle" : "XXX",
+  "strDesc" : "XXX",
+  "strColor"      : "Dialogue",
+  "aInverse"          : [
+    "ENCPlot_Merga_Boss_MFinal"
+  ],
+  "fDuration"         : 0.00000001,
+  "strThemType"       : "Self",
+  "strRaiseUI"        : "SocialCombat",
+  "strSubUI"        : "Landscape01",
+  "strImage"        : "encounters/ENCPlanetSunrise",
+  "nLogging"         : 0,
+  "bHumanOnly"     : true,
+  "bIgnoreFeelings"	: true,
+  "LootCondsUs"       : null,
+  "LootCTsThem"     : null,
+  "CTTestUs"           : null,
+  "CTTestThem"         : null
+},
+ 
+{
+  "strName" : "ENCPlot_Merga_Boss_C1",
+  "strTitle" : "XXX",
+  "strDesc" : "XXX",
+  "strColor"      : "Dialogue",
+  "aInverse"          : [
+    "ENCPlot_Merga_Boss_C1a",
+    "ENCPlot_Merga_Boss_C1b",
+    "ENCPlot_Merga_Boss_C1c",
+    "ENCPlot_Merga_Boss_C1d"
+  ],
+  "fDuration"         : 0.00000001,
+  "strThemType"       : "Self",
+  "strRaiseUI"        : "SocialCombat",
+  "strSubUI"        : "Landscape01",
+  "strImage"        : "encounters/ENCPlanetSunrise",
+  "nLogging"         : 0,
+  "bHumanOnly"     : true,
+  "bIgnoreFeelings"	: true,
+  "LootCondsUs"       : null,
+  "LootCTsThem"     : null,
+  "CTTestUs"           : null,
+  "CTTestThem"         : null
+},
+    {
+      "strName" : "ENCPlot_Merga_Boss_C1a",
+      "strTitle" : "XXX",
+      "strDesc" : "XXX",
+      "strColor"      : "Dialogue",
+      "aInverse"          : [
+        "ENCPlot_Merga_Boss_C2"
+      ],
+      "fDuration"         : 0.00000001,
+      "strThemType"       : "Self",
+      "strRaiseUI"        : "SocialCombat",
+      "strSubUI"        : "Landscape01",
+      "strImage"        : "encounters/ENCPlanetSunrise",
+      "nLogging"         : 0,
+      "bHumanOnly"     : true,
+      "bIgnoreFeelings"	: true,
+      "LootCondsUs"       : "CONDENCPlot_Merga_Boss_C1a",
+      "LootCTsThem"     : null,
+      "CTTestUs"           : null,
+      "CTTestThem"         : null
+    },
+        {
+          "strName" : "ENCPlot_Merga_Boss_C1b",
+          "strTitle" : "XXX",
+          "strDesc" : "XXX",
+          "strColor"      : "Dialogue",
+          "aInverse"          : [
+            "ENCPlot_Merga_Boss_C2"
+          ],
+          "fDuration"         : 0.00000001,
+          "strThemType"       : "Self",
+          "strRaiseUI"        : "SocialCombat",
+          "strSubUI"        : "Landscape01",
+          "strImage"        : "encounters/ENCPlanetSunrise",
+          "nLogging"         : 0,
+          "bHumanOnly"     : true,
+          "bIgnoreFeelings"	: true,
+          "LootCondsUs"       : "CONDENCPlot_Merga_Boss_C1b",
+          "LootCTsThem"     : null,
+          "CTTestUs"           : null,
+          "CTTestThem"         : null
+        },
+        {
+          "strName" : "ENCPlot_Merga_Boss_C1c",
+          "strTitle" : "XXX",
+          "strDesc" : "XXX",
+          "strColor"      : "Dialogue",
+          "aInverse"          : [
+            "ENCPlot_Merga_Boss_C2"
+          ],
+          "fDuration"         : 0.00000001,
+          "strThemType"       : "Self",
+          "strRaiseUI"        : "SocialCombat",
+          "strSubUI"        : "Landscape01",
+          "strImage"        : "encounters/ENCPlanetSunrise",
+          "nLogging"         : 0,
+          "bHumanOnly"     : true,
+          "bIgnoreFeelings"	: true,
+          "LootCondsUs"       : "CONDENCPlot_Merga_Boss_C1c",
+          "LootCTsThem"     : null,
+          "CTTestUs"           : null,
+          "CTTestThem"         : null
+        },
+        {
+          "strName" : "ENCPlot_Merga_Boss_C1d",
+          "strTitle" : "XXX",
+          "strDesc" : "XXX",
+          "strColor"      : "Dialogue",
+          "aInverse"          : [
+            "ENCPlot_Merga_Boss_C2"
+          ],
+          "fDuration"         : 0.00000001,
+          "strThemType"       : "Self",
+          "strRaiseUI"        : "SocialCombat",
+          "strSubUI"        : "Landscape01",
+          "strImage"        : "encounters/ENCPlanetSunrise",
+          "nLogging"         : 0,
+          "bHumanOnly"     : true,
+          "bIgnoreFeelings"	: true,
+          "LootCondsUs"       : "CONDENCPlot_Merga_Boss_C1d",
+          "LootCTsThem"     : null,
+          "CTTestUs"           : null,
+          "CTTestThem"         : null
+        },
+{
+  "strName" : "ENCPlot_Merga_Boss_C2",
+  "strTitle" : "XXX",
+  "strDesc" : "XXX",
+  "strColor"      : "Dialogue",
+  "aInverse"          : [
+    "ENCPlot_Merga_Boss_C2a",
+    "ENCPlot_Merga_Boss_C2b",
+    "ENCPlot_Merga_Boss_C2c",
+    "ENCPlot_Merga_Boss_C2d"
+  ],
+  "fDuration"         : 0.00000001,
+  "strThemType"       : "Self",
+  "strRaiseUI"        : "SocialCombat",
+  "strSubUI"        : "Landscape01",
+  "strImage"        : "encounters/ENCPlanetSunrise",
+  "nLogging"         : 0,
+  "bHumanOnly"     : true,
+  "bIgnoreFeelings"	: true,
+  "LootCondsUs"       : null,
+  "LootCTsThem"     : null,
+  "CTTestUs"           : null,
+  "CTTestThem"         : null
+},
+    {
+      "strName" : "ENCPlot_Merga_Boss_C2a",
+      "strTitle" : "XXX",
+      "strDesc" : "XXX",
+      "strColor"      : "Dialogue",
+      "aInverse"          : [
+        "ENCPlot_Merga_Boss_C3"
+      ],
+      "fDuration"         : 0.00000001,
+      "strThemType"       : "Self",
+      "strRaiseUI"        : "SocialCombat",
+      "strSubUI"        : "Landscape01",
+      "strImage"        : "encounters/ENCPlanetSunrise",
+      "nLogging"         : 0,
+      "bHumanOnly"     : true,
+      "bIgnoreFeelings"	: true,
+      "LootCondsUs"       : "CONDENCPlot_Merga_Boss_C2a",
+      "LootCTsThem"     : null,
+      "CTTestUs"           : null,
+      "CTTestThem"         : null
+    },
+        {
+          "strName" : "ENCPlot_Merga_Boss_C2b",
+          "strTitle" : "XXX",
+          "strDesc" : "XXX",
+          "strColor"      : "Dialogue",
+          "aInverse"          : [
+            "ENCPlot_Merga_Boss_C3"
+          ],
+          "fDuration"         : 0.00000001,
+          "strThemType"       : "Self",
+          "strRaiseUI"        : "SocialCombat",
+          "strSubUI"        : "Landscape01",
+          "strImage"        : "encounters/ENCPlanetSunrise",
+          "nLogging"         : 0,
+          "bHumanOnly"     : true,
+          "bIgnoreFeelings"	: true,
+          "LootCondsUs"       : "CONDENCPlot_Merga_Boss_C2b",
+          "LootCTsThem"     : null,
+          "CTTestUs"           : null,
+          "CTTestThem"         : null
+        },
+        {
+          "strName" : "ENCPlot_Merga_Boss_C2c",
+          "strTitle" : "XXX",
+          "strDesc" : "XXX",
+          "strColor"      : "Dialogue",
+          "aInverse"          : [
+            "ENCPlot_Merga_Boss_C3"
+          ],
+          "fDuration"         : 0.00000001,
+          "strThemType"       : "Self",
+          "strRaiseUI"        : "SocialCombat",
+          "strSubUI"        : "Landscape01",
+          "strImage"        : "encounters/ENCPlanetSunrise",
+          "nLogging"         : 0,
+          "bHumanOnly"     : true,
+          "bIgnoreFeelings"	: true,
+          "LootCondsUs"       : "CONDENCPlot_Merga_Boss_C2c",
+          "LootCTsThem"     : null,
+          "CTTestUs"           : null,
+          "CTTestThem"         : null
+        },
+        {
+          "strName" : "ENCPlot_Merga_Boss_C2d",
+          "strTitle" : "XXX",
+          "strDesc" : "XXX",
+          "strColor"      : "Dialogue",
+          "aInverse"          : [
+            "ENCPlot_Merga_Boss_C3"
+          ],
+          "fDuration"         : 0.00000001,
+          "strThemType"       : "Self",
+          "strRaiseUI"        : "SocialCombat",
+          "strSubUI"        : "Landscape01",
+          "strImage"        : "encounters/ENCPlanetSunrise",
+          "nLogging"         : 0,
+          "bHumanOnly"     : true,
+          "bIgnoreFeelings"	: true,
+          "LootCondsUs"       : "CONDENCPlot_Merga_Boss_C2d",
+          "LootCTsThem"     : null,
+          "CTTestUs"           : null,
+          "CTTestThem"         : null
+        },
+{
+"strName" : "ENCPlot_Merga_Boss_C3",
+"strTitle" : "XXX",
+"strDesc" : "XXX",
+"strColor"      : "Dialogue",
+"aInverse"          : [
+  "ENCPlot_Merga_Boss_C3a",
+  "ENCPlot_Merga_Boss_C3b",
+  "ENCPlot_Merga_Boss_C3c",
+  "ENCPlot_Merga_Boss_C3d"
+],
+"fDuration"         : 0.00000001,
+"strThemType"       : "Self",
+"strRaiseUI"        : "SocialCombat",
+"strSubUI"        : "Landscape01",
+"strImage"        : "encounters/ENCPlanetSunrise",
+"nLogging"         : 0,
+"bHumanOnly"     : true,
+"bIgnoreFeelings"	: true,
+"LootCondsUs"       : null,
+"LootCTsThem"     : null,
+"CTTestUs"           : null,
+"CTTestThem"         : null
+},
+  {
+    "strName" : "ENCPlot_Merga_Boss_C3a",
+    "strTitle" : "XXX",
+    "strDesc" : "XXX",
+    "strColor"      : "Dialogue",
+    "aInverse"          : [
+      "ENCPlot_Merga_Boss_C4"
+    ],
+    "fDuration"         : 0.00000001,
+    "strThemType"       : "Self",
+    "strRaiseUI"        : "SocialCombat",
+    "strSubUI"        : "Landscape01",
+    "strImage"        : "encounters/ENCPlanetSunrise",
+    "nLogging"         : 0,
+    "bHumanOnly"     : true,
+    "bIgnoreFeelings"	: true,
+    "LootCondsUs"       : "CONDENCPlot_Merga_Boss_C3a",
+    "LootCTsThem"     : null,
+    "CTTestUs"           : null,
+    "CTTestThem"         : null
+  },
+      {
+        "strName" : "ENCPlot_Merga_Boss_C3b",
+        "strTitle" : "XXX",
+        "strDesc" : "XXX",
+        "strColor"      : "Dialogue",
+        "aInverse"          : [
+          "ENCPlot_Merga_Boss_C4"
+        ],
+        "fDuration"         : 0.00000001,
+        "strThemType"       : "Self",
+        "strRaiseUI"        : "SocialCombat",
+        "strSubUI"        : "Landscape01",
+        "strImage"        : "encounters/ENCPlanetSunrise",
+        "nLogging"         : 0,
+        "bHumanOnly"     : true,
+        "bIgnoreFeelings"	: true,
+        "LootCondsUs"       : "CONDENCPlot_Merga_Boss_C3b",
+        "LootCTsThem"     : null,
+        "CTTestUs"           : null,
+        "CTTestThem"         : null
+      },
+      {
+        "strName" : "ENCPlot_Merga_Boss_C3c",
+        "strTitle" : "XXX",
+        "strDesc" : "XXX",
+        "strColor"      : "Dialogue",
+        "aInverse"          : [
+          "ENCPlot_Merga_Boss_C4"
+        ],
+        "fDuration"         : 0.00000001,
+        "strThemType"       : "Self",
+        "strRaiseUI"        : "SocialCombat",
+        "strSubUI"        : "Landscape01",
+        "strImage"        : "encounters/ENCPlanetSunrise",
+        "nLogging"         : 0,
+        "bHumanOnly"     : true,
+        "bIgnoreFeelings"	: true,
+        "LootCondsUs"       : "CONDENCPlot_Merga_Boss_C3c",
+        "LootCTsThem"     : null,
+        "CTTestUs"           : null,
+        "CTTestThem"         : null
+      },
+      {
+        "strName" : "ENCPlot_Merga_Boss_C3d",
+        "strTitle" : "XXX",
+        "strDesc" : "XXX",
+        "strColor"      : "Dialogue",
+        "aInverse"          : [
+          "ENCPlot_Merga_Boss_C4"
+        ],
+        "fDuration"         : 0.00000001,
+        "strThemType"       : "Self",
+        "strRaiseUI"        : "SocialCombat",
+        "strSubUI"        : "Landscape01",
+        "strImage"        : "encounters/ENCPlanetSunrise",
+        "nLogging"         : 0,
+        "bHumanOnly"     : true,
+        "bIgnoreFeelings"	: true,
+        "LootCondsUs"       : "CONDENCPlot_Merga_Boss_C3d",
+        "LootCTsThem"     : null,
+        "CTTestUs"           : null,
+        "CTTestThem"         : null
+      },
+{
+"strName" : "ENCPlot_Merga_Boss_C4",
+"strTitle" : "XXX",
+"strDesc" : "XXX",
+"strColor"      : "Dialogue",
+"aInverse"          : [
+  "ENCPlot_Merga_Boss_CFinal"
+],
+"fDuration"         : 0.00000001,
+"strThemType"       : "Self",
+"strRaiseUI"        : "SocialCombat",
+"strSubUI"        : "Landscape01",
+"strImage"        : "encounters/ENCPlanetSunrise",
+"nLogging"         : 0,
+"bHumanOnly"     : true,
+"bIgnoreFeelings"	: true,
+"LootCondsUs"       : null,
+"LootCTsThem"     : null,
+"CTTestUs"           : null,
+"CTTestThem"         : null
+},
+  {
+    "strName" : "ENCPlot_Merga_Boss_Final",
+    "strTitle" : "XXX",
+    "strDesc" : "XXX",
+    "strColor"      : "Dialogue",
+    "aInverse"          : [
+      "ENCPlot_Merga_Boss_MFinal",
+      "ENCPlot_Merga_Boss_ZFinal",
+      "ENCPlot_Merga_Boss_CFinal"
+    ],
+    "fDuration"         : 0.00000001,
+    "strThemType"       : "Self",
+    "strRaiseUI"        : "SocialCombat",
+    "strSubUI"        : "Landscape01",
+    "strImage"        : "encounters/ENCPlanetSunrise",
+    "nLogging"         : 0,
+    "bHumanOnly"     : true,
+    "bIgnoreFeelings"	: true,
+    "LootCondsUs"       : null,
+    "LootCTsThem"     : null,
+    "CTTestUs"           : "CTENCPLOT_Merga_BossUsReady",
+    "CTTestThem"         : null
+  },
+      {
+        "strName" : "ENCPlot_Merga_Boss_MFinal",
+        "strTitle" : "XXX",
+        "strDesc" : "XXX",
+        "strColor"      : "Dialogue",
+        "aInverse"          : [
+          "ENCFinish"
+        ],
+        "fDuration"         : 0.00000001,
+        "strThemType"       : "Self",
+        "strRaiseUI"        : "SocialCombat",
+        "strSubUI"        : "Landscape01",
+        "strImage"        : "encounters/ENCPlanetSunrise",
+        "nLogging"         : 0,
+        "bHumanOnly"     : true,
+        "bIgnoreFeelings"	: true,
+        "LootCondsUs"       : "CONDENCPLOT_Merga_BossUs_PFinal",
+        "LootCTsThem"     : null,
+        "CTTestUs"           : "CTENCPLOT_Merga_BossUs_PFinalReady",
+        "CTTestThem"         : null,
+        "aLootItms" : [
+        ]
+      },
+      {
+        "strName" : "ENCPlot_Merga_Boss_ZFinal",
+        "strTitle" : "XXX",
+        "strDesc" : "XXX",
+        "strColor"      : "Dialogue",
+        "aInverse"          : [
+          "ENCFinish"
+        ],
+        "fDuration"         : 0.00000001,
+        "strThemType"       : "Self",
+        "strRaiseUI"        : "SocialCombat",
+        "strSubUI"        : "Landscape01",
+        "strImage"        : "encounters/ENCPlanetSunrise",
+        "nLogging"         : 0,
+        "bHumanOnly"     : true,
+        "bIgnoreFeelings"	: true,
+        "LootCondsUs"       : "CONDENCPLOT_Merga_Boss_ZFinal",
+        "LootCTsThem"     : null,
+        "CTTestUs"           : "CTENCPLOT_Merga_Boss_ZFinalReady",
+        "CTTestThem"         : null,
+        "aLootItms" : [
+        ]
+      },
+      {
+        "strName" : "ENCPlot_Merga_Boss_CFinal",
+        "strTitle" : "End",
+        "strDesc" : "For now, though, there is little to do but wait until that day arrives.\n\nTime to get back to work.",
+        "strColor"      : "Dialogue",
+        "aInverse"          : [
+          "PLOT_Merga_EndTrigger"
+        ],
+        "fDuration"         : 0.00000001,
+        "strThemType"       : "Self",
+        "strRaiseUI"        : "SocialCombat",
+        "strSubUI"        : "Landscape01",
+        "strImage"        : "encounters/ENCPlanetSunrise",
+        "nLogging"         : 0,
+        "bHumanOnly"     : true,
+        "bIgnoreFeelings"	: true,
+        "LootCondsUs"       : "CONDPLOT_Merga_EndTriggerUs",
+        "LootCTsThem"     : null,
+        "CTTestUs"           : null,
+        "CTTestThem"         : null, 
+        "strAchievementUnlock" : "ACH_PLOT_MERGA"
+      },
+	{
+		"strName" : "PLOT_Merga_WhispersFound01Reply3",
+		"strTitle" : "Watch the Biography of Miss M",
+		"strDesc" : "According to the broadcast, Camellia Middlemist was born in 2049 on NewCal, the year of the aerostat's establishment. Although there is ample evidence disputing this fact, many consider her to be the first person born to Venus, and for that reason she grew up as a child star in the system.
+
+After acting in various feature films for the Xinhua media conglomerate Peacock Pictures, Middlemist abandoned the film industry and struggled with addiction in her teenage years. She fell into obscurity for almost a decade before emerging, somewhat suddenly, on the Encantado aerostat in 2076, where she began a singing residency at the Sol Vermelho Lounge, a bar overlooking the Encantado Grand Prix. 
+
+Because the Vermelho is owned by imprisoned crime boss Helio Hora and is the primary haunt for the Briar Rose piracy syndicate, it is rumored that organized crime is at least somewhat responsible for Middlemist's return. 
+
+Her reemergence created an immediate media sensation, a redemption story that has captivated the hyperactive Venusian tabloid press for years and created a loyal and sometimes ravenous fanbase. In 2078, a year before her disappearance,  she began a very public relationship leading to a whirlwind marriage to champion Encantado Grand Prix racer Rex Korin. 
+
+As Weihan closes his segment, he sends the broadcast back to Banks, who offers a heartfelt plea to anyone watching with information on Miss M to please contact authorities as soon as possible. 
+
+Enraptured by the program, you look around to find that most of the spacers are still standing with you. A preview of the next program flashes on the screen: \"Spotlight: Blood on the Rose, a History of Helio Hora\"
+",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "PLOT_Merga_WhispersFound01Reply4" ],
+		"strActionGroup" : "Use",
+		"strThemType" : "Self",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bPause" : true,
+		"bIgnoreFeelings" : true,
+		"bRecheckThisPlot" : true
+	},
+	{
+		"strName" : "PLOT_Merga_WhispersFound01Reply4",
+		"strTitle" : "Watch \"Spotlight: Blood on the Rose\"",
+		"strDesc" : "OWNG \"Spotlight\" is the network's premier interview program, featuring trenchant conversation between host Pierce Wilcox and an array of fascinating guests. This week, Wilcox has managed to pull a former member of the Briar Rose criminal syndicate: Breno Oscar Vaz.  
+
+It's a rare get. Most syndicate members die in service to family, and those who manage to escape it are rarely brave enough to talk.
+
+This one, however, seems compelled by the disappearance of Miss M to speak out. He is an aged man, nearly 50, with fading face tattoos and sunken eyes. His shirt is too large for him, and it looks like the first time he's ever worn a tie. The entire ensemble makes the neckpiece look like an inverted noose.
+
+Vaz presents himself as an authority on Helio Hora, a former friend and associate. During the back and forth between himself and host Wilcox, you glean insight on Hora's background.
+
+The now imprisoned crime boss was born in 2023 in São Paulo on Earth. Details of his early life are mostly unknown. In the early days of Venusian aerostat development, Hora worked in contracting and eventually materials acquisition, and was thus vital in the construction of both NewCal and Encantado.
+
+Using resources and relationships cultivated in the construction of the latter, Hora began the Encantado Grand Prix and eventually established the nearby Sol Vermelho Lounge, where Miss M would eventually perform in residence. 
+
+According to the case built against him by law enforcement, at the time of his arrest Hora's criminal empire included race fixing, labor bribery, contract embezzlement, intimidation, piracy, and contract killing. As part of the terms of his arrest, most of Hora's assets were turned over to a still active Venusian business mogul, including ownership of the Sol Vermelho Lounge. 
+
+The current owner of the famed lounge was in close contact with Miss M up until her disappearance.
+",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ENCFinish" ],
+		"strActionGroup" : "Use",
+		"strThemType" : "Self",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bPause" : true,
+		"bIgnoreFeelings" : true,
+		"bRecheckThisPlot" : true
+	}
+]

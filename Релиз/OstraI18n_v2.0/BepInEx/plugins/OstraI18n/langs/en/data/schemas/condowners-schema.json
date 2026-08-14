@@ -1,0 +1,43 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+            "strName" : {
+                "type": "string",
+                "description": "The code name of the condowner, as referred to in other files."
+            },
+            "strNameShort" : {
+                "type": "string",
+                "description": "Simplified name for generic category.\nUsed in tooltips and lists."
+            },
+            "strNameFriendly" : {
+                "type": "string",
+                "description": "The human readable name of the condowner."
+            },
+            "strType" : {
+                "type": "string",
+                "description": "The type of the condowner",
+                "enum": ["Item", "Crew", "Ship"]
+            },
+            "strLoot" : {
+                "description": "Loot the condowner spawns with, reffers to entry within loot.json"
+            },
+            "strItemDef" : {
+                "type": "string",
+                "description": "The item definition, reffers to entry within items.json"
+            },
+            "strDesc" : {
+                "type": "string",
+                "description": "A longer description of the item. Present in inventory tooltips."
+            },
+            "bSlotLocked" : {
+                "type": "boolean",
+                "description": "Controls whether the condowner is locked into the slot it inhabits"
+            }
+
+        }
+    }
+}

@@ -1,0 +1,81 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "strName" : {
+                "type": "string",
+                "description": "The code name of the item, as referred to."
+            },
+            "strImg" : {
+                "type": "string",
+                "description": "The image to load as the main sprite for the item."
+            },
+            "strImgNorm" : {
+                "type": "string",
+                "description": "The image to load as the normal texture for the item. \n(Should look weird and blue. Most filenames in base game end with \"n\")"
+            },
+            "strImgDamaged" : {
+                "type": "string",
+                "description": "The image to use as a damage underlay. Exposes more the more damaged an object is."
+            },
+            "strDmgColor" : {
+                "type": "string",
+                "description": "The name of the predefined color of the object when damaged. If strImgDamaged is present it tints the image, otherwise color is flat. \nCheck colors.json to find options."
+            },
+            "nDmgMode" : {
+                "type": "number",
+                "description": "Defines how the damaged sprite and regular sprite interact. \nPassthrough is whether transparent pixels of the damage texture appear transparent or have no affect on the original sprite.(A.k.a. can it affect the silhouette internally?) \nExtension means if non-transparent pixels on the damage texture can draw over transparent pixels of the orignal texture. (A.k.a. can it affect the silhouette externally?)\n0 = default behaviour.\n1 = passthrough but no extension.\n2 = extension but no passthrough.\n3 = extension and passthrough"
+            },
+            "fDmgCut" : {
+                "type": "number",
+                "description": "Advanced parameter for playing with how the damage pattern appears."
+            },
+            "fDmgTrim" : {
+                "type": "number",
+                "description": "Advanced parameter for playing with how the damage pattern appears."
+            },
+            "fDmgIntensity" : {
+                "type": "number",
+                "description": "Advanced parameter for playing with how the damage pattern appears."
+            },
+            "fDmgComplexity" : {
+                "type": "number",
+                "description": "Advanced parameter for playing with how the damage pattern appears."
+            },
+            "bLerp" : {
+                "type": "boolean",
+                "description": "Advanced parameter for playing with how the damage pattern appears."
+            },
+            "bSinew" : {
+                "type": "boolean",
+                "description": "Advanced parameter for playing with how the damage pattern appears."
+            },
+            "fZScale" : {
+                "type": "number",
+                "description": "Defines how  tall the object is. Useful for fitting more than 1 item on a tile vertically."
+            },
+            "nCols" : {
+                "type": "number",
+                "description": "How wide the object is. Necessary for deciphering Adds/Forbids/Reqs"
+            },
+            "aSocketReqs": {
+                "type": "array",
+                "description": "Requirements of other types of tiles before it can be placed."
+            },
+            "aSocketForbids": {
+                "type": "array",
+                "description": "Types of tiles that must not be present for the item to be placed correctly."
+            },
+            "aSocketAdds": {
+                "type": "array",
+                "description": "Types of tile added by the item."
+            },
+            "aLights": {
+                "type": "array",
+                "description": "Lights emitted by the item. Found in lights.json"
+            }
+        }
+    }
+}

@@ -1,0 +1,88 @@
+[
+    { "strName" : "CTEVTScareBigBasic", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [  ], "aForbids" : [ "IsAgliophobic", "IsApathetic", "IsBrave", "IsComedian", "IsCraven", "IsOptimist", "IsPessimist", "IsQuitter", "IsSelfish", "IsSelfless" ], "aTriggers" : [ ], "bAND" : true },
+    { "strName" : "TIsNotBustedCooldown", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ ], "aForbids" : [ "IsBustedCooldown" ], "aTriggers" : [ ], "bAND" : true },
+    { "strName" : "TIsNotClobberCooldown", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ ], "aForbids" : [ "IsClobberCooldown" ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : true },
+    { "strName" : "TIsNotCrashCooldown", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ ], "aForbids" : [ "IsCrashCooldown" ], "aTriggers" : [ ], "bAND" : true },
+    { "strName" : "TIsNotVoidCooldown", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ ], "aForbids" : [ "IsVoidCooldown" ], "aTriggers" : [ ], "bAND" : true },
+
+    { "strName" : "TIsMemoryViolenceClobber", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ ], "aForbids" : ["MemViolenceDeeperClobber","MemViolenceDeeperRevisit","MemViolenceDeeperFinal","IsClobberCooldown" ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : true },
+    { "strName" : "TIsMemoryViolenceDeeperRevisit", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ "MemViolenceDeeperClobber"], "aForbids" : ["MemViolenceDeeperRevisit","IsClobberCooldown" ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : true },
+    { "strName" : "TIsMemoryViolenceDeeperFinal", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ "MemViolenceDeeperRevisit"], "aForbids" : ["MemViolenceDeeperFinal","IsClobberCooldown" ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : true },
+
+    { "strName" : "TIsMemoryChildhoodClobber", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ ], "aForbids" : ["MemChildhoodDeeperClobber","MemChildhoodDeeperRevisit","MemChildhoodDeeperFinal","IsClobberCooldown" ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : true },
+    { "strName" : "TIsMemoryChildhoodDeeperRevisit", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ "MemChildhoodDeeperClobber"], "aForbids" : ["MemChildhoodDeeperRevisit","IsClobberCooldown" ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : true },
+    { "strName" : "TIsMemoryChildhoodDeeperFinal", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ "MemChildhoodDeeperRevisit"], "aForbids" : ["MemChildhoodDeeperFinal","IsClobberCooldown" ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : true },
+
+    { "strName" : "TIsMemoryFoliageClobber", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ ], "aForbids" : ["MemFoliageDeeperClobber","MemFoliageDeeperRevisit","MemFoliageDeeperFinal","IsClobberCooldown" ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : true },
+    { "strName" : "TIsMemoryFoliageDeeperRevisit", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ "MemFoliageDeeperClobber"], "aForbids" : ["MemFoliageDeeperRevisit","IsClobberCooldown" ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : true },
+    { "strName" : "TIsMemoryFoliageDeeperFinal", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ "MemFoliageDeeperRevisit"], "aForbids" : ["MemFoliageDeeperFinal","IsClobberCooldown" ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : true },
+
+    { "strName" : "TIsMemoryDeadFriendClobber", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ ], "aForbids" : ["MemDeadFriendDeeperClobber","MemDeadFriendDeeperRevisit","MemDeadFriendDeeperFinal","IsClobberCooldown" ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : true },
+    { "strName" : "TIsMemoryDeadFriendDeeperRevisit", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ "MemDeadFriendDeeperClobber"], "aForbids" : ["MemDeadFriendDeeperRevisit","IsClobberCooldown" ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : true },
+    { "strName" : "TIsMemoryDeadFriendDeeperFinal", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ "MemDeadFriendDeeperRevisit"], "aForbids" : ["MemDeadFriendDeeperFinal","IsClobberCooldown" ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : true },
+
+    { "strName" : "TIsMemoryDumbClobber", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ ], "aForbids" : ["MemDumbDeeperClobber","MemDumbDeeperRevisit","MemDumbDeeperFinal","IsClobberCooldown" ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : true },
+    { "strName" : "TIsMemoryDumbDeeperRevisit", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ "MemDumbDeeperClobber"], "aForbids" : ["MemDumbDeeperRevisit","IsClobberCooldown" ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : true },
+    { "strName" : "TIsMemoryDumbDeeperFinal", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ "MemDumbDeeperRevisit"], "aForbids" : ["MemDumbDeeperFinal","IsClobberCooldown" ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : true },
+
+    { "strName" : "TIsMemoryProjectClobber", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ ], "aForbids" : ["MemProjectDeeperClobber","MemProjectDeeperRevisit","MemProjectDeeperFinal","IsClobberCooldown" ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : true },
+    { "strName" : "TIsMemoryProjectDeeperRevisit", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ "MemProjectDeeperClobber"], "aForbids" : ["MemProjectDeeperRevisit","IsClobberCooldown" ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : true },
+    { "strName" : "TIsMemoryProjectDeeperFinal", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ "MemProjectDeeperRevisit"], "aForbids" : ["MemProjectDeeperFinal","IsClobberCooldown" ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : true },
+
+    { "strName" : "TIsMemoryLoveClobber", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ ], "aForbids" : ["MemLoveDeeperClobber","MemLoveDeeperRevisit","MemLoveDeeperFinal","IsClobberCooldown" ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : true },
+    { "strName" : "TIsMemoryLoveDeeperRevisit", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ "MemLoveDeeperClobber"], "aForbids" : ["MemLoveDeeperRevisit","IsClobberCooldown" ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : true },
+    { "strName" : "TIsMemoryLoveDeeperFinal", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ "MemLoveDeeperRevisit"], "aForbids" : ["MemLoveDeeperFinal","IsClobberCooldown" ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : true },
+
+    { "strName" : "TIsMemoryBetrayalClobber", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ ], "aForbids" : ["MemBetrayalDeeperClobber","MemBetrayalDeeperRevisit","MemBetrayalDeeperFinal","IsClobberCooldown" ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : true },
+    { "strName" : "TIsMemoryBetrayalDeeperRevisit", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ "MemBetrayalDeeperClobber"], "aForbids" : ["MemBetrayalDeeperRevisit","IsClobberCooldown" ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : true },
+    { "strName" : "TIsMemoryBetrayalDeeperFinal", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ "MemBetrayalDeeperRevisit"], "aForbids" : ["MemBetrayalDeeperFinal","IsClobberCooldown" ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : true },
+
+    { "strName" : "TIsMemoryMassesClobber", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ ], "aForbids" : ["MemMassesDeeperClobber","MemMassesDeeperRevisit","MemMassesDeeperFinal","IsClobberCooldown" ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : true },
+    { "strName" : "TIsMemoryMassesDeeperRevisit", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ "MemMassesDeeperClobber"], "aForbids" : ["MemMassesDeeperRevisit","IsClobberCooldown" ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : true },
+    { "strName" : "TIsMemoryMassesDeeperFinal", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ "MemMassesDeeperRevisit"], "aForbids" : ["MemMassesDeeperFinal","IsClobberCooldown" ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : true },
+
+
+    { "strName" : "TIsMemoryFirstSuppress", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ ], "aForbids" : ["MemSuppressFirst","MemSuppressSecond","MemSuppressThird" ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : false },
+    { "strName" : "TIsMemorySecondSuppress", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : ["MemSuppressFirst" ], "aForbids" : ["MemSuppressSecond" ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : true },
+    { "strName" : "TIsMemoryThirdSuppress", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : ["MemSuppressFirst","MemSuppressSecond" ], "aForbids" : [ ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : true },
+
+    { "strName" : "TIsMemoryFirstSuppressLove", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ ], "aForbids" : ["MemSuppressLoveFirst","MemSuppressLoveSecond","MemSuppressLoveThird" ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : false },
+    { "strName" : "TIsMemorySecondSuppressLove", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : ["MemSuppressLoveFirst" ], "aForbids" : ["MemSuppressLoveSecond" ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : true },
+    { "strName" : "TIsMemoryThirdSuppressLove", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : ["MemSuppressLoveFirst","MemSuppressLoveSecond" ], "aForbids" : [ ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : true },
+
+    { "strName" : "TIsMemoryFirstSuppressChildhood", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ ], "aForbids" : ["MemSuppressChildhoodFirst","MemSuppressChildhoodSecond","MemSuppressChildhoodThird" ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : false },
+    { "strName" : "TIsMemorySecondSuppressChildhood", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : ["MemSuppressChildhoodFirst" ], "aForbids" : ["MemSuppressChildhoodSecond" ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : true },
+    { "strName" : "TIsMemoryThirdSuppressChildhood", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : ["MemSuppressChildhoodFirst","MemSuppressChildhoodSecond" ], "aForbids" : [ ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : true },
+
+
+    { "strName" : "TIsMemoryFirstSuppressFoliage", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ ], "aForbids" : ["MemSuppressFoliageFirst","MemSuppressFoliageSecond","MemSuppressFoliageThird" ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : false },
+    { "strName" : "TIsMemorySecondSuppressFoliage", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : ["MemSuppressFoliageFirst" ], "aForbids" : ["MemSuppressFoliageSecond" ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : true },
+    { "strName" : "TIsMemoryThirdSuppressFoliage", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : ["MemSuppressFoliageFirst","MemSuppressFoliageSecond" ], "aForbids" : [ ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : true },
+
+    { "strName" : "TIsMemoryFirstSuppressDeadFriend", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ ], "aForbids" : ["MemSuppressDeadFriendFirst","MemSuppressDeadFriendSecond","MemSuppressDeadFriendThird" ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : false },
+    { "strName" : "TIsMemorySecondSuppressDeadFriend", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : ["MemSuppressDeadFriendFirst" ], "aForbids" : ["MemSuppressDeadFriendSecond" ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : true },
+    { "strName" : "TIsMemoryThirdSuppressDeadFriend", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : ["MemSuppressDeadFriendFirst","MemSuppressDeadFriendSecond" ], "aForbids" : [ ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : true },
+
+    { "strName" : "TIsMemoryFirstSuppressProject", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ ], "aForbids" : ["MemSuppressProjectFirst","MemSuppressProjectSecond","MemSuppressProjectThird" ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : false },
+    { "strName" : "TIsMemorySecondSuppressProject", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : ["MemSuppressProjectFirst" ], "aForbids" : ["MemSuppressProjectSecond" ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : true },
+    { "strName" : "TIsMemoryThirdSuppressProject", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : ["MemSuppressProjectFirst","MemSuppressProjectSecond" ], "aForbids" : [ ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : true },
+
+
+    { "strName" : "TIsMemoryFirstSuppressMasses", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ ], "aForbids" : ["MemSuppressMassesFirst","MemSuppressMassesSecond","MemSuppressMassesThird" ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : false },
+    { "strName" : "TIsMemorySecondSuppressMasses", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : ["MemSuppressMassesFirst" ], "aForbids" : ["MemSuppressMassesSecond" ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : true },
+    { "strName" : "TIsMemoryThirdSuppressMasses", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : ["MemSuppressMassesFirst","MemSuppressMassesSecond" ], "aForbids" : [ ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : true },
+
+
+    { "strName" : "TIsMemoryFirstSuppressBetrayal", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ ], "aForbids" : ["MemSuppressBetrayalFirst","MemSuppressBetrayalSecond","MemSuppressBetrayalThird" ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : false },
+    { "strName" : "TIsMemorySecondSuppressBetrayal", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : ["MemSuppressBetrayalFirst" ], "aForbids" : ["MemSuppressBetrayalSecond" ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : true },
+    { "strName" : "TIsMemoryThirdSuppressBetrayal", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : ["MemSuppressBetrayalFirst","MemSuppressBetrayalSecond" ], "aForbids" : [ ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : true },
+
+    { "strName" : "TIsMemoryFirstSuppressDumb", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ ], "aForbids" : ["MemSuppressDumbFirst","MemSuppressDumbSecond","MemSuppressDumbThird" ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : false },
+    { "strName" : "TIsMemorySecondSuppressDumb", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : ["MemSuppressDumbFirst" ], "aForbids" : ["MemSuppressDumbSecond" ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : true },
+    { "strName" : "TIsMemoryThirdSuppressDumb", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : ["MemSuppressDumbFirst","MemSuppressDumbSecond" ], "aForbids" : [ ], "aTriggers" : [ "TIsPlayerCrewAwake" ], "bAND" : true }
+
+
+
+
+
+]
