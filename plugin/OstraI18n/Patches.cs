@@ -834,10 +834,11 @@ namespace OstraI18n
                 if (!string.IsNullOrEmpty(title))
                 {
                     if (title == "MAIN MENU") _mfdTitleProp.SetValue(__instance, "ГЛАВНОЕ МЕНЮ");
-                    else if (title.StartsWith("CONNECTED WITH - ")) _mfdTitleProp.SetValue(__instance, "СВЯЗЬ: " + title.Substring(17));
-                    else if (title.StartsWith("DOCKED WITH: ")) _mfdTitleProp.SetValue(__instance, "ПРИСТЫКОВАН К: " + title.Substring(13));
-                    else if (title == "SELECT TARGET") _mfdTitleProp.SetValue(__instance, "ВЫБЕРИТЕ ЦЕЛЬ");
-                    else if (title == "NO TARGETS IN RANGE") _mfdTitleProp.SetValue(__instance, "НЕТ ЦЕЛЕЙ В ЗОНЕ ДЕЙСТВИЯ");
+                    else if (title.StartsWith("CONNECTED WITH - ")) _mfdTitleProp.SetValue(__instance, "СВЯЗЬ:    " + title.Substring(17));
+                    else if (title.StartsWith("СВЯЗЬ: ") && !title.StartsWith("СВЯЗЬ:   ")) _mfdTitleProp.SetValue(__instance, "СВЯЗЬ:    " + title.Substring(7));
+                    else if (title.StartsWith("DOCKED WITH: ")) _mfdTitleProp.SetValue(__instance, "ПРИСТЫКОВАН К:    " + title.Substring(13));
+                    else if (title == "SELECT TARGET") _mfdTitleProp.SetValue(__instance, "ВЫБОР ЦЕЛИ");
+                    else if (title == "NO TARGETS IN RANGE") _mfdTitleProp.SetValue(__instance, "НЕТ ЦЕЛЕЙ В РАДИУСЕ");
                 }
 
                 var left = _mfdLeftProp?.GetValue(__instance) as List<string>;
@@ -856,14 +857,20 @@ namespace OstraI18n
                         else if (s == "<PREVIOUS PAGE") s = "<ПРЕД. СТР.";
                         else if (s == "<CYCLE PAGE") s = "<СМЕНА СТР.";
                         else if (s == "NO CLEARANCE") s = "НЕТ РАЗРЕШЕНИЯ";
-                        else if (s == "<REQUEST CLEARANCE") s = "<ЗАПРОС РАЗРЕШ.";
+                        else if (s == "<REQUEST CLEARANCE") s = "<ЗАПРОС ДОПУСКА";
                         else if (s == "CLEARANCE AVAILABLE") s = "ЕСТЬ РАЗРЕШЕНИЕ";
                         else if (s == "<DOCKING") s = "<СТЫКОВКА";
-                        else if (s == "<BACK") s = "<НАЗАД";
+                        else if (s == "<BACK") s = "<В МЕНЮ";
                         else if (s == "Message sent") s = "Отправлено";
                         else if (s == "Waiting for response") s = "Ожидание ответа";
                         else if (s == "Port Open") s = "Порт открыт";
                         else if (s.StartsWith("Docked: ")) s = "Стыковка: " + s.Substring(8);
+                        else if (s.IndexOf("разрешение на расстыковку", StringComparison.OrdinalIgnoreCase) >= 0) s = "< Запрос отстыковки";
+                        else if (s.IndexOf("разрешение на стыковку", StringComparison.OrdinalIgnoreCase) >= 0) s = "< Запрос стыковки";
+                        else if (s.IndexOf("списка экипажа", StringComparison.OrdinalIgnoreCase) >= 0) s = "< Список экипажа";
+                        else if (s.IndexOf("рыночные данные", StringComparison.OrdinalIgnoreCase) >= 0) s = "< Цены на рынке";
+                        else if (s.IndexOf("нет топлива", StringComparison.OrdinalIgnoreCase) >= 0) s = "< SOS: Нет топлива";
+                        else if (s.IndexOf("приближается угроза", StringComparison.OrdinalIgnoreCase) >= 0 || s.IndexOf("угроза", StringComparison.OrdinalIgnoreCase) >= 0) s = "< SOS: Нападение";
                         left[i] = s;
                     }
                 }
@@ -879,6 +886,12 @@ namespace OstraI18n
                         else if (s == "NEXT PAGE>") s = "СЛЕД. СТР.>";
                         else if (s == "RETURN TO") s = "";
                         else if (s == "MAIN MENU>") s = "В МЕНЮ>";
+                        else if (s.IndexOf("разрешение на расстыковку", StringComparison.OrdinalIgnoreCase) >= 0) s = "Запрос отстыковки >";
+                        else if (s.IndexOf("разрешение на стыковку", StringComparison.OrdinalIgnoreCase) >= 0) s = "Запрос стыковки >";
+                        else if (s.IndexOf("списка экипажа", StringComparison.OrdinalIgnoreCase) >= 0) s = "Список экипажа >";
+                        else if (s.IndexOf("рыночные данные", StringComparison.OrdinalIgnoreCase) >= 0) s = "Цены на рынке >";
+                        else if (s.IndexOf("нет топлива", StringComparison.OrdinalIgnoreCase) >= 0) s = "SOS: Нет топлива >";
+                        else if (s.IndexOf("приближается угроза", StringComparison.OrdinalIgnoreCase) >= 0 || s.IndexOf("угроза", StringComparison.OrdinalIgnoreCase) >= 0) s = "SOS: Нападение >";
                         right[i] = s;
                     }
                 }
@@ -891,16 +904,16 @@ namespace OstraI18n
                     bool hasRight = right != null && i < right.Count && !string.IsNullOrEmpty(right[i]);
                     if (hasLeft && hasRight)
                     {
-                        left[i] = ClampMFDString(left[i], 16, true);
-                        right[i] = ClampMFDString(right[i], 16, false);
+                        left[i] = ClampMFDString(left[i], 15, true);
+                        right[i] = ClampMFDString(right[i], 15, false);
                     }
                     else if (hasLeft)
                     {
-                        left[i] = ClampMFDString(left[i], 30, true);
+                        left[i] = ClampMFDString(left[i], 28, true);
                     }
                     else if (hasRight)
                     {
-                        right[i] = ClampMFDString(right[i], 30, false);
+                        right[i] = ClampMFDString(right[i], 28, false);
                     }
                 }
             }
