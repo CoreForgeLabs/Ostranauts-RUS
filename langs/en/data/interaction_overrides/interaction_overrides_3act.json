@@ -1,0 +1,43 @@
+[
+    {
+		"strName" : "PLOTTEMP3ActMIDTarget",
+		"strTemplateIA" : "PLOTTEMP3ActBEGTarget",
+		"strFind" : "TEMP3ActBEG",
+		"strReplace" : "TEMP3ActMID",
+        "aOverrideValues" : [
+			"strTitle|TEMP3ActMID Target", 
+			"strDesc|[us] TEMP3ActMIDs [them] for [3rd]."
+		]
+	},
+    {
+		"strName" : "PLOTTEMP3ActMIDTurnIn",
+		"strTemplateIA" : "PLOTTEMP3ActBEGTurnIn",
+		"strFind" : "TEMP3ActBEG",
+		"strReplace" : "TEMP3ActMID",
+        "aOverrideValues" : [
+			"strTitle|Turn In TEMP3ActMID", 
+			"strDesc|[us] turns in TEMP3ActMID [them] for [3rd]."
+		]
+	},
+
+    {
+		"strName" : "PLOTTEMP3ActENDTarget",
+		"strTemplateIA" : "PLOTTEMP3ActBEGTarget",
+		"strFind" : "TEMP3ActBEG",
+		"strReplace" : "TEMP3ActEND",
+        "aOverrideValues" : [
+			"strTitle|TEMP3ActEND Target", 
+			"strDesc|[us] TEMP3ActENDs [them] for [3rd]."
+		]
+	},
+    {
+		"strName" : "PLOTTEMP3ActENDTurnIn",
+		"strTemplateIA" : "PLOTTEMP3ActBEGTurnIn",
+		"strFind" : "TEMP3ActBEG",
+		"strReplace" : "TEMP3ActEND",
+        "aOverrideValues" : [
+			"strTitle|Turn In TEMP3ActEND", 
+			"strDesc|[us] turns in TEMP3ActEND [them] for [3rd]."
+		]
+	}
+]

@@ -1,0 +1,438 @@
+[
+  {
+    "strName" : "ItmPDACartContainer",
+    "aCOs"    : [
+      "PocketPDACarts01=1.0x1"
+    ],
+    "aLoots"  : [],
+    "strType" : "item"
+  },
+  {
+    "strName" : "ItmRandomPDACartNewPlayer",
+    "aCOs"    : [
+      "ItmPDACartPwrViz=1.0x1",
+      "ItmPDACartDmgViz=1.0x1"
+    ],
+    "aLoots"  : [],
+    "strType" : "item"
+  },
+  {
+    "strName" : "ItmRandomPDACart",
+    "aCOs"    : [
+    ],
+    "aLoots"  : [
+      "ItmRandomPDACartStock=0.75x1|ItmRandomPDACartModded=0.25x1"
+    ],
+    "strType" : "item"
+  },
+  {
+    "strName" : "ItmRandomPDACartStock",
+    "aCOs"    : [
+      "ItmPDACartPwrViz=0.25x1|ItmPDACartDmgViz=0.25x1|ItmPDACartPriceViz=0.125x1|ItmPDACartMassViz=0.125x1|ItmPDACartHeatViz=0.125x1|ItmPDACartKpaViz=0.125x1"
+    ],
+    "aLoots"  : [],
+    "strType" : "item"
+  },
+  {
+    "strName" : "ItmRandomPDACartModded",
+    "aCOs"    : [
+      "ItmPDACart01=0.5x1|ItmPDACart02=0.3x1|ItmPDACart03=0.15x1|ItmPDACart04=0.05x1"
+    ],
+    "aLoots"  : [],
+    "strType" : "item"
+  },
+  {
+    "strName" : "CONDCardPDAPwrViz",
+    "aCOs"    : [
+      "IsDusty=0.25x1"
+    ],
+    "aLoots"  : [
+      "CONDPDAPresetPower=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "CONDCardPDADmgViz",
+    "aCOs"    : [
+      "IsDusty=0.25x1"
+    ],
+    "aLoots"  : [
+      "CONDPDAPresetDamage=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "CONDCardPDAPriceViz",
+    "aCOs"    : [
+      "IsDusty=0.25x1",
+      "StatBasePrice=1.0x65536"
+    ],
+    "aLoots"  : [
+      "CONDPDAPresetPrice=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "CONDCardPDAMassViz",
+    "aCOs"    : [
+      "IsDusty=0.25x1"
+    ],
+    "aLoots"  : [
+      "CONDPDAPresetMass=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "CONDCardPDAHeatViz",
+    "aCOs"    : [
+      "IsDusty=0.25x1",
+      "StatBasePrice=1.0x4096"
+    ],
+    "aLoots"  : [
+      "CONDPDAPresetHeat=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "CONDCardPDAKpaViz",
+    "aCOs"    : [
+      "IsDusty=0.25x1",
+      "StatBasePrice=1.0x4096"
+    ],
+    "aLoots"  : [
+      "CONDPDAPresetPressure=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "CONDCardPDATier1",
+    "aCOs"    : [
+      "IsDusty=0.25x1"
+    ],
+    "aLoots"  : [
+        "CONDPDARandomBasicPreset=0.65x1|CONDPDARandomRarePreset=0.35x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "CONDCardPDATier2",
+    "aCOs"    : [
+        "IsDusty=0.25x1-2",
+        "StatBasePrice=1.0x4096"
+  ],
+    "aLoots"  : [
+        "CONDPDARandomBasicPreset=1.0x1",
+        "CONDPDARandomBasicPreset=0.65x1|CONDPDARandomRarePreset=0.35x1",
+        "CONDPDARandomBasicToggle=1.0x1",
+        "CONDPDARandomGradient=1.0x1",
+        "CONDPDARandomBasicVariable=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "CONDCardPDATier3",
+    "aCOs"    : [
+        "IsDusty=0.33x1-3",
+        "StatBasePrice=1.0x12288"
+  ],
+    "aLoots"  : [
+        "CONDPDARandomBasicPreset=1.0x1",
+        "CONDPDARandomRarePreset=1.0x1",
+        "CONDPDARandomBasicPreset=0.65x1|CONDPDARandomRarePreset=0.35x1",
+        "CONDPDARandomBasicToggle=1.0x2",
+        "CONDPDARandomAnyToggle=1.0x1",
+        "CONDPDARandomRareToggle=1.0x1",
+        "CONDPDARandomGradient=1.0x3",
+        "CONDPDAUltimateVariable=0.01x1",
+        "CONDPDARandomBasicVariable=1.0x2",
+        "CONDPDARandomRareVariable=1.0x1",
+        "CONDPDARandomAnyInput=0.5x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "CONDCardPDATier4",
+    "aCOs"    : [
+        "IsDusty=0.5x1-4",
+        "StatBasePrice=1.0x28672"
+    ],
+    "aLoots"  : [
+        "CONDPDARandomBasicPreset=1.0x2",
+        "CONDPDARandomRarePreset=1.0x2",
+        "CONDPDAAllBasicToggles=1.0x1",
+        "CONDPDARandomRareToggle=1.0x2",
+        "CONDPDARandomGradient=1.0x5",
+        "CONDPDAUltimateVariable=0.33x1",
+        "CONDPDAAllBasicVariables=1.0x1",
+        "CONDPDARandomRareVariable=1.0x2",
+        "CONDPDARandomAnyInput=1.0x1",
+        "CONDPDARandomAnyInput=0.5x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "CONDCardPDATier5",
+    "aCOs"    : [
+        "StatBasePrice=1.0x126976"
+    ],
+    "aLoots"  : [
+        "CONDPDAPresetPower=1.0x1",
+        "CONDPDAPresetDamage=1.0x1",
+        "CONDPDAPresetMass=1.0x1",
+        "CONDPDAPresetHeat=1.0x1",
+        "CONDPDAPresetPrice=1.0x1",
+        "CONDPDAPresetPressure=1.0x1",
+        "CONDPDAAllBasicToggles=1.0x1",
+        "CONDPDAAllRareToggles=1.0x1",
+        "CONDPDAUltimateVariable=1.0x1",
+        "CONDPDAAllBasicVariables=1.0x1",
+        "CONDPDAAllRareVariables=1.0x1",
+        "CONDPDAAllGradients=1.0x1",
+        "CONDPDAAllInputs=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "CONDPDARandomBasicPreset",
+    "aCOs"    : [],
+    "aLoots"  : [
+        "CONDPDAPresetPower=0.34x1|CONDPDAPresetDamage=0.33x1|CONDPDAPresetMass=0.33x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "CONDPDARandomRarePreset",
+    "aCOs"    : [],
+    "aLoots"  : [
+        "CONDPDAPresetPrice=0.34x1|CONDPDAPresetHeat=0.33x1|CONDPDAPresetPressure=0.33x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "CONDPDAPresetPower",
+    "aCOs"    : [
+      "PDAPresetPower=1.0x1",
+      "PDAGradient07=1.0x1",
+      "PDAVariable_Power=1.0x1",
+      "PDATogglePower=1.0x1"
+    ],
+    "aLoots"  : [],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "CONDPDAPresetDamage",
+    "aCOs"    : [
+      "PDAPresetDamage=1.0x1",
+      "PDAGradient05=1.0x1",
+      "PDAVariable_Damage=1.0x1"
+    ],
+    "aLoots"  : [],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "CONDPDAPresetMass",
+    "aCOs"    : [
+      "PDAPresetMass=1.0x1",
+      "PDAGradient04=1.0x1",
+      "PDAVariable_Mass=1.0x1",
+      "PDAToggleLogScale=1.0x1"
+    ],
+    "aLoots"  : [],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "CONDPDAPresetPrice",
+    "aCOs"    : [
+      "PDAPresetPrice=1.0x1",
+      "PDAGradient08=1.0x1",
+      "PDAVariable_Price=1.0x1",
+      "PDAToggleLogScale=1.0x1"
+    ],
+    "aLoots"  : [],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "CONDPDAPresetHeat",
+    "aCOs"    : [
+      "PDAPresetHeat=1.0x1",
+      "PDAGradient09=1.0x1",
+      "PDAVariable_Heat=1.0x1",
+      "PDAToggleLogScale=1.0x1"
+    ],
+    "aLoots"  : [],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "CONDPDAPresetPressure",
+    "aCOs"    : [
+      "PDAPresetPressure=1.0x1",
+      "PDAGradient03=1.0x1",
+      "PDAVariable_Pressure=1.0x1"
+    ],
+    "aLoots"  : [],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "CONDPDARandomAnyVariable",
+    "aCOs"    : [
+      "PDAVariable_Power=0.2x1|PDAVariable_Damage=0.2x1|PDAVariable_Mass=0.2x1|PDAVariable_Price=0.2x1|PDAVariable_Heat=0.1x1|PDAVariable_Pressure=0.1x1"
+    ],
+    "aLoots"  : [],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "CONDPDAUltimateVariable",
+    "aCOs"    : [
+      "PDAVariableAny=1.0x1"
+    ],
+    "aLoots"  : [],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "CONDPDARandomBasicVariable",
+    "aCOs"    : [
+      "PDAVariable_Power=0.34x1|PDAVariable_Damage=0.33x1|PDAVariable_Mass=0.33x1"
+    ],
+    "aLoots"  : [],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "CONDPDAAllBasicVariables",
+    "aCOs"    : [
+      "PDAVariable_Power=1.0x1",
+      "PDAVariable_Damage=1.0x1",
+      "PDAVariable_Mass=1.0x1"
+    ],
+    "aLoots"  : [],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "CONDPDARandomRareVariable",
+    "aCOs"    : [
+      "PDAVariable_Price=0.34x1|PDAVariable_Heat=0.33x1|PDAVariable_Pressure=0.33x1"
+    ],
+    "aLoots"  : [],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "CONDPDAAllRareVariables",
+    "aCOs"    : [
+      "PDAVariable_Price=1.0x1",
+      "PDAVariable_Heat=1.0x1",
+      "PDAVariable_Pressure=1.0x1"
+    ],
+    "aLoots"  : [],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "CONDPDARandomGradient",
+    "aCOs"    : [
+      "PDAGradient02=0.1x1|PDAGradient03=0.1x1|PDAGradient04=0.1x1|PDAGradient05=0.1x1|PDAGradient06=0.1x1|PDAGradient07=0.1x1|PDAGradient08=0.1x1|PDAGradient09=0.1x1|PDAGradient10=0.1x1|PDAGradient11=0.1x1"
+    ],
+    "aLoots"  : [],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "CONDPDAAllGradients",
+    "aCOs"    : [
+      "PDAGradient02=1.0x1",
+      "PDAGradient03=1.0x1",
+      "PDAGradient04=1.0x1",
+      "PDAGradient05=1.0x1",
+      "PDAGradient06=1.0x1",
+      "PDAGradient07=1.0x1",
+      "PDAGradient08=1.0x1",
+      "PDAGradient09=1.0x1",
+      "PDAGradient10=1.0x1",
+      "PDAGradient11=1.0x1"
+    ],
+    "aLoots"  : [],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "CONDPDAAllInputs",
+    "aCOs"    : [
+      "PDAShowInputGradient=1.0x1",
+      "PDAShowInputMinMax=1.0x1",
+      "PDAShowInputOpacity=1.0x1",
+      "PDAShowInputValue=1.0x1"
+    ],
+    "aLoots"  : [],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "CONDPDARandomAnyInput",
+    "aCOs"    : [
+      "PDAShowInputMinMax=0.5x1|PDAShowInputOpacity=0.5x1"
+    ],
+    "aLoots"  : [],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "CONDPDARandomAnyToggle",
+    "aCOs"    : [
+      "PDAToggleFOV=0.05x1|PDAToggleLights=0.05x1|PDAToggleExteriors=0.1x1|PDAToggleCeiling=0.1x1|PDATogglePower=0.15x1|PDATogglePlaceholders=0.1x1|PDAToggleTasks=0.15x1|PDAToggleLogScale=0.1x1|PDAToggleContours=0.15x1|PDAToggleRealTime=0.05x1"
+    ],
+    "aLoots"  : [],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "CONDPDARandomBasicToggle",
+    "aCOs"    : [
+      "PDAToggleExteriors=0.2x1|PDAToggleCeiling=0.2x1|PDATogglePlaceholders=0.2x1|PDAToggleTasks=0.2x1|PDAToggleContours=0.2x1"
+    ],
+    "aLoots"  : [],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "CONDPDAAllBasicToggles",
+    "aCOs"    : [
+      "PDAToggleExteriors=1.0x1",
+      "PDAToggleCeiling=1.0x1",
+      "PDATogglePlaceholders=1.0x1",
+      "PDAToggleTasks=1.0x1",
+      "PDAToggleContours=1.0x1"
+    ],
+    "aLoots"  : [],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "CONDPDARandomRareToggle",
+    "aCOs"    : [
+      "PDAToggleFOV=0.2x1|PDAToggleLights=0.2x1|PDATogglePower=0.2x1|PDAToggleLogScale=0.2x1|PDAToggleRealTime=0.2x1"
+    ],
+    "aLoots"  : [],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "CONDPDAAllRareToggles",
+    "aCOs"    : [
+      "PDAToggleFOV=1.0x1",
+      "PDAToggleLights=1.0x1",
+      "PDATogglePower=1.0x1",
+      "PDAToggleLogScale=1.0x1",
+      "PDAToggleRealTime=1.0x1"
+    ],
+    "aLoots"  : [],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "CONDPDADustRemove",
+    "aCOs"    : [
+      "-IsDusty=1.0x1"
+    ],
+    "aLoots"  : [
+      "CONDPDADustRemovePass=0.01x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "CONDPDADustRemovePass",
+    "aCOs"    : [
+    ],
+    "aLoots"  : [
+      "CONDPDARandomAnyToggle=0.33x1|CONDPDARandomGradient=0.33x1|CONDPDARandomAnyVariable=0.33x1|CONDPDAUltimateVariable=0.01x1"
+    ],
+    "strType" : "condition"
+  }
+]

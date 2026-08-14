@@ -1,0 +1,8 @@
+[
+  { "strName" : "CONDPLOTTEMP3ActBEGStartUs", "aCOs" : [ "PlotTEMP3ActBEGStarted=1.0x1" ], "aLoots" : [], "strType" : "condition" },
+  { "strName" : "CONDPLOTTEMP3ActBEGTargetUs", "aCOs" : [ "PlotTEMP3ActBEGTaken=1.0x1" ], "aLoots" : [], "strType" : "condition" },
+  { "strName" : "CONDPLOTTEMP3ActBEGTurnInUs", "aCOs" : [ "-PlotTEMP3ActBEGStarted=1.0x1", "-PlotTEMP3ActBEGTaken=1.0x1" ], "aLoots" : [], "strType" : "condition" },
+
+  { "strName" : "TXTPlotsNext_TEMP3ActBEG", "aCOs" : [ "TEMP3ActMID=1x1" ], "aLoots"  : [ ], "strType" : "text" },
+  { "strName" : "TXTPlotsNext_TEMP3ActMID", "aCOs" : [ "TEMP3ActEND=1x1" ], "aLoots"  : [ ], "strType" : "text" }
+]

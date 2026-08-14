@@ -1,0 +1,1149 @@
+[
+    {
+        "strName" : "ACTMine",
+        "strTitle" : "Mine",
+        "strDesc" : "[us] [prepares] to mine [them].",
+        "strActionGroup" : "Use",
+        "strTargetPoint" : "use",
+        "fTargetPointRange" : 1,
+        "strDuty"           : "Construct",
+        "strAnim"           : "Talk",
+        "strIdleAnim"       : "Idle",
+        "strBubble"         : "BblReachDown",
+        "strMapIcon"        : "IcoScrap",
+        "aInverse"          : [
+          "ACTMineDrill02,[us],[them]",
+          "ACTMineDrill01,[us],[them]",
+          "ACTDenyMiningTired,[us],[them]"
+        ],
+        "fDuration"         : 0.000027,
+        "strThemType"       : "Other",
+        "nLogging"         : 1,
+        "bIgnoreFeelings"     : true,
+        "bOpener"     : true,
+        "bHumanOnly"  : false,
+        "LootCTsUs"       : null,
+        "LootCTsThem"     : null,
+        "CTTestUs"           : "TNoDiscomfortsFatigue",
+        "CTTestThem"         : "TIsMineableDestructableNotDeposit",
+        "aLootItms"           : [
+          "Use,CTToolMiningAny,true,"
+        ]
+      },
+      {
+        "strName" : "ACTMineBig",
+        "strTitle" : "Mine",
+        "strDesc" : "[us] [prepares] to mine [them].",
+        "strActionGroup" : "Use",
+        "strTargetPoint" : "use",
+        "fTargetPointRange" : 3,
+        "strDuty"           : "Construct",
+        "strAnim"           : "Talk",
+        "strIdleAnim"       : "Idle",
+        "strBubble"         : "BblReachDown",
+        "strMapIcon"        : "IcoScrap",
+        "aInverse"          : [
+          "ACTMineDrill02,[us],[them]",
+          "ACTMineDrill01,[us],[them]",
+          "ACTDenyMiningTired,[us],[them]"
+        ],
+        "fDuration"         : 0.000027,
+        "strThemType"       : "Other",
+        "nLogging"         : 1,
+        "bIgnoreFeelings"  : true,
+        "bHumanOnly"  :true,
+        "LootCTsUs"       : null,
+        "LootCTsThem"     : null,
+        "CTTestUs"           : "TNoDiscomfortsFatigue",
+        "CTTestThem"         : "TIsMineableDestructableNotDeposit",
+        "aLootItms"           : [
+          "Use,CTToolMiningAny,true,"
+        ]
+      },
+
+
+      {
+        "strName" : "ACTMineDrill01",
+        "strTitle" : "Mine",
+        "strDesc" : "[us] [prepares] to mine [them].",
+        "strActionGroup" : "Use",
+        "strTargetPoint" : "use",
+        "fTargetPointRange" : 1,
+        "strDuty"           : "Construct",
+        "strUseCase"        : "Normal",
+        "strAnim"           : "Tooling",
+        "strIdleAnim"       : "Idle",
+        "strBubble"         : "BblReachDown",
+        "strMapIcon"        : "IcoScrap",
+        "aInverse"          : [
+          "ACTMineAllowStrong,[us],[them]",
+          "ACTMineAllow,[us],[them]"
+        ],
+        "fDuration"         : 0.000027,
+        "strThemType"       : "Other",
+        "nLogging"         : 1,
+        "bIgnoreFeelings"     : true,
+        "LootCTsUs"       : "CTToolSparkOn",
+        "LootCTsThem"     : null,
+        "CTTestUs"           : "TNoDiscomfortsFatigue",
+        "CTTestThem"         : "TIsMineableDestructable",
+        "aLootItms"           : [
+          "Use,CTToolMining,true,"
+        ]
+      },
+      {
+        "strName" : "ACTMineDrill02",
+        "strTitle" : "Mine",
+        "strDesc" : "[us] [prepares] to mine [them] ergonomically.",
+        "strActionGroup" : "Use",
+        "strTargetPoint" : "use",
+        "fTargetPointRange" : 1,
+        "strDuty"           : "Construct",
+        "strUseCase"        : "Normal",
+        "strAnim"           : "Tablet",
+        "strIdleAnim"       : "Idle",
+        "strBubble"         : "BblReachDown",
+        "strMapIcon"        : "IcoScrap",
+        "aInverse"          : [
+          "ACTMineDrill02AllowStrong,[us],[them]",
+          "ACTMineDrill02Allow,[us],[them]"
+        ],
+        "fDuration"         : 0.00027,
+        "strThemType"       : "Other",
+        "nLogging"         : 1,
+        "bIgnoreFeelings"     : true,
+        "LootCTsUs"       : "CTToolSparkOn",
+        "LootCTsThem"     : null,
+        "CTTestUs"           : "TNoDiscomfortsFatigue",
+        "CTTestThem"         : "TIsMineableDestructable",
+        "aLootItms"           : [
+          "Use,CTToolMining02,true,"
+        ]
+      },
+      {
+        "strName" : "ACTMineBig--DNU",
+        "strTitle" : "Mine",
+        "strDesc" : "[us] is going to mine [them].",
+        "strActionGroup" : "Use",
+        "strTargetPoint" : "use",
+        "fTargetPointRange" : 3,
+        "strDuty"           : "Construct",
+        "strUseCase"        : "Normal",
+        "strAnim"           : "Tooling",
+        "strIdleAnim"       : "Idle",
+        "strBubble"         : "BblReachDown",
+        "strMapIcon"        : "IcoScrap",
+        "aInverse"          : [
+          "ACTMineAllowStrong,[us],[them]",
+          "ACTMineAllow,[us],[them]",
+          "ACTDenyMiningTired,[us],[them]"
+        ],
+        "fDuration"         : 0.000027,
+        "strThemType"       : "Other",
+        "nLogging"         : 1,
+        "bIgnoreFeelings"     : true,
+        "bOpener"     : true,
+        "bHumanOnly"  :true,
+        "LootCTsUs"       : null,
+        "LootCTsThem"     : null,
+        "CTTestUs"           : "TNoDiscomfortsFatigue",
+        "CTTestThem"         : "TIsMineableDestructable",
+        "aLootItms"           : [
+          "addus,SocialShareAnotherStory",
+          "Use,CTToolMining,true,"
+        ]
+      },
+
+
+      {
+        "strName" : "ACTDenyMiningTired",
+        "strTitle" : "Deny: Too Tired",
+        "strDesc" : "[us] [is] too fatigued to do that.",
+        "strTargetPoint" : null,
+        "fTargetPointRange" : 0,
+        "strAnim"           : null,
+        "strBubble"         : "BblNegative",
+        "aInverse"          : [
+        ],
+        "fDuration"         : 0.00001,
+        "strThemType"       : "Other",
+        "strRaiseUI"        : null,
+        "nLogging"         : 1,
+        "bIgnoreFeelings"     : true,
+        "LootCTsUs"       : "CTToolSparkOff",
+        "LootCTsThem"     : null,
+        "CTTestUs"           : null,
+        "CTTestThem"         : null
+      },
+      {
+        "strName" : "ACTDenyUnmineable",
+        "strTitle" : "Deny: Not Mineable",
+        "strDesc" : "[us] [stops] mining. Target cannot be mined.",
+        "strTargetPoint" : "use",
+        "fTargetPointRange" : 1,
+        "strAnim"           : null,
+        "strBubble"         : "BblNegative",
+        "aInverse"          : [
+        ],
+        "fDuration"         : 0.00001,
+        "strThemType"       : "Other",
+        "strRaiseUI"        : null,
+        "nLogging"         : 1,
+        "bIgnoreFeelings"     : true,
+        "LootCTsUs"       : "CTToolSparkOff",
+        "LootCTsThem"     : null,
+        "CTTestUs"           : null,
+        "CTTestThem"         : "TIsNotMineable"
+      },
+
+
+
+      {
+        "strName" : "ACTMineAllow",
+        "strTitle" : "Mine",
+        "strDesc" : "[us] [mines] [them].",
+        "strTargetPoint" : null,
+        "fTargetPointRange" : 1,
+        "strDuty"           : "Construct",
+        "strUseCase"        : "Normal",
+        "strAnim"           : "Tooling",
+        "strIdleAnim"       : "Idle",
+        "strBubble"         : "BblReachDown",
+        "aInverse"          : [
+          "ACTMineDeposit,[us],[them]",
+          "ACTMineAllow,[us],[them]",
+          "ACTDenyUnmineable,[us],[them]",
+          "ACTDenyMiningTired,[us],[them]"
+        ],
+        "fDuration"         : 0.0004,
+        "strThemType"       : "Other",
+        "nLogging"         : 1,
+        "bIgnoreFeelings"     : true,
+        "LootCondsUs"   : "CONDACTMine",
+        "LootCTsUs"     : "CTWorkProgressMING",
+        "LootCTsThem"     : "CTDamagex1-4",
+        "CTTestUs"           : "TNoDiscomfortsFatigue",
+        "CTTestThem"         : "TIsMineableDestructableNotDeposit",
+        "aLootItms"       : [
+          "Use,CTToolMining,true,"
+        ],
+        "strCTThemMultCondUs" : "StatRateMING"
+      },
+      {
+        "strName" : "ACTMineAllowStrong",
+        "strTitle" : "Mine (Strong)",
+        "strDesc" : "[us] powerfully [mines] [them].",
+        "strTargetPoint" : null,
+        "fTargetPointRange" : 1,
+        "strDuty"           : "Construct",
+        "strUseCase"        : "Normal",
+        "strAnim"           : "Tooling",
+        "strIdleAnim"       : "Idle",
+        "strBubble"         : "BblReachDown",
+        "aInverse"          : [
+          "ACTMineDeposit,[us],[them]",
+          "ACTMineAllowStrong,[us],[them]",
+          "ACTDenyUnmineable,[us],[them]",
+          "ACTDenyMiningTired,[us],[them]"
+        ],
+        "fDuration"         : 0.0004,
+        "strThemType"       : "Other",
+        "nLogging"         : 1,
+        "bIgnoreFeelings"     : true,
+        "LootCondsUs"   : "CONDACTMine",
+        "LootCTsUs"     : "CTWorkProgressMING",
+        "LootCTsThem"     : "CTDamagex2-8",
+        "CTTestUs"           : "TIsStrongNotFatigued",
+        "CTTestThem"         : "TIsMineableDestructableNotDeposit",
+        "aLootItms"       : [
+          "Use,CTToolMining,true,"
+        ],
+        "strCTThemMultCondUs" : "StatRateMING"
+      },
+
+      {
+        "strName" : "ACTMineDrill02Allow",
+        "strTitle" : "Mine",
+        "strDesc" : "[us] [mines] [them].",
+        "strTargetPoint" : null,
+        "fTargetPointRange" : 1,
+        "strDuty"           : "Construct",
+        "strUseCase"        : "Normal",
+        "strAnim"           : "Tablet",
+        "strIdleAnim"       : "Idle",
+        "strBubble"         : "BblReachDown",
+        "aInverse"          : [
+          "ACTMineDeposit,[us],[them]",
+          "ACTMineDrill02Allow,[us],[them]",
+          "ACTDenyUnmineable,[us],[them]",
+          "ACTDenyMiningTired,[us],[them]"
+        ],
+        "fDuration"         : 0.0006,
+        "strThemType"       : "Other",
+        "nLogging"         : 1,
+        "bIgnoreFeelings"     : true,
+        "LootCondsUs"   : "CONDACTMine02",
+        "LootCTsUs"     : "CTWorkProgressMING",
+        "LootCTsThem"     : "CTDamagex4-12",
+        "CTTestUs"           : "TNoDiscomfortsFatigue",
+        "CTTestThem"         : "TIsMineableDestructableNotDeposit",
+        "aLootItms"       : [
+          "Use,CTToolMining02,true,"
+        ],
+        "strCTThemMultCondUs" : "StatRateMING"
+      },
+      {
+        "strName" : "ACTMineDrill02AllowStrong",
+        "strTitle" : "Mine (Strong)",
+        "strDesc" : "[us] powerfully [mines] [them].",
+        "strTargetPoint" : null,
+        "fTargetPointRange" : 1,
+        "strDuty"           : "Construct",
+        "strUseCase"        : "Normal",
+        "strAnim"           : "Tablet",
+        "strIdleAnim"       : "Idle",
+        "strBubble"         : "BblReachDown",
+        "aInverse"          : [
+          "ACTMineDeposit,[us],[them]",
+          "ACTMineDrill02AllowStrong,[us],[them]",
+          "ACTDenyUnmineable,[us],[them]",
+          "ACTDenyMiningTired,[us],[them]"
+        ],
+        "fDuration"         : 0.0006,
+        "strThemType"       : "Other",
+        "nLogging"         : 1,
+        "bIgnoreFeelings"     : true,
+        "LootCondsUs"   : "CONDACTMine02",
+        "LootCTsUs"     : "CTWorkProgressMING",
+        "LootCTsThem"     : "CTDamagex6-18",
+        "CTTestUs"           : "TIsStrongNotFatigued",
+        "CTTestThem"         : "TIsMineableDestructableNotDeposit",
+        "aLootItms"       : [
+          "Use,CTToolMining02,true,"
+        ],
+        "strCTThemMultCondUs" : "StatRateMING"
+      },
+
+
+
+
+
+
+
+
+      {
+        "strName" : "ACTMineDeposit",
+        "strTitle" : "Mine Deposit",
+        "strDesc" : "[us] [prepares] to mine [them].",
+        "strTargetPoint" : "use",
+        "strActionGroup" : "Use",
+        "fTargetPointRange" : 1,
+        "strDuty"           : "Construct",
+        "strAnim"           : "Use",
+        "strIdleAnim"       : "Idle",
+        "strBubble"         : "BblReachDown",
+        "aInverse"          : [
+          "ACTMineDepositDrill02,[us],[them]",
+          "ACTMineDepositDrill01,[us],[them]",
+          "ACTDenyMiningTired,[us],[them]"
+        ],
+        "fDuration"         : 0.0,
+        "strThemType"       : "Other",
+        "nLogging"         : 0,
+        "bOpener"          : true,
+        "bIgnoreFeelings"  : true,
+        "bHumanOnly"  : false,
+        "LootCTsUs"       : null,
+        "LootCTsThem"     : null,
+        "CTTestUs"           : "TNoDiscomfortsFatigue",
+        "CTTestThem"         : "TIsOreDeposit",
+        "aLootItms"           : [
+          "Use,CTToolMiningAny,true,"
+        ]
+      },
+
+
+      {
+        "strName" : "ACTMineDepositDrill01",
+        "strTitle" : "Mine Deposit",
+        "strDesc" : "[us] [prepares] to lucratively mine [them].",
+        "strTargetPoint" : "use",
+        "fTargetPointRange" : 1,
+        "strDuty"           : "Construct",
+        "strUseCase"        : "Normal",
+        "strAnim"           : "Tooling",
+        "strIdleAnim"       : "Idle",
+        "strBubble"         : "BblReachDown",
+        "strMapIcon"        : "IcoScrap",
+        "aInverse"          : [
+          "ACTMineAllowDepositRewardSSkill,[us],[them]",
+          "ACTMineAllowDepositRewardCSkill,[us],[them]",
+          "ACTMineAllowDepositRewardMSkill,[us],[them]",
+          "ACTMineAllowDepositRewardS,[us],[them]",
+          "ACTMineAllowDepositRewardC,[us],[them]",
+          "ACTMineAllowDepositRewardM,[us],[them]"
+        ],
+        "fDuration"         : 0.000027,
+        "strThemType"       : "Other",
+        "nLogging"         : 1,
+        "bIgnoreFeelings"  : true,
+        "LootCTsUs"       : null,
+        "LootCTsThem"     : null,
+        "CTTestUs"           : "TNoDiscomfortsFatigue",
+        "CTTestThem"         : "TIsMineableDestructableDeposit",
+        "aLootItms"           : [
+          "Use,CTToolMining,true,"
+        ]
+      },
+      {
+        "strName" : "ACTMineDepositDrill02",
+        "strTitle" : "Mine Deposit",
+        "strDesc" : "[us] [prepares] to lucratively mine [them] ergonomically.",
+        "strTargetPoint" : "use",
+        "fTargetPointRange" : 1,
+        "strDuty"           : "Construct",
+        "strUseCase"        : "Normal",
+        "strAnim"           : "Tooling",
+        "strIdleAnim"       : "Idle",
+        "strBubble"         : "BblReachDown",
+        "strMapIcon"        : "IcoScrap",
+        "aInverse"          : [
+          "ACTMineDrill02AllowDepositRewardSSkill,[us],[them]",
+          "ACTMineDrill02AllowDepositRewardCSkill,[us],[them]",
+          "ACTMineDrill02AllowDepositRewardMSkill,[us],[them]",
+          "ACTMineDrill02AllowDepositRewardS,[us],[them]",
+          "ACTMineDrill02AllowDepositRewardC,[us],[them]",
+          "ACTMineDrill02AllowDepositRewardM,[us],[them]"
+        ],
+        "fDuration"         : 0.00027,
+        "strThemType"       : "Other",
+        "nLogging"         : 1,
+        "bIgnoreFeelings"  : true,
+        "LootCTsUs"       : null,
+        "LootCTsThem"     : null,
+        "CTTestUs"           : "TNoDiscomfortsFatigue",
+        "CTTestThem"         : "TIsMineableDestructableDeposit",
+        "aLootItms"           : [
+          "Use,CTToolMining02,true,"
+        ]
+      },
+
+
+      {
+        "strName" : "ACTMineAllowDepositRewardS",
+        "strTitle" : "Mine: Extract",
+        "strDesc" : "[us] [extracts] from [them].",
+        "strTargetPoint" : null,
+        "fTargetPointRange" : 1,
+        "strDuty"           : "Construct",
+        "strUseCase"        : "Normal",
+        "strAnim"           : "Tooling",
+        "strIdleAnim"       : "Idle",
+        "strBubble"         : "BblReachDown",
+        "aInverse"          : [
+          "ACTMineAllowDepositRewardS,[us],[them]",
+          "ACTDenyUnmineable,[us],[them]",
+          "ACTDenyMiningTired,[us],[them]"
+        ],
+        "fDuration"         : 0.016,
+        "strThemType"       : "Other",
+        "nLogging"         : 1,
+        "bIgnoreFeelings"     : true,
+        "LootCondsUs"   : "CONDACTMine",
+        "LootCTsUs"     : "CTWorkProgressMING",
+        "LootCTsThem"     : "CTDamagex2-8",
+        "CTTestUs"           : "TNoDiscomfortsFatigue",
+        "CTTestThem"         : "TIsOreDepositS",
+        "aLootItms"       : [
+          "Use,CTToolMining,true,",
+          "addus,CTACTMineDepositS"
+        ],
+        "strAchievementUnlock" : "ACH_DEPOSIT"
+      },
+      {
+        "strName" : "ACTMineAllowDepositRewardC",
+        "strTitle" : "Mine: Extract",
+        "strDesc" : "[us] [extracts] from [them].",
+        "strTargetPoint" : null,
+        "fTargetPointRange" : 1,
+        "strDuty"           : "Construct",
+        "strUseCase"        : "Normal",
+        "strAnim"           : "Tooling",
+        "strIdleAnim"       : "Idle",
+        "strBubble"         : "BblReachDown",
+        "aInverse"          : [
+          "ACTMineAllowDepositRewardC,[us],[them]",
+          "ACTDenyUnmineable,[us],[them]",
+          "ACTDenyMiningTired,[us],[them]"
+        ],
+        "fDuration"         : 0.016,
+        "strThemType"       : "Other",
+        "nLogging"         : 1,
+        "bIgnoreFeelings"     : true,
+        "LootCondsUs"   : "CONDACTMine",
+        "LootCTsUs"     : "CTWorkProgressMING",
+        "LootCTsThem"     : "CTDamagex2-8",
+        "CTTestUs"           : "TNoDiscomfortsFatigue",
+        "CTTestThem"         : "TIsOreDepositC",
+        "aLootItms"       : [
+          "Use,CTToolMining,true,",
+          "addus,CTACTMineDepositC"
+        ],
+        "strAchievementUnlock" : "ACH_DEPOSIT"
+      },
+      {
+        "strName" : "ACTMineAllowDepositRewardM",
+        "strTitle" : "Mine: Extract",
+        "strDesc" : "[us] [extracts] from [them].",
+        "strTargetPoint" : null,
+        "fTargetPointRange" : 1,
+        "strDuty"           : "Construct",
+        "strUseCase"        : "Normal",
+        "strAnim"           : "Tooling",
+        "strIdleAnim"       : "Idle",
+        "strBubble"         : "BblReachDown",
+        "aInverse"          : [
+          "ACTMineAllowDepositRewardM,[us],[them]",
+          "ACTDenyUnmineable,[us],[them]",
+          "ACTDenyMiningTired,[us],[them]"
+        ],
+        "fDuration"         : 0.016,
+        "strThemType"       : "Other",
+        "nLogging"         : 1,
+        "bIgnoreFeelings"     : true,
+        "LootCondsUs"   : "CONDACTMine",
+        "LootCTsUs"     : "CTWorkProgressMING",
+        "LootCTsThem"     : "CTDamagex2-8",
+        "CTTestUs"           : "TNoDiscomfortsFatigue",
+        "CTTestThem"         : "TIsOreDepositM",
+        "aLootItms"       : [       
+          "Use,CTToolMining,true,",   
+          "addus,CTACTMineDepositM"
+        ],
+        "strAchievementUnlock" : "ACH_DEPOSIT"
+      },
+      {
+        "strName" : "ACTMineAllowDepositRewardSSkill",
+        "strTitle" : "Mine: Extract Skillfully",
+        "strDesc" : "[us] skillfully [extracts] from [them].",
+        "strTargetPoint" : null,
+        "fTargetPointRange" : 1,
+        "strDuty"           : "Construct",
+        "strUseCase"        : "Normal",
+        "strAnim"           : "Tooling",
+        "strIdleAnim"       : "Idle",
+        "strBubble"         : "BblReachDown",
+        "aInverse"          : [
+          "ACTMineAllowDepositRewardSSkill,[us],[them]",
+          "ACTDenyUnmineable,[us],[them]",
+          "ACTDenyMiningTired,[us],[them]"
+        ],
+        "fDuration"         : 0.011,
+        "strThemType"       : "Other",
+        "nLogging"         : 1,
+        "bIgnoreFeelings"     : true,
+        "LootCondsUs"   : "CONDACTMine",
+        "LootCTsUs"     : "CTWorkProgressMING",
+        "LootCTsThem"     : "CTDamagex2-8",
+        "CTTestUs"           : "TNoDiscomfortsFatigueMiningSkill",
+        "CTTestThem"         : "TIsOreDepositS",
+        "aLootItms"       : [
+          "Use,CTToolMining,true,",
+          "addus,CTACTMineDepositS"
+        ],
+        "strAchievementUnlock" : "ACH_DEPOSIT"
+      },
+      {
+        "strName" : "ACTMineAllowDepositRewardCSkill",
+        "strTitle" : "Mine: Extract Skillfully",
+        "strDesc" : "[us] skillfully [extracts] from [them].",
+        "strTargetPoint" : null,
+        "fTargetPointRange" : 1,
+        "strDuty"           : "Construct",
+        "strUseCase"        : "Normal",
+        "strAnim"           : "Tooling",
+        "strIdleAnim"       : "Idle",
+        "strBubble"         : "BblReachDown",
+        "aInverse"          : [
+          "ACTMineAllowDepositRewardCSkill,[us],[them]",
+          "ACTDenyUnmineable,[us],[them]",
+          "ACTDenyMiningTired,[us],[them]"
+        ],
+        "fDuration"         : 0.011,
+        "strThemType"       : "Other",
+        "nLogging"         : 1,
+        "bIgnoreFeelings"     : true,
+        "LootCondsUs"   : "CONDACTMine",
+        "LootCTsUs"     : "CTWorkProgressMING",
+        "LootCTsThem"     : "CTDamagex2-8",
+        "CTTestUs"           : "TNoDiscomfortsFatigueMiningSkill",
+        "CTTestThem"         : "TIsOreDepositC",
+        "aLootItms"       : [
+          "Use,CTToolMining,true,",
+          "addus,CTACTMineDepositC"
+        ],
+        "strAchievementUnlock" : "ACH_DEPOSIT"
+      },
+      {
+        "strName" : "ACTMineAllowDepositRewardMSkill",
+        "strTitle" : "Mine: Extract Skillfully",
+        "strDesc" : "[us] skillfully [extracts] from [them].",
+        "strTargetPoint" : null,
+        "fTargetPointRange" : 1,
+        "strDuty"           : "Construct",
+        "strUseCase"        : "Normal",
+        "strAnim"           : "Tooling",
+        "strIdleAnim"       : "Idle",
+        "strBubble"         : "BblReachDown",
+        "aInverse"          : [
+          "ACTMineAllowDepositRewardMSkill,[us],[them]",
+          "ACTDenyUnmineable,[us],[them]",
+          "ACTDenyMiningTired,[us],[them]"
+        ],
+        "fDuration"         : 0.011,
+        "strThemType"       : "Other",
+        "nLogging"         : 1,
+        "bIgnoreFeelings"     : true,
+        "LootCondsUs"   : "CONDACTMine",
+        "LootCTsUs"     : "CTWorkProgressMING",
+        "LootCTsThem"     : "CTDamagex2-8",
+        "CTTestUs"           : "TNoDiscomfortsFatigueMiningSkill",
+        "CTTestThem"         : "TIsOreDepositM",
+        "aLootItms"       : [       
+          "Use,CTToolMining,true,",   
+          "addus,CTACTMineDepositM"
+        ],
+        "strAchievementUnlock" : "ACH_DEPOSIT"
+      },
+
+      
+
+      {
+        "strName" : "ACTMineDrill02AllowDepositRewardS",
+        "strTitle" : "Mine: Extract",
+        "strDesc" : "[us] [extracts] from [them].",
+        "strTargetPoint" : null,
+        "fTargetPointRange" : 1,
+        "strDuty"           : "Construct",
+        "strUseCase"        : "Normal",
+        "strAnim"           : "Tooling",
+        "strIdleAnim"       : "Idle",
+        "strBubble"         : "BblReachDown",
+        "aInverse"          : [
+          "ACTMineDrill02AllowDepositRewardS,[us],[them]",
+          "ACTDenyUnmineable,[us],[them]",
+          "ACTDenyMiningTired,[us],[them]"
+        ],
+        "fDuration"         : 0.01,
+        "strThemType"       : "Other",
+        "nLogging"         : 1,
+        "bIgnoreFeelings"     : true,
+        "LootCondsUs"   : "CONDACTMine02",
+        "LootCTsUs"     : "CTWorkProgressMING",
+        "LootCTsThem"     : "CTDamagex2-8",
+        "CTTestUs"           : "TNoDiscomfortsFatigue",
+        "CTTestThem"         : "TIsOreDepositS",
+        "aLootItms"       : [       
+          "Use,CTToolMining02,true,",
+          "addus,CTACTMineDepositS"
+        ],
+        "strAchievementUnlock" : "ACH_DEPOSIT"
+      },
+      {
+        "strName" : "ACTMineDrill02AllowDepositRewardC",
+        "strTitle" : "Mine: Extract",
+        "strDesc" : "[us] [extracts] from [them].",
+        "strTargetPoint" : null,
+        "fTargetPointRange" : 1,
+        "strDuty"           : "Construct",
+        "strUseCase"        : "Normal",
+        "strAnim"           : "Tooling",
+        "strIdleAnim"       : "Idle",
+        "strBubble"         : "BblReachDown",
+        "aInverse"          : [
+          "ACTMineDrill02AllowDepositRewardC,[us],[them]",
+          "ACTDenyUnmineable,[us],[them]",
+          "ACTDenyMiningTired,[us],[them]"
+        ],
+        "fDuration"         : 0.01,
+        "strThemType"       : "Other",
+        "nLogging"         : 1,
+        "bIgnoreFeelings"     : true,
+        "LootCondsUs"   : "CONDACTMine02",
+        "LootCTsUs"     : "CTWorkProgressMING",
+        "LootCTsThem"     : "CTDamagex2-8",
+        "CTTestUs"           : "TNoDiscomfortsFatigue",
+        "CTTestThem"         : "TIsOreDepositC",
+        "aLootItms"       : [          
+          "Use,CTToolMining02,true,",
+          "addus,CTACTMineDepositC"
+        ],
+        "strAchievementUnlock" : "ACH_DEPOSIT"
+      },
+      {
+        "strName" : "ACTMineDrill02AllowDepositRewardM",
+        "strTitle" : "Mine: Extract",
+        "strDesc" : "[us] [extracts] from [them].",
+        "strTargetPoint" : null,
+        "fTargetPointRange" : 1,
+        "strDuty"           : "Construct",
+        "strUseCase"        : "Normal",
+        "strAnim"           : "Tooling",
+        "strIdleAnim"       : "Idle",
+        "strBubble"         : "BblReachDown",
+        "aInverse"          : [
+          "ACTMineDrill02AllowDepositRewardM,[us],[them]",
+          "ACTDenyUnmineable,[us],[them]",
+          "ACTDenyMiningTired,[us],[them]"
+        ],
+        "fDuration"         : 0.01,
+        "strThemType"       : "Other",
+        "nLogging"         : 1,
+        "bIgnoreFeelings"     : true,
+        "LootCondsUs"   : "CONDACTMine02",
+        "LootCTsUs"     : "CTWorkProgressMING",
+        "LootCTsThem"     : "CTDamagex2-8",
+        "CTTestUs"           : "TNoDiscomfortsFatigue",
+        "CTTestThem"         : "TIsOreDepositM",
+        "aLootItms"       : [        
+          "Use,CTToolMining02,true,",  
+          "addus,CTACTMineDepositM"
+        ],
+        "strAchievementUnlock" : "ACH_DEPOSIT"
+      },
+      
+      {
+        "strName" : "ACTMineDrill02AllowDepositRewardSSkill",
+        "strTitle" : "Mine: Extract Skillfully",
+        "strDesc" : "[us] skillfully [extracts] from [them].",
+        "strTargetPoint" : null,
+        "fTargetPointRange" : 1,
+        "strDuty"           : "Construct",
+        "strUseCase"        : "Normal",
+        "strAnim"           : "Tooling",
+        "strIdleAnim"       : "Idle",
+        "strBubble"         : "BblReachDown",
+        "aInverse"          : [
+          "ACTMineDrill02AllowDepositRewardSSkill,[us],[them]",
+          "ACTDenyUnmineable,[us],[them]",
+          "ACTDenyMiningTired,[us],[them]"
+        ],
+        "fDuration"         : 0.007,
+        "strThemType"       : "Other",
+        "nLogging"         : 1,
+        "bIgnoreFeelings"     : true,
+        "LootCondsUs"   : "CONDACTMine02",
+        "LootCTsUs"     : "CTWorkProgressMING",
+        "LootCTsThem"     : "CTDamagex2-8",
+        "CTTestUs"           : "TNoDiscomfortsFatigueMiningSkill",
+        "CTTestThem"         : "TIsOreDepositS",
+        "aLootItms"       : [       
+          "Use,CTToolMining02,true,",
+          "addus,CTACTMineDepositS"
+        ],
+        "strAchievementUnlock" : "ACH_DEPOSIT"
+      },
+      {
+        "strName" : "ACTMineDrill02AllowDepositRewardCSkill",
+        "strTitle" : "Mine: Extract Skillfully",
+        "strDesc" : "[us] skillfully [extracts] from [them].",
+        "strTargetPoint" : null,
+        "fTargetPointRange" : 1,
+        "strDuty"           : "Construct",
+        "strUseCase"        : "Normal",
+        "strAnim"           : "Tooling",
+        "strIdleAnim"       : "Idle",
+        "strBubble"         : "BblReachDown",
+        "aInverse"          : [
+          "ACTMineDrill02AllowDepositRewardCSkill,[us],[them]",
+          "ACTDenyUnmineable,[us],[them]",
+          "ACTDenyMiningTired,[us],[them]"
+        ],
+        "fDuration"         : 0.007,
+        "strThemType"       : "Other",
+        "nLogging"         : 1,
+        "bIgnoreFeelings"     : true,
+        "LootCondsUs"   : "CONDACTMine02",
+        "LootCTsUs"     : "CTWorkProgressMING",
+        "LootCTsThem"     : "CTDamagex2-8",
+        "CTTestUs"           : "TNoDiscomfortsFatigueMiningSkill",
+        "CTTestThem"         : "TIsOreDepositC",
+        "aLootItms"       : [          
+          "Use,CTToolMining02,true,",
+          "addus,CTACTMineDepositC"
+        ],
+        "strAchievementUnlock" : "ACH_DEPOSIT"
+      },
+      {
+        "strName" : "ACTMineDrill02AllowDepositRewardMSkill",
+        "strTitle" : "Mine: Extract Skillfully",
+        "strDesc" : "[us] skillfully [extracts] from [them].",
+        "strTargetPoint" : null,
+        "fTargetPointRange" : 1,
+        "strDuty"           : "Construct",
+        "strUseCase"        : "Normal",
+        "strAnim"           : "Tooling",
+        "strIdleAnim"       : "Idle",
+        "strBubble"         : "BblReachDown",
+        "aInverse"          : [
+          "ACTMineDrill02AllowDepositRewardMSkill,[us],[them]",
+          "ACTDenyUnmineable,[us],[them]",
+          "ACTDenyMiningTired,[us],[them]"
+        ],
+        "fDuration"         : 0.007,
+        "strThemType"       : "Other",
+        "nLogging"         : 1,
+        "bIgnoreFeelings"     : true,
+        "LootCondsUs"   : "CONDACTMine02",
+        "LootCTsUs"     : "CTWorkProgressMING",
+        "LootCTsThem"     : "CTDamagex2-8",
+        "CTTestUs"           : "TNoDiscomfortsFatigueMiningSkill",
+        "CTTestThem"         : "TIsOreDepositM",
+        "aLootItms"       : [        
+          "Use,CTToolMining02,true,",  
+          "addus,CTACTMineDepositM"
+        ],
+        "strAchievementUnlock" : "ACH_DEPOSIT"
+      },
+
+
+
+
+
+
+
+
+
+      {
+        "strName" : "ACTMineDenyNoMining",
+        "strTitle" : "Mining Fail: No Tool for Mining",
+        "strDesc" : "[them] cannot mine [us] without a mining tool.",
+        "strTargetPoint" : null,
+        "fTargetPointRange" : 0,
+        "strAnim"           : "Idle",
+        "strIdleAnim"       : "Idle",
+        "strBubble"         : null,
+        "aInverse"          : [
+        ],
+        "fDuration"         : 0.000027,
+        "strThemType"       : "Other",
+        "strRaiseUI"        : null,
+        "nLogging"         : 1,
+        "LootCTsUs"       : null,
+        "LootCTsThem"     : "CTToolSparkOff",
+        "CTTestUs"           : null,
+        "CTTestThem"         : null,
+        "aLootItms"   		: [
+        ]
+      },
+
+
+
+      
+
+
+
+
+      {
+        "strName" : "ACTArmExplosive",
+        "strTitle" : "Arm Explosive",
+        "strDesc" : "[us] [is] going to arm [them] with a ~25 second fuse.",
+        "strTooltip" : "Arms an explosive with a ~25 second fuse (give or take a few seconds).",
+        "strActionGroup" : "Use",
+        "strTargetPoint" : "use",
+        "fTargetPointRange" : 1,
+        "strDuty"           : "Construct",
+        "strAnim"           : "Tooling",
+        "strIdleAnim"       : "Idle",
+        "strBubble"         : "BblCrouch",
+        "aInverse"          : [
+          "ACTArmExplosiveAllow"
+        ],
+        "fDuration"         : 0.0027,
+        "strThemType"       : "Other",
+        "nLogging"         : 1,
+        "bOpener"     : true,
+        "bHumanOnly"  : true,
+        "bIgnoreFeelings" : true,
+        "LootCTsUs"       : null,
+        "LootCTsThem"     : null,
+        "CTTestUs"           : "TIsHuman",
+        "CTTestThem"         : "TIsExplosiveArmable01",
+        "aLootItms"           : [
+        ]
+      },
+      {
+        "strName" : "ACTArmExplosiveAllow",
+        "strTitle" : "Trigger Fuse",
+        "strDesc" : "[them] [triggers] the fuse on [us]. <color=#990000>WARNING: Get clear!</color>",
+        "strTargetPoint" : null,
+        "fTargetPointRange" : 1,
+        "strAnim"           : "Tooling",
+        "strIdleAnim"       : "Idle",
+        "strBubble"         : null,
+        "aInverse"          : [
+        ],
+        "fDuration"         : 0.0001,
+        "strThemType"       : "Other",
+        "nLogging"         : 1,
+        "LootCTsUs"     : null,
+        "LootCTsThem"     : "CTACTMineExplosive",
+        "CTTestUs"           : null,
+        "CTTestThem"         : null,
+        "aLootItms"       : [
+        ],
+        "objLootModeSwitch"    : "ItmExplosiveCharge01Armed"
+      },
+      {
+        "strName" : "ACTDisarmExplosive01",
+        "strTitle" : "Disarm Explosive",
+        "strDesc" : "[us] [is] going to disarm [them].",
+        "strTooltip" : "Disarms an activated explosive (Instant).",
+        "strActionGroup" : "Use",
+        "strTargetPoint" : "use",
+        "fTargetPointRange" : 1,
+        "strDuty"           : "Construct",
+        "strAnim"           : "Tooling",
+        "strIdleAnim"       : "Idle",
+        "strBubble"         : "BblCrouch",
+        "aInverse"          : [
+          "ACTDisarmExplosive01Allow"
+        ],
+        "fDuration"         : 0.0,
+        "strThemType"       : "Other",
+        "nLogging"         : 1,
+        "bOpener"     : true,
+        "bHumanOnly"  :true,
+        "bIgnoreFeelings" : true,
+        "LootCTsUs"       : null,
+        "LootCTsThem"     : null,
+        "CTTestUs"           : "TIsHuman",
+        "CTTestThem"         : "TIsExplodable01Armed",
+        "aLootItms"           : [
+        ]
+      },
+      {
+        "strName" : "ACTDisarmExplosive01Allow",
+        "strTitle" : "Disarm",
+        "strDesc" : "[them] [disarms] the fuse on [us].",
+        "strTargetPoint" : null,
+        "fTargetPointRange" : 1,
+        "strAnim"           : "Tooling",
+        "strIdleAnim"       : "Idle",
+        "strBubble"         : null,
+        "aInverse"          : [
+        ],
+        "fDuration"         : 0.0001,
+        "strThemType"       : "Other",
+        "nLogging"         : 1,
+        "LootCTsUs"     : null,
+        "LootCTsThem"     : "CTACTDisarmExplosive",
+        "CTTestUs"           : null,
+        "CTTestThem"         : null,
+        "aLootItms"       : [
+          "addus,SocialShareAnotherStory"
+        ],
+        "objLootModeSwitch"    : "ItmExplosiveCharge01"
+      },
+      {
+        "strName" : "ACTDetonateExplosive01",
+        "strTitle" : "Detonate Explosive",
+        "strDesc" : "[us] [is] going to detonate [them].",
+        "strTooltip" : "Detonates an explosive within 25 tiles and line of site.",
+        "strActionGroup" : "Use",
+        "strTargetPoint" : "use",
+        "fTargetPointRange" : 25,
+        "bNoWalk" : true,
+        "strDuty"           : "Demolish",
+        "strAnim"           : "Tablet",
+        "strIdleAnim"       : "Idle",
+        "aInverse"          : [
+          "ACTDetonateExplosive01Allow"
+        ],
+        "fDuration"         : 0.001,
+        "strThemType"       : "Other",
+        "nLogging"         : 1,
+        "bOpener"     : true,
+        "bHumanOnly"  : true,
+        "bIgnoreFeelings" : true,
+        "LootCTsUs"       : null,
+        "LootCTsThem"     : null,
+        "CTTestUs"           : "TIsHuman",
+        "CTTestThem"         : "TIsExplodable01Armed",
+        "aLootItms"           : [
+        ]
+      },
+      {
+        "strName" : "ACTDetonateExplosive01Allow",
+        "strTitle" : "Detonate",
+        "strDesc" : "[them] [triggers] the detonation on [us].",
+        "strTargetPoint" : null,
+        "fTargetPointRange" : 1,
+        "strAnim"           : null,
+        "strIdleAnim"       : null,
+        "aInverse"          : [
+        ],
+        "fDuration"         : 0.0,
+        "strThemType"       : "Other",
+        "nLogging"         : 1,
+        "LootCTsUs"     : null,
+        "LootCTsThem"     : "CTACTMineExplosive",
+        "CTTestUs"           : null,
+        "CTTestThem"         : null,
+        "aLootItms"       : [
+        ],
+        "objLootModeSwitch"    : "ItmExplodeMiningBig"
+      },
+      
+      {
+        "strName" : "ACTArmExplosive02",
+        "strTitle" : "Arm Explosive",
+        "strDesc" : "[us] [is] going to arm [them] with a ~25 second fuse.",
+        "strTooltip" : "Arms an explosive with a ~25 second fuse (give or take a few seconds).",
+        "strActionGroup" : "Use",
+        "strTargetPoint" : "use",
+        "fTargetPointRange" : 1,
+        "strDuty"           : "Construct",
+        "strAnim"           : "Tooling",
+        "strIdleAnim"       : "Idle",
+        "strBubble"         : "BblCrouch",
+        "aInverse"          : [
+          "ACTArmExplosiveAllow02"
+        ],
+        "fDuration"         : 0.0027,
+        "strThemType"       : "Other",
+        "nLogging"         : 1,
+        "bOpener"     : true,
+        "bHumanOnly"  : true,
+        "bIgnoreFeelings" : true,
+        "LootCTsUs"       : null,
+        "LootCTsThem"     : null,
+        "CTTestUs"           : "TIsHuman",
+        "CTTestThem"         : "TIsExplosiveArmable02",
+        "aLootItms"           : [
+        ]
+      },
+      {
+        "strName" : "ACTArmExplosiveAllow02",
+        "strTitle" : "Trigger Fuse",
+        "strDesc" : "[them] [triggers] the fuse on [us]. <color=#990000>WARNING: Get clear!</color>",
+        "strTargetPoint" : null,
+        "fTargetPointRange" : 1,
+        "strAnim"           : "Tooling",
+        "strIdleAnim"       : "Idle",
+        "strBubble"         : null,
+        "aInverse"          : [
+        ],
+        "fDuration"         : 0.0001,
+        "strThemType"       : "Other",
+        "nLogging"         : 1,
+        "LootCTsUs"     : null,
+        "LootCTsThem"     : "CTACTMineExplosive",
+        "CTTestUs"           : null,
+        "CTTestThem"         : null,
+        "aLootItms"       : [
+        ],
+        "objLootModeSwitch"    : "ItmExplosiveCharge02Armed"
+      },
+      {
+        "strName" : "ACTDisarmExplosive02",
+        "strTitle" : "Disarm Explosive",
+        "strDesc" : "[us] [is] going to disarm [them].",
+        "strTooltip" : "Disarms an activated explosive (Instant).",
+        "strActionGroup" : "Use",
+        "strTargetPoint" : "use",
+        "fTargetPointRange" : 1,
+        "strDuty"           : "Construct",
+        "strAnim"           : "Tooling",
+        "strIdleAnim"       : "Idle",
+        "strBubble"         : "BblCrouch",
+        "aInverse"          : [
+          "ACTDisarmExplosive02Allow"
+        ],
+        "fDuration"         : 0.0,
+        "strThemType"       : "Other",
+        "nLogging"         : 1,
+        "bOpener"     : true,
+        "bHumanOnly"  :true,
+        "bIgnoreFeelings" : true,
+        "LootCTsUs"       : null,
+        "LootCTsThem"     : null,
+        "CTTestUs"           : "TIsHuman",
+        "CTTestThem"         : "TIsExplodable02Armed",
+        "aLootItms"           : [
+        ]
+      },
+      {
+        "strName" : "ACTDisarmExplosive02Allow",
+        "strTitle" : "Disarm",
+        "strDesc" : "[them] [disarms] the fuse on [us].",
+        "strTargetPoint" : null,
+        "fTargetPointRange" : 1,
+        "strAnim"           : "Tooling",
+        "strIdleAnim"       : "Idle",
+        "strBubble"         : null,
+        "aInverse"          : [
+        ],
+        "fDuration"         : 0.0001,
+        "strThemType"       : "Other",
+        "nLogging"         : 1,
+        "LootCTsUs"     : null,
+        "LootCTsThem"     : "CTACTDisarmExplosive",
+        "CTTestUs"           : null,
+        "CTTestThem"         : null,
+        "aLootItms"       : [
+          "addus,SocialShareAnotherStory"
+        ],
+        "objLootModeSwitch"    : "ItmExplosiveCharge02"
+      },
+      {
+        "strName" : "ACTDetonateExplosive02",
+        "strTitle" : "Detonate Small Explosion",
+        "strDesc" : "[us] [is] going to detonate [them].",
+        "strTooltip" : "Detonates an explosive within 25 tiles and line of site.",
+        "strActionGroup" : "Use",
+        "strTargetPoint" : "use",
+        "fTargetPointRange" : 25,
+        "bNoWalk" : true,
+        "strDuty"           : "Demolish",
+        "strAnim"           : "Tablet",
+        "strIdleAnim"       : "Idle",
+        "aInverse"          : [
+          "ACTDetonateExplosive02Allow"
+        ],
+        "fDuration"         : 0.001,
+        "strThemType"       : "Other",
+        "nLogging"         : 1,
+        "bOpener"     : true,
+        "bHumanOnly"  : true,
+        "bIgnoreFeelings" : true,
+        "LootCTsUs"       : null,
+        "LootCTsThem"     : null,
+        "CTTestUs"           : "TIsHuman",
+        "CTTestThem"         : "TIsExplodable02Armed",
+        "aLootItms"           : [
+        ]
+      },
+      {
+        "strName" : "ACTDetonateExplosive02Allow",
+        "strTitle" : "Detonate",
+        "strDesc" : "[them] [triggers] the detonation on [us].",
+        "strTargetPoint" : null,
+        "fTargetPointRange" : 1,
+        "strAnim"           : null,
+        "strIdleAnim"       : null,
+        "aInverse"          : [
+        ],
+        "fDuration"         : 0.0,
+        "strThemType"       : "Other",
+        "nLogging"         : 1,
+        "LootCTsUs"     : null,
+        "LootCTsThem"     : "CTACTMineExplosive",
+        "CTTestUs"           : null,
+        "CTTestThem"         : null,
+        "aLootItms"       : [
+        ],
+        "objLootModeSwitch"    : "ItmExplodeMining02"
+      }
+
+]

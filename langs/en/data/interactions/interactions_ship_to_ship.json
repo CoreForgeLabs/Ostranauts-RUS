@@ -1,0 +1,1186 @@
+[
+  {
+    "strName" : "SHIPUnDockAI", "strTitle" : "Request undocking clearance", "strDesc" : "[us-regID] ready for departure, requesting undocking clearance.", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "aInverse" : [
+      "SHIPUndockAllowGoodDayAI",
+      "SHIPUndockAllowStraightOutAI",
+      "SHIPUndockAllowGrantedAI",
+      "SHIPUndockAllowAI"
+    ],
+    "bSocial" : true,"bOpener" : true, "fTargetPointRange" : 20, "bIgnoreFeelings" : true, "ShipTestUs" : "NotAStationNotPlayer",
+    "nLogging" : 1
+  },
+  {
+    "strName" : "SHIPUnDock", "strTitle" : "Request undocking clearance", "strDesc" : "[us-regID] ready for departure, requesting undocking clearance.", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "aInverse" : [
+      "SHIPUndockAllowGoodDay",
+      "SHIPUndockAllowStraightOut",
+      "SHIPUndockAllowGranted",
+      "SHIPUndockAllow",
+      "SHIPUndockDeny",
+      "SHIPUndockDenyUnpaidFee"
+    ],
+    "bSocial" : true,"bOpener" : true,"fTargetPointRange" : -1, "bIgnoreFeelings" : true,
+    "nLogging" : 1, "ShipTestUs" : "IsNotMoored"
+  },
+  {
+    "strName" : "SHIPUndockAllowGoodDay", 
+    "strTitle" : "Undocking clearance granted, good day", 
+    "strDesc" : "Cleared for takeoff [them-shipfriendly]. Have a safe flight.", 
+    "strActionGroup" : "Ship", 
+    "strColor" : "SocialStatusGreen",
+    "aInverse" : [  ],
+    "bSocial" : true,"fTargetPointRange" : -1,
+    "nLogging" : 1, "LootCTsThem" : "TXTDockingClearance"
+  },
+  {
+    "strName" : "SHIPUndockAllowGoodDayAI",
+    "strTitle" : "Undocking clearance granted, good day",
+    "strDesc" : "Cleared for takeoff [them-shipfriendly]. Have a safe flight.",
+    "strActionGroup" : "Ship",
+    "strColor" : "SocialStatusGreen",
+    "bSocial" : true, "nLogging" : 1
+  },
+  {
+    "strName" : "SHIPUndockAllowStraightOut",
+    "strTitle" : "Undocking clearance granted, head out",
+    "strDesc" : "Cleared for takeoff [them-shipfriendly] flying straight out.",
+    "strActionGroup" : "Ship",
+    "strColor" : "SocialStatusGreen",
+    "bSocial" : true,"fTargetPointRange" : -1, "nLogging" : 1, "LootCTsThem" : "TXTDockingClearance"
+  },
+  {
+    "strName" : "SHIPUndockAllowStraightOutAI",
+    "strTitle" : "Undocking clearance granted, head out",
+    "strDesc" : "Cleared for takeoff [them-shipfriendly] flying straight out.",
+    "strActionGroup" : "Ship",
+    "strColor" : "SocialStatusGreen",
+    "bSocial" : true, "nLogging" : 1
+  },
+  {
+    "strName" : "SHIPUndockAllowGranted",
+    "strTitle" : "Docking clearance granted",
+    "strDesc" : "Clearance granted for [them-regID].",
+    "strActionGroup" : "Ship",
+    "strColor" : "SocialStatusGreen",
+    "aInverse" : [  ],
+    "bSocial" : true,"fTargetPointRange" : -1,
+    "nLogging" : 1, "LootCTsThem" : "TXTDockingClearance"
+  },
+  {
+    "strName" : "SHIPUndockAllowGrantedAI",
+    "strTitle" : "Docking clearance granted",
+    "strDesc" : "Clearance granted for [them-regID].",
+    "strActionGroup" : "Ship",
+    "strColor" : "SocialStatusGreen",
+    "bSocial" : true,"nLogging" : 1
+  },
+  {
+    "strName" : "SHIPUndockAllow",
+    "strTitle" : "Undocking clearance granted",
+    "strDesc" : "Cleared for takeoff for [them-regID].",
+    "strActionGroup" : "Ship",
+    "strColor" : "SocialStatusGreen",
+    "aInverse" : [  ],
+    "bSocial" : true,"fTargetPointRange" : -1,
+    "nLogging" : 1, "LootCTsThem" : "TXTDockingClearance"
+  },
+  {
+    "strName" : "SHIPUndockAllowAI",
+    "strTitle" : "Undocking clearance granted",
+    "strDesc" : "Cleared for takeoff for [them-regID].",
+    "strActionGroup" : "Ship",
+    "strColor" : "SocialStatusGreen",
+    "bSocial" : true, "nLogging" : 1
+  },
+  {
+    "strName" : "SHIPUndockDeny", "strTitle" : "Dock Deny", "strDesc" : "[us-regID] denies [them-regID] undocking.", "strActionGroup" : "Ship", "strColor" : "StatusRed",
+    "bSocial" : true, "fTargetPointRange" : 0,"nLogging" : 1
+  },
+  {
+    "strName" : "SHIPUndockDenyUnpaidFee", "strTitle" : "Undocking Denied - Fees", "strDesc" : "Undocking clearance denied due to unpaid fees. Please use the nearest refueling kiosk or your FUNDS UI (click your money total) to pay fees.", "strActionGroup" : "Ship", "strColor" : "StatusRed",
+    "bSocial" : true, "fTargetPointRange" : 0,"nLogging" : 1
+  },
+  
+  
+  
+  {
+    "strName" : "SHIPMultiDockingStart", "strTitle" : "Docking", "strDesc" : "<Configuring Docking Procedure>", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "aInverse" : [
+      "SHIPMultiDockingStartAllow"
+    ],
+    "bOpener" : true, "fTargetPointRange" : 100000000, "bIgnoreFeelings" : true, "nLogging" : 1, "CTTestUs" : "TIsPlayerOrPlayerCrew"
+  },
+  {
+    "strName" : "SHIPMultiDockingStartAllow", "strTitle" : "Sending Options", "strDesc" : "<Handshake received>", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "aInverse" : [
+      "SHIPDockToggleOwnDock[DOCKID]",
+      "them|SHIPMultiDockSelect"
+    ],
+    "bOpener" : true, "bIgnoreFeelings" : true, "nLogging" : 1, "CTTestThem" : "TIsPlayerOrPlayerCrew", "ShipTestUs" : "NotAStationNotPlayer"
+  },
+  {
+    "strName" : "SHIPDockToggleOwnDock[DOCKID]", "strTitle" : "Active Port: [DOCKID]", "strDesc" : "Updating docking port.", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "aInverse" : [
+      "SHIPMultiDockingStartAllow",
+      "STATIONMultiDockingStartAllow"
+    ],
+    "bOpener" : true, "bIgnoreFeelings" : true, "nLogging" : 1, "ShipTestUs" : "HasMultiplePortsTotal"
+  },
+  {
+    "strName" : "SHIPDockToggleOwnDockForced[DOCKID]", "strTitle" : "Active Port: [DOCKID]", "strDesc" : "Updating docking port.", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "aInverse" : [
+      "SHIPMultiDockingStartAllowForced"
+    ],
+    "bOpener" : true, "bIgnoreFeelings" : true, "nLogging" : 1, "ShipTestUs" : "HasMultiplePortsTotal"
+  },
+  {
+    "strName" : "SHIPMultiDockSelectAllow", "strTitle" : "Select Port", "strDesc" : "[them-regID], please choose a docking port.", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "aInverse" : [
+      "them#SHIPDock"
+    ],
+    "bOpener" : true, "fTargetPointRange" : 100000000, "bIgnoreFeelings" : true, "nLogging" : 0, "ShipTestUs" : "CanDockAnywhere"
+  },
+  {
+    "strName" : "SHIPProceedToDocking", "strTitle" : "Init Docking", "strDesc" : "[them-shipfriendly], ready to proceed", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "aInverse" : [
+      "SHIPDock,[us-regID],[them-regID]"
+    ],
+    "bOpener" : true, "fTargetPointRange" : 100000000, "bIgnoreFeelings" : true, "nLogging" : 0, "CTTestUs" : "TIsPlayerOrPlayerCrew"
+  },
+
+  {
+    "strName" : "SHIPMultiDockingStartForced", "strTitle" : "Docking", "strDesc" : "<Configuring Docking Procedure>", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "aInverse" : [
+      "SHIPMultiDockingStartAllowForced"
+    ],
+    "bOpener" : true, "fTargetPointRange" : 100000000, "bIgnoreFeelings" : true, "nLogging" : 1, "CTTestUs" : "TIsPlayerOrPlayerCrew"
+  },
+  {
+    "strName" : "SHIPMultiDockingStartAllowForced", "strTitle" : "Sending Options", "strDesc" : "<...>", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "aInverse" : [
+      "SHIPDockToggleOwnDockForced[DOCKID]",
+      "them|SHIPMultiDockSelectForced"
+    ],
+    "bOpener" : true, "bIgnoreFeelings" : true, "nLogging" : 1, "CTTestThem" : "TIsPlayerOrPlayerCrew", "ShipTestUs" : "NotAStationNotPlayer"
+  },
+  {
+    "strName" : "SHIPMultiDockSelectForced", "strTitle" : "Docking", "strDesc" : "[them-shipfriendly], ready to proceed", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "aInverse" : [
+      "SHIPDockWithShipDenyDoesNotFit",
+      "SHIPDockDenyPortDoesNotFit",
+      "SHIPMultiDockSelectForcedAllow",
+      "SHIPForceDockNoPilot,[us-regID],[them-regID]"
+    ],
+    "bOpener" : true, "fTargetPointRange" : 100000000, "bIgnoreFeelings" : true, "nLogging" : 0, "CTTestUs" : "TIsPlayerOrPlayerCrew"
+  },
+
+  {
+    "strName" : "STATIONMultiDockingStart", "strTitle" : "Docking", "strDesc" : "<Configuring Docking Procedure>", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "aInverse" : [
+      "STATIONMultiDockingStartAllow"
+    ],
+    "bOpener" : true, "fTargetPointRange" : 100000000, "bIgnoreFeelings" : true, "nLogging" : 1, "CTTestUs" : "TIsPlayerOrPlayerCrew"
+  },
+  {
+    "strName" : "STATIONMultiDockingStartAllow", "strTitle" : "Request Dock", "strDesc" : "Roger [them-regID], please choose a docking facility.", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "aInverse" : [
+      "SHIPDockToggleOwnDock[DOCKID]",
+      "them|SHIPMultiDockSelect"
+    ],
+    "bOpener" : true, "fTargetPointRange" : 100000000, "bIgnoreFeelings" : true, "nLogging" : 1
+  },
+  {
+    "strName" : "SHIPMultiDockSelect", "strTitle" : "Docking", "strDesc" : "[them-shipfriendly], ready to proceed", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "aInverse" : [
+      "SHIPDockWithShipDenyDoesNotFit",
+      "SHIPDockDenyPortDoesNotFit",
+      "SHIPMultiDockSelectAllow",
+      "SHIPDock,[us-regID],[them-regID]"
+    ],
+    "bOpener" : true, "fTargetPointRange" : 100000000, "bIgnoreFeelings" : true, "nLogging" : 0, "CTTestUs" : "TIsPlayerOrPlayerCrew"
+  },
+  {
+    "strName" : "SHIPMultiDockSelectForcedAllow", "strTitle" : "Select Port", "strDesc" : "<...>", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "aInverse" : [
+      "them#SHIPForceDockNoPilot"
+    ],
+    "bOpener" : true, "fTargetPointRange" : 100000000, "bIgnoreFeelings" : true, "nLogging" : 0, "ShipTestUs" : "CanDockAnywhere"
+  },
+  {
+    "strName" : "SHIPDock", "strTitle" : "Request docking clearance", "strDesc" : "[them-shipfriendly] this is [us-shipfriendly] requesting clearance for close approach and docking.", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "aInverse" : [
+      "SHIPDockDenyPortDoesNotFit",
+      "SHIPDockWithShipDenyDoesNotFit",
+      "SHIPDockWithShipDenyVLA01",
+      "SHIPDockWithStationDenyEnemy",
+      "SHIPDockAllowWelcome",
+      "SHIPDockAllow",
+      "SHIPDockAllowFriend",
+      "SHIPDockAllowEnemy",
+      "SHIPDockWithShipAllow",
+      "SHIPDockAllowGig",
+      "SHIPDockAllowNPC",
+      "SHIPDockWithShipRequestedHelpAllow",
+      "SHIPDockDenyNoEmptyDockingPort",
+      "SHIPDockWithShipDenyFriend",
+      "SHIPDockWithShipDenyEnemy",
+      "SHIPDockWithShipDeny",
+      "SHIPDockDenyRange",
+      "SHIPDockDeny"
+    ],
+    "bOpener" : true, "fTargetPointRange" : 100000000, "bIgnoreFeelings" : true, "nLogging" : 1
+  },
+  {
+    "strName" : "PASSDockWithVLA01", "strTitle" : "PASS can dock with VLA01", "strDesc" : "PASS can dock with VLA01.", "strActionGroup" : "Ship", "strColor" : "Neutral", "nLogging" : 1, "ShipTestThem" : "VLA01", "CTTestUs" : "TCanNavigateVLA01Dock"
+  },
+  {
+    "strName" : "PASSDockWithCOHO", "strTitle" : "PASS can dock with COHO", "strDesc" : "PASS can dock with COHO.", "strActionGroup" : "Ship", "strColor" : "Neutral", "nLogging" : 1, "ShipTestThem" : "COHO", "CTTestUs" : "TCannotPassCOHO", "strFactionTest" : "LIKES"
+  },
+  {
+    "strName" : "SHIPDockAI", "strTitle" : "Request docking clearance", "strDesc" : "[them-shipfriendly] this is [us-shipfriendly] requesting clearance for close approach and docking.", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "aInverse" : [
+      "SHIPDockWithShipDenyVLA01",
+      "SHIPDockDenyPortDoesNotFit",
+      "SHIPDockAllowWelcome",
+      "SHIPDockAllow",
+      "SHIPDockAllowFriend",
+      "SHIPDockAllowEnemy",
+      "SHIPDockWithShipAllow",
+      "SHIPDockAllowGig",
+      "SHIPDockAllowNPC",
+      "SHIPDockWithShipRequestedHelpAllow",
+      "SHIPDockDenyNoEmptyDockingPort",
+      "SHIPDockWithShipDenyFriend",
+      "SHIPDockWithShipDenyEnemy",
+      "SHIPDockWithShipDeny",
+      "SHIPDockDenyRange",
+      "SHIPDockDeny"
+    ],
+    "bOpener" : true, "fTargetPointRange" : 100000000, "bIgnoreFeelings" : true, "nLogging" : 1, "ShipTestUs" : "NotAStationNotPlayer"
+  },
+  {
+    "strName" : "SHIPDockAIWStation", "strTitle" : "Request docking clearance", "strDesc" : "[them-shipfriendly] this is [us-shipfriendly] requesting clearance for close approach and docking.", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "aInverse" : [
+      "SHIPDockAllowNPC"
+    ],
+    "bOpener" : true, "fTargetPointRange" : 100000000, "bIgnoreFeelings" : true, "nLogging" : 1, "ShipTestUs" : "NotAStationNotPlayer", "ShipTestThem" : "AnyStationOrHidden"
+  },
+  {
+    "strName" : "SHIPDockWithShipAllow", "strTitle" : "Docking clearance granted by ship", "strDesc" : "Greetings Captain [them-captain]. Docking clearance granted. Verified contact onboard.", "strActionGroup" : "Ship", "strColor" : "SocialStatusGreen",
+    "fTargetPointRange" : 5, "nLogging" : 1, "LootCTsThem" : "TXTDockingClearance", "ShipTestUs" : "NotAStationNotPlayer", "PSpecTestThem" : "RELCloseOrContact"
+  },
+  {
+    "strName" : "SHIPDockWithShipRequestedHelpAllow", "strTitle" : "Docking clearance granted by ship", "strDesc" : "Greetings Captain [them-captain]. Docking clearance granted.", "strActionGroup" : "Ship", "strColor" : "SocialStatusGreen",
+    "fTargetPointRange" : 5, "nLogging" : 1, "LootCTsThem" : "TXTDockingClearance", "CTTestUs" : "TIsHasRequestedHelp"
+  },
+  {
+    "strName" : "SHIPDockWithShipDeny", "strTitle" : "Docking clearance denied by ship", "strDesc" : "Negative [them-shipfriendly]. You are not cleared for close approach. Change your vector.", "strActionGroup" : "Ship", "strColor" : "StatusRed",
+    "aInverse" : [ "SHIPForceDockWithPenalty" ], "nLogging" : 1, "ShipTestUs" : "NotAStationNotPlayer", "PSpecTestThem" : "RELNotClose"
+  },
+  {
+    "strName" : "SHIPDockWithShipDenyVLA01", "strTitle" : "Docking clearance denied by ship", "strDesc" : "Negative [them-shipfriendly]. You are not cleared for close approach. Docking facilities are offline at this time. Manual override required at loading area service dock.", "strActionGroup" : "Ship", "strColor" : "StatusRed",
+    "aInverse" : [ ],
+    "bSocial" : true,
+    "nLogging" : 1, "ShipTestUs" : "VLA01", "CTTestThem" : "TCannotNavigateVLA01Dock"
+  },
+
+  {
+    "strName" : "SHIPDockWithShipDenyDoesNotFit", "strTitle" : "Docking clearance denied. No space", "strDesc" : "Negative [them-captain]. Your ship does not fit at our docking facility", "strActionGroup" : "Ship", "strColor" : "StatusRed",
+    "bSocial" : true,  "nLogging" : 1, "ShipTestUs" : "CanNotDockWithOther"
+  },
+  {
+    "strName" : "SHIPDockWithShipDenyDoesNotFitForced", "strTitle" : "Docking blocked. No space", "strDesc" : "Docking not possible! Ship does not fit at any docking ports", "strActionGroup" : "Ship", "strColor" : "StatusRed",
+    "bSocial" : true,  "nLogging" : 1, "ShipTestUs" : "CanNotDockWithOther"
+  },
+  {
+    "strName" : "SHIPDockWithShipDenyFriend", "strTitle" : "Docking clearance denied by friendly ship", "strDesc" : "Sorry friend. As much as I'd love to see your face on the [us-shipfriendly], it's a negative. You are not cleared.", "strActionGroup" : "Ship", "strColor" : "StatusRed",
+    "aInverse" : [ "SHIPForceDockWithPenalty" ], "nLogging" : 1, "ShipTestUs" : "NotAStationNotPlayer", "PSpecTestThem" : "RELClose"
+  },
+  {
+    "strName" : "SHIPDockWithShipDenyEnemy", "strTitle" : "Docking clearance denied by friendly ship", "strDesc" : "I'll be damned if I'm going to let the [them-shipfriendly] touch my precious ship. You are not cleared, Captain [them-captain]. Change your vector immediately.", "strActionGroup" : "Ship", "strColor" : "StatusRed",
+    "aInverse" : [ "SHIPForceDockWithPenalty" ], "nLogging" : 1, "ShipTestUs" : "NotAStationNotPlayer", "PSpecTestThem" : "RELClose"
+  },
+  {
+    "strName" : "SHIPDockWithStationDenyEnemy", "strTitle" : "Docking clearance denied by station", "strDesc" : "Get lost!", "strActionGroup" : "Ship", "strColor" : "StatusRed",
+    "aInverse" : [], "nLogging" : 1, "ShipTestUs" : "AnyStation_Pirates", "PSpecTestThem" : "RELClose"
+  },
+  {
+    "strName" : "SHIPDockAllow", "strTitle" : "Docking clearance granted", "strDesc" : "Affirmative [them-shipfriendly]. We have your speed and vector. You are cleared for close approach and dock. Confirm guidance and begin RCS maneuvers.", "strActionGroup" : "Ship", "strColor" : "SocialStatusGreen",
+    "fTargetPointRange" : 5, "nLogging" : 1, "LootCTsThem" : "TXTDockingClearance", "ShipTestUs" : "AnyStation_CanDock"
+  },
+  {
+    "strName" : "SHIPDockAllowGig", "strTitle" : "Docking clearance granted, Gig target", "strDesc" : "Affirmative [them-regID]. We are expecting your arrival.", "strActionGroup" : "Ship", "strColor" : "SocialStatusGreen",
+    "fTargetPointRange" : 5, "nLogging" : 1, "LootCTsThem" : "TXTDockingClearance", "CTTestUs" : "TIsGigNexusTargetDockAllow", "ShipTestUs" : "IsNotDocked"
+  },
+  {
+    "strName" : "SHIPDockAllowFriend", "strTitle" : "Docking clearance granted for Friend", "strDesc" : "Hey there old friend. Anything for Captain [them-captain]. Got your speed here and you're clear for approach. Don't bust my ring on the way in.", "strActionGroup" : "Ship", "strColor" : "SocialStatusGreen",
+    "fTargetPointRange" : 5, "nLogging" : 1, "LootCTsThem" : "TXTDockingClearance", "ShipTestUs" : "AnyStation_CanDock", "PSpecTestThem" : "RELClose"
+  },
+  {
+    "strName" : "SHIPDockAllowEnemy", "strTitle" : "Docking clearance granted for Enemy", "strDesc" : "Can't say I'm happy to see you Captain [them-captain]. But if you insist on sullying my ship with your presence, you're clear for docking.", "strActionGroup" : "Ship", "strColor" : "SocialStatusGreen",
+    "fTargetPointRange" : 5, "nLogging" : 1, "LootCTsThem" : "TXTDockingClearance", "ShipTestUs" : "AnyStation_CanDock", "PSpecTestThem" : "RELEnemy"
+  },
+  {
+    "strName" : "SHIPDockAllowWelcome", "strTitle" : "Docking clearance was granted by station", "strDesc" : "Affirmative [them-shipfriendly]. We have your speed and vector. You are cleared for close approach and dock. Confirm guidance and begin RCS maneuver.", "strActionGroup" : "Ship", "strColor" : "SocialStatusGreen",
+    "fTargetPointRange" : 5,"nLogging" : 1, "LootCTsThem" : "TXTDockingClearance", "ShipTestUs" : "AnyStation_CanDock"
+  },
+  {
+    "strName" : "SHIPDockAllowNPC", "strTitle" : "Docking clearance granted", "strDesc" : "Affirmative [them-shipfriendly]. We have your speed and vector. You are cleared for close approach and dock. Confirm guidance and begin RCS maneuvers.", "strActionGroup" : "Ship", "strColor" : "SocialStatusGreen",
+    "fTargetPointRange" : 5, "nLogging" : 1, "LootCTsThem" : "TXTDockingClearance", "ShipTestUs" : "AnyStation", "ShipTestThem" : "NotAStationNotPlayer"
+  },
+  {
+    "strName" : "SHIPDockDenyNoEmptyDockingPort", "strTitle" : "Dock Deny because of blocked docking port", "strDesc" : "Negative [them-captain]. No available docking ports. Come back later or use PASS.", "strActionGroup" : "Ship", "strColor" : "StatusRed",
+    "fTargetPointRange" : 5, "nLogging" : 1, "ShipTestUs" : "CanNotDockWithOther"
+  },
+  {
+    "strName" : "SHIPDockDenyRange", "strTitle" : "Dock Deny because of range", "strDesc" : "[them-regID] you are too far away, docking denied.", "strActionGroup" : "Ship", "strColor" : "StatusRed",
+    "fTargetPointRange" : 100000000, "nLogging" : 1
+  },
+  {
+    "strName" : "SHIPDockDeny", "strTitle" : "Dock Deny", "strDesc" : "Negative [them-shipfriendly], you are not clear for docking.", "strActionGroup" : "Ship", "strColor" : "StatusRed",
+    "nLogging" : 1, "PSpecTestThem" : "RELNotClose"
+  },
+  {
+    "strName" : "SHIPDockDenyFriend", "strTitle" : "Dock Deny", "strDesc" : "Sorry friend. As much as I'd love to see your face on the [us-shipfriendly], it's a negative. You are not cleared.", "strActionGroup" : "Ship", "strColor" : "StatusRed",
+    "nLogging" : 1, "PSpecTestThem" : "RELClose"
+  },
+  {
+    "strName" : "SHIPDockDenyEnemy", "strTitle" : "Dock Deny", "strDesc" : "I'll be damned if I'm going to let the [them-shipfriendly] touch my precious ship. You are not cleared, Captain [them-captain]. Change your vector immediately.", "strActionGroup" : "Ship", "strColor" : "StatusRed",
+    "nLogging" : 1, "PSpecTestThem" : "RELEnemy"
+  },
+  {
+    "strName" : "SHIPForceDockWithPenalty", "strTitle" : "Initiate Unauthorized Docking Procedure", "strDesc" : "Be advised [them-shipfriendly] we are initiating maneuvers for a forced dock.", "strActionGroup" : "Ship", "strColor" : "Dialogue",
+    "aInverse" : [
+      "SHIPForceDockAllow",
+      "SHIPForceDockDenyNoEmptyDockingPort",
+      "SHIPForceDockDenyRange"
+    ],
+    "bOpener" : false, "fTargetPointRange" : 40, "bIgnoreFeelings" : true, "nLogging" : 1, "bHumanOnly" : true, "fFactionScoreChangeThem" : -10
+  },
+  {
+    "strName" : "SHIPForceDock", "strTitle" : "Initiate Forced Docking Procedure", "strDesc" : "Be advised [them-shipfriendly] we are initiating maneuvers for a forced dock.", "strActionGroup" : "Ship", "strColor" : "Dialogue",
+    "aInverse" : [
+      "SHIPForceDockAllowLEO",
+      "SHIPForceDockAllow",
+      "SHIPForceDockDenyNoEmptyDockingPort",
+      "SHIPForceDockDenyRange"
+    ],
+    "bOpener" : false, "fTargetPointRange" : 40, "bIgnoreFeelings" : true, "nLogging" : 1, "bHumanOnly" : true
+  },
+  {
+    "strName" : "SHIPForceDockDenyRange", "strTitle" : "Force Dock Deny because of Range", "strDesc" : "CODE 6700: Target out of range. Retry within 5km.", "strActionGroup" : "Ship", "strColor" : "StatusRed",
+    "fTargetPointRange" : 10000000, "nLogging" : 1
+  },
+  {
+    "strName" : "SHIPForceDockDenyNoEmptyDockingPort", "strTitle" : "Force Dock Deny because of blocked docking port", "strDesc" : "CODE 7300: Target has no empty docking port.", "strActionGroup" : "Ship", "strColor" : "StatusRed",
+    "fTargetPointRange" : 40, "nLogging" : 1, "ShipTestUs" : "CanNotDockWithOther"
+  },
+  {
+    "strName" : "SHIPDockDenyPortDoesNotFit", "strTitle" : "Deny ship active port doesn't fit", "strDesc" : "CODE 7400: Ship's active port does not fit at target port", "strActionGroup" : "Ship", "strColor" : "StatusRed",
+    "fTargetPointRange" : 40, "nLogging" : 1, "ShipTestUs" : "CanNotDockSelectedPort"
+  },
+  {
+    "strName" : "SHIPForceDockAllow", "strTitle" : "Force Dock Allowed", "strDesc" : "Captain [them-captain] change your vector, you are unauthorized. I repeat you are not cleared for close approach or dock.", "strActionGroup" : "Ship", "strColor" : "StatusRed",
+    "fTargetPointRange" : 5, "nLogging" : 1, "LootCTsUs" : null, "LootCTsThem" : "TXTDockingClearance", "ShipTestThem" : "CanDockAnywhere"
+  },
+  {
+    "strName" : "SHIPForceDockAllowLEO", "strTitle" : "Force Dock Allowed LEO", "strDesc" : "You are unauthorized, Captain [them-captain]. This is a law enforcement vessel. Avoid close approach or prepare to face the consequences.", "strActionGroup" : "Ship", "strColor" : "SocialStatusGreen",
+    "fTargetPointRange" : 5, "nLogging" : 1, "LootCTsThem" : "TXTDockingClearance", "CTTestUs" : "TIsLEO", "ShipTestThem" : "CanDockAnywhere"
+  },
+  {
+    "strName" : "SHIPForceDockNoPilot", "strTitle" : "Initiate Uncontrolled Docking Procedure", "strDesc" : "Setting docking guidance to uncontrolled vessel.", "strActionGroup" : "Ship", "strColor" : "Dialogue",
+    "aInverse" : [
+      "SHIPForceDockDenyNoEmptyDockingPort",
+      "SHIPDockDenyPortDoesNotFit",
+      "SHIPForceDockAllowNoPilot",
+      "SHIPForceDockDenyRange"
+    ],
+    "bOpener" : false, "fTargetPointRange" : 10000000, "bIgnoreFeelings" : true, "nLogging" : 1, "bHumanOnly" : true
+  },
+  {
+    "strName" : "SHIPForceDockAllowNoPilot", "strTitle" : "Force Dock Allowed", "strDesc" : "...", "strActionGroup" : "Ship", "strColor" : "SocialStatusGreen",
+    "aInverse" : [  ],
+    "fTargetPointRange" : 5,"nLogging" : 1, "LootCTsUs" : null, "LootCTsThem" : "TXTDockingClearance", "ShipTestThem" : "CanDockAnywhere"
+  },
+  {
+    "strName" : "SHIPForceUnDockNoPilot", "strTitle" : "Undock", "strDesc" : "[us-shipfriendly] announcing undocking procedure from uncontrolled vessel [them-shipfriendly].", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "aInverse" : [
+      "SHIPUndockAllowNoPilot"
+    ],
+    "bOpener" : false,"fTargetPointRange" : -1, "nLogging" : 1, "ShipTestUs" : "IsNotMoored"
+  },
+  {
+    "strName" : "SHIPUndockAllowNoPilot",
+    "strTitle" : "Undocking clearance granted",
+    "strDesc" : "...",
+    "strActionGroup" : "Ship",
+    "strColor" : "SocialStatusGreen",
+    "aInverse" : [  ],
+    "fTargetPointRange" : -1,
+    "nLogging" : 1, "LootCTsThem" : "TXTDockingClearance", "CTTestUs" : null, "CTTestThem" : null
+  },
+
+
+
+
+
+
+  {
+    "strName" : "SHIPForceUnDock", "strTitle" : "Undock", "strDesc" : "[us-regID] ready for departure, requesting undocking clearance.", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "aInverse" : [
+      "SHIPUndockAllow"
+    ],
+    "bSocial" : true,"bOpener" : false,"fTargetPointRange" : -1, "nLogging" : 1
+  },
+  {
+    "strName" : "SHIPHailMaster",
+    "strTitle" : "Hail Them",
+    "strDesc" : "[us-regID] hails [them-regID].", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "aInverse" : [
+      "SHIPHailBlank,[us-regID],[them-regID]",
+      "SHIPHail,[us-regID],[them-regID]"
+    ],
+    "bRandomInverse" : false, "nLogging" : 0, "ShipTestUs" : "NotAStationNotPlayer"
+  },
+  {
+    "strName" : "SHIPHailBlank",
+    "strTitle" : "Hail Them",
+    "strDesc" : "[us-regID] hails [them-regID]", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "aInverse" : [
+      "SHIPHailBlankNoAck"
+    ],
+    "bRandomInverse" : false, "bOpener" : true, "nLogging" : 1, "CTTestThem" : "TIsShip", "ShipTestThem" : "NotAStationNotPlayer"
+  },
+  {
+    "strName" : "SHIPHail",
+    "strTitle" : "Hail Them List",
+    "strDesc" : "Hail Them List", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "aInverse" : [
+      "SHIPHailCheerful,[us-regID],[them-regID]",
+      "SHIPHailNeutral,[us-regID],[them-regID]",
+      "SHIPHailMinimal,[us-regID],[them-regID]"
+    ],
+    "bRandomInverse" : true, "bOpener" : true, "nLogging" : 0, "ShipTestThem" : "NotAStationNotPlayer"
+  },
+  {
+    "strName" : "SHIPHailBlankNoAck",
+    "strTitle" : "Hail Them",
+    "strDesc" : "CODE 7451: Target unresponsive.", "strActionGroup" : "Ship", "strColor" : "Badish",
+    "aInverse" : [],
+    "bSocial" : true, "bRandomInverse" : false, "bOpener" : false, "nLogging" : 1, "bHumanOnly" : false
+  },
+  {
+    "strName" : "SHIPHailCheerful",
+    "strTitle" : "Hail Them",
+    "strDesc" : "Howdy [them-captain].", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "aInverse" : [
+      "SHIPHailAllowList",
+      "SHIPHailDeny"
+    ],
+    "bRandomInverse" : false, "nLogging" : 1, "CTTestUs" : "TIsSocialCoreNotPlayerShip", "CTTestThem" : "TIsValidSocialTarget"
+  },
+  {
+    "strName" : "SHIPHailNeutral",
+    "strTitle" : "Hail Them",
+    "strDesc" : "[us-regID] hails [them-shipfriendly].", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "aInverse" : [
+      "SHIPHailAllowList",
+      "SHIPHailDeny"
+    ],
+    "bRandomInverse" : false, "nLogging" : 1, "CTTestUs" : "TIsSocialCoreShip", "CTTestThem" : "TIsValidSocialTarget"
+  },
+  {
+    "strName" : "SHIPHailMinimal",
+    "strTitle" : "Hail Them",
+    "strDesc" : "...click...", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "aInverse" : [
+      "SHIPHailAllowList",
+      "SHIPHailDeny"
+    ],
+    "bRandomInverse" : false, "nLogging" : 1, "CTTestUs" : "TIsSocialCoreNotPlayerShip", "CTTestThem" : "TIsValidSocialTarget"
+  },
+  {
+    "strName" : "SHIPHailAllowList", "strTitle" : "Hail Allow List", "strActionGroup" : "Ship", "strDesc" : "Hail allow list", "strColor" : "Neutral",
+    "aInverse" : [
+      "SHIPHailAllow,[us-regID],[them-regID]",
+      "SHIPHailAllowTarget,[us-regID],[them-regID]",
+      "SHIPHailAllowClose,[us-regID],[them-regID]",
+      "SHIPHailAllowEnemy,[us-regID],[them-regID]",
+      "SHIPHailAllowLikes,[us-regID],[them-regID]",
+      "SHIPHailAllowDislikes,[us-regID],[them-regID]",
+      "SHIPHailAllowAltruismBad,[us-regID],[them-regID]",
+      "SHIPHailAllowAltruismGood,[us-regID],[them-regID]",
+      "SHIPHailAllowPrivacyBad,[us-regID],[them-regID]",
+      "SHIPHailAllowPrivacyGood,[us-regID],[them-regID]",
+      "SHIPHailAllowSecurityBad,[us-regID],[them-regID]",
+      "SHIPHailAllowSecurityGood,[us-regID],[them-regID]",
+      "SHIPHailAllowLEOWantedOKLG,[us-regID],[them-regID]",
+      "SHIPHailAllowLEOWantedVenus,[us-regID],[them-regID]"
+    ],
+    "nLogging" : 0, "CTTestUs" : "TIsNotOKLGPirate", "bRandomInverse" : true
+  },
+  {
+    "strName" : "SHIPHailAllow", "strTitle" : "Hail Allow", "strActionGroup" : "Ship", "strDesc" : "[us-regID] accepts the hail and opens a channel to [them-regID].",
+    "aInverse" : [ ], "strColor" : "SocialStatusGreen", "fDuration" : 0.000027, "strThemType" : "Other", "nLogging" : 1
+  },
+  {
+    "strName" : "SHIPHailAllowTarget", "strTitle" : "Hail Allow Targeted", "strActionGroup" : "Ship", "strDesc" : "Why are you target locking us?",
+    "aInverse" : [ ], "strColor" : "SocialStatusGreen", "fDuration" : 0.000027, "strThemType" : "Other", "nLogging" : 1, "fForcedChance": 0.33, "ShipTestUs" : "IsNotInCombatWithOther", "ShipTestThem" : "IsTargetingOther"
+  },
+  {
+    "strName" : "SHIPHailAllowClose", "strTitle" : "Hail Allow Close", "strActionGroup" : "Ship", "strDesc" : "Hey [them-friendly], how's it going?",
+    "aInverse" : [ ], "strColor" : "SocialStatusGreen", "fDuration" : 0.000027, "strThemType" : "Other", "nLogging" : 1, "PSpecTestThem" : "RELClose", "fForcedChance": 0.33
+  },
+  {
+    "strName" : "SHIPHailAllowEnemy", "strTitle" : "Hail Allow Enemy", "strActionGroup" : "Ship", "strDesc" : "Sigh. What do you want?",
+    "aInverse" : [ ], "strColor" : "SocialStatusGreen", "fDuration" : 0.000027, "strThemType" : "Other", "nLogging" : 1, "PSpecTestThem" : "RELEnemyOrNemesis", "fForcedChance": 0.33
+  },
+  {
+    "strName" : "SHIPHailAllowLikes", "strTitle" : "Hail Allow Likes", "strActionGroup" : "Ship", "strDesc" : "Good to see you, [them-regID].",
+    "aInverse" : [ ], "strColor" : "SocialStatusGreen", "fDuration" : 0.000027, "strThemType" : "Other", "nLogging" : 1, "fForcedChance": 0.33, "strFactionTest" : "LIKES"
+  },
+  {
+    "strName" : "SHIPHailAllowDislikes", "strTitle" : "Hail Allow Likes", "strActionGroup" : "Ship", "strDesc" : "This better be good.",
+    "aInverse" : [ ], "strColor" : "SocialStatusGreen", "fDuration" : 0.000027, "strThemType" : "Other", "nLogging" : 1, "fForcedChance": 0.33, "strFactionTest" : "DISLIKES"
+  },
+  {
+    "strName" : "SHIPHailAllowAltruismBad", "strTitle" : "Hail Allow Alt Bad", "strActionGroup" : "Ship", "strDesc" : "How can I help you?",
+    "aInverse" : [ ], "strColor" : "SocialStatusGreen", "fDuration" : 0.000027, "strThemType" : "Other", "nLogging" : 1, "CTTestUs" : "TShipIsAltruismBad"
+  },
+  {
+    "strName" : "SHIPHailAllowAltruismGood", "strTitle" : "Hail Allow Alt Good", "strActionGroup" : "Ship", "strDesc" : "Another captain in need?",
+    "aInverse" : [ ], "strColor" : "SocialStatusGreen", "fDuration" : 0.000027, "strThemType" : "Other", "nLogging" : 1, "CTTestUs" : "TShipIsAltruismGood"
+  },
+  {
+    "strName" : "SHIPHailAllowPrivacyBad", "strTitle" : "Hail Allow Priv Bad", "strActionGroup" : "Ship", "strDesc" : "What.",
+    "aInverse" : [ ], "strColor" : "SocialStatusGreen", "fDuration" : 0.000027, "strThemType" : "Other", "nLogging" : 1, "CTTestUs" : "TShipIsPrivacyBad"
+  },
+  {
+    "strName" : "SHIPHailAllowPrivacyGood", "strTitle" : "Hail Allow Priv Good", "strActionGroup" : "Ship", "strDesc" : "To whom do I have the pleasure of speaking today?",
+    "aInverse" : [ ], "strColor" : "SocialStatusGreen", "fDuration" : 0.000027, "strThemType" : "Other", "nLogging" : 1, "CTTestUs" : "TShipIsPrivacyGood"
+  },
+  {
+    "strName" : "SHIPHailAllowSecurityBad", "strTitle" : "Hail Allow Sec Bad", "strActionGroup" : "Ship", "strDesc" : "W-what is it?",
+    "aInverse" : [ ], "strColor" : "SocialStatusGreen", "fDuration" : 0.000027, "strThemType" : "Other", "nLogging" : 1, "CTTestUs" : "TShipIsSecurityBad"
+  },
+  {
+    "strName" : "SHIPHailAllowSecurityGood", "strTitle" : "Hail Allow Sec Good", "strActionGroup" : "Ship", "strDesc" : "What have we here?",
+    "aInverse" : [ ], "strColor" : "SocialStatusGreen", "fDuration" : 0.000027, "strThemType" : "Other", "nLogging" : 1, "CTTestUs" : "TShipIsSecurityGood"
+  },
+  {
+    "strName" : "SHIPHailAllowLEOWantedOKLG", "strTitle" : "Hail Allow Wanted OKLG", "strActionGroup" : "Ship", "strDesc" : "Warning, [them-regID], you are wanted in OKLG space.",
+    "aInverse" : [ ], "strColor" : "SocialStatusGreen", "fDuration" : 0.000027, "strThemType" : "Other", "nLogging" : 1, "fForcedChance": 0.33, "ShipTestUs" : "IsLocalAuthority", "CTTestThem" : "TIsWantedOKLG"
+  },
+  {
+    "strName" : "SHIPHailAllowLEOWantedVenus", "strTitle" : "Hail Allow Wanted Venus", "strActionGroup" : "Ship", "strDesc" : "Warning, [them-regID], you are wanted in Venus space.",
+    "aInverse" : [ ], "strColor" : "SocialStatusGreen", "fDuration" : 0.000027, "strThemType" : "Other", "nLogging" : 1, "fForcedChance": 0.33, "ShipTestUs" : "IsLocalAuthority", "CTTestThem" : "TIsWantedVenus"
+  },
+  {
+    "strName" : "SHIPLeoPrepareBoarding", "strTitle" : "Leo prepare boarding", "strDesc" : "Prepare to be boarded for inspection.", "strActionGroup" : "Ship", "strColor" : "StatusRed",
+    "bSocial" : true, "nLogging" : 1, "ShipTestUs" : "IsLocalAuthority"
+  },
+  {
+    "strName" : "SHIPLeoUndock", "strTitle" : "Leo undock for boarding", "strDesc" : "Undock your vessel, stand off, and prepare to be boarded.", "strActionGroup" : "Ship", "strColor" : "StatusRed",
+    "bSocial" : true, "nLogging" : 1, "ShipTestThem" : "CanNotDockWithOther", "ShipTestUs" : "IsLocalAuthority"
+  },
+  {
+    "strName" : "SHIPLeoLicenseDivert", "strTitle" : "Leo license ok", "strDesc" : "Your transponder's salvage permit appears to be in good order. Have a good day, citizen.", "strActionGroup" : "Ship", "strColor" : "StatusRed",
+    "bSocial" : true, "nLogging" : 1, "ShipTestUs" : "IsLocalAuthority"
+  },
+  {
+    "strName" : "SHIPLeoFined", "strTitle" : "Leo fine", "strDesc" : "Failure to comply, a warrant was issued for your arrest.", "strActionGroup" : "Ship", "strColor" : "StatusRed",
+    "bSocial" : true, "nLogging" : 1, "ShipTestUs" : "IsLocalAuthority"
+  },
+  {
+    "strName" : "SHIPCorrectingCourse",
+    "strTitle" : "CorrectingCourse",
+    "strDesc" : "[us-regID] correcting course.", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "aInverse" : [
+      "SHIPCopyCourseCorrection",
+      "SHIPAffirmative"
+    ],
+    "bSocial" : true, "bOpener" : false, "nLogging" : 1, "CTTestUs" : "TIsNotPlayerShip", "ShipTestThem" : "AnyStationRegional", "bRandomInverse" : true
+  },
+  {
+    "strName" : "SHIPCopyCourseCorrection",
+    "strTitle" : "Copy",
+    "strDesc" : "[them-regID] Copy, proceed on new vector", "strActionGroup" : "Ship", "strColor" : "SocialStatusGreen",
+    "aInverse" : [],
+    "bSocial" : true, "bOpener" : false, "nLogging" : 1
+  },
+  {
+    "strName" : "SHIPSetCourseForAssistance",
+    "strTitle" : "Leo",
+    "strDesc" : "[them] set course to submitted coordinates and inspect ship [3rd]", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "aInverse" : [
+      "SHIPAffirmativeAssistance"
+    ],
+    "bSocial" : true, "bOpener" : false, "nLogging" : 1, "ShipTestUs" : "AnyStation", "bRandomInverse" : false
+  },
+  {
+    "strName" : "SHIPAffirmativeAssistance", "strTitle" : "Affirmative", "strDesc" : "Affirmative! Heading out.", "strActionGroup" : "Ship", "strColor" : "SocialStatusGreen",
+    "bSocial" : true, "bOpener" : false, "nLogging" : 1
+  },
+  
+  {
+    "strName" : "SHIPSetCourseForPickup",
+    "strTitle" : "Hauler",
+    "strDesc" : "[them-regID] set course to submitted coordinates and retrieve ship [3rd-regID].", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "aInverse" : [
+      "SHIPAffirmative"
+    ],
+    "bSocial" : true, "bOpener" : false, "nLogging" : 1, "ShipTestUs" : "AnyStation", "bRandomInverse" : false
+  },
+  {
+    "strName" : "SHIPHaulerTargetNotReachable",
+    "strTitle" : "Hauler",
+    "strDesc" : "Correction, [them-regID], assistance canceled, no ship with sufficient range is on standby.", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "aInverse" : [],
+    "bSocial" : true, "bOpener" : false, "nLogging" : 1, "ShipTestUs" : "AnyStation", "bRandomInverse" : false
+  },
+  {
+    "strName" : "SHIPAskRaceStatus",
+    "strTitle" : "RACING",
+    "strDesc" : "[us-regID] to [them-regID], requesting League options.", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "aInverse" : [
+      "SHIPLeagueFinished",
+      "SHIPRaceSelection",
+      "SHIPRaceNotRegistered"
+    ],
+    "bSocial" : true, "bIgnoreFeelings" : true, "bOpener" : false, "nLogging" : 1, "CTTestThem" : "TIsNotPlayerShip", "ShipTestThem" : "AnyStation_Racing", "bRandomInverse" : false
+  },
+  {
+    "strName" : "SHIPRaceNotRegistered", "strTitle" : "Not registered", "strDesc" : "[them-regID] you are not registered for any racing leagues. Please visit a racing kiosk to register.", "strActionGroup" : "Ship", "strColor" : "StatusRed",
+    "bSocial" : true, "bOpener" : false, "nLogging" : 1, "ShipTestUs" : "AnyStation"
+  },
+  
+  {
+    "strName" : "SHIPRaceSelection", "strTitle" : "Select an option", "strDesc" : "Select an option.", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "bSocial" : true, "bOpener" : false, "nLogging" : 1, "ShipTestUs" : "AnyStation", "ShipTestThem" : "PlayerCurrentShip", "CTTestThem" : "TIsRaceLeagueRegistered",
+    "aInverse" : [
+      "SHIPStartPractice",
+      "SHIPStartRace",
+      "SHIPRaceCancel"
+    ]
+  },
+  {
+    "strName" : "SHIPRaceCancel", "strTitle" : "End session", "strDesc" : "[them-regID], end the session, I'm done here.", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "bSocial" : true, "bOpener" : false, "nLogging" : 1, "ShipTestUs" : "PlayerCurrentShip", "ShipTestThem" : "AnyStation", "CTTestUs" : "TIsCanCancelSession",
+    "aInverse" : [
+      "SHIPRaceCancelAllow"
+    ]
+  },
+  {
+    "strName" : "SHIPRaceCancelAllow", "strTitle" : "Ending session", "strDesc" : "Roger that [them-regID], transmitting results to Confederação Encantadense de Aeroespaciais.", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "bSocial" : true, "bOpener" : false, "nLogging" : 1, "ShipTestUs" : "AnyStation", "ShipTestThem" : "PlayerCurrentShip", "LootCTsUs" : "CMDCancelRaceSession"
+  },
+  {
+    "strName" : "SHIPStartPractice", "strTitle" : "Start practice", "strDesc" : "Start a practice session.", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "bSocial" : true, "bOpener" : false, "nLogging" : 1, "ShipTestUs" : "PlayerCurrentShip", "CTTestUs" : "TIsCanDoPractice","ShipTestThem" : "AnyStation",
+    "aInverse" : [
+      "SHIPStartPracticeAllow"
+    ]
+  },
+  {
+    "strName" : "SHIPStartRace", "strTitle" : "Start race", "strDesc" : "Start the race.", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "bSocial" : true, "bOpener" : false, "nLogging" : 1, "ShipTestUs" : "PlayerCurrentShip", "CTTestUs" : "TIsCanDoRace" ,"ShipTestThem" : "AnyStation",
+    "aInverse" : [
+      "SHIPStartRacAllow"
+    ]
+  },
+  
+  {
+    "strName" : "SHIPStartPracticeAllow", "strTitle" : "Acknowledged", "strDesc" : "[them-regID] practice request acknowledged! Sending waypoint data to your NAV now. Cross the starting line to begin the session.", "strActionGroup" : "Ship", "strColor" : "SocialStatusGreen",
+    "bSocial" : true, "bOpener" : false, "nLogging" : 1, "ShipTestUs" : "AnyStation", "ShipTestThem" : "PlayerCurrentShip", "LootCTsUs" : "CMDStartPractice",
+    "aInverse" : [
+      "SHIPRaceCancel"
+    ]
+  },
+  {
+    "strName" : "SHIPStartRacAllow", "strTitle" : "Acknowledged", "strDesc" : "[them-regID] Acknowledged! Sending waypoint data to your NAV now. Cross the starting line to begin the race.", "strActionGroup" : "Ship", "strColor" : "SocialStatusGreen",
+    "bSocial" : true, "bOpener" : false, "nLogging" : 1, "ShipTestUs" : "AnyStation", "ShipTestThem" : "PlayerCurrentShip", "LootCTsUs" : "CMDStartRace",
+    "aInverse" : [
+      "SHIPRaceCancel"
+    ]
+  },
+  {
+    "strName" : "SHIPLeagueFinished", "strTitle" : "Can't do that", "strDesc" : "[them-regID], your league has finished, visit the Race Kiosk to see more details.", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "bSocial" : true, "bOpener" : false, "nLogging" : 1, "ShipTestUs" : "AnyStation", "CTTestThem": "TIsRaceLeagueFinished", "ShipTestThem" : "PlayerCurrentShip"
+  },
+  {
+    "strName" : "SHIPSosThreatApproaching",
+    "strTitle" : "SOS Threat Approaching",
+    "strDesc" : "[us] threat approaching, requesting defensive support.", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "aInverse" : [
+      "SHIPSOSDispatchLEO",
+      "SHIPNegativeNoAction"
+    ],
+    "bSocial" : true, "bIgnoreFeelings" : true, "bOpener" : false, "nLogging" : 1, "LootCondsUs" : "ShipRequestedHelp" ,"CTTestUs" : "TIsNotPirateNotRequestedHelp", "CTTestThem" : "TIsNotPlayerShip", "ShipTestThem" : "AnyStationRegional", "bRandomInverse" : false
+  },
+  {
+    "strName" : "SHIPSOSDispatchLEO", "strTitle" : "Acknowledged", "strDesc" : "[them] Acknowledged! Sending assistance!", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "bSocial" : true, "bOpener" : false, "nLogging" : 1, "ShipTestUs" : "AnyStation", "ShipTestThem" : "CanDockAnywhere", "LootCTsUs" : "CMDDeployLeo", "fTargetPointRange" : 1000
+  },
+  
+  
+  {
+    "strName" : "SHIPSosStranded",
+    "strTitle" : "SOS Out of fuel",
+    "strDesc" : "[us-regID] out of fuel, requesting assistance.", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "aInverse" : [
+      "SHIPSOSDispatchHauler",
+      "SHIPNegativeNoAction"
+    ],
+    "bSocial" : true, "bIgnoreFeelings" : true, "bOpener" : false, "nLogging" : 1, "LootCondsUs" : "ShipRequestedHelp" ,"CTTestUs" : "TIsNotPirateNotRequestedHelp", "CTTestThem" : "TIsNotPlayerShip", "ShipTestThem" : "AnyStationRegional", "bRandomInverse" : false
+  },
+  {
+    "strName" : "SHIPSosAskPlayer",
+    "strTitle" : "SOS Out of fuel",
+    "strDesc" : "I ran out of fuel. Since you are close by, can you help me out?", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "aInverse" : [
+      "SHIPSosAskPlayerAffirmative",
+      "SHIPSosAskPlayerNegative"
+    ],
+    "bIgnoreFeelings" : true, "nLogging" : 1,  "LootCondsUs" : "ShipRequestedHelp", "CTTestUs" : "TIsHasNotRequestedHelp","ShipTestThem" : "PlayerCurrentShip", "ShipTestUs" : "NotAStationNotPlayer", "bRandomInverse" : false
+  },
+  {
+    "strName" : "SHIPWarnBeforeCombat",
+    "strTitle" : "Warn",
+    "strDesc" : "Cut your lock, now! Next ping and I open fire.", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "bIgnoreFeelings" : true, "nLogging" : 1,  "LootCondsUs" : "ShipRequestedHelp", "CTTestUs" : "TIsHasNotRequestedHelp","ShipTestThem" : "PlayerCurrentShip", "ShipTestUs" : "NotAStationNotPlayer", "bRandomInverse" : false
+  },
+  {
+    "strName" : "SHIPSosAskPlayerAffirmative", "strTitle" : "Agree to help", "strDesc" : "What do you need?", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "aInverse" : [
+      "SHIPSosAskPlayerAmountNeeded"
+    ],
+    "nLogging" : 1, "ShipTestUs" : "PlayerCurrentShip"
+  },
+  {
+    "strName" : "SHIPSosAskPlayerAmountNeeded", "strTitle" : "Amount needed", "strDesc" : "I need at least [data] fuel.", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "nLogging" : 1, "ShipTestThem" : "PlayerCurrentShip", "LootCTsUs" : "DataFuelNeeded"
+  },
+  {
+    "strName" : "SHIPSosAskPlayerNegative", "strTitle" : "Decline to help", "strDesc" : "Sorry [them-regID], no fuel to spare, good luck.", "strActionGroup" : "Ship", "strColor" : "SocialStatusGreen",
+    "bSocial" : true ,"nLogging" : 1, "ShipTestUs" : "PlayerCurrentShip"
+  },
+  {
+    "strName" : "SHIPTransferFuel", "strTitle" : "Initiate Fuel Transfer", "strDesc" : "Initiated fuel transfer. Transferring fuel now.", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "aInverse" : ["SHIPTransferFuelAllow"],
+    "bIgnoreFeelings" : true, "nLogging" : 1, "fTargetPointRange" : -1, "CTTestThem" : "TIsHasRequestedHelp", "ShipTestUs" : "PlayerCurrentShip", "ShipTestThem" : "NotAStationNotPlayer", "bRandomInverse" : false
+  },
+  {
+    "strName" : "SHIPTransferFuelAllow", "strTitle" : "Transferring fuel.", "strDesc" : "Affirmative", "strActionGroup" : "Ship", "strColor" : "SocialStatusGreen",
+    "aInverse" : [  ],
+    "nLogging" : 1, "LootCTsUs" : "CMDTakeFuel", "CTTestUs" : null
+  },
+  {
+    "strName" : "SHIPTransferFuelComplete", "strTitle" : "Fuel transfer complete", "strDesc" : "Fuel transfer complete.", "strActionGroup" : "Ship", "strColor" : "SocialStatusGreen",
+    "aInverse" : [  ],
+    "nLogging" : 1, "fTargetPointRange" : -1, "CTTestUs" : "TIsHasRequestedHelp", "LootCondsUs" : "ShipRemoveHelpRequest","ShipTestUs" : "NotAStationNotPlayer", "fFactionScoreChangeThem" : 10, "strPledgeAdd"      : "DisembarkAndUndock"
+  },
+  {
+    "strName" : "SHIPTransferFuelingOngoing", "strTitle" : "Fuel transfer ongoing", "strDesc" : "Transfer in progress, fuel levels at [data].", "strActionGroup" : "Ship", "strColor" : "SocialStatusGreen",
+    "aInverse" : [  ],
+    "nLogging" : 1, "fTargetPointRange" : -1, "LootCTsUs" : "DataFuelLevel", "CTTestUs" : "TIsHasRequestedHelp", "ShipTestUs" : "NotAStationNotPlayer", "ShipTestThem" : "PlayerCurrentShip"
+  },
+  {
+    "strName" : "SHIPStealFuel", "strTitle" : "Took fuel", "strDesc" : "Unauthorized fuel transfer detected.", "strActionGroup" : "Ship", "strColor" : "StatusRed", "nLogging" : 1, "fTargetPointRange" : -1, "ShipTestUs" : "NotAStationNotPlayer"
+  },
+  {
+    "strName" : "SHIPAffirmative", "strTitle" : "Affirmative", "strDesc" : "[them-regID], affirmative.", "strActionGroup" : "Ship", "strColor" : "SocialStatusGreen",
+    "bSocial" : true, "bOpener" : false, "nLogging" : 1
+  },
+  {
+    "strName" : "SHIPSOSDispatchHauler", "strTitle" : "Acknowledged", "strDesc" : "[them-regID] Acknowledged! Sending assistance!", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "bSocial" : true, "bOpener" : false, "nLogging" : 1, "ShipTestUs" : "AnyStation", "ShipTestThem" : "IsNotDocked", "LootCTsUs" : "CMDDeployHauler", "fTargetPointRange" : 1000
+  },
+  {
+    "strName" : "SHIPAcknowledged",
+    "strTitle" : "Acknowledged",
+    "strDesc" : "[them-regID] Acknowledged.", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "bSocial" : true, "bOpener" : false, "nLogging" : 1, "LootCTsThem" : null
+  },
+  {
+    "strName" : "SHIPNegativeNoAction",
+    "strTitle" : "Negative",
+    "strDesc" : "[them-regID], nothing we can do at the moment, good luck!", "strActionGroup" : "Ship", "strColor" : "StatusRed",
+    "bSocial" : true, "bOpener" : false, "nLogging" : 1
+  },
+  {
+    "strName" : "SHIPSurrenderAI", "strTitle" : "Surrender", "strDesc" : "Ceasefire requested! Not worth dying over this.", "strActionGroup" : "Ship", "strColor" : "Neutral", 
+    "bIgnoreFeelings" : true, "nLogging" : 1, "ShipTestThem"  : "IsInCombatWithOther", "LootCTsThem" : "CMDConsiderSurrender"
+  },
+  {
+    "strName" : "SHIPSurrender", "strTitle" : "Offer Surrender", "strDesc" : "[us] is standing down.", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "fDuration" : 0.0005, "bSocial" : true, "bRandomInverse" : false, "nLogging" : 1, "ShipTestThem"  : "IsInCombatWithOther", "LootCTsThem" : "CMDConsiderSurrender"
+  },
+  {
+    "strName" : "SHIPAcceptSurrender",
+    "strTitle" : "Accept Surrender",
+    "strActionGroup" : "Ship",
+    "strDesc" : "[us-regID] standing down.",
+    "strColor" : "SocialStatusGreen",
+    "fDuration"         : 0.000027,
+    "bIgnoreFeelings" : true,
+    "strThemType"       : "Other",
+    "nLogging"         : 1,
+    "ShipTestUs"  : "NotPlayerCurrentShip"
+  },
+  {
+    "strName" : "SHIPDenySurrender",
+    "strTitle" : "Deny Surrender",
+    "strActionGroup" : "Ship",
+    "strDesc" : "Negative, we will end this here and now!",
+    "strColor" : "StatusRed",
+    "fDuration"         : 0.000027,
+    "bIgnoreFeelings" : true,
+    "strThemType"       : "Other",
+    "nLogging"         : 1,
+    "ShipTestUs"  : "NotPlayerCurrentShip"
+  },
+  {
+    "strName" : "SHIPDenySurrenderBreakLock",
+    "strTitle" : "Demand unlock",
+    "strActionGroup" : "Ship",
+    "strDesc" : "Unlock us first, then we will consider your request!",
+    "strColor" : "StatusRed",
+    "fDuration"         : 0.000027,
+    "bIgnoreFeelings" : true,
+    "strThemType"       : "Other",
+    "nLogging"         : 1,
+    "ShipTestUs"  : "NotPlayerCurrentShip"
+  },
+  {
+    "strName" : "SHIPRumorList",
+    "strTitle" : "Ask for Rumor",
+    "strDesc" : "Heard of any rumors?", "strActionGroup" : "Ship", "strColor" : "SocialStatusGreen", "bRandomInverse" : true,
+    "aInverse" : [
+      "PLOT_Merga_WhispersFound03",
+      "PLOT_Merga_WhispersFound04",
+      "SHIPRumorLEO1",
+      "SHIPRumorLEO2",
+      "SHIPRumorLEO3",
+      "SHIPRumorNothing",
+      "SHIPRumorSpam",
+      "SHIPRumorFreezer",
+      "SHIPRumorFightClub",
+      "SHIPRumorUnion",
+      "SHIPRumorMariner1",
+      "SHIPRumorMariner2",
+      "SHIPRumorVenusPiracy",
+      "SHIPRumorPAClerk1",
+      "SHIPRumorPAClerk2",
+      "SHIPRumorStatic",
+      "SHIPRumorLesserKey",
+      "SHIPRumorVatCat",
+      "SHIPRumorProtein",
+      "SHIPRumorLee",
+      "SHIPRumorGoatShanty",
+      "SHIPRumorProkofiev",
+      "SHIPRumorLuscaFood",
+      "SHIPRumorOssifex"
+
+    ],
+    "bSocial" : true, "bOpener" : false, "nLogging" : 1
+  },
+
+  {
+    "strName" : "SHIPRumorNothing",
+    "strTitle" : "Rumor Nothing",
+    "strDesc" : "Whole lotta nothing, [them-regID]. I'm beginning to think we're the only two ships out here.", 
+    "strActionGroup" : "Ship", "strColor" : "SocialStatusGreen",
+    "aInverse" : [],
+    "bSocial" : true, "bOpener" : false, "nLogging" : 1
+  },
+
+  {
+    "strName" : "SHIPRumorSpam",
+    "strTitle" : "Spam Rumor",
+    "strDesc" : "Another ship got spammed an empty packet. Uncompressed, all zeroes. Fifth time this week. Either someone is playing a prank or...well, I don't know what.",
+    "strActionGroup" : "Ship", "strColor" : "SocialStatusGreen",
+    "aInverse" : [],
+    "bSocial" : true, "bOpener" : false, "nLogging" : 1
+  },
+
+  {
+    "strName" : "SHIPRumorFreezer",
+    "strTitle" : "Freezer Rumor",
+    "strDesc" : "A couple of dopes in the OE managed to get themselves locked in the Mescaform freezer. Barkeep found them the next morning frostbitten and drunk as all sin. One of them lost a finger.",
+    "strActionGroup" : "Ship", "strColor" : "SocialStatusGreen",
+    "aInverse" : [],
+    "bSocial" : true, "bOpener" : false, "nLogging" : 1
+  },
+
+  {
+    "strName" : "SHIPRumorFightClub",
+    "strTitle" : "Fight Club Rumor",
+    "strDesc" : "There's a fight club on OKLG, apparently. Bunch of desk jockeys getting their anger out. Not a fighter myself, but I'd take a gander.",
+    "strActionGroup" : "Ship", "strColor" : "SocialStatusGreen",
+    "aInverse" : [],
+    "bSocial" : true, "bOpener" : false, "nLogging" : 1
+  },
+
+  {
+    "strName" : "SHIPRumorUnion",
+    "strTitle" : "Offer Rumor",
+    "strDesc" : "Breaker's Union can't get enough support from the rank and file for a strike. I'm starting to think Ayo is seeding it with saboteurs.",
+    "strActionGroup" : "Ship", "strColor" : "SocialStatusGreen",
+    "aInverse" : [],
+    "bSocial" : true, "bOpener" : false, "nLogging" : 1
+  },
+
+  {
+    "strName" : "SHIPRumorMariner1",
+    "strTitle" : "Offer Rumor",
+    "strDesc" : "Folks keep saying they're seeing something purple floating outside their ship. Ever heard of The Mariner? I'm not superstitious myself but that one...that one gets me. ",
+    "strActionGroup" : "Ship", "strColor" : "SocialStatusGreen",
+    "aInverse" : [],
+    "bSocial" : true, "bOpener" : false, "nLogging" : 1
+  },
+
+  {
+    "strName" : "SHIPRumorMariner2",
+    "strTitle" : "Offer Rumor",
+    "strDesc" : "More and more punk kids wearing purple and getting stoned on OKLG. I know what they're getting at, who they are trying to meet. But I'm not gonna say it.",
+    "strActionGroup" : "Ship", "strColor" : "SocialStatusGreen",
+    "aInverse" : [],
+    "bSocial" : true, "bOpener" : false, "nLogging" : 1
+  },
+
+  {
+    "strName" : "SHIPRumorVenusPiracy",
+    "strTitle" : "Offer Rumor",
+    "strDesc" : "Piracy is completely out of control around the Venus aerostats. They hit a dozen ships last week. Folks won't even fly from Newcal to Encantado to watch the races. Shameful shit if you ask me.",
+    "strActionGroup" : "Ship", "strColor" : "SocialStatusGreen",
+    "aInverse" : [],
+    "bSocial" : true, "bOpener" : false, "nLogging" : 1
+  },
+
+  {
+    "strName" : "SHIPRumorPAClerk1",
+    "strTitle" : "Offer Rumor",
+    "strDesc" : "New clerk at the Port Authority seems like a pushover. Buddy of mine sweet talked her way out of a few docking fees. She's a looker, but still.",
+    "strActionGroup" : "Ship", "strColor" : "SocialStatusGreen",
+    "aInverse" : [],
+    "bSocial" : true, "bOpener" : false, "nLogging" : 1
+  },
+
+  {
+    "strName" : "SHIPRumorPAClerk2",
+    "strTitle" : "Offer Rumor",
+    "strDesc" : "New clerk at the Port Authority scares easy. They dropped my docking fee after I gave them the ol' prison yard stare. Who says you can't learn anything in the joint?",
+    "strActionGroup" : "Ship", "strColor" : "SocialStatusGreen",
+    "aInverse" : [],
+    "bSocial" : true, "bOpener" : false, "nLogging" : 1
+  },
+
+  {
+    "strName" : "SHIPRumorStatic",
+    "strTitle" : "Offer Rumor",
+    "strDesc" : "Buddy of mine, a porter, heard something banging around one of their empty cabins the other night. Thought it was a stowaway. When they checked the cams, though, there was static in the center of the picture, near the bed. Damndest thing.",
+    "strActionGroup" : "Ship", "strColor" : "SocialStatusGreen",
+    "aInverse" : [],
+    "bSocial" : true, "bOpener" : false, "nLogging" : 1
+  },
+
+  {
+    "strName" : "SHIPRumorLesserKey",
+    "strTitle" : "Offer Rumor",
+    "strDesc" : "You remember that ship that escaped the Perpetual Protein lab breach? Name of The Lesser Key of Solomon? I heard it was spotted along the Ganymed orbit.",
+    "strActionGroup" : "Ship", "strColor" : "SocialStatusGreen",
+    "aInverse" : [],
+    "bSocial" : true, "bOpener" : false, "nLogging" : 1
+  },
+
+  {
+    "strName" : "SHIPRumorVatCat",
+    "strTitle" : "Offer Rumor",
+    "strDesc" : "I've been seeing more and more of those vat grown cats, you know? From Hyun Lee Petware? I don't understand the appeal myself.",
+    "strActionGroup" : "Ship", "strColor" : "SocialStatusGreen",
+    "aInverse" : [],
+    "bSocial" : true, "bOpener" : false, "nLogging" : 1
+  },
+
+  {
+    "strName" : "SHIPRumorProtein",
+    "strTitle" : "Offer Rumor",
+    "strDesc" : "I don't understand why everyone is so freaked out about the Perpetual Protein thing. Meat is meat, as far as I'm concerned. You think Trencher's is any better?",
+    "strActionGroup" : "Ship", "strColor" : "SocialStatusGreen",
+    "aInverse" : [],
+    "bSocial" : true, "bOpener" : false, "nLogging" : 1
+  },
+
+  {
+    "strName" : "SHIPRumorLee",
+    "strTitle" : "Offer Rumor",
+    "strDesc" : "That Professor Park Hyun Lee is a true bastard. Unleashing that monstrosity on the world. And for what? G-mod goat meat? Space him, I say.",
+    "strActionGroup" : "Ship", "strColor" : "SocialStatusGreen",
+    "aInverse" : [],
+    "bSocial" : true, "bOpener" : false, "nLogging" : 1
+  },
+
+  {
+    "strName" : "SHIPRumorGoatShanty",
+    "strTitle" : "Offer Rumor",
+    "strDesc" : "Two horns, two eyes and a smiling tooth. Arranged just above his cloven hoof. Then from the void you'll hear the drums. For this is how the Goatman comes.",
+    "strActionGroup" : "Ship", "strColor" : "SocialStatusGreen",
+    "aInverse" : [],
+    "bSocial" : true, "bOpener" : false, "nLogging" : 1
+  },
+
+  {
+    "strName" : "SHIPRumorProkofiev",
+    "strTitle" : "Offer Rumor",
+    "strDesc" : "Heard some freak managed to climb up the well at Prokofiev, if you can believe it.",
+    "strActionGroup" : "Ship", "strColor" : "SocialStatusGreen",
+    "aInverse" : [],
+    "bSocial" : true, "bOpener" : false, "nLogging" : 1
+  },
+
+  {
+    "strName" : "SHIPRumorLuscaFood",
+    "strTitle" : "Offer Rumor",
+    "strDesc" : "You ever tried lusca before? A buddy of mine says they serve it at weddings on Hangzhou. Melts like butter, he said.",
+    "strActionGroup" : "Ship", "strColor" : "SocialStatusGreen",
+    "aInverse" : [],
+    "bSocial" : true, "bOpener" : false, "nLogging" : 1
+  },
+
+  {
+    "strName" : "SHIPRumorOssifex",
+    "strTitle" : "Offer Rumor",
+    "strDesc" : "I've been off of long-hauling for so long now, my body aches when I put my boots on. I gotta get a line on some Ossifex.",
+    "strActionGroup" : "Ship", "strColor" : "SocialStatusGreen",
+    "aInverse" : [],
+    "bSocial" : true, "bOpener" : false, "nLogging" : 1
+  },
+
+  {
+    "strName" : "SHIPRumorLEO1",
+    "strTitle" : "Offer Rumor",
+    "strDesc" : "The Harbourmaster has been more paranoid than usual lately. Has a private detail guarding his quarters all night. Running 12 hour shifts. The whole thing has become a huge drain on department resources.",
+    "strActionGroup" : "Ship", "strColor" : "SocialStatusGreen",
+    "aInverse" : [],
+    "CTTestUs" : "TIsLEO",
+    "bSocial" : true, "bOpener" : false, "nLogging" : 1
+  },
+
+  {
+    "strName" : "SHIPRumorLEO2",
+    "strTitle" : "Offer Rumor",
+    "strDesc" : "We keep seeing tags of the number 79 around the station, especially over there in the OE? I think it's bored kids but my boss insists it's some kind of cult.",
+    "strActionGroup" : "Ship", "strColor" : "SocialStatusGreen",
+    "aInverse" : [],
+    "CTTestUs" : "TIsLEO",
+    "bSocial" : true, "bOpener" : false, "nLogging" : 1
+  },
+
+  {
+    "strName" : "SHIPRumorLEO3",
+    "strTitle" : "Offer Rumor",
+    "strDesc" : "I don't know what to make of this living meat story. Everyone I've seen talk about it seems half-insane.",
+    "strActionGroup" : "Ship", "strColor" : "SocialStatusGreen",
+    "aInverse" : [],
+    "CTTestUs" : "TIsLEO",
+    "bSocial" : true, "bOpener" : false, "nLogging" : 1
+  },
+
+  {
+    "strName" : "SHIPHailDeny", "strTitle" : "Hail Deny", "strDesc" : "[us-regID] does not react.", "strActionGroup" : "Ship", "strColor" : "StatusRed", "nMoveType" : 4,
+    "bSocial" : true, "nLogging" : 1, "bHumanOnly" : false, "strThemType" : "Other", "CTTestUs" : "TIsBadPirate"
+  },
+  {
+    "strName" : "SHIPDataRequestCrew", "strTitle" : "Request crew list", "strDesc" : "[us-regID] requests crew list.", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "aInverse" : [
+      "SHIPDataRequestCrewAllow",
+      "SHIPDataRequestDeny"
+    ],
+    "nLogging" : 1, "bIgnoreFeelings" : true, "bOpener" : true
+  },
+  {
+    "strName" : "SHIPDataRequestStatus", "strTitle" : "Ship status", "strDesc" : "[them-regID] report status!", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "aInverse" : [
+      "SHIPDataRequestStatusAllow",
+      "SHIPDataRequestStatusDerelictDeny",
+      "SHIPDataRequestDeny"
+    ],
+    "bIgnoreFeelings" : true, "bOpener" : true, "nLogging" : 1
+  },
+  {    "strName" : "SHIPDataRequestCrewAllow", "strTitle" : "Crew list transmitted", "strDesc" : "Data received - Crew list: [data]", "strActionGroup" : "Ship", "strColor" : "Neutral", "nLogging" : 1, "LootCTsUs" : "DataCTCrew" },
+  {    "strName" : "SHIPDataRequestDeny", "strTitle" : "Request Denied", "strDesc" : "Request denied.", "strActionGroup" : "Ship", "strColor" : "Neutral", "bSocial" : true, "nLogging" : 1  },
+  {    "strName" : "SHIPDataRequestStatusAllow", "strTitle" : "Status transmitted", "strDesc" : "Response: [data]", "strActionGroup" : "Ship", "strColor" : "Neutral", "nLogging" : 1, "bSocial" : true,"LootCTsUs" : "DataStatus", "ShipTestUs" : "NotDerelict"  },
+  {    "strName" : "SHIPDataRequestStatusDerelictDeny", "strTitle" : "Derelict Request Denied", "strDesc" : "Response: ...<static>...", "strActionGroup" : "Ship", "strColor" : "Neutral", "ShipTestUs" : "Derelict", "nLogging" : 1  },
+
+  {
+    "strName" : "SHIPDataRequestMarket", "strTitle" : "Request Market data", "strDesc" : "[us-regID] requests market information.", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "aInverse" : [
+      "SHIPDataRequestMarketAllow",
+      "SHIPDataRequestDeny"
+    ],
+    "nLogging" : 1, "bIgnoreFeelings" : true, "bOpener" : true
+  },
+  {    "strName" : "SHIPDataRequestMarketAllow", "strTitle" : "Market data transmitted", "strDesc" : "Data received - Market information: [data]", "strActionGroup" : "Ship", "strColor" : "Neutral", "nLogging" : 1, "LootCTsUs" : "DataMarketStatus" },
+  
+  {
+    "strName" : "SHIPComeHere", "strTitle" : "Come here!", "strDesc" : "[us-regID] requests [them-regID] to come over.", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "aInverse" : [ 
+      "SHIPComingAllow",
+      "SHIPComeHereDeny"
+    ], "bSocial" : true, "bRandomInverse" : false, "bOpener" : true, "nLogging" : 1, "bHumanOnly" : false
+  },
+  {
+    "strName" : "SHIPComingAllow", "strTitle" : "Ship will come", "strDesc" : "Roger, [them-regID] is en route.", "strActionGroup" : "Ship", "strColor" : "SocialStatusGreen",
+    "aInverse" : [  ],
+    "bSocial" : true, "bOpener" : false, "bPause" : false,
+    "nLogging" : 1, "bHumanOnly" : false, "LootCTsUs" : "CMDComeHere", "PSpecTestThem" : "RELClose"
+  },
+  {
+    "strName" : "SHIPComeHereDeny", "strTitle" : "Ship will not come", "strDesc" : "Negative, request denied", "strActionGroup" : "Ship", "strColor" : "SocialStatusGreen",
+    "aInverse" : [  ],
+    "bSocial" : true, "bOpener" : false, "bPause" : false, "nLogging" : 1, "bHumanOnly" : false, "strColor" : "StatusRed"
+  },
+  {
+    "strName" : "SHIPRequestSurrender", "strTitle" : "Pew Pew", "strDesc" : "[us-regID] makes shooting sounds.", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "aInverse" : [
+      "SHIPBeAnnoyed"
+    ],
+    "fDuration" : 0.0005, "bSocial" : true, "bRandomInverse" : false, "bOpener" : true, "nLogging" : 1, "bHumanOnly" : false
+  },
+  {
+    "strName" : "SHIPBeAnnoyed", "strTitle" : ":-(", "strDesc" : "You need some ass whoopin'?", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "aInverse" : [
+      "SHIPJustAPrank"
+    ],
+    "fDuration" : 0.0005, "bSocial" : true, "bRandomInverse" : false, "bOpener" : true, "nLogging" : 1
+  },
+  {
+    "strName" : "SHIPJustAPrank", "strTitle" : "Just a prank, relax and besides this is only MS13, you cannot shoot me :-P", "strDesc" : "Just a prank, relax and besides this is only MS13, you cannot shoot me :-P", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "aInverse" : [
+      "SHIPReally"
+    ],
+    "fDuration" : 0.0005, "bSocial" : true, "bRandomInverse" : false, "bOpener" : true, "nLogging" : 1
+  },
+  {
+    "strName" : "SHIPReally", "strTitle" : "U sure?", "strDesc" : "You sure about this bro?", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "aInverse" : [
+    ],
+    "fDuration" : 0.0005, "bSocial" : true, "bRandomInverse" : false, "bOpener" : true, "nLogging" : 1, "bHumanOnly" : false, "LootCTsUs" : "CMDShoot"
+  },
+  {
+    "strName" : "SHIPCheatMakeFriend", "strTitle" : "cheat", "strDesc" : "[them-regID] you are my friend now!", "strActionGroup" : "Ship", "strColor" : "SocialStatusGreen",
+    "aInverse" : [  ],
+    "bSocial" : true, "strLootRELChangeThemSeesUs" : "RELFriend", "strLootRELChangeUsSeesThem" : "RELFriend",
+    "nLogging" : 1
+  },
+  {
+    "strName" : "SHIPDerelictHailsPlayer", "strTitle" : "cheat", "strDesc" : "<static noise>010: 0000 0000 0000 0000 0000 0000 0000 0000 0x0020: 0000 0000 0000 0000 0000 0000 0000 <transmission ended>", "strActionGroup" : "Ship", "strColor" : "Neutral",
+    "nLogging" : 1, "ShipTestUs" : "Derelict", "ShipTestThem" : "PlayerCurrentShip"
+  },
+  {
+    "strName" : "SHIPBlockadeComing", "strTitle" : "Blockade Warning", "strDesc" : "Vessel [them-regID], you are in a restricted area. Vacate immediately or be destroyed.", "strActionGroup" : "Ship", "strColor" : "Bad",
+    "aInverse" : [  ],
+    "nLogging" : 1, "ShipTestUs" : "IsBlockader"
+  }
+]

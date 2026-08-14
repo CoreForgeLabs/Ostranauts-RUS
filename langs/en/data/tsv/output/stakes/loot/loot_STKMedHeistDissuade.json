@@ -1,0 +1,99 @@
+
+[
+  {
+    "strName" : "COND_STKMedHeistDissuade_Intro_Us",
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKMedHeistDissuade_Intro_Them",
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKMedHeistDissuade_Intro_Allow_Us",
+    "aCOs"    : [
+      "InSocialCombat=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKMedHeistDissuade_Intro_Allow_Them",
+    "aCOs"    : [
+      "InSocialCombat=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKMedHeistDissuade_Fail_Hard_DcAutonomyBad_Us",
+    "aCOs"    : [
+      "IsSTKMedHeistDissuade_Fail_Cooldown=1.0x1",
+      "-InSocialCombat=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKMedHeistDissuade_Fail_Hard_DcAutonomyBad_Them",
+    "aCOs"    : [
+      "-InSocialCombat=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKMedHeistDissuade_Gambit_Family_Us",
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKMedHeistDissuade_Gambit_Family_Them",
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKMedHeistDissuade_Gambit_Family_Allow_Us",
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKMedHeistDissuade_Gambit_Family_Allow_Them",
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKMedHeistDissuade_Gambit_Family_Fail_Soft_Us",
+    "aCOs"    : [
+      "StatPrivacy=1.0x48",
+      "StatAutonomy=1.0x24"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKMedHeistDissuade_Gambit_Family_Fail_Soft_Them",
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKMedHeistDissuade_Gambit_Family_Fail_Hard_Us",
+    "aCOs"    : [
+      "IsSTKMedHeistDissuade_Fail_Cooldown=1.0x1",
+      "-InSocialCombat=1.0x1",
+      "StatAutonomy=1.0x24",
+      "StatPrivacy=1.0x48"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKMedHeistDissuade_Gambit_Family_Fail_Hard_Them",
+    "aCOs"    : [
+      "-InSocialCombat=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKMedHeistDissuade_Exit_Us",
+    "aCOs"    : [
+      "-InSocialCombat=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKMedHeistDissuade_Exit_Them",
+    "aCOs"    : [
+      "-InSocialCombat=1.0x1"
+    ],
+    "strType" : "condition"
+  }
+]

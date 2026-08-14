@@ -1,0 +1,870 @@
+[
+  {
+    "strName" : "AIEquipHelmet",
+    "strNameFriendly" : "Equip helmet",
+    "strType" : "repeat",
+    "strIATrigger" : "EquipHelmetNotCarried",
+    "aIAEnd" : ["PLGEquipHelmetFinished"],
+    "strThemID" : null,
+    "nPriority" : 11
+  },
+  {
+    "strName" : "AIEquipSpaceSuitAndHelmet",
+    "strNameFriendly" : "Equip suit and helmet",
+    "strType" : "wearsuit",
+    "strIATrigger" : "PLGAIWearSuitTriggered",
+    "aIAEnd" : ["PLGAIWearSuitAndHelmetFinished"],
+    "strThemID" : null,
+    "nPriority" : 11
+  },
+  {
+    "strName" : "AIEquipSuit",
+    "strNameFriendly" : "Equip suit",
+    "strType" : "repeat",
+    "strIATrigger" : "EquipSuitNotCarried",
+    "aIAEnd" : ["PLGEquipSuitFinished"],
+    "strThemID" : null,
+    "nPriority" : 11
+  },
+  {
+    "strName" : "AISurviveCO2",
+    "strNameFriendly" : "Survive CO2",
+    "strType" : "surviveco2",
+    "strIATrigger" : "PLGAISurviveCO2",
+    "aIAEnd" : null,
+    "strIAEmergency" : "PLGAISurviveCO2Emergency",
+    "strThemID" : null,
+    "nPriority" : 11
+  },
+  {
+    "strName" : "AISurviveO2",
+    "strType" : "surviveo2",
+    "strNameFriendly" : "Survive O2",
+    "strIATrigger" : "PLGAISurviveO2",
+    "aIAEnd" : null,
+    "strThemID" : null,
+    "strIAEmergency" : "PLGAISurviveO2Emergency",
+    "nPriority" : 11
+  },
+  {
+    "strName" : "AICombat",
+    "strNameFriendly" : "Combat",
+    "strType" : "combat",
+    "strIATrigger" : "PLGCombatTrigger",
+    "aIAEnd" : [ 
+      "PLGAIEndHack",
+      "PLGAIEndDecoy" ],
+    "strThemID" : "[them]",
+    "nPriority" : 10
+  },
+  {
+    "strName" : "AIStandUp",
+    "strNameFriendly" : "Stand up",
+    "strType" : "repeat",
+    "strIATrigger" : "ACTStandUp",
+    "aIAEnd" : null,
+    "strThemID" : null,
+    "nPriority" : 10
+  },
+  {
+    "strName" : "AICombatJoin",
+    "strNameFriendly" : "Combat join",
+    "strType" : "combat",
+    "strIATrigger" : "PLGCombatTrigger",
+    "aIAEnd" : null,
+    "strThemID" : "[3rd]",
+    "nPriority" : 10
+  },
+  {
+    "strName" : "AIFirefight",
+    "strNameFriendly" : "Firefight",
+    "strType" : "firefight",
+    "strIATrigger" : "PLGAIFirefightDo",
+    "strIAEmergency" : "PLGAIFirefightEmergency",
+    "aIAEnd" : null,
+    "strThemID" : null,
+    "bThemAllowDocked" : false,
+    "bThemForgetOnDo" : true,
+    "nPriority" : 9
+  },
+  {
+    "strName" : "AIRechargeBatteries",
+    "strNameFriendly" : "Recharge batteries",
+    "strType" : "recharge",
+    "strIATrigger" : "PLGRechargeBatteriesDo",
+    "aIAEnd" : null,
+    "strThemID" : null,
+    "bThemAllowDocked" : false,
+    "bThemForgetOnDo" : true,
+    "nPriority" : 4
+  },
+  {
+    "strName" : "AIReplaceO2Bottles",
+    "strNameFriendly" : "Replace O2 Bottles",
+    "strType" : "replaceo2",
+    "strIATrigger" : "PLGReplaceO2BottlesDo",
+    "aIAEnd" : null,
+    "strThemID" : null,
+    "bThemAllowDocked" : false,
+    "bThemForgetOnDo" : true,
+    "nPriority" : 9
+  },
+  {
+    "strName" : "AIMaintenanceTechWorkFireExtinguish",
+    "strNameFriendly" : "MaintenanceTech extinguish",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGAIMaintenanceTechWorkFireExtinguishDo",
+    "aIAEnd" : [ ],
+    "strThemID" : null,
+    "bThemAllowDocked" : true,
+    "bThemForgetOnDo" : true,
+    "nPriority" : 9
+  },
+  {
+    "strName" : "AIRobotDroneDecoyDo",
+    "strNameFriendly" : "Drone decoy",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGAIRobotDroneDecoyDo",
+    "aIAEnd" : ["PLGAIRobotDroneDecoyEnd"],
+    "strThemID" : null,
+    "bThemAllowDocked" : true,
+    "nPriority" : 9
+  },
+  {
+    "strName" : "AICombatBoarding",
+    "strNameFriendly" : "Combat Boarding",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGAICombatBoarding",
+    "aIAEnd" : ["PLGAICombatBoardingEnd"],
+    "strThemID" : null,
+    "nPriority" : 8
+  },
+  {
+    "strName" : "AICrimeArrestOKLGLEODo",
+    "strNameFriendly" : "Arrest",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGAICrimeOKLGLEOArrestDo",
+    "aIAEnd" : [
+      "PLGAICrimeLEOArrestCancelScan", 
+      "PLGAICrimeOKLGLEOArrestEnd"
+    ],
+    "strThemID" : "[them]",
+    "bThemAllowDocked" : true,
+    "nPriority" : 8
+  },
+  {
+    "strName" : "AICrimeAttackOKLGLEO",
+    "strNameFriendly" : "Attack",
+    "strType" : "crime",
+    "strIATrigger" : "PLGAICrimeOKLGLEOThreat",
+    "aIAEnd" : null,
+    "strThemID" : null,
+    "bThemAllowDocked" : true,
+    "nPriority" : 8
+  },
+  {
+    "strName" : "AICrimeArrestCCRELEODo",
+    "strNameFriendly" : "Attack",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGAICrimeCCRELEOArrestDo",
+    "aIAEnd" : [
+      "PLGAICrimeLEOArrestCancelScan", 
+      "PLGAICrimeCCRELEOArrestEnd"
+     ],
+    "strThemID" : "[them]",
+    "bThemAllowDocked" : true,
+    "nPriority" : 8
+  },
+  {
+    "strName" : "AICrimeArrestVenusLEODo",
+    "strNameFriendly" : "Attack",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGAICrimeVenusLEOArrestDo",
+    "aIAEnd" : [
+      "PLGAICrimeLEOArrestCancelScan", 
+      "PLGAICrimeVenusLEOArrestEnd", 
+      "PLGAIEndHack",
+      "PLGAIEndDecoy" ],
+    "strThemID" : "[them]",
+    "bThemAllowDocked" : true,
+    "nPriority" : 8
+  },
+  {
+    "strName" : "AICrimeAttackCCRELEO",
+    "strNameFriendly" : "Attack",
+    "strType" : "crime",
+    "strIATrigger" : "PLGAICrimeCCRELEOThreat",
+    "aIAEnd" : null,
+    "strThemID" : null,
+    "bThemAllowDocked" : true,
+    "nPriority" : 8
+  },
+  {
+    "strName" : "AICrimeAttackVenusLEO",
+    "strNameFriendly" : "Attack",
+    "strType" : "crime",
+    "strIATrigger" : "PLGAICrimeVenusLEOThreat",
+    "aIAEnd" : null,
+    "strThemID" : null,
+    "bThemAllowDocked" : true,
+    "nPriority" : 8
+  },
+  {
+    "strName" : "AIRobberyStart",
+    "strNameFriendly" : "Rob",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGAIRobbery",
+    "aIAEnd" : null,
+    "strThemID" : null,
+    "nPriority" : 8
+  },
+  {
+    "strName" : "AIRobberyDo",
+    "strNameFriendly" : "Rob",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGAIRobberyDo",
+    "aIAEnd" : [
+      "PLGAIRobberyEnd"
+    ],
+    "strThemID" : "[them]",
+    "nPriority" : 8
+  },
+  {
+    "strName" : "AIShipRobberyStart",
+    "strNameFriendly" : "Rob",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGAIShipRobbery",
+    "aIAEnd" : null,
+    "strThemID" : null,
+    "bThemAllowDocked" : true,
+    "nPriority" : 8
+  },
+  {
+    "strName" : "AIShipRobberyDo",
+    "strNameFriendly" : "Rob",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGAIRobberyDo",
+    "aIAEnd" : [
+      "PLGShipAIRobberyEnd",
+      "PLGShipAIRobberyFailed"
+    ],
+    "strThemID" : "[them]",
+    "bThemAllowDocked" : true,
+    "nPriority" : 8
+  },
+  {
+    "strName" : "AIMaintenanceTechWorkOKLGPatch",
+    "strNameFriendly" : "MaintenanceTech patch",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGAIMaintenanceTechWorkPatchDo",
+    "aIAEnd" : null,
+    "strThemID" : null,
+    "bThemAllowDocked" : false,
+    "bThemForgetOnDo" : true,
+    "nPriority" : 8
+  },
+  {
+    "strName" : "AIGreetCaptainStart",
+    "strNameFriendly" : "Greet Captain",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGAIGreetCaptainDo",
+    "aIAEnd" : null,
+    "bThemAllowDocked" : true,
+    "nPriority" : 8
+  },
+  {
+    "strName" : "AIGreetEnemyStart",
+    "strNameFriendly" : "Greet Enemy",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGAIGreetEnemyDo",
+    "aIAEnd" : null,
+    "bThemAllowDocked" : true,
+    "nPriority" : 8
+  },
+  {
+    "strName" : "AIGreetFriendStart",
+    "strNameFriendly" : "Greet Friend",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGAIGreetFriendDo",
+    "aIAEnd" : null,
+    "bThemAllowDocked" : true,
+    "nPriority" : 8
+  },
+  {
+    "strName" : "AIGreetLoverStart",
+    "strNameFriendly" : "Greet Lover",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGAIGreetLoverDo",
+    "aIAEnd" : null,
+    "bThemAllowDocked" : true,
+    "nPriority" : 8
+  },
+  {
+    "strName" : "AIFreeUpSpace",
+    "strNameFriendly" : "Free up space",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGAIFreeUpSpace",
+    "aIAEnd" : ["PLGAIFreeUpSpaceDone"],
+    "strThemID" : null,
+    "nPriority" : 8
+  },
+  {
+    "strName" : "AIEat",
+    "strNameFriendly" : "Eat",
+    "strType" : "eat",
+    "strIATrigger" : "PLGAIEat",
+    "aIAEnd" : null,
+    "strThemID" : null,
+    "nPriority" : 7
+  },
+  {
+    "strName" : "AIDrink",
+    "strNameFriendly" : "Drink",
+    "strType" : "drink",
+    "strIATrigger" : "PLGAIDrink",
+    "aIAEnd" : null,
+    "strThemID" : null,
+    "nPriority" : 7
+  },
+  {
+    "strName" : "AICrimeArrestOKLGLEOStart",
+    "strNameFriendly" : "Crime arrest",
+    "strType" : "crime",
+    "strIATrigger" : "PLGAICrimeOKLGLEOArrest",
+    "aIAEnd" : null,
+    "strThemID" : null,
+    "bThemAllowDocked" : true,
+    "nPriority" : 6
+  },
+  {
+    "strName" : "AICrimeArrestOKLGLEOStolenShipStart",
+    "strNameFriendly" : "Crime arrest",
+    "strType" : "crime",
+    "strIATrigger" : "PLGAICrimeOKLGLEOArrestStolenShip",
+    "aIAEnd" : null,
+    "strThemID" : null,
+    "bThemAllowDocked" : true,
+    "nPriority" : 6
+  },
+  {
+    "strName" : "AICrimeArrestCCRELEOStart",
+    "strNameFriendly" : "Crime arrest",
+    "strType" : "crime",
+    "strIATrigger" : "PLGAICrimeCCRELEOArrest",
+    "aIAEnd" : null,
+    "strThemID" : null,
+    "bThemAllowDocked" : true,
+    "nPriority" : 6
+  },
+  {
+    "strName" : "AICrimeArrestCCRELEOStolenShipStart",
+    "strNameFriendly" : "Crime arrest",
+    "strType" : "crime",
+    "strIATrigger" : "PLGAICrimeCCRELEOArrestStolenShip",
+    "aIAEnd" : null,
+    "strThemID" : null,
+    "bThemAllowDocked" : true,
+    "nPriority" : 6
+  },
+  {
+    "strName" : "AICrimeArrestVenusLEOStart",
+    "strNameFriendly" : "Crime arrest",
+    "strType" : "crime",
+    "strIATrigger" : "PLGAICrimeVenusLEOArrest",
+    "aIAEnd" : null,
+    "strThemID" : null,
+    "bThemAllowDocked" : true,
+    "nPriority" : 6
+  },
+  {
+    "strName" : "AICrimeArrestVenusLEOStolenShipStart",
+    "strNameFriendly" : "Crime arrest",
+    "strType" : "crime",
+    "strIATrigger" : "PLGAICrimeVenusLEOArrestStolenShip",
+    "aIAEnd" : null,
+    "strThemID" : null,
+    "bThemAllowDocked" : true,
+    "nPriority" : 6
+  },
+  {
+    "strName" : "AIRobotDroneDecoyStart",
+    "strNameFriendly" : "Drone decoy",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGAIRobotDroneDecoy",
+    "aIAEnd" : [ ],
+    "strThemID" : null,
+    "bThemAllowDocked" : true,
+    "bThemForgetOnDo" : true,
+    "nPriority" : 6
+  },
+
+  {
+    "strName" : "AIMaintenanceTechWorkRetrieveDead",
+    "strNameFriendly" : "MaintenanceTech retrieve",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGAIMaintenanceTechWorkRetrieveDead",
+    "aIAEnd" : [ ],
+    "strThemID" : null,
+    "bThemAllowDocked" : false,
+    "bThemForgetOnDo" : true,
+    "nPriority" : 6
+  },
+  {
+    "strName" : "AIMaintenanceTechWorkRetrieveDeadDo",
+    "strNameFriendly" : "MaintenanceTech retrieve",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGAIMaintenanceTechWorkRetrieveDeadDo",
+    "aIAEnd" : [ "PLGAIMaintenanceTechWorkRetrieveDeadDoEndOffShip", "PLGAIMaintenanceTechWorkRetrieveDeadDoEnd" ],
+    "strThemID" : "[them]",
+    "bThemAllowDocked" : false,
+    "nPriority" : 6
+  },
+  {
+    "strName" : "AIMaintenanceTechWorkRetrieveDeadDeliver",
+    "strNameFriendly" : "MaintenanceTech deliver",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGAIMaintenanceTechWorkRetrieveDeadDoDeliverBodyShim",
+    "aIAEnd" : [ "PLGAIMaintenanceTechWorkRetrieveDeadDoDeliverBodyEnd" ],
+    "strThemID" : "[them]",
+    "bThemAllowDocked" : false,
+    "nPriority" : 6
+  },
+  
+  {
+    "strName" : "AIReportCrimeCCREArrest",
+    "strNameFriendly" : "Report crime",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGAIReportCrimeCCREArrest",
+    "aIAEnd" : ["PLGAIReportCrimeCCREArrestDone","PLGAIReportCrimeImmuneDone"],
+    "strThemID" : null,
+    "nPriority" : 6
+  },
+  {
+    "strName" : "AIReportCrimeCCREThreat",
+    "strNameFriendly" : "Report crime",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGAIReportCrimeCCREThreat",
+    "aIAEnd" : ["PLGAIReportCrimeCCREThreatDone","PLGAIReportCrimeImmuneDone"],
+    "strThemID" : null,
+    "nPriority" : 6
+  },
+  {
+    "strName" : "AIReportCrimeOKLGArrest",
+    "strNameFriendly" : "Report crime",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGAIReportCrimeOKLGArrest",
+    "aIAEnd" : ["PLGAIReportCrimeOKLGArrestDone","PLGAIReportCrimeImmuneDone"],
+    "strThemID" : null,
+    "nPriority" : 6
+  },
+  {
+    "strName" : "AIReportCrimeOKLGThreat",
+    "strNameFriendly" : "Report crime",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGAIReportCrimeOKLGThreat",
+    "aIAEnd" : ["PLGAIReportCrimeOKLGThreatDone","PLGAIReportCrimeImmuneDone"],
+    "strThemID" : null,
+    "nPriority" : 6
+  },
+  {
+    "strName" : "AIReportCrimeVenusArrest",
+    "strNameFriendly" : "Report crime",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGAIReportCrimeVenusArrest",
+    "aIAEnd" : ["PLGAIReportCrimeVenusArrestDone","PLGAIReportCrimeImmuneDone"],
+    "strThemID" : null,
+    "nPriority" : 6
+  },
+  {
+    "strName" : "AIReportCrimeVenusThreat",
+    "strNameFriendly" : "Report crime",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGAIReportCrimeVenusThreat",
+    "aIAEnd" : ["PLGAIReportCrimeVenusThreatDone","PLGAIReportCrimeImmuneDone"],
+    "strThemID" : null,
+    "nPriority" : 6
+  },
+  {
+    "strName" : "AIReportCrimeVenusTrespass",
+    "strNameFriendly" : "Report crime",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGAIReportCrimeVenusTrespass",
+    "aIAEnd" : ["PLGAIReportCrimeVenusTrespassNPCDone","PLGAIReportCrimeVenusTrespassDone","PLGAIReportCrimeImmuneDone"],
+    "strThemID" : null,
+    "nPriority" : 6
+  },
+  {
+    "strName" : "AIFactionFight",
+    "strNameFriendly" : "Faction fight",
+    "strType" : "faction",
+    "strIATrigger" : "PLGAIFaction",
+    "aIAEnd" : null,
+    "strThemID" : null,
+    "nPriority" : 6
+  },
+  {
+    "strName" : "AIReply",
+    "strNameFriendly" : "Reply",
+    "strType" : "reply",
+    "strIATrigger" : "Blank",
+    "aIAEnd" : null,
+    "strThemID" : null,
+    "nPriority" : 5
+  },
+  {
+    "strName" : "DisembarkCommand",
+    "strNameFriendly" : "Disembark",
+    "strType" : "disembark",
+    "strIATrigger" : "PLGDisembarkCommand",
+    "aIAEnd" : ["PLGDisembarkCommandFinish"],
+    "strThemID" : "[them]",
+    "bThemAllowDocked" : true,
+    "nPriority" : 5
+  },
+  {
+    "strName" : "DisembarkAndUndock",
+    "strNameFriendly" : "Disembark and undock",
+    "strType" : "disembark",
+    "strIATrigger" : "PLGDisembarkCommand",
+    "aIAEnd" : ["PLGDisembarkFinishNextUndock"],
+    "strThemID" : "[them]",
+    "bThemAllowDocked" : true,
+    "nPriority" : 5
+  },
+  {
+    "strName" : "UndockStart",
+    "strNameFriendly" : "Undock",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGUseNav",
+    "aIAEnd" : [ "PLGUseNavEnd" ],
+    "strThemID" : null,
+    "nPriority" : 5
+  },
+  {
+    "strName" : "AIMaintenanceTechWorkRepair",
+    "strNameFriendly" : "MaintenanceTech repair",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGAIMaintenanceTechWorkRepairDo",
+    "aIAEnd" : [ ],
+    "strThemID" : null,
+    "bThemAllowDocked" : false,
+    "bThemForgetOnDo" : true,
+    "nPriority" : 5
+  },
+  {
+    "strName" : "AIMaintenanceTechWorkReplaceCan",
+    "strNameFriendly" : "MaintenanceTech replace",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGAIMaintenanceTechWorkReplaceCanDo",
+    "aIAEnd" : [ ],
+    "strThemID" : null,
+    "bThemAllowDocked" : false,
+    "bThemForgetOnDo" : true,
+    "nPriority" : 5
+  },
+  {
+    "strName" : "AIMaintenanceTechWorkRest",
+    "strNameFriendly" : "MaintenanceTech rest",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGAIMaintenanceTechWorkRestDo",
+    "aIAEnd" : null,
+    "strThemID" : null,
+    "bThemAllowDocked" : false,
+    "nPriority" : 4
+  },
+  {
+    "strName" : "AIMaintenanceTechWorkOKLGRestorePriority",
+    "strNameFriendly" : "MaintenanceTech restore",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGAIMaintenanceTechWorkRestorePriorityDo",
+    "aIAEnd" : null,
+    "strThemID" : null,
+    "bThemAllowDocked" : false,
+    "bThemForgetOnDo" : true,
+    "nPriority" : 4
+  },
+  {
+    "strName" : "AutoClose",
+    "strNameFriendly" : "Close",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGAutoClose",
+    "aIAEnd" : null,
+    "strThemID" : null,
+    "nPriority" : 4
+  },
+  {
+    "strName" : "EmbarkCommand",
+    "strNameFriendly" : "Embark",
+    "strType" : "embark",
+    "strIATrigger" : "PLGEmbarkCommand",
+    "aIAEnd" : ["PLGEmbarkCommandFinish"],
+    "strThemID" : "[them]",
+    "bThemAllowDocked" : true,
+    "nPriority" : 4
+  },
+  {
+    "strName" : "FollowCommand",
+    "strNameFriendly" : "Follow",
+    "strType" : "follow",
+    "strIATrigger" : "PLGFollowCommand",
+    "aIAEnd" : ["PLGFollowCommandFinish"],
+    "strThemID" : "[them]",
+    "bThemAllowDocked" : true,
+    "nPriority" : 4
+  },
+  {
+    "strName" : "PoliceShakedown",
+    "strNameFriendly" : "Shakedown",
+    "strType" : "repeat",
+    "strIATrigger" : "SOCPoliceIntroduction",
+    "aIAEnd" : ["PLGPoliceShakedownFinish"],
+    "strThemID" : null,
+    "bThemAllowDocked" : true,
+    "nPriority" : 4
+  },
+  {
+    "strName" : "StandTable",
+    "strNameFriendly" : "Stand",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGStandTable",
+    "aIAEnd" : null,
+    "strThemID" : null,
+    "nPriority" : 4
+  },
+  {
+    "strName" : "StandTerminal",
+    "strNameFriendly" : "Stand",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGStandTerminal",
+    "aIAEnd" : null,
+    "strThemID" : null,
+    "nPriority" : 4
+  },  
+  {
+    "strName" : "StandKiosk",
+    "strNameFriendly" : "Stand",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGStandKiosk",
+    "aIAEnd" : null,
+    "strThemID" : null,
+    "nPriority" : 4
+  },
+
+      {
+        "strName" : "StandTerminalBingham",
+        "strNameFriendly" : "Stand",
+        "strType" : "repeat",
+        "strIATrigger" : "PLGStandTerminalBingham",
+        "aIAEnd" : null,
+        "strThemID" : null,
+        "nPriority" : 4
+      },
+      {
+        "strName" : "StandTerminalPolaris",
+        "strType" : "repeat",
+        "strIATrigger" : "PLGStandTerminalPolaris",
+        "aIAEnd" : null,
+        "strThemID" : null,
+        "nPriority" : 4
+      },
+      {
+        "strName" : "StandTerminalRenbao",
+        "strNameFriendly" : "Stand",
+        "strType" : "repeat",
+        "strIATrigger" : "PLGStandTerminalRenbao",
+        "aIAEnd" : null,
+        "strThemID" : null,
+        "nPriority" : 4
+      },
+      {
+        "strName" : "StandTerminalGEC",
+        "strNameFriendly" : "Stand",
+        "strType" : "repeat",
+        "strIATrigger" : "PLGStandTerminalGEC",
+        "aIAEnd" : null,
+        "strThemID" : null,
+        "nPriority" : 4
+      },
+      {
+        "strName" : "StandTerminalClothes",
+        "strNameFriendly" : "Stand",
+        "strType" : "repeat",
+        "strIATrigger" : "PLGStandTerminalClothes",
+        "aIAEnd" : null,
+        "strThemID" : null,
+        "nPriority" : 4
+      },
+      {
+        "strName" : "StandTerminalShoes",
+        "strNameFriendly" : "Stand",
+        "strType" : "repeat",
+        "strIATrigger" : "PLGStandTerminalShoes",
+        "aIAEnd" : null,
+        "strThemID" : null,
+        "nPriority" : 4
+      },
+      {
+        "strName" : "StandTerminalCollectiveElectric",
+        "strNameFriendly" : "Stand",
+        "strType" : "repeat",
+        "strIATrigger" : "PLGStandTerminalCollectiveElectric",
+        "aIAEnd" : null,
+        "strThemID" : null,
+        "nPriority" : 4
+      },
+      {
+        "strName" : "StandTerminalRakow",
+        "strNameFriendly" : "Stand",
+        "strType" : "repeat",
+        "strIATrigger" : "PLGStandTerminalRakow",
+        "aIAEnd" : null,
+        "strThemID" : null,
+        "nPriority" : 4
+      },
+      {
+        "strName" : "StandTerminalKang",
+        "strNameFriendly" : "Stand",
+        "strType" : "repeat",
+        "strIATrigger" : "PLGStandTerminalKang",
+        "aIAEnd" : null,
+        "strThemID" : null,
+        "nPriority" : 4
+      },
+      {
+        "strName" : "StandTerminalSulaiman",
+        "strNameFriendly" : "Stand",
+        "strType" : "repeat",
+        "strIATrigger" : "PLGStandTerminalSulaiman",
+        "aIAEnd" : null,
+        "strThemID" : null,
+        "nPriority" : 4
+      },
+      {
+        "strName" : "StandTerminalWeber",
+        "strNameFriendly" : "Stand",
+        "strType" : "repeat",
+        "strIATrigger" : "PLGStandTerminalWeber",
+        "aIAEnd" : null,
+        "strThemID" : null,
+        "nPriority" : 4
+      },
+      {
+        "strName" : "StandTerminalHorang",
+        "strNameFriendly" : "Stand",
+        "strType" : "repeat",
+        "strIATrigger" : "PLGStandTerminalHorang",
+        "aIAEnd" : null,
+        "strThemID" : null,
+        "nPriority" : 4
+      },
+      {
+        "strName" : "StandTerminalHalvorson",
+        "strNameFriendly" : "Stand",
+        "strType" : "repeat",
+        "strIATrigger" : "PLGStandTerminalHalvorson",
+        "aIAEnd" : null,
+        "strThemID" : null,
+        "nPriority" : 4
+      },
+      {
+        "strName" : "StandTerminalBlackWing",
+        "strNameFriendly" : "Stand",
+        "strType" : "repeat",
+        "strIATrigger" : "PLGStandTerminalBlackWing",
+        "aIAEnd" : null,
+        "strThemID" : null,
+        "nPriority" : 4
+      },
+      {
+        "strName" : "StandTerminalFutureFoods",
+        "strNameFriendly" : "Stand",
+        "strType" : "repeat",
+        "strIATrigger" : "PLGStandTerminalFutureFoods",
+        "aIAEnd" : null,
+        "strThemID" : null,
+        "nPriority" : 4
+      },
+      {
+        "strName" : "StandTerminalGott",
+        "strNameFriendly" : "Stand",
+        "strType" : "repeat",
+        "strIATrigger" : "PLGStandTerminalGott",
+        "aIAEnd" : null,
+        "strThemID" : null,
+        "nPriority" : 4
+      },
+  {
+    "strName" : "FlotillaBroker",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGFlotillaBroker",
+    "aIAEnd" : null,
+    "strThemID" : null,
+    "nPriority" : 4
+  },
+  {
+    "strName" : "FlotillaOrganizer",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGFlotillaOrganizer",
+    "aIAEnd" : null,
+    "strThemID" : null,
+    "nPriority" : 4
+  },
+  {
+    "strName" : "AIUnwearSuit",
+    "strNameFriendly" : "Remove Suit",
+    "strType" : "unwearsuit",
+    "strIATrigger" : "PLGAIUnwearSuit",
+    "aIAEnd" : null,
+    "strThemID" : null,
+    "nPriority" : 4
+  },
+  {
+    "strName" : "AIHygiene",
+    "strNameFriendly" : "Hygiene",
+    "strType" : "hygiene",
+    "strIATrigger" : "PLGAIHygiene",
+    "aIAEnd" : null,
+    "strThemID" : null,
+    "nPriority" : 3
+  },
+  {
+    "strName" : "Bartender",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGBartend",
+    "aIAEnd" : null,
+    "strThemID" : null,
+    "nPriority" : 3
+  },
+  {
+    "strName" : "Patrol",
+    "strNameFriendly" : "Patrol",
+    "strType" : "patrol",
+    "strIATrigger" : "PLGPatrolCommand",
+    "aIAEnd" : [],
+    "strThemID" : null,
+    "bThemAllowDocked" : false,
+    "nPriority" : 3
+  },
+  {
+    "strName" : "AIMaintenanceTechWorkOKLGRestorePriority2",
+    "strNameFriendly" : "MaintenanceTech restore",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGAIMaintenanceTechWorkRestorePriority2Do",
+    "aIAEnd" : null,
+    "strThemID" : null,
+    "bThemAllowDocked" : false,
+    "bThemForgetOnDo" : true,
+    "nPriority" : 3
+  },
+  {
+    "strName" : "AIMaintenanceTechWorkOKLGRestore",
+    "strNameFriendly" : "MaintenanceTech restore",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGAIMaintenanceTechWorkRestoreDo",
+    "aIAEnd" : null,
+    "strThemID" : null,
+    "bThemAllowDocked" : false,
+    "bThemForgetOnDo" : true,
+    "nPriority" : 2
+  }
+]

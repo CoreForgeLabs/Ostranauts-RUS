@@ -1,0 +1,8 @@
+[
+{ "strName" : "StatCrimeJFTSArrestWarning", "strNameFriendly" : "JFTS Arrest Warning Count", "strColor" : "Bad", "strDesc"  : "[us] [has] been warned of arrest this many times.", "nDisplaySelf" : 0, "nDisplayOther" : 0, "fDuration" : 0.0, "bRemoveAll" : true },
+{ "strName" : "CrimeJFTSArrest", "strNameFriendly" : "JFTS Arrest Warrant", "strColor" : "Bad", "strDesc"  : "[us] [has] an outstanding arrest warrant in Fort Simpson.", "nDisplaySelf" : 2, "nDisplayOther" : 2, "fDuration" : 0.0, "bRemoveAll" : true, "bInvert" : true },
+{ "strName" : "CrimeJFTSThreat", "strNameFriendly" : "JFTS Public Enemy", "strColor" : "Bad", "strDesc"  : "[us] [is] wanted dead or alive by Fort Simpson LAs, and [is] considered a Public Enemy.", "nDisplaySelf" : 2, "nDisplayOther" : 2, "fDuration" : 0.0, "bRemoveAll" : true, "bInvert" : true },
+{ "strName" : "CrimeJFTSTrespass", "strNameFriendly" : "JFTS Trespass Warrant", "strColor" : "Bad", "strDesc"  : "[us] [has] an outstanding trespass warrant with Fort Simpson.", "nDisplaySelf" : 0, "nDisplayOther" : 0, "fDuration" : 0.00001, "bRemoveAll" : true, "aNext" : ["TUpCrimeJFTSTrespassNext"] },
+{ "strName" : "CrimeJFTSStolenShip", "strNameFriendly" : "JFTS Arrest Warrant for Stolen Ship", "strColor" : "Bad", "strDesc"  : "[us] [has] an outstanding arrest warrant with Fort Simpson for Stealing a Ship", "nDisplaySelf" : 2, "nDisplayOther" : 2, "fDuration" : 0.0, "bRemoveAll" : true },
+{ "strName" : "CrimeJFTSNoUndock", "strNameFriendly" : "JFTS Arrest Warrant for Failure to Undock", "strColor" : "Bad", "strDesc"  : "[us] [has] an outstanding arrest warrant in Fort Simpson for Failure to Undock During Officer Inspection", "nDisplaySelf" : 2, "nDisplayOther" : 2, "fDuration" : 0.0, "bRemoveAll" : true }
+]

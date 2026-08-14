@@ -1,0 +1,592 @@
+[
+    {
+      "strName" : "RandomAsteroidC",
+      "aCOs"    : [
+        "ClusterC01=0.2x1|ClusterC02=0.2x1|ClusterC03=0.2x1|ClusterC04=0.2x1|ClusterS01=0.15x1|ClusterM01=0.05x1"
+      ],
+      "aLoots"  : [
+      ],
+      "strType" : "ship"
+    },
+    {
+      "strName" : "RandomAsteroidS",
+      "aCOs"    : [
+        "ClusterS01=0.5x1|ClusterC01=0.1x1|ClusterC02=0.1x1|ClusterC03=0.1x1|ClusterC04=0.1x1|ClusterM02=0.1x1"
+      ],
+      "aLoots"  : [
+      ],
+      "strType" : "ship"
+    },
+    {
+      "strName" : "RandomAsteroidM",
+      "aCOs"    : [
+        "ClusterC01=0.05x1|ClusterC02=0.05x1|ClusterC03=0.05x1|ClusterC04=0.05x1|ClusterM01=0.15x1|ClusterM02=0.15x1|ClusterM03=0.15x1|ClusterS01=0.35x1"
+      ],
+      "aLoots"  : [
+      ],
+      "strType" : "ship"
+    },
+    {
+      "strName" : "RandomAsteroidI",
+      "aCOs"    : [
+        "ClusterI01=1.0x1"
+      ],
+      "aLoots"  : [
+      ],
+      "strType" : "ship"
+    },
+
+    {
+      "strName" : "RandomAsteroid",
+      "aCOs"    : [
+        "ClusterC01=0.2x1|ClusterC02=0.2x1|ClusterC03=0.2x1|ClusterC04=0.2x1|ClusterS01=0.02x1|ClusterM01=0.06x1|ClusterM02=0.06x1|ClusterM03=0.06x1"
+      ],
+      "aLoots"  : [
+      ],
+      "strType" : "ship"
+    },
+
+    {
+      "strName" : "CTToolMining",
+      "aCOs"    : [
+        "TIsToolMining01=1.0x1",
+        "TUpToolSpark=1.0x1"
+      ],
+      "aLoots"  : [
+      ],
+      "strType" : "trigger"
+    },
+    {
+      "strName" : "CTToolMining02",
+      "aCOs"    : [
+        "TIsToolMining02=1.0x1",
+        "TUpToolSpark=1.0x1"
+      ],
+      "aLoots"  : [
+      ],
+      "strType" : "trigger"
+    },    {
+      "strName" : "CTToolMiningAny",
+      "aCOs"    : [
+        "TIsToolMining=1.0x1"
+      ],
+      "aLoots"  : [
+      ],
+      "strType" : "trigger"
+    },
+    {
+      "strName" : "CTExplosiveCharge02",
+      "aCOs"    : [
+        "TIsExplosiveCharge02=1.0x1"
+      ],
+      "aLoots"  : [
+      ],
+      "strType" : "trigger"
+    },
+    {
+      "strName" : "CTACTMineExplosive",
+      "aCOs"    : [
+        "TDnAchievement=0.5x0.2",
+        "TDnAutonomy=0.5x0.1",
+        "TDnSelfRespect=0.75x0.2",
+        "TDnMeaning=0.5x0.1",
+        "TUpSecurity=0.5x0.05",
+        "TUpHygiene=0.4x0.004"
+      ],
+      "aLoots"  : [
+      ],
+      "strType" : "trigger"
+    },
+    {
+      "strName" : "CONDACTMine",
+      "aCOs"    : [
+        "-StatAchievement=0.5x0.1",
+        "StatFatigue=1.0x0.05",
+        "StatHygiene=0.4x0.008"
+      ],
+      "aLoots"  : [
+      ],
+      "strType" : "condition"
+    },
+    {
+      "strName" : "CONDACTMine02",
+      "aCOs"    : [
+      "-StatAchievement=0.5x0.1",
+        "StatFatigue=1.0x0.05",
+        "StatHygiene=0.4x0.004",
+        "IsCrewToolSpark=1.0x1"
+      ],
+      "aLoots"  : [
+      ],
+      "strType" : "condition"
+    },
+    {
+      "strName" : "MiningToolsSet",
+      "aCOs"    : [
+        "ItmToolDrillMining02=1.0x1"
+      ],
+      "aLoots"  : [      
+        "OutfitEVA01Full=1.0x1",
+        "OutfitHelmet03=1.0x1",
+        "ItmCrate01=1.0x1"
+      ],
+      "strType" : "item"
+    },
+    {
+      "strName" : "CTACTMineDepositS",
+      "aCOs"    : [
+      ],
+      "aLoots"  : [
+        "ItmRandomMineralSClass=0.6x1",
+        "ItmRandomMineralSClass=0.2x1"
+      ],
+      "strType" : "item"
+    },
+    {
+      "strName" : "CTACTMineDepositC",
+      "aCOs"    : [
+      ],
+      "aLoots"  : [
+        "ItmRandomMineralCClass=0.75x1",
+        "ItmRandomMineralCClass=0.2x1"
+      ],
+      "strType" : "item"
+    },
+    {
+      "strName" : "CTACTMineDepositM",
+      "aCOs"    : [
+      ],
+      "aLoots"  : [
+        "ItmRandomMineralMClass=0.5x1|ItmRandomMineralMClass=0.2x1",
+        "ItmRandomMineralMClassHighValue=0.2x1"
+      ],
+      "strType" : "item"
+    },
+    {
+      "strName" : "CTACTDisarmExplosive",
+      "aCOs"    : [
+        "TUpSecurity=0.85x1-5",
+        "TDnMeaning=0.85x1-3",
+        "TDnSelfRespect=0.75x1-3"
+      ],
+      "aLoots"  : [
+      ],
+      "strType" : "trigger"
+    },
+
+
+    
+
+
+
+
+    { "strName" : "ItmToolDrillMining01", "aCOs"    : [ "ItmToolDrillMining01=1.0x1" ], "aLoots"  : [ ], "strType" : "item" },
+    { "strName" : "ACTDrillMiningDamage01",  "aCOs"    : [ "MSDamageDrillMining01=1.0x1" ], "aLoots"  : [ ], "strType" : "interaction" },
+    { "strName" : "ACTDrillMiningDestroy01",  "aCOs"    : [ "MSDestroyDrillMining01=1.0x1" ], "aLoots"  : [ ], "strType" : "interaction" }, 
+
+    { "strName" : "ItmToolDrillMining01New", "aCOs" : [ "ItmToolDrillMining01=1.0x1", "ItmBatteryDrill01=1.0x1" ], "aLoots"  : [ ], "bSuppress" : true, "bNested" : true, "strType" : "item" },
+    { "strName" : "ItmToolDrillMining01Used", "aCOs" : [ "ItmToolDrillMining01=1.0x1", "ItmBatteryDrill01=0.5x1" ], "aLoots"  : [ ], "bSuppress" : true, "bNested" : true, "strType" : "item" },
+
+    { "strName" : "ItmToolDrillMining02", "aCOs"    : [ "ItmToolDrillMining02=1.0x1" ], "aLoots"  : [ ], "strType" : "item" },
+    { "strName" : "ACTDrillMiningDamage02",  "aCOs"    : [ "MSDamageDrillMining02=1.0x1" ], "aLoots"  : [ ], "strType" : "interaction" },
+    { "strName" : "ACTDrillMiningDestroy02",  "aCOs"    : [ "MSDestroyDrillMining02=1.0x1" ], "aLoots"  : [ ], "strType" : "interaction" }, 
+
+    { "strName" : "ItmToolDrillMining02New", "aCOs" : [ "ItmToolDrillMining02=1.0x1", "ItmBatteryWelder01=1.0x1" ], "aLoots"  : [ ], "bSuppress" : true, "bNested" : true, "strType" : "item" },
+    { "strName" : "ItmToolDrillMining02Used", "aCOs" : [ "ItmToolDrillMining02=1.0x1", "ItmBatteryWelder01=0.5x1" ], "aLoots"  : [ ], "bSuppress" : true, "bNested" : true, "strType" : "item" },
+
+    { 
+      "strName" : "DebugMiningKit", 
+      "aCOs" : [ 
+      ], 
+      "aLoots"  : [ 
+        "OutfitEVA06Full=1.0x1", 
+        "OutfitHelmet06=1.0x1", 
+        "ItmCrate01=1.0x2",
+        "ItmNavModWeaponsMFD=1.0x1",
+        "ItmNavModSensorsMFD=1.0x1",
+        "ItmNavModMooringControl=1.0x1",
+        "ItmNavModFire3x3=1.0x1",
+        "ItmNavModFire2x2=1.0x1",
+        "ItmToolDrillMining02New=1.0x1", 
+        "ItmToolDrill01New=1.0x1", 
+        "ItmToolLaserTorch01New=1.0x1", 
+        "ItmExplosiveCharge02=1.0x1",
+        "ItmToolWorkLamp01New=1.0x1"
+      ], 
+      "bSuppress" : true, 
+      "bNested" : true, 
+      "strType" : "item" 
+    },
+    { 
+      "strName" : "DebugFightKit", 
+      "aCOs" : [ 
+      ], 
+      "aLoots"  : [ 
+        "OutfitEVA06Full=1.0x1", 
+        "OutfitHelmet06=1.0x1", 
+        "ItmCrate01=1.0x2",
+        "ItmToolDrill01New=1.0x1", 
+        "ItmToolLaserTorch01New=1.0x1", 
+        "ItmExplosiveCharge02=1.0x1",
+        "ItmToolWorkLamp01New=1.0x1",
+        "ItmWeaponPistol01New=1.0x1"
+      ], 
+      "bSuppress" : true, 
+      "bNested" : true, 
+      "strType" : "item" 
+    },
+
+    { "strName" : "ItmFloorRock02", "aCOs"    : [ "ItmFloorRock02=1.0x1" ], "aLoots"  : [ ], "strType" : "item" },
+        { "strName" : "ItmFloorRock02Damage", "aCOs"    : [ "ItmFloorRock02DepositDmg=1.0x1|ItmFloorRock02Dmg=0.7x1" ], "aLoots"  : [  ], "strType" : "item" },
+        { "strName" : "ItmFloorRock02Dmg", "aCOs"    : [ "ItmFloorRock02Dmg=1.0x1" ], "aLoots"  : [  ], "strType" : "item" },
+        { "strName" : "ItmFloorRock02DepositDmg", "aCOs"    : [ "ItmFloorRock02DepositDmg=1.0x1" ], "aLoots"  : [  ], "strType" : "item" },
+      { "strName" : "ItmFloorRock02C", "aCOs"    : [ "ItmFloorRock02C=1.0x1" ], "aLoots"  : [ ], "strType" : "item" },
+        { "strName" : "ItmFloorRock02CDamage", "aCOs"    : [ "ItmFloorRock02CDepositDmg=1.0x1|ItmFloorRock02CDmg=0.5x1" ], "aLoots"  : [ "ItmRockSalvageDefault2=1.0x1" ], "strType" : "item" },
+        { "strName" : "ItmFloorRock02CDmg", "aCOs"    : [ "ItmFloorRock02CDmg=1.0x1" ], "aLoots"  : [  ], "strType" : "item" },
+        { "strName" : "ItmFloorRock02CDepositDmg", "aCOs"    : [ "ItmFloorRock02CDepositDmg=1.0x1" ], "aLoots"  : [  ], "strType" : "item" },
+      { "strName" : "ItmFloorRock02M", "aCOs"    : [ "ItmFloorRock02M=1.0x1" ], "aLoots"  : [ ], "strType" : "item" },
+        { "strName" : "ItmFloorRock02MDamage", "aCOs"    : [ "ItmFloorRock02MDepositDmg=1.0x1|ItmFloorRock02MDmg=0.8x1" ], "aLoots"  : [ "ItmRockSalvageDefault2=1.0x1" ], "strType" : "item" },
+        { "strName" : "ItmFloorRock02MDmg", "aCOs"    : [ "ItmFloorRock02MDmg=1.0x1" ], "aLoots"  : [  ], "strType" : "item" },
+        { "strName" : "ItmFloorRock02MDepositDmg", "aCOs"    : [ "ItmFloorRock02MDepositDmg=1.0x1" ], "aLoots"  : [  ], "strType" : "item" },
+
+        
+    { "strName" : "ItmWallRock011x1", "aCOs"    : [ "ItmWallRock011x1=1.0x1" ], "aLoots"  : [ ], "strType" : "item" },
+        { "strName" : "ItmWallRock011x1Dmg", "aCOs"    : [ "ItmWallRock011x1Dmg=1.0x1" ], "aLoots"  : [ "ItmRockSalvageDefault=1.0x1" ], "strType" : "item" },
+      { "strName" : "ItmWallRock021x1", "aCOs"    : [ "ItmWallRock021x1=1.0x1" ], "aLoots"  : [ ], "strType" : "item" },
+        { "strName" : "ItmWallRock021x1Dmg", "aCOs"    : [ "ItmWallRock021x1Dmg=1.0x1" ], "aLoots"  : [ "ItmRockSalvageDefault=1.0x1" ], "strType" : "item" },
+      { "strName" : "ItmWallRock031x1", "aCOs"    : [ "ItmWallRock031x1=1.0x1" ], "aLoots"  : [ ], "strType" : "item" },
+        { "strName" : "ItmWallRock031x1Dmg", "aCOs"    : [ "ItmWallRock031x1Dmg=1.0x1" ], "aLoots"  : [ "ItmRockSalvageDefault=1.0x1" ], "strType" : "item" },
+        { "strName" : "ItmWallRock041x1Dmg", "aCOs"    : [ "ItmWallRock041x1Dmg=1.0x1" ], "aLoots"  : [ "ItmRockSalvageDefault=1.0x1" ], "strType" : "item" },
+      { "strName" : "ItmWallRock051x1", "aCOs"    : [ "ItmWallRock051x1=1.0x1" ], "aLoots"  : [ ], "strType" : "item" },
+        { "strName" : "ItmWallRock051x1Dmg", "aCOs"    : [ "ItmWallRock051x1Dmg=1.0x1" ], "aLoots"  : [ "ItmRockSalvageDefault=1.0x1" ], "strType" : "item" },
+      { "strName" : "ItmWallRock061x1", "aCOs"    : [ "ItmWallRock061x1=1.0x1" ], "aLoots"  : [ ], "strType" : "item" },
+        { "strName" : "ItmWallRock061x1Dmg", "aCOs"    : [ "ItmWallRock061x1Dmg=1.0x1" ], "aLoots"  : [ "ItmRockSalvageDefault=1.0x1" ], "strType" : "item" },
+
+    {
+      "strName" : "ItmRockSalvageDefault",
+      "aCOs"    : [
+        "ItmMineralStone01=0.4x1|ItmMiningTrash=0.6x1"
+      ],
+      "aLoots"  : [
+      ],
+      "strType" : "item"
+    },
+    {
+      "strName" : "ItmRockSalvageDefault2",
+      "aCOs"    : [
+        "ItmMineralStone01=0.8x1-2|ItmMiningTrash=0.2x1"
+      ],
+      "aLoots"  : [
+      ],
+      "strType" : "item"
+    },
+
+
+    {
+      "strName" : "ItmRock01Salvage",
+      "aCOs"    : [
+      ],
+      "aLoots"  : [
+        "ItmRock01SalvageOutput=0.3x1|ItmMiningTrash=0.7x1"
+      ],
+      "strType" : "item"
+    },
+    {
+      "strName" : "ItmRock01SalvageOutput",
+      "aCOs"    : [
+        "ItmMineral02=0.3x1|ItmMineral04=0.2x1|ItmMineralStone01=0.5x1"
+      ],
+      "aLoots"  : [
+      ],
+      "strType" : "item"
+    },
+    {
+      "strName" : "ItmRock02Salvage",
+      "aCOs"    : [
+      ],
+      "aLoots"  : [
+        "ItmRock02SalvageOutput=0.8x1|ItmMiningTrash=0.2x1"
+      ],
+      "strType" : "item"
+    },
+    {
+      "strName" : "ItmRock02SalvageOutput",
+      "aCOs"    : [
+        "ItmMineral01=0.1x1|ItmMineral02=0.1x1|ItmMineral04=0.4x1|ItmMineralStone01=0.4x1"
+      ],
+      "aLoots"  : [
+        "ItmRandomMineralSClass=0.4x1"
+      ],
+      "strType" : "item"
+    },
+    {
+      "strName" : "ItmRock03Salvage",
+      "aCOs"    : [
+      ],
+      "aLoots"  : [
+        "ItmRock03SalvageOutput=0.3x1|ItmMiningTrash=0.7x1"
+      ],
+      "strType" : "item"
+    },
+    {
+      "strName" : "ItmRock03SalvageOutput",
+      "aCOs"    : [
+        "ItmMineral01=0.25x1|ItmMineral02=0.25x1|ItmMineralStone01=0.5x1"
+      ],
+      "aLoots"  : [
+        "ItmRandomMineralMClass=0.04x1"
+      ],
+      "strType" : "item"
+    },
+    {
+      "strName" : "ItmRock04Salvage",
+      "aCOs"    : [
+      ],
+      "aLoots"  : [
+        "ItmRock04SalvageOutput=0.8x1|ItmMiningTrash=0.2x1"
+      ],
+      "strType" : "item"
+    },
+    {
+      "strName" : "ItmRock04SalvageOutput",
+      "aCOs"    : [
+        "ItmMineral01=0.65x1|ItmMineral02=0.35x1"
+      ],
+      "aLoots"  : [
+        "ItmRandomMineralMClass=0.4x1"
+      ],
+      "strType" : "item"
+    },
+    {
+      "strName" : "ItmRock05Salvage",
+      "aCOs"    : [
+      ],
+      "aLoots"  : [
+        "ItmRock05SalvageOutput=0.3x1|ItmMiningTrash=0.7x1"
+      ],
+      "strType" : "item"
+    },
+    {
+      "strName" : "ItmRock05SalvageOutput",
+      "aCOs"    : [
+        "ItmMineral03=0.3x1|ItmMineral04=0.15x1|ItmMineral11=0.15x1|ItmMineralStone01=0.37x1|ItmMineral79=0.03x1"
+      ],
+      "aLoots"  : [
+        "ItmRandomMineralCClass=0.04x1"
+      ],
+      "strType" : "item"
+    },
+    {
+      "strName" : "ItmRock06Salvage",
+      "aCOs"    : [
+      ],
+      "aLoots"  : [
+        "ItmRock06SalvageOutput=0.8x1|ItmMiningTrash=0.2x1"
+      ],
+      "strType" : "item"
+    },
+    {
+      "strName" : "ItmRock06SalvageOutput",
+      "aCOs"    : [
+        "ItmMineral03=0.47x1|ItmMineral04=0.3x1|ItmMineral11=0.2x1|ItmMineral79=0.03x1"
+      ],
+      "aLoots"  : [
+        "ItmRandomMineralCClass=0.6x1"
+      ],
+      "strType" : "item"
+    },
+
+  { "strName" : "ItmMiningTrash", "aCOs"    : [ "ItmMiningTrash=1.0x1" ], "aLoots"  : [ ], "strType" : "item" },
+  { "strName" : "ItmMineralStone01", "aCOs"    : [ "ItmMineralStone01=1.0x1" ], "aLoots"  : [ ], "strType" : "item" },
+  { "strName" : "ItmMineral01", "aCOs"    : [ "ItmMineral01=1.0x1" ], "aLoots"  : [ ], "strType" : "item" },
+  { "strName" : "ItmMineral02", "aCOs"    : [ "ItmMineral02=1.0x1" ], "aLoots"  : [ ], "strType" : "item" },
+  { "strName" : "ItmMineral03", "aCOs"    : [ "ItmMineral03=1.0x1" ], "aLoots"  : [ ], "strType" : "item" },
+  { "strName" : "ItmMineral04", "aCOs"    : [ "ItmMineral04=1.0x1" ], "aLoots"  : [ ], "strType" : "item" },
+  { "strName" : "ItmMineral05", "aCOs"    : [ "ItmMineral05=1.0x1" ], "aLoots"  : [ ], "strType" : "item" },
+  { "strName" : "ItmMineral06", "aCOs"    : [ "ItmMineral06=1.0x1" ], "aLoots"  : [ ], "strType" : "item" },
+  { "strName" : "ItmMineral07", "aCOs"    : [ "ItmMineral07=1.0x1" ], "aLoots"  : [ ], "strType" : "item" },
+  { "strName" : "ItmMineral08", "aCOs"    : [ "ItmMineral08=1.0x1" ], "aLoots"  : [ ], "strType" : "item" },
+  { "strName" : "ItmMineral09", "aCOs"    : [ "ItmMineral09=1.0x1" ], "aLoots"  : [ ], "strType" : "item" },
+  { "strName" : "ItmMineral10", "aCOs"    : [ "ItmMineral10=1.0x1" ], "aLoots"  : [ ], "strType" : "item" },
+  { "strName" : "ItmMineral11", "aCOs"    : [ "ItmMineral11=1.0x1" ], "aLoots"  : [ ], "strType" : "item" },
+  { "strName" : "ItmMineral79", "aCOs"    : [ "ItmMineral79=1.0x1" ], "aLoots"  : [ ], "strType" : "item" },
+
+  { "strName" : "ItmRandomMineralSClass", "aCOs"    : [ "ItmMineral02=0.3x1|ItmMineral01=0.2x1|ItmMineral04=0.2x1|ItmMineral08=0.02x1|ItmMineral09=0.03x1|ItmMineral05=0.01x1|ItmMineral06=0.01x1|ItmMineral07=0.01x1|ItmMineral10=0.02x1|ItmMineralStone01=0.2x1" ], "aLoots"  : [ ], "strType" : "item" },
+  { "strName" : "ItmRandomMineralCClass", "aCOs"    : [ "ItmMineral03=0.37x1|ItmMineral04=0.4x1|ItmMineral11=0.1x1|ItmIce01=0.1x1|ItmMineral79=0.03x1" ], "aLoots"  : [ ], "strType" : "item" },
+  { "strName" : "ItmRandomMineralMClass", "aCOs"    : [ "ItmMineral01=0.4x1|ItmMineral02=0.2x1|ItmMineral04=0.1x1|ItmMineral05=0.02x1|ItmMineral06=0.03x1|ItmMineral07=0.04x1|ItmMineral08=0.06x1|ItmMineral09=0.04x1|ItmMineral10=0.11x1" ], "aLoots"  : [ ], "strType" : "item" },
+  { "strName" : "ItmRandomMineralMClassHighValue", "aCOs"    : [ "ItmMineral01=0.3x1|ItmMineral02=0.13x1|ItmMineral05=0.02x1|ItmMineral06=0.05x1|ItmMineral07=0.07x1|ItmMineral08=0.12x1|ItmMineral09=0.08x1|ItmMineral10=0.23x1" ], "aLoots"  : [ ], "strType" : "item" },
+  
+
+  { "strName" : "ACTMineralDestroy", "aCOs"    : [ "MSMineralDestroy=1.0x1" ], "aLoots"  : [ ], "strType" : "interaction" },
+  { "strName" : "ACTIceDestroy", "aCOs"    : [ "MSIceDestroy=1.0x1" ], "aLoots"  : [ ], "strType" : "interaction" },
+  { "strName" : "ACTFloorRockSDamage", "aCOs"    : [ "MSFloorRockSDamage=1.0x1" ], "aLoots"  : [ ], "strType" : "interaction" },
+  { "strName" : "ACTFloorRockCDamage", "aCOs"    : [ "MSFloorRockCDamage=1.0x1" ], "aLoots"  : [ ], "strType" : "interaction" },
+  { "strName" : "ACTFloorRockMDamage", "aCOs"    : [ "MSFloorRockMDamage=1.0x1" ], "aLoots"  : [ ], "strType" : "interaction" },
+
+  { "strName" : "ItmWallRock01Contents", "aCOs" : [ "ItmMineral01=0.8x1-3", "ItmMineral02=0.3x1-2", "ItmMineralStone01=1.0x3-5" ], "aLoots" : [ ], "strType" : "item" },
+  { "strName" : "ItmWallRock01ContentsDmg", "aCOs" : [ "ItmMineral02=1.0x1-3" ], "aLoots" : [ ], "strType" : "item" },
+  { "strName" : "ItmWallRock02Contents", "aCOs" : [ "ItmMineral01=1.0x5-8", "ItmMineral02=1.0x1-3", "ItmMineralStone01=0.5x1-3" ], "aLoots" : [ ], "strType" : "item" },
+  { "strName" : "ItmWallRock03Contents", "aCOs" : [ "ItmMineral03=0.8x1-3", "ItmMineral04=0.3x1-2", "ItmMineralStone01=1.0x3-5" ], "aLoots" : [ ], "strType" : "item" },
+  { "strName" : "ItmWallRock04Contents", "aCOs" : [ "ItmMineral03=1.0x5-8", "ItmMineral04=1.0x1-3", "ItmMineralStone01=0.5x1-3" ], "aLoots" : [ ], "strType" : "item" },
+  { "strName" : "ItmWallRock05Contents", "aCOs" : [ "ItmMineral05=0.8x1-3", "ItmMineral06=0.3x1-2", "ItmMineralStone01=1.0x3-5" ], "aLoots" : [ ], "strType" : "item" },
+  { "strName" : "ItmWallRock06Contents", "aCOs" : [ "ItmMineral05=1.0x5-8", "ItmMineral06=1.0x1-3", "ItmMineralStone01=0.5x1-3" ], "aLoots" : [ ], "strType" : "item" },
+
+
+  { "strName" : "ACTWallRock011x1Dmg", "aCOs"    : [ "MSWallRock011x1Dmg=1.0x1" ], "aLoots"  : [ ], "strType" : "interaction" },
+  { "strName" : "ACTWallRock011x1Destroy",  "aCOs"    : [ "MSWallRock011x1Destroy=1.0x1" ], "aLoots"  : [ ], "strType" : "interaction" },
+  { "strName" : "ACTWallRock021x1Dmg", "aCOs"    : [ "MSWallRock021x1Dmg=1.0x1" ], "aLoots"  : [ ], "strType" : "interaction" },
+  { "strName" : "ACTWallRock021x1Destroy",  "aCOs"    : [ "MSWallRock021x1Destroy=1.0x1" ], "aLoots"  : [ ], "strType" : "interaction" },
+  { "strName" : "ACTWallRock031x1Dmg", "aCOs"    : [ "MSWallRock031x1Dmg=1.0x1" ], "aLoots"  : [ ], "strType" : "interaction" },
+  { "strName" : "ACTWallRock031x1Destroy",  "aCOs"    : [ "MSWallRock031x1Destroy=1.0x1" ], "aLoots"  : [ ], "strType" : "interaction" },
+  { "strName" : "ACTWallRock041x1Dmg", "aCOs"    : [ "MSWallRock041x1Dmg=1.0x1" ], "aLoots"  : [ ], "strType" : "interaction" },
+  { "strName" : "ACTWallRock041x1Destroy",  "aCOs"    : [ "MSWallRock041x1Destroy=1.0x1" ], "aLoots"  : [ ], "strType" : "interaction" },
+  { "strName" : "ACTWallRock051x1Dmg", "aCOs"    : [ "MSWallRock051x1Dmg=1.0x1" ], "aLoots"  : [ ], "strType" : "interaction" },
+  { "strName" : "ACTWallRock051x1Destroy",  "aCOs"    : [ "MSWallRock051x1Destroy=1.0x1" ], "aLoots"  : [ ], "strType" : "interaction" },
+  { "strName" : "ACTWallRock061x1Dmg", "aCOs"    : [ "MSWallRock061x1Dmg=1.0x1" ], "aLoots"  : [ ], "strType" : "interaction" },
+  { "strName" : "ACTWallRock061x1Destroy",  "aCOs"    : [ "MSWallRock061x1Destroy=1.0x1" ], "aLoots"  : [ ], "strType" : "interaction" },
+  
+  { "strName" : "ACTWallRockExplodeDestroy",  "aCOs"    : [ "MSWallRockExplodeDestroy=1.0x1" ], "aLoots"  : [ ], "strType" : "interaction" },
+  { "strName" : "ACTWallRock02ExplodeDestroy",  "aCOs"    : [ "MSWallRock02ExplodeDestroy=1.0x1" ], "aLoots"  : [ ], "strType" : "interaction" },
+  { "strName" : "ACTWallRock03ExplodeDestroy",  "aCOs"    : [ "MSWallRock03ExplodeDestroy=1.0x1" ], "aLoots"  : [ ], "strType" : "interaction" },
+  { "strName" : "ACTWallRock04ExplodeDestroy",  "aCOs"    : [ "MSWallRock04ExplodeDestroy=1.0x1" ], "aLoots"  : [ ], "strType" : "interaction" },
+  { "strName" : "ACTWallRock05ExplodeDestroy",  "aCOs"    : [ "MSWallRock05ExplodeDestroy=1.0x1" ], "aLoots"  : [ ], "strType" : "interaction" },
+  { "strName" : "ACTWallRock06ExplodeDestroy",  "aCOs"    : [ "MSWallRock06ExplodeDestroy=1.0x1" ], "aLoots"  : [ ], "strType" : "interaction" },
+  
+  
+  { "strName" : "ItmWallIce011x1Dmg", "aCOs" : [ "ItmWallIce011x1Dmg=1.0x1" ], "aLoots"  : [ "ItmIce01Salvage=1.0x1" ], "strType" : "item" },
+    {
+      "strName" : "ItmIce01Salvage",
+      "aCOs"    : [
+        "ItmIce01=0.6x1|ItmIce02=0.2x1",
+        "ItmIce01=0.4x1",
+        "ItmIceTrash01=0.6x1"
+      ],
+      "aLoots"  : [
+      ],
+      "strType" : "item"
+    },
+  { "strName" : "ItmIce01", "aCOs"    : [ "ItmIce01=1.0x1" ], "aLoots"  : [ ], "strType" : "item" },
+  { "strName" : "ItmIceTrash01", "aCOs"    : [ "ItmIceTrash01=1.0x1" ], "aLoots"  : [ ], "strType" : "item" },
+  { "strName" : "ItmFloorIce02", "aCOs"    : [ "ItmFloorIce02=1.0x1" ], "aLoots"  : [ ], "strType" : "item" },
+  
+  { "strName" : "ACTWallIce011x1Dmg", "aCOs"    : [ "MSWallIce011x1Dmg=1.0x1" ], "aLoots"  : [ ], "strType" : "interaction" },
+  { "strName" : "ACTWallIce011x1Destroy",  "aCOs"    : [ "MSWallIce011x1Destroy=1.0x1" ], "aLoots"  : [ ], "strType" : "interaction" },
+
+  { "strName" : "CTDamagex4-12", "aCOs"    : [ "TUpDamage=1.0x4-12" ], "aLoots"  : [ ], "strType" : "trigger" },
+  { "strName" : "CTDamagex6-18", "aCOs"    : [ "TUpDamage=1.0x6-18" ], "aLoots"  : [ ], "strType" : "trigger" },
+  
+  {
+    "strName" : "CTMineContents",
+    "aCOs"    : [
+      "TIsFitContainerMineral=1.0x1.0"
+    ],
+    "aLoots"  : [
+    ],
+    "strType" : "trigger"
+  },
+
+  { "strName" : "CONDTickMiningExplosive", "aCOs" : [ "StatFuse=1.0x0.5" ], "aLoots" : [], "strType" : "condition" },
+  { "strName" : "CONDTickExplosionFade", "aCOs" : [ "StatExplosionFade=1.0x1.0" ], "aLoots" : [], "strType" : "condition" },
+
+  { "strName" : "SysExplosionMining", "aCOs"    : [ "SysExplosionMining=1.0x1" ], "aLoots"  : [ ], "strType" : "item" },
+  { "strName" : "SysExplosionMiningSmall", "aCOs"    : [ "SysExplosionMiningSmall=1.0x1" ], "aLoots"  : [ ], "strType" : "item" },
+  { "strName" : "ACTExplosionDestroy", "aCOs"    : [ "MSExplosionDestroy=1.0x1" ], "aLoots"  : [ ], "strType" : "interaction" },
+
+  { "strName" : "ItmExplosiveCharge01", "aCOs"    : [ "ItmExplosiveCharge01=1.0x1" ], "aLoots"  : [ ], "strType" : "item" },
+  { "strName" : "ItmExplosiveCharge01Armed", "aCOs"    : [ "ItmExplosiveCharge01Armed=1.0x1" ], "aLoots"  : [ ], "strType" : "item" },
+  { "strName" : "ItmExplosiveCharge02", "aCOs"    : [ "ItmExplosiveCharge02=1.0x1" ], "aLoots"  : [ ], "strType" : "item" },
+  { "strName" : "ItmExplosiveCharge02Armed", "aCOs"    : [ "ItmExplosiveCharge02Armed=1.0x1" ], "aLoots"  : [ ], "strType" : "item" },
+  { "strName" : "ACTExplosiveChargeExplode",  "aCOs"    : [ "MSExplosionBig=1.0x1" ], "aLoots"  : [ ], "strType" : "interaction" },
+  { "strName" : "ACTExplosiveChargeExplode2",  "aCOs"    : [ "MSExplosionSmall=1.0x1" ], "aLoots"  : [ ], "strType" : "interaction" },
+  { "strName" : "RandomExplosiveCharge", "aCOs"    : [ "ItmExplosiveCharge01=0.5x1|ItmExplosiveCharge02=0.5x1" ], "aLoots"  : [ ], "strType" : "item" },
+  {
+    "strName" : "ItmRandomRockWall",
+    "aCOs"    : [
+      "ItmWallRock021x1=0.15x1|ItmWallRock031x1=0.15x1|ItmWallRock041x1=0.15x1|ItmWallRock051x1=0.15x1|ItmWallRock061x1=0.15x1|ItmWallRock011x1=0.25x1"
+    ],
+    "aLoots"  : [
+    ],
+    "strType" : "item"
+  },
+  {
+    "strName" : "ItmRandomRockWallC",
+    "aCOs"    : [
+      "ItmWallRock021x1=0.25x1|ItmWallRock011x1=0.75x1"
+    ],
+    "aLoots"  : [
+    ],
+    "strType" : "item"
+  },
+  {
+    "strName" : "ItmRandomRockWallS",
+    "aCOs"    : [
+      "ItmWallRock031x1=0.75x1|ItmWallRock041x1=0.25x1"
+    ],
+    "aLoots"  : [
+    ],
+    "strType" : "item"
+  },
+  {
+    "strName" : "ItmRandomRockWallM",
+    "aCOs"    : [
+      "ItmWallRock051x1=0.75x1|ItmWallRock061x1=0.25x1"
+    ],
+    "aLoots"  : [
+    ],
+    "strType" : "item"
+  },
+
+  {
+    "strName" : "ItmExplodeMiningBig",
+    "aCOs"    : [
+      "SysExplosionMining=1.0x1"
+    ],
+    "aLoots"  : [
+    ],
+    "strType" : "item"
+  },
+  {
+    "strName" : "ItmExplodeMining02",
+    "aCOs"    : [
+      "SysExplosionMiningSmall=1.0x1"
+    ],
+    "aLoots"  : [
+    ],
+    "strType" : "item"
+  },
+
+  {
+    "strName" : "ItmExplosionDestroy",
+    "aCOs"    : [
+    ],
+    "aLoots"  : [
+      "ItmMiningTrash=1.0x1"
+    ],
+    "strType" : "item"
+  },
+
+  {"strName": "ItmWallRock041x1", "aCOs":["ItmWallRock041x1=1.0x1"],"strType" : "item"},
+  {"strName": "ItmFloorRock021x1C", "aCOs":["ItmFloorRock021x1C=1.0x1"],"strType" : "item"},
+  {"strName": "ItmFloorRock021x1", "aCOs":["ItmFloorRock021x1=1.0x1"],"strType" : "item"},
+  {"strName": "ItmFloorRock021x1M", "aCOs":["ItmFloorRock021x1M=1.0x1"],"strType" : "item"},
+  {"strName": "ItmWallIce011x1", "aCOs":["ItmWallIce011x1=1.0x1"],"strType" : "item"},
+  {"strName": "ItmFloorIce021x1", "aCOs":["ItmFloorIce021x1=1.0x1"],"strType" : "item"},
+
+  {
+    "strName" : "RandomAsteroidAutoGen",
+    "aCOs"    : [
+      "ClusterC01=0.1x1|ClusterC02=0.1x1|ClusterC03=0.1x1|ClusterC04=0.1x1|ClusterI01=0.2x1|ClusterM01=0.1x1|ClusterM02=0.1x1|ClusterM03=0.1x1|ClusterS01=0.1x1"
+    ],
+    "aLoots"  : [
+    ],
+    "strType" : "ship"
+  },
+  {"strName": "TradeScripBCRSBuy100Allow", "aCOs":["StatCCREScrip=1.0x100"],"strType" : "condition"},
+  {"strName": "TradeScripBCRSBuy1000Allow", "aCOs":["StatCCREScrip=1.0x1000"],"strType" : "condition"},
+  {"strName": "TradeScripBCERBuy100Allow", "aCOs":["StatGalileanConfederacyScrip=1.0x100"],"strType" : "condition"},
+  {"strName": "TradeScripBCERBuy1000Allow", "aCOs":["StatGalileanConfederacyScrip=1.0x1000"],"strType" : "condition"},
+  {"strName": "TradeScripBCRSSell100Allow", "aCOs":["-StatCCREScrip=1.0x100"],"strType" : "condition"},
+  {"strName": "TradeScripBCRSSell1000Allow", "aCOs":["-StatCCREScrip=1.0x1000"],"strType" : "condition"},
+  {"strName": "TradeScripBCERSell100Allow", "aCOs":["-StatGalileanConfederacyScrip=1.0x100"],"strType" : "condition"},
+  {"strName": "TradeScripBCERSell1000Allow", "aCOs":["-StatGalileanConfederacyScrip=1.0x1000"],"strType" : "condition"}
+]

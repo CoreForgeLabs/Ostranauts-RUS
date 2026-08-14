@@ -69,6 +69,10 @@ namespace OstraI18n
             catch (Exception ex) { Log.LogError("[i18n] content overlay init failed: " + ex); }
             try { ManualAssets.Init(DataDir.Value, LangPack.Code, new Harmony(GUID + ".manuals")); }
             catch (Exception ex) { Log.LogError("[i18n] manual assets init failed: " + ex); }
+            try { ImagePatcher.Init(DataDir.Value, LangPack.Code, new Harmony(GUID + ".images")); }
+            catch (Exception ex) { Log.LogError("[i18n] image patcher init failed: " + ex); }
+            try { MenuLanguageAstronaut.Init(DataDir.Value); }
+            catch (Exception ex) { Log.LogError("[i18n] menu language astronaut init failed: " + ex); }
             if (QaMode.Value)
             {
                 LocalizedText.OverflowReportPath = Path.Combine(Paths.PluginPath, "OstraI18n", "overflow_report.tsv");
@@ -419,14 +423,64 @@ namespace OstraI18n
                 null, t.GetMethod(nameof(Patches.MakeTutorialObjectivePostfix)), ref ok, ref failed);
             TryPatch(h, typeof(Ostranauts.Objectives.ObjectivePanel), "CompleteObjective", flagsInstPub,
                 null, t.GetMethod(nameof(Patches.ObjectivePanelCompleteObjectivePostfix)), ref ok, ref failed);
+            TryPatch(h, typeof(Ostranauts.ShipGUIs.ShipBroker.DerelictShipEntry), "SetData", flagsInstPub,
+                null, t.GetMethod(nameof(Patches.DerelictShipEntrySetDataPostfix)), ref ok, ref failed,
+                new Type[] { typeof(Ship), typeof(float) });
+            TryPatch(h, typeof(Interaction), "ApplyEffects", flagsInstPub,
+                null, t.GetMethod(nameof(Patches.InteractionApplyEffectsPostfix)), ref ok, ref failed,
+                new Type[] { typeof(List<string>), typeof(bool) });
+            TryPatch(h, typeof(Ledger), "RecordTransaction", flagsPub,
+                t.GetMethod(nameof(Patches.LedgerRecordTransactionPrefix)), null, ref ok, ref failed,
+                new Type[] { typeof(CondOwner), typeof(string), typeof(double), typeof(string), typeof(string), typeof(LedgerLI) });
+            TryPatch(h, typeof(GUIPAXIntro), "Show", flagsInstPub,
+                null, t.GetMethod(nameof(Patches.GUIPAXIntroShowPostfix)), ref ok, ref failed);
+            TryPatch(h, typeof(GUIChargenCareer), "PageEvent", flagsInstPriv,
+                null, t.GetMethod(nameof(Patches.GUIChargenCareerPageEventPostfix)), ref ok, ref failed,
+                new Type[] { typeof(JsonLifeEvent) });
+            TryPatch(h, typeof(GUIRosterRow), "SetOwner", flagsInstPub,
+                null, t.GetMethod(nameof(Patches.GUIRosterRowSetOwnerPostfix)), ref ok, ref failed,
+                new Type[] { typeof(string), typeof(JsonCompanyRules) });
+            TryPatch(h, typeof(Ship), "LogGetHeader", flagsInstPub,
+                null, t.GetMethod(nameof(Patches.ShipLogGetHeaderPostfix)), ref ok, ref failed);
+            TryPatch(h, typeof(ShipStatus), "PrintStatus", flagsPub,
+                null, t.GetMethod(nameof(Patches.ShipStatusPrintStatusPostfix)), ref ok, ref failed,
+                new Type[] { typeof(CondOwner), typeof(string[]).MakeByRefType() });
+            TryPatch(h, typeof(Ostranauts.ShipGUIs.MFD.MFDPage), "UpdateDisplay", flagsInstPriv,
+                t.GetMethod(nameof(Patches.MFDUpdateDisplayPrefix)), null, ref ok, ref failed);
+            TryPatch(h, typeof(GUITooltip2), "SetToolTip", flagsPub,
+                t.GetMethod(nameof(Patches.TooltipSetToolTipPrefix)), null, ref ok, ref failed,
+                new Type[] { typeof(string), typeof(string), typeof(bool), typeof(bool) });
+            TryPatch(h, typeof(GUITooltip), "TooltipTextFormat4", flagsPriv | BindingFlags.Static,
+                null, t.GetMethod(nameof(Patches.TooltipTextFormat4Postfix)), ref ok, ref failed,
+                new Type[] { typeof(Interaction) });
+            TryPatch(h, typeof(GUIPDA), "ShowJobPaintUI", flagsInstPriv,
+                null, t.GetMethod(nameof(Patches.ShowJobPaintUIPostfix)), ref ok, ref failed);
+            TryPatch(h, typeof(Ostranauts.Core.LogHandler), "LogMessage", flagsInstPub,
+                t.GetMethod(nameof(Patches.LogMessagePrefix)), null, ref ok, ref failed,
+                new Type[] { typeof(string) });
+            TryPatch(h, typeof(Ostranauts.Objectives.ObjectivePanel), "SetData", flagsInstPub,
+                null, t.GetMethod(nameof(Patches.ObjectivePanelSetDataPostfix)), ref ok, ref failed,
+                new Type[] { typeof(Ostranauts.Objectives.Objective), typeof(bool) });
+            TryPatch(h, typeof(Ostranauts.Objectives.ObjectivePanel), "RefreshText", flagsInstPriv,
+                null, t.GetMethod(nameof(Patches.ObjectivePanelRefreshTextPostfix)), ref ok, ref failed);
+            TryPatch(h, typeof(Ostranauts.Objectives.ObjectivePlotPanel), "SetData", flagsInstPub,
+                null, t.GetMethod(nameof(Patches.ObjectivePlotPanelSetDataPostfix)), ref ok, ref failed,
+                new Type[] { typeof(Ostranauts.Objectives.Objective), typeof(bool), typeof(bool) });
+            TryPatch(h, typeof(Interaction), "FailReasons", flagsInstPub,
+                null, t.GetMethod(nameof(Patches.FailReasonsPostfix)), ref ok, ref failed,
+                new Type[] { typeof(bool), typeof(bool), typeof(bool) });
+            TryPatch(h, typeof(GUIReactor), "Awake", flagsInstPriv,
+                null, t.GetMethod(nameof(Patches.GUIReactorAwakePostfix)), ref ok, ref failed);
         }
 
         private static void TryPatch(Harmony h, Type type, string method, BindingFlags flags,
-            MethodInfo prefix, MethodInfo postfix, ref int ok, ref int failed)
+            MethodInfo prefix, MethodInfo postfix, ref int ok, ref int failed, Type[] paramTypes = null)
         {
             try
             {
-                var target = type.GetMethod(method, flags);
+                var target = paramTypes != null
+                    ? type.GetMethod(method, flags, null, paramTypes, null)
+                    : type.GetMethod(method, flags);
                 if (target == null)
                 {
                     failed++;

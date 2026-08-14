@@ -1,0 +1,51 @@
+[
+  {
+    "strName" : "AI_NewOKLGFixer_SolicitPlayer",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGAI_NewOKLGFixer_SolicitPlayerDo",
+    "aIAEnd" : ["PLOT_NewOKLGFixer_SolicitPlayerEnd"],
+    "strThemID" : "[them]",
+    "nPriority" : 8
+  },
+  {
+    "strName" : "AI_PLOTChoicePanhandling_SolicitPlayer",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGAIChoicePanhandling_SolicitPlayerDo",
+    "aIAEnd" : ["PLOTChoicePanhandling_SolicitPlayerEnd"],
+    "strThemID" : "[them]",
+    "nPriority" : 8
+  },  
+  {
+    "strName" : "AI_PLOT_VLAFetch_SolicitPlayer",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGAI_VLAFetch_SolicitPlayerDo",
+    "aIAEnd" : ["PLOT_VLAFetch_SolicitPlayerEnd"],
+    "strThemID" : "[them]",
+    "nPriority" : 8
+  },
+  {
+    "strName" : "PLGJealousTowardPartner",
+    "strType" : "repeat",
+    "strIATrigger" : "SOCJealousTowardPartner",
+    "aIAEnd" : ["SOCJealousTowardPartner"],
+    "strThemID" : "[them]",
+    "nPriority" : 5
+  },
+  {
+    "strName" : "PLGJealousAboutPartner",
+    "strType" : "repeat",
+    "strIATrigger" : "SOCJealousAboutPartner",
+    "aIAEnd" : ["SOCJealousAboutPartner"],
+    "strThemID" : "[them]",
+    "nPriority" : 5
+  },
+  {
+    "strName" : "PLGJealousAboutAffection",
+    "strType" : "repeat",
+    "strIATrigger" : "SOCJealousAboutAffection",
+    "aIAEnd" : ["SOCJealousAboutAffection"],
+    "strThemID" : "[them]",
+    "nPriority" : 5
+  }
+  
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "strName": "IsSTKFollow_Fail_Cooldown",
+    "strNameFriendly": "STKFollow: кулдаун после неудачи",
+    "strColor": "Neutral",
+    "strDesc": "[us] попытался выполнить STKFollow и пока не может попробовать снова.",
+    "bResetTimer": true,
+    "nDisplaySelf": 0,
+    "nDisplayOther": 0,
+    "fDuration": 0.1
+  },
+  {
+    "strName": "IsSTKFollow_Fail_Avoid",
+    "strNameFriendly": "STKFollow: мягкая неудача",
+    "strColor": "Neutral",
+    "strDesc": "[us] использовал в STKFollow мягкую неудачу, чтобы избежать жёсткой неудачи, и пока не может использовать её снова.",
+    "bResetTimer": true,
+    "nDisplaySelf": 0,
+    "nDisplayOther": 0,
+    "fDuration": 0.1
+  },
+  {
+    "strName": "IsSTKFollow_Chitchat_Trait_Used",
+    "strNameFriendly": "STKFollow: использована черта в болтовне",
+    "strColor": "Neutral",
+    "strDesc": "[us] использовал в STKFollow ход болтовни с чертой и пока не может использовать его снова.",
+    "bResetTimer": true,
+    "nDisplaySelf": 0,
+    "nDisplayOther": 0,
+    "fDuration": 0.1
+  }
+]

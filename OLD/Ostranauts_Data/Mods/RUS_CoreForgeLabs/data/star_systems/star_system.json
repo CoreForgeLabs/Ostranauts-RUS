@@ -1,0 +1,2442 @@
+[
+  {
+    "strName": "NewGame",
+    "dfEpoch": 65627498854.0278,
+    "aSpawnBodies": [
+      {
+        "strName": "Sol",
+        "strNameParent": null,
+        "fDegreesCW": 0.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 1.0,
+        "fRadiusKM": 695510.0,
+        "fMassKG": 1.9891e+30,
+        "fRotationPeriodDays": 24.47,
+        "nDrawFlagsTrack": 1,
+        "nDrawFlagsBody": 2,
+        "strParallax": "DeepSpace",
+        "fParallaxRadiusKM": 1e+24
+      },
+      {
+        "strName": "Mercury",
+        "strNameParent": "Sol",
+        "fDegreesCW": 48.3,
+        "fEccentricity": 0.206,
+        "fOrbitalPeriodYears": 0.241,
+        "fRadiusKM": 2440,
+        "fMassKG": 3.3e+23,
+        "fRotationPeriodDays": 59,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0,
+        "strParallax": "MercuryAtmosphere",
+        "strGravParallax": "MercuryGrav",
+        "fParallaxRadiusKM": 2640,
+        "fGravParallaxRadiusKM": 2640000
+      },
+      {
+        "strName": "Venus",
+        "strNameParent": "Sol",
+        "fDegreesCW": 76.7,
+        "fEccentricity": 0.0067,
+        "fOrbitalPeriodYears": 0.615,
+        "fRadiusKM": 6052,
+        "fMassKG": 4.7e+24,
+        "fRotationPeriodDays": 243,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0,
+        "strParallax": "VenusAtmosphere",
+        "strGravParallax": "VenusGrav",
+        "fParallaxRadiusKM": 6222,
+        "fGravParallaxRadiusKM": 6222000,
+        "fVisibilityRangeMod": 0.125,
+        "fVisibilityRangeModGrav": 1.0,
+        "aAtmosphericValues": [
+          {
+            "strName": "Venus_Surface 0-5km",
+            "fMaxAltitude": 6057,
+            "fCO2": 8887,
+            "fN2": 322,
+            "fH2SO4": 0,
+            "fO2": 0.0,
+            "fTemp": 735
+          },
+          {
+            "strName": "Venus_Surface 5-10km",
+            "fMaxAltitude": 6062,
+            "fCO2": 4550,
+            "fN2": 190,
+            "fH2SO4": 0,
+            "fO2": 0.0,
+            "fTemp": 658
+          },
+          {
+            "strName": "Venus_Surface 10-20km",
+            "fMaxAltitude": 6072,
+            "fCO2": 2202,
+            "fN2": 80,
+            "fH2SO4": 0,
+            "fO2": 0.0,
+            "fTemp": 579
+          },
+          {
+            "strName": "Venus_Surface 20-30km",
+            "fMaxAltitude": 6082,
+            "fCO2": 965,
+            "fN2": 15,
+            "fH2SO4": 0,
+            "fO2": 0.0,
+            "fTemp": 495
+          },
+          {
+            "strName": "Venus_Troposphere 30-48km",
+            "fMaxAltitude": 6100,
+            "fCO2": 190,
+            "fN2": 7,
+            "fH2SO4": 0.5,
+            "fO2": 0.0,
+            "fTemp": 373
+          },
+          {
+            "strName": "Venus_Troposphere 48-52km",
+            "fMaxAltitude": 6104,
+            "fCO2": 96,
+            "fN2": 3.5,
+            "fH2SO4": 0.5,
+            "fO2": 0.0,
+            "fTemp": 308
+          },
+          {
+            "strName": "Venus_Troposphere 52-70km",
+            "fMaxAltitude": 6120,
+            "fCO2": 80.0,
+            "fN2": 2.89,
+            "fH2SO4": 0,
+            "fO2": 0,
+            "fTemp": 230
+          },
+          {
+            "strName": "Venus_Mesosphere 70-100km",
+            "fMaxAltitude": 6152,
+            "fCO2": 26.055,
+            "fN2": 0.94,
+            "fH2SO4": 0,
+            "fO2": 0,
+            "fTemp": 161
+          },
+          {
+            "strName": "Venus_Exosphere 100-200km",
+            "fMaxAltitude": 6252,
+            "fCO2": 1.0,
+            "fN2": 0.1,
+            "fH2SO4": 0,
+            "fO2": 0,
+            "fTemp": 212
+          },
+          {
+            "strName": "Venus_Exosphere 200-350km",
+            "fMaxAltitude": 6402,
+            "fCO2": 0.02,
+            "fN2": 0,
+            "fH2SO4": 0,
+            "fO2": 0,
+            "fTemp": 300
+          }
+        ]
+      },
+      {
+        "strName": "Earth",
+        "strNameParent": "Sol",
+        "fDegreesCW": -11.2,
+        "fEccentricity": 0.0167,
+        "fOrbitalPeriodYears": 1,
+        "fRadiusKM": 6371,
+        "fMassKG": 5.97e+24,
+        "fRotationPeriodDays": 0.99,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0,
+        "strParallax": "EarthAtmosphere",
+        "strGravParallax": "EarthGrav",
+        "fParallaxRadiusKM": 6571,
+        "fGravParallaxRadiusKM": 6571000,
+        "aAtmosphericValues": [
+          {
+            "strName": "Earth_Surface",
+            "fMaxAltitude": 6386,
+            "fCO2": 0.04,
+            "fN2": 79.01,
+            "fO2": 20.95,
+            "fTemp": 291,
+            "fMicrometeoroidChance": 0
+          },
+          {
+            "strName": "Earth_Troposphere",
+            "fMaxAltitude": 6421,
+            "fCO2": 0.008,
+            "fN2": 15.8,
+            "fO2": 4.19,
+            "fTemp": 213,
+            "fMicrometeoroidChance": 0
+          },
+          {
+            "strName": "Earth_Stratosphere",
+            "fMaxAltitude": 6771,
+            "fCO2": 4e-05,
+            "fN2": 0.04901,
+            "fO2": 0.02095,
+            "fTemp": 273,
+            "fMicrometeoroidChance": 0.1
+          },
+          {
+            "strName": "Earth_Mesosphere",
+            "fMaxAltitude": 7071,
+            "fCO2": 2.6e-06,
+            "fN2": 0.00513565,
+            "fO2": 0.00136175,
+            "fTemp": 183,
+            "fMicrometeoroidChance": 0.25
+          },
+          {
+            "strName": "Earth_LowOrbit",
+            "fMaxAltitude": 7300,
+            "fMicrometeoroidChance": 0.1
+          },
+          {
+            "strName": "Earth_HighOrbit",
+            "fMaxAltitude": 7600,
+            "fMicrometeoroidChance": 0.01
+          }
+        ]
+      },
+      {
+        "strName": "Mars",
+        "strNameParent": "Sol",
+        "fDegreesCW": 49.6,
+        "fEccentricity": 0.094,
+        "fOrbitalPeriodYears": 1.88,
+        "fRadiusKM": 3390,
+        "fMassKG": 6.4e+23,
+        "fRotationPeriodDays": 1.02,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0,
+        "strParallax": "MarsAtmosphere",
+        "strGravParallax": "MarsGrav",
+        "fParallaxRadiusKM": 3590,
+        "fGravParallaxRadiusKM": 3590000,
+        "aAtmosphericValues": [
+          {
+            "strName": "Mars_Surface",
+            "fMaxAltitude": 3401,
+            "fCO2": 0.5861,
+            "fN2": 0.0141,
+            "fO2": 0.0099,
+            "fTemp": 290
+          },
+          {
+            "strName": "Mars_Troposphere",
+            "fMaxAltitude": 3440,
+            "fCO2": 0.0469,
+            "fN2": 0.0014,
+            "fO2": 0.0009,
+            "fTemp": 143
+          },
+          {
+            "strName": "Mars_Stratosphere",
+            "fMaxAltitude": 3500,
+            "fCO2": 0.00059,
+            "fN2": 1.4e-05,
+            "fO2": 1e-05,
+            "fTemp": 270
+          },
+          {
+            "strName": "Mars_Mesoosphere",
+            "fMaxAltitude": 3600,
+            "fCO2": 6e-05,
+            "fN2": 1.4e-07,
+            "fO2": 9e-08,
+            "fTemp": 180
+          }
+        ]
+      },
+      {
+        "strName": "1036 Ganymed",
+        "strNameParent": "Sol",
+        "fDegreesCW": 215.556,
+        "fEccentricity": 0.5335,
+        "fOrbitalPeriodYears": 4.35,
+        "fRadiusKM": 17.5,
+        "fMassKG": 3.3e+16,
+        "fRotationPeriodDays": 0.416,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0,
+        "strParallax": "OKLGBoneyard",
+        "fVisibilityRangeMod": 0.5,
+        "fVisibilityRangeModGrav": 1.0,
+        "fParallaxRadiusKM": 4100
+      },
+      {
+        "strName": "Ceres",
+        "strNameParent": "Sol",
+        "fDegreesCW": 80.32,
+        "fEccentricity": 0.08,
+        "fOrbitalPeriodYears": 4.6,
+        "fRadiusKM": 476,
+        "fMassKG": 9.4e+20,
+        "fRotationPeriodDays": 0.375,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0
+      },
+      {
+        "strName": "Vesta",
+        "strNameParent": "Sol",
+        "fDegreesCW": 103.8,
+        "fEccentricity": 0.08874,
+        "fOrbitalPeriodYears": 3.63,
+        "fRadiusKM": 262,
+        "fMassKG": 2.59e+20,
+        "fRotationPeriodDays": 0.2226,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0
+      },
+      {
+        "strName": "Pallas",
+        "strNameParent": "Sol",
+        "fDegreesCW": 173.08,
+        "fEccentricity": 0.2305,
+        "fOrbitalPeriodYears": 4.62,
+        "fRadiusKM": 256,
+        "fMassKG": 2.1e+20,
+        "fRotationPeriodDays": 0.325,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0
+      },
+      {
+        "strName": "Hygeia",
+        "strNameParent": "Sol",
+        "fDegreesCW": 283.2,
+        "fEccentricity": 0.1125,
+        "fOrbitalPeriodYears": 5.27,
+        "fRadiusKM": 222,
+        "fMassKG": 8.55e+19,
+        "fRotationPeriodDays": 1.15,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0
+      },
+      {
+        "strName": "Jupiter",
+        "strNameParent": "Sol",
+        "fDegreesCW": 100.464,
+        "fEccentricity": 0.0489,
+        "fOrbitalPeriodYears": 11.862,
+        "fRadiusKM": 69812,
+        "fMassKG": 1.9e+27,
+        "fRotationPeriodDays": 0.414,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0,
+        "strParallax": "JupiterAtmosphere",
+        "strGravParallax": "JupiterGrav",
+        "fParallaxRadiusKM": 70112,
+        "fGravParallaxRadiusKM": 70112000,
+        "aAtmosphericValues": [
+          {
+            "strName": "Jupiter_CrushDepth",
+            "fMaxAltitude": 69912,
+            "fCO2": 0.0,
+            "fNH3": 3500,
+            "fO2": 0,
+            "fTemp": 426
+          },
+          {
+            "strName": "Jupiter_1Bar_Surface",
+            "fMaxAltitude": 69962,
+            "fCO2": 0,
+            "fNH3": 100,
+            "fO2": 0,
+            "fTemp": 200
+          },
+          {
+            "strName": "Jupiter_Troposphere",
+            "fMaxAltitude": 70012,
+            "fCO2": 0,
+            "fNH3": 10,
+            "fO2": 0.0,
+            "fTemp": 110
+          },
+          {
+            "strName": "Jupiter_Stratosphere ",
+            "fMaxAltitude": 70200,
+            "fCO2": 0,
+            "fNH3": 1,
+            "fO2": 0,
+            "fTemp": 210
+          },
+          {
+            "strName": "Jupiter_Exosphere ",
+            "fMaxAltitude": 70400,
+            "fCO2": 0,
+            "fNH3": 0.4,
+            "fO2": 0,
+            "fTemp": 110
+          }
+        ]
+      },
+      {
+        "strName": "Saturn",
+        "strNameParent": "Sol",
+        "fDegreesCW": 113.6,
+        "fEccentricity": 0.056,
+        "fOrbitalPeriodYears": 29.46,
+        "fRadiusKM": 58133,
+        "fMassKG": 5.7e+26,
+        "fRotationPeriodDays": 0,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0,
+        "strParallax": "SaturnAtmosphere",
+        "strGravParallax": "SaturnGrav",
+        "fParallaxRadiusKM": 58433,
+        "fGravParallaxRadiusKM": 58433000,
+        "aAtmosphericValues": [
+          {
+            "strName": "Saturn_CrushDepth",
+            "fMaxAltitude": 58233,
+            "fCO2": 0,
+            "fNH3": 3500,
+            "fO2": 0,
+            "fTemp": 275
+          },
+          {
+            "strName": "Saturn_1Bar_Surface",
+            "fMaxAltitude": 58333,
+            "fCO2": 0,
+            "fNH3": 100,
+            "fO2": 0,
+            "fTemp": 143
+          },
+          {
+            "strName": "Saturn_Troposphere",
+            "fMaxAltitude": 58433,
+            "fCO2": 0,
+            "fNH3": 10,
+            "fO2": 0.0,
+            "fTemp": 90
+          },
+          {
+            "strName": "Saturn_Stratosphere",
+            "fMaxAltitude": 58533,
+            "fCO2": 0,
+            "fNH3": 1,
+            "fO2": 0,
+            "fTemp": 143
+          },
+          {
+            "strName": "Saturn_Exosphere",
+            "fMaxAltitude": 58733,
+            "fCO2": 0,
+            "fNH3": 0.4,
+            "fO2": 0,
+            "fTemp": 71
+          }
+        ]
+      },
+      {
+        "strName": "Uranus",
+        "strNameParent": "Sol",
+        "fDegreesCW": 74,
+        "fEccentricity": 0.047,
+        "fOrbitalPeriodYears": 84.02,
+        "fRadiusKM": 25263,
+        "fMassKG": 8.7e+25,
+        "fRotationPeriodDays": 0,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0,
+        "strParallax": "UranusAtmosphere",
+        "strGravParallax": "UranusGrav",
+        "fParallaxRadiusKM": 25563,
+        "fGravParallaxRadiusKM": 25563000,
+        "aAtmosphericValues": [
+          {
+            "strName": "Uranus_CrushDepth",
+            "fMaxAltitude": 25363,
+            "fCO2": 0.0,
+            "fCH4": 3500,
+            "fO2": 0,
+            "fTemp": 120
+          },
+          {
+            "strName": "Uranus_1Bar_Surface",
+            "fMaxAltitude": 25463,
+            "fCO2": 0.01,
+            "fCH4": 100,
+            "fO2": 0,
+            "fTemp": 60
+          },
+          {
+            "strName": "Uranus_Troposphere",
+            "fMaxAltitude": 25563,
+            "fCO2": 0,
+            "fCH4": 10,
+            "fO2": 0.0,
+            "fTemp": 85
+          },
+          {
+            "strName": "Uranus_Stratosphere",
+            "fMaxAltitude": 25663,
+            "fCO2": 0,
+            "fCH4": 1,
+            "fO2": 0,
+            "fTemp": 100
+          },
+          {
+            "strName": "Uranus_Exosphere",
+            "fMaxAltitude": 25863,
+            "fCO2": 0,
+            "fCH4": 0.4,
+            "fO2": 0,
+            "fTemp": 100
+          }
+        ]
+      },
+      {
+        "strName": "Neptune",
+        "strNameParent": "Sol",
+        "fDegreesCW": 131.8,
+        "fEccentricity": 0.0113,
+        "fOrbitalPeriodYears": 164.8,
+        "fRadiusKM": 24522,
+        "fMassKG": 1.02e+26,
+        "fRotationPeriodDays": 0,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0,
+        "strParallax": "NeptuneAtmosphere",
+        "strGravParallax": "NeptuneGrav",
+        "fParallaxRadiusKM": 24822,
+        "fGravParallaxRadiusKM": 24822000,
+        "aAtmosphericValues": [
+          {
+            "strName": "Neptune_CrushDepth",
+            "fMaxAltitude": 24622,
+            "fCO2": 0.0,
+            "fCH4": 3500,
+            "fO2": 0,
+            "fTemp": 120
+          },
+          {
+            "strName": "Neptune_1Bar_Surface",
+            "fMaxAltitude": 24722,
+            "fCO2": 0,
+            "fCH4": 100,
+            "fO2": 0,
+            "fTemp": 60
+          },
+          {
+            "strName": "Neptune_Troposphere",
+            "fMaxAltitude": 24822,
+            "fCO2": 0,
+            "fCH4": 10,
+            "fO2": 0.0,
+            "fTemp": 75
+          },
+          {
+            "strName": "Neptune_Stratosphere",
+            "fMaxAltitude": 24922,
+            "fCO2": 0,
+            "fCH4": 1,
+            "fO2": 0,
+            "fTemp": 90
+          },
+          {
+            "strName": "Neptune_Exosphere",
+            "fMaxAltitude": 25122,
+            "fCO2": 0,
+            "fCH4": 0.4,
+            "fO2": 0,
+            "fTemp": 90
+          }
+        ]
+      },
+      {
+        "strName": "588 Achilles",
+        "strNameParent": "Sol",
+        "fDegreesCW": 315.54,
+        "fEccentricity": 0.1463,
+        "fOrbitalPeriodYears": 11.862,
+        "fRadiusKM": 65,
+        "fMassKG": 2.6e+18,
+        "fRotationPeriodDays": 0.304,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0
+      },
+      {
+        "strName": "617 Patroclus",
+        "strNameParent": "Sol",
+        "fDegreesCW": 44.354,
+        "fEccentricity": 0.1382,
+        "fOrbitalPeriodYears": 11.862,
+        "fRadiusKM": 70,
+        "fMassKG": 1.36e+18,
+        "fRotationPeriodDays": 4.29,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0
+      },
+      {
+        "strName": "Pluto",
+        "strNameParent": "Sol",
+        "fDegreesCW": 11.3,
+        "fEccentricity": 0.245,
+        "fOrbitalPeriodYears": 247.7,
+        "fRadiusKM": 1184,
+        "fMassKG": 1.3e+22,
+        "fRotationPeriodDays": 0,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0
+      },
+      {
+        "strName": "Makemake",
+        "strNameParent": "Sol",
+        "fDegreesCW": 79,
+        "fEccentricity": 0.156,
+        "fOrbitalPeriodYears": 309.1,
+        "fRadiusKM": 716,
+        "fMassKG": 8.3e+21,
+        "fRotationPeriodDays": 0,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0
+      },
+      {
+        "strName": "Haumea",
+        "strNameParent": "Sol",
+        "fDegreesCW": 122,
+        "fEccentricity": 0.191,
+        "fOrbitalPeriodYears": 284.1,
+        "fRadiusKM": 620,
+        "fMassKG": 4e+21,
+        "fRotationPeriodDays": 0,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0
+      },
+      {
+        "strName": "Eris",
+        "strNameParent": "Sol",
+        "fDegreesCW": 35.9,
+        "fEccentricity": 0.441,
+        "fOrbitalPeriodYears": 558,
+        "fRadiusKM": 1164,
+        "fMassKG": 1.7e+22,
+        "fRotationPeriodDays": 0,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0
+      },
+      {
+        "strName": "Sedna",
+        "strNameParent": "Sol",
+        "fDegreesCW": 144.5,
+        "fEccentricity": 0.855,
+        "fOrbitalPeriodYears": 11400,
+        "fRadiusKM": 996,
+        "fMassKG": 9.5e+21,
+        "fRotationPeriodDays": 0,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0
+      },
+      {
+        "strName": "2007OR10",
+        "strNameParent": "Sol",
+        "fDegreesCW": 337,
+        "fEccentricity": 0.506,
+        "fOrbitalPeriodYears": 546.6,
+        "fRadiusKM": 1280,
+        "fMassKG": 1.6e+22,
+        "fRotationPeriodDays": 0,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0
+      },
+      {
+        "strName": "Quaoar",
+        "strNameParent": "Sol",
+        "fDegreesCW": 189,
+        "fEccentricity": 0.039,
+        "fOrbitalPeriodYears": 286,
+        "fRadiusKM": 1111,
+        "fMassKG": 1.4e+21,
+        "fRotationPeriodDays": 0,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0
+      },
+      {
+        "strName": "Orcus",
+        "strNameParent": "Sol",
+        "fDegreesCW": 267,
+        "fEccentricity": 0.227,
+        "fOrbitalPeriodYears": 245.2,
+        "fRadiusKM": 917,
+        "fMassKG": 6.4e+20,
+        "fRotationPeriodDays": 0,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0
+      },
+      {
+        "strName": "Ultima Thule",
+        "strNameParent": "Sol",
+        "fDegreesCW": 158,
+        "fEccentricity": 0.041,
+        "fOrbitalPeriodYears": 298,
+        "fRadiusKM": 16,
+        "fMassKG": 1e+16,
+        "fRotationPeriodDays": 0,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0
+      },
+      {
+        "strName": "Bowie",
+        "strNameParent": "Sol",
+        "fDegreesCW": 131.8,
+        "fEccentricity": 0.467,
+        "fOrbitalPeriodYears": 15392,
+        "fRadiusKM": 3637,
+        "fMassKG": 2.13e+23,
+        "fRotationPeriodDays": 0,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0
+      },
+      {
+        "strName": "79au",
+        "strNameParent": "Sol",
+        "fDegreesCW": 196.967,
+        "fEccentricity": 0,
+        "fOrbitalPeriodYears": 702.047,
+        "fRadiusKM": 166,
+        "fMassKG": 371000000000.0,
+        "fRotationPeriodDays": 0,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0
+      },
+      {
+        "strName": "Luna",
+        "strNameParent": "Earth",
+        "fDegreesCW": 80,
+        "fEccentricity": 0.0549,
+        "fOrbitalPeriodYears": 0.074794521,
+        "fRadiusKM": 1737,
+        "fMassKG": 7.34e+22,
+        "fRotationPeriodDays": 27.32,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0
+      },
+      {
+        "strName": "Phobos",
+        "strNameParent": "Mars",
+        "fDegreesCW": 48,
+        "fEccentricity": 0.0151,
+        "fOrbitalPeriodYears": 0.000873973,
+        "fRadiusKM": 11.267,
+        "fMassKG": 1.07e+16,
+        "fRotationPeriodDays": 0.3189,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0
+      },
+      {
+        "strName": "Deimos",
+        "strNameParent": "Mars",
+        "fDegreesCW": 56,
+        "fEccentricity": 0.0003,
+        "fOrbitalPeriodYears": 0.003460274,
+        "fRadiusKM": 6.2,
+        "fMassKG": 1480000000000000.0,
+        "fRotationPeriodDays": 1.263,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0
+      },
+      {
+        "strName": "Ganymede",
+        "strNameParent": "Jupiter",
+        "fDegreesCW": 40,
+        "fEccentricity": 0.0013,
+        "fOrbitalPeriodYears": 0.0196,
+        "fRadiusKM": 2634.1,
+        "fMassKG": 1.48e+23,
+        "fRotationPeriodDays": 7.155,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0,
+        "strParallax": "GanymedeGrav",
+        "strGravParallax": "GanymedeGrav",
+        "fParallaxRadiusKM": 2934,
+        "fGravParallaxRadiusKM": 26340
+      },
+      {
+        "strName": "Io",
+        "strNameParent": "Jupiter",
+        "fDegreesCW": 264,
+        "fEccentricity": 0.0041,
+        "fOrbitalPeriodYears": 0.004846575,
+        "fRadiusKM": 1821.6,
+        "fMassKG": 8.93e+22,
+        "fRotationPeriodDays": 1.769,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0
+      },
+      {
+        "strName": "Europa",
+        "strNameParent": "Jupiter",
+        "fDegreesCW": 176,
+        "fEccentricity": 0.009,
+        "fOrbitalPeriodYears": 0.009728767,
+        "fRadiusKM": 1560.8,
+        "fMassKG": 4.8e+22,
+        "fRotationPeriodDays": 3.551,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0,
+        "strParallax": "EuropaGrav",
+        "strGravParallax": "EuropaGrav",
+        "fParallaxRadiusKM": 1860,
+        "fGravParallaxRadiusKM": 15610
+      },
+      {
+        "strName": "Amalthea",
+        "strNameParent": "Jupiter",
+        "fDegreesCW": 264,
+        "fEccentricity": 0.003,
+        "fOrbitalPeriodYears": 0.001364384,
+        "fRadiusKM": 83.5,
+        "fMassKG": 2.08e+18,
+        "fRotationPeriodDays": 0.498,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0
+      },
+      {
+        "strName": "Himalia",
+        "strNameParent": "Jupiter",
+        "fDegreesCW": 112,
+        "fEccentricity": 0.16,
+        "fOrbitalPeriodYears": 0.686465753,
+        "fRadiusKM": 75,
+        "fMassKG": 6.7e+18,
+        "fRotationPeriodDays": 0.32425,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0
+      },
+      {
+        "strName": "Thebe",
+        "strNameParent": "Jupiter",
+        "fDegreesCW": 96,
+        "fEccentricity": 0.0175,
+        "fOrbitalPeriodYears": 0.001846575,
+        "fRadiusKM": 49.3,
+        "fMassKG": 4.3e+17,
+        "fRotationPeriodDays": 0.675,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0
+      },
+      {
+        "strName": "Elara",
+        "strNameParent": "Jupiter",
+        "fDegreesCW": 136,
+        "fEccentricity": 0.22,
+        "fOrbitalPeriodYears": 0.711342466,
+        "fRadiusKM": 43,
+        "fMassKG": 8.7e+17,
+        "fRotationPeriodDays": 0.5,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0
+      },
+      {
+        "strName": "Pasiphae",
+        "strNameParent": "Jupiter",
+        "fDegreesCW": 192,
+        "fEccentricity": 0.2953,
+        "fOrbitalPeriodYears": -2.093369863,
+        "fRadiusKM": 20,
+        "fMassKG": 3e+17,
+        "fRotationPeriodDays": 764.08,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0
+      },
+      {
+        "strName": "Metis",
+        "strNameParent": "Jupiter",
+        "fDegreesCW": 128,
+        "fEccentricity": 0.0002,
+        "fOrbitalPeriodYears": 0.000794521,
+        "fRadiusKM": 21.5,
+        "fMassKG": 3.6e+16,
+        "fRotationPeriodDays": 0.295,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0
+      },
+      {
+        "strName": "Carme",
+        "strNameParent": "Jupiter",
+        "fDegreesCW": 264,
+        "fEccentricity": 0.25,
+        "fOrbitalPeriodYears": -1.924054795,
+        "fRadiusKM": 23,
+        "fMassKG": 1.3e+17,
+        "fRotationPeriodDays": 702.28,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0
+      },
+      {
+        "strName": "Sinope",
+        "strNameParent": "Jupiter",
+        "fDegreesCW": 48,
+        "fEccentricity": 0.25,
+        "fOrbitalPeriodYears": -1.983835616,
+        "fRadiusKM": 19,
+        "fMassKG": 7.5e+16,
+        "fRotationPeriodDays": 724.1,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0
+      },
+      {
+        "strName": "Lysithea",
+        "strNameParent": "Jupiter",
+        "fDegreesCW": 56,
+        "fEccentricity": 0.11,
+        "fOrbitalPeriodYears": 0.710136986,
+        "fRadiusKM": 18,
+        "fMassKG": 6.3e+16,
+        "fRotationPeriodDays": 259.2,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0
+      },
+      {
+        "strName": "Ananke",
+        "strNameParent": "Jupiter",
+        "fDegreesCW": 312,
+        "fEccentricity": 0.24,
+        "fOrbitalPeriodYears": -1.672465753,
+        "fRadiusKM": 14,
+        "fMassKG": 3e+16,
+        "fRotationPeriodDays": 610.45,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0
+      },
+      {
+        "strName": "Callisto",
+        "strNameParent": "Jupiter",
+        "fDegreesCW": 0,
+        "fEccentricity": 0.0074,
+        "fOrbitalPeriodYears": 0.045723288,
+        "fRadiusKM": 2410.3,
+        "fMassKG": 1.08e+23,
+        "fRotationPeriodDays": 16.689,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0
+      },
+      {
+        "strName": "Titan",
+        "strNameParent": "Saturn",
+        "fDegreesCW": 120,
+        "fEccentricity": 0.0288,
+        "fOrbitalPeriodYears": 0.043684932,
+        "fRadiusKM": 2575,
+        "fMassKG": 1.35e+23,
+        "fRotationPeriodDays": 15.945,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0,
+        "strParallax": "TitanGrav",
+        "strGravParallax": "TitanGrav",
+        "fParallaxRadiusKM": 2875,
+        "fGravParallaxRadiusKM": 25750,
+        "fVisibilityRangeMod": 0.125,
+        "fVisibilityRangeModGrav": 1.0,
+        "aAtmosphericValues": [
+          {
+            "strName": "Titan_Surface_0-5km_1.5bar",
+            "fMaxAltitude": 2580,
+            "fCH4": 12,
+            "fN2": 138,
+            "fO2": 0,
+            "fTemp": 93
+          },
+          {
+            "strName": "Titan_Surface_5-15km_1bar",
+            "fMaxAltitude": 2590,
+            "fCH4": 7,
+            "fN2": 93,
+            "fTemp": 80
+          },
+          {
+            "strName": "Titan_Troposphere_15-30km_0.3bar",
+            "fMaxAltitude": 2605,
+            "fCH4": 2.1,
+            "fN2": 27.9,
+            "fTemp": 55
+          },
+          {
+            "strName": "Titan_Troposphere_30-44km_0.1bar",
+            "fMaxAltitude": 2619,
+            "fCH4": 0.6,
+            "fN2": 9.4,
+            "fTemp": 55
+          },
+          {
+            "strName": "Titan_Stratosphere_44-100km_0.01bar",
+            "fMaxAltitude": 2675,
+            "fCH4": 0.05,
+            "fN2": 0.95,
+            "fTemp": 145
+          },
+          {
+            "strName": "Titan_Stratosphere_100-300km_0.002_bar",
+            "fMaxAltitude": 2875,
+            "fCH4": 0.01,
+            "fN2": 0.19,
+            "fTemp": 170
+          },
+          {
+            "strName": "Titan_Mesosphere_300-500km_0.0001bar",
+            "fMaxAltitude": 3075,
+            "fCH4": 0.0005,
+            "fN2": 0.0095,
+            "fTemp": 150
+          },
+          {
+            "strName": "Titan_Exosphere_500-880km_0.000001bar",
+            "fMaxAltitude": 3455,
+            "fCH4": 5e-06,
+            "fN2": 9.5e-05,
+            "fTemp": 180
+          },
+          {
+            "strName": "Titan_Exosphere_880-1200km_0.00000001bar",
+            "fMaxAltitude": 3775,
+            "fCH4": 5e-08,
+            "fN2": 9.5e-07,
+            "fTemp": 190
+          }
+        ]
+      },
+      {
+        "strName": "Rhea",
+        "strNameParent": "Saturn",
+        "fDegreesCW": 328,
+        "fEccentricity": 0.00126,
+        "fOrbitalPeriodYears": 0.012378082,
+        "fRadiusKM": 763.8,
+        "fMassKG": 2.31e+21,
+        "fRotationPeriodDays": 4.518,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0
+      },
+      {
+        "strName": "Iapetus",
+        "strNameParent": "Saturn",
+        "fDegreesCW": 56,
+        "fEccentricity": 0.02768,
+        "fOrbitalPeriodYears": 0.217320548,
+        "fRadiusKM": 734.5,
+        "fMassKG": 1.81e+21,
+        "fRotationPeriodDays": 79.322,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0
+      },
+      {
+        "strName": "Dione",
+        "strNameParent": "Saturn",
+        "fDegreesCW": 264,
+        "fEccentricity": 0.0022,
+        "fOrbitalPeriodYears": 0.00749863,
+        "fRadiusKM": 561.4,
+        "fMassKG": 1.1e+21,
+        "fRotationPeriodDays": 2.737,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0
+      },
+      {
+        "strName": "Tethys",
+        "strNameParent": "Saturn",
+        "fDegreesCW": 168,
+        "fEccentricity": 0.0001,
+        "fOrbitalPeriodYears": 0.005172603,
+        "fRadiusKM": 531.1,
+        "fMassKG": 6.17e+20,
+        "fRotationPeriodDays": 1.888,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0
+      },
+      {
+        "strName": "Enceladus",
+        "strNameParent": "Saturn",
+        "fDegreesCW": 144,
+        "fEccentricity": 0.0047,
+        "fOrbitalPeriodYears": 0.003753425,
+        "fRadiusKM": 252.1,
+        "fMassKG": 1.08e+20,
+        "fRotationPeriodDays": 1.37,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0
+      },
+      {
+        "strName": "Mimas",
+        "strNameParent": "Saturn",
+        "fDegreesCW": 96,
+        "fEccentricity": 0.0196,
+        "fOrbitalPeriodYears": 0.002580822,
+        "fRadiusKM": 198.2,
+        "fMassKG": 3.75e+19,
+        "fRotationPeriodDays": 0.942,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0
+      },
+      {
+        "strName": "Triton",
+        "strNameParent": "Neptune",
+        "fDegreesCW": 312,
+        "fEccentricity": 1.6e-05,
+        "fOrbitalPeriodYears": -0.015890411,
+        "fRadiusKM": 14,
+        "fMassKG": 3e+16,
+        "fRotationPeriodDays": 0,
+        "nDrawFlagsTrack": 0,
+        "nDrawFlagsBody": 0
+      }
+    ],
+    "aSpawnStations": [
+      {
+        "strName": "HQCH",
+        "strPublicName": "Станция Циньчэн",
+        "strNameParent": "Mercury",
+        "strShipType": "Station_HQCH",
+        "strOrbitType": "GEO",
+        "strClassification": "OrbitalStationUnfinished",
+        "fDegreesCW": 0.0,
+        "fEccentricity": 0.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "bIsRegion": true,
+        "bIsNoFees": false,
+        "bNoCollisions": false,
+        "fDamageCap": 0.0,
+        "aStartingConds": [
+          "StationMaxScav=1.0x1",
+          "StationMaxPopulation=1.0x8",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "VNCA",
+        "strPublicName": "Терминал Лонг-Бич",
+        "strNameParent": "Venus",
+        "strShipType": "Station_VNCA_Port",
+        "strOrbitType": "EX",
+        "fDegreesCW": 180.0,
+        "fRadiusKM": 1.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 0.0327626,
+        "fPeriapsisAU": 4.07910137e-05,
+        "fApoapsisAU": 4.07910137e-05,
+        "fMassKG": 100000.0,
+        "bIsRegion": true,
+        "bIsNoFees": false,
+        "bNoCollisions": false,
+        "fDamageCap": 0.3,
+        "strLaw": "Venus",
+        "strOwner": "VNCACiv",
+        "aFactions": [
+          "VNCALEO",
+          "VNCACiv",
+          "VenusCrim"
+        ],
+        "aStartingConds": [
+          "StationMinScav=1.0x8",
+          "StationMaxScav=1.0x16",
+          "StationMaxPopulation=1.0x25",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "VNCA_SD",
+        "strPublicName": "Торговый центр Сан-Диего",
+        "strNameParent": "Venus",
+        "strShipType": "Station_VNCA_Mall",
+        "strOrbitType": "EX",
+        "fDegreesCW": 179.8,
+        "fRadiusKM": 1.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 0.0327626,
+        "fPeriapsisAU": 4.07910137e-05,
+        "fApoapsisAU": 4.07910137e-05,
+        "fMassKG": 100000.0,
+        "bIsRegion": false,
+        "bIsNoFees": true,
+        "bNoCollisions": true,
+        "fDamageCap": 0.3,
+        "strLaw": "Venus",
+        "strOwner": "VNCACiv",
+        "aFactions": [
+          "VNCALEO",
+          "VNCACiv",
+          "VenusCrim"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x30",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "VLA00",
+        "strPublicName": "Стройзона Лос-Анджелес: Мост",
+        "strNameParent": "Venus",
+        "strShipType": "LA_BRIDGE_1",
+        "strOrbitType": "EX",
+        "fDegreesCW": 180.5,
+        "fRadiusKM": 1.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 0.0327626,
+        "fPeriapsisAU": 4.07910137e-05,
+        "fApoapsisAU": 4.07910137e-05,
+        "fMassKG": 100000.0,
+        "bIsRegion": false,
+        "bIsNoFees": true,
+        "bNoCollisions": true,
+        "fDamageCap": 0.5,
+        "strLaw": "Venus",
+        "strOwner": "VNCACiv",
+        "aFactions": [
+          "VNCALEO",
+          "VNCACiv"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x4",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "VLA01",
+        "strPublicName": "Стройзона Лос-Анджелес #1",
+        "strNameParent": "Venus",
+        "strShipType": "LA_PORT_1",
+        "strOrbitType": "EX",
+        "fDegreesCW": 180.1,
+        "fRadiusKM": 1.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 0.0327626,
+        "fPeriapsisAU": 4.07910137e-05,
+        "fApoapsisAU": 4.07910137e-05,
+        "fMassKG": 100000.0,
+        "bIsRegion": false,
+        "bIsNoFees": true,
+        "bNoCollisions": true,
+        "bIsUnderConstruction": true,
+        "nConstructionProgress": 30,
+        "fDamageCap": 0.2,
+        "strLaw": "VenusLA",
+        "strOwner": "VNCACiv",
+        "aFactions": [
+          "VNCALEO",
+          "VNCACiv"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x5",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "VLA02",
+        "strPublicName": "Стройзона Лос-Анджелес #2",
+        "strNameParent": "Venus",
+        "strShipType": "LA_MAINTENANCE_1",
+        "strOrbitType": "EX",
+        "fDegreesCW": 182.0,
+        "fRadiusKM": 1.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 0.0327626,
+        "fPeriapsisAU": 4.07910137e-05,
+        "fApoapsisAU": 4.07910137e-05,
+        "fMassKG": 100000.0,
+        "bIsRegion": false,
+        "bIsNoFees": true,
+        "bNoCollisions": true,
+        "fDamageCap": 0.2,
+        "strLaw": "VenusLA",
+        "strOwner": "VNCACiv",
+        "aFactions": [
+          "VNCALEO",
+          "VNCACiv"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x10",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "VLA03",
+        "strPublicName": "Стройзона Лос-Анджелес #3",
+        "strNameParent": "Venus",
+        "strShipType": "LA_RESIDENTIAL_1",
+        "strOrbitType": "EX",
+        "fDegreesCW": 183.0,
+        "fRadiusKM": 1.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 0.0327626,
+        "fPeriapsisAU": 4.07910137e-05,
+        "fApoapsisAU": 4.07910137e-05,
+        "fMassKG": 100000.0,
+        "bIsRegion": false,
+        "bIsNoFees": true,
+        "bNoCollisions": true,
+        "fDamageCap": 0.2,
+        "strLaw": "VenusLA",
+        "strOwner": "VNCACiv",
+        "aFactions": [
+          "VNCALEO",
+          "VNCACiv"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x15",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "VLA04",
+        "strPublicName": "Стройзона Лос-Анджелес #4",
+        "strNameParent": "Venus",
+        "strShipType": "LA_MAINTENANCE_1",
+        "strOrbitType": "EX",
+        "fDegreesCW": 184.0,
+        "fRadiusKM": 1.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 0.0327626,
+        "fPeriapsisAU": 4.07910137e-05,
+        "fApoapsisAU": 4.07910137e-05,
+        "fMassKG": 100000.0,
+        "bIsRegion": false,
+        "bIsNoFees": true,
+        "bNoCollisions": true,
+        "fDamageCap": 0.4,
+        "strLaw": "VenusLA",
+        "strOwner": "VNCACiv",
+        "aFactions": [
+          "VNCALEO",
+          "VNCACiv"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x20",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "VLA05",
+        "strPublicName": "Стройзона Лос-Анджелес #5",
+        "strNameParent": "Venus",
+        "strShipType": "LA_BILGE_1",
+        "strOrbitType": "EX",
+        "fDegreesCW": 185.0,
+        "fRadiusKM": 1.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 0.0327626,
+        "fPeriapsisAU": 4.07910137e-05,
+        "fApoapsisAU": 4.07910137e-05,
+        "fMassKG": 100000.0,
+        "bIsRegion": false,
+        "bIsNoFees": true,
+        "bNoCollisions": true,
+        "fDamageCap": 0.5,
+        "strLaw": "VenusLA",
+        "strOwner": "VNCACiv",
+        "aFactions": [
+          "VNCALEO",
+          "VNCACiv"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x25",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "VCBR",
+        "strPublicName": "Клаудбрейк",
+        "strNameParent": "Venus",
+        "strShipType": "Station_VCBR",
+        "strOrbitType": "EX",
+        "fDegreesCW": 174.4,
+        "fRadiusKM": 1.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 0.0327626,
+        "fPeriapsisAU": 4.07910137e-05,
+        "fApoapsisAU": 4.07910137e-05,
+        "fMassKG": 100000.0,
+        "bIsRegion": false,
+        "bIsNoFees": false,
+        "bNoCollisions": false,
+        "fDamageCap": 0.3,
+        "strLaw": "Venus",
+        "strOwner": "VCBRCiv",
+        "aFactions": [
+          "VCBRLEO",
+          "VCBRCiv",
+          "VenusCrim"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x8",
+          "StationMaintLvl=1.0x0.9"
+        ]
+      },
+      {
+        "strName": "VENC",
+        "strPublicName": "Порту-ду-Энкантаду",
+        "strNameParent": "Venus",
+        "strShipType": "Station_VENC_Port",
+        "strOrbitType": "EX",
+        "fDegreesCW": 185.6,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 0.0327626,
+        "fPeriapsisAU": 4.07910137e-05,
+        "fApoapsisAU": 4.07910137e-05,
+        "bIsRegion": false,
+        "bIsNoFees": false,
+        "bNoCollisions": false,
+        "fDamageCap": 0.5,
+        "strLaw": "Venus",
+        "strOwner": "VENCCiv",
+        "aFactions": [
+          "VENCLEO",
+          "VENCCiv",
+          "VenusCrim"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x20",
+          "StationMaintLvl=1.0x0.7"
+        ]
+      },
+      {
+        "strName": "VENC_SVL",
+        "strNameParent": "Venus",
+        "strShipType": "Venus Club",
+        "strOrbitType": "EX",
+        "fDegreesCW": 185.65,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 0.0327626,
+        "fPeriapsisAU": 4.07910137e-05,
+        "fApoapsisAU": 4.07910137e-05,
+        "bIsRegion": false,
+        "bIsNoFees": false,
+        "bNoCollisions": true,
+        "fDamageCap": 0.5,
+        "strLaw": "Venus",
+        "strOwner": "VENCCiv",
+        "aFactions": [
+          "VENCLEO",
+          "VENCCiv",
+          "VenusCrim"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x20",
+          "StationMaintLvl=1.0x0.7"
+        ]
+      },
+      {
+        "strName": "VENC_GRN",
+        "strNameParent": "Venus",
+        "strShipType": "Green Room",
+        "strOrbitType": "EX",
+        "fDegreesCW": 185.66,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 0.0327626,
+        "fPeriapsisAU": 4.07910137e-05,
+        "fApoapsisAU": 4.07910137e-05,
+        "bIsRegion": false,
+        "bIsNoFees": false,
+        "bNoCollisions": true,
+        "fDamageCap": 0.5,
+        "strLaw": "Venus",
+        "strOwner": "VENCCiv",
+        "aFactions": [
+          "VENCLEO",
+          "VENCCiv",
+          "VenusCrim"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x8",
+          "StationMaintLvl=1.0x0.9"
+        ]
+      },
+      {
+        "strName": "VORB",
+        "strPublicName": "Орбитальная Венеры",
+        "strNameParent": "Venus",
+        "strShipType": "Station_VORB_Port",
+        "strOrbitType": "EX",
+        "strClassification": "OrbitalStation",
+        "fDegreesCW": 0.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "fPeriapsisAU": 4.345e-05,
+        "fApoapsisAU": 0.000116,
+        "bIsRegion": false,
+        "bIsNoFees": false,
+        "bNoCollisions": false,
+        "fDamageCap": 0.6,
+        "bDrawTrack": true,
+        "strLaw": "Venus",
+        "strOwner": "VENCCiv",
+        "aFactions": [
+          "VENCLEO",
+          "VENCCiv",
+          "VenusCrim"
+        ],
+        "aStartingConds": [
+          "StationIsDerelictSpawner=1.0x16",
+          "StationIsDerelictCollector=1.0x9",
+          "StationMaxPopulation=1.0x20",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "VORB_HAB",
+        "strPublicName": "Орбитальная Венеры: Жилой сектор",
+        "strNameParent": "Venus",
+        "strShipType": "Station_VORB_Habitation",
+        "strOrbitType": "EX",
+        "strClassification": "OrbitalStation",
+        "fDegreesCW": 0.2,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "fPeriapsisAU": 4.345e-05,
+        "fApoapsisAU": 0.000116,
+        "bIsRegion": false,
+        "bIsNoFees": false,
+        "bNoCollisions": true,
+        "fDamageCap": 0.6,
+        "strLaw": "Venus",
+        "strOwner": "VENCCiv",
+        "aFactions": [
+          "VENCLEO",
+          "VENCCiv",
+          "VenusCrim"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x20",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "VORB|Aux",
+        "strNameParent": "Venus",
+        "strShipType": "VORB_Aux",
+        "strOrbitType": "EX",
+        "strClassification": "OrbitalStation",
+        "fDegreesCW": 0.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "fPeriapsisAU": 4.345e-05,
+        "fApoapsisAU": 0.000116,
+        "bIsRegion": false,
+        "bIsNoFees": false,
+        "bNoCollisions": true,
+        "fDamageCap": 0.6,
+        "strLaw": "Venus",
+        "strOwner": "VENCCiv",
+        "aFactions": [
+          "VENCLEO",
+          "VENCCiv",
+          "VenusCrim"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x8",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "EJDR",
+        "strPublicName": "Порт Шацзян",
+        "strNameParent": "Luna",
+        "strShipType": "Station_EJDR",
+        "strOrbitType": "GROUND",
+        "strClassification": "GroundStationUnfinished",
+        "fDegreesCW": 0.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "bIsRegion": true,
+        "bIsNoFees": false,
+        "bNoCollisions": false,
+        "fDamageCap": 0.0,
+        "aStartingConds": [
+          "StationMaxScav=1.0x1",
+          "StationMaxPopulation=1.0x8",
+          "StationMaintLvl=1.0x0.5"
+        ]
+      },
+      {
+        "strName": "MTRS",
+        "strPublicName": "Порт Яншань",
+        "strNameParent": "Mars",
+        "strShipType": "Station_MTRS",
+        "strOrbitType": "GROUND",
+        "strClassification": "GroundStationUnfinished",
+        "fDegreesCW": 0.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "bIsRegion": true,
+        "bIsNoFees": false,
+        "bNoCollisions": false,
+        "fDamageCap": 0.0,
+        "aStartingConds": [
+          "StationMaxScav=1.0x1",
+          "StationMaxPopulation=1.0x8",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "MLAB",
+        "strPublicName": "Стартовый комплекс Royal Carriers",
+        "strNameParent": "Mars",
+        "strShipType": "Station_MLAB",
+        "strOrbitType": "GROUND",
+        "strClassification": "GroundStationUnfinished",
+        "fDegreesCW": 12.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "bIsRegion": true,
+        "bIsNoFees": false,
+        "bNoCollisions": false,
+        "fDamageCap": 0.0,
+        "aStartingConds": [
+          "StationMaxScav=1.0x1",
+          "StationMaxPopulation=1.0x8",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "MHNG",
+        "strPublicName": "Цяньтанмэнь",
+        "strNameParent": "Sol",
+        "strShipType": "Station_MHNG",
+        "strOrbitType": "ORBIT",
+        "strClassification": "OrbitalStationUnfinished",
+        "fDegreesCW": 109.6,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "fEccentricity": 0.094,
+        "fOrbitalPeriodYears": 1.88,
+        "bIsRegion": true,
+        "bIsNoFees": false,
+        "bNoCollisions": false,
+        "fDamageCap": 0.0,
+        "aStartingConds": [
+          "StationMaxScav=1.0x1",
+          "StationMaxPopulation=1.0x8",
+          "StationMaintLvl=1.0x0.97"
+        ]
+      },
+      {
+        "strName": "MSUZ",
+        "strPublicName": "Паньмэнь",
+        "strNameParent": "Sol",
+        "strShipType": "Station_MSUZ",
+        "strOrbitType": "ORBIT",
+        "strClassification": "OrbitalStationUnfinished",
+        "fDegreesCW": 349.6,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "fEccentricity": 0.094,
+        "fOrbitalPeriodYears": 1.88,
+        "bIsRegion": true,
+        "bIsNoFees": false,
+        "bNoCollisions": false,
+        "fDamageCap": 0.0,
+        "aStartingConds": [
+          "StationMaxScav=1.0x1",
+          "StationMaxPopulation=1.0x8",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "MVOL",
+        "strPublicName": "Комплекс «Ипсилон»",
+        "strNameParent": "Deimos",
+        "strShipType": "Station_MVOL",
+        "strOrbitType": "GROUND",
+        "strClassification": "GroundStationUnfinished",
+        "fDegreesCW": 0.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "bIsRegion": true,
+        "bIsNoFees": false,
+        "bNoCollisions": false,
+        "fDamageCap": 0.0,
+        "aStartingConds": [
+          "StationMaxScav=1.0x1",
+          "StationMaxPopulation=1.0x8",
+          "StationMaintLvl=1.0x0.95"
+        ]
+      },
+      {
+        "strName": "BCER",
+        "strPublicName": "Порт Мохаве",
+        "strNameParent": "Ceres",
+        "strShipType": "Station_BCER",
+        "strOrbitType": "GROUND",
+        "strClassification": "GroundStationUnfinished",
+        "fDegreesCW": 0.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "bIsRegion": true,
+        "bIsNoFees": false,
+        "bNoCollisions": false,
+        "fDamageCap": 0.0,
+        "aStartingConds": [
+          "StationMaxScav=1.0x1",
+          "StationMaxPopulation=1.0x8",
+          "StationMaintLvl=1.0x0.65"
+        ]
+      },
+      {
+        "strName": "BCRS",
+        "strPublicName": "Терминал Чжунхуамэнь",
+        "strNameParent": "Ceres",
+        "strShipType": "Station_BCRS",
+        "strOrbitType": "GEO",
+        "strClassification": "OrbitalStationUnfinished",
+        "fDegreesCW": 0.0,
+        "fEccentricity": 0.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "bIsRegion": false,
+        "bIsNoFees": false,
+        "bNoCollisions": false,
+        "fDamageCap": 0.0,
+        "aStartingConds": [
+          "StationMaxScav=1.0x1",
+          "StationMaxPopulation=1.0x8",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "BPAL",
+        "strPublicName": "Эмират Паллас",
+        "strNameParent": "Pallas",
+        "strShipType": "Nav Buoy",
+        "strOrbitType": "GROUND",
+        "strClassification": "GroundStationUnfinished",
+        "fDegreesCW": 0.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "bIsRegion": true,
+        "bIsNoFees": false,
+        "bNoCollisions": false,
+        "bIsUnderConstruction": true,
+        "fDamageCap": 0.0,
+        "aStartingConds": [
+          "StationMaxScav=1.0x1",
+          "StationMaxPopulation=1.0x8",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "OKLG",
+        "strNameParent": "1036 Ganymed",
+        "strShipType": "OKLG Entrance",
+        "strOrbitType": "GROUND",
+        "fDegreesCW": 0.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "bIsRegion": true,
+        "bIsNoFees": false,
+        "bNoCollisions": false,
+        "strParallax": "Blank",
+        "fParallaxRadiusKM": 1.5,
+        "fDamageCap": 0.3,
+        "strLaw": "OKLG",
+        "strOwner": "OKLGCorp",
+        "aFactions": [
+          "OKLGLEO",
+          "OKLGCorp",
+          "OKLGCiv"
+        ],
+        "aStartingConds": [
+          "StationIsDerelictSpawner=1.0x60",
+          "StationAllowsAnchoring=1.0x1",
+          "StationIsDerelictCollector=1.0x40",
+          "StationMinScav=1.0x8",
+          "StationMaxScav=1.0x16",
+          "StationMinPirate=1.0x2",
+          "StationMaxPirate=1.0x8",
+          "StationMaxPopulation=1.0x10",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "OKLG_BIZ",
+        "strNameParent": "1036 Ganymed",
+        "strShipType": "OKLG Bureaus",
+        "strOrbitType": "GROUND",
+        "fDegreesCW": 355.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "bIsRegion": false,
+        "bIsNoFees": false,
+        "bNoCollisions": true,
+        "strParallax": "Blank",
+        "fParallaxRadiusKM": 1.5,
+        "fDamageCap": 0.3,
+        "strLaw": "OKLG",
+        "strOwner": "OKLGCorp",
+        "aFactions": [
+          "OKLGLEO",
+          "OKLGCorp",
+          "OKLGCiv"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x10",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "OKLG_MES",
+        "strNameParent": "1036 Ganymed",
+        "strShipType": "OKLG Mescaform",
+        "strOrbitType": "GROUND",
+        "fDegreesCW": 5.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "bIsRegion": false,
+        "bIsNoFees": false,
+        "bNoCollisions": true,
+        "strParallax": "Blank",
+        "fParallaxRadiusKM": 1.5,
+        "fDamageCap": 0.5,
+        "strLaw": "OKLG",
+        "strOwner": "OKLGCorp",
+        "aFactions": [
+          "OKLGLEO",
+          "OKLGCorp",
+          "OKLGCiv"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x10",
+          "StationMaintLvl=1.0x0.7"
+        ]
+      },
+      {
+        "strName": "OKLG_RES",
+        "strNameParent": "1036 Ganymed",
+        "strShipType": "OKLG_RES",
+        "strOrbitType": "GROUND",
+        "fDegreesCW": 352.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "bIsRegion": false,
+        "bIsNoFees": false,
+        "bNoCollisions": true,
+        "strParallax": "Blank",
+        "fParallaxRadiusKM": 1.5,
+        "fDamageCap": 0.3,
+        "strLaw": "OKLG",
+        "strOwner": "OKLGCorp",
+        "aFactions": [
+          "OKLGLEO",
+          "OKLGCorp",
+          "OKLGCiv"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x4",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "OKLG_UNK",
+        "strNameParent": "1036 Ganymed",
+        "strShipType": "Station_Ground",
+        "strOrbitType": "GROUND",
+        "fDegreesCW": 10.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "bIsRegion": false,
+        "bIsNoFees": true,
+        "bNoCollisions": true,
+        "strParallax": "Blank",
+        "fParallaxRadiusKM": 1.5,
+        "fDamageCap": 0.5,
+        "strLaw": "OKLG",
+        "strOwner": "OKLGCorp",
+        "aFactions": [
+          "OKLGLEO",
+          "OKLGCorp",
+          "OKLGCiv"
+        ]
+      },
+      {
+        "strName": "OKLG_FLOT",
+        "strNameParent": "1036 Ganymed",
+        "strShipType": "Flotilla",
+        "strOrbitType": "EX",
+        "fDegreesCW": 312.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 500,
+        "fPeriapsisAU": 1.0695339395629512e-05,
+        "fApoapsisAU": 1.0695339395629512e-05,
+        "bIsRegion": false,
+        "bIsNoFees": true,
+        "bNoCollisions": false,
+        "fDamageCap": 0.85,
+        "aFactions": [
+          "OKLGFlotilla"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x10",
+          "StationMaintLvl=1.0x0.5"
+        ]
+      },
+      {
+        "strName": "OKLG_ATC",
+        "strNameParent": "1036 Ganymed",
+        "strShipType": "ATC 01",
+        "strOrbitType": "EX",
+        "strClassification": "Buoy",
+        "fDegreesCW": 240.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 0.416,
+        "fPeriapsisAU": 2.6738348489073784e-05,
+        "fApoapsisAU": 2.6738348489073784e-05,
+        "bIsRegion": false,
+        "bIsNoFees": false,
+        "bNoCollisions": false,
+        "fDamageCap": 0.2,
+        "strLaw": "OKLG",
+        "strOwner": "OKLGLEO",
+        "aFactions": [
+          "OKLGLEO",
+          "OKLGCorp"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x5",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "OKLG_SEC",
+        "strNameParent": "1036 Ganymed",
+        "strShipType": "Security Station",
+        "strOrbitType": "EX",
+        "strClassification": "Outpost",
+        "fDegreesCW": 120.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 0.416,
+        "fPeriapsisAU": 2.6738348489073784e-05,
+        "fApoapsisAU": 2.6738348489073784e-05,
+        "bIsRegion": false,
+        "bIsNoFees": false,
+        "bNoCollisions": false,
+        "fDamageCap": 0.2,
+        "strLaw": "OKLG",
+        "strOwner": "OKLGLEO",
+        "aFactions": [
+          "OKLGLEO",
+          "OKLGCorp"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x10",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "OKLG_NAV0",
+        "strNameParent": "1036 Ganymed",
+        "strShipType": "Mooring Buoy",
+        "strOrbitType": "EX",
+        "strClassification": "Buoy",
+        "fDegreesCW": 0.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 0.416,
+        "fPeriapsisAU": 2.6738348489073784e-05,
+        "fApoapsisAU": 2.6738348489073784e-05,
+        "bIsRegion": false,
+        "bIsNoFees": false,
+        "bNoCollisions": false,
+        "fDamageCap": 0.4,
+        "strLaw": "OKLG",
+        "strOwner": "OKLGLEO",
+        "aFactions": [
+          "OKLGLEO",
+          "OKLGCorp"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x2",
+          "StationMaintLvl=1.0x0.7"
+        ]
+      },
+      {
+        "strName": "OKLG_NAV1",
+        "strNameParent": "1036 Ganymed",
+        "strPublicName": "ОКЛГ НАВ",
+        "strShipType": "Nav Buoy",
+        "strOrbitType": "EX",
+        "strClassification": "Buoy",
+        "fDegreesCW": 60.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 0.416,
+        "fPeriapsisAU": 2.6738348489073784e-05,
+        "fApoapsisAU": 2.6738348489073784e-05,
+        "bIsRegion": false,
+        "bIsNoFees": true,
+        "bNoCollisions": false,
+        "fDamageCap": 0.4,
+        "strLaw": "OKLG",
+        "strOwner": "OKLGLEO",
+        "aFactions": [
+          "OKLGLEO",
+          "OKLGCorp"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x2",
+          "StationMaintLvl=1.0x0.7"
+        ]
+      },
+      {
+        "strName": "OKLG_NAV2",
+        "strNameParent": "1036 Ganymed",
+        "strPublicName": "ОКЛГ НАВ2",
+        "strShipType": "Nav Buoy",
+        "strOrbitType": "EX",
+        "strClassification": "Buoy",
+        "fDegreesCW": 180.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 0.416,
+        "fPeriapsisAU": 2.6738348489073784e-05,
+        "fApoapsisAU": 2.6738348489073784e-05,
+        "bIsRegion": false,
+        "bIsNoFees": true,
+        "bNoCollisions": false,
+        "fDamageCap": 0.6,
+        "strLaw": "OKLG",
+        "strOwner": "OKLGLEO",
+        "aFactions": [
+          "OKLGLEO",
+          "OKLGCorp"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x2",
+          "StationMaintLvl=1.0x0.7"
+        ]
+      },
+      {
+        "strName": "OKLG_NAV3",
+        "strNameParent": "1036 Ganymed",
+        "strPublicName": "ОКЛГ НАВ3",
+        "strShipType": "Nav Buoy",
+        "strOrbitType": "EX",
+        "strClassification": "Buoy",
+        "fDegreesCW": 300.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "fEccentricity": 0.0,
+        "fOrbitalPeriodYears": 0.416,
+        "fPeriapsisAU": 2.6738348489073784e-05,
+        "fApoapsisAU": 2.6738348489073784e-05,
+        "bIsRegion": false,
+        "bIsNoFees": true,
+        "bNoCollisions": false,
+        "fDamageCap": 0.3,
+        "strLaw": "OKLG",
+        "strOwner": "OKLGLEO",
+        "aFactions": [
+          "OKLGLEO",
+          "OKLGCorp"
+        ],
+        "aStartingConds": [
+          "StationMaxPopulation=1.0x2",
+          "StationMaintLvl=1.0x0.7"
+        ]
+      },
+      {
+        "strName": "JFTS",
+        "strPublicName": "Порт Индепенденс",
+        "strNameParent": "Ganymede",
+        "strShipType": "Station_JFTS",
+        "strOrbitType": "GROUND",
+        "strClassification": "GroundStationUnfinished",
+        "fDegreesCW": 0.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "bIsRegion": true,
+        "bIsNoFees": false,
+        "bNoCollisions": false,
+        "fDamageCap": 0.0,
+        "aStartingConds": [
+          "StationMaxScav=1.0x1",
+          "StationMaxPopulation=1.0x8",
+          "StationMaintLvl=1.0x0.8"
+        ]
+      },
+      {
+        "strName": "JATL",
+        "strPublicName": "Посадочная зона «Атлантис»",
+        "strNameParent": "Europa",
+        "strShipType": "Station_JATL",
+        "strOrbitType": "GROUND",
+        "strClassification": "GroundStationUnfinished",
+        "fDegreesCW": 0.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "bIsRegion": false,
+        "bIsNoFees": false,
+        "bNoCollisions": false,
+        "fDamageCap": 0.0,
+        "aStartingConds": [
+          "StationMaxScav=1.0x1",
+          "StationMaxPopulation=1.0x8",
+          "StationMaintLvl=1.0x0.9"
+        ]
+      },
+      {
+        "strName": "JPTN",
+        "strPublicName": "Порту-Нуэво",
+        "strNameParent": "Europa",
+        "strShipType": "Station_JPTN",
+        "strOrbitType": "GEO",
+        "strClassification": "OrbitalStationUnfinished",
+        "fDegreesCW": 0.0,
+        "fEccentricity": 0.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "bIsRegion": true,
+        "bIsNoFees": false,
+        "bNoCollisions": false,
+        "fDamageCap": 0.0,
+        "aStartingConds": [
+          "StationMaxScav=1.0x1",
+          "StationMaxPopulation=1.0x8",
+          "StationMaintLvl=1.0x0.7"
+        ]
+      },
+      {
+        "strName": "SVIR",
+        "strPublicName": "Космопорт Кассини",
+        "strNameParent": "Titan",
+        "strShipType": "Station_SVIR",
+        "strOrbitType": "GROUND",
+        "strClassification": "GroundStationUnfinished",
+        "fDegreesCW": 0.0,
+        "fRadiusKM": 1.0,
+        "fMassKG": 100000.0,
+        "bIsRegion": true,
+        "bIsNoFees": false,
+        "bNoCollisions": false,
+        "fDamageCap": 0.0,
+        "aStartingConds": [
+          "StationMaxScav=1.0x1",
+          "StationMaxPopulation=1.0x8",
+          "StationMaintLvl=1.0x0.9"
+        ]
+      }
+    ],
+    "aSpawnDerelictRings": [
+      {
+        "strLootShipType": "RandomShip",
+        "strSpawnAroundBody": "Sol",
+        "nSpawnCountMin": 0,
+        "nSpawnCountMax": 0,
+        "fSpawnRadiusMinKM": 46375339.917,
+        "fSpawnRadiusMaxKM": 74798935350.0,
+        "fVelMaxKMpS": 0.5,
+        "bIsBodyLocked": false
+      },
+      {
+        "strLootShipType": "RandomDerelict",
+        "strSpawnAroundBody": "1036 Ganymed",
+        "nSpawnCountMin": 40,
+        "nSpawnCountMax": 60,
+        "fSpawnRadiusMinKM": 90.0,
+        "fSpawnRadiusMaxKM": 1600.0,
+        "fVelMaxKMpS": 0.0,
+        "bIsBodyLocked": true,
+        "strOwner": "OKLGCorp",
+        "aFactions": [
+          "OKLGCorp"
+        ]
+      },
+      {
+        "strLootShipType": "RandomDerelictVenus",
+        "strSpawnAroundBody": "VORB",
+        "nSpawnCountMin": 9,
+        "nSpawnCountMax": 16,
+        "fSpawnRadiusMinKM": 500.0,
+        "fSpawnRadiusMaxKM": 1000.0,
+        "fVelMaxKMpS": 0.0,
+        "bIsBodyLocked": true,
+        "strOwner": "VNCACiv"
+      }
+    ],
+    "aComps": [
+      {
+        "_strName": "Ayotimiwa Ship Breaking Co.",
+        "strRegID": "OKLG",
+        "mapRoster": {},
+        "NullShift": {
+          "nID": -1,
+          "strName": "Null Shift",
+          "clr": {
+            "r": 1,
+            "g": 0,
+            "b": 1,
+            "a": 1
+          }
+        }
+      },
+      {
+        "_strName": "AyoSec",
+        "jcrDefaultRules": {
+          "bAirlockPermission": true
+        }
+      },
+      {
+        "_strName": "Newcal Police Dept.",
+        "jcrDefaultRules": {
+          "bAirlockPermission": true
+        }
+      }
+    ],
+    "aFactions": [
+      {
+        "strName": "OKLGCiv",
+        "strNameFriendly": "Гражданские ОКЛГ",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGCiv",
+        "dictFactionRels": {
+          "OKLGCorp": 25,
+          "OKLGLEO": 25,
+          "OKLGCrim": -50,
+          "OKLGFlotilla": -25,
+          "OKLGScav": 25
+        }
+      },
+      {
+        "strName": "OKLGCorp",
+        "strNameFriendly": "Айотимива Шип Брейкинг Ко.",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGCorp",
+        "dictFactionRels": {
+          "OKLGLEO": 100,
+          "OKLGCiv": 25,
+          "OKLGCrim": -50,
+          "OKLGFlotilla": -25,
+          "OKLGScav": 25
+        }
+      },
+      {
+        "strName": "OKLGCrim",
+        "strNameFriendly": "Преступники ОКЛГ",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGCrim",
+        "dictFactionRels": {
+          "OKLGCorp": -50,
+          "OKLGLEO": -100,
+          "OKLGCiv": 25,
+          "OKLGFlotilla": 50,
+          "OKLGScav": 0
+        }
+      },
+      {
+        "strName": "OKLGFlotilla",
+        "strNameFriendly": "Флотилия",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGFlotilla",
+        "dictFactionRels": {
+          "OKLGCorp": -50,
+          "OKLGLEO": -50,
+          "OKLGCiv": -25,
+          "OKLGCrim": 25,
+          "OKLGScav": 50
+        }
+      },
+      {
+        "strName": "OKLGLEO",
+        "strNameFriendly": "АйоСек",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGLEO",
+        "dictFactionRels": {
+          "OKLGCorp": 100,
+          "OKLGCiv": 100,
+          "OKLGCrim": -100,
+          "OKLGFlotilla": -25,
+          "OKLGScav": 0
+        }
+      },
+      {
+        "strName": "OKLGPirates",
+        "strNameFriendly": "Братство Огидан Паранта",
+        "aMembers": [],
+        "bAutoAdd": false,
+        "strInteractionTriggered": "AF_OKLGPirates",
+        "dictFactionRels": {
+          "OKLGCorp": -100,
+          "OKLGLEO": -100,
+          "OKLGCiv": -100,
+          "OKLGCrim": -100,
+          "OKLGFlotilla": -100,
+          "OKLGPirates": 200
+        }
+      },
+      {
+        "strName": "OKLGScav",
+        "strNameFriendly": "Утилизаторы ОКЛГ",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_OKLGScav",
+        "dictFactionRels": {
+          "OKLGCorp": 25,
+          "OKLGLEO": -25,
+          "OKLGCiv": 25,
+          "OKLGCrim": 0,
+          "OKLGFlotilla": 50
+        }
+      },
+      {
+        "strName": "VCBRCiv",
+        "strNameFriendly": "Гражданские Клаудбрейк",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_VCBRCiv",
+        "dictFactionRels": {
+          "VCBRLEO": 25,
+          "VENCLEO": 20,
+          "VNCALEO": 0,
+          "VCBRCiv": 25,
+          "VNCACiv": 0,
+          "VENCCiv": 25,
+          "VenusCrim": 0
+        }
+      },
+      {
+        "strName": "VCBRLEO",
+        "strNameFriendly": "Корпоративная безопасность Клаудбрейк",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_VCBRLEO",
+        "dictFactionRels": {
+          "VCBRLEO": 100,
+          "VENCLEO": 25,
+          "VNCALEO": 25,
+          "VCBRCiv": 100,
+          "VENCCiv": 0,
+          "VNCACiv": 0,
+          "VenusCrim": -25,
+          "VenusPirates": -100
+        }
+      },
+      {
+        "strName": "VENCCiv",
+        "strNameFriendly": "Гражданские Энкантаду",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_VENCCiv",
+        "dictFactionRels": {
+          "VCBRLEO": 20,
+          "VENCLEO": 25,
+          "VNCALEO": 0,
+          "VNCACiv": 0,
+          "VCBRCiv": 25,
+          "VENCCiv": 25,
+          "VenusCrim": 0
+        }
+      },
+      {
+        "strName": "VENCLEO",
+        "strNameFriendly": "Федеральная полиция",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_VENCLEO",
+        "dictFactionRels": {
+          "VCBRLEO": 25,
+          "VENCLEO": 100,
+          "VNCALEO": 25,
+          "VCBRCiv": 0,
+          "VENCCiv": 100,
+          "VNCACiv": 0,
+          "VenusCrim": -25,
+          "VenusPirates": -100
+        }
+      },
+      {
+        "strName": "VenusCrim",
+        "strNameFriendly": "Венерианские преступные группировки",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_VenusCrim",
+        "dictFactionRels": {
+          "VCBRLEO": -20,
+          "VENCLEO": -10,
+          "VNCALEO": -20,
+          "VCBRCiv": 25,
+          "VENCCiv": 25,
+          "VNCACiv": 25
+        }
+      },
+      {
+        "strName": "VenusPirates",
+        "strNameFriendly": "Шиповник",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_VenusPirates",
+        "dictFactionRels": {
+          "VCBRLEO": -100,
+          "VENCLEO": -50,
+          "VNCALEO": -100,
+          "VNCACiv": -50,
+          "VENCCiv": 0,
+          "VCBRCiv": -25,
+          "VenusCrim": -25,
+          "VenusPirates": 200
+        }
+      },
+      {
+        "strName": "VNCACiv",
+        "strNameFriendly": "Гражданские НовКал",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_VNCACiv",
+        "dictFactionRels": {
+          "VCBRLEO": 10,
+          "VENCLEO": 10,
+          "VNCALEO": 25,
+          "VNCACiv": 25,
+          "VENCCiv": 0,
+          "VCBRCiv": 0,
+          "VenusCrim": 0,
+          "VenusPirates": -50
+        }
+      },
+      {
+        "strName": "VNCALEO",
+        "strNameFriendly": "Полиция НовКал",
+        "aMembers": [],
+        "bAutoAdd": true,
+        "strInteractionTriggered": "AF_VNCALEO",
+        "dictFactionRels": {
+          "VCBRLEO": 25,
+          "VENCLEO": 25,
+          "VNCALEO": 100,
+          "VCBRCiv": 0,
+          "VENCCiv": 0,
+          "VNCACiv": 100,
+          "VenusCrim": -25,
+          "VenusPirates": -100
+        },
+        "strCompany": "Newcal Police Dept."
+      }
+    ]
+  }
+]

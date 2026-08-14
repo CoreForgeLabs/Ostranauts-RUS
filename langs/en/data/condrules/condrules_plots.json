@@ -1,0 +1,126 @@
+[
+  {
+    "strName" : "DcPlotFixerTrustIssues",
+    "strCond" : "PlotFixerTrustIssues",
+    "aThresholds" : [
+      { "strLootNew" : "CONDDcPlotFixerTrustIssues01", "fMin"     : 5, "fMax"     : 9e99, "fMinAdd"  : 1, "fMaxAdd"  : -1 }
+    ]
+  },
+  {
+    "strName" : "DcPlot_Lonesome",
+    "strCond" : "Stat_Lonesome",
+    "aThresholds" : [
+      { "strLootNew" : "CONDDcPlotLonesome01", "fMin"     : 0, "fMax"     : 10, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPlotLonesome02", "fMin"     : 10, "fMax"     : 20, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPlotLonesome03", "fMin"     : 20, "fMax"     : 40, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPlotLonesome04", "fMin"     : 40, "fMax"     : 9e99, "fMinAdd"  : 1, "fMaxAdd"  : -1 }
+    ]
+  },
+  {
+    "strName" : "DcPlot_Whodunnit_CluesFound",
+    "strCond" : "StatPlot_Whodunnit_CluesFound",
+    "aThresholds" : [
+      { "strLootNew" : "CONDDcPlot_Whodunnit_CluesFound00", "fMin"     : 0, "fMax"     : 1, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPlot_Whodunnit_CluesFound01", "fMin"     : 1, "fMax"     : 2, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPlot_Whodunnit_CluesFound02", "fMin"     : 2, "fMax"     : 3, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPlot_Whodunnit_CluesFound03", "fMin"     : 3, "fMax"     : 4, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPlot_Whodunnit_CluesFound04", "fMin"     : 4, "fMax"     : 5, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPlot_Whodunnit_CluesFound05", "fMin"     : 5, "fMax"     : 6, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPlot_Whodunnit_CluesFound06", "fMin"     : 6, "fMax"     : 9e99, "fMinAdd"  : 1, "fMaxAdd"  : -1 }
+    ]
+  }, 
+
+  {
+    "strName" : "DcPlot_Merga_CluesFound_RacingIcon",
+    "strCond" : "StatPlot_Merga_CluesFound_RacingIcon",
+    "aThresholds" : [
+      { "strLootNew" : "CONDDcPlot_Merga_CluesFound00_RacingIcon", "fMin"     : 0, "fMax"     : 1, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPlot_Merga_CluesFound01_RacingIcon", "fMin"     : 1, "fMax"     : 2, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPlot_Merga_CluesFound02_RacingIcon", "fMin"     : 2, "fMax"     : 3, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPlot_Merga_CluesFound03_RacingIcon", "fMin"     : 3, "fMax"     : 4, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPlot_Merga_CluesFound04_RacingIcon", "fMin"     : 4, "fMax"     : 5, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPlot_Merga_CluesFound05_RacingIcon", "fMin"     : 5, "fMax"     : 6, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPlot_Merga_CluesFound06_RacingIcon", "fMin"     : 6, "fMax"     : 9e99, "fMinAdd"  : 1, "fMaxAdd"  : -1 }
+    ]
+  },
+  {
+    "strName" : "DcPlot_Merga_CluesFound_Journalist",
+    "strCond" : "StatPlot_Merga_CluesFound_Journalist",
+    "aThresholds" : [
+      { "strLootNew" : "CONDDcPlot_Merga_CluesFound00_Journalist", "fMin"     : 0, "fMax"     : 1, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPlot_Merga_CluesFound01_Journalist", "fMin"     : 1, "fMax"     : 2, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPlot_Merga_CluesFound02_Journalist", "fMin"     : 2, "fMax"     : 3, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPlot_Merga_CluesFound03_Journalist", "fMin"     : 3, "fMax"     : 4, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPlot_Merga_CluesFound04_Journalist", "fMin"     : 4, "fMax"     : 5, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPlot_Merga_CluesFound05_Journalist", "fMin"     : 5, "fMax"     : 6, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPlot_Merga_CluesFound06_Journalist", "fMin"     : 6, "fMax"     : 9e99, "fMinAdd"  : 1, "fMaxAdd"  : -1 }
+    ]
+  }, 
+  {
+    "strName" : "DcPlot_Merga_CluesFound_Superfan",
+    "strCond" : "StatPlot_Merga_CluesFound_Superfan",
+    "aThresholds" : [
+      { "strLootNew" : "CONDDcPlot_Merga_CluesFound00_Superfan", "fMin"     : 0, "fMax"     : 1, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPlot_Merga_CluesFound01_Superfan", "fMin"     : 1, "fMax"     : 2, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPlot_Merga_CluesFound02_Superfan", "fMin"     : 2, "fMax"     : 3, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPlot_Merga_CluesFound03_Superfan", "fMin"     : 3, "fMax"     : 99e9, "fMinAdd"  : 1, "fMaxAdd"  : -1 }
+    ]
+  }, 
+  {
+    "strName" : "DcPlot_Merga_CluesFound_Mogul",
+    "strCond" : "StatPlot_Merga_CluesFound_Mogul",
+    "aThresholds" : [
+      { "strLootNew" : "CONDDcPlot_Merga_CluesFound00_Mogul", "fMin"     : 0, "fMax"     : 1, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPlot_Merga_CluesFound01_Mogul", "fMin"     : 1, "fMax"     : 2, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPlot_Merga_CluesFound02_Mogul", "fMin"     : 2, "fMax"     : 3, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPlot_Merga_CluesFound03_Mogul", "fMin"     : 3, "fMax"     : 4, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPlot_Merga_CluesFound04_Mogul", "fMin"     : 4, "fMax"     : 5, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPlot_Merga_CluesFound05_Mogul", "fMin"     : 5, "fMax"     : 6, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPlot_Merga_CluesFound06_Mogul", "fMin"     : 6, "fMax"     : 9e99, "fMinAdd"  : 1, "fMaxAdd"  : -1 }
+    ]
+  }, 
+  {
+    "strName" : "DcPlot_Merga_CluesFound_Tanner",
+    "strCond" : "StatPlot_Merga_CluesFound_Tanner",
+    "aThresholds" : [
+      { "strLootNew" : "", "fMin"     : 0, "fMax"     : 1, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPlot_Merga_CluesFound01_Tanner", "fMin"     : 1, "fMax"     : 2, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPlot_Merga_CluesFound02_Tanner", "fMin"     : 2, "fMax"     : 3, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPlot_Merga_CluesFound03_Tanner", "fMin"     : 3, "fMax"     : 4, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPlot_Merga_CluesFound04_Tanner", "fMin"     : 4, "fMax"     : 5, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPlot_Merga_CluesFound05_Tanner", "fMin"     : 5, "fMax"     : 6, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPlot_Merga_CluesFound06_Tanner", "fMin"     : 6, "fMax"     : 9e99, "fMinAdd"  : 1, "fMaxAdd"  : -1 }
+    ]
+  },  
+
+
+
+
+
+  {
+    "strName" : "DcSkillScienceForensic",
+    "strCond" : "StatSkillScienceForensicProgress",
+    "aThresholds" : [
+      { "strLootNew" : "CONDDcSkillScienceForensic", "fMin"     : 15, "fMax"     : 9e99, "fMinAdd"  : 1, "fMaxAdd"  : -1 }
+    ]
+  },
+  {
+    "strName" : "DcSkillMedicalDiagnostics",
+    "strCond" : "StatSkillMedicalDiagnosticsProgress",
+    "aThresholds" : [
+      { "strLootNew" : "CONDDcSkillMedicalDiagnostics", "fMin"     : 15, "fMax"     : 9e99, "fMinAdd"  : 1, "fMaxAdd"  : -1 }
+    ]
+  },
+  
+  
+  {
+    "strName" : "DcAntiMeat",
+    "strCond" : "StatAntiMeat",
+    "aThresholds" : [
+      { "strLootNew" : "CONDDcAntiMeat00", "fMin"     : 0, "fMax"     : 1, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcAntiMeat01", "fMin"     : 1, "fMax"     : 2, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcAntiMeat02", "fMin"     : 2, "fMax"     : 3, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcAntiMeat03", "fMin"     : 3, "fMax"     : 9e99, "fMinAdd"  : 1, "fMaxAdd"  : -1 }
+    ]
+  }
+]

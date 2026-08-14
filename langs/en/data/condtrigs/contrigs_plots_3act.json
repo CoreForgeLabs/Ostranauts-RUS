@@ -1,0 +1,6 @@
+[
+    { "strName" : "CTPLOTTEMP3ActBEGTargetTriggerUs", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ "IsPlayer", "PlotTEMP3ActBEGTaken" ], "aForbids" : [ ], "aTriggers" : [ ], "bAND" : true },
+    { "strName" : "CTPLOTTEMP3ActBEGTurnInTriggerUs", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ "IsPlayer" ], "aForbids" : [ "PlotTEMP3ActBEGStarted", "PlotTEMP3ActBEGTaken" ], "aTriggers" : [ ], "bAND" : true },
+    { "strName" : "CTPLOTTEMP3ActBEGTargetUs", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ "IsPlayer", "PlotTEMP3ActBEGStarted" ], "aForbids" : [ "PlotTEMP3ActBEGTaken" ], "aTriggers" : [ ], "bAND" : true },
+    { "strName" : "CTPLOTTEMP3ActBEGTurnInUs", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ "IsPlayer", "PlotTEMP3ActBEGTaken" ], "aForbids" : [ ], "aTriggers" : [ ], "bAND" : true }    
+]

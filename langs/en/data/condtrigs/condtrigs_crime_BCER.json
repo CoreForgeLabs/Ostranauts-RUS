@@ -1,0 +1,10 @@
+[
+  { "strName" : "TIsCrimeGalConArrest", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ "CrimeGalConArrest", "CrimeGalConThreat" ], "aForbids" : [ "IsLEOImmune", "IsDead", "Unconscious" ], "aTriggers" : [ ], "bAND" : false },
+  { "strName" : "TIsCrimeGalConArrestStolenShip", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ "CrimeGalConStolenShip"], "aForbids" : [ "IsLEOImmune", "IsDead", "Unconscious" ], "aTriggers" : [ ], "bAND" : false },
+  { "strName" : "TIsCrimeGalConArrestEnd", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ ], "aForbids" : [ "CrimeGalConArrest" ], "aTriggers" : [ ], "bAND" : true },
+  { "strName" : "TIsCrimeGalConThreat", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ "CrimeGalConThreat" ], "aForbids" : [ "IsLEOImmune", "IsDead", "Unconscious", "IsSubdued" ], "aTriggers" : [ ], "bAND" : true },
+  { "strName" : "TIsCrimeGalConThreatEnd", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ ], "aForbids" : [ "CrimeGalConThreat" ], "aTriggers" : [ ], "bAND" : true },
+  { "strName" : "TIsSubduedCriminalGalCon", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ ], "aForbids" : [ "IsLEOImmune"  ], "aTriggers" : [ "TIsSubduedTarget", "TIsWantedGalCon" ], "bAND" : true },
+  { "strName" : "TIsWantedGalCon", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : ["CrimeGalConThreat", "CrimeGalConArrest", "CrimeGalConNoUndock", "CrimeGalConStolenShip"], "aForbids" : [], "aTriggers" : [ ], "bAND" : false },
+  { "strName" : "TUpCrimeGalConTrespassNext", "strCondName" : "CrimeGalConArrest", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ "IsPlayer", "IsPlayerCrew"], "aForbids" : [ ], "aTriggers" : [ ], "bAND" : false }
+]

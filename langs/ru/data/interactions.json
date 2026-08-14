@@ -17,12 +17,12 @@
   },
   "ACTBash": {
     "strTitle": "Ударить",
-    "strDesc": "[us] [is] бить [them].",
+    "strDesc": "[us] [is.aux] ударить [them].",
     "strTooltip": "Ухудшает состояние цели, пока та не будет повреждена или уничтожена."
   },
   "ACTBashBig": {
     "strTitle": "Ударить",
-    "strDesc": "[us] [is] бить [them].",
+    "strDesc": "[us] [is.aux] сильно ударить [them].",
     "strTooltip": "Ухудшает состояние цели, пока та не будет повреждена или уничтожена."
   },
   "ACTBashAllow": {
@@ -165,11 +165,11 @@
   },
   "ACTFeedItem": {
     "strTitle": "Доставить",
-    "strDesc": "[us] [is] доставлять детали для [them-gen]: [object]"
+    "strDesc": "[us] [is.aux] доставить детали для [them-gen]: [object]"
   },
   "ACTDispenseLiquid": {
     "strTitle": "Налить жидкость",
-    "strDesc": "[us] [is] налить жидкость из [them-gen].",
+    "strDesc": "[us] [is.aux] налить жидкость из [them-gen].",
     "strTooltip": "Наливает жидкость в переносной водонепроницаемый контейнер."
   },
   "ACTDispenseLiquidAllow": {
@@ -248,7 +248,7 @@
   },
   "ACTInstallTEMP": {
     "strTitle": "Установить",
-    "strDesc": "[us] [is] устанавливать [them].",
+    "strDesc": "[us] [is.aux] установить [them].",
     "strTooltip": "Устанавливает незакреплённый предмет в выбранном месте, чтобы он стал рабочей частью корабля."
   },
   "ACTInstallTEMPAllow": {
@@ -310,7 +310,7 @@
   },
   "ACTLockResetTEMP": {
     "strTitle": "Заводской сброс",
-    "strDesc": "[us] [is] сбросить [them] до заводских настроек с PIN-кодом 0000.",
+    "strDesc": "[us] [is.aux] сбросить [them] до заводских настроек с PIN-кодом 0000.",
     "strTooltip": "Сбрасывает замок до заводских настроек с PIN-кодом 0000."
   },
   "ACTLockResetTEMPAllow": {
@@ -323,7 +323,7 @@
   },
   "HackingCrimePenalty": {
     "strTitle": "Применить штраф за хакерство",
-    "strDesc": "[us] [is] проводить хакерскую атаку на [them]."
+    "strDesc": "[us] совершает хакерскую атаку на [them]."
   },
   "ACTFloorGrate01PatchNPC": {
     "strTitle": "Залатать",
@@ -620,7 +620,7 @@
   },
   "ACTPlayToyStart": {
     "strTitle": "Поиграть с",
-    "strDesc": "[us] [is] играть с [them].",
+    "strDesc": "[us] [is.aux] поиграть с [them].",
     "strTooltip": "Поиграть с [them], дав волю фантазии."
   },
   "ACTPlayToy": {
@@ -646,7 +646,7 @@
   },
   "ACTRepairTEMP": {
     "strTitle": "Ремонт",
-    "strDesc": "[us] [is] ремонтировать [them].",
+    "strDesc": "[us] [is.aux] отремонтировать [them].",
     "strTooltip": "Ремонтирует неисправный или повреждённый предмет, чтобы тот снова заработал."
   },
   "ACTRepairTEMPAllow": {
@@ -655,7 +655,7 @@
   },
   "ACTScrapTEMP": {
     "strTitle": "Разобрать",
-    "strDesc": "[us] [is] разбирать [them] на лом.",
+    "strDesc": "[us] [is.aux] разобрать [them] на лом.",
     "strTooltip": "На скорую руку разбирает предмет, чтобы избавиться от него. На выходе — немного запчастей."
   },
   "ACTScrapTEMPAllow": {
@@ -968,7 +968,7 @@
   },
   "ACTUndamageTEMP": {
     "strTitle": "Восстановить",
-    "strDesc": "[us] [is] восстанавливать [them].",
+    "strDesc": "[us] [is.aux] восстановить [them].",
     "strTooltip": "Убирает накопленный износ с ещё работающего, но уже потрёпанного предмета."
   },
   "ACTUndamageTEMPAllow": {
@@ -977,7 +977,7 @@
   },
   "ACTUndamageHullTEMPNPC": {
     "strTitle": "Обслужить",
-    "strDesc": "[us] [is] восстанавливать [them].",
+    "strDesc": "[us] [is.aux] восстановить [them].",
     "strTooltip": "Устраняет износ ещё исправного, но уже потрёпанного предмета."
   },
   "ACTUndamageHullTEMPNPCAllow": {
@@ -986,7 +986,7 @@
   },
   "ACTUndamageTEMPNPC": {
     "strTitle": "Обслужить",
-    "strDesc": "[us] [is] восстанавливать [them].",
+    "strDesc": "[us] [is.aux] восстановить [them].",
     "strTooltip": "Устраняет износ ещё исправного, но уже потрёпанного предмета."
   },
   "ACTUndamageTEMPNPCAllow": {
@@ -995,7 +995,7 @@
   },
   "ACTUndamageNoSparksTEMP": {
     "strTitle": "Восстановить",
-    "strDesc": "[us] [is] восстанавливать [them].",
+    "strDesc": "[us] [is.aux] восстановить [them].",
     "strTooltip": "Устраняет износ у исправного, но потрёпанного предмета."
   },
   "ACTUndamageNoSparksTEMPAllow": {
@@ -1004,7 +1004,7 @@
   },
   "ACTUndamageABLTEMP": {
     "strTitle": "Заменить абляционную облицовку активной зоны",
-    "strDesc": "[us] [is] заменять абляционную облицовку активной зоны у [them-gen].",
+    "strDesc": "[us] [is.aux] заменить абляционную облицовку активной зоны у [them-gen].",
     "strTooltip": "Заменяет изношенную абляционную облицовку активной зоны реактора."
   },
   "ACTUndamageABLTEMPAllow": {
@@ -1013,7 +1013,7 @@
   },
   "ACTUninstallTEMP": {
     "strTitle": "Демонтировать",
-    "strDesc": "[us] [is] демонтировать [them].",
+    "strDesc": "[us] [is.aux] демонтировать [them].",
     "strTooltip": "Демонтирует часть корабля, чтобы её можно было переместить."
   },
   "ACTUninstallTEMPAllow": {
@@ -1022,7 +1022,7 @@
   },
   "ACTUninstallNoSparksTEMP": {
     "strTitle": "Демонтировать",
-    "strDesc": "[us] [is] демонтировать [them].",
+    "strDesc": "[us] [is.aux] демонтировать [them].",
     "strTooltip": "Демонтирует часть корабля, чтобы её можно было переместить."
   },
   "ACTUninstallNoSparksTEMPAllow": {
@@ -1117,7 +1117,7 @@
   },
   "CancelAction": {
     "strTitle": "Отменить действие",
-    "strDesc": "[us] [cancels] [us-pos] текущее действие."
+    "strDesc": "[us] [cancels] своё текущее действие."
   },
   "QABRecovering": {
     "strTitle": "Восстановление...",
@@ -1596,7 +1596,7 @@
   },
   "DropItem": {
     "strTitle": "Бросить",
-    "strDesc": "[us] [is] бросить [them].",
+    "strDesc": "[us] [is.aux] выбросить [them].",
     "strTooltip": "Бросает один предмет из инвентаря на клетку рядом."
   },
   "DropItemAllow": {
@@ -1605,7 +1605,7 @@
   },
   "DropItemStack": {
     "strTitle": "Бросить стопку предметов",
-    "strDesc": "[us] [is] бросить [them].",
+    "strDesc": "[us] [is.aux] выбросить [them].",
     "strTooltip": "Бросает стопку предметов из инвентаря на клетку рядом."
   },
   "DropItemStackAllow": {
@@ -1614,7 +1614,7 @@
   },
   "EquipItem": {
     "strTitle": "Экипировать",
-    "strDesc": "[us] [is] взять [them].",
+    "strDesc": "[us] [is.aux] взять [them].",
     "strTooltip": "Попытка поместить предмет в подходящий свободный слот — в руке или на теле."
   },
   "EquipItemAllow": {
@@ -1623,22 +1623,22 @@
   },
   "EquipHelmetEvenIfSlotted": {
     "strTitle": "Надеть шлем",
-    "strDesc": "[us] [is] взять [them].",
+    "strDesc": "[us] [is.aux] взять [them].",
     "strTooltip": "Попытка поместить предмет в подходящий свободный слот — в руке или на теле."
   },
   "EquipHelmetNotCarried": {
     "strTitle": "Надеть шлем",
-    "strDesc": "[us] [is] взять [them].",
+    "strDesc": "[us] [is.aux] взять [them].",
     "strTooltip": "Попытка поместить предмет в подходящий свободный слот — в руке или на теле."
   },
   "EquipSuitEvenIfSlotted": {
     "strTitle": "Надеть скафандр",
-    "strDesc": "[us] [is] забрать [them].",
+    "strDesc": "[us] [is.aux] надеть [them].",
     "strTooltip": "Попытка поместить предмет в подходящий свободный слот — в руке или на теле."
   },
   "EquipSuitNotCarried": {
     "strTitle": "Надеть скафандр",
-    "strDesc": "[us] [is] забрать [them].",
+    "strDesc": "[us] [is.aux] надеть [them].",
     "strTooltip": "Попытка поместить предмет в подходящий свободный слот — в руке или на теле."
   },
   "GUIAccessPanel": {
@@ -2362,7 +2362,7 @@
   },
   "PickupItem": {
     "strTitle": "Поднять",
-    "strDesc": "[us] [is] в пути за [them].",
+    "strDesc": "[us] [is.aux] поднять [them].",
     "strTooltip": "Перемещает предмет в подходящий слот инвентаря или в стопку."
   },
   "PickupItemAllow": {
@@ -2371,7 +2371,7 @@
   },
   "PickupItemStack": {
     "strTitle": "Поднять стопку",
-    "strDesc": "[us] [is] в пути за [them].",
+    "strDesc": "[us] [is.aux] поднять [them].",
     "strTooltip": "Переместить стопку предметов в подходящий пустой слот инвентаря."
   },
   "PickupItemStackAllow": {
@@ -2820,12 +2820,12 @@
   },
   "Strip": {
     "strTitle": "Раздеть",
-    "strDesc": "[us] [is] раздевать [them].",
+    "strDesc": "[us] [is.aux] раздеть [them].",
     "strTooltip": "Снимает с отключившейся цели всё надетое и забирает переносимое."
   },
   "StripSucceed": {
     "strTitle": "Разрешить раздевание",
-    "strDesc": "[us] [is] раздевать [them] до нитки."
+    "strDesc": "[them] раздет персонажем [us]."
   },
   "StripDeny": {
     "strTitle": "Запретить раздевание",
@@ -2834,7 +2834,7 @@
   },
   "DismantleRobot": {
     "strTitle": "Разобрать дрон",
-    "strDesc": "[us] [is] разбирать [them] на лом.",
+    "strDesc": "[us] [is.aux] разобрать [them] на лом.",
     "strTooltip": "Разбирает на компоненты робота, не подающего признаков жизни."
   },
   "DismantleRobotSucceed": {
@@ -7175,7 +7175,7 @@
   },
   "ACTMineBig--DNU": {
     "strTitle": "Добыть",
-    "strDesc": "[us] собирается добывать [them]."
+    "strDesc": "[us] [is.aux] добывать [them]."
   },
   "ACTDenyMiningTired": {
     "strTitle": "Отказ: нет сил",
@@ -7267,7 +7267,7 @@
   },
   "ACTArmExplosive": {
     "strTitle": "Взвести взрывчатку",
-    "strDesc": "[us] [is] активировать [them] с запалом на ~25 секунд.",
+    "strDesc": "[us] [is.aux] активировать [them] с запалом на ~25 секунд.",
     "strTooltip": "Активирует взрывчатку с запалом на ~25 секунд (плюс-минус пара секунд)."
   },
   "ACTArmExplosiveAllow": {
@@ -7276,7 +7276,7 @@
   },
   "ACTDisarmExplosive01": {
     "strTitle": "Обезвредить взрывчатку",
-    "strDesc": "[us] [is] обезвредить [them].",
+    "strDesc": "[us] [is.aux] обезвредить [them].",
     "strTooltip": "Обезвреживает активированную взрывчатку (мгновенно)."
   },
   "ACTDisarmExplosive01Allow": {
@@ -7285,7 +7285,7 @@
   },
   "ACTDetonateExplosive01": {
     "strTitle": "Подорвать взрывчатку",
-    "strDesc": "[us] [is] подрывать [them].",
+    "strDesc": "[us] [is.aux] подорвать [them].",
     "strTooltip": "Подрывает заряд в пределах 25 клеток при прямой видимости."
   },
   "ACTDetonateExplosive01Allow": {
@@ -7294,7 +7294,7 @@
   },
   "ACTArmExplosive02": {
     "strTitle": "Взвести заряд",
-    "strDesc": "[us] [is] взводить [them] с запалом на ~25 секунд.",
+    "strDesc": "[us] [is.aux] взвести [them] с запалом на ~25 секунд.",
     "strTooltip": "Взводит заряд с запалом на ~25 секунд (плюс-минус пара секунд)."
   },
   "ACTArmExplosiveAllow02": {
@@ -7303,7 +7303,7 @@
   },
   "ACTDisarmExplosive02": {
     "strTitle": "Обезвредить заряд",
-    "strDesc": "[us] [is] разминировать [them].",
+    "strDesc": "[us] [is.aux] разминировать [them].",
     "strTooltip": "Мгновенно обезвреживает активированный заряд."
   },
   "ACTDisarmExplosive02Allow": {
@@ -7312,7 +7312,7 @@
   },
   "ACTDetonateExplosive02": {
     "strTitle": "Устроить малый взрыв",
-    "strDesc": "[us] [is] подрывать [them].",
+    "strDesc": "[us] [is.aux] подорвать [them].",
     "strTooltip": "Подрывает заряд в пределах 25 клеток при прямой видимости."
   },
   "ACTDetonateExplosive02Allow": {
@@ -17043,7 +17043,7 @@
   },
   "ACTFireExtinguish": {
     "strTitle": "Потушить",
-    "strDesc": "[us] [is] тушить [them].",
+    "strDesc": "[us] [is.aux] потушить [them].",
     "strTooltip": "Пытается потушить огонь огнетушителем."
   },
   "ACTFireExtinguishAllow": {
@@ -17080,7 +17080,7 @@
     "strTooltip": "Продажа 1000 единиц фракционной валюты Галилейской конфедерации — «скрипов» (по удручающему курсу).\nПримечание: на репутацию это не влияет."
   },
   "ACTReloadItem": {
-    "strDesc": "[us] [is] перезаряжать [them].",
+    "strDesc": "[us] [is.aux] перезарядить [them].",
     "strTitle": "Перезарядить"
   },
   "ACTSwitchLightColorWhite": {

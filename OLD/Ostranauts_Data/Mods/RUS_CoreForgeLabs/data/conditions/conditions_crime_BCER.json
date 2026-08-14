@@ -1,0 +1,65 @@
+[
+  {
+    "strName": "StatCrimeGalConArrestWarning",
+    "strNameFriendly": "Количество предупреждений об аресте ГалКон",
+    "strColor": "Bad",
+    "strDesc": "[us] [has] предупреждали об аресте столько раз.",
+    "nDisplaySelf": 0,
+    "nDisplayOther": 0,
+    "fDuration": 0.0,
+    "bRemoveAll": true
+  },
+  {
+    "strName": "CrimeGalConArrest",
+    "strNameFriendly": "Ордер на арест ГалКон",
+    "strColor": "Bad",
+    "strDesc": "[us] [has] действующий ордер на арест в Галилейской Конфедерации.",
+    "nDisplaySelf": 2,
+    "nDisplayOther": 2,
+    "fDuration": 0.0,
+    "bRemoveAll": true,
+    "bInvert": true
+  },
+  {
+    "strName": "CrimeGalConThreat",
+    "strNameFriendly": "Враг общества ГалКон",
+    "strColor": "Bad",
+    "strDesc": "[us] [is] разыскивается правоохранительными органами Галилейской Конфедерации живым или мёртвым и [is] считается врагом общества.",
+    "nDisplaySelf": 2,
+    "nDisplayOther": 2,
+    "fDuration": 0.0,
+    "bRemoveAll": true,
+    "bInvert": true
+  },
+  {
+    "strName": "CrimeGalConTrespass",
+    "strNameFriendly": "Ордер за нарушение режима доступа ГалКон",
+    "strColor": "Bad",
+    "strDesc": "[us] [has] действующий ордер за нарушение режима доступа на объектах Галилейской Конфедерации.",
+    "nDisplaySelf": 0,
+    "nDisplayOther": 0,
+    "fDuration": 0.00001,
+    "bRemoveAll": true,
+    "aNext": ["TUpCrimeGalConTrespassNext"]
+  },
+  {
+    "strName": "CrimeGalConStolenShip",
+    "strNameFriendly": "Ордер на арест за угон корабля ГалКон",
+    "strColor": "Bad",
+    "strDesc": "[us] [has] действующий ордер на арест от Галилейской Конфедерации за угон корабля.",
+    "nDisplaySelf": 2,
+    "nDisplayOther": 2,
+    "fDuration": 0.0,
+    "bRemoveAll": true
+  },
+  {
+    "strName": "CrimeGalConNoUndock",
+    "strNameFriendly": "Ордер на арест за отказ от отстыковки ГалКон",
+    "strColor": "Bad",
+    "strDesc": "[us] [has] действующий ордер на арест в Галилейской Конфедерации за отказ от отстыковки во время офицерской инспекции.",
+    "nDisplaySelf": 2,
+    "nDisplayOther": 2,
+    "fDuration": 0.0,
+    "bRemoveAll": true
+  }
+]

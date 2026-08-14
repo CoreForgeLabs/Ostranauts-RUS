@@ -105,34 +105,46 @@ namespace OstraI18n.Core
             {
                 result.UsedLegacyLayout = true;
                 var gramPath = Path.Combine(dir, "grammar.json");
-                if (!File.Exists(gramPath)) throw new FileNotFoundException(gramPath);
-                using var doc = JsonDocument.Parse(File.ReadAllText(gramPath));
-                var root = doc.RootElement;
-                if (root.TryGetProperty("you", out var you) && you.ValueKind == JsonValueKind.String)
-                    result.YouWord = you.GetString();
-                if (root.TryGetProperty("pronouns", out var prons) && prons.ValueKind == JsonValueKind.Object)
-                    foreach (var kv in prons.EnumerateObject())
-                        result.Pronouns[kv.Name] = ToStrArray(kv.Value);
+                if (File.Exists(gramPath))
+                {
+                    try
+                    {
+                        using var doc = JsonDocument.Parse(File.ReadAllText(gramPath));
+                        var root = doc.RootElement;
+                        if (root.TryGetProperty("you", out var you) && you.ValueKind == JsonValueKind.String)
+                            result.YouWord = you.GetString();
+                        if (root.TryGetProperty("pronouns", out var prons) && prons.ValueKind == JsonValueKind.Object)
+                            foreach (var kv in prons.EnumerateObject())
+                                result.Pronouns[kv.Name] = ToStrArray(kv.Value);
+                    }
+                    catch { }
+                }
             }
 
             var verbPath = Path.Combine(dir, "verbs.json");
-            if (!File.Exists(verbPath)) throw new FileNotFoundException(verbPath);
-            using (var doc = JsonDocument.Parse(File.ReadAllText(verbPath)))
+            if (File.Exists(verbPath))
             {
-                foreach (var kv in doc.RootElement.EnumerateObject())
+                try
                 {
-                    var vname = kv.Name;
-                    if (vname.StartsWith("_")) continue;
-                    var jv = kv.Value;
-                    if (jv.ValueKind != JsonValueKind.Object) continue;
-                    var vf = new VerbForms();
-                    if (jv.TryGetProperty("kind", out var kind) && kind.ValueKind == JsonValueKind.String) vf.Kind = kind.GetString();
-                    if (jv.TryGetProperty("omitPresent", out var op) && (op.ValueKind == JsonValueKind.True || op.ValueKind == JsonValueKind.False)) vf.OmitPresent = op.GetBoolean();
-                    if (jv.TryGetProperty("noLonger", out var nl) && nl.ValueKind == JsonValueKind.String) vf.NoLongerBefore = nl.GetString();
-                    if (jv.TryGetProperty("present", out var pres)) vf.Present = ToStrArray(pres);
-                    if (jv.TryGetProperty("past", out var past)) vf.Past = ToStrArray(past);
-                    result.Verbs[vname] = vf;
+                    using (var doc = JsonDocument.Parse(File.ReadAllText(verbPath)))
+                    {
+                        foreach (var kv in doc.RootElement.EnumerateObject())
+                        {
+                            var vname = kv.Name;
+                            if (vname.StartsWith("_")) continue;
+                            var jv = kv.Value;
+                            if (jv.ValueKind != JsonValueKind.Object) continue;
+                            var vf = new VerbForms();
+                            if (jv.TryGetProperty("kind", out var kind) && kind.ValueKind == JsonValueKind.String) vf.Kind = kind.GetString();
+                            if (jv.TryGetProperty("omitPresent", out var op) && (op.ValueKind == JsonValueKind.True || op.ValueKind == JsonValueKind.False)) vf.OmitPresent = op.GetBoolean();
+                            if (jv.TryGetProperty("noLonger", out var nl) && nl.ValueKind == JsonValueKind.String) vf.NoLongerBefore = nl.GetString();
+                            if (jv.TryGetProperty("present", out var pres)) vf.Present = ToStrArray(pres);
+                            if (jv.TryGetProperty("past", out var past)) vf.Past = ToStrArray(past);
+                            result.Verbs[vname] = vf;
+                        }
+                    }
                 }
+                catch { }
             }
 
             var strPath = Path.Combine(dir, "strings.json");

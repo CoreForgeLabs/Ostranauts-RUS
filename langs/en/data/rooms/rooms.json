@@ -1,0 +1,309 @@
+[
+  {
+    "strName": "Reactor",
+    "strNameFriendly": "Reactor room",
+    "strIconName": "reactor",
+    "nMinTileSize": 4,
+    "nMaxTileSize": -1,
+    "aReqs": [
+      "TIsReactorIC=1.0x1"
+    ],
+    "aForbids": [],
+    "fValueModifier": 1.6,
+    "bAllowVoid": false,
+    "nPriority": 100
+  },
+  {
+    "strName": "BridgeRoom",
+    "strNameFriendly": "Bridge (Closed)",
+    "strIconName": "bridge",
+    "nMinTileSize": 4,
+    "nMaxTileSize": -1,
+    "aReqs": [
+      "TIsNavStationInstalled=1.0x1"
+    ],
+    "aForbids": [
+      "TIsRCSDistroInstalled=1.0x1",
+      "TIsRoomRecreationOptionals=1.0x1",
+      "TIsRoomWellnessOptionals01=1.0x1",
+      "TIsToilet=1.0x1",
+      "TIsReactorIC=1.0x1",
+      "TIsBedInstalled=1.0x1"
+    ],
+    "fValueModifier": 1.5,
+    "bAllowVoid": false,
+    "nPriority": 90
+  },
+  {
+    "strName": "TowingRoom",
+    "strNameFriendly": "Towing Room",
+    "strIconName": "towing",
+    "nMinTileSize": 2,
+    "nMaxTileSize": -1,
+    "aReqs": [
+      "TIsTowingBraceInstalled=1.0x1"
+    ],
+    "aForbids": [],
+    "fValueModifier": 1.6,
+    "bAllowVoid": false,
+    "nPriority": 85
+  },
+  {
+    "strName": "BridgeArea",
+    "strNameFriendly": "Bridge (Open)",
+    "strIconName": "bridge",
+    "nMinTileSize": 4,
+    "nMaxTileSize": -1,
+    "aReqs": [
+      "TIsNavStationInstalled=1.0x1"
+    ],
+    "aForbids": [],
+    "fValueModifier": 1.3,
+    "bAllowVoid": false,
+    "nPriority": 80
+  },
+  {
+    "strName": "Airlock",
+    "strNameFriendly": "Airlock",
+    "strIconName": "airlock",
+    "nMinTileSize": 3,
+    "nMaxTileSize": -1,
+    "aReqs": [
+      "TIsDockSysInstalled=1.0x1"
+    ],
+    "aForbids": [
+      "TIsRCSDistroInstalled=1.0x1",
+      "TIsShipBatteryInstalled=1.0x1",
+      "TIsRoomRecreationOptionals=1.0x1",
+      "TIsRoomWellnessOptionals01=1.0x1",
+      "TIsToilet=1.0x1",
+      "TIsReactorIC=1.0x1",
+      "TIsNavStationInstalled=1.0x1",
+      "TIsBedInstalled=1.0x1"
+    ],
+    "fValueModifier": 1.5,
+    "bAllowVoid": false,
+    "nPriority": 75
+  },
+  {
+    "strName": "Engineering",
+    "strNameFriendly": "Engineering Room",
+    "strIconName": "engineering",
+    "nMinTileSize": 4,
+    "nMaxTileSize": -1,
+    "aReqs": [
+      "TIsRoomEngineering=1.0x1"
+    ],
+    "aForbids": [],
+    "fValueModifier": 1.4,
+    "bAllowVoid": false,
+    "nPriority": 70
+  },
+  {
+    "strName": "WellnessRoom",
+    "strNameFriendly": "Wellness Room",
+    "strIconName": "wellness",
+    "nMinTileSize": 4,
+    "nMaxTileSize": -1,
+    "aReqs": [
+      "TIsRoomWellnessOptionals01=1.0x2"
+    ],
+    "aForbids": [
+      "TIsToilet=1.0x1",
+      "TIsReactorIC=1.0x1",
+      "TIsBedInstalled=1.0x1"
+    ],
+    "fValueModifier": 1.9,
+    "bAllowVoid": false,
+    "nPriority": 65
+  },
+  {
+    "strName": "Recreation",
+    "strNameFriendly": "Recreational Room",
+    "strIconName": "recreational",
+    "nMinTileSize": 10,
+    "nMaxTileSize": -1,
+    "aReqs": [
+      "TIsTableInstalled=1.0x1",
+      "TIsFridge01Installed=1.0x1",
+      "TIsRoomRecreationOptionals=1.0x1"
+    ],
+    "aForbids": [
+      "TIsReactorIC=1.0x1"
+    ],
+    "fValueModifier": 1.9,
+    "bAllowVoid": false,
+    "nPriority": 60
+  },
+  {
+    "strName": "LuxuryQuarters",
+    "strNameFriendly": "Luxury Quarters",
+    "strIconName": "basicquarters",
+    "nMinTileSize": 12,
+    "nMaxTileSize": -1,
+    "aReqs": [
+      "TIsBedInstalled=1.0x1",
+      "TIsStorageBinInstalled=1.0x2",
+      "TIsChairInstalled=1.0x1",
+      "TIsLightSourceInstalled=1.0x1"
+    ],
+    "aForbids": [
+      "TIsToilet=1.0x1",
+      "TIsReactorIC=1.0x1",
+      "TIsCanister=1.0x1",
+      "TIsRTAInstalled=1.0x1",
+      "TIsShipBatteryInstalled=1.0x1",
+      "TIsHatchInstalled=1.0x1"
+    ],
+    "fValueModifier": 2,
+    "bAllowVoid": false,
+    "nPriority": 50
+  },
+  {
+    "strName": "Bathroom",
+    "strNameFriendly": "Bathroom",
+    "strIconName": "bathroom",
+    "nMinTileSize": 4,
+    "nMaxTileSize": -1,
+    "aReqs": [
+      "TIsToilet=1.0x1",
+      "TIsSinkInstalled=1.0x1"
+    ],
+    "aForbids": [],
+    "fValueModifier": 1.8,
+    "bAllowVoid": false,
+    "nPriority": 45
+  },
+  {
+    "strName": "Galley",
+    "strNameFriendly": "Galley",
+    "strIconName": "galley",
+    "nMinTileSize": 6,
+    "nMaxTileSize": -1,
+    "aReqs": [
+      "TIsTableInstalled=1.0x1",
+      "TIsChairInstalled=1.0x4",
+      "TIsFridge01Installed=1.0x1"
+    ],
+    "aForbids": [
+      "TIsToilet=1.0x1",
+      "TIsReactorIC=1.0x1",
+      "TIsBedInstalled=1.0x1"
+    ],
+    "fValueModifier": 1.8,
+    "bAllowVoid": false,
+    "nPriority": 40
+  },
+  {
+    "strName": "BasicQuarters",
+    "strNameFriendly": "Basic Quarters",
+    "strIconName": "basicquarters",
+    "nMinTileSize": 8,
+    "nMaxTileSize": -1,
+    "aReqs": [
+      "TIsBedInstalled=1.0x1",
+      "TIsStorageBinInstalled=1.0x1",
+      "TIsLightSourceInstalled=1.0x1"
+    ],
+    "aForbids": [
+      "TIsToilet=1.0x1",
+      "TIsReactorIC=1.0x1",
+      "TIsCanister=1.0x1"
+    ],
+    "fValueModifier": 1.8,
+    "bAllowVoid": false,
+    "nPriority": 35
+  },
+  {
+    "strName": "Passenger2",
+    "strNameFriendly": "Passenger Room Medium",
+    "strIconName": "passenger",
+    "nMinTileSize": 32,
+    "nMaxTileSize": -1,
+    "aReqs": [
+      "TIsChairInstalled=1.0x8"
+    ],
+    "aForbids": [
+      "TIsToilet=1.0x1",
+      "TIsSinkInstalled=1.0x1",
+      "TIsReactorIC=1.0x1",
+      "TIsCanister=1.0x1"
+    ],
+    "fValueModifier": 1.6,
+    "bAllowVoid": false,
+    "nPriority": 25
+  },
+  {
+    "strName": "Passenger1",
+    "strNameFriendly": "Passenger Room Small",
+    "strIconName": "passenger",
+    "nMinTileSize": 16,
+    "nMaxTileSize": -1,
+    "aReqs": [
+      "TIsChairInstalled=1.0x4"
+    ],
+    "aForbids": [
+      "TIsToilet=1.0x1",
+      "TIsSinkInstalled=1.0x1",
+      "TIsReactorIC=1.0x1",
+      "TIsCanister=1.0x1"
+    ],
+    "fValueModifier": 1.4,
+    "bAllowVoid": false,
+    "nPriority": 20
+  },
+  {
+    "strName": "GasCargoRoom",
+    "strNameFriendly": "Gas Cargo Room",
+    "strIconName": "storage",
+    "nMinTileSize": 12,
+    "nMaxTileSize": -1,
+    "aReqs": [
+      "TIsCanister=1.0x6"
+    ],
+    "aForbids": [],
+    "fValueModifier": 1.2,
+    "bAllowVoid": false,
+    "nPriority": 15
+  },
+  {
+    "strName": "CargoRoom",
+    "strNameFriendly": "Cargo Room",
+    "strIconName": "storage",
+    "nMinTileSize": 6,
+    "nMaxTileSize": -1,
+    "aReqs": [
+      "TIsRoomCargo=1.0x6"
+    ],
+    "aForbids": [],
+    "fValueModifier": 1.2,
+    "bAllowVoid": false,
+    "nPriority": 10
+  },
+  {
+    "strName": "CargoRoomExterior",
+    "strNameFriendly": "Cargo Space (Exterior)",
+    "strIconName": "storage",
+    "nMinTileSize": 6,
+    "nMaxTileSize": -1,
+    "aReqs": [
+      "TIsRoomCargoExterior=1.0x20"
+    ],
+    "aForbids": [],
+    "fValueModifier": 1.05,
+    "bAllowVoid": true,
+    "nPriority": 5
+  },
+  {
+    "strName": "Blank",
+    "strNameFriendly": "No room specialization",
+    "strIconName": null,
+    "nMinTileSize": -1,
+    "nMaxTileSize": -1,
+    "aReqs": [],
+    "aForbids": [],
+    "fValueModifier": 1,
+    "bAllowVoid": false,
+    "nPriority": 0
+  }
+]

@@ -1,0 +1,1299 @@
+[
+  {
+    "strName": "SnapPhoto",
+    "strNameFriendly": "Запрос на фото",
+    "strCancelBeat": "SnapPhotoCancel",
+    "aPhases": [["SnapPhotoStart"], ["SnapPhotoTarget"], ["SnapPhotoTurnIn"]],
+    "aPhaseTitles": [
+      "STARTING",
+      "[contact] хочет фотографию [target].",
+      "Вернитесь к [contact] с фотографией [target]."
+    ],
+    "aIADos": [
+      [],
+      ["PLOTSnapPhotoTarget,[protag],[target],[contact]"],
+      ["PLOTSnapPhotoTurnIn,[protag],[contact],[target]"]
+    ]
+  },
+  {
+    "strName": "Messenger",
+    "strNameFriendly": "Проблемы с карьерой",
+    "strCancelBeat": "Messenger_Cancel",
+    "aPhaseTitles": [
+      "STARTING",
+      "Найдите [contact], которому нужна помощь с карьерной проблемой.",
+      "[contact] ищет помощи, поговорив с [target].",
+      "Найдите [target] и поговорите с ним о карьерной проблеме [contact].",
+      "Вернитесь к [contact] для отчёта о разговоре с [target]."
+    ],
+    "aPhases": [
+      ["Messenger_Start"],
+      ["Messenger_Offer"],
+      ["Messenger_Agree", "Messenger_Refuse", "Messenger_TargetEarly"],
+      ["Messenger_Target"],
+      ["Messenger_TurnIn", "Messenger_TurnInPay"],
+      ["Messenger_End"]
+    ],
+    "aIADos": [
+      [],
+      ["PLOT_Messenger_Offer,[protag],[contact],[target]"],
+      [
+        "PLOT_Messenger_Agree,[protag],[contact],[target]",
+        "PLOT_Messenger_Refuse,[protag],[contact],[target]",
+        "PLOT_Messenger_QuestionPay,[protag],[contact],[target]",
+        "PLOT_Messenger_QuestionLegality,[protag],[contact],[target]",
+        "PLOT_Messenger_Target,[protag],[target],[contact]"
+      ],
+      ["PLOT_Messenger_Target,[protag],[target],[contact]"],
+      ["PLOT_Messenger_TurnInSplit,[protag],[contact],[target]"],
+      []
+    ]
+  },
+  {
+    "strName": "Messenger02",
+    "strNameFriendly": "Ещё проблемы с карьерой",
+    "strCancelBeat": "Messenger02_Cancel",
+    "aPhaseTitles": [
+      "STARTING",
+      "Найдите [contact], которому нужна помощь с важной карьерной проблемой.",
+      "[contact] ищет помощи, поговорив с [target].",
+      "Найдите [target] и убедите его решить карьерную проблему [contact].",
+      "Вернитесь к [contact] для отчёта о разговоре с [target]."
+    ],
+    "aPhases": [
+      ["Messenger02_Start"],
+      ["Messenger02_Start2"],
+      ["Messenger02_Offer"],
+      ["Messenger02_Agree", "Messenger02_Refuse", "Messenger02_TargetEarly"],
+      ["Messenger02_Target", "Messenger02_TurnInFail"],
+      [
+        "Messenger02_TurnIn",
+        "Messenger02_TurnInDead",
+        "Messenger02_TurnInPay",
+        "Messenger02_TurnInPayDead"
+      ],
+      ["Messenger02_End"]
+    ],
+    "aIADos": [
+      [],
+      [],
+      ["PLOT_Messenger02_Offer,[protag],[contact],[target]"],
+      [
+        "PLOT_Messenger02_Agree,[protag],[contact],[target]",
+        "PLOT_Messenger02_Refuse,[protag],[contact],[target]",
+        "PLOT_Messenger02_QuestionPay,[protag],[contact],[target]",
+        "PLOT_Messenger02_QuestionLegality,[protag],[contact],[target]",
+        "PLOT_Messenger02_Target,[protag],[target],[contact]",
+        "PLOT_Messenger02_TargetForce,[protag],[target],[contact]"
+      ],
+      [
+        "PLOT_Messenger02_Target,[protag],[target],[contact]",
+        "PLOT_Messenger02_TargetForce,[protag],[target],[contact]",
+        "PLOT_Messenger02_TurnInReportFail,[protag],[contact],[target]",
+        "PLOT_Messenger02_TurnInFail,[protag],[contact],[target]"
+      ],
+      [
+        "PLOT_Messenger02_TurnInSplit,[protag],[contact],[target]",
+        "PLOT_Messenger02_TurnInReportFail,[protag],[contact],[target]"
+      ],
+      []
+    ]
+  },
+  {
+    "strName": "MessengerFamily",
+    "strNameFriendly": "Семейные вопросы",
+    "strCancelBeat": "MessengerFamily_Cancel",
+    "aPhaseTitles": [
+      "STARTING",
+      "Найдите [contact], которому нужна помощь с семейной проблемой.",
+      "[contact] ищет помощи, поговорив с [target].",
+      "Найдите [target] и поговорите с ним о семейной проблеме [contact].",
+      "Вернитесь к [contact] для отчёта о разговоре с [target]."
+    ],
+    "aPhases": [
+      ["MessengerFamily_Start"],
+      ["MessengerFamily_Offer"],
+      [
+        "MessengerFamily_Agree",
+        "MessengerFamily_Refuse",
+        "MessengerFamily_TargetEarly"
+      ],
+      ["MessengerFamily_Target"],
+      ["MessengerFamily_TurnIn", "MessengerFamily_TurnInPay"],
+      ["MessengerFamily_End"]
+    ],
+    "aIADos": [
+      [],
+      ["PLOT_MessengerFamily_Offer,[protag],[contact],[target]"],
+      [
+        "PLOT_MessengerFamily_Agree,[protag],[contact],[target]",
+        "PLOT_MessengerFamily_Refuse,[protag],[contact],[target]",
+        "PLOT_MessengerFamily_QuestionPay,[protag],[contact],[target]",
+        "PLOT_MessengerFamily_QuestionLegality,[protag],[contact],[target]",
+        "PLOT_MessengerFamily_Target,[protag],[target],[contact]"
+      ],
+      ["PLOT_MessengerFamily_Target,[protag],[target],[contact]"],
+      ["PLOT_MessengerFamily_TurnInSplit,[protag],[contact],[target]"],
+      []
+    ]
+  },
+  {
+    "strName": "Corp",
+    "strNameFriendly": "Корпоративные проблемы",
+    "strCancelBeat": "MessengerCorp_Cancel",
+    "aPhaseTitles": [
+      "STARTING",
+      "Найдите [contact], у которого проблемы с корпорацией.",
+      "[contact] ищет помощи, поговорив с [target].",
+      "Найдите [target] и поговорите с ним о проблеме [contact] с корпорацией.",
+      "Вернитесь к [contact] для отчёта о разговоре с [target]."
+    ],
+    "aPhases": [
+      ["MessengerCorp_Start"],
+      ["MessengerCorp_Offer"],
+      [
+        "MessengerCorp_Agree",
+        "MessengerCorp_Refuse",
+        "MessengerCorp_TargetEarly"
+      ],
+      ["MessengerCorp_Target"],
+      ["MessengerCorp_TurnIn", "MessengerCorp_TurnInPay"],
+      ["MessengerCorp_End"]
+    ],
+    "aIADos": [
+      [],
+      ["PLOT_MessengerCorp_Offer,[protag],[contact],[target]"],
+      [
+        "PLOT_MessengerCorp_Agree,[protag],[contact],[target]",
+        "PLOT_MessengerCorp_Refuse,[protag],[contact],[target]",
+        "PLOT_MessengerCorp_QuestionPay,[protag],[contact],[target]",
+        "PLOT_MessengerCorp_QuestionLegality,[protag],[contact],[target]",
+        "PLOT_MessengerCorp_Target,[protag],[target],[contact]"
+      ],
+      ["PLOT_MessengerCorp_Target,[protag],[target],[contact]"],
+      ["PLOT_MessengerCorp_TurnInSplit,[protag],[contact],[target]"],
+      []
+    ]
+  },
+  {
+    "strName": "MessengerLegal",
+    "strNameFriendly": "Юридические проблемы",
+    "strCancelBeat": "MessengerLegal_Cancel",
+    "aPhaseTitles": [
+      "STARTING",
+      "Найдите [contact], который хочет обсудить юридическую проблему.",
+      "[contact] ищет помощи, поговорив с [target].",
+      "Найдите [target] и поговорите с ним о юридической проблеме [contact].",
+      "Вернитесь к [contact] для отчёта о разговоре с [target]."
+    ],
+    "aPhases": [
+      ["MessengerLegal_Start"],
+      ["MessengerLegal_Offer"],
+      [
+        "MessengerLegal_Agree",
+        "MessengerLegal_Refuse",
+        "MessengerLegal_TargetEarly"
+      ],
+      ["MessengerLegal_Target"],
+      ["MessengerLegal_TurnIn", "MessengerLegal_TurnInPay"],
+      ["MessengerLegal_End"]
+    ],
+    "aIADos": [
+      [],
+      ["PLOT_MessengerLegal_Offer,[protag],[contact],[target]"],
+      [
+        "PLOT_MessengerLegal_Agree,[protag],[contact],[target]",
+        "PLOT_MessengerLegal_Refuse,[protag],[contact],[target]",
+        "PLOT_MessengerLegal_QuestionPay,[protag],[contact],[target]",
+        "PLOT_MessengerLegal_QuestionLegality,[protag],[contact],[target]",
+        "PLOT_MessengerLegal_Target,[protag],[target],[contact]"
+      ],
+      ["PLOT_MessengerLegal_Target,[protag],[target],[contact]"],
+      ["PLOT_MessengerLegal_TurnInSplit,[protag],[contact],[target]"],
+      []
+    ]
+  },
+  {
+    "strName": "MessengerRomanticMatchmaker",
+    "strNameFriendly": "Сваха",
+    "strCancelBeat": "MessengerRomantic_Cancel",
+    "aPhaseTitles": [
+      "STARTING",
+      "Найдите [contact], который хочет поговорить о помощи с романтической проблемой.",
+      "[contact] ищет помощь в поиске романтического партнёра.",
+      "Найдите кого-то подходящего [contact], готового попробовать романтические отношения.",
+      "Вернитесь к [contact] для отчёта о поиске романтического партнёра."
+    ],
+    "aPhases": [
+      ["MessengerRomantic_Start"],
+      ["MessengerRomantic_Offer"],
+      [
+        "MessengerRomantic_Agree",
+        "MessengerRomantic_Refuse",
+        "MessengerRomantic_TargetEarly"
+      ],
+      ["MessengerRomantic_Target"],
+      ["MessengerRomantic_TurnIn", "MessengerRomantic_TurnInPay"],
+      ["MessengerRomantic_End"]
+    ],
+    "aIADos": [
+      [],
+      ["PLOT_MessengerRomantic_Offer,[protag],[contact]"],
+      [
+        "PLOT_MessengerRomantic_Agree,[protag],[contact]",
+        "PLOT_MessengerRomantic_Refuse,[protag],[contact]",
+        "PLOT_MessengerRomantic_QuestionPay,[protag],[contact]",
+        "PLOT_MessengerRomantic_QuestionLegality,[protag],[contact]",
+        "PLOT_MessengerRomantic_TargetMen,[protag],,[contact]",
+        "PLOT_MessengerRomantic_TargetNB,[protag],,[contact]",
+        "PLOT_MessengerRomantic_TargetWomen,[protag],,[contact]"
+      ],
+      [
+        "PLOT_MessengerRomantic_TargetMen,[protag],,[contact]",
+        "PLOT_MessengerRomantic_TargetNB,[protag],,[contact]",
+        "PLOT_MessengerRomantic_TargetWomen,[protag],,[contact]"
+      ],
+      ["PLOT_MessengerRomantic_TurnInSplit,[protag],[contact],[target]"],
+      []
+    ]
+  },
+  {
+    "strName": "MessengerTechnical",
+    "strNameFriendly": "Техническая помощь",
+    "strCancelBeat": "MessengerTechnical_Cancel",
+    "aPhaseTitles": [
+      "STARTING",
+      "Найдите [contact], которому нужна помощь с технической проблемой.",
+      "[contact] ищет помощи, поговорив с [target].",
+      "Найдите [target] и поговорите с ним о технической проблеме [contact].",
+      "Вернитесь к [contact] для отчёта о разговоре с [target]."
+    ],
+    "aPhases": [
+      ["MessengerTechnical_Start"],
+      ["MessengerTechnical_Offer"],
+      [
+        "MessengerTechnical_Agree",
+        "MessengerTechnical_Refuse",
+        "MessengerTechnical_TargetEarly"
+      ],
+      ["MessengerTechnical_Target"],
+      ["MessengerTechnical_TurnIn", "MessengerTechnical_TurnInPay"],
+      ["MessengerTechnical_End"]
+    ],
+    "aIADos": [
+      [],
+      ["PLOT_MessengerTechnical_Offer,[protag],[contact],[target]"],
+      [
+        "PLOT_MessengerTechnical_Agree,[protag],[contact],[target]",
+        "PLOT_MessengerTechnical_Refuse,[protag],[contact],[target]",
+        "PLOT_MessengerTechnical_QuestionPay,[protag],[contact],[target]",
+        "PLOT_MessengerTechnical_QuestionLegality,[protag],[contact],[target]",
+        "PLOT_MessengerTechnical_Target,[protag],[target],[contact]"
+      ],
+      ["PLOT_MessengerTechnical_Target,[protag],[target],[contact]"],
+      ["PLOT_MessengerTechnical_TurnInSplit,[protag],[contact],[target]"],
+      []
+    ]
+  },
+  {
+    "strName": "Boop",
+    "strNameFriendly": "Запрос на тычок",
+    "bNoCheck": true,
+    "aPhases": [["BoopStart"], ["BoopTarget"], ["BoopTurnIn"]],
+    "aIADos": [
+      [],
+      ["PLOTBoopTarget,[protag],[target],[contact]"],
+      ["PLOTBoopTurnIn,[protag],[contact],[target]"]
+    ]
+  },
+  {
+    "strName": "AyoCorpSnitch",
+    "strNameFriendly": "Лёгкое наблюдение",
+    "strCancelBeat": "AyoCorpSnitchCancel",
+    "aPhaseTitles": [
+      "STARTING",
+      "Узнайте, чего хочет Портовая администрация.",
+      "Портовая администрация хочет, чтобы вы установили жучок на [target]."
+    ],
+    "aPhases": [
+      ["AyoCorpSnitchStart"],
+      ["AyoCorpSnitchTarget"],
+      ["AyoCorpSnitchTurnIn"]
+    ],
+    "aIADos": [
+      [],
+      ["PLOTAyoCorpSnitchTarget,[protag],[contact],[target]"],
+      ["PLOTAyoCorpSnitchTurnIn,[protag],[target],[contact]"]
+    ]
+  },
+  {
+    "strName": "WrongfullyAccusedBreakerBEG",
+    "strNameFriendly": "Подставлен",
+    "aPhaseTitles": [
+      "STARTING",
+      "Узнайте, что нужно [contact].",
+      "[contact] хочет, чтобы вы сняли с него ложное обвинение, поговорив с [target]."
+    ],
+    "aPhases": [
+      ["WrongfullyAccusedBreakerBEGStart"],
+      ["WrongfullyAccusedBreakerBEGTarget"],
+      ["WrongfullyAccusedBreakerBEGTurnIn"]
+    ],
+    "aIADos": [
+      [],
+      ["PLOTWrongfullyAccusedBreakerBEGTarget,[protag],[contact],[target]"],
+      ["PLOTWrongfullyAccusedBreakerBEGTurnIn,[protag],[target],[contact]"]
+    ]
+  },
+  {
+    "strName": "WrongfullyAccusedManagerBEG",
+    "strNameFriendly": "Обвинение во враждебном поглощении",
+    "aPhaseTitles": [
+      "STARTING",
+      "Узнайте, что нужно [contact].",
+      "[contact] хочет, чтобы вы сняли с него ложное обвинение, поговорив с [target]."
+    ],
+    "aPhases": [
+      ["WrongfullyAccusedManagerBEGStart"],
+      ["WrongfullyAccusedManagerBEGTarget"],
+      ["WrongfullyAccusedManagerBEGTurnIn"]
+    ],
+    "aIADos": [
+      [],
+      ["PLOTWrongfullyAccusedManagerBEGTarget,[protag],[contact],[target]"],
+      ["PLOTWrongfullyAccusedManagerBEGTurnIn,[protag],[target],[contact]"]
+    ]
+  },
+  {
+    "strName": "WrongfullyAccusedLEOBEG",
+    "strNameFriendly": "Неприятности с внутренними делами",
+    "aPhaseTitles": [
+      "STARTING",
+      "Узнайте, что нужно [contact].",
+      "[contact] хочет, чтобы вы сняли с него ложное обвинение, поговорив с [target]."
+    ],
+    "aPhases": [
+      ["WrongfullyAccusedLEOBEGStart"],
+      ["WrongfullyAccusedLEOBEGTarget"],
+      ["WrongfullyAccusedLEOBEGTurnIn"]
+    ],
+    "aIADos": [
+      [],
+      ["PLOTWrongfullyAccusedLEOBEGTarget,[protag],[contact],[target]"],
+      ["PLOTWrongfullyAccusedLEOBEGTurnIn,[protag],[target],[contact]"]
+    ]
+  },
+  {
+    "strName": "WrongfullyAccusedCrimBEG",
+    "strNameFriendly": "Страховое мошенничество",
+    "aPhaseTitles": [
+      "STARTING",
+      "Узнайте, что нужно [contact].",
+      "[contact] хочет, чтобы вы очистили его имя, посетив [target].",
+      "[target] хочет, чтобы вы проверили его обвинения против [contact].",
+      "[target] приглашает вас найти [deadbody] на его корабле.",
+      "Посетите [target] для отчёта о том, что вы узнали о [deadbody]."
+    ],
+    "aPhases": [
+      ["WrongfullyAccusedCrimBEGStart"],
+      ["WrongfullyAccusedCrimBEGTarget"],
+      ["WrongfullyAccusedCrimBEGTurnIn"],
+      ["WrongfullyAccusedCrimMIDStart"],
+      ["WrongfullyAccusedCrimMIDTarget"],
+      ["WrongfullyAccusedCrimMIDTurnIn"]
+    ],
+    "aIADos": [
+      [],
+      ["PLOTWrongfullyAccusedCrimBEGTarget,[protag],[contact],[target]"],
+      ["PLOTWrongfullyAccusedCrimBEGTurnIn,[protag],[target],[contact]"],
+      [],
+      ["PLOTWrongfullyAccusedCrimMIDTarget,[protag],[contact]"],
+      ["PLOTWrongfullyAccusedCrimMIDTurnIn,[protag],[deadbody],[contact]"]
+    ]
+  },
+  {
+    "strName": "WrongfullyAccusedPrisonerCellmateBEG",
+    "strNameFriendly": "Попал в рэкет",
+    "aPhaseTitles": [
+      "STARTING",
+      "Узнайте, что нужно [contact].",
+      "[contact] хочет, чтобы вы сняли с него ложное обвинение, поговорив с [target]."
+    ],
+    "aPhases": [
+      ["WrongfullyAccusedPrisonerCellmateBEGStart"],
+      ["WrongfullyAccusedPrisonerCellmateBEGTarget"],
+      ["WrongfullyAccusedPrisonerCellmateBEGTurnIn"]
+    ],
+    "aIADos": [
+      [],
+      [
+        "PLOTWrongfullyAccusedPrisonerCellmateBEGTarget,[protag],[contact],[target]"
+      ],
+      [
+        "PLOTWrongfullyAccusedPrisonerCellmateBEGTurnIn,[protag],[target],[contact]"
+      ]
+    ]
+  },
+  {
+    "strName": "TEMPChoices",
+    "bNoCheck": true,
+    "aPhases": [
+      ["ChoicesStart"],
+      ["Choices01a", "Choices01b"],
+      ["Choices01Clear"]
+    ],
+    "aIADos": [
+      [],
+      ["PLOTChoices01a,[protag],[target]", "PLOTChoices01b,[protag],[target]"],
+      []
+    ]
+  },
+  {
+    "strName": "TEMPChoicesDialogue",
+    "bNoCheck": true,
+    "aPhases": [
+      ["ChoicesDialogueStart"],
+      ["ChoicesDialogue01a", "ChoicesDialogue01b"],
+      ["ChoicesDialogue01Clear"],
+      ["ChoicesDialogue02a", "ChoicesDialogue02b"],
+      ["ChoicesDialogueCleanup"]
+    ],
+    "aIADos": [
+      [],
+      [
+        "PLOTChoicesDialogue01a,[protag],[target]",
+        "PLOTChoicesDialogue01b,[protag],[target]"
+      ],
+      [],
+      [
+        "PLOTChoicesDialogue02a,[protag],[target]",
+        "PLOTChoicesDialogue02b,[protag],[target]"
+      ],
+      []
+    ]
+  },
+  {
+    "strName": "ChoiceXYZ",
+    "bNoCheck": true,
+    "aPhases": [
+      ["ChoiceXYZStart"],
+      ["ChoiceXYZ01a", "ChoiceXYZ01b"],
+      ["ChoiceXYZ02a", "ChoiceXYZ02b"],
+      ["ChoiceXYZ03a", "ChoiceXYZ03b"],
+      ["ChoiceXYZCleanup"]
+    ],
+    "aIADos": [
+      [],
+      [
+        "PLOTChoiceXYZ01a,[protag],[target]",
+        "PLOTChoiceXYZ01b,[protag],[target]"
+      ],
+      [
+        "PLOTChoiceXYZ02a,[protag],[target]",
+        "PLOTChoiceXYZ02b,[protag],[target]"
+      ],
+      [
+        "PLOTChoiceXYZ03a,[protag],[target]",
+        "PLOTChoiceXYZ03b,[protag],[target]"
+      ],
+      []
+    ]
+  },
+  {
+    "strName": "ChoiceFanBreakoutTeam",
+    "strNameFriendly": "Болтовня о побеге",
+    "strCancelBeat": "ChoiceFanBreakoutTeamCleanup",
+    "aPhaseTitles": [
+      "Узнайте, чего хочет [target].",
+      "[target] хочет поболтать о Breakout.",
+      "Поболтайте с [target] о вашей любимой команде Breakout."
+    ],
+    "aPhases": [
+      ["ChoiceFanБрейкаутTeamStart"],
+      ["ChoiceFanБрейкаутTeam01"],
+      [
+        "ChoiceFanБрейкаутTeam02a",
+        "ChoiceFanБрейкаутTeam02b",
+        "ChoiceFanБрейкаутTeam02c",
+        "ChoiceFanБрейкаутTeam02d"
+      ],
+      ["ChoiceFanБрейкаутTeamCleanup"]
+    ],
+    "aIADos": [
+      [],
+      ["PLOTChoiceFanБрейкаутTeam01,[protag],[target]"],
+      [
+        "PLOTChoiceFanБрейкаутTeam02a,[protag],[target]",
+        "PLOTChoiceFanБрейкаутTeam02b,[protag],[target]",
+        "PLOTChoiceFanБрейкаутTeam02c,[protag],[target]",
+        "PLOTChoiceFanБрейкаутTeam02d,[protag],[target]"
+      ],
+      []
+    ]
+  },
+  {
+    "strName": "ChoiceFanSmokes",
+    "strNameFriendly": "Болтовня",
+    "strCancelBeat": "ChoiceFanSmokesCleanup",
+    "aPhaseTitles": [
+      "Узнайте, чего хочет [target].",
+      "[target] хочет поболтать о сигаретах.",
+      "Поболтайте с [target] о вашей любимой марке сигарет."
+    ],
+    "aPhases": [
+      ["ChoiceFanSmokesStart"],
+      ["ChoiceFanSmokes01"],
+      ["ChoiceFanSmokes02a", "ChoiceFanSmokes02b", "ChoiceFanSmokes02c"],
+      ["ChoiceFanSmokesCleanup"]
+    ],
+    "aIADos": [
+      [],
+      ["PLOTChoiceFanSmokes01,[protag],[target]"],
+      [
+        "PLOTChoiceFanSmokes02a,[protag],[target]",
+        "PLOTChoiceFanSmokes02b,[protag],[target]",
+        "PLOTChoiceFanSmokes02c,[protag],[target]"
+      ],
+      []
+    ]
+  },
+  {
+    "strName": "ChoicePanhandling",
+    "strNameFriendly": "Помоги космолётчику",
+    "strCancelBeat": "ChoicePanhandlingEnd",
+    "aPhaseTitles": ["STARTING", "[target] хочет немного лишних денег."],
+    "aPhases": [["ChoicePanhandlingStart"], ["ChoicePanhandlingEnd"]],
+    "aIADos": [[], []]
+  },
+  {
+    "strName": "FixerTrustIssues",
+    "strNameFriendly": "Проблемы с доверием",
+    "aPhases": [
+      ["FixerTrustIssuesStart"],
+      ["FixerTrustIssuesThreshold"],
+      ["FixerTrustIssuesLEOFriend"],
+      ["FixerTrustIssuesCrimEnemy"],
+      ["FixerTrustIssuesNoTrade"]
+    ],
+    "aIADos": [
+      [],
+      [],
+      [],
+      [],
+      ["PLOTFixerTrustIssuesConfirmLEO,[protag],[leo]"]
+    ]
+  },
+  {
+    "strName": "OKLGCritter",
+    "strNameFriendly": "Дребезжащая вентиляция",
+    "strCancelBeat": "OKLGCritterEnd",
+    "aPhaseTitles": [
+      "STARTING",
+      "Что заставляет вентиляцию дребезжать?",
+      "Кто-то живёт в этой грязной вентиляции?",
+      "Как успокоить или заслужить доверие того, кто живёт в вентиляции?",
+      "Похоже, оно вам доверяет. Что это?",
+      "Существо, живущее в вентиляции, похоже, иногда наслаждается компанией."
+    ],
+    "aPhases": [
+      ["OKLGCritterStart"],
+      ["OKLGCritter01", "OKLGCritter01b"],
+      ["OKLGCritter02", "OKLGCritter02b"],
+      ["OKLGCritter03"],
+      ["OKLGCritter04"],
+      ["OKLGCritter05"],
+      ["OKLGCritterEnd"]
+    ],
+    "aIADos": [
+      [],
+      [
+        "PLOTOKLGCritter01,[protag],[vent]",
+        "PLOTOKLGCritter01b,[protag],[vent]"
+      ],
+      [
+        "PLOTOKLGCritter02,[protag],[vent]",
+        "PLOTOKLGCritter02b,[protag],[vent]"
+      ],
+      [
+        "PLOTOKLGCritter03,[protag],[vent]",
+        "PLOTOKLGCritter03b,[protag],[vent]"
+      ],
+      [
+        "PLOTOKLGCritter04d,[protag],[vent]",
+        "PLOTOKLGCritter04c,[protag],[vent]",
+        "PLOTOKLGCritter04b,[protag],[vent]",
+        "PLOTOKLGCritter04a,[protag],[vent]"
+      ],
+      [
+        "PLOTOKLGCritter05a,[protag],[vent]",
+        "PLOTOKLGCritter05b,[protag],[vent]",
+        "PLOTOKLGCritter05c,[protag],[vent]",
+        "PLOTOKLGCritter05d,[protag],[vent]",
+        "PLOTOKLGCritter05Hungry,[protag],[vent]",
+        "PLOTOKLGCritter05Feed,[protag],[vent]"
+      ],
+      []
+    ]
+  },
+  {
+    "strName": "OKLGEmbassy",
+    "strNameFriendly": "Юридические мечты",
+    "strCancelBeat": "OKLGEmbassy_End",
+    "aPhaseTitles": [
+      "STARTING",
+      "Дождитесь информации о посольствах",
+      "Посетите посольство (попробуйте Коммерческий сектор ОКЛГ)",
+      "Получите постоянную визу резидента",
+      "Покиньте этот камень, посмотрите миры, обзаведитесь своей собственностью."
+    ],
+    "aPhases": [
+      ["OKLGEmbassy_Start"],
+      ["OKLGEmbassy_PreReady", "OKLGEmbassy_Ready"],
+      ["OKLGEmbassy_01"],
+      ["OKLGEmbassy_Pre02", "OKLGEmbassy_02"],
+      []
+    ],
+    "aIADos": [
+      [
+        "ENCEmbassyServicesOKLGKioskTut,[protag]",
+        "ENCEmbassyServicesVENCKioskTut,[protag]",
+        "ENCEmbassyServicesVNCAKioskTut,[protag]"
+      ],
+      [
+        "ENCEmbassyServicesOKLGKioskTut,[protag]",
+        "ENCEmbassyServicesVENCKioskTut,[protag]",
+        "ENCEmbassyServicesVNCAKioskTut,[protag]"
+      ],
+      [
+        "ENCEmbassyServicesOKLGKioskTut,[protag]",
+        "ENCEmbassyServicesVENCKioskTut,[protag]",
+        "ENCEmbassyServicesVNCAKioskTut,[protag]"
+      ],
+      [
+        "ENCEmbassyServicesOKLGKioskTut,[protag]",
+        "ENCEmbassyServicesVENCKioskTut,[protag]",
+        "ENCEmbassyServicesVNCAKioskTut,[protag]"
+      ],
+      []
+    ]
+  },
+  {
+    "strName": "Lonesome",
+    "strNameFriendly": "Одинокий скунс",
+    "strCancelBeat": "Beat_Lonesome_End",
+    "aPhases": [
+      ["Beat_LonesomeStart"],
+      [
+        "Beat_Lonesome_Stage01",
+        "Beat_Lonesome_Stage01ToEnd",
+        "Beat_Lonesome_Stage02"
+      ],
+      [
+        "Beat_Lonesome_Stage02Back",
+        "PLOT_Lonesome_Stage02ToEnd",
+        "Beat_Lonesome_Stage03"
+      ],
+      [
+        "Beat_Lonesome_Stage03Back",
+        "PLOT_Lonesome_Stage03ToEnd",
+        "Beat_Lonesome_Stage04"
+      ],
+      ["Beat_Lonesome_Stage04Back", "PLOT_Lonesome_Stage04ToEnd"],
+      ["Beat_Lonesome_End"]
+    ],
+    "aIADos": [
+      [],
+      [
+        "PLOT_Lonesome_01a,[protag],[protag]",
+        "PLOT_Lonesome_01b,[protag]",
+        "PLOT_Lonesome_01c,[protag]",
+        "PLOT_Lonesome_01d,[protag]",
+        "PLOT_Lonesome_01Ex,[protag]",
+        "PLOT_Lonesome_CreateEx,[protag]"
+      ],
+      [
+        "PLOT_Lonesome_01a,[protag],[protag]",
+        "PLOT_Lonesome_01c,[protag]",
+        "PLOT_Lonesome_01Ex,[protag],[protag]",
+        "PLOT_Lonesome_CreateEx,[protag]",
+        "PLOT_Lonesome_02a,[protag]",
+        "PLOT_Lonesome_02b,[protag]",
+        "PLOT_Lonesome_02c,[protag]",
+        "PLOT_Lonesome_02d,[protag]",
+        "PLOT_Lonesome_02e,[protag]",
+        "PLOT_Lonesome_02f,[protag]",
+        "PLOT_Lonesome_02g,[protag]",
+        "PLOT_Lonesome_02h,[protag]"
+      ],
+      [
+        "PLOT_Lonesome_01a,[protag],[protag]",
+        "PLOT_Lonesome_01c,[protag]",
+        "PLOT_Lonesome_01Ex,[protag],[protag]",
+        "PLOT_Lonesome_CreateEx,[protag]",
+        "PLOT_Lonesome_02a,[protag]",
+        "PLOT_Lonesome_02b,[protag]",
+        "PLOT_Lonesome_02c,[protag]",
+        "PLOT_Lonesome_02d,[protag]",
+        "PLOT_Lonesome_02e,[protag]",
+        "PLOT_Lonesome_02f,[protag]",
+        "PLOT_Lonesome_02g,[protag]",
+        "PLOT_Lonesome_02h,[protag]",
+        "PLOT_Lonesome_03a,[protag]",
+        "PLOT_Lonesome_03b,[protag]",
+        "PLOT_Lonesome_03c,[protag]",
+        "PLOT_Lonesome_03d,[protag]"
+      ],
+      ["PLOT_Lonesome_01a,[protag],[protag]"],
+      []
+    ]
+  },
+  {
+    "strName": "Meat",
+    "strNameFriendly": "Проект вечного белка",
+    "strCancelBeat": "Beat_Meat_End",
+    "aPhases": [
+      ["Beat_Meat_Start"],
+      ["Beat_Meat_WhispersFound"],
+      ["Beat_Meat_SignsDiscussed"],
+      ["Beat_Meat_MeatEngaged"],
+      ["Beat_Meat_MeatKnown"],
+      ["Beat_Meat_RitualPrepared"],
+      ["Beat_Meat_RitualCompleted"],
+      ["Beat_Meat_End"],
+      []
+    ],
+    "aIADos": [
+      [],
+      [
+        "PLOT_Meat_WhispersFound01,[protag]",
+        "PLOT_Meat_WhispersFound02,[protag]",
+        "PLOT_Meat_WhispersFound03,[protag]",
+        "PLOT_Meat_WhispersFound04,[protag]",
+        "PLOT_Meat_WhispersFound05,[protag]",
+        "PLOT_Meat_WhispersFound06,[protag]"
+      ],
+      [
+        "PLOT_Meat_WhispersFound01,[protag]",
+        "PLOT_Meat_WhispersFound02,[protag]",
+        "PLOT_Meat_WhispersFound03,[protag]",
+        "PLOT_Meat_WhispersFound04,[protag]",
+        "PLOT_Meat_WhispersFound05,[protag]",
+        "PLOT_Meat_WhispersFound06,[protag]",
+        "PLOT_Meat_SignsDiscussed01,[protag]",
+        "PLOT_Meat_SignsDiscussed02,[protag]",
+        "PLOT_Meat_SignsDiscussed03,[protag]",
+        "PLOT_Meat_SignsDiscussed04,[protag]",
+        "PLOT_Meat_SignsDiscussed05,[protag]",
+        "PLOT_Meat_SignsDiscussed06,[protag]"
+      ],
+      [
+        "PLOT_Meat_WhispersFound01,[protag]",
+        "PLOT_Meat_WhispersFound02,[protag]",
+        "PLOT_Meat_WhispersFound03,[protag]",
+        "PLOT_Meat_WhispersFound04,[protag]",
+        "PLOT_Meat_WhispersFound05,[protag]",
+        "PLOT_Meat_WhispersFound06,[protag]",
+        "PLOT_Meat_SignsDiscussed01,[protag]",
+        "PLOT_Meat_SignsDiscussed02,[protag]",
+        "PLOT_Meat_SignsDiscussed03,[protag]",
+        "PLOT_Meat_SignsDiscussed04,[protag]",
+        "PLOT_Meat_SignsDiscussed05,[protag]",
+        "PLOT_Meat_SignsDiscussed06,[protag]",
+        "PLOT_Meat_MeatEngaged01,[protag]",
+        "PLOT_Meat_MeatEngaged02,[protag]",
+        "PLOT_Meat_MeatEngaged03,[protag]",
+        "PLOT_Meat_MeatEngaged04,[protag]",
+        "PLOT_Meat_MeatEngaged05,[protag]",
+        "SeekFoodDirectMeatBlob,[protag]"
+      ],
+      [
+        "PLOT_Meat_WhispersFound01,[protag]",
+        "PLOT_Meat_WhispersFound02,[protag]",
+        "PLOT_Meat_WhispersFound03,[protag]",
+        "PLOT_Meat_WhispersFound04,[protag]",
+        "PLOT_Meat_WhispersFound05,[protag]",
+        "PLOT_Meat_WhispersFound06,[protag]",
+        "PLOT_Meat_SignsDiscussed01,[protag]",
+        "PLOT_Meat_SignsDiscussed02,[protag]",
+        "PLOT_Meat_SignsDiscussed03,[protag]",
+        "PLOT_Meat_SignsDiscussed04,[protag]",
+        "PLOT_Meat_SignsDiscussed05,[protag]",
+        "PLOT_Meat_SignsDiscussed06,[protag]",
+        "PLOT_Meat_MeatEngaged01,[protag]",
+        "PLOT_Meat_MeatEngaged02,[protag]",
+        "PLOT_Meat_MeatEngaged03,[protag]",
+        "PLOT_Meat_MeatEngaged04,[protag]",
+        "PLOT_Meat_MeatEngaged05,[protag]",
+        "SeekFoodDirectMeatBlob,[protag]",
+        "PLOT_Meat_MeatKnown01,[protag]",
+        "PLOT_Meat_MeatKnown02,[protag]",
+        "PLOT_Meat_MeatKnown03,[protag]",
+        "PLOT_Meat_MeatKnown04,[protag]",
+        "PLOT_Meat_MeatKnown05,[protag]"
+      ],
+      [
+        "PLOT_Meat_WhispersFound01,[protag]",
+        "PLOT_Meat_WhispersFound02,[protag]",
+        "PLOT_Meat_WhispersFound03,[protag]",
+        "PLOT_Meat_WhispersFound04,[protag]",
+        "PLOT_Meat_WhispersFound05,[protag]",
+        "PLOT_Meat_WhispersFound06,[protag]",
+        "PLOT_Meat_SignsDiscussed01,[protag]",
+        "PLOT_Meat_SignsDiscussed02,[protag]",
+        "PLOT_Meat_SignsDiscussed03,[protag]",
+        "PLOT_Meat_SignsDiscussed04,[protag]",
+        "PLOT_Meat_SignsDiscussed05,[protag]",
+        "PLOT_Meat_SignsDiscussed06,[protag]",
+        "PLOT_Meat_MeatEngaged01,[protag]",
+        "PLOT_Meat_MeatEngaged02,[protag]",
+        "PLOT_Meat_MeatEngaged03,[protag]",
+        "PLOT_Meat_MeatEngaged04,[protag]",
+        "PLOT_Meat_MeatEngaged05,[protag]",
+        "SeekFoodDirectMeatBlob,[protag]",
+        "PLOT_Meat_MeatKnown01,[protag]",
+        "PLOT_Meat_MeatKnown02,[protag]",
+        "PLOT_Meat_MeatKnown03,[protag]",
+        "PLOT_Meat_MeatKnown04,[protag]",
+        "PLOT_Meat_MeatKnown05,[protag]",
+        "PLOT_Meat_RitualPrepared02,[protag]"
+      ],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "strName": "Merga",
+    "strNameFriendly": "Истина где-то рядом",
+    "strCancelBeat": "Beat_Merga_End",
+    "aPhases": [
+      ["Beat_Merga_Start"],
+      ["Beat_Merga_Start2"],
+      ["Beat_Merga_Start3"],
+      ["Beat_Merga_Start4"],
+      ["Beat_Merga_Start5"],
+      ["Beat_Merga_WhispersFound"],
+      ["Beat_Merga_SignsDiscussed"],
+      ["Beat_Merga_MergaEngaged"],
+      ["Beat_Merga_MergaKnown"],
+      ["Beat_Merga_EndgamePrepared"],
+      ["Beat_Merga_EndgameCompleted"],
+      ["Beat_Merga_End"],
+      []
+    ],
+    "aPhaseTitles": [
+      "STARTING",
+      "STARTING",
+      "STARTING",
+      "STARTING",
+      "STARTING",
+      "Что с этими загадочными смертями?",
+      "Встретьтесь с детективом Миддлмист в Венерианском лаундже.",
+      "Посетите подозреваемых. Проверьте алиби. Кто виноват в деле Миддлмист?",
+      "Что теперь? Отнесите находки детективу.",
+      "Что на самом деле происходит?"
+    ],
+    "aIADos": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        "PLOT_Merga_WhispersFound01,[protag]",
+        "PLOT_Merga_WhispersFound02,[protag]",
+        "PLOT_Merga_WhispersFound05,[protag],,[racing_icon]",
+        "PLOT_Merga_WhispersFound06,[protag]",
+        "PLOT_Merga_WhispersFound07,[protag]",
+        "PLOT_Merga_WhispersFound08,[protag]",
+        "PLOT_Merga_WhispersFound09,[protag]",
+        "PLOT_Merga_WhispersFound10,[protag]"
+      ],
+      [
+        "PLOT_Merga_WhispersFound01,[protag]",
+        "PLOT_Merga_WhispersFound02,[protag]",
+        "PLOT_Merga_WhispersFound05,[protag],,[racing_icon]",
+        "PLOT_Merga_SignsDiscussed01,[protag],[lead_detective]",
+        "PLOT_Merga_SignsDiscussed02,[protag],[racing_icon]",
+        "PLOT_Merga_SignsDiscussed03,[protag],[superfan],[racing_icon]",
+        "PLOT_Merga_SignsDiscussed04,[protag],[mogul]",
+        "PLOT_Merga_SignsDiscussed05,[protag],[journalist]",
+        "PLOT_Merga_SignsDiscussed06,[protag],,[racing_icon]",
+        "PLOT_Merga_SignsDiscussed07,[protag],,[superfan]",
+        "PLOT_Merga_SignsDiscussed08,[protag],,[superfan]"
+      ],
+      [
+        "PLOT_Merga_WhispersFound01,[protag]",
+        "PLOT_Merga_WhispersFound02,[protag]",
+        "PLOT_Merga_WhispersFound05,[protag],,[racing_icon]",
+        "PLOT_Merga_SignsDiscussed01,[protag],[lead_detective]",
+        "PLOT_Merga_SignsDiscussed02,[protag],[racing_icon]",
+        "PLOT_Merga_SignsDiscussed03,[protag],[superfan],[racing_icon]",
+        "PLOT_Merga_SignsDiscussed04,[protag],[mogul]",
+        "PLOT_Merga_SignsDiscussed05,[protag],[journalist]",
+        "PLOT_Merga_SignsDiscussed06,[protag],,[racing_icon]",
+        "PLOT_Merga_SignsDiscussed07,[protag],,[superfan]",
+        "PLOT_Merga_SignsDiscussed08,[protag],,[superfan]",
+        "PLOT_Merga_MergaEngaged01,[protag],[lead_detective]",
+        "PLOT_Merga_MergaEngaged02,[protag],[racing_icon]",
+        "PLOT_Merga_MergaEngaged03,[protag],[racing_icon]",
+        "PLOT_Merga_MergaEngaged04,[protag],[racing_icon]",
+        "PLOT_Merga_MergaEngaged05,[protag],[racing_icon]",
+        "PLOT_Merga_MergaEngaged06,[protag],[racing_icon],[superfan]",
+        "PLOT_Merga_MergaEngaged07,[protag],[superfan]",
+        "SeekFoodDirectMergaBlob,[protag]"
+      ],
+      [
+        "PLOT_Merga_WhispersFound01,[protag]",
+        "PLOT_Merga_WhispersFound02,[protag]",
+        "PLOT_Merga_WhispersFound05,[protag],,[racing_icon]",
+        "PLOT_Merga_SignsDiscussed01,[protag],[lead_detective]",
+        "PLOT_Merga_SignsDiscussed02,[protag],[racing_icon]",
+        "PLOT_Merga_SignsDiscussed03,[protag],[superfan],[racing_icon]",
+        "PLOT_Merga_SignsDiscussed04,[protag],[mogul]",
+        "PLOT_Merga_SignsDiscussed05,[protag],[journalist]",
+        "PLOT_Merga_SignsDiscussed06,[protag],,[racing_icon]",
+        "PLOT_Merga_SignsDiscussed07,[protag],,[superfan]",
+        "PLOT_Merga_SignsDiscussed08,[protag],,[superfan]",
+        "PLOT_Merga_MergaEngaged01,[protag],[lead_detective]",
+        "PLOT_Merga_MergaEngaged02,[protag],[lead_detective]",
+        "PLOT_Merga_MergaEngaged03,[protag],[lead_detective]",
+        "PLOT_Merga_MergaEngaged04,[protag],[lead_detective]",
+        "PLOT_Merga_MergaEngaged05,[protag],[lead_detective]",
+        "PLOT_Merga_MergaEngaged06,[protag],[racing_icon],[superfan]",
+        "PLOT_Merga_MergaEngaged07,[protag],[superfan]",
+        "SeekFoodDirectMergaBlob,[protag]",
+        "PLOT_Merga_MergaKnown01,[protag],[lead_detective]",
+        "PLOT_Merga_MergaKnown02,[protag]",
+        "PLOT_Merga_MergaKnown03,[protag]",
+        "PLOT_Merga_MergaKnown04,[protag]",
+        "PLOT_Merga_MergaKnown05,[protag]"
+      ],
+      [
+        "PLOT_Merga_WhispersFound01,[protag]",
+        "PLOT_Merga_WhispersFound02,[protag]",
+        "PLOT_Merga_WhispersFound05,[protag],,[racing_icon]",
+        "PLOT_Merga_SignsDiscussed01,[protag],[lead_detective]",
+        "PLOT_Merga_SignsDiscussed02,[protag],[racing_icon]",
+        "PLOT_Merga_SignsDiscussed03,[protag],[superfan],[racing_icon]",
+        "PLOT_Merga_SignsDiscussed04,[protag],[mogul]",
+        "PLOT_Merga_SignsDiscussed05,[protag],[journalist]",
+        "PLOT_Merga_SignsDiscussed06,[protag],,[racing_icon]",
+        "PLOT_Merga_SignsDiscussed07,[protag],,[superfan]",
+        "PLOT_Merga_SignsDiscussed08,[protag],,[superfan]",
+        "PLOT_Merga_MergaEngaged01,[protag],[lead_detective]",
+        "PLOT_Merga_MergaEngaged02,[protag],[lead_detective]",
+        "PLOT_Merga_MergaEngaged03,[protag],[lead_detective]",
+        "PLOT_Merga_MergaEngaged04,[protag],[lead_detective]",
+        "PLOT_Merga_MergaEngaged05,[protag],[lead_detective]",
+        "PLOT_Merga_MergaEngaged06,[protag],[racing_icon],[superfan]",
+        "PLOT_Merga_MergaEngaged07,[protag],[superfan]",
+        "SeekFoodDirectMergaBlob,[protag]",
+        "PLOT_Merga_MergaKnown01,[protag],[lead_detective]",
+        "PLOT_Merga_MergaKnown02,[protag]",
+        "PLOT_Merga_MergaKnown03,[protag]",
+        "PLOT_Merga_MergaKnown04,[protag]",
+        "PLOT_Merga_MergaKnown05,[protag]",
+        "PLOT_Merga_EndgamePrepared01,[protag],[racing_icon],[lead_detective]",
+        "PLOT_Merga_EndgamePrepared02,[protag]"
+      ],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "strName": "NewOKLGFixer",
+    "strNameFriendly": "Новое лицо",
+    "aPhases": [
+      ["Beat_NewOKLGFixer_Start"],
+      ["Beat_NewOKLGFixer_ContactFound"],
+      ["Beat_NewOKLGFixer_FixerNewTalk"],
+      ["Beat_NewOKLGFixer_FixerNewFinalize"],
+      ["Beat_NewOKLGFixer_FixerNewEnd"]
+    ],
+    "aIADos": [
+      [],
+      [],
+      ["PLOT_NewOKLGFixer_TalkToFixerNew,[protag],[fixer_new],[contact]"],
+      [],
+      []
+    ]
+  },
+  {
+    "strName": "ScavFetch",
+    "strNameFriendly": "Сбор утильсырья",
+    "strCancelBeat": "ScavFetch_End",
+    "aPhaseTitles": [
+      "Узнайте, чего хочет [contact].",
+      "Посетите [contact], чтобы узнать, что он ищет.",
+      "[contact] ищет 20 единиц углеродного лома."
+    ],
+    "aPhases": [
+      ["ScavFetch_Start"],
+      ["ScavFetch_Offer"],
+      ["ScavFetch_Deliver"]
+    ],
+    "aIADos": [
+      [],
+      ["PLOT_ScavFetch_Offer,[protag],[contact]"],
+      ["PLOT_ScavFetch_Deliver,[protag],[contact]"]
+    ]
+  },
+  {
+    "strName": "ScavFetch02",
+    "strNameFriendly": "Сбор утильсырья",
+    "strCancelBeat": "ScavFetch02_End",
+    "aPhaseTitles": [
+      "STARTING",
+      "Посетите [contact], чтобы узнать, что он ищет.",
+      "[contact] ищет 4 неповреждённых регулятора впуска Канг RCS."
+    ],
+    "aPhases": [
+      ["ScavFetch02_Start"],
+      ["ScavFetch02_Offer"],
+      ["ScavFetch02_Deliver"]
+    ],
+    "aIADos": [
+      [],
+      ["PLOT_ScavFetch02_Offer,[protag],[contact]"],
+      ["PLOT_ScavFetch02_Deliver,[protag],[contact]"]
+    ]
+  },
+  {
+    "strName": "ScavFetch03",
+    "strNameFriendly": "Сбор утильсырья",
+    "strCancelBeat": "ScavFetch_End03",
+    "aPhaseTitles": [
+      "STARTING",
+      "Посетите [contact], чтобы узнать, что он ищет.",
+      "[contact] ищет 1 неповреждённый регулятор впуска Миура 'Hydra' RCS."
+    ],
+    "aPhases": [
+      ["ScavFetch03_Start"],
+      ["ScavFetch03_Offer"],
+      ["ScavFetch03_Deliver"]
+    ],
+    "aIADos": [
+      [],
+      ["PLOT_ScavFetch03_Offer,[protag],[contact]"],
+      ["PLOT_ScavFetch03_Deliver,[protag],[contact]"]
+    ]
+  },
+  {
+    "strName": "VLAFetch",
+    "strNameFriendly": "Утилизация деталей аэростата",
+    "strCancelBeat": "VLAFetch_End",
+    "aPhaseTitles": [
+      "Узнайте, чего хочет [contact].",
+      "Посетите [contact], чтобы узнать, какую прибыльную работу он предлагает.",
+      "[contact] предлагает $20,000 за 20 пластикового лома Кэйлон из VLA."
+    ],
+    "aPhases": [
+      ["VLAFetch_PreStart"],
+      ["VLAFetch_Offer"],
+      ["VLAFetch_Deliver"]
+    ],
+    "aIADos": [
+      [],
+      ["PLOT_VLAFetch_Offer,[protag],[contact]"],
+      ["PLOT_VLAFetch_Deliver,[protag],[contact]"]
+    ]
+  },
+  {
+    "strName": "VLAFetch02",
+    "strNameFriendly": "Утилизация деталей аэростата",
+    "strCancelBeat": "VLAFetch02_End",
+    "aPhaseTitles": [
+      "STARTING",
+      "Посетите [contact], чтобы узнать, что он ищет.",
+      "[contact] предлагает $10,000 за 1 неповреждённую аэродинамическую наклонную стену."
+    ],
+    "aPhases": [
+      ["VLAFetch02_Start"],
+      ["VLAFetch02_Offer"],
+      ["VLAFetch02_Deliver"]
+    ],
+    "aIADos": [
+      [],
+      ["PLOT_VLAFetch02_Offer,[protag],[contact]"],
+      ["PLOT_VLAFetch02_Deliver,[protag],[contact]"]
+    ]
+  },
+  {
+    "strName": "VLAFetch03",
+    "strNameFriendly": "Утилизация деталей аэростата",
+    "strCancelBeat": "VLAFetch03_End",
+    "aPhaseTitles": [
+      "STARTING",
+      "Посетите [contact], чтобы узнать, что он ищет.",
+      "[contact] предлагает $100,000 за 1 неповреждённый активный стабилизатор."
+    ],
+    "aPhases": [
+      ["VLAFetch03_Start"],
+      ["VLAFetch03_Offer"],
+      ["VLAFetch03_Deliver"]
+    ],
+    "aIADos": [
+      [],
+      ["PLOT_VLAFetch03_Offer,[protag],[contact]"],
+      ["PLOT_VLAFetch03_Deliver,[protag],[contact]"]
+    ]
+  },
+  {
+    "strName": "VLAFetch04",
+    "strNameFriendly": "Утилизация деталей аэростата",
+    "strCancelBeat": "VLAFetch04_End",
+    "aPhaseTitles": [
+      "STARTING",
+      "Посетите [contact], чтобы узнать, что он ищет.",
+      "[contact] предлагает $75,000 за 1 неповреждённый ротор тяжёлого подъёма."
+    ],
+    "aPhases": [
+      ["VLAFetch04_Start"],
+      ["VLAFetch04_Offer"],
+      ["VLAFetch04_Deliver"]
+    ],
+    "aIADos": [
+      [],
+      ["PLOT_VLAFetch04_Offer,[protag],[contact]"],
+      ["PLOT_VLAFetch04_Deliver,[protag],[contact]"]
+    ]
+  },
+  {
+    "strName": "VLAFetch05",
+    "strNameFriendly": "Утилизация деталей аэростата",
+    "strCancelBeat": "VLAFetch05_End",
+    "aPhaseTitles": [
+      "STARTING",
+      "Посетите [contact], чтобы узнать, что он ищет.",
+      "[contact] предлагает $15,000 за файл данных Drone OS."
+    ],
+    "aPhases": [
+      ["VLAFetch05_Start"],
+      ["VLAFetch05_Offer"],
+      ["VLAFetch05_Deliver"]
+    ],
+    "aIADos": [
+      [],
+      ["PLOT_VLAFetch05_Offer,[protag],[contact]"],
+      ["PLOT_VLAFetch05_Deliver,[protag],[contact]"]
+    ]
+  },
+  {
+    "strName": "Whodunnit",
+    "strNameFriendly": "Расследование смерти",
+    "strCancelBeat": "Beat_Whodunnit_EndCase_End",
+    "aPhaseTitles": [
+      "STARTING",
+      "Обязались расследовать смерть или сообщить о ней.",
+      "Носите дело с собой, ищите улики, сообщайте о смерти заинтересованным сторонам. Закройте дело, чтобы начать другое расследование."
+    ],
+    "aPhases": [
+      ["Beat_Whodunnit_Start"],
+      [
+        "Beat_Whodunnit_BodyFound",
+        "Beat_Whodunnit_VictimFound",
+        "Beat_Whodunnit_CloseCase2",
+        "Beat_Whodunnit_NotKilledCloseCase2",
+        "Beat_Whodunnit_EndCase2",
+        "Beat_Whodunnit_NotKilledEndCase2"
+      ],
+      [
+        "Beat_Whodunnit_CasefileFound",
+        "Beat_Whodunnit_KinFound",
+        "Beat_Whodunnit_KinEnemyFound",
+        "Beat_Whodunnit_KinAssign",
+        "Beat_Whodunnit_KinEnemyAssign",
+        "Beat_Whodunnit_ClueKillerShipbreaker",
+        "Beat_Whodunnit_ClueKillerCriminal",
+        "Beat_Whodunnit_ClueKillerManager",
+        "Beat_Whodunnit_ClueKillerLEO",
+        "Beat_Whodunnit_ClueKillerPirate",
+        "Beat_Whodunnit_ClueKillerOther",
+        "Beat_Whodunnit_ClueKillerMale",
+        "Beat_Whodunnit_ClueKillerNB",
+        "Beat_Whodunnit_ClueKillerFemale",
+        "Beat_Whodunnit_ClueKillerHomeworldMercury",
+        "Beat_Whodunnit_ClueKillerHomeworldVenus",
+        "Beat_Whodunnit_ClueKillerHomeworldEarth",
+        "Beat_Whodunnit_ClueKillerHomeworldLuna",
+        "Beat_Whodunnit_ClueKillerHomeworldMars",
+        "Beat_Whodunnit_ClueKillerHomeCCRE",
+        "Beat_Whodunnit_ClueKillerHomeworldJupiter",
+        "Beat_Whodunnit_ClueKillerHomeworldSaturn",
+        "Beat_Whodunnit_ClueKillerHomeOKLG",
+        "Beat_Whodunnit_ClueKillerHomeAtlantis",
+        "Beat_Whodunnit_ClueKillerHomeCalicoCity",
+        "Beat_Whodunnit_ClueKillerHomeFortSimpson",
+        "Beat_Whodunnit_ClueKillerHomeRingStation",
+        "Beat_Whodunnit_ClueKillerHomeVoltaire",
+        "Beat_Whodunnit_ClueKillerHomeHangzhou",
+        "Beat_Whodunnit_ClueKillerHomeSuzhou",
+        "Beat_Whodunnit_ClueKillerHomeTharsis",
+        "Beat_Whodunnit_ClueKillerHomeLabyrinth",
+        "Beat_Whodunnit_ClueKillerHomeJadeRabbit",
+        "Beat_Whodunnit_ClueKillerHomeNewcal",
+        "Beat_Whodunnit_ClueKillerHomeCloudbreak",
+        "Beat_Whodunnit_ClueKillerHomeЭнкантадо",
+        "Beat_Whodunnit_ClueKillerHomeQincheng",
+        "Beat_Whodunnit_ClueKillerHomeVirginia",
+        "Beat_Whodunnit_ClueKillerHomeVessel",
+        "Beat_Whodunnit_ClueKillerBODragons",
+        "Beat_Whodunnit_ClueKillerBOGods",
+        "Beat_Whodunnit_ClueKillerBORioters",
+        "Beat_Whodunnit_ClueKillerBOShooters",
+        "Beat_Whodunnit_ClueKillerBOTimberwolves",
+        "Beat_Whodunnit_ClueKillerBOWarriors",
+        "Beat_Whodunnit_MotiveAccident",
+        "Beat_Whodunnit_MotivePassion",
+        "Beat_Whodunnit_MotiveSelfDefense",
+        "Beat_Whodunnit_MotiveVengeance",
+        "Beat_Whodunnit_MotiveVigilante",
+        "Beat_Whodunnit_AnalyzedBlood",
+        "Beat_Whodunnit_AnalyzedDNA",
+        "Beat_Whodunnit_CloseCase",
+        "Beat_Whodunnit_NotKilledCloseCase",
+        "Beat_Whodunnit_EndCase",
+        "Beat_Whodunnit_NotKilledEndCase"
+      ],
+      ["Beat_Whodunnit_EndCase_End1"]
+    ],
+    "aIADos": [
+      [],
+      [
+        "Plot_Whodunnit_CommitToInvestigation,[protag]",
+        "Plot_Whodunnit_CommitToReportDeath,[protag]"
+      ],
+      [
+        "Plot_Whodunnit_ExamineForFaction,[protag],[body]",
+        "Plot_Whodunnit_ExamineForFaction,[protag],[victim]",
+        "Plot_Whodunnit_ExamineForKin,[protag],[body]",
+        "Plot_Whodunnit_ExamineForKin,[protag],[victim]",
+        "Plot_Whodunnit_ReportToKinClose,[protag],[victims_close],[body]",
+        "Plot_Whodunnit_ReportToKinClose,[protag],[victims_close],[victim]",
+        "Plot_Whodunnit_ReportToKinEnemy,[protag],[victims_enemy],[body]",
+        "Plot_Whodunnit_ReportToKinEnemy,[protag],[victims_enemy],[victim]",
+        "Plot_Whodunnit_CollectClues,[protag],[victim]",
+        "Plot_Whodunnit_CollectBlood,[protag],[victim]",
+        "Plot_Whodunnit_AnalyzeBlood,[protag],,[killer]",
+        "Plot_Whodunnit_AnalyzeBloodSelf,[protag],,[killer]",
+        "Plot_Whodunnit_CollectDNA,[protag],[victim]",
+        "Plot_Whodunnit_AnalyzeDNA,[protag],,[killer]",
+        "Plot_Whodunnit_AnalyzeDNASelf,[protag],,[killer]",
+        "Plot_Whodunnit_AskAboutVictim,[protag],,[victim]",
+        "Plot_Whodunnit_AccuseMurder,[protag],[killer],[victim]",
+        "Plot_Whodunnit_ReportToFaction,[protag],,[victim]",
+        "Plot_Whodunnit_ReportToFaction,[protag],,[body]",
+        "Plot_Whodunnit_ReportMurderToOKLGLEOConfession,[protag],,[killer]",
+        "Plot_Whodunnit_ReportMurder,[protag],,[victim]",
+        "Plot_Whodunnit_ReportFlimsyCase,[protag],,[victim]",
+        "Plot_Whodunnit_CloseCasefile,[protag],[casefile],[victim]",
+        "Plot_Whodunnit_CloseCasefile,[protag],[casefile],[body]",
+        "Plot_Whodunnit_CloseCaseNoBodyOrVictim,[protag]"
+      ],
+      []
+    ],
+    "strLootNextPlot": "TXTPlot_Whodunnit_Next"
+  }
+]

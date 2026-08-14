@@ -1,0 +1,10 @@
+[
+  { "strName" : "TIsCrimeSVIRArrest", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ "CrimeSVIRArrest", "CrimeSVIRThreat" ], "aForbids" : [ "IsLEOImmune", "IsDead", "Unconscious" ], "aTriggers" : [ ], "bAND" : false },
+  { "strName" : "TIsCrimeSVIRArrestStolenShip", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ "CrimeSVIRStolenShip"], "aForbids" : [ "IsLEOImmune", "IsDead", "Unconscious" ], "aTriggers" : [ ], "bAND" : false },
+  { "strName" : "TIsCrimeSVIRArrestEnd", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ ], "aForbids" : [ "CrimeSVIRArrest" ], "aTriggers" : [ ], "bAND" : true },
+  { "strName" : "TIsCrimeSVIRThreat", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ "CrimeSVIRThreat" ], "aForbids" : [ "IsLEOImmune", "IsDead", "Unconscious", "IsSubdued" ], "aTriggers" : [ ], "bAND" : true },
+  { "strName" : "TIsCrimeSVIRThreatEnd", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ ], "aForbids" : [ "CrimeSVIRThreat" ], "aTriggers" : [ ], "bAND" : true },
+  { "strName" : "TIsSubduedCriminalSVIR", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ ], "aForbids" : [ "IsLEOImmune"  ], "aTriggers" : [ "TIsSubduedTarget", "TIsWantedSVIR" ], "bAND" : true },
+  { "strName" : "TIsWantedSVIR", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : ["CrimeSVIRThreat", "CrimeSVIRArrest", "CrimeSVIRNoUndock", "CrimeSVIRStolenShip"], "aForbids" : [], "aTriggers" : [ ], "bAND" : false },
+  { "strName" : "TUpCrimeSVIRTrespassNext", "strCondName" : "CrimeSVIRArrest", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ "IsPlayer", "IsPlayerCrew"], "aForbids" : [ ], "aTriggers" : [ ], "bAND" : false }
+]

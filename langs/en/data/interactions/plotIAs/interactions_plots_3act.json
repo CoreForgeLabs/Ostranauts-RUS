@@ -1,0 +1,25 @@
+[
+  { "strName" : "PLOTTEMP3ActBEGStartTrigger", "strTitle" : "Trigger for the TEMP3ActBEG Plot Start Beat", "strDesc" : "[them] [messages] [us], asking for [us] to TEMP3ActBEG [3rd].",  "strActionGroup" : "Use",
+    "bIgnoreFeelings" : true, "aInverse" : [ ], "fDuration" : 0.0, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue",
+    "LootCondsUs" : "CONDPLOTTEMP3ActBEGStartUs", "LootCondsThem" : null, "CTTestUs" : null, "CTTestThem" : null, "PSpecTestThem" : "RELCloseOrContact", "PSpecTest3rd" : "RandomAdultGigTargetLiving",
+    "strLootRELChangeUsSeesThem" : null, "strLootRELChangeUsSees3rd" : "RELContact"
+  },
+  { "strName" : "PLOTTEMP3ActBEGTargetTrigger", "strTitle" : "Trigger for the TEMP3ActBEG Target Beat", "strDesc" : "[us] should return this TEMP3ActBEG to [them].",  "strActionGroup" : "Use",
+    "bIgnoreFeelings" : true, "aInverse" : [ ], "fDuration" : 0.0, "strThemType" : "Other", "nLogging" : 1,
+    "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : "CTPLOTTEMP3ActBEGTargetTriggerUs", "CTTestThem" : null
+  },
+  { "strName" : "PLOTTEMP3ActBEGTurnInTrigger", "strTitle" : "Trigger for the TEMP3ActBEG TurnIn Beat", "strDesc" : "[us] [triggers] TEMP3ActBEG plot beat 2 with [them].",  "strActionGroup" : "Use",
+    "bIgnoreFeelings" : true, "aInverse" : [ ], "fDuration" : 0.0, "strThemType" : "Other", "nLogging" : 0,
+    "LootCondsUs" : null, "LootCondsThem" : null, "CTTestUs" : "CTPLOTTEMP3ActBEGTurnInTriggerUs", "CTTestThem" : null
+  },
+  { "strName" : "PLOTTEMP3ActBEGTarget", "strTitle" : "TEMP3ActBEG Target", "strDesc" : "[us] TEMP3ActBEGs [them] for [3rd].",  "strActionGroup" : "Use",
+    "bIgnoreFeelings" : true, "aInverse" : [ ], "fDuration" : 0.0003, "strThemType" : "Other", "nLogging" : 1, 
+    "strTargetPoint" : "use", "fTargetPointRange" : 10.0, "strAnim" : "Use", "bRecheckThisPlot" : true,
+    "LootCondsUs" : "CONDPLOTTEMP3ActBEGTargetUs", "LootCondsThem" : null, "CTTestUs" : "CTPLOTTEMP3ActBEGTargetUs", "CTTestThem" : null
+  },
+  { "strName" : "PLOTTEMP3ActBEGTurnIn", "strTitle" : "Turn In TEMP3ActBEG", "strDesc" : "[us] [turns] in TEMP3ActBEG of [3rd] to [them].",  "strActionGroup" : "Talk",
+    "bIgnoreFeelings" : true, "aInverse" : [ ], "fDuration" : 0.0003, "strThemType" : "Other", "nLogging" : 1, "strColor" : "Dialogue", "bRecheckThisPlot" : true,
+    "strTargetPoint" : "talk", "fTargetPointRange" : 2.0, "strAnim" : "Talk",
+    "LootCondsUs" : "CONDPLOTTEMP3ActBEGTurnInUs", "LootCondsThem" : null, "CTTestUs" : "CTPLOTTEMP3ActBEGTurnInUs", "CTTestThem" : "TIsValidSocialTarget"
+  }
+]

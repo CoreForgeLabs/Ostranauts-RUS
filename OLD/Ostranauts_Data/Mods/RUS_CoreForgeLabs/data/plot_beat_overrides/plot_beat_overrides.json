@@ -1,0 +1,579 @@
+[
+    {
+        "strName": "BoopStart",
+        "strTemplateBeat": "SnapPhotoStart",
+        "strFind": "SnapPhoto",
+        "strReplace": "Boop",
+        "aOverrideBeatValues": [
+            "bTension|true"
+        ],
+        "aOverrideTriggerIAValues": [
+            "strDesc|[them] пишет [us], прося ткнуть [3rd]."
+        ]
+    },
+    {
+        "strName": "BoopTarget",
+        "strTemplateBeat": "SnapPhotoTarget",
+        "strFind": "SnapPhoto",
+        "strReplace": "Boop",
+        "aOverrideBeatValues": [
+            "bTension|true"
+        ],
+        "aOverrideTriggerIAValues": [
+            "strDesc|[us] должен сообщить [them], что [3rd] был ткнут."
+        ]
+    },
+    {
+        "strName": "BoopTurnIn",
+        "strTemplateBeat": "SnapPhotoTurnIn",
+        "strFind": "SnapPhoto",
+        "strReplace": "Boop",
+        "aOverrideBeatValues": [
+            "bTension|true"
+        ],
+        "aOverrideTriggerIAValues": [
+            "strDesc|[us] запускает второй этап сюжета тыка, с целью [3rd] и контактом [them]."
+        ]
+    },
+    {
+        "strName": "AyoCorpSnitchStart",
+        "strTemplateBeat": "SnapPhotoStart",
+        "strFind": "SnapPhoto",
+        "strReplace": "AyoCorpSnitch",
+        "aOverrideBeatValues": [
+            "bTension|true",
+            "strObjName|Стукач АйоКорп",
+            "strObjDesc|Поговорить с контактом",
+            "bNoObjective|false"
+        ],
+        "aOverrideTriggerIAValues": [
+            "strDesc|Громкоговоритель станции трещит: «[us], пожалуйста, явитесь к представителю Портовой администрации [them] в Азикиве Коммерциал при первой возможности».",
+            "CTTestUS|TIsNot_Plot_Any_Cooldown",
+            "ShipTestUs|AnyStation_OKLG",
+            "ShipTestThem|OKLG_BIZ",
+            "PSpecTestThem|OKLGPortAuthorityAgent",
+            "ShipTest3rd|OKLG_BIZ",
+            "strLootRELChangeUsSees3rd|null"
+        ]
+    },
+    {
+        "strName": "AyoCorpSnitchTarget",
+        "strTemplateBeat": "SnapPhotoTarget",
+        "strFind": "SnapPhoto",
+        "strReplace": "AyoCorpSnitch",
+        "aOverrideBeatValues": [
+            "bTension|true",
+            "strObjName|Установить жучок"
+        ],
+        "aOverrideTriggerIAValues": [
+            "strColor|Dialogue",
+            "strDesc|[them] передаёт устройство, похожее на жучок, небрежно инструктируя [us] незаметно подложить его [3rd].",
+            "strLootRELChangeUsSees3rd|RELContact"
+        ]
+    },
+    {
+        "strName": "AyoCorpSnitchTurnIn",
+        "strTemplateBeat": "SnapPhotoTurnIn",
+        "strFind": "SnapPhoto",
+        "strReplace": "AyoCorpSnitch",
+        "aOverrideBeatValues": [
+            "bTension|true",
+            "strObjName|Выполнено: Установить жучок"
+        ],
+        "aOverrideTriggerIAValues": [
+            "strDesc|Устройство подложено, но [us] задумывается, чем это обернётся для [3rd]. И для себя самого. На этой станции у АйоКорп есть власть и благословлять, и проклинать.",
+            "strColor|Goodish",
+            "nLogging|1"
+        ]
+    },
+    {
+        "strName": "AyoCorpSnitchCancel",
+        "strTemplateBeat": "SnapPhotoCancel",
+        "strFind": "SnapPhoto",
+        "strReplace": "AyoCorpSnitch",
+        "aOverrideBeatValues": [
+            "bTension|true"
+        ],
+        "aOverrideTriggerIAValues": [
+            "strDesc|[us] отменяет подкладывание жучка [3rd] для [them]"
+        ]
+    },
+    {
+        "strName": "WrongfullyAccusedBreakerBEGStart",
+        "strTemplateBeat": "AyoCorpSnitchStart",
+        "strFind": "AyoCorpSnitch",
+        "strReplace": "WrongfullyAccusedBreakerBEG",
+        "aOverrideBeatValues": [
+            "bTension|true"
+        ],
+        "aOverrideTriggerIAValues": [
+            "strDesc|[us] принимает звонок от [them], который просит о скорой встрече. Он выглядит напуганным.",
+            "strLootRELChangeUsSees3rd|null",
+            "PSpecTestThem|RandomAdultGigTargetLiving",
+            "ShipTestThem|AnyShip_OKLGNotPlayerCurrentShip",
+            "ShipTest3rd|AnyShip_OKLGNotPlayerCurrentShip"
+        ]
+    },
+    {
+        "strName": "WrongfullyAccusedBreakerBEGTarget",
+        "strTemplateBeat": "AyoCorpSnitchTarget",
+        "strFind": "AyoCorpSnitch",
+        "strReplace": "WrongfullyAccusedBreakerBEG",
+        "aOverrideBeatValues": [
+            "bTension|true"
+        ],
+        "aOverrideTriggerIAValues": [
+            "strColor|Dialogue",
+            "strDesc|[them] бледен как полотно. Он говорит, что кто-то из высшего руководства AyoSec по имени [3rd] обвиняет его в контрабанде и причастности к мошеннической схеме сканирования деталей. [them] просит [us] поговорить с [3rd] и всё уладить.",
+            "strLootRELChangeUsSees3rd|RELContact"
+        ]
+    },
+    {
+        "strName": "WrongfullyAccusedBreakerBEGTurnIn",
+        "strTemplateBeat": "AyoCorpSnitchTurnIn",
+        "strFind": "AyoCorpSnitch",
+        "strReplace": "WrongfullyAccusedBreakerBEG",
+        "aOverrideBeatValues": [
+            "bTension|true"
+        ],
+        "aOverrideTriggerIAValues": [
+            "strDesc|[3rd] убеждён оставить [them] в покое пока что, но продолжает настаивать, что не исключена причастность [them] к контрабанде.",
+            "strColor|Goodish"
+        ]
+    },
+    {
+        "strName": "WrongfullyAccusedManagerBEGStart",
+        "strTemplateBeat": "AyoCorpSnitchStart",
+        "strFind": "AyoCorpSnitch",
+        "strReplace": "WrongfullyAccusedManagerBEG",
+        "aOverrideBeatValues": [
+            "bTension|true"
+        ],
+        "aOverrideTriggerIAValues": [
+            "strDesc|[us] принимает звонок от [them], высокопоставленного корпоративного менеджера, который просит о скорой встрече. Он выглядит напуганным.",
+            "strLootRELChangeUsSees3rd|null",
+            "PSpecTestThem|GigTargetManager",
+            "ShipTestThem|AnyShip_OKLGNotPlayerCurrentShip",
+            "ShipTest3rd|AnyShip_OKLGNotPlayerCurrentShip"
+        ]
+    },
+    {
+        "strName": "WrongfullyAccusedManagerBEGTarget",
+        "strTemplateBeat": "AyoCorpSnitchTarget",
+        "strFind": "AyoCorpSnitch",
+        "strReplace": "WrongfullyAccusedManagerBEG",
+        "aOverrideBeatValues": [
+            "bTension|true"
+        ],
+        "aOverrideTriggerIAValues": [
+            "strColor|Dialogue",
+            "strDesc|[them] нервничает. Он говорит, что коллега из Ayotimiwa по имени [3rd] ложно обвиняет его в организации враждебного захвата отдела переработки пищи. [them] просит [us] напугать [3rd], чтобы тот отказался от своей затеи.",
+            "strLootRELChangeUsSees3rd|RELContact"
+        ]
+    },
+    {
+        "strName": "WrongfullyAccusedManagerBEGTurnIn",
+        "strTemplateBeat": "AyoCorpSnitchTurnIn",
+        "strFind": "AyoCorpSnitch",
+        "strReplace": "WrongfullyAccusedManagerBEG",
+        "aOverrideBeatValues": [
+            "bTension|true"
+        ],
+        "aOverrideTriggerIAValues": [
+            "strDesc|[3rd] достаточно напуган и соглашается отказаться от интриги против [them]. Перед уходом [us] [3rd] говорит, что [them], возможно, не говорит всей правды об отделе переработки пищи.",
+            "strColor|Goodish"
+        ]
+    },
+    {
+        "strName": "WrongfullyAccusedLEOBEGStart",
+        "strTemplateBeat": "AyoCorpSnitchStart",
+        "strFind": "AyoCorpSnitch",
+        "strReplace": "WrongfullyAccusedLEOBEG",
+        "aOverrideBeatValues": [
+            "bTension|true"
+        ],
+        "aOverrideTriggerIAValues": [
+            "strDesc|[us] принимает звонок от [them], офицера правопорядка со страхом в голосе. Он хотел бы встретиться как можно скорее.",
+            "strLootRELChangeUsSees3rd|null",
+            "PSpecTestThem|OKLGLEOStranger",
+            "ShipTestThem|AnyShip_OKLGNotPlayerCurrentShip",
+            "ShipTest3rd|AnyShip_OKLGNotPlayerCurrentShip"
+        ]
+    },
+    {
+        "strName": "WrongfullyAccusedLEOBEGTarget",
+        "strTemplateBeat": "AyoCorpSnitchTarget",
+        "strFind": "AyoCorpSnitch",
+        "strReplace": "WrongfullyAccusedLEOBEG",
+        "aOverrideBeatValues": [
+            "bTension|true"
+        ],
+        "aOverrideTriggerIAValues": [
+            "strColor|Dialogue",
+            "strDesc|[them] утверждает, что коллега по имени [3rd] обвиняет его в продаже улик на чёрном рынке. [them] просит [us] хорошенько проучить [3rd] и убедить его прекратить распространять такие грязные слухи.",
+            "strLootRELChangeUsSees3rd|RELContact"
+        ]
+    },
+    {
+        "strName": "WrongfullyAccusedLEOBEGTurnIn",
+        "strTemplateBeat": "AyoCorpSnitchTurnIn",
+        "strFind": "AyoCorpSnitch",
+        "strReplace": "WrongfullyAccusedLEOBEG",
+        "aOverrideBeatValues": [
+            "bTension|true"
+        ],
+        "aOverrideTriggerIAValues": [
+            "strDesc|[3rd] испытывает достаточно боли. Он соглашается прекратить крестовый поход против [them]. Перед уходом [us] [3rd] спрашивает, почему бы так легко доверять известному лжецу вроде [them].",
+            "strColor|Goodish"
+        ]
+    },
+    {
+        "strName": "WrongfullyAccusedCrimBEGStart",
+        "strTemplateBeat": "AyoCorpSnitchStart",
+        "strFind": "AyoCorpSnitch",
+        "strReplace": "WrongfullyAccusedCrimBEG",
+        "aOverrideBeatValues": [
+            "bTension|true"
+        ],
+        "aOverrideTriggerIAValues": [
+            "strDesc|[us] принимает звонок от [them], бывшего зека, который настаивает на личной встрече в ближайшее время. Он кажется скрытным, нервным, жаждет закончить разговор.",
+            "strLootRELChangeUsSees3rd|null",
+            "PSpecTestThem|CriminalVanilla",
+            "ShipTestThem|AnyShip_OKLGNotPlayerCurrentShip"
+        ]
+    },
+    {
+        "strName": "WrongfullyAccusedCrimBEGTarget",
+        "strTemplateBeat": "AyoCorpSnitchTarget",
+        "strFind": "AyoCorpSnitch",
+        "strReplace": "WrongfullyAccusedCrimBEG",
+        "aOverrideBeatValues": [
+            "bTension|true"
+        ],
+        "aOverrideTriggerIAValues": [
+            "strColor|Dialogue",
+            "strDesc|[them] говорит, что оказался в сложном положении. Агент Ogiso по контракту с Ayotimiwa по имени [3rd] обвиняет его в подаче страхового иска на недавно уничтоженное гоночное судно, зарегистрированное на чужое имя. [them] просит [us] поговорить с ним и восстановить справедливость.",
+            "strLootRELChangeUsSees3rd|RELContact"
+        ]
+    },
+    {
+        "strName": "WrongfullyAccusedCrimBEGTurnIn",
+        "strTemplateBeat": "AyoCorpSnitchTurnIn",
+        "strFind": "AyoCorpSnitch",
+        "strReplace": "WrongfullyAccusedCrimBEG",
+        "aOverrideBeatValues": [
+            "bTension|true"
+        ],
+        "aOverrideTriggerIAValues": [
+            "strDesc|[3rd] поддаётся давлению. Он соглашается закрыть расследование [them], но настаивает, что в этой истории есть нечто большее, чем кажется.",
+            "strColor|Goodish"
+        ]
+    },
+    {
+        "strName": "WrongfullyAccusedCrimMIDStart",
+        "strTemplateBeat": "SnapPhotoStartReverse",
+        "strFind": "SnapPhoto",
+        "strReplace": "WrongfullyAccusedCrimMID",
+        "aOverrideBeatValues": [
+            "bTension|true"
+        ],
+        "aOverrideTriggerIAValues": [
+            "strDesc|[us] принимает звонок от [them], менеджера Ogiso, который обвинил [3rd] в мошенничестве. Он говорит, что хотел бы поговорить, и это срочно."
+        ]
+    },
+    {
+        "strName": "WrongfullyAccusedCrimMIDTarget",
+        "strTemplateBeat": "AyoCorpSnitchTarget",
+        "strFind": "AyoCorpSnitch",
+        "strReplace": "WrongfullyAccusedCrimMID",
+        "aOverrideBeatValues": [
+            "bTension|true",
+            "strTokenSet3rd|[deadbody]"
+        ],
+        "aOverrideTriggerIAValues": [
+            "strColor|Dialogue",
+            "ShipTest3rd|PlayerCurrentShip",
+            "strDesc|[them] говорит, что нашёл прежнего владельца корабля, на который ваш мелкий преступный дружок подал иск, человека по имени [3rd]. Он мёртв. Если не верите [them], можете пойти на корабль [3rd] и убедиться сами."
+        ]
+    },
+    {
+        "strName": "WrongfullyAccusedCrimMIDTurnIn",
+        "strTemplateBeat": "SnapPhotoTurnInReverse",
+        "strFind": "SnapPhoto",
+        "strReplace": "WrongfullyAccusedCrimMID",
+        "aOverrideBeatValues": [
+            "bTension|true"
+        ],
+        "aOverrideTriggerIAValues": [
+            "strDesc|Значит, [them] всё это время говорил правду. Получается, [3rd] — лжец.",
+            "strColor|Goodish"
+        ]
+    },
+    {
+        "strName": "WrongfullyAccusedPrisonerCellmateBEGStart",
+        "strTemplateBeat": "AyoCorpSnitchStart",
+        "strFind": "AyoCorpSnitch",
+        "strReplace": "WrongfullyAccusedPrisonerCellmateBEG",
+        "aOverrideBeatValues": [
+            "bTension|true"
+        ],
+        "aOverrideTriggerIAValues": [
+            "strDesc|[us] принимает звонок от [them], бывшего сокамерника. [them] хочет встретиться лично в ближайшее время. Он выглядит нервным, даже напуганным.",
+            "strLootRELChangeUsSees3rd|null",
+            "PSpecTestThem|CGEncHomeworldPrisonerFriend",
+            "ShipTestThem|AnyShip_OKLGNotPlayerCurrentShip",
+            "ShipTest3rd|AnyShip_OKLGNotPlayerCurrentShip"
+        ]
+    },
+    {
+        "strName": "WrongfullyAccusedPrisonerCellmateBEGTarget",
+        "strTemplateBeat": "AyoCorpSnitchTarget",
+        "strFind": "AyoCorpSnitch",
+        "strReplace": "WrongfullyAccusedPrisonerCellmateBEG",
+        "aOverrideBeatValues": [
+            "bTension|true"
+        ],
+        "aOverrideTriggerIAValues": [
+            "strColor|Dialogue",
+            "strDesc|[them] выглядит плохо. В синяках, порезах и растрёпанный. Он говорит, что высокомерный офицер AyoSec по имени [3rd] взял его на прицел и настаивает, что [them] вернулся к прежней криминальной жизни. [3rd] говорит, что преследования не прекратятся, пока [them] не заплатит «крышу», которая постоянно растёт. Он хочет, чтобы вы поговорили с копом и образумили его любым способом.",
+            "strLootRELChangeUsSees3rd|RELContact"
+        ]
+    },
+    {
+        "strName": "WrongfullyAccusedPrisonerCellmateBEGTurnIn",
+        "strTemplateBeat": "AyoCorpSnitchTurnIn",
+        "strFind": "AyoCorpSnitch",
+        "strReplace": "WrongfullyAccusedPrisonerCellmateBEG",
+        "aOverrideBeatValues": [
+            "bTension|true"
+        ],
+        "aOverrideTriggerIAValues": [
+            "strDesc|[3rd] поддаётся давлению. Он соглашается прекратить требовать выплаты от [them], но продолжает настаивать, что [them] связан с криминальными сетями из своего прошлого.",
+            "strColor|Dialogue"
+        ]
+    },
+    {
+        "strName": "ChoiceXYZStart",
+        "strTemplateBeat": "ChoicesDialogueStart",
+        "strFind": "ChoicesDialogue",
+        "strReplace": "ChoiceXYZ",
+        "aOverrideBeatValues": [],
+        "aOverrideTriggerIAValues": [
+            "strDesc|[them] пишет, прося [us] прийти поговорить и выбрать из вариантов.",
+            "ShipTestThem|PlayerCurrentShip",
+            "CTTestUs|TIsNotChoiceXYZCooldown"
+        ]
+    },
+    {
+        "strName": "ChoiceXYZ01a",
+        "strTemplateBeat": "ChoicesDialogue01",
+        "strFind": "ChoicesDialogue01",
+        "strReplace": "ChoiceXYZ01a",
+        "aOverrideBeatValues": [],
+        "aOverrideTriggerIAValues": [
+            "strDesc|[them] предлагает [us] второй выбор."
+        ]
+    },
+    {
+        "strName": "ChoiceXYZ01b",
+        "strTemplateBeat": "ChoicesDialogue01",
+        "strFind": "ChoicesDialogue01",
+        "strReplace": "ChoiceXYZ01b",
+        "aOverrideBeatValues": [],
+        "aOverrideTriggerIAValues": [
+            "strDesc|[them] предлагает [us] второй выбор."
+        ]
+    },
+    {
+        "strName": "ChoiceXYZ02a",
+        "strTemplateBeat": "ChoicesDialogue01",
+        "strFind": "ChoicesDialogue01",
+        "strReplace": "ChoiceXYZ02a",
+        "aOverrideBeatValues": [],
+        "aOverrideTriggerIAValues": [
+            "strDesc|[them] предлагает [us] третий выбор."
+        ]
+    },
+    {
+        "strName": "ChoiceXYZ02b",
+        "strTemplateBeat": "ChoicesDialogue01",
+        "strFind": "ChoicesDialogue01",
+        "strReplace": "ChoiceXYZ02b",
+        "aOverrideBeatValues": [],
+        "aOverrideTriggerIAValues": [
+            "strDesc|[them] предлагает [us] третий выбор."
+        ]
+    },
+    {
+        "strName": "ChoiceXYZ03a",
+        "strTemplateBeat": "ChoicesDialogue01",
+        "strFind": "ChoicesDialogue01",
+        "strReplace": "ChoiceXYZ03a",
+        "aOverrideBeatValues": [],
+        "aOverrideTriggerIAValues": [
+            "strDesc|[them] больше не предлагает [us] вариантов."
+        ]
+    },
+    {
+        "strName": "ChoiceXYZ03b",
+        "strTemplateBeat": "ChoicesDialogue01",
+        "strFind": "ChoicesDialogue01",
+        "strReplace": "ChoiceXYZ03b",
+        "aOverrideBeatValues": [],
+        "aOverrideTriggerIAValues": [
+            "strDesc|[them] больше не предлагает [us] вариантов."
+        ]
+    },
+    {
+        "strName": "ChoiceXYZCleanup",
+        "strTemplateBeat": "ChoicesDialogueCleanup",
+        "strFind": "ChoicesDialogue",
+        "strReplace": "ChoiceXYZ",
+        "aOverrideBeatValues": [],
+        "aOverrideTriggerIAValues": []
+    },
+    {
+        "strName": "ChoiceFanBreakoutTeamStart",
+        "strTemplateBeat": "ChoicesDialogueStart",
+        "strFind": "ChoicesDialogue",
+        "strReplace": "ChoiceFanBreakoutTeam",
+        "aOverrideBeatValues": [],
+        "aOverrideTriggerIAValues": [
+            "strDesc|[them] жестикулирует в сторону [us]. Похоже, он хочет поболтать.",
+            "ShipTestThem|PlayerCurrentShip",
+            "CTTestThem|TIsFanBreakoutTeam",
+            "bNoWalk|true",
+            "strTargetPoint|use",
+            "fTargetPointRange|5.0",
+            "aInverse|null",
+            "strLootRELChangeUsSeesThem|null"
+        ]
+    },
+    {
+        "strName": "ChoiceFanBreakoutTeam01",
+        "strTemplateBeat": "ChoicesDialogue01",
+        "strFind": "ChoicesDialogue01",
+        "strReplace": "ChoiceFanBreakoutTeam01",
+        "aOverrideBeatValues": [
+            "bRelease|true"
+        ],
+        "aOverrideTriggerIAValues": [
+            "strDesc|null"
+        ]
+    },
+    {
+        "strName": "ChoiceFanBreakoutTeam02a",
+        "strTemplateBeat": "ChoicesDialogue01",
+        "strFind": "ChoicesDialogue01",
+        "strReplace": "ChoiceFanBreakoutTeam02a",
+        "aOverrideBeatValues": [],
+        "aOverrideTriggerIAValues": [
+            "strDesc|null"
+        ]
+    },
+    {
+        "strName": "ChoiceFanBreakoutTeam02b",
+        "strTemplateBeat": "ChoicesDialogue01",
+        "strFind": "ChoicesDialogue01",
+        "strReplace": "ChoiceFanBreakoutTeam02b",
+        "aOverrideBeatValues": [],
+        "aOverrideTriggerIAValues": [
+            "strDesc|null"
+        ]
+    },
+    {
+        "strName": "ChoiceFanBreakoutTeam02c",
+        "strTemplateBeat": "ChoicesDialogue01",
+        "strFind": "ChoicesDialogue01",
+        "strReplace": "ChoiceFanBreakoutTeam02c",
+        "aOverrideBeatValues": [],
+        "aOverrideTriggerIAValues": [
+            "strDesc|null"
+        ]
+    },
+    {
+        "strName": "ChoiceFanBreakoutTeam02d",
+        "strTemplateBeat": "ChoicesDialogue01",
+        "strFind": "ChoicesDialogue01",
+        "strReplace": "ChoiceFanBreakoutTeam02d",
+        "aOverrideBeatValues": [],
+        "aOverrideTriggerIAValues": [
+            "strDesc|null"
+        ]
+    },
+    {
+        "strName": "ChoiceFanBreakoutTeamCleanup",
+        "strTemplateBeat": "ChoicesDialogueCleanup",
+        "strFind": "ChoicesDialogue",
+        "strReplace": "ChoiceFanBreakoutTeam",
+        "aOverrideBeatValues": [],
+        "aOverrideTriggerIAValues": []
+    },
+    {
+        "strName": "ChoiceFanSmokesStart",
+        "strTemplateBeat": "ChoicesDialogueStart",
+        "strFind": "ChoicesDialogue",
+        "strReplace": "ChoiceFanSmokes",
+        "aOverrideBeatValues": [],
+        "aOverrideTriggerIAValues": [
+            "strDesc|[them] жестикулирует в сторону [us]. Похоже, он хочет поболтать.",
+            "ShipTestThem|PlayerCurrentShip",
+            "CTTestThem|TIsFanSmokes",
+            "bNoWalk|true",
+            "strTargetPoint|use",
+            "fTargetPointRange|5.0",
+            "aInverse|null",
+            "strLootRELChangeUsSeesThem|null"
+        ]
+    },
+    {
+        "strName": "ChoiceFanSmokes01",
+        "strTemplateBeat": "ChoicesDialogue01",
+        "strFind": "ChoicesDialogue01",
+        "strReplace": "ChoiceFanSmokes01",
+        "aOverrideBeatValues": [
+            "bRelease|true"
+        ],
+        "aOverrideTriggerIAValues": [
+            "strDesc|[them] спрашивает [us], какие сигареты лучше: Sungura «Вице-Короли» или Дамасская роза? Извечное соперничество поднимает голову."
+        ]
+    },
+    {
+        "strName": "ChoiceFanSmokes02a",
+        "strTemplateBeat": "ChoicesDialogue01",
+        "strFind": "ChoicesDialogue01",
+        "strReplace": "ChoiceFanSmokes02a",
+        "aOverrideBeatValues": [],
+        "aOverrideTriggerIAValues": [
+            "strDesc|null"
+        ]
+    },
+    {
+        "strName": "ChoiceFanSmokes02b",
+        "strTemplateBeat": "ChoicesDialogue01",
+        "strFind": "ChoicesDialogue01",
+        "strReplace": "ChoiceFanSmokes02b",
+        "aOverrideBeatValues": [],
+        "aOverrideTriggerIAValues": [
+            "strDesc|null"
+        ]
+    },
+    {
+        "strName": "ChoiceFanSmokes02c",
+        "strTemplateBeat": "ChoicesDialogue01",
+        "strFind": "ChoicesDialogue01",
+        "strReplace": "ChoiceFanSmokes02c",
+        "aOverrideBeatValues": [],
+        "aOverrideTriggerIAValues": [
+            "strDesc|null"
+        ]
+    },
+    {
+        "strName": "ChoiceFanSmokesCleanup",
+        "strTemplateBeat": "ChoicesDialogueCleanup",
+        "strFind": "ChoicesDialogue",
+        "strReplace": "ChoiceFanSmokes",
+        "aOverrideBeatValues": [],
+        "aOverrideTriggerIAValues": []
+    }
+]

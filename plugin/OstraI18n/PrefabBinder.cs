@@ -99,6 +99,19 @@ namespace OstraI18n
             try
             {
                 if (!(__instance is TMP_Text) && !(__instance is UnityEngine.UI.Text)) return;
+                
+                if (LangPack.Active && string.Equals(LangPack.Code, "ru", StringComparison.OrdinalIgnoreCase))
+                {
+                    if (__instance is TMP_Text tmp)
+                    {
+                        if (tmp.text == "Wear:") tmp.text = "Износ:";
+                    }
+                    else if (__instance is UnityEngine.UI.Text txt)
+                    {
+                        if (txt.text == "Wear:") txt.text = "Износ:";
+                    }
+                }
+
                 if (__instance.GetComponent<LocalizedText>() != null) return;
 
                 foreach (var entry in AssetEntries)
@@ -121,7 +134,7 @@ namespace OstraI18n
             var stack = new List<string>();
             var t = leaf;
             for (int i = 0; i < maxLen && t != null; i++) { stack.Add(t.name); t = t.parent; }
-            if (t != null) return null;
+            if (stack.Count < maxLen) return null;
             stack.Reverse();
             return stack.ToArray();
         }

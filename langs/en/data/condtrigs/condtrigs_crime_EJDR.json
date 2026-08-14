@@ -1,0 +1,10 @@
+[
+  { "strName" : "TIsCrimeEJDRArrest", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ "CrimeEJDRArrest", "CrimeEJDRThreat" ], "aForbids" : [ "IsLEOImmune", "IsDead", "Unconscious" ], "aTriggers" : [ ], "bAND" : false },
+  { "strName" : "TIsCrimeEJDRArrestStolenShip", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ "CrimeEJDRStolenShip"], "aForbids" : [ "IsLEOImmune", "IsDead", "Unconscious" ], "aTriggers" : [ ], "bAND" : false },
+  { "strName" : "TIsCrimeEJDRArrestEnd", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ ], "aForbids" : [ "CrimeEJDRArrest" ], "aTriggers" : [ ], "bAND" : true },
+  { "strName" : "TIsCrimeEJDRThreat", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ "CrimeEJDRThreat" ], "aForbids" : [ "IsLEOImmune", "IsDead", "Unconscious", "IsSubdued" ], "aTriggers" : [ ], "bAND" : true },
+  { "strName" : "TIsCrimeEJDRThreatEnd", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ ], "aForbids" : [ "CrimeEJDRThreat" ], "aTriggers" : [ ], "bAND" : true },
+  { "strName" : "TIsSubduedCriminalEJDR", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ ], "aForbids" : [ "IsLEOImmune"  ], "aTriggers" : [ "TIsSubduedTarget", "TIsWantedEJDR" ], "bAND" : true },
+  { "strName" : "TIsWantedEJDR", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : ["CrimeEJDRThreat", "CrimeEJDRArrest", "CrimeEJDRNoUndock", "CrimeEJDRStolenShip"], "aForbids" : [], "aTriggers" : [ ], "bAND" : false },
+  { "strName" : "TUpCrimeEJDRTrespassNext", "strCondName" : "CrimeEJDRArrest", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ "IsPlayer", "IsPlayerCrew"], "aForbids" : [ ], "aTriggers" : [ ], "bAND" : false }
+]

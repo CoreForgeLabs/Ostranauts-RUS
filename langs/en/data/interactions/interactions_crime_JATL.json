@@ -1,0 +1,627 @@
+[
+
+  {
+    "strName" : "ENCHeatJATLBustedStart",
+    "strTitle" : "Busted",
+    "strDesc" : "They haul you before an Atlantean magistrate for judgement, leaving your ship and gear behind.\n\nAt the hearing, you can beg for just a fine- $15,000 payable in full or installments- or it's off to Atlantis Brig for a year or three of hard labor.",
+    "strColor"      : "Dialogue",
+    "aInverse"          : [
+      "ENCHeatJATLFineEnd",
+      "ENCHeatJATLFineDebtEnd",
+      "ENCHeatJATLPrisonStart"
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Self",
+    "strRaiseUI"        : "SocialCombat",
+    "strSubUI"        : "Landscape01",
+    "strImage"        : "encounters/ENCImprisoned",
+    "nLogging"         : 0,
+    "bPause"            : true,
+    "bHumanOnly"     : true,
+    "bIgnoreFeelings"	: true,
+    "LootCondsUs"       : "CONDLEOImmune",
+    "CTTestUs"           : "TIsSubduedCriminalJATL"
+  },
+  {
+    "strName" : "ENCHeatJATLFineEnd",
+    "strTitle" : "Plead for a fine (Lump Sum)",
+    "strDesc" : "It's almost like they want you to break the rules so they can extract more fines from you.\n\nYou sign reams of paperwork in tight cuffs.\n\nIt's a prison sentence of another sort. Another weight hanging around your neck.\n\nNew $15,000 fine added.",
+    "strColor"      : "Dialogue",
+    "aInverse"          : [
+      "ENCHeatJATLFineFinish"
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Self",
+    "strRaiseUI"        : "SocialCombat",
+    "strSubUI"        : "Landscape01",
+    "strImage"        : "encounters/EncFirstUndockFees",
+    "nLogging"         : 0,
+    "bPause"            : true,
+    "bHumanOnly"     : true,
+    "bIgnoreFeelings"	: true,
+    "strLedgerDef" : "ENCHeatJATLFinePublicDisorder",
+    "aSocialNew" : [
+    ]
+  },
+  {
+    "strName" : "ENCHeatJATLFineDebtEnd",
+    "strTitle" : "Plead for a fine (Paid in installments)",
+    "strDesc" : "It's almost like they want you to break the rules so they can lock you deeper in interest payments.\n\nYou sign reams of paperwork in tight cuffs.\n\nIt's a prison sentence of another sort. Another weight hanging around your neck.\n\nNew $15,000 debt added, with payment due each shift.",
+    "strColor"      : "Dialogue",
+    "aInverse"          : [
+      "ENCHeatJATLFineFinish"
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Self",
+    "strRaiseUI"        : "SocialCombat",
+    "strSubUI"        : "Landscape01",
+    "strImage"        : "encounters/EncFirstUndockFees",
+    "nLogging"         : 0,
+    "bPause"            : true,
+    "bHumanOnly"     : true,
+    "bIgnoreFeelings"	: true,
+    "strLedgerDef" : "ENCHeatJATLFinePublicDisorderDebt",
+    "aSocialNew" : [
+    ]
+  },
+  {
+    "strName" : "ENCHeatJATLFineFinish",
+    "strTitle" : "Continue",
+    "strDesc" : "After processing, you are unceremoniously dumped outside the Atlantis Security Office. If you weren't docked at station when you were arrested, you may need to use the PASS ferry service (on your PDA) to reach your ship again. Hopefully it's still there.\n\nTime to get back on your feet.",
+    "strColor"      : "Dialogue",
+    "aInverse"          : [
+      "ENCFinish"
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Self",
+    "nLogging"         : 1,
+    "bHumanOnly"     : true,
+    "bIgnoreFeelings"	: true,
+    "bCloser"     : true,
+    "strTeleportRegID" : "JATL",
+    "ShipTestUs" : "AnyShip_JATL",
+    "LootCondsUs"     : "CONDENCHeatJATLFineEnd",
+    "LootCTsThem"     : null,
+    "CTTestUs"           : "TIsHuman",
+    "CTTestThem"         : null
+  },
+  {
+    "strName" : "ENCHeatJATLPrisonStart",
+    "strTitle" : "Off to Atlantis Brig",
+    "strDesc" : "You are hauled off to Atlantis Brig.",
+    "strColor"      : "Dialogue",
+    "aInverse"          : [
+      "ENCHeatJATLPrisonEnd",
+      "ENCHeatVenusPrisonEnd"
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Self",
+    "strRaiseUI"        : "SocialCombat",
+    "strSubUI"        : "Landscape01",
+    "strImage"        : "encounters/ENCImprisoned",
+    "nLogging"         : 0,
+    "bPause"            : true,
+    "bHumanOnly"     : true,
+    "bIgnoreFeelings"	: true,
+    "LootCondsUs" : "CONDENCHeatTeleportPrison"
+  },
+  {
+    "strName" : "ENCHeatJATLPrisonEnd",
+    "strTitle" : "Serve Hard Time",
+    "strDesc" : "You spend months laboring without wage among outcasts both meek and dangerous. You share a dorm with nearly a hundred other souls, all of you stacked like kindling on triple high bunks.\n\nBut even a hell like this is not without opportunity. You hear things. You meet people. You get in a few scrapes, you find a few friends. By the end of your term you've lived a dozen lives and you have all the scars to prove it.\n\nPlus, free room and board. In a certain light, it might all be worth it ...\n\n",
+    "strColor"      : "Dialogue",
+    "aInverse"          : [
+      "ENCHeatJATLPrisonFinish"
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Self",
+    "strRaiseUI"        : "SocialCombat",
+    "strSubUI"        : "Landscape01",
+    "strImage"        : "encounters/ENCImprisoned",
+    "nLogging"         : 0,
+    "bPause"            : true,
+    "bHumanOnly"     : true,
+    "bIgnoreFeelings"	: true,
+    "bHardCode"   : true,
+    "strTeleportRegID" : "JATL",
+    "ShipTestUs" : "AnyShip_JATL",
+    "aSocialNew" : [      
+      "CGEncHomeworldLEOEnemy",
+      "CGEncHomeworldPrisonerFriend",
+      "CGEncHomeworldCriminalEnemy"
+    ]
+  },
+  {
+    "strName" : "ENCHeatJATLPrisonFinish",
+    "strTitle" : "Continue",
+    "strDesc" : "After processing, you are unceremoniously dumped outside the Atlantis Security Office. If you weren't docked at station when you were arrested, you may need to use the PASS ferry service (on your PDA) to reach your ship again. Hopefully it's still there.\n\nTime to get back on your feet.",
+    "strColor"      : "Dialogue",
+    "aInverse"          : [
+      "ENCFinish"
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Self",
+    "strRaiseUI"        : "SocialCombat",
+    "strSubUI"        : "Landscape01",
+    "strImage"        : "encounters/ENCImprisoned",
+    "nLogging"         : 0,
+    "bPause"            : true,
+    "bHumanOnly"     : true,
+    "bIgnoreFeelings"	: true,
+    "bCloser"     : true,
+    "LootCondsUs"     : "CONDENCHeatJATLPrisonEnd",
+    "LootCTsThem"     : null,
+    "CTTestUs"           : "TIsHuman",
+    "CTTestThem"         : null
+  },
+
+  {
+    "strName" : "PLGAICrimeJATLLEOArrest",
+    "strTitle" : "JATL LEO Begins Arresting Criminal",
+    "strDesc" : "\"Suspect spotted,\" [us] [says], looking at [them].",
+    "strActionGroup" : "Talk",
+    "nLogging"  : 2,
+    "strTargetPoint" : null,
+    "strAnim"         : "Idle",
+    "strBubble"         : "BblIntimidate",
+    "aInverse"          : [
+      "PLGAICrimeJATLLEOInterruptSelf"
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Other",
+    "strPledgeAdd"       : "AICrimeArrestJATLLEODo",
+    "bHumanOnly"      : false,
+    "bIgnoreFeelings" : true,
+    "CTTestUs"           : "TIsAICrimeReadyArrest",
+    "CTTestThem"        : "TIsCrimeJATLArrest",
+    "LootCondsUs" : "CONDLEOArresting"
+  },
+  {
+    "strName" : "PLGAICrimeJATLLEOInterruptSelf",
+    "strTitle" : "JATL LEO Is Interrupted by Crime",
+    "strDesc" : "Interrupt them.",
+    "strActionGroup" : "Talk",
+    "nLogging"  : 0,
+    "strTargetPoint" : null,
+    "strAnim"         : "Idle",
+    "strBubble"         : "BblIntimidate",
+    "aInverse"          : [
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Other",
+    "bHumanOnly"      : false,
+    "bInterrupt" : true
+  },
+  {
+    "strName" : "PLGAICrimeJATLLEOArrestDo",
+    "strTitle" : "Arresting Criminal",
+    "strDesc" : "\"Stop right there! You're under arrest!\" [us] [shouts] at [them].",
+    "strActionGroup" : "Talk",
+    "nLogging"  : 2,
+    "strTargetPoint" : "use",
+    "fTargetPointRange" : 2,
+    "strAnim"         : "Idle",
+    "strBubble"         : "BblIntimidate",
+    "aInverse"          : [
+      "PLGAICrimeJATLLEOArrestDoDeny",
+      "PLGAICrimeJATLLEOArrestDoAllow"
+    ],
+    "fDuration"         : 0.000054,
+    "strThemType"       : "Other",
+    "bHumanOnly"      : false,
+    "CTTestUs"           : "TIsAICrimeReady",
+    "CTTestThem"        : "TIsCrimeJATLArrest",
+    "LootCondsThem"     : "CONDCrimeJATLLEOArrestDoThem"
+  },
+  {
+    "strName" : "PLGAICrimeJATLLEOArrestDoAllow",
+    "strTitle" : "Surrender to Officer",
+    "strDesc" : "[us] [goes] along peacefully with [them].",
+    "strActionGroup" : "Talk",
+    "nLogging"  : 2,
+    "strTargetPoint" : "use",
+    "fTargetPointRange" : 2,
+    "strAnim"         : "Idle",
+    "strBubble"         : "BblAffirmative",
+    "aInverse"          : [
+    ],
+    "fDuration"         : 0.000054,
+    "strThemType"       : "Other",
+    "bHumanOnly"      : true,
+    "bIgnoreFeelings" : true,
+    "CTTestUs"           : "TIsCrimeJATLArrest",
+    "CTTestThem"        : "TIsAICrimeReady",
+    "LootCondsUs"     : "CONDCrimeJATLLEOArrestDoAllowUs",
+    "LootCondsThem"     : "CONDCrimeJATLLEOArrestDoAllowThem"
+  },
+  {
+    "strName" : "PLGAICrimeJATLLEOArrestDoDeny",
+    "strTitle" : "Plead Innocence",
+    "strDesc" : "[us] [tells] [them] [them-subj] [has] the wrong person.",
+    "strActionGroup" : "Talk",
+    "nLogging"  : 2,
+    "strTargetPoint" : "use",
+    "fTargetPointRange" : 2,
+    "strAnim"         : "Idle",
+    "strBubble"         : "BblNegative",
+    "aInverse"          : [
+    ],
+    "fDuration"         : 0.000054,
+    "strThemType"       : "Other",
+    "bHumanOnly"      : true,
+    "bIgnoreFeelings" : true,
+    "CTTestUs"           : "TIsCrimeJATLArrestEnd",
+    "CTTestThem"        : "TIsAICrimeReady",
+    "LootCondsUs"     : null,
+    "LootCondsThem"     : null
+  },
+  {
+    "strName" : "PLGAICrimeJATLLEOArrestEnd",
+    "strTitle" : "JATL LEO Done Arresting Criminal",
+    "strDesc" : "\"Another win for the law,\" [us] [says].",
+    "strActionGroup" : "Talk",
+    "nLogging"  : 2,
+    "strTargetPoint" : "use",
+    "fTargetPointRange" : 2,
+    "strAnim"         : "Idle",
+    "strBubble"         : "BblAffirmative",
+    "aInverse"          : [
+      "PLGAICrimeJATLLEOArrestEndPlayer",
+      "PLGAICrimeLEOArrestEndCancel",
+      "PLGAICrimeJATLLEOArrestEndAI"
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Other",
+    "bHumanOnly"      : false,
+    "bIgnoreFeelings" : true,
+    "CTTestUs"           : "TIsAICrimeReadyArrestEnd",
+    "CTTestThem"        : "TIsCombatNeutralized",
+    "LootCondsThem"     : null
+  },
+  {
+    "strName" : "PLGAICrimeJATLLEOArrestEndAI",
+    "strTitle" : "Getting Arrested",
+    "strDesc" : "Shim interaction to test us = AI character before continuing.",
+    "strColor"      : "Dialogue",
+    "aInverse"          : [
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Other",
+    "nLogging"         : 0,
+    "bAIOnly"     : true,
+    "bIgnoreFeelings"      : true,
+    "strTeleportRegID" : "OKLG_UNK",
+    "LootCondsUs"     : "CONDENCHeatJATLFineEnd",
+    "LootCondsThem"     : "CONDLEONotArresting",
+    "aSocialNew" : [
+    ]
+  },
+  {
+    "strName" : "PLGAICrimeJATLLEOArrestEndPlayer",
+    "strTitle" : "Criminal Arrested (Player)",
+    "strDesc" : "LEO finishes subduing Player threat.",
+    "strColor"      : "Dialogue",
+    "fTargetPointRange" : 2,
+    "aInverse"          : [
+      "ENCHeatJATLBustedStart,[us],[us]"
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Other",
+    "nLogging"         : 0,
+    "bHumanOnly"      : true,
+    "bIgnoreFeelings"      : true,
+    "CTTestUs"      : "TIsSubduedCriminalJATL",
+    "LootCondsThem"     : "CONDLEONotArresting",
+    "aSocialNew" : [
+    ]
+  },
+  {
+    "strName" : "PLGAICrimeJATLLEOThreat",
+    "strTitle" : "JATL LEO Attacking Criminal",
+    "strDesc" : "\"Hey, it's that criminal! Get 'em!\" [us-shouts] [us], pointing towards [them].",
+    "strActionGroup" : "Talk",
+    "nLogging"  : 2,
+    "strTargetPoint" : null,
+    "strAnim"         : "Idle",
+    "strBubble"         : "BblIntimidate",
+    "aInverse"          : [
+      "PLGAICrimeJATLLEOInterruptSelf"
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Other",
+    "strPledgeAdd"       : "AICombat",
+    "bHumanOnly"      : false,
+    "CTTestUs"           : "TIsAICrimeReadyAttack",
+    "CTTestThem"        : "TIsCrimeJATLThreat"
+  },
+  {
+    "strName" : "PLGAICrimeJATLLEOArrestStolenShip",
+    "strTitle" : "JATL LEO Begins Arresting Criminal for Stealing a Ship",
+    "strDesc" : "\"You've been reported as flying a stolen ship,\" [us] [says], looking at [them].\"We're bringing you in.\"",
+    "strActionGroup" : "Talk",
+    "nLogging"  : 2,
+    "strTargetPoint" : null,
+    "strAnim"         : "Idle",
+    "strBubble"         : "BblIntimidate",
+    "aInverse"          : [
+      "PLGAICrimeJATLLEOInterruptSelf"
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Other",
+    "strPledgeAdd"       : "AICrimeArrestJATLLEODo",
+    "bHumanOnly"      : false,
+    "bIgnoreFeelings" : true,
+    "CTTestUs"           : "TIsAICrimeReadyArrestStolenShip",
+    "CTTestThem"        : "TIsCrimeJATLArrestStolenShip",
+    "LootCondsUs" : "CONDLEOArresting",
+    "LootCondsThem" : "CrimeJATLArrest"
+  },
+
+  {
+    "strName" : "PLGAIReportCrimeJATLArrest",
+    "strTitle" : "Report Crime",
+    "strDesc" : "[us] [speaks] into [us-pos] PDA, looking at [them].",
+    "strActionGroup" : "Talk",
+    "nLogging"  : 2,
+    "strTargetPoint" : null,
+    "strAnim"         : "Tablet",
+    "strBubble"         : "BblTalk",
+    "aInverse"          : [
+      "PLGAIReportCrimeJATLArrestAllow,[us],[them]",
+      "PLGAIReportCrimeDeny,[us],[them]"
+    ],
+    "fDuration"         : 0.00278,
+    "strThemType"       : "Other",
+    "bHumanOnly"      : false,
+    "bIgnoreFeelings" : true,
+    "CTTestUs"           : "TIsAIReportCrimeArrestReady",
+    "CTTestThem"        : null,
+    "PSpecTestThem"     : "RELReportCrime",
+    "LootCondsUs" : "CONDReportCrimeArrest",
+    "LootCondsThem" : null
+  },
+  {
+    "strName" : "PLGAIReportCrimeJATLArrestAllow",
+    "strTitle" : "Report Crime: Succeed",
+    "strDesc" : "[us] successfully [reports] a crime on [them].",
+    "strActionGroup" : "Talk",
+    "nLogging"  : 0,
+    "strTargetPoint" : null,
+    "strAnim"         : "Tablet",
+    "strBubble"         : "BblTalk",
+    "aInverse"          : [
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Other",
+    "bHumanOnly"      : false,
+    "CTTestUs"           : null,
+    "CTTestThem"        : "TIsAIReportCrimeValidTarget",
+    "LootCondsUs" : null,
+    "LootCondsThem" : "CrimeJATLArrest"
+  },
+  {
+    "strName" : "PLGAIReportCrimeJATLArrestDone",
+    "strTitle" : "Done Reporting Crime",
+    "strDesc" : "[us] [is] done reporting crime.",
+    "strActionGroup" : "Use",
+    "nLogging"  : 0,
+    "strTargetPoint" : null,
+    "strAnim"         : "Idle",
+    "strBubble"         : null,
+    "aInverse"          : [
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Self",
+    "bHumanOnly"      : false,
+    "CTTestUs"           : "TIsAIReportCrimeArrestReadyEnd",
+    "CTTestThem"        : null,
+    "LootCondsUs"         : "CONDReportCrimeArrestEnd"
+  },
+  {
+    "strName" : "PLGAIReportCrimeJATLTrespass",
+    "strTitle" : "Report Crime",
+    "strDesc" : "[us] [says] \"Get out of here,\" then speaks into [us-pos] PDA, looking at [them].",
+    "strActionGroup" : "Talk",
+    "nLogging"  : 2,
+    "strTargetPoint" : null,
+    "strAnim"         : "Tablet",
+    "strBubble"         : "BblTalk",
+    "aInverse"          : [
+      "PLGAIReportCrimeJATLTrespassAllow,[us],[them]",
+      "PLGAIReportCrimeJATLTrespassDeny,[us],[them]"
+    ],
+    "fDuration"         : 0.00278,
+    "strThemType"       : "Other",
+    "bHumanOnly"      : false,
+    "bIgnoreFeelings" : true,
+    "CTTestUs"           : "TIsAIReportCrimeArrestReady",
+    "CTTestThem"        : null,
+    "PSpecTestThem"     : "RELReportCrimeTrespass",
+    "LootCondsUs" : "CONDReportCrimeArrest",
+    "LootCondsThem" : null
+  },
+  {
+    "strName" : "PLGAIReportCrimeJATLTrespassAllow",
+    "strTitle" : "Report Crime: Succeed",
+    "strDesc" : "[us] successfully [reports] a crime on [them].",
+    "strActionGroup" : "Talk",
+    "nLogging"  : 0,
+    "strTargetPoint" : null,
+    "strAnim"         : "Tablet",
+    "strBubble"         : "BblTalk",
+    "aInverse"          : [
+      "PLGAIReportCrimeJATLTrespassDone,[us],[them]"
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Other",
+    "bHumanOnly"      : false,
+    "CTTestUs"           : null,
+    "CTTestThem"        : "TIsAIReportCrimeValidTargetTrespass",
+    "LootCondsUs" : null,
+    "LootCondsThem" : "CrimeJATLArrest"
+  },
+  {
+    "strName" : "PLGAIReportCrimeJATLTrespassDeny",
+    "strTitle" : "Report Crime: Fail",
+    "strDesc" : "[us] [fails] to report a crime on [them].",
+    "strActionGroup" : "Talk",
+    "nLogging"  : 0,
+    "strTargetPoint" : null,
+    "strAnim"         : "Tablet",
+    "strBubble"         : "BblTalk",
+    "aInverse"          : [
+      "PLGAIReportCrimeJATLTrespassDone,[us],[them]"
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Other",
+    "bHumanOnly"      : false,
+    "CTTestUs"           : null,
+    "CTTestThem"        : null,
+    "LootCondsUs" : null,
+    "LootCondsThem" : null
+  },
+  {
+    "strName" : "PLGAIReportCrimeJATLTrespassDone",
+    "strTitle" : "Done Reporting Crime",
+    "strDesc" : "[us] [is] done reporting crime.",
+    "strActionGroup" : "Use",
+    "nLogging"  : 0,
+    "strTargetPoint" : null,
+    "strAnim"         : "Idle",
+    "strBubble"         : null,
+    "aInverse"          : [
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Self",
+    "bHumanOnly"      : false,
+    "CTTestUs"           : "TIsAIReportCrimeArrestReadyEnd",
+    "CTTestThem"        : null,
+    "LootCondsUs"         : "CONDReportCrimeArrestEnd"
+  },
+  {
+    "strName" : "PLGAIReportCrimeJATLTrespassNPCDone",
+    "strTitle" : "Cancel Reporting Crime",
+    "strDesc" : "[us] [is] no longer going to report crime.",
+    "strActionGroup" : "Use",
+    "nLogging"  : 0,
+    "strTargetPoint" : null,
+    "strAnim"         : "Idle",
+    "strBubble"         : null,
+    "aInverse"          : [
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Self",
+    "bHumanOnly"      : false,
+    "CTTestUs"           : null,
+    "CTTestThem"        : "TIsNotPlayerOrPlayerCrew",
+    "LootCondsUs"         : null
+  },
+  {
+    "strName" : "PLGAIReportCrimeJATLThreat",
+    "strTitle" : "Report Crime",
+    "strDesc" : "[us] [speaks] into [us-pos] PDA, looking at [them].",
+    "strActionGroup" : "Talk",
+    "nLogging"  : 0,
+    "strTargetPoint" : null,
+    "strAnim"         : "Tablet",
+    "strBubble"         : "BblTalk",
+    "aInverse"          : [
+      "PLGAIReportCrimeJATLThreatAllow,[us],[them]",
+      "PLGAIReportCrimeDeny,[us],[them]"
+    ],
+    "fDuration"         : 0.00278,
+    "strThemType"       : "Other",
+    "bHumanOnly"      : false,
+    "bIgnoreFeelings" : true,
+    "CTTestUs"           : "TIsAIReportCrimeThreatReady",
+    "CTTestThem"        : null,
+    "PSpecTestThem"     : "RELReportCrime",
+    "LootCondsUs" : "CONDReportCrimeThreat",
+    "LootCondsThem" : null
+  },
+  {
+    "strName" : "PLGAIReportCrimeJATLThreatAllow",
+    "strTitle" : "Report Crime: Succeed",
+    "strDesc" : "[us] successfully [reports] a crime on [them].",
+    "strActionGroup" : "Talk",
+    "nLogging"  : 0,
+    "strTargetPoint" : null,
+    "strAnim"         : "Tablet",
+    "strBubble"         : "BblTalk",
+    "aInverse"          : [
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Other",
+    "bHumanOnly"      : false,
+    "CTTestUs"           : null,
+    "CTTestThem"        : "TIsAIReportCrimeValidTarget",
+    "LootCondsUs" : null,
+    "LootCondsThem" : "CrimeJATLThreat"
+  },
+  {
+    "strName" : "PLGAIReportCrimeJATLThreatDone",
+    "strTitle" : "Done Reporting Crime",
+    "strDesc" : "[us] [is] done reporting crime.",
+    "strActionGroup" : "Use",
+    "nLogging"  : 0,
+    "strTargetPoint" : null,
+    "strAnim"         : "Idle",
+    "strBubble"         : null,
+    "aInverse"          : [
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Self",
+    "bHumanOnly"      : false,
+    "CTTestUs"           : "TIsAIReportCrimeThreatReadyEnd",
+    "CTTestThem"        : null,
+    "LootCondsUs"         : "CONDReportCrimeThreatEnd"
+  },
+
+  {
+    "strName" : "PSPAIAICrimeJATLLEOArrestAdd",
+    "strTitle" : "Adds JATL LEO Arrest pledge to us",
+    "strDesc" : "[us] [gains] JATL LEO Arrest pledge.",
+    "nLogging"  : 0,
+    "strTargetPoint" : null,
+    "aInverse"          : [
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Self",
+    "bHumanOnly"      : false,
+    "CTTestUs"           : null,
+    "CTTestThem"        : null,
+    "strPledgeAdd"      : "AICrimeArrestJATLLEOStart"
+  },
+
+  {
+    "strName" : "PSPAIAICrimeJATLLEOArrestStolenShipAdd",
+    "strTitle" : "Adds JATL LEO Arrest pledge to us because the player stole a ship.",
+    "strDesc" : "[us] [gains] JATL LEO Arrest for Stolen Ship pledge.",
+    "nLogging"  : 0,
+    "strTargetPoint" : null,
+    "aInverse"          : [
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Self",
+    "bHumanOnly"      : false,
+    "CTTestUs"           : null,
+    "CTTestThem"        : null,
+    "strPledgeAdd"      : "AICrimeArrestJATLLEOStolenShipStart"
+  },
+
+  {
+    "strName" : "PSPAIAICrimeJATLLEOThreatAdd",
+    "strTitle" : "Adds JATL LEO Threat pledge to us",
+    "strDesc" : "[us] [gains] JATL LEO Threat pledge.",
+    "nLogging"  : 0,
+    "strTargetPoint" : null,
+    "aInverse"          : [
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Self",
+    "bHumanOnly"      : false,
+    "CTTestUs"           : null,
+    "CTTestThem"        : null,
+    "strPledgeAdd"      : "AICrimeAttackJATLLEO"
+  }
+]

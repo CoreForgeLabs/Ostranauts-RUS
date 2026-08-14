@@ -1,0 +1,330 @@
+[
+  {
+    "strName" : "Plot_Messenger_CompletedContact",
+    "strCT" : "CTPLOT_Messenger_CompletedContact",
+    "bAlive" : true
+  },
+  {
+    "strName" : "Plot_Messenger_RefusedContact",
+    "strCT" : "CTPLOT_Messenger_RefusedContact",
+    "bAlive" : true
+  },
+  {
+    "strName" : "TargetAlive",
+    "bAlive" : true
+  },
+  {
+    "strName" : "TargetDead",
+    "bAlive" : false
+  },
+  {
+    "strName" : "Plot_MessengerCorp_CompletedContact",
+    "strCT" : "CTPLOT_MessengerCorp_CompletedContact",
+    "bAlive" : true
+  },
+  {
+    "strName" : "Plot_MessengerCorp_RefusedContact",
+    "strCT" : "CTPLOT_MessengerCorp_RefusedContact",
+    "bAlive" : true
+  },
+  {
+    "strName" : "Plot_MessengerFamily_CompletedContact",
+    "strCT" : "CTPLOT_MessengerFamily_CompletedContact",
+    "bAlive" : true
+  },
+  {
+    "strName" : "Plot_MessengerFamily_RefusedContact",
+    "strCT" : "CTPLOT_MessengerFamily_RefusedContact",
+    "bAlive" : true
+  },
+  {
+    "strName" : "Plot_MessengerLegal_CompletedContact",
+    "strCT" : "CTPLOT_MessengerLegal_CompletedContact",
+    "bAlive" : true
+  },
+  {
+    "strName" : "Plot_MessengerLegal_RefusedContact",
+    "strCT" : "CTPLOT_MessengerLegal_RefusedContact",
+    "bAlive" : true
+  },
+  {
+    "strName" : "Plot_MessengerRomantic_CompletedContact",
+    "strCT" : "CTPLOT_MessengerRomantic_CompletedContact",
+    "bAlive" : true
+  },
+  {
+    "strName" : "Plot_MessengerRomantic_RefusedContact",
+    "strCT" : "CTPLOT_MessengerRomantic_RefusedContact",
+    "bAlive" : true
+  },
+  {
+    "strName" : "Plot_MessengerTechnical_CompletedContact",
+    "strCT" : "CTPLOT_MessengerTechnical_CompletedContact",
+    "bAlive" : true
+  },
+  {
+    "strName" : "Plot_MessengerTechnical_RefusedContact",
+    "strCT" : "CTPLOT_MessengerTechnical_RefusedContact",
+    "bAlive" : true
+  },
+
+  {
+    "strName" : "PLOT_NewOKLGFixer_Contact",
+    "strCT" : "CTPLOT_NewOKLGFixer_Contact",
+    "bAlive" : true
+  },
+  {
+    "strName" : "PLOT_NewOKLGFixer_FixerNew",
+    "strCT" : "CTPLOT_NewOKLGFixer_FixerNew",
+    "bAlive" : true
+  },
+  {
+    "strName" : "PLOT_NewOKLGFixer_Contact_Make",
+    "strCT" : "CTPLOT_NewOKLGFixer_Contact_Make",
+    "bAlive" : true
+  },
+  {
+    "strName" : "PLOT_NewOKLGFixer_FixerNew_Make",
+    "strCT" : "CTPLOT_NewOKLGFixer_FixerNew_Make",
+    "bAlive" : true
+  },
+  {
+    "strName" : "PLOT_NewOKLGFixer_Protag",
+    "strCT" : "CTPLOT_NewOKLGFixer_Protag",
+    "bAlive" : true
+  },
+  {
+    "strName" : "OKLGFixerNewFinalize",
+    "strCT" : "CTPLOT_NewOKLGFixer_FixerNew",
+    "bAlive" : true,
+    "aGPMSets" : 
+    [
+        "Trader", "TraderOKLGFixer"
+    ]
+  },
+
+  {
+    "strName" : "PLOTPanhandlingTarget_Make",
+    "strCT" : "CTPlotChoicePanhandling_Target_Make",
+    "bAlive" : true
+  },  
+  {
+    "strName" : "RELCloseNotCrew",
+    "strCT" : "TIsNotPlayerCrew",
+    "strCTRelFind" : "TRELClose",
+    "bAlive" : true
+  },  
+  {
+    "strName" : "Messenger_Contact",
+    "strCT" : "TIsValidMessenger_Contact",
+    "strCTRelFind" : "TRELClose",
+    "bAlive" : true
+  },  
+  
+  {
+    "strName" : "Messenger_Target",
+    "strCT" : "TIsValidMessenger_Target",
+    "strCTRelFind" : "TRELNotEnemy",
+    "bAlive" : true
+  },
+  {
+    "strName" : "Messenger02_Target",
+    "strCT" : "TIsValidMessenger02_Target",
+    "strCTRelFind" : "TRELNotEnemy",
+    "bAlive" : true
+  },
+  {
+    "strName" : "CareerBartender",
+    "strCareerNow" : "Bartender",
+    "bAlive" : true
+  },
+
+  {
+    "strName" : "CareerManager",
+    "strCareerNow" : "Manager",
+    "bAlive" : true
+  },
+
+  {
+    "strName" : "Plot_Merga_LeadDetective_Make",
+    "strFirstName" : "",
+    "strLastName" : "",
+    "strGender" : "",
+    "strCareerNow" : "LEOfficer",
+    "strHomeworldFind" : "",
+    "strHomeworldSet" : "HW_VENC",
+    "strStrata" : "citizen",
+    "strLoot"    : "ItmVenusLEOStartLoot",
+    "strLootConds" : "CONDPLOT_Merga_Suspect_Detective_Make",
+    "strRelSet" : "",
+    "strCTRelFind" : "",
+    "strCT" : "CTPLOT_Merga_IsReady_Lead_Detective",
+    "nAgeRangeBelow" : -1,
+    "nAgeRangeAbove" : -1,
+    "bAlive" : true,
+    "strLootIAAdds" : "PSPIAAddNPCBasic"
+  },
+
+  {
+    "strName" : "Plot_Merga_RacingIcon_Make",
+    "strFirstName" : "Rex",
+    "strLastName" : "Korin",
+    "strGender" : "",
+    "strCareerNow" : "Influencer",
+    "strHomeworldFind" : "",
+    "strHomeworldSet" : "",
+    "strStrata" : "resident",
+    "strLoot"    : "ItmCrewStartLoot2",
+    "strLootConds" : "CONDPLOT_Merga_Suspect_RacingIcon",
+    "strRelSet" : "",
+    "strCTRelFind" : "",
+    "strCT" : "CTPLOT_Merga_IsReady_Role",
+    "nAgeRangeBelow" : -1,
+    "nAgeRangeAbove" : -1,
+    "bAlive" : true,
+    "strLootIAAdds" : "PSPIAAddNPCBasic"
+  },
+
+  {
+    "strName" : "Plot_Merga_RacingIcon_Find",
+    "strFirstName" : "Rex",
+    "strLastName" : "Korin",
+    "strGender" : "",
+    "strCareerNow" : "",
+    "strHomeworldFind" : "",
+    "strHomeworldSet" : "",
+    "strStrata" : "",
+    "strLoot"    : "",
+    "strLootConds" : "",
+    "strRelSet" : "",
+    "strCTRelFind" : "",
+    "strCT" : "CTPLOT_Merga_IsReady_Role",
+    "nAgeRangeBelow" : -1,
+    "nAgeRangeAbove" : -1,
+    "bAlive" : true
+  },
+
+  {
+    "strName" : "Plot_Merga_Superfan_Make",
+    "strFirstName" : "",
+    "strLastName" : "",
+    "strGender" : "",
+    "strCareerNow" : "Influencer",
+    "strHomeworldFind" : "",
+    "strHomeworldSet" : "",
+    "strStrata" : "",
+    "strLoot"    : "ItmCrewStartLoot2",
+    "strLootConds" : "CONDPLOT_Merga_Suspect_Superfan",
+    "strRelSet" : "",
+    "strCTRelFind" : "",
+    "strCT" : "CTPLOT_Merga_IsReady_Role",
+    "nAgeRangeBelow" : -1,
+    "nAgeRangeAbove" : -1,
+    "bAlive" : true,
+    "strLootIAAdds" : "PSPIAAddNPCBasic"
+  },
+  {
+    "strName" : "Plot_Merga_Superfan_Find",
+    "strFirstName" : "",
+    "strLastName" : "",
+    "strGender" : "",
+    "strCareerNow" : "",
+    "strHomeworldFind" : "",
+    "strHomeworldSet" : "",
+    "strStrata" : "",
+    "strLoot"    : "",
+    "strLootConds" : "",
+    "strRelSet" : "",
+    "strCTRelFind" : "",
+    "strCT" : "CTPLOT_Merga_Is_Superfan",
+    "nAgeRangeBelow" : -1,
+    "nAgeRangeAbove" : -1,
+    "bAlive" : true
+  },
+
+  {
+    "strName" : "Plot_Merga_Journalist_Make",
+    "strFirstName" : "",
+    "strLastName" : "",
+    "strGender" : "",
+    "strCareerNow" : "Influencer",
+    "strHomeworldFind" : "",
+    "strHomeworldSet" : "",
+    "strStrata" : "",
+    "strLoot"    : "ItmCrewStartLoot2",
+    "strLootConds" : "CONDPLOT_Merga_Suspect_Journalist",
+    "strRelSet" : "",
+    "strCTRelFind" : "",
+    "strCT" : "CTPLOT_Merga_IsReady_Role",
+    "nAgeRangeBelow" : -1,
+    "nAgeRangeAbove" : -1,
+    "bAlive" : true,
+    "strLootIAAdds" : "PSPIAAddNPCBasic"
+  },
+
+  {
+    "strName" : "Plot_Merga_Mogul_Make",
+    "strFirstName" : "",
+    "strLastName" : "",
+    "strGender" : "",
+    "strCareerNow" : "Manager",
+    "strHomeworldFind" : "",
+    "strHomeworldSet" : "HW_VENC",
+    "strStrata" : "resident",
+    "strLoot"    : "ItmCrewStartLoot2",
+    "strLootConds" : "CONDPLOT_Merga_Suspect_Mogul",
+    "strRelSet" : "",
+    "strCTRelFind" : "",
+    "strCT" : "CTPLOT_Merga_IsReady_Role",
+    "nAgeRangeBelow" : -1,
+    "nAgeRangeAbove" : -1,
+    "bAlive" : true,
+    "strLootIAAdds" : "PSPIAAddNPCBasic"
+  },
+  
+  {
+    "strName" : "Plot_Ceres_Isambard_Make",
+    "strFirstName" : "Isambard",
+    "strLastName" : "Cruz",
+    "strGender" : "IsFemale",
+    "strCareerNow" : "Manager",
+    "strHomeworldFind" : "",
+    "strHomeworldSet" : "ERTH",
+    "strStrata" : "resident",
+    "strLoot"    : "ItmCrewStartLoot2",
+    "strLootConds" : "CONDPLOT_Ceres_Isambard",
+    "strRelSet" : "",
+    "strCTRelFind" : "",
+    "nAgeRangeBelow" : -1,
+    "nAgeRangeAbove" : -1,
+	"nAgeMin" : 77,
+	"nAgeMax" : 79,
+    "bAlive" : true,
+    "strLootIAAdds" : "PSPIAAddNPCBasic"
+  },
+  {
+    "strName" : "Plot_Ceres_Smiley_Make",
+    "strFirstName" : "Smiley",
+    "strLastName" : "76",
+    "strGender" : "IsMale",
+    "strCareerNow" : "Manager",
+    "strHomeworldFind" : "",
+    "strStrata" : "resident",
+    "strLoot"    : "ItmCrewStartLoot2",
+    "strLootConds" : "CONDPLOT_Ceres_Smiley",
+    "strRelSet" : "",
+    "strCTRelFind" : "",
+    "nAgeRangeBelow" : -1,
+    "nAgeRangeAbove" : -1,
+	"nAgeMin" : 27,
+	"nAgeMax" : 34,
+    "bAlive" : true,
+    "strLootIAAdds" : "PSPIAAddNPCBasic"
+  },
+
+  {
+    "strName" : "HomeHangzhou",
+    "strCT" : "TIsHomeHangzhou",
+    "bAlive" : true
+  }
+]

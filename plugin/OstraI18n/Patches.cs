@@ -1,6 +1,9 @@
 using System;
 using System.Collections.Generic;
+using HarmonyLib;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace OstraI18n
 {
@@ -88,15 +91,30 @@ namespace OstraI18n
         // accidentally clobber, and force-overwrite guarantees our registration wins even
         // if some future game update or another mod happens to add the same literal key.
         private static readonly string[] SyntheticVerbKeys = { "is.cop", "is.aux", "has.obj", "has.qual" };
-        private static void RegisterSyntheticVerbs()
+        public static void RegisterSyntheticVerbs()
         {
+            if (DataHandler.dictVerbs == null) return;
             int registered = 0;
+            if (LangPack.Verbs != null)
+            {
+                foreach (var key in LangPack.Verbs.Keys)
+                {
+                    if (!DataHandler.dictVerbs.ContainsKey(key))
+                    {
+                        DataHandler.dictVerbs[key] = new[] { key, key };
+                        registered++;
+                    }
+                }
+            }
             foreach (var key in SyntheticVerbKeys)
             {
-                DataHandler.dictVerbs[key] = new[] { key, key };
-                registered++;
+                if (!DataHandler.dictVerbs.ContainsKey(key))
+                {
+                    DataHandler.dictVerbs[key] = new[] { key, key };
+                    registered++;
+                }
             }
-            Plugin.Log.LogInfo("[i18n] DataHandler.dictVerbs registered: " + registered + " synthetic verb keys");
+            Plugin.Log.LogInfo("[i18n] DataHandler.dictVerbs registered: " + registered + " new verb keys (total in dictVerbs: " + DataHandler.dictVerbs.Count + ")");
         }
 
         // GrammarUtils.Verb -> Russian conjugation.
@@ -118,7 +136,10 @@ namespace OstraI18n
                     return false;
                 }
 
-                var idx = (int)ent.InflectionIndex;
+                var idx = (ent.CondOwner == null && tokenData.alias == "us")
+                    ? (int)GrammarUtils.PronounInflection.Second
+                    : (int)ent.InflectionIndex;
+
                 var form = "";
                 if (vf.Kind == "copula" && vf.OmitPresent)
                 {
@@ -138,12 +159,8 @@ namespace OstraI18n
                 {
                     GrammarUtils.interactionOutput.Append(GrammarUtils.SetCase(form));
                 }
-                else
+                else if (vf.Kind == "copula")
                 {
-                    // Dropped copula leaves the surrounding template spaces adjacent to each
-                    // other (source text is "[us] [is] голоден" -> "Ты" + " " + "" + " голоден").
-                    // Absorb the space that was written just before this token so only the
-                    // one that follows survives, producing "Ты голоден" instead of "Ты  голоден".
                     var sb = GrammarUtils.interactionOutput;
                     if (sb.Length > 0 && sb[sb.Length - 1] == ' ')
                         sb.Length -= 1;
@@ -164,16 +181,10 @@ namespace OstraI18n
             try
             {
                 if (tokenData.alias.IsNullOrEmpty() || tokenData.category.IsNullOrEmpty()) return false;
-                var ent = GrammarUtils.entityMap[tokenData.alias];
+                if (!GrammarUtils.entityMap.TryGetValue(tokenData.alias, out var ent)) return false;
 
                 if (!ent.named && ent.CondOwner != null && ent.InflectionIndex != GrammarUtils.PronounInflection.Second)
                 {
-                    // Task 6.4: first mention of a named object used to always append
-                    // ShortName unconditionally, i.e. nominative regardless of which
-                    // case the token actually requested -- that's the bug this task
-                    // fixes. If the requested category is a real grammatical case
-                    // (see DeclinableCases above), decline the noun via the resolver
-                    // instead of appending it unchanged.
                     string text = ent.CondOwner.ShortName;
                     if (DeclinableCases.Contains(tokenData.category) && LangPack.Resolver != null)
                         text = LangPack.Resolver.Resolve(ent.CondOwner.strName, ent.CondOwner.ShortName, tokenData.category);
@@ -185,13 +196,17 @@ namespace OstraI18n
                     return false;
                 }
 
+                var idx = (ent.CondOwner == null && tokenData.alias == "us")
+                    ? (int)GrammarUtils.PronounInflection.Second
+                    : (int)ent.InflectionIndex;
+
                 if (LangPack.Pronouns.TryGetValue(tokenData.category, out var forms))
                 {
-                    GrammarUtils.interactionOutput.Append(GrammarUtils.SetCase(forms[(int)ent.InflectionIndex]));
+                    GrammarUtils.interactionOutput.Append(GrammarUtils.SetCase(forms[Math.Min(idx, forms.Length - 1)]));
                 }
                 else if (GrammarUtils.partsOfSpeechStr.TryGetValue(tokenData.category, out var vanilla))
                 {
-                    GrammarUtils.interactionOutput.Append(GrammarUtils.SetCase(vanilla[(int)ent.InflectionIndex]));
+                    GrammarUtils.interactionOutput.Append(GrammarUtils.SetCase(vanilla[Math.Min(idx, vanilla.Length - 1)]));
                 }
                 if (tokenData.category == "subj") ent.lastSubjectiveWasPronoun = true;
                 return false;
@@ -211,7 +226,7 @@ namespace OstraI18n
             {
                 if (tokenData.alias.IsNullOrEmpty() || !GrammarUtils.entityMap.TryGetValue(tokenData.alias, out var ent)) return false;
 
-                if (ent.InflectionIndex == GrammarUtils.PronounInflection.Second)
+                if (ent.InflectionIndex == GrammarUtils.PronounInflection.Second || (ent.CondOwner == null && tokenData.alias == "us"))
                 {
                     GrammarUtils.interactionOutput.Append(GrammarUtils.SetCase(LangPack.YouWord));
                     if (tokenData.category == "subj") ent.lastSubjectiveWasPronoun = true;
@@ -389,6 +404,10 @@ namespace OstraI18n
                                 t.text = localized;
                             }
                         }
+                        else
+                        {
+                            I18n.RecordUntranslated("UI_TEXT", norm, t.transform.name);
+                        }
                     }
                 }
             }
@@ -419,6 +438,10 @@ namespace OstraI18n
                             {
                                 t.text = localized;
                             }
+                        }
+                        else
+                        {
+                            I18n.RecordUntranslated("UI_TEXT", norm, t.transform.name);
                         }
                     }
                 }
@@ -479,5 +502,747 @@ namespace OstraI18n
                 Plugin.Log.LogWarning("[i18n] ObjectivePanelCompleteObjectivePostfix failed: " + ex.Message);
             }
         }
+
+        // DerelictShipEntry.SetData -> localizes broker ship entry labels
+        public static void DerelictShipEntrySetDataPostfix(Ostranauts.ShipGUIs.ShipBroker.DerelictShipEntry __instance)
+        {
+            if (!LangPack.Active || (UnityEngine.Object)(object)__instance == (UnityEngine.Object)null) return;
+            try
+            {
+                var txtPublicNameField = HarmonyLib.AccessTools.Field(typeof(Ostranauts.ShipGUIs.ShipBroker.DerelictShipEntry), "txtPublicName");
+                if (txtPublicNameField != null)
+                {
+                    var txt = txtPublicNameField.GetValue(__instance) as TMPro.TMP_Text;
+                    if (txt != null && txt.text.StartsWith("Name: "))
+                    {
+                        var tr = I18n.Get("Name: ");
+                        if (!string.IsNullOrEmpty(tr) && tr != "Name: ")
+                            txt.text = tr + txt.text.Substring(6);
+                    }
+                }
+
+                var txtLastVisitedField = HarmonyLib.AccessTools.Field(typeof(Ostranauts.ShipGUIs.ShipBroker.DerelictShipEntry), "txtLastVisited");
+                if (txtLastVisitedField != null)
+                {
+                    var txt = txtLastVisitedField.GetValue(__instance) as TMPro.TMP_Text;
+                    if (txt != null)
+                    {
+                        var tr = I18n.Get(txt.text);
+                        if (!string.IsNullOrEmpty(tr) && tr != txt.text)
+                            txt.text = tr;
+                    }
+                }
+
+                var txtModelMakeField = HarmonyLib.AccessTools.Field(typeof(Ostranauts.ShipGUIs.ShipBroker.DerelictShipEntry), "txtModelMake");
+                if (txtModelMakeField != null)
+                {
+                    var txt = txtModelMakeField.GetValue(__instance) as TMPro.TMP_Text;
+                    if (txt != null)
+                    {
+                        var s = txt.text;
+                        if (s.StartsWith("Model: "))
+                            s = I18n.Get("Model: ") + s.Substring(7);
+                        if (s.Contains(" Make: "))
+                            s = s.Replace(" Make: ", I18n.Get(" Make: "));
+                        txt.text = s;
+                    }
+                }
+
+                var txtEstField = HarmonyLib.AccessTools.Field(typeof(Ostranauts.ShipGUIs.ShipBroker.DerelictShipEntry), "txtEstimatedValue");
+                if (txtEstField != null)
+                {
+                    var txt = txtEstField.GetValue(__instance) as TMPro.TMP_Text;
+                    if (txt != null && txt.text.StartsWith("Estimated value: $"))
+                    {
+                        txt.text = I18n.Get("Estimated value: $") + txt.text.Substring(18);
+                    }
+                }
+
+                var txtRoomsField = HarmonyLib.AccessTools.Field(typeof(Ostranauts.ShipGUIs.ShipBroker.DerelictShipEntry), "txtRooms");
+                if (txtRoomsField != null)
+                {
+                    var txt = txtRoomsField.GetValue(__instance) as TMPro.TMP_Text;
+                    if (txt != null && txt.text == "No room specializations")
+                    {
+                        txt.text = I18n.Get("No room specializations");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Plugin.Log.LogWarning("[i18n] DerelictShipEntrySetDataPostfix failed: " + ex.Message);
+            }
+        }
+
+        // Interaction.ApplyEffects -> localizes biography logs in character creation & in-game
+        public static void InteractionApplyEffectsPostfix(List<string> aLog)
+        {
+            if (aLog == null || !LangPack.Active || !string.Equals(LangPack.Code, "ru", StringComparison.OrdinalIgnoreCase)) return;
+            try
+            {
+                for (int i = 0; i < aLog.Count; i++)
+                {
+                    string s = aLog[i];
+                    if (string.IsNullOrEmpty(s)) continue;
+                    if (s.StartsWith("New "))
+                    {
+                        s = "Новый контакт: " + s.Substring(4);
+                        s = s.Replace(" from ", " из ");
+                        aLog[i] = s;
+                    }
+                    else if (s.Contains(" becomes a "))
+                    {
+                        s = s.Replace(" becomes a ", " теперь ").Replace(" to ", " для ");
+                        aLog[i] = s;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Plugin.Log.LogWarning("[i18n] InteractionApplyEffectsPostfix failed: " + ex.Message);
+            }
+        }
+
+        // Ledger.RecordTransaction -> localizes payer name for career events
+        public static void LedgerRecordTransactionPrefix(ref string COThemFriendlyName)
+        {
+            if (!LangPack.Active || !string.Equals(LangPack.Code, "ru", StringComparison.OrdinalIgnoreCase)) return;
+            try
+            {
+                if (COThemFriendlyName == "Career Event")
+                {
+                    COThemFriendlyName = "события карьеры";
+                }
+            }
+            catch { }
+        }
+
+        // GUIPAXIntro.Show -> localizes Welcome / Early Access feedback splash screen
+        public static void GUIPAXIntroShowPostfix(GUIPAXIntro __instance)
+        {
+            if (!LangPack.Active || !string.Equals(LangPack.Code, "ru", StringComparison.OrdinalIgnoreCase)) return;
+            try
+            {
+                var texts = __instance.GetComponentsInChildren<TMP_Text>(true);
+                foreach (var t in texts)
+                {
+                    if (t == null) continue;
+                    var txt = t.text;
+                    if (string.IsNullOrEmpty(txt)) continue;
+
+                    FontFallback.EnsureCyrillicFont(t);
+                    t.fontStyle = FontStyles.Normal;
+                    t.enableAutoSizing = true;
+                    t.fontSizeMin = 8f;
+                    t.fontSizeMax = Math.Max(t.fontSize, 26f);
+                    t.overflowMode = TextOverflowModes.Overflow;
+                    t.enableWordWrapping = true;
+
+                    if (txt.IndexOf("WHAT'S NEW", StringComparison.OrdinalIgnoreCase) >= 0 || txt.IndexOf("WHAT", StringComparison.OrdinalIgnoreCase) >= 0 || txt.IndexOf("ЧТО НОВОГО", StringComparison.OrdinalIgnoreCase) >= 0)
+                    {
+                        t.text = "ЧТО НОВОГО?";
+                    }
+                    else if (txt.IndexOf("WELCOME", StringComparison.OrdinalIgnoreCase) >= 0 || txt.IndexOf("ДОБРО ПОЖАЛОВАТЬ", StringComparison.OrdinalIgnoreCase) >= 0)
+                    {
+                        t.text = "ДОБРО ПОЖАЛОВАТЬ В OSTRANAUTS";
+                    }
+                    else if (txt.IndexOf("FEEDBACK", StringComparison.OrdinalIgnoreCase) >= 0 || txt.IndexOf("ОТЗЫВ", StringComparison.OrdinalIgnoreCase) >= 0 || txt.IndexOf("ЦЕНИМ", StringComparison.OrdinalIgnoreCase) >= 0 || txt == "М")
+                    {
+                        t.text = "МЫ ЦЕНИМ ОТЗЫВЫ!";
+                    }
+                    else if (txt.IndexOf("active on Discord", StringComparison.OrdinalIgnoreCase) >= 0 || txt.IndexOf("Discord", StringComparison.OrdinalIgnoreCase) >= 0 && txt.IndexOf("сообществ", StringComparison.OrdinalIgnoreCase) < 0)
+                    {
+                        t.text = "Мы активно общаемся в Discord и других сообществах, где игроки помогают нам развивать игру.";
+                    }
+                    else if (txt.IndexOf("New Plot", StringComparison.OrdinalIgnoreCase) >= 0 || txt.IndexOf("Новый сюжет", StringComparison.OrdinalIgnoreCase) >= 0)
+                    {
+                        t.text = "<indent=2.5em>• Новый сюжет и концовки\n• Система контрактов на головы\n• Новые карты станций\n• Поддержка Мастерской Steam\n• Достижения</indent>";
+                    }
+                    else if (txt.IndexOf("Click Anywhere", StringComparison.OrdinalIgnoreCase) >= 0 || txt.IndexOf("Нажмите в любом месте", StringComparison.OrdinalIgnoreCase) >= 0)
+                    {
+                        t.text = "[ Нажмите в любом месте, чтобы продолжить ]";
+                    }
+                    else if (txt.IndexOf("links to these resources", StringComparison.OrdinalIgnoreCase) >= 0 || txt.IndexOf("Ссылки на эти ресурсы", StringComparison.OrdinalIgnoreCase) >= 0)
+                    {
+                        t.text = "Ссылки на эти ресурсы доступны в главном меню и в настройках во время игры.";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Plugin.Log.LogWarning("[i18n] GUIPAXIntroShowPostfix failed: " + ex.Message);
+            }
+        }
+
+        // GUIChargenCareer.PageEvent -> fits ship specs text so it doesn't overlap the Take Ship button
+        public static void GUIChargenCareerPageEventPostfix(GUIChargenCareer __instance)
+        {
+            try
+            {
+                var tfMain = Traverse.Create(__instance).Field("tfMain").GetValue<Transform>();
+                if (tfMain == null) return;
+                foreach (Transform child in tfMain)
+                {
+                    if (child.name.Contains("pnlShipInfo"))
+                    {
+                        var tmp = child.GetComponentInChildren<TMP_Text>();
+                        if (tmp != null)
+                        {
+                            tmp.fontSize = 14f;
+                            tmp.lineSpacing = -5f;
+                            if (tmp.text.Contains("\n\n"))
+                                tmp.text = tmp.text.Replace("\n\n", "\n");
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Plugin.Log.LogWarning("[i18n] GUIChargenCareerPageEventPostfix failed: " + ex.Message);
+            }
+        }
+
+        // GUIRosterRow.SetOwner -> localizes crew roster duties toggles
+        public static void GUIRosterRowSetOwnerPostfix(GUIRosterRow __instance)
+        {
+            if (!LangPack.Active || !string.Equals(LangPack.Code, "ru", StringComparison.OrdinalIgnoreCase)) return;
+            try
+            {
+                var tr = Traverse.Create(__instance);
+                TranslateToggleText(tr.Field("chkShore").GetValue<Toggle>(), "УВОЛЬНЕНИЕ");
+                TranslateToggleText(tr.Field("chkAirlock").GetValue<Toggle>(), "ШЛЮЗЫ");
+                TranslateToggleText(tr.Field("chkRestore").GetValue<Toggle>(), "РЕМОНТ");
+                TranslateToggleText(tr.Field("chkBatteries").GetValue<Toggle>(), "БАТАРЕИ");
+                TranslateToggleText(tr.Field("chkBottles").GetValue<Toggle>(), "КИСЛОРОД");
+                TranslateToggleText(tr.Field("chkUnwear").GetValue<Toggle>(), "СНЯТЬ ШЛЕМ");
+            }
+            catch (Exception ex)
+            {
+                Plugin.Log.LogWarning("[i18n] GUIRosterRowSetOwnerPostfix failed: " + ex.Message);
+            }
+        }
+
+        private static void TranslateToggleText(Toggle toggle, string newText)
+        {
+            if (toggle == null) return;
+            var tmp = toggle.GetComponentInChildren<TMP_Text>();
+            if (tmp != null) tmp.text = newText;
+            var txt = toggle.GetComponentInChildren<Text>();
+            if (txt != null) txt.text = newText;
+        }
+
+        // Ship.LogGetHeader -> translates vessel metadata header in ship terminal logs
+        public static void ShipLogGetHeaderPostfix(List<JsonShipLog> __result)
+        {
+            if (__result == null || !LangPack.Active || !string.Equals(LangPack.Code, "ru", StringComparison.OrdinalIgnoreCase)) return;
+            try
+            {
+                for (int i = 0; i < __result.Count; i++)
+                {
+                    var entry = __result[i];
+                    if (entry == null || string.IsNullOrEmpty(entry.strEntry)) continue;
+                    var s = entry.strEntry;
+                    if (s.StartsWith("Vessel Name: ")) s = "Название судна: " + s.Substring(13);
+                    else if (s.StartsWith("REGID: ")) s = "Регистрация: " + s.Substring(7);
+                    else if (s.StartsWith("Date of Construction: ")) s = "Дата постройки: " + s.Substring(22);
+                    else if (s.StartsWith("Make: ")) s = "Производитель: " + s.Substring(6);
+                    else if (s.StartsWith("Model: ")) s = "Модель: " + s.Substring(7);
+                    else if (s.StartsWith("Homeport: ")) s = "Порт приписки: " + s.Substring(10);
+                    else if (s.StartsWith("Designation: ")) s = "Назначение: " + s.Substring(13);
+                    else if (s.StartsWith("Total Mass: ")) s = "Общая масса: " + s.Substring(12);
+                    entry.strEntry = s;
+                }
+            }
+            catch (Exception ex)
+            {
+                Plugin.Log.LogWarning("[i18n] ShipLogGetHeaderPostfix failed: " + ex.Message);
+            }
+        }
+
+        // ShipStatus.PrintStatus -> translates ship diagnostic report
+        public static void ShipStatusPrintStatusPostfix(ref string[] aValues)
+        {
+            if (aValues == null || !LangPack.Active || !string.Equals(LangPack.Code, "ru", StringComparison.OrdinalIgnoreCase)) return;
+            try
+            {
+                ShipStatus.aNames = new string[]
+                {
+                    "КЛАССИФИКАЦИЯ СУДНА:", "МАССА СУДНА:", "ТРАНСПОНДЕР:", "АНТЕННА ТРАНСПОНДЕРА:", "НАВ. СТАНЦИЯ:", "РЕАКТОР:", "РЕАКТОР HE3:", "РЕАКТОР D2O:", "МАНЕВРОВЫЕ ДВИГАТЕЛИ:", "РАСПРЕДЕЛИТЕЛЬ РСУ:",
+                    "РАБОЧЕЕ ТЕЛО РСУ:", "РЕЗЕРВНОЕ ПИТАНИЕ:", "НАСОСЫ О2 ЖИЗНЕОБЕСПЕЧЕНИЯ:", "ЗАПАСЫ О2 ЖИЗНЕОБЕСПЕЧЕНИЯ:", "ОБОГРЕВ ЖИЗНЕОБЕСПЕЧЕНИЯ:", "ОХЛАЖДЕНИЕ ЖИЗНЕОБЕСПЕЧЕНИЯ:"
+                };
+
+                for (int i = 0; i < aValues.Length; i++)
+                {
+                    if (aValues[i] == null) continue;
+                    aValues[i] = aValues[i]
+                        .Replace("ONLINE", "В СЕТИ")
+                        .Replace("OFFLINE", "ОТКЛЮЧЕН")
+                        .Replace("NOT FOUND", "НЕ НАЙДЕН")
+                        .Replace("ERROR", "ОШИБКА");
+                }
+            }
+            catch (Exception ex)
+            {
+                Plugin.Log.LogWarning("[i18n] ShipStatusPrintStatusPostfix failed: " + ex.Message);
+            }
+        }
+
+        private static readonly System.Reflection.PropertyInfo _mfdTitleProp = AccessTools.Property(typeof(Ostranauts.ShipGUIs.MFD.MFDPage), "Title");
+        private static readonly System.Reflection.PropertyInfo _mfdLeftProp = AccessTools.Property(typeof(Ostranauts.ShipGUIs.MFD.MFDPage), "Left");
+        private static readonly System.Reflection.PropertyInfo _mfdRightProp = AccessTools.Property(typeof(Ostranauts.ShipGUIs.MFD.MFDPage), "Right");
+
+        // MFDPage.UpdateDisplay -> localizes comms, docking, and sensor MFD interface
+        public static void MFDUpdateDisplayPrefix(Ostranauts.ShipGUIs.MFD.MFDPage __instance)
+        {
+            if (!LangPack.Active || !string.Equals(LangPack.Code, "ru", StringComparison.OrdinalIgnoreCase)) return;
+            try
+            {
+                var title = _mfdTitleProp?.GetValue(__instance) as string;
+                if (!string.IsNullOrEmpty(title))
+                {
+                    if (title == "MAIN MENU") _mfdTitleProp.SetValue(__instance, "ГЛАВНОЕ МЕНЮ");
+                    else if (title.StartsWith("CONNECTED WITH - ")) _mfdTitleProp.SetValue(__instance, "СВЯЗЬ: " + title.Substring(17));
+                    else if (title.StartsWith("DOCKED WITH: ")) _mfdTitleProp.SetValue(__instance, "ПРИСТЫКОВАН К: " + title.Substring(13));
+                    else if (title == "SELECT TARGET") _mfdTitleProp.SetValue(__instance, "ВЫБЕРИТЕ ЦЕЛЬ");
+                    else if (title == "NO TARGETS IN RANGE") _mfdTitleProp.SetValue(__instance, "НЕТ ЦЕЛЕЙ В ЗОНЕ ДЕЙСТВИЯ");
+                }
+
+                var left = _mfdLeftProp?.GetValue(__instance) as List<string>;
+                if (left != null)
+                {
+                    for (int i = 0; i < left.Count; i++)
+                    {
+                        var s = left[i];
+                        if (string.IsNullOrEmpty(s)) continue;
+                        if (s.StartsWith("ATC CHANNEL: ")) s = "ДИСПЕТЧЕР: " + s.Substring(13);
+                        else if (s == "<LOCAL CHANNEL") s = "<ОБЩИЙ КАНАЛ";
+                        else if (s == "<MESSAGE LOG") s = "<ЖУРНАЛ СВЯЗИ";
+                        else if (s == "<DOCK INFO") s = "<СТЫКОВКА";
+                        else if (s == "<UNREAD MESSAGES") s = "<НЕПРОЧИТАННЫЕ";
+                        else if (s == "<SHOW ON NAV MAP") s = "<НА КАРТУ";
+                        else if (s == "<PREVIOUS PAGE") s = "<ПРЕД. СТР.";
+                        else if (s == "<CYCLE PAGE") s = "<СМЕНА СТР.";
+                        else if (s == "NO CLEARANCE") s = "НЕТ РАЗРЕШЕНИЯ";
+                        else if (s == "<REQUEST CLEARANCE") s = "<ЗАПРОС РАЗРЕШ.";
+                        else if (s == "CLEARANCE AVAILABLE") s = "ЕСТЬ РАЗРЕШЕНИЕ";
+                        else if (s == "<DOCKING") s = "<СТЫКОВКА";
+                        else if (s == "<BACK") s = "<НАЗАД";
+                        else if (s == "Message sent") s = "Отправлено";
+                        else if (s == "Waiting for response") s = "Ожидание ответа";
+                        else if (s == "Port Open") s = "Порт открыт";
+                        else if (s.StartsWith("Docked: ")) s = "Стыковка: " + s.Substring(8);
+                        left[i] = s;
+                    }
+                }
+
+                var right = _mfdRightProp?.GetValue(__instance) as List<string>;
+                if (right != null)
+                {
+                    for (int i = 0; i < right.Count; i++)
+                    {
+                        var s = right[i];
+                        if (string.IsNullOrEmpty(s)) continue;
+                        if (s == "HAIL SHIP>") s = "ВЫЗОВ>";
+                        else if (s == "NEXT PAGE>") s = "СЛЕД. СТР.>";
+                        else if (s == "RETURN TO") s = "";
+                        else if (s == "MAIN MENU>") s = "В МЕНЮ>";
+                        right[i] = s;
+                    }
+                }
+
+                // Prevent text overlapping across columns on MFD screen
+                int maxRows = Math.Max(left != null ? left.Count : 0, right != null ? right.Count : 0);
+                for (int i = 0; i < maxRows; i++)
+                {
+                    bool hasLeft = left != null && i < left.Count && !string.IsNullOrEmpty(left[i]);
+                    bool hasRight = right != null && i < right.Count && !string.IsNullOrEmpty(right[i]);
+                    if (hasLeft && hasRight)
+                    {
+                        left[i] = ClampMFDString(left[i], 16, true);
+                        right[i] = ClampMFDString(right[i], 16, false);
+                    }
+                    else if (hasLeft)
+                    {
+                        left[i] = ClampMFDString(left[i], 30, true);
+                    }
+                    else if (hasRight)
+                    {
+                        right[i] = ClampMFDString(right[i], 30, false);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Plugin.Log.LogWarning("[i18n] MFDUpdateDisplayPrefix failed: " + ex.Message);
+            }
+        }
+
+        private static string ClampMFDString(string str, int maxLen, bool isLeft)
+        {
+            if (string.IsNullOrEmpty(str)) return str;
+            var clean = System.Text.RegularExpressions.Regex.Replace(str, "<.*?>", "");
+            if (clean.Length <= maxLen) return str;
+            if (isLeft)
+            {
+                if (str.StartsWith("< ")) return "< " + clean.Substring(2, Math.Min(maxLen - 4, clean.Length - 2)).TrimEnd() + "..";
+                if (str.StartsWith("<")) return "<" + clean.Substring(1, Math.Min(maxLen - 3, clean.Length - 1)).TrimEnd() + "..";
+                return clean.Substring(0, Math.Min(maxLen - 2, clean.Length)).TrimEnd() + "..";
+            }
+            else
+            {
+                if (str.EndsWith(" >")) return clean.Substring(0, Math.Min(maxLen - 4, clean.Length - 2)).TrimEnd() + ".. >";
+                if (str.EndsWith(">")) return clean.Substring(0, Math.Min(maxLen - 3, clean.Length - 1)).TrimEnd() + "..>";
+                return clean.Substring(0, Math.Min(maxLen - 2, clean.Length)).TrimEnd() + "..";
+            }
+        }
+
+        // GUITooltip2.SetToolTip -> translates ValueModule rough/precise value tooltips
+        public static void TooltipSetToolTipPrefix(ref string strTitle, ref string strBody)
+        {
+            if (!LangPack.Active || !string.Equals(LangPack.Code, "ru", StringComparison.OrdinalIgnoreCase)) return;
+            try
+            {
+                if (strTitle == "Rough Value")
+                {
+                    strTitle = "Приблизительная стоимость";
+                    strBody = "Оценка стоимости предмета на глаз неопытным космиком.";
+                }
+                else if (strTitle == "Precise Value")
+                {
+                    strTitle = "Точная стоимость";
+                    strBody = "Точная оценка стоимости опытным специалистом.";
+                }
+                else if (strTitle == "Shift and Active Effects")
+                {
+                    strTitle = "Эффекты смены и активности";
+                }
+                else if (strTitle == "Fast-Forward Risks")
+                {
+                    strTitle = "Риски перемотки времени";
+                    strBody = "Эти состояния опасны для жизни, перемотка времени может привести к гибели!";
+                }
+            }
+            catch { }
+        }
+
+        // GUITooltip.TooltipTextFormat4 -> translates interaction tooltip effects, needs, items
+        public static void TooltipTextFormat4Postfix(ref string __result)
+        {
+            if (string.IsNullOrEmpty(__result) || !LangPack.Active || !string.Equals(LangPack.Code, "ru", StringComparison.OrdinalIgnoreCase)) return;
+            try
+            {
+                __result = __result.Replace("<b>Effects:</b>", "<b>Эффекты:</b>")
+                                   .Replace("<b>We need:</b>", "<b>Нам нужно:</b>")
+                                   .Replace("<b>We can't be:</b>", "<b>Мы не можем быть:</b>")
+                                   .Replace("<b>Tools required:</b>", "<b>Требуются инструменты:</b>")
+                                   .Replace("<b>Input items required:</b>", "<b>Требуются предметы:</b>")
+                                   .Replace("<b>Items given:</b>", "<b>Получаемые предметы:</b>")
+                                   .Replace("<b>Items consumed:</b>", "<b>Расходуемые предметы:</b>")
+                                   .Replace("Us: ", "Ты: ")
+                                   .Replace("Them: ", "Собеседник: ")
+                                   .Replace("Not always available.", "Доступно не всегда.")
+                                   .Replace("Keeps control.", "Сохраняет контроль.");
+            }
+            catch { }
+        }
+
+        private static readonly Dictionary<string, string> PDAJobButtonMap = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
+        {
+            { "HULL", "КОРП" },
+            { "HVAC", "КЛИМ" },
+            { "POWR", "ЭНЕР" },
+            { "SENS", "СЕНС" },
+            { "CTRL", "УПР" },
+            { "FURN", "МЕБ" },
+            { "APPS", "ПРИЛ" },
+            { "MISC", "РАЗН" },
+            { "CANC", "ОТМН" },
+            { "UNIN", "ДЕМО" },
+            { "SCRA", "ЛОМ" },
+            { "REPR", "РЕМ" },
+            { "DISM", "РАЗБ" },
+            { "HAUL", "ТАСК" },
+            { "MINE", "ДОБ" },
+            { "LOAD", "ЗАГР" }
+        };
+
+        // GUIPDA.ShowJobPaintUI -> localizes PDA construction categories and action button labels
+        public static void ShowJobPaintUIPostfix(GUIPDA __instance)
+        {
+            if (!LangPack.Active || __instance == null || !string.Equals(LangPack.Code, "ru", StringComparison.OrdinalIgnoreCase)) return;
+            try
+            {
+                var texts = __instance.GetComponentsInChildren<TMPro.TextMeshProUGUI>(true);
+                foreach (var t in texts)
+                {
+                    if (t == null || string.IsNullOrEmpty(t.text)) continue;
+                    var trimmed = t.text.Trim();
+                    if (PDAJobButtonMap.TryGetValue(trimmed, out var localized))
+                    {
+                        FontFallback.EnsureCyrillicFont(t);
+                        t.text = localized;
+                    }
+                }
+            }
+            catch { }
+        }
+
+        // Ostranauts.Core.LogHandler.LogMessage -> translates in-game action log messages (gains, loses, etc.)
+        public static void LogMessagePrefix(ref string logString)
+        {
+            if (string.IsNullOrEmpty(logString) || !LangPack.Active || !string.Equals(LangPack.Code, "ru", StringComparison.OrdinalIgnoreCase)) return;
+            try
+            {
+                if (logString.Contains(" gains "))
+                    logString = logString.Replace(" gains ", " получает ");
+                if (logString.Contains(" loses "))
+                    logString = logString.Replace(" loses ", " теряет ");
+                if (logString.Contains(" no longer "))
+                    logString = logString.Replace(" no longer ", " больше не ");
+            }
+            catch { }
+        }
+
+        private static readonly Dictionary<string, string> ObjectiveTranslations = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+        private static bool _objectivesLoaded;
+
+        public static void EnsureObjectiveTranslationsLoaded()
+        {
+            if (_objectivesLoaded) return;
+            _objectivesLoaded = true;
+            try
+            {
+                var path = System.IO.Path.Combine(Plugin.DataDir.Value, "langs", LangPack.Code, "data", "tutorial_objectives.json");
+                if (System.IO.File.Exists(path))
+                {
+                    var json = System.IO.File.ReadAllText(path);
+                    using var doc = System.Text.Json.JsonDocument.Parse(json);
+                    foreach (var prop in doc.RootElement.EnumerateObject())
+                    {
+                        ObjectiveTranslations[prop.Name] = prop.Value.GetString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Plugin.Log.LogWarning("[i18n] EnsureObjectiveTranslationsLoaded failed: " + ex.Message);
+            }
+        }
+
+        public static string TranslateObjectiveText(string text)
+        {
+            if (string.IsNullOrEmpty(text) || !LangPack.Active || !string.Equals(LangPack.Code, "ru", StringComparison.OrdinalIgnoreCase))
+                return text;
+
+            EnsureObjectiveTranslationsLoaded();
+
+            if (ObjectiveTranslations.TryGetValue(text, out var direct))
+                return direct;
+
+            var res = text;
+            foreach (var kv in ObjectiveTranslations)
+            {
+                if (res.Contains(kv.Key))
+                    res = res.Replace(kv.Key, kv.Value);
+            }
+            return res;
+        }
+
+        // ObjectivePanel.SetData & RefreshText -> localizes objectives list entries in PDA
+        public static void ObjectivePanelSetDataPostfix(Ostranauts.Objectives.ObjectivePanel __instance)
+        {
+            if (!LangPack.Active || __instance == null || !string.Equals(LangPack.Code, "ru", StringComparison.OrdinalIgnoreCase)) return;
+            try
+            {
+                var tr = Traverse.Create(__instance);
+                var txtTitle = tr.Field("_txtTitle").GetValue<TMPro.TextMeshProUGUI>();
+                var txtDesc = tr.Field("_txtDescription").GetValue<TMPro.TextMeshProUGUI>();
+                if (txtTitle != null && !string.IsNullOrEmpty(txtTitle.text))
+                {
+                    FontFallback.EnsureCyrillicFont(txtTitle);
+                    txtTitle.text = TranslateObjectiveText(txtTitle.text);
+                }
+                if (txtDesc != null && !string.IsNullOrEmpty(txtDesc.text))
+                {
+                    FontFallback.EnsureCyrillicFont(txtDesc);
+                    txtDesc.text = TranslateObjectiveText(txtDesc.text);
+                }
+            }
+            catch { }
+        }
+
+        public static void ObjectivePanelRefreshTextPostfix(Ostranauts.Objectives.ObjectivePanel __instance)
+        {
+            ObjectivePanelSetDataPostfix(__instance);
+        }
+
+        public static void ObjectivePlotPanelSetDataPostfix(Ostranauts.Objectives.ObjectivePlotPanel __instance)
+        {
+            if (!LangPack.Active || __instance == null || !string.Equals(LangPack.Code, "ru", StringComparison.OrdinalIgnoreCase)) return;
+            try
+            {
+                var tr = Traverse.Create(__instance);
+                var txtTitle = tr.Field("_txtTitle").GetValue<TMPro.TextMeshProUGUI>();
+                var txtDesc = tr.Field("_txtDescription").GetValue<TMPro.TextMeshProUGUI>();
+                if (txtTitle != null && !string.IsNullOrEmpty(txtTitle.text))
+                {
+                    FontFallback.EnsureCyrillicFont(txtTitle);
+                    txtTitle.text = TranslateObjectiveText(txtTitle.text);
+                }
+                if (txtDesc != null && !string.IsNullOrEmpty(txtDesc.text))
+                {
+                    FontFallback.EnsureCyrillicFont(txtDesc);
+                    txtDesc.text = TranslateObjectiveText(txtDesc.text);
+                }
+            }
+            catch { }
+        }
+
+        // Interaction.FailReasons -> translate hardcoded English failure strings
+        public static void FailReasonsPostfix(ref string __result)
+        {
+            if (!LangPack.Active || !string.Equals(LangPack.Code, "ru", StringComparison.OrdinalIgnoreCase)) return;
+            if (string.IsNullOrEmpty(__result)) return;
+            try
+            {
+                __result = __result
+                    .Replace(" Missing item x", " Не хватает предметов x")
+                    .Replace(" Missing item: ", " Не хватает предмета: ")
+                    .Replace(" Item present but, ", " Предмет есть, но: ")
+                    .Replace(" x Not Enough: ", " x недостаточно: ")
+                    .Replace(" Item present but, Not Enough: ", " Предмет есть, но мало: ")
+                    .Replace(" We are ", " Мы: ")
+                    .Replace(" Target is ", " Цель: ")
+                    .Replace(" Room is ", " Помещение: ")
+                    .Replace(" 3rd party is ", " Третья сторона: ")
+                    .Replace("Невозможно выполнить.", "Невозможно выполнить.")
+                    .Replace("Can't do this.", "Невозможно выполнить.");
+
+                // Translate "Is <ConditionName>" -> just condition name (the "Is" is a condition prefix)
+                __result = System.Text.RegularExpressions.Regex.Replace(
+                    __result, @"\bIs ([A-Z][a-zA-Z]+)", "$1");
+            }
+            catch (Exception ex)
+            {
+                Plugin.Log.LogWarning("[i18n] FailReasonsPostfix failed: " + ex.Message);
+            }
+        }
+
+        // GUIReactor.Awake -> translate fusion reactor Chinese/English panel labels
+        public static void GUIReactorAwakePostfix(GUIReactor __instance)
+        {
+            if (!LangPack.Active || !string.Equals(LangPack.Code, "ru", StringComparison.OrdinalIgnoreCase)) return;
+            try
+            {
+                var texts = __instance.GetComponentsInChildren<Text>(true);
+                if (texts != null)
+                {
+                    foreach (var t in texts)
+                    {
+                        if (t == null || string.IsNullOrEmpty(t.text)) continue;
+                        t.text = TranslateReactorText(t.text);
+                    }
+                }
+                var tmpTexts = __instance.GetComponentsInChildren<TMP_Text>(true);
+                if (tmpTexts != null)
+                {
+                    foreach (var t in tmpTexts)
+                    {
+                        if (t == null || string.IsNullOrEmpty(t.text)) continue;
+                        FontFallback.EnsureCyrillicFont(t);
+                        t.text = TranslateReactorText(t.text);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Plugin.Log.LogWarning("[i18n] GUIReactorAwakePostfix failed: " + ex.Message);
+            }
+        }
+
+        private static string TranslateReactorText(string orig)
+        {
+            if (string.IsNullOrEmpty(orig)) return orig;
+            var s = orig.Trim();
+            if (_reactorDict.TryGetValue(s, out var tr)) return tr;
+            if (_reactorDict.TryGetValue(orig, out var trExact)) return trExact;
+            return orig;
+        }
+
+        private static readonly Dictionary<string, string> _reactorDict = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
+        {
+            { "初始化 / IGNITION SEQUENCE", "ЗАПУСК / ПОСЛЕДОВАТЕЛЬНОСТЬ" },
+            { "1. 母线 / PWR BUS", "1. СЕТЬ / PWR BUS" },
+            { "2. 炉腔泄压 / CORE PURGE", "2. ПРОДУВКА / CORE PURGE" },
+            { "3. 激光电容器 / LAS CAP", "3. КОНДЕНСАТОР / LAS CAP" },
+            { "4. 激光校准 / LAS ALIGN", "4. ЮСТИРОВКА / LAS ALIGN" },
+            { "5. 靶丸给料 / PELL FEED", "5. ПОДАЧА ТОПЛИВА / PELL FEED" },
+            { "6. 低温 / CRYO", "6. КРИОГЕНИКА / CRYO" },
+            { "7. 燃油管制 / FUEL REG", "7. РЕГУЛЯТОР / FUEL REG" },
+            { "8. 磁场线圈 / FIELD COILS", "8. КАТУШКИ / FIELD COILS" },
+            { "9. 发电机 / MHD", "9. МГД-ГЕНЕРАТОР / MHD" },
+            { "10. 点火 / IGNITION", "10. ЗАЖИГАНИЕ / IGNITION" },
+            { "功率 / POWER (TW)", "МОЩНОСТЬ / POWER (TW)" },
+            { "炉腔温度\nCORE TEMP\n(MeV)", "ТЕМПЕРАТУРА В РЕАКТОРЕ / CORE TEMP (MeV)" },
+            { "炉腔温度 / CORE TEMP", "ТЕМПЕРАТУРА / CORE TEMP" },
+            { "炉腔负压 / CORE PRESSURE", "ДАВЛЕНИЕ В РЕАКТОРЕ / CORE PRESSURE" },
+            { "电容器充电 / CAPACITOR CHARGE", "ЗАРЯД КОНДЕНСАТОРОВ / CAPACITOR CHARGE" },
+            { "燃料 / FUEL", "ТОПЛИВО / FUEL" },
+            { "磁场线圈 / FIELD COILS", "МАГНИТНЫЕ КАТУШКИ / FIELD COILS" },
+            { "点火\nIGNITION", "ЗАЖИГАНИЕ\nIGNITION" },
+            { "点火 / IGNITION", "ЗАЖИГАНИЕ / IGNITION" },
+            { "电池\nBATT.\n(%)", "АКБ\nBATT.\n(%)" },
+            { "电池 / BATT.", "АКБ / BATT." },
+            { "流量\nFLOW", "РАСХОД\nFLOW" },
+            { "流量 / FLOW", "РАСХОД / FLOW" },
+            { "总电力\nTOTAL", "ВСЕГО\nTOTAL" },
+            { "总电力 / TOTAL", "ВСЕГО / TOTAL" },
+            { "聚变炉\nFUS", "РЕАКТОР\nFUS" },
+            { "聚变炉 / FUS", "РЕАКТОР / FUS" },
+            { "磁流机\nMHD", "МГД\nMHD" },
+            { "磁流机 / MHD", "МГД / MHD" },
+            { "推进器\nTHR", "ДВИГ.\nTHR" },
+            { "推进器 / THR", "ДВИГ. / THR" },
+            { "配荷\nLOAD", "НАГРУЗКА\nLOAD" },
+            { "配荷 / LOAD", "НАГРУЗКА / LOAD" },
+            { "推进器 / THRUST", "ТЯГА / THRUST" },
+            { "循环 / CYCLE", "ЦИКЛ / CYCLE" },
+            { "开启 / OPEN", "ОТКРЫТО / OPEN" },
+            { "关/ CLOSED", "ЗАКРЫТО / CLOSED" },
+            { "关 / CLOSED", "ЗАКРЫТО / CLOSED" },
+            { "关/ OFF", "ВЫКЛ / OFF" },
+            { "关 / OFF", "ВЫКЛ / OFF" },
+            { "活性 / ACTIVE", "АКТИВНО / ACTIVE" },
+            { "低温\nCRYO", "КРИО\nCRYO" },
+            { "低温 / CRYO", "КРИО / CRYO" },
+            { "前置\nFWD", "ПЕРЕД\nFWD" },
+            { "前置 / FWD", "ПЕРЕД / FWD" },
+            { "后\nREAR", "ЗАД\nREAR" },
+            { "后 / REAR", "ЗАД / REAR" },
+            { "燃料调控\nFUEL REG", "РЕГУЛ.\nFUEL REG" },
+            { "燃料调控 / FUEL REG", "РЕГУЛ. / FUEL REG" },
+            { "附近车站/STATION\nPROXIMITY", "СТАНЦИЯ РЯДОМ / STATION PROXIMITY" },
+            { "附近车站 / STATION PROXIMITY", "СТАНЦИЯ РЯДОМ / STATION PROXIMITY" },
+            { "母线 / PWR BUS", "СЕТЬ / PWR BUS" },
+            { "充电 / CHRG", "ЗАРЯД / CHRG" },
+            { "电池 / BATT", "АКБ / BATT" },
+            { "零 / ZERO", "НОЛЬ / ZERO" },
+            { "最大 / MAX", "МАКС / MAX" },
+            { "真空\nVAC", "ВАКУУМ\nVAC" },
+            { "粗\nROUGH", "ФОРВАК.\nROUGH" },
+            { "危险\nDANGER", "ОПАСНО\nDANGER" },
+            { "亏电\nEMPTY", "РАЗРЯД\nEMPTY" },
+            { "就绪\nREADY", "ГОТОВО\nREADY" },
+            { "X射线\nX-RAY", "РЕНТГЕН\nX-RAY" },
+            { "熔蚀层\nCORE LINER", "ФУТЕРОВКА\nCORE LINER" },
+            { "激光电容器\nLAS CAP", "КОНДЕНСАТОР\nLAS CAP" },
+            { "激光校准\nLAS ALIGN", "ЮСТИРОВКА\nLAS ALIGN" },
+            { "靶丸给料\nPELL FEED", "ПОДАЧА\nPELL FEED" },
+            { "警报\nWARN", "ТРЕВОГА\nWARN" },
+            { "炉腔泄压\nCORE PURGE", "ПРОДУВКА\nCORE PURGE" },
+            { "粗抽 / RGH", "ФОРВАКУУМ / RGH" },
+            { "涡度 / TRB", "ТУРБО / TRB" }
+        };
     }
 }
+

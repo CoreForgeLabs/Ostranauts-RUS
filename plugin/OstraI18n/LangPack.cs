@@ -67,72 +67,130 @@ namespace OstraI18n
         internal static void Load(string dir, string lang, bool formalYou)
         {
             Lang = lang;
+            // ALWAYS clear all dictionaries first to prevent stale data from previous language
+            Pronouns.Clear();
+            Strings.Clear();
+            Verbs.Clear();
+            OverlayCategoryToField.Clear();
+            OverlayTranslatableFields.Clear();
+            OverlayValid = false;
+            YouWord = "you";
+            Resolver = null;
+
             Active = !string.Equals(lang, "English", StringComparison.OrdinalIgnoreCase);
-            if (!Active) return;
-            // FormalYou (vy-form) is not yet a field the pack format supports
-            // (langs/ru/pack.json has a single "you", no formal variant) --
-            // previously this hardcoded a Russian "вы" override here, which
-            // both violated C2 AND was silently discarded a few lines down
-            // whenever the pack itself provided "you" (which it always does
-            // for ru today), i.e. it never actually took effect. Rather than
-            // re-add a hardcoded Russian word, surface the gap loudly so it's
-            // visible instead of silently doing nothing.
-            if (formalYou)
-                Plugin.Log.LogWarning("[i18n] FormalYou=true, but the active pack format has no formal-address "
-                    + "field yet - config option currently has no effect (tracked for a future grammar-data task)");
 
             var langsDir = Path.Combine(dir, "langs");
             var manifestPath = Path.Combine(langsDir, "languages.json");
-            string folder = "lang_" + lang.ToLowerInvariant();   // default convention
+            string code = lang.ToLowerInvariant();
+            if (code.StartsWith("lang_", StringComparison.OrdinalIgnoreCase))
+                code = code.Substring("lang_".Length);
+
             try
             {
                 if (File.Exists(manifestPath))
                 {
                     var md = (IDictionary)JsonMapper.ToObject(File.ReadAllText(manifestPath));
-                    foreach (var cand in new[] { lang, lang.ToLowerInvariant() })
-                        if (md.Contains(cand)) { folder = (string)((JsonData)md[cand]); break; }
+                    foreach (var cand in new[] { lang, lang.ToLowerInvariant(), code })
+                    {
+                        if (md.Contains(cand))
+                        {
+                            var mapped = (string)((JsonData)md[cand]);
+                            if (!string.IsNullOrEmpty(mapped))
+                            {
+                                code = mapped.StartsWith("lang_", StringComparison.OrdinalIgnoreCase) ? mapped.Substring(5) : mapped;
+                                break;
+                            }
+                        }
+                    }
                 }
             }
             catch (Exception ex) { Plugin.Log.LogWarning("[i18n] languages.json: " + ex.Message); }
 
-            // Short ISO code used by the new pack.json layout (langs/<code>/), derived
-            // from the resolved legacy folder name ("lang_ru" -> "ru") since that's the
-            // convention Task 5.2 migrated under; falls back to the language name itself
-            // if the folder doesn't follow the "lang_" prefix convention.
-            string code = folder.StartsWith("lang_", StringComparison.OrdinalIgnoreCase)
-                ? folder.Substring("lang_".Length)
-                : lang.ToLowerInvariant();
             Code = code;
 
-            var newDir = Path.Combine(langsDir, code);
-            var oldDir = Path.Combine(langsDir, folder);
-            bool preferNew = File.Exists(Path.Combine(newDir, "pack.json"));
-            var packDir = preferNew ? newDir : oldDir;
+            var packDir = Path.Combine(langsDir, code);
+            if (!Directory.Exists(packDir))
+            {
+                // Fallback 1: try the raw lang name as folder
+                if (Directory.Exists(Path.Combine(langsDir, lang)))
+                    packDir = Path.Combine(langsDir, lang);
+                // Fallback 2: try legacy "lang_" prefix
+                else if (Directory.Exists(Path.Combine(langsDir, "lang_" + code)))
+                    packDir = Path.Combine(langsDir, "lang_" + code);
+                // Fallback 3: scan meta.json files in all subdirectories
+                else if (Directory.Exists(langsDir))
+                {
+                    foreach (var sub in Directory.GetDirectories(langsDir))
+                    {
+                        var metaPath = Path.Combine(sub, "meta.json");
+                        if (!File.Exists(metaPath)) continue;
+                        try
+                        {
+                            var metaText = File.ReadAllText(metaPath);
+                            // Quick substring check to avoid full JSON parse for every folder
+                            if (metaText.Contains(lang) || metaText.Contains(code))
+                            {
+                                using var metaDoc = System.Text.Json.JsonDocument.Parse(metaText);
+                                var root = metaDoc.RootElement;
+                                string metaCode = null, metaName = null, metaNameEn = null;
+                                if (root.TryGetProperty("code", out var cEl)) metaCode = cEl.GetString();
+                                if (root.TryGetProperty("name", out var nEl)) metaName = nEl.GetString();
+                                if (root.TryGetProperty("nameEnglish", out var neEl)) metaNameEn = neEl.GetString();
 
-            Plugin.Log.LogInfo("[i18n] language '" + lang + "' -> " + folder + (preferNew ? " (new layout: " + code + ")" : ""));
+                                if (string.Equals(metaCode, lang, StringComparison.OrdinalIgnoreCase)
+                                    || string.Equals(metaCode, code, StringComparison.OrdinalIgnoreCase)
+                                    || string.Equals(metaName, lang, StringComparison.OrdinalIgnoreCase)
+                                    || string.Equals(metaNameEn, lang, StringComparison.OrdinalIgnoreCase))
+                                {
+                                    code = metaCode ?? Path.GetFileName(sub);
+                                    Code = code;
+                                    packDir = sub;
+                                    Active = !string.Equals(metaNameEn ?? metaName ?? lang, "English", StringComparison.OrdinalIgnoreCase);
+                                    Plugin.Log.LogInfo("[i18n] resolved '" + lang + "' via meta.json in " + sub + " -> code=" + code);
+                                    break;
+                                }
+                            }
+                        }
+                        catch { }
+                    }
+                }
+            }
+
+            Plugin.Log.LogInfo("[i18n] language '" + lang + "' -> packDir=" + packDir + " (code=" + code + ", active=" + Active + ")");
+
+            if (!Directory.Exists(packDir))
+            {
+                Plugin.Log.LogWarning("[i18n] Language pack directory not found: " + packDir);
+                return;
+            }
+
+            // FormalYou (vy-form) is not yet a field the pack format supports
+            if (formalYou && Active)
+                Plugin.Log.LogWarning("[i18n] FormalYou=true, but the active pack format has no formal-address "
+                    + "field yet - config option currently has no effect (tracked for a future grammar-data task)");
 
             var result = GrammarPackLoader.Load(packDir);
             if (result.UsedLegacyLayout)
                 Plugin.Log.LogWarning("[i18n] " + packDir + ": no pack.json found - legacy layout fallback (grammar.json)");
 
             if (result.YouWord != null) YouWord = result.YouWord;
-            else Plugin.Log.LogWarning("[i18n] " + packDir + ": pack has no \"you\" field - keeping placeholder '"
+            else if (Active) Plugin.Log.LogWarning("[i18n] " + packDir + ": pack has no \"you\" field - keeping placeholder '"
                 + YouWord + "' (grammar output for 2nd person will look wrong until pack.json is fixed)");
             foreach (var kv in result.Pronouns) Pronouns[kv.Key] = kv.Value;
             int missingNoLonger = 0;
             foreach (var kv in result.Verbs)
             {
+                if (string.Equals(code, "ru", StringComparison.OrdinalIgnoreCase))
+                {
+                    if (kv.Value.NoLongerBefore == VerbForms.DefaultNoLongerBefore)
+                    {
+                        kv.Value.NoLongerBefore = "больше не ";
+                    }
+                }
                 Verbs[kv.Key] = kv.Value;
-                // Task 5.6 (C2 fix round 3): count verbs that fell back to the
-                // language-neutral VerbForms.DefaultNoLongerBefore because
-                // verbs.json didn't declare an explicit "noLonger" override
-                // for them -- same "log loud, don't silently ship a
-                // hardcoded-looking-like-pack-data string" pattern as YouWord
-                // above. One aggregate warning, not one per verb (417 verbs
-                // in the ru pack -- per-verb would be log spam).
                 if (kv.Value.NoLongerBefore == VerbForms.DefaultNoLongerBefore) missingNoLonger++;
             }
-            if (missingNoLonger > 0)
+            if (missingNoLonger > 0 && Active && !string.Equals(code, "ru", StringComparison.OrdinalIgnoreCase))
                 Plugin.Log.LogWarning("[i18n] " + packDir + ": " + missingNoLonger + " of " + result.Verbs.Count
                     + " verbs have no \"noLonger\" override in verbs.json - using placeholder '"
                     + VerbForms.DefaultNoLongerBefore + "' (negated grammar output will look wrong until fixed)");
@@ -145,15 +203,7 @@ namespace OstraI18n
             Plugin.Log.LogInfo("[i18n] pack " + lang + " [" + packDir + "]: " + Pronouns.Count + " pronoun cats, "
                 + Verbs.Count + " verbs, " + Strings.Count + " strings");
 
-            // Task 6.4: load named_forms.json/morph_rules.json (Task 6.2/6.3 outputs)
-            // and build the live TokenResolver. TokenResolver.Load takes the langs/
-            // dir + short code convention (same "code" resolved above), always
-            // matching the SAME packDir this LangPack load just used -- so if this
-            // ever loaded the legacy layout (preferNew=false), the resolver would
-            // look for named_forms.json/morph_rules.json in langsDir/<code>/ which
-            // may not exist for that language; TokenResolver.Load degrades to an
-            // empty table/ruleset rather than throwing in that case, and Resolve()
-            // just falls through to nominative (MissCount increments).
+            // Load named_forms.json/morph_rules.json and build the live TokenResolver
             Resolver = TokenResolver.Load(langsDir, code);
             Plugin.Log.LogInfo("[i18n] token resolver [" + code + "]: loaded (named_forms.json + morph_rules.json under "
                 + Path.Combine(langsDir, code) + ")");

@@ -1,0 +1,281 @@
+﻿[
+  {
+    "strName" : "ItmNavMod",
+    "strNameShort" : "Nav Module",
+    "strNameFriendly" : "Nav Module",
+    "strDesc" : "Nav Station Module",
+    "strItemDef" : "ItmNavMod",
+    "strType"    : "Item",
+    "strLoot"    : null,
+    "aInteractions" : [
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds" : [
+      "IsHandheld=1.0x1.0",
+      "IsNavMod=1x1",
+      "IsRigid=1.0x1.0",
+      "IsPocketable=1.0x1.0",
+      "IsPolaris=1.0x1",
+      "IsSolid=1.0x1.0",
+      "IsTechnology=1.0x1",
+      "StatDismantleProgressMax=1.0x100",
+      "StatRepairProgressMax=1.0x480",
+      "StatMass=1.0x0.4",
+      "StatBasePrice=1.0x767",
+      "StatDamageMax=1.0x4",
+      "IsCategoryControlSystems=1.0x1"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTNavModDamage,StatDamageMax,1.0"
+    ],
+    "mapCondTolerance"       : [
+    ],
+    "mapChargeProfiles"  : [
+      "Melee","MeleeAttackDefaultFragile"
+    ],
+    "mapGUIPropMaps"  :[
+      "NavMod","NavModControls"
+    ],
+    "strPortraitImg"  : "navmod/ItmNavMod01",
+    "strAudioEmitter" : "ItmSmallPlasticGeneralSound",
+    "mapSlotEffects" : [
+      "heldL","HeldItmDefaultL",
+      "heldR","HeldItmDefaultR"
+    ],
+    "jsonPI"        : null
+  },
+  {
+    "strName" : "ItmNavModDmg",
+    "strNameShort" : "Nav Module (Dmg)",
+    "strNameFriendly" : "Nav Module (Damaged)",
+    "strDesc" : "Nav Station Module",
+    "strItemDef" : "ItmNavModDmg",
+    "strType"    : "Item",
+    "strLoot"    : null,
+    "aInteractions" : [
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds" : [
+      "IsDamaged=1.0x1.0",
+      "IsHandheld=1.0x1.0",
+      "IsNavMod=1x1",
+      "IsRigid=1.0x1.0",
+      "IsPocketable=1.0x1.0",
+      "IsPolaris=1.0x1",
+      "IsSolid=1.0x1.0",
+      "IsTechnology=1.0x1",
+      "StatDismantleProgressMax=1.0x100",
+      "StatRepairProgressMax=1.0x480",
+      "StatMass=1.0x0.4",
+      "StatBasePrice=1.0x159",
+      "StatDamageMax=1.0x4",
+      "IsCategoryControlSystems=1.0x1"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTNavModDestroy,StatDamageMax,1.0"
+    ],
+    "mapCondTolerance"       : [
+    ],
+    "mapChargeProfiles"  : [
+      "Melee","MeleeAttackDefaultFragile"
+    ],
+    "mapGUIPropMaps"  :[
+      "NavMod","NavModControls"
+    ],
+    "strPortraitImg"  : "navmod/ItmNavMod01Dmg",
+    "strAudioEmitter" : "ItmSmallPlasticGeneralSound",
+    "mapSlotEffects" : [
+      "heldL","HeldItmDefaultL",
+      "heldR","HeldItmDefaultR"
+    ],
+    "jsonPI"        : null
+  },
+  {
+    "strName" : "ItmNavModMobo",
+    "strNameShort" : "Nav Module",
+    "strNameFriendly" : "Nav Module",
+    "strDesc" : "Nav Station Module w/Mobo",
+    "strItemDef" : "ItmNavMod",
+    "strType"    : "Item",
+    "strLoot"    : null,
+    "aInteractions" : [
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds" : [
+      "IsHandheld=1.0x1.0",
+      "IsNavMod=1x1",
+      "IsRigid=1.0x1.0",
+      "IsPocketable=1.0x1.0",
+      "IsPolaris=1.0x1",
+      "IsSolid=1.0x1.0",
+      "IsTechnology=1.0x1",
+      "StatDismantleProgressMax=1.0x100",
+      "StatRepairProgressMax=1.0x480",
+      "StatMass=1.0x0.4",
+      "StatBasePrice=1.0x767",
+      "StatDamageMax=1.0x4",
+      "IsCategoryControlSystems=1.0x1"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTNavModMoboDamage,StatDamageMax,1.0"
+    ],
+    "mapCondTolerance"       : [
+    ],
+    "mapChargeProfiles"  : [
+      "Melee","MeleeAttackDefaultFragile"
+    ],
+    "mapGUIPropMaps"  :[
+      "NavMod","NavModControls"
+    ],
+    "strPortraitImg"  : "navmod/ItmNavMod01",
+    "strAudioEmitter" : "ItmSmallPlasticGeneralSound",
+    "mapSlotEffects" : [
+      "heldL","HeldItmDefaultL",
+      "heldR","HeldItmDefaultR"
+    ],
+    "jsonPI"        : null
+  },
+  {
+    "strName" : "ItmNavModMoboDmg",
+    "strNameShort" : "Nav Module (Dmg)",
+    "strNameFriendly" : "Nav Module (Damaged)",
+    "strDesc" : "Nav Station Module w/Mobo",
+    "strItemDef" : "ItmNavModDmg",
+    "strType"    : "Item",
+    "strLoot"    : null,
+    "aInteractions" : [
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds" : [
+      "IsDamaged=1.0x1.0",
+      "IsHandheld=1.0x1.0",
+      "IsNavMod=1x1",
+      "IsRigid=1.0x1.0",
+      "IsPocketable=1.0x1.0",
+      "IsPolaris=1.0x1",
+      "IsSolid=1.0x1.0",
+      "IsTechnology=1.0x1",
+      "StatDismantleProgressMax=1.0x100",
+      "StatRepairProgressMax=1.0x480",
+      "StatMass=1.0x0.4",
+      "StatBasePrice=1.0x159",
+      "StatDamageMax=1.0x4",
+      "IsCategoryControlSystems=1.0x1"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTNavModMoboDestroy,StatDamageMax,1.0"
+    ],
+    "mapCondTolerance"       : [
+    ],
+    "mapChargeProfiles"  : [
+      "Melee","MeleeAttackDefaultFragile"
+    ],
+    "mapGUIPropMaps"  :[
+      "NavMod","NavModControls"
+    ],
+    "strPortraitImg"  : "navmod/ItmNavMod01Dmg",
+    "strAudioEmitter" : "ItmSmallPlasticGeneralSound",
+    "mapSlotEffects" : [
+      "heldL","HeldItmDefaultL",
+      "heldR","HeldItmDefaultR"
+    ],
+    "jsonPI"        : null
+  },
+  {
+    "strName" : "ItmNavModMoboScreen",
+    "strNameShort" : "Nav Module",
+    "strNameFriendly" : "Nav Module",
+    "strDesc" : "Nav Station Module w/Mobo & Screen",
+    "strItemDef" : "ItmNavMod",
+    "strType"    : "Item",
+    "strLoot"    : null,
+    "aInteractions" : [
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds" : [
+      "IsHandheld=1.0x1.0",
+      "IsNavMod=1x1",
+      "IsRigid=1.0x1.0",
+      "IsPocketable=1.0x1.0",
+      "IsPolaris=1.0x1",
+      "IsSolid=1.0x1.0",
+      "IsTechnology=1.0x1",
+      "StatDismantleProgressMax=1.0x100",
+      "StatRepairProgressMax=1.0x480",
+      "StatMass=1.0x0.4",
+      "StatBasePrice=1.0x767",
+      "StatDamageMax=1.0x4",
+      "IsCategoryControlSystems=1.0x1"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTNavModMoboScreenDamage,StatDamageMax,1.0"
+    ],
+    "mapCondTolerance"       : [
+    ],
+    "mapChargeProfiles"  : [
+      "Melee","MeleeAttackDefaultFragile"
+    ],
+    "mapGUIPropMaps"  :[
+      "NavMod","NavModControls"
+    ],
+    "strPortraitImg"  : "navmod/ItmNavMod01",
+    "strAudioEmitter" : "ItmSmallPlasticGeneralSound",
+    "mapSlotEffects" : [
+      "heldL","HeldItmDefaultL",
+      "heldR","HeldItmDefaultR"
+    ],
+    "jsonPI"        : null
+  },
+  {
+    "strName" : "ItmNavModMoboScreenDmg",
+    "strNameShort" : "Nav Module (Dmg)",
+    "strNameFriendly" : "Nav Module (Damaged)",
+    "strDesc" : "Nav Station Module w/Mobo & Screen",
+    "strItemDef" : "ItmNavModDmg",
+    "strType"    : "Item",
+    "strLoot"    : null,
+    "aInteractions" : [
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds" : [
+      "IsDamaged=1.0x1.0",
+      "IsHandheld=1.0x1.0",
+      "IsNavMod=1x1",
+      "IsRigid=1.0x1.0",
+      "IsPocketable=1.0x1.0",
+      "IsPolaris=1.0x1",
+      "IsSolid=1.0x1.0",
+      "IsTechnology=1.0x1",
+      "StatDismantleProgressMax=1.0x100",
+      "StatRepairProgressMax=1.0x480",
+      "StatMass=1.0x0.4",
+      "StatBasePrice=1.0x159",
+      "StatDamageMax=1.0x4",
+      "IsCategoryControlSystems=1.0x1"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTNavModMoboScreenDestroy,StatDamageMax,1.0"
+    ],
+    "mapCondTolerance"       : [
+    ],
+    "mapChargeProfiles"  : [
+      "Melee","MeleeAttackDefaultFragile"
+    ],
+    "mapGUIPropMaps"  :[
+      "NavMod","NavModControls"
+    ],
+    "strPortraitImg"  : "navmod/ItmNavMod01Dmg",
+    "strAudioEmitter" : "ItmSmallPlasticGeneralSound",
+    "mapSlotEffects" : [
+      "heldL","HeldItmDefaultL",
+      "heldR","HeldItmDefaultR"
+    ],
+    "jsonPI"        : null
+  }
+]

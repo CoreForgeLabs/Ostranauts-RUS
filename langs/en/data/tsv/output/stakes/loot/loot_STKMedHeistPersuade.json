@@ -1,0 +1,103 @@
+
+[
+  {
+    "strName" : "COND_STKMedHeistPersuade_Intro_Us",
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKMedHeistPersuade_Intro_Them",
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKMedHeistPersuade_Intro_Allow_Us",
+    "aCOs"    : [
+      "InSocialCombat=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKMedHeistPersuade_Intro_Allow_Them",
+    "aCOs"    : [
+      "InSocialCombat=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKMedHeistPersuade_Fail_Hard_DcAutonomyBad_Us",
+    "aCOs"    : [
+      "IsSTKMedHeistPersuade_Fail_Cooldown=1.0x1",
+      "-InSocialCombat=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKMedHeistPersuade_Fail_Hard_DcAutonomyBad_Them",
+    "aCOs"    : [
+      "-InSocialCombat=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKMedHeistPersuade_Exit_Us",
+    "aCOs"    : [
+      "-InSocialCombat=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKMedHeistPersuade_Exit_Them",
+    "aCOs"    : [
+      "-InSocialCombat=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "ACTSTKMedHeistPersuadeUs",
+    "aCOs"    : [
+      "STKMedHeistPersuade_Fail_Hard_DcAutonomyBad=1.0x1",
+      "SOCReassureLogical=1.0x1",
+      "SOCReiterateUrgency=1.0x1",
+      "SOCIntimidate=1.0x1",
+      "SOCOfferSmoke=1.0x1",
+      "SOCDarkJoke=1.0x1",
+      "SOCSmackAround=1.0x1",
+      "SOCWarnSuperstition=1.0x1",
+      "SOCReassure=1.0x1",
+      "SOCNameDropCrim=1.0x1",
+      "SOCNameDropLEO=1.0x1",
+      "SOCNameDropManager=1.0x1",
+      "SOCInsult=1.0x1",
+      "SOCInsult2=1.0x1",
+      "SOCAdmitWorries=1.0x1",
+      "SOCCalmDown=1.0x1",
+      "SOCCraftDarkJoke=1.0x1",
+      "SOCScanRoom=1.0x1"
+    ],
+    "strType" : "interaction"
+  },
+  {
+    "strName" : "ACTSTKMedHeistPersuadeThem",
+    "aCOs"    : [
+      "STKMedHeistPersuade_Gambit_SecurityVAutonomy=1.0x1",
+      "SOCOfferHelp=1.0x1",
+      "SOCPleeease=1.0x1",
+      "SOCReassureLogical=1.0x1",
+      "SOCReiterateUrgency=1.0x1",
+      "SOCIntimidate=1.0x1",
+      "SOCOfferSmoke=1.0x1",
+      "SOCInspirePurpose=1.0x1",
+      "SOCDarkJoke=1.0x1",
+      "SOCAskHome=1.0x1",
+      "SOCAskFamily=1.0x1",
+      "SOCSmackAround=1.0x1",
+      "SOCWarnSuperstition=1.0x1",
+      "SOCNameDropCrim=1.0x1",
+      "SOCNameDropLEO=1.0x1",
+      "SOCNameDropManager=1.0x1",
+      "SOCCraftDarkJoke=1.0x1",
+      "SOCComplainAboutLAs=1.0x1",
+      "SOCScanRoom=1.0x1"
+    ],
+    "strType" : "interaction"
+  }
+]

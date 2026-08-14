@@ -36,6 +36,12 @@ namespace OstraI18n.Core
             }
 
             var entries = new Dictionary<string, object>(StringComparer.Ordinal);
+            var stringsPath = Path.Combine(dir, "strings.json");
+            if (File.Exists(stringsPath))
+            {
+                MergeFile(stringsPath, entries);
+            }
+
             var uiDir = Path.Combine(dir, "ui");
             if (Directory.Exists(uiDir))
             {
@@ -86,6 +92,26 @@ namespace OstraI18n.Core
             try
             {
                 using var doc = JsonDocument.Parse(File.ReadAllText(path));
+                if (doc.RootElement.ValueKind == JsonValueKind.Object)
+                {
+                    foreach (var kv in doc.RootElement.EnumerateObject())
+                    {
+                        if (kv.Value.ValueKind == JsonValueKind.String)
+                        {
+                            into[kv.Name] = kv.Value.GetString();
+                        }
+                        else if (kv.Value.ValueKind == JsonValueKind.Object)
+                        {
+                            var forms = new Dictionary<string, string>(StringComparer.Ordinal);
+                            foreach (var f in kv.Value.EnumerateObject())
+                                if (f.Value.ValueKind == JsonValueKind.String)
+                                    forms[f.Name] = f.Value.GetString();
+                            into[kv.Name] = forms;
+                        }
+                    }
+                    return;
+                }
+
                 if (doc.RootElement.ValueKind != JsonValueKind.Array) return;
                 foreach (var block in doc.RootElement.EnumerateArray())
                 {

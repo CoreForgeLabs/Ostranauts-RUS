@@ -1,0 +1,896 @@
+
+[
+  {
+    "strName" : "COND_STKStrangerMeet_Intro_Us",
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Intro_Them",
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Intro_Allow_Us",
+    "aCOs"    : [
+      "InSocialCombat=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Intro_Allow_Them",
+    "aCOs"    : [
+      "InSocialCombat=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Intro_Allow_Enemy_Us",
+    "aCOs"    : [
+      "InSocialCombat=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Intro_Allow_Enemy_Them",
+    "aCOs"    : [
+      "InSocialCombat=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Intro_Allow_Friendly_Us",
+    "aCOs"    : [
+      "InSocialCombat=1.0x1",
+      "IsSocialGreeted=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Intro_Allow_Friendly_Them",
+    "aCOs"    : [
+      "InSocialCombat=1.0x1",
+      "IsSocialGreeted=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Intro_Allow_Drunk_Us",
+    "aCOs"    : [
+      "InSocialCombat=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Intro_Allow_Drunk_Them",
+    "aCOs"    : [
+      "InSocialCombat=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Intro_Allow_HygieneBad_Us",
+    "aCOs"    : [
+      "InSocialCombat=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Intro_Allow_HygieneBad_Them",
+    "aCOs"    : [
+      "InSocialCombat=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Intro_Allow_PhysioBad_Us",
+    "aCOs"    : [
+      "InSocialCombat=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Intro_Allow_PhysioBad_Them",
+    "aCOs"    : [
+      "InSocialCombat=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Intro_Deny_Cooldown_Us",
+    "aCOs"    : [
+      "IsSTKStrangerMeet_Fail_Cooldown=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Intro_Deny_Cooldown_Them",
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Fail_Hard_DcAutonomyBad_Us",
+    "aCOs"    : [
+      "IsSTKStrangerMeet_Fail_Cooldown=1.0x1",
+      "-InSocialCombat=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Fail_Hard_DcAutonomyBad_Them",
+    "aCOs"    : [
+      "-InSocialCombat=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_SharedHomeworld_Us",
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_SharedHomeworld_Them",
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_SharedHomeworld_Fail_Soft_Us",
+    "aCOs"    : [
+      "StatPrivacy=1.0x48",
+      "StatAutonomy=1.0x48",
+      "-StatFamily=1.0x48"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_SharedHomeworld_Fail_Soft_Them",
+    "aCOs"    : [
+      "StatFamily=1.0x24"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_SharedHomeworld_Fail_Hard_Us",
+    "aCOs"    : [
+      "IsSTKStrangerMeet_Fail_Cooldown=1.0x1",
+      "-InSocialCombat=1.0x1",
+      "StatAutonomy=1.0x24",
+      "StatPrivacy=1.0x48",
+      "-StatFamily=1.0x48"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_SharedHomeworld_Fail_Hard_Them",
+    "aCOs"    : [
+      "-InSocialCombat=1.0x1",
+      "StatFamily=1.0x48"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_SharedHomeworld_Allow_Us",
+    "aCOs"    : [
+      "IsSocialGreeted=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_SharedHomeworld_Allow_Them",
+    "aCOs"    : [
+      "IsSocialGreeted=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_SharedCrew_Us",
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_SharedCrew_Them",
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_SharedCrew_Fail_Soft_Us",
+    "aCOs"    : [
+      "StatPrivacy=1.0x48",
+      "StatAutonomy=1.0x48"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_SharedCrew_Fail_Soft_Them",
+    "aCOs"    : [
+      "StatAutonomy=1.0x24"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_SharedCrew_Fail_Hard_Us",
+    "aCOs"    : [
+      "IsSTKStrangerMeet_Fail_Cooldown=1.0x1",
+      "-InSocialCombat=1.0x1",
+      "StatAutonomy=1.0x48",
+      "StatPrivacy=1.0x48"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_SharedCrew_Fail_Hard_Them",
+    "aCOs"    : [
+      "-InSocialCombat=1.0x1",
+      "StatAutonomy=1.0x48"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_SharedCrew_Allow_Us",
+    "aCOs"    : [
+      "IsSocialGreeted=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_SharedCrew_Allow_Them",
+    "aCOs"    : [
+      "IsSocialGreeted=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_SharedScar_Us",
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_SharedScar_Them",
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_SharedScar_Fail_Soft_Us",
+    "aCOs"    : [
+      "StatPrivacy=1.0x48",
+      "StatAutonomy=1.0x24",
+      "-StatSelfRespect=1.0x48"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_SharedScar_Fail_Soft_Them",
+    "aCOs"    : [
+      "StatSelfRespect=1.0x24"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_SharedScar_Fail_Hard_Us",
+    "aCOs"    : [
+      "IsSTKStrangerMeet_Fail_Cooldown=1.0x1",
+      "-InSocialCombat=1.0x1",
+      "StatAutonomy=1.0x24",
+      "StatPrivacy=1.0x48",
+      "-StatSelfRespect=1.0x48"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_SharedScar_Fail_Hard_Them",
+    "aCOs"    : [
+      "-InSocialCombat=1.0x1",
+      "StatSelfRespect=1.0x48"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_SharedScar_Allow_Us",
+    "aCOs"    : [
+      "IsSocialGreeted=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_SharedScar_Allow_Them",
+    "aCOs"    : [
+      "IsSocialGreeted=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_SharedCareer_Us",
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_SharedCareer_Them",
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_SharedCareer_Fail_Soft_Us",
+    "aCOs"    : [
+      "StatPrivacy=1.0x48",
+      "StatAutonomy=1.0x24",
+      "-StatEsteem=1.0x48"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_SharedCareer_Fail_Soft_Them",
+    "aCOs"    : [
+      "StatEsteem=1.0x24"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_SharedCareer_Fail_Hard_Us",
+    "aCOs"    : [
+      "IsSTKStrangerMeet_Fail_Cooldown=1.0x1",
+      "-InSocialCombat=1.0x1",
+      "StatAutonomy=1.0x24",
+      "StatPrivacy=1.0x48",
+      "-StatSelfRespect=1.0x48"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_SharedCareer_Fail_Hard_Them",
+    "aCOs"    : [
+      "-InSocialCombat=1.0x1",
+      "StatEsteem=1.0x48"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_SharedCareer_Allow_Us",
+    "aCOs"    : [
+      "IsSocialGreeted=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_SharedCareer_Allow_Them",
+    "aCOs"    : [
+      "IsSocialGreeted=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_BeautifulSelf_Us",
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_BeautifulSelf_Them",
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_BeautifulSelf_Fail_Soft_Us",
+    "aCOs"    : [
+      "StatPrivacy=1.0x48",
+      "StatAutonomy=1.0x24",
+      "-StatIntimacy=1.0x48"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_BeautifulSelf_Fail_Soft_Them",
+    "aCOs"    : [
+      "StatIntimacy=1.0x24"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_BeautifulSelf_Fail_Hard_Us",
+    "aCOs"    : [
+      "IsSTKStrangerMeet_Fail_Cooldown=1.0x1",
+      "-InSocialCombat=1.0x1",
+      "StatAutonomy=1.0x24",
+      "StatPrivacy=1.0x48",
+      "-StatEsteem=1.0x48"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_BeautifulSelf_Fail_Hard_Them",
+    "aCOs"    : [
+      "-InSocialCombat=1.0x1",
+      "StatIntimacy=1.0x48"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_BeautifulSelf_Allow_Us",
+    "aCOs"    : [
+      "IsSocialGreeted=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_BeautifulSelf_Allow_Them",
+    "aCOs"    : [
+      "IsSocialGreeted=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_RecentlyInstalledSelf_Us",
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_RecentlyInstalledSelf_Them",
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_RecentlyInstalledSelf_Fail_Soft_Us",
+    "aCOs"    : [
+      "StatPrivacy=1.0x48",
+      "StatAutonomy=1.0x24",
+      "-StatEsteem=1.0x48"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_RecentlyInstalledSelf_Fail_Soft_Them",
+    "aCOs"    : [
+      "-StatEsteem=1.0x24"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_RecentlyInstalledSelf_Fail_Hard_Us",
+    "aCOs"    : [
+      "IsSTKStrangerMeet_Fail_Cooldown=1.0x1",
+      "-InSocialCombat=1.0x1",
+      "StatAutonomy=1.0x24",
+      "StatPrivacy=1.0x48",
+      "-StatEsteem=1.0x48"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_RecentlyInstalledSelf_Fail_Hard_Them",
+    "aCOs"    : [
+      "-InSocialCombat=1.0x1",
+      "-StatEsteem=1.0x48"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_RecentlyInstalledSelf_Allow_Us",
+    "aCOs"    : [
+      "IsSocialGreeted=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_RecentlyInstalledSelf_Allow_Them",
+    "aCOs"    : [
+      "IsSocialGreeted=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_RecentlyUninstalledSelf_Us",
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_RecentlyUninstalledSelf_Them",
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_RecentlyUninstalledSelf_Fail_Soft_Us",
+    "aCOs"    : [
+      "StatPrivacy=1.0x48",
+      "StatAutonomy=1.0x24",
+      "-StatEsteem=1.0x48"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_RecentlyUninstalledSelf_Fail_Soft_Them",
+    "aCOs"    : [
+      "-StatEsteem=1.0x24"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_RecentlyUninstalledSelf_Fail_Hard_Us",
+    "aCOs"    : [
+      "IsSTKStrangerMeet_Fail_Cooldown=1.0x1",
+      "-InSocialCombat=1.0x1",
+      "StatAutonomy=1.0x24",
+      "StatPrivacy=1.0x48",
+      "-StatEsteem=1.0x48"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_RecentlyUninstalledSelf_Fail_Hard_Them",
+    "aCOs"    : [
+      "-InSocialCombat=1.0x1",
+      "-StatEsteem=1.0x48"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_RecentlyUninstalledSelf_Allow_Us",
+    "aCOs"    : [
+      "IsSocialGreeted=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_RecentlyUninstalledSelf_Allow_Them",
+    "aCOs"    : [
+      "IsSocialGreeted=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_RecentlyRepairedSelf_Us",
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_RecentlyRepairedSelf_Them",
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_RecentlyRepairedSelf_Fail_Soft_Us",
+    "aCOs"    : [
+      "StatPrivacy=1.0x48",
+      "StatAutonomy=1.0x24",
+      "-StatEsteem=1.0x48"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_RecentlyRepairedSelf_Fail_Soft_Them",
+    "aCOs"    : [
+      "-StatEsteem=1.0x24"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_RecentlyRepairedSelf_Fail_Hard_Us",
+    "aCOs"    : [
+      "IsSTKStrangerMeet_Fail_Cooldown=1.0x1",
+      "-InSocialCombat=1.0x1",
+      "StatAutonomy=1.0x24",
+      "StatPrivacy=1.0x48",
+      "-StatEsteem=1.0x48"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_RecentlyRepairedSelf_Fail_Hard_Them",
+    "aCOs"    : [
+      "-InSocialCombat=1.0x1",
+      "-StatEsteem=1.0x48"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_RecentlyRepairedSelf_Allow_Us",
+    "aCOs"    : [
+      "IsSocialGreeted=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_RecentlyRepairedSelf_Allow_Them",
+    "aCOs"    : [
+      "IsSocialGreeted=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_RecentlyRestoredSelf_Us",
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_RecentlyRestoredSelf_Them",
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_RecentlyRestoredSelf_Fail_Soft_Us",
+    "aCOs"    : [
+      "StatPrivacy=1.0x48",
+      "StatAutonomy=1.0x24",
+      "-StatEsteem=1.0x48"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_RecentlyRestoredSelf_Fail_Soft_Them",
+    "aCOs"    : [
+      "-StatEsteem=1.0x24"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_RecentlyRestoredSelf_Fail_Hard_Us",
+    "aCOs"    : [
+      "IsSTKStrangerMeet_Fail_Cooldown=1.0x1",
+      "-InSocialCombat=1.0x1",
+      "StatAutonomy=1.0x24",
+      "StatPrivacy=1.0x48",
+      "-StatEsteem=1.0x48"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_RecentlyRestoredSelf_Fail_Hard_Them",
+    "aCOs"    : [
+      "-InSocialCombat=1.0x1",
+      "-StatEsteem=1.0x48"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_RecentlyRestoredSelf_Allow_Us",
+    "aCOs"    : [
+      "IsSocialGreeted=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_RecentlyRestoredSelf_Allow_Them",
+    "aCOs"    : [
+      "IsSocialGreeted=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_RecentlyWatchNewsSelf_Us",
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_RecentlyWatchNewsSelf_Them",
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_RecentlyWatchNewsSelf_Fail_Soft_Us",
+    "aCOs"    : [
+      "StatPrivacy=1.0x48",
+      "StatAutonomy=1.0x24",
+      "-StatEsteem=1.0x48"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_RecentlyWatchNewsSelf_Fail_Soft_Them",
+    "aCOs"    : [
+      "-StatEsteem=1.0x24"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_RecentlyWatchNewsSelf_Fail_Hard_Us",
+    "aCOs"    : [
+      "IsSTKStrangerMeet_Fail_Cooldown=1.0x1",
+      "-InSocialCombat=1.0x1",
+      "StatAutonomy=1.0x24",
+      "StatPrivacy=1.0x48",
+      "-StatEsteem=1.0x48"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_RecentlyWatchNewsSelf_Fail_Hard_Them",
+    "aCOs"    : [
+      "-InSocialCombat=1.0x1",
+      "-StatEsteem=1.0x48"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_RecentlyWatchNewsSelf_Allow_Us",
+    "aCOs"    : [
+      "IsSocialGreeted=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_RecentlyWatchNewsSelf_Allow_Them",
+    "aCOs"    : [
+      "IsSocialGreeted=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_RecentlyAdmireSelf_Us",
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_RecentlyAdmireSelf_Them",
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_RecentlyAdmireSelf_Fail_Soft_Us",
+    "aCOs"    : [
+      "StatPrivacy=1.0x48",
+      "StatAutonomy=1.0x24",
+      "-StatMeaning=1.0x48"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_RecentlyAdmireSelf_Fail_Soft_Them",
+    "aCOs"    : [
+      "-StatMeaning=1.0x24"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_RecentlyAdmireSelf_Fail_Hard_Us",
+    "aCOs"    : [
+      "IsSTKStrangerMeet_Fail_Cooldown=1.0x1",
+      "-InSocialCombat=1.0x1",
+      "StatAutonomy=1.0x24",
+      "StatPrivacy=1.0x48",
+      "-StatMeaning=1.0x48"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_RecentlyAdmireSelf_Fail_Hard_Them",
+    "aCOs"    : [
+      "-InSocialCombat=1.0x1",
+      "-StatMeaning=1.0x48"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_RecentlyAdmireSelf_Allow_Us",
+    "aCOs"    : [
+      "IsSocialGreeted=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_RecentlyAdmireSelf_Allow_Them",
+    "aCOs"    : [
+      "IsSocialGreeted=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_CruelSelf_Us",
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_CruelSelf_Them",
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_CruelSelf_Fail_Soft_Us",
+    "aCOs"    : [
+      "StatPrivacy=1.0x48",
+      "StatAutonomy=1.0x24",
+      "-StatAltruism=1.0x48"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_CruelSelf_Fail_Soft_Them",
+    "aCOs"    : [
+      "-StatAltruism=1.0x24"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_CruelSelf_Fail_Hard_Us",
+    "aCOs"    : [
+      "IsSTKStrangerMeet_Fail_Cooldown=1.0x1",
+      "-InSocialCombat=1.0x1",
+      "StatAutonomy=1.0x24",
+      "StatPrivacy=1.0x48",
+      "-StatAltruism=1.0x48"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_CruelSelf_Fail_Hard_Them",
+    "aCOs"    : [
+      "-InSocialCombat=1.0x1",
+      "-StatAltruism=1.0x48"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_CruelSelf_Allow_Us",
+    "aCOs"    : [
+      "IsSocialGreeted=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_CruelSelf_Allow_Them",
+    "aCOs"    : [
+      "IsSocialGreeted=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_ContactVPrivacy_Us",
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_ContactVPrivacy_Them",
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_ContactVPrivacy_Allow_Us",
+    "aCOs"    : [
+      "IsSocialGreeted=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_ContactVPrivacy_Allow_Them",
+    "aCOs"    : [
+      "IsSocialGreeted=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_ContactVPrivacy_Fail_Soft_Us",
+    "aCOs"    : [
+      "StatPrivacy=1.0x48",
+      "StatAutonomy=1.0x24"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_ContactVPrivacy_Fail_Soft_Them",
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_ContactVPrivacy_Fail_Hard_Us",
+    "aCOs"    : [
+      "IsSTKStrangerMeet_Fail_Cooldown=1.0x1",
+      "-InSocialCombat=1.0x1",
+      "StatAutonomy=1.0x24",
+      "StatPrivacy=1.0x48"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Gambit_ContactVPrivacy_Fail_Hard_Them",
+    "aCOs"    : [
+      "-InSocialCombat=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Exit_Us",
+    "aCOs"    : [
+      "-InSocialCombat=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKStrangerMeet_Exit_Them",
+    "aCOs"    : [
+      "-InSocialCombat=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "ACTSTKStrangerMeetUs",
+    "aCOs"    : [
+      "STKStrangerMeet_Fail_Hard_DcAutonomyBad=1.0x1"
+    ],
+    "strType" : "interaction"
+  },
+  {
+    "strName" : "ACTSTKStrangerMeetThem",
+    "aCOs"    : [
+      "STKStrangerMeet_Gambit_ContactVPrivacy=1.0x1",
+      "STKStrangerMeet_Gambit_SharedHomeworld=1.0x1",
+      "STKStrangerMeet_Gambit_SharedScar=1.0x1",
+      "STKStrangerMeet_Gambit_BeautifulSelf=1.0x1",
+      "STKStrangerMeet_Gambit_CruelSelf=1.0x1",
+      "STKStrangerMeet_Gambit_SharedCareer=1.0x1",
+      "STKStrangerMeet_Gambit_SharedCrew=1.0x1",
+      "STKStrangerMeet_Gambit_RecentlyInstalledSelf=1.0x1",
+      "STKStrangerMeet_Gambit_RecentlyUninstalledSelf=1.0x1",
+      "STKStrangerMeet_Gambit_RecentlyRepairedSelf=1.0x1",
+      "STKStrangerMeet_Gambit_RecentlyRestoredSelf=1.0x1",
+      "STKStrangerMeet_Gambit_RecentlyWatchNewsSelf=1.0x1",
+      "STKStrangerMeet_Gambit_RecentlyAdmireSelf=1.0x1"
+    ],
+    "strType" : "interaction"
+  }
+]

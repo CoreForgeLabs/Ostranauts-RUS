@@ -1,0 +1,880 @@
+[  
+    {
+        "strName" : "ItmNavModControls",
+        "strNameFriendly" : "Polaris Navigation Controls Module",
+        "strNameShort" : "Controls",
+        "strDesc" : "A hot-swappable control Module for the Polaris \"Standard Navigation Console\" (PSNC).\n\nPolaris's latest iteration of the PSNC allows for user-configurable layout, using their patented Module system. The modules can be installed in multiple ways to alter the configuration of the system for various ship monitoring and control tasks.",
+        "strImg" : "navmod/ItmNavModControls",
+        "strImgNorm" : "navmod/ItmNavModControlsn",
+        "strPortraitImg" : "navmod/ItmNavModControls",
+        "strCondLoot"    : "CNDOLNavModControls",
+        "strCOBase"    : "ItmNavMod",
+        "mapGUIPropMaps"  :[
+            "NavMod","NavModControls"
+        ],
+        "mapModeSwitches"    : [
+            "ItmNavMod", "ItmNavModControls",
+            "ItmNavModDmg", "ItmNavModControlsDmg"
+        ],
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultL",
+            "heldR","HeldItmDefaultR"
+        ]
+    },
+    {
+        "strName" : "ItmNavModControlsDmg",
+        "strNameFriendly" : "Polaris Navigation Controls Module (Damaged)",
+        "strNameShort" : "Controls (Dmg)",
+        "strDesc" : "A hot-swappable control Module for the Polaris \"Standard Navigation Console\" (PSNC).\n\nPolaris's latest iteration of the PSNC allows for user-configurable layout, using their patented Module system. The modules can be installed in multiple ways to alter the configuration of the system for various ship monitoring and control tasks.",
+        "strImg" : "navmod/ItmNavModControlsDmg",
+        "strImgNorm" : "navmod/ItmNavModControlsDmgn",
+        "strPortraitImg" : "navmod/ItmNavModControlsDmg",
+        "strCondLoot"    : "CNDOLNavModControlsDmg",
+        "strCOBase"    : "ItmNavModDmg",
+        "mapGUIPropMaps"  :[
+            "NavMod","NavModControls"
+        ],
+        "mapModeSwitches"    : [
+            "ItmNavMod", "ItmNavModControls",
+            "ItmNavModDmg", "ItmNavModControlsDmg"
+        ],
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultL",
+            "heldR","HeldItmDefaultR"
+        ]
+    },
+    {
+        "strName" : "ItmNavModControlToggle",
+        "strNameFriendly" : "Polaris Navigation Control Toggle Module",
+        "strNameShort" : "Control Toggle",
+        "strDesc" : "A hot-swappable control Module for the Polaris \"Standard Navigation Console\" (PSNC).\n\nPolaris's latest iteration of the PSNC allows for user-configurable layout, using their patented Module system. The modules can be installed in multiple ways to alter the configuration of the system for various ship monitoring and control tasks.",
+        "strImg" : "navmod/ItmNavModControlToggle",
+        "strImgNorm" : "navmod/ItmNavModControlTogglen",
+        "strPortraitImg" : "navmod/ItmNavModControlToggle",
+        "strCondLoot"    : "CNDOLNavModControlToggle",
+        "strCOBase"    : "ItmNavMod",
+        "mapGUIPropMaps"  :[
+            "NavMod","NavModControlToggle"
+        ],
+        "mapModeSwitches"    : [
+            "ItmNavMod", "ItmNavModControlToggle",
+            "ItmNavModDmg", "ItmNavModControlToggleDmg"
+        ],
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultL",
+            "heldR","HeldItmDefaultR"
+        ]
+    },
+    {
+        "strName" : "ItmNavModControlToggleDmg",
+        "strNameFriendly" : "Polaris Navigation Control Toggle Module (Damaged)",
+        "strNameShort" : "Control Toggle (Dmg)",
+        "strDesc" : "A hot-swappable control Module for the Polaris \"Standard Navigation Console\" (PSNC).\n\nPolaris's latest iteration of the PSNC allows for user-configurable layout, using their patented Module system. The modules can be installed in multiple ways to alter the configuration of the system for various ship monitoring and control tasks.",
+        "strImg" : "navmod/ItmNavModControlToggleDmg",
+        "strImgNorm" : "navmod/ItmNavModControlToggleDmgn",
+        "strPortraitImg" : "navmod/ItmNavModControlToggleDmg",
+        "strCondLoot"    : "CNDOLNavModControlToggleDmg",
+        "strCOBase"    : "ItmNavModDmg",
+        "mapGUIPropMaps"  :[
+            "NavMod","NavModControlToggle"
+        ],
+        "mapModeSwitches"    : [
+            "ItmNavMod", "ItmNavModControlToggle",
+            "ItmNavModDmg", "ItmNavModControlToggleDmg"
+        ],
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultL",
+            "heldR","HeldItmDefaultR"
+        ]
+    },
+    {
+        "strName" : "ItmNavModCoursePlot",
+        "strNameFriendly" : "Polaris Navigation Course Plot Module",
+        "strNameShort" : "Course Plot",
+        "strDesc" : "A hot-swappable control Module for the Polaris \"Standard Navigation Console\" (PSNC).\n\nPolaris's latest iteration of the PSNC allows for user-configurable layout, using their patented Module system. The modules can be installed in multiple ways to alter the configuration of the system for various ship monitoring and control tasks.",
+        "strImg" : "navmod/ItmNavModCoursePlot",
+        "strImgNorm" : "navmod/ItmNavModCoursePlotn",
+        "strPortraitImg" : "navmod/ItmNavModCoursePlot",
+        "strCondLoot"    : "CNDOLNavModCoursePlot",
+        "strCOBase"    : "ItmNavModMobo",
+        "mapGUIPropMaps"  :[
+            "NavMod","NavModCoursePlot"
+        ],
+        "mapModeSwitches"    : [
+            "ItmNavModMobo", "ItmNavModCoursePlot",
+            "ItmNavModMoboDmg", "ItmNavModCoursePlotDmg"
+        ],
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultL",
+            "heldR","HeldItmDefaultR"
+        ]
+    },
+    {
+        "strName" : "ItmNavModCoursePlotDmg",
+        "strNameFriendly" : "Polaris Navigation Course Plot Module (Damaged)",
+        "strNameShort" : "Course Plot (Dmg)",
+        "strDesc" : "A hot-swappable control Module for the Polaris \"Standard Navigation Console\" (PSNC).\n\nPolaris's latest iteration of the PSNC allows for user-configurable layout, using their patented Module system. The modules can be installed in multiple ways to alter the configuration of the system for various ship monitoring and control tasks.",
+        "strImg" : "navmod/ItmNavModCoursePlotDmg",
+        "strImgNorm" : "navmod/ItmNavModCoursePlotDmgn",
+        "strPortraitImg" : "navmod/ItmNavModCoursePlotDmg",
+        "strCondLoot"    : "CNDOLNavModCoursePlotDmg",
+        "strCOBase"    : "ItmNavModMoboDmg",
+        "mapGUIPropMaps"  :[
+            "NavMod","NavModCoursePlot"
+        ],
+        "mapModeSwitches"    : [
+            "ItmNavModMobo", "ItmNavModCoursePlot",
+            "ItmNavModMoboDmg", "ItmNavModCoursePlotDmg"
+        ],
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultL",
+            "heldR","HeldItmDefaultR"
+        ]
+    },
+    {
+        "strName" : "ItmNavModDiagnostics",
+        "strNameFriendly" : "Polaris Navigation Diagnostics Module",
+        "strNameShort" : "Diagnostics",
+        "strDesc" : "A hot-swappable control Module for the Polaris \"Standard Navigation Console\" (PSNC).\n\nPolaris's latest iteration of the PSNC allows for user-configurable layout, using their patented Module system. The modules can be installed in multiple ways to alter the configuration of the system for various ship monitoring and control tasks.",
+        "strImg" : "navmod/ItmNavModDiagnostics",
+        "strImgNorm" : "navmod/ItmNavModDiagnosticsn",
+        "strPortraitImg" : "navmod/ItmNavModDiagnostics",
+        "strCondLoot"    : "CNDOLNavModDiagnostics",
+        "strCOBase"    : "ItmNavModMobo",
+        "mapGUIPropMaps"  :[
+            "NavMod","NavModDiagnostics"
+        ],
+        "mapModeSwitches"    : [
+            "ItmNavModMobo", "ItmNavModDiagnostics",
+            "ItmNavModMoboDmg", "ItmNavModDiagnosticsDmg"
+        ],
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultL",
+            "heldR","HeldItmDefaultR"
+        ]
+    },
+    {
+        "strName" : "ItmNavModDiagnosticsDmg",
+        "strNameFriendly" : "Polaris Navigation Diagnostics Module (Damaged)",
+        "strNameShort" : "Diagnostics (Dmg)",
+        "strDesc" : "A hot-swappable control Module for the Polaris \"Standard Navigation Console\" (PSNC).\n\nPolaris's latest iteration of the PSNC allows for user-configurable layout, using their patented Module system. The modules can be installed in multiple ways to alter the configuration of the system for various ship monitoring and control tasks.",
+        "strImg" : "navmod/ItmNavModDiagnosticsDmg",
+        "strImgNorm" : "navmod/ItmNavModDiagnosticsDmgn",
+        "strPortraitImg" : "navmod/ItmNavModDiagnosticsDmg",
+        "strCondLoot"    : "CNDOLNavModDiagnosticsDmg",
+        "strCOBase"    : "ItmNavModMoboDmg",
+        "mapGUIPropMaps"  :[
+            "NavMod","NavModDiagnostics"
+        ],
+        "mapModeSwitches"    : [
+            "ItmNavModMobo", "ItmNavModDiagnostics",
+            "ItmNavModMoboDmg", "ItmNavModDiagnosticsDmg"
+        ],
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultL",
+            "heldR","HeldItmDefaultR"
+        ]
+    },
+    {
+        "strName" : "ItmNavModDisplayControls",
+        "strNameFriendly" : "Polaris Navigation Map Controls Module",
+        "strNameShort" : "Display Controls",
+        "strDesc" : "A hot-swappable control Module for the Polaris \"Standard Navigation Console\" (PSNC).\n\nPolaris's latest iteration of the PSNC allows for user-configurable layout, using their patented Module system. The modules can be installed in multiple ways to alter the configuration of the system for various ship monitoring and control tasks.",
+        "strImg" : "navmod/ItmNavModDisplayControls",
+        "strImgNorm" : "navmod/ItmNavModDisplayControlsn",
+        "strPortraitImg" : "navmod/ItmNavModDisplayControls",
+        "strCondLoot"    : "CNDOLNavModDisplayControls",
+        "strCOBase"    : "ItmNavModMobo",
+        "mapGUIPropMaps"  :[
+            "NavMod","NavModDisplayControls"
+        ],
+        "mapModeSwitches"    : [
+            "ItmNavModMobo", "ItmNavModDisplayControls",
+            "ItmNavModMoboDmg", "ItmNavModDisplayControlsDmg"
+        ],
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultL",
+            "heldR","HeldItmDefaultR"
+        ]
+    },
+    {
+        "strName" : "ItmNavModDisplayControlsDmg",
+        "strNameFriendly" : "Polaris Navigation Map Controls Module (Damaged)",
+        "strNameShort" : "Display Controls (Dmg)",
+        "strDesc" : "A hot-swappable control Module for the Polaris \"Standard Navigation Console\" (PSNC).\n\nPolaris's latest iteration of the PSNC allows for user-configurable layout, using their patented Module system. The modules can be installed in multiple ways to alter the configuration of the system for various ship monitoring and control tasks.",
+        "strImg" : "navmod/ItmNavModDisplayControlsDmg",
+        "strImgNorm" : "navmod/ItmNavModDisplayControlsDmgn",
+        "strPortraitImg" : "navmod/ItmNavModDisplayControlsDmg",
+        "strCondLoot"    : "CNDOLNavModDisplayControlsDmg",
+        "strCOBase"    : "ItmNavModMoboDmg",
+        "mapGUIPropMaps"  :[
+            "NavMod","NavModDisplayControls"
+        ],
+        "mapModeSwitches"    : [
+            "ItmNavModMobo", "ItmNavModDisplayControls",
+            "ItmNavModMoboDmg", "ItmNavModDisplayControlsDmg"
+        ],
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultL",
+            "heldR","HeldItmDefaultR"
+        ]
+    },
+    {
+        "strName" : "ItmNavModDuhrt",
+        "strNameFriendly" : "Dyonn Ultra High Resolution Tomographer Module",
+        "strDesc" : "A hot-swappable control Module for the Polaris \"Standard Navigation Console\" (PSNC).\n\nPolaris's latest iteration of the PSNC allows for user-configurable layout, using their patented Module system. The modules can be installed in multiple ways to alter the configuration of the system for various ship monitoring and control tasks.",
+        "strImg" : "navmod/ItmNavModDuhrt",
+        "strImgNorm" : "navmod/ItmNavModControlTogglen",
+        "strPortraitImg" : "navmod/ItmNavModDuhrt",
+        "strCondLoot"    : "CNDOLNavModDuhrt",
+        "strCOBase"    : "ItmNavModMoboScreen",
+        "mapGUIPropMaps"  :[
+            "NavMod","NavModDuhrt"
+        ],
+        "mapModeSwitches"    : [
+            "ItmNavModMoboScreen", "ItmNavModDuhrt",
+            "ItmNavModMoboScreenDmg", "ItmNavModDuhrtDmg"
+        ],
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultL",
+            "heldR","HeldItmDefaultR"
+        ]
+    },
+    {
+        "strName" : "ItmNavModDuhrtDmg",
+        "strNameFriendly" : "Dyonn Ultra High Resolution Tomographer Module (Damaged)",
+        "strDesc" : "A hot-swappable control Module for the Polaris \"Standard Navigation Console\" (PSNC).\n\nPolaris's latest iteration of the PSNC allows for user-configurable layout, using their patented Module system. The modules can be installed in multiple ways to alter the configuration of the system for various ship monitoring and control tasks.",
+        "strImg" : "navmod/ItmNavModDuhrtDmg",
+        "strImgNorm" : "navmod/ItmNavModControlToggleDmgn",
+        "strPortraitImg" : "navmod/ItmNavModDuhrtDmg",
+        "strCondLoot"    : "CNDOLNavModDuhrtDmg",
+        "strCOBase"    : "ItmNavModMoboScreenDmg",
+        "mapGUIPropMaps"  :[
+            "NavMod","NavModDuhrt"
+        ],
+        "mapModeSwitches"    : [
+            "ItmNavModMoboScreen", "ItmNavModDuhrt",
+            "ItmNavModMoboScreenDmg", "ItmNavModDuhrtDmg"
+        ],
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultL",
+            "heldR","HeldItmDefaultR"
+        ]
+    },
+    {
+        "strName" : "ItmNavModEngineMode",
+        "strNameFriendly" : "Polaris Navigation Engine Mode Module",
+        "strNameShort" : "Engine Mode",
+        "strDesc" : "A hot-swappable control Module for the Polaris \"Standard Navigation Console\" (PSNC).\n\nPolaris's latest iteration of the PSNC allows for user-configurable layout, using their patented Module system. The modules can be installed in multiple ways to alter the configuration of the system for various ship monitoring and control tasks.",
+        "strImg" : "navmod/ItmNavModEngineMode",
+        "strImgNorm" : "navmod/ItmNavModEngineModen",
+        "strPortraitImg" : "navmod/ItmNavModEngineMode",
+        "strCondLoot"    : "CNDOLNavModEngineMode",
+        "strCOBase"    : "ItmNavMod",
+        "mapGUIPropMaps"  :[
+            "NavMod","NavModEngineMode"
+        ],
+        "mapModeSwitches"    : [
+            "ItmNavMod", "ItmNavModEngineMode",
+            "ItmNavModDmg", "ItmNavModEngineModeDmg"
+        ],
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultL",
+            "heldR","HeldItmDefaultR"
+        ]
+    },
+    {
+        "strName" : "ItmNavModEngineModeDmg",
+        "strNameFriendly" : "Polaris Navigation Engine Mode Module (Damaged)",
+        "strNameShort" : "Engine Mode (Dmg)",
+        "strDesc" : "A hot-swappable control Module for the Polaris \"Standard Navigation Console\" (PSNC).\n\nPolaris's latest iteration of the PSNC allows for user-configurable layout, using their patented Module system. The modules can be installed in multiple ways to alter the configuration of the system for various ship monitoring and control tasks.",
+        "strImg" : "navmod/ItmNavModEngineModeDmg",
+        "strImgNorm" : "navmod/ItmNavModEngineModeDmgn",
+        "strPortraitImg" : "navmod/ItmNavModEngineModeDmg",
+        "strCondLoot"    : "CNDOLNavModEngineModeDmg",
+        "strCOBase"    : "ItmNavModDmg",
+        "mapGUIPropMaps"  :[
+            "NavMod","NavModEngineMode"
+        ],
+        "mapModeSwitches"    : [
+            "ItmNavMod", "ItmNavModEngineMode",
+            "ItmNavModDmg", "ItmNavModEngineModeDmg"
+        ],
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultL",
+            "heldR","HeldItmDefaultR"
+        ]
+    },
+    {
+        "strName" : "ItmNavModFlightDynamics",
+        "strNameFriendly" : "Polaris Navigation Flight Dynamics Module",
+        "strNameShort" : "Flight Dynamics",
+        "strDesc" : "A hot-swappable control Module for the Polaris \"Standard Navigation Console\" (PSNC).\n\nPolaris's latest iteration of the PSNC allows for user-configurable layout, using their patented Module system. The modules can be installed in multiple ways to alter the configuration of the system for various ship monitoring and control tasks.",
+        "strImg" : "navmod/ItmNavModFlightDynamics",
+        "strImgNorm" : "navmod/ItmNavModFlightDynamicsn",
+        "strPortraitImg" : "navmod/ItmNavModFlightDynamics",
+        "strCondLoot"    : "CNDOLNavModFlightDynamics",
+        "strCOBase"    : "ItmNavModMobo",
+        "mapGUIPropMaps"  :[
+            "NavMod","NavModFlightDynamics"
+        ],
+        "mapModeSwitches"    : [
+            "ItmNavModMobo", "ItmNavModFlightDynamics",
+            "ItmNavModMoboDmg", "ItmNavModFlightDynamicsDmg"
+        ],
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultL",
+            "heldR","HeldItmDefaultR"
+        ]
+    },
+    {
+        "strName" : "ItmNavModFlightDynamicsDmg",
+        "strNameFriendly" : "Polaris Navigation Flight Dynamics Module (Damaged)",
+        "strNameShort" : "Flight Dynamics (Dmg)",
+        "strDesc" : "A hot-swappable control Module for the Polaris \"Standard Navigation Console\" (PSNC).\n\nPolaris's latest iteration of the PSNC allows for user-configurable layout, using their patented Module system. The modules can be installed in multiple ways to alter the configuration of the system for various ship monitoring and control tasks.",
+        "strImg" : "navmod/ItmNavModFlightDynamicsDmg",
+        "strImgNorm" : "navmod/ItmNavModFlightDynamicsDmgn",
+        "strPortraitImg" : "navmod/ItmNavModFlightDynamicsDmg",
+        "strCondLoot"    : "CNDOLNavModFlightDynamicsDmg",
+        "strCOBase"    : "ItmNavModMoboDmg",
+        "mapGUIPropMaps"  :[
+            "NavMod","NavModFlightDynamics"
+        ],
+        "mapModeSwitches"    : [
+            "ItmNavModMobo", "ItmNavModFlightDynamics",
+            "ItmNavModMoboDmg", "ItmNavModFlightDynamicsDmg"
+        ],
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultL",
+            "heldR","HeldItmDefaultR"
+        ]
+    },
+    {
+        "strName" : "ItmNavModMap",
+        "strNameFriendly" : "Polaris Navigation Map Module",
+        "strNameShort" : "Map",
+        "strDesc" : "A hot-swappable control Module for the Polaris \"Standard Navigation Console\" (PSNC).\n\nPolaris's latest iteration of the PSNC allows for user-configurable layout, using their patented Module system. The modules can be installed in multiple ways to alter the configuration of the system for various ship monitoring and control tasks.",
+        "strImg" : "navmod/ItmNavModMap",
+        "strImgNorm" : "navmod/ItmNavModMapn",
+        "strPortraitImg" : "navmod/ItmNavModMap",
+        "strCondLoot"    : "CNDOLNavModMap",
+        "strCOBase"    : "ItmNavModMoboScreen",
+        "mapGUIPropMaps"  :[
+            "NavMod","NavModMap"
+        ],
+        "mapModeSwitches"    : [
+            "ItmNavModMoboScreen", "ItmNavModMap",
+            "ItmNavModMoboScreenDmg", "ItmNavModMapDmg"
+        ],
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultL",
+            "heldR","HeldItmDefaultR"
+        ]
+    },
+    {
+        "strName" : "ItmNavModMapDmg",
+        "strNameFriendly" : "Polaris Navigation Map Module (Damaged)",
+        "strNameShort" : "Map (Dmg)",
+        "strDesc" : "A hot-swappable control Module for the Polaris \"Standard Navigation Console\" (PSNC).\n\nPolaris's latest iteration of the PSNC allows for user-configurable layout, using their patented Module system. The modules can be installed in multiple ways to alter the configuration of the system for various ship monitoring and control tasks.",
+        "strImg" : "navmod/ItmNavModMapDmg",
+        "strImgNorm" : "navmod/ItmNavModMapDmgn",
+        "strPortraitImg" : "navmod/ItmNavModMapDmg",
+        "strCondLoot"    : "CNDOLNavModMapDmg",
+        "strCOBase"    : "ItmNavModMoboScreenDmg",
+        "mapGUIPropMaps"  :[
+            "NavMod","NavModMap"
+        ],
+        "mapModeSwitches"    : [
+            "ItmNavModMoboScreen", "ItmNavModMap",
+            "ItmNavModMoboScreenDmg", "ItmNavModMapDmg"
+        ],
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultL",
+            "heldR","HeldItmDefaultR"
+        ]
+    },
+    {
+        "strName" : "ItmNavModReserves",
+        "strNameFriendly" : "Polaris Navigation Reserves Module",
+        "strNameShort" : "Reserves",
+        "strDesc" : "A hot-swappable control Module for the Polaris \"Standard Navigation Console\" (PSNC).\n\nPolaris's latest iteration of the PSNC allows for user-configurable layout, using their patented Module system. The modules can be installed in multiple ways to alter the configuration of the system for various ship monitoring and control tasks.",
+        "strImg" : "navmod/ItmNavModReserves",
+        "strImgNorm" : "navmod/ItmNavModReservesn",
+        "strPortraitImg" : "navmod/ItmNavModReserves",
+        "strCondLoot"    : "CNDOLNavModReserves",
+        "strCOBase"    : "ItmNavMod",
+        "mapGUIPropMaps"  :[
+            "NavMod","NavModReserves"
+        ],
+        "mapModeSwitches"    : [
+            "ItmNavMod", "ItmNavModReserves",
+            "ItmNavModDmg", "ItmNavModReservesDmg"
+        ],
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultL",
+            "heldR","HeldItmDefaultR"
+        ]
+    },
+    {
+        "strName" : "ItmNavModReservesDmg",
+        "strNameFriendly" : "Polaris Navigation Reserves Module (Damaged)",
+        "strNameShort" : "Reserves (Dmg)",
+        "strDesc" : "A hot-swappable control Module for the Polaris \"Standard Navigation Console\" (PSNC).\n\nPolaris's latest iteration of the PSNC allows for user-configurable layout, using their patented Module system. The modules can be installed in multiple ways to alter the configuration of the system for various ship monitoring and control tasks.",
+        "strImg" : "navmod/ItmNavModReservesDmg",
+        "strImgNorm" : "navmod/ItmNavModReservesDmgn",
+        "strPortraitImg" : "navmod/ItmNavModReservesDmg",
+        "strCondLoot"    : "CNDOLNavModReservesDmg",
+        "strCOBase"    : "ItmNavModDmg",
+        "mapGUIPropMaps"  :[
+            "NavMod","NavModReserves"
+        ],
+        "mapModeSwitches"    : [
+            "ItmNavMod", "ItmNavModReserves",
+            "ItmNavModDmg", "ItmNavModReservesDmg"
+        ],
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultL",
+            "heldR","HeldItmDefaultR"
+        ]
+    },
+    {
+        "strName" : "ItmNavModTargetData",
+        "strNameFriendly" : "Polaris Navigation Target Data Module",
+        "strNameShort" : "Target Data",
+        "strDesc" : "A hot-swappable control Module for the Polaris \"Standard Navigation Console\" (PSNC).\n\nPolaris's latest iteration of the PSNC allows for user-configurable layout, using their patented Module system. The modules can be installed in multiple ways to alter the configuration of the system for various ship monitoring and control tasks.",
+        "strImg" : "navmod/ItmNavModTargetData",
+        "strImgNorm" : "navmod/ItmNavModTargetDatan",
+        "strPortraitImg" : "navmod/ItmNavModTargetData",
+        "strCondLoot"    : "CNDOLNavModTargetData",
+        "strCOBase"    : "ItmNavModMobo",
+        "mapGUIPropMaps"  :[
+            "NavMod","NavModTargetData"
+        ],
+        "mapModeSwitches"    : [
+            "ItmNavModMobo", "ItmNavModTargetData",
+            "ItmNavModMoboDmg", "ItmNavModTargetDataDmg"
+        ],
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultL",
+            "heldR","HeldItmDefaultR"
+        ]
+    },
+    {
+        "strName" : "ItmNavModTargetDataDmg",
+        "strNameFriendly" : "Polaris Navigation Target Data Module (Damaged)",
+        "strNameShort" : "Target Data (Dmg)",
+        "strDesc" : "A hot-swappable control Module for the Polaris \"Standard Navigation Console\" (PSNC).\n\nPolaris's latest iteration of the PSNC allows for user-configurable layout, using their patented Module system. The modules can be installed in multiple ways to alter the configuration of the system for various ship monitoring and control tasks.",
+        "strImg" : "navmod/ItmNavModTargetDataDmg",
+        "strImgNorm" : "navmod/ItmNavModTargetDataDmgn",
+        "strPortraitImg" : "navmod/ItmNavModTargetDataDmg",
+        "strCondLoot"    : "CNDOLNavModTargetDataDmg",
+        "strCOBase"    : "ItmNavModMoboDmg",
+        "mapGUIPropMaps"  :[
+            "NavMod","NavModTargetData"
+        ],
+        "mapModeSwitches"    : [
+            "ItmNavModMobo", "ItmNavModTargetData",
+            "ItmNavModMoboDmg", "ItmNavModTargetDataDmg"
+        ],
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultL",
+            "heldR","HeldItmDefaultR"
+        ]
+    },
+    {
+        "strName" : "ItmNavModTimeZoom",
+        "strNameFriendly" : "Polaris Navigation Time/Zoom Module",
+        "strNameShort" : "Time/Zoom",
+        "strDesc" : "A hot-swappable control Module for the Polaris \"Standard Navigation Console\" (PSNC).\n\nPolaris's latest iteration of the PSNC allows for user-configurable layout, using their patented Module system. The modules can be installed in multiple ways to alter the configuration of the system for various ship monitoring and control tasks.",
+        "strImg" : "navmod/ItmNavModTimeZoom",
+        "strImgNorm" : "navmod/ItmNavModTimeZoomn",
+        "strPortraitImg" : "navmod/ItmNavModTimeZoom",
+        "strCondLoot"    : "CNDOLNavModTimeZoom",
+        "strCOBase"    : "ItmNavModMobo",
+        "mapGUIPropMaps"  :[
+            "NavMod","NavModTimeZoom"
+        ],
+        "mapModeSwitches"    : [
+            "ItmNavModMobo", "ItmNavModTimeZoom",
+            "ItmNavModMoboDmg", "ItmNavModTimeZoomDmg"
+        ],
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultL",
+            "heldR","HeldItmDefaultR"
+        ]
+    },
+    {
+        "strName" : "ItmNavModTimeZoomDmg",
+        "strNameFriendly" : "Polaris Navigation Time/Zoom Module (Damaged)",
+        "strNameShort" : "Time/Zoom (Dmg)",
+        "strDesc" : "A hot-swappable control Module for the Polaris \"Standard Navigation Console\" (PSNC).\n\nPolaris's latest iteration of the PSNC allows for user-configurable layout, using their patented Module system. The modules can be installed in multiple ways to alter the configuration of the system for various ship monitoring and control tasks.",
+        "strImg" : "navmod/ItmNavModTimeZoomDmg",
+        "strImgNorm" : "navmod/ItmNavModTimeZoomDmgn",
+        "strPortraitImg" : "navmod/ItmNavModTimeZoomDmg",
+        "strCondLoot"    : "CNDOLNavModTimeZoomDmg",
+        "strCOBase"    : "ItmNavModMoboDmg",
+        "mapGUIPropMaps"  :[
+            "NavMod","NavModTimeZoom"
+        ],
+        "mapModeSwitches"    : [
+            "ItmNavModMobo", "ItmNavModTimeZoom",
+            "ItmNavModMoboDmg", "ItmNavModTimeZoomDmg"
+        ],
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultL",
+            "heldR","HeldItmDefaultR"
+        ]
+    },
+    {
+        "strName" : "ItmNavModMooringControl",
+        "strNameFriendly" : "Polaris Mooring Control Module",
+        "strNameShort" : "Mooring",
+        "strDesc" : "A hot-swappable control Module for the Polaris \"Standard Navigation Console\" (PSNC).\n\nPolaris's latest iteration of the PSNC allows for user-configurable layout, using their patented Module system. The modules can be installed in multiple ways to alter the configuration of the system for various ship monitoring and control tasks.",
+        "strImg" : "navmod/ItmNavModMooringControl",
+        "strImgNorm" : "navmod/ItmNavModMooringControln",
+        "strPortraitImg" : "navmod/ItmNavModMooringControl",
+        "strCondLoot"    : "CNDOLNavModMooringControl",
+        "strCOBase"    : "ItmNavModMobo",
+        "mapGUIPropMaps"  :[
+            "NavMod","NavModMooringControl"
+        ],
+        "mapModeSwitches"    : [
+            "ItmNavModMobo", "ItmNavModMooringControl",
+            "ItmNavModMoboDmg", "ItmNavModMooringControlDmg"
+        ],
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultL",
+            "heldR","HeldItmDefaultR"
+        ]
+    },
+    {
+        "strName" : "ItmNavModMooringControlDmg",
+        "strNameFriendly" : "Polaris Mooring Control Module (Damaged)",
+        "strNameShort" : "Mooring (Dmg)",
+        "strDesc" : "A hot-swappable control Module for the Polaris \"Standard Navigation Console\" (PSNC).\n\nPolaris's latest iteration of the PSNC allows for user-configurable layout, using their patented Module system. The modules can be installed in multiple ways to alter the configuration of the system for various ship monitoring and control tasks.",
+        "strImg" : "navmod/ItmNavModMooringControlDmg",
+        "strImgNorm" : "navmod/ItmNavModMooringControlDmgn",
+        "strPortraitImg" : "navmod/ItmNavModMooringControlDmg",
+        "strCondLoot"    : "CNDOLNavModMooringControlDmg",
+        "strCOBase"    : "ItmNavModMoboDmg",
+        "mapGUIPropMaps"  :[
+            "NavMod","NavModMooringControl"
+        ],
+        "mapModeSwitches"    : [
+            "ItmNavModMobo", "ItmNavModMooringControl",
+            "ItmNavModMoboDmg", "ItmNavModMooringControlDmg"
+        ],
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultL",
+            "heldR","HeldItmDefaultR"
+        ]
+    },
+    {
+        "strName" : "ItmNavModSensorsMFD",
+        "strNameFriendly" : "Polaris Navigation Sensors MFD Module",
+        "strNameShort" : "Sensors MFD",
+        "strDesc" : "A hot-swappable control Module for the Polaris \"Standard Navigation Console\" (PSNC).\n\nPolaris's latest iteration of the PSNC allows for user-configurable layout, using their patented Module system. The modules can be installed in multiple ways to alter the configuration of the system for various ship monitoring and control tasks.",
+        "strImg" : "navmod/ItmNavModSensorsMFD",
+        "strImgNorm" : "navmod/ItmNavModSensorsMFDn",
+        "strPortraitImg" : "navmod/ItmNavModSensorsMFD",
+        "strCondLoot"    : "CNDOLNavModSensorsMFD",
+        "strCOBase"    : "ItmNavModMoboScreen",
+        "mapGUIPropMaps"  :[
+            "NavMod","NavModSensorsMFD"
+        ],
+        "mapModeSwitches"    : [
+            "ItmNavModMoboScreen", "ItmNavModSensorsMFD",
+            "ItmNavModMoboScreenDmg", "ItmNavModSensorsMFDDmg"
+        ],
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultL",
+            "heldR","HeldItmDefaultR"
+        ]
+    },
+    {
+        "strName" : "ItmNavModSensorsMFDDmg",
+        "strNameFriendly" : "Polaris Navigation Sensors MFD Module (Damaged)",
+        "strNameShort" : "Sensors MFD (Dmg)",
+        "strDesc" : "A hot-swappable control Module for the Polaris \"Standard Navigation Console\" (PSNC).\n\nPolaris's latest iteration of the PSNC allows for user-configurable layout, using their patented Module system. The modules can be installed in multiple ways to alter the configuration of the system for various ship monitoring and control tasks.",
+        "strImg" : "navmod/ItmNavModSensorsMFDDmg",
+        "strImgNorm" : "navmod/ItmNavModSensorsMFDDmgn",
+        "strPortraitImg" : "navmod/ItmNavModSensorsMFDDmg",
+        "strCondLoot"    : "CNDOLNavModSensorsMFDDmg",
+        "strCOBase"    : "ItmNavModMoboScreenDmg",
+        "mapGUIPropMaps"  :[
+            "NavMod","NavModSensorsMFD"
+        ],
+        "mapModeSwitches"    : [
+            "ItmNavModMoboScreen", "ItmNavModSensorsMFD",
+            "ItmNavModMoboScreenDmg", "ItmNavModSensorsMFDDmg"
+        ],
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultL",
+            "heldR","HeldItmDefaultR"
+        ]
+    },
+    {
+        "strName" : "ItmNavModTorchDrive",
+        "strNameFriendly" : "Polaris Navigation Torch Drive Module",
+        "strNameShort" : "Torch Drive",
+        "strDesc" : "A hot-swappable control Module for the Polaris \"Standard Navigation Console\" (PSNC).\n\nPolaris's latest iteration of the PSNC allows for user-configurable layout, using their patented Module system. The modules can be installed in multiple ways to alter the configuration of the system for various ship monitoring and control tasks.",
+        "strImg" : "navmod/ItmNavModTorchDrive",
+        "strImgNorm" : "navmod/ItmNavModTorchDriven",
+        "strPortraitImg" : "navmod/ItmNavModTorchDrive",
+        "strCondLoot"    : "CNDOLNavModTorchDrive",
+        "strCOBase"    : "ItmNavModMobo",
+        "mapGUIPropMaps"  :[
+            "NavMod","NavModTorchDrive"
+        ],
+        "mapModeSwitches"    : [
+            "ItmNavModMobo", "ItmNavModTorchDrive",
+            "ItmNavModMoboDmg", "ItmNavModTorchDriveDmg"
+        ],
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultL",
+            "heldR","HeldItmDefaultR"
+        ]
+    },
+    {
+        "strName" : "ItmNavModTorchDriveDmg",
+        "strNameFriendly" : "Polaris Navigation Torch Drive Module (Damaged)",
+        "strNameShort" : "Torch Drive (Dmg)",
+        "strDesc" : "A hot-swappable control Module for the Polaris \"Standard Navigation Console\" (PSNC).\n\nPolaris's latest iteration of the PSNC allows for user-configurable layout, using their patented Module system. The modules can be installed in multiple ways to alter the configuration of the system for various ship monitoring and control tasks.",
+        "strImg" : "navmod/ItmNavModTorchDriveDmg",
+        "strImgNorm" : "navmod/ItmNavModTorchDriveDmgn",
+        "strPortraitImg" : "navmod/ItmNavModTorchDriveDmg",
+        "strCondLoot"    : "CNDOLNavModTorchDriveDmg",
+        "strCOBase"    : "ItmNavModMoboDmg",
+        "mapGUIPropMaps"  :[
+            "NavMod","NavModTorchDrive"
+        ],
+        "mapModeSwitches"    : [
+            "ItmNavModMobo", "ItmNavModTorchDrive",
+            "ItmNavModMoboDmg", "ItmNavModTorchDriveDmg"
+        ],
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultL",
+            "heldR","HeldItmDefaultR"
+        ]
+    },
+    {
+        "strName" : "ItmNavModTransponder",
+        "strNameFriendly" : "Polaris Navigation Transponder Module",
+        "strNameShort" : "Transponder",
+        "strDesc" : "A hot-swappable control Module for the Polaris \"Standard Navigation Console\" (PSNC).\n\nPolaris's latest iteration of the PSNC allows for user-configurable layout, using their patented Module system. The modules can be installed in multiple ways to alter the configuration of the system for various ship monitoring and control tasks.",
+        "strImg" : "navmod/ItmNavModTransponder",
+        "strImgNorm" : "navmod/ItmNavModTranspondern",
+        "strPortraitImg" : "navmod/ItmNavModTransponder",
+        "strCondLoot"    : "CNDOLNavModTransponder",
+        "strCOBase"    : "ItmNavModMoboScreen",
+        "mapGUIPropMaps"  :[
+            "NavMod","NavModTransponder"
+        ],
+        "mapModeSwitches"    : [
+            "ItmNavModMoboScreen", "ItmNavModTransponder",
+            "ItmNavModMoboScreenDmg", "ItmNavModTransponderDmg"
+        ],
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultL",
+            "heldR","HeldItmDefaultR"
+        ]
+    },
+    {
+        "strName" : "ItmNavModTransponderDmg",
+        "strNameFriendly" : "Polaris Navigation Transponder Module (Damaged)",
+        "strNameShort" : "Transponder (Dmg)",
+        "strDesc" : "A hot-swappable control Module for the Polaris \"Standard Navigation Console\" (PSNC).\n\nPolaris's latest iteration of the PSNC allows for user-configurable layout, using their patented Module system. The modules can be installed in multiple ways to alter the configuration of the system for various ship monitoring and control tasks.",
+        "strImg" : "navmod/ItmNavModTransponderDmg",
+        "strImgNorm" : "navmod/ItmNavModTransponderDmgn",
+        "strPortraitImg" : "navmod/ItmNavModTransponderDmg",
+        "strCondLoot"    : "CNDOLNavModTransponderDmg",
+        "strCOBase"    : "ItmNavModMoboScreenDmg",
+        "mapGUIPropMaps"  :[
+            "NavMod","NavModTransponder"
+        ],
+        "mapModeSwitches"    : [
+            "ItmNavModMoboScreen", "ItmNavModTransponder",
+            "ItmNavModMoboScreenDmg", "ItmNavModTransponderDmg"
+        ],
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultL",
+            "heldR","HeldItmDefaultR"
+        ]
+    },
+    {
+        "strName" : "ItmNavModWarnings",
+        "strNameFriendly" : "Polaris Navigation Warnings Module",
+        "strNameShort" : "Warnings",
+        "strDesc" : "A hot-swappable control Module for the Polaris \"Standard Navigation Console\" (PSNC).\n\nPolaris's latest iteration of the PSNC allows for user-configurable layout, using their patented Module system. The modules can be installed in multiple ways to alter the configuration of the system for various ship monitoring and control tasks.",
+        "strImg" : "navmod/ItmNavModWarnings",
+        "strImgNorm" : "navmod/ItmNavModWarningsn",
+        "strPortraitImg" : "navmod/ItmNavModWarnings",
+        "strCondLoot"    : "CNDOLNavModWarnings",
+        "strCOBase"    : "ItmNavMod",
+        "mapGUIPropMaps"  :[
+            "NavMod","NavModWarnings"
+        ],
+        "mapModeSwitches"    : [
+            "ItmNavMod", "ItmNavModWarnings",
+            "ItmNavModDmg", "ItmNavModWarningsDmg"
+        ],
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultL",
+            "heldR","HeldItmDefaultR"
+        ]
+    },
+    {
+        "strName" : "ItmNavModWarningsDmg",
+        "strNameFriendly" : "Polaris Navigation Warnings Module (Damaged)",
+        "strNameShort" : "Warnings (Dmg)",
+        "strDesc" : "A hot-swappable control Module for the Polaris \"Standard Navigation Console\" (PSNC).\n\nPolaris's latest iteration of the PSNC allows for user-configurable layout, using their patented Module system. The modules can be installed in multiple ways to alter the configuration of the system for various ship monitoring and control tasks.",
+        "strImg" : "navmod/ItmNavModWarningsDmg",
+        "strImgNorm" : "navmod/ItmNavModWarningsDmgn",
+        "strPortraitImg" : "navmod/ItmNavModWarningsDmg",
+        "strCondLoot"    : "CNDOLNavModWarningsDmg",
+        "strCOBase"    : "ItmNavModDmg",
+        "mapGUIPropMaps"  :[
+            "NavMod","NavModWarnings"
+        ],
+        "mapModeSwitches"    : [
+            "ItmNavMod", "ItmNavModWarnings",
+            "ItmNavModDmg", "ItmNavModWarningsDmg"
+        ],
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultL",
+            "heldR","HeldItmDefaultR"
+        ]
+    },
+    {
+        "strName" : "ItmNavModWeaponsMFD",
+        "strNameFriendly" : "Polaris Navigation Weapons MFD Module",
+        "strNameShort" : "Weapons MFD",
+        "strDesc" : "A hot-swappable control Module for the Polaris \"Standard Navigation Console\" (PSNC).\n\nPolaris's latest iteration of the PSNC allows for user-configurable layout, using their patented Module system. The modules can be installed in multiple ways to alter the configuration of the system for various ship monitoring and control tasks.",
+        "strImg" : "navmod/ItmNavModWeaponsMFD",
+        "strImgNorm" : "navmod/ItmNavModWeaponsMFDn",
+        "strPortraitImg" : "navmod/ItmNavModWeaponsMFD",
+        "strCondLoot"    : "CNDOLNavModWeaponsMFD",
+        "strCOBase"    : "ItmNavModMoboScreen",
+        "mapGUIPropMaps"  :[
+            "NavMod","NavModWeaponsMFD"
+        ],
+        "mapModeSwitches"    : [
+            "ItmNavModMoboScreen", "ItmNavModWeaponsMFD",
+            "ItmNavModMoboScreenDmg", "ItmNavModWeaponsMFDDmg"
+        ],
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultL",
+            "heldR","HeldItmDefaultR"
+        ]
+    },
+    {
+        "strName" : "ItmNavModWeaponsMFDDmg",
+        "strNameFriendly" : "Polaris Navigation Weapons MFD Module (Damaged)",
+        "strNameShort" : "Weapons MFD (Dmg)",
+        "strDesc" : "A hot-swappable control Module for the Polaris \"Standard Navigation Console\" (PSNC).\n\nPolaris's latest iteration of the PSNC allows for user-configurable layout, using their patented Module system. The modules can be installed in multiple ways to alter the configuration of the system for various ship monitoring and control tasks.",
+        "strImg" : "navmod/ItmNavModWeaponsMFDDmg",
+        "strImgNorm" : "navmod/ItmNavModWeaponsMFDDmgn",
+        "strPortraitImg" : "navmod/ItmNavModWeaponsMFDDmg",
+        "strCondLoot"    : "CNDOLNavModWeaponsMFDDmg",
+        "strCOBase"    : "ItmNavModMoboScreenDmg",
+        "mapGUIPropMaps"  :[
+            "NavMod","NavModWeaponsMFD"
+        ],
+        "mapModeSwitches"    : [
+            "ItmNavModMoboScreen", "ItmNavModWeaponsMFD",
+            "ItmNavModMoboScreenDmg", "ItmNavModWeaponsMFDDmg"
+        ],
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultL",
+            "heldR","HeldItmDefaultR"
+        ]
+    },
+    {
+        "strName" : "ItmNavModFire3x3",
+        "strNameFriendly" : "Polaris Navigation Fire Group Module",
+        "strNameShort" : "Fire Groups",
+        "strDesc" : "A hot-swappable control Module for the Polaris \"Standard Navigation Console\" (PSNC).\n\nPolaris's latest iteration of the PSNC allows for user-configurable layout, using their patented Module system. The modules can be installed in multiple ways to alter the configuration of the system for various ship monitoring and control tasks.",
+        "strImg" : "navmod/ItmNavModFire2x5",
+        "strImgNorm" : "navmod/ItmNavModFire2x5n",
+        "strPortraitImg" : "navmod/ItmNavModFire2x5",
+        "strCondLoot"    : "CNDOLNavModFire3x3",
+        "strCOBase"    : "ItmNavMod",
+        "mapGUIPropMaps"  :[
+            "NavMod","NavModFire3x3"
+        ],
+        "mapModeSwitches"    : [
+            "ItmNavMod", "ItmNavModFire3x3",
+            "ItmNavModDmg", "ItmNavModFire3x3Dmg"
+        ],
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultL",
+            "heldR","HeldItmDefaultR"
+        ]
+    },
+    {
+        "strName" : "ItmNavModFire3x3Dmg",
+        "strNameFriendly" : "Polaris Navigation Fire Group Module (Damaged)",
+        "strNameShort" : "Fire Groups (Dmg)",
+        "strDesc" : "A hot-swappable control Module for the Polaris \"Standard Navigation Console\" (PSNC).\n\nPolaris's latest iteration of the PSNC allows for user-configurable layout, using their patented Module system. The modules can be installed in multiple ways to alter the configuration of the system for various ship monitoring and control tasks.",
+        "strImg" : "navmod/ItmNavModFire2x5Dmg",
+        "strImgNorm" : "navmod/ItmNavModFire2x5Dmgn",
+        "strPortraitImg" : "navmod/ItmNavModFire2x5Dmg",
+        "strCondLoot"    : "CNDOLNavModFire3x3Dmg",
+        "strCOBase"    : "ItmNavModDmg",
+        "mapGUIPropMaps"  :[
+            "NavMod","ItmNavModFire3x3"
+        ],
+        "mapModeSwitches"    : [
+            "ItmNavMod", "ItmNavModFire3x3",
+            "ItmNavModDmg", "ItmNavModFire3x3Dmg"
+        ],
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultL",
+            "heldR","HeldItmDefaultR"
+        ]
+    },
+    {
+        "strName" : "ItmNavModFire2x2",
+        "strNameFriendly" : "Polaris Navigation Fire Group Module",
+        "strNameShort" : "Fire Groups",
+        "strDesc" : "A hot-swappable control Module for the Polaris \"Standard Navigation Console\" (PSNC).\n\nPolaris's latest iteration of the PSNC allows for user-configurable layout, using their patented Module system. The modules can be installed in multiple ways to alter the configuration of the system for various ship monitoring and control tasks.",
+        "strImg" : "navmod/ItmNavModFire2x2",
+        "strImgNorm" : "navmod/ItmNavModFire2x2n",
+        "strPortraitImg" : "navmod/ItmNavModFire2x2",
+        "strCondLoot"    : "CNDOLNavModFire2x2",
+        "strCOBase"    : "ItmNavMod",
+        "mapGUIPropMaps"  :[
+            "NavMod","NavModFire2x2"
+        ],
+        "mapModeSwitches"    : [
+            "ItmNavMod", "ItmNavModFire2x2",
+            "ItmNavModDmg", "ItmNavModFire2x2Dmg"
+        ],
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultL",
+            "heldR","HeldItmDefaultR"
+        ]
+    },
+    {
+        "strName" : "ItmNavModFire2x2Dmg",
+        "strNameFriendly" : "Polaris Navigation Fire Group Module (Damaged)",
+        "strNameShort" : "Fire Groups (Dmg)",
+        "strDesc" : "A hot-swappable control Module for the Polaris \"Standard Navigation Console\" (PSNC).\n\nPolaris's latest iteration of the PSNC allows for user-configurable layout, using their patented Module system. The modules can be installed in multiple ways to alter the configuration of the system for various ship monitoring and control tasks.",
+        "strImg" : "navmod/ItmNavModFire2x2Dmg",
+        "strImgNorm" : "navmod/ItmNavModFire2x2Dmgn",
+        "strPortraitImg" : "navmod/ItmNavModFire2x2Dmg",
+        "strCondLoot"    : "CNDOLNavModFire2x2Dmg",
+        "strCOBase"    : "ItmNavModDmg",
+        "mapGUIPropMaps"  :[
+            "NavMod","ItmNavModFire2x2"
+        ],
+        "mapModeSwitches"    : [
+            "ItmNavMod", "ItmNavModFire2x2",
+            "ItmNavModDmg", "ItmNavModFire2x2Dmg"
+        ],
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultL",
+            "heldR","HeldItmDefaultR"
+        ]
+    }
+]

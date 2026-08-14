@@ -1,0 +1,502 @@
+[
+  {
+    "strName": "TutorialCircuit",
+    "strNameFriendly": "Тип трассы: кольцевая",
+    "strDescription": "Небольшая овальная кольцевая трасса. Завершите 2 полных круга, пересекая стартовую/финишную точку. Убедитесь, что у вас достаточно топлива, если используете двигатели RCS!",
+    "strTrackType": "Circuit",
+    "nLaps": 2,
+    "fOrbitHeightKM": 35,
+    "fAvgLapTime": 75,
+    "aWaypoints": [
+      {
+        "fAx": 0,
+        "fAy": 1,
+        "fBx": 0,
+        "fBy": -1
+      },
+      {
+        "fWayPointTime": 10,
+        "fAx": -3,
+        "fAy": 1,
+        "fBx": -3,
+        "fBy": -1
+      },
+      {
+        "fWayPointTime": 21,
+        "fAx": -7,
+        "fAy": -3,
+        "fBx": -5,
+        "fBy": -3
+      },
+      {
+        "fWayPointTime": 32,
+        "fAx": -3,
+        "fAy": -5,
+        "fBx": -3,
+        "fBy": -7
+      },
+      {
+        "fWayPointTime": 40,
+        "fAx": 0,
+        "fAy": -5,
+        "fBx": 0,
+        "fBy": -7
+      },
+      {
+        "fWayPointTime": 58,
+        "fAx": 2,
+        "fAy": -3,
+        "fBx": 4,
+        "fBy": -3
+      }
+    ]
+  },
+  {
+    "strName": "TutorialOrientation",
+    "strNameFriendly": "Тип трассы: ориентация",
+    "strDescription": "Контрольные точки можно проходить в любом порядке. Найдите самый быстрый маршрут. Завершите гонку, пересекая стартовую/финишную точку",
+    "strTrackType": "Orientation",
+    "nLaps": 1,
+    "fOrbitHeightKM": 35,
+    "fAvgLapTime": 110,
+    "aWaypoints": [
+      {
+        "fAx": 0,
+        "fAy": 1,
+        "fBx": 0,
+        "fBy": -1
+      },
+      {
+        "fAx": 3,
+        "fAy": 3,
+        "fBx": 4,
+        "fBy": 4.5
+      },
+      {
+        "fAx": -3,
+        "fAy": -3,
+        "fBx": -4,
+        "fBy": -4.5
+      },
+      {
+        "fAx": 4,
+        "fAy": -5.5,
+        "fBx": 3,
+        "fBy": -4
+      },
+      {
+        "fAx": -4,
+        "fAy": 5.5,
+        "fBx": -3,
+        "fBy": 4
+      }
+    ]
+  },
+  {
+    "strName": "TutorialPointToPoint",
+    "strNameFriendly": "Тип трассы: из точки в точку",
+    "strTrackType": "PointToPoint",
+    "strDescription": "Небольшая U-образная трасса из точки в точку. Достигните последней контрольной точки, чтобы завершить трассу",
+    "nLaps": 1,
+    "fOrbitHeightKM": 35,
+    "fAvgLapTime": 65,
+    "aWaypoints": [
+      {
+        "fAx": 0,
+        "fAy": 1,
+        "fBx": 0,
+        "fBy": -1
+      },
+      {
+        "fWayPointTime": 20,
+        "fAx": -5,
+        "fAy": 1,
+        "fBx": -5,
+        "fBy": -1
+      },
+      {
+        "fWayPointTime": 28,
+        "fAx": -8,
+        "fAy": -3,
+        "fBx": -10,
+        "fBy": -3
+      },
+      {
+        "fWayPointTime": 45,
+        "fAx": -5,
+        "fAy": -5,
+        "fBx": -5,
+        "fBy": -7
+      },
+      {
+        "fWayPointTime": 65,
+        "fAx": 0,
+        "fAy": -5,
+        "fBx": 0,
+        "fBy": -7
+      }
+    ]
+  },
+  {
+    "strName": "Fluid",
+    "strNameFriendly": "Флюид",
+    "strTrackType": "Circuit",
+    "nLaps": 1,
+    "fOrbitHeightKM": 32,
+    "fAvgLapTime": 306,
+    "aWaypoints": [
+      {
+        "fAx": -1,
+        "fAy": 0,
+        "fBx": 1,
+        "fBy": 0
+      },
+      {
+        "fWayPointTime": 23,
+        "fAx": -1,
+        "fAy": 10,
+        "fBx": 1,
+        "fBy": 10
+      },
+      {
+        "fWayPointTime": 36,
+        "fAx": 2.5,
+        "fAy": 13,
+        "fBx": 2.5,
+        "fBy": 15
+      },
+      {
+        "fWayPointTime": 53,
+        "fAx": 4,
+        "fAy": 10,
+        "fBx": 6,
+        "fBy": 10
+      },
+      {
+        "fWayPointTime": 64,
+        "fAx": 2,
+        "fAy": 6,
+        "fBx": 4,
+        "fBy": 6
+      },
+      {
+        "fWayPointTime": 107,
+        "fAx": 2,
+        "fAy": -10,
+        "fBx": 4,
+        "fBy": -10
+      },
+      {
+        "fWayPointTime": 124,
+        "fAx": 7,
+        "fAy": -10,
+        "fBx": 9,
+        "fBy": -10
+      },
+      {
+        "fWayPointTime": 143,
+        "fAx": 6,
+        "fAy": -2,
+        "fBx": 8,
+        "fBy": -2
+      },
+      {
+        "fWayPointTime": 167,
+        "fAx": 7,
+        "fAy": 7,
+        "fBx": 9,
+        "fBy": 7
+      },
+      {
+        "fWayPointTime": 188,
+        "fAx": 12,
+        "fAy": 7,
+        "fBx": 14,
+        "fBy": 7
+      },
+      {
+        "fWayPointTime": 229,
+        "fAx": 12,
+        "fAy": -12,
+        "fBx": 14,
+        "fBy": -12
+      },
+      {
+        "fWayPointTime": 251,
+        "fAx": 7,
+        "fAy": -15,
+        "fBx": 7,
+        "fBy": -17
+      },
+      {
+        "fWayPointTime": 276,
+        "fAx": -3,
+        "fAy": -12,
+        "fBx": -1,
+        "fBy": -12
+      }
+    ]
+  },
+  {
+    "strName": "Ladder",
+    "strNameFriendly": "Лестница",
+    "strTrackType": "Circuit",
+    "nLaps": 1,
+    "fOrbitHeightKM": 27,
+    "fAvgLapTime": 210,
+    "aWaypoints": [
+      {
+        "fAx": -1,
+        "fAy": 0,
+        "fBx": 1,
+        "fBy": 0
+      },
+      {
+        "fWayPointTime": 38,
+        "fAx": -1,
+        "fAy": 10,
+        "fBx": 1,
+        "fBy": 10
+      },
+      {
+        "fWayPointTime": 55,
+        "fAx": 2.5,
+        "fAy": 13,
+        "fBx": 2.5,
+        "fBy": 15
+      },
+      {
+        "fWayPointTime": 69,
+        "fAx": 11,
+        "fAy": 13,
+        "fBx": 11,
+        "fBy": 15
+      },
+      {
+        "fWayPointTime": 91,
+        "fAx": 12,
+        "fAy": 7,
+        "fBx": 14,
+        "fBy": 7
+      },
+      {
+        "fWayPointTime": 103,
+        "fAx": 10,
+        "fAy": 3,
+        "fBx": 12,
+        "fBy": 3
+      },
+      {
+        "fWayPointTime": 120,
+        "fAx": 10,
+        "fAy": -5,
+        "fBx": 12,
+        "fBy": -5
+      },
+      {
+        "fWayPointTime": 147,
+        "fAx": 5,
+        "fAy": -1,
+        "fBx": 7,
+        "fBy": -1
+      },
+      {
+        "fWayPointTime": 163,
+        "fAx": 4,
+        "fAy": 2,
+        "fBx": 4,
+        "fBy": 4
+      },
+      {
+        "fWayPointTime": 189,
+        "fAx": 2,
+        "fAy": -3,
+        "fBx": 2,
+        "fBy": -5
+      }
+    ]
+  },
+  {
+    "strName": "Cue",
+    "strNameFriendly": "Кий",
+    "strDescription": "Извилистая трасса с крутыми поворотами на низкой орбите",
+    "strTrackType": "Circuit",
+    "nLaps": 1,
+    "fOrbitHeightKM": 25,
+    "fAvgLapTime": 190,
+    "aWaypoints": [
+      {
+        "fAx": -1,
+        "fAy": 0,
+        "fBx": 1,
+        "fBy": 0
+      },
+      {
+        "fWayPointTime": 48,
+        "fAx": -1,
+        "fAy": 10,
+        "fBx": 1,
+        "fBy": 10
+      },
+      {
+        "fWayPointTime": 67,
+        "fAx": 2.5,
+        "fAy": 13,
+        "fBx": 2.5,
+        "fBy": 15
+      },
+      {
+        "fWayPointTime": 80,
+        "fAx": 11,
+        "fAy": 13,
+        "fBx": 11,
+        "fBy": 15
+      },
+      {
+        "fWayPointTime": 94,
+        "fAx": 12,
+        "fAy": 10,
+        "fBx": 14,
+        "fBy": 10
+      },
+      {
+        "fWayPointTime": 109,
+        "fAx": 10,
+        "fAy": 8,
+        "fBx": 10,
+        "fBy": 6
+      },
+      {
+        "fWayPointTime": 122,
+        "fAx": 6,
+        "fAy": 4,
+        "fBx": 4,
+        "fBy": 4
+      },
+      {
+        "fWayPointTime": 133,
+        "fAx": 10,
+        "fAy": 2,
+        "fBx": 10,
+        "fBy": 0
+      },
+      {
+        "fWayPointTime": 146,
+        "fAx": 12,
+        "fAy": -2,
+        "fBx": 14,
+        "fBy": -2
+      },
+      {
+        "fWayPointTime": 172,
+        "fAx": 5,
+        "fAy": -3,
+        "fBx": 5,
+        "fBy": -5
+      }
+    ]
+  },
+  {
+    "strName": "RisingStar",
+    "strNameFriendly": "Восходящая звезда",
+    "strDescription": "Опасная низкоорбитальная трасса, ведущая в бездну высокого давления нижних слоёв атмосферы Венеры",
+    "strTrackType": "Orientation",
+    "nLaps": 1,
+    "fOrbitHeightKM": 30,
+    "fAvgLapTime": 230,
+    "aWaypoints": [
+      {
+        "fAx": 0,
+        "fAy": 1,
+        "fBx": 0,
+        "fBy": -1
+      },
+      {
+        "fAx": 3,
+        "fAy": 3,
+        "fBx": 4,
+        "fBy": 4.5
+      },
+      {
+        "fAx": -3,
+        "fAy": -3,
+        "fBx": -4,
+        "fBy": -4.5
+      },
+      {
+        "fAx": 4,
+        "fAy": -5.5,
+        "fBx": 3,
+        "fBy": -4
+      },
+      {
+        "fAx": -4,
+        "fAy": 5.5,
+        "fBx": -3,
+        "fBy": 4
+      },
+      {
+        "fAx": -6,
+        "fAy": 1,
+        "fBx": -6,
+        "fBy": -1
+      },
+      {
+        "fAx": -5,
+        "fAy": -5,
+        "fBx": -7,
+        "fBy": -5
+      },
+      {
+        "fAx": -5,
+        "fAy": 5,
+        "fBx": -7,
+        "fBy": 5
+      },
+      {
+        "fAx": 5,
+        "fAy": 1,
+        "fBx": 5,
+        "fBy": -1
+      }
+    ]
+  },
+  {
+    "strName": "ORing",
+    "strNameFriendly": "О-кольцо",
+    "strDescription": "Крошечное кольцо, требующее точности",
+    "strTrackType": "Circuit",
+    "nLaps": 4,
+    "fOrbitHeightKM": 40,
+    "fAvgLapTime": 20,
+    "aWaypoints": [
+      {
+        "fAx": 0,
+        "fAy": -1,
+        "fBx": 0,
+        "fBy": 1
+      },
+      {
+        "fWayPointTime": 5,
+        "fAx": 0.3,
+        "fAy": 1,
+        "fBx": 2.3,
+        "fBy": 1
+      },
+      {
+        "fWayPointTime": 12,
+        "fAx": 0,
+        "fAy": 1.3,
+        "fBx": 0,
+        "fBy": 3.3
+      },
+      {
+        "fWayPointTime": 17,
+        "fAx": -0.3,
+        "fAy": 1,
+        "fBx": -2.3,
+        "fBy": 1
+      }
+    ]
+  }
+]

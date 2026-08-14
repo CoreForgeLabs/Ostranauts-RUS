@@ -1,0 +1,434 @@
+[
+  {
+    "strName": "AnyConsumerGoods",
+    "strFriendlyName": "Потребительские товары",
+    "aReqPodTypes": [
+      "RadShielded"
+    ],
+    "aIncludeCOs": [],
+    "aCondReqs": [
+      "IsCategoryConsumerGoods"
+    ],
+    "aCondForbids": [
+      "IsInstalled",
+      "IsDamaged",
+      "IsCargo"
+    ],
+    "bAND": false
+  },
+  {
+    "strName": "AnyControlSystems",
+    "strFriendlyName": "Системы управления",
+    "aCondReqs": [
+      "IsCategoryControlSystems"
+    ],
+    "aCondForbids": [
+      "IsInstalled",
+      "IsDamaged",
+      "IsCargo"
+    ],
+    "bAND": false
+  },
+  {
+    "strName": "AnyD2O",
+    "strFriendlyName": "D2O",
+    "aReqPodTypes": [
+      "ClimateControlled"
+    ],
+    "aCondReqs": [
+      "IsCategoryD2O"
+    ],
+    "aCondForbids": [
+      "IsInstalled",
+      "IsDamaged",
+      "IsCargo"
+    ],
+    "bAND": false
+  },
+  {
+    "strName": "AnyElectronics",
+    "strFriendlyName": "Электроника",
+    "aReqPodTypes": [
+      "RadShielded"
+    ],
+    "aCondReqs": [
+      "IsCategoryElectronics"
+    ],
+    "aCondForbids": [
+      "IsInstalled",
+      "IsDamaged",
+      "IsCargo"
+    ]
+  },
+  {
+    "strName": "AnyFood",
+    "strFriendlyName": "Пища",
+    "aReqPodTypes": [
+      "ClimateControlled",
+      "RadShielded"
+    ],
+    "aCondReqs": [
+      "IsCategoryFood"
+    ],
+    "aCondForbids": [
+      "IsInstalled",
+      "IsMeatWall",
+      "IsCargo"
+    ]
+  },
+  {
+    "strName": "AnyFurniture",
+    "strFriendlyName": "Мебель",
+    "aCondReqs": [
+      "IsCategoryFurniture"
+    ],
+    "aCondForbids": [
+      "IsInstalled",
+      "IsDamaged",
+      "IsCargo"
+    ]
+  },
+  {
+    "strName": "AnyFusionParts",
+    "strFriendlyName": "Детали термояда",
+    "aReqPodTypes": [
+      "ClimateControlled"
+    ],
+    "aCondReqs": [
+      "IsCategoryFusionParts"
+    ],
+    "aCondForbids": [
+      "IsInstalled",
+      "IsDamaged",
+      "IsCargo"
+    ]
+  },
+  {
+    "strName": "AnyHe3",
+    "strFriendlyName": "He3",
+    "aReqPodTypes": [
+      "ClimateControlled"
+    ],
+    "aCondReqs": [
+      "IsCategoryHe3"
+    ],
+    "aCondForbids": [
+      "IsInstalled",
+      "IsDamaged",
+      "IsCargo"
+    ]
+  },
+  {
+    "strName": "AnyHull",
+    "strFriendlyName": "Корпус",
+    "aCondReqs": [
+      "IsCategoryHull"
+    ],
+    "aCondForbids": [
+      "IsInstalled",
+      "IsDamaged",
+      "IsCargo"
+    ]
+  },
+  {
+    "strName": "AnyHVAC",
+    "strFriendlyName": "HVAC",
+    "aReqPodTypes": [
+      "RadShielded"
+    ],
+    "aCondReqs": [
+      "IsCategoryHVAC"
+    ],
+    "aCondForbids": [
+      "IsInstalled",
+      "IsDamaged",
+      "IsCargo"
+    ]
+  },
+  {
+    "strName": "AnyIndustrialProducts",
+    "strFriendlyName": "Промышленные товары",
+    "aCondReqs": [
+      "IsCategoryIndustrialProducts"
+    ],
+    "aCondForbids": [
+      "IsInstalled",
+      "IsDamaged",
+      "IsCargo"
+    ]
+  },
+  {
+    "strName": "AnyIntoxicants",
+    "strFriendlyName": "Интоксиканты",
+    "aReqPodTypes": [
+      "ClimateControlled",
+      "RadShielded"
+    ],
+    "aCondReqs": [
+      "IsCategoryIntoxicants"
+    ],
+    "aCondForbids": [
+      "IsInstalled",
+      "IsDamaged",
+      "IsCargo"
+    ]
+  },
+  {
+    "strName": "AnyLifeSupport",
+    "strFriendlyName": "Системы жизнеобеспечения",
+    "aReqPodTypes": [
+      "ClimateControlled",
+      "RadShielded"
+    ],
+    "aCondReqs": [
+      "IsCategoryLifeSupport"
+    ],
+    "aCondForbids": [
+      "IsInstalled",
+      "IsDamaged",
+      "IsCargo"
+    ]
+  },
+  {
+    "strName": "AnyLuxuryGoods",
+    "strFriendlyName": "Предметы роскоши",
+    "aReqPodTypes": [
+      "ClimateControlled",
+      "RadShielded"
+    ],
+    "aCondReqs": [
+      "IsCategoryLuxuryGoods"
+    ],
+    "aCondForbids": [
+      "IsInstalled",
+      "IsDamaged",
+      "IsCargo"
+    ]
+  },
+  {
+    "strName": "AnyMedia",
+    "strFriendlyName": "Медиа",
+    "aReqPodTypes": [
+      "RadShielded"
+    ],
+    "aCondReqs": [
+      "IsCategoryMedia"
+    ],
+    "aCondForbids": [
+      "IsInstalled",
+      "IsDamaged",
+      "IsCargo"
+    ]
+  },
+  {
+    "strName": "AnyMedical",
+    "strFriendlyName": "Медицина",
+    "aReqPodTypes": [
+      "ClimateControlled",
+      "RadShielded"
+    ],
+    "aCondReqs": [
+      "IsCategoryMedical"
+    ],
+    "aCondForbids": [
+      "IsInstalled",
+      "IsDamaged",
+      "IsCargo"
+    ]
+  },
+  {
+    "strName": "AnyMetal",
+    "strFriendlyName": "Металл",
+    "aCondReqs": [
+      "IsCategoryMetals"
+    ],
+    "aCondForbids": [
+      "IsInstalled",
+      "IsDamaged",
+      "IsCargo"
+    ]
+  },
+  {
+    "strName": "AnyOres",
+    "strFriendlyName": "Руда",
+    "aCondReqs": [
+      "IsCategoryOre"
+    ],
+    "aCondForbids": [
+      "IsInstalled",
+      "IsDamaged",
+      "IsCargo"
+    ]
+  },
+  {
+    "strName": "AnyPlastics",
+    "strFriendlyName": "Пластмасса",
+    "aReqPodTypes": [
+      "ClimateControlled"
+    ],
+    "aCondReqs": [
+      "IsCategoryPlastics"
+    ],
+    "aCondForbids": [
+      "IsInstalled",
+      "IsDamaged",
+      "IsCargo"
+    ]
+  },
+  {
+    "strName": "AnyScience",
+    "strFriendlyName": "Наука",
+    "aReqPodTypes": [
+      "ClimateControlled",
+      "RadShielded"
+    ],
+    "aCondReqs": [
+      "IsCategoryScience"
+    ],
+    "aCondForbids": [
+      "IsInstalled",
+      "IsDamaged",
+      "IsCargo"
+    ]
+  },
+  {
+    "strName": "AnySensors",
+    "strFriendlyName": "Сенсоры",
+    "aReqPodTypes": [
+      "RadShielded"
+    ],
+    "aCondReqs": [
+      "IsCategorySensors"
+    ],
+    "aCondForbids": [
+      "IsInstalled",
+      "IsDamaged",
+      "IsCargo"
+    ]
+  },
+  {
+    "strName": "AnySpaceSuits",
+    "strFriendlyName": "Скафандр",
+    "aReqPodTypes": [
+      "RadShielded"
+    ],
+    "aCondReqs": [
+      "IsCategorySpaceSuits"
+    ],
+    "aCondForbids": [
+      "IsInstalled",
+      "IsDamaged",
+      "IsCargo"
+    ]
+  },
+  {
+    "strName": "AnyTextiles",
+    "strFriendlyName": "Текстиль",
+    "aReqPodTypes": [
+      "RadShielded"
+    ],
+    "aCondReqs": [
+      "IsCategoryTextiles"
+    ],
+    "aCondForbids": [
+      "IsInstalled",
+      "IsDamaged",
+      "IsCargo"
+    ]
+  },
+  {
+    "strName": "AnyTrash",
+    "strFriendlyName": "Мусор",
+    "aCondReqs": [
+      "IsCategoryTrash"
+    ],
+    "aCondForbids": [
+      "IsInstalled",
+      "IsDamaged",
+      "IsCargo"
+    ]
+  },
+  {
+    "strName": "AnyTools",
+    "strFriendlyName": "Инструмент",
+    "aCondReqs": [
+      "IsCategoryTools"
+    ],
+    "aCondForbids": [
+      "IsInstalled",
+      "IsDamaged",
+      "IsCargo"
+    ]
+  },
+  {
+    "strName": "AnyVolatiles",
+    "strFriendlyName": "Летучие вещества",
+    "aReqPodTypes": [
+      "ClimateControlled"
+    ],
+    "aCondReqs": [
+      "IsCategoryVolatiles"
+    ],
+    "aCondForbids": [
+      "IsInstalled",
+      "IsDamaged",
+      "IsCargo"
+    ]
+  },
+  {
+    "strName": "AnyWater",
+    "strFriendlyName": "Вода",
+    "aReqPodTypes": [
+      "ClimateControlled",
+      "RadShielded"
+    ],
+    "aCondReqs": [
+      "IsCategoryWater"
+    ],
+    "aCondForbids": [
+      "IsInstalled",
+      "IsDamaged",
+      "IsCargo"
+    ]
+  },
+  {
+    "strName": "AnyWeapons",
+    "strFriendlyName": "Оружие",
+    "aReqPodTypes": [
+      "RadShielded"
+    ],
+    "aCondReqs": [
+      "IsCategoryWeapons"
+    ],
+    "aCondForbids": [
+      "IsInstalled",
+      "IsDamaged",
+      "IsCargo"
+    ]
+  },
+  {
+    "strName": "AnyFloors",
+    "aIncludeCOs": [],
+    "aCondReqs": [
+      "IsFloorGrate"
+    ],
+    "aCondForbids": [
+      "IsInstalled",
+      "IsDamaged",
+      "IsContainer",
+      "IsCargo"
+    ]
+  },
+  {
+    "strName": "AnyWalls",
+    "aIncludeCOs": [],
+    "aCondReqs": [
+      "IsWall"
+    ],
+    "aCondForbids": [
+      "IsInstalled",
+      "IsDamaged",
+      "IsCargo"
+    ]
+  }
+]

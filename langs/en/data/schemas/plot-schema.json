@@ -1,0 +1,75 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "strName" : {
+                "type": "string",
+                "description": "The code name of the settings, as referred to."
+            },
+            "fTensionPeriod" : {
+                "type": "number",
+                "description": "Time in seconds between different tension events being spawned (bad)",
+                "minimum": 0.0
+            },
+            "fReleasePeriod" : {
+                "type": "number",
+                "description": "Time in seconds between different release events being spawned (good).",
+                "minimum": 0.0
+            },
+            "fAutosavePeriod" : {
+                "type": "number",
+                "description": "Time in seconds between autosaves.",
+                "minimum": 0.0
+            },
+            "fSocialPeriod" : {
+                "type": "number",
+                "description": "Time in seconds after socialising before characters will socialise with the player again.",
+                "minimum": 0.0
+            },
+            "dictEventChances": {
+                "type": "object",
+                "description": "Chances for specific plot events to occur\nAllchances must add up to 1.0",
+                "properties": {
+                    "bonus_derelict" : {
+                        "type": "number",
+                        "minimum": 0.0,
+                        "maximum": 1.0,
+                        "description": "Chance the game spawns a better quality(less damaged) derelict the next time the player docks to a new derelict."
+                    },
+                    "mariner" : {
+                        "type": "number",
+                        "minimum": 0.0,
+                        "maximum": 1.0,
+                        "description": "Chance the game spawns a mariner near the player"
+                    },
+                    "micrometeoroid" : {
+                        "type": "number",
+                        "minimum": 0.0,
+                        "maximum": 1.0,
+                        "description": "Chance the game hits the player with a micrometeoroid"
+                    },
+                    "police_patrol" : {
+                        "type": "number",
+                        "minimum": 0.0,
+                        "maximum": 1.0,
+                        "description": "Chance the police are spawned and lock onto the player"
+                    },
+                    "part_failure" : {
+                        "type": "number",
+                        "minimum": 0.0,
+                        "maximum": 1.0,
+                        "description": "Chance one of the damaged parts spontaneously fails"
+                    },
+                    "emotional_clobber" : {
+                        "type": "number",
+                        "minimum": 0.0,
+                        "maximum": 1.0,
+                        "description": "Chance the player is clobbered by their own emotions"
+                    }
+                }
+            }
+        }
+    }
+}

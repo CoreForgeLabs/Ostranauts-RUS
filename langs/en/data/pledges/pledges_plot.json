@@ -1,0 +1,92 @@
+[
+  {
+    "strName" : "AI_NewOKLGFixer_SolicitPlayer",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGAI_NewOKLGFixer_SolicitPlayerDo",
+    "aIAEnd" : ["PLOT_NewOKLGFixer_SolicitPlayerEnd"],
+    "strThemID" : "[them]",
+    "nPriority" : 8
+  },
+  {
+    "strName" : "AI_PLOTChoicePanhandling_SolicitPlayer",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGAIChoicePanhandling_SolicitPlayerDo",
+    "aIAEnd" : ["PLOTChoicePanhandling_SolicitPlayerEnd"],
+    "strThemID" : "[them]",
+    "nPriority" : 8
+  },  
+  {
+    "strName" : "AI_PLOT_MedHeist_SolicitPlayer",
+    "strType" : "repeat",
+    "strIATrigger" : "PLOT_MedHeist_Approach",
+    "aIAEnd" : ["PLOT_MedHeist_SolicitPlayerEnd"],
+    "strThemID" : "[us]",
+    "nPriority" : 8
+  },
+  {
+    "strName" : "AI_PLOT_MedHeist_SupportReturn_SucceedApproachPlayer",
+    "strType" : "repeat",
+    "strIATrigger" : "PLOT_MedHeist_SupportReturn_SucceedApproachPlayer",
+    "aIAEnd" : ["PLOT_MedHeist_SupportReturn_SucceedApproachPlayer"],
+    "strThemID" : "[them]",
+    "nPriority" : 8
+  },
+
+  {
+    "strName" : "AI_PLOT_ProspectorFetchGold_SolicitPlayer",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGAI_ProspectorFetchGold_SolicitPlayerDo",
+    "aIAEnd" : ["PLOT_ProspectorFetchGold_SolicitPlayerEnd"],
+    "strThemID" : "[them]",
+    "nPriority" : 8
+  }, 
+  {
+    "strName" : "AI_PLOT_ProspectorBCERFetchGold_SolicitPlayer",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGAI_ProspectorBCERFetchGold_SolicitPlayerDo",
+    "aIAEnd" : ["PLOT_ProspectorBCERFetchGold_SolicitPlayerEnd"],
+    "strThemID" : "[them]",
+    "nPriority" : 8
+  },
+  {
+    "strName" : "AI_PLOT_ProspectorBCRSFetchGold_SolicitPlayer",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGAI_ProspectorBCRSFetchGold_SolicitPlayerDo",
+    "aIAEnd" : ["PLOT_ProspectorBCRSFetchGold_SolicitPlayerEnd"],
+    "strThemID" : "[them]",
+    "nPriority" : 8
+  },
+  {
+    "strName" : "AI_PLOT_VLAFetch_SolicitPlayer",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGAI_VLAFetch_SolicitPlayerDo",
+    "aIAEnd" : ["PLOT_VLAFetch_SolicitPlayerEnd"],
+    "strThemID" : "[them]",
+    "nPriority" : 8
+  },
+  {
+    "strName" : "PLGJealousTowardPartner",
+    "strType" : "repeat",
+    "strIATrigger" : "SOCJealousTowardPartner",
+    "aIAEnd" : ["SOCJealousTowardPartner"],
+    "strThemID" : "[them]",
+    "nPriority" : 5
+  },
+  {
+    "strName" : "PLGJealousAboutPartner",
+    "strType" : "repeat",
+    "strIATrigger" : "SOCJealousAboutPartner",
+    "aIAEnd" : ["SOCJealousAboutPartner"],
+    "strThemID" : "[them]",
+    "nPriority" : 5
+  },
+  {
+    "strName" : "PLGJealousAboutAffection",
+    "strType" : "repeat",
+    "strIATrigger" : "SOCJealousAboutAffection",
+    "aIAEnd" : ["SOCJealousAboutAffection"],
+    "strThemID" : "[them]",
+    "nPriority" : 5
+  }
+  
+]

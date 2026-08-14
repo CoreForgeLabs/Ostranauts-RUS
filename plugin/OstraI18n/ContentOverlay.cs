@@ -192,6 +192,22 @@ namespace OstraI18n
             catch (Exception ex) { Plugin.Log.LogError("[i18n] контент-оверлей упал: " + ex); }
         }
 
+        public static void Reapply(string pluginDir, string langCode)
+        {
+            try
+            {
+                _pluginDir = pluginDir;
+                _langCode = langCode;
+                Applied = 0;
+                Orphans = 0;
+                Apply(pluginDir, langCode);
+            }
+            catch (Exception ex)
+            {
+                Plugin.Log.LogError("[i18n] Reapply failed: " + ex);
+            }
+        }
+
         private static void Apply(string pluginDir, string langCode)
         {
             var dataDir = Path.Combine(pluginDir, "langs", langCode, "data");
@@ -209,9 +225,119 @@ namespace OstraI18n
                 ApplyCategory(kv.Key, kv.Value, jsonPath);
             }
 
+            ApplyNameLists(dataDir);
+
+            RebuildInflections();
+
             Plugin.Log.LogInfo("[i18n] контент-оверлей: применено полей " + Applied + ", сирот " + Orphans);
 
             CheckBaseline(pluginDir, langCode);
+        }
+
+        public static void RebuildInflections()
+        {
+            try
+            {
+                var unpack = AccessTools.Method(typeof(DataHandler), "UnpackTokens");
+                if (unpack != null) unpack.Invoke(null, null);
+
+                Patches.UnpackTokensPostfix();
+                Patches.RegisterSyntheticVerbs();
+
+                GrammarUtils.inflectedStrings.Clear();
+
+                var prepConds = AccessTools.Method(typeof(DataHandler), "PrepareConditionDescriptions");
+                if (prepConds != null) prepConds.Invoke(null, null);
+
+                var prepIAs = AccessTools.Method(typeof(DataHandler), "PrepareInteractionInflections");
+                if (prepIAs != null) prepIAs.Invoke(null, null);
+
+                Plugin.Log.LogInfo("[i18n] Rebuilt GrammarUtils.inflectedStrings (" + GrammarUtils.inflectedStrings?.Count + " total templates)");
+            }
+            catch (Exception ex)
+            {
+                Plugin.Log.LogWarning("[i18n] RebuildInflections failed: " + ex.Message);
+            }
+        }
+
+        private static void ApplyNameLists(string dataDir)
+        {
+            try
+            {
+                LoadSimpleNameList(Path.Combine(dataDir, "names_first", "names_first.json"), DataHandler.dictNamesFirst, isPairs: true);
+                LoadSimpleNameList(Path.Combine(dataDir, "names_last", "names_last.json"), DataHandler.dictNamesLast, isPairs: false);
+                LoadSimpleNameList(Path.Combine(dataDir, "names_full", "names_full.json"), DataHandler.dictNamesFull, isPairs: true);
+                LoadSimpleNameList(Path.Combine(dataDir, "names_robots", "names_robots.json"), DataHandler.dictNamesRobots, isPairs: false);
+                LoadSimpleNameList(Path.Combine(dataDir, "names_ship", "names_ship.json"), DataHandler.dictNamesShip, isPairs: false);
+                LoadSimpleNameList(Path.Combine(dataDir, "names_ship_adjectives", "names_ship_genadj.json"), DataHandler.dictNamesShipAdjectives, isPairs: false);
+                LoadSimpleNameList(Path.Combine(dataDir, "names_ship_nouns", "names_ship_gennoun.json"), DataHandler.dictNamesShipNouns, isPairs: false);
+
+                Plugin.Log.LogInfo("[i18n] name lists overlaid: first=" + DataHandler.dictNamesFirst?.Count
+                    + ", last=" + DataHandler.dictNamesLast?.Count
+                    + ", full=" + DataHandler.dictNamesFull?.Count
+                    + ", robots=" + DataHandler.dictNamesRobots?.Count
+                    + ", ships=" + DataHandler.dictNamesShip?.Count
+                    + ", shipAdj=" + DataHandler.dictNamesShipAdjectives?.Count
+                    + ", shipNouns=" + DataHandler.dictNamesShipNouns?.Count);
+            }
+            catch (Exception ex)
+            {
+                Plugin.Log.LogWarning("[i18n] ApplyNameLists failed: " + ex.Message);
+            }
+        }
+
+        private static void LoadSimpleNameList(string filePath, Dictionary<string, string> targetDict, bool isPairs)
+        {
+            if (!File.Exists(filePath) || targetDict == null) return;
+            try
+            {
+                using var doc = JsonDocument.Parse(File.ReadAllText(filePath));
+                if (doc.RootElement.ValueKind != JsonValueKind.Array) return;
+
+                targetDict.Clear();
+
+                foreach (var item in doc.RootElement.EnumerateArray())
+                {
+                    if (item.TryGetProperty("aValues", out var aVals) && aVals.ValueKind == JsonValueKind.Array)
+                    {
+                        var list = new List<string>();
+                        foreach (var val in aVals.EnumerateArray())
+                        {
+                            if (val.ValueKind == JsonValueKind.String) list.Add(val.GetString());
+                        }
+
+                        if (isPairs)
+                        {
+                            for (int i = 0; i < list.Count; i += 2)
+                            {
+                                if (i + 1 < list.Count)
+                                {
+                                    var name = list[i];
+                                    var gender = list[i + 1];
+                                    if (!string.IsNullOrEmpty(name))
+                                    {
+                                        targetDict[name] = gender;
+                                    }
+                                }
+                            }
+                        }
+                        else
+                        {
+                            foreach (var name in list)
+                            {
+                                if (!string.IsNullOrEmpty(name))
+                                {
+                                    targetDict[name] = name;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Plugin.Log.LogWarning("[i18n] LoadSimpleNameList failed for " + filePath + ": " + ex.Message);
+            }
         }
 
         private static void ApplyCategory(string category, string fieldName, string jsonPath)

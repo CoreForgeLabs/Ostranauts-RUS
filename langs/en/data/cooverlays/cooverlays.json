@@ -1,0 +1,1631 @@
+[
+    {
+        "strName" : "ItmAirPump01Dmg",
+        "strNameFriendly" : "Turbo Air Pump (Damaged)",
+        "strDesc" : "The Sokol T Series gas pump, commonly found on ships as part of the life support system. Will draw gas from any enclosed container or room, and pump those contents into the target area. Can link to relevant alarms to maintain safe cabin pressure.",
+        "strImg" : "ItmAirPump01Dmg02",
+        "strImgNorm" : "ItmAirPump01Dmg02n",
+        "strPortraitImg" : "ItmAirPump01Dmg02",
+        "strCOBase"    : "ItmAirPump02Dmg",
+        "strCondLoot"    : "CNDOLAirPump01Dmg",
+        "mapModeSwitches"    : [
+            "ItmAirPump02Dmg", "ItmAirPump01Dmg",
+            "ItmAirPump02DmgLoose", "ItmAirPump01DmgLoose",
+            "ItmAirPump02Off", "ItmAirPump01Off",
+            "ItmAirPump02OnG", "ItmAirPump01OnG",
+            "ItmAirPump02OffLoose", "ItmAirPump01OffLoose"
+        ]
+    },
+    {
+        "strName" : "ItmAirPump01DmgLoose",
+        "strNameFriendly" : "Turbo Air Pump (Damaged, Loose)",
+        "strDesc" : "The Sokol T Series gas pump, commonly found on ships as part of the life support system. Will draw gas from any enclosed container or room, and pump those contents into the target area. Can link to relevant alarms to maintain safe cabin pressure.",
+        "strImg" : "ItmAirPump01Dmg02Loose",
+        "strImgNorm" : "ItmAirPump01Dmg02Loosen",
+        "strPortraitImg" : "ItmAirPump01Dmg02Loose",
+        "strCOBase"    : "ItmAirPump02DmgLoose",
+        "strCondLoot"    : "CNDOLAirPump01Dmg",
+        "mapSlotEffects" : [
+        "drag", "Blank"
+        ],
+        "mapModeSwitches"    : [
+            "ItmAirPump02Dmg", "ItmAirPump01Dmg",
+            "ItmAirPump02DmgLoose", "ItmAirPump01DmgLoose",
+            "ItmAirPump02Off", "ItmAirPump01Off",
+            "ItmAirPump02OnG", "ItmAirPump01OnG",
+            "ItmAirPump02OffLoose", "ItmAirPump01OffLoose"
+        ]
+    },
+    {
+        "strName" : "ItmAirPump01Off",
+        "strNameFriendly" : "Turbo Air Pump (Off)",
+        "strDesc" : "The Sokol T Series gas pump, commonly found on ships as part of the life support system. Will draw gas from any enclosed container or room, and pump those contents into the target area. Can link to relevant alarms to maintain safe cabin pressure.",
+        "strImg" : "ItmAirPump01Off",
+        "strImgNorm" : "ItmAirPump01Offn",
+        "strImgDamaged" : "ItmAirPump01Dmg01",
+        "strPortraitImg" : "ItmAirPump01Off",
+        "strCOBase"    : "ItmAirPump02Off",
+        "strCondLoot"    : "CNDOLAirPump01",
+        "mapModeSwitches"    : [
+            "ItmAirPump02Dmg", "ItmAirPump01Dmg",
+            "ItmAirPump02DmgLoose", "ItmAirPump01DmgLoose",
+            "ItmAirPump02Off", "ItmAirPump01Off",
+            "ItmAirPump02OnG", "ItmAirPump01OnG",
+            "ItmAirPump02OffLoose", "ItmAirPump01OffLoose"
+        ]
+    },
+    {
+        "strName" : "ItmAirPump01OffLoose",
+        "strNameFriendly" : "Turbo Air Pump (Loose)",
+        "strDesc" : "The Sokol T Series gas pump, commonly found on ships as part of the life support system. Will draw gas from any enclosed container or room, and pump those contents into the target area. Can link to relevant alarms to maintain safe cabin pressure.",
+        "strImg" : "ItmAirPump01OffLoose",
+        "strImgNorm" : "ItmAirPump01OffLoosen",
+        "strImgDamaged" : "ItmAirPump01Dmg01Loose",
+        "strPortraitImg" : "ItmAirPump01OffLoose",
+        "strCOBase"    : "ItmAirPump02OffLoose",
+        "strCondLoot"    : "CNDOLAirPump01",
+        "mapSlotEffects" : [
+        "drag", "Blank"
+        ],
+        "mapModeSwitches"    : [
+            "ItmAirPump02Dmg", "ItmAirPump01Dmg",
+            "ItmAirPump02DmgLoose", "ItmAirPump01DmgLoose",
+            "ItmAirPump02Off", "ItmAirPump01Off",
+            "ItmAirPump02OnG", "ItmAirPump01OnG",
+            "ItmAirPump02OffLoose", "ItmAirPump01OffLoose"
+        ]
+    },
+    {
+        "strName" : "ItmAirPump01OnG",
+        "strNameFriendly" : "Turbo Air Pump (OnG)",
+        "strDesc" : "The Sokol T Series gas pump, commonly found on ships as part of the life support system. Will draw gas from any enclosed container or room, and pump those contents into the target area. Can link to relevant alarms to maintain safe cabin pressure.",
+        "strImg" : "ItmAirPump01Off",
+        "strImgNorm" : "ItmAirPump01Offn",
+        "strImgDamaged" : "ItmAirPump01Dmg01",
+        "strPortraitImg" : "ItmAirPump01Off",
+        "strCOBase"    : "ItmAirPump02OnG",
+        "strCondLoot"    : "CNDOLAirPump01",
+        "mapModeSwitches"    : [
+            "ItmAirPump02Dmg", "ItmAirPump01Dmg",
+            "ItmAirPump02DmgLoose", "ItmAirPump01DmgLoose",
+            "ItmAirPump02Off", "ItmAirPump01Off",
+            "ItmAirPump02OnG", "ItmAirPump01OnG",
+            "ItmAirPump02OffLoose", "ItmAirPump01OffLoose"
+        ]
+    },
+    {
+        "strName" : "ItmAirPump03Dmg",
+        "strNameFriendly" : "Air Pump (Damaged)",
+        "strImg" : "ItmAirPump02Dmg02",
+        "strImgNorm" : "ItmAirPump02Dmg02n",
+        "strImgDamaged" : "",
+        "strPortraitImg" : "ItmAirPump02Dmg02",
+        "strCOBase"    : "ItmAirPump02Dmg",
+        "strCondLoot"    : "CNDOLAirPump03",
+        "mapModeSwitches"    : [
+            "ItmAirPump02Dmg", "ItmAirPump03Dmg",
+            "ItmAirPump02DmgLoose", "ItmAirPump03DmgLoose",
+            "ItmAirPump02Off", "ItmAirPump03Off",
+            "ItmAirPump02OnG", "ItmAirPump03OnG",
+            "ItmAirPump02OffLoose", "ItmAirPump03OffLoose"
+        ]
+    },
+    {
+        "strName" : "ItmAirPump03DmgLoose",
+        "strNameFriendly" : "Air Pump (Damaged, Loose)",
+        "strImg" : "ItmAirPump02Dmg02Loose",
+        "strImgNorm" : "ItmAirPump02Dmg02Loosen",
+        "strImgDamaged" : "ItmAirPump02Dmg01Loose",
+        "strPortraitImg" : "ItmAirPump02Dmg02Loose",
+        "strCOBase"    : "ItmAirPump02DmgLoose",
+        "strCondLoot"    : "CNDOLAirPump03",
+        "mapSlotEffects" : [
+        "drag", "Blank"
+        ],
+        "mapModeSwitches"    : [
+            "ItmAirPump02Dmg", "ItmAirPump03Dmg",
+            "ItmAirPump02DmgLoose", "ItmAirPump03DmgLoose",
+            "ItmAirPump02Off", "ItmAirPump03Off",
+            "ItmAirPump02OnG", "ItmAirPump03OnG",
+            "ItmAirPump02OffLoose", "ItmAirPump03OffLoose"
+        ]
+    },
+    {
+        "strName" : "ItmAirPump03Off",
+        "strNameFriendly" : "Air Pump (Off)",
+        "strImg" : "ItmAirPump02Off",
+        "strImgNorm" : "ItmAirPump02Offn",
+        "strImgDamaged" : "ItmAirPump02Dmg01",
+        "strPortraitImg" : "ItmAirPump02Off",
+        "strCOBase"    : "ItmAirPump02Off",
+        "strCondLoot"    : "CNDOLAirPump03",
+        "mapModeSwitches"    : [
+            "ItmAirPump02Dmg", "ItmAirPump03Dmg",
+            "ItmAirPump02DmgLoose", "ItmAirPump03DmgLoose",
+            "ItmAirPump02Off", "ItmAirPump03Off",
+            "ItmAirPump02OnG", "ItmAirPump03OnG",
+            "ItmAirPump02OffLoose", "ItmAirPump03OffLoose"
+        ]
+    },
+    {
+        "strName" : "ItmAirPump03OffLoose",
+        "strNameFriendly" : "Air Pump (Loose)",
+        "strImg" : "ItmAirPump02OffLoose",
+        "strImgNorm" : "ItmAirPump02OffLoosen",
+        "strImgDamaged" : "ItmAirPump02Dmg01Loose",
+        "strPortraitImg" : "ItmAirPump02OffLoose",
+        "strCOBase"    : "ItmAirPump02OffLoose",
+        "strCondLoot"    : "CNDOLAirPump03",
+        "mapSlotEffects" : [
+            "drag", "Blank"
+        ],
+        "mapModeSwitches"    : [
+            "ItmAirPump02Dmg", "ItmAirPump03Dmg",
+            "ItmAirPump02DmgLoose", "ItmAirPump03DmgLoose",
+            "ItmAirPump02Off", "ItmAirPump03Off",
+            "ItmAirPump02OnG", "ItmAirPump03OnG",
+            "ItmAirPump02OffLoose", "ItmAirPump03OffLoose"
+        ]
+    },
+    {
+        "strName" : "ItmAirPump03OnG",
+        "strNameFriendly" : "Air Pump (OnG)",
+        "strImg" : "ItmAirPump02Off",
+        "strImgNorm" : "ItmAirPump02Offn",
+        "strImgDamaged" : "ItmAirPump02Dmg01",
+        "strPortraitImg" : "ItmAirPump02Off",
+        "strCOBase"    : "ItmAirPump02OnG",
+        "strCondLoot"    : "CNDOLAirPump03",
+        "mapModeSwitches"    : [
+            "ItmAirPump02Dmg", "ItmAirPump03Dmg",
+            "ItmAirPump02DmgLoose", "ItmAirPump03DmgLoose",
+            "ItmAirPump02Off", "ItmAirPump03Off",
+            "ItmAirPump02OnG", "ItmAirPump03OnG",
+            "ItmAirPump02OffLoose", "ItmAirPump03OffLoose"
+        ]
+    },
+    {
+        "strName" : "ItmBattery02LowPower",
+        "strNameFriendly" : "Starter Battery",
+        "strImg" : "ItmBattery02",
+        "strImgNorm" : "ItmBattery02n",
+        "strImgDamaged" : "ItmBattery02Dmg02",
+        "strPortraitImg" : "ItmBattery02",
+        "strCOBase"    : "ItmBattery02",
+        "strCondLoot"    : "CNDOLBatt02LowPower"
+    },
+    {
+        "strName" : "ItmBattery02LowPowerLoose",
+        "strNameFriendly" : "Starter Battery (Loose)",
+        "strImg" : "ItmBattery02Loose",
+        "strImgDamaged" : "ItmBattery02Dmg02Loose",
+        "strImgNorm" : "ItmBattery02Loosen",
+        "strPortraitImg" : "ItmBattery02Loose",
+        "strCOBase"    : "ItmBattery02Loose",
+        "strCondLoot"    : "CNDOLBatt02LowPower",
+        "mapSlotEffects" : [
+            "drag", "Blank"
+          ]
+    },
+    {
+        "strName" : "ItmBattery02bLowPower",
+        "strNameFriendly" : "Starter Battery",
+        "strImg" : "ItmBattery02b",
+        "strImgNorm" : "ItmBattery02bn",
+        "strImgDamaged" : "ItmBattery02bDmg",
+        "strPortraitImg" : "ItmBattery02b",
+        "strCOBase"    : "ItmBattery02b",
+        "strCondLoot"    : "CNDOLBatt02bLowPower"
+    },
+    {
+        "strName" : "ItmBattery02bLowPowerLoose",
+        "strNameFriendly" : "Starter Battery (Loose)",
+        "strImg" : "ItmBattery02bLoose",
+        "strImgDamaged" : "ItmBattery02bDmgLoose",
+        "strImgNorm" : "ItmBattery02bLoosen",
+        "strPortraitImg" : "ItmBattery02bLoose",
+        "strCOBase"    : "ItmBattery02bLoose",
+        "strCondLoot"    : "CNDOLBatt02bLowPower",
+        "mapSlotEffects" : [
+            "drag", "Blank"
+          ]
+    },
+    {
+        "strName" : "ItmBattery02cLowPower",
+        "strNameFriendly" : "Starter Battery",
+        "strImg" : "ItmBattery02c",
+        "strImgNorm" : "ItmBattery02cn",
+        "strImgDamaged" : "ItmBattery02cDmg",
+        "strPortraitImg" : "ItmBattery02c",
+        "strCOBase"    : "ItmBattery02c",
+        "strCondLoot"    : "CNDOLBatt02cLowPower"
+    },
+    {
+        "strName" : "ItmBattery02cLowPowerLoose",
+        "strNameFriendly" : "Starter Battery (Loose)",
+        "strImg" : "ItmBattery02cLoose",
+        "strImgDamaged" : "ItmBattery02cDmgLoose",
+        "strImgNorm" : "ItmBattery02cLoosen",
+        "strPortraitImg" : "ItmBattery02cLoose",
+        "strCOBase"    : "ItmBattery02cLoose",
+        "strCondLoot"    : "CNDOLBatt02cLowPower",
+        "mapSlotEffects" : [
+            "drag", "Blank"
+          ]
+    },   
+    {
+        "strName" : "ItmBookStudyAdmin01",
+        "strNameShort" : "Admin Textbook",
+        "strNameFriendly" : "Textbook: Business Administration",
+        "strDesc" : "An interactive textbook assisting readers in developing skills in business administration.\n\nFFWD ACTIVE BENEFIT: Study Business Administration.",
+        "strCOBase"    : "ItmBookStudyEngElectronic01",
+        "strCondLoot"    : "CNDOLBookStudyAdmin01",
+        "aInteractionsReplace" : [
+            "ACTStudySkillEngElectronic", "ACTStudySkillAdmin"
+        ],
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultL",
+            "heldR","HeldItmDefaultR"
+        ]
+    }, 
+    {
+        "strName" : "ItmBookStudyEngConstruction01",
+        "strNameShort" : "Construction Textbook",
+        "strNameFriendly" : "Textbook: Construction Engineering",
+        "strDesc" : "An interactive textbook assisting readers in developing skills in construction engineering.\n\nFFWD ACTIVE BENEFIT: Study Construction Engineering.",
+        "strCOBase"    : "ItmBookStudyEngElectronic01",
+        "strCondLoot"    : "CNDOLBookStudyEngConstruction01",
+        "aInteractionsReplace" : [
+            "ACTStudySkillEngElectronic", "ACTStudySkillEngConstruction"
+        ],
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultL",
+            "heldR","HeldItmDefaultR"
+        ]
+    }, 
+    {
+        "strName" : "ItmBookStudyEngCivil01",
+        "strNameShort" : "Civil Eng. Textbook",
+        "strNameFriendly" : "Textbook: Civil Engineering",
+        "strDesc" : "An interactive textbook assisting readers in developing skills in civil engineering.\n\nFFWD ACTIVE BENEFIT: Study Civil Engineering.",
+        "strCOBase"    : "ItmBookStudyEngElectronic01",
+        "strCondLoot"    : "CNDOLBookStudyEngCivil01",
+        "aInteractionsReplace" : [
+            "ACTStudySkillEngElectronic", "ACTStudySkillEngCivil"
+        ],
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultL",
+            "heldR","HeldItmDefaultR"
+        ]
+    }, 
+    {
+        "strName" : "ItmBookStudyEngCombat01",
+        "strNameShort" : "Combat Eng. Textbook",
+        "strNameFriendly" : "Textbook: Combat Engineering",
+        "strDesc" : "An interactive textbook published by Brave New World, assisting readers in developing skills in combat engineering.\n\nFFWD ACTIVE BENEFIT: Study Combat Engineering.",
+        "strCOBase"    : "ItmBookStudyEngElectronic01",
+        "strCondLoot"    : "CNDOLBookStudyEngCombat01",
+        "aInteractionsReplace" : [
+            "ACTStudySkillEngElectronic", "ACTStudySkillEngCombat"
+        ],
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultL",
+            "heldR","HeldItmDefaultR"
+        ]
+    }, 
+    {
+        "strName" : "ItmBookStudyEngExcavation01",
+        "strNameShort" : "Excavation Textbook",
+        "strNameFriendly" : "Textbook: Excavation",
+        "strDesc" : "An interactive textbook published by Brave New World, assisting readers in developing skills in excavation and mining.\n\nFFWD ACTIVE BENEFIT: Study Excavation.",
+        "strCOBase"    : "ItmBookStudyEngElectronic01",
+        "strCondLoot"    : "CNDOLBookStudyEngExcavation01",
+        "aInteractionsReplace" : [
+            "ACTStudySkillEngElectronic", "ACTStudySkillEngExcavation"
+        ],
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultL",
+            "heldR","HeldItmDefaultR"
+        ]
+    }, 
+    {
+        "strName" : "ItmBookStudyEngMechanical01",
+        "strNameShort" : "Mech. Eng. Textbook",
+        "strNameFriendly" : "Textbook: Mechanical Engineering",
+        "strDesc" : "An interactive textbook assisting readers in developing skills in mechanical engineering.\n\nFFWD ACTIVE BENEFIT: Study Mechanical Engineering.",
+        "strCOBase"    : "ItmBookStudyEngElectronic01",
+        "strCondLoot"    : "CNDOLBookStudyEngMechanical01",
+        "aInteractionsReplace" : [
+            "ACTStudySkillEngElectronic", "ACTStudySkillEngMechanical"
+        ],
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultL",
+            "heldR","HeldItmDefaultR"
+        ]
+    }, 
+    {
+        "strName" : "ItmBookStudyEngRobotics01",
+        "strNameShort" : "Robotics Eng. Textbook",
+        "strNameFriendly" : "Textbook: Robotics Engineering",
+        "strDesc" : "An interactive textbook assisting readers in developing skills in robotics engineering.\n\nFFWD ACTIVE BENEFIT: Study Robotics Engineering.",
+        "strCOBase"    : "ItmBookStudyEngElectronic01",
+        "strCondLoot"    : "CNDOLBookStudyEngRobotics01",
+        "aInteractionsReplace" : [
+            "ACTStudySkillEngElectronic", "ACTStudySkillEngRobotics"
+        ],
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultL",
+            "heldR","HeldItmDefaultR"
+        ]
+    }, 
+    {
+        "strName" : "ItmBookStudyEngSoftware01",
+        "strNameShort" : "Software Eng. Textbook",
+        "strNameFriendly" : "Textbook: Software Engineering",
+        "strDesc" : "An interactive textbook assisting readers in developing skills in software engineering.\n\nFFWD ACTIVE BENEFIT: Study Software Engineering.",
+        "strCOBase"    : "ItmBookStudyEngElectronic01",
+        "strCondLoot"    : "CNDOLBookStudyEngSoftware01",
+        "aInteractionsReplace" : [
+            "ACTStudySkillEngElectronic", "ACTStudySkillEngSoftware"
+        ],
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultL",
+            "heldR","HeldItmDefaultR"
+        ]
+    },
+    {
+        "strName" : "ItmBookStudyEngSpaceship01",
+        "strNameShort" : "Spaceship Eng. Textbook",
+        "strNameFriendly" : "Textbook: Spaceship Engineering",
+        "strDesc" : "An interactive textbook assisting readers in developing skills in spaceship engineering.\n\nFFWD ACTIVE BENEFIT: Study Spaceship Engineering.",
+        "strCOBase"    : "ItmBookStudyEngElectronic01",
+        "strCondLoot"    : "CNDOLBookStudyEngSpaceship01",
+        "aInteractionsReplace" : [
+            "ACTStudySkillEngElectronic", "ACTStudySkillEngSpaceship"
+        ],
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultL",
+            "heldR","HeldItmDefaultR"
+        ]
+    }, 
+    {
+        "strName" : "ItmBookStudyHacking01",
+        "strNameShort" : "Hacking Textbook",
+        "strNameFriendly" : "Textbook: Hacking",
+        "strDesc" : "An interactive textbook assisting readers in developing skills in computer intrusion and exploitation methodologies.\n\nFFWD ACTIVE BENEFIT: Study Hacking Engineering.",
+        "strCOBase"    : "ItmBookStudyEngElectronic01",
+        "strCondLoot"    : "CNDOLBookStudyHacking01",
+        "aInteractionsReplace" : [
+            "ACTStudySkillEngElectronic", "ACTStudySkillHacking"
+        ],
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultL",
+            "heldR","HeldItmDefaultR"
+        ]
+    },
+
+    {
+        "strName" : "ItmConduit01",
+        "strNameFriendly" : "Conduit: Collective Electric \"Albrite\" EMT",
+        "strImg" : "ItmConduit02Sheet",
+        "strImgNorm" : "ItmConduit02Sheetn",
+        "strPortraitImg" : "ItmConduit02",
+        "strCOBase"    : "ItmConduit00",
+        "strCondLoot"    : "CNDOLConduit01",
+        "mapModeSwitches"    : [
+            "ItmConduit00", "ItmConduit01",
+            "ItmConduit00Dmg", "ItmConduit01Dmg",
+            "ItmConduit00Loose", "ItmConduit01Loose",
+            "ItmConduit00DmgLoose", "ItmConduit01DmgLoose"
+        ]
+    },
+    {
+        "strName" : "ItmConduit01Dmg",
+        "strNameFriendly" : "Conduit (Damaged): Collective Electric \"Albrite\" EMT",
+        "strImg" : "ItmConduit02SheetDmg",
+        "strImgNorm" : "ItmConduit02Sheetn",
+        "strPortraitImg" : "ItmConduit02Dmg02",
+        "strCOBase"    : "ItmConduit00Dmg",
+        "strCondLoot"    : "CNDOLConduit01Dmg",
+        "mapModeSwitches"    : [
+            "ItmConduit00", "ItmConduit01",
+            "ItmConduit00Dmg", "ItmConduit01Dmg",
+            "ItmConduit00Loose", "ItmConduit01Loose",
+            "ItmConduit00DmgLoose", "ItmConduit01DmgLoose"
+        ]
+    },
+    {
+        "strName" : "ItmConduit01Loose",
+        "strNameFriendly" : "Conduit (Loose): Collective Electric \"Albrite\" EMT",
+        "strImg" : "ItmConduit02Loose",
+        "strImgNorm" : "ItmConduit02Loosen",
+        "strPortraitImg" : "ItmConduit02Loose",
+        "strCOBase"    : "ItmConduit00Loose",
+        "strCondLoot"    : "CNDOLConduit01",
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultSoftL",
+            "heldR","HeldItmDefaultSoftR"
+        ],
+        "mapModeSwitches"    : [
+            "ItmConduit00", "ItmConduit01",
+            "ItmConduit00Dmg", "ItmConduit01Dmg",
+            "ItmConduit00Loose", "ItmConduit01Loose",
+            "ItmConduit00DmgLoose", "ItmConduit01DmgLoose"
+        ]
+    },
+    {
+        "strName" : "ItmConduit01DmgLoose",
+        "strNameFriendly" : "Conduit (Loose, Damaged): Collective Electric \"Albrite\" EMT",
+        "strImg" : "ItmConduit02Dmg02Loose",
+        "strImgNorm" : "ItmConduit02Loosen",
+        "strPortraitImg" : "ItmConduit02Dmg02Loose",
+        "strCOBase"    : "ItmConduit00DmgLoose",
+        "strCondLoot"    : "CNDOLConduit01Dmg",
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultSoftL",
+            "heldR","HeldItmDefaultSoftR"
+        ],
+        "mapModeSwitches"    : [
+            "ItmConduit00", "ItmConduit01",
+            "ItmConduit00Dmg", "ItmConduit01Dmg",
+            "ItmConduit00Loose", "ItmConduit01Loose",
+            "ItmConduit00DmgLoose", "ItmConduit01DmgLoose"
+        ]
+    },
+    {
+        "strName" : "ItmConduit04",
+        "strNameFriendly" : "Conduit: Jumper-Jack Emergency Cabling",
+        "strImg" : "ItmConduit04Sheet",
+        "strImgNorm" : "ItmConduit04Sheetn",
+        "strPortraitImg" : "ItmConduit04",
+        "strCOBase"    : "ItmConduit00",
+        "strCondLoot"    : "CNDOLConduit04",
+        "mapModeSwitches"    : [
+            "ItmConduit00", "ItmConduit04",
+            "ItmConduit00Dmg", "ItmConduit04Dmg",
+            "ItmConduit00Loose", "ItmConduit04Loose",
+            "ItmConduit00DmgLoose", "ItmConduit04DmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTConduit00Uninstall", "ACTConduit04Uninstall",
+            "ACTConduit00UninstallNoSkill", "ACTConduit04UninstallNoSkill"
+        ]
+    },
+    {
+        "strName" : "ItmConduit04Dmg",
+        "strNameFriendly" : "Conduit (Damaged): Jumper-Jack Emergency Cabling",
+        "strImg" : "ItmConduit04SheetDmg",
+        "strImgNorm" : "ItmConduit04Sheetn",
+        "strPortraitImg" : "ItmConduit04SheetDmg",
+        "strCOBase"    : "ItmConduit00Dmg",
+        "strCondLoot"    : "CNDOLConduit04Dmg",
+        "mapModeSwitches"    : [
+            "ItmConduit00", "ItmConduit04",
+            "ItmConduit00Dmg", "ItmConduit04Dmg",
+            "ItmConduit00Loose", "ItmConduit04Loose",
+            "ItmConduit00DmgLoose", "ItmConduit04DmgLoose"
+        ]
+    },
+    {
+        "strName" : "ItmConduit04Loose",
+        "strNameFriendly" : "Conduit (Loose): Jumper-Jack Emergency Cabling",
+        "strImg" : "ItmConduit04Loose",
+        "strImgNorm" : "ItmConduit04Loosen",
+        "strPortraitImg" : "ItmConduit04Loose",
+        "strCOBase"    : "ItmConduit00Loose",
+        "strCondLoot"    : "CNDOLConduit04",
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultSoftL",
+            "heldR","HeldItmDefaultSoftR"
+        ],
+        "mapModeSwitches"    : [
+            "ItmConduit00", "ItmConduit04",
+            "ItmConduit00Dmg", "ItmConduit04Dmg",
+            "ItmConduit00Loose", "ItmConduit04Loose",
+            "ItmConduit00DmgLoose", "ItmConduit04DmgLoose"
+        ]
+    },
+    {
+        "strName" : "ItmConduit04DmgLoose",
+        "strNameFriendly" : "Conduit (Loose): Jumper-Jack Emergency Cabling",
+        "strImg" : "ItmConduit04DmgLoose",
+        "strImgNorm" : "ItmConduit04Loosen",
+        "strPortraitImg" : "ItmConduit04DmgLoose",
+        "strCOBase"    : "ItmConduit00DmgLoose",
+        "strCondLoot"    : "CNDOLConduit04Dmg",
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultSoftL",
+            "heldR","HeldItmDefaultSoftR"
+        ],
+        "mapModeSwitches"    : [
+            "ItmConduit00", "ItmConduit04",
+            "ItmConduit00Dmg", "ItmConduit04Dmg",
+            "ItmConduit00Loose", "ItmConduit04Loose",
+            "ItmConduit00DmgLoose", "ItmConduit04DmgLoose"
+        ]
+    },
+    {
+        "strName" : "ItmDecorPoster02",
+        "strNameFriendly" : "Poster: Travel Tharsis Landing",
+        "strDesc" : "A PASS tourism poster for Tharsis Landing on Mars.",
+        "strImg"  : "manuals/DecorPosters/PASS_TharsisLanding-pst",
+        "strImgNorm"  : "ItmPoster01n",
+        "strPortraitImg"  : "manuals/DecorPosters/PASS_TharsisLanding",
+        "strCOBase"    : "ItmDecorPoster01",
+        "strCondLoot"    : "CNDOLDecorPoster02",
+        "mapGUIPropMaps"  : [
+            "Panel OneSheet",
+            "OneSheetDecorPoster02"
+          ],
+        "mapModeSwitches"    : [
+            "ItmDecorPoster01", "ItmDecorPoster02",
+            "ItmDecorPoster01Loose", "ItmDecorPoster02Loose"
+        ]
+    },
+    {
+        "strName" : "ItmDecorPoster02Loose",
+        "strNameFriendly" : "Poster: Travel Tharsis Landing (Loose)",
+        "strDesc" : "A PASS tourism poster for Tharsis Landing on Mars.",
+        "strImg"  : "manuals/DecorPosters/PASS_TharsisLanding-sm",
+        "strImgNorm"  : "ItmPaper01n",
+        "strPortraitImg"  : "manuals/DecorPosters/PASS_TharsisLanding",
+        "strCOBase"    : "ItmDecorPoster01Loose",
+        "strCondLoot"    : "CNDOLDecorPoster02",
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultSoftL",
+            "heldR","HeldItmDefaultSoftR"
+        ],
+        "mapGUIPropMaps"  : [
+            "Panel OneSheet",
+            "OneSheetDecorPoster02"
+          ],
+        "mapModeSwitches"    : [
+            "ItmDecorPoster01", "ItmDecorPoster02",
+            "ItmDecorPoster01Loose", "ItmDecorPoster02Loose"
+        ]
+    },
+    {
+        "strName" : "ItmDecorPoster03",
+        "strNameFriendly" : "Poster: Travel Atlantis",
+        "strDesc" : "A PASS tourism poster for Atlantis on Europa, Jupiter.",
+        "strImg"  : "manuals/DecorPosters/PASS_Atlantis-pst",
+        "strImgNorm"  : "ItmPoster01n",
+        "strPortraitImg"  : "manuals/DecorPosters/PASS_Atlantis",
+        "strCOBase"    : "ItmDecorPoster01",
+        "strCondLoot"    : "CNDOLDecorPoster03",
+        "mapGUIPropMaps"  : [
+            "Panel OneSheet",
+            "OneSheetDecorPoster03"
+          ],
+        "mapModeSwitches"    : [
+            "ItmDecorPoster01", "ItmDecorPoster03",
+            "ItmDecorPoster01Loose", "ItmDecorPoster03Loose"
+        ]
+    },
+    {
+        "strName" : "ItmDecorPoster03Loose",
+        "strNameFriendly" : "Poster: Travel Atlantis (Loose)",
+        "strDesc" : "A PASS tourism poster for Atlantis on Europa, Jupiter.",
+        "strImg"  : "manuals/DecorPosters/PASS_Atlantis-sm",
+        "strImgNorm"  : "ItmPaper01n",
+        "strPortraitImg"  : "manuals/DecorPosters/PASS_Atlantis",
+        "strCOBase"    : "ItmDecorPoster01Loose",
+        "strCondLoot"    : "CNDOLDecorPoster03",
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultSoftL",
+            "heldR","HeldItmDefaultSoftR"
+        ],
+        "mapGUIPropMaps"  : [
+            "Panel OneSheet",
+            "OneSheetDecorPoster03"
+          ],
+        "mapModeSwitches"    : [
+            "ItmDecorPoster01", "ItmDecorPoster03",
+            "ItmDecorPoster01Loose", "ItmDecorPoster03Loose"
+        ]
+    },
+    {
+        "strName" : "ItmDecorPoster04",
+        "strNameFriendly" : "Poster: Viceroy's Advertisement",
+        "strDesc" : "A poster advertisement featuring the signature red rabbit mascot of Sungura Viceroys cigarettes.\n\"Smoke break! Viceroy's orders.\"",
+        "strImg"  : "manuals/DecorPosters/ViceroysAdvert-pst",
+        "strImgNorm"  : "ItmPoster01n",
+        "strPortraitImg"  : "manuals/DecorPosters/ViceroysAdvert",
+        "strCOBase"    : "ItmDecorPoster01",
+        "strCondLoot"    : "CNDOLDecorPoster04",
+        "mapGUIPropMaps"  : [
+            "Panel OneSheet",
+            "OneSheetDecorPoster04"
+          ],
+        "mapModeSwitches"    : [
+            "ItmDecorPoster01", "ItmDecorPoster04",
+            "ItmDecorPoster01Loose", "ItmDecorPoster04Loose"
+        ]
+    },
+    {
+        "strName" : "ItmDecorPoster04Loose",
+        "strNameFriendly" : "Poster: Viceroy's Advertisement (Loose)",
+        "strDesc" : "A poster advertisement featuring the signature red rabbit mascot of Sungura Viceroys cigarettes.\n\"Smoke break! Viceroy's orders.\"",
+        "strImg"  : "manuals/DecorPosters/ViceroysAdvert-sm",
+        "strImgNorm"  : "ItmPaper01n",
+        "strPortraitImg"  : "manuals/DecorPosters/ViceroysAdvert",
+        "strCOBase"    : "ItmDecorPoster01Loose",
+        "strCondLoot"    : "CNDOLDecorPoster04",
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultSoftL",
+            "heldR","HeldItmDefaultSoftR"
+        ],
+        "mapGUIPropMaps"  : [
+            "Panel OneSheet",
+            "OneSheetDecorPoster04"
+          ],
+        "mapModeSwitches"    : [
+            "ItmDecorPoster01", "ItmDecorPoster04",
+            "ItmDecorPoster01Loose", "ItmDecorPoster04Loose"
+        ]
+    },
+    {
+        "strName" : "ItmDecorPoster05",
+        "strNameFriendly" : "Poster: Lucky says PANIC",
+        "strDesc" : "An Ayotimiwa PSA poster featuring everybody's favorite Lucky the Lusca: This one is an acronym of steps for responding to a ship atmosphere breach.",
+        "strImg"  : "manuals/DecorPosters/LUCKY_SAYS_PANIC-pst",
+        "strImgNorm"  : "ItmPoster01n",
+        "strPortraitImg"  : "manuals/DecorPosters/LUCKY_SAYS_PANIC",
+        "strCOBase"    : "ItmDecorPoster01",
+        "strCondLoot"    : "CNDOLDecorPoster05",
+        "mapGUIPropMaps"  : [
+            "Panel OneSheet",
+            "OneSheetDecorPoster05"
+          ],
+        "mapModeSwitches"    : [
+            "ItmDecorPoster01", "ItmDecorPoster05",
+            "ItmDecorPoster01Loose", "ItmDecorPoster05Loose"
+        ]
+    },
+    {
+        "strName" : "ItmDecorPoster05Loose",
+        "strNameFriendly" : "Poster: Lucky says PANIC (Loose)",
+        "strDesc" : "An Ayotimiwa PSA poster featuring everybody's favorite Lucky the Lusca: This one is an acronym of steps for responding to a ship atmosphere breach.",
+        "strImg"  : "manuals/DecorPosters/LUCKY_SAYS_PANIC-sm",
+        "strImgNorm"  : "ItmPaper01n",
+        "strPortraitImg"  : "manuals/DecorPosters/LUCKY_SAYS_PANIC",
+        "strCOBase"    : "ItmDecorPoster01Loose",
+        "strCondLoot"    : "CNDOLDecorPoster05",
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultSoftL",
+            "heldR","HeldItmDefaultSoftR"
+        ],
+        "mapGUIPropMaps"  : [
+            "Panel OneSheet",
+            "OneSheetDecorPoster05"
+          ],
+        "mapModeSwitches"    : [
+            "ItmDecorPoster01", "ItmDecorPoster05",
+            "ItmDecorPoster01Loose", "ItmDecorPoster05Loose"
+        ]
+    },
+    {
+        "strName" : "ItmDecorPoster06",
+        "strNameFriendly" : "Poster: Lucky says YIELD",
+        "strDesc" : "An Ayotimiwa PSA poster featuring everybody's favorite Lucky the Lusca: This one is an acronym of tips for piloting within K-Leg airspace.",
+        "strImg"  : "manuals/DecorPosters/LUCKY_SAYS_YIELD-pst",
+        "strImgNorm"  : "ItmPoster01n",
+        "strPortraitImg"  : "manuals/DecorPosters/LUCKY_SAYS_YIELD",
+        "strCOBase"    : "ItmDecorPoster01",
+        "strCondLoot"    : "CNDOLDecorPoster06",
+        "mapGUIPropMaps"  : [
+            "Panel OneSheet",
+            "OneSheetDecorPoster06"
+          ],
+        "mapModeSwitches"    : [
+            "ItmDecorPoster01", "ItmDecorPoster06",
+            "ItmDecorPoster01Loose", "ItmDecorPoster06Loose"
+        ]
+    },
+    {
+        "strName" : "ItmDecorPoster06Loose",
+        "strNameFriendly" : "Poster: Lucky says YIELD (Loose)",
+        "strDesc" : "An Ayotimiwa PSA poster featuring everybody's favorite Lucky the Lusca: This one is an acronym of tips for piloting within K-Leg airspace.",
+        "strImg"  : "manuals/DecorPosters/LUCKY_SAYS_YIELD-sm",
+        "strImgNorm"  : "ItmPaper01n",
+        "strPortraitImg"  : "manuals/DecorPosters/LUCKY_SAYS_YIELD",
+        "strCOBase"    : "ItmDecorPoster01Loose",
+        "strCondLoot"    : "CNDOLDecorPoster06",
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultSoftL",
+            "heldR","HeldItmDefaultSoftR"
+        ],
+        "mapGUIPropMaps"  : [
+            "Panel OneSheet",
+            "OneSheetDecorPoster06"
+          ],
+        "mapModeSwitches"    : [
+            "ItmDecorPoster01", "ItmDecorPoster06",
+            "ItmDecorPoster01Loose", "ItmDecorPoster06Loose"
+        ]
+    },
+    {
+        "strName" : "ItmDecorPoster09",
+        "strNameFriendly" : "Poster: Black Bull Kape",
+        "strDesc" : "A poster advertisement featuring the aggressive intensity of the system's only 100% Kapeng Barako, featuring the distinctively strong, smoky taste and floral aroma of Pinoy Liberica coffee beans. \"That black bull kick will send you flying.\"",
+        "strImg"  : "manuals/DecorPosters/BlackBullKape-pst",
+        "strImgNorm"  : "ItmPoster01n",
+        "strPortraitImg"  : "manuals/DecorPosters/BlackBullKape",
+        "strCOBase"    : "ItmDecorPoster01",
+        "strCondLoot"    : "CNDOLDecorPoster09",
+        "mapGUIPropMaps"  : [
+            "Panel OneSheet",
+            "OneSheetDecorPoster09"
+          ],
+        "mapModeSwitches"    : [
+            "ItmDecorPoster01", "ItmDecorPoster09",
+            "ItmDecorPoster01Loose", "ItmDecorPoster09Loose"
+        ]
+    },
+    {
+        "strName" : "ItmDecorPoster09Loose",
+        "strNameFriendly" : "Poster: Black Bull Kape (Loose)",
+        "strDesc" : "A poster advertisement featuring the aggressive intensity of the system's only 100% Kapeng Barako, featuring the distinctively strong, smoky taste and floral aroma of Pinoy Liberica coffee beans. \"That black bull kick will send you flying.\"",
+        "strImg"  : "manuals/DecorPosters/BlackBullKape-sm",
+        "strImgNorm"  : "ItmPaper01n",
+        "strPortraitImg"  : "manuals/DecorPosters/BlackBullKape",
+        "strCOBase"    : "ItmDecorPoster01Loose",
+        "strCondLoot"    : "CNDOLDecorPoster09",
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultSoftL",
+            "heldR","HeldItmDefaultSoftR"
+        ],
+        "mapGUIPropMaps"  : [
+            "Panel OneSheet",
+            "OneSheetDecorPoster09"
+          ],
+        "mapModeSwitches"    : [
+            "ItmDecorPoster01", "ItmDecorPoster09",
+            "ItmDecorPoster01Loose", "ItmDecorPoster09Loose"
+        ]
+    },
+    {
+        "strName" : "ItmDecorPoster10",
+        "strNameFriendly" : "Poster: Damask Rose",
+        "strDesc" : "A poster advertisement featuring Green Energy Company's most famous product system-wide, clean sativa strain smokes with a high as distinctive as their marketing design.",
+        "strImg"  : "manuals/DecorPosters/DamaskRose-pst",
+        "strImgNorm"  : "ItmPoster01n",
+        "strPortraitImg"  : "manuals/DecorPosters/DamaskRose",
+        "strCOBase"    : "ItmDecorPoster01",
+        "strCondLoot"    : "CNDOLDecorPoster10",
+        "mapGUIPropMaps"  : [
+            "Panel OneSheet",
+            "OneSheetDecorPoster10"
+          ],
+        "mapModeSwitches"    : [
+            "ItmDecorPoster01", "ItmDecorPoster10",
+            "ItmDecorPoster01Loose", "ItmDecorPoster10Loose"
+        ]
+    },
+    {
+        "strName" : "ItmDecorPoster10Loose",
+        "strNameFriendly" : "Poster: Damask Rose (Loose)",
+        "strDesc" : "A poster advertisement featuring Green Energy Company's most famous product system-wide, clean sativa strain smokes with a high as distinctive as their marketing design.",
+        "strImg"  : "manuals/DecorPosters/DamaskRose-sm",
+        "strImgNorm"  : "ItmPaper01n",
+        "strPortraitImg"  : "manuals/DecorPosters/DamaskRose",
+        "strCOBase"    : "ItmDecorPoster01Loose",
+        "strCondLoot"    : "CNDOLDecorPoster10",
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultSoftL",
+            "heldR","HeldItmDefaultSoftR"
+        ],
+        "mapGUIPropMaps"  : [
+            "Panel OneSheet",
+            "OneSheetDecorPoster10"
+          ],
+        "mapModeSwitches"    : [
+            "ItmDecorPoster01", "ItmDecorPoster10",
+            "ItmDecorPoster01Loose", "ItmDecorPoster10Loose"
+        ]
+    },
+    {
+        "strName" : "ItmDecorPoster11",
+        "strNameFriendly" : "Poster: Bismertnaya Vodka Classic",
+        "strDesc" : "A poster advertisement featuring the classic sunrise skull representing spacers' drink of choice courtesy of Soyuzneft oil company. For flavor that's immortal, trust Bismertnaya.",
+        "strImg"  : "manuals/DecorPosters/Bismertnaya-pst",
+        "strImgNorm"  : "ItmPoster01n",
+        "strPortraitImg"  : "manuals/DecorPosters/Bismertnaya",
+        "strCOBase"    : "ItmDecorPoster01",
+        "strCondLoot"    : "CNDOLDecorPoster11",
+        "mapGUIPropMaps"  : [
+            "Panel OneSheet",
+            "OneSheetDecorPoster11"
+          ],
+        "mapModeSwitches"    : [
+            "ItmDecorPoster01", "ItmDecorPoster11",
+            "ItmDecorPoster01Loose", "ItmDecorPoster11Loose"
+        ]
+    },
+    {
+        "strName" : "ItmDecorPoster11Loose",
+        "strNameFriendly" : "Poster: Bismertnaya Vodka Classic (Loose)",
+        "strDesc" : "A poster advertisement featuring the classic sunrise skull representing spacers' drink of choice courtesy of Soyuzneft oil company. For flavor that's immortal, trust Bismertnaya.",
+        "strImg"  : "manuals/DecorPosters/Bismertnaya-sm",
+        "strImgNorm"  : "ItmPaper01n",
+        "strPortraitImg"  : "manuals/DecorPosters/Bismertnaya",
+        "strCOBase"    : "ItmDecorPoster01Loose",
+        "strCondLoot"    : "CNDOLDecorPoster11",
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultSoftL",
+            "heldR","HeldItmDefaultSoftR"
+        ],
+        "mapGUIPropMaps"  : [
+            "Panel OneSheet",
+            "OneSheetDecorPoster11"
+          ],
+        "mapModeSwitches"    : [
+            "ItmDecorPoster01", "ItmDecorPoster11",
+            "ItmDecorPoster01Loose", "ItmDecorPoster11Loose"
+        ]
+    },
+    {
+        "strName" : "ItmDecorPoster12",
+        "strNameFriendly" : "Poster: Bismertnaya Vodka Psyche",
+        "strDesc" : "A poster advertisement featuring the limited edition \"Psyche Sunset\" design, Soyuzneft oil company's celebration to the supposed Iron Giant of asteroids, representing resilient, hard-drinking humanity system-wide.\n\n\"For every immortal, unremembered moment, there's Bismertnaya.\"",
+        "strImg"  : "manuals/DecorPosters/BismertnayaPsyche-pst",
+        "strImgNorm"  : "ItmPoster01n",
+        "strPortraitImg"  : "manuals/DecorPosters/BismertnayaPsyche",
+        "strCOBase"    : "ItmDecorPoster01",
+        "strCondLoot"    : "CNDOLDecorPoster12",
+        "mapGUIPropMaps"  : [
+            "Panel OneSheet",
+            "OneSheetDecorPoster12"
+          ],
+        "mapModeSwitches"    : [
+            "ItmDecorPoster01", "ItmDecorPoster12",
+            "ItmDecorPoster01Loose", "ItmDecorPoster12Loose"
+        ]
+    },
+    {
+        "strName" : "ItmDecorPoster12Loose",
+        "strNameFriendly" : "Poster: Bismertnaya Vodka Psyche (Loose)",
+        "strDesc" : "A poster advertisement featuring the limited edition \"Psyche Sunset\" design, Soyuzneft oil company's celebration to the supposed Iron Giant of asteroids, representing resilient, hard-drinking humanity system-wide.\n\n\"For every immortal, unremembered moment, there's Bismertnaya.\"",
+        "strImg"  : "manuals/DecorPosters/BismertnayaPsyche-sm",
+        "strImgNorm"  : "ItmPaper01n",
+        "strPortraitImg"  : "manuals/DecorPosters/BismertnayaPsyche",
+        "strCOBase"    : "ItmDecorPoster01Loose",
+        "strCondLoot"    : "CNDOLDecorPoster12",
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultSoftL",
+            "heldR","HeldItmDefaultSoftR"
+        ],
+        "mapGUIPropMaps"  : [
+            "Panel OneSheet",
+            "OneSheetDecorPoster12"
+          ],
+        "mapModeSwitches"    : [
+            "ItmDecorPoster01", "ItmDecorPoster12",
+            "ItmDecorPoster01Loose", "ItmDecorPoster12Loose"
+        ]
+    },
+    {
+        "strName" : "ItmDocumentPermitOKLG01Used",
+        "strNameFriendly" : "Permit: Yellow Ayotimiwa Salvage Permit",
+        "strImg"  : "ItmPaper02",
+        "strImgNorm"  : "ItmPaper01n",
+        "strPortraitImg"  : "ItmPaper02",
+        "strCOBase"    : "ItmDocumentPermitOKLG01",
+        "strCondLoot"    : "CNDOLDocumentPermitOKLG01Used",
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultSoftL",
+            "heldR","HeldItmDefaultSoftR"
+        ]
+    },
+    {
+        "strName" : "ItmDocumentPermitOKLG01bUsed",
+        "strNameFriendly" : "Permit: Red Ayotimiwa Salvage Permit",
+        "strImg"  : "ItmPaper02b",
+        "strImgNorm"  : "ItmPaper01n",
+        "strPortraitImg"  : "ItmPaper02b",
+        "strCOBase"    : "ItmDocumentPermitOKLG01b",
+        "strCondLoot"    : "CNDOLDocumentPermitOKLG01bUsed",
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultSoftL",
+            "heldR","HeldItmDefaultSoftR"
+        ]
+    },
+    {
+        "strName" : "ItmDocumentPermitOKLG01cUsed",
+        "strNameFriendly" : "Permit: Blue Ayotimiwa Salvage Permit",
+        "strImg"  : "ItmPaper02c",
+        "strImgNorm"  : "ItmPaper01n",
+        "strPortraitImg"  : "ItmPaper02c",
+        "strCOBase"    : "ItmDocumentPermitOKLG01c",
+        "strCondLoot"    : "CNDOLDocumentPermitOKLG01cUsed",
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultSoftL",
+            "heldR","HeldItmDefaultSoftR"
+        ]
+    },
+    {
+        "strName" : "ItmDocumentPermitOKLG01dUsed",
+        "strNameFriendly" : "Permit: Silver Ayotimiwa Salvage Permit",
+        "strImg"  : "ItmPaper02d",
+        "strImgNorm"  : "ItmPaper01n",
+        "strPortraitImg"  : "ItmPaper02d",
+        "strCOBase"    : "ItmDocumentPermitOKLG01d",
+        "strCondLoot"    : "CNDOLDocumentPermitOKLG01dUsed",
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultSoftL",
+            "heldR","HeldItmDefaultSoftR"
+        ]
+    },
+    {
+        "strName" : "ItmDocumentPermitOKLG01eUsed",
+        "strNameFriendly" : "Permit: Black Ayotimiwa Salvage Permit",
+        "strImg"  : "ItmPaper02e",
+        "strImgNorm"  : "ItmPaper01n",
+        "strPortraitImg"  : "ItmPaper02e",
+        "strCOBase"    : "ItmDocumentPermitOKLG01e",
+        "strCondLoot"    : "CNDOLDocumentPermitOKLG01eUsed",
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultSoftL",
+            "heldR","HeldItmDefaultSoftR"
+        ]
+    },
+    {
+        "strName" : "ItmHeater02Dmg",
+        "strNameFriendly" : "Heater Model B (Damaged)",
+        "strImg"  : "ItmHeater02Dmg",
+        "strImgNorm"  : "ItmHeater02n",
+        "strImgDamaged" : "",
+        "strPortraitImg" : "ItmHeater02Dmg",
+        "strCOBase"    : "ItmHeater01Dmg",
+        "mapModeSwitches"    : [
+            "ItmHeater01Dmg", "ItmHeater02Dmg",
+            "ItmHeater01DmgLoose", "ItmHeater02DmgLoose",
+            "ItmHeater01Off", "ItmHeater02Off",
+            "ItmHeater01", "ItmHeater02",
+            "ItmHeater01OffLoose", "ItmHeater02OffLoose"
+        ]
+    },
+    {
+        "strName" : "ItmHeater02DmgLoose",
+        "strNameFriendly" : "Heater Model B (Loose, Damaged)",
+        "strImg"  : "ItmHeater01Dmg02Loose",
+        "strImgNorm"  : "ItmHeater01Loosen",
+        "strImgDamaged" : "",
+        "strPortraitImg" : "ItmHeater02DmgLoose",
+        "strCOBase"    : "ItmHeater01DmgLoose",
+        "mapSlotEffects" : [
+            "drag", "Blank"
+        ],
+        "mapModeSwitches"    : [
+            "ItmHeater01Dmg", "ItmHeater02Dmg",
+            "ItmHeater01DmgLoose", "ItmHeater02DmgLoose",
+            "ItmHeater01Off", "ItmHeater02Off",
+            "ItmHeater01", "ItmHeater02",
+            "ItmHeater01OffLoose", "ItmHeater02OffLoose"
+        ]
+    },
+    {
+        "strName" : "ItmHeater02Off",
+        "strNameFriendly" : "Heater Model B (Off)",
+        "strImg" : "ItmHeater02",
+        "strImgNorm" : "ItmHeater02n",
+        "strImgDamaged" : "ItmHeater02Dmg",
+        "strPortraitImg" : "ItmHeater02",
+        "strCOBase"    : "ItmHeater01Off",
+        "mapModeSwitches"    : [
+            "ItmHeater01Dmg", "ItmHeater02Dmg",
+            "ItmHeater01DmgLoose", "ItmHeater02DmgLoose",
+            "ItmHeater01Off", "ItmHeater02Off",
+            "ItmHeater01", "ItmHeater02",
+            "ItmHeater01OffLoose", "ItmHeater02OffLoose"
+        ]
+    },
+    {
+        "strName" : "ItmHeater02OffLoose",
+        "strNameFriendly" : "Heater Model B (Loose)",
+        "strImg"  : "ItmHeater02Loose",
+        "strImgNorm"  : "ItmHeater01Loosen",
+        "strImgDamaged" : "ItmHeater02DmgLoose",
+        "strPortraitImg" : "ItmHeater02Loose",
+        "strCOBase"    : "ItmHeater01OffLoose",
+        "mapSlotEffects" : [
+            "drag", "Blank"
+        ],
+        "mapModeSwitches"    : [
+            "ItmHeater01Dmg", "ItmHeater02Dmg",
+            "ItmHeater01DmgLoose", "ItmHeater02DmgLoose",
+            "ItmHeater01Off", "ItmHeater02Off",
+            "ItmHeater01", "ItmHeater02",
+            "ItmHeater01OffLoose", "ItmHeater02OffLoose"
+        ]
+    },
+    {
+        "strName" : "ItmHeater02",
+        "strNameFriendly" : "Heater Model B",
+        "strImg"  : "ItmHeater02Sheet",
+        "strImgNorm"  : "ItmHeater02Sheetn",
+        "strImgDamaged" : "ItmHeater02SheetDmg",
+        "strPortraitImg" : "ItmHeater02",
+        "strCOBase"    : "ItmHeater01",
+        "mapModeSwitches"    : [
+            "ItmHeater01Dmg", "ItmHeater02Dmg",
+            "ItmHeater01DmgLoose", "ItmHeater02DmgLoose",
+            "ItmHeater01Off", "ItmHeater02Off",
+            "ItmHeater01", "ItmHeater02",
+            "ItmHeater01OffLoose", "ItmHeater02OffLoose"
+        ],
+        "objAnimation" : {
+            "nFrameCount" : 8,
+            "strFrameRate" : "8-32",
+            "bRandomStartingFrame" : true,
+            "nSheetColumns" : 4,
+            "nSheetRows" : 4,
+            "bLoop" : true
+        }
+    },
+    
+    {
+        "strName" : "ItmShipWeaponPDC01Firing",
+        "strNameFriendly" : "Smartlink 'Charybdis' PDC (Firing)",
+        "strImg"  : "ship_combat/ItmShipWeaponPDC01Roll",
+        "strImgNorm"  : "ship_combat/ItmShipWeaponPDC01Rolln",
+        "strPortraitImg" : "ship_combat/ItmShipWeaponPDC01Off",
+        "strCOBase"    : "ItmShipWeaponPDC01",
+        "mapModeSwitches"    : [
+            "ItmShipWeaponPDC01", "ItmShipWeaponPDC01Firing"
+        ],
+        "objAnimation" : {
+            "nFrameCount" : 9,
+            "strFrameRate" : "9-32",
+            "bRandomStartingFrame" : false,
+            "nSheetColumns" : 5,
+            "nSheetRows" : 2,
+            "bLoop" : true
+        }
+    },
+    {
+        "strName" : "ItmShipWeaponPDC03Firing",
+        "strNameFriendly" : "Soyuzneft 'Панцирь-Х' PDC (Firing)",
+        "strImg"  : "ship_combat/ItmShipWeaponPDC03Roll",
+        "strImgNorm"  : "ship_combat/ItmShipWeaponPDC03Rolln",
+        "strPortraitImg" : "ship_combat/ItmShipWeaponPDC03Off",
+        "strCOBase"    : "ItmShipWeaponPDC03",
+        "mapModeSwitches"    : [
+            "ItmShipWeaponPDC03", "ItmShipWeaponPDC03Firing"
+        ],
+        "objAnimation" : {
+            "nFrameCount" : 8,
+            "strFrameRate" : "8-32",
+            "bRandomStartingFrame" : false,
+            "nSheetColumns" : 4,
+            "nSheetRows" : 2,
+            "bLoop" : true
+        }
+    },
+    {
+        "strName" : "ItmPDACartPwrViz",
+        "strNameFriendly" : "Renbao PwrViz Cartridge",
+        "strDesc" : "Renbao PDA augmentation PwrViz cartridge. Contains special hardware designed to enable augmented reality views of the environment, highlighting power flow.",
+        "strImg"  : "ItmPDACart01",
+        "strImgNorm"  : "ItmPDACart00n",
+        "strPortraitImg"  : "paperdoll/held/portPDACart01",
+        "strCOBase"    : "ItmPDACart00",
+        "strCondLoot"    : "CONDCardPDAPwrViz",
+        "mapSlotEffects" : [
+            "heldL","HeldItmPDACart01L",
+            "heldR","HeldItmPDACart01R"
+        ]
+    },
+    {
+        "strName" : "ItmPDACartDmgViz",
+        "strNameFriendly" : "Renbao DmgViz Cartridge",
+        "strDesc" : "Renbao PDA augmentation DmgViz cartridge. Contains special hardware designed to enable augmented reality views of the environment, highlighting damaged equipment.",
+        "strImg"  : "ItmPDACart01",
+        "strImgNorm"  : "ItmPDACart00n",
+        "strPortraitImg"  : "paperdoll/held/portPDACart01",
+        "strCOBase"    : "ItmPDACart00",
+        "strCondLoot"    : "CONDCardPDADmgViz",
+        "mapSlotEffects" : [
+            "heldL","HeldItmPDACart01L",
+            "heldR","HeldItmPDACart01R"
+        ]
+    },
+    {
+        "strName" : "ItmPDACartPriceViz",
+        "strNameFriendly" : "Renbao PriceViz Cartridge",
+        "strDesc" : "Renbao PDA augmentation PriceViz cartridge. Contains special hardware designed to enable augmented reality views of the environment, highlighting item MSRP.",
+        "strImg"  : "ItmPDACart02",
+        "strImgNorm"  : "ItmPDACart00n",
+        "strPortraitImg"  : "paperdoll/held/portPDACart02",
+        "strCOBase"    : "ItmPDACart00",
+        "strCondLoot"    : "CONDCardPDAPriceViz",
+        "mapSlotEffects" : [
+            "heldL","HeldItmPDACart02L",
+            "heldR","HeldItmPDACart02R"
+        ]
+    },
+    {
+        "strName" : "ItmPDACartMassViz",
+        "strNameFriendly" : "Renbao MassViz Cartridge",
+        "strDesc" : "Renbao PDA augmentation MassViz cartridge. Contains special hardware designed to enable augmented reality views of the environment, highlighting item mass.",
+        "strImg"  : "ItmPDACart01",
+        "strImgNorm"  : "ItmPDACart00n",
+        "strPortraitImg"  : "paperdoll/held/portPDACart01",
+        "strCOBase"    : "ItmPDACart00",
+        "strCondLoot"    : "CONDCardPDAMassViz",
+        "mapSlotEffects" : [
+            "heldL","HeldItmPDACart01L",
+            "heldR","HeldItmPDACart01R"
+        ]
+    },
+    {
+        "strName" : "ItmPDACartHeatViz",
+        "strNameFriendly" : "Renbao HeatViz Cartridge",
+        "strDesc" : "Renbao PDA augmentation HeatViz cartridge. Contains special hardware designed to enable augmented reality views of the environment, highlighting thermal energy.",
+        "strImg"  : "ItmPDACart02",
+        "strImgNorm"  : "ItmPDACart00n",
+        "strPortraitImg"  : "paperdoll/held/portPDACart02",
+        "strCOBase"    : "ItmPDACart00",
+        "strCondLoot"    : "CONDCardPDAHeatViz",
+        "mapSlotEffects" : [
+            "heldL","HeldItmPDACart02L",
+            "heldR","HeldItmPDACart02R"
+        ]
+    },
+    {
+        "strName" : "ItmPDACartKpaViz",
+        "strNameFriendly" : "Renbao KpaViz Cartridge",
+        "strDesc" : "Renbao PDA augmentation KpaViz cartridge. Contains special hardware designed to enable augmented reality views of the environment, highlighting gas pressure.",
+        "strImg"  : "ItmPDACart02",
+        "strImgNorm"  : "ItmPDACart00n",
+        "strPortraitImg"  : "paperdoll/held/portPDACart02",
+        "strCOBase"    : "ItmPDACart00",
+        "strCondLoot"    : "CONDCardPDAKpaViz",
+        "mapSlotEffects" : [
+            "heldL","HeldItmPDACart02L",
+            "heldR","HeldItmPDACart02R"
+        ]
+    },
+    {
+        "strName" : "ItmPDACart01",
+        "strNameFriendly" : "Renbao R101 Cartridge (Modded)",
+        "strDesc" : "Renbao PDA augmentation Tier 1 cartridge. Contains special hardware designed to enable new functionality within the PDA. This cartridge has aftermarket modifications.",
+        "strImg"  : "ItmPDACart01",
+        "strImgNorm"  : "ItmPDACart00n",
+        "strPortraitImg"  : "paperdoll/held/portPDACart01",
+        "strCOBase"    : "ItmPDACart00",
+        "strCondLoot"    : "CONDCardPDATier1",
+        "mapSlotEffects" : [
+            "heldL","HeldItmPDACart01L",
+            "heldR","HeldItmPDACart01R"
+        ]
+    },
+    {
+        "strName" : "ItmPDACart02",
+        "strNameFriendly" : "Renbao R102 Cartridge (Modded)",
+        "strDesc" : "Renbao PDA augmentation Tier 2 cartridge. Contains special hardware designed to enable new functionality within the PDA. This cartridge has aftermarket modifications.",
+        "strImg"  : "ItmPDACart02",
+        "strImgNorm"  : "ItmPDACart00n",
+        "strPortraitImg"  : "paperdoll/held/portPDACart02",
+        "strCOBase"    : "ItmPDACart00",
+        "strCondLoot"    : "CONDCardPDATier2",
+        "mapSlotEffects" : [
+            "heldL","HeldItmPDACart02L",
+            "heldR","HeldItmPDACart02R"
+        ]
+    },
+    {
+        "strName" : "ItmPDACart03",
+        "strNameFriendly" : "Renbao R103 Cartridge (Modded)",
+        "strDesc" : "Renbao PDA augmentation Tier 3 cartridge. Contains special hardware designed to enable new functionality within the PDA. This cartridge has aftermarket modifications.",
+        "strImg"  : "ItmPDACart03",
+        "strImgNorm"  : "ItmPDACart00n",
+        "strPortraitImg"  : "paperdoll/held/portPDACart03",
+        "strCOBase"    : "ItmPDACart00",
+        "strCondLoot"    : "CONDCardPDATier3",
+        "mapSlotEffects" : [
+            "heldL","HeldItmPDACart03L",
+            "heldR","HeldItmPDACart03R"
+        ]
+    },
+    {
+        "strName" : "ItmPDACart04",
+        "strNameFriendly" : "Renbao R104 Cartridge (Modded)",
+        "strDesc" : "Renbao PDA augmentation Tier 4 cartridge. Contains special hardware designed to enable new functionality within the PDA. This cartridge has aftermarket modifications.",
+        "strImg"  : "ItmPDACart04",
+        "strImgNorm"  : "ItmPDACart00n",
+        "strPortraitImg"  : "paperdoll/held/portPDACart04",
+        "strCOBase"    : "ItmPDACart00",
+        "strCondLoot"    : "CONDCardPDATier4",
+        "mapSlotEffects" : [
+            "heldL","HeldItmPDACart04L",
+            "heldR","HeldItmPDACart04R"
+        ]
+    },
+    {
+        "strName" : "ItmPDACart05",
+        "strNameFriendly" : "Renbao R105 Cartridge (Modded)",
+        "strDesc" : "Renbao PDA augmentation Tier 5 cartridge. Contains special hardware designed to enable new functionality within the PDA. This cartridge has aftermarket modifications.",
+        "strImg"  : "ItmPDACart05",
+        "strImgNorm"  : "ItmPDACart00n",
+        "strPortraitImg"  : "paperdoll/held/portPDACart05",
+        "strCOBase"    : "ItmPDACart00",
+        "strCondLoot"    : "CONDCardPDATier5",
+        "mapSlotEffects" : [
+            "heldL","HeldItmPDACart05L",
+            "heldR","HeldItmPDACart05R"
+        ]
+    },
+
+    {
+        "strName" : "ItmToothbrush02",
+        "strNameFriendly" : "Testudo \"AstroBristle UltraSoft\"",
+        "strDesc" : "Testudo's AstroBristle UltraSoft: \"Gentle care for sensitive teeth and gums\"\n\nA brush with a gentle soothing color palette and ten times the filaments per square milimeter.",
+        "strImg"  : "ItmToothbrush02",
+        "strPortraitImg"  : "ItmToothbrush02",
+        "strCOBase"    : "ItmToothbrush01",
+        "strCondLoot"    : "CNDOLToothbrush",
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultSoftL",
+            "heldR","HeldItmDefaultSoftR"
+          ]
+    },
+    {
+        "strName" : "ItmToothbrush03",
+        "strNameFriendly" : "Testudo \"AstroBristle MaxClean\"",
+        "strDesc" : "Testudo's AstroBristle MaxClean: \"Deep cleaning for interstellar freshness\"\n\nA no-nonsense design with advanced bristle technology for superior plaque removal.",
+        "strImg"  : "ItmToothbrush03",
+        "strPortraitImg"  : "ItmToothbrush03",
+        "strCOBase"    : "ItmToothbrush01",
+        "strCondLoot"    : "CNDOLToothbrush",
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultSoftL",
+            "heldR","HeldItmDefaultSoftR"
+          ]
+    },
+    {
+        "strName" : "ItmToothbrush04",
+        "strNameFriendly" : "Testudo \"AstroBristle Photon\"",
+        "strDesc" : "Testudo's AstroBristle Photon: \"Illuminate your smile with the power of light\"\n\nA radiant yellow toothbrush with advanced whitening bristles.",
+        "strImg"  : "ItmToothbrush04",
+        "strPortraitImg"  : "ItmToothbrush04",
+        "strCOBase"    : "ItmToothbrush01",
+        "strCondLoot"    : "CNDOLToothbrush",
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultSoftL",
+            "heldR","HeldItmDefaultSoftR"
+          ]
+    },
+    {
+        "strName" : "ItmToothbrush05",
+        "strNameFriendly" : "Testudo \"AstroBristle Active\"",
+        "strDesc" : "Testudo's AstroBristle Active: \"Flouride-fortified, for active lifestyles on the float\"\n\nA sporty, vibrant toothbrush with competitively texturied, ergonomic grip.",
+        "strImg"  : "ItmToothbrush05",
+        "strPortraitImg"  : "ItmToothbrush05",
+        "strCOBase"    : "ItmToothbrush01",
+        "strCondLoot"    : "CNDOLToothbrush",
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultSoftL",
+            "heldR","HeldItmDefaultSoftR"
+          ]
+    },
+    {
+        "strName" : "ItmToothbrush06",
+        "strNameFriendly" : "Testudo \"AstroBristle Kids\"",
+        "strDesc" : "Testudo's AstroBristle Kids: \"Galactic fun for little space explorers\"\n\nA chunky brush ideal for small hands featuring playful designs and child-friendly bristles.",
+        "strImg"  : "ItmToothbrush06",
+        "strPortraitImg"  : "ItmToothbrush06",
+        "strCOBase"    : "ItmToothbrush01",
+        "strCondLoot"    : "CNDOLToothbrush",
+        "mapSlotEffects" : [
+            "heldL","HeldItmDefaultSoftL",
+            "heldR","HeldItmDefaultSoftR"
+          ]
+    },
+
+    {
+        "strName" : "ItmSink01Station",
+        "strNameFriendly" : "Station Sink",
+        "strImg"  : "ItmSink01",
+        "strImgNorm"  : "ItmSink01n",
+        "strPortraitImg"  : "ItmSink01",
+        "strCOBase"    : "ItmSink01",
+        "strCondLoot"    : "CNDOLSink01Station",
+        "mapGUIPropMaps"    : [
+            "Trader", "Sink01StationRestock"
+        ]
+    },
+    {
+        "strName" : "ItmSwitch01OffTutorial",
+        "strNameFriendly" : "Power Switch: Dorm (Off)",
+        "strImg"  : "ItmSwitch01Off",
+        "strImgNorm"  : "ItmSwitch01Offn",
+        "strPortraitImg"  : "ItmSwitch01Off",
+        "strCOBase"    : "ItmSwitch01Off",
+        "strCondLoot"    : "CNDOLSwitch01OffTutorial",
+        "mapGUIPropMaps"    : [
+        ]
+    },
+    {
+        "strName" : "ItmTable01Reserved",
+        "strNameFriendly" : "Bar Table (Reserved)",
+        "strImg" : "ItmTable01",
+        "strImgNorm" : "ItmTable01n",
+        "strPortraitImg" : "ItmTable01",
+        "strCOBase"    : "ItmTable01",
+        "strCondLoot"    : "CNDOLTable01Reserved",
+        "mapModeSwitches"    : [
+        ]
+    },
+    {
+        "strName" : "LiquidBloodMeat",
+        "strNameShort" : "Chunky Blood",
+        "strNameFriendly" : "Chunky Blood",
+        "strDesc" : "Blood with pink chunks in it, and a darker, viscous texture with some hairs bristling from it. One can almost taste copper when it's nearby.",
+        "strImg"  : "tiles/Meat01/ItmLiquidBloodMeat",
+        "strPortraitImg"  : "tiles/Meat01/ItmLiquidBloodMeat",
+        "strImgNorm"  : "ItmLiquidRedn",
+        "strCOBase"    : "LiquidBlood",
+        "strCondLoot"    : "CNDOLLiquidBloodMeat"
+    },
+    {
+        "strName" : "SysLootSpawnerProvisions",
+        "strNameFriendly" : "LootSpawner: Provisions",
+        "strImg" : "IcoLoot",
+        "strImgNorm" : "blank",
+        "strPortraitImg" : "blank",
+        "strCOBase"    : "SysLootSpawner",
+        "strCondLoot"    : null,
+        "mapGUIPropMaps"    : [
+            "Panel A",
+            "LootSpawnProvisions"
+        ]
+    },
+    {
+        "strName" : "SysLootSpawnerCrewPersonal ",
+        "strNameFriendly" : "LootSpawner: Crew Personal",
+        "strImg" : "IcoLoot",
+        "strImgNorm" : "blank",
+        "strPortraitImg" : "blank",
+        "strCOBase"    : "SysLootSpawner",
+        "strCondLoot"    : null,
+        "mapGUIPropMaps"    : [
+            "Panel A",
+            "LootSpawnCrewPersonal"
+        ]
+    },
+    {
+        "strName" : "SysLootSpawnerCrewRec",
+        "strNameFriendly" : "LootSpawner: Crew Rec",
+        "strImg" : "IcoLoot",
+        "strImgNorm" : "blank",
+        "strPortraitImg" : "blank",
+        "strCOBase"    : "SysLootSpawner",
+        "strCondLoot"    : null,
+        "mapGUIPropMaps"    : [
+            "Panel A",
+            "LootSpawnCrewRec"
+        ]
+    },
+    {
+        "strName" : "SysLootSpawnerJunk",
+        "strNameFriendly" : "LootSpawner: Junk",
+        "strImg" : "IcoLoot",
+        "strImgNorm" : "blank",
+        "strPortraitImg" : "blank",
+        "strCOBase"    : "SysLootSpawner",
+        "strCondLoot"    : null,
+        "mapGUIPropMaps"    : [
+            "Panel A",
+            "LootSpawnJunk"
+        ]
+    },
+    {
+        "strName" : "SysLootSpawnerMedical",
+        "strNameFriendly" : "LootSpawner: Medical",
+        "strImg" : "IcoLoot",
+        "strImgNorm" : "blank",
+        "strPortraitImg" : "blank",
+        "strCOBase"    : "SysLootSpawner",
+        "strCondLoot"    : null,
+        "mapGUIPropMaps"    : [
+            "Panel A",
+            "LootSpawnMedical"
+        ]
+    },
+    {
+        "strName" : "SysLootSpawnerEngineering",
+        "strNameFriendly" : "LootSpawner: Engineering",
+        "strImg" : "IcoLoot",
+        "strImgNorm" : "blank",
+        "strPortraitImg" : "blank",
+        "strCOBase"    : "SysLootSpawner",
+        "strCondLoot"    : null,
+        "mapGUIPropMaps"    : [
+            "Panel A",
+            "LootSpawnEngineering"
+        ]
+    },
+    {
+        "strName" : "SysLootSpawnerAmmoMassThrower01",
+        "strNameFriendly" : "LootSpawner: Ammo MassThrower01",
+        "strImg" : "IcoLoot",
+        "strImgNorm" : "blank",
+        "strPortraitImg" : "blank",
+        "strCOBase"    : "SysLootSpawner",
+        "strCondLoot"    : null,
+        "mapGUIPropMaps"    : [
+            "Panel A",
+            "LootSpawnAmmoMassThrower01"
+        ]
+    },
+    {
+        "strName" : "SysLootSpawnerAmmoMassThrower02",
+        "strNameFriendly" : "LootSpawner: Ammo MassThrower02",
+        "strImg" : "IcoLoot",
+        "strImgNorm" : "blank",
+        "strPortraitImg" : "blank",
+        "strCOBase"    : "SysLootSpawner",
+        "strCondLoot"    : null,
+        "mapGUIPropMaps"    : [
+            "Panel A",
+            "LootSpawnAmmoMassThrower02"
+        ]
+    },
+    {
+        "strName" : "SysLootSpawnerAmmoMassThrower03",
+        "strNameFriendly" : "LootSpawner: Ammo MassThrower03",
+        "strImg" : "IcoLoot",
+        "strImgNorm" : "blank",
+        "strPortraitImg" : "blank",
+        "strCOBase"    : "SysLootSpawner",
+        "strCondLoot"    : null,
+        "mapGUIPropMaps"    : [
+            "Panel A",
+            "LootSpawnAmmoMassThrower03"
+        ]
+    },
+    {
+        "strName" : "SysLootSpawnerAmmoMissileLauncher01",
+        "strNameFriendly" : "LootSpawner: Ammo MissileLauncher01",
+        "strImg" : "IcoLoot",
+        "strImgNorm" : "blank",
+        "strPortraitImg" : "blank",
+        "strCOBase"    : "SysLootSpawner",
+        "strCondLoot"    : null,
+        "mapGUIPropMaps"    : [
+            "Panel A",
+            "LootSpawnAmmoMissileLauncher01"
+        ]
+    },
+    {
+        "strName" : "SysLootSpawnerAmmoMissileLauncher02",
+        "strNameFriendly" : "LootSpawner: Ammo MissileLauncher02",
+        "strImg" : "IcoLoot",
+        "strImgNorm" : "blank",
+        "strPortraitImg" : "blank",
+        "strCOBase"    : "SysLootSpawner",
+        "strCondLoot"    : null,
+        "mapGUIPropMaps"    : [
+            "Panel A",
+            "LootSpawnAmmoMissileLauncher02"
+        ]
+    },
+    {
+        "strName" : "SysLootSpawnerAmmoMissileLauncher03",
+        "strNameFriendly" : "LootSpawner: Ammo MissileLauncher03",
+        "strImg" : "IcoLoot",
+        "strImgNorm" : "blank",
+        "strPortraitImg" : "blank",
+        "strCOBase"    : "SysLootSpawner",
+        "strCondLoot"    : null,
+        "mapGUIPropMaps"    : [
+            "Panel A",
+            "LootSpawnAmmoMissileLauncher03"
+        ]
+    },
+    {
+        "strName" : "SysLootSpawnerAmmoPDC",
+        "strNameFriendly" : "LootSpawner: Ammo PDC",
+        "strImg" : "IcoLoot",
+        "strImgNorm" : "blank",
+        "strPortraitImg" : "blank",
+        "strCOBase"    : "SysLootSpawner",
+        "strCondLoot"    : null,
+        "mapGUIPropMaps"    : [
+            "Panel A",
+            "LootSpawnAmmoPDC"
+        ]
+    },
+    {
+        "strName" : "SysLootSpawnerAirlock",
+        "strNameFriendly" : "LootSpawner: Airlock",
+        "strImg" : "IcoLoot",
+        "strImgNorm" : "blank",
+        "strPortraitImg" : "blank",
+        "strCOBase"    : "SysLootSpawner",
+        "strCondLoot"    : null,
+        "mapGUIPropMaps"    : [
+            "Panel A",
+            "LootSpawnAirlock"
+        ]
+    },
+    {
+        "strName" : "SysLootSpawnerBulkCargo",
+        "strNameFriendly" : "LootSpawner: Bulk Cargo",
+        "strImg" : "IcoLoot",
+        "strImgNorm" : "blank",
+        "strPortraitImg" : "blank",
+        "strCOBase"    : "SysLootSpawner",
+        "strCondLoot"    : null,
+        "mapGUIPropMaps"    : [
+            "Panel A",
+            "LootSpawnBulkCargo"
+        ]
+    },
+    {
+        "strName" : "SysLootSpawnerRandomFloor",
+        "strNameFriendly" : "LootSpawner: Random Floor",
+        "strImg" : "IcoLoot",
+        "strImgNorm" : "blank",
+        "strPortraitImg" : "blank",
+        "strCOBase"    : "SysLootSpawner",
+        "strCondLoot"    : null,
+        "mapGUIPropMaps"    : [
+            "Panel A",
+            "LootSpawnRandomFloor"
+        ]
+    },
+    {
+        "strName" : "SysLootSpawnerRandomWall",
+        "strNameFriendly" : "LootSpawner: Random Wall",
+        "strImg" : "IcoLoot",
+        "strImgNorm" : "blank",
+        "strPortraitImg" : "blank",
+        "strCOBase"    : "SysLootSpawner",
+        "strCondLoot"    : null,
+        "mapGUIPropMaps"    : [
+            "Panel A",
+            "LootSpawnRandomWall"
+        ]
+    },
+    {
+        "strName" : "SysLootSpawnerRandomPartsScrap",
+        "strNameFriendly" : "LootSpawner: Random Parts Scrap",
+        "strImg" : "IcoLoot",
+        "strImgNorm" : "blank",
+        "strPortraitImg" : "blank",
+        "strCOBase"    : "SysLootSpawner",
+        "strCondLoot"    : null,
+        "mapGUIPropMaps"    : [
+            "Panel A",
+            "LootSpawnPartsScrap"
+        ]
+    },
+    {
+        "strName" : "SysLootSpawnerBoarding",
+        "strNameFriendly" : "LootSpawner: Boarding",
+        "strImg" : "IcoLoot",
+        "strImgNorm" : "blank",
+        "strPortraitImg" : "blank",
+        "strCOBase"    : "SysLootSpawner",
+        "strCondLoot"    : null,
+        "mapGUIPropMaps"    : [
+            "Panel A",
+            "LootSpawnBoarding"
+        ]
+    },
+    {
+        "strName" : "SysLootSpawnerNotBoarding",
+        "strNameFriendly" : "LootSpawner: NotBoarding",
+        "strImg" : "IcoLoot",
+        "strImgNorm" : "blank",
+        "strPortraitImg" : "blank",
+        "strCOBase"    : "SysLootSpawner",
+        "strCondLoot"    : null,
+        "mapGUIPropMaps"    : [
+            "Panel A",
+            "LootSpawnNotBoarding"
+        ]
+    }
+]  

@@ -1,0 +1,337 @@
+
+[
+  {
+    "strName" : "COND_STKShipSurrender_AIOffer_Intro_Us",
+    "aCOs"    : [
+      "StatAutonomy=1.0x23",
+      "StatEsteem=1.0x23",
+      "-StatMeaning=1.0x23",
+      "IsSTKShipSurrender_AIOffer_Cooldown=1.0x1"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIOffer_Intro_Them",
+    "aCOs"    : [
+      "-StatAutonomy=1.0x23",
+      "-StatEsteem=1.0x23",
+      "StatPrivacy=1.0x23"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIOffer_Intro_Deny_BreakLock_Us",
+    "aCOs"    : [
+      "IsSTKShipSurrender_AIOffer_Fail_Cooldown=1.0x1",
+      "StatAltruism=1.0x45",
+      "StatSecurity=1.0x23",
+      "StatPrivacy=1.0x23"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIOffer_Intro_Deny_BreakLock_Them",
+    "aCOs"    : [
+      "StatAltuism=1.0x23",
+      "StatAutonomy=1.0x23",
+      "StatEsteem=1.0x23",
+      "StatMeaning=1.0x23",
+      "StatSecurity=1.0x45"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIOffer_Intro_Deny_NoReasons_Us",
+    "aCOs"    : [
+      "IsSTKShipSurrender_AIOffer_Fail_Cooldown=1.0x1",
+      "StatPrivacy=1.0x23"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIOffer_Intro_Deny_NoReasons_Them",
+    "aCOs"    : [
+      "StatPrivacy=1.0x23",
+      "StatSecurity=1.0x23"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIOffer_Intro_Deny_Cooldown_Us",
+    "aCOs"    : [
+      "IsSTKShipSurrender_AIOffer_Fail_Cooldown=1.0x1",
+      "StatAltruism=1.0x45",
+      "StatSecurity=1.0x23",
+      "StatPrivacy=1.0x45"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIOffer_Intro_Deny_Cooldown_Them",
+    "aCOs"    : [
+      "StatAltuism=1.0x23",
+      "StatAutonomy=1.0x23",
+      "StatEsteem=1.0x23",
+      "StatMeaning=1.0x23",
+      "StatSecurity=1.0x45"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIOffer_Intro_Deny_Violated_Us",
+    "aCOs"    : [
+      "IsSTKShipSurrender_AIOffer_Fail_Cooldown=1.0x1",
+      "StatAltruism=1.0x12",
+      "StatSecurity=1.0x23",
+      "StatPrivacy=1.0x45"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIOffer_Intro_Deny_Violated_Them",
+    "aCOs"    : [
+      "StatAltuism=1.0x23",
+      "StatAutonomy=1.0x23",
+      "StatEsteem=1.0x23",
+      "StatMeaning=1.0x23",
+      "StatSecurity=1.0x45"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIOffer_Intro_Deny_TraitUs_Cruel_Us",
+    "aCOs"    : [
+      "IsSTKShipSurrender_AIOffer_Fail_Cooldown=1.0x1",
+      "StatAltruism=1.0x45",
+      "-StatAutonomy=1.0x45",
+      "StatSecurity=1.0x23"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIOffer_Intro_Deny_TraitUs_Cruel_Them",
+    "aCOs"    : [
+      "StatAltuism=1.0x23",
+      "StatEsteem=1.0x23",
+      "StatMeaning=1.0x23",
+      "StatSecurity=1.0x45"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIOffer_Intro_Deny_TraitUs_Vengeful_Us",
+    "aCOs"    : [
+      "IsSTKShipSurrender_AIOffer_Fail_Cooldown=1.0x1",
+      "StatAltruism=1.0x45",
+      "-StatAutonomy=1.0x45",
+      "StatSecurity=1.0x23"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIOffer_Intro_Deny_TraitUs_Vengeful_Them",
+    "aCOs"    : [
+      "StatAltuism=1.0x23",
+      "StatEsteem=1.0x23",
+      "StatMeaning=1.0x23",
+      "StatSecurity=1.0x45"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIOffer_Intro_Allow_TraitUs_Kind_Us",
+    "aCOs"    : [
+      "InSocialCombat=1.0x1",
+      "-StatAltruism=1.0x45",
+      "-StatSecurity=1.0x23"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIOffer_Intro_Allow_TraitUs_Kind_Them",
+    "aCOs"    : [
+      "InSocialCombat=1.0x1",
+      "-StatAltruism=1.0x23",
+      "StatMeaning=1.0x23",
+      "-StatSecurity=1.0x45"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIOffer_Intro_Allow_TraitUs_Forgiving_Us",
+    "aCOs"    : [
+      "InSocialCombat=1.0x1",
+      "-StatAltruism=1.0x45",
+      "-StatSecurity=1.0x23"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIOffer_Intro_Allow_TraitUs_Forgiving_Them",
+    "aCOs"    : [
+      "InSocialCombat=1.0x1",
+      "-StatAltruism=1.0x23",
+      "StatMeaning=1.0x23",
+      "-StatSecurity=1.0x45"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIOffer_Intro_Allow_TraitUs_Agliophobic_Us",
+    "aCOs"    : [
+      "InSocialCombat=1.0x1",
+      "-StatAltruism=1.0x45",
+      "-StatSecurity=1.0x23"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIOffer_Intro_Allow_TraitUs_Agliophobic_Them",
+    "aCOs"    : [
+      "InSocialCombat=1.0x1",
+      "-StatAltruism=1.0x23",
+      "StatMeaning=1.0x23",
+      "-StatSecurity=1.0x45"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIOffer_Exit_Truce_Us",
+    "aCOs"    : [
+      "-InSocialCombat=1.0x1",
+      "-StatSecurity=1.0x12"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIOffer_Exit_Truce_Them",
+    "aCOs"    : [
+      "-InSocialCombat=1.0x1",
+      "-StatSecurity=1.0x23"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIOffer_Gambit_AltruismSecurity_SkillPersuade_Us",
+    "aCOs"    : [
+      "-StatAchievement=1.0x23",
+      "StatAutonomy=1.0x23",
+      "StatEsteem=1.0x23",
+      "-StatMeaning=1.0x23"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIOffer_Gambit_AltruismSecurity_SkillPersuade_Them",
+    "aCOs"    : [
+      "StatAltruism=1.0x23",
+      "-StatMeaning=1.0x91",
+      "StatSecurity=1.0x23",
+      "StatPrivacy=1.0x45"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIOffer_Gambit_AltruismSecurity_SkillSciencePsychology_Us",
+    "aCOs"    : [
+      "-StatAchievement=1.0x23",
+      "StatAutonomy=1.0x23",
+      "StatEsteem=1.0x23",
+      "-StatMeaning=1.0x23"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIOffer_Gambit_AltruismSecurity_SkillSciencePsychology_Them",
+    "aCOs"    : [
+      "StatAltruism=1.0x23",
+      "-StatMeaning=1.0x91",
+      "StatSecurity=1.0x23",
+      "StatPrivacy=1.0x45"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIOffer_Gambit_Altruism_Beg_Us",
+    "aCOs"    : [
+      "StatAutonomy=1.0x23",
+      "StatEsteem=1.0x45",
+      "-StatMeaning=1.0x23",
+      "StatSelfRespect=1.0x23"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIOffer_Gambit_Altruism_Beg_Them",
+    "aCOs"    : [
+      "StatAltruism=1.0x23",
+      "StatSecurity=1.0x23",
+      "StatPrivacy=1.0x68"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIOffer_Gambit_DemandMoney_Us",
+    "aCOs"    : [
+      "-StatSecurity=1.0x12"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIOffer_Gambit_DemandMoney_Them",
+    "aCOs"    : [
+      "StatPrivacy=1.0x12"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIOffer_Gambit_DemandBoarding_Us",
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIOffer_Gambit_DemandBoarding_Them",
+    "aCOs"    : [
+      "StatPrivacy=1.0x23",
+      "StatSecurity=1.0x23"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIOffer_Gambit_DemandArrest_BCER_Us",
+    "aCOs"    : [
+      "-StatSecurity=1.0x12"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIOffer_Gambit_DemandArrest_BCER_Them",
+    "aCOs"    : [
+      "StatPrivacy=1.0x23",
+      "StatSecurity=1.0x12"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIOffer_Gambit_DemandArrest_BCRS_Us",
+    "aCOs"    : [
+      "-StatSecurity=1.0x12"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIOffer_Gambit_DemandArrest_BCRS_Them",
+    "aCOs"    : [
+      "StatPrivacy=1.0x23",
+      "StatSecurity=1.0x12"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "ACTSTKShipSurrender_AIOfferUs",
+    "strType" : "interaction"
+  },
+  {
+    "strName" : "ACTSTKShipSurrender_AIOfferThem",
+    "strType" : "interaction"
+  }
+]

@@ -12,7 +12,7 @@
     "strNameFriendly": "Пусто"
   },
   "IsSignalable": {
-    "strDesc": "[us] может отправлять или принимать сигналы.",
+    "strDesc": "[us] [is] в состоянии отправлять или принимать сигналы.",
     "strNameFriendly": "Поддержка сигналов"
   },
   "HasFreePorts": {
@@ -40,11 +40,11 @@
     "strNameFriendly": "В бою"
   },
   "IsSurrenderDemand": {
-    "strDesc": "[us] [is] требует капитуляции от кого-то.",
+    "strDesc": "[us] [is] [demands] капитуляции от кого-то.",
     "strNameFriendly": "Требование капитуляции"
   },
   "IsSurrenderOffer": {
-    "strDesc": "[us] [is] предлагает капитуляцию кому-то.",
+    "strDesc": "[us] [is] [offers] капитуляцию кому-то.",
     "strNameFriendly": "Предложение капитуляции"
   },
   "IsAutoMode": {
@@ -84,7 +84,7 @@
     "strNameFriendly": "Ордер OKLG на арест"
   },
   "CrimeOKLGThreat": {
-    "strDesc": "[us] [is] объект розыска силовиков OKLG — живьём или трупом — и [is] враг общества.",
+    "strDesc": "[us] [is] [object] розыска силовиков OKLG — живьём или трупом — и [is] враг общества.",
     "strNameFriendly": "Враг общества OKLG"
   },
   "CrimeVenusArrest": {
@@ -96,7 +96,7 @@
     "strNameFriendly": "Венерианский ордер за незаконное проникновение"
   },
   "CrimeVenusThreat": {
-    "strDesc": "[us] [is] объект розыска венерианских силовиков — живьём или трупом — и [is] враг общества.",
+    "strDesc": "[us] [is] [object] розыска венерианских силовиков — живьём или трупом — и [is] враг общества.",
     "strNameFriendly": "Враг общества Венеры"
   },
   "IsReportingCrimeArrestEnd": {
@@ -412,7 +412,7 @@
     "strNameFriendly": "Предупреждение о G-LOC"
   },
   "G-LOC2": {
-    "strDesc": "[us] [is] теряет сознание от перегрузок.",
+    "strDesc": "[us] [is] [loses] сознание от перегрузок.",
     "strNameFriendly": "Потеря сознания (перегрузка)"
   },
   "G-LOCCramps": {
@@ -596,7 +596,7 @@
     "strNameFriendly": "Восстановление"
   },
   "StrainedBack": {
-    "strDesc": "[us] [has] растяжение спины, и [is] ограничение на вес, который [us-subj] может нести.",
+    "strDesc": "[us] [has] растяжение спины, и [is] ограничение на вес, который [us-subj] [can] нести.",
     "strNameFriendly": "Сорванная спина"
   },
   "Stunned": {
@@ -864,7 +864,7 @@
     "strNameFriendly": "Синдром запястного канала"
   },
   "ChronicCarpalTunnelSyndrome": {
-    "strDesc": "[us] страдает от синдрома запястного канала: иногда работа идёт медленнее.",
+    "strDesc": "[us] [suffers] от синдрома запястного канала: иногда работа идёт медленнее.",
     "strNameFriendly": "Синдром запястного канала"
   },
   "ChronicCarpalTunnelSyndrome2": {
@@ -992,7 +992,7 @@
     "strNameFriendly": "Шрам: операция на сердце"
   },
   "ChronicScarHeartSurgery2": {
-    "strDesc": "[us] [is] страдает от боли, зуда и онемения из-за старого шрама после операции на сердце.",
+    "strDesc": "[us] [is] [suffers] от боли, зуда и онемения из-за старого шрама после операции на сердце.",
     "strNameFriendly": "Боль от шрама: операция на сердце"
   },
   "TraitChronicScarBrainSurgery": {
@@ -1028,7 +1028,7 @@
     "strNameFriendly": "Шрам: пересадка кожи"
   },
   "ChronicScarSkinGraftSurgery2": {
-    "strDesc": "[us] [is] страдает от боли, зуда и онемения из-за старого шрама после пересадки кожи.",
+    "strDesc": "[us] [is] [suffers] от боли, зуда и онемения из-за старого шрама после пересадки кожи.",
     "strNameFriendly": "Боль от шрама: пересадка кожи"
   },
   "TraitChronicScarCuffs": {
@@ -1040,7 +1040,7 @@
     "strNameFriendly": "Шрам: наручники"
   },
   "ChronicScarCuffs2": {
-    "strDesc": "[us] [is] страдает от боли, зуда и онемения из-за старых шрамов от наручников.",
+    "strDesc": "[us] [is] [suffers] от боли, зуда и онемения из-за старых шрамов от наручников.",
     "strNameFriendly": "Боль от шрама: наручники"
   },
   "TraitChronicScarBurns": {
@@ -1292,11 +1292,11 @@
     "strNameFriendly": "Альтруизм: Отзывчивость"
   },
   "DcAltruism03": {
-    "strDesc": "[us] [is] держится холодно и отстранённо.",
+    "strDesc": "[us] [is] держит дистанцию, проявляя холодность и отстранённость.",
     "strNameFriendly": "Альтруизм: Отстранённость"
   },
   "DcAltruism04": {
-    "strDesc": "[us] [is] думает только о себе.",
+    "strDesc": "[us] [is] [thinks] только о себе.",
     "strNameFriendly": "Альтруизм: Эгоизм"
   },
   "DcAltruism05": {
@@ -1508,19 +1508,19 @@
     "strNameFriendly": "Каловый завал"
   },
   "DcEncumbrance01": {
-    "strDesc": "[us] [is] не обременён тем, что [us-contractIs] несёт.",
+    "strDesc": "[us] [is] налегке: ноша нисколько не обременяет.",
     "strNameFriendly": "Без груза"
   },
   "DcEncumbrance02": {
-    "strDesc": "[us] [is] с умеренным грузом: [us-pos] скорость передвижения ниже. [us] также [fatigues] быстрее.",
+    "strDesc": "[us] [is] под умеренным грузом: скорость передвижения снижена, а усталость наступает быстрее.",
     "strNameFriendly": "Нагружен"
   },
   "DcEncumbrance03": {
-    "strDesc": "[us] [is] с тяжёлым грузом: [us-pos] скорость передвижения намного ниже. [us] также [fatigues] намного быстрее.",
+    "strDesc": "[us] [is] под тяжёлым грузом: скорость передвижения сильно снижена, а усталость наступает намного быстрее.",
     "strNameFriendly": "На пределе"
   },
   "DcEncumbrance04": {
-    "strDesc": "[us] [is] с неподъёмным грузом и не в силах сдвинуться с места.",
+    "strDesc": "[us] [is] под неподъёмным грузом и не в силах сдвинуться с места.",
     "strNameFriendly": "Перегружен"
   },
   "DcEsteem01": {
@@ -1862,7 +1862,7 @@
     "strNameFriendly": "Шок"
   },
   "DcPiloting00": {
-    "strDesc": "[us] [has] плохие навыки пилотирования.",
+    "strDesc": "У [us-gen] [has.qual] плохие навыки пилотирования.",
     "strNameFriendly": "Пилотирование: плохо"
   },
   "DcPiloting01": {
@@ -1874,11 +1874,11 @@
     "strNameFriendly": "Пилотирование: Среднее"
   },
   "DcPiloting03": {
-    "strDesc": "[us] [has] хорошие навыки пилотирования.",
+    "strDesc": "У [us-gen] [has.qual] хорошие навыки пилотирования.",
     "strNameFriendly": "Пилотирование: Хорошее"
   },
   "DcPiloting04": {
-    "strDesc": "[us] [has] отличные навыки пилотирования.",
+    "strDesc": "У [us-gen] [has.qual] отличные навыки пилотирования.",
     "strNameFriendly": "Пилотирование: Ас"
   },
   "DcPlacesVisited00": {
@@ -2491,19 +2491,19 @@
     "strNameFriendly": "Обучение: Строительство 0%"
   },
   "DcTrainingEngConstruction01": {
-    "strDesc": "У [us-gen] [has.qual] навык инженерного строительства на уровне свыше 1%.",
+    "strDesc": "У [us-gen] [has.qual] навык инженерного строительства развит свыше 1%.",
     "strNameFriendly": "Обучение: Строительство 1%"
   },
   "DcTrainingEngConstruction05": {
-    "strDesc": "У [us-gen] [has.qual] навык инженерного строительства на уровне свыше 5%.",
+    "strDesc": "У [us-gen] [has.qual] навык инженерного строительства развит свыше 5%.",
     "strNameFriendly": "Обучение: Строительство 5%"
   },
   "DcTrainingEngConstruction10": {
-    "strDesc": "У [us-gen] [has.qual] навык инженерного строительства на уровне свыше 10%.",
+    "strDesc": "У [us-gen] [has.qual] навык инженерного строительства развит свыше 10%.",
     "strNameFriendly": "Обучение: Строительство 10%"
   },
   "DcTrainingEngConstruction25": {
-    "strDesc": "У [us-gen] [has.qual] навык инженерного строительства на уровне свыше 25%.",
+    "strDesc": "У [us-gen] [has.qual] навык инженерного строительства развит свыше 25%.",
     "strNameFriendly": "Обучение: Строительство 25%"
   },
   "DcTrainingEngConstruction50": {
@@ -2895,11 +2895,11 @@
     "strNameFriendly": "Обучение: Космическая инженерия 98%"
   },
   "DcTrainingEngSpaceship99": {
-    "strDesc": "У [us-gen] [has.qual] навык космической инженерии выше 99%.",
+    "strDesc": "У [us-gen] [has.qual] навык космической инженерии развит свыше 99%.",
     "strNameFriendly": "Обучение: Космическая инженерия 99%"
   },
   "DcTrainingEngSpaceship100": {
-    "strDesc": "Отлично! У [us-gen] [has.qual] навык космической инженерии на 100%!",
+    "strDesc": "Отлично! У [us-gen] [has.qual] навык космической инженерии освоен на 100%!",
     "strNameFriendly": "Обучение: Космическая инженерия 100%"
   },
   "DcTrainingHacking": {
@@ -2907,11 +2907,11 @@
     "strNameFriendly": "Обучение: Взлом 0%"
   },
   "DcTrainingHacking01": {
-    "strDesc": "У [us-gen] [has.qual] навык взлома выше 1%.",
+    "strDesc": "У [us-gen] [has.qual] навык взлома развит свыше 1%.",
     "strNameFriendly": "Обучение: Взлом 1%"
   },
   "DcTrainingHacking05": {
-    "strDesc": "У [us-gen] [has.qual] навык взлома выше 5%.",
+    "strDesc": "У [us-gen] [has.qual] навык взлома развит свыше 5%.",
     "strNameFriendly": "Тренировка: взлом 5%"
   },
   "DcTrainingHacking10": {
@@ -3215,11 +3215,11 @@
     "strNameFriendly": "Боль: слабая"
   },
   "DcWoundPain03": {
-    "strDesc": "[us] причиняет умеренную боль.",
+    "strDesc": "[us] [causes] умеренную боль.",
     "strNameFriendly": "Боль: умеренная"
   },
   "DcWoundPain04": {
-    "strDesc": "[us] причиняет сильную боль.",
+    "strDesc": "[us] [causes] сильную боль.",
     "strNameFriendly": "Боль: сильная"
   },
   "Death": {
@@ -3408,15 +3408,15 @@
     "strNameFriendly": "Неуклюжесть"
   },
   "IsClumsyTemp": {
-    "strDesc": "[us] [is] чувствует себя крайне неуклюже.",
+    "strDesc": "[us] [is] [feels] себя крайне неуклюже.",
     "strNameFriendly": "Неуклюжесть"
   },
   "IsCombatBlocking": {
-    "strDesc": "[us] [is] блокирует входящие атаки.",
+    "strDesc": "[us] [is] [blocks] входящие атаки.",
     "strNameFriendly": "Блок"
   },
   "IsCombatDodging": {
-    "strDesc": "[us] [is] пытается уклониться от входящих атак.",
+    "strDesc": "[us] [is] [attempts] уклониться от входящих атак.",
     "strNameFriendly": "Уклонение"
   },
   "IsComedian": {
@@ -3460,7 +3460,7 @@
     "strNameFriendly": "Искра от инструмента экипажа"
   },
   "IsCruel": {
-    "strDesc": "[us] наслаждается, причиняя боль другим.",
+    "strDesc": "[us] [delights], причиняя боль другим.",
     "strNameFriendly": "Жестокий"
   },
   "IsCultist": {
@@ -3536,7 +3536,7 @@
     "strNameFriendly": "Придирчивый настрой"
   },
   "IsFit": {
-    "strDesc": "[us] [is] физически крепче и выносливее большинства.",
+    "strDesc": "[us] [is] в хорошей физической форме и меньше [fatigues] от нагрузок.",
     "strNameFriendly": "В форме"
   },
   "IsFollower": {
@@ -3876,7 +3876,7 @@
     "strNameFriendly": "Режим шмона активен"
   },
   "IsSharpHearing": {
-    "strDesc": "Слух [us-gen] улавливает то, чего не слышит большинство.",
+    "strDesc": "[us-pos] слух улавливает то, чего не слышит большинство.",
     "strNameFriendly": "Острый слух"
   },
   "IsSharpHearingFAF": {
@@ -3988,7 +3988,7 @@
     "strNameFriendly": "Аккуратность"
   },
   "IsTough": {
-    "strDesc": "[us] держит удар лучше большинства.",
+    "strDesc": "[us] [keeps] удар лучше большинства.",
     "strNameFriendly": "Крепкий"
   },
   "IsToughArtificial": {
@@ -4020,7 +4020,7 @@
     "strNameFriendly": "Уродливый"
   },
   "IsUnfit": {
-    "strDesc": "[us] [is] не в форме и устаёт от нагрузок быстрее большинства.",
+    "strDesc": "[us] [is] не в форме и [fatigues] от нагрузок быстрее большинства.",
     "strNameFriendly": "Не в форме"
   },
   "IsUndockGracePeriodMajor": {
@@ -4155,23 +4155,23 @@
     "strNameFriendly": "Навык: Механика"
   },
   "SkillEngRobotics": {
-    "strDesc": "У [us-gen] [has.qual] навык проектирования, сборки и обслуживания робототехники.",
+    "strDesc": "У [us-gen] [has.qual] есть навык проектирования, сборки и обслуживания робототехники.",
     "strNameFriendly": "Навык: Робототехника"
   },
   "SkillEngSoftware": {
-    "strDesc": "У [us-gen] [has.qual] навык проектирования, разработки и обслуживания программного обеспечения.",
+    "strDesc": "У [us-gen] [has.qual] есть навык проектирования, разработки и обслуживания программного обеспечения.",
     "strNameFriendly": "Навык: Программирование"
   },
   "SkillEngSpaceship": {
-    "strDesc": "У [us-gen] [has.qual] навык проектирования, постройки и обслуживания космических кораблей.",
+    "strDesc": "У [us-gen] [has.qual] есть навык проектирования, постройки и обслуживания космических кораблей.",
     "strNameFriendly": "Навык: Кораблестроение"
   },
   "SkillHacking": {
-    "strDesc": "У [us-gen] [has.qual] навык взлома электронных систем.",
+    "strDesc": "У [us-gen] [has.qual] есть навык взлома электронных систем.",
     "strNameFriendly": "Навык: Взлом"
   },
   "SkillMeleeArmed": {
-    "strDesc": "У [us-gen] [has.qual] навык ближнего боя с оружием.",
+    "strDesc": "У [us-gen] [has.qual] есть навык ближнего боя с оружием.",
     "strNameFriendly": "Навык: Ближний бой с оружием"
   },
   "SkillMeleeUnarmed": {
@@ -4247,21 +4247,21 @@
     "strDesc": "Насколько [us] [is] под действием алкоголя."
   },
   "StatEncumbrance": {
-    "strDesc": "Насколько [us] [is] под тяжестью переносимого груза."
+    "strDesc": "Степень нагрузки от переносимого груза."
   },
   "StatEsteem": {
     "strNameFriendly": "Уважение",
     "strDesc": "[us-pos] авторитет среди [us-pos] товарищей."
   },
   "StatFamily": {
-    "strDesc": "Насколько сильно [us] тоскует по семье.",
+    "strDesc": "Степень тоски по семье у [us-gen].",
     "strNameFriendly": "Семья"
   },
   "StatFatigueCoeff": {
-    "strDesc": "Скорость, с которой [us] устаёт по сравнению с нормой."
+    "strDesc": "Скорость, с которой [us] [fatigues] по сравнению с нормой."
   },
   "StatFatigueHealRate": {
-    "strDesc": "Скорость, с которой [us] восстанавливается после усталости."
+    "strDesc": "Скорость, с которой [us] [recovers] после усталости."
   },
   "StatFightFear": {
     "strNameFriendly": "Отладка: боевой страх",
@@ -4349,7 +4349,7 @@
     "strNameFriendly": "Смысл"
   },
   "StatPain": {
-    "strDesc": "Уровень боли, которую [us] [is] испытывает."
+    "strDesc": "Уровень боли, который [is] [experiences] [us]."
   },
   "StatFusionCryoPumpRate": {
     "strDesc": "Скорость работы этой криопомпы.",
@@ -5136,7 +5136,7 @@
     "strNameFriendly": "Окончательное подавление воспоминания о насилии"
   },
   "MemDeadFriendDeeperClobber": {
-    "strDesc": "[us] подавляет воспоминание о погибшем друге.",
+    "strDesc": "[us] [suppresses] воспоминание о погибшем друге.",
     "strNameFriendly": "Исследование подавления воспоминания о смерти"
   },
   "MemDeadFriendDeeperRevisit": {
@@ -5148,7 +5148,7 @@
     "strNameFriendly": "Окончательное подавление воспоминания о смерти"
   },
   "MemChildhoodDeeperClobber": {
-    "strDesc": "[us] подавляет воспоминание о детстве.",
+    "strDesc": "[us] [suppresses] воспоминание о детстве.",
     "strNameFriendly": "Изучение затирания воспоминания о детстве"
   },
   "MemChildhoodDeeperRevisit": {
@@ -5160,7 +5160,7 @@
     "strNameFriendly": "Финальное затирание воспоминания о детстве"
   },
   "MemFoliageDeeperClobber": {
-    "strDesc": "[us] подавляет воспоминание о листве.",
+    "strDesc": "[us] [suppresses] воспоминание о листве.",
     "strNameFriendly": "Изучение затирания воспоминания о листве"
   },
   "MemFoliageDeeperRevisit": {
@@ -5172,7 +5172,7 @@
     "strNameFriendly": "Финал: глушение памяти о Листве"
   },
   "MemDumbDeeperClobber": {
-    "strDesc": "[us] глушит воспоминание о Тупости.",
+    "strDesc": "[us] [muffles] воспоминание о Тупости.",
     "strNameFriendly": "Изучение: жёсткое глушение памяти"
   },
   "MemDumbDeeperRevisit": {
@@ -5184,7 +5184,7 @@
     "strNameFriendly": "Финал: жёсткое глушение памяти"
   },
   "MemProjectDeeperClobber": {
-    "strDesc": "[us] глушит воспоминание о Проекте.",
+    "strDesc": "[us] [muffles] воспоминание о Проекте.",
     "strNameFriendly": "Изучение: жёсткое глушение памяти"
   },
   "MemProjectDeeperRevisit": {
@@ -5196,7 +5196,7 @@
     "strNameFriendly": "Окончательное подавление воспоминания о Проекте"
   },
   "MemLoveDeeperClobber": {
-    "strDesc": "[us] подавляет воспоминание о Любви.",
+    "strDesc": "[us] [suppresses] воспоминание о Любви.",
     "strNameFriendly": "Подавление воспоминания о Любви"
   },
   "MemLoveDeeperRevisit": {
@@ -5208,7 +5208,7 @@
     "strNameFriendly": "Окончательное подавление воспоминания о Любви"
   },
   "MemBetrayalDeeperClobber": {
-    "strDesc": "[us] глушит память о предательстве.",
+    "strDesc": "[us] [muffles] память о предательстве.",
     "strNameFriendly": "Первое глушение травматичного воспоминания о предательстве"
   },
   "MemBetrayalDeeperRevisit": {
@@ -5220,7 +5220,7 @@
     "strNameFriendly": "Последнее глушение травматичного воспоминания о предательстве"
   },
   "MemMassesDeeperClobber": {
-    "strDesc": "[us] глушит память о массах.",
+    "strDesc": "[us] [muffles] память о массах.",
     "strNameFriendly": "Первое глушение травматичного воспоминания о массах"
   },
   "MemMassesDeeperRevisit": {
@@ -5232,7 +5232,7 @@
     "strNameFriendly": "Окончательное жёсткое глушение воспоминания о Массах"
   },
   "MemSuppressFirst": {
-    "strDesc": "[us] глушит воспоминание.",
+    "strDesc": "[us] [muffles] воспоминание.",
     "strNameFriendly": "Глушение воспоминания"
   },
   "MemSuppressSecond": {
@@ -5244,7 +5244,7 @@
     "strNameFriendly": "Очередное глушение воспоминания"
   },
   "MemSuppressLoveFirst": {
-    "strDesc": "[us] глушит воспоминание.",
+    "strDesc": "[us] [muffles] воспоминание.",
     "strNameFriendly": "Глушение воспоминания"
   },
   "MemSuppressLoveSecond": {
@@ -5256,7 +5256,7 @@
     "strNameFriendly": "Очередное подавление воспоминания"
   },
   "MemSuppressChildhoodFirst": {
-    "strDesc": "[us] [is] подавляет воспоминание.",
+    "strDesc": "[us] [is] [suppresses] воспоминание.",
     "strNameFriendly": "Подавление воспоминания"
   },
   "MemSuppressChildhoodSecond": {
@@ -5292,7 +5292,7 @@
     "strNameFriendly": "Очередное подавление воспоминания"
   },
   "MemSuppressProjectFirst": {
-    "strDesc": "[us] подавляет воспоминание.",
+    "strDesc": "[us] [suppresses] воспоминание.",
     "strNameFriendly": "Подавление воспоминания"
   },
   "MemSuppressProjectSecond": {
@@ -5304,7 +5304,7 @@
     "strNameFriendly": "Очередное подавление воспоминания"
   },
   "MemSuppressMassesFirst": {
-    "strDesc": "[us] подавляет воспоминание.",
+    "strDesc": "[us] [suppresses] воспоминание.",
     "strNameFriendly": "Подавление воспоминания"
   },
   "MemSuppressMassesSecond": {
@@ -5316,7 +5316,7 @@
     "strNameFriendly": "Очередное подавление воспоминания"
   },
   "MemSuppressBetrayalFirst": {
-    "strDesc": "[us] подавляет воспоминание.",
+    "strDesc": "[us] [suppresses] воспоминание.",
     "strNameFriendly": "Подавление воспоминания"
   },
   "MemSuppressBetrayalSecond": {
@@ -5328,7 +5328,7 @@
     "strNameFriendly": "Очередное подавление воспоминания"
   },
   "MemSuppressDumbFirst": {
-    "strDesc": "[us] [is] подавляет воспоминание.",
+    "strDesc": "[us] [is] [suppresses] воспоминание.",
     "strNameFriendly": "Подавление воспоминания"
   },
   "MemSuppressDumbSecond": {
@@ -5344,7 +5344,7 @@
     "strNameFriendly": "Нарушение перемирия"
   },
   "IsClumsyTempSleep": {
-    "strDesc": "[us] [is] чувствует себя крайне неуклюже.",
+    "strDesc": "[us] [is] [feels] себя крайне неуклюже.",
     "strNameFriendly": "Неуклюжесть"
   },
   "IsJammedRadar": {
@@ -5740,7 +5740,7 @@
     "strNameFriendly": "Цель завершённого сюжета: «Карьерный курьер»"
   },
   "Plot_Messenger02_RefusedContact": {
-    "strDesc": "Контакт сюжета «Карьерный курьер», от которого [us] отказался(-ась).",
+    "strDesc": "Контакт сюжета «Карьерный курьер»: получен отказ от задания.",
     "strNameFriendly": "Контакт из отвергнутого сюжета: «Карьерный курьер»"
   },
   "Plot_Messenger02_FailedContact": {
@@ -5804,7 +5804,7 @@
     "strNameFriendly": "Цель завершённого сюжета: «Корпоративный курьер»"
   },
   "Plot_MessengerCorp_RefusedContact": {
-    "strDesc": "Контакт из сюжета «Корпоративный курьер», от которого [us] отказались.",
+    "strDesc": "Контакт сюжета «Корпоративный курьер»: получен отказ от задания.",
     "strNameFriendly": "Контакт отклонённого сюжета: «Корпоративный курьер»"
   },
   "Plot_MessengerFamily_Started": {
@@ -5864,7 +5864,7 @@
     "strNameFriendly": "Цель завершённого сюжета: Семейный курьер"
   },
   "Plot_MessengerFamily_RefusedContact": {
-    "strDesc": "Контакт в сюжете «Семейный курьер», от которого [us] отказались.",
+    "strDesc": "Контакт сюжета «Семейный курьер»: получен отказ от задания.",
     "strNameFriendly": "Контакт отклонённого сюжета: Семейный курьер"
   },
   "Plot_MessengerLegal_Started": {
@@ -6080,7 +6080,7 @@
     "strNameFriendly": "Цель выполненного сюжета: Техкурьер"
   },
   "Plot_MessengerTechnical_RefusedContact": {
-    "strDesc": "Контактное лицо в техкурьерском заказе, от которого [us] отказался.",
+    "strDesc": "Контакт техкурьерского заказа: получен отказ от задания.",
     "strNameFriendly": "Контакт по отклонённому сюжету: технический курьер"
   },
   "PlotChoicesStarted": {
@@ -6244,11 +6244,11 @@
     "strNameFriendly": "Сюжетный выбор: диалог 05c"
   },
   "PlotChoicesDialogue05dDone": {
-    "strDesc": "Сюжетный диалог: [us] делает ещё один шаг.",
+    "strDesc": "Сюжетный диалог: [us] [makes] ещё один шаг.",
     "strNameFriendly": "Сюжетный выбор: диалог 05d"
   },
   "PlotChoicesDialogue05eDone": {
-    "strDesc": "Сюжетный диалог: [us] делает ещё один шаг.",
+    "strDesc": "Сюжетный диалог: [us] [makes] ещё один шаг.",
     "strNameFriendly": "Сюжетный выбор: диалог 05e"
   },
   "PlotChoicesDialogue05Them": {
@@ -6256,11 +6256,11 @@
     "strNameFriendly": "Условие 2"
   },
   "PlotChoicesDialogue06Done": {
-    "strDesc": "Сюжетный диалог: [us] делает ещё один шаг.",
+    "strDesc": "Сюжетный диалог: [us] [makes] ещё один шаг.",
     "strNameFriendly": "Сюжетный выбор: диалог 06"
   },
   "PlotChoicesDialogue06aDone": {
-    "strDesc": "Сюжетный диалог: [us] делает ещё один шаг.",
+    "strDesc": "Сюжетный диалог: [us] [makes] ещё один шаг.",
     "strNameFriendly": "Сюжетный выбор: диалог 06a завершён"
   },
   "PlotChoicesDialogue06bDone": {
@@ -6368,19 +6368,19 @@
     "strNameFriendly": "Условие 2"
   },
   "PlotChoicesDialogue10Done": {
-    "strDesc": "Сюжетный диалог: [us] продвигается на шаг вперёд.",
+    "strDesc": "Сюжетный диалог: [us] [advances] на шаг вперёд.",
     "strNameFriendly": "Сюжетный диалог 10: завершён"
   },
   "PlotChoicesDialogue10aDone": {
-    "strDesc": "Сюжетный диалог: [us] продвигается на шаг вперёд.",
+    "strDesc": "Сюжетный диалог: [us] [advances] на шаг вперёд.",
     "strNameFriendly": "Сюжетный диалог 10a: завершён"
   },
   "PlotChoicesDialogue10bDone": {
-    "strDesc": "Сюжетный диалог: [us] продвигается на шаг вперёд.",
+    "strDesc": "Сюжетный диалог: [us] [advances] на шаг вперёд.",
     "strNameFriendly": "Сюжетный диалог 10b: завершён"
   },
   "PlotChoicesDialogue10cDone": {
-    "strDesc": "Сюжетный диалог: [us] продвигается на шаг вперёд.",
+    "strDesc": "Сюжетный диалог: [us] [advances] на шаг вперёд.",
     "strNameFriendly": "Сюжетный выбор в диалоге 10c завершён"
   },
   "PlotChoicesDialogue10dDone": {
@@ -6500,7 +6500,7 @@
     "strNameFriendly": "Обучение: ещё не в посольстве"
   },
   "Plot_OKLGEmbassy_01Done": {
-    "strDesc": "Сюжет «Посольство ОКЛГ»: [us] побывал в посольстве.",
+    "strDesc": "Сюжет «Посольство ОКЛГ»: визит в посольство выполнен.",
     "strNameFriendly": "Сюжет_Посольство_ОКЛГ_01Выполнен"
   },
   "Plot_OKLGEmbassy_01Them": {
@@ -6744,7 +6744,7 @@
     "strNameFriendly": "Найден труп"
   },
   "Plot_Whodunnit_VictimFoundUs": {
-    "strDesc": "В сюжете «Кто убийца?» [us] обнаружил жертву убийства.",
+    "strDesc": "«Кто убийца?»: факт обнаружения жертвы персонажем [us].",
     "strNameFriendly": "Найдена жертва убийства"
   },
   "Plot_Whodunnit_Killer": {
@@ -6824,11 +6824,11 @@
     "strNameFriendly": "Враг покойного"
   },
   "Plot_Whodunnit_ReportKinEnemy": {
-    "strDesc": "«Кто убийца?»: [us] сообщил родственникам о теле погибшего.",
+    "strDesc": "«Кто убийца?»: передача родственникам сведений о погибшем.",
     "strNameFriendly": "Сообщение о смерти врагу покойного"
   },
   "Plot_Whodunnit_ReportKinEnemyNPC": {
-    "strDesc": "«Кто убийца?»: [us] узнал от игрока о мёртвом теле своего врага.",
+    "strDesc": "«Кто убийца?»: получение от игрока сведений о погибшем враге.",
     "strNameFriendly": "Враг покойного, узнавший о его смерти"
   },
   "Plot_Whodunnit_ExaminedFaction": {
@@ -6844,23 +6844,23 @@
     "strNameFriendly": "У свидетеля больше нет улик"
   },
   "Plot_Whodunnit_AccuseMurder": {
-    "strDesc": "Детектив: [us] обвинил [them] в убийстве на основании улик, связанных с жертвой.",
+    "strDesc": "Детектив: выдвижение обвинения против [them] на основании улик.",
     "strNameFriendly": "Обвинение в убийстве"
   },
   "Plot_Whodunnit_AccuseMurderThem": {
-    "strDesc": "Детектив: [us] обвиняется в убийстве.",
+    "strDesc": "Детектив: [us] [is] под подозрением в совершении убийства.",
     "strNameFriendly": "Обвиняемый в убийстве"
   },
   "Plot_Whodunnit_ReportMurder": {
-    "strDesc": "Детектив: [us] передал местным властям улики по делу об убийстве, связанные с жертвой.",
+    "strDesc": "Детектив: передача властям улик по делу об убийстве.",
     "strNameFriendly": "Сообщение властям об убийстве"
   },
   "Plot_Whodunnit_ReportMurderToOKLGShipbreaker": {
-    "strDesc": "Детектив: [us] сообщил фракции разборщиков кораблей OKLG о жертве убийства.",
+    "strDesc": "Детектив: передача сведений о жертве разборщикам кораблей OKLG.",
     "strNameFriendly": "Сообщение фракции разборщиков кораблей OKLG об убийстве"
   },
   "Plot_Whodunnit_ReportMurderToOKLGCriminal": {
-    "strDesc": "Детектив: [us] сообщил криминальной фракции OKLG о жертве убийства.",
+    "strDesc": "Детектив: передача сведений о жертве криминальной фракции OKLG.",
     "strNameFriendly": "Сообщено об убийстве в криминальную фракцию OKLG"
   },
   "Plot_Whodunnit_ReportMurderToOKLGManager": {
@@ -7532,7 +7532,7 @@
     "strNameFriendly": "Член «Ловцов человеков»"
   },
   "IsCultistMeat": {
-    "strDesc": "[us] узрел Косые Глаза, вкусил их сырую, освобождающую Истину и теперь [is] беззаветно предан делу Козла Без Конца.",
+    "strDesc": "[us] [is] адепт культа Мяса, познавший Истину Косых Глаз и преданный Козлу Без Конца.",
     "strNameFriendly": "Адепт Косого Глаза"
   },
   "IsCultistPsychic": {
@@ -7968,7 +7968,7 @@
     "strNameFriendly": "Сюжет: Согласие на поиски"
   },
   "Plot_NewOKLGFixer_SolicitPlayerDo01Ask": {
-    "strDesc": "«Посредник ОКЛГ»: вопрос, чем [3rd] может помочь.",
+    "strDesc": "«Посредник ОКЛГ»: вопрос, чем [3rd] [can] помочь.",
     "strNameFriendly": "Сюжет: Вопрос о помощи"
   },
   "Plot_NewOKLGFixer_TalkToFixerDone": {
@@ -7984,7 +7984,7 @@
     "strNameFriendly": "Сюжет_СборЛома_Начат"
   },
   "Plot_ScavFetch_OKLGCollector": {
-    "strDesc": "[us] собирает детали из разборки для инженерных исследований.",
+    "strDesc": "[us] [musters] детали из разборки для инженерных исследований.",
     "strNameFriendly": "Сбор деталей для инженерных исследований"
   },
   "Plot_ScavFetch_Offer": {
@@ -8032,7 +8032,7 @@
     "strNameFriendly": "Курьер VLA: готов к запросу"
   },
   "Plot_VLAFetch_Collector": {
-    "strDesc": "[us] собирает детали с разборки для разработки аэростата.",
+    "strDesc": "[us] [musters] детали с разборки для разработки аэростата.",
     "strNameFriendly": "Сборщик запчастей для аэростата"
   },
   "Plot_VLAFetch_Offer": {
@@ -8196,7 +8196,7 @@
     "strNameFriendly": "Сюжет: «Старатель» — доставка золота (начат)"
   },
   "Plot_ProspectorFetchGold_Collector": {
-    "strDesc": "[us] собирает добытые минералы для геологоразведки.",
+    "strDesc": "[us] [musters] добытые минералы для геологоразведки.",
     "strNameFriendly": "Сборщик для геологоразведки"
   },
   "Plot_ProspectorFetchGoldSolicitReady": {
@@ -8236,7 +8236,7 @@
     "strNameFriendly": "Сюжет «Старатель BCER: доставка золота» — начало"
   },
   "Plot_ProspectorBCERFetchGold_Collector": {
-    "strDesc": "[us] собирает добытые минералы для геологоразведочных исследований.",
+    "strDesc": "[us] [musters] добытые минералы для геологоразведочных исследований.",
     "strNameFriendly": "Сборщик геологоразведки BCER"
   },
   "Plot_ProspectorBCERFetchGoldSolicitReady": {
@@ -8388,10 +8388,10 @@
     "strDesc": "Завершено: AVClub_The_Return"
   },
   "CeresSmoked": {
-    "strDesc": "[us] покурил сомнительного гашиша по пути на Цереру."
+    "strDesc": "Факт употребления сомнительного гашиша на пути к Церере со стороны [us-gen]."
   },
   "CeresDidNotSmoke": {
-    "strDesc": "[us] отказался от сомнительного гашиша по пути на Цереру."
+    "strDesc": "Отказ от употребления сомнительного гашиша на пути к Церере со стороны [us-gen]."
   },
   "Plot_VideotapeDecideResearch_Completed": {
     "strDesc": "Завершено: VideotapeDecideResearch"
@@ -9000,7 +9000,7 @@
     "strNameFriendly": "Разыскивается живьём"
   },
   "IsBountyTargetShip": {
-    "strDesc": "[us] принадлежит тому, за кого назначена награда.",
+    "strDesc": "Судно принадлежит цели, за которую назначена награда.",
     "strNameFriendly": "Корабль разыскиваемого"
   },
   "BountyStatCaptured": {
@@ -9056,7 +9056,7 @@
     "strNameFriendly": "ID карты окружения"
   },
   "IsEnvironmentEntity": {
-    "strDesc": "[us] [is] объект окружения.",
+    "strDesc": "[us] [is] [object] окружения.",
     "strNameFriendly": "Объект окружения"
   },
   "StatCrimeEJDRArrestWarning": {
@@ -11162,7 +11162,7 @@
   },
   "IsImprisoned": {
     "strNameFriendly": "В заключении",
-    "strDesc": "[us] [is] отбывает срок."
+    "strDesc": "[us] [is] под стражей, отбывая срок заключения."
   },
   "IsInContainer": {
     "strNameFriendly": "В контейнере",
@@ -11298,7 +11298,7 @@
   },
   "IsLitWall1x0VibrantPurple": {
     "strNameFriendly": "Фиолетовый настенный светильник",
-    "strDesc": "[us] [is] фиолетовый настенный светильник 1x0."
+    "strDesc": "[us] [is] [purple] настенный светильник 1x0."
   },
   "IsLitWall1x0VibrantRed": {
     "strNameFriendly": "Красный настенный светильник",
@@ -11578,7 +11578,7 @@
   },
   "IsPDAVizReset": {
     "strNameFriendly": "Сброс визуального интерфейса КПК",
-    "strDesc": "[us] [is] подлежит сбросу визуального интерфейса КПК."
+    "strDesc": "Для [us-gen] назначен сброс визуального интерфейса КПК."
   },
   "IsPearson": {
     "strNameFriendly": "Пирсон",
@@ -11778,7 +11778,7 @@
   },
   "IsRaceLeagueOffered": {
     "strNameFriendly": "Доступны гоночные лиги",
-    "strDesc": "[us] предлагает гонки"
+    "strDesc": "[us] [offers] гонки"
   },
   "IsRaceLeagueRegistered": {
     "strNameFriendly": "Регистрация в лиге",
@@ -13178,19 +13178,19 @@
   },
   "SkillSciencePsychology": {
     "strNameFriendly": "Навык: психология",
-    "strDesc": "У [us-gen] [has.qual] навык диагностики и лечения психических заболеваний."
+    "strDesc": "У [us-gen] [has.qual] есть навык диагностики и лечения психических заболеваний."
   },
   "SkillScienceResearch": {
     "strNameFriendly": "Навык: научные исследования",
-    "strDesc": "У [us-gen] [has.qual] навык применения строгих методов исследования."
+    "strDesc": "У [us-gen] [has.qual] есть навык применения строгих методов исследования."
   },
   "SkillSculpture": {
     "strNameFriendly": "Навык: скульптура",
-    "strDesc": "У [us-gen] [has.qual] навык создания объёмных произведений искусства."
+    "strDesc": "У [us-gen] [has.qual] есть навык создания объёмных произведений искусства."
   },
   "SkillSong": {
     "strNameFriendly": "Навык: пение",
-    "strDesc": "У [us-gen] [has.qual] навык сочинения и исполнения вокальной музыки"
+    "strDesc": "У [us-gen] [has.qual] есть навык сочинения и исполнения вокальной музыки."
   },
   "SkillSports": {
     "strNameFriendly": "Навык: спорт",
@@ -13198,7 +13198,7 @@
   },
   "SkillStealth": {
     "strNameFriendly": "Навык: скрытность",
-    "strDesc": "[us] [is] умеет прятаться и не попадаться на глаза."
+    "strDesc": "[us] [can] прятаться и оставаться незамеченным."
   },
   "SkillTacticsFleet": {
     "strNameFriendly": "Навык: тактика флота",
@@ -13418,7 +13418,7 @@
   },
   "StatUSD": {
     "strDesc": "[us-pos] ликвидные активы в USD.",
-    "strNameFriendly": "Активы в USD"
+    "strNameFriendly": "$"
   },
   "StatVolume": {
     "strDesc": "[us-pos] объём в м³. В основном нужен для расчёта газа.",
@@ -13534,7 +13534,7 @@
   },
   "TutorialExploreDerelictShow": {
     "strNameFriendly": "Урок по исследованию заброшенного корабля: показ",
-    "strDesc": "Далее [us] ожидает урок по исследованию заброшенного корабля."
+    "strDesc": "Далее [us] [expects] урок по исследованию заброшенного корабля."
   },
   "TutorialExploreDerelictWaiting": {
     "strNameFriendly": "Урок по исследованию заброшенного корабля: ожидание",
@@ -13542,7 +13542,7 @@
   },
   "TutorialMTTExpandShow": {
     "strNameFriendly": "Отображение урока MTTExpand",
-    "strDesc": "Далее [us] ожидает урок по расширению MTT."
+    "strDesc": "Далее [us] [expects] урок по расширению MTT."
   },
   "TutorialMTTExpandWaiting": {
     "strNameFriendly": "Ожидание завершения урока MTTExpand",
@@ -14281,7 +14281,7 @@
     "strNameFriendly": "Зелёный потолочный светильник"
   },
   "IsLitCeiling1x1VibrantPurple": {
-    "strDesc": "[us] [is] фиолетовый потолочный светильник размером 1x0.",
+    "strDesc": "[us] [is] [purple] потолочный светильник размером 1x0.",
     "strNameFriendly": "Фиолетовый потолочный светильник"
   },
   "IsLitCeiling1x1VibrantRed": {

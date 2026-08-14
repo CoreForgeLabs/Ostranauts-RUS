@@ -1,0 +1,222 @@
+
+[
+  {
+    "strName" : "COND_STKShipSurrender_AIDemand_Intro_Us",
+    "aCOs"    : [
+      "-StatSecurity=1.0x23"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIDemand_Intro_Them",
+    "aCOs"    : [
+      "StatPrivacy=1.0x23",
+      "StatSecurity=1.0x23"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIDemand_Intro_Deny_NoReasons_Us",
+    "aCOs"    : [
+      "IsSTKShipSurrender_AIDemand_Fail_Cooldown=1.0x1",
+      "StatPrivacy=1.0x23"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIDemand_Intro_Deny_NoReasons_Them",
+    "aCOs"    : [
+      "StatPrivacy=1.0x23",
+      "StatSecurity=1.0x23"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIDemand_Intro_Allow_TraitUs_Blank_Us",
+    "aCOs"    : [
+      "InSocialCombat=1.0x1",
+      "StatPrivacy=1.0x12",
+      "-StatSecurity=1.0x23"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIDemand_Intro_Allow_TraitUs_Blank_Them",
+    "aCOs"    : [
+      "InSocialCombat=1.0x1",
+      "-StatSecurity=1.0x12"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIDemand_Intro_Deny_Default_Us",
+    "aCOs"    : [
+      "IsSTKShipSurrender_AIDemand_Fail_Cooldown=1.0x1",
+      "StatAltruism=1.0x45",
+      "-StatAutonomy=1.0x45",
+      "StatSecurity=1.0x23"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIDemand_Intro_Deny_Default_Them",
+    "aCOs"    : [
+      "StatAltuism=1.0x23",
+      "StatEsteem=1.0x23",
+      "StatMeaning=1.0x23",
+      "StatSecurity=1.0x45"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIDemand_Intro_Allow_Friendly_Us",
+    "aCOs"    : [
+      "InSocialCombat=1.0x1",
+      "IsSTKShipSurrender_PlayerOffer_AIAccepted=1.0x1",
+      "-StatAltruism=1.0x45",
+      "-StatSecurity=1.0x23"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIDemand_Intro_Allow_Friendly_Them",
+    "aCOs"    : [
+      "InSocialCombat=1.0x1",
+      "-StatAltruism=1.0x23",
+      "-StatFamily=1.0x45",
+      "StatMeaning=1.0x23",
+      "-StatSecurity=1.0x45"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIDemand_Intro_Allow_DcAltruismBad_Us",
+    "aCOs"    : [
+      "InSocialCombat=1.0x1",
+      "-StatAltruism=1.0x3",
+      "IsSTKShipSurrender_PlayerOffer_AIAccepted=1.0x1",
+      "-StatAltruism=1.0x45",
+      "-StatSecurity=1.0x23"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIDemand_Intro_Allow_DcAltruismBad_Them",
+    "aCOs"    : [
+      "InSocialCombat=1.0x1",
+      "-StatAltruism=1.0x23",
+      "StatMeaning=1.0x23",
+      "-StatSecurity=1.0x45"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIDemand_Intro_Allow_DcSecurityBad_Us",
+    "aCOs"    : [
+      "InSocialCombat=1.0x1",
+      "-StatSecurity=1.0x3",
+      "IsSTKShipSurrender_PlayerOffer_AIAccepted=1.0x1",
+      "-StatAltruism=1.0x45",
+      "-StatSecurity=1.0x23"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIDemand_Intro_Allow_DcSecurityBad_Them",
+    "aCOs"    : [
+      "InSocialCombat=1.0x1",
+      "-StatAltruism=1.0x23",
+      "StatMeaning=1.0x23",
+      "-StatSecurity=1.0x45"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIDemand_Intro_Allow_Faction_Likes_Us",
+    "aCOs"    : [
+      "InSocialCombat=1.0x1",
+      "IsSTKShipSurrender_PlayerOffer_AIAccepted=1.0x1",
+      "-StatAltruism=1.0x45",
+      "-StatSecurity=1.0x23"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIDemand_Intro_Allow_Faction_Likes_Them",
+    "aCOs"    : [
+      "InSocialCombat=1.0x1",
+      "-StatAltruism=1.0x23",
+      "StatMeaning=1.0x23",
+      "-StatSecurity=1.0x45"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIDemand_Intro_Allow_TraitUs_Kind_Us",
+    "aCOs"    : [
+      "InSocialCombat=1.0x1",
+      "IsSTKShipSurrender_PlayerOffer_AIAccepted=1.0x1",
+      "-StatAltruism=1.0x45",
+      "-StatSecurity=1.0x23"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIDemand_Intro_Allow_TraitUs_Kind_Them",
+    "aCOs"    : [
+      "InSocialCombat=1.0x1",
+      "-StatAltruism=1.0x23",
+      "StatMeaning=1.0x23",
+      "-StatSecurity=1.0x45"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIDemand_Intro_Allow_TraitUs_Forgiving_Us",
+    "aCOs"    : [
+      "InSocialCombat=1.0x1",
+      "IsSTKShipSurrender_PlayerOffer_AIAccepted=1.0x1",
+      "-StatAltruism=1.0x45",
+      "-StatSecurity=1.0x23"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIDemand_Intro_Allow_TraitUs_Forgiving_Them",
+    "aCOs"    : [
+      "InSocialCombat=1.0x1",
+      "-StatAltruism=1.0x23",
+      "StatMeaning=1.0x23",
+      "-StatSecurity=1.0x45"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIDemand_Intro_Allow_TraitUs_Agliophobic_Us",
+    "aCOs"    : [
+      "InSocialCombat=1.0x1",
+      "IsSTKShipSurrender_PlayerOffer_AIAccepted=1.0x1",
+      "-StatAltruism=1.0x45",
+      "-StatSecurity=1.0x23"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "COND_STKShipSurrender_AIDemand_Intro_Allow_TraitUs_Agliophobic_Them",
+    "aCOs"    : [
+      "InSocialCombat=1.0x1",
+      "-StatAltruism=1.0x23",
+      "StatMeaning=1.0x23",
+      "-StatSecurity=1.0x45"
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "ACTSTKShipSurrender_AIDemandUs",
+    "strType" : "interaction"
+  },
+  {
+    "strName" : "ACTSTKShipSurrender_AIDemandThem",
+    "strType" : "interaction"
+  }
+]
