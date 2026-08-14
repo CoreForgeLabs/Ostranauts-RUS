@@ -102,6 +102,24 @@ namespace OstraI18n
                     DataHandler.aModPaths.Insert(0, modRoot);
                     Plugin.Log.LogInfo("[i18n] manual-assets: " + modRoot + " зарегистрирован в aModPaths (приоритет над оригиналом)");
                 }
+
+                // Локализация названий вкладок мануалов по ключам MANUAL_TAB_<name>
+                if (DataHandler.dictManPages != null && DataHandler.dictManPages.TryGetValue("Manual Pages", out var pages) && pages != null)
+                {
+                    int translatedTabs = 0;
+                    for (int i = 0; i < pages.Length - 1; i += 2)
+                    {
+                        var tabTitle = pages[i];
+                        var key = "MANUAL_TAB_" + tabTitle.Replace(" ", "_").Replace("'", "");
+                        var localized = I18n.Get(key);
+                        if (!string.IsNullOrEmpty(localized) && localized != key)
+                        {
+                            pages[i] = localized;
+                            translatedTabs++;
+                        }
+                    }
+                    Plugin.Log.LogInfo("[i18n] manual-assets: локализовано вкладок мануалов: " + translatedTabs + " (ключи MANUAL_TAB_*)");
+                }
             }
             catch (Exception ex)
             {

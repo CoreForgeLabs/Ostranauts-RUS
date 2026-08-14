@@ -4397,7 +4397,7 @@
     "ordinal": 0,
     "candidate": false,
     "key": "GUI_TOOLTIP_B_CAPTAIN_B",
-    "approved": false
+    "approved": true
   },
   {
     "methodKey": "GUITooltip::SetTooltipCrew/2",
@@ -4413,7 +4413,7 @@
     "ordinal": 0,
     "candidate": false,
     "key": "GUI_TOOLTIP_B_CREW_B",
-    "approved": false
+    "approved": true
   },
   {
     "methodKey": "GUITooltip::SetTooltipCrew/2",
@@ -4421,7 +4421,7 @@
     "ordinal": 0,
     "candidate": false,
     "key": "GUI_TOOLTIP_B_ACTIVE_SHIFT_B",
-    "approved": false
+    "approved": true
   },
   {
     "methodKey": "GUITooltip::SetTooltipCrew/2",
@@ -4453,7 +4453,7 @@
     "ordinal": 0,
     "candidate": false,
     "key": "GUI_TOOLTIP_B_CURRENT_B",
-    "approved": false
+    "approved": true
   },
   {
     "methodKey": "GUITooltip::SetTooltipCrew/2",
@@ -4469,7 +4469,7 @@
     "ordinal": 0,
     "candidate": false,
     "key": "GUI_TOOLTIP_NONE",
-    "approved": false
+    "approved": true
   },
   {
     "methodKey": "GUITooltip::SetTooltipCrew/2",
@@ -4485,7 +4485,7 @@
     "ordinal": 0,
     "candidate": false,
     "key": "GUI_TOOLTIP_B_LOG_B",
-    "approved": false
+    "approved": true
   },
   {
     "methodKey": "GUITooltip::SetTooltipCrew/2",
@@ -4501,7 +4501,7 @@
     "ordinal": 1,
     "candidate": false,
     "key": "GUI_TOOLTIP_NONE",
-    "approved": false
+    "approved": true
   },
   {
     "methodKey": "GUITooltip::SetTooltipCrew/2",
@@ -4509,7 +4509,7 @@
     "ordinal": 0,
     "candidate": false,
     "key": "GUI_TOOLTIP_B_PLANNED_B",
-    "approved": false
+    "approved": true
   },
   {
     "methodKey": "GUITooltip::SetTooltipCrew/2",
@@ -4525,7 +4525,7 @@
     "ordinal": 0,
     "candidate": false,
     "key": "GUI_TOOLTIP_B_LAST_FAILED_WORK_ATTEMPTS_B",
-    "approved": false
+    "approved": true
   },
   {
     "methodKey": "GUITooltip::SetTooltipCrew/2",
@@ -4557,7 +4557,7 @@
     "ordinal": 0,
     "candidate": false,
     "key": "GUI_TOOLTIP_S_AGO",
-    "approved": false
+    "approved": true
   },
   {
     "methodKey": "GUITooltip::SetTooltipCrew/2",
@@ -4565,7 +4565,7 @@
     "ordinal": 0,
     "candidate": false,
     "key": "GUI_TOOLTIP_B_LAST_ACTIVE_PLEDGE_B",
-    "approved": false
+    "approved": true
   },
   {
     "methodKey": "GUITooltip::SetTooltipCrew/2",
@@ -4589,7 +4589,7 @@
     "ordinal": 1,
     "candidate": false,
     "key": "GUI_TOOLTIP_S_AGO",
-    "approved": false
+    "approved": true
   },
   {
     "methodKey": "ItemViewer+<CycleThrough>d__16::MoveNext/0",
@@ -16165,7 +16165,7 @@
     "ordinal": 0,
     "candidate": false,
     "key": "GUI_ITEMMODULE_N_A",
-    "approved": false
+    "approved": true
   },
   {
     "methodKey": "Ostranauts.UI.MegaToolTip.DataModules.StakesModule::UpdateStakesInfo/2",
@@ -21662,5 +21662,189 @@
     "candidate": false,
     "key": "GUI_PROGRESSBAR_PROGRESSBAR",
     "approved": false
+  },
+  {
+    "methodKey": "GUITooltip::TooltipTextFormat1/1",
+    "literal": "\nMass: ",
+    "key": "GUI_TOOLTIP_MASS",
+    "ordinal": 0,
+    "approved": true,
+    "candidate": true
+  },
+  {
+    "methodKey": "GUITooltip::TooltipTextFormat1/1",
+    "literal": "\nMass of stack: ",
+    "key": "GUI_TOOLTIP_MASS_STACK",
+    "ordinal": 0,
+    "approved": true,
+    "candidate": true
+  },
+  {
+    "methodKey": "GUITooltip::TooltipTextFormat1/1",
+    "literal": "\nCondition: ",
+    "key": "GUI_TOOLTIP_CONDITION",
+    "ordinal": 0,
+    "approved": true,
+    "candidate": true
+  },
+  {
+    "methodKey": "GUITooltip::TooltipTextFormat1/1",
+    "literal": "\nCharge: ",
+    "key": "GUI_TOOLTIP_CHARGE",
+    "ordinal": 0,
+    "approved": true,
+    "candidate": true
+  },
+  {
+    "methodKey": "GUITooltip::TooltipTextFormat1/1",
+    "literal": "\nCharge: ",
+    "key": "GUI_TOOLTIP_CHARGE",
+    "ordinal": 1,
+    "approved": true,
+    "candidate": true
+  },
+  {
+    "methodKey": "GUITooltip::TooltipTextFormat1/1",
+    "literal": "\nPressure: ",
+    "key": "GUI_TOOLTIP_PRESSURE",
+    "ordinal": 0,
+    "approved": true,
+    "candidate": true
+  },
+  {
+    "methodKey": "GUITooltip::TooltipTextFormat2/1",
+    "literal": "Install job requires ",
+    "key": "GUI_TOOLTIP_INSTALL_JOB_REQ",
+    "ordinal": 0,
+    "approved": true,
+    "candidate": true
+  },
+  {
+    "methodKey": "GUITooltip::TooltipTextFormat2/1",
+    "literal": "\n\nParts in lot: ",
+    "key": "GUI_TOOLTIP_PARTS_IN_LOT",
+    "ordinal": 0,
+    "approved": true,
+    "candidate": true
+  },
+  {
+    "methodKey": "GUITooltip::TooltipTextFormat2/1",
+    "literal": "\n\nInstall Progress: ",
+    "key": "GUI_TOOLTIP_INSTALL_PROG",
+    "ordinal": 0,
+    "approved": true,
+    "candidate": true
+  },
+  {
+    "methodKey": "GUITooltip::TooltipTextFormat2/1",
+    "literal": "\n\nUninstall Progress: ",
+    "key": "GUI_TOOLTIP_UNINSTALL_PROG",
+    "ordinal": 0,
+    "approved": true,
+    "candidate": true
+  },
+  {
+    "methodKey": "GUITooltip::TooltipTextFormat3/2",
+    "literal": "\nTools required:\n",
+    "key": "GUI_TOOLTIP_TOOLS_REQ",
+    "ordinal": 0,
+    "approved": true,
+    "candidate": true
+  },
+  {
+    "methodKey": "GUITooltip::TooltipTextFormat3/2",
+    "literal": "\nInput items required:\n",
+    "key": "GUI_TOOLTIP_INPUT_ITEMS_REQ",
+    "ordinal": 0,
+    "approved": true,
+    "candidate": true
+  },
+  {
+    "methodKey": "GUITooltip::TooltipTextFormat3/2",
+    "literal": "\nParts in lot:",
+    "key": "GUI_TOOLTIP_PARTS_IN_LOT_HDR",
+    "ordinal": 0,
+    "approved": true,
+    "candidate": true
+  },
+  {
+    "methodKey": "Ostranauts.UI.MegaToolTip.DataModules.PersonModule::CollectAboutInformation/1",
+    "literal": "Age: ",
+    "key": "GUI_PERSONMODULE_AGE",
+    "ordinal": 0,
+    "approved": true,
+    "candidate": true
+  },
+  {
+    "methodKey": "Ostranauts.UI.MegaToolTip.DataModules.PersonModule::CollectAboutInformation/1",
+    "literal": "  Gender: ",
+    "key": "GUI_PERSONMODULE_GENDER",
+    "ordinal": 0,
+    "approved": true,
+    "candidate": true
+  },
+  {
+    "methodKey": "Ostranauts.UI.MegaToolTip.DataModules.PersonModule::CollectAboutInformation/1",
+    "literal": "Career: ",
+    "key": "GUI_PERSONMODULE_CAREER",
+    "ordinal": 0,
+    "approved": true,
+    "candidate": true
+  },
+  {
+    "methodKey": "Ostranauts.UI.MegaToolTip.DataModules.PersonModule::CollectAboutInformation/1",
+    "literal": "Homeworld: ",
+    "key": "GUI_PERSONMODULE_HOMEWORLD",
+    "ordinal": 0,
+    "approved": true,
+    "candidate": true
+  },
+  {
+    "methodKey": "Ostranauts.UI.MegaToolTip.DataModules.PersonModule::CollectAboutInformation/1",
+    "literal": "Strata: ",
+    "key": "GUI_PERSONMODULE_STRATA",
+    "ordinal": 0,
+    "approved": true,
+    "candidate": true
+  },
+  {
+    "methodKey": "Ostranauts.UI.MegaToolTip.DataModules.PersonModule::CollectAboutInformation/1",
+    "literal": "Factions: ",
+    "key": "GUI_PERSONMODULE_FACTIONS",
+    "ordinal": 0,
+    "approved": true,
+    "candidate": true
+  },
+  {
+    "methodKey": "Ostranauts.UI.MegaToolTip.DataModules.PersonModule::CollectAboutInformation/1",
+    "literal": "My Standings: ",
+    "key": "GUI_PERSONMODULE_MY_STANDINGS",
+    "ordinal": 0,
+    "approved": true,
+    "candidate": true
+  },
+  {
+    "methodKey": "Ostranauts.UI.MegaToolTip.DataModules.PersonModule::CollectAboutInformation/1",
+    "literal": "; Fear: ",
+    "key": "GUI_PERSONMODULE_FEAR",
+    "ordinal": 0,
+    "approved": true,
+    "candidate": true
+  },
+  {
+    "methodKey": "Ostranauts.UI.MegaToolTip.DataModules.PersonModule::CollectAboutInformation/1",
+    "literal": "They See Us As: ",
+    "key": "GUI_PERSONMODULE_THEY_SEE_US_AS",
+    "ordinal": 0,
+    "approved": true,
+    "candidate": true
+  },
+  {
+    "methodKey": "Ostranauts.UI.MegaToolTip.DataModules.PersonModule::CollectAboutInformation/1",
+    "literal": "We See Them As: ",
+    "key": "GUI_PERSONMODULE_WE_SEE_THEM_AS",
+    "ordinal": 0,
+    "approved": true,
+    "candidate": true
   }
 ]

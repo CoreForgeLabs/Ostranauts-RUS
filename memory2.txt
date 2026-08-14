@@ -83,7 +83,7 @@
 - Живой запуск с автозагрузкой подтвердил: строка `manual-assets: ...\langs\ru\ зарегистрирован в aModPaths (приоритет над оригиналом)`, 0 исключений, overlay-baseline не изменился (24894/0). Автозагрузка возвращена в false.
 - Код закоммичен в master: коммит `8419f13` (файлы: `.gitignore`, `plugin/OstraI18n/Plugin.cs`, `plugin/OstraI18n/ManualAssets.cs`).
 
---- сообщения #3005–#3050 ---
+--- сообщения #3005–#3060 ---
 - Сохранены переведённые пользователем мануалы из игры (`F:\Games\Steam\steamapps\common\Ostranauts\BepInEx\plugins\OstraI18n\langs\ru\images\manuals`) в проект `langs/ru/images/manuals/` (99 файлов).
 - Расширено покрытие игровых данных: подключены новые категории `attackmodes/coAttacks` (`dictAModes`), `ships` (`dictShips`), `homeworlds` (`dictHomeworlds`).
 - Обновлены `langs/ru/pack.json` (`categoryToField` выросло до 26, `translatableFields` до 21), `plugin/OstraI18n/ContentOverlay.cs`, `tools/import_old_translation.py`, `tools/validate_content_overlay.py`, `tools/ensemble_full_retranslate.py`.
@@ -91,8 +91,13 @@
 - Валидация `tools/validate_content_overlay.py` по всем 25 категориям: 0 ошибок!
 - Сборка C# `OstraI18n.csproj` прошла успешно (0 ошибок).
 - Деплой в игру и живой запуск подтвердили: `применено полей 25763, сирот 0`, 0 исключений! Baseline повышен с 24894 до 25763 (`langs/ru/baseline.json`).
+- Реализована key-based адаптация динамических тултипов через IL-транспайлер `LiteralPatcher` (замена `ldstr` на `I18n.Get(key)` в `GUITooltip`, `ItemModule`, `PersonModule`): 37 новых утверждённых литералов (масса, стопки, состояние, заряд, давление, требования к работам, пол, возраст, карьера, родной мир, отношения, страх, фракции).
+- Реализована key-based локализация вкладок мануалов в `ManualAssets.cs` (ключи `MANUAL_TAB_*`): в игре подтверждено `локализовано вкладок мануалов: 7`.
+- Число утверждённых литералов выросло до 204 в 73 методах, живой запуск подтвердил: 0 дрейфа, 0 исключений!
 
 Договорённости:
+- Архитектура строго key-based (через `I18n.Get`, `DataHandler.GetString`, `LangPack`), без hardcoded строк на русском в C#-коде, для поддержки 10+ будущих языков.
+- Работа строго через движок игры и IL-транспайлеры, без regex-патчей на лету.
 - Git identity локально в репо: `user.name=CoreForgeLabs`, `user.email=CoreForgeLabs@gmail.com`.
 - Картинки/PDF — в `.gitignore`, на диске остаются.
 - Обязательно делать git push после коммитов.
