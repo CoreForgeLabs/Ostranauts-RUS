@@ -58,14 +58,14 @@ def main():
         json.dump(mod_info, f, ensure_ascii=False, indent=2)
     print(f"[2/5] Создан mod_info.json -> {mod_info_path}")
 
-    # 3. Copy game data and BepInEx files
+    # 3. Create game data and copy BepInEx files
     dst_data = os.path.join(WORKSHOP_DIR, "data")
-    src_data = os.path.join(SCRIPT_DIR, "langs", "ru", "data")
     if os.path.exists(dst_data):
         shutil.rmtree(dst_data)
-    if os.path.exists(src_data):
-        shutil.copytree(src_data, dst_data)
-        print(f"[3/6] Скопирована папка data/ -> {dst_data}")
+    os.makedirs(dst_data, exist_ok=True)
+    with open(os.path.join(dst_data, "info.json"), "w", encoding="utf-8") as f:
+        json.dump([{"strName": "OstraI18n_Data", "strNotes": "OstraI18n Localization Module"}], f, ensure_ascii=False, indent=2)
+    print(f"[3/6] Создана безопасная папка data/ -> {dst_data}")
 
     dst_bepinex = os.path.join(WORKSHOP_DIR, "BepInEx")
     if os.path.exists(dst_bepinex):
