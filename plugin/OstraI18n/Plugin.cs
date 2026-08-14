@@ -471,6 +471,11 @@ namespace OstraI18n
                 new Type[] { typeof(bool), typeof(bool), typeof(bool) });
             TryPatch(h, typeof(GUIReactor), "Awake", flagsInstPriv,
                 null, t.GetMethod(nameof(Patches.GUIReactorAwakePostfix)), ref ok, ref failed);
+            TryPatch(h, typeof(GUISaveIndicator), "EstablishSave", flagsInstPub,
+                null, t.GetMethod(nameof(Patches.SaveIndicatorEstablishSavePostfix)), ref ok, ref failed,
+                new Type[] { typeof(bool) });
+            TryPatch(h, typeof(GUISaveIndicator), "Reset", flagsInstPub,
+                null, t.GetMethod(nameof(Patches.SaveIndicatorResetPostfix)), ref ok, ref failed);
         }
 
         private static void TryPatch(Harmony h, Type type, string method, BindingFlags flags,

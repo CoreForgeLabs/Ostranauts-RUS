@@ -574,6 +574,39 @@ namespace OstraI18n
             }
         }
 
+        // GUISaveIndicator.EstablishSave -> localizes "Last Save: ..."
+        public static void SaveIndicatorEstablishSavePostfix(GUISaveIndicator __instance)
+        {
+            if (!LangPack.Active || (UnityEngine.Object)(object)__instance == (UnityEngine.Object)null) return;
+            try
+            {
+                var tmp = __instance._SaveTime;
+                if (tmp != null && tmp.text != null && tmp.text.StartsWith("Last Save:"))
+                {
+                    var tr = I18n.Get("Last Save:");
+                    tmp.text = (!string.IsNullOrEmpty(tr) && tr != "Last Save:")
+                        ? tmp.text.Replace("Last Save:", tr)
+                        : tmp.text.Replace("Last Save:", "Последнее сохранение:");
+                }
+            }
+            catch { }
+        }
+
+        // GUISaveIndicator.Reset -> localizes "No Save" / empty state
+        public static void SaveIndicatorResetPostfix(GUISaveIndicator __instance)
+        {
+            if (!LangPack.Active || (UnityEngine.Object)(object)__instance == (UnityEngine.Object)null) return;
+            try
+            {
+                if (__instance._SaveTime != null)
+                {
+                    var tr = I18n.Get("No Save");
+                    __instance._SaveTime.text = (!string.IsNullOrEmpty(tr) && tr != "No Save") ? tr : "Нет сохранения";
+                }
+            }
+            catch { }
+        }
+
         // Interaction.ApplyEffects -> localizes biography logs in character creation & in-game
         public static void InteractionApplyEffectsPostfix(List<string> aLog)
         {
