@@ -476,6 +476,11 @@ namespace OstraI18n
                 new Type[] { typeof(bool) });
             TryPatch(h, typeof(GUISaveIndicator), "Reset", flagsInstPub,
                 null, t.GetMethod(nameof(Patches.SaveIndicatorResetPostfix)), ref ok, ref failed);
+            TryPatch(h, typeof(Ostranauts.ShipGUIs.NavStation.GUIMessageDisplay), "PreSetup", flagsInstPub,
+                t.GetMethod(nameof(Patches.GUIMessageDisplayPreSetupPrefix)), null, ref ok, ref failed);
+            TryPatch(h, typeof(Ostranauts.ShipGUIs.NavStation.GUIMessageDisplay), "AddMessage", flagsInstPub,
+                t.GetMethod(nameof(Patches.GUIMessageDisplayAddMessagePrefix)), null, ref ok, ref failed,
+                new Type[] { typeof(Ostranauts.Ships.Comms.ShipMessage) });
         }
 
         private static void TryPatch(Harmony h, Type type, string method, BindingFlags flags,

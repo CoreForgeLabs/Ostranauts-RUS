@@ -942,6 +942,52 @@ namespace OstraI18n
             }
         }
 
+        private static readonly System.Reflection.FieldInfo _msgStatusList = AccessTools.Field(typeof(Ostranauts.ShipGUIs.NavStation.GUIMessageDisplay), "_statusMessages");
+
+        public static void GUIMessageDisplayPreSetupPrefix(Ostranauts.ShipGUIs.NavStation.GUIMessageDisplay __instance)
+        {
+            if (!LangPack.Active || !string.Equals(LangPack.Code, "ru", StringComparison.OrdinalIgnoreCase)) return;
+            try
+            {
+                var list = _msgStatusList?.GetValue(__instance) as List<string>;
+                if (list != null && list.Count > 0)
+                {
+                    for (int i = 0; i < list.Count; i++)
+                    {
+                        var s = list[i];
+                        if (s.IndexOf("incoming port", StringComparison.OrdinalIgnoreCase) >= 0) list[i] = "Открытие входящего порта.....ГОТОВО";
+                        else if (s.IndexOf("routing table", StringComparison.OrdinalIgnoreCase) >= 0) list[i] = "Таблица маршрутизации.....ГОТОВО";
+                        else if (s.IndexOf("kernel driver", StringComparison.OrdinalIgnoreCase) >= 0) list[i] = "Загрузка драйвера ядра.....ГОТОВО";
+                        else if (s.IndexOf("message Processor", StringComparison.OrdinalIgnoreCase) >= 0) list[i] = "Обработчик сообщений.....РАБОТАЕТ";
+                    }
+                }
+            }
+            catch { }
+        }
+
+        public static void GUIMessageDisplayAddMessagePrefix(ref Ostranauts.Ships.Comms.ShipMessage mfdMessage)
+        {
+            if (!LangPack.Active || !string.Equals(LangPack.Code, "ru", StringComparison.OrdinalIgnoreCase) || mfdMessage == null) return;
+            try
+            {
+                if (!string.IsNullOrEmpty(mfdMessage.MessageText))
+                {
+                    var text = mfdMessage.MessageText;
+                    if (text.StartsWith("Connected with "))
+                    {
+                        text = "Соединение: " + text.Substring(15);
+                    }
+                    if (text.IndexOf("Automated Response Service", StringComparison.OrdinalIgnoreCase) >= 0)
+                    {
+                        text = text.Replace("Automated Response Service of the K-Leg: Port Azikiwe", "Автоответчик станции K-Leg: Порт Азикиве")
+                                   .Replace("Automated Response Service", "Автоответчик");
+                    }
+                    mfdMessage.MessageText = text;
+                }
+            }
+            catch { }
+        }
+
         // GUITooltip2.SetToolTip -> translates ValueModule rough/precise value tooltips
         public static void TooltipSetToolTipPrefix(ref string strTitle, ref string strBody)
         {
