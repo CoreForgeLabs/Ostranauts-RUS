@@ -1,0 +1,483 @@
+
+[
+  {
+    "strName" : "CT_STKShipSurrender_AIOffer_Intro_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aForbids"    : [
+      "IsSTKShipSurrender_AIOffer_Cooldown"
+    ],
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_AIOffer_Intro_Them",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_AIOffer_Intro_Deny_BreakLock_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aForbids"    : [
+      "IsCruel",
+      "IsVengeful",
+      "IsKind",
+      "IsForgiving",
+      "IsAgliophobic"
+    ],
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_AIOffer_Intro_Deny_NoReasons_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aForbids"    : [
+      "IsCruel",
+      "IsVengeful",
+      "IsKind",
+      "IsForgiving",
+      "IsAgliophobic"
+    ],
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_AIOffer_Intro_Deny_NoReasons_Them",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_AIOffer_Intro_Deny_Cooldown_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aReqs"       : [
+      "IsSTKShipSurrender_AIOffer_Fail_Cooldown"
+    ],
+    "aForbids"    : [
+      "IsCruel",
+      "IsVengeful",
+      "IsKind",
+      "IsForgiving",
+      "IsAgliophobic"
+    ],
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_AIOffer_Intro_Deny_Cooldown_Them",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_AIOffer_Intro_Deny_Violated_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aReqs"       : [
+      "IsAngryCeasefireViolated"
+    ],
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_AIOffer_Intro_Deny_Violated_Them",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_AIOffer_Intro_Deny_TraitUs_Cruel_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aReqs"       : [
+      "IsCruel"
+    ],
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_AIOffer_Intro_Deny_TraitUs_Cruel_Them",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_AIOffer_Intro_Deny_TraitUs_Vengeful_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aReqs"       : [
+      "IsVengeful"
+    ],
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_AIOffer_Intro_Deny_TraitUs_Vengeful_Them",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_AIOffer_Intro_Allow_TraitUs_Kind_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aReqs"       : [
+      "IsKind"
+    ],
+    "aForbids"    : [
+      "IsSTKShipSurrender_AIOffer_Fail_Cooldown"
+    ],
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_AIOffer_Intro_Allow_TraitUs_Kind_Them",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_AIOffer_Intro_Allow_TraitUs_Forgiving_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aReqs"       : [
+      "IsForgiving"
+    ],
+    "aForbids"    : [
+      "IsSTKShipSurrender_AIOffer_Fail_Cooldown"
+    ],
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_AIOffer_Intro_Allow_TraitUs_Forgiving_Them",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_AIOffer_Intro_Allow_TraitUs_Agliophobic_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aReqs"       : [
+      "IsAgliophobic"
+    ],
+    "aForbids"    : [
+      "IsSTKShipSurrender_AIOffer_Fail_Cooldown"
+    ],
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_AIOffer_Intro_Allow_TraitUs_Agliophobic_Them",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_AIOffer_Exit_Truce_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_AIOffer_Exit_Truce_Them",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_AIOffer_Gambit_AltruismSecurity_SkillPersuade_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aReqs"       : [
+      "SkillPersuade"
+    ],
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_AIOffer_Gambit_AltruismSecurity_SkillPersuade_Them",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_AIOffer_Gambit_AltruismSecurity_SkillSciencePsychology_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aReqs"       : [
+      "SkillSciencePsychology"
+    ],
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_AIOffer_Gambit_AltruismSecurity_SkillSciencePsychology_Them",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_AIOffer_Gambit_Altruism_Beg_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_AIOffer_Gambit_Altruism_Beg_Them",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_AIOffer_Gambit_DemandMoney_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_AIOffer_Gambit_DemandMoney_Them",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_AIOffer_Gambit_DemandBoarding_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_AIOffer_Gambit_DemandBoarding_Them",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_AIOffer_Gambit_DemandArrest_BCER_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_AIOffer_Gambit_DemandArrest_BCER_Them",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_AIOffer_Gambit_DemandArrest_BCRS_Us",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  },
+  {
+    "strName" : "CT_STKShipSurrender_AIOffer_Gambit_DemandArrest_BCRS_Them",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aTriggers"   : [
+      "TIsHumanAwake"
+    ],
+    "nFilterMultiple" : 0,
+    "bAND"            : true,
+    "isBlank"         : false
+  }
+]

@@ -1,0 +1,414 @@
+[
+  {
+    "strName": "HumanO2",
+    "strPtA": "",
+    "strPtB": "",
+    "strCTA": "TIsAirtightHumanOrRoom",
+    "strCTB": "TIsAirtightHumanOrRoom",
+    "fVol": 0.001,
+    "fSignalCheckRate": 1.0,
+    "strSignalCTMain": "TIsStatOxygen",
+    "bAllowExternA": true,
+    "bAllowExternB": true,
+    "aGases" : [
+      {
+        "strName": "HumanO2Data",
+        "strGasIn": "O2",
+        "strGasOut": "CO2",
+        "fConvRate": 0.045,
+        "fGasPressTotalRef": 101.3,
+        "fStatRate": -5.0,
+        "strLootConds": "CONDRespireHumanO2"
+      },
+      {
+        "strName": "HumanCOData",
+        "strGasIn": "CO",
+        "strGasOut": "CO",
+        "fConvRate": 1.0,
+        "fGasPressTotalRef": 17,
+        "fStatRate": 1.0,
+        "strLootConds": "CONDRespireHumanCO"
+      },
+      {
+        "strName": "HumanCO2Data",
+        "strGasIn": "CO2",
+        "strGasOut": "CO2",
+        "fConvRate": 1.0,
+        "fGasPressTotalRef": 17,
+        "fStatRate": 1.0,
+        "strLootConds": "CONDRespireHumanCO2"
+      },
+      {
+        "strName": "HumanH2SO4Data",
+        "strGasIn": "H2SO4",
+        "strGasOut": "H2SO4",
+        "fConvRate": 1.0,
+        "fGasPressTotalRef": 0.001,
+        "fStatRate": 1.0,
+        "strLootConds": "CONDRespireHumanH2SO4"
+      },
+      {
+        "strName": "HumanNH3Data",
+        "strGasIn": "NH3",
+        "strGasOut": "NH3",
+        "fConvRate": 1.0,
+        "fGasPressTotalRef": 0.001,
+        "fStatRate": 1.0,
+        "strLootConds": "CONDRespireHumanNH3"
+      },
+      {
+        "strName": "HumanSmokeData",
+        "strGasIn": "Smoke",
+        "strGasOut": "Smoke",
+        "fConvRate": 1.0,
+        "fGasPressTotalRef": 0.001,
+        "fStatRate": 1.0,
+        "strLootConds": "CONDRespireHumanSmoke"
+      }
+    ]
+  },
+  {
+    "strName": "HelmetCO2",
+    "strPtA": "",
+    "strPtB": "",
+    "strCTA": "TIsAirtightHumanDeadOrAlive",
+    "strCTB": "TIsAirtightNoHuman",
+    "fVol": 0.125,
+    "fSignalCheckRate": 1.0,
+    "strSignalCTMain": "TIsReadyPumpAirEVA",
+    "bAllowExternA": true,
+    "bAllowExternB": true,
+    "aGases" : [
+      {
+        "strName": "HelmetCOData",
+        "strGasIn": "CO",
+        "strGasOut": "CO",
+        "fConvRate": 1.0,
+        "fGasPressTotalRef": 101.3,
+        "fStatRate": -5.0
+      },
+      {
+        "strName": "HelmetCO2Data",
+        "strGasIn": "CO2",
+        "strGasOut": "CO2",
+        "fConvRate": 1.0,
+        "fGasPressTotalRef": 101.3,
+        "fStatRate": -5.0
+      },
+      {
+        "strName": "HelmetH2SO4Data",
+        "strGasIn": "H2SO4",
+        "strGasOut": "H2SO4",
+        "fConvRate": 1.0,
+        "fGasPressTotalRef": 101.3,
+        "fStatRate": -5.0
+      },
+      {
+        "strName": "HelmetNH3Data",
+        "strGasIn": "NH3",
+        "strGasOut": "NH3",
+        "fConvRate": 1.0,
+        "fGasPressTotalRef": 101.3,
+        "fStatRate": -5.0
+      },
+      {
+        "strName": "HelmetSmokeData",
+        "strGasIn": "Smoke",
+        "strGasOut": "Smoke",
+        "fConvRate": 1.0,
+        "fGasPressTotalRef": 101.3,
+        "fStatRate": -5.0
+      }
+    ]
+  },
+  {
+    "strName": "HelmetO2",
+    "strPtA": "",
+    "strPtB": "",
+    "strCTA": "TIsFitContainerEVABottle",
+    "strCTB": "TIsAirtightHuman",
+    "fVol": 0.0000059,
+    "fSignalCheckRate": 1.0,
+    "strSignalCTB": "TIsO2PPLow",
+    "strSignalCTMain": "TIsSlottedNotOff",
+    "bAllowExternA": false,
+    "bAllowExternB": true
+  },
+  {
+    "strName": "MeatCO2",
+    "strPtA": "GasInput",
+    "strPtB": "GasOutput",
+    "strCTA": "TIsAirtightNoHuman",
+    "strCTB": "TIsAirtightNoHuman",
+    "fVol": 0.008,
+    "fSignalCheckRate": 1.0,
+    "strSignalCTMain": "TIsMeatBlob",
+    "bAllowExternA": true,
+    "bAllowExternB": true,
+    "aGases" : [
+      {
+        "strName": "MeatCO2Data",
+        "strGasIn": "CO2",
+        "strGasOut": "Nothing",
+        "fConvRate": 1.0,
+        "fGasPressTotalRef": 101.3,
+        "fStatRate": 0.0
+      }
+    ]
+  },
+  {
+    "strName": "OxygenCandle",
+    "strPtA": "",
+    "strPtB": "",
+    "strCTA": "TIsEmergencyO2",
+    "strCTB": "TIsRoom",
+    "fVol": 0.0003,
+    "fSignalCheckRate": 1.0,
+    "strSignalCTMain": "TAlways",
+    "bAllowExternA": false,
+    "bAllowExternB": true,
+    "aGases" : [
+      {
+        "strName": "OxyCandleO2Data",
+        "strGasIn": "O2",
+        "strGasOut": "O2",
+        "fConvRate": 1.0,
+        "fGasPressTotalRef": 101.3,
+        "fStatRate": 0.0
+      }
+    ]
+  },
+  {
+    "strName": "ACTRefillHelmetAll",
+    "strPtA": "",
+    "strPtB": "",
+    "strCTA": "TIsAirtightHumanDeadOrAlive",
+    "strCTB": "TIsRoom",
+    "fVol": 0.008,
+    "fSignalCheckRate": 0.1,
+    "strSignalCTMain": "TAlways",
+    "bAllowExternA": true,
+    "bAllowExternB": true
+  },
+  {
+    "strName": "ACTRefillHelmetO2",
+    "strPtA": "",
+    "strPtB": "",
+    "strCTA": "TIsFitContainerEVABottle",
+    "strCTB": "TIsAirtightHuman",
+    "fVol": 0.00005,
+    "fSignalCheckRate": 0.1,
+    "strSignalCTMain": "TAlways",
+    "bAllowExternA": false,
+    "bAllowExternB": true,
+    "aGases" : [
+      {
+        "strName": "ACTRefillHelmetO2Data",
+        "strGasIn": "O2",
+        "strGasOut": "O2",
+        "fConvRate": 1.0,
+        "fGasPressTotalRef": 101.3,
+        "fStatRate": 0.0
+      }
+    ]
+  },  
+  {
+    "strName": "ACTRefillHelmetO2Inject",
+    "strPtA": "",
+    "strPtB": "",
+    "strCTA": "TIsFitContainerEVABottle",
+    "strCTB": "TIsAirtightHuman",
+    "fVol": 0.000015,
+    "fSignalCheckRate": 0.1,
+    "strSignalCTMain": "TAlways",
+    "bAllowExternA": false,
+    "bAllowExternB": true,
+    "aGases" : [
+      {
+        "strName": "ACTRefillHelmetInjectO2Data",
+        "strGasIn": "O2",
+        "strGasOut": "O2",
+        "fConvRate": 1.0,
+        "fGasPressTotalRef": 101.3,
+        "fStatRate": 0.0
+      }
+    ]
+  },
+  {
+    "strName": "AirPump",
+    "strPtA": "RoomA",
+    "strPtB": "RoomB",
+    "strCTA": "TIsAirtightNoHuman",
+    "strCTB": "TIsAirtightNoHuman",
+    "fVol": 0.00193,
+    "fSignalCheckRate": 1.0,
+    "strSignalCTMain": "TIsReadyPumpAir",
+    "strAudioEmitterAir": "AirPumpActiveAir",
+    "strAudioEmitterPump": "AirPumpActive",
+    "bAllowExternA": true,
+    "bAllowExternB": true
+  },
+  {
+    "strName": "AirPump02",
+    "strPtA": "GasInput",
+    "strPtB": "GasOutput",
+    "strCTA": "TIsAirtightNoHuman",
+    "strCTB": "TIsAirtightNoHuman",
+    "fVol": 0.00193,
+    "fSignalCheckRate": 1.0,
+    "strSignalCTMain": "TIsReadyPumpAir",
+    "strAudioEmitterAir": "AirPumpActiveAir",
+    "strAudioEmitterPump": "AirPumpActive",
+    "bAllowExternA": true,
+    "bAllowExternB": true
+  },
+  {
+    "strName": "Cigarette01",
+    "strPtA": "",
+    "strPtB": "",
+    "strCTA": "TIsAirtightCigaretteOrRoom",
+    "strCTB": "TIsAirtightCigaretteOrRoom",
+    "fVol": 0.001,
+    "fSignalCheckRate": 1.0,
+    "strSignalCTMain": "TIsCigaretteLit",
+    "bAllowExternA": true,
+    "bAllowExternB": true,
+    "aGases" : [
+      {
+        "strName": "Cigarette01Data",
+        "strGasIn": "O2",
+        "strGasOut": "Smoke",
+        "fConvRate": 0.3,
+        "fGasPressTotalRef": 101.3,
+        "fStatRate": -5.0,
+        "strLootConds" : "CONDRespireCigarette01"
+      }
+    ]
+  },
+  {
+    "strName": "AtmoScrubber01",
+    "strPtA": "GasInput",
+    "strPtB": "GasOutput01",
+    "strCTA": "TIsAirtightNoHuman",
+    "strCTB": "TIsAirtightNoHuman",
+    "fVol": 1.4,
+    "fSignalCheckRate": 1.0,
+    "strAudioEmitterAir": "AirPumpActiveAir",
+    "strAudioEmitterPump": "AirPumpActive",
+    "bAllowExternA": true,
+    "bAllowExternB": true,
+    "aGases" : [
+      {
+        "strName": "AtmoScrubber01Data",
+        "strGasIn": "CO2",
+        "strGasOut": "CO2",
+        "fConvRate": 1.0,
+        "fGasPressTotalRef": 101.3,
+        "fStatRate": 1.0
+      }
+    ]
+  },
+  {
+    "strName": "AtmoScrubber02",
+    "strPtA": "GasInput",
+    "strPtB": "GasOutput",
+    "strCTA": "TIsAirtightNoHuman",
+    "strCTB": "TIsAirtightNoHuman",
+    "fVol": 1.4,
+    "fSignalCheckRate": 1.0,
+    "strSignalCTMain": "TIsReadyPumpAir",
+    "strAudioEmitterAir": "AirPumpActiveAir",
+    "strAudioEmitterPump": "AirPumpActive",
+    "bAllowExternA": true,
+    "bAllowExternB": true,
+    "aGases" : [
+      {
+        "strName": "AtmoScrubber02H2SO4Data",
+        "strGasIn": "H2SO4",
+        "strGasOut": "Nothing",
+        "fConvRate": 1.0,
+        "fGasPressTotalRef": 101.3,
+        "fStatRate": 1.0
+      },
+      {
+        "strName": "AtmoScrubber02NH3Data",
+        "strGasIn": "NH3",
+        "strGasOut": "Nothing",
+        "fConvRate": 1.0,
+        "fGasPressTotalRef": 101.3,
+        "fStatRate": 1.0
+      },
+      {
+        "strName": "AtmoScrubber02SmokeData",
+        "strGasIn": "Smoke",
+        "strGasOut": "Nothing",
+        "fConvRate": 1.0,
+        "fGasPressTotalRef": 101.3,
+        "fStatRate": 1.0
+      },
+      {
+        "strName": "AtmoScrubber02COData",
+        "strGasIn": "CO",
+        "strGasOut": "Nothing",
+        "fConvRate": 1.0,
+        "fGasPressTotalRef": 101.3,
+        "fStatRate": 1.0
+      }
+    ]
+  },
+  {
+    "strName": "Fire",
+    "strPtA": "GasInput",
+    "strPtB": "GasOutput",
+    "strCTA": "TIsAirtightNoHuman",
+    "strCTB": "TIsAirtightNoHuman",
+    "fVol": 0.1,
+    "fSignalCheckRate": 3.0,
+    "strSignalCTMain": "TAlways",
+    "bAllowExternA": true,
+    "bAllowExternB": true,
+    "aGases" : [
+      {
+        "strName": "FireCO2Data",
+        "strGasIn": "O2",
+        "strGasOut": "CO2",
+        "fConvRate": 0.8,
+        "fGasPressTotalRef": 101.3,
+        "fStatRate": -5.0,
+        "strLootConds": "CONDRespireFire01"
+      },
+      {
+        "strName": "FireCOData",
+        "strGasIn": "O2",
+        "strGasOut": "CO",
+        "fConvRate": 0.12,
+        "fGasPressTotalRef": 101.3,
+        "fStatRate": 1.0
+      },
+      {
+        "strName": "FireH2SO4Data",
+        "strGasIn": "O2",
+        "strGasOut": "H2SO4",
+        "fConvRate": 0.001,
+        "fGasPressTotalRef": 101.3,
+        "fStatRate": 1.0
+      },
+      {
+        "strName": "FireNH3Data",
+        "strGasIn": "O2",
+        "strGasOut": "NH3",
+        "fConvRate": 0.00125,
+        "fGasPressTotalRef": 101.3,
+        "fStatRate": 1.0
+      },
+      {
+        "strName": "FireSmokeData",
+        "strGasIn": "O2",
+        "strGasOut": "Smoke",
+        "fConvRate": 0.15,
+        "fGasPressTotalRef": 101.3,
+        "fStatRate": 1.0
+      }
+    ]
+  }
+]

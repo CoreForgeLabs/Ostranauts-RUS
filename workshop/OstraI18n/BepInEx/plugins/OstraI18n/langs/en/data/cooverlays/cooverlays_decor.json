@@ -1,0 +1,1626 @@
+[  
+    {
+        "strName" : "ItmChair03",
+        "strNameFriendly" : "Seat: Testudo \"Saloon Series\"",
+        "strDesc" : "A seating choice catering to nostalgic Titan clientele, featuring robust construction, and a simple yet iconic spindle-back design.",
+        "strImg" : "ItmChair03",
+        "strImgNorm" : "ItmChair03n",
+        "strPortraitImg" : "ItmChair03",
+        "strCOBase"    : "ItmChair02",
+        "strCondLoot"    : "CNDOLChair03",
+        "mapModeSwitches"    : [
+            "ItmChair02", "ItmChair03",
+            "ItmChair02Loose", "ItmChair03Loose",
+            "ItmChair02Dmg", "ItmChair03Dmg",
+            "ItmChair02DmgLoose", "ItmChair03DmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChair02Uninstall", "ACTChair03Uninstall"
+        ]
+    },
+    {
+        "strName" : "ItmChair03Loose",
+        "strNameFriendly" : "Seat (Loose): Testudo \"Saloon Series\"",
+        "strDesc" : "A seating choice catering to nostalgic Titan clientele, featuring robust construction, and a simple yet iconic spindle-back design.",
+        "strImg" : "ItmChair03Loose",
+        "strImgNorm" : "ItmChair03Loosen",
+        "strPortraitImg" : "ItmChair03Loose",
+        "strCOBase"    : "ItmChair02Loose",
+        "strCondLoot"    : "CNDOLChair03",
+        "mapSlotEffects" : [
+          "drag","Blank"
+        ],
+        "mapModeSwitches"    : [
+            "ItmChair02", "ItmChair03",
+            "ItmChair02Loose", "ItmChair03Loose",
+            "ItmChair02Dmg", "ItmChair03Dmg",
+            "ItmChair02DmgLoose", "ItmChair03DmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChair02Install", "ACTChair03Install"
+        ]
+    },
+    {
+        "strName" : "ItmChair03Dmg",
+        "strNameFriendly" : "Seat (Damaged): Testudo \"Saloon Series\"",
+        "strDesc" : "A seating choice catering to nostalgic Titan clientele, featuring robust construction, and a simple yet iconic spindle-back design.",
+        "strImg" : "ItmChair03Dmg",
+        "strImgNorm" : "ItmChair03Dmgn",
+        "strPortraitImg" : "ItmChair03Dmg",
+        "strCOBase"    : "ItmChair02Dmg",
+        "strCondLoot"    : "CNDOLChair03",
+        "mapModeSwitches"    : [
+            "ItmChair02", "ItmChair03",
+            "ItmChair02Loose", "ItmChair03Loose",
+            "ItmChair02Dmg", "ItmChair03Dmg",
+            "ItmChair02DmgLoose", "ItmChair03DmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChair02DmgUninstall", "ACTChair03DmgUninstall"
+        ]
+    },
+    {
+        "strName" : "ItmChair03DmgLoose",
+        "strNameFriendly" : "Seat (Damaged, Loose): Testudo \"Saloon Series\"",
+        "strDesc" : "A seating choice catering to nostalgic Titan clientele, featuring robust construction, and a simple yet iconic spindle-back design.",
+        "strImg" : "ItmChair03DmgLoose",
+        "strImgNorm" : "ItmChair03DmgLoosen",
+        "strPortraitImg" : "ItmChair03DmgLoose",
+        "strCOBase"    : "ItmChair02DmgLoose",
+        "strCondLoot"    : "CNDOLChair03",
+        "mapSlotEffects" : [
+          "drag","Blank"
+        ],
+        "mapModeSwitches"    : [
+            "ItmChair02", "ItmChair03",
+            "ItmChair02Loose", "ItmChair03Loose",
+            "ItmChair02Dmg", "ItmChair03Dmg",
+            "ItmChair02DmgLoose", "ItmChair03DmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChair02DmgInstall", "ACTChair03DmgInstall"
+        ]
+    },
+    {
+        "strName" : "ItmChair04",
+        "strNameFriendly" : "Seat: Minsheng \"红运\"",
+        "strDesc" : "A Xinhuan yoke-back deck chair emphasizing simplicity, elegance, and ergonomic design, meant to feature the craftsmanship and beauty of the synthetic materials.",
+        "strImg" : "ItmChair04",
+        "strImgNorm" : "ItmChair04n",
+        "strPortraitImg" : "ItmChair04",
+        "strCOBase"    : "ItmChair02",
+        "strCondLoot"    : "CNDOLChair04",
+        "mapModeSwitches"    : [
+            "ItmChair02", "ItmChair04",
+            "ItmChair02Loose", "ItmChair04Loose",
+            "ItmChair02Dmg", "ItmChair04Dmg",
+            "ItmChair02DmgLoose", "ItmChair04DmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChair02Uninstall", "ACTChair04Uninstall"
+        ]
+    },
+    {
+        "strName" : "ItmChair04Loose",
+        "strNameFriendly" : "Seat (Loose): Minsheng \"红运\"",
+        "strDesc" : "A Xinhuan yoke-back deck chair emphasizing simplicity, elegance, and ergonomic design, meant to feature the craftsmanship and beauty of the synthetic materials.",
+        "strImg" : "ItmChair04Loose",
+        "strImgNorm" : "ItmChair04Loosen",
+        "strPortraitImg" : "ItmChair04Loose",
+        "strCOBase"    : "ItmChair02Loose",
+        "strCondLoot"    : "CNDOLChair04",
+        "mapSlotEffects" : [
+          "drag","Blank"
+        ],
+        "mapModeSwitches"    : [
+            "ItmChair02", "ItmChair04",
+            "ItmChair02Loose", "ItmChair04Loose",
+            "ItmChair02Dmg", "ItmChair04Dmg",
+            "ItmChair02DmgLoose", "ItmChair04DmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChair02Install", "ACTChair04Install"
+        ]
+    },
+    {
+        "strName" : "ItmChair04Dmg",
+        "strNameFriendly" : "Seat (Damaged): Minsheng \"红运\"",
+        "strDesc" : "A Xinhuan yoke-back deck chair emphasizing simplicity, elegance, and ergonomic design, meant to feature the craftsmanship and beauty of the synthetic materials.",
+        "strImg" : "ItmChair04Dmg",
+        "strImgNorm" : "ItmChair04Dmgn",
+        "strPortraitImg" : "ItmChair04Dmg",
+        "strCOBase"    : "ItmChair02Dmg",
+        "strCondLoot"    : "CNDOLChair04",
+        "mapModeSwitches"    : [
+            "ItmChair02", "ItmChair04",
+            "ItmChair02Loose", "ItmChair04Loose",
+            "ItmChair02Dmg", "ItmChair04Dmg",
+            "ItmChair02DmgLoose", "ItmChair04DmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChair02DmgUninstall", "ACTChair04DmgUninstall"
+        ]
+    },
+    {
+        "strName" : "ItmChair04DmgLoose",
+        "strNameFriendly" : "Seat (Damaged, Loose): Minsheng \"红运\"",
+        "strDesc" : "A Xinhuan yoke-back deck chair emphasizing simplicity, elegance, and ergonomic design, meant to feature the craftsmanship and beauty of the synthetic materials.",
+        "strImg" : "ItmChair04DmgLoose",
+        "strImgNorm" : "ItmChair04DmgLoosen",
+        "strPortraitImg" : "ItmChair04DmgLoose",
+        "strCOBase"    : "ItmChair02DmgLoose",
+        "strCondLoot"    : "CNDOLChair04",
+        "mapSlotEffects" : [
+          "drag","Blank"
+        ],
+        "mapModeSwitches"    : [
+            "ItmChair02", "ItmChair04",
+            "ItmChair02Loose", "ItmChair04Loose",
+            "ItmChair02Dmg", "ItmChair04Dmg",
+            "ItmChair02DmgLoose", "ItmChair04DmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChair02DmgInstall", "ACTChair04DmgInstall"
+        ]
+    }, 
+
+    {
+        "strName" : "ItmChairCube01a",
+        "strNameFriendly" : "Seat: Testudo \"Concourse Series 1-A\"",
+        "strDesc" : "Designed for CCRE's second Ring Station, in collaboration with architect Gideon Pruitt himself, this splendidly modular mainstay for corporate lobby seating helped Testudo make a mint.",
+        "strImg" : "ItmChairCube01a",
+        "strImgNorm" : "ItmChairCube01an",
+        "strPortraitImg" : "ItmChairCube01a",
+        "strCOBase"    : "ItmChair02",
+        "strCondLoot"    : "CNDOLChairCube01a",
+        "mapModeSwitches"    : [
+            "ItmChair02", "ItmChairCube01a",
+            "ItmChair02Loose", "ItmChairCube01aLoose",
+            "ItmChair02Dmg", "ItmChairCube01aDmg",
+            "ItmChair02DmgLoose", "ItmChairCube01aDmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChair02Uninstall", "ACTChairCube01aUninstall"
+        ]
+    },
+    {
+        "strName" : "ItmChairCube01aLoose",
+        "strNameFriendly" : "Seat (Loose): Testudo \"Concourse Series 1-A\"",
+        "strDesc" : "Designed for CCRE's second Ring Station, in collaboration with architect Gideon Pruitt himself, this splendidly modular mainstay for corporate lobby seating helped Testudo make a mint.",
+        "strImg" : "ItmChairCube01aLoose",
+        "strImgNorm" : "ItmChairCube01aLoosen",
+        "strPortraitImg" : "ItmChairCube01aLoose",
+        "strCOBase"    : "ItmChair02Loose",
+        "strCondLoot"    : "CNDOLChairCube01a",
+        "mapSlotEffects" : [
+          "drag","Blank"
+        ],
+        "mapModeSwitches"    : [
+            "ItmChair02", "ItmChairCube01a",
+            "ItmChair02Loose", "ItmChairCube01aLoose",
+            "ItmChair02Dmg", "ItmChairCube01aDmg",
+            "ItmChair02DmgLoose", "ItmChairCube01aDmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChair02Install", "ACTChairCube01aInstall"
+        ]
+    },
+    {
+        "strName" : "ItmChairCube01aDmg",
+        "strNameFriendly" : "Seat (Damaged): Testudo \"Concourse Series 1-A\"",
+        "strDesc" : "Designed for CCRE's second Ring Station, in collaboration with architect Gideon Pruitt himself, this splendidly modular mainstay for corporate lobby seating helped Testudo make a mint.",
+        "strImg" : "ItmChairCube01aDmg",
+        "strImgNorm" : "ItmChairCube01aDmgn",
+        "strPortraitImg" : "ItmChairCube01aDmg",
+        "strCOBase"    : "ItmChair02Dmg",
+        "strCondLoot"    : "CNDOLChairCube01a",
+        "mapModeSwitches"    : [
+            "ItmChair02", "ItmChairCube01a",
+            "ItmChair02Loose", "ItmChairCube01aLoose",
+            "ItmChair02Dmg", "ItmChairCube01aDmg",
+            "ItmChair02DmgLoose", "ItmChairCube01aDmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChair02DmgUninstall", "ACTChairCube01aDmgUninstall"
+        ]
+    },
+    {
+        "strName" : "ItmChairCube01aDmgLoose",
+        "strNameFriendly" : "Seat (Damaged, Loose): Testudo \"Concourse Series 1-A\"",
+        "strDesc" : "Designed for CCRE's second Ring Station, in collaboration with architect Gideon Pruitt himself, this splendidly modular mainstay for corporate lobby seating helped Testudo make a mint.",
+        "strImg" : "ItmChairCube01aDmgLoose",
+        "strImgNorm" : "ItmChairCube01aDmgLoosen",
+        "strPortraitImg" : "ItmChairCube01aDmgLoose",
+        "strCOBase"    : "ItmChair02DmgLoose",
+        "strCondLoot"    : "CNDOLChairCube01a",
+        "mapSlotEffects" : [
+          "drag","Blank"
+        ],
+        "mapModeSwitches"    : [
+            "ItmChair02", "ItmChairCube01a",
+            "ItmChair02Loose", "ItmChairCube01aLoose",
+            "ItmChair02Dmg", "ItmChairCube01aDmg",
+            "ItmChair02DmgLoose", "ItmChairCube01aDmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChair02DmgInstall", "ACTChairCube01aDmgInstall"
+        ]
+    },
+    {
+        "strName" : "ItmChairCube01c",
+        "strNameFriendly" : "Seat: Testudo \"Concourse Series 1-C\"",
+        "strDesc" : "Designed for CCRE's second Ring Station, in collaboration with architect Gideon Pruitt himself, this splendidly modular mainstay for corporate lobby seating helped Testudo make a mint.",
+        "strImg" : "ItmChairCube01c",
+        "strImgNorm" : "ItmChairCube01cn",
+        "strPortraitImg" : "ItmChairCube01c",
+        "strCOBase"    : "ItmChair02",
+        "strCondLoot"    : "CNDOLChairCube01c",
+        "mapModeSwitches"    : [
+            "ItmChair02", "ItmChairCube01c",
+            "ItmChair02Loose", "ItmChairCube01cLoose",
+            "ItmChair02Dmg", "ItmChairCube01cDmg",
+            "ItmChair02DmgLoose", "ItmChairCube01cDmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChair02Uninstall", "ACTChairCube01cUninstall"
+        ]
+    },
+    {
+        "strName" : "ItmChairCube01cLoose",
+        "strNameFriendly" : "Seat (Loose): Testudo \"Concourse Series 1-C\"",
+        "strDesc" : "Designed for CCRE's second Ring Station, in collaboration with architect Gideon Pruitt himself, this splendidly modular mainstay for corporate lobby seating helped Testudo make a mint.",
+        "strImg" : "ItmChairCube01cLoose",
+        "strImgNorm" : "ItmChairCube01cLoosen",
+        "strPortraitImg" : "ItmChairCube01cLoose",
+        "strCOBase"    : "ItmChair02Loose",
+        "strCondLoot"    : "CNDOLChairCube01c",
+        "mapSlotEffects" : [
+          "drag","Blank"
+        ],
+        "mapModeSwitches"    : [
+            "ItmChair02", "ItmChairCube01c",
+            "ItmChair02Loose", "ItmChairCube01cLoose",
+            "ItmChair02Dmg", "ItmChairCube01cDmg",
+            "ItmChair02DmgLoose", "ItmChairCube01cDmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChair02Install", "ACTChairCube01cInstall"
+        ]
+    },
+    {
+        "strName" : "ItmChairCube01cDmg",
+        "strNameFriendly" : "Seat (Damaged): Testudo \"Concourse Series 1-C\"",
+        "strDesc" : "Designed for CCRE's second Ring Station, in collaboration with architect Gideon Pruitt himself, this splendidly modular mainstay for corporate lobby seating helped Testudo make a mint.",
+        "strImg" : "ItmChairCube01cDmg",
+        "strImgNorm" : "ItmChairCube01cDmgn",
+        "strPortraitImg" : "ItmChairCube01cDmg",
+        "strCOBase"    : "ItmChair02Dmg",
+        "strCondLoot"    : "CNDOLChairCube01c",
+        "mapModeSwitches"    : [
+            "ItmChair02", "ItmChairCube01c",
+            "ItmChair02Loose", "ItmChairCube01cLoose",
+            "ItmChair02Dmg", "ItmChairCube01cDmg",
+            "ItmChair02DmgLoose", "ItmChairCube01cDmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChair02DmgUninstall", "ACTChairCube01cDmgUninstall"
+        ]
+    },
+    {
+        "strName" : "ItmChairCube01cDmgLoose",
+        "strNameFriendly" : "Seat (Damaged, Loose): Testudo \"Concourse Series 1-C\"",
+        "strDesc" : "Designed for CCRE's second Ring Station, in collaboration with architect Gideon Pruitt himself, this splendidly modular mainstay for corporate lobby seating helped Testudo make a mint.",
+        "strImg" : "ItmChairCube01cDmgLoose",
+        "strImgNorm" : "ItmChairCube01cDmgLoosen",
+        "strPortraitImg" : "ItmChairCube01cDmgLoose",
+        "strCOBase"    : "ItmChair02DmgLoose",
+        "strCondLoot"    : "CNDOLChairCube01c",
+        "mapSlotEffects" : [
+          "drag","Blank"
+        ],
+        "mapModeSwitches"    : [
+            "ItmChair02", "ItmChairCube01c",
+            "ItmChair02Loose", "ItmChairCube01cLoose",
+            "ItmChair02Dmg", "ItmChairCube01cDmg",
+            "ItmChair02DmgLoose", "ItmChairCube01cDmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChair02DmgInstall", "ACTChairCube01cDmgInstall"
+        ]
+    },
+    
+    {
+        "strName" : "ItmChairCube02a",
+        "strNameFriendly" : "Seat: Testudo \"Concourse Series 2-A\"",
+        "strDesc" : "Designed for CCRE's second Ring Station, in collaboration with architect Gideon Pruitt himself, this splendidly modular mainstay for corporate lobby seating helped Testudo make a mint.",
+        "strImg" : "ItmChairCube02a",
+        "strImgNorm" : "ItmChairCube01an",
+        "strPortraitImg" : "ItmChairCube02a",
+        "strCOBase"    : "ItmChair02",
+        "strCondLoot"    : "CNDOLChairCube02a",
+        "mapModeSwitches"    : [
+            "ItmChair02", "ItmChairCube02a",
+            "ItmChair02Loose", "ItmChairCube02aLoose",
+            "ItmChair02Dmg", "ItmChairCube02aDmg",
+            "ItmChair02DmgLoose", "ItmChairCube02aDmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChair02Uninstall", "ACTChairCube02aUninstall"
+        ]
+    },
+    {
+        "strName" : "ItmChairCube02aLoose",
+        "strNameFriendly" : "Seat (Loose): Testudo \"Concourse Series 2-A\"",
+        "strDesc" : "Designed for CCRE's second Ring Station, in collaboration with architect Gideon Pruitt himself, this splendidly modular mainstay for corporate lobby seating helped Testudo make a mint.",
+        "strImg" : "ItmChairCube02aLoose",
+        "strImgNorm" : "ItmChairCube01aLoosen",
+        "strPortraitImg" : "ItmChairCube02aLoose",
+        "strCOBase"    : "ItmChair02Loose",
+        "strCondLoot"    : "CNDOLChairCube02a",
+        "mapSlotEffects" : [
+          "drag","Blank"
+        ],
+        "mapModeSwitches"    : [
+            "ItmChair02", "ItmChairCube02a",
+            "ItmChair02Loose", "ItmChairCube02aLoose",
+            "ItmChair02Dmg", "ItmChairCube02aDmg",
+            "ItmChair02DmgLoose", "ItmChairCube02aDmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChair02Install", "ACTChairCube02aInstall"
+        ]
+    },
+    {
+        "strName" : "ItmChairCube02aDmg",
+        "strNameFriendly" : "Seat (Damaged): Testudo \"Concourse Series 2-A\"",
+        "strDesc" : "Designed for CCRE's second Ring Station, in collaboration with architect Gideon Pruitt himself, this splendidly modular mainstay for corporate lobby seating helped Testudo make a mint.",
+        "strImg" : "ItmChairCube02aDmg",
+        "strImgNorm" : "ItmChairCube01aDmgn",
+        "strPortraitImg" : "ItmChairCube02aDmg",
+        "strCOBase"    : "ItmChair02Dmg",
+        "strCondLoot"    : "CNDOLChairCube02a",
+        "mapModeSwitches"    : [
+            "ItmChair02", "ItmChairCube02a",
+            "ItmChair02Loose", "ItmChairCube02aLoose",
+            "ItmChair02Dmg", "ItmChairCube02aDmg",
+            "ItmChair02DmgLoose", "ItmChairCube02aDmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChair02DmgUninstall", "ACTChairCube02aDmgUninstall"
+        ]
+    },
+    {
+        "strName" : "ItmChairCube02aDmgLoose",
+        "strNameFriendly" : "Seat (Damaged, Loose): Testudo \"Concourse Series 2-A\"",
+        "strDesc" : "Designed for CCRE's second Ring Station, in collaboration with architect Gideon Pruitt himself, this splendidly modular mainstay for corporate lobby seating helped Testudo make a mint.",
+        "strImg" : "ItmChairCube02aDmgLoose",
+        "strImgNorm" : "ItmChairCube01aDmgLoosen",
+        "strPortraitImg" : "ItmChairCube02aDmgLoose",
+        "strCOBase"    : "ItmChair02DmgLoose",
+        "strCondLoot"    : "CNDOLChairCube02a",
+        "mapSlotEffects" : [
+          "drag","Blank"
+        ],
+        "mapModeSwitches"    : [
+            "ItmChair02", "ItmChairCube02a",
+            "ItmChair02Loose", "ItmChairCube02aLoose",
+            "ItmChair02Dmg", "ItmChairCube02aDmg",
+            "ItmChair02DmgLoose", "ItmChairCube02aDmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChair02DmgInstall", "ACTChairCube02aDmgInstall"
+        ]
+    },
+    {
+        "strName" : "ItmChairCube02b",
+        "strNameFriendly" : "Seat: Testudo \"Concourse Series 2-B\"",
+        "strDesc" : "Designed for CCRE's second Ring Station, in collaboration with architect Gideon Pruitt himself, this splendidly modular mainstay for corporate lobby seating helped Testudo make a mint.",
+        "strImg" : "ItmChairCube02b",
+        "strImgNorm" : "ItmChairCube01bn",
+        "strPortraitImg" : "ItmChairCube02b",
+        "strCOBase"    : "ItmChairCube01b",
+        "strCondLoot"    : "CNDOLChairCube02b",
+        "mapModeSwitches"    : [
+            "ItmChairCube01b", "ItmChairCube02b",
+            "ItmChairCube01bLoose", "ItmChairCube02bLoose",
+            "ItmChairCube01bDmg", "ItmChairCube02bDmg",
+            "ItmChairCube01bDmgLoose", "ItmChairCube02bDmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChairCube01bUninstall", "ACTChairCube02bUninstall"
+        ]
+    },
+    {
+        "strName" : "ItmChairCube02bLoose",
+        "strNameFriendly" : "Seat (Loose): Testudo \"Concourse Series 2-B\"",
+        "strDesc" : "Designed for CCRE's second Ring Station, in collaboration with architect Gideon Pruitt himself, this splendidly modular mainstay for corporate lobby seating helped Testudo make a mint.",
+        "strImg" : "ItmChairCube02bLoose",
+        "strImgNorm" : "ItmChairCube01bLoosen",
+        "strPortraitImg" : "ItmChairCube02bLoose",
+        "strCOBase"    : "ItmChairCube01bLoose",
+        "strCondLoot"    : "CNDOLChairCube02b",
+        "mapSlotEffects" : [
+          "drag","Blank"
+        ],
+        "mapModeSwitches"    : [
+            "ItmChairCube01b", "ItmChairCube02b",
+            "ItmChairCube01bLoose", "ItmChairCube02bLoose",
+            "ItmChairCube01bDmg", "ItmChairCube02bDmg",
+            "ItmChairCube01bDmgLoose", "ItmChairCube02bDmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChairCube01bInstall", "ACTChairCube02bInstall"
+        ]
+    },
+    {
+        "strName" : "ItmChairCube02bDmg",
+        "strNameFriendly" : "Seat (Damaged): Testudo \"Concourse Series 2-B\"",
+        "strDesc" : "Designed for CCRE's second Ring Station, in collaboration with architect Gideon Pruitt himself, this splendidly modular mainstay for corporate lobby seating helped Testudo make a mint.",
+        "strImg" : "ItmChairCube02bDmg",
+        "strImgNorm" : "ItmChairCube01bDmgn",
+        "strPortraitImg" : "ItmChairCube02bDmg",
+        "strCOBase"    : "ItmChairCube01bDmg",
+        "strCondLoot"    : "CNDOLChairCube02b",
+        "mapModeSwitches"    : [
+            "ItmChairCube01b", "ItmChairCube02b",
+            "ItmChairCube01bLoose", "ItmChairCube02bLoose",
+            "ItmChairCube01bDmg", "ItmChairCube02bDmg",
+            "ItmChairCube01bDmgLoose", "ItmChairCube02bDmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChairCube01bDmgUninstall", "ACTChairCube02bDmgUninstall"
+        ]
+    },
+    {
+        "strName" : "ItmChairCube02bDmgLoose",
+        "strNameFriendly" : "Seat (Damaged, Loose): Testudo \"Concourse Series 2-B\"",
+        "strDesc" : "Designed for CCRE's second Ring Station, in collaboration with architect Gideon Pruitt himself, this splendidly modular mainstay for corporate lobby seating helped Testudo make a mint.",
+        "strImg" : "ItmChairCube02bDmgLoose",
+        "strImgNorm" : "ItmChairCube021DmgLoosen",
+        "strPortraitImg" : "ItmChairCube02bDmgLoose",
+        "strCOBase"    : "ItmChairCube01bDmgLoose",
+        "strCondLoot"    : "CNDOLChairCube02b",
+        "mapSlotEffects" : [
+          "drag","Blank"
+        ],
+        "mapModeSwitches"    : [
+            "ItmChairCube01b", "ItmChairCube02b",
+            "ItmChairCube01bLoose", "ItmChairCube02bLoose",
+            "ItmChairCube01bDmg", "ItmChairCube02bDmg",
+            "ItmChairCube01bDmgLoose", "ItmChairCube02bDmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChairCube01bDmgInstall", "ACTChairCube02bDmgInstall"
+        ]
+    },
+    {
+        "strName" : "ItmChairCube02c",
+        "strNameFriendly" : "Seat: Testudo \"Concourse Series 2-C\"",
+        "strDesc" : "Designed for CCRE's second Ring Station, in collaboration with architect Gideon Pruitt himself, this splendidly modular mainstay for corporate lobby seating helped Testudo make a mint.",
+        "strImg" : "ItmChairCube02c",
+        "strImgNorm" : "ItmChairCube01cn",
+        "strPortraitImg" : "ItmChairCube02c",
+        "strCOBase"    : "ItmChair02",
+        "strCondLoot"    : "CNDOLChairCube02c",
+        "mapModeSwitches"    : [
+            "ItmChair02", "ItmChairCube02c",
+            "ItmChair02Loose", "ItmChairCube02cLoose",
+            "ItmChair02Dmg", "ItmChairCube02cDmg",
+            "ItmChair02DmgLoose", "ItmChairCube02cDmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChair02Uninstall", "ACTChairCube02cUninstall"
+        ]
+    },
+    {
+        "strName" : "ItmChairCube02cLoose",
+        "strNameFriendly" : "Seat (Loose): Testudo \"Concourse Series 2-C\"",
+        "strDesc" : "Designed for CCRE's second Ring Station, in collaboration with architect Gideon Pruitt himself, this splendidly modular mainstay for corporate lobby seating helped Testudo make a mint.",
+        "strImg" : "ItmChairCube02cLoose",
+        "strImgNorm" : "ItmChairCube01cLoosen",
+        "strPortraitImg" : "ItmChairCube02cLoose",
+        "strCOBase"    : "ItmChair02Loose",
+        "strCondLoot"    : "CNDOLChairCube02c",
+        "mapSlotEffects" : [
+          "drag","Blank"
+        ],
+        "mapModeSwitches"    : [
+            "ItmChair02", "ItmChairCube02c",
+            "ItmChair02Loose", "ItmChairCube02cLoose",
+            "ItmChair02Dmg", "ItmChairCube02cDmg",
+            "ItmChair02DmgLoose", "ItmChairCube02cDmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChair02Install", "ACTChairCube02cInstall"
+        ]
+    },
+    {
+        "strName" : "ItmChairCube02cDmg",
+        "strNameFriendly" : "Seat (Damaged): Testudo \"Concourse Series 2-C\"",
+        "strDesc" : "Designed for CCRE's second Ring Station, in collaboration with architect Gideon Pruitt himself, this splendidly modular mainstay for corporate lobby seating helped Testudo make a mint.",
+        "strImg" : "ItmChairCube02cDmg",
+        "strImgNorm" : "ItmChairCube01cDmgn",
+        "strPortraitImg" : "ItmChairCube02cDmg",
+        "strCOBase"    : "ItmChair02Dmg",
+        "strCondLoot"    : "CNDOLChairCube02c",
+        "mapModeSwitches"    : [
+            "ItmChair02", "ItmChairCube02c",
+            "ItmChair02Loose", "ItmChairCube02cLoose",
+            "ItmChair02Dmg", "ItmChairCube02cDmg",
+            "ItmChair02DmgLoose", "ItmChairCube02cDmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChair02DmgUninstall", "ACTChairCube02cDmgUninstall"
+        ]
+    },
+    {
+        "strName" : "ItmChairCube02cDmgLoose",
+        "strNameFriendly" : "Seat (Damaged, Loose): Testudo \"Concourse Series 2-C\"",
+        "strDesc" : "Designed for CCRE's second Ring Station, in collaboration with architect Gideon Pruitt himself, this splendidly modular mainstay for corporate lobby seating helped Testudo make a mint.",
+        "strImg" : "ItmChairCube02cDmgLoose",
+        "strImgNorm" : "ItmChairCube01cDmgLoosen",
+        "strPortraitImg" : "ItmChairCube02cDmgLoose",
+        "strCOBase"    : "ItmChair02DmgLoose",
+        "strCondLoot"    : "CNDOLChairCube02c",
+        "mapSlotEffects" : [
+          "drag","Blank"
+        ],
+        "mapModeSwitches"    : [
+            "ItmChair02", "ItmChairCube02c",
+            "ItmChair02Loose", "ItmChairCube02cLoose",
+            "ItmChair02Dmg", "ItmChairCube02cDmg",
+            "ItmChair02DmgLoose", "ItmChairCube02cDmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChair02DmgInstall", "ACTChairCube02cDmgInstall"
+        ]
+    },
+    {
+        "strName" : "ItmChairCube03a",
+        "strNameFriendly" : "Seat: Testudo \"Concourse Series 3-A\"",
+        "strDesc" : "Designed for CCRE's second Ring Station, in collaboration with architect Gideon Pruitt himself, this splendidly modular mainstay for corporate lobby seating helped Testudo make a mint.",
+        "strImg" : "ItmChairCube03a",
+        "strImgNorm" : "ItmChairCube01an",
+        "strPortraitImg" : "ItmChairCube03a",
+        "strCOBase"    : "ItmChair02",
+        "strCondLoot"    : "CNDOLChairCube03a",
+        "mapModeSwitches"    : [
+            "ItmChair02", "ItmChairCube03a",
+            "ItmChair02Loose", "ItmChairCube03aLoose",
+            "ItmChair02Dmg", "ItmChairCube03aDmg",
+            "ItmChair02DmgLoose", "ItmChairCube03aDmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChair02Uninstall", "ACTChairCube03aUninstall"
+        ]
+    },
+    {
+        "strName" : "ItmChairCube03aLoose",
+        "strNameFriendly" : "Seat (Loose): Testudo \"Concourse Series 3-A\"",
+        "strDesc" : "Designed for CCRE's second Ring Station, in collaboration with architect Gideon Pruitt himself, this splendidly modular mainstay for corporate lobby seating helped Testudo make a mint.",
+        "strImg" : "ItmChairCube03aLoose",
+        "strImgNorm" : "ItmChairCube01aLoosen",
+        "strPortraitImg" : "ItmChairCube03aLoose",
+        "strCOBase"    : "ItmChair02Loose",
+        "strCondLoot"    : "CNDOLChairCube03a",
+        "mapSlotEffects" : [
+          "drag","Blank"
+        ],
+        "mapModeSwitches"    : [
+            "ItmChair02", "ItmChairCube03a",
+            "ItmChair02Loose", "ItmChairCube03aLoose",
+            "ItmChair02Dmg", "ItmChairCube03aDmg",
+            "ItmChair02DmgLoose", "ItmChairCube03aDmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChair02Install", "ACTChairCube03aInstall"
+        ]
+    },
+    {
+        "strName" : "ItmChairCube03aDmg",
+        "strNameFriendly" : "Seat (Damaged): Testudo \"Concourse Series 3-A\"",
+        "strDesc" : "Designed for CCRE's second Ring Station, in collaboration with architect Gideon Pruitt himself, this splendidly modular mainstay for corporate lobby seating helped Testudo make a mint.",
+        "strImg" : "ItmChairCube03aDmg",
+        "strImgNorm" : "ItmChairCube01aDmgn",
+        "strPortraitImg" : "ItmChairCube03aDmg",
+        "strCOBase"    : "ItmChair02Dmg",
+        "strCondLoot"    : "CNDOLChairCube03a",
+        "mapModeSwitches"    : [
+            "ItmChair02", "ItmChairCube03a",
+            "ItmChair02Loose", "ItmChairCube03aLoose",
+            "ItmChair02Dmg", "ItmChairCube03aDmg",
+            "ItmChair02DmgLoose", "ItmChairCube03aDmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChair02DmgUninstall", "ACTChairCube03aDmgUninstall"
+        ]
+    },
+    {
+        "strName" : "ItmChairCube03aDmgLoose",
+        "strNameFriendly" : "Seat (Damaged, Loose): Testudo \"Concourse Series 3-A\"",
+        "strDesc" : "Designed for CCRE's second Ring Station, in collaboration with architect Gideon Pruitt himself, this splendidly modular mainstay for corporate lobby seating helped Testudo make a mint.",
+        "strImg" : "ItmChairCube03aDmgLoose",
+        "strImgNorm" : "ItmChairCube01aDmgLoosen",
+        "strPortraitImg" : "ItmChairCube03aDmgLoose",
+        "strCOBase"    : "ItmChair02DmgLoose",
+        "strCondLoot"    : "CNDOLChairCube03a",
+        "mapSlotEffects" : [
+          "drag","Blank"
+        ],
+        "mapModeSwitches"    : [
+            "ItmChair02", "ItmChairCube03a",
+            "ItmChair02Loose", "ItmChairCube03aLoose",
+            "ItmChair02Dmg", "ItmChairCube03aDmg",
+            "ItmChair02DmgLoose", "ItmChairCube03aDmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChair02DmgInstall", "ACTChairCube03aDmgInstall"
+        ]
+    },    
+    {
+        "strName" : "ItmChairCube03b",
+        "strNameFriendly" : "Seat: Testudo \"Concourse Series 3-B\"",
+        "strDesc" : "Designed for CCRE's second Ring Station, in collaboration with architect Gideon Pruitt himself, this splendidly modular mainstay for corporate lobby seating helped Testudo make a mint.",
+        "strImg" : "ItmChairCube03b",
+        "strImgNorm" : "ItmChairCube01bn",
+        "strPortraitImg" : "ItmChairCube03b",
+        "strCOBase"    : "ItmChairCube01b",
+        "strCondLoot"    : "CNDOLChairCube03b",
+        "mapModeSwitches"    : [
+            "ItmChairCube01b", "ItmChairCube03b",
+            "ItmChairCube01bLoose", "ItmChairCube03bLoose",
+            "ItmChairCube01bDmg", "ItmChairCube03bDmg",
+            "ItmChairCube01bDmgLoose", "ItmChairCube03bDmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChairCube01bUninstall", "ACTChairCube03bUninstall"
+        ]
+    },
+    {
+        "strName" : "ItmChairCube03bLoose",
+        "strNameFriendly" : "Seat (Loose): Testudo \"Concourse Series 3-B\"",
+        "strDesc" : "Designed for CCRE's second Ring Station, in collaboration with architect Gideon Pruitt himself, this splendidly modular mainstay for corporate lobby seating helped Testudo make a mint.",
+        "strImg" : "ItmChairCube03bLoose",
+        "strImgNorm" : "ItmChairCube01bLoosen",
+        "strPortraitImg" : "ItmChairCube03bLoose",
+        "strCOBase"    : "ItmChairCube01bLoose",
+        "strCondLoot"    : "CNDOLChairCube03b",
+        "mapSlotEffects" : [
+          "drag","Blank"
+        ],
+        "mapModeSwitches"    : [
+            "ItmChairCube01b", "ItmChairCube03b",
+            "ItmChairCube01bLoose", "ItmChairCube03bLoose",
+            "ItmChairCube01bDmg", "ItmChairCube03bDmg",
+            "ItmChairCube01bDmgLoose", "ItmChairCube03bDmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChairCube01bInstall", "ACTChairCube03bInstall"
+        ]
+    },
+    {
+        "strName" : "ItmChairCube03bDmg",
+        "strNameFriendly" : "Seat (Damaged): Testudo \"Concourse Series 3-B\"",
+        "strDesc" : "Designed for CCRE's second Ring Station, in collaboration with architect Gideon Pruitt himself, this splendidly modular mainstay for corporate lobby seating helped Testudo make a mint.",
+        "strImg" : "ItmChairCube03bDmg",
+        "strImgNorm" : "ItmChairCube01bDmgn",
+        "strPortraitImg" : "ItmChairCube03bDmg",
+        "strCOBase"    : "ItmChairCube01bDmg",
+        "strCondLoot"    : "CNDOLChairCube03b",
+        "mapModeSwitches"    : [
+            "ItmChairCube01b", "ItmChairCube03b",
+            "ItmChairCube01bLoose", "ItmChairCube03bLoose",
+            "ItmChairCube01bDmg", "ItmChairCube03bDmg",
+            "ItmChairCube01bDmgLoose", "ItmChairCube03bDmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChairCube01bDmgUninstall", "ACTChairCube03bDmgUninstall"
+        ]
+    },
+    {
+        "strName" : "ItmChairCube03bDmgLoose",
+        "strNameFriendly" : "Seat (Damaged, Loose): Testudo \"Concourse Series 3-B\"",
+        "strDesc" : "Designed for CCRE's second Ring Station, in collaboration with architect Gideon Pruitt himself, this splendidly modular mainstay for corporate lobby seating helped Testudo make a mint.",
+        "strImg" : "ItmChairCube03bDmgLoose",
+        "strImgNorm" : "ItmChairCube01bDmgLoosen",
+        "strPortraitImg" : "ItmChairCube03bDmgLoose",
+        "strCOBase"    : "ItmChairCube01bDmgLoose",
+        "strCondLoot"    : "CNDOLChairCube03b",
+        "mapSlotEffects" : [
+          "drag","Blank"
+        ],
+        "mapModeSwitches"    : [
+            "ItmChairCube01b", "ItmChairCube03b",
+            "ItmChairCube01bLoose", "ItmChairCube03bLoose",
+            "ItmChairCube01bDmg", "ItmChairCube03bDmg",
+            "ItmChairCube01bDmgLoose", "ItmChairCube03bDmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChairCube01bDmgInstall", "ACTChairCube03bDmgInstall"
+        ]
+    },
+    {
+        "strName" : "ItmChairCube03c",
+        "strNameFriendly" : "Seat: Testudo \"Concourse Series 3-C\"",
+        "strDesc" : "Designed for CCRE's second Ring Station, in collaboration with architect Gideon Pruitt himself, this splendidly modular mainstay for corporate lobby seating helped Testudo make a mint.",
+        "strImg" : "ItmChairCube03c",
+        "strImgNorm" : "ItmChairCube01cn",
+        "strPortraitImg" : "ItmChairCube03c",
+        "strCOBase"    : "ItmChair02",
+        "strCondLoot"    : "CNDOLChairCube03c",
+        "mapModeSwitches"    : [
+            "ItmChair02", "ItmChairCube03c",
+            "ItmChair02Loose", "ItmChairCube03cLoose",
+            "ItmChair02Dmg", "ItmChairCube03cDmg",
+            "ItmChair02DmgLoose", "ItmChairCube03cDmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChair02Uninstall", "ACTChairCube03cUninstall"
+        ]
+    },
+    {
+        "strName" : "ItmChairCube03cLoose",
+        "strNameFriendly" : "Seat (Loose): Testudo \"Concourse Series 3-C\"",
+        "strDesc" : "Designed for CCRE's second Ring Station, in collaboration with architect Gideon Pruitt himself, this splendidly modular mainstay for corporate lobby seating helped Testudo make a mint.",
+        "strImg" : "ItmChairCube03cLoose",
+        "strImgNorm" : "ItmChairCube01cLoosen",
+        "strPortraitImg" : "ItmChairCube03cLoose",
+        "strCOBase"    : "ItmChair02Loose",
+        "strCondLoot"    : "CNDOLChairCube03c",
+        "mapSlotEffects" : [
+          "drag","Blank"
+        ],
+        "mapModeSwitches"    : [
+            "ItmChair02", "ItmChairCube03c",
+            "ItmChair02Loose", "ItmChairCube03cLoose",
+            "ItmChair02Dmg", "ItmChairCube03cDmg",
+            "ItmChair02DmgLoose", "ItmChairCube03cDmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChair02Install", "ACTChairCube03cInstall"
+        ]
+    },
+    {
+        "strName" : "ItmChairCube03cDmg",
+        "strNameFriendly" : "Seat (Damaged): Testudo \"Concourse Series 3-C\"",
+        "strDesc" : "Designed for CCRE's second Ring Station, in collaboration with architect Gideon Pruitt himself, this splendidly modular mainstay for corporate lobby seating helped Testudo make a mint.",
+        "strImg" : "ItmChairCube03cDmg",
+        "strImgNorm" : "ItmChairCube01cDmgn",
+        "strPortraitImg" : "ItmChairCube03cDmg",
+        "strCOBase"    : "ItmChair02Dmg",
+        "strCondLoot"    : "CNDOLChairCube03c",
+        "mapModeSwitches"    : [
+            "ItmChair02", "ItmChairCube03c",
+            "ItmChair02Loose", "ItmChairCube03cLoose",
+            "ItmChair02Dmg", "ItmChairCube03cDmg",
+            "ItmChair02DmgLoose", "ItmChairCube03cDmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChair02DmgUninstall", "ACTChairCube03cDmgUninstall"
+        ]
+    },
+    {
+        "strName" : "ItmChairCube03cDmgLoose",
+        "strNameFriendly" : "Seat (Damaged, Loose): Testudo \"Concourse Series 3-C\"",
+        "strDesc" : "Designed for CCRE's second Ring Station, in collaboration with architect Gideon Pruitt himself, this splendidly modular mainstay for corporate lobby seating helped Testudo make a mint.",
+        "strImg" : "ItmChairCube03cDmgLoose",
+        "strImgNorm" : "ItmChairCube01cDmgLoosen",
+        "strPortraitImg" : "ItmChairCube03cDmgLoose",
+        "strCOBase"    : "ItmChair02DmgLoose",
+        "strCondLoot"    : "CNDOLChairCube03c",
+        "mapSlotEffects" : [
+          "drag","Blank"
+        ],
+        "mapModeSwitches"    : [
+            "ItmChair02", "ItmChairCube03c",
+            "ItmChair02Loose", "ItmChairCube03cLoose",
+            "ItmChair02Dmg", "ItmChairCube03cDmg",
+            "ItmChair02DmgLoose", "ItmChairCube03cDmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChair02DmgInstall", "ACTChairCube03cDmgInstall"
+        ]
+    },
+    {
+        "strName" : "ItmChairCube04a",
+        "strNameFriendly" : "Seat: Testudo \"Concourse Series 4-A\"",
+        "strDesc" : "Designed for CCRE's second Ring Station, in collaboration with architect Gideon Pruitt himself, this splendidly modular mainstay for corporate lobby seating helped Testudo make a mint.",
+        "strImg" : "ItmChairCube04a",
+        "strImgNorm" : "ItmChairCube01an",
+        "strPortraitImg" : "ItmChairCube04a",
+        "strCOBase"    : "ItmChair02",
+        "strCondLoot"    : "CNDOLChairCube04a",
+        "mapModeSwitches"    : [
+            "ItmChair02", "ItmChairCube04a",
+            "ItmChair02Loose", "ItmChairCube04aLoose",
+            "ItmChair02Dmg", "ItmChairCube04aDmg",
+            "ItmChair02DmgLoose", "ItmChairCube04aDmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChair02Uninstall", "ACTChairCube04aUninstall"
+        ]
+    },
+    {
+        "strName" : "ItmChairCube04aLoose",
+        "strNameFriendly" : "Seat (Loose): Testudo \"Concourse Series 4-A\"",
+        "strDesc" : "Designed for CCRE's second Ring Station, in collaboration with architect Gideon Pruitt himself, this splendidly modular mainstay for corporate lobby seating helped Testudo make a mint.",
+        "strImg" : "ItmChairCube04aLoose",
+        "strImgNorm" : "ItmChairCube01aLoosen",
+        "strPortraitImg" : "ItmChairCube04aLoose",
+        "strCOBase"    : "ItmChair02Loose",
+        "strCondLoot"    : "CNDOLChairCube04a",
+        "mapSlotEffects" : [
+          "drag","Blank"
+        ],
+        "mapModeSwitches"    : [
+            "ItmChair02", "ItmChairCube04a",
+            "ItmChair02Loose", "ItmChairCube04aLoose",
+            "ItmChair02Dmg", "ItmChairCube04aDmg",
+            "ItmChair02DmgLoose", "ItmChairCube04aDmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChair02Install", "ACTChairCube04aInstall"
+        ]
+    },
+    {
+        "strName" : "ItmChairCube04aDmg",
+        "strNameFriendly" : "Seat (Damaged): Testudo \"Concourse Series 4-A\"",
+        "strDesc" : "Designed for CCRE's second Ring Station, in collaboration with architect Gideon Pruitt himself, this splendidly modular mainstay for corporate lobby seating helped Testudo make a mint.",
+        "strImg" : "ItmChairCube04aDmg",
+        "strImgNorm" : "ItmChairCube01aDmgn",
+        "strPortraitImg" : "ItmChairCube04aDmg",
+        "strCOBase"    : "ItmChair02Dmg",
+        "strCondLoot"    : "CNDOLChairCube04a",
+        "mapModeSwitches"    : [
+            "ItmChair02", "ItmChairCube04a",
+            "ItmChair02Loose", "ItmChairCube04aLoose",
+            "ItmChair02Dmg", "ItmChairCube04aDmg",
+            "ItmChair02DmgLoose", "ItmChairCube04aDmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChair02DmgUninstall", "ACTChairCube04aDmgUninstall"
+        ]
+    },
+    {
+        "strName" : "ItmChairCube04aDmgLoose",
+        "strNameFriendly" : "Seat (Damaged, Loose): Testudo \"Concourse Series 4-A\"",
+        "strDesc" : "Designed for CCRE's second Ring Station, in collaboration with architect Gideon Pruitt himself, this splendidly modular mainstay for corporate lobby seating helped Testudo make a mint.",
+        "strImg" : "ItmChairCube04aDmgLoose",
+        "strImgNorm" : "ItmChairCube01aDmgLoosen",
+        "strPortraitImg" : "ItmChairCube04aDmgLoose",
+        "strCOBase"    : "ItmChair02DmgLoose",
+        "strCondLoot"    : "CNDOLChairCube04a",
+        "mapSlotEffects" : [
+          "drag","Blank"
+        ],
+        "mapModeSwitches"    : [
+            "ItmChair02", "ItmChairCube04a",
+            "ItmChair02Loose", "ItmChairCube04aLoose",
+            "ItmChair02Dmg", "ItmChairCube04aDmg",
+            "ItmChair02DmgLoose", "ItmChairCube04aDmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChair02DmgInstall", "ACTChairCube04aDmgInstall"
+        ]
+    },    
+    {
+        "strName" : "ItmChairCube04b",
+        "strNameFriendly" : "Seat: Testudo \"Concourse Series 4-B\"",
+        "strDesc" : "Designed for CCRE's second Ring Station, in collaboration with architect Gideon Pruitt himself, this splendidly modular mainstay for corporate lobby seating helped Testudo make a mint.",
+        "strImg" : "ItmChairCube04b",
+        "strImgNorm" : "ItmChairCube01bn",
+        "strPortraitImg" : "ItmChairCube04b",
+        "strCOBase"    : "ItmChairCube01b",
+        "strCondLoot"    : "CNDOLChairCube04b",
+        "mapModeSwitches"    : [
+            "ItmChairCube01b", "ItmChairCube04b",
+            "ItmChairCube01bLoose", "ItmChairCube04bLoose",
+            "ItmChairCube01bDmg", "ItmChairCube04bDmg",
+            "ItmChairCube01bDmgLoose", "ItmChairCube04bDmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChairCube01bUninstall", "ACTChairCube04bUninstall"
+        ]
+    },
+    {
+        "strName" : "ItmChairCube04bLoose",
+        "strNameFriendly" : "Seat (Loose): Testudo \"Concourse Series 4-B\"",
+        "strDesc" : "Designed for CCRE's second Ring Station, in collaboration with architect Gideon Pruitt himself, this splendidly modular mainstay for corporate lobby seating helped Testudo make a mint.",
+        "strImg" : "ItmChairCube04bLoose",
+        "strImgNorm" : "ItmChairCube01bLoosen",
+        "strPortraitImg" : "ItmChairCube04bLoose",
+        "strCOBase"    : "ItmChairCube01bLoose",
+        "strCondLoot"    : "CNDOLChairCube04b",
+        "mapSlotEffects" : [
+          "drag","Blank"
+        ],
+        "mapModeSwitches"    : [
+            "ItmChairCube01b", "ItmChairCube04b",
+            "ItmChairCube01bLoose", "ItmChairCube04bLoose",
+            "ItmChairCube01bDmg", "ItmChairCube04bDmg",
+            "ItmChairCube01bDmgLoose", "ItmChairCube04bDmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChairCube01bInstall", "ACTChairCube04bInstall"
+        ]
+    },
+    {
+        "strName" : "ItmChairCube04bDmg",
+        "strNameFriendly" : "Seat (Damaged): Testudo \"Concourse Series 4-B\"",
+        "strDesc" : "Designed for CCRE's second Ring Station, in collaboration with architect Gideon Pruitt himself, this splendidly modular mainstay for corporate lobby seating helped Testudo make a mint.",
+        "strImg" : "ItmChairCube04bDmg",
+        "strImgNorm" : "ItmChairCube01bDmgn",
+        "strPortraitImg" : "ItmChairCube04bDmg",
+        "strCOBase"    : "ItmChairCube01bDmg",
+        "strCondLoot"    : "CNDOLChairCube04b",
+        "mapModeSwitches"    : [
+            "ItmChairCube01b", "ItmChairCube04b",
+            "ItmChairCube01bLoose", "ItmChairCube04bLoose",
+            "ItmChairCube01bDmg", "ItmChairCube04bDmg",
+            "ItmChairCube01bDmgLoose", "ItmChairCube04bDmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChairCube01bDmgUninstall", "ACTChairCube04bDmgUninstall"
+        ]
+    },
+    {
+        "strName" : "ItmChairCube04bDmgLoose",
+        "strNameFriendly" : "Seat (Damaged, Loose): Testudo \"Concourse Series 4-B\"",
+        "strDesc" : "Designed for CCRE's second Ring Station, in collaboration with architect Gideon Pruitt himself, this splendidly modular mainstay for corporate lobby seating helped Testudo make a mint.",
+        "strImg" : "ItmChairCube04bDmgLoose",
+        "strImgNorm" : "ItmChairCube01bDmgLoosen",
+        "strPortraitImg" : "ItmChairCube04bDmgLoose",
+        "strCOBase"    : "ItmChairCube01bDmgLoose",
+        "strCondLoot"    : "CNDOLChairCube04b",
+        "mapSlotEffects" : [
+          "drag","Blank"
+        ],
+        "mapModeSwitches"    : [
+            "ItmChairCube01b", "ItmChairCube04b",
+            "ItmChairCube01bLoose", "ItmChairCube04bLoose",
+            "ItmChairCube01bDmg", "ItmChairCube04bDmg",
+            "ItmChairCube01bDmgLoose", "ItmChairCube04bDmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChairCube01bDmgInstall", "ACTChairCube04bDmgInstall"
+        ]
+    },
+    {
+        "strName" : "ItmChairCube04c",
+        "strNameFriendly" : "Seat: Testudo \"Concourse Series 4-C\"",
+        "strDesc" : "Designed for CCRE's second Ring Station, in collaboration with architect Gideon Pruitt himself, this splendidly modular mainstay for corporate lobby seating helped Testudo make a mint.",
+        "strImg" : "ItmChairCube04c",
+        "strImgNorm" : "ItmChairCube01cn",
+        "strPortraitImg" : "ItmChairCube04c",
+        "strCOBase"    : "ItmChair02",
+        "strCondLoot"    : "CNDOLChairCube04c",
+        "mapModeSwitches"    : [
+            "ItmChair02", "ItmChairCube04c",
+            "ItmChair02Loose", "ItmChairCube04cLoose",
+            "ItmChair02Dmg", "ItmChairCube04cDmg",
+            "ItmChair02DmgLoose", "ItmChairCube04cDmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChair02Uninstall", "ACTChairCube04cUninstall"
+        ]
+    },
+    {
+        "strName" : "ItmChairCube04cLoose",
+        "strNameFriendly" : "Seat (Loose): Testudo \"Concourse Series 4-C\"",
+        "strDesc" : "Designed for CCRE's second Ring Station, in collaboration with architect Gideon Pruitt himself, this splendidly modular mainstay for corporate lobby seating helped Testudo make a mint.",
+        "strImg" : "ItmChairCube04cLoose",
+        "strImgNorm" : "ItmChairCube01cLoosen",
+        "strPortraitImg" : "ItmChairCube04cLoose",
+        "strCOBase"    : "ItmChair02Loose",
+        "strCondLoot"    : "CNDOLChairCube04c",
+        "mapSlotEffects" : [
+          "drag","Blank"
+        ],
+        "mapModeSwitches"    : [
+            "ItmChair02", "ItmChairCube04c",
+            "ItmChair02Loose", "ItmChairCube04cLoose",
+            "ItmChair02Dmg", "ItmChairCube04cDmg",
+            "ItmChair02DmgLoose", "ItmChairCube04cDmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChair02Install", "ACTChairCube04cInstall"
+        ]
+    },
+    {
+        "strName" : "ItmChairCube04cDmg",
+        "strNameFriendly" : "Seat (Damaged): Testudo \"Concourse Series 4-C\"",
+        "strDesc" : "Designed for CCRE's second Ring Station, in collaboration with architect Gideon Pruitt himself, this splendidly modular mainstay for corporate lobby seating helped Testudo make a mint.",
+        "strImg" : "ItmChairCube04cDmg",
+        "strImgNorm" : "ItmChairCube01cDmgn",
+        "strPortraitImg" : "ItmChairCube04cDmg",
+        "strCOBase"    : "ItmChair02Dmg",
+        "strCondLoot"    : "CNDOLChairCube04c",
+        "mapModeSwitches"    : [
+            "ItmChair02", "ItmChairCube04c",
+            "ItmChair02Loose", "ItmChairCube04cLoose",
+            "ItmChair02Dmg", "ItmChairCube04cDmg",
+            "ItmChair02DmgLoose", "ItmChairCube04cDmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChair02DmgUninstall", "ACTChairCube04cDmgUninstall"
+        ]
+    },
+    {
+        "strName" : "ItmChairCube04cDmgLoose",
+        "strNameFriendly" : "Seat (Damaged, Loose): Testudo \"Concourse Series 4-C\"",
+        "strDesc" : "Designed for CCRE's second Ring Station, in collaboration with architect Gideon Pruitt himself, this splendidly modular mainstay for corporate lobby seating helped Testudo make a mint.",
+        "strImg" : "ItmChairCube04cDmgLoose",
+        "strImgNorm" : "ItmChairCube01cDmgLoosen",
+        "strPortraitImg" : "ItmChairCube04cDmgLoose",
+        "strCOBase"    : "ItmChair02DmgLoose",
+        "strCondLoot"    : "CNDOLChairCube04c",
+        "mapSlotEffects" : [
+          "drag","Blank"
+        ],
+        "mapModeSwitches"    : [
+            "ItmChair02", "ItmChairCube04c",
+            "ItmChair02Loose", "ItmChairCube04cLoose",
+            "ItmChair02Dmg", "ItmChairCube04cDmg",
+            "ItmChair02DmgLoose", "ItmChairCube04cDmgLoose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTChair02DmgInstall", "ACTChairCube04cDmgInstall"
+        ]
+    },
+    {
+        "strName" : "ItmDoor04Closed",
+        "strNameFriendly" : "Door (Closed, Off)",
+        "strImg" : "ItmDoor04Closed",
+        "strImgNorm" : "ItmDoor01Closedn",
+        "strImgDamaged" : "ItmDoor04ClosedDmg02",
+        "strPortraitImg" : "ItmDoor04Closed",
+        "strCOBase"    : "ItmDoor01Closed",
+        "strCondLoot"    : "CNDOLDoor04",
+        "mapModeSwitches"    : [
+            "ItmDoor01Closed", "ItmDoor04Closed",
+            "ItmDoor01ClosedLocked", "ItmDoor04ClosedLocked",
+            "ItmDoor01ClosedOn", "ItmDoor04ClosedOn",
+            "ItmDoor01ClosedOnLocked", "ItmDoor04ClosedOnLocked",
+            "ItmDoor01ClosedLoose", "ItmDoor04ClosedLoose",
+            "ItmDoor01Open", "ItmDoor04Open",
+            "ItmDoor01OpenLocked", "ItmDoor04OpenLocked",
+            "ItmDoor01OpenOn", "ItmDoor04OpenOn",
+            "ItmDoor01OpenOnLocked", "ItmDoor04OpenOnLocked",
+            "ItmDoor01ClosedDmg", "ItmDoor04ClosedDmg",
+            "ItmDoor01ClosedDmgLoose", "ItmDoor04ClosedDmgLoose"
+        ]
+    },
+    {
+        "strName" : "ItmDoor04ClosedLocked",
+        "strNameFriendly" : "Door (Closed, Off, Locked)",
+        "strImg" : "ItmDoor04Closed",
+        "strImgNorm" : "ItmDoor01Closedn",
+        "strImgDamaged" : "ItmDoor04ClosedDmg02",
+        "strPortraitImg" : "ItmDoor04Closed",
+        "strCOBase"    : "ItmDoor01ClosedLocked",
+        "strCondLoot"    : "CNDOLDoor04",
+        "mapModeSwitches"    : [
+            "ItmDoor01Closed", "ItmDoor04Closed",
+            "ItmDoor01ClosedLocked", "ItmDoor04ClosedLocked",
+            "ItmDoor01ClosedOn", "ItmDoor04ClosedOn",
+            "ItmDoor01ClosedOnLocked", "ItmDoor04ClosedOnLocked",
+            "ItmDoor01ClosedLoose", "ItmDoor04ClosedLoose",
+            "ItmDoor01Open", "ItmDoor04Open",
+            "ItmDoor01OpenLocked", "ItmDoor04OpenLocked",
+            "ItmDoor01OpenOn", "ItmDoor04OpenOn",
+            "ItmDoor01OpenOnLocked", "ItmDoor04OpenOnLocked",
+            "ItmDoor01ClosedDmg", "ItmDoor04ClosedDmg",
+            "ItmDoor01ClosedDmgLoose", "ItmDoor04ClosedDmgLoose"
+        ]
+    },
+    {
+        "strName" : "ItmDoor04ClosedOn",
+        "strNameFriendly" : "Door (Closed)",
+        "strImg" : "ItmDoor04Closed",
+        "strImgNorm" : "ItmDoor01Closedn",
+        "strImgDamaged" : "ItmDoor04ClosedDmg02",
+        "strPortraitImg" : "ItmDoor04Closed",
+        "strCOBase"    : "ItmDoor01ClosedOn",
+        "strCondLoot"    : "CNDOLDoor04",
+        "mapModeSwitches"    : [
+            "ItmDoor01Closed", "ItmDoor04Closed",
+            "ItmDoor01ClosedLocked", "ItmDoor04ClosedLocked",
+            "ItmDoor01ClosedOn", "ItmDoor04ClosedOn",
+            "ItmDoor01ClosedOnLocked", "ItmDoor04ClosedOnLocked",
+            "ItmDoor01ClosedLoose", "ItmDoor04ClosedLoose",
+            "ItmDoor01Open", "ItmDoor04Open",
+            "ItmDoor01OpenLocked", "ItmDoor04OpenLocked",
+            "ItmDoor01OpenOn", "ItmDoor04OpenOn",
+            "ItmDoor01OpenOnLocked", "ItmDoor04OpenOnLocked",
+            "ItmDoor01ClosedDmg", "ItmDoor04ClosedDmg",
+            "ItmDoor01ClosedDmgLoose", "ItmDoor04ClosedDmgLoose"
+        ]
+    },
+    {
+        "strName" : "ItmDoor04ClosedOnLocked",
+        "strNameFriendly" : "Door (Closed, Locked)",
+        "strImg" : "ItmDoor04Closed",
+        "strImgNorm" : "ItmDoor01Closedn",
+        "strImgDamaged" : "ItmDoor04ClosedDmg02",
+        "strPortraitImg" : "ItmDoor04Closed",
+        "strCOBase"    : "ItmDoor01ClosedOnLocked",
+        "strCondLoot"    : "CNDOLDoor04",
+        "mapModeSwitches"    : [
+            "ItmDoor01Closed", "ItmDoor04Closed",
+            "ItmDoor01ClosedLocked", "ItmDoor04ClosedLocked",
+            "ItmDoor01ClosedOn", "ItmDoor04ClosedOn",
+            "ItmDoor01ClosedOnLocked", "ItmDoor04ClosedOnLocked",
+            "ItmDoor01ClosedLoose", "ItmDoor04ClosedLoose",
+            "ItmDoor01Open", "ItmDoor04Open",
+            "ItmDoor01OpenLocked", "ItmDoor04OpenLocked",
+            "ItmDoor01OpenOn", "ItmDoor04OpenOn",
+            "ItmDoor01OpenOnLocked", "ItmDoor04OpenOnLocked",
+            "ItmDoor01ClosedDmg", "ItmDoor04ClosedDmg",
+            "ItmDoor01ClosedDmgLoose", "ItmDoor04ClosedDmgLoose"
+        ]
+    },
+    {
+        "strName" : "ItmDoor04ClosedLoose",
+        "strNameFriendly" : "Door (Closed, Loose)",
+        "strImg" : "ItmDoor04ClosedLoose",
+        "strImgNorm" : "ItmDoor01ClosedLoosen",
+        "strImgDamaged" : "ItmDoor04ClosedDmg02Loose",
+        "strPortraitImg" : "ItmDoor04ClosedLoose",
+        "strCOBase"    : "ItmDoor01ClosedLoose",
+        "strCondLoot"    : "CNDOLDoor04",
+        "mapSlotEffects" : [
+          "drag","Blank"
+        ],
+        "mapModeSwitches"    : [
+            "ItmDoor01Closed", "ItmDoor04Closed",
+            "ItmDoor01ClosedLocked", "ItmDoor04ClosedLocked",
+            "ItmDoor01ClosedOn", "ItmDoor04ClosedOn",
+            "ItmDoor01ClosedOnLocked", "ItmDoor04ClosedOnLocked",
+            "ItmDoor01ClosedLoose", "ItmDoor04ClosedLoose",
+            "ItmDoor01Open", "ItmDoor04Open",
+            "ItmDoor01OpenLocked", "ItmDoor04OpenLocked",
+            "ItmDoor01OpenOn", "ItmDoor04OpenOn",
+            "ItmDoor01OpenOnLocked", "ItmDoor04OpenOnLocked",
+            "ItmDoor01ClosedDmg", "ItmDoor04ClosedDmg",
+            "ItmDoor01ClosedDmgLoose", "ItmDoor04ClosedDmgLoose"
+        ]
+    },
+    {
+        "strName" : "ItmDoor04Open",
+        "strNameFriendly" : "Door (Opened, Off)",
+        "strImg" : "ItmDoor04Open",
+        "strImgNorm" : "ItmDoor01Openn",
+        "strImgDamaged" : "ItmDoor04OpenDmg02",
+        "strPortraitImg" : "ItmDoor04Open",
+        "strCOBase"    : "ItmDoor01Open",
+        "strCondLoot"    : "CNDOLDoor04",
+        "mapModeSwitches"    : [
+            "ItmDoor01Closed", "ItmDoor04Closed",
+            "ItmDoor01ClosedLocked", "ItmDoor04ClosedLocked",
+            "ItmDoor01ClosedOn", "ItmDoor04ClosedOn",
+            "ItmDoor01ClosedOnLocked", "ItmDoor04ClosedOnLocked",
+            "ItmDoor01ClosedLoose", "ItmDoor04ClosedLoose",
+            "ItmDoor01Open", "ItmDoor04Open",
+            "ItmDoor01OpenLocked", "ItmDoor04OpenLocked",
+            "ItmDoor01OpenOn", "ItmDoor04OpenOn",
+            "ItmDoor01OpenOnLocked", "ItmDoor04OpenOnLocked",
+            "ItmDoor01ClosedDmg", "ItmDoor04ClosedDmg",
+            "ItmDoor01ClosedDmgLoose", "ItmDoor04ClosedDmgLoose"
+        ]
+    },
+    {
+        "strName" : "ItmDoor04OpenLocked",
+        "strNameFriendly" : "Door (Opened, Locked, Off)",
+        "strImg" : "ItmDoor04Open",
+        "strImgNorm" : "ItmDoor01Openn",
+        "strImgDamaged" : "ItmDoor04OpenDmg02",
+        "strPortraitImg" : "ItmDoor04Open",
+        "strCOBase"    : "ItmDoor01OpenLocked",
+        "strCondLoot"    : "CNDOLDoor04",
+        "mapModeSwitches"    : [
+            "ItmDoor01Closed", "ItmDoor04Closed",
+            "ItmDoor01ClosedLocked", "ItmDoor04ClosedLocked",
+            "ItmDoor01ClosedOn", "ItmDoor04ClosedOn",
+            "ItmDoor01ClosedOnLocked", "ItmDoor04ClosedOnLocked",
+            "ItmDoor01ClosedLoose", "ItmDoor04ClosedLoose",
+            "ItmDoor01Open", "ItmDoor04Open",
+            "ItmDoor01OpenLocked", "ItmDoor04OpenLocked",
+            "ItmDoor01OpenOn", "ItmDoor04OpenOn",
+            "ItmDoor01OpenOnLocked", "ItmDoor04OpenOnLocked",
+            "ItmDoor01ClosedDmg", "ItmDoor04ClosedDmg",
+            "ItmDoor01ClosedDmgLoose", "ItmDoor04ClosedDmgLoose"
+        ]
+    },
+    {
+        "strName" : "ItmDoor04OpenOn",
+        "strNameFriendly" : "Door (Opened)",
+        "strImg" : "ItmDoor04Open",
+        "strImgNorm" : "ItmDoor01Openn",
+        "strImgDamaged" : "ItmDoor04OpenDmg02",
+        "strPortraitImg" : "ItmDoor04Open",
+        "strCOBase"    : "ItmDoor01OpenOn",
+        "strCondLoot"    : "CNDOLDoor04",
+        "mapModeSwitches"    : [
+            "ItmDoor01Closed", "ItmDoor04Closed",
+            "ItmDoor01ClosedLocked", "ItmDoor04ClosedLocked",
+            "ItmDoor01ClosedOn", "ItmDoor04ClosedOn",
+            "ItmDoor01ClosedOnLocked", "ItmDoor04ClosedOnLocked",
+            "ItmDoor01ClosedLoose", "ItmDoor04ClosedLoose",
+            "ItmDoor01Open", "ItmDoor04Open",
+            "ItmDoor01OpenLocked", "ItmDoor04OpenLocked",
+            "ItmDoor01OpenOn", "ItmDoor04OpenOn",
+            "ItmDoor01OpenOnLocked", "ItmDoor04OpenOnLocked",
+            "ItmDoor01ClosedDmg", "ItmDoor04ClosedDmg",
+            "ItmDoor01ClosedDmgLoose", "ItmDoor04ClosedDmgLoose"
+        ]
+    },
+    {
+        "strName" : "ItmDoor04OpenOnLocked",
+        "strNameFriendly" : "Door (Opened, Locked)",
+        "strImg" : "ItmDoor04Open",
+        "strImgNorm" : "ItmDoor01Openn",
+        "strImgDamaged" : "ItmDoor04OpenDmg02",
+        "strPortraitImg" : "ItmDoor04Open",
+        "strCOBase"    : "ItmDoor01OpenOnLocked",
+        "strCondLoot"    : "CNDOLDoor04",
+        "mapModeSwitches"    : [
+            "ItmDoor01Closed", "ItmDoor04Closed",
+            "ItmDoor01ClosedLocked", "ItmDoor04ClosedLocked",
+            "ItmDoor01ClosedOn", "ItmDoor04ClosedOn",
+            "ItmDoor01ClosedOnLocked", "ItmDoor04ClosedOnLocked",
+            "ItmDoor01ClosedLoose", "ItmDoor04ClosedLoose",
+            "ItmDoor01Open", "ItmDoor04Open",
+            "ItmDoor01OpenLocked", "ItmDoor04OpenLocked",
+            "ItmDoor01OpenOn", "ItmDoor04OpenOn",
+            "ItmDoor01OpenOnLocked", "ItmDoor04OpenOnLocked",
+            "ItmDoor01ClosedDmg", "ItmDoor04ClosedDmg",
+            "ItmDoor01ClosedDmgLoose", "ItmDoor04ClosedDmgLoose"
+        ]
+    },
+    {
+        "strName" : "ItmDoor04ClosedDmg",
+        "strNameFriendly" : "Door (Closed, Damaged)",
+        "strImg" : "ItmDoor04ClosedDmg02",
+        "strImgNorm" : "ItmDoor01ClosedDmg02n",
+        "strPortraitImg" : "ItmDoor04ClosedDmg02",
+        "strCOBase"    : "ItmDoor01ClosedDmg",
+        "strCondLoot"    : "CNDOLDoor04",
+        "mapModeSwitches"    : [
+            "ItmDoor01Closed", "ItmDoor04Closed",
+            "ItmDoor01ClosedLocked", "ItmDoor04ClosedLocked",
+            "ItmDoor01ClosedOn", "ItmDoor04ClosedOn",
+            "ItmDoor01ClosedOnLocked", "ItmDoor04ClosedOnLocked",
+            "ItmDoor01ClosedLoose", "ItmDoor04ClosedLoose",
+            "ItmDoor01Open", "ItmDoor04Open",
+            "ItmDoor01OpenLocked", "ItmDoor04OpenLocked",
+            "ItmDoor01OpenOn", "ItmDoor04OpenOn",
+            "ItmDoor01OpenOnLocked", "ItmDoor04OpenOnLocked",
+            "ItmDoor01ClosedDmg", "ItmDoor04ClosedDmg",
+            "ItmDoor01ClosedDmgLoose", "ItmDoor04ClosedDmgLoose"
+        ]
+    },
+    {
+        "strName" : "ItmDoor04ClosedDmgLoose",
+        "strNameFriendly" : "Door (Loose, Damaged)",
+        "strImg" : "ItmDoor04ClosedDmg02Loose",
+        "strImgNorm" : "ItmDoor01ClosedDmg02Loosen",
+        "strPortraitImg" : "ItmDoor04ClosedDmg02Loose",
+        "strCOBase"    : "ItmDoor01ClosedDmgLoose",
+        "strCondLoot"    : "CNDOLDoor04",
+        "mapModeSwitches"    : [
+            "ItmDoor01Closed", "ItmDoor04Closed",
+            "ItmDoor01ClosedLocked", "ItmDoor04ClosedLocked",
+            "ItmDoor01ClosedOn", "ItmDoor04ClosedOn",
+            "ItmDoor01ClosedOnLocked", "ItmDoor04ClosedOnLocked",
+            "ItmDoor01ClosedLoose", "ItmDoor04ClosedLoose",
+            "ItmDoor01Open", "ItmDoor04Open",
+            "ItmDoor01OpenLocked", "ItmDoor04OpenLocked",
+            "ItmDoor01OpenOn", "ItmDoor04OpenOn",
+            "ItmDoor01OpenOnLocked", "ItmDoor04OpenOnLocked",
+            "ItmDoor01ClosedDmg", "ItmDoor04ClosedDmg",
+            "ItmDoor01ClosedDmgLoose", "ItmDoor04ClosedDmgLoose"
+        ]
+    },
+
+    {
+        "strName" : "ItmDoor05Closed",
+        "strNameFriendly" : "Blast Door (Closed, Off)",
+        "strDesc" : "A fortified, fireproof, vacuum-sealed blast door by Langdon-Phillips. Keep your friends close and your enemies closed out.",
+        "strImg" : "ItmDoor05Closed",
+        "strImgNorm" : "ItmDoor01Closedn",
+        "strImgDamaged" : "ItmDoor05ClosedDmg02",
+        "strPortraitImg" : "ItmDoor05Closed",
+        "strCOBase"    : "ItmDoor01Closed",
+        "strCondLoot"    : "CNDOLDoor05",
+        "mapModeSwitches"    : [
+            "ItmDoor01Closed", "ItmDoor05Closed",
+            "ItmDoor01ClosedLocked", "ItmDoor05ClosedLocked",
+            "ItmDoor01ClosedOn", "ItmDoor05ClosedOn",
+            "ItmDoor01ClosedOnLocked", "ItmDoor05ClosedOnLocked",
+            "ItmDoor01ClosedLoose", "ItmDoor05ClosedLoose",
+            "ItmDoor01Open", "ItmDoor05Open",
+            "ItmDoor01OpenLocked", "ItmDoor05OpenLocked",
+            "ItmDoor01OpenOn", "ItmDoor05OpenOn",
+            "ItmDoor01OpenOnLocked", "ItmDoor05OpenOnLocked",
+            "ItmDoor01ClosedDmg", "ItmDoor05ClosedDmg",
+            "ItmDoor01ClosedDmgLoose", "ItmDoor05ClosedDmgLoose"
+        ]
+    },
+    {
+        "strName" : "ItmDoor05ClosedLocked",
+        "strNameFriendly" : "Blast Door (Closed, Off, Locked)",
+        "strDesc" : "A fortified, fireproof, vacuum-sealed blast door by Langdon-Phillips. Keep your friends close and your enemies closed out.",
+        "strImg" : "ItmDoor05Closed",
+        "strImgNorm" : "ItmDoor01Closedn",
+        "strImgDamaged" : "ItmDoor05ClosedDmg02",
+        "strPortraitImg" : "ItmDoor05Closed",
+        "strCOBase"    : "ItmDoor01ClosedLocked",
+        "strCondLoot"    : "CNDOLDoor05",
+        "mapModeSwitches"    : [
+            "ItmDoor01Closed", "ItmDoor05Closed",
+            "ItmDoor01ClosedLocked", "ItmDoor05ClosedLocked",
+            "ItmDoor01ClosedOn", "ItmDoor05ClosedOn",
+            "ItmDoor01ClosedOnLocked", "ItmDoor05ClosedOnLocked",
+            "ItmDoor01ClosedLoose", "ItmDoor05ClosedLoose",
+            "ItmDoor01Open", "ItmDoor05Open",
+            "ItmDoor01OpenLocked", "ItmDoor05OpenLocked",
+            "ItmDoor01OpenOn", "ItmDoor05OpenOn",
+            "ItmDoor01OpenOnLocked", "ItmDoor05OpenOnLocked",
+            "ItmDoor01ClosedDmg", "ItmDoor05ClosedDmg",
+            "ItmDoor01ClosedDmgLoose", "ItmDoor05ClosedDmgLoose"
+        ]
+    },
+    {
+        "strName" : "ItmDoor05ClosedOn",
+        "strNameFriendly" : "Blast Door (Closed)",
+        "strDesc" : "A fortified, fireproof, vacuum-sealed blast door by Langdon-Phillips. Keep your friends close and your enemies closed out.",
+        "strImg" : "ItmDoor05Closed",
+        "strImgNorm" : "ItmDoor01Closedn",
+        "strImgDamaged" : "ItmDoor05ClosedDmg02",
+        "strPortraitImg" : "ItmDoor05Closed",
+        "strCOBase"    : "ItmDoor01ClosedOn",
+        "strCondLoot"    : "CNDOLDoor05",
+        "mapModeSwitches"    : [
+            "ItmDoor01Closed", "ItmDoor05Closed",
+            "ItmDoor01ClosedLocked", "ItmDoor05ClosedLocked",
+            "ItmDoor01ClosedOn", "ItmDoor05ClosedOn",
+            "ItmDoor01ClosedOnLocked", "ItmDoor05ClosedOnLocked",
+            "ItmDoor01ClosedLoose", "ItmDoor05ClosedLoose",
+            "ItmDoor01Open", "ItmDoor05Open",
+            "ItmDoor01OpenLocked", "ItmDoor05OpenLocked",
+            "ItmDoor01OpenOn", "ItmDoor05OpenOn",
+            "ItmDoor01OpenOnLocked", "ItmDoor05OpenOnLocked",
+            "ItmDoor01ClosedDmg", "ItmDoor05ClosedDmg",
+            "ItmDoor01ClosedDmgLoose", "ItmDoor05ClosedDmgLoose"
+        ]
+    },
+    {
+        "strName" : "ItmDoor05ClosedOnLocked",
+        "strNameFriendly" : "Blast Door (Closed, Locked)",
+        "strDesc" : "A fortified, fireproof, vacuum-sealed blast door by Langdon-Phillips. Keep your friends close and your enemies closed out.",
+        "strImg" : "ItmDoor05Closed",
+        "strImgNorm" : "ItmDoor01Closedn",
+        "strImgDamaged" : "ItmDoor05ClosedDmg02",
+        "strPortraitImg" : "ItmDoor05Closed",
+        "strCOBase"    : "ItmDoor01ClosedOnLocked",
+        "strCondLoot"    : "CNDOLDoor05",
+        "mapModeSwitches"    : [
+            "ItmDoor01Closed", "ItmDoor05Closed",
+            "ItmDoor01ClosedLocked", "ItmDoor05ClosedLocked",
+            "ItmDoor01ClosedOn", "ItmDoor05ClosedOn",
+            "ItmDoor01ClosedOnLocked", "ItmDoor05ClosedOnLocked",
+            "ItmDoor01ClosedLoose", "ItmDoor05ClosedLoose",
+            "ItmDoor01Open", "ItmDoor05Open",
+            "ItmDoor01OpenLocked", "ItmDoor05OpenLocked",
+            "ItmDoor01OpenOn", "ItmDoor05OpenOn",
+            "ItmDoor01OpenOnLocked", "ItmDoor05OpenOnLocked",
+            "ItmDoor01ClosedDmg", "ItmDoor05ClosedDmg",
+            "ItmDoor01ClosedDmgLoose", "ItmDoor05ClosedDmgLoose"
+        ]
+    },
+    {
+        "strName" : "ItmDoor05ClosedLoose",
+        "strNameFriendly" : "Blast Door (Closed, Loose)",
+        "strDesc" : "A fortified, fireproof, vacuum-sealed blast door by Langdon-Phillips. Keep your friends close and your enemies closed out.",
+        "strImg" : "ItmDoor05ClosedLoose",
+        "strImgNorm" : "ItmDoor01ClosedLoosen",
+        "strImgDamaged" : "ItmDoor05ClosedDmg02Loose",
+        "strPortraitImg" : "ItmDoor05ClosedLoose",
+        "strCOBase"    : "ItmDoor01ClosedLoose",
+        "strCondLoot"    : "CNDOLDoor05",
+        "mapSlotEffects" : [
+          "drag","Blank"
+        ],
+        "mapModeSwitches"    : [
+            "ItmDoor01Closed", "ItmDoor05Closed",
+            "ItmDoor01ClosedLocked", "ItmDoor05ClosedLocked",
+            "ItmDoor01ClosedOn", "ItmDoor05ClosedOn",
+            "ItmDoor01ClosedOnLocked", "ItmDoor05ClosedOnLocked",
+            "ItmDoor01ClosedLoose", "ItmDoor05ClosedLoose",
+            "ItmDoor01Open", "ItmDoor05Open",
+            "ItmDoor01OpenLocked", "ItmDoor05OpenLocked",
+            "ItmDoor01OpenOn", "ItmDoor05OpenOn",
+            "ItmDoor01OpenOnLocked", "ItmDoor05OpenOnLocked",
+            "ItmDoor01ClosedDmg", "ItmDoor05ClosedDmg",
+            "ItmDoor01ClosedDmgLoose", "ItmDoor05ClosedDmgLoose"
+        ]
+    },
+    {
+        "strName" : "ItmDoor05Open",
+        "strNameFriendly" : "Blast Door (Opened, Off)",
+        "strDesc" : "A fortified, fireproof, vacuum-sealed blast door by Langdon-Phillips. Keep your friends close and your enemies closed out.",
+        "strImg" : "ItmDoor05Open",
+        "strImgNorm" : "ItmDoor01Openn",
+        "strImgDamaged" : "ItmDoor05OpenDmg02",
+        "strPortraitImg" : "ItmDoor05Open",
+        "strCOBase"    : "ItmDoor01Open",
+        "strCondLoot"    : "CNDOLDoor05",
+        "mapModeSwitches"    : [
+            "ItmDoor01Closed", "ItmDoor05Closed",
+            "ItmDoor01ClosedLocked", "ItmDoor05ClosedLocked",
+            "ItmDoor01ClosedOn", "ItmDoor05ClosedOn",
+            "ItmDoor01ClosedOnLocked", "ItmDoor05ClosedOnLocked",
+            "ItmDoor01ClosedLoose", "ItmDoor05ClosedLoose",
+            "ItmDoor01Open", "ItmDoor05Open",
+            "ItmDoor01OpenLocked", "ItmDoor05OpenLocked",
+            "ItmDoor01OpenOn", "ItmDoor05OpenOn",
+            "ItmDoor01OpenOnLocked", "ItmDoor05OpenOnLocked",
+            "ItmDoor01ClosedDmg", "ItmDoor05ClosedDmg",
+            "ItmDoor01ClosedDmgLoose", "ItmDoor05ClosedDmgLoose"
+        ]
+    },
+    {
+        "strName" : "ItmDoor05OpenLocked",
+        "strNameFriendly" : "Blast Door (Opened, Locked, Off)",
+        "strDesc" : "A fortified, fireproof, vacuum-sealed blast door by Langdon-Phillips. Keep your friends close and your enemies closed out.",
+        "strImg" : "ItmDoor05Open",
+        "strImgNorm" : "ItmDoor01Openn",
+        "strImgDamaged" : "ItmDoor05OpenDmg02",
+        "strPortraitImg" : "ItmDoor05Open",
+        "strCOBase"    : "ItmDoor01OpenLocked",
+        "strCondLoot"    : "CNDOLDoor05",
+        "mapModeSwitches"    : [
+            "ItmDoor01Closed", "ItmDoor05Closed",
+            "ItmDoor01ClosedLocked", "ItmDoor05ClosedLocked",
+            "ItmDoor01ClosedOn", "ItmDoor05ClosedOn",
+            "ItmDoor01ClosedOnLocked", "ItmDoor05ClosedOnLocked",
+            "ItmDoor01ClosedLoose", "ItmDoor05ClosedLoose",
+            "ItmDoor01Open", "ItmDoor05Open",
+            "ItmDoor01OpenLocked", "ItmDoor05OpenLocked",
+            "ItmDoor01OpenOn", "ItmDoor05OpenOn",
+            "ItmDoor01OpenOnLocked", "ItmDoor05OpenOnLocked",
+            "ItmDoor01ClosedDmg", "ItmDoor05ClosedDmg",
+            "ItmDoor01ClosedDmgLoose", "ItmDoor05ClosedDmgLoose"
+        ]
+    },
+    {
+        "strName" : "ItmDoor05OpenOn",
+        "strNameFriendly" : "Blast Door (Opened)",
+        "strDesc" : "A fortified, fireproof, vacuum-sealed blast door by Langdon-Phillips. Keep your friends close and your enemies closed out.",
+        "strImg" : "ItmDoor05Open",
+        "strImgNorm" : "ItmDoor01Openn",
+        "strImgDamaged" : "ItmDoor05OpenDmg02",
+        "strPortraitImg" : "ItmDoor05Open",
+        "strCOBase"    : "ItmDoor01OpenOn",
+        "strCondLoot"    : "CNDOLDoor05",
+        "mapModeSwitches"    : [
+            "ItmDoor01Closed", "ItmDoor05Closed",
+            "ItmDoor01ClosedLocked", "ItmDoor05ClosedLocked",
+            "ItmDoor01ClosedOn", "ItmDoor05ClosedOn",
+            "ItmDoor01ClosedOnLocked", "ItmDoor05ClosedOnLocked",
+            "ItmDoor01ClosedLoose", "ItmDoor05ClosedLoose",
+            "ItmDoor01Open", "ItmDoor05Open",
+            "ItmDoor01OpenLocked", "ItmDoor05OpenLocked",
+            "ItmDoor01OpenOn", "ItmDoor05OpenOn",
+            "ItmDoor01OpenOnLocked", "ItmDoor05OpenOnLocked",
+            "ItmDoor01ClosedDmg", "ItmDoor05ClosedDmg",
+            "ItmDoor01ClosedDmgLoose", "ItmDoor05ClosedDmgLoose"
+        ]
+    },
+    {
+        "strName" : "ItmDoor05OpenOnLocked",
+        "strNameFriendly" : "Blast Door (Opened, Locked)",
+        "strDesc" : "A fortified, fireproof, vacuum-sealed blast door by Langdon-Phillips. Keep your friends close and your enemies closed out.",
+        "strImg" : "ItmDoor05Open",
+        "strImgNorm" : "ItmDoor01Openn",
+        "strImgDamaged" : "ItmDoor05OpenDmg02",
+        "strPortraitImg" : "ItmDoor05Open",
+        "strCOBase"    : "ItmDoor01OpenOnLocked",
+        "strCondLoot"    : "CNDOLDoor05",
+        "mapModeSwitches"    : [
+            "ItmDoor01Closed", "ItmDoor05Closed",
+            "ItmDoor01ClosedLocked", "ItmDoor05ClosedLocked",
+            "ItmDoor01ClosedOn", "ItmDoor05ClosedOn",
+            "ItmDoor01ClosedOnLocked", "ItmDoor05ClosedOnLocked",
+            "ItmDoor01ClosedLoose", "ItmDoor05ClosedLoose",
+            "ItmDoor01Open", "ItmDoor05Open",
+            "ItmDoor01OpenLocked", "ItmDoor05OpenLocked",
+            "ItmDoor01OpenOn", "ItmDoor05OpenOn",
+            "ItmDoor01OpenOnLocked", "ItmDoor05OpenOnLocked",
+            "ItmDoor01ClosedDmg", "ItmDoor05ClosedDmg",
+            "ItmDoor01ClosedDmgLoose", "ItmDoor05ClosedDmgLoose"
+        ]
+    },
+    {
+        "strName" : "ItmDoor05ClosedDmg",
+        "strNameFriendly" : "Blast Door (Closed, Damaged)",
+        "strDesc" : "A fortified, fireproof, vacuum-sealed blast door by Langdon-Phillips. Keep your friends close and your enemies closed out.",
+        "strImg" : "ItmDoor05ClosedDmg02",
+        "strImgNorm" : "ItmDoor01ClosedDmg02n",
+        "strImgDamaged" : "ItmDoor05OpenDmg02",
+        "strPortraitImg" : "ItmDoor05ClosedDmg02",
+        "strCOBase"    : "ItmDoor01ClosedDmg",
+        "strCondLoot"    : "CNDOLDoor05",
+        "mapModeSwitches"    : [
+            "ItmDoor01Closed", "ItmDoor05Closed",
+            "ItmDoor01ClosedLocked", "ItmDoor05ClosedLocked",
+            "ItmDoor01ClosedOn", "ItmDoor05ClosedOn",
+            "ItmDoor01ClosedOnLocked", "ItmDoor05ClosedOnLocked",
+            "ItmDoor01ClosedLoose", "ItmDoor05ClosedLoose",
+            "ItmDoor01Open", "ItmDoor05Open",
+            "ItmDoor01OpenLocked", "ItmDoor05OpenLocked",
+            "ItmDoor01OpenOn", "ItmDoor05OpenOn",
+            "ItmDoor01OpenOnLocked", "ItmDoor05OpenOnLocked",
+            "ItmDoor01ClosedDmg", "ItmDoor05ClosedDmg",
+            "ItmDoor01ClosedDmgLoose", "ItmDoor05ClosedDmgLoose"
+        ]
+    },
+    {
+        "strName" : "ItmDoor05ClosedDmgLoose",
+        "strNameFriendly" : "Blast Door (Loose, Damaged)",
+        "strDesc" : "A fortified, fireproof, vacuum-sealed blast door by Langdon-Phillips. Keep your friends close and your enemies closed out.",
+        "strImg" : "ItmDoor05ClosedDmg02Loose",
+        "strImgNorm" : "ItmDoor01ClosedDmg02Loosen",
+        "strPortraitImg" : "ItmDoor05ClosedDmg02Loose",
+        "strCOBase"    : "ItmDoor01ClosedDmgLoose",
+        "strCondLoot"    : "CNDOLDoor05",
+        "mapModeSwitches"    : [
+            "ItmDoor01Closed", "ItmDoor05Closed",
+            "ItmDoor01ClosedLocked", "ItmDoor05ClosedLocked",
+            "ItmDoor01ClosedOn", "ItmDoor05ClosedOn",
+            "ItmDoor01ClosedOnLocked", "ItmDoor05ClosedOnLocked",
+            "ItmDoor01ClosedLoose", "ItmDoor05ClosedLoose",
+            "ItmDoor01Open", "ItmDoor05Open",
+            "ItmDoor01OpenLocked", "ItmDoor05OpenLocked",
+            "ItmDoor01OpenOn", "ItmDoor05OpenOn",
+            "ItmDoor01OpenOnLocked", "ItmDoor05OpenOnLocked",
+            "ItmDoor01ClosedDmg", "ItmDoor05ClosedDmg",
+            "ItmDoor01ClosedDmgLoose", "ItmDoor05ClosedDmgLoose"
+        ]
+    },
+    {
+        "strName" : "ItmTable03",
+        "strNameFriendly" : "Conference Table",
+        "strImg" : "ItmTable03",
+        "strImgNorm" : "ItmTable03n",
+        "strPortraitImg" : "ItmTable03",
+        "strCOBase"    : "ItmTable01",
+        "strCondLoot"    : "CNDOLTable03",
+        "mapModeSwitches"    : [
+            "ItmTable01", "ItmTable03",
+            "ItmTable01Loose", "ItmTable03Loose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTTable01Uninstall", "ACTTable03Uninstall"
+        ]
+    },
+    {
+        "strName" : "ItmTable03Loose",
+        "strNameFriendly" : "Conference Table (Loose)",
+        "strImg" : "ItmTable03Loose",
+        "strImgNorm" : "ItmTable03Loosen",
+        "strPortraitImg" : "ItmTable03Loose",
+        "strCOBase"    : "ItmTable01Loose",
+        "strCondLoot"    : "CNDOLTable03",
+        "mapSlotEffects" : [
+          "drag","Blank"
+        ],
+        "mapModeSwitches"    : [
+            "ItmTable01", "ItmTable03",
+            "ItmTable01Loose", "ItmTable03Loose"
+        ],
+        "aInteractionsReplace" : [
+            "ACTTable01Install", "ACTTable03Install"
+        ]
+    }
+]

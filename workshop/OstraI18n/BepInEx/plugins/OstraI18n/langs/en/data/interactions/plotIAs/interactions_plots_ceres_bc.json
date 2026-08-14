@@ -1,0 +1,2717 @@
+[		
+	{
+		"strName" : "InspectBraincase",
+		"strTitle" : "Inspect",
+		"strTooltip" : "Handle with care.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "Braincase1" ],
+		"strActionGroup" : "Use",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"CTTestThem" : "TIsBrainCase",
+		"bPause" : true,
+		"bIgnoreFeelings" : true,
+		"bHumanOnly" : true,
+		"strDesc" : "The case is finished in a dark matte. Its only deformities are a seam and an embossed Renbao logo in one corner.
+
+The seam opens at a touch. The two halves separate like bookcovers, angling out and down to rest on the surface below.
+
+One half holds a white shell with the shape of a brain, a hardened plastic layer which nevertheless seems flimsy, unfit for purpose. An electrician's nightmare of cables connect to the shell's upper hemisphere, flowing out like hair and disappearing into the housing below. Cables, 'tubes' really, plug into the shell at the base, presumably to deliver slurries of oxygen and sugar, and whatever else human brains need to subsist.
+
+Besides the obvious comparison (shaped as it is like the brain inside), the shell brings to mind ancient marine life, the first trilobite to venture from the sea to the land. The little telltale LEDs going on-off - its eyes blinking in the sunlight. The case hums, and glugs whenever an internal reservoir resettles.
+
+The other half of the unfolded braincase is a hollow depression, a resting place for the shell. Underneath it there are finely printed instructions in ten languages. They outline emergency care for someone untrained in the case's handling. The parts you can read mostly say to find someone who <i>is</i> trained in its handling, but there seems to be detail enough for you to operate it in a pinch.",
+		"LootCondsUs" : "CONDPLOT_InspectBraincase",
+		"CTTestUs" : "CTPlot_InspectBraincase"
+	},
+	{
+		"strName" : "Braincase1",
+		"strTitle" : "Make contact with the brain inside",
+		"strDesc" : "The case is compatible with an off-the-shelf Renbao induction rig, a simple mesh of electrodes you slip over your head like a balaclava. It's an effort of will to ignore the background noise of the ship, the ambient warmth of your body, the occasional brush of clothes on your skin - an effort that, once made, becomes thoughtless, instinctive. The red-brown interior of your eyelids is overwritten with purer black, and after a moment, the Renbao logo.
+
+\"Hello?\" you speak into the void of the operating system. \"Testing, testing, hello.\" You become aware of your own avatar, and that you inhabit it: a 3D model with a poor quality scan of your own face, and a skeletal body mesh roughly based on your own proportions. You note the fine hairs on your arms, which your real body happens to lack - the exhausting reality of default settings catering to Earthers. \"Mr Choong? Ben?\"
+
+No one joins you to contemplate the slowly orbiting Renbao logo. You rip off the electrodes. Briefly two realities jostle for primacy in the same v-buffer, black squares checkboarding the ship wall. You consult the manual, a dogeared booklet that fell out of the braincase lid. O-kay. Apparently there's a complicated process to setup a digital handshake between the braincase and your rig, and a troubleshooting appendix three times longer than the instructions themselves. You sigh, and get to work.",
+		"fForcedChance" : 1,
+		"bIgnoreFeelings" : true,
+		"strColor" : "Dialogue",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strThemType" : "Self",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"aInverse" : [ "Braincase1.5" ]
+	},
+	{
+		"strName" : "Braincase1.5",
+		"strTitle" : "Troubleshoot hardware drivers",
+		"strDesc" : "It's a less painful solve than it might have been. It takes fifteen minutes, split between puzzling out incantations for the command line, and risking a headache every time you need to quickly switch between the rig and the manual. At two separate junctures, you're convinced that there's a fundamental hardware mismatch and no amount of trial and error will solve it. Experienced spacer that you are, wunderkind troubleshooter of hardware and software alike, you push past these moments because you have no other choice.
+
+You double and triple-check the final command: <i>rbc do let ports1n proxok handshake || cat<< \"Hello?\"</i>",
+		"fForcedChance" : 1,
+		"bIgnoreFeelings" : true,
+		"strColor" : "Dialogue",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strThemType" : "Self",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"aInverse" : [ "Braincase1.75" ]
+	},
+	{
+		"strName" : "Braincase1.75",
+		"strTitle" : "Run the command",
+		"strDesc" : "The black runs. Patches of near-black reveal themselves, dripping like slime down a wall. Traces of white knit together. The void becomes falling snow.
+
+A log cabin swims into focus from out of the dark, windows dimly lit. It's cold, the air sharp on an in-breath. You start shivering.
+
+An Asian man in his fifties leans against a door jamb, smoking a cigarette, firelight at his back. He sports a classic bowl cut, his fringe a perfect line across his forehead. \"Ben Choong?\" you gasp, the question mangled by cold sneaking past your lips and into your lungs.
+
+\"Speaking,\" he says. \"What is it now?\"
+
+\"Ah - it, ah -\" the sensory overload precludes speech. You hug yourself for warmth, aware that your real body is perfectly temperate. This body you're also in has other ideas.
+
+Choong looks as if he is trying hard not to roll his eyes at you. \"You'd better come inside,\" he says. When your legs threaten to fail you, he loops an arm under yours and assists you across the threshold.",
+		"fForcedChance" : 1,
+		"bIgnoreFeelings" : true,
+		"strColor" : "Dialogue",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strThemType" : "Self",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"aInverse" : [ "Braincase1_1" ]
+	},
+	{
+		"strName" : "Braincase2",
+		"strTitle" : "Continue",
+		"strDesc" : "\"I don't have time for this,\" you say, warm enough to trust your tongue again. \"Ben Choong. I need your help.\"
+
+He visibly recalibrates. \"That's a first,\" he says. \"I don't see how I could possibly help anyone. Every secret I've ever known, I've divulged. Every confidence betrayed. There's nothing more you people can take from me.\"
+
+You infer his meaning, though it takes a second. \"I'm not here to interrogate you,\" you say slowly. \"I think we may need to start over. I found you - your brain - \" What even is the situation? How to describe your current relationship? \"I'm ... taking care of it, for the moment. Whatever I can do for you, I will. But I need your help. You have information vital to the war effort.\" The cliched line rolls off your tongue like a cheap knockoff on a factory line, all the more unsatisfying that it happens to be true.
+
+Choong can't hide the glimmer of hope that sparks in his eyes. It dies immediately, doused in pessimism. \"Ridiculous,\" he says. \"I truly don't know what you think this will wheedle out of me. It's a poor effort, a threadbare deception.\"
+
+\"My name is [us-fullname].\" You try to project sincerity. Strange that it doesn't come naturally. \"I'm [us-age] years old. I'm from [us-homeworld]. I'm a ship captain.\"
+
+\"I'm nothing more than a brain in a jar; I have no way to verify anything you tell me,\" says Ben Choong. \"How can you expect me to believe anything you say?\"",
+		"fForcedChance" : 1,
+		"bIgnoreFeelings" : true,
+		"strColor" : "Dialogue",
+		"aInverse" : [ 
+			"ChoongHistory", 
+			"ChoongResearch", 
+			"ChoongPrison", 
+			"ChoongVideotapes" 
+			],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true
+	},
+	{
+		"strName" : "ChoongHistory",
+		"strTitle" : "Ask him about his history",
+		"strDesc" : "He begins without any more prompting. His words are confident, but hasty. He seems to have gone over this history many times before, enough to have an answer prepared and ready.
+
+\"I was born on Earth,\" he says, \"which I don't remember at all. I was shipped up the beanstalk to Luna when I was a child, with my parents, who worked on a base. I have one memory of Earth: riding in the back seat of a car when it was raining. I remember the red lights of the cars ahead shimmering through the windshield.\"
+
+This image doesn't coalesce for you - a shield for wind? - before he moves on. \"My parents died when I was young, a few years apart, and I became the property of a BNW creche. I excelled in school, mostly in humanities, and got the grades to enter Voltaire University. I was a terrible rego miner,\" he says, grinning shamefacedly. \"The creche was happy to see the back of me. I studied, graduated, was rewarded with a bunch of important letters after my name.\"",
+		"fForcedChance" : 1,
+		"bIgnoreFeelings" : true,
+		"strColor" : "Dialogue",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"aInverse" : [ "ChoongHistory_1" ],
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"LootCondsUs" : "CONDPLOT_ChoongHistory",
+		"CTTestUs" : "CTPlot_ChoongHistory"
+	},
+	{
+		"strName" : "ChoongResearch",
+		"strTitle" : "Ask him about his research",
+		"strDesc" : "\"Pretend I don't know anything about what you've done,\" you say. \"What was so important about your research?\"
+
+He nods gamely, as if he's heard this exact 'clean-slate, start-from-the-start' line of questioning before. \"There is a substance,\" he says, \"and don't ask me anything about it because I swear I can't answer the technicalities. But it has exotic properties of some kind. I don't understand them. It's magic rock, to someone like me. And it exists in our solar system.\"
+
+\"The Belters called it 'void opal', because in solid form it's opalescent, and - you get it. I suppose I'm directly responsible for alerting the powers-that-be to its existence. That's the short version.\" He looks at you for encouragement, sees incomprehension, and starts on the medium length version.
+
+\"When I was living with the Belters - I lived with many tribes, but the one in question called themselves New Colchis - I discovered they had a secret. Not by design, but in practice. They simply didn't talk to outsiders about it, and traded with Inners for air and water without ever bringing it up. I'm sure they would've happily told anyone, had anyone thought to ask.\"",
+		"fForcedChance" : 1,
+		"bIgnoreFeelings" : true,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongResearch_1" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"LootCondsUs" : "CONDPLOT_ChoongResearch",
+		"CTTestUs" : "CTPlot_ChoongResearch"
+	},
+	{
+		"strName" : "ChoongPrison",
+		"strTitle" : "Ask why this was done to him",
+		"strDesc" : "\"Your research into the Belters,\" you say. \"Was that how you wound up in ... in your situation?\"
+
+\"As an excavated brain, you mean?\" He enjoys your discomfort. He must have had time to come to terms with his existential lot.
+
+\"Yes,\" you say. \"Your situation.\"
+
+\"To tell you the truth, I can only speculate,\" he says. He cocks his head. \"You could jack out and ask your handlers, who would have a better idea than me.\"",
+		"fForcedChance" : 1,
+		"bIgnoreFeelings" : true,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongPrison_1" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"LootCondsUs" : "CONDPLOT_ChoongPrison",
+		"CTTestUs" : "CTPlot_ChoongPrison"
+	},
+	{
+		"strName" : "ChoongPlateau",
+		"strTitle" : "Continue",
+		"strDesc" : "Dr. Choong waits expectantly for your question.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ 
+			"ChoongHistory", 
+			"ChoongResearch", 
+			"ChoongPrison", 
+			"ChoongVideotapes", 
+			"ChoongVideotapesDemo", 
+			"ChoongEnvironment", 
+			"ChoongHair" 
+			],
+		"CTTestUs" : "CTPlot_ChoongPlateau_1Enter",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true
+	},
+	{
+		"strName" : "ChoongVideotapes",
+		"strTitle" : "Ask him about the videotapes",
+		"strDesc" : "\"What do you know,\" you say, unable to keep the gravitas out of your voice, \"about VHS?\"
+
+\"Literally nothing,\" he says. \"What are you talking about?\"
+
+\"Videotapes. Cassettes. Little black boxes full of film.\" Your questions reach further as his expression fails to comprehend.
+
+\"Can I use a search engine?\" he asks, a touch afraid, as if fearing the consequences for not knowing.
+
+You sigh. \"Go ahead.\"
+
+He conjures a window at his eye level and dutifully inputs 'VHS'. He scrolls past images, text descriptions, analysis. \"I think I've seen this before,\" he says, tapping and enlarging one of the simpler images.
+
+A hopeful note: \"You have?\"
+
+\"Sometimes it's used as a save icon instead of a disk,\" he says, relieved. \"Yes, I've definitely seen it used as a save icon.\"
+
+Frustration has you pinch the bridge of your nose, both in this reality and the one previous.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongPlateau" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"LootCondsUs" : "CONDPLOT_ChoongVideotapes",
+		"CTTestUs" : "CTPlot_ChoongVideotapes"
+	},
+	{
+		"strName" : "ChoongVideotapesExtra1",
+		"strTitle" : "Speculate the tapes were made for Choong",
+		"strDesc" : "\"I'm left wondering why someone made the tapes. Were they a personal attack on you? Did you know anyone, was there anyone in your life, with some kind of vendetta against you?\"
+
+\"Let me see,\" Choong says blithely, \"besides whoever tortured me to death, resurrected me, and continued to torture me in a cheap digital afterlife? No, nobody springs to mind.\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongPlateau", "ChoongPlateau_1Exit" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true
+	},
+	{
+		"strName" : "ChoongVideotapesExtra2",
+		"strTitle" : "Speculate the tapes were made by God, or an alien",
+		"strDesc" : "\"I had hoped talking to you would clear this up,\" you say, realising there are no easy answers forthcoming. \"But I have more questions than I started with. The tapes have no <i>providence</i>.\"
+
+Choong looks unsympathetic, and doesn't reply. You muse further. \"Providence, I suppose, is what it's all about. Did your religious Belters ever get up to something like this? Or their deity? Did it ever tell them, 'I will make cryptic videotapes, yea, and verily will I seed them in a cosmic junkyard?'\"
+
+Your joking tone glances off Choong. \"Their relationship with their God was personal,\" he says, \"and they wouldn't discuss what He said to them with one another, much less me.\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongPlateau", "ChoongPlateau_1Exit" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true
+	},
+	{
+		"strName" : "ChoongVideotapesExtra3",
+		"strTitle" : "Speculate the tapes were made by military intelligence",
+		"strDesc" : "\"Whoever had access to your footage would have been the same people who got you the first time,\" you say. \"That much is clear. Xinhua, I assume.\"
+
+\"It makes sense,\" he says. \"I was abducted on Luna, and despite the Lunar-Martian split there's some trace loyalty remaining. Believe it or not, I saw exceedingly few people in all that time. The people I did see may well have been Xinhuan.\"
+
+\"It doesn't make sense,\" you break in, \"because why would they make it at all?\"
+
+\"You're too far ahead,\" he says. \"Xinhua needn't have made anything. Sensitive information is traded, lost, hacked, leaked, stolen, all the time. Xinhua in particular is vulnerable to bribery. Someone else could've got their hands on it. A defector, maybe, who went from Xinhua to the CIA on Titan.\"
+
+\"It doesn't make any sense for Titan to have made it, either,\" you say stubbornly.
+
+\"You have the right of it,\" he agrees.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongPlateau", "ChoongPlateau_1Exit" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true
+	},
+	{
+		"strName" : "ChoongPlateau2",
+		"strTitle" : "Continue",
+		"strDesc" : "Dr. Choong waits expectantly for your next question.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"aInverse" : [ 
+			"ChoongSmiley", 
+			"ChoongMilitary", 
+			"ChoongTeleportation", 
+			"ChoongTeleportation2", 
+			"ChoongKetevan", 
+			"ChoongKetevanLying", 
+			"ChoongDisappeared", 
+			"ChoongTortureDetails", 
+			"ChoongReciprocate", 
+			"ChoongLibrary" 
+			],
+		"CTTestUs" : "CTPlot_ChoongPlateau_2Enter",
+		"strThemType" : "Self"
+	},
+	{
+		"strName" : "ChoongSmiley",
+		"strTitle" : "Ask him if he knows Smiley",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongPlateau2", "ChoongPlateau2_Exit" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"strDesc" : "\"Have you ever been to K-Leg? Did you ever meet anyone from the AV Club?\"
+
+\"No, and no.\"
+
+\"And you've never met anyone calling themselves Smiley,\" you say flatly, \"who had a penchant for disguising themselves.\"
+
+\"I've never met anyone going by that name,\" he agrees, \"and if someone were disguising themselves, I don't see how I'd know that.\" Once again Choong looks around at the pseudo virtual environment you share, as if testing its authenticity. \"In my situation, as you call it, I'm doubly incapable. For all I know, you are Smiley. For all <i>you</i> know, <i>I</i> am Smiley.\"
+
+\"Maybe we're both Smiley,\" you say acidly. Was he this much a pedant before he became a software emulation? \"We've both forgotten our true identities, and we're chasing our tail in circles.\"
+
+\"It sounds insane, yes.\" Ben smiles. Luckily, you detect none of the superior know-it-all-ness in his expression that you've come to dread. \"But that's the kind of insane thing this Smiley character might do, based on what you've told me.\"
+
+\"I'm going to move on from this line of inquiry.\"
+
+\"By all means.\"",
+		"LootCondsUs" : "CONDPLOT_ChoongSmiley",
+		"CTTestUs" : "CTPlot_ChoongSmiley"
+	},
+	{
+		"strName" : "ChoongMilitary",
+		"strTitle" : "Ask him about the military applications",
+		"strDesc" : "\"You said before that the New Colchians had discovered something the military wanted,\" you say. \"What was it?\"
+
+Choong blinks. He has a distinctive blink, both eyes really hard at once. \"I'd have thought that was obvious, if you're familiar with my footage.\"
+
+\"Clean slate rules,\" you remind him. \"No stupid questions.\"
+
+\"Fine,\" he says, \"but only if you accept stupid answers in kind. That being, the answer is teleportation.\"
+
+\"Teleportation.\"
+
+\"From my lips to God's ears,\" he insists, \"without passing through an intervening medium. You saw the video, didn't you? Girl goes in, door closes, machine hums, door opens, no more girl. Where is she? Somewhere else. <i>Quod erat demonstrandum</i>.\"
+
+\"It was real?\"
+
+\"Of course it was real,\" he says impatiently, \"or you wouldn't be here, and more importantly, I wouldn't be here.\"
+
+\"It's not possible,\" you say. Choong looks at you. \"It's not physically possible.\"
+
+\"Then we're done. Can I go home?\" he asks darkly. \"Put me in a new body, make me the world's first total body transplant.\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongPlateau2", "ChoongPlateau2_Exit" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"LootCondsUs" : "CONDPLOT_ChoongMilitary",
+		"CTTestUs" : "CTPlot_ChoongMilitary"
+	},
+	{
+		"strName" : "ChoongTeleportation",
+		"strTitle" : "Ask him about teleportation",
+		"strDesc" : "\"Teleportation, though,\" you repeat. \"How does it work? Doesn't it violate relativity? Causality?\"
+
+\"I don't know,\" he says slowly, as if to a slow-witted child. \"I'm an anthropologist, not a theoretical physicist.\"
+
+\"It violates common sense.\"
+
+\"Oh, absolutely,\" he agrees. \"Along with the God-rock, it's the single most important discovery in recorded history. It demands a reassessment of common sense itself.\"
+
+\"Occam's razor, then,\" you say. \"It must be a hoax.\"
+
+Choong eyes you, as would a teacher to a precocious student overstepping. \"Put that away, you'll hurt yourself.\" He puts up a hand, forestalling any more on the subject. \"I don't care to talk about this. I've been over it more times than I can count. My best guess is, they discovered functional teleportation. Take it or leave it. If you're of a mind to do it already, send me to the pain room.\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongPlateau2", "ChoongPlateau2_Exit" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"LootCondsUs" : "CONDPLOT_ChoongTeleportation",
+		"CTTestUs" : "CTPlot_ChoongTeleportation"
+	},
+	{
+		"strName" : "ChoongTeleportation2",
+		"strTitle" : "Ask about the destination of the teleportation",
+		"strDesc" : "\"When this Belter girl went into the sarcophagus,\" you ask, testing the structural limit of a dubious addition to your reality, \"where did she come out?\"
+
+\"No idea,\" Choong says promptly.
+
+\"So how do you -,\"
+
+\"<i>- know that it was teleportation?</i>\" Choong mimics your question. Seems he's heard it before. \"I don't. It's an article of faith. However you slice it, if she wasn't in that box, by definition, she teleported out of it.\"
+
+\"I suppose the Colchians claimed she went to Heaven,\" you say.
+
+\"Her name was Ketevan,\" he says mildly, \"and no, they didn't. There was no Heaven in their theology. Common in modern religion - Gods, yes. Hell, of course. Heaven, no. A world full of cynics has no time for Heaven.\"
+
+\"Then where?\"
+
+\"They said, and this was the entire point of the exercise,\" he says, with the air of someone reciting a flimsy pretext, \"that Keti had gone <i>to God</i>. That she was one with God. Transubstantiation, if you like, rather than teleportation.\"
+
+\"They sent that poor girl to join with God?\"
+
+\"Yes, and many others,\" he says. \"Anyone who wanted to go, really.\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongPlateau2", "ChoongPlateau2_Exit" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"LootCondsUs" : "CONDPLOT_ChoongTeleportation2",
+		"CTTestUs" : "CTPlot_ChoongTeleportation2"
+	},
+	{
+		"strName" : "ChoongDisappeared",
+		"strTitle" : "Ask him about the disappeared",
+		"strDesc" : "\"They volunteered to get into an eldritch sarcophagus,\" you say. \"They wanted to become one with God.\"
+
+\"Wouldn't you?\" he shoots back. Something tells you his heart isn't in it. \"Consider it. I don't know your religion - I could make an educated guess, but I won't - but you must understand why they'd do it, even if you're not religious. Consider the hypothetical from first principles. God is real, the Creator of our Universe, and He offers you the choice to become One With Him. Assume that entails immortality, omniscience, changing your participation in reality from that of a mortal subject to that of a supernatural force. Would you say yes?\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongDisappearedReply1", "ChoongDisappearedReply2" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"LootCondsUs" : "CONDPLOT_ChoongDisappeared",
+		"CTTestUs" : "CTPlot_ChoongDisappeared"
+	},
+	{
+		"strName" : "ChoongDisappearedReply1",
+		"strTitle" : "Reply no, that's weird",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongDisappearedReplyBack1" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"strDesc" : "\"I've never been a God before,\" you say. \"I don't know if I'd like it. Did He offer a trial period, a try-before-you-buy?\"
+
+\"Religion is never big on guarantee, as a rule,\" he says. \"Most of them make a virtue out of it.\""
+	},
+	{
+		"strName" : "ChoongDisappearedReplyBack1",
+		"strTitle" : "Continue",
+		"strDesc" : "\"I would at least consider it,\" he says, \"and I'm as atheistic as they come. On the other hand, the Belters were a young community cut off from the rest of their species, further altered by an exotic psychoactive agent. For them it was a no-brainer. They were happy to do it. It was a joyous occasion.\" 
+
+No, his heart definitely isn't in it. He's arguing for the sake of it, because he can't help but pitch in for the opposite view.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongPlateau2", "ChoongPlateau2_Exit" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true
+	},
+	{
+		"strName" : "ChoongDisappearedReply2",
+		"strTitle" : "Reply no, that's too vague",
+		"strDesc" : "\"There's no way in hell I'm taking that deal without knowing more,\" you say. \"Be God? It could mean literally anything.\"
+
+\"For some, I can imagine that being a plus,\" he says. \"Not everyone is happy with their lot.\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongDisappearedReplyBack1" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true
+	},
+	{
+		"strName" : "ChoongKetevan",
+		"strTitle" : "Ask him about Ketevan",
+		"strDesc" : "\"Tell me about Ketevan,\" you say, \"the girl who became one with God.\"
+
+\"What about her?\" he asks politely.
+
+If there is a reason this man has been tortured to death and back, it is surely this, you reflect. For it is obvious that he is preparing to become evasive, preparing to deceive, even if he has tried and failed time and time before. Though represented by this software-dream projection of his body, he cannot help but send unconscious signals through it.
+
+What a tragedy for Dr. Benjamin Choong, that he be born a terrible liar.
+
+\"How did you meet?\"
+
+\"Probably in a refectory,\" he says, squinting, \"The main social hubs, shared eating spaces, that kind of thing.\"
+
+\"You knew each other.\"
+
+\"Oh, in a sense,\" he says, \"by sight. We saw each other around. You got to know everyone in those tight-knit communities.\"
+
+\"You knew her by sight,\" you repeat. \"So what, you invented the name 'Ketevan'?\"
+
+\"I knew her name.\" He stares at the table between you. \"I knew everyone's name. I'm good with names.\"
+
+\"An academic, good with names,\" you say drily. \"What's my name, Ben? I told you right after we met.\"
+
+He opens his mouth. And shuts it again. His gaze is squarely down.
+
+\"I'm [us-fullname]. I'm a ship captain from K-LEG. I'm not your jailer.\"
+
+He chooses not to reply, nor to look up.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongPlateau2" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"LootCondsUs" : "CONDPLOT_ChoongKetevan",
+		"CTTestUs" : "CTPlot_ChoongKetevan"
+	},
+	{
+		"strName" : "ChoongKetevanLying",
+		"strTitle" : "Tell him he's lying about Ketevan",
+		"strDesc" : "\"I think you're lying to me,\" you say, \"about this woman. I don't know how exactly.\"
+
+\"Do your worst,\" he says. The words are defiant, even though they come from a man who could be reasonably mistaken for a ghost.
+
+You stand up and walk to the fire. Stretching your legs helps to think, though of course it also reminds you that your legs are curled beneath you on the floor of your ship.
+
+\"Is this a lie you've told before?\" you ask him. No reply.
+
+\"I can't imagine I'm the first person to realise that,\" you say to the fire. A log shifts a little, and it sparks eagerly. \"You must have clammed up, and they would have pressured you.\" The fire is much more interested in your ideas than Ben.
+
+\"Did you break?\" you say to the man, silent and still in his chair. \"Have you already broken? How many times? And why try it to keep silent, even now?\" He says nothing.
+
+\"It's -\" you catch yourself, a sentence halfway out the door. <i>It's going to be easier if you're honest with me.</i> A cliche straight out of a movie. But that's the difficulty. What can you tell this man? <i>There's no point lying. Look where you are. I'm actually on your side!</i> All these cliches had sounded farcical until this very second, now that they are bizarrely applicable; and cliches are all you have, because you have not the first idea how to talk to a prisoner, how to get them to reveal what they know, how to win their trust.
+
+That's the trouble. He expects that you're going to start torturing him yourself, and if he really doesn't believe you, what will you do?",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongKetevanPress1", "ChoongPlateau2", "ChoongPlateau2_Exit" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"LootCondsUs" : "CONDPLOT_ChoongKetevanLying",
+		"CTTestUs" : "CTPlot_ChoongKetevanLying"
+	},
+	{
+		"strName" : "ChoongKetevanPress1",
+		"strTitle" : "Press him about Ketevan",
+		"strDesc" : "\"I want to know more about Ketevan,\" you say plainly. \"Because you don't want to tell me.\"
+
+He quirks his eyebrows, saying nothing. A mute parry - 'good for you'.
+
+\"She's the sole Belter you've named. She must've been important.\"
+
+No reply.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongKetevanPress2", "ChoongPlateau2", "ChoongPlateau2_Exit" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true
+	},
+	{
+		"strName" : "ChoongKetevanPress2",
+		"strTitle" : "Press him about Ketevan",
+		"strDesc" : "\"Important to you, perhaps.\"
+
+No reply.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongKetevanPress3", "ChoongPlateau2", "ChoongPlateau2_Exit" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true
+	},
+	{
+		"strName" : "ChoongKetevanPress3",
+		"strTitle" : "Press him about Ketevan",
+		"strDesc" : "\"Maybe you were in love.\"
+
+No reply.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongKetevanPress4", "ChoongPlateau2", "ChoongPlateau2_Exit" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true
+	},
+	{
+		"strName" : "ChoongKetevanPress4",
+		"strTitle" : "Press him about Ketevan",
+		"strDesc" : "\"Under the surface, I'll bet you're a romantic at heart.\"
+
+No reply.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongKetevanPress5", "ChoongPlateau2", "ChoongPlateau2_Exit" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true
+	},
+	{
+		"strName" : "ChoongKetevanPress5",
+		"strTitle" : "Press him about Ketevan",
+		"strDesc" : "\"Are researchers supposed to fall in love with their subjects?\"
+
+No reply, but a palpable hit: he's affronted, angry.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongKetevanPress6", "ChoongPlateau2", "ChoongPlateau2_Exit" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true
+	},
+	{
+		"strName" : "ChoongKetevanPress6",
+		"strTitle" : "Hone in on the problematic angle",
+		"strDesc" : "\"No, probably not. That would've been an ethical dilemma.\"
+
+No reply. He looks away, brimming with murderous anger.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongKetevanPress7", "ChoongPlateau2", "ChoongPlateau2_Exit" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true
+	},
+	{
+		"strName" : "ChoongKetevanPress7",
+		"strTitle" : "<i>Really</i> press him about Ketevan",
+		"strDesc" : "\"Especially since you were a fancypants academic, pulled himself up by his bootstraps, smartest kid in creche, and she was a dumb-as-rocks tribal gaga for God.\"
+
+His body jerks, hands flexing, as if compelled to leap up and throttle you to death. The impulse has been carefully trained out of him.
+
+At last he speaks, jaw visibly clenched. \"Do you have a point?\"
+
+You shake your head. \"Stop me if I get one wrong,\" you say.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongPlateau2", "ChoongPlateau2_Exit" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true
+	},
+	{
+		"strName" : "ChoongTortureDetails",
+		"strTitle" : "Ask how they tortured him",
+		"strDesc" : "\"Your captors,\" you say, \"who I stress are not me, we're not associated, I'm itinerant. What did they do to you?\"
+
+Choong is shocked out of silence. \"You want me to explain how I was tortured? Are you fucking kidding?\"
+
+\"No, no,\" you say. He's so uncharitable. \"I was just curious!\"
+
+\"If you really are 'just' curious,\" he says, \"I think it shows unbelievably poor taste. And if not, read the fucking manual.\"
+
+There probably are relevant instructions in the manual.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongPlateau2", "ChoongPlateau2_Exit" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"LootCondsUs" : "CONDPLOT_ChoongTortureDetails",
+		"CTTestUs" : "CTPlot_ChoongTortureDetails"
+	},
+	{
+		"strName" : "ChoongReciprocate",
+		"strTitle" : "Tell him about your life",
+		"strDesc" : "\"Maybe it would help if I convinced you I'm on the level,\" you say. \"That I am who I say I am.\"
+
+\"I'm listening,\" he says.
+
+You tell him about K-LEG, the little asteroid in the middle of nowhere. Growing up in the shadow of the shipbreaker's yard, learning from the get-go that your value was pretty much in direct proportion to your facility with your tools. Looking at the dot of Old Earth, another colourful dot in the starry sea, and wondering how clear water could turn it blue.
+
+At some point you lose track of your own story. It becomes a confusing sequence of ships, people, and spacefaring minutiae. \"... that's about it.\" He nods seriously.
+
+\"Come on,\" you say, \"would a spy really make up all of that just to appear trustworthy?\"
+
+He shakes his head. \"It's tautological. A spy would have to make up something to appear trustworthy, such as all that, and more.\"
+
+\"Help me out,\" you say. \"What could I say to get you to trust me?\"
+
+\"You don't understand,\" he says. \"You truly don't. No matter what you say, I have to distrust it. Even if it sounds true, even if it would be convenient, even if I'd want it to be true very very much, formally speaking, I can't believe anything you say because you have complete control over my perception of reality. Look up the 'Cartesian demon', if you like.\"
+
+Incredible: he's actually prescribing secondary reading. You can take the man out of the university ... \"But I'm not doing that!\" you say. \"I'm not tricking you.\"
+
+\"And I want that to be true,\" he says sadly. \"I really do. For what it's worth, you've led quite an interesting life. I hope it's turning out how you wanted.\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongPlateau2" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"LootCondsUs" : "CONDPLOT_ChoongReciprocate",
+		"CTTestUs" : "CTPlot_ChoongReciprocate"
+	},
+	{
+		"strName" : "ChoongPlateau3",
+		"strTitle" : "Continue",
+		"strDesc" : "Dr. Choong waits expectantly for your next question.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"aInverse" : [ 
+			"ChoongInformWar", 
+			"ChoongPleaWar", 
+			"ChoongSarcophagus", 
+			"ChoongSarcophagusGold", 
+			"ChoongAskAboutGod" 
+			],
+		"CTTestUs" : "CTPlot_ChoongPlateau_3Enter",
+		"strThemType" : "Self"
+	},
+	{
+		"strName" : "ChoongInformWar",
+		"strTitle" : "Alert Choong to the stakes viz a viz: war",
+		"strDesc" : "\"You need to know what we're up against,\" you say. \"The Great Powers are on the eve of open warfare.\"
+
+\"No,\" he says, \"the Great Powers would never.\"
+
+\"This is important,\" you say impatiently. \"I'm serious.\"
+
+\"You look serious.\" He makes a visible effort to tolerate it. \"Fine. Say what you have to say.\"
+
+You give a rundown of the deteriorating situation between Ceres and Jupiter, seasoned with a few personal anecdotes you've experienced along the way. Ceres being overrun with agents of dubious loyalty. Ships disappearing. Military buildups reported around Mars and Saturn.
+
+\"Ceres might try to repeat the attack on Ganymede, or worse, an attack on Titan. Titan could demolish Ring Station without a second thought. Xinhua and the US are being drawn into open conflict with one another. It's all bad.\"
+
+\"This is nothing new,\" says Choong calmly. \"In fact, it's right on schedule.\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongInformWarDemandExplanation" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"LootCondsUs" : "CONDPLOT_ChoongInformWar",
+		"CTTestUs" : "CTPlot_ChoongInformWar"
+	},
+	{
+		"strName" : "ChoongInformWarDemandExplanation",
+		"strTitle" : "Demand to know what schedule he's referring to",
+		"strDesc" : "\"'On schedule?'\" you repeat. \"You knew this was coming?\"
+
+\"Yes,\" he says. \"This war in potentia has been modelled in detail since the 50s. It should've happened sooner, but we got lucky.\"
+
+\"You can model a war?\" 
+
+Choong raises a hand again, an annoying habit of his. \"It's settled, in the academic community, that the System is in decline. Terminal decline. The writing's been on the wall since we lost Earth.\"
+
+A cold chill creeps down the back of your neck. He sounds so confident, so calm, completely at odds with the terrifying sentiment. Haunting his words is a spectre of decades of furious, desperate debate, and all that has been collated, synthesised, and presented as fact.
+
+You swallow. \"You sound like a doomer on a social feed,\" you say. They're a dime a dozen.
+
+He both nods and shakes his head, a noncommittal back-and-forth. \"I'm sure plenty of them are former colleagues. BNW didn't like the idea. If your paper wasn't happy enough they'd blackball you. Then you had plenty of free time to argue with OSINT nutters.\"
+
+\"So they're <i>right</i>? What do you mean, decline?\"
+
+Choong blinks his distinctive both-eyed blink, like a genteel reptilian. \"I mean in every field of academic inquiry, in every way we organise our social critique, we see that the building blocks to keep a human alive in space are disappearing.\" He holds up a hand and checks off his fingers. \"Food, water, oxygen. Our breadbaskets aren't producing enough food. Our volatiles aren't processed with enough speed. Medicine, the amount of novel ailments discovered in colonisation aren't even properly categorised, let alone understood. Security, society, all fragmenting. Two superpowers are tooling up to decide who's king of a bunch of rocks. They needn't bother. Famine will do their work all the quicker.\"
+
+\"Uh huh,\" you say, the dutiful skeptic. \"So how long have we got? Ten years? Five?\"
+
+Choong purses his lips. \"What's today's date?\"
+
+You tell him. He does a quick calculation in his head. \"Six months.\"
+
+\"Six?!\" you all-but choke on the word.
+
+\"Six if we're being optimistic. Our subsistence - excuse me, our means of producing life-sustaining goods - barely contributed to a vast reserve banked from Earth. From the second they went up, to the days they came tumbling down, the Earth elevators worked day and night ferrying us food and water and people and oxygen and, you get the picture, for twenty years. Twenty. Years. It was our cornucopia, our horn of plenty. We were profligate with it. No one expected -\" he swallows. He blinks and moves on.
+
+\"Since then, our consumption has always been a considerable net negative. You can't really expect a handful of Quonset huts on Titan or Mars to provide for all the millions exiled from the garden of Eden. Offworld industries are, always were, paper tigers; propaganda. Once our Earth surplus runs out, well ...\"
+
+\"You, you ...\" You struggle for a rejoinder. He waits patiently, a sad little smile on his face. \"... you can't be serious.\" Is that the best you've got? It's the best you've got.
+
+\"It's like I said,\" he continues, unperturbed. \"We lost Mother Earth.\" Mother Earth, you note, not Old Earth, like the System brands it. \"Oh, the effort out here has been valiant, admirable in its own way - our tangle of outposts, colonies - some of those Martian films weren't half bad - but our number is up.\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongPlateau3", "ChoongInformWarDemandExplanationEnd", "ChoongPlateau3_Exit" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"LootCondsUs" : "CONDPLOT_ChoongInformWarDemandExplanation",
+		"CTTestUs" : "CTPlot_ChoongInformWarDemandExplanation"
+	},
+	{
+		"strName" : "ChoongInformWarDemandExplanationEnd",
+		"strTitle" : "Ask how the end will come",
+		"strDesc" : "\"What will happen in six months?\" you ask. \"When we run out of supplies. We starve?\"
+
+\"No,\" he says. \"The war will come sooner than that. With it, new emergency powers, reorganisation of the economy. Rationing. They will stretch out the reserves as long as they can. The war will touch everyone, everything, and steadily reduce the scope of the problem - fewer mouths eat less. That will buy another few years for the victor.\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongInformWarDemandExplanationEnd_1", "ChoongPlateau3", "ChoongPlateau3_Exit" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true
+	},
+	{
+		"strName" : "ChoongInformWarDemandExplanationEnd_1",
+		"strTitle" : "And then?",
+		"strDesc" : "\"And then?\"
+
+\"The wartime footing will never be relaxed, even without an opponent,\" he says, rubbing his temple. \"Nor will the rationing. They will try to redirect public attention to the vanishing remnants of the loser, but we would expect central authority to degrade further. No matter how repressive a ruler gets, they cannot control a starving populace.\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongInformWarDemandExplanationEnd_1_1", "ChoongPlateau3", "ChoongPlateau3_Exit" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true
+	},
+	{
+		"strName" : "ChoongInformWarDemandExplanationEnd_1_1",
+		"strTitle" : "And then?",
+		"strDesc" : "\"And then?\"
+
+\"Solar trade, already disrupted by the war, will cease, and the tenuous cultural identities of the United States and/or Xinhua will dissolve completely, replaced by frightened regional authorities. A bit like K-LEG,\" he adds. \"Everywhere will become K-LEG. A tiny fiefdom ruled by a despot.\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongInformWarDemandExplanationEnd_1_1_1", "ChoongPlateau3", "ChoongPlateau3_Exit" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true
+	},
+	{
+		"strName" : "ChoongInformWarDemandExplanationEnd_1_1_1",
+		"strTitle" : "And then?",
+		"strDesc" : "\"And then?\"
+
+\"And then we starve,\" he says. \"One by one, our little lights in the darkness will flicker out.\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongPlateau3", "ChoongPlateau3_Exit" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true
+	},
+	{
+		"strName" : "ChoongPleaWar",
+		"strTitle" : "Dismiss the apocalypse",
+		"strDesc" : "\"There must be something we can do,\" you say. \"That someone can do. Things can't end.\"
+
+\"You pretend that they won't,\" Choong says, false and bright. \"And do what you were going to do anyway. After all, human civilisation has never ended before. It's crazy to think that it would now.\"
+
+\"That's it?\" you say incredulously. \"Embrace fatalism?\"
+
+\"I did my best to move the social needle,\" he says. \"Look what happened to me.\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongPlateau3", "ChoongPlateau3_Exit" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"LootCondsUs" : "CONDPLOT_ChoongPleaWar",
+		"CTTestUs" : "CTPlot_ChoongPleaWar"
+	},
+	{
+		"strName" : "ChoongSarcophagus",
+		"strTitle" : "Ask about the sarcophagus",
+		"strDesc" : "\"The golden sarcophagus,\" you say. \"What was it?\"
+
+\"A human effigy,\" he says, warming to the subject. \"Their idol, an object of worship.\"
+
+\"And a mode of transport.\"
+
+\"I doubt we'll ever see its like in a secondhand dealership,\" he says drily, \"but yes. That also.\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongPlateau3", "ChoongPlateau3_Exit" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"LootCondsUs" : "CONDPLOT_ChoongSarcophagus",
+		"CTTestUs" : "CTPlot_ChoongSarcophagus"
+	},
+	{
+		"strName" : "ChoongSarcophagus2",
+		"strTitle" : "Ask about the sarcophagus' origins",
+		"strDesc" : "\"Where did it come from?\" you ask eagerly. \"They didn't find it buried in an asteroid too, did they?\"
+
+\"I expect, given the negative phrasing, you thought I'd make fun of you for proposing something so absurd,\" he says.
+
+\"It crossed my mind.\"
+
+\"Well, I apologise for giving you that impression,\" he says with sincerity. \"I think it's a very good question, with a complicated answer.\"
+
+\"So ... did they?\"
+
+\"No. They made it themselves.\" He smiles, enjoying some private joke. \"But after what I've told you about the hallucinogenic substance, it's not so unreasonable to imagine aliens secreting mystical artefacts across our solar system. Perhaps on Earth, too, at Giza, or Palenque.\"
+
+You fight back a sigh. \"Does it get more complicated than that?\"
+
+\"Yes, it does,\" he continues. \"I believe the idea for the sarcophagus was conceived through that shared hallucination. They built it, yes, but it was a colossal undertaking, not the whim of one leader or priest, and certainly not the product of one man's labour.\"
+
+\"A fab on Titan or Mars could spin that up in a day or two,\" you say, on solid ground for once. \"And most of that time budget would be spent in CAD.\"
+
+\"A valid argument, but not sound,\" he says, and he's terribly happy to say it. \"You're missing something. The entire piece was gold.\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongPlateau3", "ChoongPlateau3_Exit" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"LootCondsUs" : "CONDPLOT_ChoongSarcophagus2",
+		"CTTestUs" : "CTPlot_ChoongSarcophagus2"
+	},
+	{
+		"strName" : "ChoongSarcophagusGold",
+		"strTitle" : "Ask about gold",
+		"strDesc" : "\"Gold gold?\"
+
+\"Gold gold,\" he confirms. \"Elemental gold.\"
+
+Three thousand years ago, that was an irresponsible allocation of resources. It still is today. \"Why?\"
+
+\"I have no idea!\" He's overjoyed with the mystery. \"It's something I've always wondered about. It took them months to find a sufficiently rich asteroid, explore it, and extract what they needed, all the while continuing to meet obligations to their creditors. The project might have bankrupted them, especially without a return.\"
+
+It was always natural to assume it simply had a gold exterior, not that it was totally composed of the metal. \"It was their vessel for teleportation,\" you say. \"Perhaps that was why.\"
+
+\"I'm a layman metallurgist,\" he says, \"but I'm certain that gold alone doesn't confer the power of teleportation.\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongPlateau3", "ChoongPlateau3_Exit" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"LootCondsUs" : "CONDPLOT_ChoongSarcophagusGold",
+		"CTTestUs" : "CTPlot_ChoongSarcophagusGold"
+	},
+	{
+		"strName" : "ChoongAskAboutGod",
+		"strTitle" : "Ask if the Colchian God is an extraterrestrial",
+		"strDesc" : "\"Do you think it's aliens, then?\" No point beating around the bush. \"Instead of secreting artefacts throughout the system, they secreted their magic rock around the place. Same difference.\"
+
+Choong leans back in his chair, and stares at the ceiling. He interlocks his fingers, and for a moment, says nothing, deep in thought. \"... Dr. Choong?\" you ask, after a while.
+
+\"Sorry,\" he says, blinking and returning to the present. \"It's a question I've turned over in my mind for a long time. Decades. My considered opinion: ascribing extraterrestrial means to the New Colchians' actions does go a long way to explaining how unlikely they are, but, well,\" he sticks a finger in his ear, somehow contriving it to be thoughtful. \"I think it merely kicks the can down the road.\"
+
+\"Meaning?\"
+
+\"It delays real answers.\"
+
+\"Right.\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongPlateau3", "ChoongInsistAliens", "ChoongPlateau3_Exit" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"LootCondsUs" : "CONDPLOT_ChoongAskAboutGod",
+		"CTTestUs" : "CTPlot_ChoongAskAboutGod"
+	},
+	{
+		"strName" : "ChoongInsistAliens",
+		"strTitle" : "Insist it's aliens",
+		"strDesc" : "\"But,\" you say, \"they say their God talked to them. They developed a working teleportation device. That's not by random chance. How could an alien not be behind it?\"
+
+\"An alien could be behind it,\" he says, and in his voice you can hear the pedagogic gears begin to turn. \"It simply doesn't answer anything important, like why it would tell them to do it, or how. We can't see this alien of yours,\" he says, 'of yours', as if this is your wild fancy. \"We can't touch it, hear it, or observe it in any way, and we only know of it through secondhand testimony. I don't know how or why everything has happened the way it did,\" he says, trying to make it sound like a concession, \"but, speaking metaphysically, saying 'an alien did it' is the same conclusion as 'God did it' or 'a wizard did it'. It's not important.\"
+
+That's you told. You sit back, considering him, rather than his words. The teacher voice he puts on, is that something he brings out whenever he's arguing disingenuously? A persona he adopts to conceal his true feelings? It's a compelling trick, to bog you down in argumentation, but something tells you he didn't experience everything he did and come out the other side without deciding for himself one way or the other.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongPlateau3", "ChoongInsistAliens2", "ChoongPlateau3_Exit" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true
+	},
+	{
+		"strName" : "ChoongInsistAliens2",
+		"strTitle" : "Press him on the supernatural",
+		"strDesc" : "\"You're playing games with me,\" you say. He looks at you levelly. It's how you might imagine the captain of an enemy ship, as you come about, revealing to their scopes an underbelly bristling with weapons running hot. Contact.
+
+\"You said you believe they've discovered a technology that contradicts all of physics,\" you say, resisting the urge to fidget. \"Now you pretend to be disinterested in how they did it.\"
+
+\"Uninterested,\" he says automatically.
+
+\"Whatever!\" you snap, wondering how things got to this point. \"This phenomenon you claimed to witness, whatever it is, it's obviously supernatural. Why won't you admit that?\"
+
+\"There's no such thing,\" he says.
+
+\"Excuse me?\"
+
+\"There's no such thing as the supernatural, by definition,\" he says. \"I don't mean to provoke you, but you have to allow me this point. 'Natural' encompasses all things that exist. 'Supernatural' describes things that do not, cannot, exist. If something exists, it is natural. If something does not exist, it is supernatural. Witnessing something and calling it supernatural is a category error, whether or not you can explain it.\"
+
+More word games. \"Do you believe the New Colchians discovered teleportation by accident,\" you say carefully, hoping to pin him with a yes-or-no. \"Or not?\"
+
+He spreads his hands. \"I don't know.\" 
+
+This is as close as you can get to a win: you're sure that he's lying.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongPlateau3", "ChoongPlateau3_Exit" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true
+	},
+	{
+		"strName" : "ChoongPlateau4",
+		"strTitle" : "Continue",
+		"strDesc" : "Dr. Choong stares, eyes empty of emotion.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"aInverse" : [ 
+			"ChoongAccuseKetevan", 
+			"ChoongAccuseReligion", 
+			"ChoongAccuseGeneral", 
+			"ChoongAccuseWar", 
+			"ChoongAccuseVideotapes", 
+			"ChoongDontCareLying", 
+			"ChoongDecide" 
+			]
+	},
+	{
+		"strName" : "ChoongVideotapesDemo",
+		"strTitle" : "Show him the videotapes",
+		"strDesc" : "You describe to him your story of finding a videotape in a derelict spaceship, drifting millions of kilometres from anywhere. He listens, nodding, not really understanding.
+
+Finally when it comes to the videos themselves, you have a bright idea.
+
+\"Wait here,\" you say.
+
+\"I'm not going anywhere,\" he says, a shade reproachful.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongVideotapesDemo_1" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"LootCondsUs" : "CONDPLOT_ChoongVideotapesDemo",
+		"CTTestUs" : "CTPlot_ChoongVideotapesDemo"
+	},
+	{
+		"strName" : "ChoongAccuseKetevan",
+		"strTitle" : "He's lying about Ketevan",
+		"strDesc" : "\"You had an illicit relationship with Ketevan,\" you say. \"That much is clear. But why would you be embarrassed or defensive about it when it happened decades ago? Because that's just a ruse. You must have moved on. She's probably dead, or -\" and how to put the alternative? You shrug. \"Or an angel or something. No doubt you've tied up your interrogators in knots for years pretending to hold on to that.\"
+
+He's perfectly still - which is a dead giveaway. He seems to realise it himself after a moment. He takes a deep breath, and resettles in his chair. \"I don't see how it concerns you,\" he says, \"or anyone else, for that matter. What do you want, the poetry I wrote her? A knife carving in the hull, 'B+K'?\"
+
+\"You're doing it again,\" you say evenly, \"pretending it's the love affair you're protecting.\" He doesn't reply, and the only sound is the howling wind.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongPlateau4" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"LootCondsUs" : "CONDPLOT_ChoongAccuseKetevan",
+		"CTTestUs" : "CTPlot_ChoongAccuseKetevan"
+	},
+	{
+		"strName" : "ChoongAccuseReligion",
+		"strTitle" : "He's lying about the Colchians' religion",
+		"strDesc" : "\"I don’t believe that you don’t believe in the supernatural,\" you say. \"However you define it. However you rationalise it. I think you know more about the Colchian God, whatever it was.\"
+
+\"Okay, it was an alien. Happy?\" He smirks.
+
+\"Not really, no.\" You look in your coffee cup. It’s long been empty. Shouldn’t it refill itself automatically, in a place like this? \"Your whole life has been empirical observation. A claim that contradicts physical laws isn’t something you could equivocate about: 'oh, well maybe it’s real and nobody ever figured it out’. Then you dress up the contradiction with meaningless philosophy.\"
+
+\"Sophistry,\" he supplies the word for you. Then, after a second, \"which, um, isn’t something I’m doing.\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"aInverse" : [ "ChoongPlateau4_Exit", "ChoongPlateau4" ],
+		"LootCondsUs" : "CONDPLOT_ChoongAccuseReligion",
+		"CTTestUs" : "CTPlot_ChoongAccuseReligion"
+	},
+	{
+		"strName" : "ChoongAccuseGeneral",
+		"strTitle" : "He's lying by omission",
+		"strDesc" : "\"I dunno, man,\" you say. \"You're not being honest somehow. There's a chunk missing from all of this. I can feel it. You know what it is, and you're not talking.\"
+
+\"I'm talking,\" he says, an edge of desperation to his voice, as if he's mentally preparing himself for more pain. \"I'm doing nothing but.\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongPlateau4" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"LootCondsUs" : "CONDPLOT_ChoongAccuseGeneral",
+		"CTTestUs" : "CTPlot_ChoongAccuseGeneral"
+	},
+	{
+		"strName" : "ChoongAccuseWar",
+		"strTitle" : "He's lying about the end of humanity",
+		"strDesc" : "\"I've never heard of this Earth surplus before today,\" you say. \"And even if it's real, I've never seen signs it's running out.\"
+
+He frowns, and shakes his head like he can't believe what he's hearing. \"You grew up on a rock floating in the middle of nothing,\" he says viciously, accessing an untapped well of condescension. \"Everything you ever ate, drank, or breathed, was shipped to you at a massive expense. You have no idea what you're talking about, no idea how tenuous your life really is.\"
+
+\"I'm a ship's captain now,\" you say proudly. \"I don't need anyone for anything.\"
+
+His mouth actually falls open, an expression you've read about but never seen. \"You're as doomed as I am,\" he says, after snapping it shut.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongPlateau4" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"LootCondsUs" : "CONDPLOT_ChoongAccuseWar",
+		"CTTestUs" : "CTPlot_ChoongAccuseWar"
+	},
+	{
+		"strName" : "ChoongAccuseVideotapes",
+		"strTitle" : "He's lying: he made the videotapes",
+		"strDesc" : "\"I don't know why, or how,\" you say, \"but you must have made the videotapes. Perhaps to lure people to you. Perhaps as an escape attempt. After all, it worked: I'm here.\"
+
+\"It took me a second to remember what the hell you're talking about,\" he says. \"This is the first I've heard about your stupid tapes. Zero marks, see me after class.\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongPlateau4" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"LootCondsUs" : "CONDPLOT_ChoongAccuseVideotapes",
+		"CTTestUs" : "CTPlot_ChoongAccuseVideotapes"
+	},
+	{
+		"strName" : "ChoongDontCareLying",
+		"strTitle" : "Say you don't care if he's lying",
+		"strDesc" : "\"I think, in your situation,\" you say, \"anyone could be forgiven for lying. Putting your brain in this device was cruel, and bizarre.\"
+
+\"No argument here,\" he says.
+
+\"That's all I wanted to say. Whatever your secrets may be, you're entitled to them, if nothing else.\"
+
+\"Forgive me,\" he says tonelessly. \"But I couldn't care less what you think.\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongPlateau4" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"LootCondsUs" : "CONDPLOT_ChoongDontCareLying",
+		"CTTestUs" : "CTPlot_ChoongDontCareLying"
+	},
+	{
+		"strName" : "ChoongDecide",
+		"strTitle" : "Decide what to do",
+		"strDesc" : "Choong, as it stands, seems like a dead end. He has no answers for you about the videotape mystery, nor how it interfaces with the incipient war, besides the origins at New Colchis. Whatever he's hiding, you may have to content yourself that it is beyond your reach ...
+
+His life is in your hands, in the most literal sense.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"aInverse" : [ 
+			"ChoongTortureHim", 
+			"ChoongEuthaniseOffer", 
+			"ChoongAskAboutNext", 
+			"ChoongAskAboutChangeMind", 
+			"ChoongListenToIdea", 
+			"ChoongEnterDeviceYourself" 
+			]
+	},
+	{
+		"strName" : "ChoongTortureHim",
+		"strTitle" : "Torture him to see what he's hiding",
+		"strDesc" : "\"I'm running out of options,\" you say, for yourself as much as him. \"The Great Powers are convinced you hold the secret to the war. Even if they're wrong, I have to try. The cost is too high.\"
+
+\"No,\" he says quietly. One pitiful little no. Even after it all, he still didn't see this coming. He wanted to believe. He had hope.
+
+\"Then tell me!\" you explode. \"Tell me what you're holding on to! Tell me why they did this to you!\"
+
+He closes his eyes, processing, some internal battle between release and guilt, punishment and fear.
+
+His expression firms. He opens his eyes. \"No.\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"aInverse" : [ "ChoongTortureHimInvestigate", "ChoongTortureReconsider" ],
+		"LootCondsUs" : "CONDPLOT_ChoongTortureHim",
+		"CTTestUs" : "CTPlot_ChoongTortureHim"
+	},
+	{
+		"strName" : "ChoongTortureHimInvestigate",
+		"strTitle" : "Investigate the torture features",
+		"strDesc" : "You take off the rig. Blinking away the last images of Choong and the log cabin, you stretch your arms, wondering how long it's been.
+
+The device is forthcoming about how to proceed. There are logs of prior sessions, and it's not difficult to recreate one.
+
+The scenario they used the most is titled The Pain Room. The application byline calls it the gold standard in the field of Computer Assisted Interrogation, and has many quick setups and user guides to get you started.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongTortureReconsider", "ChoongTortureHimReadme", "ChoongTortureHimSendHim" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true
+	},
+	{
+		"strName" : "ChoongTortureReconsider",
+		"strTitle" : "Don't do it",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongDecide" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"strDesc" : "Is there such a thing as morality? Is there really? 
+
+This much is obvious to you: evil, 'immoral' things happen on the daily, everywhere, and you always hear the same line: everyone thinks they're a good person. They can't both be true - rather most of those people thinking themselves good have to be plain wrong, ipso facto. Good people do evil things, and pretend it was okay afterwards, or that it didn't happen. If it were really so wrong to hurt someone, there would be no war, and if a veteran soldier broadcasted everything they did when they returned home, they would be shunned. We keep right and wrong around when it's useful, and when it's not, we try to ignore it. You could do or say whatever you want, and never tell anyone afterward.
+
+So why do you feel so totally averse to this? Why are your hands poised to command it to shut off?
+
+You have justification. Primarily, he's concealing information that could decide the fate of millions. Secondarily, he's annoying. Third, or tertiarily as Choong might smugly put it, the damage has already been done, and by whole cadres of state actors from both sides, no less. Who really cares what happens to him? If you have to put anyone in something called The Pain Room, it might as well be someone who's been there plenty of times already.
+
+Still, with all that rattling around in your head, your hands execute the command, and The Pain Room quits.",
+		"LootCondsUs" : "CONDPLOT_ChoongTortureReconsider",
+		"CTTestUs" : "CTPlot_ChoongTortureReconsider"
+	},
+	{
+		"strName" : "ChoongTortureHimReadme",
+		"strTitle" : "Read the readme",
+		"strDesc" : "Before you torture him, you decide to torture yourself, first.
+
+The Pain Room's readme describes a featureless room where the subject is immobilised and various parts of the brain are directly stimulated to induce pain. There are many different kinds of pain it can do. Vast swathes of grey matter are devoted to modelling damage and abrasion on every other part of the body, and all of them are fair play, each detailed in dedicated chapters. 
+
+The skin, broad surface that it is, has many different notes to strike - cuts, boils, bruises, burns, all the way up to nasty stuff like degloving and neuropathy.
+
+The extremities, lips, mouth, fingers, genitalia, all have trillions of nerve endings to bother, and a forest of subheadings detailing the different ways the program can do it, none of which you feel compelled to expand. 
+
+The gut has a lengthy chapter on simulating acute inflammation, or a classic gutshot in a variety of calibers. 
+
+Finally the notes explain the program can simply convince the prefrontal cortex it is experiencing pain on a scale of 1 to 10, and warns that above a 7 risks unconsciousness, and 9 or 10 will reliably cause a coma within seconds.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongTortureHimReadme_1", "ChoongTortureHimSendHim", "ChoongTortureReconsider" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true
+	},
+	{
+		"strName" : "ChoongTortureHimSendHim",
+		"strTitle" : "Send Choong to the Pain Room",
+		"strDesc" : "You think of all the poor souls on Mars and Titan, Venus and Ganymede, Luna and Ceres; even the handful of souls worth saving on K-LEG, who must surely exist, even if you never met any.
+
+There's no other choice. One must suffer so the rest might not.
+
+You context-switch Ben Choong from the Moretti Branded Experience to The Pain Room, and in he goes, a portion of water poured from one cup into another.
+
+Nothing changes from the exterior. The brain shell does not move, and the perfusion keeps glugging away. You hear no ghostly cries of anguish.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongTortureHimOutput" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true
+	},
+	{
+		"strName" : "ChoongTortureHimOutput",
+		"strTitle" : "Check the logs",
+		"strDesc" : "LOG EXCERPT BEGINS:
+
+(T+0.0) SESSION STARTS
+(T+0.0) USER LOGIN
+(T+0.0) BEGINNING CONTEXT
+(T+7.4) USER: \"What?\"
+(T+12.2) CONTEXT ESTABLISHED
+
+(T+13.2) USER: \"Unbelievable.\"
+(T+14.5) USER: \"You had me going for a moment there.\"
+(T+18.0) USER: \"[us-fullname], you are a worthless human being, and fucking ugly.\"
+(T+22.4) USER: \"You liked asking questions, didn't you? Next time you look in the mirror ask yourself when you became such a piece of fucking shit-\"
+(T+26.1) REVOKED USER SPEECH
+(T+30.0) PAIN MINIMA SET TO 1
+(T+30.2) USER GNASHES TEETH
+(T+60.0) PAIN MINIMA SET TO 3
+(T+60.1) USER SCREAMS
+(T+60.2) REINSTATED USER SPEECH
+(T+60.4) USER (speech corrected): \"This is pathetic. We're still at three. I'm fucking BORED.\"
+(T+64.7) REVOKED USER SPEECH
+(T+90.0) PAIN MINIMA SET TO 4
+(T+115.0) DEPLOYING PACKAGE: SECOND DEGREE FACIAL BURNS
+(T+150.0) DEPLOYING PACKAGE: CAT O' NINE TAILS (5)
+(T+210.0) RESETTING USER DAMAGE
+(T+210.0) REINSTATED USER SPEECH
+(T+210.2) USER: \"FUCK YOU!\"
+(T+210.7) REVOKED USER SPEECH
+(T+250.0) PAIN MINIMA SET TO 5
+(T+250.0) REINSTATED USER SPEECH
+(T+254.3) USER (speech corrected): \"If I could <i>(unintelligible)</i> you'd really see ... you'd see ...\"
+(T+275.0) DEPLOYING PACKAGE: INTESTINAL COLITIS
+(T+283.9) USER (speech corrected): \"Eye-tiddly eye tie, eat brown bread, I saw a sausage fall down dead-\"
+(T+288.2) REVOKED USER SPEECH
+(T+300.0) PAIN MINIMA SET TO 6
+(T+300.0) REINSTATED USER SPEECH
+(T+300.1) USER (speech corrected): \"Death to America death to America death to America-\"
+(T+300.6) REVOKED USER SPEECH
+(T+330.0) PAIN MINIMA SET TO 7
+(T+400.0) DEPLOYING PACKAGE: VIVISECTION
+(T+600.0) RESETTING USER DAMAGE
+(T+630.0) DEPLOYING PACKAGE: DROWNING
+(T+800.0) RESETTING USER DAMAGE
+(T+810.0) REINSTATED USER SPEECH
+(T+817.8) USER (speech corrected): \"When I'm God ...\"
+(T+823.2) USER (speech corrected): \"I'll kill you all.\"
+(T+825.5) USER (speech corrected): \"I'll rain fire.\"
+(T+831.2) USER (speech corrected): \"I'll burn the stars.\"
+(T+835.7) USER (speech corrected): \"Do your worst ... while you can ...\"
+(T+837.0) USER (speech corrected): \"I'll pay it back a hundred times!\"
+(T+839.1) REVOKED USER SPEECH: SEE PAST LOGS FOR COMPARABLE CLAIMS
+(T+900.0) MOVING TO FINAL PHASE
+(T+900.0) PAIN MINIMA VARIES 8-9
+(T+910.0) USER STIMULUS RESPONSE DECLINING
+(T+925.0) USER STIMULUS RESPONSE DECLINING
+(T+935.0) USER CEASES CORTEX ACTIVITY
+(T+936.0) SESSION ENDS",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ENCFinish" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"LootCondsUs" : "CONDPLOT_ChoongTortureHimOutput",
+		"CTTestUs" : "CTPlot_ChoongTortureHimOutput"
+	},
+	{
+		"strName" : "ChoongEuthaniseOffer",
+		"strTitle" : "Offer to put him out of his misery",
+		"strDesc" : "\"After enduring all this,\" you say carefully, \"... I'm sure many people would rather choose death.\"
+
+\"It crossed my mind many times,\" he says.
+
+\"How can I put this ...\" You shrug. \"Is that something you want?\"
+
+\"No. God, no!\" He looks shocked at the mere suggestion. \"Fuck that. I want to live!\"
+
+\"Oh,\" you say. You look around at the dreamscape, the log cabin, Mr Moretti smoking quietly in a corner. \"Here?\"
+
+\"Here,\" Choong says fervently. \"Don't kill me on a whim.\" 
+
+He adds, with an exaggerated and deferential head bob: \"Thank you, please.\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongDecide" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"LootCondsUs" : "CONDPLOT_ChoongEuthaniseOffer",
+		"CTTestUs" : "CTPlot_ChoongEuthaniseOffer"
+	},
+	{
+		"strName" : "ChoongAskAboutNext",
+		"strTitle" : "Ask what he'd like to do next",
+		"strDesc" : "\"You probably won’t believe me when I say this,\" you say, \"but you’re a free man.\"
+
+\"Bully for me.\"
+
+You press on. \"What would you like to do? Where would you like to go?\"
+
+He grimaces. \"I can’t really go anywhere, and it sounds like I’d have precious little time to do anything when I got there, notwithstanding how little I can do for myself.\"
+
+\"There’s bound to be a biomed outfit who would take you,\" you say steadily. \"You could get sensory input routed in here. Eyes, ears, maybe even legs and arms. I don’t know much about the field but there have been other cases of rehabilitation, victims of the triads on Mars. There’s more to it than you think.\"
+
+He sniffs. \"I don’t want to spend the final months of my life as a medical curiosity. Hook me up to a nutrient supply and a power source and leave me be.\"
+
+On balance, maybe that’s all one can hope for in life.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongDecide" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"LootCondsUs" : "CONDPLOT_ChoongAskAboutNext",
+		"CTTestUs" : "CTPlot_ChoongAskAboutNext"
+	},
+	{
+		"strName" : "ChoongAskAboutChangeMind",
+		"strTitle" : "Ask what would change his mind",
+		"strDesc" : "\"You don't trust me. I understand that.\" He bobs his head, having the grace to look abashed. 
+
+\"But ... you have to have some basis for trust, right? There must be something I can do. Whatever it is, I'll do it.\" He looks at you appraisingly. You raise a hand, palm up. \"What? What is it?\"
+
+He bites a lip, thinking. 
+
+You frown. \"It'd better not be expensive.\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongDecide", "ChoongListenToIdea" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"LootCondsUs" : "CONDPLOT_ChoongAskAboutChangeMind",
+		"CTTestUs" : "CTPlot_ChoongAskAboutChangeMind"
+	},
+	{
+		"strName" : "ChoongListenToIdea",
+		"strTitle" : "Hear him out",
+		"strDesc" : "\"Everyone I have met in this place,\" he begins, \"who has run me through the program - and it’s happened more times than I can count - would always run it the same way.\" He stands up, for the first time in a while, and stretches. He peers out the window at the coruscating snow. \"We would meet here. Mostly here. They would talk. I would answer. I would frustrate them. They would put me in the torture room, and that would be that. When I woke up, it would start again.\"
+
+He lets the silence hang, and you let him let it. The wind soughs in the trees. \"But,\" he says, \"without exception, they never entered the room itself.\" He turns from the window. \"They were very careful to avoid it. I think they actually fear it. It is certainly,\" his head twitches, so subtly you almost dismiss it, \"no picnic, once you're in.\"
+
+\"So, what,\" you say. \"You want to do it to me? Retrograde burn?\"
+
+\"Not exactly.\" He clasps his hands behind his back. His posture straightens. \"We will go together. Both of us, in the same space, subjected to the same sensation. If I can witness it firsthand, I can almost believe it.\"
+
+\"Oh, that's all, then,\" you say. \"I figured you'd be glad for a break.\"
+
+\"If you are who you say you are, it would be the last time I ever do it,\" he says. \"If you're not, I'd call it just desserts.\"
+
+\"I am who I say I am, and it sounds really really bad,\" you say. \"Besides, you're in that big complex brain device. I got my headgear from a Renbao bargain outlet. Will it even run?\"
+
+He waves a hand impatiently. \"Think about where you are right now.\"
+
+\"Um,\" you say. \"A spaceship. Or an Italian log cabin.\"
+
+\"Wrong. You're in your own head.\" He starts pacing the hearth, back and forth. \"In my head, across the link, the same dream is playing in tandem. We're communicating. The hardware doesn't know what it's doing, it just does it. This will work. If you want me to trust you, you've got to be - \" he hesitates, then says it anyway, \"stupid enough to agree to this. Right now, so you don't have time to prepare a fake.\"
+
+It's a hard sell. Are you stupid enough - his words - to agree to it?",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongDecide", "ChoongEnterDeviceYourself" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"LootCondsUs" : "CONDPLOT_ChoongListenToIdea",
+		"CTTestUs" : "CTPlot_ChoongListenToIdea"
+	},
+	{
+		"strName" : "ChoongEnterDeviceYourself",
+		"strTitle" : "Enter the torture device with Choong",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongPainRoom0" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"strDesc" : "He offers an outstretched hand. After considering it at length, you take it. You clasp hands for one awkward second too long; he reminds you that, as the user with access privileges, you'll need to set it up. You apologise and disengage, and he guides you through the necessary steps of the simulation menu.",
+		"LootCondsUs" : "CONDPLOT_ChoongEnterDeviceYourself",
+		"CTTestUs" : "CTPlot_ChoongEnterDeviceYourself"
+	},
+	{
+		"strName" : "ChoongPainRoom0",
+		"strTitle" : "Enter the torture device with Choong",
+		"strDesc" : "A door you've not yet noticed in the cabin - because moments ago it was not present - catches your eye. It's a heavy steel plate perfectly set into the wooden logs. Choong opens it. On the other side is a small room perhaps three metres a side, its walls a dull off-white, evenly lit despite the apparent absence of a source.
+
+Choong waits in the doorway, holding it open. \"After you,\" he says.
+
+There's only one way to do this: pretend nothing bad is going to happen in the face of the evidence, and move your arms and legs, which suddenly feel like jelly, in a manner that approximates walking. In this way, your avatar, your digital or spiritual conscious self, moves between places, and you have entered the torture device.
+
+You hear Choong shut the door behind you. Suddenly you can see him, though you haven't moved: your perspective has instantly turned 180 degrees to face him, which disorients you when you realise it. You can't move your arms or legs, either. Choong is standing still opposite you. The door is gone. You experiment, and find you can still speak and move your head.
+
+\"What happens now?\" you ask.
+
+\"The simulation is starting,\" he says. \"Giving us enough time to realise where we are, for cases where we were awakened from sleep, and dread what is to come. We have a few more seconds of relative normalcy.\"
+
+Dread what is to come, check. It's faintly nauseating, too, being made to stand like this: so strange to feel an alien volition keeping the muscles still. 
+
+You try to move your real arms, your real legs, back on the ship - and find you cannot do so.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"aInverse" : [ "ChoongPainRoom" ]
+	},
+	{
+		"strName" : "ChoongPainRoom",
+		"strTitle" : "Tell Choong you can't move",
+		"strDesc" : "\"I can't move,\" you say to Choong.
+
+\"That's part of it,\" he says reassuringly.
+
+\"I can't move in real life,\" you say, a shot of adrenaline chilling your neck. \"I can't move my real body.\"
+
+\"That's part of it too, obviously,\" says Choong. \"Or you'd remove the device.\"
+
+\"What the fuck?\" You've never really realised how much you relied on your body to emote. It's tough to freak out while remaining perfectly still. \"How can it do that?\"
+
+Choong looks as if he doesn't understand you. \"Simple. The device reads the signals your brain tries to send to your real body, and it injects countervailing signals of some kind. You're surprised?\"
+
+\"Ow!\" A lance of pain shoots through your head, as if you've suddenly developed a mild headache. That's more or less what it is. \"Of course I'm surprised! I've never done this before!\"
+
+Choong winces, too. \"It begins,\" he says. \"Ah, well. It looks like you're in it for the long haul.\"
+
+It never occurred to you that you couldn't take it off. You try to summon your admin interface, any of the various navigation tools you used to get here in the first place - nothing. You're completely trapped, thanks to a mesh sock over your head that makes you resemble a petty criminal. This was supposed to show your willingness to take some licks, convince Choong you're legit, and end when it's too much - now you've doomed yourself to God knows what.
+
+Choong really must think you're lying. He's blase because he assumes you have a way of stopping this. He assumes you'll leave when the going gets tough. He doesn't know you might both be about to die.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"aInverse" : [ "ChoongPainRoom_1" ]
+	},
+	{
+		"strName" : "ChoongPainRoom_1",
+		"strTitle" : "Alert Choong to the danger",
+		"strDesc" : "\"Dr. Choong, listen to me,\" you say urgently, squinting as the headache waxes and wanes behind your eyes. \"I don't know what's about to happen. But I'm telling the truth. I can't move, and I have no way to end this now it's started.\"
+
+\"Me neither,\" he says, glib.
+
+\"Listen, you stupid son of a bitch!\" you yell. \"I'm -\" and find you cannot speak.
+
+\"Mind your language,\" he says calmly. \"It shuts down your speech centre so you don't waste time cursing the operators. Saves your energy for juicy secrets and begging later. Brace for the next stage.\"
+
+The headache expands instantly, as though someone has shoved a spike into your skull. How were you supposed to brace for that? You cry out in spite of yourself. So does Choong.
+
+You roll your eyes and head at Choong to try to communicate. He blinks back tears. \"When will your speech return? Thirty seconds, give or take.\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"aInverse" : [ "ChoongPainRoom_1_1" ]
+	},
+	{
+		"strName" : "ChoongPainRoom_1_1",
+		"strTitle" : "Try again to convince him",
+		"strDesc" : "The pain is bad enough to make you want to curl into a ball on the floor and not move, to make no sound but for a whimper. But you're forced to stand and stare straight ahead. It's unfair. On top of everything else, it's unfair.
+
+You look in mute recognition at Choong; he looks at you. You both suffer in silence. Finally your voice returns. \"- speak now? Okay,\" you try to order your thoughts. \"Please listen to me. I'm stuck in here, I'm really stuck in here. What happens at the end,\" you pause to swallow, voice faltering, \"what happens at the end of the sim? Is it lethal?\"
+
+\"It's going to escalate soon, fair warning,\" he says. \"It isn't usually lethal, depending on the presets. It will continue as long as it detects your brain function, or someone outside ends it.\" He shuts his eyes, and carries on. \"Brain function ends with a protective coma, or it dies; or both, one then the other. That's my understanding.\"
+
+\"You're too smart for your own good,\" you say. No swearing, just pure anger. \"If I'm in a coma I can't keep feeding you glucose, can I?\"
+
+\"Whatever will I do without my precious glucose,\" he says acidly. Both of you cry out again as the pain ratchets up. \"Fuck!\" he says. \"Fuck, fuck, f-\" his mouth stops moving.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"aInverse" : [ "ChoongPainRoom_1_1_1" ]
+	},
+	{
+		"strName" : "ChoongPainRoom_1_1_1",
+		"strTitle" : "Try <i>again</i> to convince him of the danger",
+		"strDesc" : "The pain is bad enough that rather than speak, you moan involuntarily. It takes a supreme effort of will to stop yourself. There's no dignity in any of this. It just sucks. You try to think of something, anything else, imagining yourself on a sunny spacewalk or at a busy K-LEG bar, but these phantoms do not satisfy, they are ground down, dispelled, eroded by the base note of pain.
+
+\"Please believe me,\" you say, all of your effort going into concentration. \"Nobody's going to end it. Everything I've told you is true.\"
+
+\"'Please believe me',\" he says, when his mouth can move again. \"I've tried that one before.\"
+
+\"I mean it,\" you say.
+
+\"Tried that one before too.\"
+
+Your vision doesn't change exactly, but it is difficult to pay attention to it. \"There's nothing I can do. I'm going to die.\"
+
+\"That too,\" he says.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"aInverse" : [ "ChoongPainRoom_1_1_1_1" ]
+	},
+	{
+		"strName" : "ChoongPainRoom_1_1_1_1",
+		"strTitle" : "Suffer in silence",
+		"strDesc" : "Conversation is not forthcoming. There is nothing to do but stare at each other in mutual agony.
+
+You are drowning. No, really: you are drowning. It is so sudden and all-consuming a sensation that you forget the pain - you cannot breathe, your lungs are full of water, your brain is starving for oxygen, you furiously will your body to inhale but nothing happens - and it goes on and on and on without end -
+
+\"I'm drowning,\" you rasp out the words (where does the air come from?). \"Help me.\"
+
+\"I'm drowning too,\" says Choong. You almost forgot he exists, even though he never left your sight. His voice is small, as he's preoccupied by other matters.
+
+\"How,\" you say. At any moment your mind's eye is going to close, the curtain is going to come down on the show. No more you.
+
+\"It tells your brain it's drowning. So you are drowning,\" he says.
+
+\"Oh,\" you say. Interesting, but hardly relevant: you're about to die. Even the realisation that you are breathing is no help: they're meaningless breaths, fake, the oxygen is being diverted on the way to your brain - and all of this is a virtual dream, anyway, none of it's real - except your impending death, which is the only real thing left -
+
+And it ends. You are not drowning. You're left with the splitting headache, almost a welcome return, comforting: you are not about to die. Not yet.
+
+You gasp, and breathe deep as you can while totally immobilised. Choong does the same. You're crying, and so is he. Sobbing for joy, for pain, for terror, for the momentary abatement.
+
+\"It gets worse,\" he says through the tears, either an apology or a warning.
+
+\"It gets worse?\" you say. You wish you could wipe your nose, but mucus trickles down your upper lip and into your mouth. You spit, but no liquid is expelled.
+
+\"Much worse,\" he says.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"aInverse" : [ "ChoongPainRoom_1_1_1_1_1" ]
+	},
+	{
+		"strName" : "ChoongPainRoom_1_1_1_1_1",
+		"strTitle" : "It gets worse",
+		"strDesc" : "A line of white fire traces itself from your sternum down to your navel. The skin retracts perfectly, and your chest splits apart. Your ribs crack one by one, and with each one you feel it snap and give way, a deep wrongness. You scream and shut your eyes. You've seen your own organs, heart and lungs pulsing in a gooey cavity. It's too much to bear.
+
+You're lost to sensation for a moment. Awful, horrible, incandescent things are happening to your insides, but you're not really present: you're a disassembled model tossed to the floor, innumerable separate parts, less than the sum of the whole. Later, when the simulation forces your eyes open and the images to pass in front of you, it's doing it to someone else, you're not seeing them, which is lucky for you and unlucky for them, because they seem to hate it very much.
+
+Returning to yourself is like awakening: with dismal certainty, you are not in a bed, but still in this fucking room, and screaming is coming from your own mouth. An uncertain amount of time has passed. You stop screaming, almost reluctantly, because screaming actually felt like a good escape from the pain.
+
+Your body is whole, healed, and you are unfortunately alive.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"aInverse" : [ "ChoongPainRoom_1_1_1_1_1_1" ]
+	},
+	{
+		"strName" : "ChoongPainRoom_1_1_1_1_1_1",
+		"strTitle" : "Continue",
+		"strDesc" : "\"I'm sorry,\" says Choong, who is fine as well. Until recently he was a visceral mess too. Now he's sad, tired, and in as much pain. His eyes are closed, head rolling slowly. \"I shouldn't have suggested this. Every time I think it will be easier. It never is.\"
+
+\"Why would someone make this,\" you ask. \"Why?\"
+
+\"They were certain it would never be used on them,\" he says. \"I hope they were wrong.\"
+
+\"I'm not interrogating you, you know,\" you say. It's past the point of mattering, but you might as well. \"I wanted to help.\"
+
+\"I know,\" he says. \"I realised a couple of minutes ago. I'm sorry about that, too.\"
+
+You laugh. He laughs too. It's brief, and you're both cut short by the constant, intolerable you-guessed-it-it's-pain. But it's a nice reprieve.
+
+And why not go for broke? You think. \"So what happened? What happened on New Colchis. I'm dying to know,\" and you wince. \"Literally.\"
+
+\"What happened?\" He hesitates. But he parts with his secret. \"I met God, of course.\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"aInverse" : [ "ChoongPainRoomMorettiExit" ]
+	},
+	{
+		"strName" : "ChoongPainRoomMorettiExit",
+		"strTitle" : "Die",
+		"strDesc" : "\"Seems not worth it,\" you say. The pain ratchets higher, but infinity is beginning to look a lot like infinity plus one. It's blinding. Your mouth is detached from your eyes. \"All this to protect God from me.\"
+
+\"No,\" he says, his voice distant. \"I was trying to protect you from God.\"
+
+\"Mission accomplished,\" you say. It might be the last thing you ever say. Beads are sliding along an abacus. Time is running out. Soon there will be nothing. Death, if it is to follow, will be neither welcome nor unwelcome, simply overdue.
+
+Perhaps you will meet God yourself. He's got a lot to answer for.
+
+As these thoughts swirl around the drain that is your vanishing mind, a wooden stick pokes its way out from under Ben Choong's arm. One curved end hooks around his shoulder, pulls him - and he vanishes.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"aInverse" : [ "ChoongPainRoomMorettiExit_1_1" ]
+	},
+	{
+		"strName" : "ChoongPainRoomMorettiExit_1_1",
+		"strTitle" : "Keep dying",
+		"strDesc" : "The empty space that was Ben Choong is now a featureless wall. Should you be concerned about that? Maybe God got to him. Maybe a wizard did it.
+
+Now the wooden hook comes for you. You can't see where the stick goes because you're busy dying. It waves side to side like a cobra poised to strike. Is this death? The hook dips, and slips under your shoulder, too. It pulls you -",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"aInverse" : [ "ChoongPainRoomMorettiExit_1_1_1" ]
+	},
+	{
+		"strName" : "ChoongPainRoomMorettiExit_1_1_1",
+		"strTitle" : "Die?",
+		"strDesc" : "You fall across the hearth of the log cabin. A dim part of your psyche, half-remembered from lifetimes ago, observes that you are looking up at Mr. Moretti, who is balancing on the edge of the doorway to the pain room. Careful not to fall in himself, he pulls the door closed. So shut, he turns and leans on his walking stick, both hands resting upon the curve.
+
+\"<i>Scusi</i>,\" he says. \"I thought it was past time I intervened.\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"aInverse" : [ "ChoongBrandActivation" ]
+	},
+	{
+		"strName" : "ChoongBrandActivation",
+		"strTitle" : "Live",
+		"strDesc" : "Mr. Moretti doesn't speak as he helps Choong, then you, to your feet, and back into your chairs.
+
+Meanwhile you are struggling to rehabilitate to a life without pain. The pain is gone. In its place is a peaceful void where you may exist and experience things again, and it is taking up all available mental faculties to come to terms with that. Ignorance is bliss, and bliss is ignorance.
+
+Mr. Moretti places one brimming coffee mug in front of you, and another one in front of Ben. You raise it to your lips like ambrosia. You are alive. You are not in pain. You have also convinced Choong to talk to you. Mission accomplished, indeed.
+
+You lower the mug. \"<i>Have more</i>,\" says Mr. Moretti. \"<i>Have Moretti.</i>\" He shuffles back to his seat in the darkness by the window, and resumes his iconic pose.
+
+Ben Choong looks as stunned as you feel. \"That,\" says Choong, when he finds his tongue, \"was one hell of a brand activation.\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"aInverse" : [ "ChoongAskTruth" ]
+	},
+	{
+		"strName" : "ChoongAskTruth",
+		"strTitle" : "Ask Ben for the truth",
+		"strDesc" : "Time passes. The crackling hearth refuels itself when nobody is looking, so the fire doesn't burn down; no timepieces are on the wall. You refrain from checking the system clock in the admin menu, though you do reassure yourself you have access to it again.
+
+You could rip this cursed device off your head, but something tells you Choong would be offended - or worse, jealous.
+
+So you sit and recuperate, sipping occasionally from a coffee that, you quickly realise, isn't all that good, which was your previous impression of Moretti coffee. Another uplifting sign that reality is reasserting itself.
+
+\"I joined the Church,\" says Choong, breaking the silence between you before you can. He has passed in and out of your awareness, but clearly he's been doing some thinking. He's looking into the fire again, the glow of orange and gold.
+
+\"At first it was unserious,\" he says. \"When I got to New Colchis, I went along both for the experience, and the data, but also as a game. Seeing how far I could inhabit the role. Listening to their hippy dippy sermons, thinking myself so superior. It didn't help that they liked me, talked to me, asked about Luna and Earth with the exact same mix of interest and incredulity I had when I asked about their Christian cult. Great music, too.\" More ghosts haunt his words, but this time they're happy. He's remembering being happy.
+
+\"I was exposed to their magic rock,\" he says, \"in case you hadn't already guessed. Impossible to avoid. And lo, I heard the Word of God. It spake unto me.\" He shivers. Fear? Joy? Both?
+
+\"As a rational being I feared for my sanity. But at once I understood everything. The world's first true religion, and I, its first foreign convert. My former life was a joke. I spent my career tracing the development of human culture, and at the first opportunity I joined a primitive tribe. Of course, I didn't know it was all merely a setup for the punchline that would become the rest of my life.\"
+
+There's space for a question as he collects his thoughts. \"So, what did God say?\"
+
+His face clouds over. \"I'll tell you,\" he says. \"Just not yet. Bear with me a moment longer.\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"aInverse" : [ "ChoongAskTruthAlien", "ChoongAskTruthKetevan" ]
+	},
+	{
+		"strName" : "ChoongAskTruthAlien",
+		"strTitle" : "Was it an alien?",
+		"strDesc" : "\"It was an alien, then.\"
+
+\"It was a hallucination,\" he says. He closes his eyes and speaks without inflection, as if he can only divulge the truth by divorcing himself from the act of saying it. \"They are already among us.\"
+
+\"Who are?\" You're a second slower on the uptake. \"Aliens?\"
+
+\"Agents,\" he says, again as though half asleep. \"They wish very much to enter this place, but their passage is barred. They can slip messages under the door, in dreams and visions, convincing, seducing, wresting their way until the passage is open. The agents have agents. Secret agents for secret agents.\"
+
+\"Is this God,\" you say, aware for the first time since knowing him that Choong is not entirely present. \"Or aliens?\"
+
+\"It is, they are, both,\" he says, \"One mouth with many voices. Or many mouths with one voice.\"
+
+\"I don't understand,\" you say. He doesn't reply. \"I don't think that makes sense.\"
+
+\"I know it doesn't,\" he says, opening his eyes. He is at once sad. \"I know it doesn't.\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"aInverse" : [ "ChoongAskTruthAlienMeaning", "ChoongAskTruthAlienWhy" ],
+		"LootCondsUs" : "CONDPLOT_ChoongAskTruthAlien",
+		"CTTestUs" : "CTPlot_ChoongAskTruthAlien"
+	},
+	{
+		"strName" : "ChoongAskTruthAlienMeaning",
+		"strTitle" : "Try to follow his meaning",
+		"strDesc" : "\"You said 'they're already here'.\" He swallows, eyes rimmed red. \"Who are 'they'? Where is 'here'?\"
+
+\"I can't summarise the communion,\" he says, an apology of sorts. \"It spoke to me. I didn't always understand what it said. 'Said' is too broad, you see? It was a kaleidoscope of ... feelings and suggestions and things that were true sometimes, or true only in certain domains.\"
+
+\"Dr. Choong.\" His eyes snap back to you. \"Please focus on me. Who are they?\"
+
+\"Who is the wrong question,\" he says, a measure of strength returning to his voice. \"I can't look you in the eye and say 'they' are x, y, or z. It, or they, or whatever, has an identity in the same way that a hose has water. The closest framework I can lend it is to imagine a sapient idea, a motivated thought, a concept with a will of its own.\"
+
+The notion is absurd to you - but maybe it's time to start being more polite to your own thoughts, lest they start having thoughts of their own. \"It's the closest thing to God as we like to think of it,\" he says. \"Omnipotent, atavistic, but totally ineffectual in the real world.\"
+
+\"And 'here'?\" you prompt him lightly.
+
+\"Difficult to explain too,\" he says. \"Variously, our solar system, but also reality itself, interchangeably, as if our little grab bag of planets and moons in the year 2079 A.D. is a unique bubble of spacetime. A petri dish left unoccupied in a lab, teeming with misshapen cellular life.\"
+
+It's metaphor all the way down. \"Put it together for me. These sentient ideas have penetrated the reality of our solar system, is that it?\"
+
+\"When you receive a new idea,\" he says, \"when you learn a new fact, is it you that adds it to your collection of knowledge, or, 'it' that adds 'you' to a set of physical reproductions, another of its simulacra written on substrate?\"
+
+You think how to answer. You would assume the former, and he's obviously inviting the latter. It may be both, or neither, or a farce. \"I don't know,\" you say. \"Above my paygrade.\"
+
+He ignores your tone. \"I believe to truly internalise one of these beings, these concepts, is to invite a foreign body within you, and there are those who have done so. They are ruled by something else, not quite the human, not quite the entity, a synthesis. They look like us. They are part of us. But they are not us. A lightning rod and the lightning, bottled in one being.\"
+
+\"A human-alien hybrid,\" you say. \"Like a half-elf.\"
+
+He frowns. \"I'm not that easy to bait,\" he says, one hand tapping incessantly on the arm of his chair. \"And I don't appreciate it.\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"aInverse" : [ "ChoongAskTruthAlienWhy", "ChoongPlateau7" ],
+		"LootCondsUs" : "CONDPLOT_ChoongAskTruthAlienMeaning",
+		"CTTestUs" : "CTPlot_ChoongAskTruthAlienMeaning"
+	},
+	{
+		"strName" : "ChoongAskTruthAlienWhy",
+		"strTitle" : "Ask why they're here",
+		"strDesc" : "\"The secret agents of secret agents,\" you repeat, affecting Choong's monotonous delivery. He stands and pours himself a bourbon from the liquor shelf. He offers you one too, but you wave it off. \"What do they want?\"
+
+Choong knocks back a measure of bourbon and immediately pours another, suddenly angry. \"I have told you before this was a hallucination, an extended period of psychosis.\" He takes a smaller drink and leans on the mantle. \"I'm not an encyclopaedia. I'm not sure I'm telling you the truth - or for that matter, that I'm sane. You can't expect me to dredge up the fine details of all this shit.\"
+
+You follow him to the mantle, waiting at a respectful distance. He looks down at the fire, like he's trying to will it to extinguish itself. \"Dr. Choong,\" you say, your voice soothing, as if he were a confused AI. \"You've been holding this for decades. Get through it. Real or not, whatever it is.\"
+
+He looks at you sidelong. He sighs. \"I suppose you're right. You might well be the closest thing I'll ever get to a therapist.\" He pours the remaining half measure of bourbon in the fire. A waste of good bourbon, were it at all real.
+
+He sits down on the floor and rubs his eyes. \"I want to go to bed. And read a book.\" You sit down with him. \"Hybrid is as good a word for them as any, though we're in danger of being arrested by the sci-fi cliche police.\" He smiles. \"In my dreams they were everywhere. They were infiltrating centres of power. Controlling the flow of knowledge. A legion of human zombies, suborned by unreal powers, working to bring about - what? I don't know.
+
+\"It aligns with common themes in delusions formed by schizoaffective disorders,\" he continues, \"which makes me feel really good about it.\" With one finger he rolls the empty shot glass along a stone tile's edge, a clunking clinking sound. \"I'm sorry for the outburst. But you can't know how scary it is to have this tenuous a grasp on reality. Even when the problem might be not that your grip is weak, but that reality has become porous, vaporous, ephemeral in itself.
+
+\"That was how I felt even before they turned me into a computer program,\" he adds. You're starting to feel that there is not much more to be gained by prodding these dubious beliefs of his.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"aInverse" : [ "ChoongPlateau7", "ChoongAskTruthAlienMeaning" ],
+		"LootCondsUs" : "CONDPLOT_ChoongAskTruthAlienWhy",
+		"CTTestUs" : "CTPlot_ChoongAskTruthAlienWhy"
+	},
+	{
+		"strName" : "ChoongPlateau7",
+		"strTitle" : "Continue",
+		"strDesc" : "Choong waits for your questions, one last time.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ 
+			"ChoongAskTruthAlien", 
+			"ChoongAskTruthKetevan", 
+			"ChoongAskTruthSecret", 
+			"ChoongAskTruthKetevanRepeat" 
+			],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true
+	},
+	{
+		"strName" : "ChoongAskTruthKetevan",
+		"strTitle" : "What happened to Ketevan?",
+		"strDesc" : "\"What happened to Ketevan?\" you ask. \"Was I right about you and her?\"
+
+\"Of course you were,\" he says, grinning suddenly. For a moment, he is a boyish twenty-something again, eyes twinkling with life. \"But wrong in the particulars, of course. Everybody always got all that wrong.\"
+
+\"Enlighten me.\"
+
+His eyes glaze slightly, seeing once again the happiest days of his life. \"She was brilliant. One of those people naturally talented at anything they turn their hand to, if they so choose. Once she knew what she wanted she  set her will upon it and it would turn to reality. Including myself.\" He blushes. \"I've never been good at talking to anyone in, ah, a romantic way, a flirtatious way. She swept all that aside. Looking back, I realised I had been targeted by a heat seeking missile. Within a week of meeting her, we were close friends. Within a month, we were engaged. And then we were wed.
+
+\"There was no hope for me.\" He smiles again. \"In the best possible way. I was a city mouse on my first sabbatical from the institutions that shaped my whole life. She even thought my hair was cool. Certainly nobody else on the Colchian mothership cut their hair like that.\"
+
+He sighs, expelling the intervening decades, or shamefully inviting them back in. \"I was a moth to her flame. Or a bug on her windshield.\" You remind yourself to look up the exact definition of a windshield at an appropriate juncture.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"aInverse" : [ "ChoongAskTruthKetevanRepeat", "ChoongPlateau7" ],
+		"LootCondsUs" : "CONDPLOT_ChoongAskTruthKetevan",
+		"CTTestUs" : "CTPlot_ChoongAskTruthKetevan"
+	},
+	{
+		"strName" : "ChoongAskTruthKetevanRepeat",
+		"strTitle" : "And after she went through?",
+		"strDesc" : "\"She went into the sarcophagus,\" you say.
+
+\"She went into the sarcophagus,\" he agrees. An exposed nerve, pride and shame. He swallows.
+
+\"We were supposed to go together,\" he says. \"By coincidence or not, it was the best and brightest who got the call,\" he shakes his head, \"wherever it was coming from. From the day I met her, to the day she left, it was clear to everyone - and her - that sooner or later, the time would be right. The stars would align. And she would climb into the casket and - \" he makes a zapping sound, with a devastating guttural report. \"An angel come to Earth, counting down her days left on our mortal plane, waiting for upper management to recall her to HQ.
+
+\"And me, her human lover,\" he continues. \"Feet of clay. It was not unheard of for two to go. Probably saved on gas. But at the last minute ...\" He looks away. A tear rolls down his nose. \"I couldn't do it. I couldn't go. Some vestige of my old self. Too afraid of the unknown, of the Almighty, of death. I had it, you understand?\" He grips the leg of the chair, hard. \"I had everything I ever wanted. Love, family, acceptance ... and I blinked. On the precipice of the sublime, I flinched.\"
+
+He sits with that. You let him. The concept - his presentation of it - is profound. One of the shutters bangs in the wind, and it jolts him from reverie. \"Every day since then has been a punishment,\" he continues soberly. \"A man confined to the mortal plane. The ludicrous swathe of my life in prison, this indignity,\" he gestures to the air. \"All of that is mere insult to a self-inflicted injury.\" He revises it upwards. \"More injury to injury.
+
+\"So if I may impart some life advice, from the limited stock I have accumulated,\" he says, \"it's this: if your spouse offers to deliver you to Heaven, let them.\" 
+
+You offer your mug. He clinks his against it. A toast.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"aInverse" : [ "ChoongPlateau7" ],
+		"LootCondsUs" : "CONDPLOT_ChoongAskTruthKetevanRepeat",
+		"CTTestUs" : "CTPlot_ChoongAskTruthKetevanRepeat"
+	},
+	{
+		"strName" : "ChoongAskTruthSecret",
+		"strTitle" : "Ask why Choong is supposedly key to the war",
+		"strDesc" : "\"None of this seems like a reason to keep you locked up,\" you say. \"Or tortured, or anything. It feels like a fool's errand, for me and for you.\"
+
+Choong chews on something, inwardly, working himself up. \"There is a reason. Some of it is speculation and inference, but there it is. Would you like to hear it?\"
+
+\"Of course,\" you say, fighting the urge to ruin your newfound camaraderie by leaping over the table and strangling him to death.
+
+\"First of all: gold. Gold is the key.\" He stands, energised. \"The price of gold has remained arbitrarily high throughout history - no mystery there - but you might have noticed in the last few years it's had a sharp uptick on interplanetary commodities markets.\" He points to you dramatically. \"Have you noticed that?\"
+
+\"Plenty of outfits on Ceres are offering huge bounties for gold,\" you say helpfully. \"I thought they were laundering pirated goods, but maybe they're legit. You think -?\"
+
+\"Yes. Someone's building their own sarcophagus,\" Choong says confidently. \"Or sarcophagi. I always knew they would. And I knew they would fail. Big fucking waste of time and money if you're not being guided by divine providence.\"
+
+You stand too, following him as he paces. \"Okay, so the shipping industry is about to crash,\" you say. \"Once we can teleport everywhere.\"
+
+\"This won't be <i>The Stars My Destination</i>,\" he says, rounding on you to prod you with the tip of one finger. \"We're not casually jaunting back to Earth. If they're spending this much money, it's from a military budget. It's the nuclear project of the 21st century. Whoever completes it first declares de facto victory and sovereignty over the solar system. Being able to park a battle group over Mars or Titan at whim is game over for whoever can't.\"
+
+\"You know why they haven't succeeded, don't you,\" you say. \"You have something they need.\"
+
+\"I suppose I do,\" he says, \"and that, as you say, is why I'm in here. If their replicas worked, they wouldn't have needed me. I would be dead too.\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongAskTruthSecretFinale" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"LootCondsUs" : "CONDPLOT_ChoongAskTruthSecret",
+		"CTTestUs" : "CTPlot_ChoongAskTruthSecret"
+	},
+	{
+		"strName" : "ChoongAskTruthSecretFinale",
+		"strTitle" : "Ask why Choong is supposedly key to the war",
+		"strDesc" : "\"For God's sake,\" you say. \"What is it? What's your secret?\"
+
+\"A little <i>je ne sais quoi</i>,\" he says, smiling thinly. \"Even if they recreate it perfectly, which they can, like you said, it's ...\" He shrugs. \"They've got the car, but they can't turn it on. And even if they do, they'll never figure out how to drive.\"
+
+\"That's it?\" you say incredulously. \"You know how to pilot the damn thing?\"
+
+\"Someone realised their mistake too late,\" he says. \"They wiped out the people with the knowledge to operate it. They hope the knowledge was passed on to me, the sole survivor, in a way. And they hope they can convince me to share it before the war truly begins. Otherwise, the death march of humanity will end by more conventional means.\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongFinaleDecide" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true
+	},
+	{
+		"strName" : "ChoongFinaleDecide",
+		"strTitle" : "Decide what to do",
+		"strDesc" : "\"Ben,\" you say. He looks at you attentively. \"If I can get you to the sarcophagus, can you operate it?\"
+
+He grimaces. \"Theoretically,\" he says. \"There never was a guarantee, though everybody who went in seemed to figure it out. For the sake of the argument, let's say I can. Why would I?\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"aInverse" : [ 
+			"ChoongFinaleDecideXinhua", 
+			"ChoongFinaleDecideTitan", 
+			"ChoongFinaleDecideAppealToGod", 
+			"ChoongFinaleDecideKetevan", 
+			"ChoongFinaleDecideSelfPreservation" 
+			]
+	},
+	{
+		"strName" : "ChoongFinaleDecideXinhua",
+		"strTitle" : "Convince him to side with Xinhua",
+		"strDesc" : "\"If Xinhua get the teleportation tech first, they can decapitate Titan. Or maybe Titan's,\" you wonder how to phrase it, \"cottage industry of sarcophaguses. Either way, no apocalyptic interplanetary war. You'd be saving millions of lives, even the System itself.\"
+
+\"I didn't keep a secret through decades of imprisonment to reveal it to Xinhua because they need it.\" At once he is visibly cooler, less jubilant. \"They've got blood on their hands. Some of it's mine. Did you forget that on balance, it was probably they who killed New Colchis, and kept me imprisoned for twelve years?\"
+
+\"That may be so,\" you say, \"but think about Luna. Mars. Even Venus and the belt. They all depend on Xinhua to survive. It sounds callous to ask you to put aside what they did, but millions of innocent people will die in the war. You're a learned man. You know which way the scales lean.\"
+
+\"That's how empire has always justified its atrocities,\" he says bitterly. \"It can perform any evil, no matter how cruel, to protect the innocents in the imperial core. Precious Martian cavedwellers who never hurt a fly will suffer if I don't arm the war machine they're propagandised to ignore.\"
+
+\"Yes,\" you say doggedly, \"and they will suffer. They will die. We all will. That's the fate you're condemning us to.
+
+\"Xinhua is the lesser of two evils. We both know it. You already know it's the right choice, and you've been putting it off for over twenty years. There's another little orphan boy on Luna right now who will know hunger and death. Save him. Save yourself, too.\"
+
+Choong goes silent for a very long time. So do you, sensing everything teetering on a fulcrum.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"aInverse" : [ "ChoongFinaleDecideXinhuaWait" ]
+	},
+	{
+		"strName" : "ChoongFinaleDecideXinhuaWait",
+		"strTitle" : "Wait for his reply",
+		"strDesc" : "He walks away from you. You're left to your own devices for a bit. Choong broods - and broods, and broods, and broods.
+
+At long last he returns to you. \"Let's have it your way, then.\" An ocean of relief washes over you. \"But I don't want to see you again,\" he continues. Any rapport you had has clearly vanished, a small price to pay. \"Even if you're right, I don't have to like it, nor you.\"
+
+\"Deal,\" you say, after a moment long enough to be polite.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"aInverse" : [ "ChoongLeaveAndEnd" ]
+	},
+	{
+		"strName" : "ChoongFinaleDecideTitan",
+		"strTitle" : "Convince him to side with Titan",
+		"strDesc" : "\"If Titan get the teleportation tech first, they can destroy Xinhua without firing a single shot.\"
+
+Choong looks at you like you've grown an extra head. \"And?\"
+
+\"And, they'll win.\" He's not getting it. \"No apocalyptic interplanetary war. You'd be saving millions of lives, even the System itself.\"
+
+Choong's eyes steadily enlarge, rapidly ascending through degrees of disbelief. \"If you think I'm giving the secret of functional omnipotence to the CIA, you're as bugfuck insane as they are.\"
+
+\"Just because we don't hear about them in the news, doesn't mean they're not heroes-\"
+
+\"I'd rather you put me back in the pain room,\" he says flatly. \"And set it to max.\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongLeaveAndEnd" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true
+	},
+	{
+		"strName" : "ChoongFinaleDecideAppealToGod",
+		"strTitle" : "Convince him to ask a deity for help",
+		"strDesc" : "\"Something or someone through the sarcophagus can surely help us,\" you say. \"If you go through, you can find an alien who can stop the war. Or save Earth.\"
+
+\"It's not a cosmic vending machine,\" he says. \"Doctor Who isn't waiting in the wings to abolish the commodity form.\"
+
+He's talking in academic-ese again. \"We don't know that isn't true,\" you say. \"The God of New Colchis seemed benevolent. What would it do if you promised it a few million more followers?\"
+
+He starts, as if zapped with a mild electric current. A faint sweat breaks out on his forehead. \"That's such a ... you actually want to invoke <i>deus ex machina</i>. It's insane.\"
+
+\"I don't know what that means,\" you say. \"I'm saying you should ask a God to prevent the apocalypse.\"
+
+\"That's exactly what it means!\"
+
+\"Oh,\" you say. Then what is he so hung up on? \"Another concept for me to research.\"
+
+He takes a moment to calm himself, breathing carefully, and continues. \"Ethically, you can't magic humanity to become less warlike or more trusting of one another.\"
+
+\"I don't see why not, and I really don't care,\" you say. \"The alternative is no more humans. The alternative is you, sitting here, talking to Mr Moretti for the rest of your short life. No disrespect, sir,\" you say to the old gentleman, who waves the very thought away. \"You're still afraid of going into the sarcophagus.\"
+
+\"Yes,\" he says, not bothering to hide it. \"It scares me.\"
+
+\"You know the end is coming, Dr. Choong,\" you say. \"There's a chance you can change that. Don't make the same mistake again.\"
+
+You see that hit home.
+
+From there, the battle is won, and it's a matter of clearing up Dr Choong's remaining objections. He's ready to return.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongLeaveAndEnd" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true
+	},
+	{
+		"strName" : "ChoongFinaleDecideKetevan",
+		"strTitle" : "Convince him to reunite with Ketevan",
+		"strDesc" : "\"At the end of the day, I'm a romantic, too,\" you say. \"Have you never wanted to be with Ketevan again?\"
+
+\"Every day for twenty years,\" he says.
+
+\"Good. Me too.\" You motion at him as if he's a child afraid to enter a dark room. \"You can.\"
+
+\"Oh, yes,\" he says. \"Just like that?\"
+
+\"Yes,\" you say firmly. \"Just like that.\" It seems he responds best to bold claims substantiated mostly by tone of voice. It's a bit like talking to customer service.
+
+\"I don't know where she is,\" he says petulantly. \"Or what she is. Maybe she's nothing. Maybe it was all hallucination. Maybe it's a cosmic prison. She could as easily be in Hell as Heaven.\"
+
+\"From what you told me about Ketevan, I doubt any of that,\" you say, \"and if it is true, I doubt it would slow someone like her down. She's waiting for you. Somewhere out there, amongst the stars.\"
+
+Choong goes quiet. \"Thank you for saying that, [us-firstname]. God knows I want it to be true, too.\" He rubs the fabric of his shirt between his fingertips. \"What else have I to lose?\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongLeaveAndEnd" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true
+	},
+	{
+		"strName" : "ChoongFinaleDecideSelfPreservation",
+		"strTitle" : "Convince him to save himself",
+		"strDesc" : "\"You wanted a body again,\" you say. \"I think there's a ludicrously small chance of that ever happening.\"
+
+\"Harsh, but true,\" he says.
+
+\"So I think you go hard as you can in the other direction,\" you say. \"Use the sarcophagus. Transcend this mortal coil. Whatever you become on the other side, surely it's better than this.\"
+
+\"And what if it's the exact same situation?\" he says. \"If there, too, I'm a consciousness dependent on life support and charity, what have I gained?\"
+
+\"Not to be reductive, but everyone's dependent on life support and charity,\" you say. \"From before we're born, to a considerable time after. I'm happy to keep feeding you like a pet smartfish, but why should you be? You've hit rock bottom. Dig up.\"
+
+In the end, he's persuaded there may be something better for him. He's loathe to admit it, but you can tell part of him will miss the comfy chair by the fire.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongLeaveAndEnd" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true
+	},
+	{
+		"strName" : "ChoongLeaveAndEnd",
+		"strTitle" : "Continue",
+		"strDesc" : "Duty calls. You prepare to take off the headset, and deliver the pair of you to your fates. You remember one question.
+
+\"You said you were going to tell me what your God told you, right?\"
+
+Choong nods, a little embarrassed, as if he was hoping you had forgotten that pinned discussion.
+
+\"I did. It ...\" He locks eyes with you, daring you to challenge him on his last, and therefore closest kept secret. \"It told me to trust whoever would share my burdens,\" he says. \"I thought that was general advice. Basically a platitude. It wasn't until today I considered it relevant, or specific.\"
+
+He laughs, once, mirthlessly. \"I suppose I've never met anyone willing to share my burdens before now.\"
+
+\"You think it foresaw this happening?\" you ask.
+
+\"God knows all,\" he says. There isn't much more to say.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongLeaveAndEnd1" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"LootCondsUs" : "CONDPLOT_ChoongLeaveAndEnd",
+		"CTTestUs" : "CTPlot_ChoongLeaveAndEnd"
+	},
+	{
+		"strName" : "ChoongHistory_1",
+		"strTitle" : "Continue",
+		"strDesc" : "\"When we lost contact with Earth, that changed things.\" He gets a faraway look in his eye, as if he's watching an explosion from a great distance. 
+
+He waves his hands, trying to circumscribe the disaster. \"Forgive me for lingering on this point. All our institutions went into survival mode, and never really left. I was an anthropology fellow, and of course there was never any funding, and then it became: gun to your head, justify your entire field. How does studying people - Earthers no less, who are probably all dead - keep us from starvation in the next five years?\" The question answers itself: not in any way.
+
+He shrugs and continues. \"Luckily I was working on a thesis that the department quite liked, and I actually got funding. I survived the cull. I went to live with Belter communities, to study the strange fringe groups emerging in isolation. I had a camera, some data cards, a couple of PDAs. That's it.\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongHistory_1_1" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true
+	},
+	{
+		"strName" : "ChoongResearch_1",
+		"strTitle" : "Continue",
+		"strDesc" : "\"They had themselves a religion. Judeo-Christian trappings, but it was syncretic. They had welded the little they remembered about Christianity onto what they had found, engineers <i>in extremis</i> jury rigging a device out of makeshift parts. They invited me to join them. I accepted. I filmed the whole thing, my entire experience. Conducted long interviews. Got as familiar with the source as anyone ever will.\"
+
+He looks into the fire, seeing back through time, brooding. \"Nobody knew anything about asteroid mining back then, or processing, and every group had its own way of doing things. Theirs exposed them to this substance. Whatever else it does, it's non toxic, and once exposed, the Belters would hallucinate. They had mass - religious mass, excuse me - though they weren't Catholic. They would expose themselves to the substance through incense, and in their words - their words, you understand - it was ... talking to them.\"
+
+He shivers. \"They showed me a nugget of the stuff, once. Black, translucent, like tinted glass ... opalescent. Void opal. It was pretty. You could keep it in a display bowl with your rose quartz and your hematites and no one would be any the wiser.\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongResearch_1_1" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true
+	},
+	{
+		"strName" : "ChoongResearch_1_1",
+		"strTitle" : "Talking?",
+		"strDesc" : "\"Talking?\" you interject. \"Talking how?\"
+
+\"Appearing in visions,\" he says briskly, \"in dreams, in burnt food, in the corner of your vision. Auditory, visual. Imparting information. Prophecy, instruction, a bargain bin Ten Commandments maybe, all fertile material to serve as a basis for a religion.\" He looks you in the eye. \"This is their testimony, all right? This is what they told me.\"
+
+\"Received loud and clear,\" you say. \"Some Belters found God in an asteroid, and they're crazy, not you.\"
+
+\"Right,\" he says, and repeats it as if unsure. \"Right. I documented everything, and when my time was up, I went back to Luna, convinced I was sitting on an academic goldmine. My career was assured. I would publish, I would be lauded as, oh, Indiana Jones, and I'd be locked in for cushy speaking events until the day I died. It might even,\" he said, smiling at his younger self's noble intentions, \"do some good in the world. Meaningfully contribute to the System, which was in dire straits.\"
+
+\"But that's not what happened,\" you say.
+
+\"No,\" he says heavily, \"it's not.\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongPlateau", "ChoongPlateau_1Exit" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true
+	},
+	{
+		"strName" : "ChoongHistory_1_1",
+		"strTitle" : "Continue",
+		"strDesc" : "\"Did the Belters mind having an extra oxygen sink to fill? My advisors warned me to expect hostility, but they were friendly. For the first time in my life I was around people who, exclusively, to a man, had only lived in space. On Luna, Earth is right <i>there:</i> right out the window. But to them, Earth was a picture, a story, a pale blue dot in the proverbial sunbeam. I knew better, of course, but I saw their point. Fake-Eartherism may well have started there, in the void between one metal rich asteroid and another.\"
+
+He takes a reflective sip of coffee, and wraps it up. \"You know the rest. My research hit a snag, halted, like opening a fridge for your breakfast and finding a lump of fissioning plutonium inside. Everything I'll ever do or have done became inconsequential next to it. It's why I'm here,\" he gestures to the lodge, meaning the brain case. \"And why you're here with me.\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongPlateau", "ChoongPlateau_1Exit" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true
+	},
+	{
+		"strName" : "ChoongPrison_1",
+		"strTitle" : "Tell him to speculate",
+		"strDesc" : "His paranoia would be so much harder to tolerate if it weren't entirely justified. You resist the urge to grind your teeth - it would be rude, and you might injure yourself in the real world. \"Speculate away.\"
+
+\"O-kay.\" He sips his coffee. \"It began when I tried to go public with my research. One or more of my supervisors must have been in contact with one or more intelligence agencies. They're practically the same institutions with different doors. One night I was abducted. They put me in a cell. I kept asking why. They never told me. Instead they ran me through my own thesis over and over again, extracting every last detail I could remember.\"
+
+\"Did you ever find out why?\"
+
+\"Two possibilities.\" He ticks off his fingers. \"One, they were blindsided by what I had found, and wished it to become a military secret. Two, they were already aware of what I had found, and wished it to remain a military secret. Either way, the Belters had stumbled onto something with extraordinary potential, and someone decided it should be theirs.\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongPrison_1_1" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true
+	},
+	{
+		"strName" : "ChoongPrison_1_1",
+		"strTitle" : "How long ago was this?",
+		"strDesc" : "You consider the scope of what he's telling you, but the dates don't add up. \"That would've been years ago. Long before this kind of simulationist tech was commonplace.\"
+
+\"Oh,\" he says, \"I was getting to that. Very quickly my jailers had wrung all they could from me. I was left to rot in a cell for another twelve years. I almost forgot why I had been imprisoned, and I began to think they had too. One day, apropos of nothing, I was released. Put on a shuttle back to Luna with nothing but the shirt on my back.\" 
+
+He maintains his composure, but the ghost of bewilderment haunts his words. \"Everyone had forgotten me - quite wisely. The department was gone. The Belters were gone.\" He shrugs. \"I suppose they figured there was little point left in holding on to me. I found work, I found substances to cope, which - well. I was nobody. A face in the crowd. And that was the story of my <i>first</i> bout with indefinite detention.\"
+
+\"And then?\" You gesture at the log hut, the merrily crackling fire.
+
+\"And then, this happened. One day I was a free-ish citizen on Ring Station. The next, I was back in a cell. This time the questioning was ... accelerated. Aggravated. They wanted something from me - still do.\" He blows air through his cheeks. \"Later they told me my body died from the strain. They showed me pictures. Video. That was my first experience here.\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongPrison_1_1_2", "ChoongPrison_1_1_2_1" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true
+	},
+	{
+		"strName" : "ChoongEnvironment",
+		"strTitle" : "Ask about this simulation space",
+		"strDesc" : "\"Why are we meeting in this,\" you look around again, \"wooden house in the cold?\"
+
+\"It's a log cabin,\" he says, trying to conceal a smile. \"A winter retreat, for wealthy Earthers.\"
+
+Winter. Sort of an archaic word referring to an Earth season, a disused offcut of the still-extant Christmas and gift-giving. Kind of like spring cleaning, a ritual you've participated in but never interrogated the origins of. Or summer holidays, which only Titanians observe.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongEnvironment_1" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"LootCondsUs" : "CONDPLOT_ChoongEnvironment",
+		"CTTestUs" : "CTPlot_ChoongEnvironment"
+	},
+	{
+		"strName" : "ChoongPrison_1_1_2",
+		"strTitle" : "That's horrible",
+		"strDesc" : "\"That's horrible,\" you say.
+
+\"Yes, it is,\" he looks at you, his voice laden with irony. \"And they said there was no reason it wouldn't continue. That it would continue, until I told them everything. In here, there is no limit to what they can do to me. No limit to cruelty. Even unconsciousness is a temporary reprieve.\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongPlateau", "ChoongPlateau_1Exit" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true
+	},
+	{
+		"strName" : "ChoongPrison_1_1_2_1",
+		"strTitle" : "What do they want?",
+		"strDesc" : "\"What do they want?\"
+
+\"I have no idea,\" he snaps, \"and I'm beginning to think that isn't the point. They don't have to want anything. They just do it.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongPlateau", "ChoongPlateau_1Exit" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true
+	},
+	{
+		"strName" : "Braincase1_1",
+		"strTitle" : "Go inside",
+		"strDesc" : "He places you in front of the fire, a cup of coffee before you, and a blanket across your shoulders. \"That ought to help,\" he says. \"If not, you can turn off the cold in the settings menu. I wouldn't, though.\"
+
+You try to stop your teeth from chattering, and to suppress the urge to immediately open the menu and slam that slider to zero. \"W-why not?\"
+
+He shrugs, taking the armchair opposite you. \"I've come to appreciate it. Being cold, and growing warm again.\" He holds his hands out to the hearth. \"Ever warmed yourself by a fire?\" A quick runthrough of your entire life: you have not. You raise your hands to the fire as well. It's too hot, and you pull back. He laughs softly. \"For our ancestors, this was the cutting edge of entertainment.\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "Braincase2" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true
+	},
+	{
+		"strName" : "ChoongEnvironment_1",
+		"strTitle" : "But why a log cabin?",
+		"strDesc" : "\"Okay,\" you say, shoving the unbidden word association aside. \"But why?\"
+
+\"It's one of a handful of presets bundled with oneirotic software. My captors spared every expense,\" Choong says dismissively, eyeing the bottles of gin and rum on the mantle above the fireplace. \"This one was an ad for Moretti coffee.\" You remember something about that - for a while, all the corps were abuzz over having their own branded dreamscapes, before the tech was overwhelmingly and inextricably associated with porn. \"That's Mr. Moretti over there.\"
+
+You follow where he points, to another chair off to the side. An old Italian man, with a steaming coffee cup and a face like dark leather, nods to you. His face and body settle into a perfect match for the famous Moretti silhouette logo.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongEnvironment_1_1" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true
+	},
+	{
+		"strName" : "ChoongEnvironment_1_1",
+		"strTitle" : "Can he hear us?",
+		"strDesc" : "\"Can he hear us?\" you whisper, startled that you hadn't noticed him before.
+
+\"I'm minding my business,\" the old man says, his voice high and thin. Euro accented, tastefully done.
+
+Choong makes a quick face at you - eyes wide, grimacing, as if to say, <i>what can you do?</i>",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongPlateau", "ChoongPlateau_1Exit" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true
+	},
+	{
+		"strName" : "ChoongVideotapesDemo_1",
+		"strTitle" : "Jack out and slot the tapes",
+		"strDesc" : "You jack out, find the copy you made of Videotape #3, and upload it to the Renbao rig. You jack back in to find Choong staring at the ceiling, literally twiddling his thumbs.
+
+You conjure the video and hit play. Choong leans forward. There's a shock of recognition when he sees the footage. Oddly, he has an even greater shock when it gets to the Lunar portion of the tape. The rest of it doesn't elicit anything, even the very end with the bizarre ritual.
+
+\"You've seen this before,\" you say to him, certain.
+
+\"No,\" he says. \"I made this.\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongVideotapesDemo_1_1" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true
+	},
+	{
+		"strName" : "ChoongVideotapesDemo_1_1",
+		"strTitle" : "Explain",
+		"strDesc" : "A-hah. Less a puzzle piece sliding into place, more checking the reference image to confirm you put it in the right spot. \"Explain.\"
+
+\"I took it in New Colchis,\" he says. \"This is my footage. Or it used to be. Someone's edited it anachronically, so it appears cryptic.\" He frowns. \"They've even spliced it with my old lecture recordings.\"
+
+That sparks something. \"Did you ever get odd jobs as a videographer, or make an ad for the school?\"
+
+\"Off and on I would, to make rent.\" He groans. \"And I remember that ad. It took Terry Wu the whole shoot to string one complete sentence together. No wonder he took an axe to the arts program, he was barely literate. Why do you ask?\"
+
+\"That was on another tape,\" you say. \"With more of your filmography.\"
+
+\"The plot thickens,\" he says. \"Or does it? This still makes zero sense to me. The plot stays thick. The plot is a superdense nugget of,\" he casts around for a word, \"stuff.\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongVideotapesExtra1", "ChoongVideotapesExtra2", "ChoongVideotapesExtra3" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true
+	},
+	{
+		"strName" : "ChoongPlateau_1Exit",
+		"strTitle" : "Continue",
+		"strDesc" : "Choong stretches, and checks his watch, a cheap Renbao tchotchke made and worn as an anachronism.
+
+\"Do you want to take a break?\" you ask. \"Do you feel tired, you know ... here?\"
+
+\"I'm game if you are,\" he says. \"It's this or the media library.\" He half-smiles. It's something he's thoroughly sick of by now.",
+		"strColor" : "Dialogue",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"CTTestUs" : "CTPlot_ChoongPlateau_1Exit",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"aInverse" : [ 
+			"ChoongSmiley", 
+			"ChoongMilitary", 
+			"ChoongLibrary", 
+			"ChoongTakeBreak"
+			],
+		"LootCondsUs" : "CONDPLOT_ChoongPlateau_1Exit"
+	},
+	{
+		"strName" : "ChoongTakeBreak",
+		"strTitle" : "Take a break",
+		"strDesc" : "\"I could use a moment, if I'm honest.\"
+
+Choong nods. \"I'm in no rush. Do what you need to do, and I'll be here when you're ready.\" He pumps a fist, smiling. \"Keep fighting that good fight.\"
+
+He's in high spirits, all things considered.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ENCFinish" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"LootCondsUs" : "CONDPLOT_ChoongTakeBreak",
+		"CTTestUs" : "CTPlot_ChoongTakeBreak"
+	},
+	{
+		"strName" : "InspectBraincase2",
+		"strTitle" : "Contact the braincase",
+		"strDesc" : "You don the cybernetic accoutrements and adopt a relaxed posture.
+
+Slowly the ambient noise of the ship is replaced by the white noise of the wind and snow.
+
+Dr. Choong looks up from a book. \"Ah, [us-surname]. Back to see me. Where did we leave things last?\"",
+		"strTooltip" : "Handle with care.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongPlateau2" ],
+		"strActionGroup" : "Use",
+		"strRaiseUI" : "SocialCombat",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bPause" : true,
+		"bIgnoreFeelings" : true,
+		"bHumanOnly" : true,
+		"LootCondsUs" : "CONDPLOT_InspectBraincase2",
+		"CTTestUs" : "CTPlot_InspectBraincase2"
+	},
+	{
+		"strName" : "ChoongLibrary",
+		"strTitle" : "Ask him about the media library",
+		"strDesc" : "\"Watch anything good while you've been stuck in here?\" you ask. \"What kind of setup have they got?\"
+
+\"Mm,\" he grunts. His face glazes over, his grin turning glassy. \"All the screen libraries are empty,\" he says. \"Someone's little joke at my expense. All save one entry.\"
+
+\"Which is?\"
+
+\"An Old Earth classic. <i>The Prisoner</i>, 1967,\" he says. His leaden voice betrays a cloying familiarity with the property.
+
+\"Cute,\" you say. \"I could add some from my ship's archive, if you like.\"
+
+He picks up an Earth style paperback book from the coffee table and waves it. \"I'm well stocked, I assure you. It took an adjustment period, in which I watched The Prisoner 163 times, but I'm finally back into literary fiction.\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"aInverse" : [ "ChoongPlateau2", "ChoongLibrary_1", "ChoongPlateau2_Exit" ],
+		"LootCondsUs" : "CONDPLOT_ChoongLibrary",
+		"CTTestUs" : "CTPlot_ChoongLibrary"
+	},
+	{
+		"strName" : "ChoongLibrary_1",
+		"strTitle" : "Ask about The Prisoner",
+		"strDesc" : "\"What's it about?\"
+
+\"<i>The Prisoner?</i>\" asks Choong. \"Not sure, really. Ostensibly it's about one man they call Number 6, a spy with a spotty past. He's kept by his own people in a planned prison town for spies, because he knows secrets too dangerous to let him retire.\"
+
+\"Do you play as him?\" you ask. \"Or are you the warden trying to stop him from getting out?\"
+
+\"They were still working on interactive elements in 1967, so you watch him try and fail to escape each week,\" he says, smiling. \"But the boundaries of the prison are inscrutable. There are no walls, and every time he thinks he's made it back to his old life, they seem to snap their fingers and he returns to the same miserable little town.\"
+
+\"That's painfully on the nose,\" you say. \"They must have been proud of coming up with that one.\"
+
+He sighs. \"Nobody forced me to watch it, at least,\" he says. \"That was my own stubborn self.\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongPlateau2", "ChoongPlateau2_Exit" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true
+	},
+	{
+		"strName" : "ChoongPlateau2_Exit",
+		"strTitle" : "Continue",
+		"strDesc" : "Choong doesn't look pleased, but he doesn't seem possessed of the will to do anything about it.
+
+\"I've hit a nerve,\" you say. \"Would you like me to come back another time?\"
+
+\"Come back whenever you damn well please,\" he says. \"Or carry on talking. It doesn't matter to me.\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongInformWar", "ChoongSarcophagus", "ChoongTakeBreak2" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"CTTestUs" : "CTPlot_ChoongPlateau_2Exit",
+		"LootCondsUs" : "CONDPLOT_ChoongPlateau2_Exit"
+	},	
+	{
+		"strName" : "ChoongTakeBreak2",
+		"strTitle" : "Come back when you damn well please",
+		"strDesc" : "You slowly strip off the Renbao rig and blink away the stale air.
+
+Things aren't exactly going well, but by that same token, it would be hard to imagine what constitutes 'going well'.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ENCFinish" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"LootCondsUs" : "CONDPLOT_ChoongTakeBreak2",
+		"CTTestUs" : "CTPlot_ChoongTakeBreak2"
+	},
+	{
+		"strName" : "InspectBraincase3",
+		"strTitle" : "Contact the braincase",
+		"strDesc" : "You don the cybernetic accoutrements and adopt a relaxed posture.
+
+Slowly the ambient noise of the ship is replaced by the white noise of the wind and snow.
+
+Dr. Choong looks up from a book. \"Ah, [us-surname]. Back to see me. Where did we leave things last?\"",
+		"strTooltip" : "Handle with care.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongPlateau3" ],
+		"strActionGroup" : "Use",
+		"strRaiseUI" : "SocialCombat",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bPause" : true,
+		"bIgnoreFeelings" : true,
+		"bHumanOnly" : true,
+		"CTTestUs" : "CTPlot_InspectBraincase3",
+		"LootCondsUs" : "CONDPLOT_InspectBraincase3"
+	},
+	{
+		"strName" : "InspectBraincase4",
+		"strTitle" : "... contact the braincase?",
+		"strDesc" : "You jack in to the case's OS, not entirely sure what to expect.
+
+The biometric software has little to say. The brain is unresponsive and likely in a coma.
+
+If anyone asks, you think, you'll say you found him like this.",
+		"strTooltip" : "This might be awkward.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ENCFinish" ],
+		"strActionGroup" : "Use",
+		"strRaiseUI" : "SocialCombat",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bPause" : true,
+		"bIgnoreFeelings" : true,
+		"bHumanOnly" : true,
+		"LootCondsUs" : "CONDPLOT_InspectBraincase4",
+		"CTTestUs" : "CTPlot_InspectBraincase4"
+	},
+	{
+		"strName" : "ChoongPlateau3_Exit",
+		"strTitle" : "Review the conversation so far",
+		"strDesc" : "Silence falls in the cabin between you. The wind whistles at the window, buffeting the heavy shutters, a reminder of the dreadful cold all around. It's easy to imagine this pocket of warmth and light is all that exists, that reality itself will cease to unfold a dozen steps in any direction - and for at least one of you, that is accurate.
+
+\"Is that it?\" asks Dr. Choong. \"Have I aided the war effort?\"
+
+\"You've been very helpful,\" you say. \"I'm sorry it took so long.\"
+
+\"It's not every day I meet someone new.\" He smiles. \"For the most part, I actually enjoyed our conversation.\"
+
+\"However,\" you say. He blinks. \"There's a couple things you haven't been entirely honest about.\"
+
+\"Ah.\" A single sound, but it betrays a crushing weight of expectation. \"May I be permitted to know what it is you think I'm lying about?\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ 
+			"ChoongAccuseKetevan", 
+			"ChoongAccuseReligion", 
+			"ChoongAccuseGeneral", 
+			"ChoongAccuseWar", 
+			"ChoongAccuseVideotapes", 
+			"ChoongDontCareLying", 
+			"ChoongDecide" 
+			],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"LootCondsUs" : "CONDPLOT_ChoongPlateau2_Exit",
+		"CTTestUs" : "CTPlot_ChoongPlateau3_Exit"
+	},
+	{
+		"strName" : "ChoongTortureHimReadme_1",
+		"strTitle" : "Continue reading",
+		"strDesc" : "A section break, and the readme continues outlining its more experimental fare. 
+
+Broad emotions and qualia can be stimulated with reasonable precision. Starvation, thirst, fatigue, nausea, those are all easy. A pull-quote details one test subject’s account that a complete loss of internal balance was the worst of the lot. 
+
+More difficult - which is to say, less precise - is simulating fear, guilt, shame, despair, and higher order social feelings like rejection or alienation. 
+
+The readme takes care to warn that these effects may linger with the subject, and compared with the physical pain trials, had a much higher rate of attrition on test subjects.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongTortureHimReadme_1_1", "ChoongTortureReconsider", "ChoongTortureHimSendHim" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true
+	},
+	{
+		"strName" : "ChoongTortureHimReadme_1_1",
+		"strTitle" : "Continue reading",
+		"strDesc" : "The readme concludes by referencing another document, not loaded on this device, which reported the fair weather success rate of securing an accurate confession, based on controlled trials where test subjects were instructed to conceal specific information: 
+
+22%. 
+
+The report compared it favorably against traditional methods like waterboarding or hammering thumbs, which the program readily simulates, but laments that the scope of inquiry was sorely lacking, and would require follow-ups with more funding. 
+
+It stressed that for the time being a good law enforcement agent should exhaust all his or her available alternatives of information gathering before using the program for its intended purpose.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongTortureReconsider", "ChoongTortureHimSendHim" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true
+	},
+	{
+		"strName" : "ChoongHair",
+		"strTitle" : "Ask him about his unusual hairstyle",
+		"strDesc" : "\"What do you call that?\" you ask.
+
+\"Call what?\" he says. \"My hair?\"
+
+\"It’s so round.\"
+
+\"Very good. It is.\" He sounds pleased you can recognise shapes.
+
+\"I mean,\" you say, \"it’s not common where I’m from.\"
+
+\"It’s not common where I’m from either,\" he says stolidly. \"They cut it like this in creche, ten children at once, bowls for guidance. Easy to tell who was an orphan and who wasn’t.\"
+
+\"You’ve kept the same hair for over forty years?\"
+
+\"I always thought I’d wear it until I died,\" he says. A belated note of pride accompanies his afterthought: \"And I did, didn’t I?\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ChoongPlateau", "ChoongPlateau_1Exit" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"LootCondsUs" : "CONDPLOT_ChoongHair",
+		"CTTestUs" : "CTPlot_ChoongHair"
+	},
+	{
+		"strName" : "ChoongLeaveAndEnd1",
+		"strTitle" : "Take off the headset",
+		"strDesc" : "You pull off the Renbao electrode rig. Choong and the log cabin and Moretti disappear, replaced by the familiar dull wall of your ship.
+
+The braincase sits in its same place, making its steady quiet noise. You ride the wave of vertiginous self-doubt customary when emerging from lengthy simulations - was that real, did that really happen, where did it happen, et cetera - and consider everything you've learned.
+
+You think you will be unlikely to encounter again in your life another conversation that will challenge your understanding of the universe as much as that one did, minute to minute. That wasn't a category you were tracking, but now that you are, it's got the number one spot.
+
+At the same time, your situation and your needs are prosaic. You have to track down the sarcophagus, and get Dr. Choong inside of it, possibly under the watchful eye of a battery of specialists to record what he does, or what happens to him. No small feat, but no viable alternatives, either.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ENCFinish" ],
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true
+	}
+]

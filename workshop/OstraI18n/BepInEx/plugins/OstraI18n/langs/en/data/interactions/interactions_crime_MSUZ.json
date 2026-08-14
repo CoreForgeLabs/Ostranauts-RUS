@@ -1,0 +1,627 @@
+[
+
+  {
+    "strName" : "ENCHeatMSUZBustedStart",
+    "strTitle" : "Busted",
+    "strDesc" : "They haul you before a Suzhou magistrate for judgement, leaving your ship and gear behind.\n\nAt the hearing, you can beg for just a fine- $15,000 payable in full or installments- or it's off to Suzhou Brig for a year or three of hard labor.",
+    "strColor"      : "Dialogue",
+    "aInverse"          : [
+      "ENCHeatMSUZFineEnd",
+      "ENCHeatMSUZFineDebtEnd",
+      "ENCHeatMSUZPrisonStart"
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Self",
+    "strRaiseUI"        : "SocialCombat",
+    "strSubUI"        : "Landscape01",
+    "strImage"        : "encounters/ENCImprisoned",
+    "nLogging"         : 0,
+    "bPause"            : true,
+    "bHumanOnly"     : true,
+    "bIgnoreFeelings"	: true,
+    "LootCondsUs"       : "CONDLEOImmune",
+    "CTTestUs"           : "TIsSubduedCriminalMSUZ"
+  },
+  {
+    "strName" : "ENCHeatMSUZFineEnd",
+    "strTitle" : "Plead for a fine (Lump Sum)",
+    "strDesc" : "It's almost like they want you to break the rules so they can extract more fines from you.\n\nYou sign reams of paperwork in tight cuffs.\n\nIt's a prison sentence of another sort. Another weight hanging around your neck.\n\nNew $15,000 fine added.",
+    "strColor"      : "Dialogue",
+    "aInverse"          : [
+      "ENCHeatMSUZFineFinish"
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Self",
+    "strRaiseUI"        : "SocialCombat",
+    "strSubUI"        : "Landscape01",
+    "strImage"        : "encounters/EncFirstUndockFees",
+    "nLogging"         : 0,
+    "bPause"            : true,
+    "bHumanOnly"     : true,
+    "bIgnoreFeelings"	: true,
+    "strLedgerDef" : "ENCHeatMSUZFinePublicDisorder",
+    "aSocialNew" : [
+    ]
+  },
+  {
+    "strName" : "ENCHeatMSUZFineDebtEnd",
+    "strTitle" : "Plead for a fine (Paid in installments)",
+    "strDesc" : "It's almost like they want you to break the rules so they can lock you deeper in interest payments.\n\nYou sign reams of paperwork in tight cuffs.\n\nIt's a prison sentence of another sort. Another weight hanging around your neck.\n\nNew $15,000 debt added, with payment due each shift.",
+    "strColor"      : "Dialogue",
+    "aInverse"          : [
+      "ENCHeatMSUZFineFinish"
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Self",
+    "strRaiseUI"        : "SocialCombat",
+    "strSubUI"        : "Landscape01",
+    "strImage"        : "encounters/EncFirstUndockFees",
+    "nLogging"         : 0,
+    "bPause"            : true,
+    "bHumanOnly"     : true,
+    "bIgnoreFeelings"	: true,
+    "strLedgerDef" : "ENCHeatMSUZFinePublicDisorderDebt",
+    "aSocialNew" : [
+    ]
+  },
+  {
+    "strName" : "ENCHeatMSUZFineFinish",
+    "strTitle" : "Continue",
+    "strDesc" : "After processing, you are unceremoniously dumped outside the Suzhou Security Office. If you weren't docked at station when you were arrested, you may need to use the PASS ferry service (on your PDA) to reach your ship again. Hopefully it's still there.\n\nTime to get back on your feet.",
+    "strColor"      : "Dialogue",
+    "aInverse"          : [
+      "ENCFinish"
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Self",
+    "nLogging"         : 1,
+    "bHumanOnly"     : true,
+    "bIgnoreFeelings"	: true,
+    "bCloser"     : true,
+    "strTeleportRegID" : "MSUZ",
+    "ShipTestUs" : "AnyShip_MSUZ",
+    "LootCondsUs"     : "CONDENCHeatMSUZFineEnd",
+    "LootCTsThem"     : null,
+    "CTTestUs"           : "TIsHuman",
+    "CTTestThem"         : null
+  },
+  {
+    "strName" : "ENCHeatMSUZPrisonStart",
+    "strTitle" : "Off to Suzhou Brig",
+    "strDesc" : "You are hauled off to Suzhou Brig.",
+    "strColor"      : "Dialogue",
+    "aInverse"          : [
+      "ENCHeatMSUZPrisonEnd",
+      "ENCHeatVenusPrisonEnd"
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Self",
+    "strRaiseUI"        : "SocialCombat",
+    "strSubUI"        : "Landscape01",
+    "strImage"        : "encounters/ENCImprisoned",
+    "nLogging"         : 0,
+    "bPause"            : true,
+    "bHumanOnly"     : true,
+    "bIgnoreFeelings"	: true,
+    "LootCondsUs" : "CONDENCHeatTeleportPrison"
+  },
+  {
+    "strName" : "ENCHeatMSUZPrisonEnd",
+    "strTitle" : "Serve Hard Time",
+    "strDesc" : "You spend months laboring without wage among outcasts both meek and dangerous. You share a dorm with nearly a hundred other souls, all of you stacked like kindling on triple high bunks.\n\nBut even a hell like this is not without opportunity. You hear things. You meet people. You get in a few scrapes, you find a few friends. By the end of your term you've lived a dozen lives and you have all the scars to prove it.\n\nPlus, free room and board. In a certain light, it might all be worth it ...\n\n",
+    "strColor"      : "Dialogue",
+    "aInverse"          : [
+      "ENCHeatMSUZPrisonFinish"
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Self",
+    "strRaiseUI"        : "SocialCombat",
+    "strSubUI"        : "Landscape01",
+    "strImage"        : "encounters/ENCImprisoned",
+    "nLogging"         : 0,
+    "bPause"            : true,
+    "bHumanOnly"     : true,
+    "bIgnoreFeelings"	: true,
+    "bHardCode"   : true,
+    "strTeleportRegID" : "MSUZ",
+    "ShipTestUs" : "AnyShip_MSUZ",
+    "aSocialNew" : [      
+      "CGEncHomeworldLEOEnemy",
+      "CGEncHomeworldPrisonerFriend",
+      "CGEncHomeworldCriminalEnemy"
+    ]
+  },
+  {
+    "strName" : "ENCHeatMSUZPrisonFinish",
+    "strTitle" : "Continue",
+    "strDesc" : "After processing, you are unceremoniously dumped outside the Suzhou Security Office. If you weren't docked at station when you were arrested, you may need to use the PASS ferry service (on your PDA) to reach your ship again. Hopefully it's still there.\n\nTime to get back on your feet.",
+    "strColor"      : "Dialogue",
+    "aInverse"          : [
+      "ENCFinish"
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Self",
+    "strRaiseUI"        : "SocialCombat",
+    "strSubUI"        : "Landscape01",
+    "strImage"        : "encounters/ENCImprisoned",
+    "nLogging"         : 0,
+    "bPause"            : true,
+    "bHumanOnly"     : true,
+    "bIgnoreFeelings"	: true,
+    "bCloser"     : true,
+    "LootCondsUs"     : "CONDENCHeatMSUZPrisonEnd",
+    "LootCTsThem"     : null,
+    "CTTestUs"           : "TIsHuman",
+    "CTTestThem"         : null
+  },
+
+  {
+    "strName" : "PLGAICrimeMSUZLEOArrest",
+    "strTitle" : "MSUZ LEO Begins Arresting Criminal",
+    "strDesc" : "\"Suspect spotted,\" [us] [says], looking at [them].",
+    "strActionGroup" : "Talk",
+    "nLogging"  : 2,
+    "strTargetPoint" : null,
+    "strAnim"         : "Idle",
+    "strBubble"         : "BblIntimidate",
+    "aInverse"          : [
+      "PLGAICrimeMSUZLEOInterruptSelf"
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Other",
+    "strPledgeAdd"       : "AICrimeArrestMSUZLEODo",
+    "bHumanOnly"      : false,
+    "bIgnoreFeelings" : true,
+    "CTTestUs"           : "TIsAICrimeReadyArrest",
+    "CTTestThem"        : "TIsCrimeMSUZArrest",
+    "LootCondsUs" : "CONDLEOArresting"
+  },
+  {
+    "strName" : "PLGAICrimeMSUZLEOInterruptSelf",
+    "strTitle" : "MSUZ LEO Is Interrupted by Crime",
+    "strDesc" : "Interrupt them.",
+    "strActionGroup" : "Talk",
+    "nLogging"  : 0,
+    "strTargetPoint" : null,
+    "strAnim"         : "Idle",
+    "strBubble"         : "BblIntimidate",
+    "aInverse"          : [
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Other",
+    "bHumanOnly"      : false,
+    "bInterrupt" : true
+  },
+  {
+    "strName" : "PLGAICrimeMSUZLEOArrestDo",
+    "strTitle" : "Arresting Criminal",
+    "strDesc" : "\"Stop right there! You're under arrest!\" [us] [shouts] at [them].",
+    "strActionGroup" : "Talk",
+    "nLogging"  : 2,
+    "strTargetPoint" : "use",
+    "fTargetPointRange" : 2,
+    "strAnim"         : "Idle",
+    "strBubble"         : "BblIntimidate",
+    "aInverse"          : [
+      "PLGAICrimeMSUZLEOArrestDoDeny",
+      "PLGAICrimeMSUZLEOArrestDoAllow"
+    ],
+    "fDuration"         : 0.000054,
+    "strThemType"       : "Other",
+    "bHumanOnly"      : false,
+    "CTTestUs"           : "TIsAICrimeReady",
+    "CTTestThem"        : "TIsCrimeMSUZArrest",
+    "LootCondsThem"     : "CONDCrimeMSUZLEOArrestDoThem"
+  },
+  {
+    "strName" : "PLGAICrimeMSUZLEOArrestDoAllow",
+    "strTitle" : "Surrender to Officer",
+    "strDesc" : "[us] [goes] along peacefully with [them].",
+    "strActionGroup" : "Talk",
+    "nLogging"  : 2,
+    "strTargetPoint" : "use",
+    "fTargetPointRange" : 2,
+    "strAnim"         : "Idle",
+    "strBubble"         : "BblAffirmative",
+    "aInverse"          : [
+    ],
+    "fDuration"         : 0.000054,
+    "strThemType"       : "Other",
+    "bHumanOnly"      : true,
+    "bIgnoreFeelings" : true,
+    "CTTestUs"           : "TIsCrimeMSUZArrest",
+    "CTTestThem"        : "TIsAICrimeReady",
+    "LootCondsUs"     : "CONDCrimeMSUZLEOArrestDoAllowUs",
+    "LootCondsThem"     : "CONDCrimeMSUZLEOArrestDoAllowThem"
+  },
+  {
+    "strName" : "PLGAICrimeMSUZLEOArrestDoDeny",
+    "strTitle" : "Plead Innocence",
+    "strDesc" : "[us] [tells] [them] [them-subj] [has] the wrong person.",
+    "strActionGroup" : "Talk",
+    "nLogging"  : 2,
+    "strTargetPoint" : "use",
+    "fTargetPointRange" : 2,
+    "strAnim"         : "Idle",
+    "strBubble"         : "BblNegative",
+    "aInverse"          : [
+    ],
+    "fDuration"         : 0.000054,
+    "strThemType"       : "Other",
+    "bHumanOnly"      : true,
+    "bIgnoreFeelings" : true,
+    "CTTestUs"           : "TIsCrimeMSUZArrestEnd",
+    "CTTestThem"        : "TIsAICrimeReady",
+    "LootCondsUs"     : null,
+    "LootCondsThem"     : null
+  },
+  {
+    "strName" : "PLGAICrimeMSUZLEOArrestEnd",
+    "strTitle" : "MSUZ LEO Done Arresting Criminal",
+    "strDesc" : "\"Another win for the law,\" [us] [says].",
+    "strActionGroup" : "Talk",
+    "nLogging"  : 2,
+    "strTargetPoint" : "use",
+    "fTargetPointRange" : 2,
+    "strAnim"         : "Idle",
+    "strBubble"         : "BblAffirmative",
+    "aInverse"          : [
+      "PLGAICrimeMSUZLEOArrestEndPlayer",
+      "PLGAICrimeLEOArrestEndCancel",
+      "PLGAICrimeMSUZLEOArrestEndAI"
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Other",
+    "bHumanOnly"      : false,
+    "bIgnoreFeelings" : true,
+    "CTTestUs"           : "TIsAICrimeReadyArrestEnd",
+    "CTTestThem"        : "TIsCombatNeutralized",
+    "LootCondsThem"     : null
+  },
+  {
+    "strName" : "PLGAICrimeMSUZLEOArrestEndAI",
+    "strTitle" : "Getting Arrested",
+    "strDesc" : "Shim interaction to test us = AI character before continuing.",
+    "strColor"      : "Dialogue",
+    "aInverse"          : [
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Other",
+    "nLogging"         : 0,
+    "bAIOnly"     : true,
+    "bIgnoreFeelings"      : true,
+    "strTeleportRegID" : "OKLG_UNK",
+    "LootCondsUs"     : "CONDENCHeatMSUZFineEnd",
+    "LootCondsThem"     : "CONDLEONotArresting",
+    "aSocialNew" : [
+    ]
+  },
+  {
+    "strName" : "PLGAICrimeMSUZLEOArrestEndPlayer",
+    "strTitle" : "Criminal Arrested (Player)",
+    "strDesc" : "LEO finishes subduing Player threat.",
+    "strColor"      : "Dialogue",
+    "fTargetPointRange" : 2,
+    "aInverse"          : [
+      "ENCHeatMSUZBustedStart,[us],[us]"
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Other",
+    "nLogging"         : 0,
+    "bHumanOnly"      : true,
+    "bIgnoreFeelings"      : true,
+    "CTTestUs"      : "TIsSubduedCriminalMSUZ",
+    "LootCondsThem"     : "CONDLEONotArresting",
+    "aSocialNew" : [
+    ]
+  },
+  {
+    "strName" : "PLGAICrimeMSUZLEOThreat",
+    "strTitle" : "MSUZ LEO Attacking Criminal",
+    "strDesc" : "\"Hey, it's that criminal! Get 'em!\" [us-shouts] [us], pointing towards [them].",
+    "strActionGroup" : "Talk",
+    "nLogging"  : 2,
+    "strTargetPoint" : null,
+    "strAnim"         : "Idle",
+    "strBubble"         : "BblIntimidate",
+    "aInverse"          : [
+      "PLGAICrimeMSUZLEOInterruptSelf"
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Other",
+    "strPledgeAdd"       : "AICombat",
+    "bHumanOnly"      : false,
+    "CTTestUs"           : "TIsAICrimeReadyAttack",
+    "CTTestThem"        : "TIsCrimeMSUZThreat"
+  },
+  {
+    "strName" : "PLGAICrimeMSUZLEOArrestStolenShip",
+    "strTitle" : "MSUZ LEO Begins Arresting Criminal for Stealing a Ship",
+    "strDesc" : "\"You've been reported as flying a stolen ship,\" [us] [says], looking at [them].\"We're bringing you in.\"",
+    "strActionGroup" : "Talk",
+    "nLogging"  : 2,
+    "strTargetPoint" : null,
+    "strAnim"         : "Idle",
+    "strBubble"         : "BblIntimidate",
+    "aInverse"          : [
+      "PLGAICrimeMSUZLEOInterruptSelf"
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Other",
+    "strPledgeAdd"       : "AICrimeArrestMSUZLEODo",
+    "bHumanOnly"      : false,
+    "bIgnoreFeelings" : true,
+    "CTTestUs"           : "TIsAICrimeReadyArrestStolenShip",
+    "CTTestThem"        : "TIsCrimeMSUZArrestStolenShip",
+    "LootCondsUs" : "CONDLEOArresting",
+    "LootCondsThem" : "CrimeMSUZArrest"
+  },
+
+  {
+    "strName" : "PLGAIReportCrimeMSUZArrest",
+    "strTitle" : "Report Crime",
+    "strDesc" : "[us] [speaks] into [us-pos] PDA, looking at [them].",
+    "strActionGroup" : "Talk",
+    "nLogging"  : 2,
+    "strTargetPoint" : null,
+    "strAnim"         : "Tablet",
+    "strBubble"         : "BblTalk",
+    "aInverse"          : [
+      "PLGAIReportCrimeMSUZArrestAllow,[us],[them]",
+      "PLGAIReportCrimeDeny,[us],[them]"
+    ],
+    "fDuration"         : 0.00278,
+    "strThemType"       : "Other",
+    "bHumanOnly"      : false,
+    "bIgnoreFeelings" : true,
+    "CTTestUs"           : "TIsAIReportCrimeArrestReady",
+    "CTTestThem"        : null,
+    "PSpecTestThem"     : "RELReportCrime",
+    "LootCondsUs" : "CONDReportCrimeArrest",
+    "LootCondsThem" : null
+  },
+  {
+    "strName" : "PLGAIReportCrimeMSUZArrestAllow",
+    "strTitle" : "Report Crime: Succeed",
+    "strDesc" : "[us] successfully [reports] a crime on [them].",
+    "strActionGroup" : "Talk",
+    "nLogging"  : 0,
+    "strTargetPoint" : null,
+    "strAnim"         : "Tablet",
+    "strBubble"         : "BblTalk",
+    "aInverse"          : [
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Other",
+    "bHumanOnly"      : false,
+    "CTTestUs"           : null,
+    "CTTestThem"        : "TIsAIReportCrimeValidTarget",
+    "LootCondsUs" : null,
+    "LootCondsThem" : "CrimeMSUZArrest"
+  },
+  {
+    "strName" : "PLGAIReportCrimeMSUZArrestDone",
+    "strTitle" : "Done Reporting Crime",
+    "strDesc" : "[us] [is] done reporting crime.",
+    "strActionGroup" : "Use",
+    "nLogging"  : 0,
+    "strTargetPoint" : null,
+    "strAnim"         : "Idle",
+    "strBubble"         : null,
+    "aInverse"          : [
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Self",
+    "bHumanOnly"      : false,
+    "CTTestUs"           : "TIsAIReportCrimeArrestReadyEnd",
+    "CTTestThem"        : null,
+    "LootCondsUs"         : "CONDReportCrimeArrestEnd"
+  },
+  {
+    "strName" : "PLGAIReportCrimeMSUZTrespass",
+    "strTitle" : "Report Crime",
+    "strDesc" : "[us] [says] \"Get out of here,\" then speaks into [us-pos] PDA, looking at [them].",
+    "strActionGroup" : "Talk",
+    "nLogging"  : 2,
+    "strTargetPoint" : null,
+    "strAnim"         : "Tablet",
+    "strBubble"         : "BblTalk",
+    "aInverse"          : [
+      "PLGAIReportCrimeMSUZTrespassAllow,[us],[them]",
+      "PLGAIReportCrimeMSUZTrespassDeny,[us],[them]"
+    ],
+    "fDuration"         : 0.00278,
+    "strThemType"       : "Other",
+    "bHumanOnly"      : false,
+    "bIgnoreFeelings" : true,
+    "CTTestUs"           : "TIsAIReportCrimeArrestReady",
+    "CTTestThem"        : null,
+    "PSpecTestThem"     : "RELReportCrimeTrespass",
+    "LootCondsUs" : "CONDReportCrimeArrest",
+    "LootCondsThem" : null
+  },
+  {
+    "strName" : "PLGAIReportCrimeMSUZTrespassAllow",
+    "strTitle" : "Report Crime: Succeed",
+    "strDesc" : "[us] successfully [reports] a crime on [them].",
+    "strActionGroup" : "Talk",
+    "nLogging"  : 0,
+    "strTargetPoint" : null,
+    "strAnim"         : "Tablet",
+    "strBubble"         : "BblTalk",
+    "aInverse"          : [
+      "PLGAIReportCrimeMSUZTrespassDone,[us],[them]"
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Other",
+    "bHumanOnly"      : false,
+    "CTTestUs"           : null,
+    "CTTestThem"        : "TIsAIReportCrimeValidTargetTrespass",
+    "LootCondsUs" : null,
+    "LootCondsThem" : "CrimeMSUZArrest"
+  },
+  {
+    "strName" : "PLGAIReportCrimeMSUZTrespassDeny",
+    "strTitle" : "Report Crime: Fail",
+    "strDesc" : "[us] [fails] to report a crime on [them].",
+    "strActionGroup" : "Talk",
+    "nLogging"  : 0,
+    "strTargetPoint" : null,
+    "strAnim"         : "Tablet",
+    "strBubble"         : "BblTalk",
+    "aInverse"          : [
+      "PLGAIReportCrimeMSUZTrespassDone,[us],[them]"
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Other",
+    "bHumanOnly"      : false,
+    "CTTestUs"           : null,
+    "CTTestThem"        : null,
+    "LootCondsUs" : null,
+    "LootCondsThem" : null
+  },
+  {
+    "strName" : "PLGAIReportCrimeMSUZTrespassDone",
+    "strTitle" : "Done Reporting Crime",
+    "strDesc" : "[us] [is] done reporting crime.",
+    "strActionGroup" : "Use",
+    "nLogging"  : 0,
+    "strTargetPoint" : null,
+    "strAnim"         : "Idle",
+    "strBubble"         : null,
+    "aInverse"          : [
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Self",
+    "bHumanOnly"      : false,
+    "CTTestUs"           : "TIsAIReportCrimeArrestReadyEnd",
+    "CTTestThem"        : null,
+    "LootCondsUs"         : "CONDReportCrimeArrestEnd"
+  },
+  {
+    "strName" : "PLGAIReportCrimeMSUZTrespassNPCDone",
+    "strTitle" : "Cancel Reporting Crime",
+    "strDesc" : "[us] [is] no longer going to report crime.",
+    "strActionGroup" : "Use",
+    "nLogging"  : 0,
+    "strTargetPoint" : null,
+    "strAnim"         : "Idle",
+    "strBubble"         : null,
+    "aInverse"          : [
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Self",
+    "bHumanOnly"      : false,
+    "CTTestUs"           : null,
+    "CTTestThem"        : "TIsNotPlayerOrPlayerCrew",
+    "LootCondsUs"         : null
+  },
+  {
+    "strName" : "PLGAIReportCrimeMSUZThreat",
+    "strTitle" : "Report Crime",
+    "strDesc" : "[us] [speaks] into [us-pos] PDA, looking at [them].",
+    "strActionGroup" : "Talk",
+    "nLogging"  : 0,
+    "strTargetPoint" : null,
+    "strAnim"         : "Tablet",
+    "strBubble"         : "BblTalk",
+    "aInverse"          : [
+      "PLGAIReportCrimeMSUZThreatAllow,[us],[them]",
+      "PLGAIReportCrimeDeny,[us],[them]"
+    ],
+    "fDuration"         : 0.00278,
+    "strThemType"       : "Other",
+    "bHumanOnly"      : false,
+    "bIgnoreFeelings" : true,
+    "CTTestUs"           : "TIsAIReportCrimeThreatReady",
+    "CTTestThem"        : null,
+    "PSpecTestThem"     : "RELReportCrime",
+    "LootCondsUs" : "CONDReportCrimeThreat",
+    "LootCondsThem" : null
+  },
+  {
+    "strName" : "PLGAIReportCrimeMSUZThreatAllow",
+    "strTitle" : "Report Crime: Succeed",
+    "strDesc" : "[us] successfully [reports] a crime on [them].",
+    "strActionGroup" : "Talk",
+    "nLogging"  : 0,
+    "strTargetPoint" : null,
+    "strAnim"         : "Tablet",
+    "strBubble"         : "BblTalk",
+    "aInverse"          : [
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Other",
+    "bHumanOnly"      : false,
+    "CTTestUs"           : null,
+    "CTTestThem"        : "TIsAIReportCrimeValidTarget",
+    "LootCondsUs" : null,
+    "LootCondsThem" : "CrimeMSUZThreat"
+  },
+  {
+    "strName" : "PLGAIReportCrimeMSUZThreatDone",
+    "strTitle" : "Done Reporting Crime",
+    "strDesc" : "[us] [is] done reporting crime.",
+    "strActionGroup" : "Use",
+    "nLogging"  : 0,
+    "strTargetPoint" : null,
+    "strAnim"         : "Idle",
+    "strBubble"         : null,
+    "aInverse"          : [
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Self",
+    "bHumanOnly"      : false,
+    "CTTestUs"           : "TIsAIReportCrimeThreatReadyEnd",
+    "CTTestThem"        : null,
+    "LootCondsUs"         : "CONDReportCrimeThreatEnd"
+  },
+
+  {
+    "strName" : "PSPAIAICrimeMSUZLEOArrestAdd",
+    "strTitle" : "Adds MSUZ LEO Arrest pledge to us",
+    "strDesc" : "[us] [gains] MSUZ LEO Arrest pledge.",
+    "nLogging"  : 0,
+    "strTargetPoint" : null,
+    "aInverse"          : [
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Self",
+    "bHumanOnly"      : false,
+    "CTTestUs"           : null,
+    "CTTestThem"        : null,
+    "strPledgeAdd"      : "AICrimeArrestMSUZLEOStart"
+  },
+
+  {
+    "strName" : "PSPAIAICrimeMSUZLEOArrestStolenShipAdd",
+    "strTitle" : "Adds MSUZ LEO Arrest pledge to us because the player stole a ship.",
+    "strDesc" : "[us] [gains] MSUZ LEO Arrest for Stolen Ship pledge.",
+    "nLogging"  : 0,
+    "strTargetPoint" : null,
+    "aInverse"          : [
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Self",
+    "bHumanOnly"      : false,
+    "CTTestUs"           : null,
+    "CTTestThem"        : null,
+    "strPledgeAdd"      : "AICrimeArrestMSUZLEOStolenShipStart"
+  },
+
+  {
+    "strName" : "PSPAIAICrimeMSUZLEOThreatAdd",
+    "strTitle" : "Adds MSUZ LEO Threat pledge to us",
+    "strDesc" : "[us] [gains] MSUZ LEO Threat pledge.",
+    "nLogging"  : 0,
+    "strTargetPoint" : null,
+    "aInverse"          : [
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Self",
+    "bHumanOnly"      : false,
+    "CTTestUs"           : null,
+    "CTTestThem"        : null,
+    "strPledgeAdd"      : "AICrimeAttackMSUZLEO"
+  }
+]

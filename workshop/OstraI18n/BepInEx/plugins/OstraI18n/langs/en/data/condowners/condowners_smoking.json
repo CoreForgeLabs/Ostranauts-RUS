@@ -1,0 +1,832 @@
+[
+    {
+      "strName" : "ItmCigViceroyBox01",
+      "strNameShort" : "Cigarette Box",
+      "strNameFriendly" : "Viceroy Cigarette Box",
+      "strDesc" : "A 20-count Viceroy-brand cigarette box.\n\nThe eponymous red rabbit adorns the front, in the classic salute pose spacers use to signal breaktime.\n\n\"Smoke break. Viceroy's orders.\"",
+      "strItemDef" : "ItmCigViceroyBox01Empty",
+      "strType"    : "Item",
+      "strLoot"    : null,
+      "aInteractions" : [
+        "Inventory",
+        "DrawCig",
+        "DropItem",
+        "PickupItem"
+      ],
+      "aStartingConds" : [
+        "IsBurnable=1.0x1.0",
+        "IsFlexible=1.0x1",
+        "IsHandheld=1.0x1",
+        "IsViceroy=1.0x1",
+        "IsUnfiltered=1.0x1",
+        "IsContainer=1.0x1.0",
+        "IsSolid=1.0x1.0",
+        "IsPocketable=1.0x1",
+        "StatBasePrice=1.0x1.0",
+        "StatMass=1.0x0.025",
+        "StatDamageMax=1.0x2",
+        "IsCategoryIntoxicants=1.0x1"
+      ],
+      "strContainerCT"    : "TIsFitContainerPartsSmall",
+      "nContainerHeight"   : 1,
+      "nContainerWidth"   : 1,
+      "mapCondTolerance"       : [
+      ],
+      "mapPoints"      : [
+      ],
+      "mapChargeProfiles"  : [
+        "Melee","MeleeAttackDefaultExtraFragile"
+      ],
+      "mapAltItemDefs"  : [
+        "IsSolid","ItmCigViceroyBox01"
+      ],
+      "aUpdateCommands" : [
+        "Destructable,StatDamage,ACTDefaultDestroy,StatDamageMax,1.0"
+      ],
+      "mapGUIPropMaps"  : [
+      ],
+      "strPortraitImg"  : "ItmCigViceroyBox01Empty",
+      "strAudioEmitter" : "ItmMediumPartsGeneralSound03",
+      "mapSlotEffects" : [
+        "heldL","HeldItmDefaultSoftL",
+        "heldR","HeldItmDefaultSoftR"
+      ],
+      "jsonPI"            : null
+    },
+    {
+      "strName" : "ItmCigViceroy01",
+      "strNameShort" : "Cigarette",
+      "strNameFriendly" : "Viceroy Cigarette",
+      "strDesc" : "A Viceroy-brand cigarette.\n\nFilterless and rough, the preferred brand for those who want raw flavour after hard shift work.\n\n\"Sweeter than oxygen.\"",
+      "strItemDef" : "ItmCigViceroy01",
+      "strType"    : "Item",
+      "strLoot"    : null,
+      "nStackLimit"    : 20,
+      "aInteractions" : [
+        "EquipItem",
+        "ACTLightCig",
+        "DropItem",
+        "DropItemStack",
+        "PickupItem",
+        "PickupItemStack"
+      ],
+      "aStartingConds" : [
+        "IsBurnable=1.0x1.0",
+        "IsFlexible=1.0x1",
+        "IsHandheld=1.0x1",
+        "IsViceroy=1.0x1",
+        "IsUnfiltered=1.0x1",
+        "IsCigarette=1.0x1",
+        "IsNicotine=1.0x1",
+        "IsDrug=1.0x1",
+        "IsPartsSmall=1.0x1",
+        "IsSolid=1.0x1.0",
+        "StatBasePrice=1.0x5.0",
+        "StatMass=1.0x0.005",
+        "StatDamageMax=1.0x1",
+        "IsCategoryIntoxicants=1.0x1"
+      ],
+      "mapCondTolerance"       : [
+      ],
+      "mapPoints"      : [
+      ],
+      "mapChargeProfiles"  : [
+        "Melee","MeleeAttackDefaultExtraFragile"
+      ],
+      "aUpdateCommands" : [
+      ],
+      "mapGUIPropMaps"  : [
+      ],
+      "strPortraitImg"  : "ItmCigViceroy01",
+      "mapSlotEffects" : [
+        "head_in","head_inCigViceroy01",
+        "heldL","Blank",
+        "heldR","Blank"
+      ],
+      "jsonPI"            : null
+    },
+    {
+      "strName" : "ItmCigViceroy01Lit",
+      "strNameShort" : "Cigarette",
+      "strNameFriendly" : "Viceroy Cigarette (Lit)",
+      "strDesc" : "A Viceroy-brand cigarette.\n\nFilterless and rough, the preferred brand for those who want raw flavour after hard shift work.\n\n\"Sweeter than oxygen.\"",
+      "strItemDef" : "ItmCigViceroy01Lit",
+      "strType"    : "Item",
+      "strLoot"    : null,
+      "aInteractions" : [
+        "ACTSmokeCig",
+        "ACTSnuffCig",
+        "EquipItem",
+        "DropItem",
+        "PickupItem"
+      ],
+      "aStartingConds" : [
+        "IsBurnable=1.0x1.0",
+        "IsIgniter=1.0x1.0",
+        "IsFlexible=1.0x1",
+        "IsHandheld=1.0x1",
+        "IsViceroy=1.0x1",
+        "IsCigarette=1.0x1",
+        "IsPartsSmall=1.0x1",
+        "IsUnfiltered=1.0x1",
+        "IsNicotine=1.0x1",
+        "IsDrug=1.0x1",
+        "IsLit=1.0x1.0",
+        "IsSolid=1.0x1.0",
+        "StatBasePrice=1.0x0.0",
+        "IsNotForSale=1.0x1",
+        "StatMass=1.0x0.001",
+        "IsReadyHeat=1.0x1",
+        "StatHeatArea=1.0x0.000001",
+        "StatHeatVol=1.0x0.1",
+        "StatSolidTemp=1.0x400.0",
+        "StatDamageMax=1.0x1.0",
+        "StatNicotineUsedMax=1.0x1.0",
+        "IsCategoryTrash=1.0x1"
+      ],
+      "aStartingCondRules"  : [
+      ],
+      "mapCondTolerance"       : [
+      ],
+      "mapPoints"      : [
+      ],
+      "mapChargeProfiles"  : [
+        "Melee","MeleeAttackDefaultExtraFragile"
+      ],
+      "aUpdateCommands" : [
+        "GasRespire2,Cigarette01,null",
+        "Heater,TIsAirtightNoHuman",
+        "Destructable,StatNicotineUsed,ACTCigToStub,StatNicotineUsedMax,1.0"
+      ],
+      "mapGUIPropMaps"  : [
+      ],
+      "strPortraitImg"  : "ItmCigViceroy01Lit",
+      "mapSlotEffects" : [
+        "head_in","head_inCigViceroy01Lit",
+        "heldL","HeldItmDefaultSoftL",
+        "heldR","HeldItmDefaultSoftR"
+      ],
+      "aTickers" : [ 
+        "CigBurning"
+      ],
+      "strAudioEmitter" : "",
+      "jsonPI"            : null
+    },
+    
+  
+  
+  
+  
+    {
+      "strName" : "ItmCigViceroyBox02",
+      "strNameShort" : "Cigarette Box",
+      "strNameFriendly" : "Viceroy Menthol Cigarette Box",
+      "strDesc" : "A 20-count menthol-flavored Viceroy-brand cigarette box, for a cleaner burn.\n\nThe eponymous red rabbit adorns the front, in the classic salute pose spacers use to signal breaktime.\n\n\"Sweeter than Oxygen.\"",
+      "strItemDef" : "ItmCigViceroyBox02Empty",
+      "strType"    : "Item",
+      "strLoot"    : null,
+      "aInteractions" : [
+        "Inventory",
+        "DrawCig",
+        "DropItem",
+        "PickupItem"
+      ],
+      "aStartingConds" : [
+        "IsBurnable=1.0x1.0",
+        "IsFlexible=1.0x1",
+        "IsHandheld=1.0x1",
+        "IsViceroy=1.0x1",
+        "IsMenthol=1.0x1",
+        "IsContainer=1.0x1.0",
+        "IsSolid=1.0x1.0",        
+        "IsPocketable=1.0x1",
+        "StatBasePrice=1.0x1.0",
+        "StatMass=1.0x0.025",
+        "StatDamageMax=1.0x2",
+        "IsCategoryIntoxicants=1.0x1"
+      ],
+      "strContainerCT"    : "TIsFitContainerPartsSmall",
+      "nContainerHeight"   : 1,
+      "nContainerWidth"   : 1,
+      "mapCondTolerance"       : [
+      ],
+      "mapPoints"      : [
+      ],
+      "mapChargeProfiles"  : [
+        "Melee","MeleeAttackDefaultExtraFragile"
+      ],
+      "mapAltItemDefs"  : [
+        "IsSolid","ItmCigViceroyBox02"
+      ],
+      "aUpdateCommands" : [
+        "Destructable,StatDamage,ACTDefaultDestroy,StatDamageMax,1.0"
+      ],
+      "mapGUIPropMaps"  : [
+      ],
+      "strPortraitImg"  : "ItmCigViceroyBox02Empty",
+      "strAudioEmitter" : "ItmMediumPartsGeneralSound03",
+      "mapSlotEffects" : [
+        "heldL","HeldItmDefaultSoftL",
+        "heldR","HeldItmDefaultSoftR"
+      ],
+      "jsonPI"            : null
+    },
+    {
+      "strName" : "ItmCigViceroy02",
+      "strNameShort" : "Cigarette",
+      "strNameFriendly" : "Viceroy Menthol Cigarette",
+      "strDesc" : "A menthol-flavored Viceroy-brand cigarette, for a cleaner burn.\n\nA slightly filtered and hygiene-masked flavor of the preferred brand for those who want raw flavour after hard shift work.\n\n\"Half the soot, twice the salute.\"",
+      "strItemDef" : "ItmCigViceroy02",
+      "strType"    : "Item",
+      "strLoot"    : null,
+      "nStackLimit"    : 20,
+      "aInteractions" : [
+        "EquipItem",
+        "ACTLightCig",
+        "DropItem",
+        "DropItemStack",
+        "PickupItem",
+        "PickupItemStack"
+      ],
+      "aStartingConds" : [
+        "IsBurnable=1.0x1.0",
+        "IsFlexible=1.0x1",
+        "IsHandheld=1.0x1",
+        "IsViceroy=1.0x1",
+        "IsMenthol=1.0x1",
+        "IsCigarette=1.0x1",
+        "IsNicotine=1.0x1",
+        "IsDrug=1.0x1",
+        "IsPartsSmall=1.0x1",
+        "IsSolid=1.0x1.0",
+        "StatBasePrice=1.0x7.0",
+        "StatMass=1.0x0.005",
+        "StatDamageMax=1.0x1",
+        "IsCategoryIntoxicants=1.0x1"
+      ],
+      "mapCondTolerance"       : [
+      ],
+      "mapPoints"      : [
+      ],
+      "mapChargeProfiles"  : [
+        "Melee","MeleeAttackDefaultExtraFragile"
+      ],
+      "aUpdateCommands" : [
+      ],
+      "mapGUIPropMaps"  : [
+      ],
+      "strPortraitImg"  : "ItmCigViceroy02",
+      "mapSlotEffects" : [
+        "head_in","head_inCigViceroy02",
+        "heldL","Blank",
+        "heldR","Blank"
+      ],
+      "jsonPI"            : null
+    },
+    {
+      "strName" : "ItmCigViceroy02Lit",
+      "strNameShort" : "Cigarette",
+      "strNameFriendly" : "Viceroy Menthol Cigarette (Lit)",
+      "strDesc" : "A menthol-flavored Viceroy-brand cigarette, for a cleaner burn home.\n\nA slightly filtered and hygiene-masked flavor of the preferred brand for those who want raw flavour after hard shift work.\n\n\"Sweeter than oxygen.\"",
+      "strItemDef" : "ItmCigViceroy02Lit",
+      "strType"    : "Item",
+      "strLoot"    : null,
+      "aInteractions" : [
+        "ACTSmokeCig",
+        "ACTSnuffCig",
+        "EquipItem",
+        "DropItem",
+        "PickupItem"
+      ],
+      "aStartingConds" : [
+        "IsBurnable=1.0x1.0",
+        "IsIgniter=1.0x1.0",
+        "IsFlexible=1.0x1",
+        "IsHandheld=1.0x1",
+        "IsViceroy=1.0x1",
+        "IsMenthol=1.0x1",
+        "IsCigarette=1.0x1",
+        "IsPartsSmall=1.0x1",
+        "IsNicotine=1.0x1",
+        "IsDrug=1.0x1",
+        "IsLit=1.0x1.0",
+        "IsSolid=1.0x1.0",
+        "StatBasePrice=1.0x0.0",
+        "IsNotForSale=1.0x1",
+        "StatMass=1.0x0.001",
+        "IsReadyHeat=1.0x1",
+        "StatHeatArea=1.0x0.000001",
+        "StatHeatVol=1.0x0.1",
+        "StatSolidTemp=1.0x400.0",
+        "StatDamageMax=1.0x1.0",
+        "StatNicotineUsedMax=1.0x1.0",
+        "IsCategoryTrash=1.0x1"
+      ],
+      "aStartingCondRules"  : [
+      ],
+      "mapCondTolerance"       : [
+      ],
+      "mapPoints"      : [
+      ],
+      "aUpdateCommands" : [
+        "GasRespire2,Cigarette01,null",
+        "Destructable,StatNicotineUsed,ACTCigToStub,StatNicotineUsedMax,1.0"
+      ],
+      "mapGUIPropMaps"  : [
+        "Panel A", "HeaterItemGeneric"
+      ],
+      "strPortraitImg"  : "ItmCigViceroy02Lit",
+      "mapSlotEffects" : [
+        "head_in","head_inCigViceroy02Lit",
+        "heldL","HeldItmDefaultSoftL",
+        "heldR","HeldItmDefaultSoftR"
+      ],
+      "aTickers" : [ 
+        "CigBurning"
+      ],
+      "strAudioEmitter" : "",
+      "jsonPI"            : null
+    },
+    {
+      "strName" : "ItmCigDamaskRoseBox01",
+      "strNameShort" : "Cigarette Box",
+      "strNameFriendly" : "Damask Rose Cigarette Box",
+      "strDesc" : "A 10-count Damask Rose cigarette box, by The Green Energy Company based in the Rosebud on Tharsis Landing.\n\nThe famously trippy pink and aqua floral design of the system's leading sativa-strain product adorns the front.\n\n\"Smoke a rose.\"",
+      "strItemDef" : "ItmCigDamaskRoseBox01Empty",
+      "strType"    : "Item",
+      "strLoot"    : null,
+      "aInteractions" : [
+        "Inventory",
+        "DrawCig",
+        "DropItem",
+        "PickupItem"
+      ],
+      "aStartingConds" : [
+        "IsBurnable=1.0x1.0",
+        "IsFlexible=1.0x1",
+        "IsHandheld=1.0x1",
+        "IsDamaskRose=1.0x1",
+        "IsGEC=1.0x1",
+        "IsContainer=1.0x1.0",
+        "IsSolid=1.0x1.0",
+        "IsPocketable=1.0x1",
+        "StatBasePrice=1.0x1.0",
+        "StatMass=1.0x0.025",
+        "StatDamageMax=1.0x2",
+        "IsCategoryIntoxicants=1.0x1"
+      ],
+      "strContainerCT"    : "TIsFitContainerPartsSmall",
+      "nContainerHeight"   : 1,
+      "nContainerWidth"   : 1,
+      "mapCondTolerance"       : [
+      ],
+      "mapPoints"      : [
+      ],
+      "mapChargeProfiles"  : [
+        "Melee","MeleeAttackDefaultFragile"
+      ],
+      "mapAltItemDefs"  : [
+        "IsSolid","ItmCigDamaskRoseBox01"
+      ],
+      "aUpdateCommands" : [
+        "Destructable,StatDamage,ACTDefaultDestroy,StatDamageMax,1.0"
+      ],
+      "mapGUIPropMaps"  : [
+      ],
+      "strPortraitImg"  : "ItmCigDamaskRoseBox01Empty",
+      "strAudioEmitter" : "ItmMediumPartsGeneralSound03",
+      "mapSlotEffects" : [
+        "heldL","HeldItmDefaultSoftL",
+        "heldR","HeldItmDefaultSoftR"
+      ],
+      "jsonPI"            : null
+    },
+    {
+      "strName" : "ItmCigDamaskRose01",
+      "strNameShort" : "Cigarette",
+      "strNameFriendly" : "Damask Rose Cigarette",
+      "strDesc" : "A Damask Rose cigarette.\n\nThe leading brand of marijuana off world due to its history, quality, and affordability. A pure sativa strain bred for adverse growing conditions.\n\n\"The Flower of the Oasis.\"",
+      "strItemDef" : "ItmCigDamaskRose01",
+      "strType"    : "Item",
+      "strLoot"    : null,
+      "nStackLimit"    : 10,
+      "aInteractions" : [
+        "EquipItem",
+        "ACTLightCig",
+        "DropItem",
+        "DropItemStack",
+        "PickupItem",
+        "PickupItemStack"
+      ],
+      "aStartingConds" : [
+        "IsBurnable=1.0x1.0",
+        "IsFlexible=1.0x1",
+        "IsHandheld=1.0x1",      
+        "IsDamaskRose=1.0x1",
+        "IsGEC=1.0x1",
+        "IsCigarette=1.0x1",
+        "IsCannabis=1.0x1",
+        "IsDrug=1.0x1",
+        "IsPartsSmall=1.0x1",
+        "IsSolid=1.0x1.0",
+        "StatBasePrice=1.0x15.0",
+        "StatMass=1.0x0.005",
+        "StatDamageMax=1.0x1",
+        "IsCategoryIntoxicants=1.0x1"
+      ],
+      "mapCondTolerance"       : [
+      ],
+      "mapPoints"      : [
+      ],
+      "aUpdateCommands" : [
+      ],
+      "mapGUIPropMaps"  : [
+      ],
+      "strPortraitImg"  : "ItmCigDamaskRose01",
+      "mapSlotEffects" : [
+        "head_in","head_inCigDamaskRose01",
+        "heldL","Blank",
+        "heldR","Blank"
+      ],
+      "jsonPI"            : null
+    },
+    {
+      "strName" : "ItmCigDamaskRose01Lit",
+      "strNameShort" : "Cigarette",
+      "strNameFriendly" : "Damask Rose Cigarette (Lit)",
+      "strDesc" : "A Damask Rose cigarette.\n\nThe leading brand of marijuana off world due to its history, quality, and affordability. A pure sativa strain bred for adverse growing conditions.\n\n\"Drift Away.\"",
+      "strItemDef" : "ItmCigDamaskRose01Lit",
+      "strType"    : "Item",
+      "strLoot"    : null,
+      "aInteractions" : [
+        "ACTSmokeCig",
+        "ACTSnuffCig",
+        "EquipItem",
+        "DropItem",
+        "PickupItem"
+      ],
+      "aStartingConds" : [
+        "IsBurnable=1.0x1.0",
+        "IsIgniter=1.0x1.0",
+        "IsFlexible=1.0x1",
+        "IsHandheld=1.0x1",
+        "IsDamaskRose=1.0x1",
+        "IsGEC=1.0x1",
+        "IsCigarette=1.0x1",
+        "IsPartsSmall=1.0x1",
+        "IsCannabis=1.0x1",
+        "IsDrug=1.0x1",
+        "IsLit=1.0x1.0",
+        "IsSolid=1.0x1.0",
+        "StatBasePrice=1.0x0.0",
+        "IsNotForSale=1.0x1",
+        "StatMass=1.0x0.001",
+        "IsReadyHeat=1.0x1",
+        "StatHeatArea=1.0x0.000001",
+        "StatHeatVol=1.0x0.1",
+        "StatSolidTemp=1.0x400.0",
+        "StatDamageMax=1.0x1.0",
+        "StatCannabisUsedMax=1.0x1.0",
+        "IsCategoryTrash=1.0x1"
+      ],
+      "aStartingCondRules"  : [
+      ],
+      "mapCondTolerance"       : [
+      ],
+      "mapPoints"      : [
+      ],
+      "aUpdateCommands" : [
+        "GasRespire2,Cigarette01,null",
+        "Destructable,StatCannabisUsed,ACTCigToStub,StatCannabisUsedMax,1.0"
+      ],
+      "mapGUIPropMaps"  : [
+        "Panel A", "HeaterItemGeneric"
+      ],
+      "strPortraitImg"  : "ItmCigDamaskRose01Lit",
+      "mapSlotEffects" : [
+        "head_in","head_inCigDamaskRose01Lit",
+        "heldL","HeldItmDefaultSoftL",
+        "heldR","HeldItmDefaultSoftR"
+      ],
+      "aTickers" : [ 
+        "CigCannabisBurning"
+      ],
+      "strAudioEmitter" : "",
+      "jsonPI"            : null
+    },
+    {
+      "strName" : "ItmCigUnicornDreamBox01",
+      "strNameShort" : "Cigarette Box",
+      "strNameFriendly" : "Unicorn Dream Cigarette Box",
+      "strDesc" : "A 10-count Unicorn Dream cigarette box, by The Green Energy Company based in the Rosebud on Tharsis Landing.\n\nA more grounded take on Damask Rose's famous floral design adorns the front, with chubbier leaves suggesting the indica-strain product within.\n\n\"Mythic drift.\"",
+      "strItemDef" : "ItmCigUnicornDreamBox01Empty",
+      "strType"    : "Item",
+      "strLoot"    : null,
+      "aInteractions" : [
+        "Inventory",
+        "DrawCig",
+        "DropItem",
+        "PickupItem"
+      ],
+      "aStartingConds" : [
+        "IsBurnable=1.0x1.0",
+        "IsFlexible=1.0x1",
+        "IsHandheld=1.0x1",
+        "IsUnicornDream=1.0x1",
+        "IsGEC=1.0x1",
+        "IsContainer=1.0x1.0",
+        "IsSolid=1.0x1.0",
+        "IsPocketable=1.0x1",
+        "StatBasePrice=1.0x1.0",
+        "StatMass=1.0x0.025",
+        "StatDamageMax=1.0x2",
+        "IsCategoryIntoxicants=1.0x1"
+      ],
+      "strContainerCT"    : "TIsFitContainerPartsSmall",
+      "nContainerHeight"   : 1,
+      "nContainerWidth"   : 1,
+      "mapCondTolerance"       : [
+      ],
+      "mapPoints"      : [
+      ],
+      "mapChargeProfiles"  : [
+        "Melee","MeleeAttackDefaultFragile"
+      ],
+      "mapAltItemDefs"  : [
+        "IsSolid","ItmCigUnicornDreamBox01"
+      ],
+      "aUpdateCommands" : [
+        "Destructable,StatDamage,ACTDefaultDestroy,StatDamageMax,1.0"
+      ],
+      "mapGUIPropMaps"  : [
+      ],
+      "strPortraitImg"  : "ItmCigUnicornDreamBox01Empty",
+      "strAudioEmitter" : "ItmMediumPartsGeneralSound03",
+      "mapSlotEffects" : [
+        "heldL","HeldItmDefaultSoftL",
+        "heldR","HeldItmDefaultSoftR"
+      ],
+      "jsonPI"            : null
+    },
+    {
+      "strName" : "ItmCigUnicornDream01",
+      "strNameShort" : "Cigarette",
+      "strNameFriendly" : "Unicorn Dream Cigarette",
+      "strDesc" : "A Unicorn Dream cigarette.\n\nThe sister strain to the leading brand of marijuana off world due to history, quality, and affordability. A pure indica strain bred for adverse growing conditions.\n\n\"The Leaf of Dreams.\"",
+      "strItemDef" : "ItmCigUnicornDream01",
+      "strType"    : "Item",
+      "strLoot"    : null,
+      "nStackLimit"    : 10,
+      "aInteractions" : [
+        "EquipItem",
+        "ACTLightCig",
+        "DropItem",
+        "DropItemStack",
+        "PickupItem",
+        "PickupItemStack"
+      ],
+      "aStartingConds" : [
+        "IsBurnable=1.0x1.0",
+        "IsFlexible=1.0x1",
+        "IsHandheld=1.0x1",
+        "IsUnicornDream=1.0x1",
+        "IsGEC=1.0x1",
+        "IsCigarette=1.0x1",
+        "IsCannabis=1.0x1",
+        "IsDrug=1.0x1",
+        "IsPartsSmall=1.0x1",
+        "IsSolid=1.0x1.0",
+        "StatBasePrice=1.0x15.0",
+        "StatMass=1.0x0.005",
+        "StatDamageMax=1.0x1",
+        "IsCategoryIntoxicants=1.0x1"
+      ],
+      "mapCondTolerance"       : [
+      ],
+      "mapPoints"      : [
+      ],
+      "mapChargeProfiles"  : [
+        "Melee","MeleeAttackDefaultExtraFragile"
+      ],
+      "aUpdateCommands" : [
+      ],
+      "mapGUIPropMaps"  : [
+      ],
+      "strPortraitImg"  : "ItmCigUnicornDream01",
+      "mapSlotEffects" : [
+        "head_in","head_inCigUnicornDream01",
+        "heldL","Blank",
+        "heldR","Blank"
+      ],
+      "jsonPI"            : null
+    },
+    {
+      "strName" : "ItmCigUnicornDream01Lit",
+      "strNameShort" : "Cigarette",
+      "strNameFriendly" : "Unicorn Dream Cigarette (Lit)",
+      "strDesc" : "A Unicorn Dream cigarette.\n\nThe sister strain to the leading brand of marijuana off world due to history, quality, and affordability. A pure indica strain bred for adverse growing conditions.\n\n\"Chase the dream.\"",
+      "strItemDef" : "ItmCigUnicornDream01Lit",
+      "strType"    : "Item",
+      "strLoot"    : null,
+      "aInteractions" : [
+        "ACTSmokeCig",
+        "ACTSnuffCig",
+        "EquipItem",
+        "DropItem",
+        "PickupItem"
+      ],
+      "aStartingConds" : [
+        "IsBurnable=1.0x1.0",
+        "IsIgniter=1.0x1.0",
+        "IsFlexible=1.0x1",
+        "IsHandheld=1.0x1",
+        "IsUnicornDream=1.0x1",
+        "IsGEC=1.0x1",
+        "IsCigarette=1.0x1",
+        "IsPartsSmall=1.0x1",
+        "IsCannabis=1.0x1",
+        "IsDrug=1.0x1",
+        "IsLit=1.0x1.0",
+        "IsSolid=1.0x1.0",
+        "StatBasePrice=1.0x0.0",
+        "IsNotForSale=1.0x1",
+        "StatMass=1.0x0.001",
+        "IsReadyHeat=1.0x1",
+        "StatHeatArea=1.0x0.000001",
+        "StatHeatVol=1.0x0.1",
+        "StatSolidTemp=1.0x400.0",
+        "StatDamageMax=1.0x1.0",
+        "StatCannabisUsedMax=1.0x1.0",
+        "IsCategoryTrash=1.0x1"
+      ],
+      "aStartingCondRules"  : [
+      ],
+      "mapCondTolerance"       : [
+      ],
+      "mapPoints"      : [
+      ],
+      "mapChargeProfiles"  : [
+        "Melee","MeleeAttackDefaultExtraFragile"
+      ],
+      "aUpdateCommands" : [
+        "GasRespire2,Cigarette01,null",
+        "Destructable,StatCannabisUsed,ACTCigToStub,StatCannabisUsedMax,1.0"
+      ],
+      "mapGUIPropMaps"  : [
+        "Panel A", "HeaterItemGeneric"
+      ],
+      "strPortraitImg"  : "ItmCigUnicornDream01Lit",
+      "mapSlotEffects" : [
+        "head_in","head_inCigUnicornDream01Lit",
+        "heldL","HeldItmDefaultSoftL",
+        "heldR","HeldItmDefaultSoftR"
+      ],
+      "aTickers" : [ 
+        "CigCannabisBurning"
+      ],
+      "strAudioEmitter" : "",
+      "jsonPI"            : null
+    },
+  
+  
+  
+  
+    {
+      "strName" : "ItmCigStub",
+      "strNameShort" : "Cig Stub",
+      "strNameFriendly" : "Cigarette Stub",
+      "strDesc" : "A cigarette stub. Ash and yellowed paper.",
+      "strItemDef" : "ItmCigStub",
+      "strType"    : "Item",
+      "strLoot"    : null,
+      "nStackLimit"    : 3,
+      "aInteractions" : [
+        "DropItem",
+        "DropItemStack",
+        "PickupItem",
+        "PickupItemStack"
+      ],
+      "aStartingConds" : [
+        "IsBurnable=1.0x1.0",
+        "IsFlammable=1.0x1.0",
+        "IsIgniter=1.0x1.0",
+        "IsFlexible=1.0x1",
+        "IsHandheld=1.0x1",
+        "IsStub=1.0x1.0",
+        "IsPartsSmall=1.0x1",
+        "IsTrash=1.0x1.0",
+        "IsSolid=1.0x1.0",
+        "StatBasePrice=1.0x0.0",
+        "IsNotForSale=1.0x1",
+        "StatMass=1.0x0.0002",
+        "StatDamageMax=1.0x1",
+        "IsCategoryTrash=1.0x1"
+      ],
+      "mapCondTolerance"       : [
+      ],
+      "mapPoints"      : [
+      ],
+      "aUpdateCommands" : [
+      ],
+      "mapGUIPropMaps"  : [
+      ],
+      "strPortraitImg"  : "ItmCigaretteButts",
+      "mapSlotEffects" : [
+        "head_in","head_inCigStub",
+        "heldL","Blank",
+        "heldR","Blank"
+      ],
+      "jsonPI"            : null
+    },
+  
+    {
+      "strName" : "Plot_Whodunnit_VictimDNA",
+      "strNameFriendly" : "Biological Samples from Victim",
+      "strNameShort" : "DNA Samples",
+      "strDesc" : "Samples of hair, skin, and other biologicals from a victim's body.",
+      "strItemDef" : "ItmCigStub",
+      "strType"    : "Item",
+      "strLoot"    : null,
+      "nStackLimit"    : 3,
+      "aInteractions" : [
+        "DropItem",
+        "PickupItem"
+      ],
+      "aStartingConds" : [
+        "IsPartsSmall=1.0x1",
+        "IsTrash=1.0x1.0",
+        "IsSolid=1.0x1.0",
+        "Plot_Whodunnit_ClueFromVictim=1.0x1",
+        "StatBasePrice=1.0x0.1",
+        "IsNotForSale=1.0x1",
+        "StatMass=1.0x0.0002",
+        "StatDamageMax=1.0x1",
+        "IsCategoryTrash=1.0x1"
+      ],
+      "mapCondTolerance"       : [
+      ],
+      "mapPoints"      : [
+      ],
+      "aUpdateCommands" : [
+      ],
+      "mapGUIPropMaps"  : [
+      ],
+      "strPortraitImg"  : "ItmCigaretteButts",
+      "mapSlotEffects" : [
+        "heldL","Blank",
+        "heldR","Blank"
+      ],
+      "jsonPI"            : null
+    },
+  
+  
+  
+  
+  
+  
+    {
+      "strName" : "ItmHygieneWipes01",
+      "strNameShort" : "Hygiene Pack",
+      "strNameFriendly" : "Hygiene Pack",
+      "strDesc" : "A personal hygiene pack, a standard consumable kit with items for cleanliness and grooming on the float.\n\nAlong with general-use wet wipes, kit contents typically include soap, shaving supplies, deodorant, and the packaging passingly works as a single-use comb/hairbrush. Luxe kits may also include dental floss, lip balm, skin cream, nail clippers, sleep mask, and ear plugs.\n\nSpacers often refill from preferred or affordable brands.",
+      "strItemDef" : "ItmHygieneWipes01",
+      "strType"    : "Item",
+      "strLoot"    : null,
+      "nStackLimit"    : 10,
+      "aInteractions" : [
+        "SeekHygiene",
+        "SeekHygieneLowNeed",
+        "DropItem",
+        "DropItemStack",
+        "PickupItem",
+        "PickupItemStack"
+      ],
+      "aStartingConds" : [
+        "IsAbsorbent=1.0x2.0",
+        "IsBurnable=1.0x1.0",
+        "IsFlexible=1.0x1",
+        "IsSheet=1.0x1",
+        "IsHandheld=1.0x1",
+        "IsHygieneItem=1.0x1",
+        "IsSolid=1.0x1.0",
+        "IsPocketable=1.0x1",
+        "StatBasePrice=1.0x80.0",
+        "StatMass=1.0x0.01",
+        "StatDamageMax=1.0x1.0",
+        "IsCategoryMedical=1.0x1"
+      ],
+      "mapChargeProfiles"  : [
+        "Melee","MeleeAttackDefaultExtraFragile",
+        "Normal","WearAndTearDefault"
+      ],
+      "aUpdateCommands" : [
+        "Destructable,StatDamage,ACTDefaultDestroy,StatDamageMax,1.0"
+      ],
+      "strPortraitImg"  : "ItmHygieneWipes01",
+      "mapSlotEffects" : [
+        "heldL","HeldItmDefaultSoftL",
+        "heldR","HeldItmDefaultSoftR"
+      ],
+      "strAudioEmitter" : "ItmDrinkPouch01Sound"
+    }
+  ]

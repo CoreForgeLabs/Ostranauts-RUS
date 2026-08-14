@@ -1,0 +1,6234 @@
+[
+  {
+    "strName" : "ItmAmmo20mm",
+    "strNameShort" : "Ammo: 20mm",
+    "strNameFriendly" : "Ammo: 20mm",
+    "strItemDef" : "ItmAmmo20mm",
+    "strType"    : "Item",
+    "nStackLimit"    : 20,
+    "aInteractions" : [
+      "DropItem",
+      "DropItemStack",
+      "PickupItem",
+      "PickupItemStack"
+    ],
+    "aStartingConds" : [
+      "IsSolid=1.0x1.0",
+      "IsAmmoShip=1.0x1",
+      "IsAmmo20mm=1.0x1",
+      "IsAmmoDespawnTime=1x0.6",
+      "StatBasePrice=1.0x5",
+      "StatMass=1.0x0.0319",
+      "StatDamageMax=1.0x3",
+      "IsCategoryWeapons=1.0x1",
+      "IsShipAttackModeId=1x1",
+      "IsShipWeaponSalvoCount=1x3"
+    ],
+    "mapChargeProfiles"  : [
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTDefaultDestroy,StatDamageMax,1.0"
+    ],
+    "strPortraitImg"  : "ItmAmmo20mm",
+    "mapSlotEffects" : [
+      "heldL","Blank",
+      "heldR","Blank"
+    ],
+    "strAudioEmitter" : "ItmAmmoSound"
+  },
+  {
+    "strName" : "ItmAmmo150mm",
+    "strNameShort" : "Ammo: 150mm",
+    "strNameFriendly" : "Ammo: 150mm",
+    "strItemDef" : "ItmAmmo150mm",
+    "strType"    : "Item",
+    "nStackLimit"    : 5,
+    "aInteractions" : [
+      "DropItem",
+      "DropItemStack",
+      "PickupItem",
+      "PickupItemStack"
+    ],
+    "aStartingConds" : [
+      "IsSolid=1.0x1.0",
+      "IsAmmoDespawnTime=1x40",
+      "IsAmmoShip=1.0x1",
+      "IsAmmo150mm=1.0x1",
+      "StatBasePrice=1.0x100",
+      "StatMass=1.0x2.0",
+      "StatDamageMax=1.0x20",
+      "IsCategoryWeapons=1.0x1",
+      "IsShipAttackModeId=1x2"
+    ],
+    "mapChargeProfiles"  : [
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTDefaultDestroy,StatDamageMax,1.0"
+    ],
+    "strPortraitImg"  : "ItmAmmoProjectile",
+    "mapSlotEffects" : [
+      "heldL","Blank",
+      "heldR","Blank"
+    ],
+    "strAudioEmitter" : "ItmAmmoSound"
+  },
+  {
+    "strName" : "ItmAmmoDecoyMissile01",
+    "strNameShort" : "Decoy Missile",
+    "strNameFriendly" : "Polaris Decoy Missile GDM-4",
+    "strDesc" : "The Polaris Guided Decoy Missile GDM-4 is an early-generation decoy, offering limited diversion capability against modern tracking systems.",
+    "strItemDef" : "ItmAmmoDecoyMissile01",
+    "strType"    : "Item",
+    "nStackLimit"    : 1,
+    "aInteractions" : [
+      "DropItem",
+      "DropItemStack",
+      "PickupItem",
+      "PickupItemStack"
+    ],
+    "aStartingConds" : [
+      "IsSolid=1.0x1.0",
+      "IsCumbersome=1.0x1.0",
+      "IsPolaris=1.0x1.0",
+      "IsAmmoMissile=1.0x1",
+      "IsAmmoDecoyMissile=1.0x1",
+      "IsAmmoDecoyMissile01=1x1",
+      "IsDecoyTriggerChance=1x0.33",
+      "IsAmmoDespawnTime=1x1800",
+      "IsAmmoShip=1.0x1",
+      "StatBasePrice=1.0x5000",
+      "StatMass=1.0x150.0",
+      "StatDamageMax=1.0x7",
+      "IsCategoryWeapons=1.0x1",
+      "IsMissileFuelAmount=1.0x1000",
+      "IsMissileRCSCount=1.0x15",
+      "IsMissileMaxSpeedMS=1.0x8000",
+      "IsShipAttackModeId=1x6"
+    ],
+    "mapChargeProfiles"  : [
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTDefaultDestroy,StatDamageMax,1.0"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmAmmoDecoy01",
+    "mapSlotEffects" : [
+      "drag","Blank"
+    ],
+    "strAudioEmitter" : "ItmToolCrowbar01Sound"
+  },
+  {
+    "strName" : "ItmAmmoDecoyMissile02",
+    "strNameShort" : "Decoy Missile",
+    "strNameFriendly" : "Polaris Decoy Missile GDM-800",
+    "strDesc" : "The Polaris Guided Decoy Missile GDM-800 is a current-generation decoy, providing reliable diversion against the majority of known tracking systems.",
+    "strItemDef" : "ItmAmmoDecoyMissile02",
+    "strType"    : "Item",
+    "nStackLimit"    : 1,
+    "aInteractions" : [
+      "DropItem",
+      "DropItemStack",
+      "PickupItem",
+      "PickupItemStack"
+    ],
+    "aStartingConds" : [
+      "IsSolid=1.0x1.0",
+      "IsCumbersome=1.0x1.0",
+      "IsPolaris=1.0x1.0",
+      "IsAmmoMissile=1.0x1",
+      "IsAmmoDecoyMissile=1.0x1",
+      "IsAmmoDecoyMissile02=1x1",
+      "IsDecoyTriggerChance=1x0.75",
+      "IsAmmoDespawnTime=1x1800",
+      "IsAmmoShip=1.0x1",
+      "StatBasePrice=1.0x25000",
+      "StatMass=1.0x150.0",
+      "StatDamageMax=1.0x7",
+      "IsCategoryWeapons=1.0x1",
+      "IsMissileFuelAmount=1.0x1000",
+      "IsMissileRCSCount=1.0x12",
+      "IsMissileMaxSpeedMS=1.0x3000",
+      "IsShipAttackModeId=1x6"
+    ],
+    "mapChargeProfiles"  : [
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTDefaultDestroy,StatDamageMax,1.0"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmAmmoDecoy02",
+    "mapSlotEffects" : [
+      "drag","Blank"
+    ],
+    "strAudioEmitter" : "ItmToolCrowbar01Sound"
+  },
+  {
+    "strName" : "ItmAmmoDecoyMissile03",
+    "strNameShort" : "Decoy Missile",
+    "strNameFriendly" : "Polaris Decoy Missile GDM-X1",
+    "strDesc" : "The Polaris Guided Decoy Missile GDM-X1 is the most advanced decoy of its generation, providing a guaranteed diversion against all known tracking systems.",
+    "strItemDef" : "ItmAmmoDecoyMissile03",
+    "strType"    : "Item",
+    "nStackLimit"    : 1,
+    "aInteractions" : [
+      "DropItem",
+      "DropItemStack",
+      "PickupItem",
+      "PickupItemStack"
+    ],
+    "aStartingConds" : [
+      "IsSolid=1.0x1.0",
+      "IsCumbersome=1.0x1.0",
+      "IsPolaris=1.0x1.0",
+      "IsAmmoMissile=1.0x1",
+      "IsAmmoDecoyMissile=1.0x1",
+      "IsAmmoDecoyMissile03=1x1",
+      "IsDecoyTriggerChance=1x1",
+      "IsAmmoDespawnTime=1x1800",
+      "IsAmmoShip=1.0x1",
+      "StatBasePrice=1.0x150000",
+      "StatMass=1.0x150.0",
+      "StatDamageMax=1.0x7",
+      "IsCategoryWeapons=1.0x1",
+      "IsMissileFuelAmount=1.0x1000",
+      "IsMissileRCSCount=1.0x12",
+      "IsMissileMaxSpeedMS=1.0x5000",
+      "IsShipAttackModeId=1x6"
+    ],
+    "mapChargeProfiles"  : [
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTDefaultDestroy,StatDamageMax,1.0"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmAmmoDecoy03",
+    "mapSlotEffects" : [
+      "drag","Blank"
+    ],
+    "strAudioEmitter" : "ItmToolCrowbar01Sound"
+  },
+  {
+    "strName" : "ItmAmmoMissile01",
+    "strNameShort" : "Missile",
+    "strNameFriendly" : "Smartlink 'Rancor' Missile",
+    "strDesc" : "The SIM-295A is the most popular heavy missile in use since the ablation cascade. Developed by Smartlink for Titan and its allies, the Rancor packs an unmatched punch along with impressive maneuvering and range.",
+    "strItemDef" : "ItmAmmoMissile01",
+    "strType"    : "Item",
+    "nStackLimit"    : 1,
+    "aInteractions" : [
+      "DropItem",
+      "DropItemStack",
+      "PickupItem",
+      "PickupItemStack"
+    ],
+    "aStartingConds" : [
+      "IsSolid=1.0x1.0",
+      "IsCumbersome=1.0x1.0",
+      "IsExplosive=1.0x1",
+      "IsSmartlink=1.0x1.0",
+      "IsAmmoMissile=1.0x1",
+      "IsAmmoMissile01=1.0x1",
+      "IsAmmoDespawnTime=1x1800",
+      "IsAmmoShip=1.0x1",
+      "StatBasePrice=1.0x20000",
+      "StatMass=1.0x150.0",
+      "StatDamageMax=1.0x7",
+      "IsCategoryWeapons=1.0x1",
+      "IsMissileFuelAmount=1.0x1000",
+      "IsMissileRCSCount=1.0x12",
+      "IsMissileMaxSpeedMS=1.0x5000",
+      "IsShipAttackModeId=1x3"
+    ],
+    "mapChargeProfiles"  : [
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTMissile01Destroy,StatDamageMax,1.0"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmAmmoMissile01",
+    "mapSlotEffects" : [
+      "drag","Blank"
+    ],
+    "strAudioEmitter" : "ItmToolCrowbar01Sound"
+  },
+  {
+    "strName" : "ItmAmmoMissile02",
+    "strNameShort" : "Missile",
+    "strNameFriendly" : "Brave New World 'Little Dragon 小龙' Missile",
+    "strDesc" : "A light missile developed by Brave New World for Xinhua and its allies, dominant throughout the inner planets. In the Zodiac, the Xiǎolóng (the Snake) represents adaptability, cunning, and transformation.",
+    "strItemDef" : "ItmAmmoMissile02",
+    "strType"    : "Item",
+    "nStackLimit"    : 1,
+    "aInteractions" : [
+      "DropItem",
+      "DropItemStack",
+      "PickupItem",
+      "PickupItemStack"
+    ],
+    "aStartingConds" : [
+      "IsSolid=1.0x1.0",
+      "IsCumbersome=1.0x1.0",
+      "IsBNW=1.0x1.0",
+      "IsAmmoMissile=1.0x1",
+      "IsAmmoMissile02=1.0x1",
+      "IsAmmoDespawnTime=1x1800",
+      "IsAmmoShip=1.0x1",
+      "IsExplosive=1.0x1",
+      "StatBasePrice=1.0x9000",
+      "StatMass=1.0x80.0",
+      "StatDamageMax=1.0x5",
+      "IsCategoryWeapons=1.0x1",
+      "IsMissileFuelAmount=1.0x500",
+      "IsMissileRCSCount=1.0x17",
+      "IsMissileMaxSpeedMS=1.0x6500",
+      "IsShipAttackModeId=1x4"
+    ],
+    "mapChargeProfiles"  : [
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTMissile02Destroy,StatDamageMax,1.0"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmAmmoMissile02",
+    "mapSlotEffects" : [
+      "drag","Blank"
+    ],
+    "strAudioEmitter" : "ItmToolCrowbar01Sound"
+  },
+  {
+    "strName" : "ItmAmmoMissile03",
+    "strNameShort" : "Missile",
+    "strNameFriendly" : "Soyuzneft 'Belter Bomb' Missile",
+    "strDesc" : "A retrofitted mining charge developed by Soyuzneft as a low-cost guided missile. Slow and ponderous, this missile might even reach its intended destination.",
+    "strItemDef" : "ItmAmmoMissile03",
+    "strType"    : "Item",
+    "nStackLimit"    : 1,
+    "aInteractions" : [
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds" : [
+      "IsSolid=1.0x1.0",
+      "IsCumbersome=1.0x1.0",
+      "IsSoyuzneft=1.0x1.0",
+      "IsAmmoMissile=1.0x1",
+      "IsAmmoMissile03=1.0x1",
+      "IsAmmoDespawnTime=1x1800",
+      "IsAmmoShip=1.0x1",
+      "IsExplosive=1.0x1",
+      "StatBasePrice=1.0x3000",
+      "StatMass=1.0x20.0",
+      "StatDamageMax=1.0x2",
+      "IsCategoryWeapons=1.0x1",
+      "IsMissileFuelAmount=1.0x200",
+      "IsMissileRCSCount=1.0x9",
+      "IsMissileMaxSpeedMS=1.0x3500",
+      "IsShipAttackModeId=1x5"
+    ],
+    "mapChargeProfiles"  : [
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTMissile03Destroy,StatDamageMax,1.0"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmAmmoMissile03",
+    "mapSlotEffects" : [
+      "drag","Blank"
+    ],
+    "strAudioEmitter" : "ItmToolCrowbar01Sound"
+  },
+
+  {
+    "strName" : "ItmSensorEM01Off",
+    "strNameShort" : "EM Sensor",
+    "strNameFriendly" : "NASA Sensor: EM (Off)",
+    "strItemDef" : "ItmSensorEM01Off",
+    "strDesc" : "An electromagnetic (EM) passive sensor by NASA Outer Space Command. Detects electronic signatures such as transponders or active sensors.",
+    "strType"    : "Item",
+    "strLoot"    : null,
+    "aInteractions" : [
+      "GUISensor"
+    ],
+    "aStartingConds" : [
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsSensorEM=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsBrittle=1.0x1.0",
+      "IsNASA=1.0x1",
+      "StatBasePrice=1.0x3200.0",
+      "StatDismantleProgressMax=1.0x100",
+      "StatInstallProgressMax=1.0x200",
+      "StatUninstallProgressMax=1.0x200",
+      "StatMass=1.0x5.0",
+      "StatDamageMax=1.0x5",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategorySensors=1.0x1",
+      "IsSignalable=1.0x1"
+    ],
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,0,-24",
+      "PowerA,0,0"
+    ],
+    "mapGUIPropMaps"  : [
+      "Panel A",
+      "SensorUI",
+      "Electrical"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTSensorEM01Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmSensorEM01Off",
+    "aTickers" : [ 
+      "Power"
+    ],
+    "jsonPI"            : "SensorEM01"
+  },
+  {
+    "strName" : "ItmSensorEM01Loose",
+    "strNameShort" : "EM Sensor",
+    "strItemDef" : "ItmSensorEM01Loose",
+    "strNameFriendly" : "NASA Sensor: EM (Loose)",
+    "strDesc" : "An electromagnetic (EM) passive sensor by NASA Outer Space Command. Detects electronic signatures such as transponders or active sensors.",
+    "strType"    : "Item",
+    "aInteractions" : [
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds" : [
+      "IsSensorEM=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsCumbersome=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsBrittle=1.0x1.0",
+      "IsNASA=1.0x1",
+      "StatBasePrice=1.0x3200.0",
+      "StatDismantleProgressMax=1.0x100",
+      "StatInstallProgressMax=1.0x200",
+      "StatUninstallProgressMax=1.0x200",
+      "StatMass=1.0x5.0",
+      "StatDamageMax=1.0x5",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategorySensors=1.0x1"
+    ],
+    "mapPoints"      : [
+    ],
+    "mapGUIPropMaps"  : [
+      "Panel A",
+      "SensorUI"
+    ],
+    "mapSlotEffects" : [
+      "drag", "Blank"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTSensorEM01LooseDamage,StatDamageMax,1.0"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmSensorEM01Loose"
+  },
+  {
+    "strName" : "ItmSensorEM01",
+    "strNameShort" : "EM Sensor",
+    "strNameFriendly" : "NASA Sensor: EM",
+    "strItemDef" : "ItmSensorEM01",
+    "strDesc" : "An electromagnetic (EM) passive sensor by NASA Outer Space Command. Detects electronic signatures such as transponders or active sensors.",
+    "strType"    : "Item",
+    "strLoot"    : null,
+    "aInteractions" : [
+      "GUISensor"
+    ],
+    "aStartingConds" : [
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsSensorEM=1.0x1",
+      "IsSensorEMOn=1.0x1",
+      "IsSensorEMBaseRange=1.0x300",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsBrittle=1.0x1.0",
+      "IsNASA=1.0x1",
+      "StatBasePrice=1.0x3200.0",
+      "StatDismantleProgressMax=1.0x100",
+      "StatInstallProgressMax=1.0x200",
+      "StatUninstallProgressMax=1.0x200",
+      "StatMass=1.0x5.0",
+      "StatDamageMax=1.0x5",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategorySensors=1.0x1",
+      "IsSignalable=1.0x1",
+      "IsPowered=1.0x1"
+    ],
+    "mapCondTolerance"       : [
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTSensorEM01Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "mapPoints"      : [
+      "use,0,-24",
+      "PowerA,0,0"
+    ],
+    "mapGUIPropMaps"  : [
+      "Panel A",
+      "SensorUI",
+      "Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmSensorEM01Off",
+    "aTickers" : [ 
+      "Power"
+    ],
+    "jsonPI"            : "SensorEM01",
+    "strAudioEmitter": "ItmSensorEM01"
+  },
+  {
+    "strName" : "ItmSensorEM01Dmg",
+    "strNameShort" : "EM Sensor",
+    "strNameFriendly" : "NASA Sensor: EM (Damaged)",
+    "strDesc" : "An electromagnetic (EM) passive sensor by NASA Outer Space Command. Detects electronic signatures such as transponders or active sensors.",
+    "strItemDef" : "ItmSensorEM01Dmg",
+    "strType"    : "Item",
+    "strLoot"    : null,
+    "aInteractions" : [
+      "GUISensor"
+    ],
+    "aStartingConds" : [
+      "IsDamaged=1.0x1",
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsSensorEM=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsBrittle=1.0x1.0",
+      "IsNASA=1.0x1",
+      "StatBasePrice=1.0x640.0",
+      "StatDismantleProgressMax=1.0x50",
+      "StatInstallProgressMax=1.0x200",
+      "StatUninstallProgressMax=1.0x200",
+      "StatRepairProgressMax=1.0x225",
+      "StatMass=1.0x5.0",
+      "StatDamageMax=1.0x7",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategorySensors=1.0x1",
+      "IsSignalable=1.0x1"
+    ],
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,0,-24",
+      "PowerA,0,0"
+    ],
+    "mapGUIPropMaps"  : [
+      "Panel A",
+      "SensorUI",
+      "Electrical"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTSensorEM01Destroy,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmSensorEM01Dmg02",
+    "aTickers" : [ 
+    ]
+  },
+  {
+    "strName" : "ItmSensorEM01DmgLoose",
+    "strNameShort" : "EM Sensor",
+    "strItemDef" : "ItmSensorEM01DmgLoose",
+    "strNameFriendly" : "NASA Sensor: EM (Loose, Damaged)",
+    "strDesc" : "An electromagnetic (EM) passive sensor by NASA Outer Space Command. Detects electronic signatures such as transponders or active sensors.",
+    "strType"    : "Item",
+    "aInteractions" : [
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds" : [
+      "IsDamaged=1.0x1",
+      "IsSensorEM=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsCumbersome=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsBrittle=1.0x1.0",
+      "IsNASA=1.0x1",
+      "StatBasePrice=1.0x640.0",
+      "StatDismantleProgressMax=1.0x50",
+      "StatInstallProgressMax=1.0x200",
+      "StatUninstallProgressMax=1.0x200",
+      "StatRepairProgressMax=1.0x225",
+      "StatMass=1.0x5.0",
+      "StatDamageMax=1.0x7",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategorySensors=1.0x1",
+      "IsSignalable=1.0x1"
+    ],
+    "mapPoints"      : [
+    ],
+    "mapGUIPropMaps"  : [
+      "Panel A",
+      "SensorUI"
+    ],
+    "mapSlotEffects" : [
+      "drag", "Blank"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTSensorEM01LooseDestroy,StatDamageMax,1.0"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmSensorEM01Dmg02Loose"
+  },
+  {
+    "strName" : "ItmSensorEM02Off",
+    "strNameShort" : "EM Sensor",
+    "strNameFriendly" : "Zhuangzi Sensor: EM (Off)",
+    "strItemDef" : "ItmSensorEM02Off",
+    "strDesc" : "An electromagnetic (EM) passive sensor by Zhuangzi. Detects electronic signatures such as transponders or active sensors.",
+    "strType"    : "Item",
+    "strLoot"    : null,
+    "aInteractions" : [
+      "GUISensor"
+    ],
+    "aStartingConds" : [
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsSensorEM=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsBrittle=1.0x1.0",
+      "IsZhuangzi=1.0x1",
+      "StatBasePrice=1.0x6400.0",
+      "StatDismantleProgressMax=1.0x100",
+      "StatInstallProgressMax=1.0x250",
+      "StatUninstallProgressMax=1.0x250",
+      "StatMass=1.0x3.0",
+      "StatDamageMax=1.0x3",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategorySensors=1.0x1",
+      "IsSignalable=1.0x1"
+    ],
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,0,-24",
+      "PowerA,0,0"
+    ],
+    "mapGUIPropMaps"  : [
+      "Panel A",
+      "SensorUI",
+      "Electrical"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTSensorEM02Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmSensorEM02Off",
+    "aTickers" : [ 
+      "Power"
+    ],
+    "jsonPI"            : "SensorEM02"
+  },
+  {
+    "strName" : "ItmSensorEM02Loose",
+    "strNameShort" : "EM Sensor",
+    "strItemDef" : "ItmSensorEM02Loose",
+    "strNameFriendly" : "Zhuangzi Sensor: EM (Loose)",
+    "strDesc" : "An electromagnetic (EM) passive sensor by Zhuangzi. Detects electronic signatures such as transponders or active sensors.",
+    "strType"    : "Item",
+    "aInteractions" : [
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds" : [
+      "IsSensorEM=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsCumbersome=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsBrittle=1.0x1.0",
+      "IsZhuangzi=1.0x1",
+      "StatBasePrice=1.0x6400.0",
+      "StatDismantleProgressMax=1.0x100",
+      "StatInstallProgressMax=1.0x250",
+      "StatUninstallProgressMax=1.0x250",
+      "StatMass=1.0x3.0",
+      "StatDamageMax=1.0x3",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategorySensors=1.0x1"
+    ],
+    "mapPoints"      : [
+    ],
+    "mapGUIPropMaps"  : [
+      "Panel A",
+      "SensorUI"
+    ],
+    "mapSlotEffects" : [
+      "drag", "Blank"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTSensorEM02LooseDamage,StatDamageMax,1.0"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmSensorEM02Loose"
+  },
+  {
+    "strName" : "ItmSensorEM02",
+    "strNameShort" : "EM Sensor",
+    "strNameFriendly" : "Zhuangzi Sensor: EM",
+    "strItemDef" : "ItmSensorEM02",
+    "strDesc" : "An electromagnetic (EM) passive sensor by Zhuangzi. Detects electronic signatures such as transponders or active sensors.",
+    "strType"    : "Item",
+    "strLoot"    : null,
+    "aInteractions" : [
+      "GUISensor"
+    ],
+    "aStartingConds" : [
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsSensorEM=1.0x1",
+      "IsSensorEMOn=1.0x1",
+      "IsSensorEMBaseRange=1.0x500",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsBrittle=1.0x1.0",
+      "IsZhuangzi=1.0x1",
+      "StatBasePrice=1.0x6400.0",
+      "StatDismantleProgressMax=1.0x100",
+      "StatInstallProgressMax=1.0x250",
+      "StatUninstallProgressMax=1.0x250",
+      "StatMass=1.0x3.0",
+      "StatDamageMax=1.0x3",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategorySensors=1.0x1",
+      "IsSignalable=1.0x1",
+      "IsPowered=1.0x1"
+    ],
+    "mapCondTolerance"       : [
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTSensorEM02Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "mapPoints"      : [
+      "use,0,-24",
+      "PowerA,0,0"
+    ],
+    "mapGUIPropMaps"  : [
+      "Panel A",
+      "SensorUI",
+      "Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmSensorEM02Off",
+    "aTickers" : [ 
+      "Power"
+    ],
+    "jsonPI"            : "SensorEM02",
+    "strAudioEmitter": "ItmSensorEM02"
+  },
+  {
+    "strName" : "ItmSensorEM02Dmg",
+    "strNameShort" : "EM Sensor",
+    "strNameFriendly" : "Zhuangzi Sensor: EM (Damaged)",
+    "strDesc" : "An electromagnetic (EM) passive sensor by Zhuangzi. Detects electronic signatures such as transponders or active sensors.",
+    "strItemDef" : "ItmSensorEM02Dmg",
+    "strType"    : "Item",
+    "strLoot"    : null,
+    "aInteractions" : [
+      "GUISensor"
+    ],
+    "aStartingConds" : [
+      "IsDamaged=1.0x1",
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsSensorEM=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsBrittle=1.0x1.0",
+      "IsZhuangzi=1.0x1",
+      "StatBasePrice=1.0x1280.0",
+      "StatDismantleProgressMax=1.0x50",
+      "StatInstallProgressMax=1.0x250",
+      "StatUninstallProgressMax=1.0x250",
+      "StatRepairProgressMax=1.0x300",
+      "StatMass=1.0x3.0",
+      "StatDamageMax=1.0x5",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategorySensors=1.0x1",
+      "IsSignalable=1.0x1"
+    ],
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,0,-24",
+      "PowerA,0,0"
+    ],
+    "mapGUIPropMaps"  : [
+      "Panel A",
+      "SensorUI",
+      "Electrical"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTSensorEM02Destroy,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmSensorEM02Dmg02",
+    "aTickers" : [ 
+    ]
+  },
+  {
+    "strName" : "ItmSensorEM02DmgLoose",
+    "strNameShort" : "EM Sensor",
+    "strItemDef" : "ItmSensorEM02DmgLoose",
+    "strNameFriendly" : "Zhuangzi Sensor: EM (Loose, Damaged)",
+    "strDesc" : "An electromagnetic (EM) passive sensor by Zhuangzi. Detects electronic signatures such as transponders or active sensors.",
+    "strType"    : "Item",
+    "aInteractions" : [
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds" : [
+      "IsDamaged=1.0x1",
+      "IsSensorEM=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsCumbersome=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsBrittle=1.0x1.0",
+      "IsZhuangzi=1.0x1",
+      "StatBasePrice=1.0x1280.0",
+      "StatDismantleProgressMax=1.0x50",
+      "StatInstallProgressMax=1.0x250",
+      "StatUninstallProgressMax=1.0x250",
+      "StatRepairProgressMax=1.0x300",
+      "StatMass=1.0x3.0",
+      "StatDamageMax=1.0x5",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategorySensors=1.0x1",
+      "IsSignalable=1.0x1"
+    ],
+    "mapPoints"      : [
+    ],
+    "mapGUIPropMaps"  : [
+      "Panel A",
+      "SensorUI"
+    ],
+    "mapSlotEffects" : [
+      "drag", "Blank"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTSensorEM02LooseDestroy,StatDamageMax,1.0"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmSensorEM02Dmg02Loose"
+  },
+  
+  {
+    "strName" : "ItmSensorEOIR01Off",
+    "strNameShort" : "EO/IR Sensor",
+    "strNameFriendly" : "Miura Sensor: EO/IR (Off)",
+    "strItemDef" : "ItmSensorEOIR01Off",
+    "strDesc" : "An out-of-production Miura-brand electro-optical/infra-red passive sensor suite. Detects electronic, thermal and optical signatures based on proximity, target size, and cross velocity. Sensor signal weakens with distance, smaller target profile, and increased relative cross velocity (VCRS).",
+    "strType"    : "Item",
+    "strLoot"    : null,
+    "aInteractions" : [
+      "GUISensor"
+    ],
+    "aStartingConds" : [
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsSensorEM=1.0x1",
+      "IsSensorIR=1.0x1",
+      "IsSensorOptical=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsBrittle=1.0x1.0",
+      "IsMiura=1.0x1",
+      "StatBasePrice=1.0x43000.0",
+      "StatDismantleProgressMax=1.0x400",
+      "StatInstallProgressMax=1.0x800",
+      "StatUninstallProgressMax=1.0x800",
+      "StatMass=1.0x10.0",
+      "StatDamageMax=1.0x5",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategorySensors=1.0x1",
+      "IsSignalable=1.0x1"
+    ],
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,0,-24",
+      "PowerA,0,0"
+    ],
+    "mapGUIPropMaps"  : [
+      "Panel A",
+      "SensorUI",
+      "Electrical"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTSensorEM01Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmSensorEOIR01Off",
+    "aTickers" : [
+      "Power"
+    ],
+    "jsonPI"            : "SensorEOIR01"
+  },
+  {
+    "strName" : "ItmSensorEOIR01Loose",
+    "strNameShort" : "EO/IR Sensor",
+    "strItemDef" : "ItmSensorEOIR01Loose",
+    "strNameFriendly" : "Miura Sensor: EO/IR (Loose)",
+    "strDesc" : "An out-of-production Miura-brand electro-optical/infra-red passive sensor suite. Detects electronic, thermal and optical signatures based on proximity, target size, and cross velocity. Sensor signal weakens with distance, smaller target profile, and increased relative cross velocity (VCRS).",
+    "strType"    : "Item",
+    "aInteractions" : [
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds" : [
+      "IsSensorEM=1.0x1",
+      "IsSensorIR=1.0x1",
+      "IsSensorOptical=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsCumbersome=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsBrittle=1.0x1.0",
+      "IsMiura=1.0x1",
+      "StatBasePrice=1.0x43000.0",
+      "StatDismantleProgressMax=1.0x400",
+      "StatInstallProgressMax=1.0x800",
+      "StatUninstallProgressMax=1.0x800",
+      "StatMass=1.0x10.0",
+      "StatDamageMax=1.0x5",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategorySensors=1.0x1"
+    ],
+    "mapPoints"      : [
+    ],
+    "mapGUIPropMaps"  : [
+      "Panel A",
+      "SensorUI"
+    ],
+    "mapSlotEffects" : [
+      "drag", "Blank"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTSensorEOIR01LooseDamage,StatDamageMax,1.0"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmSensorEOIR01Loose"
+  },
+  {
+    "strName" : "ItmSensorEOIR01",
+    "strNameShort" : "EO/IR Sensor",
+    "strNameFriendly" : "Miura Sensor: EO/IR",
+    "strItemDef" : "ItmSensorEOIR01",
+    "strDesc" : "An out-of-production Miura-brand electro-optical/infra-red passive sensor suite. Detects electronic, thermal and optical signatures based on proximity, target size, and cross velocity. Sensor signal weakens with distance, smaller target profile, and increased relative cross velocity (VCRS).",
+    "strType"    : "Item",
+    "strLoot"    : null,
+    "aInteractions" : [
+      "GUISensor"
+    ],
+    "aStartingConds" : [
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsSensorEM=1.0x1",
+      "IsSensorEMOn=1.0x1",
+      "IsSensorEMBaseRange=1.0x500",
+      "IsSensorIR=1.0x1",
+      "IsSensorIROn=1.0x1",
+      "IsSensorIRBaseRange=1.0x600",
+      "IsSensorOptical=1.0x1",
+      "IsSensorOpticalOn=1.0x1",
+      "IsSensorOpticalBaseRange=1.0x50",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsBrittle=1.0x1.0",
+      "IsMiura=1.0x1",
+      "StatBasePrice=1.0x43000.0",
+      "StatDismantleProgressMax=1.0x400",
+      "StatInstallProgressMax=1.0x800",
+      "StatUninstallProgressMax=1.0x800",
+      "StatMass=1.0x10.0",
+      "StatDamageMax=1.0x5",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategorySensors=1.0x1",
+      "IsSignalable=1.0x1",
+      "IsPowered=1.0x1"
+    ],
+    "mapCondTolerance"       : [
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTSensorEOIR01Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "mapPoints"      : [
+      "use,0,-24",
+      "PowerA,0,0"
+    ],
+    "mapGUIPropMaps"  : [
+      "Panel A",
+      "SensorUI",
+      "Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmSensorEOIR01Off",
+    "aTickers" : [ 
+      "Power"
+    ],
+    "jsonPI"            : "SensorEOIR01",
+    "strAudioEmitter": "ItmSensorEOIR01"
+  },
+  {
+    "strName" : "ItmSensorEOIR01Dmg",
+    "strNameShort" : "EO/IR Sensor",
+    "strNameFriendly" : "Miura Sensor: EO/IR (Damaged)",
+    "strDesc" : "An out-of-production Miura-brand electro-optical/infra-red passive sensor suite. Detects electronic, thermal and optical signatures based on proximity, target size, and cross velocity. Sensor signal weakens with distance, smaller target profile, and increased relative cross velocity (VCRS).",
+    "strItemDef" : "ItmSensorEOIR01Dmg",
+    "strType"    : "Item",
+    "strLoot"    : null,
+    "aInteractions" : [
+      "GUISensor"
+    ],
+    "aStartingConds" : [
+      "IsDamaged=1.0x1",
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsSensorEM=1.0x1",
+      "IsSensorIR=1.0x1",
+      "IsSensorOptical=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsBrittle=1.0x1.0",
+      "IsMiura=1.0x1",
+      "StatBasePrice=1.0x8600.0",
+      "StatDismantleProgressMax=1.0x200",
+      "StatInstallProgressMax=1.0x800",
+      "StatUninstallProgressMax=1.0x800",
+      "StatRepairProgressMax=1.0x1900",
+      "StatMass=1.0x10.0",
+      "StatDamageMax=1.0x8",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategorySensors=1.0x1",
+      "IsSignalable=1.0x1"
+    ],
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,0,-24",
+      "PowerA,0,0"
+    ],
+    "mapGUIPropMaps"  : [
+      "Panel A",
+      "SensorUI",
+      "Electrical"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTSensorEOIR01Destroy,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmSensorEOIR01Dmg02",
+    "aTickers" : [ 
+    ]
+  },
+  {
+    "strName" : "ItmSensorEOIR01DmgLoose",
+    "strNameShort" : "EO/IR Sensor",
+    "strItemDef" : "ItmSensorEOIR01DmgLoose",
+    "strNameFriendly" : "Miura Sensor: EO/IR (Loose, Damaged)",
+    "strDesc" : "An out-of-production Miura-brand electro-optical/infra-red passive sensor suite. Detects electronic, thermal and optical signatures based on proximity, target size, and cross velocity. Sensor signal weakens with distance, smaller target profile, and increased relative cross velocity (VCRS).",
+    "strType"    : "Item",
+    "aInteractions" : [
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds" : [
+      "IsDamaged=1.0x1",
+      "IsSensorEM=1.0x1",
+      "IsSensorIR=1.0x1",
+      "IsSensorOptical=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsCumbersome=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsBrittle=1.0x1.0",
+      "IsMiura=1.0x1",
+      "StatBasePrice=1.0x8600.0",
+      "StatDismantleProgressMax=1.0x200",
+      "StatInstallProgressMax=1.0x800",
+      "StatUninstallProgressMax=1.0x800",
+      "StatRepairProgressMax=1.0x1900",
+      "StatMass=1.0x10.0",
+      "StatDamageMax=1.0x8",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategorySensors=1.0x1",
+      "IsSignalable=1.0x1"
+    ],
+    "mapPoints"      : [
+    ],
+    "mapGUIPropMaps"  : [
+      "Panel A",
+      "SensorUI"
+    ],
+    "mapSlotEffects" : [
+      "drag", "Blank"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTSensorEOIR01LooseDestroy,StatDamageMax,1.0"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmSensorEOIR01Dmg02Loose"
+  },
+   
+  {
+    "strName" : "ItmSensorIR01Off",
+    "strNameShort" : "IR Sensor",
+    "strNameFriendly" : "NASA Sensor: IR (Off)",
+    "strItemDef" : "ItmSensorIR01Off",
+    "strDesc" : "An infrared (IR) passive sensor by NASA Outer Space Command. Detects thermal signatures such as thrusters or active torch drives.",
+    "strType"    : "Item",
+    "strLoot"    : null,
+    "aInteractions" : [
+      "GUISensor"
+    ],
+    "aStartingConds" : [
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsSensorIR=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsBrittle=1.0x1.0",
+      "IsNASA=1.0x1",
+      "StatBasePrice=1.0x12000.0",
+      "StatDismantleProgressMax=1.0x100",
+      "StatInstallProgressMax=1.0x250",
+      "StatUninstallProgressMax=1.0x250",
+      "StatMass=1.0x5.0",
+      "StatDamageMax=1.0x5",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategorySensors=1.0x1",
+      "IsSignalable=1.0x1"
+    ],
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,0,-24",
+      "PowerA,0,0"
+    ],
+    "mapGUIPropMaps"  : [
+      "Panel A",
+      "SensorUI",
+      "Electrical"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTSensorIR01Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmSensorIR01Off",
+    "aTickers" : [ 
+      "Power"
+    ],
+    "jsonPI"            : "SensorIR01"
+  },
+  {
+    "strName" : "ItmSensorIR01Loose",
+    "strNameShort" : "IR Sensor",
+    "strItemDef" : "ItmSensorIR01Loose",
+    "strNameFriendly" : "NASA Sensor: IR (Loose)",
+    "strDesc" : "An infrared (IR) passive sensor by NASA Outer Space Command. Detects thermal signatures such as thrusters or active torch drives.",
+    "strType"    : "Item",
+    "aInteractions" : [
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds" : [
+      "IsSensorIR=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsCumbersome=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsBrittle=1.0x1.0",
+      "IsNASA=1.0x1",
+      "StatBasePrice=1.0x12000.0",
+      "StatDismantleProgressMax=1.0x100",
+      "StatInstallProgressMax=1.0x250",
+      "StatUninstallProgressMax=1.0x250",
+      "StatMass=1.0x5.0",
+      "StatDamageMax=1.0x5",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategorySensors=1.0x1"
+    ],
+    "mapPoints"      : [
+    ],
+    "mapGUIPropMaps"  : [
+      "Panel A",
+      "SensorUI"
+    ],
+    "mapSlotEffects" : [
+      "drag", "Blank"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTSensorIR01LooseDamage,StatDamageMax,1.0"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmSensorIR01Loose"
+  },
+  {
+    "strName" : "ItmSensorIR01",
+    "strNameShort" : "IR Sensor",
+    "strNameFriendly" : "NASA Sensor: IR",
+    "strItemDef" : "ItmSensorIR01",
+    "strDesc" : "An infrared (IR) passive sensor by NASA Outer Space Command. Detects thermal signatures such as thrusters or active torch drives.",
+    "strType"    : "Item",
+    "strLoot"    : null,
+    "aInteractions" : [
+      "GUISensor"
+    ],
+    "aStartingConds" : [
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsSensorIR=1.0x1",
+      "IsSensorIROn=1.0x1",
+      "IsSensorIRBaseRange=1.0x300",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsBrittle=1.0x1.0",
+      "IsNASA=1.0x1",
+      "StatBasePrice=1.0x12000.0",
+      "StatDismantleProgressMax=1.0x100",
+      "StatInstallProgressMax=1.0x250",
+      "StatUninstallProgressMax=1.0x250",
+      "StatMass=1.0x5.0",
+      "StatDamageMax=1.0x5",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategorySensors=1.0x1",
+      "IsSignalable=1.0x1",
+      "IsPowered=1.0x1"
+    ],
+    "mapCondTolerance"       : [
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTSensorIR01Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "mapPoints"      : [
+      "use,0,-24",
+      "PowerA,0,0"
+    ],
+    "mapGUIPropMaps"  : [
+      "Panel A",
+      "SensorUI",
+      "Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmSensorIR01Off",
+    "aTickers" : [ 
+      "Power"
+    ],
+    "jsonPI"            : "SensorIR01",
+    "strAudioEmitter": "ItmSensorIR01"
+  },
+  {
+    "strName" : "ItmSensorIR01Dmg",
+    "strNameShort" : "IR Sensor",
+    "strNameFriendly" : "NASA Sensor: IR (Damaged)",
+    "strDesc" : "An infrared (IR) passive sensor by NASA Outer Space Command. Detects thermal signatures such as thrusters or active torch drives.",
+    "strItemDef" : "ItmSensorIR01Dmg",
+    "strType"    : "Item",
+    "strLoot"    : null,
+    "aInteractions" : [
+      "GUISensor"
+    ],
+    "aStartingConds" : [
+      "IsDamaged=1.0x1",
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsSensorIR=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsBrittle=1.0x1.0",
+      "IsNASA=1.0x1",
+      "StatBasePrice=1.0x2400.0",
+      "StatDismantleProgressMax=1.0x50",
+      "StatInstallProgressMax=1.0x250",
+      "StatUninstallProgressMax=1.0x250",
+      "StatRepairProgressMax=1.0x300",
+      "StatMass=1.0x5.0",
+      "StatDamageMax=1.0x7",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategorySensors=1.0x1",
+      "IsSignalable=1.0x1"
+    ],
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,0,-24",
+      "PowerA,0,0"
+    ],
+    "mapGUIPropMaps"  : [
+      "Panel A",
+      "SensorUI",
+      "Electrical"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTSensorIR01Destroy,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmSensorIR01Dmg02",
+    "aTickers" : [ 
+    ]
+  },
+  {
+    "strName" : "ItmSensorIR01DmgLoose",
+    "strNameShort" : "IR Sensor",
+    "strItemDef" : "ItmSensorIR01DmgLoose",
+    "strNameFriendly" : "NASA Sensor: IR (Loose, Damaged)",
+    "strDesc" : "An infrared (IR) passive sensor by NASA Outer Space Command. Detects thermal signatures such as thrusters or active torch drives.",
+    "strType"    : "Item",
+    "aInteractions" : [
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds" : [
+      "IsDamaged=1.0x1",
+      "IsSensorIR=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsCumbersome=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsBrittle=1.0x1.0",
+      "IsNASA=1.0x1",
+      "StatBasePrice=1.0x2400.0",
+      "StatDismantleProgressMax=1.0x50",
+      "StatInstallProgressMax=1.0x250",
+      "StatUninstallProgressMax=1.0x250",
+      "StatRepairProgressMax=1.0x300",
+      "StatMass=1.0x7.0",
+      "StatDamageMax=1.0x5",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategorySensors=1.0x1",
+      "IsSignalable=1.0x1"
+    ],
+    "mapPoints"      : [
+    ],
+    "mapGUIPropMaps"  : [
+      "Panel A",
+      "SensorUI"
+    ],
+    "mapSlotEffects" : [
+      "drag", "Blank"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTSensorIR01LooseDestroy,StatDamageMax,1.0"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmSensorIR01Dmg02Loose"
+  },
+   
+  {
+    "strName" : "ItmSensorIR02Off",
+    "strNameShort" : "IR Sensor",
+    "strNameFriendly" : "Zhuangzi Sensor: IR (Off)",
+    "strItemDef" : "ItmSensorIR02Off",
+    "strDesc" : "An infrared (IR) passive sensor by Zhuangzi. Detects thermal signatures such as thrusters or active torch drives.",
+    "strType"    : "Item",
+    "strLoot"    : null,
+    "aInteractions" : [
+      "GUISensor"
+    ],
+    "aStartingConds" : [
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsSensorIR=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsBrittle=1.0x1.0",
+      "IsZhuangzi=1.0x1",
+      "StatBasePrice=1.0x12000.0",
+      "StatDismantleProgressMax=1.0x100",
+      "StatInstallProgressMax=1.0x250",
+      "StatUninstallProgressMax=1.0x250",
+      "StatMass=1.0x5.0",
+      "StatDamageMax=1.0x3",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategorySensors=1.0x1",
+      "IsSignalable=1.0x1"
+    ],
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,0,-24",
+      "PowerA,0,0"
+    ],
+    "mapGUIPropMaps"  : [
+      "Panel A",
+      "SensorUI",
+      "Electrical"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTSensorIR02Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmSensorIR02Off",
+    "aTickers" : [ 
+      "Power"
+    ],
+    "jsonPI"            : "SensorIR02"
+  },
+  {
+    "strName" : "ItmSensorIR02Loose",
+    "strNameShort" : "IR Sensor",
+    "strItemDef" : "ItmSensorIR02Loose",
+    "strNameFriendly" : "Zhuangzi Sensor: IR (Loose)",
+    "strDesc" : "An infrared (IR) passive sensor by Zhuangzi. Detects thermal signatures such as thrusters or active torch drives.",
+    "strType"    : "Item",
+    "aInteractions" : [
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds" : [
+      "IsSensorIR=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsCumbersome=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsBrittle=1.0x1.0",
+      "IsZhuangzi=1.0x1",
+      "StatBasePrice=1.0x12000.0",
+      "StatDismantleProgressMax=1.0x100",
+      "StatInstallProgressMax=1.0x250",
+      "StatUninstallProgressMax=1.0x250",
+      "StatMass=1.0x5.0",
+      "StatDamageMax=1.0x3",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategorySensors=1.0x1"
+    ],
+    "mapPoints"      : [
+    ],
+    "mapGUIPropMaps"  : [
+      "Panel A",
+      "SensorUI"
+    ],
+    "mapSlotEffects" : [
+      "drag", "Blank"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTSensorIR02LooseDamage,StatDamageMax,1.0"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmSensorIR02Loose"
+  },
+  {
+    "strName" : "ItmSensorIR02",
+    "strNameShort" : "IR Sensor",
+    "strNameFriendly" : "Zhuangzi Sensor: IR",
+    "strItemDef" : "ItmSensorIR02",
+    "strDesc" : "An infrared (IR) passive sensor by Zhuangzi. Detects thermal signatures such as thrusters or active torch drives.",
+    "strType"    : "Item",
+    "strLoot"    : null,
+    "aInteractions" : [
+      "GUISensor"
+    ],
+    "aStartingConds" : [
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsSensorIR=1.0x1",
+      "IsSensorIROn=1.0x1",
+      "IsSensorIRBaseRange=1.0x600",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsBrittle=1.0x1.0",
+      "IsZhuangzi=1.0x1",
+      "StatBasePrice=1.0x12000.0",
+      "StatDismantleProgressMax=1.0x100",
+      "StatInstallProgressMax=1.0x250",
+      "StatUninstallProgressMax=1.0x250",
+      "StatMass=1.0x5.0",
+      "StatDamageMax=1.0x3",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategorySensors=1.0x1",
+      "IsSignalable=1.0x1",
+      "IsPowered=1.0x1"
+    ],
+    "mapCondTolerance"       : [
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTSensorIR02Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "mapPoints"      : [
+      "use,0,-24",
+      "PowerA,0,0"
+    ],
+    "mapGUIPropMaps"  : [
+      "Panel A",
+      "SensorUI",
+      "Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmSensorIR02Off",
+    "aTickers" : [ 
+      "Power"
+    ],
+    "jsonPI"            : "SensorIR02",
+    "strAudioEmitter": "ItmSensorIR02"
+  },
+  {
+    "strName" : "ItmSensorIR02Dmg",
+    "strNameShort" : "IR Sensor",
+    "strNameFriendly" : "Zhuangzi Sensor: IR (Damaged)",
+    "strDesc" : "An infrared (IR) passive sensor by Zhuangzi. Detects thermal signatures such as thrusters or active torch drives.",
+    "strItemDef" : "ItmSensorIR02Dmg",
+    "strType"    : "Item",
+    "strLoot"    : null,
+    "aInteractions" : [
+      "GUISensor"
+    ],
+    "aStartingConds" : [
+      "IsDamaged=1.0x1",
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsSensorIR=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsBrittle=1.0x1.0",
+      "IsZhuangzi=1.0x1",
+      "StatBasePrice=1.0x2400.0",
+      "StatDismantleProgressMax=1.0x50",
+      "StatInstallProgressMax=1.0x250",
+      "StatUninstallProgressMax=1.0x250",
+      "StatRepairProgressMax=1.0x300",
+      "StatMass=1.0x5.0",
+      "StatDamageMax=1.0x5",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategorySensors=1.0x1",
+      "IsSignalable=1.0x1"
+    ],
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,0,-24",
+      "PowerA,0,0"
+    ],
+    "mapGUIPropMaps"  : [
+      "Panel A",
+      "SensorUI",
+      "Electrical"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTSensorIR02Destroy,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmSensorIR02Dmg02",
+    "aTickers" : [ 
+    ]
+  },
+  {
+    "strName" : "ItmSensorIR02DmgLoose",
+    "strNameShort" : "IR Sensor",
+    "strItemDef" : "ItmSensorIR02DmgLoose",
+    "strNameFriendly" : "Zhuangzi Sensor: IR (Loose, Damaged)",
+    "strDesc" : "An infrared (IR) passive sensor by Zhuangzi. Detects thermal signatures such as thrusters or active torch drives.",
+    "strType"    : "Item",
+    "aInteractions" : [
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds" : [
+      "IsDamaged=1.0x1",
+      "IsSensorIR=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsCumbersome=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsBrittle=1.0x1.0",
+      "IsZhuangzi=1.0x1",
+      "StatBasePrice=1.0x2400.0",
+      "StatDismantleProgressMax=1.0x50",
+      "StatInstallProgressMax=1.0x250",
+      "StatUninstallProgressMax=1.0x250",
+      "StatRepairProgressMax=1.0x300",
+      "StatMass=1.0x5.0",
+      "StatDamageMax=1.0x5",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategorySensors=1.0x1",
+      "IsSignalable=1.0x1"
+    ],
+    "mapPoints"      : [
+    ],
+    "mapGUIPropMaps"  : [
+      "Panel A",
+      "SensorUI"
+    ],
+    "mapSlotEffects" : [
+      "drag", "Blank"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTSensorIR02LooseDestroy,StatDamageMax,1.0"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmSensorIR02Dmg02Loose"
+  },
+
+  {
+    "strName" : "ItmSensorLidar01Off",
+    "strNameShort" : "LiDAR",
+    "strNameFriendly" : "Weber Sensor: LiDAR (Off)",
+    "strItemDef" : "ItmSensorLidar01Off",
+    "strDesc" : "A Weber-brand LiDAR active sensor (Light Detection and Ranging).",
+    "strType"    : "Item",
+    "strLoot"    : null,
+    "aInteractions" : [
+      "GUISensor"
+    ],
+    "aStartingConds" : [
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsSensorLidar=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsWeber=1.0x1.0",
+      "StatBasePrice=1.0x23000.0",
+      "StatDismantleProgressMax=1.0x250",
+      "StatInstallProgressMax=1.0x500",
+      "StatUninstallProgressMax=1.0x500",
+      "StatMass=1.0x30.0",
+      "StatDamageMax=1.0x5",
+      "IsElectronic=1.0x1",
+      "IsCategorySensors=1.0x1",
+      "IsSignalable=1.0x1"
+    ],
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,8,-32",
+      "PowerA,-8,0",
+      "PowerB,8,0"
+    ],
+    "mapGUIPropMaps"  : [
+      "Panel A",
+      "SensorUI",
+      "Electrical"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTSensorLidar01Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmSensorLidar01Off",
+    "aTickers" : [ 
+      "Power"
+    ],
+    "jsonPI"            : "SensorLidar01"
+  },
+  {
+    "strName" : "ItmSensorLidar01Loose",
+    "strNameShort" : "LiDAR",
+    "strItemDef" : "ItmSensorLidar01Loose",
+    "strNameFriendly" : "Weber Sensor: LiDAR (Loose)",
+    "strDesc" : "A Weber-brand LiDAR active sensor (Light Detection and Ranging).",
+    "strType"    : "Item",
+    "aInteractions" : [
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds" : [
+      "IsSensorLidar=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsCumbersome=1.0x1.0",      
+      "IsWeber=1.0x1.0",
+      "StatBasePrice=1.0x23000.0",
+      "StatDismantleProgressMax=1.0x250",
+      "StatInstallProgressMax=1.0x500",
+      "StatUninstallProgressMax=1.0x500",
+      "StatMass=1.0x30.0",
+      "StatDamageMax=1.0x5",
+      "IsElectronic=1.0x1",
+      "IsCategorySensors=1.0x1"
+    ],
+    "mapPoints"      : [
+    ],
+    "mapGUIPropMaps"  : [
+      "Panel A",
+      "SensorUI"
+    ],
+    "mapSlotEffects" : [
+      "drag", "Blank"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTSensorLidar01LooseDamage,StatDamageMax,1.0"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmSensorLidar01Loose"
+  },
+  {
+    "strName" : "ItmSensorLidar01",
+    "strNameShort" : "LiDAR",
+    "strNameFriendly" : "Weber Sensor: LiDAR",
+    "strItemDef" : "ItmSensorLidar01",
+    "strDesc" : "A Weber-brand LiDAR active sensor (Light Detection and Ranging).",
+    "strType"    : "Item",
+    "strLoot"    : null,
+    "aInteractions" : [
+      "GUISensor"
+    ],
+    "aStartingConds" : [
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsSensorLidar=1.0x1",
+      "IsSensorLidarOn=1.0x1",
+      "IsSensorLidarBaseRange=1.0x200",
+      "IsSensorLidarStrength=1.0x2",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsReadyHeat=1.0x1",
+      "StatHeatArea=1.0x2.0",
+      "StatHeatVol=1.0x1.0",
+      "StatSolidTemp=1.0x310.0",
+      "IsWeber=1.0x1.0",
+      "StatBasePrice=1.0x23000.0",
+      "StatDismantleProgressMax=1.0x250",
+      "StatInstallProgressMax=1.0x500",
+      "StatUninstallProgressMax=1.0x500",
+      "StatMass=1.0x30.0",
+      "StatDamageMax=1.0x5",
+      "IsElectronic=1.0x1",
+      "IsCategorySensors=1.0x1",
+      "IsPowered=1.0x1",
+      "IsSignalable=1.0x1"
+    ],
+    "mapCondTolerance"       : [
+    ],
+    "aUpdateCommands" : [
+      "Heater,TIsAirtightNoHuman",
+      "Destructable,StatDamage,ACTSensorLidar01Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "mapPoints"      : [
+      "use,8,-32",
+      "PowerA,-8,0",
+      "PowerB,8,0"
+    ],
+    "mapGUIPropMaps"  : [
+      "Panel A",
+      "SensorUI",
+      "Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmSensorLidar01Off",
+    "aTickers" : [ 
+      "Power"
+    ],
+    "jsonPI"            : "SensorLidar01",
+    "strAudioEmitter": "ItmSensorLidar01"
+  },
+  {
+    "strName" : "ItmSensorLidar01Dmg",
+    "strNameShort" : "LiDAR",
+    "strNameFriendly" : "Weber Sensor: LiDAR (Damaged)",
+    "strDesc" : "A Weber-brand LiDAR active sensor (Light Detection and Ranging).",
+    "strItemDef" : "ItmSensorLidar01Dmg",
+    "strType"    : "Item",
+    "strLoot"    : null,
+    "aInteractions" : [
+      "GUISensor"
+    ],
+    "aStartingConds" : [
+      "IsDamaged=1.0x1",
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsSensorLidar=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsWeber=1.0x1.0",
+      "StatBasePrice=1.0x4600.0",
+      "StatDismantleProgressMax=1.0x50",
+      "StatInstallProgressMax=1.0x500",
+      "StatUninstallProgressMax=1.0x500",
+      "StatRepairProgressMax=1.0x1800",
+      "StatMass=1.0x30.0",
+      "StatDamageMax=1.0x7",
+      "IsElectronic=1.0x1",
+      "IsCategorySensors=1.0x1",
+      "IsSignalable=1.0x1"
+    ],
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,8,-32"
+    ],
+    "mapGUIPropMaps"  : [
+      "Panel A",
+      "SensorUI",
+      "Electrical"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTSensorLidar01Destroy,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmSensorLidar01Dmg02",
+    "aTickers" : [ 
+    ]
+  },
+  {
+    "strName" : "ItmSensorLidar01DmgLoose",
+    "strNameShort" : "LiDAR",
+    "strItemDef" : "ItmSensorLidar01DmgLoose",
+    "strNameFriendly" : "Weber Sensor: LiDAR (Loose, Damaged)",
+    "strDesc" : "A Weber-brand LiDAR active sensor (Light Detection and Ranging).",
+    "strType"    : "Item",
+    "aInteractions" : [
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds" : [
+      "IsDamaged=1.0x1",
+      "IsSensorLidar=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsCumbersome=1.0x1.0",
+      "IsWeber=1.0x1.0",
+      "StatBasePrice=1.0x4600.0",
+      "StatDismantleProgressMax=1.0x50",
+      "StatInstallProgressMax=1.0x500",
+      "StatUninstallProgressMax=1.0x500",
+      "StatRepairProgressMax=1.0x1800",
+      "StatMass=1.0x30.0",
+      "StatDamageMax=1.0x7",
+      "IsElectronic=1.0x1",
+      "IsCategorySensors=1.0x1"
+    ],
+    "mapPoints"      : [
+    ],
+    "mapGUIPropMaps"  : [
+      "Panel A",
+      "SensorUI"
+    ],
+    "mapSlotEffects" : [
+      "drag", "Blank"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTSensorLidar01LooseDestroy,StatDamageMax,1.0"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmSensorLidar01Dmg02Loose"
+  },
+
+  {
+    "strName" : "ItmSensorLidar02Off",
+    "strNameShort" : "LiDAR",
+    "strNameFriendly" : "Zhuangzi Sensor: LiDAR (Off)",
+    "strItemDef" : "ItmSensorLidar02Off",
+    "strDesc" : "A Zhuangzi-brand LiDAR active sensor (Light Detection and Ranging).",
+    "strType"    : "Item",
+    "strLoot"    : null,
+    "aInteractions" : [
+      "GUISensor"
+    ],
+    "aStartingConds" : [
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsSensorLidar=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsZhuangzi=1.0x1.0",
+      "StatBasePrice=1.0x29000.0",
+      "StatDismantleProgressMax=1.0x300",
+      "StatInstallProgressMax=1.0x700",
+      "StatUninstallProgressMax=1.0x700",
+      "StatMass=1.0x21.0",
+      "StatDamageMax=1.0x3",
+      "IsElectronic=1.0x1",
+      "IsCategorySensors=1.0x1",
+      "IsSignalable=1.0x1"
+    ],
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,8,-32",
+      "PowerA,-8,0",
+      "PowerB,8,0"
+    ],
+    "mapGUIPropMaps"  : [
+      "Panel A",
+      "SensorUI",
+      "Electrical"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTSensorLidar02Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmSensorLidar02Off",
+    "aTickers" : [ 
+      "Power"
+    ],
+    "jsonPI"            : "SensorLidar02"
+  },
+  {
+    "strName" : "ItmSensorLidar02Loose",
+    "strNameShort" : "LiDAR",
+    "strItemDef" : "ItmSensorLidar02Loose",
+    "strNameFriendly" : "Zhuangzi Sensor: LiDAR (Loose)",
+    "strDesc" : "A Zhuangzi-brand LiDAR active sensor (Light Detection and Ranging).",
+    "strType"    : "Item",
+    "aInteractions" : [
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds" : [
+      "IsSensorLidar=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsCumbersome=1.0x1.0",      
+      "IsZhuangzi=1.0x1.0",
+      "StatBasePrice=1.0x29000.0",
+      "StatDismantleProgressMax=1.0x300",
+      "StatInstallProgressMax=1.0x700",
+      "StatUninstallProgressMax=1.0x700",
+      "StatMass=1.0x21.0",
+      "StatDamageMax=1.0x3",
+      "IsElectronic=1.0x1",
+      "IsCategorySensors=1.0x1"
+    ],
+    "mapPoints"      : [
+    ],
+    "mapGUIPropMaps"  : [
+      "Panel A",
+      "SensorUI"
+    ],
+    "mapSlotEffects" : [
+      "drag", "Blank"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTSensorLidar02LooseDamage,StatDamageMax,1.0"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmSensorLidar02Loose"
+  },
+  {
+    "strName" : "ItmSensorLidar02",
+    "strNameShort" : "LiDAR",
+    "strNameFriendly" : "Zhuangzi Sensor: LiDAR",
+    "strItemDef" : "ItmSensorLidar02",
+    "strDesc" : "A Zhuangzi-brand LiDAR active sensor (Light Detection and Ranging).",
+    "strType"    : "Item",
+    "strLoot"    : null,
+    "aInteractions" : [
+      "GUISensor"
+    ],
+    "aStartingConds" : [
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsSensorLidar=1.0x1",
+      "IsSensorLidarOn=1.0x1",
+      "IsSensorLidarBaseRange=1.0x200",
+      "IsSensorLidarStrength=1.0x2",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsReadyHeat=1.0x1",
+      "StatHeatArea=1.0x2.0",
+      "StatHeatVol=1.0x1.0",
+      "StatSolidTemp=1.0x310.0",
+      "IsZhuangzi=1.0x1.0",
+      "StatBasePrice=1.0x29000.0",
+      "StatDismantleProgressMax=1.0x300",
+      "StatInstallProgressMax=1.0x700",
+      "StatUninstallProgressMax=1.0x700",
+      "StatMass=1.0x21.0",
+      "StatDamageMax=1.0x3",
+      "IsElectronic=1.0x1",
+      "IsCategorySensors=1.0x1",
+      "IsPowered=1.0x1",
+      "IsSignalable=1.0x1"
+    ],
+    "mapCondTolerance"       : [
+    ],
+    "aUpdateCommands" : [
+      "Heater,TIsAirtightNoHuman",
+      "Destructable,StatDamage,ACTSensorLidar02Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "mapPoints"      : [
+      "use,8,-32",
+      "PowerA,-8,0",
+      "PowerB,8,0"
+    ],
+    "mapGUIPropMaps"  : [
+      "Panel A",
+      "SensorUI",
+      "Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmSensorLidar02Off",
+    "aTickers" : [ 
+      "Power"
+    ],
+    "jsonPI"            : "SensorLidar02",
+    "strAudioEmitter": "ItmSensorLidar02"
+  },
+  {
+    "strName" : "ItmSensorLidar02Dmg",
+    "strNameShort" : "LiDAR",
+    "strNameFriendly" : "Zhuangzi Sensor: LiDAR (Damaged)",
+    "strDesc" : "A Zhuangzi-brand LiDAR active sensor (Light Detection and Ranging).",
+    "strItemDef" : "ItmSensorLidar02Dmg",
+    "strType"    : "Item",
+    "strLoot"    : null,
+    "aInteractions" : [
+      "GUISensor"
+    ],
+    "aStartingConds" : [
+      "IsDamaged=1.0x1",
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsSensorLidar=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsZhuangzi=1.0x1.0",
+      "StatBasePrice=1.0x5800.0",
+      "StatDismantleProgressMax=1.0x150",
+      "StatInstallProgressMax=1.0x700",
+      "StatUninstallProgressMax=1.0x700",
+      "StatRepairProgressMax=1.0x2100",
+      "StatMass=1.0x21.0",
+      "StatDamageMax=1.0x5",
+      "IsElectronic=1.0x1",
+      "IsCategorySensors=1.0x1",
+      "IsSignalable=1.0x1"
+    ],
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,8,-32"
+    ],
+    "mapGUIPropMaps"  : [
+      "Panel A",
+      "SensorUI",
+      "Electrical"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTSensorLidar02Destroy,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmSensorLidar02Dmg02",
+    "aTickers" : [ 
+    ]
+  },
+  {
+    "strName" : "ItmSensorLidar02DmgLoose",
+    "strNameShort" : "LiDAR",
+    "strItemDef" : "ItmSensorLidar02DmgLoose",
+    "strNameFriendly" : "Zhuangzi Sensor: LiDAR (Loose, Damaged)",
+    "strDesc" : "A Zhuangzi-brand LiDAR active sensor (Light Detection and Ranging).",
+    "strType"    : "Item",
+    "aInteractions" : [
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds" : [
+      "IsDamaged=1.0x1",
+      "IsSensorLidar=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsCumbersome=1.0x1.0",
+      "IsZhuangzi=1.0x1.0",
+      "StatBasePrice=1.0x5800.0",
+      "StatDismantleProgressMax=1.0x150",
+      "StatInstallProgressMax=1.0x700",
+      "StatUninstallProgressMax=1.0x700",
+      "StatRepairProgressMax=1.0x2100",
+      "StatMass=1.0x21.0",
+      "StatDamageMax=1.0x5",
+      "IsElectronic=1.0x1",
+      "IsCategorySensors=1.0x1"
+    ],
+    "mapPoints"      : [
+    ],
+    "mapGUIPropMaps"  : [
+      "Panel A",
+      "SensorUI"
+    ],
+    "mapSlotEffects" : [
+      "drag", "Blank"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTSensorLidar02LooseDestroy,StatDamageMax,1.0"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmSensorLidar02Dmg02Loose"
+  },
+
+  {
+    "strName" : "ItmSensorOptical01Off",
+    "strNameShort" : "Optical Sensor",
+    "strNameFriendly" : "Polaris Sensor: Optical (Off)",
+    "strItemDef" : "ItmSensorOptical01Off",
+    "strDesc" : "A Polaris-brand optical passive sensor. Detects signatures based on proximity, target size, and cross velocity. Sensor signal weakens with distance, smaller target profile, and increased relative cross velocity (VCRS).",
+    "strType"    : "Item",
+    "strLoot"    : null,
+    "aInteractions" : [
+      "GUISensor"
+    ],
+    "aStartingConds" : [
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsSensorOptical=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsBrittle=1.0x1.0",
+      "IsPolaris=1.0x1",
+      "StatBasePrice=1.0x5000.0",
+      "StatDismantleProgressMax=1.0x100",
+      "StatInstallProgressMax=1.0x250",
+      "StatUninstallProgressMax=1.0x250",
+      "StatMass=1.0x7.0",
+      "StatDamageMax=1.0x3",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategorySensors=1.0x1",
+      "IsSignalable=1.0x1"
+    ],
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,0,-24",
+      "PowerA,0,0"
+    ],
+    "mapGUIPropMaps"  : [
+      "Panel A",
+      "SensorUI",
+      "Electrical"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTSensorOptical01Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmSensorOptical01Off",
+    "aTickers" : [ 
+      "Power"
+    ],
+    "jsonPI"            : "SensorOptical01"
+  },
+  {
+    "strName" : "ItmSensorOptical01Loose",
+    "strNameShort" : "Optical Sensor",
+    "strItemDef" : "ItmSensorOptical01Loose",
+    "strNameFriendly" : "Polaris Sensor: Optical (Loose)",
+    "strDesc" : "A Polaris-brand optical passive sensor. Detects signatures based on proximity, target size, and cross velocity. Sensor signal weakens with distance, smaller target profile, and increased relative cross velocity (VCRS).",
+    "strType"    : "Item",
+    "aInteractions" : [
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds" : [
+      "IsSensorOptical=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsCumbersome=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsBrittle=1.0x1.0",
+      "IsPolaris=1.0x1",
+      "StatBasePrice=1.0x5000.0",
+      "StatDismantleProgressMax=1.0x100",
+      "StatInstallProgressMax=1.0x250",
+      "StatUninstallProgressMax=1.0x250",
+      "StatMass=1.0x7.0",
+      "StatDamageMax=1.0x3",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategorySensors=1.0x1"
+    ],
+    "mapPoints"      : [
+    ],
+    "mapGUIPropMaps"  : [
+      "Panel A",
+      "SensorUI"
+    ],
+    "mapSlotEffects" : [
+      "drag", "Blank"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTSensorOptical01LooseDamage,StatDamageMax,1.0"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmSensorOptical01Loose"
+  },
+  {
+    "strName" : "ItmSensorOptical01",
+    "strNameShort" : "Optical Sensor",
+    "strNameFriendly" : "Polaris Sensor: Optical",
+    "strItemDef" : "ItmSensorOptical01",
+    "strDesc" : "A Polaris-brand optical passive sensor. Detects signatures based on proximity, target size, and cross velocity. Sensor signal weakens with distance, smaller target profile, and increased relative cross velocity (VCRS).",
+    "strType"    : "Item",
+    "strLoot"    : null,
+    "aInteractions" : [
+      "GUISensor"
+    ],
+    "aStartingConds" : [
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsSensorOptical=1.0x1",
+      "IsSensorOpticalOn=1.0x1",
+      "IsSensorOpticalBaseRange=1.0x25",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsBrittle=1.0x1.0",
+      "IsPolaris=1.0x1",
+      "StatBasePrice=1.0x5000.0",
+      "StatDismantleProgressMax=1.0x100",
+      "StatInstallProgressMax=1.0x250",
+      "StatUninstallProgressMax=1.0x250",
+      "StatMass=1.0x7.0",
+      "StatDamageMax=1.0x3",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategorySensors=1.0x1",
+      "IsSignalable=1.0x1",
+      "IsPowered=1.0x1"
+    ],
+    "mapCondTolerance"       : [
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTSensorOptical01Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "mapPoints"      : [
+      "use,0,-24",
+      "PowerA,0,0"
+    ],
+    "mapGUIPropMaps"  : [
+      "Panel A",
+      "SensorUI",
+      "Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmSensorOptical01Off",
+    "aTickers" : [ 
+      "Power"
+    ],
+    "jsonPI"            : "SensorOptical01",
+    "strAudioEmitter": "ItmSensorOptical01"
+  },
+  {
+    "strName" : "ItmSensorOptical01Dmg",
+    "strNameShort" : "Optical Sensor",
+    "strNameFriendly" : "Polaris Sensor: Optical (Damaged)",
+    "strDesc" : "A Polaris-brand optical passive sensor. Detects signatures based on proximity, target size, and cross velocity. Sensor signal weakens with distance, smaller target profile, and increased relative cross velocity (VCRS).",
+    "strItemDef" : "ItmSensorOptical01Dmg",
+    "strType"    : "Item",
+    "strLoot"    : null,
+    "aInteractions" : [
+      "GUISensor"
+    ],
+    "aStartingConds" : [
+      "IsDamaged=1.0x1",
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsSensorOptical=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsBrittle=1.0x1.0",
+      "IsPolaris=1.0x1",
+      "StatBasePrice=1.0x1000.0",
+      "StatDismantleProgressMax=1.0x50",
+      "StatInstallProgressMax=1.0x250",
+      "StatUninstallProgressMax=1.0x250",
+      "StatRepairProgressMax=1.0x300",
+      "StatMass=1.0x7.0",
+      "StatDamageMax=1.0x5",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategorySensors=1.0x1",
+      "IsSignalable=1.0x1"
+    ],
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,0,-24",
+      "PowerA,0,0"
+    ],
+    "mapGUIPropMaps"  : [
+      "Panel A",
+      "SensorUI",
+      "Electrical"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTSensorOptical01Destroy,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmSensorOptical01Dmg02",
+    "aTickers" : [ 
+    ]
+  },
+  {
+    "strName" : "ItmSensorOptical01DmgLoose",
+    "strNameShort" : "Optical Sensor",
+    "strItemDef" : "ItmSensorOptical01DmgLoose",
+    "strNameFriendly" : "Polaris Sensor: Optical (Loose, Damaged)",
+    "strDesc" : "A Polaris-brand optical passive sensor. Detects signatures based on proximity, target size, and cross velocity. Sensor signal weakens with distance, smaller target profile, and increased relative cross velocity (VCRS).",
+    "strType"    : "Item",
+    "aInteractions" : [
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds" : [
+      "IsDamaged=1.0x1",
+      "IsSensorOptical=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsCumbersome=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsBrittle=1.0x1.0",
+      "IsPolaris=1.0x1",
+      "StatBasePrice=1.0x1000.0",
+      "StatDismantleProgressMax=1.0x50",
+      "StatInstallProgressMax=1.0x250",
+      "StatUninstallProgressMax=1.0x250",
+      "StatRepairProgressMax=1.0x300",
+      "StatMass=1.0x7.0",
+      "StatDamageMax=1.0x5",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategorySensors=1.0x1",
+      "IsSignalable=1.0x1"
+    ],
+    "mapPoints"      : [
+    ],
+    "mapGUIPropMaps"  : [
+      "Panel A",
+      "SensorUI"
+    ],
+    "mapSlotEffects" : [
+      "drag", "Blank"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTSensorOptical01LooseDestroy,StatDamageMax,1.0"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmSensorOptical01Dmg02Loose"
+  },
+
+   {
+    "strName" : "ItmSensorRadar01Off",
+    "strNameShort" : "Radar",
+    "strNameFriendly" : "NASA Sensor: Radar (Off)",
+    "strItemDef" : "ItmSensorRadar01Off",
+    "strDesc" : "A radar active sensor (Radio Detection and Ranging) created by NASA Outer Space Command.",
+    "strType"    : "Item",
+    "strLoot"    : null,
+    "aInteractions" : [
+      "GUISensor"
+    ],
+    "aStartingConds" : [
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsSensorRadar=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsNASA=1.0x1",
+      "StatBasePrice=1.0x30000.0",
+      "StatDismantleProgressMax=1.0x250",
+      "StatInstallProgressMax=1.0x800",
+      "StatUninstallProgressMax=1.0x800",
+      "StatMass=1.0x130.0",
+      "StatDamageMax=1.0x7",
+      "IsElectronic=1.0x1",
+      "IsCategorySensors=1.0x1",
+      "IsSignalable=1.0x1"
+    ],
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,0,-40",
+      "PowerA,-16,-8",
+      "PowerB,16,-8"
+    ],
+    "mapGUIPropMaps"  : [
+      "Panel A",
+      "SensorUI",
+      "Electrical"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTSensorRadar01Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmSensorRadar01Off",
+    "aTickers" : [ 
+      "Power"
+    ],
+    "jsonPI"            : "SensorRadar01"
+  },
+  {
+    "strName" : "ItmSensorRadar01Loose",
+    "strNameShort" : "Radar",
+    "strItemDef" : "ItmSensorRadar01Loose",
+    "strNameFriendly" : "NASA Sensor: Radar (Loose)",
+    "strDesc" : "A radar active sensor (Radio Detection and Ranging) created by NASA Outer Space Command.",
+    "strType"    : "Item",
+    "aInteractions" : [
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds" : [
+      "IsSensorRadar=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsCumbersome=1.0x1.0",
+      "IsNASA=1.0x1",
+      "StatBasePrice=1.0x30000.0",
+      "StatDismantleProgressMax=1.0x250",
+      "StatInstallProgressMax=1.0x800",
+      "StatUninstallProgressMax=1.0x800",
+      "StatMass=1.0x130.0",
+      "StatDamageMax=1.0x7",
+      "IsElectronic=1.0x1",
+      "IsCategorySensors=1.0x1"
+    ],
+    "mapPoints"      : [
+    ],
+    "mapGUIPropMaps"  : [
+      "Panel A",
+      "SensorUI"
+    ],
+    "mapSlotEffects" : [
+      "drag", "Blank"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTSensorRadar01LooseDamage,StatDamageMax,1.0"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmSensorRadar01Loose"
+  },
+  {
+    "strName" : "ItmSensorRadar01",
+    "strNameShort" : "Radar",
+    "strNameFriendly" : "NASA Sensor: Radar",
+    "strItemDef" : "ItmSensorRadar01",
+    "strDesc" : "A radar active sensor (Radio Detection and Ranging) created by NASA Outer Space Command.",
+    "strType"    : "Item",
+    "strLoot"    : null,
+    "aInteractions" : [
+      "GUISensor"
+    ],
+    "aStartingConds" : [
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsSensorRadar=1.0x1",
+      "IsSensorRadarOn=1.0x1",
+      "IsSensorRadarBaseRange=1.0x400",
+      "IsSensorRadarStrength=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsReadyHeat=1.0x1",
+      "StatHeatArea=1.0x2.0",
+      "StatHeatVol=1.0x1.0",
+      "StatSolidTemp=1.0x310.0",
+      "IsNASA=1.0x1",
+      "StatBasePrice=1.0x30000.0",
+      "StatDismantleProgressMax=1.0x250",
+      "StatInstallProgressMax=1.0x800",
+      "StatUninstallProgressMax=1.0x800",
+      "StatMass=1.0x130.0",
+      "StatDamageMax=1.0x7",
+      "IsElectronic=1.0x1",
+      "IsCategorySensors=1.0x1",
+      "IsPowered=1.0x1",
+      "IsSignalable=1.0x1"
+    ],
+    "mapCondTolerance"       : [
+    ],
+    "aUpdateCommands" : [
+      "Heater,TIsAirtightNoHuman",
+      "Destructable,StatDamage,ACTSensorRadar01Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "mapPoints"      : [
+      "use,0,-40",
+      "PowerA,-16,-8",
+      "PowerB,16,-8"
+    ],
+    "mapGUIPropMaps"  : [
+      "Panel A",
+      "SensorUI",
+      "Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmSensorRadar01Off",
+    "aTickers" : [
+      "Power" 
+    ],
+    "jsonPI"            : "SensorRadar01",
+    "strAudioEmitter": "ItmSensorRadar01"
+  },
+  {
+    "strName" : "ItmSensorRadar01Dmg",
+    "strNameShort" : "Radar",
+    "strNameFriendly" : "NASA Sensor: Radar (Damaged)",
+    "strDesc" : "A radar active sensor (Radio Detection and Ranging) created by NASA Outer Space Command.",
+    "strItemDef" : "ItmSensorRadar01Dmg",
+    "strType"    : "Item",
+    "strLoot"    : null,
+    "aInteractions" : [
+      "GUISensor"
+    ],
+    "aStartingConds" : [
+      "IsDamaged=1.0x1",
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsSensorRadar=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsNASA=1.0x1",
+      "StatBasePrice=1.0x600.0",
+      "StatDismantleProgressMax=1.0x100",
+      "StatInstallProgressMax=1.0x800",
+      "StatUninstallProgressMax=1.0x800",
+      "StatRepairProgressMax=1.0x1100",
+      "StatMass=1.0x130.0",
+      "StatDamageMax=1.0x10",
+      "IsElectronic=1.0x1",
+      "IsCategorySensors=1.0x1",
+      "IsSignalable=1.0x1"
+    ],
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,0,-40",
+      "PowerA,-16,-8",
+      "PowerB,16,-8"
+    ],
+    "mapGUIPropMaps"  : [
+      "Panel A",
+      "SensorUI",
+      "Electrical"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTSensorRadar01Destroy,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmSensorRadar01Dmg02",
+    "aTickers" : [ 
+    ]
+  },
+  {
+    "strName" : "ItmSensorRadar01DmgLoose",
+    "strNameShort" : "Radar",
+    "strItemDef" : "ItmSensorRadar01DmgLoose",
+    "strNameFriendly" : "NASA Sensor: Radar (Loose, Damaged)",
+    "strDesc" : "A radar active sensor (Radio Detection and Ranging) created by NASA Outer Space Command.",
+    "strType"    : "Item",
+    "aInteractions" : [
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds" : [
+      "IsDamaged=1.0x1",
+      "IsSensorRadar=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsCumbersome=1.0x1.0",
+      "IsNASA=1.0x1",
+      "StatBasePrice=1.0x600.0",
+      "StatDismantleProgressMax=1.0x100",
+      "StatInstallProgressMax=1.0x800",
+      "StatUninstallProgressMax=1.0x800",
+      "StatRepairProgressMax=1.0x1100",
+      "StatMass=1.0x130.0",
+      "StatDamageMax=1.0x10",
+      "IsElectronic=1.0x1",
+      "IsCategorySensors=1.0x1"
+    ],
+    "mapPoints"      : [
+    ],
+    "mapGUIPropMaps"  : [
+      "Panel A",
+      "SensorUI"
+    ],
+    "mapSlotEffects" : [
+      "drag", "Blank"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTSensorRadar01LooseDestroy,StatDamageMax,1.0"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmSensorRadar01Dmg02Loose"
+  },
+  {
+    "strName" : "ItmSensorRadar02Off",
+    "strNameShort" : "Radar",
+    "strNameFriendly" : "Zhuangzi Sensor: Radar (Off)",
+    "strItemDef" : "ItmSensorRadar02Off",
+    "strDesc" : "A radar active sensor (Radio Detection and Ranging) created by Zhuangzi.",
+    "strType"    : "Item",
+    "strLoot"    : null,
+    "aInteractions" : [
+      "GUISensor"
+    ],
+    "aStartingConds" : [
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsSensorRadar=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsZhuangzi=1.0x1",
+      "StatBasePrice=1.0x42000.0",
+      "StatDismantleProgressMax=1.0x350",
+      "StatInstallProgressMax=1.0x1000",
+      "StatUninstallProgressMax=1.0x1000",
+      "StatMass=1.0x130.0",
+      "StatDamageMax=1.0x5",
+      "IsElectronic=1.0x1",
+      "IsCategorySensors=1.0x1",
+      "IsSignalable=1.0x1"
+    ],
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,0,-32",
+      "PowerA,-16,0",
+      "PowerB,16,0"
+    ],
+    "mapGUIPropMaps"  : [
+      "Panel A",
+      "SensorUI",
+      "Electrical"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTSensorRadar02Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmSensorRadar02Off",
+    "aTickers" : [
+      "Power" 
+    ],
+    "jsonPI"            : "SensorRadar02"
+  },
+  {
+    "strName" : "ItmSensorRadar02Loose",
+    "strNameShort" : "Radar",
+    "strItemDef" : "ItmSensorRadar02Loose",
+    "strNameFriendly" : "Zhuangzi Sensor: Radar (Loose)",
+    "strDesc" : "A radar active sensor (Radio Detection and Ranging) created by Zhuangzi.",
+    "strType"    : "Item",
+    "aInteractions" : [
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds" : [
+      "IsSensorRadar=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsCumbersome=1.0x1.0",
+      "IsZhuangzi=1.0x1",
+      "StatBasePrice=1.0x42000.0",
+      "StatDismantleProgressMax=1.0x350",
+      "StatInstallProgressMax=1.0x1000",
+      "StatUninstallProgressMax=1.0x1000",
+      "StatMass=1.0x130.0",
+      "StatDamageMax=1.0x5",
+      "IsElectronic=1.0x1",
+      "IsCategorySensors=1.0x1"
+    ],
+    "mapPoints"      : [
+    ],
+    "mapGUIPropMaps"  : [
+      "Panel A",
+      "SensorUI"
+    ],
+    "mapSlotEffects" : [
+      "drag", "Blank"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTSensorRadar02LooseDamage,StatDamageMax,1.0"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmSensorRadar02Loose"
+  },
+  {
+    "strName" : "ItmSensorRadar02",
+    "strNameShort" : "Radar",
+    "strNameFriendly" : "Zhuangzi Sensor: Radar",
+    "strItemDef" : "ItmSensorRadar02",
+    "strDesc" : "A radar active sensor (Radio Detection and Ranging) created by Zhuangzi.",
+    "strType"    : "Item",
+    "strLoot"    : null,
+    "aInteractions" : [
+      "GUISensor"
+    ],
+    "aStartingConds" : [
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsSensorRadar=1.0x1",
+      "IsSensorRadarOn=1.0x1",
+      "IsSensorRadarBaseRange=1.0x400",
+      "IsSensorRadarStrength=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsReadyHeat=1.0x1",
+      "StatHeatArea=1.0x2.0",
+      "StatHeatVol=1.0x1.0",
+      "StatSolidTemp=1.0x310.0",
+      "IsZhuangzi=1.0x1",
+      "StatBasePrice=1.0x42000.0",
+      "StatDismantleProgressMax=1.0x350",
+      "StatInstallProgressMax=1.0x1000",
+      "StatUninstallProgressMax=1.0x1000",
+      "StatMass=1.0x90.0",
+      "StatDamageMax=1.0x5",
+      "IsElectronic=1.0x1",
+      "IsCategorySensors=1.0x1",
+      "IsPowered=1.0x1",
+      "IsSignalable=1.0x1"
+    ],
+    "mapCondTolerance"       : [
+    ],
+    "aUpdateCommands" : [
+      "Heater,TIsAirtightNoHuman",
+      "Destructable,StatDamage,ACTSensorRadar02Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "mapPoints"      : [
+      "use,0,-32",
+      "PowerA,-16,0",
+      "PowerB,16,0"
+    ],
+    "mapGUIPropMaps"  : [
+      "Panel A",
+      "SensorUI",
+      "Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmSensorRadar02Off",
+    "aTickers" : [
+      "Power" 
+    ],
+    "jsonPI"            : "SensorRadar02",
+    "strAudioEmitter": "ItmSensorRadar02"
+  },
+  {
+    "strName" : "ItmSensorRadar02Dmg",
+    "strNameShort" : "Radar",
+    "strNameFriendly" : "Zhuangzi Sensor: Radar (Damaged)",
+    "strDesc" : "A radar active sensor (Radio Detection and Ranging) created by Zhuangzi.",
+    "strItemDef" : "ItmSensorRadar02Dmg",
+    "strType"    : "Item",
+    "strLoot"    : null,
+    "aInteractions" : [
+      "GUISensor"
+    ],
+    "aStartingConds" : [
+      "IsDamaged=1.0x1",
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsSensorRadar=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsZhuangzi=1.0x1",
+      "StatBasePrice=1.0x8400.0",
+      "StatDismantleProgressMax=1.0x100",
+      "StatInstallProgressMax=1.0x1000",
+      "StatUninstallProgressMax=1.0x1000",
+      "StatRepairProgressMax=1.0x1600",
+      "StatMass=1.0x90.0",
+      "StatDamageMax=1.0x8",
+      "IsElectronic=1.0x1",
+      "IsCategorySensors=1.0x1",
+      "IsSignalable=1.0x1"
+    ],
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,0,-32",
+      "PowerA,-16,0",
+      "PowerB,16,0"
+    ],
+    "mapGUIPropMaps"  : [
+      "Panel A",
+      "SensorUI",
+      "Electrical"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTSensorRadar02Destroy,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmSensorRadar02Dmg02",
+    "aTickers" : [ 
+    ]
+  },
+  {
+    "strName" : "ItmSensorRadar02DmgLoose",
+    "strNameShort" : "Radar",
+    "strItemDef" : "ItmSensorRadar02DmgLoose",
+    "strNameFriendly" : "Zhuangzi Sensor: Radar (Loose, Damaged)",
+    "strDesc" : "A radar active sensor (Radio Detection and Ranging) created by Zhuangzi.",
+    "strType"    : "Item",
+    "aInteractions" : [
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds" : [
+      "IsDamaged=1.0x1",
+      "IsSensorRadar=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsCumbersome=1.0x1.0",
+      "IsZhuangzi=1.0x1",
+      "StatBasePrice=1.0x8400.0",
+      "StatDismantleProgressMax=1.0x100",
+      "StatInstallProgressMax=1.0x1000",
+      "StatUninstallProgressMax=1.0x1000",
+      "StatRepairProgressMax=1.0x1600",
+      "StatMass=1.0x90.0",
+      "StatDamageMax=1.0x8",
+      "IsElectronic=1.0x1",
+      "IsCategorySensors=1.0x1"
+    ],
+    "mapPoints"      : [
+    ],
+    "mapGUIPropMaps"  : [
+      "Panel A",
+      "SensorUI"
+    ],
+    "mapSlotEffects" : [
+      "drag", "Blank"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTSensorRadar02LooseDestroy,StatDamageMax,1.0"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmSensorRadar02Dmg02Loose"
+  },
+
+  {
+    "strName" : "ItmShipWeaponPDC01Off",
+    "strNameShort" : "PDC",
+    "strNameFriendly" : "Smartlink 'Charybdis' PDC (Off)",
+    "strDesc" : "Smartlink proclaims its state-of-the-art Point Defense Cannon suite unrivaled in the System. The ubercorp's rivals, of course, call this grandstanding.",
+    "strItemDef" : "ItmShipWeaponPDC01Off",
+    "strType"    : "Item",
+    "strLoot"    : "ItmLootSpawnPDC20mm",
+    "aInteractions" : [
+      "Inventory",
+      "UnjamWeapon"
+    ],
+    "aStartingConds" : [
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsJammingChance=1x0.0025",
+      "IsContainer=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsSmartlink=1.0x1.0",
+      "StatBasePrice=1.0x25000.0",
+      "StatDismantleProgressMax=1.0x500",
+      "StatInstallProgressMax=1.0x900",
+      "StatUninstallProgressMax=1.0x900",
+      "StatMass=1.0x60.0",
+      "StatDamageMax=1.0x8",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsSignalable=1.0x1",
+      "IsCategoryWeapons=1.0x1",
+      "IsShipSpecialItem=1x1",
+      "IsShipWeapon=1.0x1",
+      "IsShipOffensiveWeapon=1.0x1",
+      "IsShipDefensiveWeapon=1.0x1",
+      "IsShipWeaponFiringGroup=1.0x2",
+      "IsShipWeaponPDC=1.0x1",
+      "IsShipWeaponArcAngle=1.0x85",
+      "IsShipWeaponArcRange=1.0x12000",
+      "IsShipWeaponLaunchSpeed=1x30000",
+      "IsShipWeaponReloadingSpeed=1.0x0.1",
+      "IsShipWeaponSalvoCost=1.0x34",
+      "IsShipWeaponTargetingSpeed=1.0x100"
+    ],
+    "strContainerCT"    : "TIsFitAmmo20mm",
+    "nContainerHeight"  : 3,
+    "nContainerWidth"  : 3,
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,0,-40",
+      "LOS,0,-40",
+      "PowerSource,-16,-8"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipWeaponPDC01Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "mapGUIPropMaps"  : [
+      "Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipWeaponPDC01Off",
+    "aTickers" : [
+      "Power"
+    ],
+    "jsonPI"            : "ShipWeaponPDC01",
+    "strAudioEmitter"   : "ItmAlarmO2OnGTurnOff"
+  },
+  {
+    "strName" : "ItmShipWeaponPDC01Loose",
+    "strNameShort" : "PDC",
+    "strNameFriendly" : "Smartlink 'Charybdis' PDC (Loose)",
+    "strDesc" : "Smartlink proclaims its state-of-the-art Point Defense Cannon suite unrivaled in the System. The ubercorp's rivals, of course, call this grandstanding.",
+    "strItemDef" : "ItmShipWeaponPDC01Loose",
+    "strType"    : "Item",
+    "strLoot"    : "ItmLootSpawnPDC20mm",
+    "aInteractions" : [
+      "Inventory",
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds" : [
+      "IsJammingChance=1x0.0025",
+      "IsContainer=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsCumbersome=1.0x1.0",
+      "IsOversized=1.0x1.0",
+      "IsSmartlink=1.0x1.0",
+      "StatBasePrice=1.0x25000.0",
+      "StatDismantleProgressMax=1.0x500",
+      "StatInstallProgressMax=1.0x900",
+      "StatUninstallProgressMax=1.0x900",
+      "StatMass=1.0x60.0",
+      "StatDamageMax=1.0x8",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategoryWeapons=1.0x1",
+      "IsShipSpecialItem=1x1",
+      "IsShipWeapon=1.0x1",
+      "IsShipOffensiveWeapon=1.0x1",
+      "IsShipDefensiveWeapon=1.0x1",
+      "IsShipWeaponFiringGroup=1.0x2",
+      "IsShipWeaponPDC=1.0x1",
+      "IsShipWeaponSalvoCost=1.0x34"
+    ],
+    "strContainerCT"    : "TIsFitAmmo20mm",
+    "nContainerHeight"  : 3,
+    "nContainerWidth"  : 3,
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,0,-32"
+    ],
+    "mapSlotEffects" : [
+      "drag", "Blank"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipWeaponPDC01LooseDamage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "mapGUIPropMaps"  : [
+      "Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipWeaponPDC01Loose",
+    "aTickers" : [
+    ],
+    "strAudioEmitter"   : "ItmAlarmO2OnGTurnOff"
+  },
+  {
+    "strName" : "ItmShipWeaponPDC01",
+    "strNameShort" : "PDC",
+    "strNameFriendly" : "Smartlink 'Charybdis' PDC",
+    "strDesc" : "Smartlink proclaims its state-of-the-art Point Defense Cannon suite unrivaled in the System. The ubercorp's rivals, of course, call this grandstanding.",
+    "strItemDef" : "ItmShipWeaponPDC01",
+    "strType"    : "Item",
+    "strLoot"    : "ItmLootSpawnPDC20mm",
+    "aInteractions" : [
+      "Inventory",
+      "UnjamWeapon"
+    ],
+    "aStartingConds" : [
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsJammingChance=1x0.0025",
+      "IsContainer=1.0x1",
+      "IsPowered=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsSmartlink=1.0x1.0",
+      "StatBasePrice=1.0x25000.0",
+      "StatDismantleProgressMax=1.0x500",
+      "StatInstallProgressMax=1.0x900",
+      "StatUninstallProgressMax=1.0x900",
+      "StatMass=1.0x60.0",
+      "StatDamageMax=1.0x8",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsSignalable=1.0x1",
+      "IsCategoryWeapons=1.0x1",
+      "IsShipSpecialItem=1x1",
+      "IsShipWeapon=1.0x1",
+      "IsShipOffensiveWeapon=1.0x1",
+      "IsShipDefensiveWeapon=1.0x1",
+      "IsShipWeaponFiringGroup=1.0x2",
+      "IsShipWeaponPDC=1.0x1",
+      "IsShipWeaponArcAngle=1.0x85",
+      "IsShipWeaponArcRange=1.0x12000",
+      "IsShipWeaponLaunchSpeed=1x30000",
+      "IsShipWeaponReloadingSpeed=1.0x0.1",
+      "IsShipWeaponSalvoCost=1.0x34",
+      "IsShipWeaponTargetingSpeed=1.0x100"
+    ],
+    "strContainerCT"    : "TIsFitAmmo20mm",
+    "nContainerHeight"  : 3,
+    "nContainerWidth"  : 3,
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,0,-40",
+      "LOS,0,-40",
+      "PowerSource,-16,-8"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipWeaponPDC01Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "mapGUIPropMaps"  : [
+      "Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipWeaponPDC01Off",
+    "aTickers" : [
+      "Power"
+    ],
+    "jsonPI"            : "ShipWeaponPDC01",
+    "strAudioEmitter"   : "ItmAlarmO2OnGTurnOff"
+  },
+  {
+    "strName" : "ItmShipWeaponPDC01Dmg",
+    "strNameShort" : "PDC",
+    "strNameFriendly" : "Smartlink 'Charybdis' PDC (Damaged)",
+    "strDesc" : "Smartlink proclaims its state-of-the-art Point Defense Cannon suite unrivaled in the System. The ubercorp's rivals, of course, call this grandstanding.",
+    "strItemDef" : "ItmShipWeaponPDC01Dmg",
+    "strType"    : "Item",
+    "strLoot"    : "ItmLootSpawnPDC20mm",
+    "aInteractions" : [
+      "Inventory",
+      "UnjamWeapon"
+    ],
+    "aStartingConds" : [
+      "IsDamaged=1.0x1",
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsJammingChance=1x0.0025",
+      "IsContainer=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsSmartlink=1.0x1.0",
+      "StatBasePrice=1.0x5000.0",
+      "StatDismantleProgressMax=1.0x500",
+      "StatInstallProgressMax=1.0x900",
+      "StatUninstallProgressMax=1.0x900",
+      "StatRepairProgressMax=1.0x1000",
+      "StatMass=1.0x60.0",
+      "StatDamageMax=1.0x13",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategoryWeapons=1.0x1",
+      "IsShipSpecialItem=1x1",
+      "IsShipWeapon=1.0x1",
+      "IsShipOffensiveWeapon=1.0x1",
+      "IsShipDefensiveWeapon=1.0x1",
+      "IsShipWeaponFiringGroup=1.0x2",
+      "IsShipWeaponPDC=1.0x1",
+      "IsShipWeaponSalvoCost=1.0x34"
+    ],
+    "strContainerCT"    : "TIsFitAmmo20mm",
+    "nContainerHeight"  : 3,
+    "nContainerWidth"  : 3,
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,0,-40",
+      "LOS,0,-40",
+      "PowerSource,-16,-8"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipWeaponPDC01Destroy,StatDamageMax,1.0"
+    ],
+    "mapGUIPropMaps"  : [
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipWeaponPDC01Dmg02",
+    "aTickers" : [
+    ],
+    "strAudioEmitter"   : "ItmAlarmO2OnGTurnOff"
+  },
+  {
+    "strName" : "ItmShipWeaponPDC01DmgLoose",
+    "strNameShort" : "PDC",
+    "strNameFriendly" : "Smartlink 'Charybdis' PDC (Damaged, Loose)",
+    "strDesc" : "Smartlink proclaims its state-of-the-art Point Defense Cannon suite unrivaled in the System. The ubercorp's rivals, of course, call this grandstanding.",
+    "strItemDef" : "ItmShipWeaponPDC01DmgLoose",
+    "strType"    : "Item",
+    "strLoot"    : "ItmLootSpawnPDC20mm",
+    "aInteractions" : [
+      "Inventory",
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds" : [
+      "IsContainer=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsCumbersome=1.0x1.0",
+      "IsOversized=1.0x1.0",
+      "IsSmartlink=1.0x1.0",
+      "StatBasePrice=1.0x5000.0",
+      "StatDismantleProgressMax=1.0x500",
+      "StatInstallProgressMax=1.0x900",
+      "StatUninstallProgressMax=1.0x900",
+      "StatRepairProgressMax=1.0x1000",
+      "StatMass=1.0x60.0",
+      "StatDamageMax=1.0x13",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategoryWeapons=1.0x1",
+      "IsShipSpecialItem=1x1",
+      "IsShipWeapon=1.0x1",
+      "IsShipOffensiveWeapon=1.0x1",
+      "IsShipDefensiveWeapon=1.0x1",
+      "IsShipWeaponFiringGroup=1.0x2",
+      "IsShipWeaponPDC=1.0x1",
+      "IsShipWeaponSalvoCost=1.0x34"
+    ],
+    "strContainerCT"    : "TIsFitAmmo20mm",
+    "nContainerHeight"  : 3,
+    "nContainerWidth"  : 3,
+    "mapCondTolerance"       : [
+    ],
+    "mapSlotEffects" : [
+      "drag", "Blank"
+    ],
+    "mapPoints"      : [
+      "use,0,-32"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipWeaponPDC01LooseDestroy,StatDamageMax,1.0"
+    ],
+    "mapGUIPropMaps"  : [
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipWeaponPDC01Dmg02Loose",
+    "aTickers" : [
+    ],
+    "strAudioEmitter"   : "ItmAlarmO2OnGTurnOff"
+  },
+  {
+    "strName" : "ItmShipWeaponPDC02Off",
+    "strNameShort" : "PDC",
+    "strNameFriendly" : "Brave New World '钟馗' CIWS (Off)",
+    "strDesc" : "Brave New World's '钟馗 (Zhong Kui)' CIWS is a renowned solution against unwanted impact protection. Relied on by a healthy majority of the inner planets' spacefarers.",
+    "strItemDef" : "ItmShipWeaponPDC02Off",
+    "strType"    : "Item",
+    "strLoot"    : "ItmLootSpawnPDC20mm",
+    "aInteractions" : [
+      "Inventory",
+      "UnjamWeapon"
+    ],
+    "aStartingConds" : [
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsJammingChance=1x0.00125",
+      "IsContainer=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsBNW=1.0x1.0",
+      "StatBasePrice=1.0x40000.0",
+      "StatDismantleProgressMax=1.0x700",
+      "StatInstallProgressMax=1.0x1200",
+      "StatUninstallProgressMax=1.0x1200",
+      "StatMass=1.0x40.0",
+      "StatDamageMax=1.0x5",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsSignalable=1.0x1",
+      "IsCategoryWeapons=1.0x1",
+      "IsShipSpecialItem=1x1",
+      "IsShipWeapon=1.0x1",
+      "IsShipOffensiveWeapon=1.0x1",
+      "IsShipDefensiveWeapon=1.0x1",
+      "IsShipWeaponFiringGroup=1.0x2",
+      "IsShipWeaponPDC=1.0x1",
+      "IsShipWeaponArcAngle=1.0x85",
+      "IsShipWeaponArcRange=1.0x15000",
+      "IsShipWeaponLaunchSpeed=1x45000",
+      "IsShipWeaponReloadingSpeed=1.0x0.12",
+      "IsShipWeaponSalvoCost=1.0x34",
+      "IsShipWeaponTargetingSpeed=1.0x100"
+    ],
+    "strContainerCT"    : "TIsFitAmmo20mm",
+    "nContainerHeight"  : 3,
+    "nContainerWidth"  : 3,
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,8,-48",
+      "LOS,8,-48",
+      "PowerSource,8,-16"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipWeaponPDC02Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "mapGUIPropMaps"  : [
+      "Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipWeaponPDC02Off",
+    "aTickers" : [
+      "Power"
+    ],
+    "jsonPI"            : "ShipWeaponPDC02",
+    "strAudioEmitter"   : "ItmAlarmO2OnGTurnOff"
+  },
+  {
+    "strName" : "ItmShipWeaponPDC02Loose",
+    "strNameShort" : "PDC",
+    "strNameFriendly" : "Brave New World '钟馗' CIWS (Loose)",
+    "strDesc" : "Brave New World's '钟馗 (Zhong Kui)' CIWS is a renowned solution against unwanted impact protection. Relied on by a healthy majority of the inner planets' spacefarers.",
+    "strItemDef" : "ItmShipWeaponPDC02Loose",
+    "strType"    : "Item",
+    "strLoot"    : "ItmLootSpawnPDC20mm",
+    "aInteractions" : [
+      "Inventory",
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds" : [
+      "IsContainer=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsCumbersome=1.0x1.0",
+      "IsOversized=1.0x1.0",
+      "IsBNW=1.0x1.0",
+      "StatBasePrice=1.0x40000.0",
+      "StatDismantleProgressMax=1.0x700",
+      "StatInstallProgressMax=1.0x1200",
+      "StatUninstallProgressMax=1.0x1200",
+      "StatMass=1.0x40.0",
+      "StatDamageMax=1.0x5",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategoryWeapons=1.0x1",
+      "IsShipSpecialItem=1x1",
+      "IsShipWeapon=1.0x1",
+      "IsShipOffensiveWeapon=1.0x1",
+      "IsShipDefensiveWeapon=1.0x1",
+      "IsShipWeaponFiringGroup=1.0x2",
+      "IsShipWeaponPDC=1.0x1",
+      "IsShipWeaponSalvoCost=1.0x34"
+    ],
+    "strContainerCT"    : "TIsFitAmmo20mm",
+    "nContainerHeight"  : 3,
+    "nContainerWidth"  : 3,
+    "mapCondTolerance"       : [
+    ],
+    "mapSlotEffects" : [
+      "drag", "Blank"
+    ],
+    "mapPoints"      : [
+      "use,8,-32"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipWeaponPDC02LooseDamage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "mapGUIPropMaps"  : [
+      "Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipWeaponPDC02Loose",
+    "aTickers" : [
+    ],
+    "strAudioEmitter"   : "ItmAlarmO2OnGTurnOff"
+  },
+  {
+    "strName" : "ItmShipWeaponPDC02",
+    "strNameShort" : "PDC",
+    "strNameFriendly" : "Brave New World '钟馗' CIWS",
+    "strDesc" : "Brave New World's '钟馗 (Zhong Kui)' CIWS is a renowned solution against unwanted impact protection. Relied on by a healthy majority of the inner planets' spacefarers.",
+    "strItemDef" : "ItmShipWeaponPDC02",
+    "strType"    : "Item",
+    "strLoot"    : "ItmLootSpawnPDC20mm",
+    "aInteractions" : [
+      "Inventory",
+      "UnjamWeapon"
+    ],
+    "aStartingConds" : [
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsJammingChance=1x0.00125",
+      "IsContainer=1.0x1",
+      "IsPowered=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsBNW=1.0x1.0",
+      "StatBasePrice=1.0x40000.0",
+      "StatDismantleProgressMax=1.0x700",
+      "StatInstallProgressMax=1.0x1200",
+      "StatUninstallProgressMax=1.0x1200",
+      "StatMass=1.0x40.0",
+      "StatDamageMax=1.0x5",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsSignalable=1.0x1",
+      "IsCategoryWeapons=1.0x1",
+      "IsShipSpecialItem=1x1",
+      "IsShipWeapon=1.0x1",
+      "IsShipOffensiveWeapon=1.0x1",
+      "IsShipDefensiveWeapon=1.0x1",
+      "IsShipWeaponFiringGroup=1.0x2",
+      "IsShipWeaponPDC=1.0x1",
+      "IsShipWeaponArcAngle=1.0x85",
+      "IsShipWeaponArcRange=1.0x15000",
+      "IsShipWeaponLaunchSpeed=1x45000",
+      "IsShipWeaponReloadingSpeed=1.0x0.12",
+      "IsShipWeaponSalvoCost=1.0x34",
+      "IsShipWeaponTargetingSpeed=1.0x100"
+    ],
+    "strContainerCT"    : "TIsFitAmmo20mm",
+    "nContainerHeight"  : 3,
+    "nContainerWidth"  : 3,
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,8,-48",
+      "LOS,8,-48",
+      "PowerSource,8,-16"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipWeaponPDC02Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "mapGUIPropMaps"  : [
+      "Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipWeaponPDC02Off",
+    "aTickers" : [
+      "Power"
+    ],
+    "jsonPI"            : "ShipWeaponPDC02",
+    "strAudioEmitter"   : "ItmAlarmO2OnGTurnOff"
+  },  
+  {
+    "strName" : "ItmShipWeaponPDC02Dmg",
+    "strNameShort" : "PDC",
+    "strNameFriendly" : "Brave New World '钟馗' CIWS (Damaged)",
+    "strDesc" : "Brave New World's '钟馗 (Zhong Kui)' CIWS is a renowned solution against unwanted impact protection. Relied on by a healthy majority of the inner planets' spacefarers.",
+    "strItemDef" : "ItmShipWeaponPDC02Dmg",
+    "strType"    : "Item",
+    "strLoot"    : "ItmLootSpawnPDC20mm",
+    "aInteractions" : [
+      "Inventory"
+    ],
+    "aStartingConds" : [
+      "IsDamaged=1.0x1",
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsContainer=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsBNW=1.0x1.0",
+      "StatBasePrice=1.0x8000.0",
+      "StatDismantleProgressMax=1.0x700",
+      "StatInstallProgressMax=1.0x1200",
+      "StatUninstallProgressMax=1.0x1200",
+      "StatRepairProgressMax=1.0x1300",
+      "StatMass=1.0x40.0",
+      "StatDamageMax=1.0x10",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategoryWeapons=1.0x1",
+      "IsShipSpecialItem=1x1",
+      "IsShipWeapon=1.0x1",
+      "IsShipOffensiveWeapon=1.0x1",
+      "IsShipDefensiveWeapon=1.0x1",
+      "IsShipWeaponFiringGroup=1.0x2",
+      "IsShipWeaponPDC=1.0x1",
+      "IsShipWeaponSalvoCost=1.0x34"
+    ],
+    "strContainerCT"    : "TIsFitAmmo20mm",
+    "nContainerHeight"  : 3,
+    "nContainerWidth"  : 3,
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,8,-48",
+      "LOS,8,-48",
+      "PowerSource,8,-16"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipWeaponPDC02Destroy,StatDamageMax,1.0"
+    ],
+    "mapGUIPropMaps"  : [
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipWeaponPDC02Dmg02",
+    "aTickers" : [
+    ],
+    "strAudioEmitter"   : "ItmAlarmO2OnGTurnOff"
+  },
+  {
+    "strName" : "ItmShipWeaponPDC02DmgLoose",
+    "strNameShort" : "PDC",
+    "strNameFriendly" : "Brave New World '钟馗' CIWS (Damaged, Loose)",
+    "strDesc" : "Brave New World's '钟馗 (Zhong Kui)' CIWS is a renowned solution against unwanted impact protection. Relied on by a healthy majority of the inner planets' spacefarers.",
+    "strItemDef" : "ItmShipWeaponPDC02DmgLoose",
+    "strType"    : "Item",
+    "strLoot"    : "ItmLootSpawnPDC20mm",
+    "aInteractions" : [
+      "Inventory",
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds" : [
+      "IsContainer=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsCumbersome=1.0x1.0",
+      "IsOversized=1.0x1.0",
+      "IsBNW=1.0x1.0",
+      "StatBasePrice=1.0x8000.0",
+      "StatDismantleProgressMax=1.0x700",
+      "StatInstallProgressMax=1.0x1200",
+      "StatUninstallProgressMax=1.0x1200",
+      "StatRepairProgressMax=1.0x1300",
+      "StatMass=1.0x40.0",
+      "StatDamageMax=1.0x10",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategoryWeapons=1.0x1",
+      "IsShipSpecialItem=1x1",
+      "IsShipWeapon=1.0x1",
+      "IsShipOffensiveWeapon=1.0x1",
+      "IsShipDefensiveWeapon=1.0x1",
+      "IsShipWeaponFiringGroup=1.0x2",
+      "IsShipWeaponPDC=1.0x1",
+      "IsShipWeaponSalvoCost=1.0x34"
+    ],
+    "strContainerCT"    : "TIsFitAmmo20mm",
+    "nContainerHeight"  : 3,
+    "nContainerWidth"  : 3,
+    "mapCondTolerance"       : [
+    ],
+    "mapSlotEffects" : [
+      "drag", "Blank"
+    ],
+    "mapPoints"      : [
+      "use,8,-32"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipWeaponPDC02LooseDestroy,StatDamageMax,1.0"
+    ],
+    "mapGUIPropMaps"  : [
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipWeaponPDC02Dmg02Loose",
+    "aTickers" : [
+    ],
+    "strAudioEmitter"   : "ItmAlarmO2OnGTurnOff"
+  },
+  {
+    "strName" : "ItmShipWeaponPDC03Off",
+    "strNameShort" : "PDC",
+    "strNameFriendly" : "Soyuzneft 'Панцирь-Х' PDC (Off)",
+    "strDesc" : "Soyuzneft doesn't make a lot of promises, but it promises that their Панцирь-Х can throw a lot of ammunition at your problems. And if that doesn't help, maybe nothing can.",
+    "strItemDef" : "ItmShipWeaponPDC03Off",
+    "strType"    : "Item",
+    "strLoot"    : "ItmLootSpawnPDC20mm",
+    "aInteractions" : [
+      "Inventory",
+      "UnjamWeapon"
+    ],
+    "aStartingConds" : [
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsJammingChance=1x0.005",
+      "IsContainer=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsSoyuzneft=1.0x1.0",
+      "StatBasePrice=1.0x18000.0",
+      "StatDismantleProgressMax=1.0x400",
+      "StatInstallProgressMax=1.0x600",
+      "StatUninstallProgressMax=1.0x600",
+      "StatMass=1.0x75.0",
+      "StatDamageMax=1.0x3",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsSignalable=1.0x1",
+      "IsCategoryWeapons=1.0x1",
+      "IsShipSpecialItem=1x1",
+      "IsShipWeapon=1.0x1",
+      "IsShipOffensiveWeapon=1.0x1",
+      "IsShipDefensiveWeapon=1.0x1",
+      "IsShipWeaponFiringGroup=1.0x2",
+      "IsShipWeaponPDC=1.0x1",
+      "IsShipWeaponArcAngle=1.0x85",
+      "IsShipWeaponArcRange=1.0x12000",
+      "IsShipWeaponLaunchSpeed=1x20000",
+      "IsShipWeaponReloadingSpeed=1.0x0.2",
+      "IsShipWeaponSalvoCost=1.0x34",
+      "IsShipWeaponTargetingSpeed=1.0x100"
+    ],
+    "strContainerCT"    : "TIsFitAmmo20mm",
+    "nContainerHeight"  : 3,
+    "nContainerWidth"  : 3,
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,0,-56",
+      "LOS,0,-56",
+      "PowerA,16,-24",
+      "PowerB,-16,-24"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipWeaponPDC03Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "mapGUIPropMaps"  : [
+      "Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipWeaponPDC03Off",
+    "aTickers" : [
+      "Power"
+    ],
+    "jsonPI"            : "ShipWeaponPDC03",
+    "strAudioEmitter"   : "ItmAlarmO2OnGTurnOff"
+  },
+  {
+    "strName" : "ItmShipWeaponPDC03Loose",
+    "strNameShort" : "PDC",
+    "strNameFriendly" : "Soyuzneft 'Панцирь-Х' PDC (Loose)",
+    "strDesc" : "Soyuzneft doesn't make a lot of promises, but it promises that their Панцирь-Х can throw a lot of ammunition at your problems. And if that doesn't help, maybe nothing can.",
+    "strItemDef" : "ItmShipWeaponPDC03Loose",
+    "strType"    : "Item",
+    "strLoot"    : "ItmLootSpawnPDC20mm",
+    "aInteractions" : [
+      "Inventory",
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds" : [
+      "IsContainer=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsCumbersome=1.0x1.0",
+      "IsOversized=1.0x1.0",
+      "IsSoyuzneft=1.0x1.0",
+      "StatBasePrice=1.0x18000.0",
+      "StatDismantleProgressMax=1.0x400",
+      "StatInstallProgressMax=1.0x600",
+      "StatUninstallProgressMax=1.0x600",
+      "StatMass=1.0x75.0",
+      "StatDamageMax=1.0x3",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategoryWeapons=1.0x1",
+      "IsShipSpecialItem=1x1",
+      "IsShipWeapon=1.0x1",
+      "IsShipOffensiveWeapon=1.0x1",
+      "IsShipDefensiveWeapon=1.0x1",
+      "IsShipWeaponFiringGroup=1.0x2",
+      "IsShipWeaponPDC=1.0x1",
+      "IsShipWeaponSalvoCost=1.0x34"
+    ],
+    "strContainerCT"    : "TIsFitAmmo20mm",
+    "nContainerHeight"  : 3,
+    "nContainerWidth"  : 3,
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,0,-32"
+    ],
+    "mapSlotEffects" : [
+      "drag", "Blank"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipWeaponPDC03LooseDamage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "mapGUIPropMaps"  : [
+      "Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipWeaponPDC03Loose",
+    "aTickers" : [
+    ],
+    "strAudioEmitter"   : "ItmAlarmO2OnGTurnOff"
+  },
+  {
+    "strName" : "ItmShipWeaponPDC03",
+    "strNameShort" : "PDC",
+    "strNameFriendly" : "Soyuzneft 'Панцирь-Х' PDC",
+    "strDesc" : "Soyuzneft doesn't make a lot of promises, but it promises that their Панцирь-Х can throw a lot of ammunition at your problems. And if that doesn't help, what can?",
+    "strItemDef" : "ItmShipWeaponPDC03",
+    "strType"    : "Item",
+    "strLoot"    : "ItmLootSpawnPDC20mm",
+    "aInteractions" : [
+      "Inventory",
+      "UnjamWeapon"
+    ],
+    "aStartingConds" : [
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsJammingChance=1x0.005",
+      "IsContainer=1.0x1",
+      "IsPowered=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsSoyuzneft=1.0x1.0",
+      "StatBasePrice=1.0x18000.0",
+      "StatDismantleProgressMax=1.0x400",
+      "StatInstallProgressMax=1.0x600",
+      "StatUninstallProgressMax=1.0x600",
+      "StatMass=1.0x75.0",
+      "StatDamageMax=1.0x3",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsSignalable=1.0x1",
+      "IsCategoryWeapons=1.0x1",
+      "IsShipSpecialItem=1x1",
+      "IsShipWeapon=1.0x1",
+      "IsShipOffensiveWeapon=1.0x1",
+      "IsShipDefensiveWeapon=1.0x1",
+      "IsShipWeaponFiringGroup=1.0x2",
+      "IsShipWeaponPDC=1.0x1",
+      "IsShipWeaponArcAngle=1.0x85",
+      "IsShipWeaponArcRange=1.0x12000",
+      "IsShipWeaponLaunchSpeed=1x20000",
+      "IsShipWeaponReloadingSpeed=1.0x0.2",
+      "IsShipWeaponSalvoCost=1.0x34",
+      "IsShipWeaponTargetingSpeed=1.0x100"
+    ],
+    "strContainerCT"    : "TIsFitAmmo20mm",
+    "nContainerHeight"  : 3,
+    "nContainerWidth"  : 3,
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,0,-56",
+      "LOS,0,-56",
+      "PowerA,16,-24",
+      "PowerB,-16,-24"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipWeaponPDC03Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "mapGUIPropMaps"  : [
+      "Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipWeaponPDC03Off",
+    "aTickers" : [
+      "Power"
+    ],
+    "jsonPI"            : "ShipWeaponPDC03",
+    "strAudioEmitter"   : "ItmAlarmO2OnGTurnOff"
+  },  
+  {
+    "strName" : "ItmShipWeaponPDC03Dmg",
+    "strNameShort" : "PDC",
+    "strNameFriendly" : "Soyuzneft 'Панцирь-Х' PDC (Damaged)",
+    "strDesc" : "Soyuzneft doesn't make a lot of promises, but it promises that their Панцирь-Х can throw a lot of ammunition at your problems. And if that doesn't help, what can?",
+    "strItemDef" : "ItmShipWeaponPDC03Dmg",
+    "strType"    : "Item",
+    "strLoot"    : "ItmLootSpawnPDC20mm",
+    "aInteractions" : [
+      "Inventory",
+      "UnjamWeapon"
+    ],
+    "aStartingConds" : [
+      "IsDamaged=1.0x1",
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsJammingChance=1x0.005",
+      "IsContainer=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsCumbersome=1.0x1.0",
+      "IsOversized=1.0x1.0",
+      "IsSoyuzneft=1.0x1.0",
+      "StatBasePrice=1.0x3600.0",
+      "StatDismantleProgressMax=1.0x400",
+      "StatInstallProgressMax=1.0x600",
+      "StatUninstallProgressMax=1.0x600",
+      "StatRepairProgressMax=1.0x400",
+      "StatMass=1.0x75.0",
+      "StatDamageMax=1.0x15",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategoryWeapons=1.0x1",
+      "IsShipSpecialItem=1x1",
+      "IsShipWeapon=1.0x1",
+      "IsShipOffensiveWeapon=1.0x1",
+      "IsShipDefensiveWeapon=1.0x1",
+      "IsShipWeaponFiringGroup=1.0x2",
+      "IsShipWeaponPDC=1.0x1",
+      "IsShipWeaponSalvoCost=1.0x34"
+    ],
+    "strContainerCT"    : "TIsFitAmmo20mm",
+    "nContainerHeight"  : 3,
+    "nContainerWidth"  : 3,
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,0,-56",
+      "LOS,0,-56",
+      "PowerA,16,-24",
+      "PowerB,-16,-24"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipWeaponPDC03Destroy,StatDamageMax,1.0"
+    ],
+    "mapGUIPropMaps"  : [
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipWeaponPDC03Dmg02",
+    "aTickers" : [
+    ],
+    "strAudioEmitter"   : "ItmAlarmO2OnGTurnOff"
+  },
+  {
+    "strName" : "ItmShipWeaponPDC03DmgLoose",
+    "strNameShort" : "PDC",
+    "strNameFriendly" : "Soyuzneft 'Панцирь-Х' PDC (Damaged, Loose)",
+    "strDesc" : "Soyuzneft doesn't make a lot of promises, but it promises that their Панцирь-Х can throw a lot of ammunition at your problems. And if that doesn't help, what can?",
+    "strItemDef" : "ItmShipWeaponPDC03DmgLoose",
+    "strType"    : "Item",
+    "strLoot"    : "ItmLootSpawnPDC20mm",
+    "aInteractions" : [
+      "Inventory",
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds" : [
+      "IsContainer=1.0x1",
+      "IsOff=1.0x1",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsCumbersome=1.0x1.0",
+      "IsOversized=1.0x1.0",
+      "IsSoyuzneft=1.0x1.0",
+      "StatBasePrice=1.0x3600.0",
+      "StatDismantleProgressMax=1.0x400",
+      "StatInstallProgressMax=1.0x600",
+      "StatUninstallProgressMax=1.0x600",
+      "StatRepairProgressMax=1.0x400",
+      "StatMass=1.0x75.0",
+      "StatDamageMax=1.0x15",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategoryWeapons=1.0x1",
+      "IsShipSpecialItem=1x1",
+      "IsShipWeapon=1.0x1",
+      "IsShipOffensiveWeapon=1.0x1",
+      "IsShipDefensiveWeapon=1.0x1",
+      "IsShipWeaponFiringGroup=1.0x2",
+      "IsShipWeaponPDC=1.0x1",
+      "IsShipWeaponSalvoCost=1.0x34"
+    ],
+    "strContainerCT"    : "TIsFitAmmo20mm",
+    "nContainerHeight"  : 3,
+    "nContainerWidth"  : 3,
+    "mapCondTolerance"       : [
+    ],
+    "mapSlotEffects" : [
+      "drag", "Blank"
+    ],
+    "mapPoints"      : [
+      "use,0,-32"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipWeaponPDC03LooseDestroy,StatDamageMax,1.0"
+    ],
+    "mapGUIPropMaps"  : [
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipWeaponPDC03Dmg02Loose",
+    "aTickers" : [
+    ],
+    "strAudioEmitter"   : "ItmAlarmO2OnGTurnOff"
+  },
+
+  {
+    "strName" : "ItmShipWeaponMassThrower01Off",
+    "strNameShort" : "Coilgun",
+    "strNameFriendly" : "Coilgun",
+    "strDesc" : "This mass-throwing coilgun, produced by the military industrial division of Weber Tools & Oil, uses electromagnetic acceleration to propel solid projectiles at high velocity. The coilgun design results in lower wear than rail gun models at the cost of reduced projectile velocity.",
+    "strItemDef" : "ItmShipWeaponMassThrower01Off",
+    "strType"    : "Item",
+    "strLoot"    : "ItmLootSpawnProjectiles",
+    "aInteractions" : [
+      "Inventory"
+    ],
+    "aStartingConds" : [
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsContainer=1.0x1",
+      "IsOff=1.0x1",
+      "IsWeber=1.0x1.0",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsShaft=1.0x1.0",
+      "IsBrittle=1.0x1.0",
+      "StatBasePrice=1.0x25000.0",
+      "StatDismantleProgressMax=1.0x600",
+      "StatInstallProgressMax=1.0x1200",
+      "StatUninstallProgressMax=1.0x1200",
+      "StatMass=1.0x200.0",
+      "StatDamageMax=1.0x18",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsSignalable=1.0x1",
+      "IsShipWeapon=1.0x1",
+      "IsShipOffensiveWeapon=1.0x1",
+      "IsShipWeaponMassThrower=1.0x1",
+      "IsShipWeaponArcAngle=1.0x20",
+      "IsShipWeaponArcRange=1.0x90000",
+      "IsShipWeaponArcBeepClosing=1.0x1",
+      "IsShipWeaponArcBeepLock=1.0x1",
+      "IsShipWeaponLaunchSpeed=1x20000",
+      "IsShipWeaponReloadingSpeed=1.0x3",
+      "IsShipWeaponTargetingSpeed=1.0x2.6"
+    ],
+    "strContainerCT"    : "TIsFitAmmo150mm",
+    "nContainerHeight"  : 5,
+    "nContainerWidth"  : 5,
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,0,-56",
+      "LOS,0,-56",
+      "PowerSource,-8,-24"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipWeaponMassThrower01Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "mapGUIPropMaps"  : [
+      "Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipWeaponMassThrower01Off",
+    "aTickers" : [
+      "Power"
+    ],
+    "jsonPI"            : "ShipWeaponMassThrower01",
+    "strAudioEmitter"   : "ItmAlarmO2OnGTurnOff"
+  },
+  {
+    "strName" : "ItmShipWeaponMassThrower01Loose",
+    "strNameShort" : "Coilgun",
+    "strNameFriendly" : "Coilgun (Loose)",
+    "strDesc" : "This mass-throwing coilgun, produced by the military industrial division of Weber Tools & Oil, uses electromagnetic acceleration to propel solid projectiles at high velocity. The coilgun design results in lower wear than rail gun models at the cost of reduced projectile velocity.",
+    "strItemDef" : "ItmShipWeaponMassThrower01Loose",
+    "strType"    : "Item",
+    "strLoot"    : "ItmLootSpawnProjectiles",
+    "aInteractions" : [
+      "Inventory",
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds" : [
+      "IsOff=1.0x1",
+      "IsWeber=1.0x1.0",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsShaft=1.0x1.0",
+      "IsBrittle=1.0x1.0",
+      "IsOversized=1.0x1.0",
+      "StatBasePrice=1.0x25000.0",
+      "StatDismantleProgressMax=1.0x600",
+      "StatInstallProgressMax=1.0x1200",
+      "StatUninstallProgressMax=1.0x1200",
+      "StatMass=1.0x200.0",
+      "StatDamageMax=1.0x18",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsShipWeapon=1.0x1",
+      "IsShipOffensiveWeapon=1.0x1",
+      "IsShipWeaponMassThrower=1.0x1",
+      "IsShipWeaponFiringGroup=1.0x2"
+    ],
+    "strContainerCT"    : "TIsFitAmmo150mm",
+    "nContainerHeight"  : 5,
+    "nContainerWidth"  : 5,
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+    ],
+    "mapSlotEffects" : [
+      "drag", "Blank"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipWeaponMassThrower01LooseDamage,StatDamageMax,1.0"
+    ],
+    "mapGUIPropMaps"  : [
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipWeaponMassThrower01Loose",
+    "aTickers" : [
+    ],
+    "jsonPI"            : null,
+    "strAudioEmitter"   : "ItmAlarmO2OnGTurnOff"
+  },
+  {
+    "strName" : "ItmShipWeaponMassThrower01",
+    "strNameShort" : "Coilgun",
+    "strNameFriendly" : "Coilgun",
+    "strDesc" : "This mass-throwing coilgun, produced by the military industrial division of Weber Tools & Oil, uses electromagnetic acceleration to propel solid projectiles at high velocity. The coilgun design results in lower wear than rail gun models at the cost of reduced projectile velocity.",
+    "strItemDef" : "ItmShipWeaponMassThrower01",
+    "strType"    : "Item",
+    "strLoot"    : "ItmLootSpawnProjectiles",
+    "aInteractions" : [
+      "Inventory"
+    ],
+    "aStartingConds" : [
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsContainer=1.0x1",
+      "IsPowered=1.0x1",
+      "IsWeber=1.0x1.0",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsShaft=1.0x1.0",
+      "IsBrittle=1.0x1.0",
+      "StatBasePrice=1.0x25000.0",
+      "StatDismantleProgressMax=1.0x600",
+      "StatInstallProgressMax=1.0x1200",
+      "StatUninstallProgressMax=1.0x1200",
+      "StatMass=1.0x200.0",
+      "StatDamageMax=1.0x18",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsReloadingTrigger=1x1",
+      "IsSignalable=1.0x1",
+      "IsShipWeapon=1.0x1",
+      "IsShipOffensiveWeapon=1.0x1",
+      "IsShipWeaponMassThrower=1.0x1",
+      "IsShipWeaponArcAngle=1.0x20",
+      "IsShipWeaponArcBeepClosing=1.0x1",
+      "IsShipWeaponArcBeepLock=1.0x1",
+      "IsShipWeaponArcRange=1.0x90000",
+      "IsShipWeaponLaunchSpeed=1x20000",
+      "IsShipWeaponReloadingSpeed=1.0x3",
+      "IsShipWeaponTargetingSpeed=1.0x2.6"
+    ],
+    "strContainerCT"    : "TIsFitAmmo150mm",
+    "nContainerHeight"  : 5,
+    "nContainerWidth"  : 5,
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,0,-56",
+      "LOS,0,-56",
+      "PowerSource,-8,-24"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipWeaponMassThrower01Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "mapGUIPropMaps"  : [
+      "Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipWeaponMassThrower01Off",
+    "aTickers" : [
+      "Power"
+    ],
+    "jsonPI"            : "ShipWeaponMassThrower01",
+    "strAudioEmitter"   : "ItmAlarmO2OnGTurnOff"
+  },
+  {
+    "strName" : "ItmShipWeaponMassThrower01Dmg",
+    "strNameShort" : "Coilgun",
+    "strNameFriendly" : "Coilgun (Damaged)",
+    "strDesc" : "This mass-throwing coilgun, produced by the military industrial division of Weber Tools & Oil, uses electromagnetic acceleration to propel solid projectiles at high velocity. The coilgun design results in lower wear than rail gun models at the cost of reduced projectile velocity.",
+    "strItemDef" : "ItmShipWeaponMassThrower01Dmg",
+    "strType"    : "Item",
+    "strLoot"    : "ItmLootSpawnProjectiles",
+    "aInteractions" : [
+    ],
+    "aStartingConds" : [
+      "IsDamaged=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsOff=1.0x1",
+      "IsWeber=1.0x1.0",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsShaft=1.0x1.0",
+      "IsBrittle=1.0x1.0",
+      "StatBasePrice=1.0x5000.0",
+      "StatDismantleProgressMax=1.0x600",
+      "StatInstallProgressMax=1.0x1200",
+      "StatUninstallProgressMax=1.0x1200",
+      "StatRepairProgressMax=1.0x1200",
+      "StatMass=1.0x200.0",
+      "StatDamageMax=1.0x23",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsShipWeapon=1.0x1",
+      "IsShipOffensiveWeapon=1.0x1",
+      "IsShipWeaponMassThrower=1.0x1",
+      "IsShipWeaponFiringGroup=1.0x2"
+    ],
+    "strContainerCT"    : "TIsFitAmmo150mm",
+    "nContainerHeight"  : 5,
+    "nContainerWidth"  : 5,
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,0,-56",
+      "LOS,0,-56",
+      "PowerSource,-16,-24"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipWeaponMassThrower01Destroy,StatDamageMax,1.0"
+    ],
+    "mapGUIPropMaps"  : [
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipWeaponMassThrower01Dmg02",
+    "aTickers" : [
+    ],
+    "jsonPI"            : null,
+    "strAudioEmitter"   : "ItmAlarmO2OnGTurnOff"
+  },
+  {
+    "strName" : "ItmShipWeaponMassThrower01DmgLoose",
+    "strNameShort" : "Coilgun",
+    "strNameFriendly" : "Coilgun (Damaged, Loose)",
+    "strDesc" : "This mass-throwing coilgun, produced by the military industrial division of Weber Tools & Oil, uses electromagnetic acceleration to propel solid projectiles at high velocity. The coilgun design results in lower wear than rail gun models at the cost of reduced projectile velocity.",
+    "strItemDef" : "ItmShipWeaponMassThrower01DmgLoose",
+    "strType"    : "Item",
+    "strLoot"    : "ItmLootSpawnProjectiles",
+    "aInteractions" : [
+      "Inventory",
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds" : [
+      "IsDamaged=1.0x1",
+      "IsOff=1.0x1",
+      "IsWeber=1.0x1.0",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsShaft=1.0x1.0",
+      "IsBrittle=1.0x1.0",
+      "IsOversized=1.0x1.0",
+      "StatBasePrice=1.0x5000.0",
+      "StatDismantleProgressMax=1.0x600",
+      "StatInstallProgressMax=1.0x1200",
+      "StatUninstallProgressMax=1.0x1200",
+      "StatRepairProgressMax=1.0x1200",
+      "StatMass=1.0x200.0",
+      "StatDamageMax=1.0x23",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsShipWeapon=1.0x1",
+      "IsShipOffensiveWeapon=1.0x1",
+      "IsShipWeaponMassThrower=1.0x1"
+    ],
+    "strContainerCT"    : "TIsFitAmmo150mm",
+    "nContainerHeight"  : 5,
+    "nContainerWidth"  : 5,
+    "mapCondTolerance"       : [
+    ],
+    "mapSlotEffects" : [
+      "drag", "Blank"
+    ],
+    "mapPoints"      : [
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipWeaponMassThrower01LooseDestroy,StatDamageMax,1.0"
+    ],
+    "mapGUIPropMaps"  : [
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipWeaponMassThrower01Dmg02Loose",
+    "aTickers" : [
+    ],
+    "jsonPI"            : null,
+    "strAudioEmitter"   : "ItmAlarmO2OnGTurnOff"
+  },
+
+    {
+    "strName" : "ItmShipWeaponMassThrower02Off",
+    "strNameShort" : "Railgun",
+    "strNameFriendly" : "Railgun (Off)",
+    "strDesc" : "This railgun uses the combined cutting-edge research and engineering of Brave New World and Voltaire University. Electromagnetic acceleration propels solid projectiles at massive velocity. The high-performance railgun design comes at the cost of faster wear compared to other mass driver models.",
+    "strItemDef" : "ItmShipWeaponMassThrower02Off",
+    "strType"    : "Item",
+    "strLoot"    : "ItmLootSpawnProjectiles",
+    "aInteractions" : [
+      "Inventory"
+    ],
+    "aStartingConds" : [
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsContainer=1.0x1",
+      "IsOff=1.0x1",
+      "IsBNW=1.0x1.0",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsShaft=1.0x1.0",
+      "IsBrittle=1.0x1.0",
+      "StatBasePrice=1.0x45000.0",
+      "StatDismantleProgressMax=1.0x600",
+      "StatInstallProgressMax=1.0x1800",
+      "StatUninstallProgressMax=1.0x1800",
+      "StatMass=1.0x210.0",
+      "StatDamageMax=1.0x10",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategoryWeapons=1.0x1",
+      "IsSignalable=1.0x1",
+      "IsShipWeapon=1.0x1",
+      "IsShipOffensiveWeapon=1.0x1",
+      "IsShipWeaponMassThrower=1.0x1",
+      "IsShipWeaponArcAngle=1.0x15",
+      "IsShipWeaponArcBeepClosing=1.0x1",
+      "IsShipWeaponArcBeepLock=1.0x1",
+      "IsShipWeaponArcRange=1.0x120000",
+      "IsShipWeaponLaunchSpeed=1x30000",
+      "IsShipWeaponReloadingSpeed=1.0x2.8",
+      "IsShipWeaponTargetingSpeed=1.0x2.9"
+    ],
+    "strContainerCT"    : "TIsFitAmmo150mm",
+    "nContainerHeight"  : 5,
+    "nContainerWidth"  : 5,
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,0,-64",
+      "LOS,0,-64",
+      "PowerSource,-8,-32"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipWeaponMassThrower02Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "mapGUIPropMaps"  : [
+      "Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipWeaponMassThrower02Off",
+    "aTickers" : [
+      "Power"
+    ],
+    "jsonPI"            : "ShipWeaponMassThrower02",
+    "strAudioEmitter"   : "ItmAlarmO2OnGTurnOff"
+  },
+  {
+    "strName" : "ItmShipWeaponMassThrower02Loose",
+    "strNameShort" : "Railgun",
+    "strNameFriendly" : "Railgun (Loose)",
+    "strDesc" : "This railgun uses the combined cutting-edge research and engineering of Brave New World and Voltaire University. Electromagnetic acceleration propels solid projectiles at massive velocity. The high-performance railgun design comes at the cost of faster wear compared to other mass driver models.",
+    "strItemDef" : "ItmShipWeaponMassThrower02Loose",
+    "strType"    : "Item",
+    "strLoot"    : "ItmLootSpawnProjectiles",
+    "aInteractions" : [
+      "Inventory",
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds" : [
+      "IsOff=1.0x1",
+      "IsBNW=1.0x1.0",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsShaft=1.0x1.0",
+      "IsBrittle=1.0x1.0",
+      "IsOversized=1.0x1.0",
+      "StatBasePrice=1.0x45000.0",
+      "StatDismantleProgressMax=1.0x600",
+      "StatInstallProgressMax=1.0x1800",
+      "StatUninstallProgressMax=1.0x1800",
+      "StatMass=1.0x210.0",
+      "StatDamageMax=1.0x10",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategoryWeapons=1.0x1",
+      "IsShipWeapon=1.0x1",
+      "IsShipOffensiveWeapon=1.0x1",
+      "IsShipWeaponMassThrower=1.0x1"
+    ],
+    "strContainerCT"    : "TIsFitAmmo150mm",
+    "nContainerHeight"  : 5,
+    "nContainerWidth"  : 5,
+    "mapCondTolerance"       : [
+    ],
+    "mapSlotEffects" : [
+      "drag", "Blank"
+    ],
+    "mapPoints"      : [
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipWeaponMassThrower02LooseDamage,StatDamageMax,1.0"
+    ],
+    "mapGUIPropMaps"  : [
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipWeaponMassThrower02Loose",
+    "aTickers" : [
+    ],
+    "jsonPI"            : null,
+    "strAudioEmitter"   : "ItmAlarmO2OnGTurnOff"
+  },
+  {
+    "strName" : "ItmShipWeaponMassThrower02",
+    "strNameShort" : "Railgun",
+    "strNameFriendly" : "Railgun",
+    "strDesc" : "This railgun uses the combined cutting-edge research and engineering of Brave New World and Voltaire University. Electromagnetic acceleration propels solid projectiles at massive velocity. The high-performance railgun design comes at the cost of faster wear compared to other mass driver models.",
+    "strItemDef" : "ItmShipWeaponMassThrower02",
+    "strType"    : "Item",
+    "strLoot"    : "ItmLootSpawnProjectiles",
+    "aInteractions" : [
+      "Inventory"
+    ],
+    "aStartingConds" : [
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsContainer=1.0x1",
+      "IsPowered=1.0x1",
+      "IsBNW=1.0x1.0",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsShaft=1.0x1.0",
+      "IsBrittle=1.0x1.0",
+      "StatBasePrice=1.0x45000.0",
+      "StatDismantleProgressMax=1.0x600",
+      "StatInstallProgressMax=1.0x1800",
+      "StatUninstallProgressMax=1.0x1800",
+      "StatMass=1.0x210.0",
+      "StatDamageMax=1.0x10",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategoryWeapons=1.0x1",
+      "IsReloadingTrigger=1x1",
+      "IsSignalable=1.0x1",
+      "IsShipWeapon=1.0x1",
+      "IsShipOffensiveWeapon=1.0x1",
+      "IsShipWeaponMassThrower=1.0x1",
+      "IsShipWeaponArcAngle=1.0x15",
+      "IsShipWeaponArcBeepClosing=1.0x1",
+      "IsShipWeaponArcBeepLock=1.0x1",
+      "IsShipWeaponArcRange=1.0x120000",
+      "IsShipWeaponLaunchSpeed=1x30000",
+      "IsShipWeaponReloadingSpeed=1.0x2.8",
+      "IsShipWeaponTargetingSpeed=1.0x2.9"
+    ],
+    "strContainerCT"    : "TIsFitAmmo150mm",
+    "nContainerHeight"  : 5,
+    "nContainerWidth"  : 5,
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,0,-64",
+      "LOS,0,-64",
+      "PowerSource,-8,-32"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipWeaponMassThrower02Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "mapGUIPropMaps"  : [
+      "Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipWeaponMassThrower02Off",
+    "aTickers" : [
+      "Power"
+    ],
+    "jsonPI"            : "ShipWeaponMassThrower02",
+    "strAudioEmitter"   : "ItmAlarmO2OnGTurnOff"
+  },
+  {
+    "strName" : "ItmShipWeaponMassThrower02Dmg",
+    "strNameShort" : "Railgun",
+    "strNameFriendly" : "Railgun (Damaged)",
+    "strDesc" : "This railgun uses the combined cutting-edge research and engineering of Brave New World and Voltaire University. Electromagnetic acceleration propels solid projectiles at massive velocity. The high-performance railgun design comes at the cost of faster wear compared to other mass driver models.",
+    "strItemDef" : "ItmShipWeaponMassThrower02Dmg",
+    "strType"    : "Item",
+    "strLoot"    : "ItmLootSpawnProjectiles",
+    "aInteractions" : [
+    ],
+    "aStartingConds" : [
+      "IsDamaged=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsOff=1.0x1",
+      "IsBNW=1.0x1.0",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsShaft=1.0x1.0",
+      "IsBrittle=1.0x1.0",
+      "StatBasePrice=1.0x9000.0",
+      "StatDismantleProgressMax=1.0x400",
+      "StatInstallProgressMax=1.0x1800",
+      "StatUninstallProgressMax=1.0x1800",
+      "StatRepairProgressMax=1.0x2500",
+      "StatMass=1.0x210.0",
+      "StatDamageMax=1.0x18",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategoryWeapons=1.0x1",
+      "IsShipWeapon=1.0x1",
+      "IsShipOffensiveWeapon=1.0x1",
+      "IsShipWeaponMassThrower=1.0x1"
+    ],
+    "strContainerCT"    : "TIsFitAmmo150mm",
+    "nContainerHeight"  : 5,
+    "nContainerWidth"  : 5,
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,0,-64",
+      "LOS,0,-64"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipWeaponMassThrower02Destroy,StatDamageMax,1.0"
+    ],
+    "mapGUIPropMaps"  : [
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipWeaponMassThrower02Dmg02",
+    "aTickers" : [
+    ],
+    "jsonPI"            : null,
+    "strAudioEmitter"   : "ItmAlarmO2OnGTurnOff"
+  },
+  {
+    "strName" : "ItmShipWeaponMassThrower02DmgLoose",
+    "strNameShort" : "Railgun",
+    "strNameFriendly" : "Railgun (Damaged, Loose)",
+    "strDesc" : "This railgun uses the combined cutting-edge research and engineering of Brave New World and Voltaire University. Electromagnetic acceleration propels solid projectiles at massive velocity. The high-performance railgun design comes at the cost of faster wear compared to other mass driver models.",
+    "strItemDef" : "ItmShipWeaponMassThrower02DmgLoose",
+    "strType"    : "Item",
+    "strLoot"    : "ItmLootSpawnProjectiles",
+    "aInteractions" : [
+      "Inventory",
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds" : [
+      "IsDamaged=1.0x1",
+      "IsOff=1.0x1",
+      "IsBNW=1.0x1.0",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsShaft=1.0x1.0",
+      "IsBrittle=1.0x1.0",
+      "IsOversized=1.0x1.0",
+      "StatBasePrice=1.0x9000.0",
+      "StatDismantleProgressMax=1.0x400",
+      "StatInstallProgressMax=1.0x1800",
+      "StatUninstallProgressMax=1.0x1800",
+      "StatRepairProgressMax=1.0x2500",
+      "StatMass=1.0x210.0",
+      "StatDamageMax=1.0x18",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategoryWeapons=1.0x1",
+      "IsShipWeapon=1.0x1",
+      "IsShipOffensiveWeapon=1.0x1",
+      "IsShipWeaponMassThrower=1.0x1"
+    ],
+    "strContainerCT"    : "TIsFitAmmo150mm",
+    "nContainerHeight"  : 5,
+    "nContainerWidth"  : 5,
+    "mapCondTolerance"       : [
+    ],
+    "mapSlotEffects" : [
+      "drag", "Blank"
+    ],
+    "mapPoints"      : [
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipWeaponMassThrower02LooseDestroy,StatDamageMax,1.0"
+    ],
+    "mapGUIPropMaps"  : [
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipWeaponMassThrower02Dmg02Loose",
+    "aTickers" : [
+    ],
+    "jsonPI"            : null,
+    "strAudioEmitter"   : "ItmAlarmO2OnGTurnOff"
+  },
+  
+  {
+    "strName" : "ItmShipWeaponMassThrower03Off",
+    "strNameShort" : "Mass Thrower",
+    "strNameFriendly" : "Mass Thrower (Off)",
+    "strDesc" : "This scrappy mass thrower, produced by Soyuzneft from repurposed mining equipment, uses electromagnetic acceleration to propel solid projectiles at high velocity.",
+    "strItemDef" : "ItmShipWeaponMassThrower03Off",
+    "strType"    : "Item",
+    "strLoot"    : "ItmLootSpawnProjectiles",
+    "aInteractions" : [
+      "Inventory"
+    ],
+    "aStartingConds" : [
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsContainer=1.0x1",
+      "IsOff=1.0x1",
+      "IsSoyuzneft=1.0x1.0",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsShaft=1.0x1.0",
+      "IsBrittle=1.0x1.0",
+      "StatBasePrice=1.0x15000.0",
+      "StatDismantleProgressMax=1.0x600",
+      "StatInstallProgressMax=1.0x700",
+      "StatUninstallProgressMax=1.0x700",
+      "StatMass=1.0x300.0",
+      "StatDamageMax=1.0x5",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategoryWeapons=1.0x1",
+      "IsSignalable=1.0x1",
+      "IsShipWeapon=1.0x1",
+      "IsShipOffensiveWeapon=1.0x1",
+      "IsShipWeaponMassThrower=1.0x1",
+      "IsShipWeaponArcAngle=1.0x15",
+      "IsShipWeaponArcBeepClosing=1.0x1",
+      "IsShipWeaponArcBeepLock=1.0x1",
+      "IsShipWeaponArcRange=1.0x66000",
+      "IsShipWeaponLaunchSpeed=1x8000",
+      "IsShipWeaponReloadingSpeed=1.0x3",
+      "IsShipWeaponTargetingSpeed=1.0x2"
+    ],
+    "strContainerCT"    : "TIsFitAmmo150mm",
+    "nContainerHeight"  : 3,
+    "nContainerWidth"  : 3,
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,0,-64",
+      "LOS,0,-64",
+      "PowerSource,8,-32"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipWeaponMassThrower03Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "mapGUIPropMaps"  : [
+      "Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipWeaponMassThrower03Off",
+    "aTickers" : [
+      "Power"
+    ],
+    "jsonPI"            : "ShipWeaponMassThrower03",
+    "strAudioEmitter"   : "ItmAlarmO2OnGTurnOff"
+  },
+  {
+    "strName" : "ItmShipWeaponMassThrower03Loose",
+    "strNameShort" : "Mass Thrower",
+    "strNameFriendly" : "Mass Thrower (Loose)",
+    "strDesc" : "This scrappy mass thrower, produced by Soyuzneft from repurposed mining equipment, uses electromagnetic acceleration to propel solid projectiles at high velocity.",
+    "strItemDef" : "ItmShipWeaponMassThrower03Loose",
+    "strType"    : "Item",
+    "strLoot"    : "ItmLootSpawnProjectiles",
+    "aInteractions" : [
+      "Inventory",
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds" : [
+      "IsOff=1.0x1",
+      "IsSoyuzneft=1.0x1.0",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsShaft=1.0x1.0",
+      "IsBrittle=1.0x1.0",
+      "IsOversized=1.0x1.0",
+      "StatBasePrice=1.0x15000.0",
+      "StatDismantleProgressMax=1.0x600",
+      "StatInstallProgressMax=1.0x700",
+      "StatUninstallProgressMax=1.0x700",
+      "StatMass=1.0x300.0",
+      "StatDamageMax=1.0x5",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategoryWeapons=1.0x1",
+      "IsShipWeapon=1.0x1",
+      "IsShipOffensiveWeapon=1.0x1",
+      "IsShipWeaponMassThrower=1.0x1"
+    ],
+    "strContainerCT"    : "TIsFitAmmo150mm",
+    "nContainerHeight"  : 5,
+    "nContainerWidth"  : 5,
+    "mapCondTolerance"       : [
+    ],
+    "mapSlotEffects" : [
+      "drag", "Blank"
+    ],
+    "mapPoints"      : [
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipWeaponMassThrower03LooseDamage,StatDamageMax,1.0"
+    ],
+    "mapGUIPropMaps"  : [
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipWeaponMassThrower03Loose",
+    "aTickers" : [
+    ],
+    "jsonPI"            : null,
+    "strAudioEmitter"   : "ItmAlarmO2OnGTurnOff"
+  },
+  {
+    "strName" : "ItmShipWeaponMassThrower03",
+    "strNameShort" : "Mass Thrower",
+    "strNameFriendly" : "Mass Thrower",
+    "strDesc" : "This scrappy mass thrower, produced by Soyuzneft from repurposed mining equipment, uses electromagnetic acceleration to propel solid projectiles at high velocity.",
+    "strItemDef" : "ItmShipWeaponMassThrower03",
+    "strType"    : "Item",
+    "strLoot"    : "ItmLootSpawnProjectiles",
+    "aInteractions" : [
+      "Inventory"
+    ],
+    "aStartingConds" : [
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsContainer=1.0x1",
+      "IsPowered=1.0x1",
+      "IsSoyuzneft=1.0x1.0",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsShaft=1.0x1.0",
+      "IsBrittle=1.0x1.0",
+      "StatBasePrice=1.0x15000.0",
+      "StatDismantleProgressMax=1.0x600",
+      "StatInstallProgressMax=1.0x700",
+      "StatUninstallProgressMax=1.0x700",
+      "StatMass=1.0x300.0",
+      "StatDamageMax=1.0x5",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategoryWeapons=1.0x1",
+      "IsReloadingTrigger=1x1",
+      "IsSignalable=1.0x1",
+      "IsShipWeapon=1.0x1",
+      "IsShipOffensiveWeapon=1.0x1",
+      "IsShipWeaponMassThrower=1.0x1",
+      "IsShipWeaponArcAngle=1.0x15",
+      "IsShipWeaponArcBeepClosing=1.0x1",
+      "IsShipWeaponArcBeepLock=1.0x1",
+      "IsShipWeaponArcRange=1.0x66000",
+      "IsShipWeaponLaunchSpeed=1x8000",
+      "IsShipWeaponReloadingSpeed=1.0x3",
+      "IsShipWeaponTargetingSpeed=1.0x2"
+    ],
+    "strContainerCT"    : "TIsFitAmmo150mm",
+    "nContainerHeight"  : 5,
+    "nContainerWidth"  : 5,
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,0,-64",
+      "LOS,0,-64",
+      "PowerSource,8,-32"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipWeaponMassThrower03Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "mapGUIPropMaps"  : [
+      "Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipWeaponMassThrower03Off",
+    "aTickers" : [
+      "Power"
+    ],
+    "jsonPI"            : "ShipWeaponMassThrower03",
+    "strAudioEmitter"   : "ItmAlarmO2OnGTurnOff"
+  },
+  {
+    "strName" : "ItmShipWeaponMassThrower03Dmg",
+    "strNameShort" : "Mass Thrower",
+    "strNameFriendly" : "Mass Thrower (Damaged)",
+    "strDesc" : "This scrappy mass thrower, produced by Soyuzneft from repurposed mining equipment, uses electromagnetic acceleration to propel solid projectiles at high velocity.",
+    "strItemDef" : "ItmShipWeaponMassThrower03Dmg",
+    "strType"    : "Item",
+    "strLoot"    : "ItmLootSpawnProjectiles",
+    "aInteractions" : [
+    ],
+    "aStartingConds" : [
+      "IsDamaged=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsOff=1.0x1",
+      "IsSoyuzneft=1.0x1.0",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsShaft=1.0x1.0",
+      "IsBrittle=1.0x1.0",
+      "StatBasePrice=1.0x3000.0",
+      "StatDismantleProgressMax=1.0x600",
+      "StatInstallProgressMax=1.0x700",
+      "StatUninstallProgressMax=1.0x700",
+      "StatRepairProgressMax=1.0x1000",
+      "StatMass=1.0x300.0",
+      "StatDamageMax=1.0x8",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategoryWeapons=1.0x1",
+      "IsShipWeapon=1.0x1",
+      "IsShipOffensiveWeapon=1.0x1",
+      "IsShipWeaponMassThrower=1.0x1"
+    ],
+    "strContainerCT"    : "TIsFitAmmo150mm",
+    "nContainerHeight"  : 5,
+    "nContainerWidth"  : 5,
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,0,-64",
+      "LOS,0,-64",
+      "PowerSource,8,-32"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipWeaponMassThrower03Destroy,StatDamageMax,1.0"
+    ],
+    "mapGUIPropMaps"  : [
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipWeaponMassThrower03Dmg02",
+    "aTickers" : [
+    ],
+    "jsonPI"            : null,
+    "strAudioEmitter"   : "ItmAlarmO2OnGTurnOff"
+  },
+  {
+    "strName" : "ItmShipWeaponMassThrower03DmgLoose",
+    "strNameShort" : "Mass Thrower",
+    "strNameFriendly" : "Mass Thrower (Damaged, Loose)",
+    "strDesc" : "This scrappy mass thrower, produced by Soyuzneft from repurposed mining equipment, uses electromagnetic acceleration to propel solid projectiles at high velocity.",
+    "strItemDef" : "ItmShipWeaponMassThrower03DmgLoose",
+    "strType"    : "Item",
+    "strLoot"    : "ItmLootSpawnProjectiles",
+    "aInteractions" : [
+      "Inventory",
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds" : [
+      "IsDamaged=1.0x1",
+      "IsOff=1.0x1",
+      "IsSoyuzneft=1.0x1.0",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "IsShaft=1.0x1.0",
+      "IsBrittle=1.0x1.0",
+      "IsOversized=1.0x1.0",
+      "StatBasePrice=1.0x3000.0",
+      "StatDismantleProgressMax=1.0x600",
+      "StatInstallProgressMax=1.0x700",
+      "StatUninstallProgressMax=1.0x700",
+      "StatRepairProgressMax=1.0x1000",
+      "StatMass=1.0x300.0",
+      "StatDamageMax=1.0x8",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategoryWeapons=1.0x1",
+      "IsShipWeapon=1.0x1",
+      "IsShipOffensiveWeapon=1.0x1",
+      "IsShipWeaponMassThrower=1.0x1"
+    ],
+    "strContainerCT"    : "TIsFitAmmo150mm",
+    "nContainerHeight"  : 5,
+    "nContainerWidth"  : 5,
+    "mapCondTolerance"       : [
+    ],
+    "mapSlotEffects" : [
+      "drag", "Blank"
+    ],
+    "mapPoints"      : [
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipWeaponMassThrower03LooseDestroy,StatDamageMax,1.0"
+    ],
+    "mapGUIPropMaps"  : [
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipWeaponMassThrower03Dmg02Loose",
+    "aTickers" : [
+    ],
+    "jsonPI"            : null,
+    "strAudioEmitter"   : "ItmAlarmO2OnGTurnOff"
+  },
+
+  {
+    "strName" : "ItmShipWeaponDecoyLauncher01",
+    "strNameShort" : "Decoy Launcher",
+    "strNameFriendly" : "Polaris Decoy Launcher",
+    "strDesc" : "A decoy deployment system, designed by Polaris.",
+    "strItemDef" : "ItmShipWeaponDecoyLauncher01",
+    "strType"    : "Item",
+    "strLoot"    : "ItmLootSpawnDecoys",
+    "aInteractions" : [
+      "Inventory"
+    ],
+    "aStartingConds" : [
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsContainer=1.0x1",
+      "IsPowered=1.0x1",
+      "IsPolaris=1.0x1.0",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "StatBasePrice=1.0x86000.0",
+      "StatDismantleProgressMax=1.0x600",
+      "StatInstallProgressMax=1.0x1000",
+      "StatUninstallProgressMax=1.0x1000",
+      "StatMass=1.0x320.0",
+      "StatDamageMax=1.0x20",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategoryWeapons=1.0x1",
+      "IsShipWeapon=1.0x1",
+      "IsShipDefensiveWeapon=1.0x1",
+      "IsShipWeaponFiringGroup=1.0x3",
+      "IsShipWeaponDecoyLauncher=1.0x1",
+      "IsShipWeaponLaunchSpeed=1x10000",
+      "IsShipWeaponReloadingSpeed=1.0x5",
+      "IsShipWeaponTargetingSpeed=1.0x100",
+      "IsShipWeaponArcAngle=1.0x360"
+    ],
+    "strContainerCT"    : "TIsFitAmmoDecoyMissile",
+    "nContainerWidth"  : 3,
+    "nContainerHeight"  : 5,
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,0,-48",
+      "LOS,0,-48",
+      "PowerA,-16,-16",
+      "PowerB,16,-16"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipWeaponDecoyLauncher01Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "mapGUIPropMaps"  : [
+      "Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipWeaponDecoyLauncher01Off",
+    "aTickers" : [
+      "Power"
+    ],
+    "jsonPI"            : "ShipWeaponDecoyLauncher01",
+    "strAudioEmitter": "ItmAlarmO2OnGTurnOff"
+  },
+  {
+    "strName" : "ItmShipWeaponDecoyLauncher01Off",
+    "strNameShort" : "Decoy Launcher",
+    "strNameFriendly" : "Polaris Decoy Launcher (Off)",
+    "strDesc" : "A decoy deployment system, designed by Polaris.",
+    "strItemDef" : "ItmShipWeaponDecoyLauncher01Off",
+    "strType"    : "Item",
+    "strLoot"    : "ItmLootSpawnDecoys",
+    "aInteractions" : [
+      "Inventory"
+    ],
+    "aStartingConds" : [
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsContainer=1.0x1",
+      "IsOff=1.0x1",
+      "IsPolaris=1.0x1.0",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "StatBasePrice=1.0x86000.0",
+      "StatDismantleProgressMax=1.0x600",
+      "StatInstallProgressMax=1.0x1000",
+      "StatUninstallProgressMax=1.0x1000",
+      "StatMass=1.0x320.0",
+      "StatDamageMax=1.0x20",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategoryWeapons=1.0x1",
+      "IsShipWeapon=1.0x1",
+      "IsShipWeaponFiringGroup=1.0x3",
+      "IsShipDefensiveWeapon=1.0x1",
+      "IsShipWeaponDecoyLauncher=1.0x1"
+    ],
+    "strContainerCT"    : "TIsFitAmmoDecoyMissile",
+    "nContainerWidth"  : 3,
+    "nContainerHeight"  : 5,
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,0,-48",
+      "LOS,0,-48",
+      "PowerA,-16,-16",
+      "PowerB,16,-16"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipWeaponDecoyLauncher01Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "mapGUIPropMaps"  : [
+      "Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipWeaponDecoyLauncher01Off",
+    "aTickers" : [
+      "Power"
+    ],
+    "jsonPI"            : "ShipWeaponDecoyLauncher01",
+    "strAudioEmitter": "ItmCooler01OnSound"
+  },
+  {
+    "strName" : "ItmShipWeaponDecoyLauncher01Loose",
+    "strNameShort" : "Decoy Launcher",
+    "strNameFriendly" : "Polaris Decoy Launcher (Loose)",
+    "strDesc" : "A decoy deployment system, designed by Polaris.",
+    "strItemDef" : "ItmShipWeaponDecoyLauncher01Loose",
+    "strType"    : "Item",
+    "strLoot"    : "ItmLootSpawnDecoys",
+    "aInteractions" : [
+      "Inventory",
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds" : [
+      "IsOversized=1.0x1",
+      "IsContainer=1.0x1",
+      "IsPolaris=1.0x1.0",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "StatBasePrice=1.0x86000.0",
+      "StatDismantleProgressMax=1.0x600",
+      "StatInstallProgressMax=1.0x1000",
+      "StatUninstallProgressMax=1.0x1000",
+      "StatMass=1.0x320.0",
+      "StatDamageMax=1.0x20",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategoryWeapons=1.0x1",
+      "IsShipWeapon=1.0x1",
+      "IsShipWeaponFiringGroup=1.0x3",
+      "IsShipDefensiveWeapon=1.0x1",
+      "IsShipWeaponDecoyLauncher=1.0x1"
+    ],
+    "strContainerCT"    : "TIsFitAmmoDecoyMissile",
+    "nContainerWidth"  : 3,
+    "nContainerHeight"  : 5,
+    "mapCondTolerance"       : [
+    ],
+    "mapSlotEffects" : [
+      "drag", "Blank"
+    ],
+    "mapPoints"      : [
+      "use,32,0"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipWeaponDecoyLauncher01LooseDamage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "mapGUIPropMaps"  : [
+      "Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipWeaponDecoyLauncher01Loose",
+    "aTickers" : [
+    ],
+    "jsonPI"            : null,
+    "strAudioEmitter": "ItmCooler01OnSound"
+  },
+  {
+    "strName" : "ItmShipWeaponDecoyLauncher01Dmg",
+    "strNameShort" : "Decoy Launcher",
+    "strNameFriendly" : "Polaris Decoy Launcher (Damaged)",
+    "strDesc" : "A decoy deployment system, designed by Polaris.",
+    "strItemDef" : "ItmShipWeaponDecoyLauncher01Dmg",
+    "strType"    : "Item",
+    "strLoot"    : "ItmLootSpawnDecoys",
+    "aInteractions" : [
+      "Inventory"
+    ],
+    "aStartingConds" : [
+      "IsDamaged=1.0x1",
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsContainer=1.0x1",
+      "IsOff=1.0x1",
+      "IsPolaris=1.0x1.0",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "StatBasePrice=1.0x17200.0",
+      "StatDismantleProgressMax=1.0x300",
+      "StatInstallProgressMax=1.0x1000",
+      "StatUninstallProgressMax=1.0x1000",
+      "StatRepairProgressMax=1.0x2500",
+      "StatMass=1.0x320.0",
+      "StatDamageMax=1.0x25",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategoryWeapons=1.0x1",
+      "IsShipWeapon=1.0x1",
+      "IsShipWeaponFiringGroup=1.0x3",
+      "IsShipDefensiveWeapon=1.0x1",
+      "IsShipWeaponDecoyLauncher=1.0x1"
+    ],
+    "strContainerCT"    : "TIsFitAmmoDecoyMissile",
+    "nContainerWidth"  : 3,
+    "nContainerHeight"  : 5,
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,0,-48",
+      "LOS,0,-48",
+      "PowerA,-16,-16",
+      "PowerB,16,-16"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipWeaponDecoyLauncher01Destroy,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "mapGUIPropMaps"  : [
+      "Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipWeaponDecoyLauncher01Dmg02",
+    "aTickers" : [
+    ],
+    "jsonPI"            : null,
+    "strAudioEmitter": "ItmCooler01OnSound"
+  },
+  {
+    "strName" : "ItmShipWeaponDecoyLauncher01DmgLoose",
+    "strNameShort" : "Decoy Launcher",
+    "strNameFriendly" : "Polaris Decoy Launcher (Damaged, Loose)",
+    "strDesc" : "A decoy deployment system, designed by Polaris.",
+    "strItemDef" : "ItmShipWeaponDecoyLauncher01DmgLoose",
+    "strType"    : "Item",
+    "strLoot"    : "ItmLootSpawnDecoys",
+    "aInteractions" : [
+      "Inventory",
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds" : [
+      "IsDamaged=1.0x1",
+      "IsOversized=1.0x1",
+      "IsContainer=1.0x1",
+      "IsPolaris=1.0x1.0",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "StatBasePrice=1.0x17200.0",
+      "StatDismantleProgressMax=1.0x300",
+      "StatInstallProgressMax=1.0x1000",
+      "StatUninstallProgressMax=1.0x1000",
+      "StatRepairProgressMax=1.0x2500",
+      "StatMass=1.0x320.0",
+      "StatDamageMax=1.0x25",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategoryWeapons=1.0x1",
+      "IsShipWeapon=1.0x1",
+      "IsShipWeaponFiringGroup=1.0x1",
+      "IsShipDefensiveWeapon=1.0x1",
+      "IsShipWeaponDecoyLauncher=1.0x1"
+    ],
+    "strContainerCT"    : "TIsFitAmmoDecoyMissile",
+    "nContainerWidth"  : 3,
+    "nContainerHeight"  : 5,
+    "mapCondTolerance"       : [
+    ],
+    "mapSlotEffects" : [
+      "drag", "Blank"
+    ],
+    "mapPoints"      : [
+      "use,32,0"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipWeaponDecoyLauncher01LooseDamage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "mapGUIPropMaps"  : [
+      "Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipWeaponDecoyLauncher01Dmg02Loose",
+    "aTickers" : [
+    ],
+    "jsonPI"            : null,
+    "strAudioEmitter": "ItmCooler01OnSound"
+  },
+  
+  
+  {
+    "strName" : "ItmShipWeaponMissileLauncher01Off",
+    "strNameShort" : "Missile Launcher",
+    "strNameFriendly" : "Smartlink Missile Launcher (Off)",
+    "strDesc" : "A missile deployment system, designed by Smartlink for Titan Shipyards and its subsidiaries.",
+    "strItemDef" : "ItmShipWeaponMissileLauncher01Off",
+    "strType"    : "Item",
+    "strLoot"    : "ItmLootSpawnMissiles01",
+    "aInteractions" : [
+      "Inventory"
+    ],
+    "aStartingConds" : [
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsContainer=1.0x1",
+      "IsOff=1.0x1",
+      "IsSmartlink=1.0x1.0",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "StatBasePrice=1.0x86000.0",
+      "StatDismantleProgressMax=1.0x600",
+      "StatInstallProgressMax=1.0x1000",
+      "StatUninstallProgressMax=1.0x1000",
+      "StatMass=1.0x320.0",
+      "StatDamageMax=1.0x20",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategoryWeapons=1.0x1",
+      "IsShipWeapon=1.0x1",
+      "IsShipOffensiveWeapon=1.0x1",
+      "IsShipWeaponFiringGroup=1.0x1",
+      "IsShipWeaponMissileLauncher=1.0x1"
+    ],
+    "strContainerCT"    : "TIsFitAmmoMissile01",
+    "nContainerWidth"  : 3,
+    "nContainerHeight"  : 5,
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,0,-48",
+      "LOS,0,-48",
+      "PowerA,-16,0",
+      "PowerB,16,0"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipWeaponMissileLauncher01Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "mapGUIPropMaps"  : [
+      "Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipWeaponMissileLauncher01Off",
+    "aTickers" : [
+      "Power"
+    ],
+    "jsonPI"            : "ShipWeaponMissileLauncher01",
+    "strAudioEmitter": "ItmCooler01OnSound"
+  },
+  {
+    "strName" : "ItmShipWeaponMissileLauncher01Loose",
+    "strNameShort" : "Missile Launcher",
+    "strNameFriendly" : "Smartlink Missile Launcher (Loose)",
+    "strDesc" : "A missile deployment system, designed by Smartlink for Titan Shipyards and its subsidiaries.",
+    "strItemDef" : "ItmShipWeaponMissileLauncher01Loose",
+    "strType"    : "Item",
+    "strLoot"    : "ItmLootSpawnMissiles01",
+    "aInteractions" : [
+      "Inventory",
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds" : [
+      "IsOversized=1.0x1",
+      "IsContainer=1.0x1",
+      "IsSmartlink=1.0x1.0",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "StatBasePrice=1.0x86000.0",
+      "StatDismantleProgressMax=1.0x600",
+      "StatInstallProgressMax=1.0x1000",
+      "StatUninstallProgressMax=1.0x1000",
+      "StatMass=1.0x320.0",
+      "StatDamageMax=1.0x20",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategoryWeapons=1.0x1",
+      "IsShipWeapon=1.0x1",
+      "IsShipOffensiveWeapon=1.0x1",
+      "IsShipWeaponFiringGroup=1.0x1",
+      "IsShipWeaponMissileLauncher=1.0x1"
+    ],
+    "strContainerCT"    : "TIsFitAmmoMissile01",
+    "nContainerWidth"  : 3,
+    "nContainerHeight"  : 5,
+    "mapCondTolerance"       : [
+    ],
+    "mapSlotEffects" : [
+      "drag", "Blank"
+    ],
+    "mapPoints"      : [
+      "use,32,0"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipWeaponMissileLauncher01LooseDamage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "mapGUIPropMaps"  : [
+      "Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipWeaponMissileLauncher01Loose",
+    "aTickers" : [
+    ],
+    "jsonPI"            : null,
+    "strAudioEmitter": "ItmCooler01OnSound"
+  },
+  {
+    "strName" : "ItmShipWeaponMissileLauncher01",
+    "strNameShort" : "Missile Launcher",
+    "strNameFriendly" : "Smartlink Missile Launcher",
+    "strDesc" : "A missile deployment system, designed by Smartlink for Titan Shipyards and its subsidiaries.",
+    "strItemDef" : "ItmShipWeaponMissileLauncher01",
+    "strType"    : "Item",
+    "strLoot"    : "ItmLootSpawnMissiles01",
+    "aInteractions" : [
+      "Inventory"
+    ],
+    "aStartingConds" : [
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsContainer=1.0x1",
+      "IsPowered=1.0x1",
+      "IsSmartlink=1.0x1.0",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "StatBasePrice=1.0x86000.0",
+      "StatDismantleProgressMax=1.0x600",
+      "StatInstallProgressMax=1.0x1000",
+      "StatUninstallProgressMax=1.0x1000",
+      "StatMass=1.0x320.0",
+      "StatDamageMax=1.0x20",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategoryWeapons=1.0x1",
+      "IsShipWeapon=1.0x1",
+      "IsShipOffensiveWeapon=1.0x1",
+      "IsShipWeaponFiringGroup=1.0x1",
+      "IsShipWeaponMissileLauncher=1.0x1",
+      "IsShipWeaponLaunchSpeed=1x500",
+      "IsShipWeaponReloadingSpeed=1.0x1",
+      "IsShipWeaponTargetingSpeed=1.0x100",
+      "IsShipWeaponArcAngle=1.0x360"
+    ],
+    "strContainerCT"    : "TIsFitAmmoMissile01",
+    "nContainerWidth"  : 3,
+    "nContainerHeight"  : 5,
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,0,-48",
+      "LOS,0,-48",
+      "PowerA,-16,0",
+      "PowerB,16,0"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipWeaponMissileLauncher01Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "mapGUIPropMaps"  : [
+      "Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipWeaponMissileLauncher01Off",
+    "aTickers" : [
+      "Power"
+    ],
+    "jsonPI"            : "ShipWeaponMissileLauncher01",
+    "strAudioEmitter": "ItmAlarmO2OnGTurnOff"
+  },
+  
+    {
+    "strName" : "ItmShipWeaponMissileLauncher01Dmg",
+    "strNameShort" : "Missile Launcher",
+    "strNameFriendly" : "Smartlink Missile Launcher (Damaged)",
+    "strDesc" : "A missile deployment system, designed by Smartlink for Titan Shipyards and its subsidiaries.",
+    "strItemDef" : "ItmShipWeaponMissileLauncher01Dmg",
+    "strType"    : "Item",
+    "strLoot"    : "ItmLootSpawnMissiles01",
+    "aInteractions" : [
+      "Inventory"
+    ],
+    "aStartingConds" : [
+      "IsDamaged=1.0x1",
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsContainer=1.0x1",
+      "IsOff=1.0x1",
+      "IsSmartlink=1.0x1.0",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "StatBasePrice=1.0x17200.0",
+      "StatDismantleProgressMax=1.0x300",
+      "StatInstallProgressMax=1.0x1000",
+      "StatUninstallProgressMax=1.0x1000",
+      "StatRepairProgressMax=1.0x2500",
+      "StatMass=1.0x320.0",
+      "StatDamageMax=1.0x25",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategoryWeapons=1.0x1",
+      "IsShipWeapon=1.0x1",
+      "IsShipOffensiveWeapon=1.0x1",
+      "IsShipWeaponFiringGroup=1.0x1",
+      "IsShipWeaponMissileLauncher=1.0x1"
+    ],
+    "strContainerCT"    : "TIsFitAmmoMissile01",
+    "nContainerWidth"  : 3,
+    "nContainerHeight"  : 5,
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,0,-48",
+      "LOS,0,-48",
+      "PowerA,-16,0",
+      "PowerB,16,0"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipWeaponMissileLauncher01Destroy,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "mapGUIPropMaps"  : [
+      "Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipWeaponMissileLauncher01Dmg02",
+    "aTickers" : [
+    ],
+    "jsonPI"            : null,
+    "strAudioEmitter": "ItmCooler01OnSound"
+  },
+  {
+    "strName" : "ItmShipWeaponMissileLauncher01DmgLoose",
+    "strNameShort" : "Missile Launcher",
+    "strNameFriendly" : "Smartlink Missile Launcher (Damaged, Loose)",
+    "strDesc" : "A missile launching system, designed by Smartlink for Titan Shipyards and its subsidiaries.",
+    "strItemDef" : "ItmShipWeaponMissileLauncher01DmgLoose",
+    "strType"    : "Item",
+    "strLoot"    : "ItmLootSpawnMissiles01",
+    "aInteractions" : [
+      "Inventory",
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds" : [
+      "IsDamaged=1.0x1",
+      "IsOversized=1.0x1",
+      "IsContainer=1.0x1",
+      "IsSmartlink=1.0x1.0",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "StatBasePrice=1.0x17200.0",
+      "StatDismantleProgressMax=1.0x300",
+      "StatInstallProgressMax=1.0x1000",
+      "StatUninstallProgressMax=1.0x1000",
+      "StatRepairProgressMax=1.0x2500",
+      "StatMass=1.0x320.0",
+      "StatDamageMax=1.0x25",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategoryWeapons=1.0x1",
+      "IsShipWeapon=1.0x1",
+      "IsShipOffensiveWeapon=1.0x1",
+      "IsShipWeaponFiringGroup=1.0x1",
+      "IsShipWeaponMissileLauncher=1.0x1"
+    ],
+    "strContainerCT"    : "TIsFitAmmoMissile01",
+    "nContainerWidth"  : 3,
+    "nContainerHeight"  : 5,
+    "mapCondTolerance"       : [
+    ],
+    "mapSlotEffects" : [
+      "drag", "Blank"
+    ],
+    "mapPoints"      : [
+      "use,32,0"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipWeaponMissileLauncher01LooseDamage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "mapGUIPropMaps"  : [
+      "Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipWeaponMissileLauncher01Dmg02Loose",
+    "aTickers" : [
+    ],
+    "jsonPI"            : null,
+    "strAudioEmitter": "ItmCooler01OnSound"
+  },
+  {
+    "strName" : "ItmShipWeaponMissileLauncher02Off",
+    "strNameShort" : "Missile Launcher",
+    "strNameFriendly" : "BNW Missile Launcher (Off)",
+    "strDesc" : "A missile deployment system for light missiles, designed by Brave New World for Xinhua and its allies.",
+    "strItemDef" : "ItmShipWeaponMissileLauncher02Off",
+    "strType"    : "Item",
+    "strLoot"    : "ItmLootSpawnMissiles02",
+    "aInteractions" : [
+      "Inventory"
+    ],
+    "aStartingConds" : [
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsContainer=1.0x1",
+      "IsOff=1.0x1",
+      "IsSmartlink=1.0x1.0",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "StatBasePrice=1.0x93000.0",
+      "StatDismantleProgressMax=1.0x900",
+      "StatInstallProgressMax=1.0x1300",
+      "StatUninstallProgressMax=1.0x1300",
+      "StatMass=1.0x230.0",
+      "StatDamageMax=1.0x14",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategoryWeapons=1.0x1",
+      "IsShipWeapon=1.0x1",
+      "IsShipOffensiveWeapon=1.0x1",
+      "IsShipWeaponFiringGroup=1.0x1",
+      "IsShipWeaponMissileLauncher=1.0x1"
+    ],
+    "strContainerCT"    : "TIsFitAmmoMissile02",
+    "nContainerWidth"  : 4,
+    "nContainerHeight"  : 3,
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,8,-40",
+      "LOS,8,-40",
+      "PowerA,-24,-8",
+      "PowerB,24,-8"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipWeaponMissileLauncher02Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "mapGUIPropMaps"  : [
+      "Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipWeaponMissileLauncher02Off",
+    "aTickers" : [
+      "Power"
+    ],
+    "jsonPI"            : "ShipWeaponMissileLauncher02",
+    "strAudioEmitter": "ItmCooler01OnSound"
+  },
+  {
+    "strName" : "ItmShipWeaponMissileLauncher02Loose",
+    "strNameShort" : "Missile Launcher",
+    "strNameFriendly" : "BNW Missile Launcher (Loose)",
+    "strDesc" : "A missile deployment system for light missiles, designed by Brave New World for Xhinua and its allies.",
+    "strItemDef" : "ItmShipWeaponMissileLauncher02Loose",
+    "strType"    : "Item",
+    "strLoot"    : "ItmLootSpawnMissiles02",
+    "aInteractions" : [
+      "Inventory",
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds" : [
+      "IsOversized=1.0x1",
+      "IsContainer=1.0x1",
+      "IsBNW=1.0x1.0",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "StatBasePrice=1.0x93000.0",
+      "StatDismantleProgressMax=1.0x900",
+      "StatInstallProgressMax=1.0x1300",
+      "StatUninstallProgressMax=1.0x1300",
+      "StatMass=1.0x230.0",
+      "StatDamageMax=1.0x14",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategoryWeapons=1.0x1",
+      "IsShipWeapon=1.0x1",
+      "IsShipOffensiveWeapon=1.0x1",
+      "IsShipWeaponFiringGroup=1.0x1",
+      "IsShipWeaponMissileLauncher=1.0x1"
+    ],
+    "strContainerCT"    : "TIsFitAmmoMissile02",
+    "nContainerWidth"  : 4,
+    "nContainerHeight"  : 3,
+    "mapCondTolerance"       : [
+    ],
+    "mapSlotEffects" : [
+      "drag", "Blank"
+    ],
+    "mapPoints"      : [
+      "use,-8,-40"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipWeaponMissileLauncher02LooseDamage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "mapGUIPropMaps"  : [
+      "Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipWeaponMissileLauncher02Loose",
+    "aTickers" : [
+    ],
+    "jsonPI"            : null,
+    "strAudioEmitter": "ItmCooler01OnSound"
+  },
+  {
+    "strName" : "ItmShipWeaponMissileLauncher02",
+    "strNameShort" : "Missile Launcher",
+    "strNameFriendly" : "BNW Missile Launcher",
+    "strDesc" : "A missile deployment system for light missiles, designed by Brave New World for Xhinua and its allies.",
+    "strItemDef" : "ItmShipWeaponMissileLauncher02",
+    "strType"    : "Item",
+    "strLoot"    : "ItmLootSpawnMissiles02",
+    "aInteractions" : [
+      "Inventory"
+    ],
+    "aStartingConds" : [
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsContainer=1.0x1",
+      "IsPowered=1.0x1",
+      "IsBNW=1.0x1.0",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "StatBasePrice=1.0x93000.0",
+      "StatDismantleProgressMax=1.0x900",
+      "StatInstallProgressMax=1.0x1300",
+      "StatUninstallProgressMax=1.0x1300",
+      "StatMass=1.0x230.0",
+      "StatDamageMax=1.0x14",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategoryWeapons=1.0x1",
+      "IsShipWeapon=1.0x1",
+      "IsShipOffensiveWeapon=1.0x1",
+      "IsShipWeaponFiringGroup=1.0x1",
+      "IsShipWeaponMissileLauncher=1.0x1",
+      "IsShipWeaponLaunchSpeed=1x500",
+      "IsShipWeaponReloadingSpeed=1.0x1",
+      "IsShipWeaponTargetingSpeed=1.0x100",
+      "IsShipWeaponArcAngle=1.0x360"
+    ],
+    "strContainerCT"    : "TIsFitAmmoMissile02",
+    "nContainerWidth"  : 4,
+    "nContainerHeight"  : 3,
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,8,-40",
+      "LOS,8,-40",
+      "PowerA,-24,-8",
+      "PowerB,24,-8"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipWeaponMissileLauncher02Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "mapGUIPropMaps"  : [
+      "Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipWeaponMissileLauncher02Off",
+    "aTickers" : [
+      "Power"
+    ],
+    "jsonPI"            : "ShipWeaponMissileLauncher02",
+    "strAudioEmitter": "ItmAlarmO2OnGTurnOff"
+  },
+    {
+    "strName" : "ItmShipWeaponMissileLauncher02Dmg",
+    "strNameShort" : "Missile Launcher",
+    "strNameFriendly" : "BNW Missile Launcher (Damaged)",
+    "strDesc" : "A missile deployment system for light missiles, designed by Brave New World for Xhinua and its allies.",
+    "strItemDef" : "ItmShipWeaponMissileLauncher02Dmg",
+    "strType"    : "Item",
+    "strLoot"    : "ItmLootSpawnMissiles02",
+    "aInteractions" : [
+      "Inventory"
+    ],
+    "aStartingConds" : [
+      "IsDamaged=1.0x1",
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsContainer=1.0x1",
+      "IsOff=1.0x1",
+      "IsBNW=1.0x1.0",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "StatBasePrice=1.0x18600.0",
+      "StatDismantleProgressMax=1.0x600",
+      "StatInstallProgressMax=1.0x1300",
+      "StatUninstallProgressMax=1.0x1300",
+      "StatRepairProgressMax=1.0x2800",
+      "StatMass=1.0x230.0",
+      "StatDamageMax=1.0x20",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategoryWeapons=1.0x1",
+      "IsShipWeapon=1.0x1",
+      "IsShipOffensiveWeapon=1.0x1",
+      "IsShipWeaponFiringGroup=1.0x1",
+      "IsShipWeaponMissileLauncher=1.0x1"
+    ],
+    "strContainerCT"    : "TIsFitAmmoMissile02",
+    "nContainerWidth"  : 4,
+    "nContainerHeight"  : 3,
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,8,-40",
+      "LOS,8,-40",
+      "PowerA,-24,-8",
+      "PowerB,24,-8"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipWeaponMissileLauncher02Destroy,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "mapGUIPropMaps"  : [
+      "Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipWeaponMissileLauncher02Dmg02",
+    "aTickers" : [
+    ],
+    "jsonPI"            : null,
+    "strAudioEmitter": "ItmCooler01OnSound"
+  },
+  {
+    "strName" : "ItmShipWeaponMissileLauncher02DmgLoose",
+    "strNameShort" : "Missile Launcher",
+    "strNameFriendly" : "BNW Missile Launcher (Damaged, Loose)",
+    "strDesc" : "A missile deployment system for light missiles, designed by Brave New World for Xhinua and its allies.",
+    "strItemDef" : "ItmShipWeaponMissileLauncher02DmgLoose",
+    "strType"    : "Item",
+    "strLoot"    : "ItmLootSpawnMissiles02",
+    "aInteractions" : [
+      "Inventory",
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds" : [
+      "IsDamaged=1.0x1",
+      "IsOversized=1.0x1",
+      "IsContainer=1.0x1",
+      "IsBNW=1.0x1.0",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "StatBasePrice=1.0x18600.0",
+      "StatDismantleProgressMax=1.0x600",
+      "StatInstallProgressMax=1.0x1300",
+      "StatUninstallProgressMax=1.0x1300",
+      "StatRepairProgressMax=1.0x2800",
+      "StatMass=1.0x230.0",
+      "StatDamageMax=1.0x20",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategoryWeapons=1.0x1",
+      "IsShipWeapon=1.0x1",
+      "IsShipOffensiveWeapon=1.0x1",
+      "IsShipWeaponFiringGroup=1.0x1",
+      "IsShipWeaponMissileLauncher=1.0x1"
+    ],
+    "strContainerCT"    : "TIsFitAmmoMissile02",
+    "nContainerWidth"  : 4,
+    "nContainerHeight"  : 3,
+    "mapCondTolerance"       : [
+    ],
+    "mapSlotEffects" : [
+      "drag", "Blank"
+    ],
+    "mapPoints"      : [
+      "use,-8,-40"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipWeaponMissileLauncher02LooseDestroy,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "mapGUIPropMaps"  : [
+      "Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipWeaponMissileLauncher02Dmg02Loose",
+    "aTickers" : [
+    ],
+    "jsonPI"            : null,
+    "strAudioEmitter": "ItmCooler01OnSound"
+  },
+    {
+    "strName" : "ItmShipWeaponMissileLauncher03Off",
+    "strNameShort" : "Missile Launcher",
+    "strNameFriendly" : "Soyuzneft Missile Launcher (Off)",
+    "strDesc" : "A missile deployment system, designed by Soyuzneft as a derivative of their industrial mining equipment.",
+    "strItemDef" : "ItmShipWeaponMissileLauncher03Off",
+    "strType"    : "Item",
+    "strLoot"    : "ItmLootSpawnMissiles03",
+    "aInteractions" : [
+      "Inventory"
+    ],
+    "aStartingConds" : [
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsContainer=1.0x1",
+      "IsOff=1.0x1",
+      "IsSoyuzneft=1.0x1.0",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "StatBasePrice=1.0x40000.0",
+      "StatDismantleProgressMax=1.0x400",
+      "StatInstallProgressMax=1.0x800",
+      "StatUninstallProgressMax=1.0x800",
+      "StatMass=1.0x250.0",
+      "StatDamageMax=1.0x8",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategoryWeapons=1.0x1",
+      "IsShipWeapon=1.0x1",
+      "IsShipOffensiveWeapon=1.0x1",
+      "IsShipWeaponFiringGroup=1.0x1",
+      "IsShipWeaponMissileLauncher=1.0x1"
+    ],
+    "strContainerCT"    : "TIsFitAmmoMissile03",
+    "nContainerWidth"  : 4,
+    "nContainerHeight"  : 4,
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,-8,-40",
+      "LOS,-8,-40",
+      "PowerA,-24,8",
+      "PowerB,24,8"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipWeaponMissileLauncher03Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "mapGUIPropMaps"  : [
+      "Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipWeaponMissileLauncher03Off",
+    "aTickers" : [
+      "Power"
+    ],
+    "jsonPI"            : "ShipWeaponMissileLauncher03",
+    "strAudioEmitter": "ItmCooler01OnSound"
+  },
+  {
+    "strName" : "ItmShipWeaponMissileLauncher03Loose",
+    "strNameShort" : "Missile Launcher",
+    "strNameFriendly" : "Soyuzneft Missile Launcher (Loose)",
+    "strDesc" : "A missile deployment system, designed by Soyuzneft as a derivative of their industrial mining equipment.",
+    "strItemDef" : "ItmShipWeaponMissileLauncher03Loose",
+    "strType"    : "Item",
+    "strLoot"    : "ItmLootSpawnMissiles03",
+    "aInteractions" : [
+      "Inventory",
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds" : [
+      "IsOversized=1.0x1",
+      "IsContainer=1.0x1",
+      "IsSoyuzneft=1.0x1.0",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "StatBasePrice=1.0x40000.0",
+      "StatDismantleProgressMax=1.0x400",
+      "StatInstallProgressMax=1.0x800",
+      "StatUninstallProgressMax=1.0x800",
+      "StatMass=1.0x250.0",
+      "StatDamageMax=1.0x8",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategoryWeapons=1.0x1",
+      "IsShipWeapon=1.0x1",
+      "IsShipOffensiveWeapon=1.0x1",
+      "IsShipWeaponFiringGroup=1.0x1",
+      "IsShipWeaponMissileLauncher=1.0x1"
+    ],
+    "strContainerCT"    : "TIsFitAmmoMissile03",
+    "nContainerWidth"  : 4,
+    "nContainerHeight"  : 4,
+    "mapCondTolerance"       : [
+    ],
+    "mapSlotEffects" : [
+      "drag", "Blank"
+    ],
+    "mapPoints"      : [
+      "use,-8,-40"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipWeaponMissileLauncher03LooseDamage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "mapGUIPropMaps"  : [
+      "Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipWeaponMissileLauncher03Loose",
+    "aTickers" : [
+    ],
+    "jsonPI"            : null,
+    "strAudioEmitter": "ItmCooler01OnSound"
+  },
+  {
+    "strName" : "ItmShipWeaponMissileLauncher03",
+    "strNameShort" : "Missile Launcher",
+    "strNameFriendly" : "Soyuzneft Missile Launcher",
+    "strDesc" : "A missile deployment system, designed by Soyuzneft as a derivative of their industrial mining equipment.",
+    "strItemDef" : "ItmShipWeaponMissileLauncher03",
+    "strType"    : "Item",
+    "strLoot"    : "ItmLootSpawnMissiles03",
+    "aInteractions" : [
+      "Inventory"
+    ],
+    "aStartingConds" : [
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsContainer=1.0x1",
+      "IsPowered=1.0x1",
+      "IsSoyuzneft=1.0x1.0",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "StatBasePrice=1.0x40000.0",
+      "StatDismantleProgressMax=1.0x400",
+      "StatInstallProgressMax=1.0x800",
+      "StatUninstallProgressMax=1.0x800",
+      "StatMass=1.0x250.0",
+      "StatDamageMax=1.0x8",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategoryWeapons=1.0x1",
+      "IsShipWeapon=1.0x1",
+      "IsShipOffensiveWeapon=1.0x1",
+      "IsShipWeaponFiringGroup=1.0x1",
+      "IsShipWeaponMissileLauncher=1.0x1",
+      "IsShipWeaponLaunchSpeed=1x500",
+      "IsShipWeaponReloadingSpeed=1.0x1",
+      "IsShipWeaponTargetingSpeed=1.0x40",
+      "IsShipWeaponArcAngle=1.0x360"
+    ],
+    "strContainerCT"    : "TIsFitAmmoMissile03",
+    "nContainerWidth"  : 4,
+    "nContainerHeight"  : 4,
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,-8,-40",
+      "LOS,-8,-40",
+      "PowerA,-24,8",
+      "PowerB,24,8"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipWeaponMissileLauncher03Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "mapGUIPropMaps"  : [
+      "Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipWeaponMissileLauncher03Off",
+    "aTickers" : [
+      "Power"
+    ],
+    "jsonPI"            : "ShipWeaponMissileLauncher03",
+    "strAudioEmitter": "ItmAlarmO2OnGTurnOff"
+  },
+    {
+    "strName" : "ItmShipWeaponMissileLauncher03Dmg",
+    "strNameShort" : "Missile Launcher",
+    "strNameFriendly" : "Soyuzneft Missile Launcher (Damaged)",
+    "strDesc" : "A missile deployment system, designed by Soyuzneft as a derivative of their industrial mining equipment.",
+    "strItemDef" : "ItmShipWeaponMissileLauncher03Dmg",
+    "strType"    : "Item",
+    "strLoot"    : "ItmLootSpawnMissiles03",
+    "aInteractions" : [
+      "Inventory"
+    ],
+    "aStartingConds" : [
+      "IsDamaged=1.0x1",
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsContainer=1.0x1",
+      "IsOff=1.0x1",
+      "IsSoyuzneft=1.0x1.0",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "StatBasePrice=1.0x8000.0",
+      "StatDismantleProgressMax=1.0x200",
+      "StatInstallProgressMax=1.0x800",
+      "StatUninstallProgressMax=1.0x800",
+      "StatRepairProgressMax=1.0x1700",
+      "StatMass=1.0x250.0",
+      "StatDamageMax=1.0x12",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategoryWeapons=1.0x1",
+      "IsShipWeapon=1.0x1",
+      "IsShipOffensiveWeapon=1.0x1",
+      "IsShipWeaponFiringGroup=1.0x1",
+      "IsShipWeaponMissileLauncher=1.0x1"
+    ],
+    "strContainerCT"    : "TIsFitAmmoMissile03",
+    "nContainerWidth"  : 4,
+    "nContainerHeight"  : 4,
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+      "use,-8,-40",
+      "LOS,-8,-40",
+      "PowerA,-24,8",
+      "PowerB,24,8"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipWeaponMissileLauncher03Destroy,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "mapGUIPropMaps"  : [
+      "Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipWeaponMissileLauncher03Dmg02",
+    "aTickers" : [
+    ],
+    "jsonPI"            : null,
+    "strAudioEmitter": "ItmCooler01OnSound"
+  },
+  {
+    "strName" : "ItmShipWeaponMissileLauncher03DmgLoose",
+    "strNameShort" : "Missile Launcher",
+    "strNameFriendly" : "Soyuzneft Missile Launcher (Damaged, Loose)",
+    "strDesc" : "A missile deployment system, designed by Soyuzneft as a derivative of their industrial mining equipment.",
+    "strItemDef" : "ItmShipWeaponMissileLauncher03DmgLoose",
+    "strType"    : "Item",
+    "strLoot"    : "ItmLootSpawnMissiles03",
+    "aInteractions" : [
+      "Inventory",
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds" : [
+      "IsDamaged=1.0x1",
+      "IsOversized=1.0x1",
+      "IsContainer=1.0x1",
+      "IsSoyuzneft=1.0x1.0",
+      "IsSalvageValueHigh=1.0x1.0",
+      "IsShipSpecialItem=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsRigid=1.0x1.0",
+      "StatBasePrice=1.0x8000.0",
+      "StatDismantleProgressMax=1.0x200",
+      "StatInstallProgressMax=1.0x800",
+      "StatUninstallProgressMax=1.0x800",
+      "StatRepairProgressMax=1.0x1700",
+      "StatMass=1.0x250.0",
+      "StatDamageMax=1.0x12",
+      "IsElectronic=1.0x1",
+      "IsTechnology=1.0x1",
+      "IsCategoryWeapons=1.0x1",
+      "IsShipWeapon=1.0x1",
+      "IsShipOffensiveWeapon=1.0x1",
+      "IsShipWeaponFiringGroup=1.0x1",
+      "IsShipWeaponMissileLauncher=1.0x1"
+    ],
+    "strContainerCT"    : "TIsFitAmmoMissile03",
+    "nContainerWidth"  : 4,
+    "nContainerHeight"  : 4,
+    "mapCondTolerance"       : [
+    ],
+    "mapSlotEffects" : [
+      "drag", "Blank"
+    ],
+    "mapPoints"      : [
+      "use,-8,-40"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipWeaponMissileLauncher03LooseDamage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "mapGUIPropMaps"  : [
+      "Electrical"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipWeaponMissileLauncher03Dmg02Loose",
+    "aTickers" : [
+    ],
+    "jsonPI"            : null,
+    "strAudioEmitter": "ItmCooler01OnSound"
+  },
+  
+  {
+    "strName" : "ItmShipCladding01",
+    "strNameShort" : "Cladding",
+    "strItemDef" : "ItmShipCladding01",
+    "strNameFriendly" : "PPC Ablative Hull Cladding",
+    "strDesc" : "'Outrigger' ablative hull cladding, produced by partnering Hangzhou-pedigree naval engineering with the tireless industry of Prokofiev Penal Colony, LLC. A strategic approach to targeted ship armor, securing peace of mind against incoming ballistics, while maintaining elegance and maneuverability.",
+    "strType"    : "Item",
+    "aInteractions" : [
+    ],
+    "aStartingConds" : [
+      "IsShipCladding=1.0x1",      
+      "IsPPC=1.0x1",
+      "IsRigid=1.0x1",
+      "IsTough=1.0x1",
+      "IsGray=1.0x1.0",
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsSolid=1.0x1.0",
+      "StatBasePrice=1.0x8000.00",
+      "StatDismantleProgressMax=1.0x100",
+      "StatInstallProgressMax=1.0x500",
+      "StatUninstallProgressMax=1.0x500",
+      "StatMass=1.0x20.0",
+      "StatDamageMax=1.0x50",
+      "IsCategoryHull=1.0x1"
+    ],
+    "mapPoints"      : [
+      "use,0,-24",
+      "LOS,0,-8"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipCladding01Damage,StatDamageMax,1.0"
+    ],
+    "mapGUIPropMaps"  : null,
+    "strPortraitImg"  : "ship_combat/ItmShipCladding01"
+  },
+  {
+    "strName" : "ItmShipCladding01Loose",
+    "strNameShort" : "Cladding",
+    "strItemDef" : "ItmShipCladding01Loose",
+    "strNameFriendly" : "PPC Ablative Hull Cladding (Loose)",
+    "strDesc" : "'Outrigger' ablative hull cladding, produced by partnering Hangzhou-pedigree naval engineering with the tireless industry of Prokofiev Penal Colony, LLC. A strategic approach to targeted ship armor, securing peace of mind against incoming ballistics, while maintaining elegance and maneuverability.",
+    "strType"    : "Item",
+    "aInteractions" : [
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds" : [
+      "IsShipCladding=1.0x1",      
+      "IsPPC=1.0x1",
+      "IsRigid=1.0x1",
+      "IsTough=1.0x1",
+      "IsGray=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsCumbersome=1.0x1.0",
+      "IsOversized=1.0x1.0",
+      "StatBasePrice=1.0x8000.00",
+      "StatDismantleProgressMax=1.0x100",
+      "StatInstallProgressMax=1.0x500",
+      "StatUninstallProgressMax=1.0x500",
+      "StatMass=1.0x20.0",
+      "StatDamageMax=1.0x50",
+      "IsCategoryHull=1.0x1"
+    ],
+    "mapPoints"      : [
+    ],
+    "mapSlotEffects" : [
+      "drag", "Blank"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTShipCladding01LooseDamage,StatDamageMax,1.0"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipCladding01Loose"
+  },
+  {
+    "strName" : "ItmShipCladding01Dmg",
+    "strNameShort" : "Cladding",
+    "strItemDef" : "ItmShipCladding01Dmg",
+    "strNameFriendly" : "PPC Ablative Hull Cladding (Damaged)",
+    "strDesc" : "'Outrigger' ablative hull cladding, produced by partnering Hangzhou-pedigree naval engineering with the tireless industry of Prokofiev Penal Colony, LLC. A strategic approach to targeted ship armor, securing peace of mind against incoming ballistics, while maintaining elegance and maneuverability.",
+    "strType"    : "Item",
+    "aInteractions" : [
+    ],
+    "aStartingConds" : [
+      "IsDamaged=1.0x1",
+      "IsShipCladding=1.0x1",      
+      "IsPPC=1.0x1",
+      "IsRigid=1.0x1",
+      "IsTough=1.0x1",
+      "IsGray=1.0x1.0",
+      "IsHiddenInv=1.0x1",
+      "IsInstalled=1.0x1",
+      "IsContainer=1.0x1",
+      "IsSolid=1.0x1.0",
+      "StatBasePrice=1.0x300.0",
+      "StatDismantleProgressMax=1.0x100",
+      "StatInstallProgressMax=1.0x500",
+      "StatUninstallProgressMax=1.0x500",
+      "StatMass=1.0x20.0",
+      "StatDamageMax=1.0x30",
+      "IsCategoryHull=1.0x1"
+    ],
+    "mapPoints"      : [
+      "use,0,-24",
+      "LOS,0,-8"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTMechDestroy,StatDamageMax,1.0"
+    ],
+    "mapGUIPropMaps"  : null,
+    "strPortraitImg"  : "ship_combat/ItmShipCladding01Dmg02",
+    "jsonPI"            : null
+  },
+  {
+    "strName" : "ItmShipCladding01DmgLoose",
+    "strNameShort" : "Cladding",
+    "strItemDef" : "ItmShipCladding01DmgLoose",
+    "strNameFriendly" : "PPC Ablative Hull Cladding (Loose, Damaged)",
+    "strDesc" : "'Outrigger' ablative hull cladding, produced by partnering Hangzhou-pedigree naval engineering with the tireless industry of Prokofiev Penal Colony, LLC. A strategic approach to targeted ship armor, securing peace of mind against incoming ballistics, while maintaining elegance and maneuverability.",
+    "strType"    : "Item",
+    "aInteractions" : [
+      "DropItem",
+      "PickupItem"
+    ],
+    "aStartingConds" : [
+      "IsDamaged=1.0x1",
+      "IsShipCladding=1.0x1",      
+      "IsPPC=1.0x1",
+      "IsRigid=1.0x1",
+      "IsTough=1.0x1",
+      "IsGray=1.0x1.0",
+      "IsSolid=1.0x1.0",
+      "IsCumbersome=1.0x1.0",
+      "IsOversized=1.0x1.0",
+      "StatBasePrice=1.0x300.0",
+      "StatDismantleProgressMax=1.0x100",
+      "StatInstallProgressMax=1.0x500",
+      "StatUninstallProgressMax=1.0x500",
+      "StatMass=1.0x20.0",
+      "StatDamageMax=1.0x30",
+      "IsCategoryHull=1.0x1"
+    ],
+    "mapPoints"      : [
+    ],
+    "mapSlotEffects" : [
+      "drag", "Blank"
+    ],
+    "aUpdateCommands" : [
+      "Destructable,StatDamage,ACTMechDestroy,StatDamageMax,1.0"
+    ],
+    "strPortraitImg"  : "ship_combat/ItmShipCladding01Dmg02Loose"
+  },
+
+  {
+    "strName" : "SysExplosionMissile01",
+    "strNameShort" : "Explosion",
+    "strNameFriendly" : "Fusion Missile Explosion",
+    "strItemDef" : "SysExplosionMissile01",
+    "strType"    : "Item",
+    "strLoot"    : null,
+    "aInteractions" : [
+    ],
+    "aStartingConds" : [
+      "IsNonHighlightable=1.0x1",
+      "IsSystem=1.0x1"
+    ],
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+    ],
+    "aUpdateCommands" : [
+      "Explosion,Missile01"
+    ],
+    "mapGUIPropMaps"  : null,
+    "strPortraitImg"  : "blank",
+    "jsonPI"            : null
+  },
+  {
+    "strName" : "SysExplosionMissile02",
+    "strNameShort" : "Explosion",
+    "strNameFriendly" : "Conventional Missile Explosion",
+    "strItemDef" : "SysExplosionMissile02",
+    "strType"    : "Item",
+    "aStartingConds" : [
+      "IsNonHighlightable=1.0x1",
+      "IsSystem=1.0x1"
+    ],
+    "aUpdateCommands" : [
+      "Explosion,Missile02"
+    ],
+    "strPortraitImg"  : "blank"
+  },
+  {
+    "strName" : "SysExplosionMissile03",
+    "strNameShort" : "Explosion",
+    "strNameFriendly" : "Conventional Missile Explosion (Small)",    
+    "strItemDef" : "SysExplosionMissile03",
+    "strType"    : "Item",
+    "aStartingConds" : [
+      "IsNonHighlightable=1.0x1",
+      "IsSystem=1.0x1"
+    ],
+    "aUpdateCommands" : [
+      "Explosion,Missile03"
+    ],
+    "strPortraitImg"  : "blank"
+  }
+]

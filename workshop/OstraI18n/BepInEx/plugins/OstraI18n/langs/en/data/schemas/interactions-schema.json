@@ -1,0 +1,306 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "strName" : {
+                "type": "string",
+                "description": "The code name of this interaction, as referred to in the data."
+            },
+            "strTitle" : {
+                "type": "string",
+                "description": "The name of this interaction as shown to players in UI and context menus."
+            },
+            "strDesc" : {
+                "type": "string",
+                "description": "Long description of this interaction that usually displays in the log. Often include [us], [them], and [3rd] variables."
+            },
+            "strTargetPoint" : {
+                "type": ["string", "null"],
+                "description": "Name of the interaction point to use on target when interacting (assigned in condowners.json). null = anywhere on map is fine. (E.g. waiting)"
+            },
+            "fTargetPointRange" : {
+                "type": "number",
+                "description": "Max radius around target point in which this interaction can happen (n tiles)"
+            },
+            "strAnim" : {
+                "type": ["string", "null"],
+                "description": "Name of the animation to play when interacting. Animation options are hard-coded (E.g. Use, Tooling, Tablet, Talk, Sitting, Yes, No)"
+            },
+            "strIdleAnim" : {
+                "type": ["string", "null"],
+                "description": "Sets the current idle animation (what runs after this interaction ends)"
+            },
+            "strBubble" : {
+                "type": ["string", "null"],
+                "description": "Name of the bubble image to show above the character while the interaction is ocurring."
+            },
+            "strMapIcon" : {
+                "type": ["string", "null"],
+                "description": "Name of the map icon image to show (usually over the target) when assigned as a task. E.g. construction sign."
+            },
+            "strColor" : {
+                "type": "string",
+                "description": "Name of the color to use in logged messages (E.g. Good, Goodish, Neutral, Badish, Bad)"
+            },
+            "strDuty" : {
+                "type": ["string", "null"],
+                "description": "Optional duty this interaction falls under. if non-null, context choosing this action will add it to task list. null will do action directly."
+            },
+            "strThemType" : {
+                "type": "string",
+                "description": "Does this apply to self, room, direction, or others? (Usually Other)"
+            },
+            "strRaiseUI" : {
+                "type": ["string", "null"],
+                "description": "The name of the UI key in CO's mapGUIPropMaps this interaction pulls up."
+            },
+            "strLedgerDef" : {
+                "type": "string",
+                "description": "The name of the ledgerdef to execute with this interaction (I.e. how this interaction impacts player finances directly)."
+            },
+            "strCancelInteraction": {
+                "type": "string",
+                "description": "Optional interaction to append when AICancelCurrent is used to prematurely end this interaction."
+            },
+            "strUseCase": {
+                "type": "string",
+                "description": "if this interaction has aLootItms with \"use\", this is the use case they should apply. (strName from chargeprofiles.json)."
+            },
+            "fDuration": {
+                "type": "number",
+                "description": "Duration of this interaction in hours."
+            },
+            "strTeleport": {
+                "type": "string",
+                "description": "Name of point we should teleport to when performing this interaction (usually set in the target's condowners.json entry)."
+            },
+            "aInverse": {
+                "type": "array",
+                "description": "List of IDs of inverse interactions this causes in granter (or next interaction in a chain). e.g. \"chat\" has inverse of \"chat reply\" or \"snap reply\". Including \",[us],[them]\" at the end of an interaction name retains the same actor/target roles, otherwise [us] and [them] flip."
+            },
+            "LootCTsUs": {
+                "type": ["string", "null"],
+                "description": "Loot of condition trigger IDs this applies to petitioner/[us] now."
+            },
+            "LootCTsThem": {
+                "type": ["string", "null"],
+                "description": "Loot of condition trigger IDs this applies to granter/[them] now."
+            },
+            "LootCTs3rd": {
+                "type": ["string", "null"],
+                "description": "Loot of condition trigger IDs this applies to 3rd party/[3rd] now."
+            },
+            "LootCondsUs": {
+                "type": ["string", "null"],
+                "description": "Loot of conditions this applies to petitioner/[us] now."
+            },
+            "LootCondsThem": {
+                "type": ["string", "null"],
+                "description": "Loot of conditions this applies to granter/[them] now."
+            },
+            "LootConds3rd": {
+                "type": ["string", "null"],
+                "description": "Loot of conditions this applies to 3rd party/[3rd] now."
+            },
+            "CTTestUs": {
+                "type": ["string", "null"],
+                "description": "Name of condition trigger (in condtrigs.json) assigning conditions that are required/forbidden on [us] to trigger/allow this interaction."
+            },
+            "CTTestThem": {
+                "type": ["string", "null"],
+                "description": "Name of condition trigger (in condtrigs.json) assigning conditions that are required/forbidden on [them] to trigger/allow this interaction."
+            },
+            "CTTest3rd": {
+                "type": ["string", "null"],
+                "description": "Name of condition trigger (in condtrigs.json) assigning conditions that are required/forbidden on [3rd] to trigger/allow this interaction."
+            },
+            "PSpecTestThem": {
+                "type": ["string", "null"],
+                "description": "Optional JsonPersonSpec defining a valid them."
+            },
+            "PSpecTest3rd": {
+                "type": ["string", "null"],
+                "description": "Optional JsonPersonSpec defining a valid [3rd]."
+            },
+            "strLootItmAddUs": {
+                "type": ["string", "null"],
+                "description": "Loot items to add to [us] when this interaction happens, defined as item type entry loot names found in loot.json or loot_self_reference.json"
+            },
+            "strLootItmAddThem": {
+                "type": ["string", "null"],
+                "description": "Loot items to add to [them] when this interaction happens, defined as item type entry in loot.json or loot_self_reference.json"
+            },
+            "strLootCTsRemoveUs": {
+                "type": ["string", "null"],
+                "description": "Loot to remove from [us] when this interaction happens, defined as CT/trigger type entry in loot.json or loot_self_reference.json"
+            },
+            "strLootItmRemoveThem": {
+                "type": ["string", "null"],
+                "description": "Loot items to add to [them] when this interaction happens, defined as item type entry in loot.json or loot_self_reference.json"
+            },
+            "strLootCTsGive": {
+                "type": ["string", "null"],
+                "description": "Loot [us] gives [them] when this interaction happens, defined as CT/trigger type entry in loot.json or loot_self_reference.json"
+            },
+            "strLootCTsUse": {
+                "type": ["string", "null"],
+                "description": "Loot [us] uses when this interaction happens, defined as CT/trigger type entry in loot.json or loot_self_reference.json"
+            },
+            "strLootCTsTake": {
+                "type": ["string", "null"],
+                "description": "Loot [them] gives [us] when this interaction happens, defined as CT/trigger type entry in loot.json or loot_self_reference.json"
+            },
+            "strLootCTsLacks": {
+                "type": ["string", "null"],
+                "description": "Loot [us] must lack when this interaction happens, defined as CT/trigger type entry in loot.json or loot_self_reference.json"
+            },
+            "strLootItmInputs": {
+                "type": ["string", "null"],
+                "description": "Loot [them] requires in their Lot before this interaction happens, defined as item type entry in loot.json or loot_self_reference.json"
+            },
+            "strCTThemMultCondUs": {
+                "type": ["string", "null"],
+                "description": "Name of condition on objUs that multiplies LootCTsThem output, defined as condition type entry in loot.json or loot_self_reference.json"
+            },
+            "strCTThemMultCondTools": {
+                "type": ["string", "null"],
+                "description": "name of condition on aLootItms \"use\" tools that multiplies LootCTsThem output, defined as condition type entry in loot.json or loot_self_reference.json"
+            },
+            "objLootModeSwitch": {
+                "type": ["string", "null"],
+                "description": "Loot definition [us] will become after this interaction, defined as item type entry in loot.json or other loot.json (make sure a person does not modeswitch)."
+            },
+            "objLootModeSwitchThem": {
+                "type": ["string", "null"],
+                "description": "Loot definition [them] will become after this interaction, defined as item type entry in loot.json or other loot.json (make sure a person does not modeswitch)."
+            },
+            "bTargetOwned": {
+                "type": "boolean",
+                "description": "If true, target must be on ship [us] owns."
+            },
+            "bEquip": {
+                "type": "boolean",
+                "description": "If true, items gained in interaction will attempt to equip into a valid slot."
+            },
+            "bLot": {
+                "type": "boolean",
+                "description": "If true, items gained in interaction will go into them's aLot list, for crafting/modeswitching."
+            },
+            "bPassThrough": {
+                "type": "boolean",
+                "description": "If true, this interaction will attempt to pass through to objects inside container, if applicable."
+            },
+            "strStartInstall": {
+                "type": "string",
+                "description": "If not null, this interaction triggers the placeholder installation process from context menu, using a CO of type strStartInstall."
+            },
+            "strPledgeAdd": {
+                "type": "string",
+                "description": "The name of the pledges.json entry this interaction will attempt to add to [us] when this interaction executes."
+            },
+            "aTickersUs": {
+                "type": "array",
+                "description": "List of ticker name strings to add or remove to [us] when this interaction executes. \"-\" prefix means remove."
+            },
+            "aTickersThem": {
+                "type": "array",
+                "description": "List of ticker name strings to add or remove to [them] when this interaction executes. \"-\" prefix means remove."
+            },
+            "nLogging": {
+                "type": "integer",
+                "description": "Determines who sees this interaction in their log: 0 = nobody, 1 = interaction participants, 2 = everyone in this room, 3 = everyone on this ship."
+            },
+            "pledge": {
+                "type": "string",
+                "description": "The pledge from pledges.json related to this interaction, if any; null if none."
+            },
+            "nMoveType": {
+                "type": "integer",
+                "description": "the type of move this is (usually default is 0, but social moves can be special types)."
+            },
+            "strLootRELChangeUs": {
+                "type": ["string", "null"],
+                "description": "relationship changes to apply to [us] when this interaction executes."
+            },
+            "strLootRELChangeThem": {
+                "type": ["string", "null"],
+                "description": "relationship changes to apply to [them] when this interaction executes."
+            },
+            "bPause": {
+                "type": "boolean",
+                "description": "Should time and fast-forward be paused when this interaction occurs?"
+            },
+            "bSocial": {
+                "type": "boolean",
+                "description": "If true, this is a social move, and will be used for AI training."
+            },
+            "bIgnoreFeelings": {
+                "type": "boolean",
+                "description": "If true, and multiple aInverse options trigger, choose first valid option (i.e. order matters). If false, AI chooses what it wants from valid options based on mood and history."
+            },
+            "bRandomInverse": {
+                "type": "boolean",
+                "description": "If true, and multiple aInverse options trigger equally, choose one at random. otherwise, choose first valid option (i.e. order matters)."
+            },
+            "bOpener": {
+                "type": "boolean",
+                "description": "If true, CO can open with this interaction; if false, it can only be used in a reply."
+            },
+            "bGambit": {
+                "type": "boolean",
+                "description": "If true, this move is a gambit and can trigger special events/responses, meant for social combat."
+            },
+            "bCloser": {
+                "type": "boolean",
+                "description": "If true, this will end social combat and sub UIs."
+            },
+            "bGetItemBefore": {
+                "type": "boolean",
+                "description": "If true, this will end social combat and sub UIs."
+            },
+            "bDestroyItem": {
+                "type": "boolean",
+                "description": "If true, [us] will destroy items after they are removed. false drops on ground."
+            },
+            "bHumanOnly": {
+                "type": "boolean",
+                "description": "If true, only human players can initiate this interaction, not NPCs (e.g. UI-based interactions)."
+            },
+            "bGiveWholeStack": {
+                "type": "boolean",
+                "description": "If true, Give commands will operate on whole stack when removing COs."
+            },
+            "bRemoveWholeStack": {
+                "type": "boolean",
+                "description": "If true, Remove commands will operate on whole stack when removing COs."
+            },
+            "bModeSwitchCheckFit": {
+                "type": "boolean",
+                "description": "If true, modwswitch output COs will attempt to fit tiles via rules; false will ignore rules and use same position."
+            },
+            "bNoWait": {
+                "type": "boolean",
+                "description": "If true, them will not wait for us when this starts."
+            },
+            "bVerboseTrigger": {
+                "type": "boolean",
+                "description": "If true, will add log messages about why this didn't trigger."
+            },
+            "bHardCode": {
+                "type": "boolean",
+                "description": "If true, this interaction ties into hard-coded functionality in C#/Unity code."
+            },
+            "strSocialCombatPreview": {
+                "type": "string",
+                "description": "Preview text in social combat."
+            },
+            "aLootItms": {
+                "type": "array",
+                "description": "List of commands related to how this interaction adds, removes, or moves items among participants. Valid options are addus (item), addthem (item), removeus (CT+), removethem (item), take (CT), give (CT), use (CT), lacks (CT), input (item). All these must be followed by a strName (usually a CT or item in loot.json), and sometimes 1 or 3 boolean parameters.",
+                "details": "addus,strName[loot item]; use,strName[loot CT/trigger], [bGetItemBefore]; lacks,strName[loot CT/trigger], [bGetItemBefore]; input,strName[loot item], [bGetItemBefore]; give,strName[loot CT/trigger],[bGetItemBefore],[bGiveWholeStack]; RemoveUs,strName[loot CT/trigger],[bGetItemBefore],[bDestroyItem],[bRemoveWholeStack];  "
+            }             
+        }
+    }
+}

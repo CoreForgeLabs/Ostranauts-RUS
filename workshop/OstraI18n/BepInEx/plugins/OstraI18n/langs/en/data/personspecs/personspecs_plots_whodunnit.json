@@ -1,0 +1,83 @@
+[
+  {
+    "strName" : "TargetDeadReadyToExamine",
+    "bAlive" : false,
+    "strCT" : "CTPlot_Whodunnit_ReadyToExamine"
+  },
+  {
+    "strName" : "TargetKilledReadyToInvestigate",
+    "bAlive" : false,
+    "strCT" : "CTPlot_Whodunnit_KilledNotInvestigating"
+  },
+  {
+    "strName" : "TargetNotKilledReadyToInvestigate",
+    "bAlive" : false,
+    "strCT" : "CTPlot_Whodunnit_NotKilledNotInvestigating"
+  },
+  {
+    "strName" : "TargetDeadExaminedNotKilledInvestigating",
+    "bAlive" : false,
+    "strCT" : "CTPlot_Whodunnit_NotKilledInvestigating"
+  },
+  {
+    "strName" : "TargetDeadExaminedKilledInvestigating",
+    "bAlive" : false,
+    "strCT" : "CTPlot_Whodunnit_KilledInvestigating"
+  },
+  {
+    "strName" : "Plot_Whodunnit_Killer",
+    "bAlive" : true,
+    "strCT" : "CTPlot_Whodunnit_Killer"
+  },
+  {
+    "strName" : "Plot_Whodunnit_VictimKin",
+    "bAlive" : true,
+    "strCT" : "CTPlot_Whodunnit_VictimKin"
+  },
+  {
+    "strName" : "Plot_Whodunnit_VictimKinEnemy",
+    "bAlive" : true,
+    "strCT" : "CTPlot_Whodunnit_VictimKinEnemy"
+  },
+  {
+    "strName" : "TargetDeadReadyToExamineKin",
+    "bAlive" : false,
+    "strCT" : "CTPlot_Whodunnit_ReadyToExamineKin"
+  },
+  {
+    "strName" : "TargetDeadReadyToExamineFaction",
+    "bAlive" : false,
+    "strCT" : "CTPlot_Whodunnit_ExamineFactionReady"
+  },
+  {
+    "strName" : "RELStrangerDead",
+    "strCTRelFind" : "TRELStranger",
+    "bAlive" : false
+  },
+  {
+    "strName" : "RELNotStrangerDead",
+    "strCTRelFind" : "TRELNotStranger",
+    "bAlive" : false
+  },
+  {
+    "strName" : "RELCloseUnrevealed",
+    "strCTRelFind" : "TRELCloseUnrevealed",
+    "bAlive" : true
+  },
+  {
+    "strName" : "RELEnemyOrNemesisUnrevealed",
+    "strCTRelFind" : "TRELEnemyOrNemesisUnrevealed",
+    "bAlive" : true
+  },
+  {
+    "strName" : "RELCloseDead",
+    "strCTRelFind" : "TRELClose",
+    "bAlive" : false
+  },
+  {
+    "strName" : "RELEnemyDead",
+    "strCTRelFind" : "TRELEnemyOrNemesis",
+    "bAlive" : false
+  }
+  
+]

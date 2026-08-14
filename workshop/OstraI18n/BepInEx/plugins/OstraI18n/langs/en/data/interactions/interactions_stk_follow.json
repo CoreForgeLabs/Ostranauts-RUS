@@ -1,0 +1,303 @@
+[
+  { "strName" : "STKFollow_Intro", "strTitle" : "Convince to Follow", "strDesc" : "[us] asks [them] if they would follow them for a moment.", "strActionGroup" : "Talk",
+    "strTargetPoint" : "talk", "fTargetPointRange" : 2, "fDuration" : 0.0005, "strAnim" : "Talk", "strBubble" : "BblTalk", "strColor" : "Dialogue",
+    "aInverse" : [
+      "STKFollow_Intro_Allow",
+      "STKFollow_Intro_Allow_Friendly",
+      "STKFollow_Intro_Allow_Enemy",
+      "STKFollow_Intro_Allow_Criminal",
+      "STKFollow_Intro_Allow_HygieneBad",
+      "STKFollow_Intro_Allow_PhysioBad",
+      "STKFollow_Intro_Deny_Enemy",
+      "STKFollow_Intro_Deny_Criminal",
+      "STKFollow_Intro_Deny_PhysioBad"
+    ],
+    "strThemType" : "Other", "nLogging" : 1, "bHumanOnly" : true, "bSocial" : true, "bRandomInverse" : true, "bImmediateReply" : true, "nMoveType" : 5,
+    "LootCondsUs" : "COND_STKFollow_Intro_Us", "LootCondsThem" : "COND_STKFollow_Intro_Them", "CTTestUs" : "CT_STKFollow_Intro_Us", "CTTestThem" : "CT_STKFollow_Intro_Them","PSpecTestThem" : "RELNotCrew"
+  },
+
+
+
+  { "strName" : "STKFollow_Intro_Allow_Divider", "strTitle" : "-", "strDesc" : "========================================================================================================"  },
+
+
+
+  { "strName" : "STKFollow_Intro_Allow", "strTitle" : "Agree to Discuss Following", "strDesc" : "[us] says maybe but needs further convincing.", "strActionGroup" : "Talk",
+    "strTargetPoint" : "talk", "fTargetPointRange" : 2, "fDuration" : 0.0005, "strAnim" : "Talk", "strBubble" : "BblTalk", "strColor" : "Dialogue",
+    "aInverse" : [],
+    "strThemType" : "Other", "nLogging" : 1, "bSocial" : true, "bRandomInverse" : true, "bImmediateReply" : true,
+    "LootCondsUs" : "COND_STKFollow_Intro_Allow_Us", "LootCondsThem" : "COND_STKFollow_Intro_Allow_Them", "CTTestUs" : "CT_STKFollow_Intro_Allow_Us", "CTTestThem" : "CT_STKFollow_Intro_Allow_Them",
+    "strContextLootUs" :"ACTSTKFollowUs", "strContextLootThem" :"ACTSTKFollowThem"
+  },
+  { "strName" : "STKFollow_Intro_Allow_Friendly", "strTitle" : "Agree to Discuss Following a Friend", "strDesc" : "[us] offers an enthusiastic greeting and says they might be able to follow a friend like [them].", "strActionGroup" : "Talk",
+    "strTargetPoint" : "talk", "fTargetPointRange" : 2, "fDuration" : 0.0005, "strAnim" : "Talk", "strBubble" : "BblTalk", "strColor" : "Dialogue",
+    "aInverse" : [],
+    "strThemType" : "Other", "nLogging" : 1, "bSocial" : true, "bRandomInverse" : true, "bImmediateReply" : true, "fForcedChance": 1.0,
+    "LootCondsUs" : "COND_STKFollow_Intro_Allow_Friendly_Us", "LootCondsThem" : "COND_STKFollow_Intro_Allow_Friendly_Them", "CTTestUs" : "CT_STKFollow_Intro_Allow_Friendly_Us", "PSpecTestThem" : "RELCloseOrContact",
+    "strContextLootUs" :"ACTSTKFollowUs", "strContextLootThem" :"ACTSTKFollowThem"
+  },
+  { "strName" : "STKFollow_Intro_Allow_Enemy", "strTitle" : "Agree to Discuss Following an Enemy", "strDesc" : "[us] recoils and asks why they would ever go somewhere with you.", "strActionGroup" : "Talk",
+    "strTargetPoint" : "talk", "fTargetPointRange" : 2, "fDuration" : 0.0005, "strAnim" : "Talk", "strBubble" : "BblTalk", "strColor" : "Dialogue",
+    "aInverse" : [],
+    "strThemType" : "Other", "nLogging" : 1, "bSocial" : true, "bRandomInverse" : true, "bImmediateReply" : true, "fForcedChance": 1.0,
+    "LootCondsUs" : "COND_STKFollow_Intro_Allow_Enemy_Us", "LootCondsThem" : "COND_STKFollow_Intro_Allow_Enemy_Them", "CTTestUs" : "CT_STKFollow_Intro_Allow_Enemy_Us", "PSpecTestThem" : "RELEnemyOrNemesis",
+    "strContextLootUs" :"ACTSTKFollowUs", "strContextLootThem" :"ACTSTKFollowThem"
+  },
+  { "strName" : "STKFollow_Intro_Allow_Criminal", "strTitle" : "Agree to Discuss Following a Criminal", "strDesc" : "[us] says they aren't in the habit of following criminals but is willing to hear [them] out.", "strActionGroup" : "Talk",
+    "strTargetPoint" : "talk", "fTargetPointRange" : 2, "fDuration" : 0.0005, "strAnim" : "Talk", "strBubble" : "BblTalk", "strColor" : "Dialogue",
+    "aInverse" : [],
+    "strThemType" : "Other", "nLogging" : 1, "bSocial" : true, "bRandomInverse" : true, "bImmediateReply" : true, "fForcedChance": 1.0,
+    "LootCondsUs" : "COND_STKFollow_Intro_Allow_Criminal_Us", "LootCondsThem" : "COND_STKFollow_Intro_Allow_Criminal_Them", "CTTestUs" : "CT_STKFollow_Intro_Allow_Criminal_Us", "CTTestThem" : "CT_STKFollow_Intro_Allow_Criminal_Them",
+    "strContextLootUs" :"ACTSTKFollowUs", "strContextLootThem" :"ACTSTKFollowThem"
+  },
+  { "strName" : "STKFollow_Intro_Allow_HygieneBad", "strTitle" : "Agree to Discuss Following Someone Filthy", "strDesc" : "[us] recoils from [them] and asks why they would ever follow someone so filthy.", "strActionGroup" : "Talk",
+    "strTargetPoint" : "talk", "fTargetPointRange" : 2, "fDuration" : 0.0005, "strAnim" : "Talk", "strBubble" : "BblTalk", "strColor" : "Dialogue",
+    "aInverse" : [],
+    "strThemType" : "Other", "nLogging" : 1, "bSocial" : true, "bRandomInverse" : true, "bImmediateReply" : true,
+    "LootCondsUs" : "COND_STKFollow_Intro_Allow_HygieneBad_Us", "LootCondsThem" : "COND_STKFollow_Intro_Allow_HygieneBad_Them", "CTTestUs" : "CT_STKFollow_Intro_Allow_HygieneBad_Us", "CTTestThem" : "CT_STKFollow_Intro_Allow_HygieneBad_Them",
+    "strContextLootUs" :"ACTSTKFollowUs", "strContextLootThem" :"ACTSTKFollowThem"
+  },
+  { "strName" : "STKFollow_Intro_Allow_PhysioBad", "strTitle" : "Agree to Discuss Following an Injured Person", "strDesc" : "[us] says if [them] is going anywhere it should be a Med Bay.", "strActionGroup" : "Talk",
+    "strTargetPoint" : "talk", "fTargetPointRange" : 2, "fDuration" : 0.0005, "strAnim" : "Talk", "strBubble" : "BblTalk", "strColor" : "Dialogue",
+    "aInverse" : [],
+    "strThemType" : "Other", "nLogging" : 1, "bSocial" : true, "bRandomInverse" : true, "bImmediateReply" : true,
+    "LootCondsUs" : "COND_STKFollow_Intro_Allow_PhysioBad_Us", "LootCondsThem" : "COND_STKFollow_Intro_Allow_PhysioBad_Them", "CTTestUs" : "CT_STKFollow_Intro_Allow_PhysioBad_Us", "CTTestThem" : "CT_STKFollow_Intro_Allow_PhysioBad_Them",
+    "strContextLootUs" :"ACTSTKFollowUs", "strContextLootThem" :"ACTSTKFollowThem"
+  },
+
+  { "strName" : "STKFollow_Intro_Deny_Enemy", "strTitle" : "Refuse to Follow Enemy", "strDesc" : "[us] says [them] is the last person they'd ever want to follow.", "strActionGroup" : "Talk",
+    "strTargetPoint" : "talk", "fTargetPointRange" : 2, "fDuration" : 0.0005, "strAnim" : "Talk", "strBubble" : "BblTalk", "strColor" : "Dialogue",
+    "aInverse" : [ "SocialCombatExit,[us],[them]" ],
+    "strThemType" : "Other", "nLogging" : 1, "bSocial" : true, "bRandomInverse" : true, "bImmediateReply" : true, "fForcedChance": 1.0,
+    "LootCondsUs" : "COND_STKFollow_Intro_Deny_Enemy_Us", "LootCondsThem" : "COND_STKFollow_Intro_Deny_Enemy_Them", "CTTestUs" : "CT_STKFollow_Intro_Deny_Enemy_Us", "PSpecTestThem" : "RELEnemyOrNemesis"
+  },
+  { "strName" : "STKFollow_Intro_Deny_Criminal", "strTitle" : "Refuse to Follow Criminal", "strDesc" : "[us] says they would never trust a criminal enough to follow them.", "strActionGroup" : "Talk",
+  "strTargetPoint" : "talk", "fTargetPointRange" : 2, "fDuration" : 0.0005, "strAnim" : "Talk", "strBubble" : "BblTalk", "strColor" : "Dialogue",
+  "aInverse" : [ "SocialCombatExit,[us],[them]" ],
+  "strThemType" : "Other", "nLogging" : 1, "bSocial" : true, "bRandomInverse" : true, "bImmediateReply" : true, "fForcedChance": 1.0,
+  "LootCondsUs" : "COND_STKFollow_Intro_Deny_Criminal_Us", "LootCondsThem" : "COND_STKFollow_Intro_Deny_Criminal_Them", "CTTestUs" : "CT_STKFollow_Intro_Deny_Criminal_Us", "CTTestThem" : "CT_STKFollow_Intro_Deny_Criminal_Them"
+  },
+  { "strName" : "STKFollow_Intro_Deny_PhysioBad", "strTitle" : "Refuse to Follow Physio Bad", "strDesc" : "[us] says their body is in no shape to go anywhere.", "strActionGroup" : "Talk",
+  "strTargetPoint" : "talk", "fTargetPointRange" : 2, "fDuration" : 0.0005, "strAnim" : "Talk", "strBubble" : "BblTalk", "strColor" : "Dialogue",
+  "aInverse" : [ "SocialCombatExit,[us],[them]" ],
+  "strThemType" : "Other", "nLogging" : 1, "bSocial" : true, "bRandomInverse" : true, "bImmediateReply" : true, "fForcedChance" : 1.0,
+  "LootCondsUs" : "COND_STKFollow_Intro_Deny_PhysioBad_Us", "LootCondsThem" : "COND_STKFollow_Intro_Deny_PhysioBad_Them", "CTTestUs" : "CT_STKFollow_Intro_Deny_PhysioBad_Us", "CTTestThem" : "CT_STKFollow_Intro_Deny_PhysioBad_Them"
+  },
+
+
+
+
+
+  { "strName" : "STKFollow_Fail_Avoid_Divider", "strTitle" : "-", "strDesc" : "========================================================================================================"  },
+
+
+
+  { "strName" : "STKFollow_Fail_Avoid", "strTitle" : "Stall for Time", "strDesc" : "[us] says they haven't even brought up the best part yet...", "strActionGroup" : "Talk",
+    "strTargetPoint" : "talk", "fTargetPointRange" : 2, "fDuration" : 0.0005, "strAnim" : "Talk", "strBubble" : "BblTalk", "strColor" : "Dialogue",
+    "aInverse" : [ "SOCBlank,[us],[them]" ],
+    "strThemType" : "Other", "nLogging" : 1, "bHumanOnly" : true, "bSocial" : true, "bRandomInverse" : true, "bImmediateReply" : true,
+    "LootCondsUs" : "COND_STKFollow_Fail_Avoid_Us", "LootCondsThem" : "COND_STKFollow_Fail_Avoid_Them",
+		"CTTestUs" : "CT_STKFollow_Fail_Avoid_Us", "CTTestThem" : "CT_STKFollow_Fail_Avoid_Them"
+  },
+
+
+
+  { "strName" : "STKFollow_Fail_HardMood_Divider", "strTitle" : "-", "strDesc" : "========================================================================================================"  },
+
+  { "strName" : "STKFollow_Fail_Hard_DcAutonomyGood", "strTitle" : "Refuse to Follow Liberated", "strDesc" : "[us] says they decide where to go and when and has no intention of following someone around just because they asked.", "strActionGroup" : "Talk",
+    "strTargetPoint" : "talk", "fTargetPointRange" : 2, "fDuration" : 0.0005, "strAnim" : "Talk", "strBubble" : "BblTalk", "strColor" : "Dialogue",
+    "aInverse" : [ "STKFollow_Fail_Soft", "SocialCombatExit" ],
+    "strThemType" : "Other", "nLogging" : 1, "bSocial" : true, "bRandomInverse" : true, "bImmediateReply" : true, "nMoveType" : 2, "fForcedChance" : 1.0,
+    "LootCondsUs" : "COND_STKFollow_Fail_Hard_DcAutonomyGood_Us", "LootCondsThem" : "COND_STKFollow_Fail_Hard_DcAutonomyGood_Them",
+		"CTTestUs" : "CT_STKFollow_Fail_Hard_DcAutonomyGood_Us", "CTTestThem" : "CT_STKFollow_Fail_Hard_DcAutonomyGood_Them"
+  },
+
+  { "strName" : "STKFollow_Fail_Hard_DcSecurityBad", "strTitle" : "Refuse to Follow Scared", "strDesc" : "[us] shrinks away, clearly terrified, and refuses to follow.", "strActionGroup" : "Talk",
+    "strTargetPoint" : "talk", "fTargetPointRange" : 2, "fDuration" : 0.0005, "strAnim" : "Talk", "strBubble" : "BblTalk", "strColor" : "Dialogue",
+    "aInverse" : [ "STKFollow_Fail_Soft", "SocialCombatExit" ],
+    "strThemType" : "Other", "nLogging" : 1, "bSocial" : true, "bRandomInverse" : true, "bImmediateReply" : true, "nMoveType" : 2, "fForcedChance" : 1.0,
+    "LootCondsUs" : "COND_STKFollow_Fail_Hard_DcSecurityBad_Us", "LootCondsThem" : "COND_STKFollow_Fail_Hard_DcSecurityBad_Them",
+		"CTTestUs" : "CT_STKFollow_Fail_Hard_DcSecurityBad_Us", "CTTestThem" : "CT_STKFollow_Fail_Hard_DcSecurityBad_Them"
+  },
+
+
+
+  { "strName" : "STKFollow_Gambit_Security_Divider", "strTitle" : "-", "strDesc" : "========================================================================================================"  },
+
+
+
+  { "strName" : "STKFollow_Gambit_Security", "strTitle" : "Insist that Following is Perfectly Safe", "strDesc" : "[us] insists that where they are going there is no danger whatsoever.", "strActionGroup" : "Talk",
+    "strTargetPoint" : "talk", "fTargetPointRange" : 2, "fDuration" : 0.0005, "strAnim" : "Talk", "strBubble" : "BblTalk", "strColor" : "Dialogue",
+    "aInverse" : [
+      "STKFollow_Gambit_Security_Allow",
+      "STKFollow_Gambit_Security_Fail_Soft",
+      "STKFollow_Gambit_Security_Fail_Hard"
+    ],
+    "strThemType" : "Other", "nLogging" : 1, "bHumanOnly" : true, "bSocial" : true, "bRandomInverse" : true, "bImmediateReply" : true, "nMoveType" : 1, "bGambit" : true,
+    "LootCondsUs" : "COND_STKFollow_Gambit_Security_Us", "LootCondsThem" : "COND_STKFollow_Gambit_Security_Them",
+		"CTTestUs" : "CT_STKFollow_Gambit_Security_Us", "CTTestThem" : "CT_STKFollow_Gambit_Security_Them"
+  },
+  { "strName" : "STKFollow_Gambit_Security_Allow", "strTitle" : "Agree To Do Follow", "strDesc" : "[us] says sure, [them] seems trustworthy enough.", "strActionGroup" : "Talk",
+    "strTargetPoint" : "talk", "fTargetPointRange" : 2, "fDuration" : 0.0005, "strAnim" : "Talk", "strBubble" : "BblTalk", "strColor" : "Dialogue",
+    "aInverse" : [ "STK_SOCFollowCommandAllowSecurity,[us],[them]" ],
+    "strThemType" : "Other", "nLogging" : 1, "bSocial" : true, "bRandomInverse" : true, "bImmediateReply" : true, "nMoveType" : 3, "fForcedChance" : 1.0,
+    "LootCondsUs" : "COND_STKFollow_Gambit_Security_Allow_Us", "LootCondsThem" : "COND_STKFollow_Gambit_Security_Allow_Them",
+		"CTTestUs" : "CT_STKFollow_Gambit_Security_Allow_Us", "CTTestThem" : "CT_STKFollow_Gambit_Security_Allow_Them"
+  },
+      {
+        "strName" : "STK_SOCFollowCommandAllowSecurity",
+        "strTitle" : "Agree to follow",
+        "strDesc" : "[us] agrees to follow [them].",
+        "strTargetPoint" : "talk",
+        "strActionGroup" : "Talk",
+          "fTargetPointRange" : 2,
+        "strAnim"           : "Use",
+        "strBubble"         : "BblAffirmative",
+        "strColor"			: "Dialogue",
+          "bSocial" : true, 
+        "bRandomInverse" : true,
+        "aInverse"          : [
+          "SocialCombatExit,[us],[them]"
+        ],
+        "fDuration"         : 0.00001,
+        "strThemType"       : "Other",
+        "strRaiseUI"        : null,
+        "strPledgeAdd"      : "FollowCommand",
+        "nLogging"         : 1,
+        "LootCTsUs"       : "CTSOCFollowCommandAllow",
+        "LootCTsThem"     : null,
+        "CTTestUs"           : "TIsHumanAwake",
+        "CTTestThem"        : "TIsHumanAwake"
+      },
+  { "strName" : "STKFollow_Gambit_Security_Fail_Soft", "strTitle" : "Refuse Follow for Now", "strDesc" : "[us] says they don't feel safe enough to follow, but is willing to keep talking.", "strActionGroup" : "Talk",
+    "strTargetPoint" : "talk", "fTargetPointRange" : 2, "fDuration" : 0.0005, "strAnim" : "Talk", "strBubble" : "BblTalk", "strColor" : "Dialogue",
+    "aInverse" : [ "SOCBlank" ],
+    "strThemType" : "Other", "nLogging" : 1, "bSocial" : true, "bRandomInverse" : true, "bImmediateReply" : true, "fForcedChance" : 1.0,
+    "LootCondsUs" : "COND_STKFollow_Gambit_Security_Fail_Soft_Us", "LootCondsThem" : "COND_STKFollow_Gambit_Security_Fail_Soft_Them",
+		"CTTestUs" : "CT_STKFollow_Gambit_Security_Fail_Soft_Us", "CTTestThem" : "CT_STKFollow_Gambit_Security_Fail_Soft_Them"
+  },
+  { "strName" : "STKFollow_Gambit_Security_Fail_Hard", "strTitle" : "Refuse to Follow", "strDesc" : "[us] says they don't feel safe enough to follow and that this conversation is over.", "strActionGroup" : "Talk",
+    "strTargetPoint" : "talk", "fTargetPointRange" : 2, "fDuration" : 0.0005, "strAnim" : "Talk", "strBubble" : "BblTalk", "strColor" : "Dialogue",
+    "aInverse" : [ "SocialCombatExit,[us],[them]" ],
+    "strThemType" : "Other", "nLogging" : 1, "bSocial" : true, "bRandomInverse" : true, "bImmediateReply" : true, "nMoveType" : 2, "fForcedChance" : 1.0,
+    "LootCondsUs" : "COND_STKFollow_Gambit_Security_Fail_Hard_Us", "LootCondsThem" : "COND_STKFollow_Gambit_Security_Fail_Hard_Them",
+		"CTTestUs" : "CT_STKFollow_Gambit_Security_Fail_Hard_Us", "CTTestThem" : "CT_STKFollow_Gambit_Security_Fail_Hard_Them"
+  },
+
+  { "strName" : "STKFollow_Gambit_Autonomy_Divider", "strTitle" : "-", "strDesc" : "========================================================================================================"  },
+
+  { "strName" : "STKFollow_Gambit_Autonomy", "strTitle" : "Tell Them They Have No Choice in the Matter", "strDesc" : "[us] says [them] is following whether they like it or not.", "strActionGroup" : "Talk",
+  "strTargetPoint" : "talk", "fTargetPointRange" : 2, "fDuration" : 0.0005, "strAnim" : "Talk", "strBubble" : "BblTalk", "strColor" : "Dialogue",
+  "aInverse" : [
+    "STKFollow_Gambit_Autonomy_Allow",
+    "STKFollow_Gambit_Autonomy_Fail_Soft",
+    "STKFollow_Gambit_Autonomy_Fail_Hard"
+  ],
+  "strThemType" : "Other", "nLogging" : 1, "bHumanOnly" : true, "bSocial" : true, "bRandomInverse" : true, "bImmediateReply" : true, "nMoveType" : 1, "bGambit" : true,
+  "LootCondsUs" : "COND_STKFollow_Gambit_Autonomy_Us", "LootCondsThem" : "COND_STKFollow_Gambit_Autonomy_Them",
+  "CTTestUs" : "CT_STKFollow_Gambit_Autonomy_Us", "CTTestThem" : "CT_STKFollow_Gambit_Autonomy_Them"
+},
+{ "strName" : "STKFollow_Gambit_Autonomy_Allow", "strTitle" : "Agree To Do Follow", "strDesc" : "[us] says they clearly have no choice in the matter.", "strActionGroup" : "Talk",
+  "strTargetPoint" : "talk", "fTargetPointRange" : 2, "fDuration" : 0.0005, "strAnim" : "Talk", "strBubble" : "BblTalk", "strColor" : "Dialogue",
+  "aInverse" : [ "STK_SOCFollowCommandAllowAutonomy,[us],[them]" ],
+  "strThemType" : "Other", "nLogging" : 1, "bSocial" : true, "bRandomInverse" : true, "bImmediateReply" : true, "nMoveType" : 3, "fForcedChance" : 1.0,
+  "LootCondsUs" : "COND_STKFollow_Gambit_Autonomy_Allow_Us", "LootCondsThem" : "COND_STKFollow_Gambit_Autonomy_Allow_Them",
+  "CTTestUs" : "CT_STKFollow_Gambit_Autonomy_Allow_Us", "CTTestThem" : "CT_STKFollow_Gambit_Autonomy_Allow_Them"
+},
+    {
+      "strName" : "STK_SOCFollowCommandAllowAutonomy",
+      "strTitle" : "Agree to follow",
+      "strDesc" : "[us] agrees to follow [them].",
+      "strTargetPoint" : "talk",
+      "strActionGroup" : "Talk",
+        "fTargetPointRange" : 2,
+      "strAnim"           : "Use",
+      "strBubble"         : "BblAffirmative",
+      "strColor"			: "Dialogue",
+        "bSocial" : true, 
+      "bRandomInverse" : true,
+      "aInverse"          : [
+        "SocialCombatExit,[us],[them]"
+      ],
+      "fDuration"         : 0.00001,
+      "strThemType"       : "Other",
+      "strRaiseUI"        : null,
+      "strPledgeAdd"      : "FollowCommand",
+      "nLogging"         : 1,
+      "LootCTsUs"       : "CTSOCFollowCommandAllow",
+      "LootCTsThem"     : null,
+      "CTTestUs"           : "TIsHumanAwake",
+      "CTTestThem"        : "TIsHumanAwake"
+    },
+{ "strName" : "STKFollow_Gambit_Autonomy_Fail_Soft", "strTitle" : "Refuse Follow for Now", "strDesc" : "[us] questions your authority, but is willing to keep talking.", "strActionGroup" : "Talk",
+  "strTargetPoint" : "talk", "fTargetPointRange" : 2, "fDuration" : 0.0005, "strAnim" : "Talk", "strBubble" : "BblTalk", "strColor" : "Dialogue",
+  "aInverse" : [ "SOCBlank" ],
+  "strThemType" : "Other", "nLogging" : 1, "bSocial" : true, "bRandomInverse" : true, "bImmediateReply" : true, "fForcedChance" : 1.0,
+  "LootCondsUs" : "COND_STKFollow_Gambit_Autonomy_Fail_Soft_Us", "LootCondsThem" : "COND_STKFollow_Gambit_Autonomy_Fail_Soft_Them",
+  "CTTestUs" : "CT_STKFollow_Gambit_Autonomy_Fail_Soft_Us", "CTTestThem" : "CT_STKFollow_Gambit_Autonomy_Fail_Soft_Them"
+},
+{ "strName" : "STKFollow_Gambit_Autonomy_Fail_Hard", "strTitle" : "Refuse to Follow", "strDesc" : "[us] says they decide where to go and when and that this conversation is over.", "strActionGroup" : "Talk",
+  "strTargetPoint" : "talk", "fTargetPointRange" : 2, "fDuration" : 0.0005, "strAnim" : "Talk", "strBubble" : "BblTalk", "strColor" : "Dialogue",
+  "aInverse" : [ "SocialCombatExit,[us],[them]" ],
+  "strThemType" : "Other", "nLogging" : 1, "bSocial" : true, "bRandomInverse" : true, "bImmediateReply" : true, "nMoveType" : 2, "fForcedChance" : 1.0,
+  "LootCondsUs" : "COND_STKFollow_Gambit_Autonomy_Fail_Hard_Us", "LootCondsThem" : "COND_STKFollow_Gambit_Autonomy_Fail_Hard_Them",
+  "CTTestUs" : "CT_STKFollow_Gambit_Autonomy_Fail_Hard_Us", "CTTestThem" : "CT_STKFollow_Gambit_Autonomy_Fail_Hard_Them"
+},
+
+  { "strName" : "STKFollow_Exit_Divider", "strTitle" : "-", "strDesc" : "========================================================================================================"  },
+
+{ "strName" : "STKFollow_Exit", "strTitle" : "Never Mind", "strDesc" : "[us] says they are no longer interested in talking about going anywhere with you.", "strActionGroup" : "Talk",
+  "strTargetPoint" : "talk", "fTargetPointRange" : 2, "fDuration" : 0.0005, "strAnim" : "Talk", "strBubble" : "BblTalk", "strColor" : "Dialogue",
+  "aInverse" : [ ],
+  "strThemType" : "Other", "nLogging" : 1, "bHumanOnly" : true, "bSocial" : true, "bRandomInverse" : true, "bImmediateReply" : true, "nMoveType" : 2,
+  "LootCondsUs" : "COND_STKFollow_Exit_Us", "LootCondsThem" : "COND_STKFollow_Exit_Them", "CTTestUs" : "CT_STKFollow_Exit_Us", "CTTestThem" : "CT_STKFollow_Exit_Them",
+  "strContextLootUs" : "Default", "strContextLootThem" : "Default"
+},
+
+
+
+  { "strName" : "STKFollow_All_Interactions", "strTitle" : "-", "strDesc" : "========================================================================================================",
+    "aInverse" : [
+      "STKFollow_Intro_Allow",
+      "STKFollow_Intro_Allow_Friendly",
+      "STKFollow_Intro_Allow_Enemy",
+      "STKFollow_Intro_Allow_Criminal",
+      "STKFollow_Intro_Allow_HygieneBad",
+      "STKFollow_Intro_Allow_PhysioBad",
+      "STKFollow_Intro_Deny_Criminal",
+      "STKFollow_Intro_Deny_Enemy",
+      "STKFollow_Fail_Avoid",
+      "STKFollow_Fail_Hard_DcAchievementGood",
+      "STKFollow_Fail_Hard_DcAchievementBad",
+      "STKFollow_Fail_Hard_DcAltruismGood",
+      "STKFollow_Fail_Hard_DcAltruismBad",
+      "STKFollow_Fail_Hard_DcAutonomyGood",
+      "STKFollow_Fail_Hard_DcAutonomyBad",
+      "STKFollow_Fail_Hard_DcContactGood",
+      "STKFollow_Fail_Hard_DcContactBad",
+      "STKFollow_Fail_Hard_DcEsteemGood",
+      "STKFollow_Fail_Hard_DcEsteemBad",
+      "STKFollow_Fail_Hard_DcFamilyGood",
+      "STKFollow_Fail_Hard_DcFamilyBad",
+      "STKFollow_Fail_Hard_DcIntimacyGood",
+      "STKFollow_Fail_Hard_DcIntimacyBad",
+      "STKFollow_Fail_Hard_DcMeaningGood",
+      "STKFollow_Fail_Hard_DcMeaningBad",
+      "STKFollow_Fail_Hard_DcPrivacyGood",
+      "STKFollow_Fail_Hard_DcPrivacyBad",
+      "STKFollow_Fail_Hard_DcSecurityGood",
+      "STKFollow_Fail_Hard_DcSecurityBad",
+      "STKFollow_Fail_Hard_DcSelfRespectGood",
+      "STKFollow_Fail_Hard_DcSelfRespectBad",
+      "STKFollow_Gambit_Security",
+      "STKFollow_Gambit_Security_Allow",
+      "STKFollow_Gambit_Security_Fail_Soft",
+      "STKFollow_Gambit_Security_Fail_Hard",
+      "STKFollow_Gambit_Autonomy_Allow",
+      "STKFollow_Gambit_Autonomy_Fail_Soft",
+      "STKFollow_Gambit_Autonomy_Fail_Hard",
+      "STKFollow_Chitchat_RNG",
+      "STKFollow_Exit"
+    ]
+  }
+]

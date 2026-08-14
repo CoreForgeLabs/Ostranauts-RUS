@@ -1,0 +1,169 @@
+﻿[
+  {
+    "strName" : "demo",
+    "fVeinSpawnChance" : 0.6,
+    "fCoreTileSpawnChance" : 0.3,
+    "fRelativeSize" : 0.2,
+    "strFloorLoot": "",
+    "strWallLoot": "",
+    "strEdgeLoot": "",
+    "strVeinLoot": "",
+    "strCore2x2Loot": "",
+
+    "nSubClusterCount" : 1,
+    "nSubClusterMinRadius" : 1,
+    "nSubClusterMaxRadius" : 3,
+    "strSubClusterFloorLoot" : "",
+    "strSubClusterWallLoot" : ""
+  },
+  {
+    "strName" : "DarkRegolithVein",
+    "fVeinSpawnChance" : 1,
+    "fCoreTileSpawnChance" : 1,
+
+    "strFloorLoot": "ItmFloorRock021x1C",
+    "strWallLoot": "ItmWallRock051x1",
+    "strVeinLoot": "ItmWallRock031x1",
+    "strCore2x2Loot": "ItmFloorRock02C",
+
+    "nSubClusterCount" : 1,
+    "nSubClusterMinRadius" : 1,
+    "nSubClusterMaxRadius" : 3,
+    "strSubClusterFloorLoot" : "ItmFloorRock021x1C",
+    "strSubClusterWallLoot" : "ItmWallRock041x1"
+  },
+  {
+    "strName" : "DarkRegolithPure",
+    "fVeinSpawnChance" : 0,
+    "fCoreTileSpawnChance" : 0,
+
+    "strFloorLoot": "ItmFloorRock021x1C",
+    "strWallLoot": "ItmWallRock051x1",
+
+    "nSubClusterCount" : 0
+  },
+  {
+    "strName" : "DarkRegolithPureVein",
+    "fVeinSpawnChance" : 1,
+    "fCoreTileSpawnChance" : 0,
+
+    "strWallLoot": "ItmWallRock051x1",
+    "strFloorLoot": "ItmFloorRock021x1C",
+    "strVeinLoot": "ItmWallRock061x1",
+    "strCore2x2Loot": "ItmFloorRock02C"
+  },
+  {
+    "strName" : "DarkRegolithMix",
+    "fClusterSpawnChance" : 0.1,
+    "fVeinSpawnChance" : 1,
+    "fCoreTileSpawnChance" : 1,
+
+    "strFloorLoot": "ItmFloorRock021x1",
+    "strWallLoot": "ItmWallRock011x1",
+    "strVeinLoot": "ItmWallRock021x1",
+    "strCore2x2Loot": "ItmFloorRock02",
+
+    "nSubClusterCount" : 1,
+    "nSubClusterMinRadius" : 1,
+    "nSubClusterMaxRadius" : 3,
+    "strSubClusterFloorLoot" : "ItmFloorRock021x1",
+    "strSubClusterWallLoot" : "ItmWallRock041x1"
+  },
+  {
+    "strName" : "Ice01",
+    "fCoreTileSpawnChance" : 1,
+
+    "strFloorLoot": "ItmFloorIce021x1",
+    "strWallLoot": "ItmWallIce011x1",
+    "strEdgeLoot": "ItmWallRock011x1",
+    "strCore2x2Loot": "ItmFloorRock02M",
+
+    "nSubClusterCount" : 1,
+    "nSubClusterMinRadius" : 1,
+    "nSubClusterMaxRadius" : 3,
+    "strSubClusterWallLoot" : "ItmWallRock041x1"
+  },
+  {
+    "strName" : "M01Main",
+    "fVeinSpawnChance" : 1,
+
+    "strFloorLoot": "ItmFloorRock021x1",
+    "strWallLoot": "ItmWallRock031x1",
+    "strVeinLoot": "ItmWallRock041x1",
+    "strCore2x2Loot": "ItmFloorRock02M",
+
+    "nSubClusterCount" : 2,
+    "nSubClusterMinRadius" : 1,
+    "nSubClusterMaxRadius" : 3,
+    "strSubClusterWallLoot" : "ItmWallRock021x1"
+  },
+  {
+    "strName" : "M01NoSub",
+    "fVeinSpawnChance" : 0.2,
+
+    "strFloorLoot": "ItmFloorRock021x1",
+    "strWallLoot": "ItmWallRock031x1",
+    "strVeinLoot": "ItmWallRock041x1",
+    "strCore2x2Loot": "ItmFloorRock02M"
+  },
+  {
+    "strName" : "M02Main",
+    "fVeinSpawnChance" : 0.4,
+    "fCoreTileSpawnChance" : 0.4,
+    "fRelativeSize" : 0.7,
+
+    "strFloorLoot": "ItmFloorRock021x1M",
+    "strWallLoot": "ItmWallRock031x1",
+    "strEdgeLoot": "ItmWallRock011x1",
+    "strVeinLoot": "ItmWallRock021x1",
+    "strCore2x2Loot": "ItmFloorRock02M",
+
+    "nSubClusterCount" : 1,
+    "nSubClusterMinRadius" : 1,
+    "nSubClusterMaxRadius" : 3,
+    "strSubClusterFloorLoot" : "ItmFloorRock021x1M",
+    "strSubClusterWallLoot" : "ItmWallRock041x1"
+  },
+  {
+    "strName" : "M02PureWall",
+
+    "fRelativeSize" : 0.1,
+    "strWallLoot": "ItmWallRock011x1"
+  },
+  {
+    "strName" : "M03Rock011W",
+    "fVeinSpawnChance" : 0.6,
+    "fCoreTileSpawnChance" : 0.4,
+    "fRelativeSize" : 0.2,
+
+    "strEdgeLoot": "ItmWallRock011x1",
+    "strFloorLoot": "ItmFloorRock021x1",
+    "strWallLoot": "ItmWallRock011x1",
+    "strVeinLoot": "ItmWallRock021x1",
+    "strCore2x2Loot": "ItmFloorRock02"
+  },
+  {
+    "strName" : "M03Rock011WVein041",
+    "fVeinSpawnChance" : 0.6,
+    "fCoreTileSpawnChance" : 0.4,
+    "fRelativeSize" : 0.2,
+
+    "strEdgeLoot": "ItmWallRock011x1",
+    "strFloorLoot": "ItmFloorRock021x1",
+    "strWallLoot": "ItmWallRock011x1",
+    "strVeinLoot": "ItmWallRock041x1",
+    "strCore2x2Loot": "ItmFloorRock02M"
+  },
+  {
+    "strName" : "M03Rock031WVein041",
+    "fVeinSpawnChance" : 0.6,
+    "fCoreTileSpawnChance" : 0.4,
+    "fRelativeSize" : 0.2,
+
+    "strEdgeLoot": "ItmWallRock031x1",
+    "strFloorLoot": "ItmFloorRock021x1M",
+    "strWallLoot": "ItmWallRock031x1",
+    "strVeinLoot": "ItmWallRock041x1",
+    "strCore2x2Loot": "ItmFloorRock02M"
+  }
+]

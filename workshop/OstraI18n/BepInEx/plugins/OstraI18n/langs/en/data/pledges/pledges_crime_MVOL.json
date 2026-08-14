@@ -1,0 +1,64 @@
+[
+  {
+    "strName" : "AICrimeArrestMVOLLEODo",
+    "strNameFriendly" : "Attack",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGAICrimeMVOLLEOArrestDo",
+    "aIAEnd" : [
+      "PLGAICrimeLEOArrestCancelScan", 
+      "PLGAICrimeMVOLLEOArrestEnd"
+     ],
+    "strThemID" : "[them]",
+    "bThemAllowDocked" : true,
+    "nPriority" : 8
+  },
+  {
+    "strName" : "AICrimeAttackMVOLLEO",
+    "strNameFriendly" : "Attack",
+    "strType" : "crime",
+    "strIATrigger" : "PLGAICrimeMVOLLEOThreat",
+    "aIAEnd" : null,
+    "strThemID" : null,
+    "bThemAllowDocked" : true,
+    "nPriority" : 8
+  },
+  {
+    "strName" : "AICrimeArrestMVOLLEOStart",
+    "strNameFriendly" : "Crime arrest",
+    "strType" : "crime",
+    "strIATrigger" : "PLGAICrimeMVOLLEOArrest",
+    "aIAEnd" : null,
+    "strThemID" : null,
+    "bThemAllowDocked" : true,
+    "nPriority" : 6
+  },
+  {
+    "strName" : "AICrimeArrestMVOLLEOStolenShipStart",
+    "strNameFriendly" : "Crime arrest",
+    "strType" : "crime",
+    "strIATrigger" : "PLGAICrimeMVOLLEOArrestStolenShip",
+    "aIAEnd" : null,
+    "strThemID" : null,
+    "bThemAllowDocked" : true,
+    "nPriority" : 6
+  },
+  {
+    "strName" : "AIReportCrimeMVOLArrest",
+    "strNameFriendly" : "Report crime",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGAIReportCrimeMVOLArrest",
+    "aIAEnd" : ["PLGAIReportCrimeMVOLArrestDone","PLGAIReportCrimeImmuneDone"],
+    "strThemID" : null,
+    "nPriority" : 6
+  },
+  {
+    "strName" : "AIReportCrimeMVOLThreat",
+    "strNameFriendly" : "Report crime",
+    "strType" : "repeat",
+    "strIATrigger" : "PLGAIReportCrimeMVOLThreat",
+    "aIAEnd" : ["PLGAIReportCrimeMVOLThreatDone","PLGAIReportCrimeImmuneDone"],
+    "strThemID" : null,
+    "nPriority" : 6
+  }
+
+]

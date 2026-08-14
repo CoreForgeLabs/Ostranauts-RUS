@@ -1,0 +1,431 @@
+[
+  {
+    "strName" : "Sample",
+    "strLootRegIDs" : "TXTOKLG",
+    "strLootATCRegions" : "TXTOKLG",
+    "aDMGStatus" : [
+      0, 1, 2, 3
+    ],
+    "aOwners" : [
+      "[us]", "Reginald Dufre", "Jeremiah Lee"
+    ],
+    "aFactions" : [
+      "[us]", "OKLG", "Jeremiah Lee"
+    ],
+    "nIsAIShip" : 1,
+    "nIsDocked" : 1,
+    "nIsMoored" : 1,
+    "nIsFlyingDark" : 1,
+    "nIsHidden" : 1,
+    "nIsLocalAuthority" : 1,
+    "nIsPlayerShip" : 1,
+    "nIsStation" : 1,
+    "nIsStationHidden" : 1,
+    "nIsStationRegional" : 1,
+    "nIsStationOrHidden" : 1,
+    "nIsInCombatWithOther" : 1,
+    "nIsTargetingOther" : 1,
+    "nLoadState" : 1,
+    "strDockedWith" : "OwnedByUsAndDocked",
+    "nMultiplePortsAvailable" : 1,
+    "nMultiplePortsTotal" : 1,
+    "nCanDockAnyWhere" : 1,
+    "nCanDockSelectedPort" : 1,
+    "strCTTest" : "TIsNotTutorialDerelict"
+  },
+  {
+    "strName" : "IsBlockader",
+    "strCTTest" : "TIsBlockader"
+  },
+  {
+    "strName" : "IsInCombatWithOther",
+    "nIsInCombatWithOther" : 1
+  },
+  {
+    "strName" : "IsNotInCombatWithOther",
+    "nIsInCombatWithOther" : -1
+  },
+  {
+    "strName" : "IsTargetingOther",
+    "nIsTargetingOther" : 1
+  },
+  {
+    "strName" : "IsLocalAuthority",
+    "nIsLocalAuthority" : 1
+  },
+  {
+    "strName" : "IsDocked",
+    "nIsDocked" : 1
+  },
+  {
+    "strName" : "IsMoored",
+    "nIsMoored" : 1
+  },
+  {
+    "strName" : "CanDockSelectedPort",
+    "nCanDockSelectedPort" : 1
+  },
+  {
+    "strName" : "CanNotDockSelectedPort",
+    "nCanDockSelectedPort" : -1
+  },
+  {
+    "strName" : "CanDockAnywhere",
+    "nCanDockAnyWhere" : 1
+  },
+  {
+    "strName" : "CanNotDockWithOther",
+    "nCanDockAnyWhere" : -1
+  },
+  {
+    "strName" : "HasMultiplePortsAvailable",
+    "nMultiplePortsAvailable" : 1
+  },
+  {
+    "strName" : "HasMultiplePortsTotal",
+    "nMultiplePortsTotal" : 1
+  },
+  {
+    "strName" : "IsNotDocked",
+    "nIsDocked" : -1
+  },
+  {
+    "strName" : "IsNotMoored",
+    "nIsMoored" : -1
+  },
+  {
+    "strName" : "NotPlayerCurrentShip",
+    "nIsPlayerShip" : -1
+  },
+  {
+    "strName" : "Derelict",
+    "aDMGStatus" : [
+      3
+    ]
+  },
+  {
+    "strName" : "NotDerelict",
+    "aDMGStatus" : [
+      0,1,2
+    ]
+  },
+  {
+    "strName" : "NotTutorialDerelict",
+    "strCTTest" : "TIsNotTutorialDerelict"
+  },
+  {
+    "strName" : "StationNotPlayerCurrentShip",
+    "nIsPlayerShip" : -1,    
+    "nLoadState" : -1,    
+    "nIsStation" : 1
+  },  
+  {
+    "strName" : "Shallow",
+    "nLoadState" : -1
+  },  
+  {
+    "strName" : "OwnedByUsAndDocked",
+    "nIsDocked" : 1,
+    "aOwners" : [ "[us]" ]
+  },
+  {
+    "strName" : "OwnedByUs",
+    "aOwners" : [ "[us]" ]
+  },
+  {
+    "strName" : "PlayerCurrentShip",
+    "nIsPlayerShip" : 1
+  },
+  {
+    "strName" : "BCER",
+    "strLootRegIDs" : "TXTBCER",
+    "nIsStation" : 1
+  },
+  {
+    "strName" : "BCRS",
+    "strLootRegIDs" : "TXTBCRS",
+    "nIsStation" : 1
+  },
+  {
+    "strName" : "OKLG",
+    "strLootRegIDs" : "TXTOKLG",
+    "nIsStation" : 1
+  },
+  {
+    "strName" : "MVOL",
+    "strLootRegIDs" : "TXTMVOL",
+    "nIsStationOrHidden" : 1
+  },
+  {
+    "strName" : "AnyStation_MVOL",
+    "strLootATCRegions" : "TXTMVOL",
+    "nIsStationOrHidden" : 1
+  },
+  {
+    "strName" : "OKLG_BIZ",
+    "strLootRegIDs" : "TXTOKLG_BIZ"
+  },
+  {
+    "strName" : "OKLG_MES",
+    "strLootRegIDs" : "TXTOKLG_MES"
+  },  
+  {
+    "strName" : "OKLG_FLOT",
+    "strLootRegIDs" : "TXTOKLG_FLOT"
+  },  
+  {
+    "strName" : "OKLG_MAINSTATIONS",
+    "strLootRegIDs" : "TXTOKLGRecycleStations"
+  },   
+  {
+    "strName" : "AnyShip_Venus",
+    "strLootATCRegions" : "TXTVenus"
+  },
+  {
+    "strName" : "VENC",
+    "strLootRegIDs" : "TXTVENC",
+    "nIsStation" : 1
+  },
+  {
+    "strName" : "VENC_SVL",
+    "strLootRegIDs" : "TXTVENC_SVL",
+    "nIsStationHidden" : 1
+  },
+  {
+    "strName" : "VNCA",
+    "strLootRegIDs" : "TXTVNCA",
+    "nIsStation" : 1
+  },
+  {
+    "strName" : "VLA00",
+    "strLootRegIDs" : "TXTVLA00",
+    "nIsStationHidden" : 1
+  },
+  {
+    "strName" : "VLA01",
+    "strLootRegIDs" : "TXTVLA01",
+    "nIsStation" : 1
+  },
+  {
+    "strName" : "VLA02",
+    "strLootRegIDs" : "TXTVLA02",
+    "nIsStationHidden" : 1
+  },
+  {
+    "strName" : "VLA03",
+    "strLootRegIDs" : "TXTVLA03",
+    "nIsStationHidden" : 1
+  },
+  {
+    "strName" : "VLA04",
+    "strLootRegIDs" : "TXTVLA04",
+    "nIsStationHidden" : 1
+  },
+  {
+    "strName" : "VLA05",
+    "strLootRegIDs" : "TXTVLA05",
+    "nIsStationHidden" : 1
+  },
+  {
+    "strName" : "COHO",
+    "strLootRegIDs" : "TXTCOHO",
+    "nIsStation" : 1
+  },
+  {
+    "strName" : "OKLGProspector",
+    "strLootRegIDs" : "TXTOKLGProspector"
+  },
+  {
+    "strName" : "AnyStation",
+    "nIsStation" : 1
+  },
+  {
+    "strName" : "AnyStation_Pirates",
+    "strLootRegIDs" : "TXTPirates",
+    "nIsStation" : 1
+  },
+  {
+    "strName" : "AnyStation_NotDocked",
+    "nIsStation" : 1,
+    "nIsDocked" : -1
+  },
+  {
+    "strName" : "AnyStation_CanDock",
+    "nIsStation" : 1,
+    "nCanDockAnyWhere" : 1
+  },
+  {
+    "strName" : "AnyStationOrHidden",
+    "nIsStationOrHidden" : 1
+  },
+  {
+    "strName" : "AnyStation_MedicalAdv",
+    "strLootATCRegions" : "TXTStationsMedicalAdv",
+    "nIsStationOrHidden" : 1
+  },
+  {
+    "strName" : "AnyStation_OKLG",
+    "strLootATCRegions" : "TXTOKLG",
+    "nIsStationOrHidden" : 1
+  },
+  {
+    "strName" : "AnyStation_Venus",
+    "strLootATCRegions" : "TXTVenus",
+    "nIsStationOrHidden" : 1
+  },
+  {
+    "strName" : "AnyStation_Racing",
+    "strLootRegIDs" : "TXTStationsRacing",
+    "nIsStationOrHidden" : 1
+  },
+  {
+    "strName" : "AnyStation_OKLGMain",
+    "strLootRegIDs" : "TXTOKLGMainStations"
+  },
+  {
+    "strName" : "AnyStationRegional",
+    "nIsStationRegional" : 1
+  },
+  {
+    "strName" : "AnyStationNotRegional",
+    "nIsStationRegional" : -1
+  },
+  {
+    "strName" : "AnyShip_BCER",
+    "strLootRegIDs" : "TXTBCERMainStations"
+  },
+  {
+    "strName" : "AnyShip_BCRS",
+    "strLootRegIDs" : "TXTBCRSMainStations"
+  },
+  {
+    "strName" : "AnyShip_EJDR",
+    "strLootRegIDs" : "TXTEJDRMainStations"
+  },
+  {
+    "strName" : "AnyShip_HQCH",
+    "strLootRegIDs" : "TXTHQCHMainStations"
+  },
+  {
+    "strName" : "AnyShip_JATL",
+    "strLootRegIDs" : "TXTJATLMainStations"
+  },
+  {
+    "strName" : "AnyShip_JFTS",
+    "strLootRegIDs" : "TXTJFTSMainStations"
+  },
+  {
+    "strName" : "AnyShip_MHNG",
+    "strLootRegIDs" : "TXTMHNGMainStations"
+  },
+  {
+    "strName" : "AnyShip_MTRS",
+    "strLootRegIDs" : "TXTMTRSMainStations"
+  },
+  {
+    "strName" : "AnyShip_MSUZ",
+    "strLootRegIDs" : "TXTMSUZMainStations"
+  },
+  {
+    "strName" : "AnyShip_MVOL",
+    "strLootRegIDs" : "TXTMVOLMainStations"
+  },
+  {
+    "strName" : "AnyShip_SVIR",
+    "strLootRegIDs" : "TXTSVIRMainStations"
+  },
+  {
+    "strName" : "AnyShip_OKLG",
+    "strLootATCRegions" : "TXTOKLG"
+  },
+  {
+    "strName" : "AnyShip_OKLGNotPlayerCurrentShip",
+    "strLootATCRegions" : "TXTOKLG",
+    "nIsPlayerShip" : -1
+  },
+  {
+    "strName" : "AnyStation_OKLGNotPlayerCurrentShip",
+    "strLootATCRegions" : "TXTOKLG",
+    "nIsPlayerShip" : -1,
+    "nIsStation" : 1
+  },
+  {
+    "strName" : "BCER_Prisoner",
+    "strLootATCRegions" : "TXTBCER",
+    "aFactions" : [
+      "CCRE", "BeltPirates"
+    ],
+    "nIsAIShip" : 1
+  },
+  {
+    "strName" : "BCRS_Prisoner",
+    "strLootATCRegions" : "TXTBCER",
+    "aFactions" : [
+      "GalileanConfederacy", "BeltPirates"
+    ],
+    "nIsAIShip" : 1
+  },
+  {
+    "strName" : "NotAStationNotPlayer",
+    "nIsStation" : -1,
+    "nIsPlayerShip" : -1
+  },
+  {
+    "strName" : "LocalAuthorityShip",
+    "nIsLocalAuthority" : 1
+  },
+  {
+    "strName" : "MyFaction",
+    "aFactions" : [ "[us]" ]
+  },
+  {
+    "strName" : "EJDR",
+    "strLootRegIDs" : "TXTEJDR",
+    "nIsStation" : 1
+  },
+  {
+    "strName" : "HQCH",
+    "strLootRegIDs" : "TXTHQCH",
+    "nIsStation" : 1
+  },
+  {
+    "strName" : "JFTS",
+    "strLootRegIDs" : "TXTJFTS",
+    "nIsStation" : 1
+  },
+  {
+    "strName" : "JPTN",
+    "strLootRegIDs" : "TXTJPTN",
+    "nIsStation" : 1
+  },
+  {
+    "strName" : "MHNG",
+    "strLootRegIDs" : "TXTMHNG",
+    "nIsStation" : 1
+  },
+  {
+    "strName" : "MLAB",
+    "strLootRegIDs" : "TXTMLAB",
+    "nIsStation" : 1
+  },
+  {
+    "strName" : "MSUZ",
+    "strLootRegIDs" : "TXTMSUZ",
+    "nIsStation" : 1
+  },
+  {
+    "strName" : "MTRS",
+    "strLootRegIDs" : "TXTMTRS",
+    "nIsStation" : 1
+  },
+  {
+    "strName" : "MVOL",
+    "strLootRegIDs" : "TXTMVOL",
+    "nIsStation" : 1
+  },
+  {
+    "strName" : "BPAL",
+    "strLootRegIDs" : "TXTBPAL",
+    "nIsStation" : 1
+  }
+]

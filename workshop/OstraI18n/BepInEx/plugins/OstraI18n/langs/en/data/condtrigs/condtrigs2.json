@@ -1,0 +1,3635 @@
+[
+  {
+    "strName" : "TIsCoffeeMachine",
+    "strCondName" : "",
+    "fChance"     : 1.0,
+    "fCount"      : 1.0,
+    "aReqs"         : [
+      "IsCoffeeMachine"
+    ],
+    "aForbids"      : ["IsInCombat"
+    ],
+    "aTriggers"     : [
+    ],
+    "bAND"          : true
+},
+{
+  "strName" : "TIsFanBreakoutWarriorsSOC",
+  "strCondName" : "",
+  "fChance"     : 1.0,
+  "fCount"      : 1.0,
+  "aReqs"         : [
+    "IsFanBreakoutWarriors",
+    "IsHuman"
+  ],
+  "aForbids"      : ["IsInCombat"
+  ],
+  "aTriggers"     : [
+    "TIsValidSocialTarget"
+  ],
+  "bAND"          : true
+},
+{
+  "strName" : "TIsFanBreakoutShootersSOC",
+  "strCondName" : "",
+  "fChance"     : 1.0,
+  "fCount"      : 1.0,
+  "aReqs"         : [
+    "IsFanBreakoutShooters",
+    "IsHuman"
+  ],
+  "aForbids"      : ["IsInCombat"
+  ],
+  "aTriggers"     : [
+    "TIsValidSocialTarget"
+  ],
+  "bAND"          : true
+},
+
+{
+  "strName" : "TIsBOFan",
+  "strCondName" : "",
+  "fChance"     : 1.0,
+  "fCount"      : 1.0,
+  "aReqs"         : [
+    "IsBOFan",
+    "IsHuman"
+  ],
+  "aForbids"      : [
+    "IsInCombat"
+  ],
+  "aTriggers"     : [
+    "TIsValidSocialTarget"
+  ],
+  "bAND"          : true
+},
+
+{
+  "strName" : "TIsNotInCombat",
+  "strCondName" : "",
+  "fChance"     : 1.0,
+  "fCount"      : 1.0,
+  "aReqs"         : [
+  ],
+  "aForbids"      : [
+    "IsInCombat"
+  ],
+  "aTriggers"     : [
+    "TIsValidSocialTarget"
+  ],
+  "bAND"          : true
+},
+{
+  "strName" : "TIsNotInCombatNotAirtight",
+  "strCondName" : "",
+  "fChance"     : 1.0,
+  "fCount"      : 1.0,
+  "aReqs"         : [
+  ],
+  "aForbids"      : [
+    "IsInCombat",
+    "IsAirtight"
+  ],
+  "aTriggers"     : [
+    "TIsValidSocialTarget"
+  ],
+  "bAND"          : true
+},
+{
+  "strName" : "TIsNotInCombatAIOnly",
+  "strCondName" : "",
+  "fChance"     : 1.0,
+  "fCount"      : 1.0,
+  "aReqs"         : [
+  ],
+  "aForbids"      : [
+    "IsPlayer", "IsAIManual"
+  ],
+  "aTriggers"     : [
+    "TIsNotInCombat"
+  ],
+  "bAND"          : true
+},
+
+{
+  "strName" : "TIsFanViceroys",
+  "strCondName" : "",
+  "fChance"     : 1.0,
+  "fCount"      : 1.0,
+  "aReqs"         : [
+    "IsFanViceroys",
+    "IsHuman"
+  ],
+  "aForbids"      : [
+    "IsInCombat"
+  ],
+  "aTriggers"     : [
+    "TIsValidSocialTarget"
+  ],
+  "bAND"          : true
+},
+{
+  "strName" : "TIsFanDamaskRose",
+  "strCondName" : "",
+  "fChance"     : 1.0,
+  "fCount"      : 1.0,
+  "aReqs"         : [
+            "IsFanDamaskRose",
+            "IsHuman"
+          ],
+  "aForbids"      : [
+    "IsInCombat"
+          ],
+  "aTriggers"     : [
+    "TIsValidSocialTarget"
+  ],
+  "bAND"          : true
+},
+{
+  "strName" : "TIsSeekAltruismUs",
+  "fChance" : 0.5,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsKind",
+    "IsSelfless"
+  ],
+  "aForbids" : [
+    "IsApathetic",
+    "IsApatheticTemp",
+    "IsCruel",
+    "IsOblivious",
+    "IsObliviousTemp",
+    "IsSelfish",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTargetGreeted",
+  	"TNoDiscomfortsSocial"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSeekAltruismAllowUs",
+  "fChance" : 0.5,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsHumble",
+    "IsPushover",
+    "IsQuitter",
+    "IsSelfish"
+  ],
+  "aForbids" : [
+    "IsAmbitious",
+    "IsAmbitiousTemp",
+    "IsApathetic",
+    "IsApatheticTemp",
+    "IsArrogant",
+    "IsDiligent",
+    "IsImpatient",
+    "IsImpatientTemp",
+    "IsSelfless",
+    "IsStubborn",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSeekAltruismDenyUs",
+  "fChance" : 0.75,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsArrogant",
+    "IsImpatient",
+    "IsImpatientTemp",
+    "IsStubborn"
+  ],
+  "aForbids" : [
+    "IsForgiving",
+    "IsForgivingTemp",
+    "IsHumble",
+    "IsKind",
+    "IsPatient",
+    "IsPatientTemp",
+    "IsPushover",
+    "IsQuitter",
+    "IsShy",
+    "IsShyTemp",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSeekAltruismN3Us",
+  "fChance" : 0.5,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsKind",
+    "IsSelfless"
+  ],
+  "aForbids" : [
+    "IsApathetic",
+    "IsApatheticTemp",
+    "IsCruel",
+    "IsOblivious",
+    "IsObliviousTemp",
+    "IsSelfish",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget",
+  	"TNoDiscomfortsSocial"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSeekAltruismN3AllowUs",
+  "fChance" : 1.0,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsHumble",
+    "IsPushover",
+    "IsQuitter",
+    "IsSelfish"
+  ],
+  "aForbids" : [
+    "IsAmbitious",
+    "IsAmbitiousTemp",
+    "IsApathetic",
+    "IsApatheticTemp",
+    "IsArrogant",
+    "IsDiligent",
+    "IsImpatient",
+    "IsImpatientTemp",
+    "IsSelfless",
+    "IsStubborn",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSeekAltruismN3DenyUs",
+  "fChance" : 1.0,
+  "fCount"  : 0.0,
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget"
+  ],
+  "bAND"    : false
+},
+{
+  "strName" : "TIsSeekAutonomyUs",
+  "fChance" : 1.0,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsApathetic",
+    "IsApatheticTemp",
+    "IsArrogant",
+    "IsBrave",
+    "IsBraveTemp",
+    "IsGregarious",
+    "IsGregariousTemp",
+    "IsStubborn"
+  ],
+  "aForbids" : [
+    "IsComplacent",
+    "IsComplacentTemp",
+    "IsCraven",
+    "IsCravenTemp",
+    "IsFollower",
+    "IsLoyal",
+    "IsPushover",
+    "IsQuitter",
+    "IsShy",
+    "IsShyTemp",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSeekAutonomyAllowUs",
+  "fChance" : 0.75,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsApathetic",
+    "IsApatheticTemp",
+    "IsComplacent",
+    "IsComplacentTemp",
+    "IsCraven",
+    "IsCravenTemp",
+    "IsFollower",
+    "IsHumble",
+    "IsImpatient",
+    "IsImpatientTemp",
+    "IsPushover",
+    "IsQuitter"
+  ],
+  "aForbids" : [
+    "IsAmbitious",
+    "IsAmbitiousTemp",
+    "IsArrogant",
+    "IsDiligent",
+    "IsFinicky",
+    "IsFinickyTemp",
+    "IsPatient",
+    "IsPatientTemp",
+    "IsStubborn",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsCareerLEO",
+  "fChance" : 1.0,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "CareerLEOfficer"
+  ],
+  "aForbids" : [
+  ],
+  "aTriggersForbid" :[
+  ],
+  "bAND"     : true
+},
+{
+  "strName" : "TIsSeekAutonomyDenyUs",
+  "fChance" : 0.75,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsStrong",
+    "IsTough",
+    "SkillMeleeArmed",
+    "SkillMeleeUnarmed"
+  ],
+  "aForbids" : [
+    "IsApathetic",
+    "IsApatheticTemp",
+    "IsCraven",
+    "IsCravenTemp",
+    "IsKind",
+    "IsPushover",
+    "IsShy",
+    "IsShyTemp",
+    "IsFeeble",
+    "IsFragile",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTargetGreeted",
+    "TIsCareerLEO"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSeekAutonomyDenyUsLEO",
+  "fChance" : 1.0,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsStrong",
+    "IsTough",
+    "SkillMeleeArmed",
+    "SkillMeleeUnarmed"
+  ],
+  "aForbids" : [
+    "IsApathetic",
+    "IsApatheticTemp",
+    "IsCraven",
+    "IsCravenTemp",
+    "IsKind",
+    "IsPushover",
+    "IsShy",
+    "IsShyTemp",
+    "IsFeeble",
+    "IsFragile",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget",
+    "TIsCareerLEO"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSeekContactUs",
+  "fChance" : 1.0,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "SkillPersuade",
+    "SkillSciencePsychology",
+    "IsCharismatic",
+    "IsComedian",
+    "IsComedianTemp",
+    "IsGregarious",
+    "IsGregariousTemp",
+    "IsLeader",
+    "IsObservant",
+    "IsObservantTemp"
+  ],
+  "aForbids" : [
+    "IsShy",
+    "IsShyTemp",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTargetGreeted",
+  	"TNoDiscomfortsSocial"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSeekContactAllowUs",
+  "fChance" : 0.5,
+  "fCount"  : 0.0,
+  "aForbids" : [
+    "IsImpatient",
+    "IsImpatientTemp",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTargetGreeted",
+  	"TNoDiscomfortsSocial"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSeekContactDenyUs",
+  "fChance" : 0.75,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsArrogant",
+    "IsCruel",
+    "IsOblivious",
+    "IsObliviousTemp",
+    "IsSelfish"
+  ],
+  "aForbids" : [
+    "IsGregarious",
+    "IsGregariousTemp",
+    "IsHumble",
+    "IsKind",
+    "IsSelfless",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSeekContactNotMuchUs",
+  "fChance" : 0.75,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+  ],
+  "aForbids" : [
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget",
+  	"TNoDiscomfortsSocial"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSeekContactN3Us",
+  "fChance" : 1.0,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+  ],
+  "aForbids" : [
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTargetGreeted",
+  	"TNoDiscomfortsSocial"
+  ],
+  "bAND"    : false
+},
+{
+  "strName" : "TIsSeekContactN3AgitatedSmokeUs",
+  "fChance" : 0.75,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsArrogant",
+    "IsCruel",
+    "IsFinicky",
+    "IsFinickyTemp",
+    "IsImpatient",
+    "IsImpatientTemp",
+    "IsPessimist",
+    "IsSelfish",
+    "IsTreacherous",
+    "IsVengeful",
+    "IsVengefulTemp"
+  ],
+  "aForbids" : [
+    "IsFollower",
+    "IsForgiving",
+    "IsForgivingTemp",
+    "IsKind",
+    "IsOptimist",
+    "IsPushover",
+    "IsQuitter",
+    "IsSelfless",
+    "IsShy",
+    "IsShyTemp",
+    "IsTidy",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSeekContactN3AllowUs",
+  "fChance" : 1.0,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsFanViceroys",
+    "IsFollower",
+    "IsGlutton",
+    "IsGregarious",
+    "IsGregariousTemp",
+    "IsPushover",
+    "IsTrusting",
+    "IsTrustingTemp",
+    "IsSmoker",
+    "IsHeavySmoker",
+    "DcContact03",
+    "DcContact04",
+    "DcContact05"
+  ],
+  "aForbids" : [
+    "IsFinicky",
+    "IsFinickyTemp",
+    "IsImpatient",
+    "IsImpatientTemp",
+    "IsTemperate",
+    "IsOblivious",
+    "IsObliviousTemp",
+    "IsInCombat",
+    "IsPlayer"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget"
+  ],
+  "bAND"    : false
+},
+{
+  "strName" : "TIsSeekContactN3AllowUsPlayer",
+  "fChance" : 1.0,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+  ],
+  "aForbids" : [
+    "IsTemperate",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget"
+  ],
+  "bAND"    : false
+},
+{
+  "strName" : "TIsSeekContactN3BitterSmokeUs",
+  "fChance" : 1.0,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+  ],
+  "aForbids" : [
+    "IsCharismatic",
+    "IsComedian",
+    "IsComedianTemp",
+    "IsFinicky",
+    "IsFinickyTemp",
+    "IsGregarious",
+    "IsGregariousTemp",
+    "IsLeader",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSeekContactN3DenyUs",
+  "fChance" : 1.0,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+  ],
+  "aForbids" : [
+    "IsGlutton",
+    "IsGregarious",
+    "IsGregariousTemp",
+    "IsPushover",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSeekContactN3HappySmokeUs",
+  "fChance" : 1.0,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsApathetic",
+    "IsApatheticTemp",
+    "IsFollower",
+    "IsHumble",
+    "IsOblivious",
+    "IsObliviousTemp",
+    "IsObservant",
+    "IsObservantTemp",
+    "IsObtuse",
+    "IsObtuseTemp",
+    "IsPatient",
+    "IsPatientTemp",
+    "IsPushover",
+    "IsShy",
+    "IsShyTemp"
+  ],
+  "aForbids" : [
+    "IsComedian",
+    "IsComedianTemp",
+    "IsGregarious",
+    "IsGregariousTemp",
+    "IsImpatient",
+    "IsImpatientTemp",
+    "IsQuitter",
+    "IsRepulsive",
+    "IsArrogant",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+	"TNoDiscomfortsSocial"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSeekContactN3BanterSmokeUs",
+  "fChance" : 0.85,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsGregarious",
+    "IsGregariousTemp",
+    "IsObservant",
+    "IsObservantTemp",
+    "IsGenius",
+    "IsGeniusTemp",
+    "IsComedian",
+    "IsComedianTemp",
+    "IsLeader",
+    "IsBrave",
+    "IsBraveTemp",
+    "IsCharismatic",
+    "IsAmbitious",
+    "IsAmbitiousTemp",
+    "IsKind",
+    "IsArrogant",
+    "IsOptimist"
+  ],
+  "aForbids" : [
+    "IsApathetic",
+    "IsApatheticTemp",
+    "IsOblivious",
+    "IsObliviousTemp",
+    "IsObtuse",
+    "IsObtuseTemp",
+    "IsHumorless",
+    "IsHumorlessTemp",
+    "IsShy",
+    "IsShyTemp",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+	"TNoDiscomfortsSocial"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSeekContactN3SaucySmokeUs",
+  "fChance" : 0.85,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsGregarious",
+    "IsGregariousTemp",
+    "IsLustful",
+    "IsBrave",
+    "IsBraveTemp",
+    "IsCharismatic",
+    "IsBeautiful",
+    "DcIntimacy03",
+    "DcIntimacy04",
+    "DcIntimacy05"
+  ],
+  "aForbids" : [
+    "DcIntimacy01",
+    "IsRepulsive",
+    "IsOblivious",
+    "IsObliviousTemp",
+    "IsChaste",
+    "IsSuspicious",
+    "IsSuspiciousTemp",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+	"TNoDiscomfortsSocial"
+  ],
+  "bAND"     : false
+},
+  {
+    "strName" : "TIsSeekContactN3SaucySmokeUsAttractedMen",
+    "fChance" : 0.85,
+    "fCount"  : 0.0,
+    "aReqs"   : [
+      "IsGregarious",
+      "IsGregariousTemp",
+      "IsLustful",
+      "IsBrave",
+      "IsBraveTemp",
+      "IsCharismatic",
+      "IsBeautiful",
+      "DcIntimacy03",
+      "DcIntimacy04",
+      "DcIntimacy05"
+    ],
+    "aForbids" : [
+      "DcIntimacy01",
+      "IsRepulsive",
+      "IsOblivious",
+      "IsObliviousTemp",
+      "IsChaste",
+      "IsSuspicious",
+      "IsSuspiciousTemp",
+      "IsInCombat"
+    ],
+    "aTriggersForbid" :[
+    "TNoDiscomfortsSocial",
+    "TIsAttractedMen"
+    ],
+    "bAND"     : false
+  },
+  {
+    "strName" : "TIsSeekContactN3SaucySmokeUsAttractedWomen",
+    "fChance" : 0.85,
+    "fCount"  : 0.0,
+    "aReqs"   : [
+      "IsGregarious",
+      "IsGregariousTemp",
+      "IsLustful",
+      "IsBrave",
+      "IsBraveTemp",
+      "IsCharismatic",
+      "IsBeautiful",
+      "DcIntimacy03",
+      "DcIntimacy04",
+      "DcIntimacy05"
+    ],
+    "aForbids" : [
+      "DcIntimacy01",
+      "IsRepulsive",
+      "IsOblivious",
+      "IsObliviousTemp",
+      "IsChaste",
+      "IsSuspicious",
+      "IsSuspiciousTemp",
+      "IsInCombat"
+    ],
+    "aTriggersForbid" :[
+    "TNoDiscomfortsSocial",
+    "TIsAttractedWomen"
+    ],
+    "bAND"     : false
+  },
+  {
+    "strName" : "TIsSeekContactN3SaucySmokeUsAttractedNB",
+    "fChance" : 0.85,
+    "fCount"  : 0.0,
+    "aReqs"   : [
+      "IsGregarious",
+      "IsGregariousTemp",
+      "IsLustful",
+      "IsBrave",
+      "IsBraveTemp",
+      "IsCharismatic",
+      "IsBeautiful",
+      "DcIntimacy03",
+      "DcIntimacy04",
+      "DcIntimacy05"
+    ],
+    "aForbids" : [
+      "DcIntimacy01",
+      "IsRepulsive",
+      "IsOblivious",
+      "IsObliviousTemp",
+      "IsChaste",
+      "IsSuspicious",
+      "IsSuspiciousTemp",
+      "IsInCombat"
+    ],
+    "aTriggersForbid" :[
+    "TNoDiscomfortsSocial",
+    "TIsAttractedNB"
+    ],
+    "bAND"     : false
+  },
+{
+  "strName" : "TIsSeekContactN3WrongBrandUs",
+  "fChance" : 1.0,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsArrogant",
+    "IsFinicky",
+    "IsFinickyTemp",
+    "IsLoyal",
+    "IsPessimist",
+    "IsSelfish",
+    "IsStubborn"
+  ],
+  "aForbids" : [
+    "IsApathetic",
+    "IsApatheticTemp",
+    "IsFollower",
+    "IsGlutton",
+    "IsGregarious",
+    "IsGregariousTemp",
+    "IsOptimist",
+    "IsPushover",
+    "IsSelfless",
+    "IsTreacherous",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSeekEsteemUs",
+  "fChance" : 0.125,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsComedian",
+    "IsComedianTemp",
+    "IsGenius",
+    "IsGeniusTemp",
+    "IsGregarious",
+    "IsGregariousTemp",
+    "IsMasochist",
+    "IsObservant",
+    "IsObservantTemp",
+    "IsObtuse",
+    "IsObtuseTemp"
+  ],
+  "aForbids" : [
+    "IsCruel",
+    "IsHumorless",
+    "IsHumorlessTemp",
+    "IsOblivious",
+    "IsObliviousTemp",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTargetGreeted",
+  	"TNoDiscomfortsSocial"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSeekEsteemAllowUs",
+  "fChance" : 0.6,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsComedian",
+    "IsComedianTemp",
+    "IsForgiving",
+    "IsForgivingTemp",
+    "IsGregarious",
+    "IsGregariousTemp",
+    "IsKind",
+    "IsLeader",
+    "IsObtuse",
+    "IsObtuseTemp",
+    "IsOptimist"
+  ],
+  "aForbids" : [
+    "IsApathetic",
+    "IsApatheticTemp",
+    "IsArrogant",
+    "IsCruel",
+    "IsFinicky",
+    "IsFinickyTemp",
+    "IsHumorless",
+    "IsHumorlessTemp",
+    "IsPessimist",
+    "IsShy",
+    "IsShyTemp",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget",
+  	"TNoDiscomfortsSocial"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSeekEsteemDenyUs",
+  "fChance" : 0.75,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsArrogant",
+    "IsCruel",
+    "IsHumorless",
+    "IsHumorlessTemp",
+    "IsSelfish"
+  ],
+  "aForbids" : [
+    "IsGregarious",
+    "IsGregariousTemp",
+    "IsFollower",
+    "IsHumble",
+    "IsKind",
+    "IsPushover",
+    "IsSelfless",
+    "IsShy",
+    "IsShyTemp",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSeekEsteemN2Us",
+  "fChance" : 0.5,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsAmbitious",
+    "IsAmbitiousTemp",
+    "IsArrogant",
+    "IsDiligent",
+    "IsGenius",
+    "IsGeniusTemp",
+    "IsHumorless",
+    "IsHumorlessTemp",
+    "IsOblivious",
+    "IsObliviousTemp"
+  ],
+  "aForbids" : [
+    "IsCharismatic",
+    "IsComplacent",
+    "IsComplacentTemp",
+    "IsHumble",
+    "IsObtuse",
+    "IsObtuseTemp",
+    "IsQuitter",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTargetGreeted",
+  	"TNoDiscomfortsSocial"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSeekEsteemN2AllowUs",
+  "fChance" : 0.8,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsDiligent",
+    "IsFollower",
+    "IsGregarious",
+    "IsGregariousTemp",
+    "IsHumble",
+    "IsKind",
+    "IsLeader",
+    "IsObservant",
+    "IsObservantTemp",
+    "IsPatient",
+    "IsPatientTemp",
+    "IsPushover",
+    "IsSelfless"
+  ],
+  "aForbids" : [
+    "IsApathetic",
+    "IsApatheticTemp",
+    "IsImpatient",
+    "IsImpatientTemp",
+    "IsOblivious",
+    "IsObliviousTemp",
+    "IsObtuse",
+    "IsObtuseTemp",
+    "IsSelfish",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSeekEsteemN2DenyUs",
+  "fChance" : 0.7,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsApathetic",
+    "IsApatheticTemp",
+    "IsImpatient",
+    "IsImpatientTemp",
+    "IsOblivious",
+    "IsObliviousTemp",
+    "IsObtuse",
+    "IsObtuseTemp",
+    "IsSelfish"
+  ],
+  "aForbids" : [
+    "IsDiligent",
+    "IsFollower",
+    "IsGregarious",
+    "IsGregariousTemp",
+    "IsHumble",
+    "IsKind",
+    "IsLeader",
+    "IsObservant",
+    "IsObservantTemp",
+    "IsPatient",
+    "IsPatientTemp",
+    "IsPushover",
+    "IsSelfless",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSeekEsteemN2DenyAuthoritativeUs",
+  "fChance" : 0.75,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsArrogant",
+    "IsCruel",
+    "IsHumorless",
+    "IsHumorlessTemp",
+    "IsImpatient",
+    "IsImpatientTemp",
+    "IsLeader",
+    "IsObtuse",
+    "IsObtuseTemp",
+    "IsRepulsive"
+  ],
+  "aForbids" : [
+    "IsApathetic",
+    "IsApatheticTemp",
+    "IsCharismatic",
+    "IsDiligent",
+    "IsFollower",
+    "IsForgiving",
+    "IsForgivingTemp",
+    "IsHumble",
+    "IsKind",
+    "IsPatient",
+    "IsPatientTemp",
+    "IsPushover",
+    "IsShy",
+    "IsShyTemp",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSeekEsteemN2ReplyInKindUs",
+  "fChance" : 0.33,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsAmbitious",
+    "IsAmbitiousTemp",
+    "IsArrogant",
+    "IsCruel",
+    "IsFinicky",
+    "IsFinickyTemp",
+    "IsGenius",
+    "IsGeniusTemp",
+    "IsOblivious",
+    "IsObliviousTemp",
+    "IsRepulsive",
+    "IsVengeful",
+    "IsVengefulTemp"
+  ],
+  "aForbids" : [
+    "IsApathetic",
+    "IsApatheticTemp",
+    "IsCharismatic",
+    "IsComplacent",
+    "IsComplacentTemp",
+    "IsFollower",
+    "IsForgiving",
+    "IsForgivingTemp",
+    "IsHumble",
+    "IsObtuse",
+    "IsObtuseTemp",
+    "IsPushover",
+    "IsQuitter",
+    "IsShy",
+    "IsShyTemp",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSeekFriendshipUs",
+  "fChance" : 0.75,
+  "fCount"  : 0.0,
+  "aForbids" : [
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget",
+  	"TNoDiscomfortsSocial"
+  ],
+  "bAND"    : false
+},
+{
+  "strName" : "TIsSeekFriendshipAllowUs",
+  "fChance" : 1.0,
+  "fCount"  : 0.0,
+  "aForbids" : [
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTargetGreeted",
+  	"TNoDiscomfortsSocial"
+  ],
+  "bAND"    : false
+},
+{
+  "strName" : "TIsSeekFriendshipDenyUs",
+  "fChance" : 0.75,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsArrogant",
+    "IsCruel",
+    "IsOblivious",
+    "IsObliviousTemp",
+    "IsSelfish"
+  ],
+  "aForbids" : [
+    "IsGregarious",
+    "IsGregariousTemp",
+    "IsHumble",
+    "IsKind",
+    "IsSelfless",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSeekFriendshipN2Us",
+  "fChance" : 0.8,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsFanBreakoutShooters",
+    "IsFanBreakoutWarriors",
+    "IsFanBreakoutRioters",
+    "IsFanBreakoutDragons",
+    "IsFanBreakoutGods",
+    "IsFanBreakoutTimberWolves",
+    "IsCharismatic",
+    "IsGregarious",
+    "IsGregariousTemp",
+    "IsLeader"
+  ],
+  "aForbids" : [
+    "IsShy",
+    "IsShyTemp",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTargetGreeted",
+  	"TNoDiscomfortsSocial"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSeekFriendshipN2AllowGeneralUs",
+  "fChance" : 0.75,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsFanBreakoutShooters",
+    "IsFanBreakoutWarriors",
+    "IsFanBreakoutRioters",
+    "IsFanBreakoutDragons",
+    "IsFanBreakoutGods",
+    "IsFanBreakoutTimberWolves"
+  ],
+  "aForbids" : [
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget",
+  	"TNoDiscomfortsSocial"
+  ],
+  "bAND"    : false
+},
+{
+  "strName" : "TIsSeekFriendshipN2AllowShootersUs",
+  "fChance" : 0.75,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsFanBreakoutShooters"
+  ],
+  "aForbids" : [
+    "IsInCombat",
+    "IsFanBreakoutWarriors"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget",
+  	"TNoDiscomfortsSocial"
+  ],
+  "bAND"    : false
+},
+{
+  "strName" : "TIsSeekFriendshipN2AllowWarriorsUs",
+  "fChance" : 0.75,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsFanBreakoutWarriors"
+  ],
+  "aForbids" : [
+    "IsInCombat",
+    "IsFanBreakoutShooters"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget",
+  	"TNoDiscomfortsSocial"
+  ],
+  "bAND"    : false
+},
+{
+  "strName" : "TIsSeekFriendshipN2CatchUs",
+  "fChance" : 0.75,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsFanBreakoutShooters",
+    "IsFanBreakoutWarriors",
+    "IsFanBreakoutRioters",
+    "IsFanBreakoutDragons",
+    "IsFanBreakoutGods",
+    "IsFanBreakoutTimberWolves"
+  ],
+  "aForbids" : ["IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget",
+  	"TNoDiscomfortsSocial"
+  ],
+  "bAND"    : false
+},
+{
+  "strName" : "TIsSeekFriendshipN2DenyUs",
+  "fChance" : 1.0,
+  "fCount"  : 0.0,
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget"
+  ],
+  "bAND"    : false
+},
+{
+  "strName" : "TIsSeekFriendshipN2FumbleUs",
+  "fChance" : 0.75,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsFanBreakoutShooters",
+    "IsFanBreakoutWarriors",
+    "IsFanBreakoutRioters",
+    "IsFanBreakoutDragons",
+    "IsFanBreakoutGods",
+    "IsFanBreakoutTimberWolves"
+  ],
+  "aForbids" : ["IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget",
+  	"TNoDiscomfortsSocial"
+  ],
+  "bAND"    : false
+},
+{
+  "strName" : "TIsSeekIntimacyUs",
+  "fChance" : 0.75,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsAmbitious",
+    "IsAmbitiousTemp",
+    "IsArrogant",
+    "IsBrave",
+    "IsBraveTemp",
+    "IsCharismatic",
+    "IsGregarious",
+    "IsGregariousTemp",
+    "IsLeader",
+    "IsLustful",
+    "IsOptimist",
+    "IsRepulsive"
+  ],
+  "aForbids" : [
+    "IsApathetic",
+    "IsApatheticTemp",
+    "IsChaste",
+    "IsComplacent",
+    "IsComplacentTemp",
+    "IsCraven",
+    "IsCravenTemp",
+    "IsPessimist",
+    "IsShy",
+    "IsShyTemp",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget",
+  	"TNoDiscomfortsSocial"
+  ],
+  "bAND"     : false
+},
+  {
+    "strName" : "TIsSeekIntimacyUsAttractedMen",
+    "fChance" : 1.0,
+    "fCount"  : 0.0,
+    "aReqs"   : [
+      "IsAmbitious",
+      "IsAmbitiousTemp",
+      "IsArrogant",
+      "IsBrave",
+      "IsBraveTemp",
+      "IsCharismatic",
+      "IsGregarious",
+      "IsGregariousTemp",
+      "IsLeader",
+      "IsLustful",
+      "IsOptimist",
+      "IsRepulsive",
+      "IsBeautiful",
+      "SkillActing",
+      "DcIntimacy04",
+      "DcIntimacy05"
+    ],
+    "aForbids" : [
+      "IsApathetic",
+      "IsApatheticTemp",
+      "IsChaste",
+      "IsComplacent",
+      "IsComplacentTemp",
+      "IsCraven",
+      "IsCravenTemp",
+      "IsShy",
+      "IsShyTemp",
+      "IsInCombat"
+    ],
+    "aTriggersForbid" :[
+      "TIsValidSocialTarget",
+      "TNoDiscomfortsSocial",
+      "TIsAttractedMen"
+    ],
+    "bAND"     : false
+  },
+  { "strName" : "TIsSeekIntimacyUsAttractedMenGreeted", "fChance" : 1.0, "fCount"  : 0.0, "aReqs"   : [ "IsSocialGreeted" ], "aForbids" : [ ], "aTriggersForbid" :[ "TIsSeekIntimacyUsAttractedMen" ], "bAND" : false },
+  {
+    "strName" : "TIsSeekIntimacyUsAttractedWomen",
+    "fChance" : 1.0,
+    "fCount"  : 0.0,
+    "aReqs"   : [
+      "IsAmbitious",
+      "IsAmbitiousTemp",
+      "IsArrogant",
+      "IsBrave",
+      "IsBraveTemp",
+      "IsCharismatic",
+      "IsGregarious",
+      "IsGregariousTemp",
+      "IsLeader",
+      "IsLustful",
+      "IsOptimist",
+      "IsRepulsive",
+      "IsBeautiful",
+      "SkillActing",
+      "DcIntimacy04",
+      "DcIntimacy05"
+    ],
+    "aForbids" : [
+      "IsApathetic",
+      "IsApatheticTemp",
+      "IsChaste",
+      "IsComplacent",
+      "IsComplacentTemp",
+      "IsCraven",
+      "IsCravenTemp",
+      "IsShy",
+      "IsShyTemp",
+      "IsInCombat"
+    ],
+    "aTriggersForbid" :[
+      "TIsValidSocialTarget",
+      "TNoDiscomfortsSocial",
+      "TIsAttractedWomen"
+    ],
+    "bAND"     : false
+  },
+  { "strName" : "TIsSeekIntimacyUsAttractedWomenGreeted", "fChance" : 1.0, "fCount"  : 0.0, "aReqs"   : [ "IsSocialGreeted" ], "aForbids" : [ ], "aTriggersForbid" :[ "TIsSeekIntimacyUsAttractedWomen" ], "bAND" : false },
+  {
+    "strName" : "TIsSeekIntimacyUsAttractedNB",
+    "fChance" : 1.0,
+    "fCount"  : 0.0,
+    "aReqs"   : [
+      "IsAmbitious",
+      "IsAmbitiousTemp",
+      "IsArrogant",
+      "IsBrave",
+      "IsBraveTemp",
+      "IsCharismatic",
+      "IsGregarious",
+      "IsGregariousTemp",
+      "IsLeader",
+      "IsLustful",
+      "IsOptimist",
+      "IsRepulsive",
+      "IsBeautiful",
+      "SkillActing",
+      "DcIntimacy04",
+      "DcIntimacy05"
+    ],
+    "aForbids" : [
+      "IsApathetic",
+      "IsApatheticTemp",
+      "IsChaste",
+      "IsComplacent",
+      "IsComplacentTemp",
+      "IsCraven",
+      "IsCravenTemp",
+      "IsShy",
+      "IsShyTemp",
+      "IsInCombat"
+    ],
+    "aTriggersForbid" :[
+      "TIsValidSocialTarget",
+      "TNoDiscomfortsSocial",
+      "TIsAttractedNB"
+    ],
+    "bAND"     : false
+  },
+  { "strName" : "TIsSeekIntimacyUsAttractedNBGreeted", "fChance" : 1.0, "fCount"  : 0.0, "aReqs"   : [ "IsSocialGreeted" ], "aForbids" : [ ], "aTriggersForbid" :[ "TIsSeekIntimacyUsAttractedNB" ], "bAND" : false },
+  {
+    "strName" : "TIsSeekIntimacyUsAttractedMenPlayer",
+    "fChance" : 1.0,
+    "fCount"  : 0.0,
+    "aReqs"   : [
+    ],
+    "aForbids" : [
+      "IsApathetic",
+      "IsApatheticTemp",
+      "IsChaste",
+      "IsComplacent",
+      "IsComplacentTemp",
+      "IsCraven",
+      "IsCravenTemp",
+      "IsShy",
+      "IsShyTemp",
+      "IsInCombat"
+    ],
+    "aTriggersForbid" :[
+      "TIsValidSocialTarget",
+      "TNoDiscomfortsSocial",
+      "TIsNotAttractedMen"
+    ],
+    "bAND"     : false
+  },
+  { "strName" : "TIsSeekIntimacyUsAttractedMenPlayerGreeted", "fChance" : 1.0, "fCount"  : 0.0, "aReqs"   : [ "IsSocialGreeted" ], "aForbids" : [ ], "aTriggersForbid" :[ "TIsSeekIntimacyUsAttractedMenPlayer" ], "bAND" : false },
+  {
+    "strName" : "TIsSeekIntimacyUsAttractedWomenPlayer",
+    "fChance" : 1.0,
+    "fCount"  : 0.0,
+    "aReqs"   : [
+    ],
+    "aForbids" : [
+      "IsApathetic",
+      "IsApatheticTemp",
+      "IsChaste",
+      "IsComplacent",
+      "IsComplacentTemp",
+      "IsCraven",
+      "IsCravenTemp",
+      "IsShy",
+      "IsShyTemp",
+      "IsInCombat"
+    ],
+    "aTriggersForbid" :[
+      "TIsValidSocialTarget",
+      "TNoDiscomfortsSocial",
+      "TIsNotAttractedWomen"
+    ],
+    "bAND"     : false
+  },
+  { "strName" : "TIsSeekIntimacyUsAttractedWomenPlayerGreeted", "fChance" : 1.0, "fCount"  : 0.0, "aReqs"   : [ "IsSocialGreeted" ], "aForbids" : [ ], "aTriggersForbid" :[ "TIsSeekIntimacyUsAttractedWomenPlayer" ], "bAND" : false },
+  {
+    "strName" : "TIsSeekIntimacyUsAttractedNBPlayer",
+    "fChance" : 1.0,
+    "fCount"  : 0.0,
+    "aReqs"   : [
+    ],
+    "aForbids" : [
+      "IsApathetic",
+      "IsApatheticTemp",
+      "IsChaste",
+      "IsComplacent",
+      "IsComplacentTemp",
+      "IsCraven",
+      "IsCravenTemp",
+      "IsShy",
+      "IsShyTemp",
+      "IsInCombat"
+    ],
+    "aTriggersForbid" :[
+      "TIsValidSocialTarget",
+      "TNoDiscomfortsSocial",
+      "TIsNotAttractedNB"
+    ],
+    "bAND"     : false
+  },
+  { "strName" : "TIsSeekIntimacyUsAttractedNBPlayerGreeted", "fChance" : 1.0, "fCount"  : 0.0, "aReqs"   : [ "IsSocialGreeted" ], "aForbids" : [ ], "aTriggersForbid" :[ "TIsSeekIntimacyUsAttractedNBPlayer" ], "bAND" : false },
+  {
+    "strName" : "TIsSeekIntimacyUsReplyAttractedMen",
+    "fChance" : 1.0,
+    "fCount"  : 0.0,
+    "aReqs"   : [
+    ],
+    "aForbids" : [
+      "IsApathetic",
+      "IsApatheticTemp",
+      "IsChaste",
+      "IsComplacent",
+      "IsComplacentTemp",
+      "IsCraven",
+      "IsCravenTemp",
+      "IsShy",
+      "IsShyTemp",
+      "IsInCombat"
+    ],
+    "aTriggersForbid" :[
+      "TIsValidSocialTarget",
+      "TNoDiscomfortsSocial",
+      "TIsAttractedMen"
+    ],
+    "bAND"     : false
+  },
+  {
+    "strName" : "TIsSeekIntimacyUsReplyAttractedWomen",
+    "fChance" : 1.0,
+    "fCount"  : 0.0,
+    "aReqs"   : [
+    ],
+    "aForbids" : [
+      "IsApathetic",
+      "IsApatheticTemp",
+      "IsChaste",
+      "IsComplacent",
+      "IsComplacentTemp",
+      "IsCraven",
+      "IsCravenTemp",
+      "IsShy",
+      "IsShyTemp",
+      "IsInCombat"
+    ],
+    "aTriggersForbid" :[
+      "TIsValidSocialTarget",
+      "TNoDiscomfortsSocial",
+      "TIsAttractedWomen"
+    ],
+    "bAND"     : false
+  },
+  {
+    "strName" : "TIsSeekIntimacyUsReplyAttractedNB",
+    "fChance" : 1.0,
+    "fCount"  : 0.0,
+    "aReqs"   : [
+    ],
+    "aForbids" : [
+      "IsApathetic",
+      "IsApatheticTemp",
+      "IsChaste",
+      "IsComplacent",
+      "IsComplacentTemp",
+      "IsCraven",
+      "IsCravenTemp",
+      "IsShy",
+      "IsShyTemp",
+      "IsInCombat"
+    ],
+    "aTriggersForbid" :[
+      "TIsValidSocialTarget",
+      "TNoDiscomfortsSocial",
+      "TIsAttractedNB"
+    ],
+    "bAND"     : false
+  },
+{
+  "strName" : "TIsSeekIntimacyAllowUs",
+  "fChance" : 0.75,
+  "fCount"  : 0.0,
+  "aForbids" : [
+    "IsChaste",
+    "IsCraven",
+    "IsCravenTemp",
+    "IsFollower",
+    "IsPessimist",
+    "IsQuitter",
+    "IsShy",
+    "IsShyTemp",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget",
+  	"TNoDiscomfortsSocial"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSeekIntimacyDenyUs",
+  "fChance" : 0.75,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsArrogant",
+    "IsChaste",
+    "IsCruel",
+    "IsFinicky",
+    "IsFinickyTemp",
+    "IsOblivious",
+    "IsObliviousTemp",
+    "IsRepulsive",
+    "IsTreacherous",
+    "IsVengeful",
+    "IsVengefulTemp"
+  ],
+  "aForbids" : [
+    "IsCharismatic",
+    "IsForgiving",
+    "IsForgivingTemp",
+    "IsHumble",
+    "IsKind",
+    "IsLustful",
+    "IsShy",
+    "IsShyTemp",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget",
+  	"TNoDiscomfortsSocial"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSeekIntimacyN2Us",
+  "fChance" : 1.0,
+  "fCount"  : 0.0,
+  "aForbids" : [
+    "IsTemperate",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget"
+  ],
+  "bAND"     : false
+},
+  {
+    "strName" : "TIsSeekIntimacyN2UsAttractedMen",
+    "fChance" : 0.5,
+    "fCount"  : 0.0,
+    "aForbids" : [
+      "IsTemperate",
+      "IsInCombat"
+    ],
+    "aTriggersForbid" :[
+      "TIsValidSocialTarget",
+      "TIsAttractedMen"
+    ],
+    "bAND"     : false
+  },
+  {
+    "strName" : "TIsSeekIntimacyN2UsAttractedWomen",
+    "fChance" : 0.5,
+    "fCount"  : 0.0,
+    "aForbids" : [
+      "IsTemperate",
+      "IsInCombat"
+    ],
+    "aTriggersForbid" :[
+      "TIsValidSocialTarget",
+      "TIsAttractedWomen"
+    ],
+    "bAND"     : false
+  },
+  {
+    "strName" : "TIsSeekIntimacyN2UsAttractedNB",
+    "fChance" : 0.5,
+    "fCount"  : 0.0,
+    "aForbids" : [
+      "IsTemperate",
+      "IsInCombat"
+    ],
+    "aTriggersForbid" :[
+      "TIsValidSocialTarget",
+      "TIsAttractedNB"
+    ],
+    "bAND"     : false
+  },
+{
+  "strName" : "TIsSeekIntimacyN2AllowUs",
+  "fChance" : 1.0,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsApathetic",
+    "IsApatheticTemp",
+    "IsComplacent",
+    "IsComplacentTemp",
+    "IsFollower",
+    "IsGlutton",
+    "IsGregarious",
+    "IsGregariousTemp",
+    "IsKind",
+    "IsLustful",
+    "IsPushover",
+    "IsTrusting",
+    "IsTrustingTemp"
+  ],
+  "aForbids" : [
+    "IsTemperate",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget",
+  	"TNoDiscomfortsSocial"
+  ],
+  "bAND"     : false
+},
+
+  {
+    "strName" : "TIsSeekIntimacyN2AllowUsAttractedMen",
+    "fChance" : 0.75,
+    "fCount"  : 0.0,
+    "aReqs"   : [
+      "IsApathetic",
+      "IsApatheticTemp",
+      "IsComplacent",
+      "IsComplacentTemp",
+      "IsFollower",
+      "IsGlutton",
+      "IsGregarious",
+      "IsGregariousTemp",
+      "IsKind",
+      "IsLustful",
+      "IsPushover",
+      "IsTrusting",
+      "IsTrustingTemp"
+    ],
+    "aForbids" : [
+      "IsTemperate",
+      "IsInCombat"
+    ],
+    "aTriggersForbid" :[
+      "TIsValidSocialTarget",
+      "TNoDiscomfortsSocial",
+      "TIsAttractedMen"
+    ],
+    "bAND"     : false
+  },
+  {
+    "strName" : "TIsSeekIntimacyN2AllowUsAttractedWomen",
+    "fChance" : 0.75,
+    "fCount"  : 0.0,
+    "aReqs"   : [
+      "IsApathetic",
+      "IsApatheticTemp",
+      "IsComplacent",
+      "IsComplacentTemp",
+      "IsFollower",
+      "IsGlutton",
+      "IsGregarious",
+      "IsGregariousTemp",
+      "IsKind",
+      "IsLustful",
+      "IsPushover",
+      "IsTrusting",
+      "IsTrustingTemp"
+    ],
+    "aForbids" : [
+      "IsTemperate",
+      "IsInCombat"
+    ],
+    "aTriggersForbid" :[
+      "TIsValidSocialTarget",
+      "TNoDiscomfortsSocial",
+      "TIsAttractedWomen"
+    ],
+    "bAND"     : false
+  },
+  {
+    "strName" : "TIsSeekIntimacyN2AllowUsAttractedNB",
+    "fChance" : 0.75,
+    "fCount"  : 0.0,
+    "aReqs"   : [
+      "IsApathetic",
+      "IsApatheticTemp",
+      "IsComplacent",
+      "IsComplacentTemp",
+      "IsFollower",
+      "IsGlutton",
+      "IsGregarious",
+      "IsGregariousTemp",
+      "IsKind",
+      "IsLustful",
+      "IsPushover",
+      "IsTrusting",
+      "IsTrustingTemp"
+    ],
+    "aForbids" : [
+      "IsTemperate",
+      "IsInCombat"
+    ],
+    "aTriggersForbid" :[
+      "TIsValidSocialTarget",
+      "TNoDiscomfortsSocial",
+      "TIsAttractedNB"
+    ],
+    "bAND"     : false
+  },
+{
+  "strName" : "TIsSeekIntimacyN2AllowEnthusiasticUs",
+  "fChance" : 1.0,
+  "fCount"  : 0.0,
+  "aForbids" : [
+    "IsChaste",
+    "IsCraven",
+    "IsCravenTemp",
+    "IsFollower",
+    "IsPessimist",
+    "IsQuitter",
+    "IsShy",
+    "IsShyTemp",
+    "IsTemperate",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget",
+  	"TNoDiscomfortsSocial"
+  ],
+  "bAND"     : false
+},
+  {
+    "strName" : "TIsSeekIntimacyN2AllowEnthusiasticUsAttractedMen",
+    "fChance" : 0.75,
+    "fCount"  : 0.0,
+    "aForbids" : [
+      "IsChaste",
+      "IsCraven",
+      "IsCravenTemp",
+      "IsFollower",
+      "IsPessimist",
+      "IsQuitter",
+      "IsShy",
+      "IsShyTemp",
+      "IsTemperate",
+      "IsInCombat"
+    ],
+    "aTriggersForbid" :[
+      "TIsValidSocialTarget",
+      "TNoDiscomfortsSocial",
+      "TIsAttractedMen"
+    ],
+    "bAND"     : false
+  },
+  {
+    "strName" : "TIsSeekIntimacyN2AllowEnthusiasticUsAttractedWomen",
+    "fChance" : 0.75,
+    "fCount"  : 0.0,
+    "aForbids" : [
+      "IsChaste",
+      "IsCraven",
+      "IsCravenTemp",
+      "IsFollower",
+      "IsPessimist",
+      "IsQuitter",
+      "IsShy",
+      "IsShyTemp",
+      "IsTemperate",
+      "IsInCombat"
+    ],
+    "aTriggersForbid" :[
+      "TIsValidSocialTarget",
+      "TNoDiscomfortsSocial",
+      "TIsAttractedWomen"
+    ],
+    "bAND"     : false
+  },
+  {
+    "strName" : "TIsSeekIntimacyN2AllowEnthusiasticUsAttractedNB",
+    "fChance" : 0.75,
+    "fCount"  : 0.0,
+    "aForbids" : [
+      "IsChaste",
+      "IsCraven",
+      "IsCravenTemp",
+      "IsFollower",
+      "IsPessimist",
+      "IsQuitter",
+      "IsShy",
+      "IsShyTemp",
+      "IsTemperate",
+      "IsInCombat"
+    ],
+    "aTriggersForbid" :[
+      "TIsValidSocialTarget",
+      "TNoDiscomfortsSocial",
+      "TIsAttractedNB"
+    ],
+    "bAND"     : false
+  },
+{
+  "strName" : "TIsSeekIntimacyN2DenyUs",
+  "fChance" : 1.0,
+  "fCount"  : 0.0,
+  "aForbids" : [ "IsInCombat"],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget"
+  ],
+  "bAND"    : false
+},
+{
+  "strName" : "TIsSeekKillDenyUs",
+  "fChance" : 1.0,
+  "fCount"  : 0.0,
+  "aForbids" : [
+    "IsCoordinated",    
+    "IsCoordinatedTemp",
+    "IsStrong",
+    "IsTough",
+    "SkillMeleeArmed",
+    "SkillMeleeUnarmed",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSeekKillTargetUs",
+  "fChance" : 0.05,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsTreacherous",
+    "IsVengeful",
+    "IsVengefulTemp",
+    "DcAutonomy05",
+    "DcEsteem05",
+    "DcSecurity05",
+    "DcWeird03",
+    "DcWeird04"
+  ],
+  "aForbids" : [
+    "IsForgiving",
+    "IsForgivingTemp",
+    "IsKind"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSeekKODenyUs",
+  "fChance" : 1.0,
+  "fCount"  : 0.0,
+  "aForbids" : [
+    "IsCoordinated",
+    "IsCoordinatedTemp",
+    "IsStrong",
+    "IsTough",
+    "SkillMeleeArmed",
+    "SkillMeleeUnarmed"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSeekKOTargetUs",
+  "fChance" : 0.05,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsTreacherous",
+    "IsVengeful",
+    "IsVengefulTemp",
+    "DcAutonomy05",
+    "DcEsteem05",
+    "DcSecurity05",
+    "DcWeird03",
+    "DcWeird04"
+  ],
+  "aForbids" : [
+    "IsForgiving",
+    "IsForgivingTemp",
+    "IsKind"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSeekMeaningUs",
+  "fChance" : 0.75,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsApathetic",
+    "IsApatheticTemp",
+    "IsHonest",
+    "IsHonestTemp",
+    "IsOblivious",
+    "IsObliviousTemp",
+    "IsPessimist",
+    "IsQuitter",
+    "IsSelfish"
+  ],
+  "aForbids" : [
+    "IsLiar",
+    "IsLiarTemp",
+    "IsOptimist",
+    "IsSelfless",
+    "DcSecurity05",
+    "DcAutonomy05",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTargetGreeted"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSeekMeaningAllowUs",
+  "fChance" : 1.0,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsCharismatic",
+    "IsKind",
+    "IsLeader",
+    "IsObservant",
+    "IsObservantTemp",
+    "IsOptimist",
+    "IsPatient",
+    "IsPatientTemp"
+  ],
+  "aForbids" : [
+    "IsApathetic",
+    "IsApatheticTemp",
+    "IsArrogant",
+    "IsCruel",
+    "IsImpatient",
+    "IsImpatientTemp",
+    "IsOblivious",
+    "IsObliviousTemp",
+    "IsPessimist",
+    "IsQuitter",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTargetGreeted",
+  	"TNoDiscomfortsSocial"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSeekMeaningDenyUs",
+  "fChance" : 0.75,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsArrogant",
+    "IsCruel",
+    "IsHumorless",
+    "IsHumorlessTemp",
+    "IsImpatient",
+    "IsImpatientTemp",
+    "IsPessimist",
+    "IsQuitter"
+  ],
+  "aForbids" : [
+    "IsCharismatic",
+    "IsGregarious",
+    "IsGregariousTemp",
+    "IsHumble",
+    "IsKind",
+    "IsOptimist",
+    "IsShy",
+    "IsShyTemp",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSeekMeaningN3Us",
+  "fChance" : 0.75,
+  "fCount"  : 0.0,
+  "aForbids" : [
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget",
+  	"TNoDiscomfortsSocial"
+  ],
+  "bAND"    : false
+},
+{
+  "strName" : "TIsSeekMeaningN3AllowUs",
+  "fChance" : 0.75,
+  "fCount"  : 0.0,
+  "aForbids" : [
+    "IsApathetic",
+    "IsApatheticTemp",
+    "IsHumorless",
+    "IsHumorlessTemp",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTargetGreeted"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSeekMeaningN3DenyUs",
+  "fChance" : 0.8,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsAgliophobic",
+    "IsCraven",
+    "IsCravenTemp",
+    "IsHumorless",
+    "IsHumorlessTemp",
+    "IsKind",
+    "IsPessimist"
+  ],
+  "aForbids" : [
+    "IsApathetic",
+    "IsApatheticTemp",
+    "IsBrave",
+    "IsBraveTemp",
+    "IsComedian",
+    "IsComedianTemp",
+    "IsCruel",
+    "IsFollower",
+    "IsOblivious",
+    "IsObliviousTemp",
+    "IsOptimist",
+    "IsTreacherous",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSeekSecurityUs",
+  "fChance" : 0.5,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsCraven",
+    "IsCravenTemp",
+    "IsFollower",
+    "IsGregarious",
+    "IsGregariousTemp",
+    "IsHumble",
+    "IsKind",
+    "IsLustful",
+    "IsOblivious",
+    "IsObliviousTemp",
+    "IsOptimist",
+    "IsSelfish",
+    "IsTrusting",
+    "IsTrustingTemp"
+  ],
+  "aForbids" : [
+    "IsApathetic",
+    "IsApatheticTemp",
+    "IsArrogant",
+    "IsBrave",
+    "IsBraveTemp",
+    "IsCruel",
+    "IsLeader",
+    "IsMasochist",
+    "IsPessimist",
+    "IsSelfless",
+    "IsShy",
+    "IsShyTemp",
+    "IsStubborn",
+    "IsTreacherous",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTargetGreeted",
+  	"TNoDiscomfortsSocial"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSeekSecurityAllowUs",
+  "fChance" : 0.75,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsBrave",
+    "IsBraveTemp",
+    "IsCharismatic",
+    "IsCraven",
+    "IsCravenTemp",
+    "IsFollower",
+    "IsForgiving",
+    "IsForgivingTemp",
+    "IsGregarious",
+    "IsGregariousTemp",
+    "IsHumble",
+    "IsKind",
+    "IsLustful",
+    "IsPatient",
+    "IsPatientTemp",
+    "IsPushover",
+    "IsSelfless",
+    "IsTrusting",
+    "IsTrustingTemp"
+  ],
+  "aForbids" : [
+    "IsApathetic",
+    "IsApatheticTemp",
+    "IsArrogant",
+    "IsChaste",
+    "IsCruel",
+    "IsImpatient",
+    "IsImpatientTemp",
+    "IsRepulsive",
+    "IsSelfish",
+    "IsShy",
+    "IsShyTemp",
+    "IsTreacherous",
+    "IsVengeful",
+    "IsVengefulTemp",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget",
+  	"TNoDiscomfortsSocial"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSeekSecurityDenyUs",
+  "fChance" : 0.2,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsArrogant",
+    "IsCruel",
+    "IsRepulsive",
+    "IsTreacherous",
+    "IsVengeful",
+    "IsVengefulTemp"
+  ],
+  "aForbids" : [
+    "IsAgliophobic",
+    "IsApathetic",
+    "IsApatheticTemp",
+    "IsCharismatic",
+    "IsCraven",
+    "IsCravenTemp",
+    "IsFollower",
+    "IsForgiving",
+    "IsForgivingTemp",
+    "IsGregarious",
+    "IsGregariousTemp",
+    "IsHumble",
+    "IsKind",
+    "IsPatient",
+    "IsPatientTemp",
+    "IsPushover",
+    "IsShy",
+    "IsShyTemp",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTargetGreeted",
+    "TIsCareerLEO"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSeekSecurityDenyUsLEO",
+  "fChance" : 1.0,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsArrogant",
+    "IsCruel",
+    "IsRepulsive",
+    "IsTreacherous",
+    "IsVengeful",
+    "IsVengefulTemp"
+  ],
+  "aForbids" : [
+    "IsAgliophobic",
+    "IsApathetic",
+    "IsApatheticTemp",
+    "IsCharismatic",
+    "IsCraven",
+    "IsCravenTemp",
+    "IsFollower",
+    "IsForgiving",
+    "IsForgivingTemp",
+    "IsGregarious",
+    "IsGregariousTemp",
+    "IsHumble",
+    "IsKind",
+    "IsPatient",
+    "IsPatientTemp",
+    "IsPushover",
+    "IsShy",
+    "IsShyTemp",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget",
+    "TIsCareerLEO"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSeekSecurityN2Us",
+  "fChance" : 0.5,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsAgliophobic",
+    "IsAmbitious",
+    "IsAmbitiousTemp",
+    "IsArrogant",
+    "IsCraven",
+    "IsCravenTemp",
+    "IsDiligent",
+    "IsFinicky",
+    "IsFinickyTemp",
+    "IsFollower",
+    "IsLoyal",
+    "IsObservant",
+    "IsObservantTemp",
+    "IsObtuse",
+    "IsObtuseTemp",
+    "IsPessimist"
+  ],
+  "aForbids" : [
+    "IsApathetic",
+    "IsApatheticTemp",
+    "IsComplacent",
+    "IsComplacentTemp",
+    "IsHumble",
+    "IsOblivious",
+    "IsObliviousTemp",
+    "IsOptimist",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget",
+  	"TNoDiscomfortsSocial"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSeekSecurityN2AllowUs",
+  "fChance" : 0.7,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsAgliophobic",
+    "IsAmbitious",
+    "IsAmbitiousTemp",
+    "IsCraven",
+    "IsCravenTemp",
+    "IsDiligent",
+    "IsFinicky",
+    "IsFinickyTemp",
+    "IsFollower",
+    "IsLoyal",
+    "IsOblivious",
+    "IsObliviousTemp",
+    "IsObservant",
+    "IsObservantTemp",
+    "IsObtuse",
+    "IsObtuseTemp",
+    "IsPessimist",
+    "IsPushover",
+    "IsTrusting",
+    "IsTrustingTemp",
+    "IsApathetic",
+    "IsApatheticTemp"
+  ],
+  "aForbids" : [
+    "IsComplacent",
+    "IsComplacentTemp",
+    "IsGenius",
+    "IsGeniusTemp",
+    "IsMasochist",
+    "IsOptimist",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSeekSecurityN2DenyUs",
+  "fChance" : 0.75,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsApathetic",
+    "IsApatheticTemp",
+    "IsArrogant",
+    "IsBrave",
+    "IsBraveTemp",
+    "IsComplacent",
+    "IsComplacentTemp",
+    "IsCruel",
+    "IsGenius",
+    "IsGeniusTemp",
+    "IsLoyal",
+    "IsOptimist",
+    "IsRepulsive",
+    "IsStubborn",
+    "IsTreacherous"
+  ],
+  "aForbids" : [
+    "IsAgliophobic",
+    "IsCraven",
+    "IsCravenTemp",
+    "IsDiligent",
+    "IsFollower",
+    "IsHumble",
+    "IsKind",
+    "IsMasochist",
+    "IsObtuse",
+    "IsObtuseTemp",
+    "IsPessimist",
+    "IsPushover",
+    "IsShy",
+    "IsShyTemp",
+    "IsTrusting",
+    "IsTrustingTemp",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSeekSecurityN3Us",
+  "fChance" : 1.0,
+  "fCount"  : 0.0,
+  "aForbids" : [
+    "DcAutonomy05",
+    "DcEsteem05",
+    "DcSecurity05",
+    "DcSelfRespect05",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTargetGreeted"
+  ],
+  "bAND"    : false
+},
+{
+  "strName" : "TIsSeekSecurityN3AllowUs",
+  "fChance" : 1.0,
+  "fCount"  : 0.0,
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget"
+  ],
+  "bAND"    : false
+},
+{
+  "strName" : "TIsSeekSelfRespectUs",
+  "fChance" : 1.0,
+  "fCount"  : 0.0,
+  "aForbids" : [
+    "IsApathetic",
+    "IsApatheticTemp",
+    "IsHumble",
+    "IsTemperate",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTargetGreeted"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSeekSelfRespectDenyUs",
+  "fChance" : 0.75,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsAmbitious",
+    "IsAmbitiousTemp",
+    "IsArrogant",
+    "IsComedian",
+    "IsComedianTemp",
+    "IsCruel",
+    "IsRepulsive",
+    "IsTreacherous",
+    "IsVengeful",
+    "IsVengefulTemp"
+  ],
+  "aForbids" : [
+    "IsApathetic",
+    "IsApatheticTemp",
+    "IsCharismatic",
+    "IsComplacent",
+    "IsComplacentTemp",
+    "IsForgiving",
+    "IsForgivingTemp",
+    "IsHumble",
+    "IsKind",
+    "IsShy",
+    "IsShyTemp",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTargetGreeted"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSeekSelfRespectDenyUsLEO",
+  "fChance" : 1.0,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsAmbitious",
+    "IsAmbitiousTemp",
+    "IsArrogant",
+    "IsComedian",
+    "IsComedianTemp",
+    "IsCruel",
+    "IsRepulsive",
+    "IsTreacherous",
+    "IsVengeful",
+    "IsVengefulTemp"
+  ],
+  "aForbids" : [
+    "IsApathetic",
+    "IsApatheticTemp",
+    "IsCharismatic",
+    "IsComplacent",
+    "IsComplacentTemp",
+    "IsForgiving",
+    "IsForgivingTemp",
+    "IsHumble",
+    "IsKind",
+    "IsShy",
+    "IsShyTemp",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget",
+    "TIsCareerLEO"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSeekSelfRespectN2Us",
+  "fChance" : 0.3,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsAgliophobic",
+    "IsCraven",
+    "IsCravenTemp",
+    "IsFinicky",
+    "IsFinickyTemp",
+    "IsHonest",
+    "IsHonestTemp",
+    "IsObservant",
+    "IsObservantTemp",
+    "IsPessimist",
+    "IsQuitter",
+    "IsSelfish",
+    "IsTrusting",
+    "IsTrustingTemp"
+  ],
+  "aForbids" : [
+    "IsApathetic",
+    "IsApatheticTemp",
+    "IsArrogant",
+    "IsBrave",
+    "IsBraveTemp",
+    "IsCruel",
+    "IsLiar",
+    "IsLiarTemp",
+    "IsOblivious",
+    "IsObliviousTemp",
+    "IsOptimist",
+    "IsSelfless",
+    "IsShy",
+    "IsShyTemp",
+    "IsTreacherous",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTargetGreeted",
+  	"TNoDiscomfortsSocial"
+  ],
+  "bAND"    : false
+},
+{
+  "strName" : "TIsSeekSelfRespectN2AllowUs",
+  "fChance" : 0.6,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsCharismatic",
+    "IsGenius",
+    "IsGeniusTemp",
+    "IsGregarious",
+    "IsGregariousTemp",
+    "IsHumble",
+    "IsKind",
+    "IsObservant",
+    "IsObservantTemp",
+    "IsOptimist",
+    "IsPatient",
+    "IsPatientTemp",
+    "IsSelfless"
+  ],
+  "aForbids" : [
+    "IsArrogant",
+    "IsCruel",
+    "IsImpatient",
+    "IsImpatientTemp",
+    "IsOblivious",
+    "IsObliviousTemp",
+    "IsPessimist",
+    "IsQuitter",
+    "IsRepulsive",
+    "IsSelfish",
+    "IsTreacherous",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget",
+  	"TNoDiscomfortsSocial"
+  ],
+  "bAND"    : false
+},
+{
+  "strName" : "TIsSeekSelfRespectN2DenyUs",
+  "fChance" : 0.75,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsArrogant",
+    "IsCruel",
+    "IsImpatient",
+    "IsImpatientTemp",
+    "IsOblivious",
+    "IsObliviousTemp",
+    "IsRepulsive",
+    "IsSelfish",
+    "IsTreacherous",
+    "IsVengeful",
+    "IsVengefulTemp"
+  ],
+  "aForbids" : [
+    "IsCharismatic",
+    "IsFollower",
+    "IsForgiving",
+    "IsForgivingTemp",
+    "IsGregarious",
+    "IsGregariousTemp",
+    "IsHumble",
+    "IsKind",
+    "IsPatient",
+    "IsPatientTemp",
+    "IsPushover",
+    "IsSelfless",
+    "IsShy",
+    "IsShyTemp",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSeekSocialDeny",
+  "fChance" : 0.5,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+  ],
+  "aForbids" : [
+    "IsPlayer",
+    "IsInCombat",
+    "IsSeekSocialDenyCooldown"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget",
+  	"TDiscomfortsSocial"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSOCAskCareerUs",
+  "fChance" : 1.0,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+  ],
+  "aForbids" : [
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTargetGreeted",
+  	"TNoDiscomfortsSocial"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSOCBackAwaySlowUs",
+  "fChance" : 0.75,
+  "fCount"  : 0.0,
+  "aForbids" : [ "IsInCombat"],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget"
+  ],
+  "bAND"    : false
+},
+{
+  "strName" : "TIsSOCBackOff",
+  "fChance" : 1.0,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+  ],
+  "aForbids" : [
+    "IsPushover",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSOCCalmDownThem",
+  "fChance" : 1.0,
+  "fCount"  : 0.0,
+  "aReqs" : [
+    "DcSecurity05",
+    "IsHuman"
+  ],
+  "aForbids" : [
+    "Unconscious",
+    "IsInCombat"
+  ],
+  "aTriggers" :[
+    "TIsValidSocialTarget"
+  ],
+  "bAND"    : true
+},
+{
+  "strName" : "TIsSOCCalmDownUs",
+  "fChance" : 1.0,
+  "fCount"  : 0.0,
+  "aForbids" : [
+    "DcSecurity05",
+    "IsInCombat"
+  ],
+  "aTriggers" :[
+    "TIsValidSocialTarget"
+  ],
+  "bAND"    : true
+},
+{
+  "strName" : "TIsSOCChangeSubjectUs",
+  "fChance" : 1.0,
+  "fCount"  : 0.0,
+  "aForbids" : ["InSocialCombat","IsInCombat"],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget"
+  ],
+  "bAND"    : false
+},
+{
+  "strName" : "TIsSOCReturnToSubjectUs",
+  "fChance" : 1.0,
+  "fCount"  : 0.0,
+  "aForbids" : ["IsInCombat"],
+  "aReqs" : ["InSocialCombat"],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget"
+  ],
+  "bAND"    : false
+},
+{
+  "strName" : "TIsSOCCraftDarkJokeUs",
+  "fChance" : 0.4,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsComedian",
+    "IsComedianTemp"
+  ],
+  "aForbids" : [
+    "IsHumorless",
+    "IsHumorlessTemp",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTargetGreeted"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSOCEmergStepAsideUs",
+  "fChance" : 0.8,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsAgliophobic",
+    "IsApathetic",
+    "IsApatheticTemp",
+    "IsComplacent",
+    "IsComplacentTemp",
+    "IsCraven",
+    "IsCravenTemp",
+    "IsFollower",
+    "IsHumble",
+    "IsObservant",
+    "IsObservantTemp",
+    "IsPushover",
+    "IsQuitter",
+    "IsShy",
+    "IsShyTemp",
+    "IsTrusting",
+    "IsTrustingTemp"
+  ],
+  "aForbids" : [
+    "IsAmbitious",
+    "IsAmbitiousTemp",
+    "IsArrogant",
+    "IsLeader",
+    "IsOblivious",
+    "IsObliviousTemp",
+    "IsStubborn",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSOCEncourageUs",
+  "fChance" : 1.0,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsCharismatic",
+    "IsGregarious",
+    "IsGregariousTemp",
+    "IsKind",
+    "IsLeader",
+    "IsObservant",
+    "IsObservantTemp",
+    "IsOptimist",
+    "IsPatient",
+    "IsPatientTemp"
+  ],
+  "aForbids" : [
+    "IsApathetic",
+    "IsApatheticTemp",
+    "IsCruel",
+    "IsOblivious",
+    "IsObliviousTemp",
+    "IsPessimist",
+    "IsRepulsive",
+    "IsTreacherous",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTargetGreeted",
+  	"TNoDiscomfortsSocial"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSOCFashionNotCleanUs",
+  "fChance" : 1.0,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+  ],
+  "aForbids" : [
+    "IsKind",
+    "IsSlovenly"
+  ],
+  "aTriggersForbid" :[
+  	"TIsNotPlayer"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSOCHireAllow",
+  "fChance" : 1.0,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+  ],
+  "aForbids" : ["IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget",
+  	"TNoDiscomfortsSocialHire"
+  ],
+  "bAND"     : false
+},
+{ "strName" : "TIsSOCHire2FFDiscountAllowUs", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : [ "IsApathetic", "IsComplacent", "IsHumble", "IsKind", "IsLoyal", "IsPushover", "IsSelfless", "IsShy", "IsTrusting" ], "aForbids" : [ "IsHire2FFDiscount", "IsAmbitious", "IsArrogant", "IsCraven", "IsFollower", "IsForgiving", "IsSelfish", "IsStubborn" ], "aTriggersForbid" :[ ], "bAND" :false },
+{ "strName" : "TIsSOCHire2FFDiscountUs", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : [ "IsAmbitious", "IsArrogant", "IsLoyal", "IsRepulsive", "IsSelfish", "IsTreacherous", "IsTrusting" ], "aForbids" : [ "IsFollower", "IsHumble", "IsPushover", "IsSelfless", "IsShy" ], "aTriggersForbid" :[ ], "bAND" :false },
+{ "strName" : "TIsSOCHire2IntimidateAllowUs", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : [ "DcSecurity05", "IsCraven", "IsPushover" ], "aForbids" : [ ], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" :false },
+{ "strName" : "TIsSOCHire2DenyAutonomyUs", "fChance" : 1.0, "fCount"  : 0.0, "aForbids" : [ "DcAutonomy01", "DcAutonomy02","DcAutonomy03","DcAutonomy04"], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : false },
+{ "strName" : "TIsSOCHire2DenyAutonomyMinorUs", "fChance" : 1.0, "fCount"  : 0.0, "aForbids" : [ "DcAutonomy01", "DcAutonomy02","DcAutonomy03"], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : false },
+{ "strName" : "TIsSOCHire2DenyEsteemUs", "fChance" : 1.0, "fCount"  : 0.0, "aForbids" : [ "DcEsteem01", "DcEsteem02","DcEsteem03","DcEsteem04"], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : false },
+{ "strName" : "TIsSOCHire2DenyEsteemMinorUs", "fChance" : 1.0, "fCount"  : 0.0, "aForbids" : [ "DcEsteem01", "DcEsteem02","DcEsteem03"], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : false },
+{ "strName" : "TIsSOCHire2DenySecurityUs", "fChance" : 1.0, "fCount"  : 0.0, "aForbids" : [ "DcSecurity01", "DcSecurity02","DcSecurity03","DcSecurity04"], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : false },
+{ "strName" : "TIsSOCHire2DenySecurityMinorUs", "fChance" : 1.0, "fCount"  : 0.0, "aForbids" : [ "DcSecurity01", "DcSecurity02","DcSecurity03"], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : false },
+{ "strName" : "TIsSOCHire2DenySelfRespectUs", "fChance" : 1.0, "fCount"  : 0.0, "aForbids" : [ "DcSelfRespect01", "DcSelfRespect02","DcSelfRespect03","DcSelfRespect04"], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : false },
+{ "strName" : "TIsSOCHire2DenySelfRespectMinorUs", "fChance" : 1.0, "fCount"  : 0.0, "aForbids" : [ "DcSelfRespect01", "DcSelfRespect02","DcSelfRespect03"], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : false },
+
+{ "strName" : "TIsSOCQuitStart", "fChance" : 1.0, "fCount"  : 0.0,"aForbids" :["IsQuitCooldown"], "aReqs" : ["DcAchievement05","DcSecurity05","DcEsteem05","DcSelfRespect05","DcAutonomy05"], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : false },
+{ "strName" : "TIsSOCHireQuitsStays", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["DcAchievement02","DcAchievement01"], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : false },
+{ "strName" : "TIsSOCHireQuitsStaysThreat", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["DcSecurity04"], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : false },
+{ "strName" : "TIsSOCHireQuitsStaysResponsibility", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["DcEsteem02","DcEsteem01"], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : false },
+
+{ "strName" : "TIsSOCQuitRespectFail", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["DcEsteem05"], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : false },
+{ "strName" : "TIsSOCQuitAutonomyFail", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["DcAutonomy05"], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : false },
+{ "strName" : "TIsSOCQuitSelfWorthFail", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["DcSelfRespect05"], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : false },
+{ "strName" : "TIsSOCQuitSecurityFail", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["DcSecurity05"], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : false },
+
+
+
+{ "strName" : "TIsSOCPoliceShakedownDenyCredentialsAutonomyUs", "fChance" : 1.0, "fCount"  : 0.0, "aForbids" : [ "DcAutonomy01", "DcAutonomy02" ], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : false },  
+{ "strName" : "TIsSOCPoliceShakedownDenyCredentialsSecurityUs", "fChance" : 1.0, "fCount"  : 0.0, "aForbids" : [ "DcSecurity01"], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : false },
+{ "strName" : "TIsCTSOCPoliceShakedownBasicBribeDenyAutonomyUs", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["DcAutonomy04"], "aForbids" : [ "IsHonest", "IsSelfless" ], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : false },  
+{ "strName" : "TIsCTSOCPoliceShakedownBasicBribeDenyEsteemUs", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : [ "DcEsteem01","DcEsteem02"],"aForbids" : ["DcEsteem03", "DcEsteem04", "DcEsteem05"], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : false },
+{ "strName" : "TIsSOCPoliceShakedownBribeAccept", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["DcAutonomy02", "DcAutonomy03"], "aForbids" : ["IsHonest", "IsSelfless"], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : false },
+{ "strName" : "TIsSOCPoliceShakedownBribeAcceptCritSuccess", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["DcAutonomy01"], "aForbids" : ["IsHonest", "IsSelfless"], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : false },
+{ "strName" : "TIsSOCPoliceShakedownBribeDenyHonest", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["IsHonest", "IsSelfless"], "aForbids" : [ ], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : false },
+{ "strName" : "TIsSOCPoliceShakedownBribeDenyCritFail", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["DcAutonomy05"], "aForbids" : ["IsHonest", "IsSelfless" ], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : false },
+{ "strName" : "TIsSOCPoliceShakedownAdmitInfractionMinorAffirmative", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : [ "DcAchievement04", "DcAchievement05" ], "aForbids" : [  ], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : false },  
+{ "strName" : "TIsSOCPoliceShakedownScowl", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["DcEsteem04", "DcEsteem05", "DcAchievement04", "DcAchievement05"], "aForbids" : [ ], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : false },  
+{ "strName" : "TIsCTSOCPoliceShakedownSecurityFail", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["DcSecurity05", "IsShakedownCooldownCalm"],"aForbids" : ["DcSecurity01", "DcSecurity02", "DcSecurity03", "DcSecurity04"], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : true },      
+{ "strName" : "TIsCTSOCPoliceShakedownAutonomyFail", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["DcAutonomy05", "IsShakedownCooldownScowl"],"aForbids" : ["DcAutonomy01", "DcAutonomy02", "DcAutonomy03", "DcAutonomy04"], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : true },      
+{ "strName" : "TIsCTSOCPoliceShakedownScowlCooldown", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["IsShakedownCooldownScowl"], "aTriggers" :[ "TIsValidSocialTarget" ], "bAND" : true },      
+{ "strName" : "TIsCTSOCPoliceShakedownScowlCooldownFalse", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["DcAutonomy05"], "aForbids" : [ "IsShakedownCooldownScowl", "DcAutonomy01", "DcAutonomy02", "DcAutonomy03", "DcAutonomy04" ], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : false },      
+{ "strName" : "TIsCTSOCPoliceShakedownCalmCooldown", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["IsShakedownCooldownCalm"], "aTriggers" :[ "TIsValidSocialTarget" ], "bAND" : true },      
+{ "strName" : "TIsCTSOCPoliceShakedownCalmCooldownFalse", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["DcSecurity05" ], "aForbids" : [ "IsShakedownCooldownCalm", "DcSecurity01", "DcSecurity02", "DcSecurity03", "DcSecurity04" ], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : false },
+{ "strName" : "TIsSOCPoliceShakedownSuckUpFail", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["DcEsteem01","DcEsteem02", "DcEsteem03"], "aForbids" : ["DcEsteem04", "DcEsteem05"], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : false },  
+{ "strName" : "TIsSOCPoliceShakedownSuckUpSuccumb", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["DcEsteem04", "DcEsteem05"], "aForbids" : [ "DcEsteem01","DcEsteem02","DcEsteem03"], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : false },  
+{ "strName" : "TIsAccusingAlreadyWarnedFalse", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : [], "aForbids" : [ "IsAccusingAlreadyWarned" ], "aTriggersForbid" :[ ], "bAND" : false },  
+
+  
+{ "strName" : "TIsOKLGFixer", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["IsOKLGFixer"],"aForbids" : [], "aTriggersForbid" :[], "bAND" : false },    
+{ "strName" : "TIsCTSOCTradeFixerConvoIntimidateSuccumb", "fChance" : 1.0, "fCount"  : 0.0,  "aReqs" : ["DcSecurity04", "DcSecurity05"],"aForbids" : ["DcSecurity01","DcSecurity02","DcSecurity03"], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : false },  
+{ "strName" : "TIsCTSOCTradeFixerConvoIntimidateResist", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["DcSecurity01","DcSecurity02","DcSecurity03"],"aForbids" : ["DcSecurity04", "DcSecurity05"], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : false },      
+{ "strName" : "TIsCTSOCTradeFixerConvoCharmSuccumb", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["DcIntimacy01","DcIntimacy05"],"aForbids" : ["DcIntimacy02", "DcIntimacy03", "DcIntimacy04"], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : false },  
+{ "strName" : "TIsCTSOCTradeFixerConvoCharmSuccumbAll", "fChance" : 0.5, "fCount"  : 0.0, "aReqs" : ["DcIntimacy01","DcIntimacy05"],"aForbids" : ["DcIntimacy02", "DcIntimacy03", "DcIntimacy04"], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : false },  
+{ "strName" : "TIsCTSOCTradeFixerConvoCharmSuccumbMan", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["IsAttractedMen"],"aForbids" : [ ], "aTriggers" :[ "TIsCTSOCTradeFixerConvoCharmSuccumb" ], "bAND" : true },  
+{ "strName" : "TIsCTSOCTradeFixerConvoCharmSuccumbWoman", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["IsAttractedWomen"],"aForbids" : [ ], "aTriggers" :[ "TIsCTSOCTradeFixerConvoCharmSuccumb" ], "bAND" : true },  
+{ "strName" : "TIsCTSOCTradeFixerConvoCharmSuccumbNB", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["IsAttractedNB"],"aForbids" : [ ], "aTriggers" :[ "TIsCTSOCTradeFixerConvoCharmSuccumb" ], "bAND" : true },  
+{ "strName" : "TIsCTSOCTradeFixerConvoCharmResist", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["DcIntimacy02", "DcIntimacy03", "DcIntimacy04"],"aForbids" : ["DcIntimacy01","DcIntimacy05"], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : false },    
+{ "strName" : "TIsCTSOCTradeFixerConvoPrivacyFail", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["DcPrivacy04","DcPrivacy05"],"aForbids" : ["DcPrivacy01","DcPrivacy02", "DcPrivacy03"], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : false }, 
+{ "strName" : "TIsCTSOCTradeFixerConvoAltruismFail", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["DcAltruism04","DcAltruism05"],"aForbids" : ["DcAltruism01","DcAltruism02", "DcAltruism03"], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : false },       
+{ "strName" : "TIsOKLGFixerAccess", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["OKLGFixerAccess"],"aForbids" : [], "aTriggersForbid" :[], "bAND" : false },    
+{ "strName" : "TIsOKLGFixerAccessDenied", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : [],"aForbids" : ["OKLGFixerAccess"], "aTriggersForbid" :[], "bAND" : false },  
+{ "strName" : "TIsOKLGFixerAccessTrustIssues", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["OKLGFixerAccess", "PlotFixerTrustIssues"], "aForbids" : [], "aTriggersForbid" :[], "bAND" : true },    
+{ "strName" : "TIsBlackMarketPlayerAccess", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["BlackMarketPlayerAccess"],"aForbids" : [], "aTriggersForbid" :[], "bAND" : false },  
+{ "strName" : "TIsPermitOKLGSalvage", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["IsPermitOKLGSalvage"], "aForbids" : [], "aTriggersForbid" :[], "bAND" : true },
+{ "strName" : "TIsPermitOKLGSalvageExpired", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["IsPermitOKLGSalvage" ], "aForbids" : [ "IsHoursLeft" ], "aTriggersForbid" :[], "bAND" : true },
+{ "strName" : "TIsPermitOKLGSalvageValid", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["IsPermitOKLGSalvage", "IsHoursLeft"], "aForbids" : [], "aTriggersForbid" :[], "bAND" : true },
+{ "strName" : "TIsPermitOKLGSalvageKiosk", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["IsPermitOKLGSalvageKiosk"], "aForbids" : [], "aTriggersForbid" :[], "bAND" : true },
+{ "strName" : "TIsGovtKioskCCRE", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : [ "IsKiosk", "IsCCRE" ], "aForbids" : [], "aTriggersForbid" :[], "bAND" : true },
+{ "strName" : "TIsGovtKioskGalileanConfederacy", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["IsKiosk", "IsGalileanConfederacy"], "aForbids" : [], "aTriggersForbid" :[], "bAND" : true },
+
+{ "strName" : "SOCRacerConvoCharmSuccomb", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["DcIntimacy01","DcIntimacy05"],"aForbids" : ["DcIntimacy02", "DcIntimacy03", "DcIntimacy04"], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : false },  
+{ "strName" : "SOCRacerConvoCharmResist", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["DcIntimacy02", "DcIntimacy03", "DcIntimacy04"],"aForbids" : ["DcIntimacy01","DcIntimacy05"], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : false },    
+{ "strName" : "SOCRacerConvoIntimidateSuccomb", "fChance" : 1.0, "fCount"  : 0.0,  "aReqs" : ["DcSecurity04", "DcSecurity05"],"aForbids" : ["DcSecurity01","DcSecurity02","DcSecurity03"], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : false },  
+{ "strName" : "SOCRacerConvoIntimidateResist", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["DcSecurity01","DcSecurity02","DcSecurity03"],"aForbids" : ["DcSecurity04", "DcSecurity05"], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : false },      
+
+
+{ "strName" : "TIsCTSOCPortAuthorityBreakSuccomb", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["DcAltruism01","DcAltruism02"],"aForbids" : ["DcAltruism03","DcAltruism04", "DcAltruism05"], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : false },      
+{ "strName" : "TIsCTSOCPortAuthorityPromiseSuccomb", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["DcMeaning01","DcMeaning02"],"aForbids" : ["DcMeaning03", "DcMeaning04","DcMeaning05"], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : false },      
+{ "strName" : "TIsCTSOCPortAuthorityManagerSuccomb", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["DcAutonomy04","DcAutonomy05"],"aForbids" : ["DcAutonomy01", "DcAutonomy02", "DcAutonomy03"], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : false },      
+{ "strName" : "TIsCTSOCPortAuthorityPrivacyFail", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["DcPrivacy04","DcPrivacy05"],"aForbids" : ["DcPrivacy01", "DcPrivacy02", "DcPrivacy03"], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : false },      
+
+{ "strName" : "TIsCTSOCPortAuthorityFriendFavorSuccomb", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["DcFamily01","DcFamily02","DcFamily03","DcFamily04"],"aForbids" : ["DcFamily05"], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : false },      
+{ "strName" : "TIsCTSOCPortAuthorityFriendFavorResist", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["DcFamily05"],"aForbids" : ["DcFamily01","DcFamily02","DcFamily03","DcFamily04"], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : false },      
+
+{ "strName" : "TIsCTSOCHoneypotPrivacyFail", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["DcPrivacy04","DcPrivacy05"],"aForbids" : ["DcPrivacy01","DcPrivacy02", "DcPrivacy03"], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : false }, 
+{ "strName" : "TIsCTSOCHoneypotSecurityFail", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["DcSecurity04","DcSecurity05"],"aForbids" : ["DcSecurity01","DcSecurity02", "DcSecurity03"], "aTriggersForbid" :[ "TIsValidSocialTarget" ], "bAND" : false }, 
+
+
+{ "strName" : "TIsSOCEarthMemoryHeardPlayer", "fChance" : 1.0, "fCount"  : 0.0, "aForbids" : ["HeardMemoryEarth"], "aTriggersForbid" :["TIsValidSocialTarget" ], "bAND" : false },
+{ "strName" : "TIsSOCIsHomeworldEarth", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["IsHomeworldEarth"], "aTriggersForbid" :[], "bAND" : false },  
+{ "strName" : "TIsSOCIsHomeworldMars", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["IsHomeworldMars"], "aTriggersForbid" :[], "bAND" : false },  
+{ "strName" : "TIsSOCIsHomeworldVenus", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["IsHomeworldVenus"], "aTriggersForbid" :[], "bAND" : false },  
+{ "strName" : "TIsSOCIsHomeworldJupiter", "fChance" : 1.0, "fCount"  : 0.0, "aReqs" : ["IsHomeworldJupiter"], "aTriggersForbid" :[], "bAND" : false },      
+
+{ "strName" : "TIsSOCToldFamilyParentsYes", "fChance" : 1.0, "fCount"  : 0.0, "aForbids" : ["ToldFamilyParents"], "aTriggersForbid" :[], "bAND" : false },  
+{ "strName" : "TIsSOCToldFamilySiblingsYes", "fChance" : 1.0, "fCount"  : 0.0, "aForbids" :["ToldFamilySiblings"], "aTriggersForbid" :[], "bAND" : false },  
+{ "strName" : "TIsSOCToldFamilyChildrenYes", "fChance" : 1.0, "fCount"  : 0.0, "aForbids" :["ToldFamilyChildren"], "aTriggersForbid" :[], "bAND" : false },  
+
+{ "strName" : "TIsSOCToldOpinionHomeYes", "fChance" : 1.0, "fCount"  : 0.0, "aForbids" : ["ToldOpinionHome"], "aTriggersForbid" :[], "bAND" : false },  
+
+{
+  "strName" : "TIsSOCLaughCallousUs",
+  "fChance" : 0.3,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsAmbitious",
+    "IsAmbitiousTemp",
+    "IsArrogant",
+    "IsComedian",
+    "IsComedianTemp",
+    "IsCruel",
+    "IsRepulsive",
+    "IsTreacherous",
+    "IsVengeful",
+    "IsVengefulTemp"
+  ],
+  "aForbids" : [
+    "IsApathetic",
+    "IsApatheticTemp",
+    "IsCharismatic",
+    "IsComplacent",
+    "IsComplacentTemp",
+    "IsForgiving",
+    "IsForgivingTemp",
+    "IsHumble",
+    "IsKind",
+    "IsShy",
+    "IsShyTemp",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSOCPlayfulThreatUs",
+  "fChance" : 0.3,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsCharismatic",
+    "IsComedian",
+    "IsComedianTemp",
+    "IsGregarious",
+    "IsGregariousTemp",
+    "IsLeader",
+    "IsLustful",
+    "IsVengeful",
+    "IsVengefulTemp"
+  ],
+  "aForbids" : [
+    "IsFollower",
+    "IsHumorless",
+    "IsHumorlessTemp",
+    "IsOblivious",
+    "IsObliviousTemp",
+    "IsRepulsive",
+    "IsShy",
+    "IsShyTemp",
+    "IsTreacherous",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTargetGreeted",
+  	"TNoDiscomfortsSocial"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSOCPleeeaseUs",
+  "fChance" : 0.5,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsAmbitious",
+    "IsAmbitiousTemp",
+    "IsGlutton",
+    "IsObtuse",
+    "IsObtuseTemp",
+    "IsOptimist",
+    "IsRepulsive",
+    "IsSelfish",
+    "IsStubborn"
+  ],
+  "aForbids" : [
+    "IsApathetic",
+    "IsApatheticTemp",
+    "IsArrogant",
+    "IsCharismatic",
+    "IsComplacent",
+    "IsComplacentTemp",
+    "IsFollower",
+    "IsLeader",
+    "IsPessimist",
+    "IsPushover",
+    "IsQuitter",
+    "IsSelfless",
+    "IsShy",
+    "IsShyTemp",
+    "IsTemperate",
+    "IsTreacherous",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget",
+  	"TNoDiscomfortsSocial"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSOCPoliteChuckleUs",
+  "fChance" : 0.2,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+  ],
+  "aForbids" : ["IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget",
+  	"TNoDiscomfortsSocial"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSOCQuiver",
+  "fChance" : 1.0,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "DcSecurity05"
+  ],
+  "aForbids" : ["IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSOCSmileDemurelyUs",
+  "fChance" : 0.2,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+  ],
+  "aForbids" : ["IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget",
+  	"TNoDiscomfortsSocial"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSOCSobQuietly",
+  "fChance" : 1.0,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "DcEsteem05",
+    "DcFamily05"
+  ],
+  "aForbids" : ["IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSOCReassureLogicalUs",
+  "fChance" : 0.8,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsGenius",
+    "IsGeniusTemp",
+    "IsObservant",
+    "IsObservantTemp"
+  ],
+  "aForbids" : [
+    "IsCruel",
+    "IsOblivious",
+    "IsObliviousTemp",
+    "IsObtuse",
+    "IsObtuseTemp",
+    "IsTreacherous",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget",
+  	"TNoDiscomfortsSocial"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSOCReiterateUrgencyUs",
+  "fChance" : 0.4,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "DcSecurity04",
+    "DcSecurity05",
+    "IsAmbitious",
+    "IsAmbitiousTemp",
+    "IsCraven",
+    "IsCravenTemp",
+    "IsDiligent",
+    "IsImpatient",
+    "IsImpatientTemp",
+    "IsLeader",
+    "IsPessimist"
+  ],
+  "aForbids" : [
+    "IsApathetic",
+    "IsApatheticTemp",
+    "IsComplacent",
+    "IsComplacentTemp",
+    "IsOblivious",
+    "IsObliviousTemp",
+    "IsInCombat",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSOCRepeatSexuallyUs",
+  "fChance" : 1.0,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsAmbitious",
+    "IsAmbitiousTemp",
+    "IsArrogant",
+    "IsBrave",
+    "IsBraveTemp",
+    "IsComedian",
+    "IsComedianTemp",
+    "IsGregarious",
+    "IsGregariousTemp",
+    "IsLeader",
+    "IsLustful",
+    "IsOptimist",
+    "IsRepulsive"
+  ],
+  "aForbids" : [
+    "IsAgliophobic",
+    "IsApathetic",
+    "IsApatheticTemp",
+    "IsCharismatic",
+    "IsChaste",
+    "IsComplacent",
+    "IsComplacentTemp",
+    "IsCraven",
+    "IsCravenTemp",
+    "IsFollower",
+    "IsHumorless",
+    "IsHumorlessTemp",
+    "IsPessimist",
+    "IsQuitter",
+    "IsShy",
+    "IsShyTemp",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget",
+  	"TNoDiscomfortsSocial"
+  ],
+  "bAND"     : false
+},
+
+  {
+    "strName" : "TIsSOCRepeatSexuallyUsAttractedMen",
+    "fChance" : 0.8,
+    "fCount"  : 0.0,
+    "aReqs"   : [
+      "IsAmbitious",
+      "IsAmbitiousTemp",
+      "IsArrogant",
+      "IsBrave",
+      "IsBraveTemp",
+      "IsComedian",
+      "IsComedianTemp",
+      "IsGregarious",
+      "IsGregariousTemp",
+      "IsLeader",
+      "IsLustful",
+      "IsOptimist",
+      "IsRepulsive"
+    ],
+    "aForbids" : [
+      "IsAgliophobic",
+      "IsApathetic",
+      "IsApatheticTemp",
+      "IsCharismatic",
+      "IsChaste",
+      "IsComplacent",
+      "IsComplacentTemp",
+      "IsCraven",
+      "IsCravenTemp",
+      "IsFollower",
+      "IsHumorless",
+      "IsHumorlessTemp",
+      "IsPessimist",
+      "IsQuitter",
+      "IsShy",
+      "IsShyTemp",
+      "IsInCombat"
+    ],
+    "aTriggersForbid" :[
+      "TIsValidSocialTarget",
+      "TNoDiscomfortsSocial",
+      "TIsAttractedMen"
+    ],
+    "bAND"     : false
+  },
+  {
+    "strName" : "TIsSOCRepeatSexuallyUsAttractedWomen",
+    "fChance" : 0.8,
+    "fCount"  : 0.0,
+    "aReqs"   : [
+      "IsAmbitious",
+      "IsAmbitiousTemp",
+      "IsArrogant",
+      "IsBrave",
+      "IsBraveTemp",
+      "IsComedian",
+      "IsComedianTemp",
+      "IsGregarious",
+      "IsGregariousTemp",
+      "IsLeader",
+      "IsLustful",
+      "IsOptimist",
+      "IsRepulsive"
+    ],
+    "aForbids" : [
+      "IsAgliophobic",
+      "IsApathetic",
+      "IsApatheticTemp",
+      "IsCharismatic",
+      "IsChaste",
+      "IsComplacent",
+      "IsComplacentTemp",
+      "IsCraven",
+      "IsCravenTemp",
+      "IsFollower",
+      "IsHumorless",
+      "IsHumorlessTemp",
+      "IsPessimist",
+      "IsQuitter",
+      "IsShy",
+      "IsShyTemp",
+      "IsInCombat"
+    ],
+    "aTriggersForbid" :[
+      "TIsValidSocialTarget",
+      "TNoDiscomfortsSocial",
+      "TIsAttractedWomen"
+    ],
+    "bAND"     : false
+  },
+  {
+    "strName" : "TIsSOCRepeatSexuallyUsAttractedNB",
+    "fChance" : 0.8,
+    "fCount"  : 0.0,
+    "aReqs"   : [
+      "IsAmbitious",
+      "IsAmbitiousTemp",
+      "IsArrogant",
+      "IsBrave",
+      "IsBraveTemp",
+      "IsComedian",
+      "IsComedianTemp",
+      "IsGregarious",
+      "IsGregariousTemp",
+      "IsLeader",
+      "IsLustful",
+      "IsOptimist",
+      "IsRepulsive"
+    ],
+    "aForbids" : [
+      "IsAgliophobic",
+      "IsApathetic",
+      "IsApatheticTemp",
+      "IsCharismatic",
+      "IsChaste",
+      "IsComplacent",
+      "IsComplacentTemp",
+      "IsCraven",
+      "IsCravenTemp",
+      "IsFollower",
+      "IsHumorless",
+      "IsHumorlessTemp",
+      "IsPessimist",
+      "IsQuitter",
+      "IsShy",
+      "IsShyTemp",
+      "IsInCombat"
+    ],
+    "aTriggersForbid" :[
+      "TIsValidSocialTarget",
+      "TNoDiscomfortsSocial",
+      "TIsAttractedNB"
+    ],
+    "bAND"     : false
+  },
+{
+  "strName" : "TIsSOCTableTalkStartUs",
+  "fChance" : 1.0,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsAmbitious",
+    "IsAmbitiousTemp",
+    "IsBrave",
+    "IsBraveTemp",
+    "IsCharismatic",
+    "IsComedian",
+    "IsComedianTemp",
+    "IsGlutton",
+    "IsGregarious",
+    "IsGregariousTemp",
+    "IsKind",
+    "IsLeader",
+    "IsLustful",
+    "IsMasochist",
+    "IsOblivious",
+    "IsObliviousTemp",
+    "IsOptimist",
+    "IsSelfish",
+    "IsSelfless",
+    "IsBOFan",
+    "IsFanBreakoutShooters",
+    "IsFanBreakoutWarriors",
+    "IsFanBreakoutRioters",
+    "IsFanBreakoutDragons",
+    "IsFanBreakoutGods",
+    "IsFanBreakoutTimberWolves"
+],
+  "aForbids" : [
+    "IsCraven",
+    "IsCravenTemp",
+    "IsFollower",
+    "IsPessimist",
+    "IsShy",
+    "IsShyTemp",
+    "IsInCombat"
+],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget",
+  	"TNoDiscomfortsSocial"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSOCTalkSkillTEMPUs",
+  "fChance" : 1.0,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+  ],
+  "aForbids" : ["IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget",
+  	"TNoDiscomfortsSocial"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSOCThreatStepAsideUs",
+  "fChance" : 0.4,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsAgliophobic",
+    "IsApathetic",
+    "IsApatheticTemp",
+    "IsComplacent",
+    "IsComplacentTemp",
+    "IsCraven",
+    "IsCravenTemp",
+    "IsFollower",
+    "IsHumble",
+    "IsPushover",
+    "IsQuitter",
+    "IsShy",
+    "IsShyTemp",
+    "IsTrusting"
+  ],
+  "aForbids" : [
+    "IsAmbitious",
+    "IsAmbitiousTemp",
+    "IsArrogant",
+    "IsBrave",
+    "IsBraveTemp",
+    "IsLeader",
+    "IsMasochist",
+    "IsStubborn",
+    "IsVengeful",
+    "IsVengefulTemp",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSOCYawnInFaceUs",
+  "fChance" : 0.75,
+  "fCount"  : 0.0,
+  "aReqs"   : [
+    "IsApathetic",
+    "IsApatheticTemp",
+    "IsArrogant",
+    "IsCruel",
+    "IsFinicky",
+    "IsFinickyTemp",
+    "IsGregarious",
+    "IsGregariousTemp",
+    "IsHumble",
+    "IsKind",
+    "IsPatient",
+    "IsPatientTemp",
+    "IsShy",
+    "IsShyTemp"
+  ],
+  "aForbids" : [
+    "IsCharismatic",
+    "IsFollower",
+    "IsImpatient",
+    "IsImpatientTemp",
+    "IsRepulsive",
+    "IsTreacherous",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget"
+  ],
+  "bAND"     : false
+},
+{
+  "strName" : "TIsSOCYesSirUs",
+  "fChance" : 0.5,
+  "fCount"  : 0.0,
+  "aForbids" : [
+    "IsLeader",
+    "IsTreacherous",
+    "IsInCombat"
+  ],
+  "aTriggersForbid" :[
+    "TIsValidSocialTarget",
+  	"TNoDiscomfortsSocial"
+  ],
+  "bAND"     : false
+},
+	{
+		"strName" : "TIsVideotape",
+		"fChance" : 1,
+		"aReqs" : [ "IsVideotape" ]
+	}
+] 

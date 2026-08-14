@@ -1,0 +1,205 @@
+
+[
+  {
+    "strName" : "Projectile",
+    "strRegID" : "E-L4T",
+    "nCurrentWaypoint" : -1,
+    "fTimeEngaged"     : 0.0416283,
+    "fWearManeuver"    : 0.0,
+    "fWearAccrued"     : 0.0,
+    "shipCO"           : {
+      "strID" : "CO-E-L4T",
+      "strCODef" : "ShipCO",
+      "bAlive"   : true,
+      "aConds"   : [
+        "StatInstallProgressMax=1.0x1000",
+        "StatUninstallProgressMax=1.0x1000",
+        "StatRepairProgressMax=1.0x1000",
+        "DEFAULT"
+      ],
+      "strCondID" : "E-L4T",
+      "inventoryX" : 0,
+      "inventoryY" : 0,
+      "fDGasTemp"  : 0.0,
+      "fLastICOUpdate" : 65627498854.0278,
+      "nDestTile"      : 0,
+      "strIdleAnim"    : "Idle",
+      "aMyShips"       : [
+        "O-CGEA",
+        "V-622",
+        "V-KYRQ",
+        "O-6YV",
+        "E-L4T"
+      ],
+      "strFriendlyName" : "CO-E-L4T",
+      "strRegIDLast"    : "E-L4T",
+      "fMSRedamageAmount" : 0.0
+    },
+    "aItems"           : [
+      {
+        "strName" : "ItmWallTSDO01",
+        "fX"      : -1.0,
+        "fY"      : 0.0,
+        "fRotation" : 0.0,
+        "strID"     : "a9b293f4-8f0a-46b4-93bb-87de8a7f9a9f"
+      },
+      {
+        "strName" : "ItmWallAero1x1",
+        "fX"      : -1.0,
+        "fY"      : 1.0,
+        "fRotation" : 0.0,
+        "strID"     : "9607c1c8-b8a4-434e-8223-ed676aef0260"
+      },
+      {
+        "strName" : "ItmFloorAERO11",
+        "fX"      : -1.0,
+        "fY"      : -1.0,
+        "fRotation" : 0.0,
+        "strID"     : "4612b9a0-0a54-4661-bde9-8929cb8b9522"
+      },
+      {
+        "strName" : "ItmWallTSDO01",
+        "fX"      : -1.0,
+        "fY"      : -1.0,
+        "fRotation" : 0.0,
+        "strID"     : "f21d3b17-23f0-41f4-a965-9d319020c87f"
+      },
+      {
+        "strName" : "Compartment",
+        "fX"      : -2.0,
+        "fY"      : 2.0,
+        "fRotation" : 0.0,
+        "strID"     : "e1e7012e-227e-4733-a01e-c313fa51c764"
+      }
+    ],
+    "vShipPos"         : {
+      "x" : -2.0,
+      "y" : 2.0
+    },
+    "objSS"            : {
+      "boPORShip" : "Sol",
+      "vPosx"     : -1.91164952717225E-09,
+      "vPosy"     : -2.78884950125846E-09,
+      "vBOOffsetx" : 0.0,
+      "vBOOffsety" : 0.0,
+      "vVelX"      : -9.18437445033247E-08,
+      "vVelY"      : -1.3398814867006E-07,
+      "fPathLastEpoch" : 0.0,
+      "vAccIn"         : {
+        "x" : 0.0,
+        "y" : 0.0
+      },
+      "vAccRCS"        : {
+        "x" : 0.0,
+        "y" : 0.0
+      },
+      "vAccEx"         : {
+        "x" : 0.0,
+        "y" : 0.0
+      },
+      "aPathRecentT"   : [
+        65627498854.122
+      ],
+      "aPathRecentX"   : [
+        -1.91164952717225E-09
+      ],
+      "aPathRecentY"   : [
+        -2.78884950125846E-09
+      ],
+      "vAccLift"       : {
+        "x" : 0.0,
+        "y" : 0.0
+      },
+      "vAccDrag"       : {
+        "x" : 0.0,
+        "y" : 0.0
+      },
+      "fRot"           : 0.0,
+      "fW"             : 0.0,
+      "fA"             : 0.0,
+      "bBOLocked"      : false,
+      "bOrbitLocked"   : false,
+      "bIsBO"          : false,
+      "bIsRegion"      : false,
+      "bIsNoFees"      : true,
+      "bGrounded"      : false,
+      "size"           : 1500,
+      "bIgnoreGrav"    : false,
+      "fDockOffsetPosX" : 0.0,
+      "fDockOffsetPosY" : 0.0,
+      "fDockOffsetRot"  : 0.0
+    },
+    "aRooms"           : [
+      {
+        "strID" : "e1e7012e-227e-4733-a01e-c313fa51c764",
+        "bVoid" : true,
+        "aTiles" : [
+          0,
+          1,
+          3,
+          2,
+          6,
+          5,
+          9,
+          8,
+          12,
+          11,
+          13,
+          14
+        ],
+        "roomSpec" : "Blank",
+        "roomValue" : 0.0
+      }
+    ],
+    "DMGStatus"        : 0,
+    "fLastVisit"       : 0.0,
+    "fFirstVisit"      : 0.0,
+    "fAIDockingExpire" : 0.0,
+    "fAIPauseTimer"    : 0.0,
+    "bPrefill"         : false,
+    "bBreakInUsed"     : false,
+    "bNoCollisions"    : false,
+    "dLastScanTime"    : 0.0,
+    "bLocalAuthority"  : false,
+    "bAIShip"          : false,
+    "strParallax"      : "null",
+    "make"             : "",
+    "model"            : "",
+    "year"             : "",
+    "origin"           : "$TEMPLATE",
+    "description"      : "",
+    "designation"      : "",
+    "publicName"       : "$TEMPLATE",
+    "dimensions"       : ".96m x 1.60m",
+    "fShallowMass"     : 54.0,
+    "fShallowRCSRemass" : 0.0,
+    "fShallowRCSRemassMax" : 0.0,
+    "fShallowFusionRemain" : 0.0,
+    "fFusionThrustMax"     : 0.0,
+    "fFusionPelletMax"     : 0.0,
+    "fLastQuotedPrice"     : 0.0,
+    "fEpochNextGrav"       : 65627499006.2098,
+    "fBreakInMultiplier"   : 0.0,
+    "nRCSCount"            : 0.0,
+    "fShallowRotorStrength" : 0.0,
+    "nRCSDistroCount"       : 0,
+    "fAeroCoefficient"      : 0.0,
+    "bFusionTorch"          : false,
+    "bXPDRAntenna"          : false,
+    "bShipHidden"           : false,
+    "bIsUnderConstruction"  : false,
+    "nO2PumpCount"          : 0,
+    "commData"              : {
+      "dClearanceRequestTime" : 0.0,
+      "dClearanceIssueTimestamp" : 0.0,
+      "bClearanceSquawkID"       : false
+    },
+    "ShipType"              : 0,
+    "nConstructionProgress" : 100,
+    "nInitConstructionProgress" : 0,
+    "nRows"                     : 5,
+    "nCols"                     : 3,
+    "nGridRotation"             : 0,
+    "bRemove"                   : false
+  }
+]

@@ -1,0 +1,48 @@
+[
+    {
+        "strName" : "MarkAsScrap",
+        "strTitle" : "Mark as Scrap",
+        "strDesc" : "[us] [marks] [them] as scrap.",
+        "strActionGroup" : "Use",
+        "strTargetPoint" : "use",
+        "fTargetPointRange" : 1,
+        "strDuty"           : "Construct",
+        "strUseCase"        : "Normal",
+        "strAnim"           : "Tablet",
+        "strIdleAnim"       : "Idle",
+        "strBubble"         : "BblReachDown",
+        "strMapIcon"        : "IcoScrap",
+        "aInverse"          : [
+        ],
+        "fDuration"         : 0.0001,
+        "strThemType"       : "Other",
+        "nLogging"         : 1,
+        "bIgnoreFeelings"     : true,
+        "bHumanOnly"          : true,
+        "LootCTsThem" : "CTMarkAsScrap",
+        "CTTestThem"         : "TIsNotScrap"
+    },
+    {
+        "strName" : "MarkAsNotScrap",
+        "strTitle" : "Unmark as Scrap",
+        "strDesc" : "[us] [unmarks] [them] as scrap.",
+        "strActionGroup" : "Use",
+        "strTargetPoint" : "use",
+        "fTargetPointRange" : 1,
+        "strDuty"           : "Construct",
+        "strUseCase"        : "Normal",
+        "strAnim"           : "Tablet",
+        "strIdleAnim"       : "Idle",
+        "strBubble"         : "BblReachDown",
+        "strMapIcon"        : "IcoScrap",
+        "aInverse"          : [
+        ],
+        "fDuration"         : 0.0001,
+        "strThemType"       : "Other",
+        "nLogging"         : 1,
+        "bIgnoreFeelings"     : true,
+        "bHumanOnly"          : true,
+        "LootCTsThem" : "CTMarkAsNotScrap",
+        "CTTestThem"         : "TIsScrap"
+    }
+]

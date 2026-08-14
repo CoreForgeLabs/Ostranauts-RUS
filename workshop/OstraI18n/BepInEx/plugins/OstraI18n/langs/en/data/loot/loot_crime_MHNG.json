@@ -1,0 +1,123 @@
+[
+  {
+    "strName" : "CONDCrimeMHNGLEOArrestDoThem",
+    "aCOs"    : [
+      "StatCrimeMHNGArrestWarning=1.0x1-2"
+    ],
+    "aLoots"  : [
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "CONDCrimeMHNGLEOArrestDoAllowThem",
+    "aCOs"    : [
+      "-StatAltruism=1.0x12",
+      "-StatAutonomy=1.0x6",
+      "-StatFamily=1.0x3",
+      "-StatSelfRespect=1.0x6"
+    ],
+    "aLoots"  : [
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "CONDCrimeMHNGLEOArrestDoAllowUs",
+    "aCOs"    : [
+      "IsSubdued=1.0x1",
+      "StatEsteem=1.0x6",
+      "-StatFamily=1.0x6",
+      "-StatMeaning=1.0x6",
+      "-StatSecurity=1.0x12"
+    ],
+    "aLoots"  : [
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "CONDENCHeatMHNGFineEnd",
+    "aCOs"    : [
+      "-CrimeMHNGArrest=1.0x1",
+      "-CrimeMHNGStolenShip=1.0x1",
+      "-CrimeMHNGNoUndock=1.0x1",
+      "-CrimeMHNGTrespass=1.0x1",
+      "-CrimeMHNGThreat=1.0x1",
+      "-StatCrimeMHNGArrestWarning=1.0x1",
+      "IsReportingCrimeImmune=1.0x1",
+      "-IsSubdued=1.0x1",
+      "-IsInCombat=1.0x1"
+    ],
+    "aLoots"  : [
+    ],
+    "strType" : "condition"
+  },
+  {
+    "strName" : "CONDENCHeatMHNGPrisonEnd",
+    "aCOs"    : [
+      "StatAge=1.0x1-3",
+      "-CrimeMHNGArrest=1.0x1",
+      "-CrimeMHNGNoUndock=1.0x1",
+      "-CrimeMHNGStolenShip=1.0x1",
+      "-CrimeMHNGTrespass=1.0x1",
+      "-CrimeMHNGThreat=1.0x1",
+      "-StatCrimeMHNGArrestWarning=1.0x1",
+      "IsReportingCrimeImmune=1.0x1",
+      "-IsSubdued=1.0x1",
+      "-IsInCombat=1.0x1",
+      "-IsTeleportPrison=1.0x1",
+      "CareerPrisonerPast=1.0x1",
+      "TraitChronicScarCuffs=0.7x1",
+      "IsCraven=0.2x1|IsBrave=0.2x1|IsSuspicious=0.2x1|IsPushover=0.1x1|IsTough=0.1x1",
+      "IsPatient=0.2x1|IsImpatient=0.2x1",
+      "StatHygiene=1.0x80"
+    ],
+    "aLoots"  : [
+      "CONDEncRandomInjuryPastFight=1.0x1",
+      "CONDEncRandomInjuryPastFight=0.3x1",
+      "CONDEncRandomInjuryPastFight=0.3x1",
+      "CONDAgingChanceRandomChronicCondition=0.3x1"
+    ],
+    "strType" : "condition"
+  },
+  { "strName" : "CrimeMHNGArrest", "aCOs" : [ "CrimeMHNGArrest=1.0x1" ], "aLoots" : [ ], "strType" : "condition"  },
+  { "strName" : "CrimeMHNGArrestNoUndock", "aCOs" : [ "CrimeMHNGNoUndock=1.0x1" ], "aLoots" : [ "CrimeMHNGArrest=1.0x1" ], "strType" : "condition"  },
+  { "strName" : "CrimeMHNGThreat", "aCOs" : [ "CrimeMHNGThreat=1.0x1" ], "aLoots" : [ ], "strType" : "condition"  },
+  {
+    "strName" : "PSPIAAddNPCPoliceMHNG",
+    "aCOs"    : [
+      "PSPAIAICrimeMHNGLEOArrestAdd=1.0x1",
+      "PSPAIAICrimeMHNGLEOThreatAdd=1.0x1",
+      "PSPAIAICrimeMHNGLEOArrestStolenShipAdd=1.0x1"
+    ],
+    "aLoots"  : [
+      "PSPIAAddNPCBasic=1.0x1"
+    ],
+    "strType" : "interaction"
+  },
+  {
+    "strName" : "ItmMHNGLEOStartLoot",
+    "aCOs"    : [
+    ],
+    "aLoots"  : [
+      "ItmCrewSlots=1.0x1",
+      "ItmMHNGLEOStartLootItems=1.0x1"
+    ],
+    "strType" : "item"
+  },
+  {
+    "strName" : "ItmMHNGLEOStartLootItems",
+    "aCOs"    : [
+      "OutfitHelmet04=1.0x1"
+    ],
+    "aLoots"  : [
+      "OutfitEVA03Full=1.0x1",
+      "ItmWristPDA01LockedUsed=1.0x1",
+      "ItmWeaponPistolEnergy01New=1.0x1",
+      "ItmBackpack02=1.0x1",
+      "ItmWeaponNightstick01=1.0x1",
+      "ItmToolWorkLamp01New=0.5x1",
+      "ItmRandomTrenchersOriginal=0.75x1-2",
+      "ItmDrinkPouchNew=1x1"
+    ],
+    "strType" : "item"
+  }
+]

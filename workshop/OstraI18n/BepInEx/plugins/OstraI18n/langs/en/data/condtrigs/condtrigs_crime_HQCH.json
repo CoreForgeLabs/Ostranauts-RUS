@@ -1,0 +1,10 @@
+[
+  { "strName" : "TIsCrimeHQCHArrest", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ "CrimeHQCHArrest", "CrimeHQCHThreat" ], "aForbids" : [ "IsLEOImmune", "IsDead", "Unconscious" ], "aTriggers" : [ ], "bAND" : false },
+  { "strName" : "TIsCrimeHQCHArrestStolenShip", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ "CrimeHQCHStolenShip"], "aForbids" : [ "IsLEOImmune", "IsDead", "Unconscious" ], "aTriggers" : [ ], "bAND" : false },
+  { "strName" : "TIsCrimeHQCHArrestEnd", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ ], "aForbids" : [ "CrimeHQCHArrest" ], "aTriggers" : [ ], "bAND" : true },
+  { "strName" : "TIsCrimeHQCHThreat", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ "CrimeHQCHThreat" ], "aForbids" : [ "IsLEOImmune", "IsDead", "Unconscious", "IsSubdued" ], "aTriggers" : [ ], "bAND" : true },
+  { "strName" : "TIsCrimeHQCHThreatEnd", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ ], "aForbids" : [ "CrimeHQCHThreat" ], "aTriggers" : [ ], "bAND" : true },
+  { "strName" : "TIsSubduedCriminalHQCH", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ ], "aForbids" : [ "IsLEOImmune"  ], "aTriggers" : [ "TIsSubduedTarget", "TIsWantedHQCH" ], "bAND" : true },
+  { "strName" : "TIsWantedHQCH", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : ["CrimeHQCHThreat", "CrimeHQCHArrest", "CrimeHQCHNoUndock", "CrimeHQCHStolenShip"], "aForbids" : [], "aTriggers" : [ ], "bAND" : false },
+  { "strName" : "TUpCrimeHQCHTrespassNext", "strCondName" : "CrimeHQCHArrest", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ "IsPlayer", "IsPlayerCrew"], "aForbids" : [ ], "aTriggers" : [ ], "bAND" : false }
+]

@@ -1,0 +1,71 @@
+[
+    {
+		"strName" : "TEMP3ActMIDStart",
+		"strTemplateBeat" : "TEMP3ActBEGStart",
+		"strFind" : "TEMP3ActBEG",
+		"strReplace" : "TEMP3ActMID",
+        "aOverrideBeatValues" : [
+			"strIATrigger|PLOTTEMP3ActMIDStartTrigger,[protag],[contact],[target]"
+		],
+        "aOverrideTriggerIAValues" : [
+			"strDesc|[them] messages [us], asking for a TEMP3ActMID of [3rd]."
+		]
+	},
+    {
+		"strName" : "TEMP3ActMIDTarget",
+		"strTemplateBeat" : "TEMP3ActBEGTarget",
+		"strFind" : "TEMP3ActBEG",
+		"strReplace" : "TEMP3ActMID",
+        "aOverrideBeatValues" : [
+		],
+        "aOverrideTriggerIAValues" : [
+			"strDesc|[us] should tell [them] that [3rd] was TEMP3ActMIDed."
+		]
+	},
+    {
+		"strName" : "TEMP3ActMIDTurnIn",
+		"strTemplateBeat" : "TEMP3ActBEGTurnIn",
+		"strFind" : "TEMP3ActBEG",
+		"strReplace" : "TEMP3ActMID",
+        "aOverrideBeatValues" : [
+		],
+        "aOverrideTriggerIAValues" : [
+			"strDesc|[us] triggers TEMP3ActMID plot beat 2, with target [3rd] and contact [them]."
+		]
+	},
+
+    {
+		"strName" : "TEMP3ActENDStart",
+		"strTemplateBeat" : "TEMP3ActBEGStart",
+		"strFind" : "TEMP3ActBEG",
+		"strReplace" : "TEMP3ActEND",
+        "aOverrideBeatValues" : [
+			"strIATrigger|PLOTTEMP3ActENDStartTrigger,[protag],[contact],[target]"
+		],
+        "aOverrideTriggerIAValues" : [
+			"strDesc|[them] messages [us], asking for a TEMP3ActEND of [3rd]."
+		]
+	},
+    {
+		"strName" : "TEMP3ActENDTarget",
+		"strTemplateBeat" : "TEMP3ActBEGTarget",
+		"strFind" : "TEMP3ActBEG",
+		"strReplace" : "TEMP3ActEND",
+        "aOverrideBeatValues" : [
+		],
+        "aOverrideTriggerIAValues" : [
+			"strDesc|[us] should tell [them] that [3rd] was TEMP3ActENDed."
+		]
+	},
+    {
+		"strName" : "TEMP3ActENDTurnIn",
+		"strTemplateBeat" : "TEMP3ActBEGTurnIn",
+		"strFind" : "TEMP3ActBEG",
+		"strReplace" : "TEMP3ActEND",
+        "aOverrideBeatValues" : [
+		],
+        "aOverrideTriggerIAValues" : [
+			"strDesc|[us] triggers TEMP3ActEND plot beat 2, with target [3rd] and contact [them]."
+		]
+	}
+]

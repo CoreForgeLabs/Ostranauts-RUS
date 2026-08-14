@@ -1,0 +1,628 @@
+[
+
+  {
+    "strName" : "ENCHeatGalConBustedStart",
+    "strTitle" : "Busted",
+    "strDesc" : "They haul you before a Galilean Confederacy tribunal for judgement, leaving your ship and gear behind.\n\nAt the hearing, you can beg for just a fine- $15,000 payable in full or installments- or it's off to Port Mojave Brig for a year or three of hard labor.",
+    "strColor"      : "Dialogue",
+    "aInverse"          : [
+      "ENCHeatGalConFineEnd",
+      "ENCHeatGalConFineDebtEnd",
+      "ENCHeatGalConPrisonStart"
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Self",
+    "strRaiseUI"        : "SocialCombat",
+    "strSubUI"        : "Landscape01",
+    "strImage"        : "encounters/ENCImprisoned",
+    "nLogging"         : 0,
+    "bPause"            : true,
+    "bHumanOnly"     : true,
+    "bIgnoreFeelings"	: true,
+    "LootCondsUs"       : "CONDLEOImmune",
+    "CTTestUs"           : "TIsSubduedCriminalGalCon"
+  },
+  {
+    "strName" : "ENCHeatGalConFineEnd",
+    "strTitle" : "Plead for a fine (Lump Sum)",
+    "strDesc" : "It's almost like they want you to break the rules so they can extract more fines from you.\n\nYou sign reams of paperwork in tight cuffs.\n\nIt's a prison sentence of another sort. Another weight hanging around your neck.\n\nNew $15,000 fine added.",
+    "strColor"      : "Dialogue",
+    "aInverse"          : [
+      "ENCHeatGalConFineFinish"
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Self",
+    "strRaiseUI"        : "SocialCombat",
+    "strSubUI"        : "Landscape01",
+    "strImage"        : "encounters/EncFirstUndockFees",
+    "nLogging"         : 0,
+    "bPause"            : true,
+    "bHumanOnly"     : true,
+    "bIgnoreFeelings"	: true,
+    "strLedgerDef" : "ENCHeatGalConFinePublicDisorder",
+    "aSocialNew" : [
+    ]
+  },
+  {
+    "strName" : "ENCHeatGalConFineDebtEnd",
+    "strTitle" : "Plead for a fine (Paid in installments)",
+    "strDesc" : "It's almost like they want you to break the rules so they can lock you deeper in interest payments.\n\nYou sign reams of paperwork in tight cuffs.\n\nIt's a prison sentence of another sort. Another weight hanging around your neck.\n\nNew $15,000 debt added, with payment due each shift.",
+    "strColor"      : "Dialogue",
+    "aInverse"          : [
+      "ENCHeatGalConFineFinish"
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Self",
+    "strRaiseUI"        : "SocialCombat",
+    "strSubUI"        : "Landscape01",
+    "strImage"        : "encounters/EncFirstUndockFees",
+    "nLogging"         : 0,
+    "bPause"            : true,
+    "bHumanOnly"     : true,
+    "bIgnoreFeelings"	: true,
+    "strLedgerDef" : "ENCHeatGalConFinePublicDisorderDebt",
+    "aSocialNew" : [
+    ]
+  },
+  {
+    "strName" : "ENCHeatGalConFineFinish",
+    "strTitle" : "Continue",
+    "strDesc" : "After processing, you are unceremoniously dumped outside the Galilean Confederacy Security Office. If you weren't docked at station when you were arrested, you may need to use the PASS ferry service (on your PDA) to reach your ship again. Hopefully it's still there.\n\nTime to get back on your feet.",
+    "strColor"      : "Dialogue",
+    "aInverse"          : [
+      "ENCFinish"
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Self",
+    "nLogging"         : 1,
+    "bHumanOnly"     : true,
+    "bIgnoreFeelings"	: true,
+    "bCloser"     : true,
+    "strTeleportRegID" : "BCER_ROOF",
+    "ShipTestUs" : "AnyShip_BCER",
+    "LootCondsUs"     : "CONDENCHeatGalConFineEnd",
+    "LootCTsThem"     : null,
+    "CTTestUs"           : "TIsHuman",
+    "CTTestThem"         : null
+  },
+  {
+    "strName" : "ENCHeatGalConPrisonStart",
+    "strTitle" : "Off to Port Mojave Brig",
+    "strDesc" : "You are hauled off to Port Mojave Brig.",
+    "strColor"      : "Dialogue",
+    "aInverse"          : [
+      "ENCHeatGalConPrisonEnd",
+      "ENCHeatVenusPrisonEnd"
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Self",
+    "strRaiseUI"        : "SocialCombat",
+    "strSubUI"        : "Landscape01",
+    "strImage"        : "encounters/ENCImprisoned",
+    "nLogging"         : 0,
+    "bPause"            : true,
+    "bHumanOnly"     : true,
+    "bIgnoreFeelings"	: true,
+    "LootCondsUs" : "CONDENCHeatTeleportPrison"
+  },
+  {
+    "strName" : "ENCHeatGalConPrisonEnd",
+    "strTitle" : "Serve Hard Time",
+    "strDesc" : "You spend months laboring without wage among outcasts both meek and dangerous. You share a dorm with nearly a hundred other souls, all of you stacked like kindling on triple high bunks.\n\nBut even a hell like this is not without opportunity. You hear things. You meet people. You get in a few scrapes, you find a few friends. By the end of your term you've lived a dozen lives and you have all the scars to prove it.\n\nPlus, free room and board. In a certain light, it might all be worth it ...\n\n",
+    "strColor"      : "Dialogue",
+    "aInverse"          : [
+      "ENCHeatGalConPrisonFinish"
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Self",
+    "strRaiseUI"        : "SocialCombat",
+    "strSubUI"        : "Landscape01",
+    "strImage"        : "encounters/ENCImprisoned",
+    "nLogging"         : 0,
+    "bPause"            : true,
+    "bHumanOnly"     : true,
+    "bIgnoreFeelings"	: true,
+    "bHardCode"   : true,
+    "strTeleportRegID" : "BCER_ROOF",
+    "ShipTestUs" : "AnyShip_BCER",
+    "aSocialNew" : [      
+      "CGEncHomeworldLEOEnemy",
+      "CGEncHomeworldPrisonerFriend",
+      "CGEncHomeworldCriminalEnemy"
+    ]
+  },
+  {
+    "strName" : "ENCHeatGalConPrisonFinish",
+    "strTitle" : "Continue",
+    "strDesc" : "After processing, you are unceremoniously dumped outside the Galilean Confederacy Security Office. If you weren't docked at station when you were arrested, you may need to use the PASS ferry service (on your PDA) to reach your ship again. Hopefully it's still there.\n\nTime to get back on your feet.",
+    "strColor"      : "Dialogue",
+    "aInverse"          : [
+      "ENCFinish"
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Self",
+    "strRaiseUI"        : "SocialCombat",
+    "strSubUI"        : "Landscape01",
+    "strImage"        : "encounters/ENCImprisoned",
+    "nLogging"         : 0,
+    "bPause"            : true,
+    "bHumanOnly"     : true,
+    "bIgnoreFeelings"	: true,
+    "bCloser"     : true,
+    "LootCondsUs"     : "CONDENCHeatGalConPrisonEnd",
+    "LootCTsThem"     : null,
+    "CTTestUs"           : "TIsHuman",
+    "CTTestThem"         : null
+  },
+
+  {
+    "strName" : "PLGAICrimeGalConLEOArrest",
+    "strTitle" : "GalCon LEO Begins Arresting Criminal",
+    "strDesc" : "\"Suspect spotted,\" [us] [says], looking at [them].",
+    "strActionGroup" : "Talk",
+    "nLogging"  : 2,
+    "strTargetPoint" : null,
+    "strAnim"         : "Idle",
+    "strBubble"         : "BblIntimidate",
+    "aInverse"          : [
+      "PLGAICrimeGalConLEOInterruptSelf"
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Other",
+    "strPledgeAdd"       : "AICrimeArrestGalConLEODo",
+    "bHumanOnly"      : false,
+    "bIgnoreFeelings" : true,
+    "ShipTestUs" : "AnyShip_BCER",
+    "CTTestUs"           : "TIsAICrimeReadyArrest",
+    "CTTestThem"        : "TIsCrimeGalConArrest",
+    "LootCondsUs" : "CONDLEOArresting"
+  },
+  {
+    "strName" : "PLGAICrimeGalConLEOInterruptSelf",
+    "strTitle" : "GalCon LEO Is Interrupted by Crime",
+    "strDesc" : "Interrupt them.",
+    "strActionGroup" : "Talk",
+    "nLogging"  : 0,
+    "strTargetPoint" : null,
+    "strAnim"         : "Idle",
+    "strBubble"         : "BblIntimidate",
+    "aInverse"          : [
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Other",
+    "bHumanOnly"      : false,
+    "bInterrupt" : true
+  },
+  {
+    "strName" : "PLGAICrimeGalConLEOArrestDo",
+    "strTitle" : "Arresting Criminal",
+    "strDesc" : "\"Stop right there! You're under arrest!\" [us] [shouts] at [them].",
+    "strActionGroup" : "Talk",
+    "nLogging"  : 2,
+    "strTargetPoint" : "use",
+    "fTargetPointRange" : 2,
+    "strAnim"         : "Idle",
+    "strBubble"         : "BblIntimidate",
+    "aInverse"          : [
+      "PLGAICrimeGalConLEOArrestDoDeny",
+      "PLGAICrimeGalConLEOArrestDoAllow"
+    ],
+    "fDuration"         : 0.000054,
+    "strThemType"       : "Other",
+    "bHumanOnly"      : false,
+    "CTTestUs"           : "TIsAICrimeReady",
+    "CTTestThem"        : "TIsCrimeGalConArrest",
+    "LootCondsThem"     : "CONDCrimeGalConLEOArrestDoThem"
+  },
+  {
+    "strName" : "PLGAICrimeGalConLEOArrestDoAllow",
+    "strTitle" : "Surrender to Officer",
+    "strDesc" : "[us] [goes] along peacefully with [them].",
+    "strActionGroup" : "Talk",
+    "nLogging"  : 2,
+    "strTargetPoint" : "use",
+    "fTargetPointRange" : 2,
+    "strAnim"         : "Idle",
+    "strBubble"         : "BblAffirmative",
+    "aInverse"          : [
+    ],
+    "fDuration"         : 0.000054,
+    "strThemType"       : "Other",
+    "bHumanOnly"      : true,
+    "bIgnoreFeelings" : true,
+    "CTTestUs"           : "TIsCrimeGalConArrest",
+    "CTTestThem"        : "TIsAICrimeReady",
+    "LootCondsUs"     : "CONDCrimeGalConLEOArrestDoAllowUs",
+    "LootCondsThem"     : "CONDCrimeGalConLEOArrestDoAllowThem"
+  },
+  {
+    "strName" : "PLGAICrimeGalConLEOArrestDoDeny",
+    "strTitle" : "Plead Innocence",
+    "strDesc" : "[us] [tells] [them] [them-subj] [has] the wrong person.",
+    "strActionGroup" : "Talk",
+    "nLogging"  : 2,
+    "strTargetPoint" : "use",
+    "fTargetPointRange" : 2,
+    "strAnim"         : "Idle",
+    "strBubble"         : "BblNegative",
+    "aInverse"          : [
+    ],
+    "fDuration"         : 0.000054,
+    "strThemType"       : "Other",
+    "bHumanOnly"      : true,
+    "bIgnoreFeelings" : true,
+    "CTTestUs"           : "TIsCrimeGalConArrestEnd",
+    "CTTestThem"        : "TIsAICrimeReady",
+    "LootCondsUs"     : null,
+    "LootCondsThem"     : null
+  },
+  {
+    "strName" : "PLGAICrimeGalConLEOArrestEnd",
+    "strTitle" : "GalCon LEO Done Arresting Criminal",
+    "strDesc" : "\"Another win for the law,\" [us] [says].",
+    "strActionGroup" : "Talk",
+    "nLogging"  : 2,
+    "strTargetPoint" : "use",
+    "fTargetPointRange" : 2,
+    "strAnim"         : "Idle",
+    "strBubble"         : "BblAffirmative",
+    "aInverse"          : [
+      "PLGAICrimeGalConLEOArrestEndPlayer",
+      "PLGAICrimeLEOArrestEndCancel",
+      "PLGAICrimeGalConLEOArrestEndAI"
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Other",
+    "bHumanOnly"      : false,
+    "bIgnoreFeelings" : true,
+    "CTTestUs"           : "TIsAICrimeReadyArrestEnd",
+    "CTTestThem"        : "TIsCombatNeutralized",
+    "LootCondsThem"     : null
+  },
+  {
+    "strName" : "PLGAICrimeGalConLEOArrestEndAI",
+    "strTitle" : "Getting Arrested",
+    "strDesc" : "Shim interaction to test us = AI character before continuing.",
+    "strColor"      : "Dialogue",
+    "aInverse"          : [
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Other",
+    "nLogging"         : 0,
+    "bAIOnly"     : true,
+    "bIgnoreFeelings"      : true,
+    "strTeleportRegID" : "OKLG_UNK",
+    "LootCondsUs"     : "CONDENCHeatGalConFineEnd",
+    "LootCondsThem"     : "CONDLEONotArresting",
+    "aSocialNew" : [
+    ]
+  },
+  {
+    "strName" : "PLGAICrimeGalConLEOArrestEndPlayer",
+    "strTitle" : "Criminal Arrested (Player)",
+    "strDesc" : "LEO finishes subduing Player threat.",
+    "strColor"      : "Dialogue",
+    "fTargetPointRange" : 2,
+    "aInverse"          : [
+      "ENCHeatGalConBustedStart,[us],[us]"
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Other",
+    "nLogging"         : 0,
+    "bHumanOnly"      : true,
+    "bIgnoreFeelings"      : true,
+    "CTTestUs"      : "TIsSubduedCriminalGalCon",
+    "LootCondsThem"     : "CONDLEONotArresting",
+    "aSocialNew" : [
+    ]
+  },
+  {
+    "strName" : "PLGAICrimeGalConLEOThreat",
+    "strTitle" : "GalCon LEO Attacking Criminal",
+    "strDesc" : "\"Hey, it's that criminal! Get 'em!\" [us-shouts] [us], pointing towards [them].",
+    "strActionGroup" : "Talk",
+    "nLogging"  : 2,
+    "strTargetPoint" : null,
+    "strAnim"         : "Idle",
+    "strBubble"         : "BblIntimidate",
+    "aInverse"          : [
+      "PLGAICrimeGalConLEOInterruptSelf"
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Other",
+    "strPledgeAdd"       : "AICombat",
+    "bHumanOnly"      : false,
+    "CTTestUs"           : "TIsAICrimeReadyAttack",
+    "CTTestThem"        : "TIsCrimeGalConThreat"
+  },
+  {
+    "strName" : "PLGAICrimeGalConLEOArrestStolenShip",
+    "strTitle" : "GalCon LEO Begins Arresting Criminal for Stealing a Ship",
+    "strDesc" : "\"You've been reported as flying a stolen ship,\" [us] [says], looking at [them].\"We're bringing you in.\"",
+    "strActionGroup" : "Talk",
+    "nLogging"  : 2,
+    "strTargetPoint" : null,
+    "strAnim"         : "Idle",
+    "strBubble"         : "BblIntimidate",
+    "aInverse"          : [
+      "PLGAICrimeGalConLEOInterruptSelf"
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Other",
+    "strPledgeAdd"       : "AICrimeArrestGalConLEODo",
+    "bHumanOnly"      : false,
+    "bIgnoreFeelings" : true,
+    "CTTestUs"           : "TIsAICrimeReadyArrestStolenShip",
+    "CTTestThem"        : "TIsCrimeGalConArrestStolenShip",
+    "LootCondsUs" : "CONDLEOArresting",
+    "LootCondsThem" : "CrimeGalConArrest"
+  },
+
+  {
+    "strName" : "PLGAIReportCrimeGalConArrest",
+    "strTitle" : "Report Crime",
+    "strDesc" : "[us] [speaks] into [us-pos] PDA, looking at [them].",
+    "strActionGroup" : "Talk",
+    "nLogging"  : 2,
+    "strTargetPoint" : null,
+    "strAnim"         : "Tablet",
+    "strBubble"         : "BblTalk",
+    "aInverse"          : [
+      "PLGAIReportCrimeGalConArrestAllow,[us],[them]",
+      "PLGAIReportCrimeDeny,[us],[them]"
+    ],
+    "fDuration"         : 0.00278,
+    "strThemType"       : "Other",
+    "bHumanOnly"      : false,
+    "bIgnoreFeelings" : true,
+    "CTTestUs"           : "TIsAIReportCrimeArrestReady",
+    "CTTestThem"        : null,
+    "PSpecTestThem"     : "RELReportCrime",
+    "LootCondsUs" : "CONDReportCrimeArrest",
+    "LootCondsThem" : null
+  },
+  {
+    "strName" : "PLGAIReportCrimeGalConArrestAllow",
+    "strTitle" : "Report Crime: Succeed",
+    "strDesc" : "[us] successfully [reports] a crime on [them].",
+    "strActionGroup" : "Talk",
+    "nLogging"  : 0,
+    "strTargetPoint" : null,
+    "strAnim"         : "Tablet",
+    "strBubble"         : "BblTalk",
+    "aInverse"          : [
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Other",
+    "bHumanOnly"      : false,
+    "CTTestUs"           : null,
+    "CTTestThem"        : "TIsAIReportCrimeValidTarget",
+    "LootCondsUs" : null,
+    "LootCondsThem" : "CrimeGalConArrest"
+  },
+  {
+    "strName" : "PLGAIReportCrimeGalConArrestDone",
+    "strTitle" : "Done Reporting Crime",
+    "strDesc" : "[us] [is] done reporting crime.",
+    "strActionGroup" : "Use",
+    "nLogging"  : 0,
+    "strTargetPoint" : null,
+    "strAnim"         : "Idle",
+    "strBubble"         : null,
+    "aInverse"          : [
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Self",
+    "bHumanOnly"      : false,
+    "CTTestUs"           : "TIsAIReportCrimeArrestReadyEnd",
+    "CTTestThem"        : null,
+    "LootCondsUs"         : "CONDReportCrimeArrestEnd"
+  },
+  {
+    "strName" : "PLGAIReportCrimeGalConTrespass",
+    "strTitle" : "Report Crime",
+    "strDesc" : "[us] [says] \"Get out of here,\" then speaks into [us-pos] PDA, looking at [them].",
+    "strActionGroup" : "Talk",
+    "nLogging"  : 2,
+    "strTargetPoint" : null,
+    "strAnim"         : "Tablet",
+    "strBubble"         : "BblTalk",
+    "aInverse"          : [
+      "PLGAIReportCrimeGalConTrespassAllow,[us],[them]",
+      "PLGAIReportCrimeGalConTrespassDeny,[us],[them]"
+    ],
+    "fDuration"         : 0.00278,
+    "strThemType"       : "Other",
+    "bHumanOnly"      : false,
+    "bIgnoreFeelings" : true,
+    "CTTestUs"           : "TIsAIReportCrimeArrestReady",
+    "CTTestThem"        : null,
+    "PSpecTestThem"     : "RELReportCrimeTrespass",
+    "LootCondsUs" : "CONDReportCrimeArrest",
+    "LootCondsThem" : null
+  },
+  {
+    "strName" : "PLGAIReportCrimeGalConTrespassAllow",
+    "strTitle" : "Report Crime: Succeed",
+    "strDesc" : "[us] successfully [reports] a crime on [them].",
+    "strActionGroup" : "Talk",
+    "nLogging"  : 0,
+    "strTargetPoint" : null,
+    "strAnim"         : "Tablet",
+    "strBubble"         : "BblTalk",
+    "aInverse"          : [
+      "PLGAIReportCrimeGalConTrespassDone,[us],[them]"
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Other",
+    "bHumanOnly"      : false,
+    "CTTestUs"           : null,
+    "CTTestThem"        : "TIsAIReportCrimeValidTargetTrespass",
+    "LootCondsUs" : null,
+    "LootCondsThem" : "CrimeGalConArrest"
+  },
+  {
+    "strName" : "PLGAIReportCrimeGalConTrespassDeny",
+    "strTitle" : "Report Crime: Fail",
+    "strDesc" : "[us] [fails] to report a crime on [them].",
+    "strActionGroup" : "Talk",
+    "nLogging"  : 0,
+    "strTargetPoint" : null,
+    "strAnim"         : "Tablet",
+    "strBubble"         : "BblTalk",
+    "aInverse"          : [
+      "PLGAIReportCrimeGalConTrespassDone,[us],[them]"
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Other",
+    "bHumanOnly"      : false,
+    "CTTestUs"           : null,
+    "CTTestThem"        : null,
+    "LootCondsUs" : null,
+    "LootCondsThem" : null
+  },
+  {
+    "strName" : "PLGAIReportCrimeGalConTrespassDone",
+    "strTitle" : "Done Reporting Crime",
+    "strDesc" : "[us] [is] done reporting crime.",
+    "strActionGroup" : "Use",
+    "nLogging"  : 0,
+    "strTargetPoint" : null,
+    "strAnim"         : "Idle",
+    "strBubble"         : null,
+    "aInverse"          : [
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Self",
+    "bHumanOnly"      : false,
+    "CTTestUs"           : "TIsAIReportCrimeArrestReadyEnd",
+    "CTTestThem"        : null,
+    "LootCondsUs"         : "CONDReportCrimeArrestEnd"
+  },
+  {
+    "strName" : "PLGAIReportCrimeGalConTrespassNPCDone",
+    "strTitle" : "Cancel Reporting Crime",
+    "strDesc" : "[us] [is] no longer going to report crime.",
+    "strActionGroup" : "Use",
+    "nLogging"  : 0,
+    "strTargetPoint" : null,
+    "strAnim"         : "Idle",
+    "strBubble"         : null,
+    "aInverse"          : [
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Self",
+    "bHumanOnly"      : false,
+    "CTTestUs"           : null,
+    "CTTestThem"        : "TIsNotPlayerOrPlayerCrew",
+    "LootCondsUs"         : null
+  },
+  {
+    "strName" : "PLGAIReportCrimeGalConThreat",
+    "strTitle" : "Report Crime",
+    "strDesc" : "[us] [speaks] into [us-pos] PDA, looking at [them].",
+    "strActionGroup" : "Talk",
+    "nLogging"  : 0,
+    "strTargetPoint" : null,
+    "strAnim"         : "Tablet",
+    "strBubble"         : "BblTalk",
+    "aInverse"          : [
+      "PLGAIReportCrimeGalConThreatAllow,[us],[them]",
+      "PLGAIReportCrimeDeny,[us],[them]"
+    ],
+    "fDuration"         : 0.00278,
+    "strThemType"       : "Other",
+    "bHumanOnly"      : false,
+    "bIgnoreFeelings" : true,
+    "CTTestUs"           : "TIsAIReportCrimeThreatReady",
+    "CTTestThem"        : null,
+    "PSpecTestThem"     : "RELReportCrime",
+    "LootCondsUs" : "CONDReportCrimeThreat",
+    "LootCondsThem" : null
+  },
+  {
+    "strName" : "PLGAIReportCrimeGalConThreatAllow",
+    "strTitle" : "Report Crime: Succeed",
+    "strDesc" : "[us] successfully [reports] a crime on [them].",
+    "strActionGroup" : "Talk",
+    "nLogging"  : 0,
+    "strTargetPoint" : null,
+    "strAnim"         : "Tablet",
+    "strBubble"         : "BblTalk",
+    "aInverse"          : [
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Other",
+    "bHumanOnly"      : false,
+    "CTTestUs"           : null,
+    "CTTestThem"        : "TIsAIReportCrimeValidTarget",
+    "LootCondsUs" : null,
+    "LootCondsThem" : "CrimeGalConThreat"
+  },
+  {
+    "strName" : "PLGAIReportCrimeGalConThreatDone",
+    "strTitle" : "Done Reporting Crime",
+    "strDesc" : "[us] [is] done reporting crime.",
+    "strActionGroup" : "Use",
+    "nLogging"  : 0,
+    "strTargetPoint" : null,
+    "strAnim"         : "Idle",
+    "strBubble"         : null,
+    "aInverse"          : [
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Self",
+    "bHumanOnly"      : false,
+    "CTTestUs"           : "TIsAIReportCrimeThreatReadyEnd",
+    "CTTestThem"        : null,
+    "LootCondsUs"         : "CONDReportCrimeThreatEnd"
+  },
+
+  {
+    "strName" : "PSPAIAICrimeGalConLEOArrestAdd",
+    "strTitle" : "Adds GalCon LEO Arrest pledge to us",
+    "strDesc" : "[us] [gains] GalCon LEO Arrest pledge.",
+    "nLogging"  : 0,
+    "strTargetPoint" : null,
+    "aInverse"          : [
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Self",
+    "bHumanOnly"      : false,
+    "CTTestUs"           : null,
+    "CTTestThem"        : null,
+    "strPledgeAdd"      : "AICrimeArrestGalConLEOStart"
+  },
+
+  {
+    "strName" : "PSPAIAICrimeGalConLEOArrestStolenShipAdd",
+    "strTitle" : "Adds GalCon LEO Arrest pledge to us because the player stole a ship.",
+    "strDesc" : "[us] [gains] GalCon LEO Arrest for Stolen Ship pledge.",
+    "nLogging"  : 0,
+    "strTargetPoint" : null,
+    "aInverse"          : [
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Self",
+    "bHumanOnly"      : false,
+    "CTTestUs"           : null,
+    "CTTestThem"        : null,
+    "strPledgeAdd"      : "AICrimeArrestGalConLEOStolenShipStart"
+  },
+
+  {
+    "strName" : "PSPAIAICrimeGalConLEOThreatAdd",
+    "strTitle" : "Adds GalCon LEO Threat pledge to us",
+    "strDesc" : "[us] [gains] GalCon LEO Threat pledge.",
+    "nLogging"  : 0,
+    "strTargetPoint" : null,
+    "aInverse"          : [
+    ],
+    "fDuration"         : 0.0,
+    "strThemType"       : "Self",
+    "bHumanOnly"      : false,
+    "CTTestUs"           : null,
+    "CTTestThem"        : null,
+    "strPledgeAdd"      : "AICrimeAttackGalConLEO"
+  }
+]

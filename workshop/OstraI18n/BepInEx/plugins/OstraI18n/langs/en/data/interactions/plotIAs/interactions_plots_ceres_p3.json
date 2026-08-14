@@ -1,0 +1,1247 @@
+[	
+
+	{
+		"strName" : "Plot_Ceres_Clandestine_Interventions_Titan_Codeword",
+		"strTitle": "Ask Where to find True West",
+		"strDesc" : "[us] surreptitiously [asks] [them] where to find true west.",
+		"strTargetPoint" : "talk",
+		"fTargetPointRange" : 2,
+		"strActionGroup" : "Talk",
+		"nLogging" : 1,
+		"bIgnoreFeelings" :true,
+		"bSocial" : true,
+		"strAnim" : "Talk",
+		"strColor" : "Dialogue",
+		"aInverse" : [ "Plot_Ceres_Clandestine_Interventions_Titan_Codeword_Reply_Success", "Plot_Ceres_Clandestine_Interventions_Titan_Codeword_Reply_Fail" ],
+		"LootCondsUs" : "",
+		"CTTestUs" : "",
+		"CTTestThem" : "CTPlot_Ceres_Asked_Codeword",
+		"strThemType" : "Other",
+		"ShipTestThem" : "AnyShip_BCER",
+		"LootCondsThem" : "CONDPLOT_Ceres_Asked_Codeword"
+	},
+	{
+		"strName" : "Plot_Ceres_Clandestine_Interventions_Titan_Codeword_Reply_Success",
+		"strDesc" : "[us] [tells] [them] to follow the evening redness.",
+		"LootCondsUs" : "CONDPLOT_Ceres_Titan_Agent",
+		"strTargetPoint" : "talk",
+		"fTargetPointRange" : 2,
+		"strColor" : "Dialogue",
+		"strActionGroup" : "Talk",
+		"strThemType" : "Other",
+		"bSocial" : true,
+		"bIgnoreFeelings" : true,
+		"nLogging" : 1,
+		"fForcedChance" : 0.5,
+		"strAnim" : "Talk",
+		"CTTestUs" : "TIsGalConAgent"
+	},
+	{
+		"strName" : "Plot_Ceres_Clandestine_Interventions_Titan_Codeword_Reply_Fail",
+		"strDesc" : "[us] [offers] a confused reaction to the question.",
+		"strTargetPoint" : "talk",
+		"fTargetPointRange" : 2,
+		"fForcedChance" : 0.5,
+		"strAnim" : "Talk",
+		"strColor" : "Dialogue",
+		"strActionGroup" : "Talk",
+		"strThemType" : "Other",
+		"bIgnoreFeelings" : true,
+		"nLogging" : 1,
+		"LootCondsThem" : "CONDPLOT_Ceres_Titan_Codeword_Fail_Player"
+	},
+	{
+		"strName" : "Plot_Ceres_Clandestine_Interventions_Xinhua_Codeword",
+		"strTitle" : "Ask If They Grow Nightshades",
+		"strDesc" : "[us] [asks] [them] if [them-subj] [has] ever grown nightshades.",
+		"strTargetPoint" : "talk",
+		"fTargetPointRange" : 2,
+		"strAnim" : "Talk",
+		"bIgnoreFeelings" : true,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "Plot_Ceres_Clandestine_Interventions_Xinhua_Codeword_Reply_Success", "Plot_Ceres_Clandestine_Interventions_Xinhua_Codeword_Reply_Fail" ],
+		"strActionGroup" : "Talk",
+		"strThemType" : "Other",
+		"bSocial" : true,
+		"nLogging" : 1,
+		"fForcedChance" : 1,
+		"CTTestThem" : "CTPlot_Ceres_Asked_Codeword",
+		"ShipTestThem" : "AnyShip_BCRS",
+		"LootCondsThem" : "CONDPLOT_Ceres_Asked_Codeword"
+	},
+	{
+		"strName" : "Plot_Ceres_Clandestine_Interventions_Xinhua_Codeword_Reply_Fail",
+		"strDesc" : "[us] [seems] confused by the question and [offers] a confused answer.",
+		"strTargetPoint" : "talk",
+		"fTargetPointRange" : 2,
+		"strAnim" : "Talk",
+		"strColor" : "Dialogue",
+		"strActionGroup" : "Talk",
+		"strThemType" : "Other",
+		"bIgnoreFeelings" : true,
+		"nLogging" : 1,
+		"LootCondsThem" : "CONDPLOT_Ceres_Xinhua_Codeword_Fail_Player"
+	},
+	{
+		"strName" : "Plot_Ceres_Clandestine_Interventions_Xinhua_Codeword_Reply_Success",
+		"strDesc" : "[us] [tells] [them] only on borrowed soil.",
+		"strTargetPoint" : "talk",
+		"fTargetPointRange" : 2,
+		"strAnim" : "Talk",
+		"strColor" : "Dialogue",
+		"strActionGroup" : "Talk",
+		"strThemType" : "Other",
+		"bSocial" : true,
+		"bIgnoreFeelings" : true,
+		"nLogging" : 1,
+		"LootCondsUs" : "CONDPLOT_Ceres_Xinhua_Agent",
+		"CTTestUs" : "TIsXinhuaAgent"
+	},
+	{
+		"strName" : "Plot_Ceres_Clandestine_Interventions_Dead_Drop_Cup",
+		"strTitle" : "Check for Dead Drop",
+		"strDesc" : "[us] [looks] beneath a discarded coffee pouch near [them] to find a data card and a small tablet.",
+		"strTooltip" : "Look for instructions hidden at this kiosk.",
+		"strActionGroup" : "Use",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"strThemType" :"Other",
+		"bIgnoreFeelings" : true,
+		"CTTestThem" : "CTPlot_Ceres_Cup_Dead_Drop_Xinhua",
+		"aInverse" : [ "Plot_Ceres_Clandestine_Interventions_Dead_Drop_Xinhua,[us],[us]" ],
+		"strTargetPoint" : "use",
+		"fTargetPointRange" : 2,
+		"CTTestUs" : "CTPlot_Ceres_Xinhua_Loyalty"
+	},
+	{
+		"strName" : "Plot_Ceres_Clandestine_Interventions_Dead_Drop_Xinhua",
+		"strTitle" : "Read Dead Drop Instructions",
+		"strColor" : "Dialogue",
+		"strActionGroup" : "Use",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"strThemType" :"Self",
+		"bPause" : true,
+		"bIgnoreFeelings" : true,
+		"aInverse" : [ 
+			"Plot_Ceres_Clandestine_Interventions_Dead_Drop_Wet_Work_Xinhua", 
+			"Plot_Ceres_Clandestine_Interventions_Dead_Drop_Wet_Work_Xinhua_Return", 
+			"Plot_Ceres_Clandestine_Interventions_Dead_Drop_Black_Hat_Xinhua",
+			"Plot_Ceres_Clandestine_Interventions_Dead_Drop_Black_Hat_Xinhua_Debrief",
+			"ENCFinish" 
+			],
+		"strDesc" : "Stuffed beneath the coffee kiosk you find a discarded drink pouch, just as your contact indicated. Inside there are two folded up napkins. Finding a quiet corner of the station, you unwrap the first. It is a small data card. 
+
+You slot the card and set it to Ears Only. Your PDA flashes through an authentication process so swift you almost miss the output.
+
+\"Good morning, comrade. Health and prosperity to you.\" A smooth synthetic voice speaks to your inner ear. Ring station spacers pass around you none the wiser. 
+
+\"Parameters: target is an unknown Ceresian citizen working on behalf of the Galilean Counter Revolutionary Commission, also known as 'Cyanide Street', in and around Port Mojave, Ceres. In addition to being suspected of sharing valuable Xinhua intel with GalCon loyalists, the target is believed to be a former human trafficker guilty of crimes against humanity during the Galilean unrest.
+
+\"Target can be located via blackhat network infiltration or neutralized via executive action depending on the agent's skills and discretion.\"",
+		"fForcedChance" : 1
+	},
+	{
+		"strName" : "Plot_Ceres_Clandestine_Interventions_Dead_Drop_Wet_Work_Xinhua",
+		"strTitle" : "Wet Work Mission",
+		"strDesc" : "The synthetic voice continues.
+
+\"Retrieve the lethality kit included in this package and hide it on your person. It is one half of an instantly toxic nerve agent. Another cell will identify and apply the first component of the nerve agent. It is your task to identify the target and apply the otherwise non-lethal second.
+
+\"To ensure accurate executive action, target must first be identified using a recently acquired Tinitian code phrase. The target will respond to the Titanian codephrase, 'Where is true west?'\" The voice repeats the phrase twice more. \"Their response will be, 'Follow the evening redness.'
+
+\"Past Titan agent profiles indicate the target will likely have skills in engineering and various forms of trained subterfuge and persuasion. Psychological evaluations suggest GalCon intelligence seeks out strong willed, dishonest, but otherwise gregarious personality types.
+
+\"With the target so identified, crush the included blister between your teeth and breathe. The nerve agent will strike them dead immediately. Exfil rapidly and as you see fit.
+
+\"Upon mission success, leave an after action report at the dead drop.\"",
+		"strColor" : "Dialogue",
+		"CTTestUs" : "CTPlot_Ceres_Dead_Drop_Wetwork_Is_Not_Active_Xinhua",
+		"aInverse" : [ "Plot_Ceres_Clandestine_Interventions_Dead_Drop_Wet_Work_Xinhua_Accept", "Plot_Ceres_Clandestine_Interventions_Dead_Drop_Wet_Work_Xinhua_Deny" ],
+		"strActionGroup" : "Use",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bPause" : true,
+		"bIgnoreFeelings" : true,
+		"fForcedChance" : 1
+	},
+	{
+		"strName" : "Plot_Ceres_Clandestine_Interventions_Dead_Drop_Wet_Work_Xinhua_Accept",
+		"strTitle" : "Wet Work Mission Accept",
+		"strDesc" : "<i>WIP: Writing assumed the target was on Ceres, not Ring Station:</i>
+
+You slot the card and set it to Ears Only. Your PDA flashes through an authentication process so swift you almost miss the output.
+
+\"Good morning, comrade. Health and prosperity to you.\" A smooth synthetic voice speaks to your inner ear. The Ceresians pass around you none the wiser. \"Retrieve also the lethality kit and hide it on your person. It is one half of an instantly toxic nerve agent.\"
+
+\"Parameters: target is an unknown Ceresian citizen working on behalf of the Galilean Counter Revolutionary Commission, also known as 'Cyanide Street', in and around Port Mojave, Ceres. Another cell will identify and apply the first component of the nerve agent. It is your task to identify the target and apply the second.\"
+
+You watch a Public Security Officer in hi-viz clothes upbraid a coverall-clad citizen for spilling liquor on the edge of the tram station. The man begs on his knees for forgiveness. The other Ceresians avert their eyes, pretending not to see. \"The target will respond to the Titanian codephrase, 'It was a bright, cold day in April'.\" The voice repeats the phrase twice more. \"Their response will be, 'and the clocks were striking thirteen.' So identified, crush the blister between your teeth and breathe. The nerve agent will strike them dead immediately. Exfil as you see fit.\"
+
+\"Motivation: The target is a human trafficker guilty of crimes against humanity during the Galilean unrest. Payment: Standard third party wetwork contract.\"
+
+\"Addendum: substrate will reset to factory default in fifteen seconds. You may keep the blank card. Message ends.\" You roll your eyes and disconnect the card.",
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ENCFinish" ],
+		"strActionGroup" : "Use",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bPause" : true,
+		"bIgnoreFeelings" : true,
+		"fForcedChance" : 1,
+		"LootCondsUs" : "CONDPLOT_Ceres_Dead_Drop_Wetwork_Xinhua_Is_Active",
+		"CTTestUs" : "CTPlot_Ceres_Dead_Drop_Wetwork_Is_Not_Active_Xinhua"
+	},
+	{
+		"strName" : "Plot_Ceres_Clandestine_Interventions_Dead_Drop_Wet_Work_Xinhua_Deny",
+		"strTitle" : "Wet Work Mission Deny",
+		"strDesc" : "You deny the Wet Work mission. For now.",
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ENCFinish" ],
+		"strActionGroup" : "Use",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bPause" : true,
+		"bIgnoreFeelings" : true,
+		"fForcedChance" : 1
+	},
+	{
+		"strName" : "Plot_Ceres_Clandestine_Interventions_Poison_Agent_Xinhua",
+		"strTitle" : "Break Lethal Blister",
+		"strDesc" : "[us] surreptitiously [introduces] a neurotoxin into [them-pos] body.",
+		"CTTestThem" : "CTPlot_Ceres_Dead_Drop_Wetwork_Can_Poison_Xinhua",
+		"LootCondsThem" : "CONDPlot_Ceres_Poisoned_To_Death",
+		"LootCondsUs" : "CONDPlot_Ceres_Wetwork_Success_Xinhua",
+		"CTTestUs" : "CTPlot_Ceres_Dead_Drop_Wetwork_Is_Active_Xinhua",
+		"strActionGroup" : "Use",
+		"strThemType" :"Other",
+		"strTargetPoint" : "talk",
+		"fTargetPointRange" : 2,
+		"strCrime" : "damage",
+		"ShipTestThem" : "AnyShip_BCER"	
+	},
+	{
+		"strName" : "Plot_Ceres_Clandestine_Interventions_Dead_Drop_Wet_Work_Xinhua_Return",
+		"strTitle" : "Debrief Successful Wet Work",
+		"strDesc" : "[us] [records] a debriefing of a successful wet work mission.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ENCFinish" ],
+		"strActionGroup" : "Use",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bPause" : true,
+		"bIgnoreFeelings" : true,
+		"CTTestUs" : "CTPlot_Ceres_Dead_Drop_Wetwork_Xinhua_Success",
+		"LootCondsUs" : "CONDPLOT_Ceres_Dead_Drop_Remove_Wetwork_Xinhua_Success",
+		"strFactionScoreChangeLoot" : "TXTFactionAddBCRS",
+		"fFactionScoreChangeLoot" : 10,
+		"bFactionIgnoreThemPop" : true
+	},
+	{
+		"strName" : "Plot_Ceres_Clandestine_Interventions_Dead_Drop_Planter",
+		"strTitle" : "Check Dead Drop",
+		"strDesc" : "[us] [checks] the planter.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"strActionGroup" : "Use",
+		"strThemType" :"Other",
+		"strTargetPoint" : "use",
+		"fTargetPointRange" : 2,
+		"bIgnoreFeelings" : true,
+		"CTTestThem" : "CTPlot_Ceres_Cup_Dead_Drop_Titan",
+		"aInverse" : [ "Plot_Ceres_Clandestine_Interventions_Dead_Drop_Titan,[us],[us]" ]
+	},
+	{
+		"strName" : "Plot_Ceres_Clandestine_Interventions_Dead_Drop_Titan",
+		"strTitle" : "Check the Dead Drop",
+		"strColor" : "Dialogue",
+		"strActionGroup" : "Use",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bPause" : true,
+		"bIgnoreFeelings" : true,
+		"aInverse" : [ 
+			"Plot_Ceres_Clandestine_Interventions_Dead_Drop_Wet_Work_Titan", 
+			"Plot_Ceres_Clandestine_Interventions_Dead_Drop_Wet_Work_Titan_Return", 
+			"Plot_Ceres_Clandestine_Interventions_Dead_Drop_Black_Hat_Titan_Start", 
+			"Plot_Ceres_Clandestine_Interventions_Dead_Drop_Black_Hat_Titan_Debrief", 
+			"ENCFinish" 
+			],
+		"strDesc" : "You peer into the fronds of the planter, not knowing exactly what you're looking for. Down near the base, half buried in the soil, you see a small folded up piece of paper. You unfold it, and find a typewritten note: 
+ 
+TEMPORARY ASSET AUTHORIZATION GRANTED
+VERIFICATION: Follow the evening redness.
+UNDERGROUND TARGET AT LARGE ON RING STATION.
+
+LATEST INTERCEPTS INDICATE XINHUA PASS PHRASE: Have you ever grown nightshades? RETURNS: Only in borrowed soil. 
+
+LOCATE TARGET VIA PASS PHRASE AND TAG USING METHOD OF YOUR DISCRETION
+
+There are further instructions below.",
+		"fForcedChance" : 1,
+		"strTargetPoint" : "use",
+		"fTargetPointRange" : 2,
+		"CTTestUs" : "CTPlot_Ceres_GalCon_Loyalty"
+	},
+	{
+		"strName" : "Plot_Ceres_Clandestine_Interventions_Dead_Drop_Wet_Work_Titan",
+		"strTitle" : "Wet Work Mission",
+		"strDesc" : "More text above a tiny silver capsule taped to the paper. The text reads:
+
+WET WORK DIRECTIVE APPROVED
+
+UPON DISCOVERY OF TARGET, BREAK BETWEEN MOLARS AND BLOW FOR MIN FIVE SECONDS. RETURN VERIFICATION HERE
+
+You stare at the tiny pill, trying not to think about what would happen if you accidentally swallowed it.",
+		"strColor" : "Dialogue",
+		"aInverse" : [ "Plot_Ceres_Clandestine_Interventions_Dead_Drop_Wet_Work_Titan_Accept", "Plot_Ceres_Clandestine_Interventions_Dead_Drop_Wet_Work_Titan_Deny"],
+		"strActionGroup" : "Use",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bPause" : true,
+		"bIgnoreFeelings" : true,
+		"fForcedChance" : 1,
+		"CTTestUs" : "CTPlot_Ceres_Dead_Drop_Wetwork_Is_Not_Active_Titan"
+	},
+	{
+		"strName" : "Plot_Ceres_Clandestine_Interventions_Dead_Drop_Wet_Work_Titan_Accept",
+		"strTitle" : "Wet Work Mission Accept",
+		"strDesc" : "You accept the wet work mission. ",
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ENCFinish" ],
+		"strActionGroup" : "Use",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bPause" : true,
+		"bIgnoreFeelings" : true,
+		"fForcedChance" : 1,
+		"LootCondsUs" : "CONDPLOT_Ceres_Dead_Drop_Wetwork_Titan_Is_Active",
+		"CTTestUs" : "CTPlot_Ceres_Dead_Drop_Wetwork_Is_Not_Active_Titan"
+	},
+	{
+		"strName" : "Plot_Ceres_Clandestine_Interventions_Dead_Drop_Wet_Work_Titan_Deny",
+		"strTitle" : "Wet Work Mission Deny",
+		"strDesc" : "You deny the wet work mission, for now.",
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ENCFinish" ],
+		"strActionGroup" : "Use",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bPause" : true,
+		"bIgnoreFeelings" : true,
+		"fForcedChance" : 1
+	},
+	{
+		"strName" : "Plot_Ceres_Clandestine_Interventions_Poison_Agent_Titan",
+		"strTitle" : "Break Lethal Tablet",
+		"strDesc" : "[us] [breaks] the lethal tablet and surreptitiously [introduces] a neurotoxin into [them-pos] body.",
+		"LootCondsThem" : "CONDPlot_Ceres_Poisoned_To_Death",
+		"LootCondsUs" : "CONDPlot_Ceres_Wetwork_Success_Titan",
+		"CTTestUs" : "CTPlot_Ceres_Dead_Drop_Wetwork_Is_Active_Titan",
+		"CTTestThem" : "CTPlot_Ceres_Dead_Drop_Wetwork_Can_Poison_Titan",
+		"strActionGroup" : "Use",
+		"strThemType" :"Other",
+		"strTargetPoint" : "talk",
+		"fTargetPointRange" : 2,
+		"strCrime" : "damage",
+		"ShipTestThem" : "AnyShip_BCRS"
+	},
+	{
+		"strName" : "Plot_Ceres_Clandestine_Interventions_Dead_Drop_Wet_Work_Titan_Return",
+		"strTitle" : "Debrief Successful Wet Work",
+		"strDesc" : "[us] [records] a debriefing of a successful wet work mission.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ENCFinish" ],
+		"strActionGroup" : "Use",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bPause" : true,
+		"bIgnoreFeelings" : true,
+		"CTTestUs" : "CTPlot_Ceres_Dead_Drop_Wetwork_Titan_Success",
+		"LootCondsUs" : "CONDPLOT_Ceres_Dead_Drop_Remove_Wetwork_Titan_Success",
+		"strFactionScoreChangeLoot" : "TXTFactionAddBCER",
+		"fFactionScoreChangeLoot" : 10,
+		"bFactionIgnoreThemPop" : true
+	},
+	{
+		"strName" : "Plot_Ceres_Clandestine_Interventions_Dead_Drop_Black_Hat_Xinhua",
+		"strTitle" : "Black Hat Mission (Requires Hacking)",
+		"strDesc" : "\"Agents with the requisite technical experience can elect to hack the GCRD member manifest on a Port Mojave terminal. Upon access scan the manifest in search of login credential 'SixDeuce82934,' matched against recent suspicious logins in the Ring Station network.\"
+
+L: AceNine4938
+PW: Fade495%#$Helix
+
+\"Upon mission success, return to the dead drop for debriefing.\"",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"strActionGroup" : "Use",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bPause" : true,
+		"bIgnoreFeelings" : true,
+		"CTTestUs" : "CTPlot_Plot_Ceres_Clandestine_Interventions_Dead_Drop_Black_Hat_Xinhua",
+		"aInverse" : [ "Plot_Ceres_Clandestine_Interventions_Dead_Drop_Black_Hat_Xinhua_Accept", "Plot_Ceres_Clandestine_Interventions_Dead_Drop_Black_Hat_Xinhua_Deny" ]
+	},
+	{
+		"strName" : "Plot_Ceres_Clandestine_Interventions_Dead_Drop_Black_Hat_Xinhua_Accept",
+		"strTitle" : "Black Hat Mission Accept",
+		"strDesc" : "You accept the Black Hat mission.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ENCFinish" ],
+		"strActionGroup" : "Use",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bPause" : true,
+		"bIgnoreFeelings" : true,
+		"LootCondsUs" : "CONDPLOT_Ceres_Dead_Drop_Black_Hat_Xinhua_Is_Active",
+		"CTTestUs" : "CTPlot_Ceres_Dead_Drop_Black_Hat_Is_Not_Active_Xinhua"
+	},
+	{
+		"strName" : "Plot_Ceres_Clandestine_Interventions_Dead_Drop_Black_Hat_Xinhua_Deny",
+		"strTitle" : "Black Hat Mission Deny",
+		"strDesc" : "You deny the Black Hat mission. For now.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ENCFinish" ],
+		"strActionGroup" : "Use",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bPause" : true,
+		"bIgnoreFeelings" : true
+	},
+	{
+		"strName" : "Plot_Ceres_Clandestine_Interventions_Dead_Drop_Black_Hat_Xinhua_Debrief",
+		"strTitle" : "Debrief Successful Black Hat",
+		"strDesc" : "[us] [records] a debriefing of a successful Black Hat mission.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ENCFinish" ],
+		"strActionGroup" : "Use",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bPause" : true,
+		"bIgnoreFeelings" : true,
+		"LootCondsUs" : "CONDPlot_Ceres_Clandestine_Interventions_Dead_Drop_Black_Hat_Xinhua_Debrief",
+		"CTTestUs" : "CTPlot_Ceres_Dead_Drop_Black_Hat_Xinhua_Success",
+		"strFactionScoreChangeLoot" : "TXTFactionAddBCRS",
+		"fFactionScoreChangeLoot" : 10,
+		"bFactionIgnoreThemPop" : true
+	},
+	{	
+		"strName" : "PLOT_Ceres_Clandestine_Interventions_Terminal_Hack_Mojave",
+		"strTitle" : "Hack Government Records",
+		"strDesc" : "[us] [hacks] the [them] and [us-gains] access to the GCRD network. The username SixDeuce82934 is included in the manifest.",
+		"fDuration" : 0.005,
+		"bIgnoreFeelings" : true,
+		"strTargetPoint" : "use",
+		"fTargetPointRange" : 2,
+		"strAnim" : "Talk",
+		"strThemType" : "Other",
+		"nLogging" : 1,
+		"CTTestUs" : "CTPlot_PLOT_Ceres_Clandestine_Interventions_Terminal_Hack_Mojave",
+		"CTTestThem" : "TIsTerminal01Installed",
+		"strActionGroup" : "Use",
+		"aInverse" : [ "PLOT_Ceres_Clandestine_Interventions_Terminal_Hack_Mojave_Reply,[us],[them]" ],
+		"ShipTestThem" : "AnyShip_BCER"
+	},
+	{
+	
+		"strName" : "PLOT_Ceres_Clandestine_Interventions_Terminal_Hack_Mojave_Reply",
+		"strDesc" : "[us] [uses] [them] to unearth some promising research memos via the local authority terminal access: progress reports sent between local Mojave research teams and high level diplomats in the Titan network. The top brass seems extremely interested in what is happening here. But why?",
+		"bIgnoreFeelings" : true,
+		"fDuration" : 0.0005,
+		"strTargetPoint" : "use",
+		"fTargetPointRange" : 1,
+		"strAnim" : "Tablet",
+		"strThemType" : "Other",
+		"nLogging" : 1,
+	    "strCrime"       : "damage",
+		"LootCondsUs" : "CONDPLOT_PLOT_Ceres_Clandestine_Interventions_Terminal_Hack_Mojave"
+	},
+	{
+		"strName" : "Plot_Ceres_Clandestine_Interventions_Dead_Drop_Black_Hat_Titan_Start",
+		"strTitle" : "Black Hat Mission (Requires Hacking)",
+		"strDesc" : "BLACK HAT DIRECTIVE APPROVED
+
+USE LOCAL TERMINAL AND PASSCODE \"silverTwelve8344\" TO ACCESS SERVER FILE \"atmoScans.log\" SEEKING LOGINS BY TARGET. RETURN VERIFICATION HERE",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"strActionGroup" : "Use",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bPause" : true,
+		"bIgnoreFeelings" : true,
+		"CTTestUs" : "CTPlot_Ceres_Dead_Drop_Black_Hat_Is_Not_Active_Titan",
+		"aInverse" : [ "Plot_Ceres_Clandestine_Interventions_Dead_Drop_Black_Hat_Titan_Accept", "Plot_Ceres_Clandestine_Interventions_Dead_Drop_Black_Hat_Titan_Deny" ]
+	},
+	{
+		"strName" : "Plot_Ceres_Clandestine_Interventions_Dead_Drop_Black_Hat_Titan_Accept",
+		"strTitle" : "Black Hat Mission Accept",
+		"strDesc" : "You accept the Black Hat mission.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ENCFinish" ],
+		"strActionGroup" : "Use",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bPause" : true,
+		"bIgnoreFeelings" : true,
+		"LootCondsUs" : "CONDPLOT_Ceres_Dead_Drop_Black_Hat_Titan_Is_Active",
+		"CTTestUs" : "CTPlot_Ceres_Dead_Drop_Black_Hat_Is_Not_Active_Titan"
+	},
+	{
+		"strName" : "Plot_Ceres_Clandestine_Interventions_Dead_Drop_Black_Hat_Titan_Deny",
+		"strTitle" : "Black Hat Mission Deny",
+		"strDesc" : "You deny the Black Hat mission. For now.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ENCFinish" ],
+		"strActionGroup" : "Use",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bPause" : true,
+		"bIgnoreFeelings" : true
+	},
+	{
+		"strName" : "Plot_Ceres_Clandestine_Interventions_Dead_Drop_Black_Hat_Titan_Debrief",
+		"strTitle" : "Debrief Successful Black Hat",
+		"strDesc" : "[us] [records] a debriefing of a successful Black Hat mission.",
+		"fForcedChance" : 1,
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ENCFinish" ],
+		"strActionGroup" : "Use",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bPause" : true,
+		"bIgnoreFeelings" : true,
+		"LootCondsUs" : "CONDPlot_Ceres_Clandestine_Interventions_Dead_Drop_Black_Hat_Titan_Debrief",
+		"CTTestUs" : "CTPlot_Ceres_Dead_Drop_Black_Hat_Titan_Success",
+		"strFactionScoreChangeLoot" : "TXTFactionAddBCER",
+		"fFactionScoreChangeLoot" : 10,
+		"bFactionIgnoreThemPop" : true
+	},
+	{	
+		"strName" : "PLOT_Ceres_Clandestine_Interventions_Terminal_Hack_Ring_Station",
+		"strTitle" : "Hack Government Records",
+		"strDesc" : "[us] [uses] the [them] and [us-hacks] into the 'atmoScans.log' file to discover multiple logins by the target.",
+		"fDuration" : 0.005,
+		"bIgnoreFeelings" : true,
+		"strTargetPoint" : "use",
+		"fTargetPointRange" : 2,
+		"strAnim" : "Talk",
+		"strThemType" : "Other",
+		"nLogging" : 1,
+		"CTTestThem" : "TIsTerminal01Installed",
+		"strActionGroup" : "Use",
+	    "strCrime"       : "damage",
+		"aInverse" : [ "PLOT_Ceres_Clandestine_Interventions_Terminal_Hack_Ring_Station_Reply,[us],[them]" ],
+		"ShipTestThem" : "AnyShip_BCRS",
+		"CTTestUs" : "CTPlot_PLOT_Ceres_Clandestine_Interventions_Terminal_Hack_Ring_Station",
+		"LootCondsUs" : "CONDPLOT_PLOT_Ceres_Clandestine_Interventions_Terminal_Hack_Ring_Station"
+	},
+	{
+		"strName" : "CeresP3Finale1",
+		"strTitle" : "The Hit",
+		"strDesc" : "A runner catches up to you, out of breath and sweating with the gravity. \"[us-fullname]!\" she says in between gasps. \"We humbly request your presence aboard the <i>Yangtze-3</i>.\"
+
+The <i>Yangtze</i> is a Xinhua warship that has been docked with Ceres for months, ostensibly conducting wargames and small-unit tactics drills for Coalition marines.
+
+\"Who are you?\" you ask, once the woman has stopped puffing. She's dressed in aggressively smart casual, with buzzed hair and a deceptively muscular build.
+
+\"Oh,\" she says. She conspicuously looks around to check no one is listening. \"Have you ever grown nightshades?\"
+
+You look at her. \"You have to give me the counter-phrase,\" she says, much too loudly.
+
+\"Just take me to your leader,\" you say wearily.",
+		"strColor" : "Dialogue",
+		"strThemType" : "Self",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"bHumanOnly" : true,
+		"aInverse" : [ "CeresP3Finale2" ],
+		"LootCondsUs" : "CONDPLOT_CeresP3Finale_Xinhua",
+		"CTTestUs" : "CTPlot_CeresP3Finale",
+		"ShipTestUs" : "AnyShip_BCRS"
+	},
+	{
+		"strName" : "CeresP3Finale2",
+		"strTitle" : "Follow the clueless NCO",
+		"strDesc" : "The clueless marine-cum-field agent trots ahead of you all the way to the restricted docks. There you are handed off to a series of Xinhua Navy crewmen, who each guide you a short distance until they hand you over like a baton: into the <i>Yangtze</i>'s bay, into the <i>Yangtze</i> itself, leaving you parked in the <i>Yangtze</i>'s mess hall for thirteen minutes. Finally a junior officer asks you to follow her to the wardroom. No-one seems to know what this is about.
+
+An officer with three stars on their vac suit admits you both to the wardroom. They make a show of scanning your temporary shipboard ID and comparing it with your face. It's already over capacity, stone-faced Navy men and women waiting with subdued impatience, and you only get in with a lot of silent shuffling. Still, your junior officer as if by magic conjures an empty chair at the central table, and ushers you into it. The others around the table, sitting and standing two deep, spare you only a glance, if that.
+
+At the far end of the wardroom, a bulging array of screens like an insectoid eye is awash with information.
+
+Every twenty seconds or so, for no reason you can discern and with no pattern, the lights flicker.",
+		"strColor"      : "Dialogue",
+		"aInverse"          : [ "CeresP3FinaleScreens", "CeresP3FinaleListen" ],
+		"strThemType"       : "Self",
+		"strRaiseUI"        : "SocialCombat",
+		"strSubUI"        : "Landscape01",
+		"strImage"        : "encounters/ENCPlanetSunrise",
+		"nLogging"         : 0,
+		"bHumanOnly"     : true,
+		"bIgnoreFeelings"	: true
+	},
+	{
+		"strName" : "CeresP3FinaleScreens",
+		"strTitle" : "Look at the screens",
+		"strColor" : "Dialogue",
+		"strThemType" : "Self",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"bHumanOnly" : true,
+		"strDesc" : "Half the screens show live camera feeds clustered together in one hemisphere. The other half show spectral imaging of the station, accompanied by long text outputs that surely could not be relevant within the limited time available to read them. The long table in front of you is overlaid with a fabric-screen displaying a schematic view of the station and its docked ships, including this one. It's pockmarked by green coloured circles denoting friend, red circles for foe, and grey for unknowns. There are a great deal of unknowns.
+
+You scan the live feeds. It takes a second to comprehend, but they're spy cams from the POV of operatives in situ, half a dozen at least. Occasionally the screen jumps to a new perspective you've not yet seen. It's a dizzying demonstration of clandestine power. One of the camera feeds is from a street food vendor handing out fried scorpion on a stick. Two pose as a couple romantically entwined, faces pixellated to hide their identities. So many eyes here, there, everywhere, you think, palms itching. You'd never know.",
+		"LootCondsUs" : "CONDPLOT_CeresP3FinaleScreens",
+		"CTTestUs" : "CTPlot_CeresP3FinaleScreens",
+		"aInverse" : [ "CeresP3FinaleListen", "CeresP3FinaleMothman" ]
+	},
+	{
+		"strName" : "CeresP3FinaleListen",
+		"strTitle" : "Listen to the conversation",
+		"strDesc" : "A woman in crisp civilian clothes stands to one side of the monitor array, holding the room in rapt attention as she speaks. In the dim LED blue you can just faintly see that she's sporting a shiner of a black eye. There are fresh scrapes medically stapled shut on her hands. \"Reminder that while the floor is open to questions, we are approaching zero hour. At zero hour, our analyst pool on the hardline will handle operational affairs, priority one, and the ship will go dark.\" Her voice is measured, collected. You think if the station's reactor went critical before your eyes, she'd coolly narrate the whole thing.
+
+\"The object,\" says an older man - balding, overweight, the only one in the room sporting a tobacco pipe, and therefore the Captain - \"is the informant on the station Concourse. What'd'you call'im? 'Mothman'?\"
+
+\"Correct,\" says the woman, whom you dub the Steward. \"He poses as a dilletante, a cultural journalist. It's cover for his role as a fence, trading rare earth metals with the opposition, including V-79. There's further background in your briefing packets.\"
+
+\"This is your dog and pony show.\" The Captain waves the pipe dismissively. \"I'm just playing host.\"",
+		"strColor" : "Dialogue",
+		"strThemType" : "Self",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"bHumanOnly" : true,
+		"aInverse" : [ "CeresP3FinaleScreens", "CeresP3FinaleMothman" ],
+		"LootCondsUs" : "CONDPLOT_CeresP3FinaleListen",
+		"CTTestUs" : "CTPlot_CeresP3FinaleListen"
+	},
+	{
+		"strName" : "CeresP3FinaleMothman",
+		"strTitle" : "Continue",
+		"strDesc" : "The Steward inclines her head to one side. Then: \"Mothman has entered the killzone. Again: Mothman is in the killzone.\" She looks up. \"General?\"
+
+Everyone looks to a four star general, head resting on two crooked hands. He speaks up for the first time, almost lazily. \"Astra.\"
+
+The Steward repeats: \"Astra. All units, Astra, Astra, Astra.\" At once the POV monitors wink out. No signal input. They switch over to analysis summaries, trawling social media feeds.
+
+\"<i>Moving</i>,\" says a new voice, tense, from nowhere in particular. There must be a tightbeam link to a commander on the ground. That's all: the room is silent. 
+
+The lights flicker again.",
+		"strColor" : "Dialogue",
+		"strThemType" : "Self",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"bHumanOnly" : true,
+		"LootCondsUs" : "CONDPLOT_CeresP3FinaleMothman",
+		"CTTestUs" : "CTPlot_CeresP3FinaleMothman",
+		"aInverse" : [ "CeresP3FinaleNudge" ]
+	},
+	{
+		"strName" : "CeresP3FinaleNudge",
+		"strTitle" : "A nudge at your shoulder",
+		"strDesc" : "A nudge at your shoulder almost makes you jump: it's the junior officer. He whispers. \"Tea, coffee?\" An unfathomable question.",
+		"strColor" : "Dialogue",
+		"strThemType" : "Self",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"bHumanOnly" : true,
+		"aInverse" : [ "CeresP3FinaleTea", "CeresP3FinaleCoffee", "CeresP3FinaleIgnore" ]
+	},
+	{
+		"strName" : "CeresP3FinaleTea",
+		"strTitle" : "Tea",
+		"strColor" : "Dialogue",
+		"aInverse" : [ "CeresP3FinaleMothman2" ],
+		"strThemType" : "Self",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"bHumanOnly" : true,
+		"strDesc" : "He places a pouch of chai tea in front of you and moves on."
+	},
+	{
+		"strName" : "CeresP3FinaleCoffee",
+		"strTitle" : "Coffee",
+		"strColor" : "Dialogue",
+		"aInverse" : [ "CeresP3FinaleMothman2" ],
+		"strThemType" : "Self",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"bHumanOnly" : true,
+		"strDesc" : "He places a pouch of coffee in front of you and moves on."
+	},
+	{
+		"strName" : "CeresP3FinaleIgnore",
+		"strTitle" : "Ignore him",
+		"strColor" : "Dialogue",
+		"aInverse" : [ "CeresP3FinaleMothman2" ],
+		"strThemType" : "Self",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"bHumanOnly" : true,
+		"strDesc" : "You stare at each other mutely. He places a tall glass capsule of chilled water in front of you and moves on. 
+
+Droplets bead on the side. It's sweating."
+	},
+	{
+		"strName" : "CeresP3FinaleMothman2",
+		"strTitle" : "Continue",
+		"strDesc" : "\"Our team is moving into position.\" The Steward is fully in shadow, has become another voice in the darkness. You can see nothing more than her hands resting on the table only. Her long graceful fingers are covered in scars. \"We're about to see their diversion.\"
+
+Something flickers on a CCTV feed of a convenience store. The feed takes prominence, occupying four monitors at once. There's a bright white flash, an explosion rendered in grayscale against the lit signage. Then little flashes around it, emanating from somewhere indistinct.
+
+\"<i>Blast doors!</i>\" says the voice on the ground. Harsh in the background are terrified screams and automatic gunfire. \"<i>I need a -</i>\" it cuts out. You watch the dots of friend-or-foe milling about on the schematic. From overhead it looks meaningless.
+
+\"So far, so good,\" says the Steward.
+
+\"This is good?\" says the Captain. He puffs on the pipe, revealing it to be a convincing electronic replica. \"It doesn't sound good.\"
+
+\"With respect, Captain,\" says the General, still hunched, \"if it were not good, we would hear nothing at all.\"
+
+The statement precludes further discussion, even the Steward's sparse commentary. The wardroom lights flicker again.",
+		"strColor" : "Dialogue",
+		"aInverse" : [ "CeresP3FinaleMothman3" ],
+		"strThemType" : "Self",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"bHumanOnly" : true
+	},
+	{
+		"strName" : "CeresP3FinaleMothman3",
+		"strTitle" : "Continue",
+		"strDesc" : "The lull draws so long that you start to wonder if there isn't some kind of rhythm to the flicker. You find yourself counting the seconds between. 17, 22, 17. What does it mean? Reactor cycles? Something about the revolving station? 
+
+Your paranoid fantasies are interrupted. A woman's smiling face, covered in grime, winks on to the monitors. \"Home free,\" says the face, and pans down to a bodybag at her feet. The wardroom exhales collectively, and there's scattered applause. A fistbump.
+
+The Captain leans forward. \"This is a secure line, right?\" A nod from the Steward. \"Hey, kid. Good work down there. How are your people?\"
+
+\"Banged up, but we're good, sir.\" A magboot nudges the bodybag harder than necessary were she simply indicating. \"Our friend had some surprises ready for us. Nothing we couldn't handle.\" She wipes a layer of grime from her brow. \"We're going to move to our secondary exfil if it's all the same to you.\"
+
+\"We read you,\" says the Steward. \"Good luck. Out.\"",
+		"strColor" : "Dialogue",
+		"aInverse" : [ "CeresP3FinaleMothman4" ],
+		"strThemType" : "Self",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"bHumanOnly" : true
+	},
+	{
+		"strName" : "CeresP3FinaleMothman4",
+		"strTitle" : "Continue",
+		"strDesc" : "The screens return to the operating system's default background, the Xinhua insignia with the Navy dragon coiled around it. Behind you the officers file out, chatting, happy with the play. The house lights come up, and when you look for her, the Steward has already disappeared. You wait, not knowing what to do. Finally it's just you, the General, and the junior officer hovering at your shoulder.
+
+The General sighs and shakes the tension from his hands. He leans back in his chair, and seems to notice you for the first time. His eyes slide to the ceiling, to the symmetrical navigation strips there. \"This was your idea, huh?\" he says, as if to himself. But he's talking to you.
+
+His eyes slide back down to you. \"What the fuck,\" he says, \"are you still doing here?\"
+
+The junior officer helps draw back your chair, and leads you out.",
+		"strColor" : "Dialogue",
+		"aInverse" : [ "CeresP3FinaleMothman6" ],
+		"strThemType" : "Self",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"bHumanOnly" : true
+	},
+	{
+		"strName" : "CeresP3FinaleMothman5",
+		"strTitle" : "Continue",
+		"strDesc" : "The screens return to the operating system's default background, the Xinhua insignia with the Titan Navy dragon coiled around it. Behind you the officers file out, chatting, happy with the play. The house lights come up, and when you look for her, the Steward has already disappeared. You wait, not knowing what to do. Finally it's just you, the General, and the junior officer hovering at your shoulder.
+
+The General sighs and shakes the tension from his hands. He leans back in his chair, and seems to notice you for the first time. His eyes slide to the ceiling, to the symmetrical navigation strips there. \"This was your idea, huh?\" he says, as if to himself. But he's talking to you.
+
+His eyes slide back down to you. \"What the fuck,\" he says, \"are you still doing here?\"
+
+The junior officer helps draw back your chair, and leads you out.",
+		"strColor" : "Dialogue",
+		"aInverse" : [ "CeresP3FinaleMothman6" ],
+		"strThemType" : "Self",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"bHumanOnly" : true
+	},
+	{
+		"strName" : "CeresP3FinaleMothman6",
+		"strTitle" : "Continue",
+		"strDesc" : "A familiar face passes you at a bulkhead. Of all people, it's Francisco Ortega, dressed in military fatigues. \"I'll take [us-custom-characterGenderCond|him|her|them] from here, Lieutenant,\" he says. The lieutenant shrugs gratefully and disappears before someone can assign them any more busywork.
+
+\"Ortega?\" you ask. The stencilled name on his suit reads HARRISON.
+
+\"Don't,\" he says. \"Don't call me that here. I'm doing you a favour. Follow me.\"",
+		"strColor" : "Dialogue",
+		"aInverse" : [ "CeresP3FinaleMothman7" ],
+		"strThemType" : "Self",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"bHumanOnly" : true
+	},
+	{
+		"strName" : "CeresP3FinaleMothman7",
+		"strTitle" : "Continue",
+		"strDesc" : "He takes you on a path notably distinct from the maze you travelled to get here. You pass other military personnel who defer to Ortega, letting you past. He's tense, and it shuts down any questions about what's going on - something you're getting tired of asking all these people anyway.
+
+You arrive in a cavernous bay filled with smaller craft attended by teams of engineers. He guides you along navigation lines to one such craft, which in addition to dedicated crewmen conducting a post-flight examination, has a tired looking squad of marines lounging nearby, waiting for debrief. You recognise some of their faces from the final call in the wardroom.
+
+You look to Ortega. Intercepting your look, he passes you a PDA with a document open on it. \"Smile for the camera,\" he says, and walks ahead of you.
+
+\"Well done, marines!\" he says brightly to the squad, who come lazily to attention. \"At ease, we'll keep this brief ...\"
+
+The document open on the PDA is titled <i>FOLLOW THESE INSTRUCTIONS OR WE'RE BOTH DEAD.txt</i>",
+		"strColor" : "Dialogue",
+		"aInverse" : [ "CeresP3FinaleMothman8" ],
+		"strThemType" : "Self",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"bHumanOnly" : true
+	},
+	{
+		"strName" : "CeresP3FinaleMothman8",
+		"strTitle" : "Continue",
+		"strDesc" : "TAKE THIS CASE TO THE SECURITY OFFICE CHECKPOINT ON CERES.
+		
+		CHECKPOINT IS ON THE ROOF LEVEL/THE MOUTH.
+		
+		DO NOT ALLOW THE CASE TO BE INSPECTED BY PERSONNEL THERE.
+		
+		YOU WILL BE CONTACTED ONCE PAST CHECKPOINT.
+		
+		HAND THE PDA BACK TO ME NOW. AND LEAVE.",
+		"strColor" : "Dialogue",
+		"aInverse" : [ "CeresP3FinaleMothman9" ],
+		"strThemType" : "Self",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"bHumanOnly" : true
+	},
+	{
+		"strName" : "CeresP3FinaleMothman9",
+		"strTitle" : "Continue",
+		"strDesc" : "You look up from the PDA. Ortega has a magged whiteboard and he's drawing big looping lines of enemy movements, narrating the op play-by-play. The marines are mostly paying attention.
+
+You hover at his elbow and slot the PDA back into his grip, which he takes with a nod. Then he nods you toward one of the marines.
+
+Under her arm, there's a grey-black case. You glance back at Ortega. He is ignoring you.
+
+You approach the lead marine. Her eyes slide from the whiteboard to you.
+
+You hold out your hand.
+
+After a moment, the marine hands the case to you.
+
+You turn and walk away.",
+		"strColor" : "Dialogue",
+		"aInverse" : [ "CeresP3FinaleMothman10" ],
+		"strThemType" : "Self",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"bHumanOnly" : true
+	},
+	{
+		"strName" : "CeresP3FinaleMothman10",
+		"strTitle" : "Continue",
+		"strDesc" : "Each step proceeds robotically with the momentum of the last. Case tucked under one arm, light as anything in freefall, you wend your way back along the half-remembered route to the exit. All around you the Navy buzzes with activity, welding and loading and delivering and joking and arguing and lazing around bored.
+
+\"Hold up!\" you hear behind you.
+
+You turn.
+
+The lead marine catches up to you, serious expression on her face.
+
+\"Let me see that,\" she says.
+
+\"I'm supposed to have it,\" you blurt out.
+
+\"I know. Give it here,\" she says.
+
+With no other way out, you hold it toward her.
+
+She eyes it critically.
+
+She produces a rag from a hip pocket and rubs a dull brown patch of gore from the top surface of the case.
+
+\"That was bugging me,\" she says. \"Now, how 'bout I buy you a drink?\" She winks.
+
+\"Oh,\" you say. \"Yep. Yes. Sure.\" The marine looks at you. \"What about,\" you say, clutching at straws, \"I meet you back here in fifteen minutes?\"
+
+\"Fifteen. Got it,\" says the marine. \"I'll be waiting.\"
+
+You turn away again, trying not to hurry. She'll be waiting a long time.",
+		"strColor" : "Dialogue",
+		"aInverse" : [ "CeresP3FinaleMothman11" ],
+		"strThemType" : "Self",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"bHumanOnly" : true
+	},
+	{
+		"strName" : "CeresP3FinaleMothman11",
+		"strTitle" : "Continue",
+		"strDesc" : "You disembark from the <i>Yangtze-3</i> unchallenged.
+
+What in God's name was that all about?",
+		"strColor" : "Dialogue",
+		"aInverse" : [ "ENCFinish" ],
+		"strThemType" : "Self",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"bHumanOnly" : true,
+		"aLootItms" : [ "addus,ItmCrate02_PLOT_Ceres_Brain_Case" ],
+		"bRecheckThisPlot" : true
+	},
+	{
+		"strName" : "CeresP3TitanFinale1",
+		"strTitle" : "The Follower",
+		"strDesc" : "Someone is following you.
+
+The paranoia in Ceres space is rubbing off on you, or you might not have caught it. A silhouette drifts after you round every corner. You can see them distorted in the burnished walls; you snatch a glimpse when you pretend to consult your PDA for directions.
+
+Your shadow gets the fright of their life when you reach out from a pile of rugs (McArthur's Rugs For All Occasions And Surfaces!) and grab them by their shirt collar. They scream and holler, but they couldn't be more than four feet tall. You clip them across the chin and revolve them so they're facing you, unkempt hair flashing wildly. \"What gives, kid?\"
+
+The fresh spawn of Ceres' breeding vats, or brothels, scowls at you and tries to hunch into his jacket, so that he can shrink out of it and leave you holding an empty and grubby Extra Small. You clip him round the temple this time. \"Stop that. Why are you following me? I won't ask again.\"
+
+\"'Sposed to give ya a message, <i>#$%#$</i>,\" the child spits at you. \"S'getoff me and lemme deliver.\"
+
+\"Fine. A message. I'm going to let you go now,\" you say. \"If my account's been skimmed after this I'm gonna space you and use your corpse for target practice. Copy?\"
+
+He glowers at you, snot trailing from his nose. \"If you hurt me the Rockefellas will hunt you down.\"
+
+\"Yeah, to shake my hand and build me a statue.\" You plant the kid before you. \"Talk.",
+		"strColor" : "Dialogue",
+		"strThemType" : "Self",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"bHumanOnly" : true,
+		"aInverse" : [ "CeresP3TitanFinale2" ],
+		"LootCondsUs" : "CONDPLOT_CeresP3Finale_Titan",
+		"CTTestUs" : "CTPlot_CeresP3Finale",
+		"ShipTestUs" : "AnyShip_BCER"
+	},
+	{
+		"strName" : "CeresP3TitanFinale2",
+		"strTitle" : "Follow him",
+		"strDesc" : "The kid - who gives himself the unlikely name of 'Clay' - is a happy camper with a peach iced block and a gruel pouch to his name. It turns out he's to be both messenger and guide, and it seemed wise to build back some rapport. 
+
+He's been leading you away and down from Port Mojave, skirting the main caverns of Calico and its offshoots, and through access tunnels long untravelled by humans. John Wayne wants you to meet someone. \"And to prove it was him who said it, he said, 'tell [us-custom-characterGenderCond|his|her|their] sorry ass I'll dribble [us-custom-characterGenderCond|him|her|them] up and down a Breakout court if [us-custom-characterGenderCond|he doesn't|she doesn't|they don't] shut up and do what [us-custom-characterGenderCond|he's|she's|they're] told.'\" It has plausibility on its side.
+
+\"I grew up here,\" he says at one juncture, tossing aside the desiccated ice stick and starting on the gruel pouch.
+
+\"Ceres? I figured.\"
+
+\"No, dumbfuck,\" says Clay, and nods to the letters JS43a on the wall. \"Here.\" He means this corridor.
+
+After plenty of walking and nearly companionable banter, you're beginning to wonder exactly where you're going and how long it will be. As you're about to demand this information from Clay, not for the first but certainly the last time, he gives a piercing whistle. \"It's me! I've got the <i>foreigner</i>!\"
+
+A pile of trash on the floor shudders and stands up. It's a woman holding a stub shotgun, and she is too close for comfort. \"Ah,\" you say, nonplussed.
+
+She's wearing ghillie camouflage made from covering a standard pressure suit in sterilised (thankfully) garbage, empty cartons and plastic wrappers. She doesn't quite level the shotgun your way, but she doesn't look happy.",
+		"strColor" : "Dialogue",
+		"strThemType" : "Self",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"bHumanOnly" : true,
+		"aInverse" : [ "CeresP3TitanFinale3" ]
+	},
+	{
+		"strName" : "CeresP3TitanFinale3",
+		"strTitle" : "Greet her?",
+		"strDesc" : "\"Are you the one I'm supposed to meet?\" you say, polite as you can manage. She ignores you.
+
+\"You were supposed to clear this with the duty watch,\" she says to Clay curtly. \"You set off fifteen earlybird alarms!\"
+
+\"He promised me ten dollars on delivery,\" Clay says. \"We had to change route cuz've Coalition patrols. S'not my fault.\" You didn't see any sign of patrols, but you've observed his uncanny sense of direction. If he says they were there, they probably were.
+
+The trash-fighter slings her weapon over one shoulder, not happy about any of this. You swallow a sigh of relief, the only one feeling the tension. \"You'll get your ten dollars once you're at the meet and not before,\" she says. \"Someone has to go manually reset fifteen laser tripwires. Guess that's me.\" She stalks off the way you came.
+
+Clay takes your hand and pulls you ahead. You reluctantly let yourself be pulled along. \"What the hell are you getting me into? Who are these guys?\"
+
+\"Duh,\" says Clay. He wrings the last drop out of his pouch and hands it to you empty. \"This is the Revolution.\"",
+		"strColor" : "Dialogue",
+		"strThemType" : "Self",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"bHumanOnly" : true,
+		"aInverse" : [ "CeresP3TitanFinale4" ]
+	},
+	{
+		"strName" : "CeresP3TitanFinale4",
+		"strTitle" : "Join the Revolution",
+		"strDesc" : "One sheer wall of the cavern is a fifteen foot tall piece of fabric: Stars and Stripes forever, baby. The flag is pulled taut by guidewires. The red white and blue are faded, and there's a conspicuous oily-brown stain on the lower half, but other than that it's not hard to recognise. \"What if someone wants to join who isn't American?\" you ask John Wayne, who's idly spinning on one of those antique office chairs, which has been bolted to the floor.
+
+\"Simple,\" says John. \"They can fuck off and start their own terrorist cell.\"
+
+The cavern is oriented around the flag-wall, with banks of consoles facing it in rows. Some of the seats are occupied by Ceresian revolutionaries, an unremarkable group of men and women alike only in how much they radiate fatigue. All told, there are eight of you, including you and John Wayne.
+
+\"And all this old junk?\" You nod to the consoles, too big to be modern.
+
+\"Some genius before our time decided it should look like NORAD,\" says John Wayne. \"If you know what that is.\"
+
+\"I don't.\"
+
+\"Neither did they,\" he says, disgusted. \"Except from movies.\"",
+		"strColor" : "Dialogue",
+		"strThemType" : "Self",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"bHumanOnly" : true,
+		"aInverse" : [ "CeresP3TitanFinale5" ]
+	},
+	{
+		"strName" : "CeresP3TitanFinale5",
+		"strTitle" : "Why am I here?",
+		"strDesc" : "\"Why have you brought me here, John?\"
+
+One of the revolutionaries clears her throat. \"Yeah, I'd like to know that too.\" She's lounging against one of the consoles, arms crossed, blonde hair in a braid clipped to her back. A few loose strands wave in the microgravity. She's Korean-American, if you had to guess. \"Since I'm supposed to be in command.\"
+
+\"[us-firstname], meet Jane,\" says John.
+
+\"Jane?\"
+
+\"<i>Jane Fonda</i>,\" says the woman icily. \"He loves his stupid codenames.\"
+
+You look between the two of them. \"John Wayne and Jane Fonda, okay,\" you say. \"I think something's going over my head.\"
+
+\"Yep!\" says John happily. \"Alright, listen up everyone! [us-firstname] here is going to help us win the war.\" Heads perk up at that, the first signs of life from the disgruntled militia you've seen.
+
+\"[us-custom-characterGenderCond|He is?|She is?|They are?]\" says Jane.
+
+\"I am?\" you echo her.
+
+\"Yep!\" repeats John. He picks up a remote from a console and points it at the flag. A long screen lowers across it, and he clicks through a display of briefing material.",
+		"strColor" : "Dialogue",
+		"strThemType" : "Self",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"bHumanOnly" : true,
+		"aInverse" : [ "CeresP3TitanFinale6" ]
+	},
+	{
+		"strName" : "CeresP3TitanFinale6",
+		"strTitle" : "Continue",
+		"strDesc" : "\"This is what you've been preparing for,\" says John. \"Months, years, of training, planning, waiting: it all comes down to this.\"
+
+An image of an ageing Asian man appears on the screen. Black and white, poorly framed, tight background and obscured foreground customary of a telephoto spy lens. He has a perennially unfashionable straight fringed hairstyle.
+
+\"This is Ben Choong,\" says John. \"The captain here has been scouring Ceres high and low for him. Even asked yours truly about it. Well, Ben knew me. Knew far more than anyone 'round here should. Maybe that's why a couple weeks ago he went missing.\"
+
+Security camera footage, grainy and stuttering along frame by frame, of a hallway familiar to you: the entrance to Choong's apartment on Ring Station. Four people in bulky clothes line up outside the door, faces obscured by unknown means, green squares drawn by the security system in an abortive attempt to ID them. Rather than guns, they prepare long telescoping batons. One of them kicks in the door. The group files inside, professionally swift.
+
+\"That's him getting his head kicked in by God-knows-who,\" John says, winking at you. \"Don't say I do nothin' for ya.\"",
+		"strColor" : "Dialogue",
+		"strThemType" : "Self",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"bHumanOnly" : true,
+		"aInverse" : [ "CeresP3TitanFinale7" ]
+	},
+	{
+		"strName" : "CeresP3TitanFinale7",
+		"strTitle" : "Continue",
+		"strDesc" : "The assailants come back out the door dragging a body between two of them, arms linked under his shoulders. The camera's ID software enthusiastically identifies him as B. Choong. It isolates and enlarging the area within the green square overlay - face bloody, mouth agape, head lolling to one side - and pastes a transcript of his Ceres worker's license beside it.
+
+\"I asked around,\" says John, \"and I'm the kinda guy when I ask, people answer.\" His self-satisfied tone slips. \"Ordinarily, that is. Not for this man. Nobody's sayin' shit. Wasted my good thumbscrews.\"
+
+He moves to the next slide.
+
+Ring Station from five klicks out. A camera from the ship's bow. Front and centre: the biggest ship docked to the Ring, a warship of exorbitant tonnage.
+
+\"This is the <i>Yangtze-3</i>,\" he says. \"Our big beautiful bitch in the sky. We've been trying,\" he says to you, for your benefit, \"to flip someone higher than a midshipman for months now. No dice. Credit to the Martians, they know when to close ranks. 'Cept they fucked up, cos our Food Services guy confirmed it. They got a Lunar national on board. Got some special dietary needs. I reckon that's our guy.\"",
+		"strColor" : "Dialogue",
+		"strThemType" : "Self",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"bHumanOnly" : true,
+		"aInverse" : [ "CeresP3TitanFinale8" ]
+	},
+	{
+		"strName" : "CeresP3TitanFinale8",
+		"strTitle" : "Continue",
+		"strDesc" : "'Jane' has taken to polishing and oiling a pistol, taking it apart to poke it with a pipe cleaner. The small metallic clicks convey her disdain for the whole presentation louder than words would. She speaks up. \"You brought a foreigner into our safehouse, why, exactly? To use the overhead projector?\"
+
+\"No,\" says John. \"I needed you to see [us-custom-characterGenderCond|his|her|their] face. You and your team are going to board the <i>Yangtze</i>, liberate Ben Choong from the brig, and deliver him to [us-custom-characterGenderCond|his|her|their] ship. The <i>[us-shipname]</i>, unless I'm mistaken.\"
+
+Silence greets his words. It's an impossibly tall task, you think. Boarding an enemy ship, blind, and for what purpose? To aid you? But you realise the commandos' silence isn't dissent. They're studying the warship on the screen. They're considering it.",
+		"strColor" : "Dialogue",
+		"strThemType" : "Self",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"bHumanOnly" : true,
+		"aInverse" : [ "CeresP3TitanFinale9", "CeresP3TitanFinale10" ]
+	},
+	{
+		"strName" : "CeresP3TitanFinale9",
+		"strTitle" : "That's suicide",
+		"strDesc" : "\"That's suicide,\" you say. All heads turn to you: perhaps that was a little too honest and a little too quick. \"It's a suicide mission. Even if you've had months to prepare, unlimited supplies, no way you can just infiltrate and sneak back out from an enemy warship.\"
+
+Blank Ceresian faces watch you. Inscrutable Americans. John claps your shoulder. \"[us-firstname], a word in your ear?\"
+
+He takes you aside. Jane musters the troops, cracking out instructions with the speed of someone used to command. \"Yeah, so, that's kind of a selling point for these types,\" says John, <i>sotto voce</i>. \"Don't get me wrong, they're smart, capable warriors and all. But they've been raised on a steady diet of tier one operator myths, Navy SEALS and Army Rangers tearing up Iraq and Venezuela and Vietnam. They don't really like a mission unless there's a chance they get to drape a flag over a coffin, know what I mean?\"
+
+You look back at the revolutionaries. Not one of them is a day over twenty-five. \"That's a bit cynical,\" you say evenly. \"Isn't it?\"
+
+\"<i>When can their glory fade? O the wild charge they made!</i>\" he quotes at you. You grit your teeth. \"The world's a cynical place, compadre. Always has been. Better get used to it.\"",
+		"strColor" : "Dialogue",
+		"strThemType" : "Self",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"bHumanOnly" : true,
+		"aInverse" : [ "CeresP3TitanFinale11" ]
+	},
+	{
+		"strName" : "CeresP3TitanFinale10",
+		"strTitle" : "Keep your trap shut",
+		"strDesc" : "You wonder if any of them are going to protest the ludicrous mission parameters, but none do. Instead, the revolutionaries start to break down the problem, occasionally asking a logistical question or two of John. From the capabilities they discuss, it's apparent this assault on the <i>Yangtze</i> has been considered, even planned for, sometime in the near past.
+
+No one bats an eye that the objective of the mission has changed to the extraction of a person of interest.",
+		"strColor" : "Dialogue",
+		"strThemType" : "Self",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"bHumanOnly" : true,
+		"aInverse" : [ "CeresP3TitanFinale11" ]
+	},
+	{
+		"strName" : "CeresP3TitanFinale11",
+		"strTitle" : "Return to Port Mojave",
+		"strDesc" : "Clay takes you back the winding ways to the Port. He's chuffed by a fullish stomach, ten dollars in his pocket, and another ten on its way.
+
+\"What do you think of them?\" you ask him, pausing for a break in a disused vent shaft. \"The 'Revolutionaries'.\"
+
+Clay seems to think about it for a bit. \"I'unno,\" is all he has to say. Maybe you gave him too much credit.",
+		"strColor" : "Dialogue",
+		"strThemType" : "Self",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"bHumanOnly" : true,
+		"aInverse" : [ "CeresP3TitanFinale12" ]
+	},
+	{
+		"strName" : "CeresP3TitanFinale12",
+		"strTitle" : "Wait for the Revolution",
+		"strDesc" : "You return to your ship. Fifteen stressful hours pass, watching the <i>Yangtze</i> on your scope and waiting to see any telltale signs of sabotage or alert.
+
+The first is an emergency broadcast from Ring Station. \"<i>All ships, all ships Ceres-local</i>,\" says an unusually hurried ATC operator. \"<i>Be advised, </i>Yangtze-3<i> has initiated emergency undock, again, the </i>Yangtze<i> is undocking from the Ring. No flight plan. We do not know the vector. All ships, all ships, sanitise your inbound or outbound vectors. Look out the window if you have to. ATC out.</i>\"
+
+You watch as the massive warship decouples from Ring Station. Ships for hundreds of kilometres around pull back, or break from their plan, no doubt stressing the ATC further. Some docked ships follow the <i>Yangtze</i>'s example, deciding that whatever the warship is doing is something they should do too. They all get bespoke emergency warnings.
+
+Hard to say what's going on. Perhaps the team boarded through the station and they fear reinforcements. There's another significant possibility -
+
+New contacts appear outbound from the <i>Yangtze</i>. Lifeboats, escape pods.
+
+The scope's glare protection kicks in as the screen whites out. Something on the <i>Yangtze</i> just went nuclear. \"Holy shit,\" you say. \"Holy shit!\"
+
+When the scopes can see again, the ship is in pieces. Surgically scuttled, it looks like, rather than a critical explosion. The blast originated a few hundred kilometres from the Ring. Whoever was in control of the <i>Yangtze</i> did their best to spare the station, putting as much distance between them as possible. Even so, you watch as the first wave of debris passes through the Ring.
+
+The station is hardened against attack. A nuclear fragmentation grenade on their front doorstep is testing that. No doubt people on board will be killed, but the Ring will survive. Even the most hardened revolutionary wouldn't want a space station to shred itself under its own momentum around their planetoid.",
+		"strColor" : "Dialogue",
+		"strThemType" : "Self",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"bHumanOnly" : true,
+		"aInverse" : [ "CeresP3TitanFinale13" ]
+	},
+	{
+		"strName" : "CeresP3TitanFinale13",
+		"strTitle" : "Link up with the survivors",
+		"strDesc" : "A few minutes later, there's a knock at the door, so to speak. One of the lifeboats comes perilously close to your ship, and won't respond to hails.
+
+You dock with it, although it feels more like catching a ball before it can hit the ground. The interior is obscured by a mist of blood. \"Hello?\" you say over the intercom. It's ghoulish, but a pertinent question: \"Anyone alive in there?\"
+
+There's no way around it: you admit the cloud of blood aboard your ship. A body comes with it, staring sightlessly at you through her vac suit: Jane. The blood is hers, pumping freely through holes in her neck and side.
+
+One of her hands has a death grip on a large grey box. There's no sign of her comrades, nor of the man they were sent to retrieve.",
+		"strColor" : "Dialogue",
+		"strThemType" : "Self",
+		"strRaiseUI" : "SocialCombat",
+		"strSubUI" : "Landscape01",
+		"strImage" : "encounters/ENCPlanetSunrise",
+		"bIgnoreFeelings" : true,
+		"bHumanOnly" : true,
+		"aInverse" : [ "ENCFinish" ],
+		"aLootItms" : [ "addus,ItmCrate02_PLOT_Ceres_Brain_Case" ],
+		"bRecheckThisPlot" : true
+	}
+]
