@@ -58,13 +58,21 @@ def main():
         json.dump(mod_info, f, ensure_ascii=False, indent=2)
     print(f"[2/5] Создан mod_info.json -> {mod_info_path}")
 
-    # 3. Copy BepInEx files
+    # 3. Copy game data and BepInEx files
+    dst_data = os.path.join(WORKSHOP_DIR, "data")
+    src_data = os.path.join(SCRIPT_DIR, "langs", "ru", "data")
+    if os.path.exists(dst_data):
+        shutil.rmtree(dst_data)
+    if os.path.exists(src_data):
+        shutil.copytree(src_data, dst_data)
+        print(f"[3/6] Скопирована папка data/ -> {dst_data}")
+
     dst_bepinex = os.path.join(WORKSHOP_DIR, "BepInEx")
     if os.path.exists(dst_bepinex):
         shutil.rmtree(dst_bepinex)
     if os.path.exists(RELEASE_BEPINEX):
         shutil.copytree(RELEASE_BEPINEX, dst_bepinex)
-        print(f"[3/5] Скопированы файлы BepInEx/plugins/OstraI18n в {dst_bepinex}")
+        print(f"[4/6] Скопированы файлы BepInEx/plugins/OstraI18n в {dst_bepinex}")
 
     # 4. Generate Steam Workshop BBCode Description
     bbcode_desc = """[h1]OstraI18n — Полная русификация Ostranauts (Версия 2.0)[/h1]
@@ -110,13 +118,26 @@ def main():
         f.write(bbcode_desc)
     print(f"[4/5] Сгенерировано описание для мастерской Steam -> {desc_path}")
 
-    # 5. Copy to game Mods folder if present
+    # 5. Copy to game Mods folder and update loading_order.json
     game_mods_dest = os.path.join(GAME_DIR, "Ostranauts_Data", "Mods", "OstraI18n")
     os.makedirs(os.path.dirname(game_mods_dest), exist_ok=True)
     if os.path.exists(game_mods_dest):
         shutil.rmtree(game_mods_dest)
     shutil.copytree(WORKSHOP_DIR, game_mods_dest)
-    print(f"[5/5] Скопировано в папку игры Mods/ -> {game_mods_dest}")
+    print(f"[5/6] Скопировано в папку игры Mods/ -> {game_mods_dest}")
+
+    # 6. Enable mod in game loading_order.json in Edit mode for Steam Workshop upload
+    lo_path = os.path.join(GAME_DIR, "Ostranauts_Data", "Mods", "loading_order.json")
+    lo_data = [
+        {
+            "strName": "Mod Loading Order",
+            "aLoadOrder": ["core", "OstraI18n|edit"],
+            "CORE_MOD_NAME": "core"
+        }
+    ]
+    with open(lo_path, "w", encoding="utf-8") as f:
+        json.dump(lo_data, f, ensure_ascii=False, indent=2)
+    print(f"[6/6] Обновлён loading_order.json с флагом |edit -> {lo_path}")
 
     print("\n" + "=" * 60)
     print("  ГОТОВО! Пакет для Мастерской Steam полностью сформирован.")
