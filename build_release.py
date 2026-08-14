@@ -102,20 +102,24 @@ def build_release(version=None):
                 shutil.copy2(s_path, d_path)
         print("  + Copied complete BepInEx 6 framework (winhttp.dll, doorstop_config.ini, BepInEx/core/)")
 
-    # 4. Copy Mod DLLs
-    core_dll = os.path.join(SCRIPT_DIR, "core", "OstraI18n.Core", "bin", "Release", "netstandard2.1", "OstraI18n.Core.dll")
+    # 4. Copy Mod DLLs and all runtime dependencies
+    core_bin = os.path.join(SCRIPT_DIR, "core", "OstraI18n.Core", "bin", "Release", "netstandard2.1")
     plugin_dll = os.path.join(SCRIPT_DIR, "plugin", "OstraI18n", "bin", "Release", "netstandard2.1", "OstraI18n.dll")
 
-    if not os.path.exists(core_dll):
-        print(f"ERROR: {core_dll} not found!")
-        sys.exit(1)
     if not os.path.exists(plugin_dll):
         print(f"ERROR: {plugin_dll} not found!")
         sys.exit(1)
 
-    shutil.copy2(core_dll, plugin_dest)
+    copied_dlls = []
+    if os.path.exists(core_bin):
+        for f in os.listdir(core_bin):
+            if f.endswith(".dll"):
+                shutil.copy2(os.path.join(core_bin, f), plugin_dest)
+                copied_dlls.append(f)
+
     shutil.copy2(plugin_dll, plugin_dest)
-    print(f"  + Copied DLLs: OstraI18n.dll, OstraI18n.Core.dll")
+    copied_dlls.append("OstraI18n.dll")
+    print(f"  + Copied {len(copied_dlls)} DLLs to plugin folder ({', '.join(copied_dlls)})")
 
     # 5. Copy catalog
     catalog_src = os.path.join(SCRIPT_DIR, "catalog")
