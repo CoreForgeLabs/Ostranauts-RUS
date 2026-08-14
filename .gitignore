@@ -1,3 +1,22 @@
+# Build outputs & IDE
+**/bin/
+**/obj/
+*.user
+*.suo
+*.pdb
+.vs/
+.idea/
+.vscode/
+
+# Temp files & logs
+*.zip
+*.log
+*.tmp
+*.bak
+__pycache__/
+*.pyc
+
+# Game dumps, intermediate extractions & decompiled code
 decompiled/
 dll/
 bepinex6/
@@ -8,22 +27,22 @@ mod_study/
 i18n_release/
 i18n_sourse/
 plugin_keep/
-*.zip
-*.log
-**/bin/
-**/obj/
-lang_src/*.txt
-весь контекст старой нейронки.txt
-lang_src/prefab_extract_tmp/
-lang_src/old_import_report.json
-__pycache__/
 dist/
-lang_src/candidates_keys.json
-lang_src/stale_native_mods_backup/
-lang_src/prefab_extract_tmp2/
-catalog/prefabs_new_chargen.json
-lang_src/pos_prep_issues.json
-langs/*/images/
-/pdf
-lang_src/ensemble_full_run.out
-lang_src/ensemble_run.out
+pdf/
+
+# Internal scratch scripts & dev work logs
+OLD/
+lang/
+lang_src/
+scratch/
+tools/
+tools_cs/
+docs/
+patches/
+memory*.txt
+analyze_*.py
+extract_*.py
+probe_*.py
+*.out
+LANGS.md
+OSTRA_I18N_GUIDE.md
