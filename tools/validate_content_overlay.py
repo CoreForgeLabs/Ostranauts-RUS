@@ -236,6 +236,24 @@ def validate_fields(ru_val, en_val):
     errors = []
     warnings = []
 
+    if isinstance(ru_val, list) or isinstance(en_val, list):
+        if not isinstance(ru_val, list) or not isinstance(en_val, list):
+            errors.append("несовпадение типов: en=%s ru=%s" % (type(en_val).__name__, type(ru_val).__name__))
+            return errors, warnings
+        if len(ru_val) != len(en_val):
+            errors.append("разная длина списков: en=%d ru=%d" % (len(en_val), len(ru_val)))
+            return errors, warnings
+        for idx, (ru_elem, en_elem) in enumerate(zip(ru_val, en_val)):
+            if ru_elem is None and en_elem is None:
+                continue
+            if ru_elem is None or en_elem is None:
+                errors.append("[%d] одно из значений null" % idx)
+                continue
+            e, w = validate_fields(str(ru_elem), str(en_elem))
+            errors.extend(["[%d] %s" % (idx, msg) for msg in e])
+            warnings.extend(["[%d] %s" % (idx, msg) for msg in w])
+        return errors, warnings
+
     tok_errors, tok_warnings = token_check(ru_val, en_val)
     errors.extend(tok_errors)
     warnings.extend(tok_warnings)
@@ -299,7 +317,7 @@ def main():
                     warnings += 1
                 if field_errors:
                     continue
-                if ru_val.strip() == en_val.strip() and len(en_val.strip()) > 3:
+                if isinstance(ru_val, str) and isinstance(en_val, str) and ru_val.strip() == en_val.strip() and len(en_val.strip()) > 3:
                     warnings += 1
 
     print("итого: ошибок %d, предупреждений %d" % (errors, warnings))

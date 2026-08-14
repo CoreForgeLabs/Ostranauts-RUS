@@ -412,6 +412,11 @@ namespace OstraI18n
                 null, t.GetMethod(nameof(Patches.DutiesSetCrewPostfix)), ref ok, ref failed);
             TryPatch(h, typeof(GUIChargenBody), "Awake", flagsInstPriv,
                 null, t.GetMethod(nameof(Patches.ChargenBodyAwakePostfix)), ref ok, ref failed);
+            var flagsInstPub = BindingFlags.Public | BindingFlags.Instance;
+            TryPatch(h, typeof(Ostranauts.Objectives.Objective), "MakeTutorialObjective", flagsPub,
+                null, t.GetMethod(nameof(Patches.MakeTutorialObjectivePostfix)), ref ok, ref failed);
+            TryPatch(h, typeof(Ostranauts.Objectives.ObjectivePanel), "CompleteObjective", flagsInstPub,
+                null, t.GetMethod(nameof(Patches.ObjectivePanelCompleteObjectivePostfix)), ref ok, ref failed);
         }
 
         private static void TryPatch(Harmony h, Type type, string method, BindingFlags flags,

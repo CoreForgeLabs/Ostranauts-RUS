@@ -356,5 +356,60 @@ namespace OstraI18n
                 }
             }
         }
+
+        // Objective.MakeTutorialObjective -> localizes tutorial objective name and descriptions
+        public static void MakeTutorialObjectivePostfix(Ostranauts.Core.Tutorials.TutorialBeat tutorialBeat, ref Ostranauts.Objectives.Objective __result)
+        {
+            if (!LangPack.Active || __result == null || tutorialBeat == null) return;
+            try
+            {
+                string beatName = tutorialBeat.GetType().Name;
+                string nameKey = "TUT_NAME_" + beatName;
+                string descKey = "TUT_DESC_" + beatName;
+                string compKey = "TUT_COMP_" + beatName;
+
+                string nameTr = I18n.Get(nameKey);
+                if (!string.IsNullOrEmpty(nameTr) && nameTr != nameKey)
+                    __result.strDisplayName = nameTr;
+
+                string descTr = I18n.Get(descKey);
+                if (!string.IsNullOrEmpty(descTr) && descTr != descKey)
+                    __result.strDisplayDesc = descTr;
+
+                string compTr = I18n.Get(compKey);
+                if (!string.IsNullOrEmpty(compTr) && compTr != compKey)
+                    __result.strDisplayDescComplete = compTr;
+            }
+            catch (Exception ex)
+            {
+                Plugin.Log.LogWarning("[i18n] MakeTutorialObjectivePostfix failed: " + ex.Message);
+            }
+        }
+
+        // ObjectivePanel.CompleteObjective -> localizes "Objective complete" title banner
+        public static void ObjectivePanelCompleteObjectivePostfix(Ostranauts.Objectives.ObjectivePanel __instance)
+        {
+            if (!LangPack.Active || (UnityEngine.Object)(object)__instance == (UnityEngine.Object)null) return;
+            try
+            {
+                var titleField = HarmonyLib.AccessTools.Field(typeof(Ostranauts.Objectives.ObjectivePanel), "_txtTitle");
+                if (titleField != null)
+                {
+                    var txt = titleField.GetValue(__instance) as TMPro.TMP_Text;
+                    if (txt != null)
+                    {
+                        var tr = I18n.Get("OBJECTIVE_COMPLETE");
+                        if (!string.IsNullOrEmpty(tr) && tr != "OBJECTIVE_COMPLETE")
+                        {
+                            txt.text = tr.TrimEnd(':', ' ');
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Plugin.Log.LogWarning("[i18n] ObjectivePanelCompleteObjectivePostfix failed: " + ex.Message);
+            }
+        }
     }
 }

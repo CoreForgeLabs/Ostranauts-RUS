@@ -22,7 +22,7 @@ CUR_DATA = os.path.join(GAME, "Ostranauts_Data", "StreamingAssets", "data")
 TRANSLATABLE = ("strTitle", "strDesc", "strTooltip", "strNameFriendly", "strNameShort", "strFriendlyName",
                  "strArticleBody", "strArticleTitle", "strNodeLabel", "strBody", "strDescription",
                  "strRequirementDescription", "strFriendlyDescription", "description", "strTutorialKey",
-                 "strColonyName", "strMetonym", "designation", "model", "make", "origin")
+                 "strColonyName", "strMetonym", "designation", "model", "make", "origin", "aPhaseTitles")
 
 
 # ЛЮБОЕ слово в квадратных скобках — грамматический токен (не только [us]/[them]/

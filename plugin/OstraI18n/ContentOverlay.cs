@@ -69,7 +69,7 @@ namespace OstraI18n
             "strTitle", "strDesc", "strTooltip", "strNameFriendly", "strNameShort", "strFriendlyName",
             "strArticleBody", "strArticleTitle", "strNodeLabel", "strBody", "strDescription",
             "strRequirementDescription", "strFriendlyDescription", "description", "strTutorialKey",
-            "strColonyName", "strMetonym", "designation", "model", "make", "origin",
+            "strColonyName", "strMetonym", "designation", "model", "make", "origin", "aPhaseTitles",
         };
 
         // Эффективные таблицы, используемые при применении оверлея. По умолчанию
@@ -244,9 +244,23 @@ namespace OstraI18n
                 {
                     if (!TranslatableFields.Contains(fieldEntry.Name)) continue;
                     var prop = targetType.GetProperty(fieldEntry.Name);
-                    if (prop == null || prop.PropertyType != typeof(string) || !prop.CanWrite) continue;
-                    prop.SetValue(target, fieldEntry.Value.GetString());
-                    Applied++;
+                    if (prop == null || !prop.CanWrite) continue;
+
+                    if (prop.PropertyType == typeof(string) && fieldEntry.Value.ValueKind == JsonValueKind.String)
+                    {
+                        prop.SetValue(target, fieldEntry.Value.GetString());
+                        Applied++;
+                    }
+                    else if (prop.PropertyType == typeof(string[]) && fieldEntry.Value.ValueKind == JsonValueKind.Array)
+                    {
+                        var list = new List<string>();
+                        foreach (var elem in fieldEntry.Value.EnumerateArray())
+                        {
+                            list.Add(elem.ValueKind == JsonValueKind.String ? elem.GetString() : null);
+                        }
+                        prop.SetValue(target, list.ToArray());
+                        Applied++;
+                    }
                 }
             }
         }
