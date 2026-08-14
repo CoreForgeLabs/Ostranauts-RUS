@@ -23,22 +23,22 @@ def main():
 
     os.makedirs(WORKSHOP_DIR, exist_ok=True)
 
-    # 1. Generate 512x512 preview.png from Logo.jpg
-    logo_path = os.path.join(SCRIPT_DIR, "Logo.jpg")
+    # 1. Generate 512x512 transparent preview.png from astronaut_ru.png
+    astro_path = os.path.join(SCRIPT_DIR, "langs", "ru", "images", "astronaut_ru.png")
     preview_path = os.path.join(WORKSHOP_DIR, "preview.png")
-    if os.path.exists(logo_path):
-        with Image.open(logo_path) as im:
-            # Crop to square center if needed
+    if os.path.exists(astro_path):
+        with Image.open(astro_path) as im:
             w, h = im.size
-            min_dim = min(w, h)
-            left = (w - min_dim) // 2
-            top = (h - min_dim) // 2
-            right = left + min_dim
-            bottom = top + min_dim
-            im_cropped = im.crop((left, top, right, bottom))
-            im_resized = im_cropped.resize((512, 512), Image.Resampling.LANCZOS)
-            im_resized.save(preview_path, format="PNG", optimize=True)
-            print(f"[1/5] Создан preview.png (512x512) -> {preview_path}")
+            scale = min(500.0 / w, 500.0 / h)
+            new_w = int(w * scale)
+            new_h = int(h * scale)
+            im_resized = im.resize((new_w, new_h), Image.Resampling.LANCZOS)
+            canvas = Image.new('RGBA', (512, 512), (0, 0, 0, 0))
+            pos_x = (512 - new_w) // 2
+            pos_y = (512 - new_h) // 2
+            canvas.paste(im_resized, (pos_x, pos_y), im_resized)
+            canvas.save(preview_path, format="PNG", optimize=True)
+            print(f"[1/5] Создан чистый прозрачный preview.png (512x512) -> {preview_path}")
 
     # 2. Generate mod_info.json
     mod_info = [
