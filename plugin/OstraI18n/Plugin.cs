@@ -391,6 +391,7 @@ namespace OstraI18n
             var h = new Harmony(Plugin.GUID);
             var flagsPub = BindingFlags.Public | BindingFlags.Static;
             var flagsPriv = BindingFlags.NonPublic | BindingFlags.Static;
+            var flagsInstPriv = BindingFlags.NonPublic | BindingFlags.Instance;
             var t = typeof(Patches);
 
             TryPatch(h, typeof(Localisation), "Get", flagsPub,
@@ -407,6 +408,8 @@ namespace OstraI18n
                 null, typeof(FontFallback).GetMethod(nameof(FontFallback.AfterSettingsInit)), ref ok, ref failed);
             TryPatch(h, typeof(DataHandler), "GetString", flagsPub,
                 null, t.GetMethod(nameof(Patches.GetStringPostfix)), ref ok, ref failed);
+            TryPatch(h, typeof(GUIDuties), "SetCrew", flagsInstPriv,
+                null, t.GetMethod(nameof(Patches.DutiesSetCrewPostfix)), ref ok, ref failed);
         }
 
         private static void TryPatch(Harmony h, Type type, string method, BindingFlags flags,

@@ -241,5 +241,36 @@ namespace OstraI18n
             }
             catch { }
         }
+
+        // GUIDuties.SetCrew -> localizes duty column headers on the ship duties panel.
+        public static void DutiesSetCrewPostfix(GUIDuties __instance)
+        {
+            if (!LangPack.Active || (UnityEngine.Object)(object)__instance == (UnityEngine.Object)null) return;
+            try
+            {
+                var pnl = __instance.transform.Find("pnlHeader/pnlItems");
+                if ((UnityEngine.Object)(object)pnl != (UnityEngine.Object)null)
+                {
+                    var texts = pnl.GetComponentsInChildren<TMPro.TMP_Text>();
+                    for (int i = 0; i < texts.Length; i++)
+                    {
+                        if (i + 1 < JsonCompanyRules.aDutiesNew.Length)
+                        {
+                            var raw = JsonCompanyRules.aDutiesNew[i + 1];
+                            var key = "DUTY_" + raw;
+                            var localized = I18n.Get(key);
+                            if (!string.IsNullOrEmpty(localized) && localized != key)
+                            {
+                                texts[i].text = localized;
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Plugin.Log.LogWarning("[i18n] DutiesSetCrewPostfix failed: " + ex.Message);
+            }
+        }
     }
 }
