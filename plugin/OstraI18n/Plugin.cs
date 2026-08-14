@@ -35,7 +35,7 @@ namespace OstraI18n
             Application.runInBackground = true; // session-0/headless: keep player loop pumping without window focus
             Log = Logger;
             Enabled = Config.Bind("General", "Enabled", true, "Master switch. false = vanilla game.");
-            Language = Config.Bind("General", "Language", "Russian", "Target language. Needs grammar_<lang>.json + verbs_<lang>.json in DataDir.");
+            Language = Config.Bind("General", "Language", "ru", "Target language code (ru, en).");
             DataDir = Config.Bind("General", "DataDir", Path.Combine(Paths.PluginPath, "OstraI18n"), "Folder with language packs.");
             FormalYou = Config.Bind("General", "FormalYou", false, "true = vy-form for player address.");
             QaMode = Config.Bind("General", "QaMode", false, "true = псевдоязык ⟦...⟧ поверх переводов, для поиска непокрытых строк.");

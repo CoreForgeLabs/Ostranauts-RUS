@@ -243,13 +243,37 @@ namespace OstraI18n
 
         private LanguageEntry GetCurrentLanguageEntry()
         {
-            var curName = Plugin.Language.Value;
+            var curCode = LangPack.Code;
+            var curName = Plugin.Language != null ? Plugin.Language.Value : "ru";
+
+            if (!string.IsNullOrEmpty(curCode))
+            {
+                foreach (var l in _availableLanguages)
+                {
+                    if (l.Code.Equals(curCode, StringComparison.OrdinalIgnoreCase))
+                        return l;
+                }
+            }
+
             foreach (var l in _availableLanguages)
             {
-                if (l.Name.Equals(curName, StringComparison.OrdinalIgnoreCase) || l.Code.Equals(curName, StringComparison.OrdinalIgnoreCase))
+                if (l.Code.Equals(curName, StringComparison.OrdinalIgnoreCase) ||
+                    l.Name.Equals(curName, StringComparison.OrdinalIgnoreCase) ||
+                    l.DisplayName.Equals(curName, StringComparison.OrdinalIgnoreCase) ||
+                    (curName.StartsWith("ru", StringComparison.OrdinalIgnoreCase) && l.Code.Equals("ru", StringComparison.OrdinalIgnoreCase)) ||
+                    (curName.StartsWith("en", StringComparison.OrdinalIgnoreCase) && l.Code.Equals("en", StringComparison.OrdinalIgnoreCase)))
+                {
+                    return l;
+                }
+            }
+
+            foreach (var l in _availableLanguages)
+            {
+                if (l.Code.Equals("ru", StringComparison.OrdinalIgnoreCase))
                     return l;
             }
-            return _availableLanguages[0];
+
+            return _availableLanguages.Count > 0 ? _availableLanguages[0] : new LanguageEntry { Code = "ru", Name = "Russian", DisplayName = "Русский" };
         }
 
         private LanguageEntry GetNextLanguageEntry()
