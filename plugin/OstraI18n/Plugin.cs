@@ -413,6 +413,8 @@ namespace OstraI18n
             TryPatch(h, typeof(GUIChargenBody), "Awake", flagsInstPriv,
                 null, t.GetMethod(nameof(Patches.ChargenBodyAwakePostfix)), ref ok, ref failed);
             var flagsInstPub = BindingFlags.Public | BindingFlags.Instance;
+            TryPatch(h, typeof(GUIData), "Init", flagsInstPub,
+                null, t.GetMethod(nameof(Patches.GUIDataInitPostfix)), ref ok, ref failed);
             TryPatch(h, typeof(Ostranauts.Objectives.Objective), "MakeTutorialObjective", flagsPub,
                 null, t.GetMethod(nameof(Patches.MakeTutorialObjectivePostfix)), ref ok, ref failed);
             TryPatch(h, typeof(Ostranauts.Objectives.ObjectivePanel), "CompleteObjective", flagsInstPub,

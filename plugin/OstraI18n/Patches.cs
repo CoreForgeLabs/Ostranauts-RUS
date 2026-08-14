@@ -288,6 +288,12 @@ namespace OstraI18n
             { "SHE / HER", "GUI_PRONOUN_SHE_HER" },
             { "THEY\nTHEM", "GUI_PRONOUN_THEY_THEM" },
             { "THEY / THEM", "GUI_PRONOUN_THEY_THEM" },
+            { "HE", "GUI_PRONOUN_HE" },
+            { "HIM", "GUI_PRONOUN_HIM" },
+            { "SHE", "GUI_PRONOUN_SHE" },
+            { "HER", "GUI_PRONOUN_HER" },
+            { "THEY", "GUI_PRONOUN_THEY" },
+            { "THEM", "GUI_PRONOUN_THEM" },
             { "SKIN", "GUI_BODY_SKIN" },
             { "HAIR", "GUI_BODY_HAIR" },
             { "SCAR", "GUI_BODY_SCAR" },
@@ -300,8 +306,44 @@ namespace OstraI18n
             { "LIPS", "GUI_BODY_LIPS" },
             { "NECK", "GUI_BODY_NECK" },
             { "HEAD", "GUI_BODY_HEAD" },
-            { "BODY", "GUI_BODY_BODY" }
+            { "BODY", "GUI_BODY_BODY" },
+            { "Career Details", "GUI_CAREER_DETAILS" },
+            { "Career Event", "GUI_CAREER_EVENT" },
+            { "Special Events", "GUI_CAREER_SPECIAL_EVENTS_TITLE" },
+            { "Summary", "GUI_CAREER_SUMMARY" },
+            { "Costs", "GUI_CAREER_COSTS" },
+            { "Credentials", "GUI_CAREER_CREDENTIALS" },
+            { "Continue Career", "GUI_CAREER_SIDEBAR_CAREER_CONT" },
+            { "Return to Career", "GUI_CAREER_RETURN" },
+            { "Selected Skills", "GUI_CAREER_SELECTED_SKILLS" },
+            { "Skills:", "GUI_CAREER_SKILLS_HEADER" },
+            { "Traits:", "GUI_CAREER_TRAITS_HEADER" },
+            { "Hobbies:", "GUI_CAREER_HOBBIES_HEADER" },
+            { "Take Ship", "GUI_CAREER_TAKE_SHIP" },
+            { "Undo Last", "GUI_CAREER_UNDO_LAST" },
+            { "Apply", "GUI_CAREER_APPLY" },
+            { "Clear", "GUI_CAREER_CLEAR" },
+            { "CITIZENSHIP VERIFIED", "GUI_HW_CITIZENSHIP_VERIFIED" },
+            { "FUNDS VERIFIED", "GUI_HW_FUNDS_VERIFIED" },
+            { "CREDIT", "GUI_HW_CREDIT" },
+            { "PREPAY", "GUI_HW_PREPAY" },
+            { "POINTS LEFT", "GUI_TRAITS_POINTS_LEFT" },
+            { "Subtotal", "GUI_TRAITS_SUBTOTAL" }
         };
+
+        // GUIData.Init -> localizes any opened UI screen hierarchy (Chargen, Duties, PDA, etc.)
+        public static void GUIDataInitPostfix(GUIData __instance)
+        {
+            if (!LangPack.Active || (UnityEngine.Object)(object)__instance == (UnityEngine.Object)null) return;
+            try
+            {
+                LocalizeHierarchy(__instance.transform, ChargenBodyTextMap);
+            }
+            catch (Exception ex)
+            {
+                Plugin.Log.LogWarning("[i18n] GUIDataInitPostfix failed: " + ex.Message);
+            }
+        }
 
         // GUIChargenBody.Awake -> localizes character creation Dating App UI (RIN-A)
         public static void ChargenBodyAwakePostfix(GUIChargenBody __instance)
@@ -317,7 +359,7 @@ namespace OstraI18n
             }
         }
 
-        private static void LocalizeHierarchy(Transform root, Dictionary<string, string> map)
+        public static void LocalizeHierarchy(Transform root, Dictionary<string, string> map)
         {
             if (root == null) return;
             var tmpTexts = root.GetComponentsInChildren<TMPro.TMP_Text>(true);
@@ -326,13 +368,26 @@ namespace OstraI18n
                 foreach (var t in tmpTexts)
                 {
                     if (t == null || string.IsNullOrEmpty(t.text)) continue;
-                    var trimmed = t.text.Trim();
-                    if (map.TryGetValue(trimmed, out var key))
+                    var norm = t.text.Trim().Replace("\r\n", "\n").Replace("\r", "\n");
+                    string key;
+                    if (map.TryGetValue(norm, out key))
                     {
                         var localized = I18n.Get(key);
                         if (!string.IsNullOrEmpty(localized) && localized != key)
                         {
                             t.text = localized;
+                        }
+                    }
+                    else
+                    {
+                        var noTags = System.Text.RegularExpressions.Regex.Replace(norm, "<[^>]+>", "").Trim();
+                        if (map.TryGetValue(noTags, out key))
+                        {
+                            var localized = I18n.Get(key);
+                            if (!string.IsNullOrEmpty(localized) && localized != key)
+                            {
+                                t.text = localized;
+                            }
                         }
                     }
                 }
@@ -344,13 +399,26 @@ namespace OstraI18n
                 foreach (var t in uiTexts)
                 {
                     if (t == null || string.IsNullOrEmpty(t.text)) continue;
-                    var trimmed = t.text.Trim();
-                    if (map.TryGetValue(trimmed, out var key))
+                    var norm = t.text.Trim().Replace("\r\n", "\n").Replace("\r", "\n");
+                    string key;
+                    if (map.TryGetValue(norm, out key))
                     {
                         var localized = I18n.Get(key);
                         if (!string.IsNullOrEmpty(localized) && localized != key)
                         {
                             t.text = localized;
+                        }
+                    }
+                    else
+                    {
+                        var noTags = System.Text.RegularExpressions.Regex.Replace(norm, "<[^>]+>", "").Trim();
+                        if (map.TryGetValue(noTags, out key))
+                        {
+                            var localized = I18n.Get(key);
+                            if (!string.IsNullOrEmpty(localized) && localized != key)
+                            {
+                                t.text = localized;
+                            }
                         }
                     }
                 }
