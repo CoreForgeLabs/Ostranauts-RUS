@@ -410,6 +410,8 @@ namespace OstraI18n
                 null, t.GetMethod(nameof(Patches.GetStringPostfix)), ref ok, ref failed);
             TryPatch(h, typeof(GUIDuties), "SetCrew", flagsInstPriv,
                 null, t.GetMethod(nameof(Patches.DutiesSetCrewPostfix)), ref ok, ref failed);
+            TryPatch(h, typeof(GUIChargenBody), "Awake", flagsInstPriv,
+                null, t.GetMethod(nameof(Patches.ChargenBodyAwakePostfix)), ref ok, ref failed);
         }
 
         private static void TryPatch(Harmony h, Type type, string method, BindingFlags flags,

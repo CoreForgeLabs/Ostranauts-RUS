@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using UnityEngine;
 
 namespace OstraI18n
 {
@@ -270,6 +271,89 @@ namespace OstraI18n
             catch (Exception ex)
             {
                 Plugin.Log.LogWarning("[i18n] DutiesSetCrewPostfix failed: " + ex.Message);
+            }
+        }
+
+        private static readonly Dictionary<string, string> ChargenBodyTextMap = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
+        {
+            { "The First Intra-System Dating App!", "GUI_CHARGEN_DATING_APP_SUBTITLE" },
+            { "PRONOUN", "GUI_CHARGEN_PRONOUN" },
+            { "FLIRTS WITH", "GUI_CHARGEN_FLIRTS_WITH" },
+            { "NAME", "GUI_CHARGEN_NAME" },
+            { "RANDOMIZE", "GUI_CHARGEN_RANDOMIZE" },
+            { "DONE!", "GUI_CHARGEN_DONE" },
+            { "HE\nHIM", "GUI_PRONOUN_HE_HIM" },
+            { "HE / HIM", "GUI_PRONOUN_HE_HIM" },
+            { "SHE\nHER", "GUI_PRONOUN_SHE_HER" },
+            { "SHE / HER", "GUI_PRONOUN_SHE_HER" },
+            { "THEY\nTHEM", "GUI_PRONOUN_THEY_THEM" },
+            { "THEY / THEM", "GUI_PRONOUN_THEY_THEM" },
+            { "SKIN", "GUI_BODY_SKIN" },
+            { "HAIR", "GUI_BODY_HAIR" },
+            { "SCAR", "GUI_BODY_SCAR" },
+            { "GLASSES", "GUI_BODY_GLASSES" },
+            { "BEARD", "GUI_BODY_BEARD" },
+            { "PUPILS", "GUI_BODY_PUPILS" },
+            { "EYES", "GUI_BODY_EYES" },
+            { "NOSE", "GUI_BODY_NOSE" },
+            { "TEETH", "GUI_BODY_TEETH" },
+            { "LIPS", "GUI_BODY_LIPS" },
+            { "NECK", "GUI_BODY_NECK" },
+            { "HEAD", "GUI_BODY_HEAD" },
+            { "BODY", "GUI_BODY_BODY" }
+        };
+
+        // GUIChargenBody.Awake -> localizes character creation Dating App UI (RIN-A)
+        public static void ChargenBodyAwakePostfix(GUIChargenBody __instance)
+        {
+            if (!LangPack.Active || (UnityEngine.Object)(object)__instance == (UnityEngine.Object)null) return;
+            try
+            {
+                LocalizeHierarchy(__instance.transform, ChargenBodyTextMap);
+            }
+            catch (Exception ex)
+            {
+                Plugin.Log.LogWarning("[i18n] ChargenBodyAwakePostfix failed: " + ex.Message);
+            }
+        }
+
+        private static void LocalizeHierarchy(Transform root, Dictionary<string, string> map)
+        {
+            if (root == null) return;
+            var tmpTexts = root.GetComponentsInChildren<TMPro.TMP_Text>(true);
+            if (tmpTexts != null)
+            {
+                foreach (var t in tmpTexts)
+                {
+                    if (t == null || string.IsNullOrEmpty(t.text)) continue;
+                    var trimmed = t.text.Trim();
+                    if (map.TryGetValue(trimmed, out var key))
+                    {
+                        var localized = I18n.Get(key);
+                        if (!string.IsNullOrEmpty(localized) && localized != key)
+                        {
+                            t.text = localized;
+                        }
+                    }
+                }
+            }
+
+            var uiTexts = root.GetComponentsInChildren<UnityEngine.UI.Text>(true);
+            if (uiTexts != null)
+            {
+                foreach (var t in uiTexts)
+                {
+                    if (t == null || string.IsNullOrEmpty(t.text)) continue;
+                    var trimmed = t.text.Trim();
+                    if (map.TryGetValue(trimmed, out var key))
+                    {
+                        var localized = I18n.Get(key);
+                        if (!string.IsNullOrEmpty(localized) && localized != key)
+                        {
+                            t.text = localized;
+                        }
+                    }
+                }
             }
         }
     }
