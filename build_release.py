@@ -90,7 +90,19 @@ def build_release(version=None):
     plugin_dest = os.path.join(stage_dir, "BepInEx", "plugins", "OstraI18n")
     os.makedirs(plugin_dest, exist_ok=True)
 
-    # 3. Copy DLLs
+    # 3. Copy complete BepInEx 6 Framework (Doorstop, winhttp.dll, core/)
+    bepinex_src = os.path.join(SCRIPT_DIR, "bepinex6_be", "extracted")
+    if os.path.exists(bepinex_src):
+        for item in os.listdir(bepinex_src):
+            s_path = os.path.join(bepinex_src, item)
+            d_path = os.path.join(stage_dir, item)
+            if os.path.isdir(s_path):
+                copy_filtered_tree(s_path, d_path)
+            else:
+                shutil.copy2(s_path, d_path)
+        print("  + Copied complete BepInEx 6 framework (winhttp.dll, doorstop_config.ini, BepInEx/core/)")
+
+    # 4. Copy Mod DLLs
     core_dll = os.path.join(SCRIPT_DIR, "core", "OstraI18n.Core", "bin", "Release", "netstandard2.1", "OstraI18n.Core.dll")
     plugin_dll = os.path.join(SCRIPT_DIR, "plugin", "OstraI18n", "bin", "Release", "netstandard2.1", "OstraI18n.dll")
 
@@ -105,38 +117,39 @@ def build_release(version=None):
     shutil.copy2(plugin_dll, plugin_dest)
     print(f"  + Copied DLLs: OstraI18n.dll, OstraI18n.Core.dll")
 
-    # 4. Copy catalog
+    # 5. Copy catalog
     catalog_src = os.path.join(SCRIPT_DIR, "catalog")
     catalog_dest = os.path.join(plugin_dest, "catalog")
     if os.path.exists(catalog_src):
         copy_filtered_tree(catalog_src, catalog_dest)
         print(f"  + Copied catalog/ ({len(os.listdir(catalog_dest))} files)")
 
-    # 5. Copy langs
+    # 6. Copy langs
     langs_src = os.path.join(SCRIPT_DIR, "langs")
     langs_dest = os.path.join(plugin_dest, "langs")
     if os.path.exists(langs_src):
         copy_filtered_tree(langs_src, langs_dest)
         print(f"  + Copied langs/ (languages.json, ru, en)")
 
-    # 6. Create instructions & docs
+    # 7. Create instructions & docs (for players)
     print("\n[4/5] Writing installation instructions & documentation...")
     
     install_guide_text = f"""======================================================================
-  OstraI18n - Русификатор для Ostranauts (Версия v{display_ver})
+  OstraI18n - Полная русификация для Ostranauts (Версия v{display_ver})
   Автор модификации: CFLabs (CoreForgeLabs)
   Поддержка на Boosty: https://boosty.to/coreforgelabs
 ======================================================================
 
-ИНСТРУКЦИЯ ПО УСТАНОВКЕ:
+ИНСТРУКЦИЯ ПО УСТАНОВКЕ (В ОДИН ШАГ):
 
-1. Убедитесь, что у вас установлен BepInEx 6 (или распакуйте архив в папку игры).
-2. Скопируйте папку "BepInEx" из архива в корневую директорию игры Ostranauts:
+1. Распакуйте ВСЁ содержимое этого архива (папку BepInEx, файлы winhttp.dll
+   и doorstop_config.ini) в корневую директорию игры Ostranauts:
    (например: Steam\\steamapps\\common\\Ostranauts\\)
-3. Запустите игру.
-4. В Главном меню появится интерактивный космонавт с флагом переключения языка
+   так, чтобы winhttp.dll оказался в одной папке с Ostranauts.exe.
+2. Запустите игру.
+3. В Главном меню появится интерактивный космонавт с флагом переключения языка
    и информационная панель со ссылкой на Boosty.
-5. Приятной игры, капитан!
+4. Приятной игры, капитан!
 
 ----------------------------------------------------------------------
 О МОДИФИКАЦИИ:
