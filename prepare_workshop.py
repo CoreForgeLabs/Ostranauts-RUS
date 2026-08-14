@@ -11,8 +11,8 @@ import shutil
 import json
 from PIL import Image
 
-SCRIPT_DIR = r"F:\DEV2\ostra_i18n"
-GAME_DIR = r"F:\Games\Steam\steamapps\common\Ostranauts"
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+GAME_DIR = os.environ.get("OSTRANAUTS_GAME_DIR", r"F:\Games\Steam\steamapps\common\Ostranauts")
 WORKSHOP_DIR = os.path.join(SCRIPT_DIR, "workshop", "OstraI18n")
 RELEASE_BEPINEX = os.path.join(SCRIPT_DIR, "Релиз", "OstraI18n_v2.0", "BepInEx")
 

@@ -11,7 +11,8 @@ namespace OstraI18n.Core.Tests
         [Fact]
         public void FindMissingItem()
         {
-            var managed = @"F:\Games\Steam\steamapps\common\Ostranauts\Ostranauts_Data\Managed";
+            var managed = Environment.GetEnvironmentVariable("OSTRANAUTS_MANAGED");
+            if (string.IsNullOrEmpty(managed) || !Directory.Exists(managed)) return;
             var asm = Assembly.LoadFrom(Path.Combine(managed, "Assembly-CSharp.dll"));
 
             var sb = new StringBuilder();

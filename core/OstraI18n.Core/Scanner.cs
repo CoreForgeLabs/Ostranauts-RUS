@@ -8,7 +8,12 @@ namespace OstraI18n.Core
     {
         public static void Main(string[] args)
         {
-            var managed = @"F:\Games\Steam\steamapps\common\Ostranauts\Ostranauts_Data\Managed";
+            var managed = args.Length > 0 ? args[0] : Environment.GetEnvironmentVariable("OSTRANAUTS_MANAGED") ?? @"Ostranauts_Data\Managed";
+            if (!Directory.Exists(managed))
+            {
+                Console.WriteLine("Please specify path to Ostranauts_Data\\Managed directory as argument or set OSTRANAUTS_MANAGED env var.");
+                return;
+            }
             var asm = Assembly.LoadFrom(Path.Combine(managed, "Assembly-CSharp.dll"));
 
             Console.WriteLine("=== SCANNING FOR 'Missing item' AND 'собирается' ===");
