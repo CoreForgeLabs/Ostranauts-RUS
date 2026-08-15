@@ -865,12 +865,12 @@ namespace OstraI18n
                         else if (s == "Waiting for response") s = "Ожидание ответа";
                         else if (s == "Port Open") s = "Порт открыт";
                         else if (s.StartsWith("Docked: ")) s = "Стыковка: " + s.Substring(8);
-                        else if (s.IndexOf("разрешение на расстыковку", StringComparison.OrdinalIgnoreCase) >= 0) s = "< Запрос отстыковки";
-                        else if (s.IndexOf("разрешение на стыковку", StringComparison.OrdinalIgnoreCase) >= 0) s = "< Запрос стыковки";
-                        else if (s.IndexOf("списка экипажа", StringComparison.OrdinalIgnoreCase) >= 0) s = "< Список экипажа";
-                        else if (s.IndexOf("рыночные данные", StringComparison.OrdinalIgnoreCase) >= 0) s = "< Цены на рынке";
-                        else if (s.IndexOf("нет топлива", StringComparison.OrdinalIgnoreCase) >= 0) s = "< SOS: Нет топлива";
-                        else if (s.IndexOf("приближается угроза", StringComparison.OrdinalIgnoreCase) >= 0 || s.IndexOf("угроза", StringComparison.OrdinalIgnoreCase) >= 0) s = "< SOS: Нападение";
+                        else if (s.IndexOf("расстыковк", StringComparison.OrdinalIgnoreCase) >= 0 || s.IndexOf("отстыковк", StringComparison.OrdinalIgnoreCase) >= 0) s = "< Отстыковка";
+                        else if (s.IndexOf("стыковк", StringComparison.OrdinalIgnoreCase) >= 0) s = "< Стыковка";
+                        else if (s.IndexOf("рынок", StringComparison.OrdinalIgnoreCase) >= 0 || s.IndexOf("рыночн", StringComparison.OrdinalIgnoreCase) >= 0) s = "< Рынок";
+                        else if (s.IndexOf("экипаж", StringComparison.OrdinalIgnoreCase) >= 0) s = "< Экипаж";
+                        else if (s.IndexOf("топлив", StringComparison.OrdinalIgnoreCase) >= 0) s = "< SOS: Топливо";
+                        else if (s.IndexOf("угроз", StringComparison.OrdinalIgnoreCase) >= 0 || s.IndexOf("нападен", StringComparison.OrdinalIgnoreCase) >= 0) s = "< SOS: Угроза";
                         left[i] = s;
                     }
                 }
@@ -886,12 +886,12 @@ namespace OstraI18n
                         else if (s == "NEXT PAGE>") s = "СЛЕД. СТР.>";
                         else if (s == "RETURN TO") s = "";
                         else if (s == "MAIN MENU>") s = "В МЕНЮ>";
-                        else if (s.IndexOf("разрешение на расстыковку", StringComparison.OrdinalIgnoreCase) >= 0) s = "Запрос отстыковки >";
-                        else if (s.IndexOf("разрешение на стыковку", StringComparison.OrdinalIgnoreCase) >= 0) s = "Запрос стыковки >";
-                        else if (s.IndexOf("списка экипажа", StringComparison.OrdinalIgnoreCase) >= 0) s = "Список экипажа >";
-                        else if (s.IndexOf("рыночные данные", StringComparison.OrdinalIgnoreCase) >= 0) s = "Цены на рынке >";
-                        else if (s.IndexOf("нет топлива", StringComparison.OrdinalIgnoreCase) >= 0) s = "SOS: Нет топлива >";
-                        else if (s.IndexOf("приближается угроза", StringComparison.OrdinalIgnoreCase) >= 0 || s.IndexOf("угроза", StringComparison.OrdinalIgnoreCase) >= 0) s = "SOS: Нападение >";
+                        else if (s.IndexOf("расстыковк", StringComparison.OrdinalIgnoreCase) >= 0 || s.IndexOf("отстыковк", StringComparison.OrdinalIgnoreCase) >= 0) s = "Отстыковка >";
+                        else if (s.IndexOf("стыковк", StringComparison.OrdinalIgnoreCase) >= 0) s = "Стыковка >";
+                        else if (s.IndexOf("рынок", StringComparison.OrdinalIgnoreCase) >= 0 || s.IndexOf("рыночн", StringComparison.OrdinalIgnoreCase) >= 0) s = "Рынок >";
+                        else if (s.IndexOf("экипаж", StringComparison.OrdinalIgnoreCase) >= 0) s = "Экипаж >";
+                        else if (s.IndexOf("топлив", StringComparison.OrdinalIgnoreCase) >= 0) s = "SOS: Топливо >";
+                        else if (s.IndexOf("угроз", StringComparison.OrdinalIgnoreCase) >= 0 || s.IndexOf("нападен", StringComparison.OrdinalIgnoreCase) >= 0) s = "SOS: Угроза >";
                         right[i] = s;
                     }
                 }
