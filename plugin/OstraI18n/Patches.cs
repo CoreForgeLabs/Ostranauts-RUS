@@ -943,6 +943,8 @@ namespace OstraI18n
         }
 
         private static readonly System.Reflection.FieldInfo _msgStatusList = AccessTools.Field(typeof(Ostranauts.ShipGUIs.NavStation.GUIMessageDisplay), "_statusMessages");
+        private static readonly System.Reflection.FieldInfo _msgTxtStatus = AccessTools.Field(typeof(Ostranauts.ShipGUIs.NavStation.GUIMessageDisplay), "txtStatus");
+        private static readonly System.Reflection.FieldInfo _msgTxtComms = AccessTools.Field(typeof(Ostranauts.ShipGUIs.NavStation.GUIMessageDisplay), "txtComms");
 
         public static void GUIMessageDisplayPreSetupPrefix(Ostranauts.ShipGUIs.NavStation.GUIMessageDisplay __instance)
         {
@@ -955,10 +957,48 @@ namespace OstraI18n
                     for (int i = 0; i < list.Count; i++)
                     {
                         var s = list[i];
-                        if (s.IndexOf("incoming port", StringComparison.OrdinalIgnoreCase) >= 0) list[i] = "Открытие входящего порта.....ГОТОВО";
-                        else if (s.IndexOf("routing table", StringComparison.OrdinalIgnoreCase) >= 0) list[i] = "Таблица маршрутизации.....ГОТОВО";
-                        else if (s.IndexOf("kernel driver", StringComparison.OrdinalIgnoreCase) >= 0) list[i] = "Загрузка драйвера ядра.....ГОТОВО";
-                        else if (s.IndexOf("message Processor", StringComparison.OrdinalIgnoreCase) >= 0) list[i] = "Обработчик сообщений.....РАБОТАЕТ";
+                        if (s.IndexOf("incoming port", StringComparison.OrdinalIgnoreCase) >= 0) list[i] = "Открытие входящего порта";
+                        else if (s.IndexOf("routing table", StringComparison.OrdinalIgnoreCase) >= 0) list[i] = "Таблица маршрутизации";
+                        else if (s.IndexOf("kernel driver", StringComparison.OrdinalIgnoreCase) >= 0) list[i] = "Загрузка драйвера ядра";
+                        else if (s.IndexOf("message Processor", StringComparison.OrdinalIgnoreCase) >= 0) list[i] = "Обработчик сообщений интерфейса";
+                    }
+                }
+            }
+            catch { }
+        }
+
+        public static void GUIMessageDisplayUpdatePostfix(Ostranauts.ShipGUIs.NavStation.GUIMessageDisplay __instance)
+        {
+            if (!LangPack.Active || !string.Equals(LangPack.Code, "ru", StringComparison.OrdinalIgnoreCase)) return;
+            try
+            {
+                var txtStatus = _msgTxtStatus?.GetValue(__instance) as TMPro.TMP_Text;
+                if (txtStatus != null && !string.IsNullOrEmpty(txtStatus.text))
+                {
+                    if (txtStatus.text.Contains("DONE") || txtStatus.text.Contains("OPERATIONAL") || txtStatus.text.Contains("Connection established") || txtStatus.text.Contains("incoming port"))
+                    {
+                        txtStatus.text = txtStatus.text
+                            .Replace("Open incoming port", "Открытие входящего порта")
+                            .Replace("Build routing table", "Таблица маршрутизации")
+                            .Replace("Load kernel driver", "Загрузка драйвера ядра")
+                            .Replace("Interface message Processor", "Обработчик сообщений интерфейса")
+                            .Replace("DONE", "ГОТОВО")
+                            .Replace("OPERATIONAL", "РАБОТАЕТ")
+                            .Replace("Connection established", "Соединение установлено");
+                    }
+                }
+
+                var txtComms = _msgTxtComms?.GetValue(__instance) as TMPro.TMP_Text;
+                if (txtComms != null && !string.IsNullOrEmpty(txtComms.text))
+                {
+                    if (txtComms.text.Contains("Connected with ") || txtComms.text.Contains("Automated Response Service"))
+                    {
+                        txtComms.text = txtComms.text
+                            .Replace("Connected with OKLG ARS 2000 - Automated Response Service of the K-Leg: Port Azikiwe", "Соединение: ARS 2000 OKLG — Автоответчик станции K-Leg: Порт Азикиве")
+                            .Replace("Connected with ", "Соединение: ")
+                            .Replace("Automated Response Service of the K-Leg: Port Azikiwe", "Автоответчик станции K-Leg: Порт Азикиве")
+                            .Replace("Automated Response Service", "Автоответчик")
+                            .Replace("Port Azikiwe", "Порт Азикиве");
                     }
                 }
             }

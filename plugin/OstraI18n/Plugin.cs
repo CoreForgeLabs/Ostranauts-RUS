@@ -478,6 +478,8 @@ namespace OstraI18n
                 null, t.GetMethod(nameof(Patches.SaveIndicatorResetPostfix)), ref ok, ref failed);
             TryPatch(h, typeof(Ostranauts.ShipGUIs.NavStation.GUIMessageDisplay), "PreSetup", flagsInstPub,
                 t.GetMethod(nameof(Patches.GUIMessageDisplayPreSetupPrefix)), null, ref ok, ref failed);
+            TryPatch(h, typeof(Ostranauts.ShipGUIs.NavStation.GUIMessageDisplay), "Update", flagsInstPub,
+                null, t.GetMethod(nameof(Patches.GUIMessageDisplayUpdatePostfix)), ref ok, ref failed);
             TryPatch(h, typeof(Ostranauts.ShipGUIs.NavStation.GUIMessageDisplay), "AddMessage", flagsInstPub,
                 t.GetMethod(nameof(Patches.GUIMessageDisplayAddMessagePrefix)), null, ref ok, ref failed,
                 new Type[] { typeof(Ostranauts.Ships.Comms.ShipMessage) });
