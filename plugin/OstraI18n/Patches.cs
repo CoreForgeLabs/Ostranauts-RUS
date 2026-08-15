@@ -991,18 +991,62 @@ namespace OstraI18n
                 var txtComms = _msgTxtComms?.GetValue(__instance) as TMPro.TMP_Text;
                 if (txtComms != null && !string.IsNullOrEmpty(txtComms.text))
                 {
-                    if (txtComms.text.Contains("Connected with ") || txtComms.text.Contains("Automated Response Service"))
+                    if (txtComms.text.Contains("Connected with ") || txtComms.text.Contains("Automated Response Service") || txtComms.text.Contains("Inventory of "))
                     {
-                        txtComms.text = txtComms.text
+                        var t = txtComms.text
                             .Replace("Connected with OKLG ARS 2000 - Automated Response Service of the K-Leg: Port Azikiwe", "Соединение: ARS 2000 OKLG — Автоответчик станции K-Leg: Порт Азикиве")
                             .Replace("Connected with ", "Соединение: ")
                             .Replace("Automated Response Service of the K-Leg: Port Azikiwe", "Автоответчик станции K-Leg: Порт Азикиве")
                             .Replace("Automated Response Service", "Автоответчик")
                             .Replace("Port Azikiwe", "Порт Азикиве");
+                        txtComms.text = LocalizeMarketString(t);
                     }
                 }
             }
             catch { }
+        }
+
+        public static string LocalizeMarketString(string text)
+        {
+            if (string.IsNullOrEmpty(text)) return text;
+            return text
+                .Replace("Inventory of AnyConsumerGoods at ", "Запас (Ширпотреб): ")
+                .Replace("Inventory of AnyControlSystems at ", "Запас (Системы управления): ")
+                .Replace("Inventory of AnyFood at ", "Запас (Продовольствие): ")
+                .Replace("Inventory of AnyFurniture at ", "Запас (Мебель): ")
+                .Replace("Inventory of AnyHull at ", "Запас (Детали корпуса): ")
+                .Replace("Inventory of AnyIndustrialProducts at ", "Запас (Промтовары): ")
+                .Replace("Inventory of AnyLifeSupport at ", "Запас (Системы СЖО): ")
+                .Replace("Inventory of AnyMedia at ", "Запас (Медиа): ")
+                .Replace("Inventory of AnyOres at ", "Запас (Руда): ")
+                .Replace("Inventory of AnySensors at ", "Запас (Сенсоры): ")
+                .Replace("Inventory of AnyTools at ", "Запас (Инструменты): ")
+                .Replace("Inventory of AnyD2O at ", "Запас (D2O): ")
+                .Replace("Inventory of AnyElectronics at ", "Запас (Электроника): ")
+                .Replace("Inventory of AnyFusionParts at ", "Запас (Детали термояда): ")
+                .Replace("Inventory of AnyHe3 at ", "Запас (Гелий-3): ")
+                .Replace("Inventory of AnyHVAC at ", "Запас (Климат-контроль): ")
+                .Replace("Inventory of AnyIntoxicants at ", "Запас (Дурман): ")
+                .Replace("Inventory of AnyLuxuryGoods at ", "Запас (Предметы роскоши): ")
+                .Replace("Inventory of AnyMedical at ", "Запас (Медикаменты): ")
+                .Replace("Inventory of AnyMetal at ", "Запас (Металл): ")
+                .Replace("Inventory of AnyPlastics at ", "Запас (Пластик): ")
+                .Replace("Inventory of AnyScience at ", "Запас (Научные материалы): ")
+                .Replace("Inventory of AnySpaceSuits at ", "Запас (Скафандры): ")
+                .Replace("Inventory of AnyTextiles at ", "Запас (Текстиль): ")
+                .Replace("Inventory of AnyTrash at ", "Запас (Мусор): ")
+                .Replace("Inventory of AnyVolatiles at ", "Запас (Летучие вещества): ")
+                .Replace("Inventory of AnyWater at ", "Запас (Вода): ")
+                .Replace("Inventory of AnyWeapons at ", "Запас (Оружие): ")
+                .Replace("Inventory of ", "Запас: ")
+                .Replace(" at ", " — ")
+                .Replace("Not producing at the moment", "В данный момент производство не ведётся");
+        }
+
+        public static void ShipMarketGetMarketDescriptionPostfix(ref string __result)
+        {
+            if (!LangPack.Active || !string.Equals(LangPack.Code, "ru", StringComparison.OrdinalIgnoreCase) || string.IsNullOrEmpty(__result)) return;
+            __result = LocalizeMarketString(__result);
         }
 
         public static void GUIMessageDisplayAddMessagePrefix(ref Ostranauts.Ships.Comms.ShipMessage mfdMessage)
@@ -1022,7 +1066,7 @@ namespace OstraI18n
                         text = text.Replace("Automated Response Service of the K-Leg: Port Azikiwe", "Автоответчик станции K-Leg: Порт Азикиве")
                                    .Replace("Automated Response Service", "Автоответчик");
                     }
-                    mfdMessage.MessageText = text;
+                    mfdMessage.MessageText = LocalizeMarketString(text);
                 }
             }
             catch { }
