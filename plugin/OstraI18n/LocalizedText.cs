@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using TMPro;
 using UnityEngine;
 
@@ -39,7 +39,7 @@ namespace OstraI18n
             var tmp = GetComponent<TMP_Text>();
             if (tmp != null)
             {
-                tmp.text = value;
+                Patches.FitLabel(tmp, value);
                 if (I18n.QaMode) CheckOverflow(tmp, value);
                 return;
             }

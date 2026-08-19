@@ -42,11 +42,32 @@ namespace OstraI18n.Core
                 MergeFile(stringsPath, entries);
             }
 
+            // ui/*.json is merged AFTER strings.json and overwrites it key-for-key. That is
+            // intentional (ui/ holds screen-fitted variants), but a stale duplicate there
+            // silently defeats any edit made in strings.json -- a trap that costs hours to
+            // find. Report every shadowed key so it surfaces in the log for each language.
             var uiDir = Path.Combine(dir, "ui");
             if (Directory.Exists(uiDir))
             {
+                var fromStrings = new Dictionary<string, object>(entries, StringComparer.Ordinal);
                 foreach (var f in Directory.GetFiles(uiDir, "*.json"))
                     MergeFile(f, entries);
+
+                var shadowed = new List<string>();
+                foreach (var kv in fromStrings)
+                {
+                    if (entries.TryGetValue(kv.Key, out var now)
+                        && now is string ns && kv.Value is string os && ns != os)
+                        shadowed.Add(kv.Key);
+                }
+                if (shadowed.Count > 0)
+                {
+                    shadowed.Sort(StringComparer.Ordinal);
+                    Errors.Add(code + ": ui/*.json перекрывает strings.json для " + shadowed.Count
+                        + " ключей (правки в strings.json для них не применятся): "
+                        + string.Join(", ", shadowed.GetRange(0, Math.Min(12, shadowed.Count)))
+                        + (shadowed.Count > 12 ? ", ..." : ""));
+                }
             }
             var pluralRuleFamily = ReadPluralRuleFamily(Path.Combine(dir, "meta.json"));
             return new LanguagePack(entries, code, fallback, pluralRuleFamily);

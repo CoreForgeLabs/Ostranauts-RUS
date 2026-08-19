@@ -726,13 +726,49 @@ namespace OstraI18n
             if (_txtBody == null) return;
             FontFallback.EnsureCyrillicFont(_txtBody);
 
+            string creditsBody = "";
+            try
+            {
+                var path = System.IO.Path.Combine(Plugin.DataDir.Value, "langs", "ru", "data", "credits.json");
+                if (System.IO.File.Exists(path))
+                {
+                    var json = System.IO.File.ReadAllText(path);
+                    using var doc = System.Text.Json.JsonDocument.Parse(json);
+                    if (doc.RootElement.TryGetProperty("aModCredits", out var modCredits) && modCredits.ValueKind == System.Text.Json.JsonValueKind.Object)
+                    {
+                        var colors = new string[] { "#ffd700", "#00e5ff", "#ffaa33", "#88c0d0", "#ffcc00", "#ffffff" };
+                        int colorIdx = 0;
+                        foreach (var prop in modCredits.EnumerateObject())
+                        {
+                            string rank = prop.Name;
+                            var namesArray = prop.Value.EnumerateArray();
+                            System.Collections.Generic.List<string> names = new System.Collections.Generic.List<string>();
+                            foreach (var name in namesArray) names.Add(name.GetString());
+                            string color = colors[colorIdx % colors.Length];
+                            creditsBody += $"<color={color}><b>· {rank}:</b></color> <color=#ffffff>{string.Join(", ", names)}</color>\n\n";
+                            colorIdx++;
+                        }
+                    }
+                }
+            }
+            catch (System.Exception ex)
+            {
+                Plugin.Log.LogWarning("[i18n] Failed to load custom credits for MenuLanguageAstronaut: " + ex.Message);
+            }
+
+            if (string.IsNullOrEmpty(creditsBody))
+            {
+                creditsBody =
+                    "<color=#ffd700><b>• ШЕЙХ:</b></color> <color=#ffffff>Сергей Коршунов</color>\n\n" +
+                    "<color=#00e5ff><b>• АДМИРАЛЫ:</b></color> <color=#ffffff>Миша Аверин, Towland, Игорь Мирошниченко</color>\n\n" +
+                    "<color=#ffaa33><b>• КАПИТАНЫ:</b></color> <color=#ffffff>Gundyar, Сергей Примаков, Zurics Game</color>\n\n" +
+                    "<color=#88c0d0><b>• ЮНГИ:</b></color> <color=#ffffff>GreyViS, Pavel Bezik, LunarGoat, jard, languin, Анна Плагиатор</color>\n\n";
+            }
+
             _txtBody.text =
                 "<b><size=125%><color=#00e5ff>// БОРТОВОЙ МАНИФЕСТ ЭКИПАЖА</color></size></b>\n" +
                 "<size=95%><color=#ffaa33>ТЕ, БЛАГОДАРЯ КОМУ МОД ВООБЩЕ СУЩЕСТВУЕТ:</color></size>\n\n" +
-                "<color=#ffd700><b>• ШЕЙХ:</b></color> <color=#ffffff>Сергей Коршунов</color>\n\n" +
-                "<color=#00e5ff><b>• АДМИРАЛЫ:</b></color> <color=#ffffff>Миша Аверин, Towland</color>\n\n" +
-                "<color=#ffaa33><b>• КАПИТАНЫ:</b></color> <color=#ffffff>Gundyar, Сергей Примаков, Zurics Game</color>\n\n" +
-                "<color=#88c0d0><b>• ЮНГИ:</b></color> <color=#ffffff>GreyViS, Pavel Bezik, LunarGoat, jard, languin, Анна Плагиатор</color>\n\n" +
+                creditsBody +
                 "<size=88%><color=#708599><i>Сердечная благодарность каждому члену экипажа за поддержку и веру в проект!</i></color></size>";
         }
 

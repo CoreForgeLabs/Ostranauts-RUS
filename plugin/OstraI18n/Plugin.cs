@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -447,6 +447,10 @@ namespace OstraI18n
                 new Type[] { typeof(CondOwner), typeof(string[]).MakeByRefType() });
             TryPatch(h, typeof(Ostranauts.ShipGUIs.MFD.MFDPage), "UpdateDisplay", flagsInstPriv,
                 t.GetMethod(nameof(Patches.MFDUpdateDisplayPrefix)), null, ref ok, ref failed);
+            TryPatch(h, typeof(Ostranauts.ShipGUIs.NavStation.NavModBase), "Start", flagsInstPriv,
+                null, t.GetMethod(nameof(Patches.NavModBaseStartPostfix)), ref ok, ref failed);
+            TryPatch(h, typeof(Ostranauts.ShipGUIs.MFD.GUIMFDDisplay), "ShowMenu", flagsInstPriv,
+                null, t.GetMethod(nameof(Patches.GUIMFDDisplayShowMenuPostfix)), ref ok, ref failed);
             TryPatch(h, typeof(GUITooltip2), "SetToolTip", flagsPub,
                 t.GetMethod(nameof(Patches.TooltipSetToolTipPrefix)), null, ref ok, ref failed,
                 new Type[] { typeof(string), typeof(string), typeof(bool), typeof(bool) });
@@ -476,15 +480,24 @@ namespace OstraI18n
                 new Type[] { typeof(bool) });
             TryPatch(h, typeof(GUISaveIndicator), "Reset", flagsInstPub,
                 null, t.GetMethod(nameof(Patches.SaveIndicatorResetPostfix)), ref ok, ref failed);
-            TryPatch(h, typeof(Ostranauts.ShipGUIs.NavStation.GUIMessageDisplay), "PreSetup", flagsInstPub,
-                t.GetMethod(nameof(Patches.GUIMessageDisplayPreSetupPrefix)), null, ref ok, ref failed);
-            TryPatch(h, typeof(Ostranauts.ShipGUIs.NavStation.GUIMessageDisplay), "Update", flagsInstPub,
+            TryPatch(h, typeof(Ostranauts.ShipGUIs.NavStation.GUIMessageDisplay), "PreSetup", flagsInstPriv,
+                t.GetMethod(nameof(Patches.GUIMessageDisplayPreSetupPrefix)), null, ref ok, ref failed,
+                new Type[] { typeof(string) });
+            TryPatch(h, typeof(Ostranauts.ShipGUIs.NavStation.GUIMessageDisplay), "Update", flagsInstPriv,
                 null, t.GetMethod(nameof(Patches.GUIMessageDisplayUpdatePostfix)), ref ok, ref failed);
             TryPatch(h, typeof(Ostranauts.ShipGUIs.NavStation.GUIMessageDisplay), "AddMessage", flagsInstPub,
                 t.GetMethod(nameof(Patches.GUIMessageDisplayAddMessagePrefix)), null, ref ok, ref failed,
                 new Type[] { typeof(Ostranauts.Ships.Comms.ShipMessage) });
             TryPatch(h, typeof(Ostranauts.Trading.ShipMarket), "GetMarketDescription", flagsInstPub,
                 null, t.GetMethod(nameof(Patches.ShipMarketGetMarketDescriptionPostfix)), ref ok, ref failed);
+            TryPatch(h, typeof(Ostranauts.Core.Tutorials.RestoreNavStation), "OnQuickActionButton", flagsInstPriv,
+                null, t.GetMethod(nameof(Patches.RestoreNavStationOnQuickActionButtonPostfix)), ref ok, ref failed,
+                new Type[] { typeof(GUIQuickActionButton) });
+            TryPatch(h, typeof(GUIGameCredits), "Init", flagsPriv,
+                null, t.GetMethod(nameof(Patches.GUIGameCreditsInitPostfix)), ref ok, ref failed);
+            TryPatch(h, typeof(Ostranauts.Objectives.ObjectiveTracker), "LoadObjectives", flagsInstPub,
+                null, t.GetMethod(nameof(Patches.ObjectiveTrackerLoadObjectivesPostfix)), ref ok, ref failed,
+                new Type[] { typeof(JsonGameSave) });
         }
 
         private static void TryPatch(Harmony h, Type type, string method, BindingFlags flags,

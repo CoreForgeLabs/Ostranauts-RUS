@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using HarmonyLib;
 using TMPro;
@@ -374,6 +374,130 @@ namespace OstraI18n
             }
         }
 
+        // ---- prefab label auto-fit ---------------------------------------------
+        // Panel labels sit in rects cut for the English word under a physical switch.
+        // Cyrillic in the console fonts runs ~1.9x wider, so a faithful translation
+        // overruns its module (that is what pushed "К управлению стыковкой" onto the
+        // neighbouring tab). Rather than hand-abbreviating every label into things
+        // like "ВЫР. СКОР.", fit it: let it wrap if the box has room for a second
+        // line, otherwise shrink the type down to a legibility floor.
+        private const float FitFloor = 0.62f;
+
+        private static void FitLocalized(TMPro.TMP_Text t, string original, string translated)
+        {
+            if (t == null) return;
+            t.text = translated;
+            try { Embolden(t); AutoFit(t, original, translated); }
+            catch (Exception ex) { WarnOnce("uifit", "[i18n] label auto-fit failed: " + ex.Message); }
+        }
+
+        // Entry point for the prefab/asset path (LocalizedText), which set text directly
+        // and so never got wrapping, shrinking or the lamp weight fix.
+        public static void FitLabel(TMPro.TMP_Text t, string translated)
+            => FitLocalized(t, t != null ? t.text : null, translated);
+
+        // Warning-lamp captions are painted a dark red that sits almost on top of the
+        // unlit lamp's own dark red. The heavy pixel face carried the English text
+        // through anyway; our thinner Cyrillic fallback does not, so the caption
+        // disappears. Weight alone does not fix a contrast problem -- lift the
+        // caption's brightness (keeping its hue, so a lit lamp still reads as red)
+        // and bold it on top.
+        private static void Embolden(TMPro.TMP_Text t)
+        {
+            if (t.GetComponentInParent<GUILamp>() == null) return;
+            if ((t.fontStyle & TMPro.FontStyles.Bold) == 0) t.fontStyle |= TMPro.FontStyles.Bold;
+
+            float hue, sat, val;
+            Color.RGBToHSV(t.color, out hue, out sat, out val);
+            if (val >= 0.85f && sat <= 0.45f) return;
+            var lifted = Color.HSVToRGB(hue, Mathf.Min(sat, 0.35f), Mathf.Max(val, 0.92f));
+            lifted.a = Mathf.Max(t.color.a, 1f);
+            t.color = lifted;
+            ReportFit("(lamp)", t.text, 0f, 0f, 0f, 0f, false, false);
+        }
+
+        private static void FitLocalized(Text t, string original, string translated)
+        {
+            if (t == null) return;
+            t.text = translated;
+        }
+
+        private static void AutoFit(TMPro.TMP_Text t, string original, string translated)
+        {
+            var rt = t.rectTransform;
+            float w = rt.rect.width, h = rt.rect.height;
+            // Zero-sized rects are driven by a layout group; leave those to Unity.
+            if (w <= 1f || h <= 1f || t.enableAutoSizing) return;
+
+            t.ForceMeshUpdate();
+            if (Fits(t, w, h)) return;
+
+            float baseSize = t.fontSize;
+            bool wrapped = false;
+            // Only wrap where a second line can actually be shown.
+            if (h >= baseSize * 1.9f && translated.IndexOf(' ') >= 0 && !t.enableWordWrapping)
+            {
+                t.enableWordWrapping = true;
+                t.ForceMeshUpdate();
+                wrapped = true;
+                if (Fits(t, w, h)) { ReportFit(original, translated, w, h, baseSize, baseSize, true, false); return; }
+            }
+
+            t.enableAutoSizing = true;
+            t.fontSizeMax = baseSize;
+            t.fontSizeMin = Mathf.Max(6f, baseSize * FitFloor);
+            t.ForceMeshUpdate();
+            ReportFit(original, translated, w, h, baseSize, t.fontSize, wrapped, !Fits(t, w, h));
+        }
+
+        private static bool Fits(TMPro.TMP_Text t, float w, float h)
+            => t.preferredWidth <= w + 0.5f && t.preferredHeight <= h + 0.5f;
+
+        // Debug channel: every label that needed adjusting, so overflowing translations
+        // can be found without hunting through screenshots. OVERFLOW marks the ones the
+        // floor size still could not save -- those need a shorter wording, not a fit.
+        private static string _fitReportPath;
+        private static readonly HashSet<string> _fitSeen = new HashSet<string>();
+
+        private static void ReportFit(string original, string translated, float w, float h,
+                                      float baseSize, float finalSize, bool wrapped, bool overflows)
+        {
+            try
+            {
+                if (_fitReportPath == null)
+                    _fitReportPath = System.IO.Path.Combine(
+                        System.IO.Path.GetDirectoryName(typeof(Patches).Assembly.Location), "ui_fit_report.txt");
+                if (!_fitSeen.Add(original + "" + translated)) return;
+                System.IO.File.AppendAllText(_fitReportPath, string.Format(
+                    "{0}\t{1}\t{2}\trect={3:0}x{4:0}\tsize {5:0.#}->{6:0.#}\t{7}\n",
+                    overflows ? "OVERFLOW" : "fit", original.Replace("\n", "\\n"), translated.Replace("\n", "\\n"),
+                    w, h, baseSize, finalSize, wrapped ? "wrapped" : "single"));
+            }
+            catch { }
+        }
+
+        // Nav station modules derive from NavModBase : MonoBehaviour, not GUIData, so
+        // GUIDataInitPostfix never walked them -- which is why panel labels stayed
+        // English even though strings.json already had translations for them. Only
+        // NavModWeaponsControl overrides Start, and it chains to base, so a postfix
+        // here fires for every module, including ones instantiated later.
+        private static readonly Dictionary<string, string> EmptyMap = new Dictionary<string, string>();
+
+        public static void NavModBaseStartPostfix(Ostranauts.ShipGUIs.NavStation.NavModBase __instance)
+        {
+            if (!LangPack.Active || __instance == null) return;
+            try
+            {
+                // The module's own title sits on the draggable wrapper above it.
+                var root = __instance.transform.parent != null ? __instance.transform.parent : __instance.transform;
+                LocalizeHierarchy(root, EmptyMap);
+            }
+            catch (Exception ex)
+            {
+                WarnOnce("navmod", "[i18n] NavModBaseStartPostfix failed: " + ex.Message);
+            }
+        }
+
         public static void LocalizeHierarchy(Transform root, Dictionary<string, string> map)
         {
             if (root == null) return;
@@ -390,7 +514,7 @@ namespace OstraI18n
                         var localized = I18n.Get(key);
                         if (!string.IsNullOrEmpty(localized) && localized != key)
                         {
-                            t.text = localized;
+                            FitLocalized(t, norm, localized);
                         }
                     }
                     else
@@ -401,12 +525,28 @@ namespace OstraI18n
                             var localized = I18n.Get(key);
                             if (!string.IsNullOrEmpty(localized) && localized != key)
                             {
-                                t.text = localized;
+                                FitLocalized(t, norm, localized);
                             }
                         }
                         else
                         {
-                            I18n.RecordUntranslated("UI_TEXT", norm, t.transform.name);
+                            // Screen-level maps like ChargenBodyTextMap only cover the screen they
+                            // were written for. Plenty of other UI labels (console button text,
+                            // menu chrome) are baked into scenes as static TMP/UI Text that no C#
+                            // code ever reads through DataHandler.GetString -- so LangPack.Strings
+                            // already carries a translation for them (keyed by their own English
+                            // text, same convention as DataHandler.GetString), it just never gets
+                            // applied because nothing walks the hierarchy for them. Try that before
+                            // giving up, so any such label already translated in strings.json
+                            // works everywhere, not only on screens with a bespoke map.
+                            if (LangPack.Strings.TryGetValue(norm, out var direct) && direct != norm)
+                            {
+                                FitLocalized(t, norm, direct);
+                            }
+                            else
+                            {
+                                I18n.RecordUntranslated("UI_TEXT", norm, t.transform.name);
+                            }
                         }
                     }
                 }
@@ -425,7 +565,7 @@ namespace OstraI18n
                         var localized = I18n.Get(key);
                         if (!string.IsNullOrEmpty(localized) && localized != key)
                         {
-                            t.text = localized;
+                            FitLocalized(t, norm, localized);
                         }
                     }
                     else
@@ -436,17 +576,114 @@ namespace OstraI18n
                             var localized = I18n.Get(key);
                             if (!string.IsNullOrEmpty(localized) && localized != key)
                             {
-                                t.text = localized;
+                                FitLocalized(t, norm, localized);
                             }
                         }
                         else
                         {
-                            I18n.RecordUntranslated("UI_TEXT", norm, t.transform.name);
+                            // Screen-level maps like ChargenBodyTextMap only cover the screen they
+                            // were written for. Plenty of other UI labels (console button text,
+                            // menu chrome) are baked into scenes as static TMP/UI Text that no C#
+                            // code ever reads through DataHandler.GetString -- so LangPack.Strings
+                            // already carries a translation for them (keyed by their own English
+                            // text, same convention as DataHandler.GetString), it just never gets
+                            // applied because nothing walks the hierarchy for them. Try that before
+                            // giving up, so any such label already translated in strings.json
+                            // works everywhere, not only on screens with a bespoke map.
+                            if (LangPack.Strings.TryGetValue(norm, out var direct) && direct != norm)
+                            {
+                                FitLocalized(t, norm, direct);
+                            }
+                            else
+                            {
+                                I18n.RecordUntranslated("UI_TEXT", norm, t.transform.name);
+                            }
                         }
                     }
                 }
             }
         }
+
+        // Some tutorial beats build ObjectiveDesc at runtime as EnglishText + InputManager.GetGlyphString(key) + MoreText,
+        // so the icon shown always matches the player's current input device (keyboard vs gamepad). A plain static
+        // TUT_DESC_ translation would either lose that icon or freeze it to one device. Instead, TUT_DESC_ for these
+        // beats holds a "{0}"-templated Russian string, and we resolve the same glyph key ourselves and format it in.
+        // Beat name -> the input actions its ObjectiveDesc concatenates, in the order they appear.
+        // TUT_DESC_ for these holds "{0}" (and "{1}" where the beat splices in two different
+        // glyphs, e.g. OpenInventory). Language-neutral by design: the same map serves every
+        // language pack, since only the surrounding prose is translated, never the action name.
+        private static readonly Dictionary<string, string[]> TutorialGlyphActions = new Dictionary<string, string[]>
+        {
+            { "ForwardThrust", new[] { "Thrust Up" } },
+            { "RightThrust", new[] { "Thrust Right" } },
+            { "LeftThrust", new[] { "Thrust Left" } },
+            { "RearThrust", new[] { "Thrust Down" } },
+            { "CalibrateCW", new[] { "Turn CW" } },
+            { "CalibrateCCW", new[] { "Turn CCW" } },
+            { "MatchSpeed", new[] { "Toggle station keeping" } },
+            { "StopSpin", new[] { "Attitude" } },
+            { "SwitchToComms", new[] { "Click" } },
+            { "DerelictComms", new[] { "Click" } },
+            { "SelectMTT", new[] { "RightClick" } },
+            { "SelectCompartment", new[] { "RightClick" } },
+            { "NavUseShow", new[] { "RightClick" } },
+            { "RestoreNavStation", new[] { "RightClick" } },
+            { "DmgVizOff", new[] { "Toggle PDA Power Vizor" } },
+            { "DmgVizShow", new[] { "Toggle PDA Power Vizor" } },
+            { "VisualisePower", new[] { "Toggle PDA Power Vizor" } },
+            { "HallwayConduit2", new[] { "RightClick" } },
+            { "HallwayConduit4", new[] { "Click" } },
+            { "HallwayConduit8", new[] { "Quick Move Item" } },
+            { "HighlightObjects", new[] { "Show Hotkeys & Interactables" } },
+            { "MouseoverObjective", new[] { "Click" } },
+            { "OpenInventory", new[] { "Click", "Player Inventory" } },
+            { "PickUpPermit", new[] { "RightClick" } },
+            { "ToggleLightSwitch", new[] { "RightClick" } },
+            { "UnpauseWorld", new[] { "Pause" } },
+        };
+
+        // Shared by fresh-creation and save-load paths: applies TUT_NAME_/TUT_DESC_/TUT_COMP_
+        // for a given TutorialBeat onto an Objective's display fields.
+        private static void ApplyTutorialObjectiveTranslation(Ostranauts.Core.Tutorials.TutorialBeat tutorialBeat, Ostranauts.Objectives.Objective objective)
+        {
+            string beatName = tutorialBeat.GetType().Name;
+            string nameKey = "TUT_NAME_" + beatName;
+            string descKey = "TUT_DESC_" + beatName;
+            string compKey = "TUT_COMP_" + beatName;
+
+            string nameTr = I18n.Get(nameKey);
+            if (!string.IsNullOrEmpty(nameTr) && nameTr != nameKey)
+                objective.strDisplayName = nameTr;
+
+            string descTr = I18n.Get(descKey);
+            if (!string.IsNullOrEmpty(descTr) && descTr != descKey)
+            {
+                if (TutorialGlyphActions.TryGetValue(beatName, out var actions) && descTr.Contains("{0}"))
+                {
+                    try
+                    {
+                        var glyphs = new object[actions.Length];
+                        for (int i = 0; i < actions.Length; i++)
+                            glyphs[i] = Ostranauts.InputControl.InputManager.GetGlyphString(actions[i]);
+                        descTr = string.Format(descTr, glyphs);
+                    }
+                    catch (Exception ex) { Plugin.Log.LogWarning("[i18n] glyph format failed for " + beatName + ": " + ex.Message); }
+                }
+                objective.strDisplayDesc = descTr;
+            }
+
+            string compTr = I18n.Get(compKey);
+            if (!string.IsNullOrEmpty(compTr) && compTr != compKey)
+                objective.strDisplayDescComplete = compTr;
+
+            // Once per beat: shows whether the key resolved and what the description ended up as,
+            // so a "still English on screen" report can be traced without another guess.
+            if (_tutDiag.Add(beatName))
+                Plugin.Log.LogInfo("[i18n] tut '" + beatName + "': descKey=" + (descTr != descKey ? "ok" : "MISSING")
+                    + " -> " + (objective.strDisplayDesc ?? "<null>"));
+        }
+
+        private static readonly HashSet<string> _tutDiag = new HashSet<string>();
 
         // Objective.MakeTutorialObjective -> localizes tutorial objective name and descriptions
         public static void MakeTutorialObjectivePostfix(Ostranauts.Core.Tutorials.TutorialBeat tutorialBeat, ref Ostranauts.Objectives.Objective __result)
@@ -454,26 +691,34 @@ namespace OstraI18n
             if (!LangPack.Active || __result == null || tutorialBeat == null) return;
             try
             {
-                string beatName = tutorialBeat.GetType().Name;
-                string nameKey = "TUT_NAME_" + beatName;
-                string descKey = "TUT_DESC_" + beatName;
-                string compKey = "TUT_COMP_" + beatName;
-
-                string nameTr = I18n.Get(nameKey);
-                if (!string.IsNullOrEmpty(nameTr) && nameTr != nameKey)
-                    __result.strDisplayName = nameTr;
-
-                string descTr = I18n.Get(descKey);
-                if (!string.IsNullOrEmpty(descTr) && descTr != descKey)
-                    __result.strDisplayDesc = descTr;
-
-                string compTr = I18n.Get(compKey);
-                if (!string.IsNullOrEmpty(compTr) && compTr != compKey)
-                    __result.strDisplayDescComplete = compTr;
+                ApplyTutorialObjectiveTranslation(tutorialBeat, __result);
             }
             catch (Exception ex)
             {
                 Plugin.Log.LogWarning("[i18n] MakeTutorialObjectivePostfix failed: " + ex.Message);
+            }
+        }
+
+        // ObjectiveTracker.LoadObjectives -> save games store strDisplayName/strDisplayDesc/
+        // strDisplayDescComplete verbatim (Objective.GetJSON) and LoadObjectives restores them
+        // verbatim too, bypassing MakeTutorialObjectivePostfix entirely. Without this, a tutorial
+        // objective's text is frozen at whatever it was translated to (or not) the moment it was
+        // first saved, even after strings.json is fixed. Re-apply the same TUT_* lookup here for
+        // every reloaded objective that got a fresh TutorialBeat instance (unfinished tutorials).
+        public static void ObjectiveTrackerLoadObjectivesPostfix(Ostranauts.Objectives.ObjectiveTracker __instance)
+        {
+            if (!LangPack.Active || __instance == null) return;
+            try
+            {
+                foreach (var objective in __instance.AllObjectives)
+                {
+                    if (objective == null || !objective.bTutorial || objective.TutorialBeat == null) continue;
+                    ApplyTutorialObjectiveTranslation(objective.TutorialBeat, objective);
+                }
+            }
+            catch (Exception ex)
+            {
+                Plugin.Log.LogWarning("[i18n] ObjectiveTrackerLoadObjectivesPostfix failed: " + ex.Message);
             }
         }
 
@@ -626,6 +871,24 @@ namespace OstraI18n
                     else if (s.Contains(" becomes a "))
                     {
                         s = s.Replace(" becomes a ", " теперь ").Replace(" to ", " для ");
+                        aLog[i] = s;
+                    }
+                    if (s.Contains(" gains ") || s.Contains(" loses "))
+                    {
+                        int personIdx = 2; // Default 3rd person singular
+                        if (s.StartsWith("You ")) personIdx = 1; // 2nd person singular
+                        else if (s.StartsWith("They ")) personIdx = 7; // 3rd person plural
+
+                        if (s.Contains(" gains ") && LangPack.Verbs.TryGetValue("gains", out var vg))
+                            s = s.Replace(" gains ", " " + vg.Present[personIdx] + " ");
+                        else if (s.Contains(" gains "))
+                            s = s.Replace(" gains ", " получает ");
+
+                        if (s.Contains(" loses ") && LangPack.Verbs.TryGetValue("loses", out var vl))
+                            s = s.Replace(" loses ", " " + vl.Present[personIdx] + " ");
+                        else if (s.Contains(" loses "))
+                            s = s.Replace(" loses ", " теряет ");
+
                         aLog[i] = s;
                     }
                 }
@@ -860,7 +1123,6 @@ namespace OstraI18n
                         else if (s == "<REQUEST CLEARANCE") s = "<ЗАПРОС ДОПУСКА";
                         else if (s == "CLEARANCE AVAILABLE") s = "ЕСТЬ РАЗРЕШЕНИЕ";
                         else if (s == "<DOCKING") s = "<СТЫКОВКА";
-                        else if (s == "<BACK") s = "<В МЕНЮ";
                         else if (s == "Message sent") s = "Отправлено";
                         else if (s == "Waiting for response") s = "Ожидание ответа";
                         else if (s == "Port Open") s = "Порт открыт";
@@ -884,8 +1146,6 @@ namespace OstraI18n
                         if (string.IsNullOrEmpty(s)) continue;
                         if (s == "HAIL SHIP>") s = "ВЫЗОВ>";
                         else if (s == "NEXT PAGE>") s = "СЛЕД. СТР.>";
-                        else if (s == "RETURN TO") s = "";
-                        else if (s == "MAIN MENU>") s = "В МЕНЮ>";
                         else if (s.IndexOf("расстыковк", StringComparison.OrdinalIgnoreCase) >= 0 || s.IndexOf("отстыковк", StringComparison.OrdinalIgnoreCase) >= 0) s = "Отстыковка >";
                         else if (s.IndexOf("стыковк", StringComparison.OrdinalIgnoreCase) >= 0) s = "Стыковка >";
                         else if (s.IndexOf("рынок", StringComparison.OrdinalIgnoreCase) >= 0 || s.IndexOf("рыночн", StringComparison.OrdinalIgnoreCase) >= 0) s = "Рынок >";
@@ -896,26 +1156,10 @@ namespace OstraI18n
                     }
                 }
 
-                // Prevent text overlapping across columns on MFD screen
-                int maxRows = Math.Max(left != null ? left.Count : 0, right != null ? right.Count : 0);
-                for (int i = 0; i < maxRows; i++)
-                {
-                    bool hasLeft = left != null && i < left.Count && !string.IsNullOrEmpty(left[i]);
-                    bool hasRight = right != null && i < right.Count && !string.IsNullOrEmpty(right[i]);
-                    if (hasLeft && hasRight)
-                    {
-                        left[i] = ClampMFDString(left[i], 15, true);
-                        right[i] = ClampMFDString(right[i], 15, false);
-                    }
-                    else if (hasLeft)
-                    {
-                        left[i] = ClampMFDString(left[i], 28, true);
-                    }
-                    else if (hasRight)
-                    {
-                        right[i] = ClampMFDString(right[i], 28, false);
-                    }
-                }
+                // NOTE: no character-count clamping here any more. Cyrillic in
+                // 'pixelmid' is 1.7-2.8x wider than Latin, so counting characters
+                // both over- and under-shoots; GUIMFDDisplayShowMenuPostfix measures
+                // the real pixel width instead and shrinks/truncates there.
             }
             catch (Exception ex)
             {
@@ -923,23 +1167,250 @@ namespace OstraI18n
             }
         }
 
-        private static string ClampMFDString(string str, int maxLen, bool isLeft)
+        // ---- MFD line fitter ----------------------------------------------------
+        // The comms MFD is 13 fixed lines glued with '\n' into two legacy Text
+        // components that share ONE full-width rect (left-aligned + right-aligned),
+        // and each line index maps to a physical bezel button. Two consequences:
+        //   * horizontalOverflow is Wrap in the prefab, so one overlong line wraps
+        //     and shifts every button below it down by one row;
+        //   * the columns are not separated, so a wide left line runs straight into
+        //     the right one.
+        // Cyrillic in 'pixelmid' is 1.7-2.8x wider than Latin, so the character
+        // budgets baked into the game (MFDPage.ClampText: 20/44) are meaningless for
+        // us. We re-emit both columns ourselves, measuring every line in pixels and
+        // shrinking the pair (left[i] + right[i] must shrink together, they are
+        // separate Text components and must keep identical line heights) until it
+        // fits, truncating only as a last resort.
+        private static readonly System.Reflection.FieldInfo _mfdTxtLeft = AccessTools.Field(typeof(Ostranauts.ShipGUIs.MFD.GUIMFDDisplay), "txtLeft");
+        private static readonly System.Reflection.FieldInfo _mfdTxtRight = AccessTools.Field(typeof(Ostranauts.ShipGUIs.MFD.GUIMFDDisplay), "txtRight");
+        private static readonly System.Reflection.FieldInfo _mfdTxtTitle = AccessTools.Field(typeof(Ostranauts.ShipGUIs.MFD.GUIMFDDisplay), "txtTitle");
+
+        // Bezel arrows ("<BACK", "HAIL SHIP>") mark which physical button a row belongs
+        // to; they are layout, not language, so we strip them before the dictionary
+        // lookup and put them back after. That also lets "<MAIN MENU" (left bezel) and
+        // "MAIN MENU>" (right bezel) share one key while rendering differently.
+        // Lines that end in live data ("ATC CHANNEL: OKLG") are matched by their fixed
+        // head; only the head is translated, the payload passes through untouched.
+        private static readonly string[] _mfdPrefixes =
         {
-            if (string.IsNullOrEmpty(str)) return str;
-            var clean = System.Text.RegularExpressions.Regex.Replace(str, "<.*?>", "");
-            if (clean.Length <= maxLen) return str;
-            if (isLeft)
+            "ATC CHANNEL: ", "CONNECTED WITH - ", "DOCKED WITH: ", "MOORED WITH ", "DOCKED WITH ",
+            "Docked: ", "CLEARED TO ", "Listening to ", "Connected with ",
+            "OPEN CHANNEL TO ", "ATC Regional Control - ", "PUSHBACK & TAXI "
+        };
+
+        // Rows carrying pure telemetry -- ranges, reg IDs, callsigns, bare "?" -- are
+        // data, not language. Recording them buries the real misses in the dump.
+        private static readonly System.Text.RegularExpressions.Regex _mfdDataLine =
+            // Deliberately narrow: single unspaced tokens only, so genuinely untranslated
+            // multi-word labels ("NO CLEARANCE") still get reported.
+            new System.Text.RegularExpressions.Regex(@"^(\?|-+|[0-9][0-9.,]*\s*(km|m|au|s|kg)?|[A-Z][A-Z0-9_-]{0,9})$");
+
+        private static string LocalizeMFDLine(string s)
+        {
+            if (string.IsNullOrEmpty(s)) return s;
+            string core = s.Trim();
+            if (core.Length == 0) return s;
+
+            // Some rows arrive pre-wrapped in a colour tag ("<color=#A0AFE790><CYCLE
+            // PAGE</color>"). Peel the wrapper off for the lookup and re-apply it, so
+            // the pack keys stay plain English instead of carrying markup.
+            string wrapOpen = "", wrapClose = "";
+            var wrap = System.Text.RegularExpressions.Regex.Match(core, "^(<(?:color|size)=[^>]+>)(.*)(</(?:color|size)>)$");
+            if (wrap.Success)
             {
-                if (str.StartsWith("< ")) return "< " + clean.Substring(2, Math.Min(maxLen - 4, clean.Length - 2)).TrimEnd() + "..";
-                if (str.StartsWith("<")) return "<" + clean.Substring(1, Math.Min(maxLen - 3, clean.Length - 1)).TrimEnd() + "..";
-                return clean.Substring(0, Math.Min(maxLen - 2, clean.Length)).TrimEnd() + "..";
+                wrapOpen = wrap.Groups[1].Value;
+                wrapClose = wrap.Groups[3].Value;
+                core = wrap.Groups[2].Value.Trim();
+                if (core.Length == 0) return s;
             }
+
+            // Arrow-qualified key wins, so a pack can render the left-bezel "<MAIN MENU"
+            // and the right-bezel "MAIN MENU>" differently; the bare key is the fallback.
+            string exact;
+            if (LangPack.Strings.TryGetValue(core, out exact) && exact != core) return wrapOpen + exact + wrapClose;
+
+            string pre = "", post = "";
+            if (core.StartsWith("< ")) { pre = "< "; core = core.Substring(2); }
+            else if (core.StartsWith("<") && !core.StartsWith("<color") && !core.StartsWith("<size")) { pre = "<"; core = core.Substring(1); }
+            if (core.EndsWith(" >")) { post = " >"; core = core.Substring(0, core.Length - 2); }
+            else if (core.EndsWith(">") && !core.EndsWith("</color>") && !core.EndsWith("</size>")) { post = ">"; core = core.Substring(0, core.Length - 1); }
+
+            if (core.Length == 0) return s;
+            // Separator rules and anything already Cyrillic need no lookup.
+            if (core[0] == '-' || HasCyrillic(core)) return s;
+
+            string tr;
+            if (LangPack.Strings.TryGetValue(core, out tr) && tr != core) return wrapOpen + pre + tr + post + wrapClose;
+
+            // MFDShipSelect composes this from a mode index plus two flags
+            // ("Mode [1] NAME | Derelicts: ON"), so no single literal can cover it.
+            var mode = System.Text.RegularExpressions.Regex.Match(core, @"^Mode \[(\d)\] (CALL|NAME) \| Derelicts: (ON|OFF)$");
+            if (mode.Success)
+                return wrapOpen + "Режим [" + mode.Groups[1].Value + "] "
+                     + (mode.Groups[2].Value == "CALL" ? "ПОЗЫВНОЙ" : "ИМЯ")
+                     + " | Дереликты: " + (mode.Groups[3].Value == "ON" ? "ВКЛ" : "ВЫКЛ") + wrapClose;
+
+            foreach (var p in _mfdPrefixes)
+            {
+                if (!core.StartsWith(p, StringComparison.Ordinal)) continue;
+                var head = p.TrimEnd();
+                if (LangPack.Strings.TryGetValue(head, out tr) && tr != head)
+                    return wrapOpen + pre + tr + p.Substring(head.Length) + core.Substring(p.Length) + post + wrapClose;
+                break;
+            }
+
+            if (!_mfdDataLine.IsMatch(core)) I18n.RecordUntranslated("MFD_LINE", core, "mfd");
+            return s;
+        }
+
+        private static bool HasCyrillic(string s)
+        {
+            for (int i = 0; i < s.Length; i++) if (s[i] >= 'Ѐ' && s[i] <= 'ӿ') return true;
+            return false;
+        }
+
+        // Size ladder as a fraction of the line's vanilla size. Floor is ~0.62 --
+        // below that 'pixelmid' stops being legible on the CRT overlay.
+        private static readonly float[] _mfdLadder = { 1f, 0.9f, 0.8f, 0.72f, 0.66f, 0.62f };
+        private const string MfdClrEven = "<color=#007FD8FF>";
+        private const string MfdClrOdd = "<color=#a0afe7ff>";
+        // Transparent glyph at the line's ORIGINAL size, injected only into lines we
+        // actually shrank: legacy Text derives line height from the tallest glyph on
+        // the line, so without it a shrunk line would pull everything below it up.
+        // Tail on the left column / head on the right column keeps it in the gutter,
+        // so neither column's outer edge alignment moves.
+        private const string MfdSpacerChar = ".";
+
+        public static void GUIMFDDisplayShowMenuPostfix(Ostranauts.ShipGUIs.MFD.GUIMFDDisplay __instance, string id, Ostranauts.Events.DTOs.MFDDTO mfdDto)
+        {
+            if (!LangPack.Active || mfdDto == null) return;
+            if (__instance.PanelId != id) return;
+            try
+            {
+                var tl = _mfdTxtLeft?.GetValue(__instance) as Text;
+                var tr = _mfdTxtRight?.GetValue(__instance) as Text;
+                if (tl == null || tr == null) return;
+
+                // Wrap is what makes the buttons drift. Kill it on both columns.
+                tl.horizontalOverflow = HorizontalWrapMode.Overflow;
+                tr.horizontalOverflow = HorizontalWrapMode.Overflow;
+
+                bool isComms = (id == Ostranauts.ShipGUIs.MFD.GUIMFDPageHost.DefaultCommsScreen);
+                int rows = isComms ? 13 : 6;
+                var left = Pad(mfdDto.Left, rows);
+                var right = Pad(mfdDto.Right, rows);
+
+                // Second translation pass. MFDUpdateDisplayPrefix mutates MFDPage.Left/
+                // Right in place, which silently does nothing for pages that expose them
+                // as expression-bodied getters returning a fresh list (MFDMessageLog) --
+                // that is why the log screen stayed English. mfdDto holds the materialized
+                // lists, so translating here catches every page uniformly.
+                for (int i = 0; i < rows; i++)
+                {
+                    left[i] = LocalizeMFDLine(left[i]);
+                    right[i] = LocalizeMFDLine(right[i]);
+                }
+                var txtTitle = _mfdTxtTitle?.GetValue(__instance) as Text;
+                if (txtTitle != null) txtTitle.text = LocalizeMFDLine(txtTitle.text);
+
+                float width = tl.rectTransform.rect.width;
+                var sbL = new System.Text.StringBuilder();
+                var sbR = new System.Text.StringBuilder();
+
+                for (int i = 0; i < rows; i++)
+                {
+                    // Vanilla Format() renders even rows at 30 and odd rows at the
+                    // component's own fontSize; FormatShort() renders every row at it.
+                    bool small = isComms && (i % 2 == 0);
+                    int baseSize = small ? 30 : tl.fontSize;
+                    string clr = isComms ? ((i % 2 == 0) ? MfdClrEven : MfdClrOdd) : MfdClrOdd;
+
+                    string l = left[i], r = right[i];
+                    int size = FitPair(tl, tr, ref l, ref r, baseSize, width);
+
+                    bool shrunk = size != baseSize;
+                    string spacer = shrunk ? "<size=" + baseSize + "><color=#00000000>" + MfdSpacerChar + "</color></size>" : "";
+                    string open = (size != baseSize || small || !isComms) ? "<size=" + size + ">" : "";
+                    string close = string.IsNullOrEmpty(open) ? "" : "</size>";
+
+                    // Leading space reproduces vanilla Format()'s indent on small rows.
+                    sbL.Append(small ? " " : "").Append(open).Append(clr).Append(l).Append("</color>").Append(close).Append(spacer).Append('\n');
+                    sbR.Append(spacer).Append(small ? " " : "").Append(open).Append(clr).Append(r).Append("</color>").Append(close).Append('\n');
+                }
+
+                tl.text = sbL.ToString();
+                tr.text = sbR.ToString();
+            }
+            catch (Exception ex)
+            {
+                WarnOnce("mfdfit", "[i18n] MFD fitter failed: " + ex.Message);
+            }
+        }
+
+        private static List<string> Pad(List<string> src, int rows)
+        {
+            var list = new List<string>(rows);
+            if (src != null) list.AddRange(src);
+            while (list.Count < rows) list.Add("");
+            if (list.Count > rows) list.RemoveRange(rows, list.Count - rows);
+            for (int i = 0; i < rows; i++) if (list[i] == null) list[i] = "";
+            return list;
+        }
+
+        // Picks the largest size on the ladder at which left+right fit side by side.
+        // If even the floor size overflows, truncates the longer side to reclaim the
+        // difference. Returns the chosen size; l/r may be rewritten.
+        private static int FitPair(Text tl, Text tr, ref string l, ref string r, int baseSize, float width)
+        {
+            if (string.IsNullOrEmpty(l) && string.IsNullOrEmpty(r)) return baseSize;
+
+            // Two populated halves must not butt up against each other: without a
+            // gutter "РЕЖИМЫ" and "ГЛАВНОЕ МЕНЮ>" render as one run of text.
+            bool both = !string.IsNullOrEmpty(l) && !string.IsNullOrEmpty(r);
+            float gutter = both ? MeasureWidth(tl, "MM", baseSize) : 0f;
+
+            int chosen = baseSize;
+            for (int s = 0; s < _mfdLadder.Length; s++)
+            {
+                int size = Mathf.Max(8, Mathf.RoundToInt(baseSize * _mfdLadder[s]));
+                // The spacer only exists on lines we shrank, so it only costs budget there.
+                float budget = width - gutter - ((s == 0) ? 0f : 2f * MeasureWidth(tl, MfdSpacerChar, baseSize));
+                if (MeasureWidth(tl, l, size) + MeasureWidth(tr, r, size) <= budget) return size;
+                chosen = size;
+            }
+
+            // Floor reached and still too wide: shave the longer side.
+            float over = MeasureWidth(tl, l, chosen) + MeasureWidth(tr, r, chosen)
+                         - (width - gutter - 2f * MeasureWidth(tl, MfdSpacerChar, baseSize));
+            if (MeasureWidth(tl, l, chosen) >= MeasureWidth(tr, r, chosen))
+                l = TrimToWidth(tl, l, MeasureWidth(tl, l, chosen) - over, chosen, true);
             else
-            {
-                if (str.EndsWith(" >")) return clean.Substring(0, Math.Min(maxLen - 4, clean.Length - 2)).TrimEnd() + ".. >";
-                if (str.EndsWith(">")) return clean.Substring(0, Math.Min(maxLen - 3, clean.Length - 1)).TrimEnd() + "..>";
-                return clean.Substring(0, Math.Min(maxLen - 2, clean.Length)).TrimEnd() + "..";
-            }
+                r = TrimToWidth(tr, r, MeasureWidth(tr, r, chosen) - over, chosen, false);
+            return chosen;
+        }
+
+        // Drops characters from the middle-facing end until the string fits, keeping
+        // the "<" / ">" bezel arrow that tells the player which button the row belongs to.
+        private static string TrimToWidth(Text t, string s, float target, int size, bool isLeft)
+        {
+            if (string.IsNullOrEmpty(s) || target <= 0f) return s;
+            string clean = System.Text.RegularExpressions.Regex.Replace(s, "<.*?>", "");
+            string prefix = "", suffix = "";
+            if (isLeft && clean.StartsWith("<")) { prefix = clean.StartsWith("< ") ? "< " : "<"; clean = clean.Substring(prefix.Length); }
+            if (!isLeft && clean.EndsWith(">")) { suffix = clean.EndsWith(" >") ? " >" : ">"; clean = clean.Substring(0, clean.Length - suffix.Length); }
+
+            while (clean.Length > 1 && MeasureWidth(t, prefix + clean + ".." + suffix, size) > target)
+                clean = clean.Substring(0, clean.Length - 1);
+            return prefix + clean.TrimEnd() + ".." + suffix;
+        }
+
+        private static float MeasureWidth(Text t, string s, int size)
+        {
+            if (string.IsNullOrEmpty(s)) return 0f;
+            var settings = t.GetGenerationSettings(new Vector2(0f, 0f));
+            settings.fontSize = size;
+            settings.resizeTextForBestFit = false;
+            return t.cachedTextGeneratorForLayout.GetPreferredWidth(s, settings) / t.pixelsPerUnit;
         }
 
         private static readonly System.Reflection.FieldInfo _msgStatusList = AccessTools.Field(typeof(Ostranauts.ShipGUIs.NavStation.GUIMessageDisplay), "_statusMessages");
@@ -1195,7 +1666,18 @@ namespace OstraI18n
                     using var doc = System.Text.Json.JsonDocument.Parse(json);
                     foreach (var prop in doc.RootElement.EnumerateObject())
                     {
-                        ObjectiveTranslations[prop.Name] = prop.Value.GetString();
+                        string key = prop.Name;
+                        if (key.StartsWith("\"") && key.EndsWith("\""))
+                        {
+                            key = key.Substring(1, key.Length - 2);
+                            key = key.Replace("\\\"", "\"");
+                        }
+                        // Beats whose ObjectiveName/Desc is literally "" (CrowbarHallwayStart et al.)
+                        // were extracted as the key "\"\"", which unquotes to the empty string. An
+                        // empty key makes the substring pass below call Replace("", ...), which
+                        // throws -- silently killing every translation after the first miss.
+                        if (key.Length == 0) continue;
+                        ObjectiveTranslations[key] = prop.Value.GetString();
                     }
                 }
             }
@@ -1218,18 +1700,52 @@ namespace OstraI18n
             var res = text;
             foreach (var kv in ObjectiveTranslations)
             {
+                if (kv.Key.Length == 0) continue;   // Replace("") throws; see loader above
                 if (res.Contains(kv.Key))
                     res = res.Replace(kv.Key, kv.Value);
             }
             return res;
         }
 
+        // For a tutorial panel, re-derive both labels from the beat's TUT_* keys and repaint.
+        // Used by BOTH SetData and RefreshText: the panel can be painted from an Objective whose
+        // strDisplayDesc is still the raw English (a save restores it verbatim, and AddObjective
+        // may build the panel before any model-level fix-up runs), and RefreshText repaints from
+        // the beat directly. Re-running the lookup here makes the view correct no matter which
+        // order those happened in. Returns false when this is not a tutorial panel, so the caller
+        // falls back to the literal-catalogue path used by plot objectives.
+        private static bool TryRepaintTutorialPanel(Ostranauts.Objectives.ObjectivePanel instance)
+        {
+            var tr = Traverse.Create(instance);
+            var objective = tr.Field("_objective").GetValue<Ostranauts.Objectives.Objective>();
+            if (objective == null || objective.TutorialBeat == null) return false;
+
+            ApplyTutorialObjectiveTranslation(objective.TutorialBeat, objective);
+
+            var txtTitle = tr.Field("_txtTitle").GetValue<TMPro.TextMeshProUGUI>();
+            if (txtTitle != null && !string.IsNullOrEmpty(objective.strDisplayName))
+            {
+                FontFallback.EnsureCyrillicFont(txtTitle);
+                txtTitle.text = objective.strDisplayName;
+            }
+            var txtDesc = tr.Field("_txtDescription").GetValue<TMPro.TextMeshProUGUI>();
+            if (txtDesc != null && !string.IsNullOrEmpty(objective.strDisplayDesc))
+            {
+                FontFallback.EnsureCyrillicFont(txtDesc);
+                txtDesc.text = objective.strDisplayDesc;
+            }
+            return true;
+        }
+
         // ObjectivePanel.SetData & RefreshText -> localizes objectives list entries in PDA
         public static void ObjectivePanelSetDataPostfix(Ostranauts.Objectives.ObjectivePanel __instance)
         {
-            if (!LangPack.Active || __instance == null || !string.Equals(LangPack.Code, "ru", StringComparison.OrdinalIgnoreCase)) return;
+            if (!LangPack.Active || __instance == null) return;
             try
             {
+                if (TryRepaintTutorialPanel(__instance)) return;
+
+                if (!string.Equals(LangPack.Code, "ru", StringComparison.OrdinalIgnoreCase)) return;
                 var tr = Traverse.Create(__instance);
                 var txtTitle = tr.Field("_txtTitle").GetValue<TMPro.TextMeshProUGUI>();
                 var txtDesc = tr.Field("_txtDescription").GetValue<TMPro.TextMeshProUGUI>();
@@ -1244,12 +1760,33 @@ namespace OstraI18n
                     txtDesc.text = TranslateObjectiveText(txtDesc.text);
                 }
             }
-            catch { }
+            catch (Exception ex)
+            {
+                Plugin.Log.LogWarning("[i18n] ObjectivePanelSetDataPostfix failed: " + ex.Message);
+            }
         }
 
+        // ObjectivePanel.RefreshText runs on every input-device change and repaints BOTH labels
+        // straight from TutorialBeat.ObjectiveName/ObjectiveDesc -- raw English, bypassing the
+        // translated strDisplayName/strDisplayDesc. Falling through to the literal-catalogue
+        // lookup below can only rescue the title: ObjectiveDesc arrives with the input glyph
+        // already spliced in, so the runtime string never equals any catalogue key (the catalogue
+        // stores the C# source expression). That mismatch is exactly the "translated title over
+        // English description" state. So for tutorial objectives, re-run the TUT_* lookup for the
+        // beat -- which also re-resolves the glyphs for the device that just changed -- and repaint
+        // from the objective instead. Non-tutorial panels keep the old catalogue path.
         public static void ObjectivePanelRefreshTextPostfix(Ostranauts.Objectives.ObjectivePanel __instance)
         {
-            ObjectivePanelSetDataPostfix(__instance);
+            if (!LangPack.Active || (UnityEngine.Object)(object)__instance == (UnityEngine.Object)null) return;
+            try
+            {
+                if (!TryRepaintTutorialPanel(__instance))
+                    ObjectivePanelSetDataPostfix(__instance);
+            }
+            catch (Exception ex)
+            {
+                Plugin.Log.LogWarning("[i18n] ObjectivePanelRefreshTextPostfix failed: " + ex.Message);
+            }
         }
 
         public static void ObjectivePlotPanelSetDataPostfix(Ostranauts.Objectives.ObjectivePlotPanel __instance)
@@ -1419,6 +1956,59 @@ namespace OstraI18n
             { "粗抽 / RGH", "ФОРВАКУУМ / RGH" },
             { "涡度 / TRB", "ТУРБО / TRB" }
         };
+
+        // The "Restore" action's interaction id is not a fixed value: the base game ships an
+        // ACTUndamage* family (ACTUndamageTEMP, ACTUndamageNoSparksTEMP, ...) while the live
+        // tutorial fires ACTStationNavUndamage, which exists in neither the base data nor the
+        // language packs -- it is assembled at runtime. So match the stable "Undamage" stem
+        // instead of enumerating ids. Ids are never translated (data files are keyed by them and
+        // only strTitle/strDesc are overlaid), which is what makes this language-proof, and the
+        // caller additionally requires the target to be the tutorial's own nav station, so the
+        // loose stem match cannot fire on an unrelated repair action.
+        private const string RestoreInteractionStem = "Undamage";
+
+        private static readonly HashSet<string> _qabDiag = new HashSet<string>();
+
+        // RestoreNavStation.OnQuickActionButton gates completion on `iA.strTitle == "Restore"`.
+        // strTitle is a DISPLAY string that the content overlay localizes ("Восстановить"), so in
+        // any non-English pack that comparison can never be true and the tutorial step is
+        // unfinishable -- the translation itself breaks game progression. Re-run the same check
+        // here against the interaction ID instead and complete the beat ourselves.
+        public static void RestoreNavStationOnQuickActionButtonPostfix(
+            Ostranauts.Core.Tutorials.RestoreNavStation __instance, GUIQuickActionButton qab)
+        {
+            if (!LangPack.Active || __instance == null || __instance.Finished) return;
+            try
+            {
+                if ((UnityEngine.Object)(object)qab == (UnityEngine.Object)null) return;
+                var ia = qab.IA;
+                if (ia == null) return;
+
+                var nav = CrewSimTut.playerShipNavStationRef;
+                // One line per distinct interaction clicked while this beat is open: shows the ID
+                // actually fired and whether the target matched, so a "trigger never fires" report
+                // can be read straight off the log instead of guessed at.
+                if (_qabDiag.Add(ia.strName ?? "<null>"))
+                    Plugin.Log.LogInfo("[i18n] RestoreNavStation ждёт: клик id='" + (ia.strName ?? "<null>")
+                        + "' title='" + (ia.strTitle ?? "<null>")
+                        + "' them=" + (((UnityEngine.Object)(object)ia.objThem != (UnityEngine.Object)null) ? ia.objThem.strID : "<null>")
+                        + " nav=" + (((UnityEngine.Object)(object)nav != (UnityEngine.Object)null) ? nav.strID : "<null>"));
+
+                if (string.IsNullOrEmpty(ia.strName)
+                    || ia.strName.IndexOf(RestoreInteractionStem, StringComparison.OrdinalIgnoreCase) < 0) return;
+                if ((UnityEngine.Object)(object)ia.objThem == (UnityEngine.Object)null
+                    || (UnityEngine.Object)(object)nav == (UnityEngine.Object)null) return;
+                if (ia.objThem.strID != nav.strID) return;
+
+                __instance.Finished = true;
+                Plugin.Log.LogInfo("[i18n] RestoreNavStation: завершено по ID взаимодействия '"
+                    + ia.strName + "' (локализованный strTitle обошёл ванильную проверку)");
+            }
+            catch (Exception ex)
+            {
+                Plugin.Log.LogWarning("[i18n] RestoreNavStationOnQuickActionButtonPostfix: " + ex.Message);
+            }
+        }
+        public static void GUIGameCreditsInitPostfix() {}
     }
 }
-
