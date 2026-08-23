@@ -575,15 +575,15 @@
     "strDesc": "[us] [has] победоносно преодолел(а) напряженный кульминационный этап в [them] и [levels] уровень."
   },
   "Wander": {
-    "strDesc": "[us] бродит.",
+    "strDesc": "[us] [is] в блуждании.",
     "strTooltip": "Прогуляться до случайного места неподалеку.",
     "strTitle": "Бродить"
   },
   "WanderSoon": {
-    "strDesc": "[us] собирается побродить."
+    "strDesc": "[us] [is] в готовности побродить."
   },
   "ACTDrawCigDeny": {
-    "strDesc": "У [us] нет сигареты, чтобы достать."
+    "strDesc": "У [us-gen] [doesn't] сигареты, чтобы затянуться."
   },
   "SeekDrawCigDenyAirtight": {
     "strDesc": "[them] не может дотянуться до своего рта в герметичном костюме."
@@ -705,23 +705,23 @@
     "strDesc": "[us] использует [them], чтобы освежиться."
   },
   "ACTSeekHygieneAllowWaterDone": {
-    "strDesc": "[them] заканчивает использовать [us], чтобы освежиться."
+    "strDesc": "[them] [finishes] использовать [us], чтобы освежиться."
   },
   "SOCBrowseSocialApp": {
     "strTitle": "Посмотреть соцсеть",
-    "strDesc": "[us] листает местные социальные сети на [us-pos] КПК."
+    "strDesc": "[us] [flicks] местные социальные сети на своем КПК."
   },
   "SOCOrgToDos": {
     "strTitle": "Организовать список дел",
-    "strDesc": "[us] открывает [us-pos] расписание и обновляет [us-pos] список дел."
+    "strDesc": "[us] [pulls] свое расписание и [updates] свой список дел."
   },
   "SOCOrgToDosWithPDANotes": {
     "strTitle": "Организовать список дел (с заметкой)",
-    "strDesc": "[us] открывает [us-pos] расписание и обновляет [us-pos] список дел."
+    "strDesc": "[us] [pulls] свое расписание и [updates] свой список дел."
   },
   "SOCSobQuietly": {
     "strTitle": "Тихо рыдать",
-    "strDesc": "[us] тихо рыдает про себя."
+    "strDesc": "[us] [sobs] тихо про [us-reflexive]."
   },
   "SOCWriteHome": {
     "strTitle": "Написать домой",
@@ -765,7 +765,7 @@
   },
   "SOCWarnOff": {
     "strTitle": "Прогнать",
-    "strDesc": "[us] прогоняет [them]."
+    "strDesc": "[us] [warns] [them] держаться подальше."
   },
   "SOCCoverShift": {
     "strTitle": "Подменить на смене",
@@ -805,7 +805,7 @@
   },
   "SOCShootBreeze": {
     "strTitle": "Поболтать",
-    "strDesc": "[us] болтает ни о чем с [them]."
+    "strDesc": "[us] [shoots] ни о чём с [them]."
   },
   "SOCSnub": {
     "strTitle": "Игнорировать",
@@ -873,7 +873,7 @@
   },
   "SOCSlowClap": {
     "strTitle": "Медленно похлопать",
-    "strDesc": "[us] медленно хлопает в ладоши, качая головой, а затем отворачивается."
+    "strDesc": "[us] медленно [claps] в ладоши, качая головой, а затем [turns] в сторону."
   },
   "SOCTechJargon": {
     "strTitle": "Технический жаргон",
@@ -993,7 +993,7 @@
   },
   "SeekKOTarget100": {
     "strTitle": "Оглушить",
-    "strDesc": "[us] пытается ударить [them]."
+    "strDesc": "[us] [tries] ударить [them]."
   },
   "SeekKOAllow": {
     "strTitle": "Нокаут",
@@ -1121,19 +1121,19 @@
   },
   "SOCBackOff": {
     "strTitle": "Отвали!",
-    "strDesc": "[us] велит [them] отвалить. [us-subj] нужно личное пространство."
+    "strDesc": "[us] [tells] [them] отвалить. [us-subj] [needs] в личном пространстве."
   },
   "SOCCalmDown": {
     "strTitle": "Успокоиться",
-    "strDesc": "[us] велит [them] успокоиться и перевести дух."
+    "strDesc": "[us] [tells] [them] успокоиться и перевести дух."
   },
   "SOCChangeSubject": {
     "strTitle": "Сменить тему",
-    "strDesc": "[us] меняет тему."
+    "strDesc": "[us] [changes] тему."
   },
   "SOCReturnToSubject": {
     "strTitle": "Вернуться к теме",
-    "strDesc": "[us] резко возвращается к обсуждаемому вопросу."
+    "strDesc": "[us] резко [returns] к обсуждаемому вопросу."
   },
   "SOCCraftDarkJoke": {
     "strTitle": "Оригинальная мрачная шутка",
@@ -1141,7 +1141,7 @@
   },
   "SOCEmergStepAside": {
     "strTitle": "Отойти в сторону",
-    "strDesc": "[us] убирается с дороги [them]."
+    "strDesc": "[us] [gets] с дороги [them]."
   },
   "SOCEncourage": {
     "strTitle": "Подбодрить",
@@ -2154,7 +2154,7 @@
   },
   "SOCDaydreamExLoverNPC": {
     "strTitle": "Помечтать о бывшем",
-    "strDesc": "[us] [грезит] о ком-то."
+    "strDesc": "[us] [is] в мечтах о ком-то."
   },
   "SOCPlayfulThreat": {
     "strTitle": "Шутливая угроза",
@@ -5261,27 +5261,27 @@
   },
   "Plot_Whodunnit_CloseCaseNoBodyOrVictim": {
     "strTitle": "Закрыть текущее расследование смерти",
-    "strDesc": "[us] завершает [us-pos] текущее расследование, расчищая путь для предстоящего расследования."
+    "strDesc": "[us] [concludes] свое текущее расследование, расчищая путь для предстоящего расследования."
   },
   "Plot_Whodunnit_CloseCaseRemoveFindandClear": {
     "strTitle": "Дело закрыто",
-    "strDesc": "[us] прекращает расследование [3rd]."
+    "strDesc": "[us] [stops] расследование [3rd]."
   },
   "Plot_Whodunnit_CloseCaseRemoveFindandClearKin": {
     "strTitle": "Дело закрыто",
-    "strDesc": "[us] прекращает расследование связи [3rd-pos] с погибшими."
+    "strDesc": "[us] [stops] расследование связи [3rd-pos] с погибшими."
   },
   "Plot_Whodunnit_CloseCaseRemoveFindandClearKiller": {
     "strTitle": "Дело закрыто",
-    "strDesc": "[us] прекращает расследование убийцы [3rd]."
+    "strDesc": "[us] [stops] расследование убийцы [3rd]."
   },
   "Plot_Whodunnit_CloseCaseRemove": {
     "strTitle": "Дело закрыто",
-    "strDesc": "[us] удаляет [us-pos] файл дела."
+    "strDesc": "[us] [removes] свой файл дела."
   },
   "Plot_Whodunnit_CloseCaseRemoveRemoteShim": {
     "strTitle": "Дело закрыто",
-    "strDesc": "[us] собирается удалить [3rd]."
+    "strDesc": "[us] [is] в шаге от того, чтобы удалить [3rd]."
   },
   "Plot_Whodunnit_CloseCaseRemoveRemote": {
     "strTitle": "Дело закрыто",
@@ -5301,27 +5301,27 @@
   },
   "SOCPortAuthorityManagerAcknowledgeAngry": {
     "strTitle": "Обратить внимание на посетителя со злостью",
-    "strDesc": "[us] сверлит [them] взглядом и ничего не говорит."
+    "strDesc": "[us] [stares] [them] взглядом и не [says] ни слова."
   },
   "SOCPortAuthorityManagerAcknowledgeHappy": {
     "strTitle": "Радостно обратить внимание на посетителя",
-    "strDesc": "[us] поднимает глаза на [them] и тепло улыбается, прежде чем спросить, чем [us-subj] может помочь."
+    "strDesc": "[us] [looks] на [them] и [offers] теплую улыбку, прежде чем спросить, чем [us-subj] может помочь."
   },
   "SOCPortAuthorityManagerAcknowledgeBusy": {
     "strTitle": "Отшить посетителя, сославшись на занятость",
-    "strDesc": "[us] вздыхает и говорит [them], что [us-subj] в последнее время видел слишком много посетителей, и что [them] придется зайти позже."
+    "strDesc": "[us] [sighs] и [tells] [them-dat], что [us-subj] [has] в последнее время слишком много посетителей и что [them-dat] придётся зайти позже."
   },
   "SOCPortAuthorityManagerAcknowledgeSecondFail": {
     "strTitle": "Отшить уже виденного посетителя",
-    "strDesc": "[us] вздыхает и говорит [them], что у [us-subj] нет терпения, чтобы продолжать иметь дело с [them-obj] прямо сейчас."
+    "strDesc": "[us] [sighs] и [tells] [them-dat], что [us-dat] [doesn't] хватает терпения продолжать иметь дело с [them-ins] прямо сейчас."
   },
   "SOCPortAuthorityManagerAcknowledgeSelfImportant": {
     "strTitle": "Отшить посетителя, демонстрируя важность",
-    "strDesc": "[us] вздыхает и говорит [them], что [us-subj] сейчас слишком занят для разговоров и что [them-obj] придется зайти в другой раз."
+    "strDesc": "[us] [sighs] и [tells] [them-dat], что у [us-gen] [is] сейчас полно дел, так что не до разговоров, и что [them-dat] придётся зайти в другой раз."
   },
   "SOCPortAuthorityManagerAcknowledgeFriend": {
     "strTitle": "Обратить внимание на посетителя-друга",
-    "strDesc": "[us] отрывает взгляд от [us-pos] терминала и мгновенно узнает [them]. "
+    "strDesc": "[us] [looks] в сторону от своего терминала и мгновенно [recognizes] [them]."
   },
   "SOCPortAuthorityFinisherFriendFavor": {
     "strTitle": "Попросить друга об услуге",
@@ -5353,15 +5353,15 @@
   },
   "SOCPortAuthorityConnectFail": {
     "strTitle": "Проигнорировать попытку сблизиться",
-    "strDesc": "[us] не проникается срочностью [them-pos]."
+    "strDesc": "[us] [is] равнодушен к срочности [them-pos]."
   },
   "SOCPortAuthorityConnectSucceed": {
     "strTitle": "Найти общий язык",
-    "strDesc": "[us] кажется очарованным историей [them-pos]. [us-subj] хочет, чтобы было что-то, чем [us-subj] мог бы помочь."
+    "strDesc": "[us] [appears] под очарованием истории [them-pos]. [us-subj] [wishes], чтобы было что-то, чем [us-subj] в силах помочь."
   },
   "SOCPortAuthorityBluffAuthority": {
     "strTitle": "Притвориться важным",
-    "strDesc": "[us] спрашивает, знает ли [them], с кем [them-subj] разговаривает."
+    "strDesc": "[us] [asks], [knows] ли [them], с кем [them-subj] [is] в разговоре."
   },
   "SOCPortAuthorityBluffAuthorityFail": {
     "strTitle": "Заявить о личных полномочиях",
@@ -5559,17 +5559,17 @@
   "SOCFlirtStartWomanPlayer": {
     "strTitle": "Флирт",
     "strDesc": "[us] [checks], испытывает ли [us-contractIs] влечение к [them].",
-    "strTooltip": "[us] [checks], испытывает ли [us-contractIs] влечение к [them]."
+    "strTooltip": "[us] [pretends], делая недвусмысленные авансы [them-dat]."
   },
   "SOCFlirtStartNBPlayer": {
     "strTitle": "Флирт",
     "strDesc": "[us] [checks], испытывает ли [us-contractIs] влечение к [them].",
-    "strTooltip": "[us] [checks], испытывает ли [us-contractIs] влечение к [them]."
+    "strTooltip": "[us] [pretends], делая недвусмысленные авансы [them-dat]."
   },
   "SOCFlirtStart": {
     "strTitle": "Флирт",
     "strDesc": "[us] [checks], есть ли влечение к [them].",
-    "strTooltip": "[us] [checks], есть ли влечение к [them]."
+    "strTooltip": "[us] [raises] брови, заигрывая с [them-ins]."
   },
   "SOCBawdyCommentaryMen": {
     "strTitle": "Рассуждать о привлекательных мужчинах",
@@ -5590,7 +5590,7 @@
   "SOCFlirtContinue": {
     "strTitle": "Флиртовать в ответ",
     "strDesc": "[us] [checks], есть ли влечение к [them].",
-    "strTooltip": "[us] [checks], есть ли влечение к [them]."
+    "strTooltip": "[us] [responds], заигрывая с [them-ins]."
   },
   "SOCFlirtContinueMan": {
     "strTitle": "Флиртовать в ответ",
@@ -5607,62 +5607,62 @@
   "SOCFlirtContinueManPlayer": {
     "strTitle": "Флиртовать в ответ",
     "strDesc": "[us] [checks], испытывает ли [us-contractIs] влечение к [them].",
-    "strTooltip": "[us] [checks], испытывает ли [us-contractIs] влечение к [them]."
+    "strTooltip": "[us] [flirts] с [them-ins]."
   },
   "SOCFlirtContinueWomanPlayer": {
     "strTitle": "Флиртовать в ответ",
     "strDesc": "[us] [checks], испытывает ли [us-contractIs] влечение к [them].",
-    "strTooltip": "[us] [checks], испытывает ли [us-contractIs] влечение к [them]."
+    "strTooltip": "[us] [flirts] с [them]."
   },
   "SOCFlirtContinueNBPlayer": {
     "strTitle": "Флиртовать в ответ",
     "strDesc": "[us] [checks], испытывает ли [us-contractIs] влечение к [them].",
-    "strTooltip": "[us] [checks], испытывает ли [us-contractIs] влечение к [them]."
+    "strTooltip": "[us] [flirts] с [them-ins]."
   },
   "SOCRepeatSexuallyMen": {
     "strTitle": "Повторить с сексуальным подтекстом",
     "strDesc": "[us] [checks], испытывает ли [us-contractIs] влечение к [them].",
-    "strTooltip": "[us] [checks], испытывает ли [us-contractIs] влечение к [them]."
+    "strTooltip": "[us] [repeats] только что сказанное [them-ins], но в сексуальном ключе."
   },
   "SOCRepeatSexuallyWomen": {
     "strTitle": "Повторить с сексуальным подтекстом",
     "strDesc": "[us] [checks], испытывает ли [us-contractIs] влечение к [them].",
-    "strTooltip": "[us] [checks], испытывает ли [us-contractIs] влечение к [them]."
+    "strTooltip": "[us] [repeats] только что сказанное [them], но в сексуальном ключе."
   },
   "SOCRepeatSexuallyNB": {
     "strTitle": "Повторить с сексуальным подтекстом",
     "strDesc": "[us] [checks], испытывает ли [us-contractIs] влечение к [them].",
-    "strTooltip": "[us] [checks], испытывает ли [us-contractIs] влечение к [them]."
+    "strTooltip": "[us] [repeats] только что сказанное [them-ins], но в сексуальном ключе."
   },
   "SOCInviteDrinkMan": {
     "strTitle": "Пригласить на выпивку",
     "strDesc": "[us] [checks], испытывает ли [us-contractIs] влечение к [them].",
-    "strTooltip": "[us] [checks], испытывает ли [us-contractIs] влечение к [them]."
+    "strTooltip": "[us] намекающе [asks], не хочется ли [them-dat] выпить."
   },
   "SOCInviteDrinkWoman": {
     "strTitle": "Пригласить на выпивку",
     "strDesc": "[us] [checks], испытывает ли [us-contractIs] влечение к [them].",
-    "strTooltip": "[us] [checks], испытывает ли [us-contractIs] влечение к [them]."
+    "strTooltip": "[us] намекающе [asks], не хочется ли [them-dat] выпить."
   },
   "SOCInviteDrinkNB": {
     "strTitle": "Пригласить на выпивку",
     "strDesc": "[us] [checks], испытывает ли [us-contractIs] влечение к [them].",
-    "strTooltip": "[us] [checks], испытывает ли [us-contractIs] влечение к [them]."
+    "strTooltip": "[us] намекающе [asks], не хочется ли [them-dat] выпить."
   },
   "SOCLeadTheWayMan": {
     "strTitle": "Веди",
     "strDesc": "[us] [checks], испытывает ли [us-contractIs] влечение к [them].",
-    "strTooltip": "[us] [checks], испытывает ли [us-contractIs] влечение к [them]."
+    "strTooltip": "[us] [shrugs] и [tells] [them-dat] показать дорогу."
   },
   "SOCLeadTheWayWoman": {
     "strTitle": "Веди",
     "strDesc": "[us] [checks], испытывает ли [us-contractIs] влечение к [them].",
-    "strTooltip": "[us] [checks], испытывает ли [us-contractIs] влечение к [them]."
+    "strTooltip": "[us] [shrugs] и [tells] [them-dat] показать дорогу."
   },
   "SOCLeadTheWayNB": {
     "strTitle": "Веди",
     "strDesc": "[us] [checks], испытывает ли [us-contractIs] влечение к [them].",
-    "strTooltip": "[us] [checks], испытывает ли [us-contractIs] влечение к [them]."
+    "strTooltip": "[us] [shrugs] и [tells] [them-dat] показать дорогу."
   },
   "MSShipWeaponMissileLauncher01LooseDestroy": {
     "strDesc": "[us] уничтожен."
@@ -7465,7 +7465,7 @@
   },
   "SocialCombatNPC": {
     "strTitle": "Социальный бой с НИП",
-    "strDesc": "[us] [gets] привлекает внимание [them-pos]."
+    "strDesc": "[us] [gets] [them-pos] внимание."
   },
   "Strip": {
     "strTitle": "Раздеть",
@@ -7510,7 +7510,7 @@
   },
   "TASKCourseCorrection": {
     "strTitle": "Коррекция курса",
-    "strDesc": "[us] [sits] садится за панель управления [them-pos].",
+    "strDesc": "[us] [sits] за [them-pos] панель управления.",
     "strTooltip": "Дополнительно проверяет траекторию полета."
   },
   "TASKCourseCorrectionOperate": {
@@ -8391,7 +8391,7 @@
   },
   "PLOT_ScavFetch03_Offer": {
     "strTitle": "Спросить о нуждах исследовательского проекта",
-    "strDesc": "[us] [asks] [them], какая помощь [them-subj] [them-needs] для [them-pos] исследовательского проекта."
+    "strDesc": "[us] [asks] [them], в какой помощи [them-subj] [them-needs] для своего исследовательского проекта."
   },
   "PLOT_ScavFetch03_OfferReply": {
     "strTitle": "Предложение",
@@ -8503,7 +8503,7 @@
   },
   "PLOT_VLAFetch02_OfferReply": {
     "strTitle": "Предложение",
-    "strDesc": "[us] [thanks] [them] за [them-pos] предыдущую помощь и осмотрительность.\n[us-subj] [is] готов заплатить 10 000 $ за неповрежденную аэродинамическую наклонную стену (1x3, 1x2 или 1x1) из строительной зоны Лос-Анджелеса."
+    "strDesc": "[us] [thanks] [them] за [them-pos] предыдущую помощь и осмотрительность.\n[us-subj] [is] готов заплатить 10 000 $ за неповрежденную аэродинамическую наклонную стену (1×3, 1×2 или 1×1) из строительной зоны Лос-Анджелеса."
   },
   "PLOT_VLAFetch02_OfferTrigger": {
     "strTitle": "Триггер события предложения сбора для VLA",
@@ -8758,7 +8758,7 @@
   },
   "PLOT_Meat_WhispersFound06ReplyManager": {
     "strTitle": "Обсудить еду",
-    "strDesc": "[us] с радостью [shares] с [them] [us-pos] недавним роскошным обедом. В отличие от остального человечества, корпоративные менеджеры часто наслаждаются изысканными, похожими на земные продуктами с орбитали Ханчжоу или биоинженерной едой с Вольтера, Деймоса."
+    "strDesc": "[us] с радостью [shares] с [them] своим недавним роскошным обедом. В отличие от остального человечества, корпоративные менеджеры часто наслаждаются изысканными, похожими на земные продуктами с орбитали Ханчжоу или биоинженерной едой с Вольтера, Деймоса."
   },
   "PLOT_Meat_WhispersFound06ReplyHangzhou": {
     "strTitle": "Обсудить сельское хозяйство",
@@ -9370,15 +9370,15 @@
   },
   "Plot_Whodunnit_VictimFoundTrigger": {
     "strTitle": "Триггер для бита \"Жертва найдена\" сюжета \"Кто это сделал\"",
-    "strDesc": "[us] [нашел] [them-pos] убитое тело в сюжете \"Кто это сделал\"."
+    "strDesc": "[us] [has] [them-pos] убитое тело в сюжете «Кто это сделал»."
   },
   "Plot_Whodunnit_BodyFoundTrigger": {
     "strTitle": "Триггер для бита \"Тело найдено\" сюжета \"Кто это сделал\"",
-    "strDesc": "[us] [нашел] [them-pos] тело в сюжете \"Кто это сделал\"."
+    "strDesc": "[us] [has] [them-pos] тело в сюжете «Кто это сделал»."
   },
   "Plot_Whodunnit_CasefileFoundTrigger": {
     "strTitle": "Триггер для бита \"Дело найдено\" сюжета \"Кто это сделал\"",
-    "strDesc": "[us] [начал] [them-pos] дело в сюжете \"Кто это сделал\"."
+    "strDesc": "[us] [has] [them-pos] дело в сюжете «Кто это сделал»."
   },
   "Plot_Whodunnit_KinFoundTrigger": {
     "strTitle": "Поиск ближайших родственников жертвы",
@@ -9386,7 +9386,7 @@
   },
   "Plot_Whodunnit_KinFoundReply": {
     "strTitle": "Поиск близких связей",
-    "strDesc": "[them] [узнает], что [us] [близок] с [3rd]."
+    "strDesc": "[them] [learns], что [us] [is] в близких отношениях с [3rd]."
   },
   "Plot_Whodunnit_KinEnemyFoundReply2": {
     "strTitle": "Поиск враждебных связей",
@@ -9406,7 +9406,7 @@
   },
   "Plot_Whodunnit_KinEnemyFoundReplyNone": {
     "strTitle": "Нет врагов для раскрытия",
-    "strDesc": "У [us] [нет] врагов, о которых можно рассказать [them]."
+    "strDesc": "[us] не [has] врагов, о которых можно рассказать [them-dat]."
   },
   "Plot_Whodunnit_KinAssignTrigger": {
     "strTitle": "Назначить родственника",
@@ -9558,15 +9558,15 @@
   },
   "Plot_Whodunnit_ClueKillerBODragonsTrigger": {
     "strTitle": "Улика об убийце: Фанат Драконов",
-    "strDesc": "[us] [отмечает] для [them], что убийца [3rd-pos] [является] фанатом команды по прорыву \"Новые Сяньские Драконы\"."
+    "strDesc": "[us] [notes] о [them-prep], что [3rd-pos] убийца [is] фанат команды по прорыву «Новые Сяньские Драконы»."
   },
   "Plot_Whodunnit_ClueKillerBOGodsTrigger": {
     "strTitle": "Улика об убийце: Фанат Богов",
-    "strDesc": "[us] [отмечает] для [them], что убийца [3rd-pos] [является] фанатом команды по прорыву \"Боги Олимпа\"."
+    "strDesc": "[us] [notes] на [them-prep], что [3rd-pos] убийца [is] фанат команды по прорыву «Боги Олимпа»."
   },
   "Plot_Whodunnit_ClueKillerBORiotersTrigger": {
     "strTitle": "Улика об убийце: Фанат Бунтовщиков",
-    "strDesc": "[us] [нахожу] на [them-loc] указания на то, что убийца [3rd-pos] — фанат команды по брейкауту \"Цересские Бунтари\"."
+    "strDesc": "[us] [notes] на [them-prep], что [3rd-pos] убийца [is] фанат команды по прорыву «Цересские Бунтари»."
   },
   "GUIChargenLaunchAllow": {
     "strDesc": "[them] [begins] процесс запуска."
@@ -9703,7 +9703,7 @@
     "strTooltip": "Доступ к сервису запросов парома в терминале."
   },
   "GUIPDAFerryAllow": {
-    "strDesc": "[us] показывает [them] свои услуги."
+    "strDesc": "[us] показывает [them-dat] услуги [us-gen]."
   },
   "GUIRacingKiosk": {
     "strTitle": "Начать гонку или просмотреть лиги",
@@ -10631,7 +10631,7 @@
     "strDesc": "[us] — клиент, [them] — цель. Задание выполнено? Плюс применить эффекты отношений/социальные эффекты"
   },
   "GUIBounties": {
-    "strDesc": "[us] [получает доступ] к [them].",
+    "strDesc": "[us] [accesses] к [them-dat].",
     "strTooltip": "Открывает доску наград в терминале.",
     "strTitle": "Доска наград"
   },
@@ -14137,11 +14137,11 @@
   },
   "Plot_Whodunnit_AnalyzedBloodTrigger": {
     "strTitle": "Улика убийцы: анализ крови",
-    "strDesc": "[us] [проанализировал] кровь с места убийства, которая совпадает с профилем [3rd-gen]."
+    "strDesc": "[us-dat] удалось проанализировать кровь с места убийства, которая совпадает с профилем [3rd-gen]."
   },
   "Plot_Whodunnit_AnalyzedDNATrigger": {
     "strTitle": "Улика убийцы: анализ ДНК",
-    "strDesc": "[us] [проанализировал] ДНК с места убийства, которая совпадает с профилем [3rd-gen]."
+    "strDesc": "[us-dat] удалось проанализировать ДНК с места убийства, которая совпадает с профилем [3rd-gen]."
   },
   "Plot_Whodunnit_CloseCaseTrigger": {
     "strTitle": "Триггер для этапа закрытия дела",
@@ -14522,7 +14522,7 @@
   },
   "Plot_Whodunnit_AnalyzeDNASelf": {
     "strTitle": "Проанализировать ДНК (криминалистика)",
-    "strDesc": "[us] [использует] [them-acc] вместе со своими навыками медицинской диагностики для проведения быстрого лабораторного анализа ДНК.",
+    "strDesc": "[us] использует [them-acc] вместе со своими навыками медицинской диагностики для проведения быстрого лабораторного анализа ДНК.",
     "strTooltip": "Анализирует ДНК, используя ваши собственные навыки криминалистики, бесплатно.\nРасходует проанализированную ДНК и требует длительного непрерывного времени."
   },
   "Plot_Whodunnit_AnalyzeDNASelfAllow": {
@@ -14535,7 +14535,7 @@
   },
   "Plot_Whodunnit_ExamineForKin": {
     "strTitle": "Искать контакты жертвы",
-    "strDesc": "[us] [осматривает] тело [them-gen] и окрестности в поисках улик, указывающих на близких родственников или врагов. Это неприятная работа.",
+    "strDesc": "[us] осматривает тело [them-gen] и окрестности в поисках улик, указывающих на близких родственников или врагов. Это неприятная работа.",
     "strTooltip": "Попытайтесь определить, кому может быть интересно узнать об этой смерти.\nНе для слабонервных."
   },
   "Plot_Whodunnit_ExamineForKinReplyClose": {
@@ -14636,7 +14636,7 @@
   },
   "Plot_Whodunnit_AccuseMurderNotEnoughReply": {
     "strTitle": "Ой, да ладно",
-    "strDesc": "[us] [говорит] [them-dat], что эти улики едва ли указывают на вину [them-gen]. [us-subj] [настаивает] на наличии железного алиби, и никто не поверит голословным обвинениям [them-gen]."
+    "strDesc": "[us] [tells] [them-dat], что эти улики едва ли указывают на вину [them-gen]. [us-subj] — упорно настаивать на наличии железного алиби, и никто не поверит голословным обвинениям [them-gen]."
   },
   "Plot_Whodunnit_AccuseMurderEnough": {
     "strTitle": "Обвинить на основе веских улик",
@@ -14652,7 +14652,7 @@
   },
   "Plot_Whodunnit_AccuseMurderEnoughReplySelfDefense": {
     "strTitle": "Признается",
-    "strDesc": "[us] [признается] в убийстве [3rd-gen], но [заявляет], что это была самооборона. [us-subj] [спрашивает], неужели [them] никогда не [попадал] в подобную ситуацию, где решалась жизнь и смерть."
+    "strDesc": "[us] [confesses] в убийстве [3rd-gen], но [claims], что это была самооборона. [us-subj] [asks], неужели [them] никогда не [has] в подобной ситуации, где решается вопрос жизни и смерти."
   },
   "Plot_Whodunnit_AccuseMurderEnoughReplyVengeance": {
     "strTitle": "Признается",
@@ -14668,15 +14668,15 @@
   },
   "Plot_Whodunnit_AccuseMurderEnoughManager": {
     "strTitle": "Ой, да ладно",
-    "strDesc": "[us] [спрашивает] [them-acc], [понимает] ли [them-subj], с кем [разговаривает], а затем [предупреждает] [them-acc] следить за своими словами. Кто поверит диким обвинениям, а не слову человека на [us-pos] уважаемой должности?"
+    "strDesc": "[us] [asks] [them-acc], [realizes] ли [them-subj], с кем [them-contractIs] говорит, а затем [warns] [them-acc] следить за своими словами. Кто поверит диким обвинениям, а не слову человека, занимающего [us-pos] уважаемый пост?"
   },
   "Plot_Whodunnit_AccuseMurderOther": {
     "strTitle": "Обвинить другого",
-    "strDesc": "У [us-gen] есть другие дела, когда [us-subj] [обвиняет] [them-acc] в том, что [them-subj] — убийца [3rd-gen]."
+    "strDesc": "[us] [has] другие дела, обвиняя [them-acc] в убийстве [3rd-gen]."
   },
   "Plot_Whodunnit_AccuseMurderOtherReply": {
     "strTitle": "Отстань",
-    "strDesc": "[us] [говорит] отстать. [us-subj] [заявляет], что не [понимает], о чем [them] [говорит], и не [хочет] никаких неприятностей."
+    "strDesc": "[us] [says] отстать. [us-subj] [claims] не знать, о чем [them] [is] говорит, и [us-contractIs] не заинтересован ни в каких неприятностях."
   },
   "Plot_Whodunnit_AskAboutVictim": {
     "strTitle": "Спросить о жертве убийства",
@@ -14708,7 +14708,7 @@
   },
   "Plot_Whodunnit_AskAboutVictimReplyClue": {
     "strTitle": "Поделиться воспоминаниями",
-    "strDesc": "[us] [рассказывает] о некоторых недавних воспоминаниях о [3rd-loc], которые могут быть важны."
+    "strDesc": "[us] [talks] о некоторых недавних воспоминаниях о [3rd-prep], которые могут быть важны."
   },
   "Plot_Whodunnit_AskAboutVictimReplyNothing": {
     "strTitle": "Не хочет неприятностей",
@@ -14772,7 +14772,7 @@
   },
   "Plot_Whodunnit_ReportMurderToOKLGLEODeadLEO": {
     "strTitle": "В ярости",
-    "strDesc": "[us] явно [взволнован] сообщением об убийстве [3rd-gen]. [us] долго [смотрит] на [them-acc], затем [отдает] честь павшему офицеру и [завершает] отчет [them-gen]. [us-subj] [переводит] плату за [them-pos] усилия.\nЗакройте расследование через папку с делом."
+    "strDesc": "[us] [is] в явном волнении от сообщения об убийстве [3rd-gen]. [us] долго [stares] на [them-acc], затем [salutes] павшему офицеру и [finalizes] [them-pos] отчет. [us-subj] [transfers] плату за [them-pos] усилия.\nЗакройте расследование через папку с делом."
   },
   "Plot_Whodunnit_ReportMurderToOKLGLEODeadLEOShim": {
     "strTitle": "Подача отчета об инциденте (заглушка)",
@@ -14780,7 +14780,7 @@
   },
   "Plot_Whodunnit_ReportMurderToOKLGLEODeadManager": {
     "strTitle": "Хладнокровие",
-    "strDesc": "[us] [ведет] себя почтительно и хладнокровно-профессионально, получая отчет [them-gen] об убийстве [3rd-gen]. Это серьезное дело. [us-subj] [переводит] корпоративную награду за информацию.\nЗакройте расследование через папку с делом."
+    "strDesc": "[us] [is] воплощение почтительности и хладнокровного профессионализма, получая [them-pos] отчет об убийстве [3rd-gen]. Это серьезное дело. [us-subj] [transfers] корпоративную награду за информацию.\nЗакройте расследование через папку с делом."
   },
   "Plot_Whodunnit_ReportMurderToOKLGLEODeadManagerShim": {
     "strTitle": "Подача отчета об инциденте (заглушка)",
@@ -14788,7 +14788,7 @@
   },
   "Plot_Whodunnit_ReportMurderToOKLGLEODeadCriminal": {
     "strTitle": "Скатертью дорога",
-    "strDesc": "[us] [рад], что [3rd] [убыл], и [платит] [them-dat] награду.\nЗакройте расследование через папку с делом."
+    "strDesc": "[us] [is] в восторге от того, что [3rd] [is] среди мёртвых, и [pays] [them-dat] награду.\nЗакройте расследование через папку с делом."
   },
   "ENCPlot_Meat_GoatBoss_GoQuarters": {
     "strTitle": "Осмотреть жилые помещения экипажа",
@@ -15064,7 +15064,7 @@
   },
   "PLOT_Merga_MergaEngagedTrigger": {
     "strTitle": "Триггер перехода к этапу вовлечения Мерги в сюжет Мерги",
-    "strDesc": "[us] [собрал] улики на подозреваемого по делу Миддлмист. Отнесите находки детективу."
+    "strDesc": "[us] [has] собранные улики на подозреваемого по делу Миддлмист. Отнесите находки детективу."
   },
   "PLOT_Merga_MergaKnownTrigger": {
     "strTitle": "Триггер перехода к этапу осведомленности о Мерге в сюжете Мерги",
@@ -15076,7 +15076,7 @@
   },
   "PLOT_Merga_EndgameCompletedTrigger": {
     "strTitle": "Триггер перехода к этапу завершения эндшпиля сюжета Мерги",
-    "strDesc": "[us] [столкнулся] с завершением глубокой истины."
+    "strDesc": "[us] [has] завершение более глубокой истины."
   },
   "PLOT_Merga_EndTrigger": {
     "strTitle": "Триггер перехода к финальному этапу сюжета Мерги",
@@ -15182,7 +15182,7 @@
   },
   "PLOT_Merga_WhispersFound09ReplyLEO": {
     "strTitle": "Злой повтор теории",
-    "strDesc": "[us] [говорит], что это закрытая информация, и предлагает [them] больше об этом не говорить."
+    "strDesc": "[us] [says], что это закрытая информация, и предлагает [them] больше об этом [doesn't] говорить."
   },
   "PLOT_Merga_WhispersFound09Reply1": {
     "strTitle": "Ответ о Черной Руке: закономерность",
@@ -15258,7 +15258,7 @@
   },
   "PLOT_Merga_Suspect_Tanner_Reply": {
     "strTitle": "Досье на подозреваемого: Тэннер",
-    "strDesc": "Детектив [us] [говорит], что Джозефус Тэннер — их бывший напарник, тот, кто сорвался с катушек, выслеживая зацепки по странному делу. По причинам, которые [us-subj] до конца не понимает, Миддлмист недавно стала частью этого расследования."
+    "strDesc": "Детектив [us] [says], что Джозефус Тэннер — бывший напарник [us-gen], тот, кто сорвался с катушек, выслеживая зацепки по странному делу. По причинам, которые [us-dat] [doesn't] до конца ясны, Миддлмист недавно стала частью этого расследования."
   },
   "PLOT_Merga_Suspect_Middlemist": {
     "strTitle": "Спросить о Миддлмист",
@@ -15338,7 +15338,7 @@
   },
   "PLOT_Merga_SignsDiscussed04": {
     "strTitle": "Спросить об алиби",
-    "strDesc": "[us] [спрашивает] [them], где [them-subj] [was] в ночь пропажи Миддлмист."
+    "strDesc": "[us] [asks] [them], где [them-subj] [was] в ночь пропажи Миддлмист."
   },
   "PLOT_Merga_SignsDiscussed04_Mogul_Alibi": {
     "strTitle": "Ответить алиби",
@@ -15346,7 +15346,7 @@
   },
   "PLOT_Merga_SignsDiscussed05": {
     "strTitle": "Спросить об алиби",
-    "strDesc": "[us] [спрашивает] [them], где [them-subj] [was] в ночь пропажи Миддлмист."
+    "strDesc": "[us] [asks] [them], где [them-subj] [was] в ночь пропажи Миддлмист."
   },
   "PLOT_Merga_SignsDiscussed05_Journalist_Alibi": {
     "strTitle": "Спросить об алиби",
@@ -15482,7 +15482,7 @@
   },
   "ACTWitnessCancel": {
     "strTitle": "Отмена свидетеля",
-    "strDesc": "[them] [увидел], что [us] [делает] с [3rd], и [остановился]."
+    "strDesc": "[them] видел, как [us] что-то делает с [3rd-ins], и остановился."
   },
   "SOCBegMercy": {
     "strTitle": "Молить о пощаде",
@@ -18539,7 +18539,7 @@
   },
   "SHIPAcceptSurrender": {
     "strTitle": "Принять капитуляцию",
-    "strDesc": "[us-regID] [сдается]."
+    "strDesc": "[us-regID] сдаётся."
   },
   "SHIPDenySurrender": {
     "strTitle": "Отклонить капитуляцию",
@@ -23583,11 +23583,11 @@
   },
   "SOCPoliceShakedownBasicBribeAccept": {
     "strTitle": "Принятие взятки",
-    "strDesc": "[us] [adds] взятку в [us-pos] журнал и [wishes] [them] хорошего дня."
+    "strDesc": "[us] [adds] взятку в свой журнал и [wishes] [them] хорошего дня."
   },
   "SOCPoliceShakedownBasicBribeAcceptCritSuccess": {
     "strTitle": "Принятие взятки: критический успех",
-    "strDesc": "[us] [grins], [adds] взятку в [us-pos] журнал и [gives] [them] [us-pos] контактные данные на случай, если в ближайшем будущем [them-subj] когда-нибудь [needs] в «друге»."
+    "strDesc": "[us] [grins], [adds] взятку в свой журнал и [gives] [them] свои контактные данные на случай, если в ближайшем будущем [them-subj] когда-нибудь [needs] в «друге»."
   },
   "SOCPoliceShakedownBasicBribeDenyAutonomy": {
     "strTitle": "Отказ от взятки (автономия)",

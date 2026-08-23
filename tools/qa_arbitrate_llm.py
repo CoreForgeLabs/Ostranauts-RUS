@@ -67,8 +67,16 @@ def load_disagreements():
             if r.get("agree") or not r.get("ru_new"):
                 continue
             variants = r.get("variants") or {}
-            if len(variants) < 2:
+            if len(variants) < 1:
                 continue
+            if len(variants) == 1:
+                # Второй ответ отбраковала валидация. Такая строка иначе зависает
+                # навсегда: согласия нет и сравнивать не с чем -- поэтому вторым
+                # вариантом ставим текущий перевод, и судья решает, лучше ли
+                # предложение того, что уже есть.
+                only = list(variants.values())[0]
+                variants = {"предложение": only, "текущий": r["ru_old"]}
+                r = dict(r, variants=variants)
             key = (r["file"], r["id"], r["field"])
             if key in seen:
                 continue

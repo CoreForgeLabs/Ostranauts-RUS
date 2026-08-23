@@ -133,6 +133,23 @@ def scan_file(name):
         if any(t.endswith("-pos") for t in ru_tokens):
             add("POS_TOKEN", "[*-pos] -> 'твой/его' не согласуется; нужен 'свой' в нужном роде")
 
+        # 5b. Подменён глагол: в оригинале [repeats], в переводе [checks].
+        #     Токены оба легальные, поэтому проверка токенов такое пропускает,
+        #     а смысл при этом другой -- обычно это перевод чужой реплики,
+        #     заехавший при массовом прогоне.
+        en_verbs = set(t for t in en_tokens if t in VERB_KEYS)
+        ru_verbs = set(t for t in ru_tokens if t in VERB_KEYS)
+        swapped_in = ru_verbs - en_verbs
+        swapped_out = en_verbs - ru_verbs
+        # Законные замены: английское "is going to" по-русски передаётся
+        # вспомогательным [is.aux] ("собирается"), а не связкой.
+        if swapped_out == {"is"} and swapped_in <= {"is.aux", "is.cop"}:
+            swapped_in = swapped_out = set()
+        if swapped_in and swapped_out:
+            add("VERB_SWAPPED", "в оригинале %s, в переводе %s"
+                % (", ".join("[%s]" % t for t in sorted(swapped_out)[:3]),
+                   ", ".join("[%s]" % t for t in sorted(swapped_in)[:3])))
+
         # 6. Строка не переведена -- но только если в ней есть что переводить
         #    помимо токенов и служебных идентификаторов.
         if ru_val.strip() == en_val.strip():
@@ -155,7 +172,8 @@ def main():
     with io.open(OUT, "w", encoding="utf-8") as f:
         json.dump({"summary": dict(by_kind), "findings": all_f}, f, ensure_ascii=False, indent=2)
     print("находок:", len(all_f))
-    order = ["FROZEN_AUX", "FROZEN_VERB", "BAD_TOKEN", "POSSESSIVE_LOST", "POS_TOKEN", "UNTRANSLATED"]
+    order = ["VERB_SWAPPED", "FROZEN_AUX", "FROZEN_VERB", "BAD_TOKEN",
+             "POSSESSIVE_LOST", "POS_TOKEN", "UNTRANSLATED"]
     for k in order:
         if by_kind.get(k):
             print("  %-16s %5d" % (k, by_kind[k]))
