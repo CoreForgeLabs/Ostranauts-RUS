@@ -591,7 +591,7 @@
   "DrawCig": {
     "strTitle": "Достать сигарету",
     "strTooltip": "Помещает сигарету в пустой слот рта или руки.",
-    "strDesc": "[us] собирается достать незажженную сигарету."
+    "strDesc": "[us] [is.aux] достать незажженную сигарету."
   },
   "ACTDrawCigAllow": {
     "strTitle": "Достать сигарету: Готово",
@@ -615,18 +615,18 @@
   },
   "ACTLightCigDamaskRoseAllow": {
     "strTitle": "Прикуривание",
-    "strDesc": "[them] завершает прикуривание [us]."
+    "strDesc": "[them] [finishes] прикуривание [us]."
   },
   "ACTLightCigUnicornDreamAllow": {
     "strTitle": "Прикуривание",
-    "strDesc": "[them] завершает прикуривание [us]."
+    "strDesc": "[them] [finishes] прикуривание [us]."
   },
   "ACTSnuffCigDeny": {
     "strDesc": "[them] не может потушить [us]."
   },
   "ACTSnuffCig": {
     "strTitle": "Потушить",
-    "strDesc": "[us] решает потушить [them].",
+    "strDesc": "[us] [decides] потушить [them].",
     "strTooltip": "Превращает зажженную сигарету в окурок."
   },
   "ACTSnuffCigAllow": {
@@ -635,7 +635,7 @@
   },
   "ACTSmokeCig": {
     "strTitle": "Курить",
-    "strDesc": "[us] собирается выкурить [them].",
+    "strDesc": "[us] [is.aux] выкурить [them].",
     "strTooltip": "Продолжает курить зажженную сигарету во рту или в руке, пока действие не будет отменено или она не догорит."
   },
   "ACTSmokeCigViceroyAllow": {
@@ -702,7 +702,7 @@
   },
   "ACTSeekHygieneAllowWater": {
     "strTitle": "Очищение",
-    "strDesc": "[us] использует [them], чтобы освежиться."
+    "strDesc": "[us] [uses] [them], чтобы освежиться."
   },
   "ACTSeekHygieneAllowWaterDone": {
     "strDesc": "[them] [finishes] использовать [us], чтобы освежиться."
@@ -809,7 +809,7 @@
   },
   "SOCSnub": {
     "strTitle": "Игнорировать",
-    "strDesc": "[us] игнорирует [them] и уходит."
+    "strDesc": "[us] [snubs] [them] и [us-walks] прочь."
   },
   "SOCNotMuch": {
     "strTitle": "Ничего особенного",
@@ -2058,7 +2058,7 @@
   },
   "SOCBragToEnemy4": {
     "strTitle": "Похвастаться новым кораблем",
-    "strDesc": "[us] говорит, что [us-contractHas] работал над [us-pos] новым кораблем класса А, и спрашивает, на какой развалюхе [them] [болтается]."
+    "strDesc": "[us] говорит, что [us-contractHas] работал над [us-pos] новым кораблем класса А, и спрашивает, на какой развалюхе [them] [has] болтался."
   },
   "SOCSnubEnemy1": {
     "strTitle": "Отшить",
@@ -2198,7 +2198,7 @@
   },
   "SOCTellSkill_TEMP": {
     "strTitle": "Рассказать о навыке TEMP",
-    "strDesc": "[us] [упоминает], что [us-subj] [хорошо разбирается] в TEMP."
+    "strDesc": "[us] [mentions], что [us-subj] [is] с навыками в ТЕМП."
   },
   "SOCThreatStepAside": {
     "strTitle": "Отойти в сторону",
@@ -2350,12 +2350,12 @@
   },
   "ACTMelee": {
     "strTitle": "Ближний бой без оружия: Сильный удар",
-    "strDesc": "[us] мощно [наносит] удар по [them].",
+    "strDesc": "[us] мощно [strikes] по [them-dat].",
     "strTooltip": "Попытка нанести медленный и мощный удар в ближнем бою без оружия."
   },
   "ACTMeleeTired": {
     "strTitle": "Усталый ближний бой без оружия: Сильный удар",
-    "strDesc": "[us] устало [наносит] удар по [them].",
+    "strDesc": "[us] устало [strikes] по [them-dat].",
     "strTooltip": "Попытка нанести медленный и мощный удар в ближнем бою без оружия, будучи замедленным и ослабленным усталостью."
   },
   "ACTMeleeWeapon": {
@@ -4540,7 +4540,7 @@
   },
   "PLOT_MessengerRomantic_StartTriggerRepeat": {
     "strTitle": "Триггер начала сюжета романтических проблем Messenger",
-    "strDesc": "[them] [reaches] out к [us], благодаря [us-obj] за [us-pos] прошлую помощь и снова ища помощи в поиске пары. \"Загляни ко мне, когда будет свободная минутка.\""
+    "strDesc": "[them] [reaches] к [us], благодаря [us-obj] за прошлую помощь и снова прося помочь найти пару. «Загляни ко мне, когда будет свободная минутка.»"
   },
   "PLOT_MessengerRomantic_StartTriggerFirst": {
     "strTitle": "Триггер начала сюжета романтических проблем Messenger",
@@ -4772,7 +4772,7 @@
   },
   "PLOT_MessengerTechnical_StartTriggerRepeat": {
     "strTitle": "Триггер начала сюжета юридических проблем Messenger",
-    "strDesc": "[them] [reaches] out к [us], благодаря [us-obj] за [us-pos] прошлую помощь и снова ища помощи с технической проблемой. [them-subj] с нетерпением ждет встречи, когда вы будете в одном районе."
+    "strDesc": "[them] [reaches] к [us], благодаря [us-obj] за прошлую помощь и снова ища помощи с технической проблемой. [them-subj] с нетерпением ждёт встречи, когда вы будете в одном районе."
   },
   "PLOT_MessengerTechnical_StartTriggerFirst": {
     "strTitle": "Триггер начала сюжета юридических проблем Messenger",
@@ -4828,7 +4828,7 @@
   },
   "PLOT_MessengerTechnical_OfferReply11": {
     "strTitle": "Предложение",
-    "strDesc": "[us] не может обновить прошивку [us-pos] КПК Renbao, но старая версия больше не поддерживает критически важные приложения. [us-subj] [asks] [them] привлечь [3rd], чтобы помочь [us-obj]."
+    "strDesc": "[us] не может обновить прошивку своего КПК «Ренбао», но старая версия больше не поддерживает критически важные приложения. [us-subj] [asks] [them] привлечь [3rd], чтобы помочь [us-dat]."
   },
   "PLOT_MessengerTechnical_OfferTrigger": {
     "strTitle": "Триггер бита предложения Messenger",
@@ -5064,7 +5064,7 @@
   },
   "Plot_Whodunnit_ReportMurderToOKLGLEODeadBartender": {
     "strTitle": "Отчет об инциденте",
-    "strDesc": "[us] с теплотой вспоминает истории о [3rd], качая головой из-за этого бессмысленного убийства. [us-subj] переводит плату за [them-pos] усилия.\nЗакройте расследование через файл дела."
+    "strDesc": "[us] [tells] истории о [3rd] с теплотой, качая своей головой из-за бессмысленного убийства. [us-subj] [transfers] плату за усилия [them-gen].\nЗакройте расследование через файл дела."
   },
   "Plot_Whodunnit_ReportMurderToOKLGLEODeadBartenderShim": {
     "strTitle": "Шим отчета об инциденте",
@@ -5109,7 +5109,7 @@
   },
   "Plot_Whodunnit_ReportToFactionOKLGLEODeadLEO": {
     "strTitle": "В ярости",
-    "strDesc": "[us] явно взволнован сообщением о смерти [3rd]. [us-subj] долго смотрит на [them], затем отдает честь павшему офицеру и принимает отчет [them-pos]. [us-subj] переводит плату за [them-pos] усилия.\nЗакройте расследование через файл дела."
+    "strDesc": "[us] [is] явно взволнован сообщением о смерти [3rd]. [us-subj] долго смотрит на [them], затем отдает честь павшему офицеру и принимает отчет [them-pos]. [us-subj] [transfers] плату за [them-pos] усилия.\nЗакройте расследование через файл дела."
   },
   "Plot_Whodunnit_ReportToFactionOKLGLEODeadLEOShim": {
     "strTitle": "Шим выплаты за расследование",
@@ -5153,7 +5153,7 @@
   },
   "Plot_Whodunnit_ReportToFactionOKLGManager": {
     "strTitle": "Оформление бумаг",
-    "strDesc": "[us] благодарит [them] за информацию о [3rd]. [us-subj] начинает заполнять необходимые бумаги."
+    "strDesc": "[us] [thanks] [them] за информацию о [3rd]. [us-subj] начинает заполнять необходимые документы."
   },
   "Plot_Whodunnit_ReportToFactionOKLGManagerDeadShipbreaker": {
     "strTitle": "Сожалеет о потере активов",
@@ -5165,7 +5165,7 @@
   },
   "Plot_Whodunnit_ReportToFactionOKLGManagerDeadBartender": {
     "strTitle": "Сожалеет о потере таланта",
-    "strDesc": "[us] ворчит о позоре утраченного таланта, но берет себя в руки и переводит стипендию [them-pos].\nЗакройте расследование через файл дела."
+    "strDesc": "[us] [grouses] о позоре утраченного таланта, но [musters] достаточно самообладания и [transfers] стипендию [them-dat].\nЗакройте расследование через файл дела."
   },
   "Plot_Whodunnit_ReportToFactionOKLGManagerDeadBartenderShim": {
     "strTitle": "Шим выплаты за расследование",
@@ -5173,7 +5173,7 @@
   },
   "Plot_Whodunnit_ReportToFactionOKLGManagerDeadManager": {
     "strTitle": "Сожалеет о потере коллеги",
-    "strDesc": "[us] скорбит о потере коллеги, но может и наслаждаться возможностью реструктуризации. [us-subj] переводит стипендию [them-pos].\nЗакройте расследование через файл дела."
+    "strDesc": "[us] [grieves] о потере коллеги, но может и насладиться возможностью реструктуризации. [us-subj] [transfers] стипендию [them-dat].\nЗакройте расследование через файл дела."
   },
   "Plot_Whodunnit_ReportToFactionOKLGManagerDeadManagerShim": {
     "strTitle": "Шим выплаты за расследование",
@@ -5181,11 +5181,11 @@
   },
   "Plot_Whodunnit_ReportToFactionOKLGManagerDeadOther": {
     "strTitle": "Безразличие",
-    "strDesc": "[us] не проявляет никакого интереса к смерти [3rd-pos]."
+    "strDesc": "[us] не [has] никакого интереса к смерти [3rd-pos]."
   },
   "Plot_Whodunnit_ReportToFactionOKLGCriminal": {
     "strTitle": "Благодарность",
-    "strDesc": "[us] благодарит [them] за информацию о [3rd], а не за передачу ее AyoSec. [us-subj] начинает говорить о зачистке и заполнении пробела в операциях."
+    "strDesc": "[us] [thanks] [them-acc] за информацию о [3rd], а не за её передачу АйоСеку. [us-subj] начинает говорить о зачистке и заполнении пробела в операциях."
   },
   "Plot_Whodunnit_ReportToFactionOKLGCriminalDeadLEOStreetEtiquette": {
     "strTitle": "Долой ублюдка",
@@ -5381,11 +5381,11 @@
   },
   "SOCPortAuthorityFinisherAskForBreakResist": {
     "strTitle": "Сопротивляться: Попросить поблажку",
-    "strDesc": "[us] говорит, что если бы они делали поблажки каждому комику здесь, [us-subj] лишился бы [us-pos] работы. [us] просит [them] оплатить счет, если они хотят покинуть станцию."
+    "strDesc": "[us] [says], что если бы они делали поблажки каждому комику здесь, [us-subj] лишился бы [us-pos] работы. [us] [asks] [them] оплатить счет, если они хотят покинуть станцию."
   },
   "SOCPortAuthorityFinisherPromise": {
     "strTitle": "Пообещать заплатить позже",
-    "strDesc": "[us] просит [them] отменить плату за стыковку, чтобы [us-subj] мог заняться [us-pos] срочной миссией. [us] обещает, что [us-subj] заплатит за стыковку в следующий раз."
+    "strDesc": "[us] [asks] [them] отменить плату за стыковку, чтобы [us-subj] мог заняться [us-pos] срочной миссией. [us] [promises], что [us-subj] заплатит за стыковку в следующий раз."
   },
   "SOCPortAuthorityFinisherPromiseSuccumb": {
     "strTitle": "Поддаться: Попросить поблажку",
@@ -5539,7 +5539,7 @@
   "SOCFlirtStartMan": {
     "strTitle": "Флирт",
     "strDesc": "[us] [checks], испытывает ли [us-contractIs] влечение к [them].",
-    "strTooltip": "[us] [checks], испытывает ли [us-contractIs] влечение к [them]."
+    "strTooltip": "[us] [raises] брови, многозначительно глядя на [them]."
   },
   "SOCFlirtStartWoman": {
     "strTitle": "Флирт",
@@ -8395,7 +8395,7 @@
   },
   "PLOT_ScavFetch03_OfferReply": {
     "strTitle": "Предложение",
-    "strDesc": "[us] [thanks] [them] сердечно за [them-pos] предыдущую помощь. На этот раз [us-contractIs] ищет редкую деталь, которая все еще в рабочем состоянии.\n[us-subj] [is] готов заплатить 40 000 $ за неповрежденный регулятор впуска RCS марки Miura."
+    "strDesc": "[us] [thanks] [them] сердечно за [them-pos] предыдущую помощь. На этот раз [us-contractIs] ищет редкую деталь, которая все еще в рабочем состоянии.\n[us-subj] [is] готов заплатить 40 000 $ за неповрежденный регулятор впуска РКС марки «Миура»."
   },
   "PLOT_ScavFetch03_OfferTrigger": {
     "strTitle": "Триггер события предложения сбора утильсырья",
@@ -8635,7 +8635,7 @@
   },
   "PLOT_VLAFetch05_OfferReply": {
     "strTitle": "Предложение",
-    "strDesc": "[us] [thanks] [them] за [them-pos] предыдущую помощь и осмотрительность.\n[us-subj] [is] готов заплатить 15 000 $ за один файл данных ОС дронов Beydat, найденный в строительных или охранных дронах, работающих в строительной зоне Лос-Анджелеса. Будьте осторожны!"
+    "strDesc": "[us] [thanks] [them] за [them-pos] предыдущую помощь и осмотрительность.\n[us-subj] [is] готов заплатить 15 000 $ за один файл данных операционной системы дронов «Бейдат», найденный в строительных или охранных дронах, работающих в строительной зоне Лос-Анджелеса. Будьте осторожны!"
   },
   "PLOT_VLAFetch05_OfferTrigger": {
     "strTitle": "Триггер события предложения сбора для VLA",
@@ -9390,7 +9390,7 @@
   },
   "Plot_Whodunnit_KinEnemyFoundReply2": {
     "strTitle": "Поиск враждебных связей",
-    "strDesc": "[them] [узнает], что [us] [враждует] с [3rd]."
+    "strDesc": "[them] [learns], что [us] [is] во вражде с [3rd]."
   },
   "Plot_Whodunnit_KinFoundReplyNone": {
     "strTitle": "Нет родственников для раскрытия",
@@ -9474,7 +9474,7 @@
   },
   "Plot_Whodunnit_ClueKillerHomeCCRETrigger": {
     "strTitle": "Улика об убийце: CCRE",
-    "strDesc": "[us] [notes] для [them], что убийца [3rd-pos] вырос на территории CCRE."
+    "strDesc": "[us] [notes] для [them], что [3rd-pos] убийца вырос на территории ЦКРЭ."
   },
   "Plot_Whodunnit_ClueKillerHomeworldJupiterTrigger": {
     "strTitle": "Улика об убийце: Юпитер",
@@ -9486,7 +9486,7 @@
   },
   "Plot_Whodunnit_ClueKillerHomeOKLGTrigger": {
     "strTitle": "Улика об убийце: OKLG",
-    "strDesc": "[us] [notes] для [them], что убийца [3rd-pos] вырос в окрестностях станции K-Leg."
+    "strDesc": "[us] [notes] для [them], что [3rd-pos] убийца вырос в окрестностях станции К-Лег."
   },
   "Plot_Whodunnit_ClueKillerHomeAtlantisTrigger": {
     "strTitle": "Улика об убийце: Атлантида",
@@ -10374,7 +10374,7 @@
   },
   "ACTFireExtinguish": {
     "strTitle": "Потушить",
-    "strDesc": "[us] [собирается] потушить [them].",
+    "strDesc": "[us] [is.aux] потушить [them].",
     "strTooltip": "Пытается потушить огонь с помощью огнетушителя."
   },
   "ACTFireExtinguishAllow": {
@@ -10411,7 +10411,7 @@
     "strTooltip": "Продает 1000 единиц валюты фракции Галилеевой Конфедерации, «скрипов» (по удручающему обменному курсу).\nПримечание: этот обмен не влияет на репутацию."
   },
   "ACTReloadItem": {
-    "strDesc": "[us] [собирается] перезарядить [them].",
+    "strDesc": "[us] [is.aux] перезарядить [them].",
     "strTitle": "Перезарядить"
   },
   "ACTSwitchLightColorWhite": {
@@ -10624,7 +10624,7 @@
   },
   "JOBHeavy1TellThemWhoSentYouFaildead": {
     "strTitle": "Передать ясный посыл",
-    "strDesc": "[them] [слишком мертв], чтобы [us] мог передать ясный посыл. В следующий раз, может, поменьше жестокости?"
+    "strDesc": "[them] [is] слишком мертв, чтобы [us] мог передать ясный посыл. В следующий раз, может, поменьше жестокости?"
   },
   "JOBMVPTest01FinishClient": {
     "strTitle": "Выполнено задание по разведке безопасности",
@@ -10637,7 +10637,7 @@
   },
   "GUISensor": {
     "strTitle": "Панель управления",
-    "strDesc": "[us] [получает доступ] к панели [them-gen].",
+    "strDesc": "[us] [accesses] к панели [them-gen].",
     "strTooltip": "Открывает настройки переопределения, регуляторы и переключатели на панели управления цели."
   },
   "GUISensorAllow": {
@@ -10664,7 +10664,7 @@
   },
   "ACTStudySkillDenyEngExcavationAlready": {
     "strTitle": "Уже владеет навыком",
-    "strDesc": "[us] [уже владеет] навыком раскопок."
+    "strDesc": "[us] [is] уже с навыком раскопок."
   },
   "AIClearAttemptCO2": {
     "strTitle": "Сбросить попытку выжить при CO2",
@@ -10723,7 +10723,7 @@
   },
   "ACTFireStamp": {
     "strTitle": "Затоптать",
-    "strDesc": "[us] [собирается] затоптать [them].",
+    "strDesc": "[us] [is.aux] затоптать [them].",
     "strTooltip": "Пытается затоптать огонь без специальных инструментов."
   },
   "ACTFireStampAllow": {
@@ -10775,7 +10775,7 @@
   },
   "PLGAICrimeEJDRLEOArrestDoDeny": {
     "strTitle": "Заявить о невиновности",
-    "strDesc": "[us] [говорит] [them], что [them-subj] [ошибся] человеком."
+    "strDesc": "[us] [tells] [them-dat], что [them-subj] [has] не того человека."
   },
   "PLGAICrimeEJDRLEOArrestEnd": {
     "strTitle": "ПОО EJDR закончил арест преступника",
@@ -11451,11 +11451,11 @@
   },
   "PLOT_MessengerLegal_OfferReply15": {
     "strTitle": "Предложение",
-    "strDesc": "[us] приобрел право собственности на обустроенную часть станции и [wants] начать собирать арендную плату и дивиденды, но [needs] поддержки местной власти, чтобы делать это безопасно. [us-subj] [asks] [them] поговорить с офицером [3rd] от [us-pos] имени."
+    "strDesc": "[us] приобрел право собственности на обустроенную часть станции и [wants] начать собирать арендную плату и дивиденды, но [needs] поддержки местной власти, чтобы делать это безопасно. [us-subj] [asks] [them] поговорить с офицером [3rd] от имени [us-gen]."
   },
   "PLOT_MessengerLegal_OfferReply16": {
     "strTitle": "Предложение",
-    "strDesc": "[us] [has] устал от того, что местные банды вымогают деньги за \"защиту\" [us-pos] бизнеса. [us-subj] [asks] [them] поговорить с офицером [3rd] от [us-pos] имени."
+    "strDesc": "[us] [has] устал от того, что местные банды вымогают деньги за \"защиту\" бизнеса [us-gen]. [us-subj] [asks] [them] поговорить с офицером [3rd] от имени [us-gen]."
   },
   "PLOT_MessengerLegal_OfferReply17": {
     "strTitle": "Предложение",
@@ -11874,7 +11874,7 @@
   },
   "PLOT_Lonesome_02gReplyLover": {
     "strTitle": "Рассказать о симпатии",
-    "strDesc": "[us] [tells] [them] о [us-pos] симпатии [3rd]."
+    "strDesc": "[us] [tells] [them] о своей симпатии к [3rd]."
   },
   "PLOT_Lonesome_02gReplyLoverMore": {
     "strTitle": "Рассказать о симпатии",
@@ -11882,7 +11882,7 @@
   },
   "PLOT_Lonesome_02gReplySingle": {
     "strTitle": "Рассказать об одиночестве",
-    "strDesc": "[us] [говорит] [them], что [us-subj] [не] считает никого своей симпатией в данный момент."
+    "strDesc": "[us] [tells] [them], что [us-subj] [doesn't] из тех, кто сейчас кем-либо увлечён."
   },
   "PLOT_Lonesome_02h": {
     "strTitle": "Завидовать их предполагаемой личной жизни",
@@ -11970,7 +11970,7 @@
   },
   "Plot_NewOKLGFixer_SolicitPlayerDo01AskAbout3rd": {
     "strTitle": "Спросить, как контакт может помочь",
-    "strDesc": "[us] [спрашивает] [them], как [3rd] [должен] помочь с \"уходом на пенсию\" их общего друга."
+    "strDesc": "[us] [asks] [them], как [3rd] [is] должен помочь с «уходом на пенсию» их общего друга."
   },
   "Plot_NewOKLGFixer_SolicitPlayerDo01AskAbout3rdReply": {
     "strTitle": "Увиливать от разговора о подполье Кей-Лег",
@@ -11982,7 +11982,7 @@
   },
   "Plot_NewOKLGFixer_SolicitPlayerDo01AskAbout3rdReplyStreet": {
     "strTitle": "Обсудить подполье Кей-Лег",
-    "strDesc": "[us] [ценит] откровенность [them-gen] и [отвечает] с новым уважением. Подстраиваясь под социально зашифрованную манеру, [us-subj] [делится], что у [3rd] [3rd-has] богатые связи, жаждущие поддерживать течение крови неофициальной экономики станции, и что [3rd] [кажется] жаждущим сыграть большую роль в динамике власти Кей-Лег."
+    "strDesc": "[us] [appreciates] откровенность [them-gen] и [responds] с новым уважением. Подстраиваясь под социально зашифрованную манеру, [us-subj] [us-shares] тем, что у [3rd-gen] [3rd-has] богатые связи, жаждущие поддерживать ток крови неофициальной экономики станции, и что [3rd] [seems] не прочь сыграть большую роль в динамике власти Кей-Лег."
   },
   "PLOT_NewOKLGFixer_SolicitPlayerEnd": {
     "strTitle": "Разговор о поиске нового фиксера",
@@ -12057,7 +12057,7 @@
   },
   "PLOT_ScavFetch02_OfferReply": {
     "strTitle": "Предложение",
-    "strDesc": "[us] [благодарит] [them] за [them-pos] предыдущую помощь и [повторяет] [us-pos] потребность в независимом соучастнике, который хорошо разбирается в кораблях.\n[us-subj] [готов] заплатить 10 000 $ за четыре неповрежденных регулятора забора RCS марки Kang."
+    "strDesc": "[us] [thanks] [them] за [them-pos] предыдущую помощь и [reiterates] свою потребность в независимом соучастнике, который хорошо разбирается в кораблях.\n[us-subj] [is] готов заплатить 10 000 $ за четыре неповреждённых регулятора забора РСУ марки «Канг»."
   },
   "PLOT_ScavFetch02_OfferTrigger": {
     "strTitle": "Триггер предложения в сюжете с добычей мусорщика",
@@ -13974,7 +13974,7 @@
   },
   "SOCTradeFixerConvoIntimidate": {
     "strTitle": "Угрожать дельцу насилием",
-    "strDesc": "[us] [says], что [us-pos] правый хук может поручиться за [us-obj], и [cracks] [us-pos] костяшки."
+    "strDesc": "[us] [says], что [us-pos] правый хук может поручиться за [us-obj], и [cracks] костяшки."
   },
   "SOCTradeFixerConvoIntimidateResist": {
     "strTitle": "Сопротивление запугиванию",
@@ -14026,7 +14026,7 @@
   },
   "SOCTradeFixerConvoNameDropCrimAllow": {
     "strTitle": "Реакция на упоминание криминального контакта",
-    "strDesc": "[us] долго [stares] на [them], прежде чем широко улыбнуться. [us] [says], что любой, кто достаточно сумасшедший, чтобы тусоваться с [3rd], должно быть, хороший человек. [us] [says], что [them-subj] может смотреть [us-pos] товары в любое время, пока [them-subj] [knows], как держать [them-pos] рот на замке."
+    "strDesc": "[us] долго [stares] на [them], прежде чем широко улыбнуться. [us] [says], что любой, кто достаточно сумасшедший, чтобы тусоваться с [3rd], должно быть, хороший человек. [us] [says], что [them-subj] может смотреть [us-pos] товары в любое время, пока [them-subj] [knows], как держать рот на замке."
   },
   "SOCTradeFixerConvoNameDropManager": {
     "strTitle": "Упомянуть своего менеджера ОКЛГ",
@@ -14382,7 +14382,7 @@
     "strDesc": "[us] [finds] доказательства того, что [them-pos] убийца вырос на Марсе или в его окрестностях."
   },
   "Plot_Whodunnit_CollectCluesSplitHomeCCRE": {
-    "strDesc": "[us] [находит] доказательства того, что убийца [them-gen] вырос на Церере или в ее окрестностях, на территории CCRE."
+    "strDesc": "[us] [finds] доказательства того, что [them-pos] убийца вырос на Церере или в ее окрестностях, на территории ККРЕ."
   },
   "Plot_Whodunnit_CollectCluesSplitHomeworldJupiter": {
     "strDesc": "[us] [finds] доказательства того, что [them-pos] убийца вырос среди спутников или астероидов Юпитера."
@@ -14473,7 +14473,7 @@
   },
   "Plot_Whodunnit_CollectBlood": {
     "strTitle": "Собрать кровь с тела",
-    "strDesc": "[us] [собирает] немного крови на [them-loc] и вокруг [them-gen]. Возможно, это не вся кровь [them-gen]. Киоски Ван Бюрена или высокотехнологичные медицинские койки, вероятно, смогут ее проанализировать. Киоск возьмет за это плату.",
+    "strDesc": "[us] собирает немного крови на [them-prep] и вокруг [them-gen]. Возможно, это не вся кровь [them-gen]. Киоски Ван Бюрена или высокотехнологичные медицинские койки, вероятно, смогут ее проанализировать. Киоск возьмет за это плату.",
     "strTooltip": "Соберите немного крови с тела и вокруг него для криминалистического анализа.\nВам понадобится водонепроницаемый контейнер, чтобы ее переносить."
   },
   "Plot_Whodunnit_AnalyzeBlood": {
@@ -14579,7 +14579,7 @@
   },
   "Plot_Whodunnit_ReportToKinEnemyReply": {
     "strTitle": "Отпраздновать",
-    "strDesc": "[us] [ликует] от новости о том, что [3rd] [нашел] свою смерть. [us-subj] [хочет] разделить с ними напиток и пачку \"Дамасской розы\"."
+    "strDesc": "[us] [exults] от новостей [them-gen] о том, что смерть нашла [3rd-acc]. [us-subj] [wants] разделить с [them-ins] напиток и пачку «Дамасской розы»."
   },
   "Plot_Whodunnit_ReportToKinEnemyReplyShim": {
     "strTitle": "Оплата расследования (заглушка)",
@@ -14712,15 +14712,15 @@
   },
   "Plot_Whodunnit_AskAboutVictimReplyNothing": {
     "strTitle": "Не хочет неприятностей",
-    "strDesc": "[us] не [хочет] никаких неприятностей."
+    "strDesc": "[us] [doesn't] никаких неприятностей."
   },
   "Plot_Whodunnit_ReportMurder": {
     "strTitle": "Сообщить об убийстве",
-    "strDesc": "[us] [сообщает] [them-dat] о том, что [us-subj] [узнал] о подозрительной смерти [3rd-gen]."
+    "strDesc": "[us] [reports] [them-dat], какие сведения [us-subj] [has] о подозрительной смерти [3rd-gen]."
   },
   "Plot_Whodunnit_ReportMurderDone": {
     "strTitle": "Дело уже составлено",
-    "strDesc": "[us] уже [представил] властям свое окончательное дело о смерти [3rd-gen]. Если только нет семьи, которой нужно рассказать, на этом все."
+    "strDesc": "Власти уже получили от [us-gen] окончательное дело о смерти [3rd-gen]. Если только нет семьи, которой нужно сообщить, на этом всё."
   },
   "Plot_Whodunnit_ReportMurderNotEnoughClues": {
     "strTitle": "Поделиться слабым делом",
@@ -14736,7 +14736,7 @@
   },
   "Plot_Whodunnit_ReportMurderToOKLGLEOConfessionReply": {
     "strTitle": "Впечатлен",
-    "strDesc": "[us] [показывает], что [впечатлен] тщательным расследованием преступления [3rd-gen], проведенным [them-ins]. [us-subj] упомянет об этом в AyoSec и будет искать новые заказы."
+    "strDesc": "[us] [shows], что [us-subj] [is] под впечатлением от тщательного расследования преступления [3rd-gen], проведённого [them-ins]. [us-contractWill] упоминать об этом в «Айосек» и искать будущую работу."
   },
   "Plot_Whodunnit_ReportMurderToOKLGLEOConfessionReplyShim": {
     "strTitle": "Оплата расследования (заглушка)",
@@ -15056,7 +15056,7 @@
   },
   "PLOT_Merga_WhispersFoundTriggerReply": {
     "strTitle": "Странный звонок от Урсулы К.",
-    "strDesc": "Урсула К. говорит, что заметила, как [us] [внимательно изучал] смерти от черных отпечатков рук и дело Камелии Миддлмист. Они связаны, и детектив [3rd] знает больше. Вам стоит навестить детектива в баре под названием Sol Vermelho Lounge, на аэростате Энкантадо."
+    "strDesc": "Урсула К. говорит, что заметила, как [us] [was] в процессе пристального изучения смертей от черных отпечатков рук и дела Камелии Миддлмист. Они связаны, и детектив [3rd] знает больше. Вам стоит навестить детектива в баре под названием «Сол Вермельо Лаундж» на аэростате Энкантадо."
   },
   "PLOT_Merga_SignsDiscussedTrigger": {
     "strTitle": "Триггер перехода к этапу обсуждения улик сюжета Мерги",
@@ -15202,7 +15202,7 @@
   },
   "PLOT_Merga_WhispersFound10": {
     "strTitle": "Высказать личную теорию о смертях от Черной Руки",
-    "strDesc": "[us] [describes] [them] [us-pos] текущую теорию о телах, которые находят мертвыми на OKLG с черными отпечатками рук на них."
+    "strDesc": "[us] [describes] [them] свою текущую теорию о телах, которые находят мертвыми на ОКЛГ с черными отпечатками рук на них."
   },
   "PLOT_Merga_WhispersFound10_Agree": {
     "strTitle": "Поддержать теорию",
@@ -15226,7 +15226,7 @@
   },
   "PLOT_Merga_Suspect_Racing_Icon_Reply": {
     "strTitle": "Досье на подозреваемого: Икона гонок",
-    "strDesc": "Детектив [us] [says], что один из главных подозреваемых — [3rd], пятикратный победитель Grande Prêmio do Encantado и нынешний супруг Миддлмист. [3rd-pos] бурные отношения являются предметом многих таблоидных репортажей."
+    "strDesc": "Детектив [us] [says], что один из главных подозреваемых — [3rd], пятикратный победитель Гран-при Энкантадо и нынешний супруг Миддлмист. [3rd-pos] бурные отношения являются предметом многих таблоидных репортажей."
   },
   "PLOT_Merga_Suspect_Journalist": {
     "strTitle": "Спросить о журналисте",
@@ -15302,7 +15302,7 @@
   },
   "PLOT_Merga_SignsDiscussed02_Racing_Icon_Alibi_Charm_Fail": {
     "strTitle": "Сопротивляться обаянию",
-    "strDesc": "[us] [хмурится] и [говорит], что у [us-subj] нет никаких причин разговаривать с незнакомцем с OKLG."
+    "strDesc": "[us] [scowls] и [says], что [us-dat] [doesn't] нужен никакой разговор с незнакомцем из ОКЛГ."
   },
   "PLOT_Merga_SignsDiscussed03": {
     "strTitle": "Спросить об алиби",
@@ -15314,11 +15314,11 @@
   },
   "PLOT_Merga_SignsDiscussed03_Superfan_Alibi_SeeVid_Charm": {
     "strTitle": "Убедить обаянием показать видео",
-    "strDesc": "[us] [говорит], что [us-subj] фанат [them-pos] роликов, и [спрашивает], может ли [us-subj] посмотреть тот, что [them-subj] сделал той ночью."
+    "strDesc": "[us] [says], что [us-subj] фанат [them-pos] роликов, и [us-asks], может ли [us-subj] посмотреть тот, что снят [them-ins] той ночью."
   },
   "PLOT_Merga_SignsDiscussed02_Superfan_Alibi_Charm_Succeed": {
     "strTitle": "Поддаться обаянию",
-    "strDesc": "[us] охотно [retrieves] [us-pos] КПК и [shows] [them] монтаж дрожащих кадров под веселую поп-музыку. Один кадр выделяется: [3rd] покидает Энкантадо в ночь [3rd-pos] последней победы на Grande Prêmio. [3rd-subj] [steps] трезвым в [3rd-pos] гоночный корабль, отстыковывается и ловко устремляется в облака."
+    "strDesc": "[us] охотно [retrieves] свой КПК и [shows] [them] монтаж дрожащих кадров под веселую поп-музыку. Один кадр выделяется: [3rd] покидает Энкантадо в ночь своей последней победы на Гран-при. [3rd-subj] [steps] трезвым в свой гоночный корабль, отстыковывается и ловко устремляется в облака."
   },
   "PLOT_Merga_SignsDiscussed02_Superfan_Alibi_Charm_Fail": {
     "strTitle": "Сопротивляться обаянию",
@@ -15330,7 +15330,7 @@
   },
   "PLOT_Merga_SignsDiscussed02_Superfan_Alibi_Threat_Succeed": {
     "strTitle": "Поддаться угрозе",
-    "strDesc": "[us] быстро [retrieves] [us-pos] КПК и [shows] [them] монтаж дрожащих кадров под веселую поп-музыку. Один кадр выделяется: [3rd] покидает Энкантадо в ночь [3rd-pos] последней победы на Grande Prêmio. [3rd-subj] [steps] трезвым в [3rd-pos] гоночный корабль, отстыковывается и ловко устремляется в пустоту."
+    "strDesc": "[us] быстро [retrieves] свой КПК и [shows] [them] монтаж дрожащих кадров под весёлую поп-музыку. Один кадр выделяется: [3rd] покидает Энкантадо в ночь своей последней победы на Гран-при. [3rd-subj] [steps] трезво в свой гоночный корабль, отстыковывается и ловко устремляется в пустоту."
   },
   "PLOT_Merga_SignsDiscussed02_Superfan_Alibi_Threat_Fail": {
     "strTitle": "Сопротивляться угрозе",
@@ -15358,7 +15358,7 @@
   },
   "PLOT_Merga_SignsDiscussed07": {
     "strTitle": "Отследить местоположение суперфаната",
-    "strDesc": "[us] [uses] логин LEO, чтобы отследить [3rd-pos] местоположение. В ночь исчезновения Миддлмист местные сети пинговали [3rd-obj] по всему Сан-Диего, совершая, похоже, повторные визиты в разные магазины в этом районе."
+    "strDesc": "[us] [uses] логин ЛЕО, чтобы отследить [3rd-pos] местоположение. В ночь исчезновения Миддлмист местные сети пинговали [3rd-obj] по всему Сан-Диего, и, похоже, это выглядело как повторные визиты в разные магазины в этом районе."
   },
   "PLOT_Merga_SignsDiscussed08": {
     "strTitle": "Спросить о походах по магазинам суперфаната",
@@ -15478,7 +15478,7 @@
   },
   "PLGCombatTrigger": {
     "strTitle": "Взаимодействие триггера PledgeCombat",
-    "strDesc": "[us] [активирует] PledgeCombat на [them]?"
+    "strDesc": "Запускает ли [us] Пледж-комбат на [them]?"
   },
   "ACTWitnessCancel": {
     "strTitle": "Отмена свидетеля",
@@ -15558,7 +15558,7 @@
   },
   "PLGAICrimeGalConLEOThreat": {
     "strTitle": "СБ ГалКон атакует преступника",
-    "strDesc": "«Эй, это тот самый преступник! Взять его!» — [кричит] [us], указывая на [them]."
+    "strDesc": "«Эй, это тот самый преступник! Взять его!» — [us-shouts] [us], указывая на [them]."
   },
   "PLGAICrimeGalConLEOArrestStolenShip": {
     "strTitle": "СБ ГалКон начинает арест преступника за угон корабля",
@@ -17906,7 +17906,7 @@
   },
   "PLOT_ProspectorBCERFetchGold_Offer": {
     "strTitle": "Спросить о проекте добычи",
-    "strDesc": "[us] [asks] [them], какая помощь нужна [them-subj] для [them-pos] проектов по добыче."
+    "strDesc": "[us] [asks] [them], какая помощь [them-needs] [them-subj] для своих проектов по добыче."
   },
   "PLOT_ProspectorBCERFetchGold_OfferReply": {
     "strTitle": "Предложение",
@@ -18701,7 +18701,7 @@
   },
   "PLGAI_ProspectorFetchGold_SolicitPlayerDo": {
     "strTitle": "Предложить выгодную работу",
-    "strDesc": "[us] [говорит], что у [them] крепкая спина, и [спрашивает], не хочет ли [them] заработать хорошие деньги, разбивая камни."
+    "strDesc": "[us] [says], что [them] [has] крепкую спину, и [us-asks], не хочет ли [them] заработать хорошие деньги, разбивая камни."
   },
   "ENCFirstDockBWVN2": {
     "strTitle": "Игла Ткача",
@@ -18914,11 +18914,11 @@
   },
   "PLOT_ProspectorFetchGold_SolicitPlayerEnd": {
     "strTitle": "Предложены работы старателя",
-    "strDesc": "[us] [предложил] [them] работы по разведке."
+    "strDesc": "[us] [has] предложение о работах по разведке для [them-gen]."
   },
   "PLOT_ProspectorFetchGold_Offer": {
     "strTitle": "Обсудить проект разведки",
-    "strDesc": "[us] [спрашивает] [them], какая помощь нужна [them-subj] для [them-pos] проекта разведки.",
+    "strDesc": "[us] [asks] [them], в какой помощи [them-subj] [them-needs] для своего проекта разведки.",
     "strTooltip": "Снова открыть разговор об оказании услуг за плату."
   },
   "ChoongPainRoom_1_1_1_1_1_1": {
@@ -19046,7 +19046,7 @@
     "strDesc": "\"Чего они хотят?\"\n\n\"Понятия не имею, - огрызается он, - и я начинаю думать, что это не главное. Им не обязательно чего-то хотеть. Они просто делают это."
   },
   "PLOT_Ceres_Our_System_For_Whom_Trigger": {
-    "strDesc": "[us] [начал] оказывать материальную поддержку и саботаж в прокси-войне на Церере.",
+    "strDesc": "[us] [has] на счету начало материальной поддержки и саботажа в прокси-войне на Церере.",
     "strTitle": "Триггер для продвижения сюжетного бита «Наша система для кого» на Церере"
   },
   "PLOT_Ceres_Valkyrie_Trigger": {
@@ -20778,14 +20778,14 @@
   },
   "STKStrangerMeet_Gambit_ContactVPrivacy_Fail_Hard": {
     "strTitle": "Прервать разговор",
-    "strDesc": "[us] [отшивает] [их]."
+    "strDesc": "[us] [brushes] [them-acc]."
   },
   "STKStrangerMeet_Exit": {
     "strTitle": "Выйти"
   },
   "STKStrangerMeet_Gambit_SharedScar_Allow": {
     "strTitle": "Продолжить разговор, основываясь на общем шраме",
-    "strDesc": "[us] [немного открывается] собрату по несчастью."
+    "strDesc": "[us] немного [opens] собрату по несчастью."
   },
   "ChoongDisappearedReplyBack1": {
     "strTitle": "Продолжить",
@@ -21180,7 +21180,7 @@
   },
   "PLGAIReportCrimeMTRSArrestDone": {
     "strTitle": "Сообщение о преступлении завершено",
-    "strDesc": "[us] [заканчивает] сообщать о преступлении."
+    "strDesc": "[us] [is] закончил(а) сообщать о преступлении."
   },
   "PLGAIReportCrimeMTRSTrespass": {
     "strTitle": "Сообщить о преступлении",
@@ -21192,11 +21192,11 @@
   },
   "PLGAIReportCrimeMTRSTrespassDeny": {
     "strTitle": "Сообщить о преступлении: Провал",
-    "strDesc": "[us] [не может] сообщить о преступлении <gen>[them]."
+    "strDesc": "[us] [fails] сообщить о преступлении в отношении [them-gen]."
   },
   "PLGAIReportCrimeMTRSTrespassDone": {
     "strTitle": "Сообщение о преступлении завершено",
-    "strDesc": "[us] [заканчивает] сообщать о преступлении."
+    "strDesc": "[us] [is] закончил(а) сообщать о преступлении."
   },
   "PLOT_Ceres_The_Scholar_Establish_Contact_CCRE_Reply_Encounter_GalGon_Loyalty_More": {
     "strDesc": "\"Кроты, придурки! Синьхуаские крысы. Место ими просто кишит. Иногда мы выкуриваем их взломами, а иногда, ну... Меры посерьёзнее, если понимаете, о чём я.\"\n\n\"А теперь слушайте, как их вычислить,\" — Уэйн наклоняется так близко, что вы чувствуете запах «Бисмертной» в его дыхании. \"Их там хорошо готовят на Марсе. Всякая компьютерная хуйня, как я уже говорил, но и драться умеют. Рукопашный бой, самая тесная дистанция. Любят пробраться и свалить незаметно, так что глаз да глаз за этими тихушниками. Жестокие маленькие ублюдки, но не дураки. Большинство из них чертовски умнее меня, а это, знаете ли, о многом говорит.\"\n\n\"В любом случае,\" — говорит он. \"Если встретите кого-то похожего, скорее всего, это и есть наш крот. Бросьте свою половину синьхуаской кодовой фразы, и если они знают продолжение, ну? Это бы кое-что значило, верно?\"",
@@ -23615,7 +23615,7 @@
   },
   "SOCBullshitFine": {
     "strTitle": "Выписать им липовый штраф",
-    "strDesc": "[us-pos] терпение [has] полностью лопнуло, и [us] [says], что [us-subj] даже [isn't] собирается тратить больше времени на поиски законного нарушения. [us] [assigns] [them] крупный липовый штраф."
+    "strDesc": "У [us-gen] терпение [has] полностью лопнуло, и [us] [says], что [us-subj] даже [isn't] собирается тратить больше времени на поиски законного нарушения. [us] [assigns] [them] крупный липовый штраф."
   },
   "ENCHeatMSUZFineEnd": {
     "strTitle": "Просить о штрафе (единовременная выплата)",

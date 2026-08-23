@@ -247,8 +247,15 @@ def introduces_dead_token(p):
     for t in added:
         if t in ("us", "them", "is.aux"):
             continue
-        if "-" in t and t.rsplit("-", 1)[1] in PRONOUN_CATS:
-            continue
+        if "-" in t:
+            base, suffix = t.rsplit("-", 1)
+            if suffix in PRONOUN_CATS:
+                continue
+            # [us-asks] -- это участник плюс глагол, законная форма игры:
+            # PrepareToken режет токен по дефису и ищет вторую часть в словаре
+            # глаголов. Парадигма нужна именно у неё.
+            if suffix in VERB_KEYS_RU:
+                continue
         if t in VERB_KEYS_RU or t.split(".")[0] in VERB_KEYS_RU:
             continue
         return t
