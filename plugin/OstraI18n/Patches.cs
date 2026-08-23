@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 using System.Collections.Generic;
 using HarmonyLib;
@@ -118,6 +118,34 @@ namespace OstraI18n
             Plugin.Log.LogInfo("[i18n] DataHandler.dictVerbs registered: " + registered + " new verb keys (total in dictVerbs: " + DataHandler.dictVerbs.Count + ")");
         }
 
+        // Второе лицо в русском не имеет рода, а прошедшее время -- имеет: "ты был"
+        // против "ты была". Игра сводит игрока к индексу Second (COToPOSIndex
+        // возвращает 1 на IsPlayer, теряя пол), поэтому для родовых парадигм пол
+        // приходится доставать обратно из условий персонажа.
+        // Родовая парадигма опознаётся по данным, а не по списку глаголов: в русском
+        // настоящем времени род не различается, поэтому Present[2] != Present[3]
+        // (он/она) бывает только у прошедшего.
+        private static int GenderSlotForSecondPerson(OstraI18n.Core.VerbForms vf, GrammarUtils.SentenceEntity ent)
+        {
+            const int second = 1, masc = 2, fem = 3, plural = 4;
+            if (vf.Present == null || vf.Present.Length < 4) return second;
+            if (vf.Present[masc] == vf.Present[fem]) return second;   // род не различается
+            CondOwner co = ent != null ? ent.CondOwner : null;
+            if (co == null)
+            {
+                try { co = CrewSim.coPlayer; } catch { }
+            }
+            if (co == null) return second;
+            try
+            {
+                if (co.HasCond("IsFemale")) return fem;
+                if (co.HasCond("IsNB")) return plural;
+                if (co.HasCond("IsMale")) return masc;
+            }
+            catch { }
+            return second;
+        }
+
         // GrammarUtils.Verb -> Russian conjugation.
         // InflectionIndex: 0=I, 1=you, 2=he, 3=she, 4=they, 5=it
         public static bool VerbPrefix(TokenData tokenData)
@@ -148,7 +176,10 @@ namespace OstraI18n
                 }
                 else if (vf.Present != null)
                 {
-                    form = vf.Present[Math.Min(idx, vf.Present.Length - 1)];
+                    var slot = idx;
+                    if (slot == (int)GrammarUtils.PronounInflection.Second)
+                        slot = GenderSlotForSecondPerson(vf, ent);
+                    form = vf.Present[Math.Min(slot, vf.Present.Length - 1)];
                 }
 
                 if (GrammarUtils.insertNoLonger)
