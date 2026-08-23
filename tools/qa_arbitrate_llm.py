@@ -24,7 +24,7 @@ os.environ.setdefault("LLM_REQUEST_TIMEOUT", "500")
 from llm_client import chat_json
 import qa_scan_grammar as qa
 import qa_review_llm as rv
-from qa_scan_grammar import load
+from qa_scan_grammar import load, TOKEN_RE
 
 CKPT = os.path.join(ROOT, "docs", "qa_arbitration.jsonl")
 OUT = os.path.join(ROOT, "docs", "qa_arbitration.json")
@@ -144,6 +144,41 @@ def judge(rows):
     return verdicts, stats
 
 
+VERBS_RU = load(os.path.join(ROOT, "langs", "ru", "verbs.json"))
+# Токены, чья русская форма -- служебное слово, а не сказуемое: "[doesn't]"
+# раскрывается в голое "не". Строка, где такой токен остался единственным
+# "глаголом", читается как "Ты ничего не." -- глагол потерян.
+PARTICLES = {"не", "ни", "бы"}
+RU_FINITE = re.compile(r"[А-Яа-яЁё]+(?:ю|у|ешь|ёшь|ишь|ет|ёт|ит|ем|ём|им|ете|ёте|ите|ют|ут|ят|ат|"
+                       r"л|ла|ло|ли|лся|лась|лись)")
+
+
+def has_predicate(text):
+    """Есть ли в шаблоне хоть какое-то сказуемое."""
+    for t in rv.TOK_ALL(text):
+        vf = VERBS_RU.get(t) or VERBS_RU.get(t.split(".")[0])
+        if not isinstance(vf, dict):
+            continue
+        if vf.get("kind") == "copula" or vf.get("omitPresent"):
+            return True          # именное сказуемое: "[us] [is] поврежден"
+        pres = vf.get("present") or []
+        form = pres[2] if len(pres) > 2 else (pres[0] if pres else "")
+        if form and form not in PARTICLES:
+            return True
+    return bool(RU_FINITE.search(rv.TOKEN_RE.sub(" ", text)))
+
+
+def has_verb_token(text):
+    for t in rv.TOK_ALL(text):
+        vf = VERBS_RU.get(t) or VERBS_RU.get(t.split(".")[0])
+        if isinstance(vf, dict):
+            pres = vf.get("present") or []
+            form = pres[2] if len(pres) > 2 else ""
+            if vf.get("kind") == "copula" or (form and form not in PARTICLES):
+                return True
+    return False
+
+
 def apply_verdicts():
     rows = []
     for line in io.open(CKPT, encoding="utf-8"):
@@ -166,7 +201,15 @@ def apply_verdicts():
         for r in items:
             dead = rv.introduces_dead_token(r)
             if dead:
-                skipped.append((r["id"], dead))
+                skipped.append((r["id"], "токен без парадигмы: " + dead))
+                continue
+            if has_predicate(r["ru_old"]) and not has_predicate(r["ru_new"]):
+                skipped.append((r["id"], "потеряно сказуемое"))
+                continue
+            # Если в оригинале глагол стоит токеном, он обязан остаться токеном:
+            # вписанный словами глагол снова застынет в третьем лице.
+            if has_verb_token(r["en"]) and not has_verb_token(r["ru_new"]):
+                skipped.append((r["id"], "глагол вписан текстом вместо токена"))
                 continue
             rec = data.get(r["id"])
             if isinstance(rec, dict) and rec.get(r["field"]) == r["ru_old"]:
@@ -179,9 +222,9 @@ def apply_verdicts():
             total += n
     print("всего применено:", total)
     if skipped:
-        print("пропущено (токен без парадигмы): %d" % len(skipped))
-        for rid, t in skipped[:8]:
-            print("   %s -> [%s]" % (rid, t))
+        print("пропущено: %d" % len(skipped))
+        for rid, t in skipped[:10]:
+            print("   %s -- %s" % (rid, t))
 
 
 def main():

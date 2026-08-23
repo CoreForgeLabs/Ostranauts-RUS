@@ -368,7 +368,7 @@
     "strNameFriendly": "Самоуважение: Достоинство"
   },
   "DcSelfRespect02": {
-    "strDesc": "[us] [feels] уверенность в [us-loc].",
+    "strDesc": "[us] [feels] уверенность в [us-reflexive].",
     "strNameFriendly": "Самоуважение: Уверенность"
   },
   "DcSelfRespect03": {
@@ -376,7 +376,7 @@
     "strNameFriendly": "Самоуважение: Компетентность"
   },
   "DcSelfRespect04": {
-    "strDesc": "[us] [has] сомнения в [us-loc].",
+    "strDesc": "[us] [has] сомнения в [us-reflexive].",
     "strNameFriendly": "Самоуважение: Самокритичность"
   },
   "DcSelfRespect05": {
@@ -1118,26 +1118,26 @@
   },
   "IsAttractedMen": {
     "strNameFriendly": "Влечение к мужчинам",
-    "strDesc": "[us] испытывает влечение к мужчинам."
+    "strDesc": "У [us-gen] [is] влечение к мужчинам."
   },
   "IsAttractedNB": {
     "strNameFriendly": "Влечение к небинарным людям",
-    "strDesc": "[us] испытывает влечение к небинарным людям."
+    "strDesc": "У [us-gen] [is] влечение к небинарным людям."
   },
   "IsAttractedWomen": {
     "strNameFriendly": "Влечение к женщинам",
-    "strDesc": "[us] испытывает влечение к женщинам."
+    "strDesc": "У [us-gen] [is] влечение к женщинам."
   },
   "IsAttractedNone": {
     "strNameFriendly": "Нет влечения",
-    "strDesc": "[us] не испытывает влечения ни к кому."
+    "strDesc": "У [us-gen] [is] отсутствие влечения к кому-либо."
   },
   "IsAttractedMono": {
     "strDesc": "[us] [wants] только одного партнера.",
     "strNameFriendly": "Моногамность"
   },
   "IsAttractedPoly": {
-    "strDesc": "[us] хочет нескольких партнеров.",
+    "strDesc": "[us] [wants] много партнеров.",
     "strNameFriendly": "Полиамория"
   },
   "Plot_MessengerRomantic_CompletedContact": {
@@ -2121,7 +2121,7 @@
     "strDesc": "[us] [allows] пользователям играть в мультимедийную игру в стиле Breakout."
   },
   "IsRecVidGame02": {
-    "strNameFriendly": "Listless Lusca",
+    "strNameFriendly": "Вялая Луска",
     "strDesc": "[us] [allows] пользователям играть в мультимедийную игру о копании на Европе."
   },
   "IsRed": {
@@ -2721,7 +2721,7 @@
     "strDesc": "[us] [is] кофемашина."
   },
   "IsCollectiveElectric": {
-    "strNameFriendly": "Collective Electric",
+    "strNameFriendly": "Электрический коллектив",
     "strDesc": "[us] [is] продукт бренда Collective Electric."
   },
   "IsCombatActive": {
@@ -3110,7 +3110,7 @@
   },
   "IsHorang": {
     "strNameFriendly": "Хоранг",
-    "strDesc": "[us] [является] предметом бренда Хоранг."
+    "strDesc": "[us] [is] предметом бренда Хоранг."
   },
   "IsHoursLeft": {
     "strNameFriendly": "Осталось часов",
@@ -3118,15 +3118,15 @@
   },
   "IsHullPatch": {
     "strNameFriendly": "Заплатка для корпуса",
-    "strDesc": "[us] [является] заплаткой, способной заделать пробоину в корпусе."
+    "strDesc": "[us] [is] заплаткой, способной заделать пробоину в корпусе."
   },
   "IsHuman": {
     "strNameFriendly": "Человек",
-    "strDesc": "[us] [является] человеком."
+    "strDesc": "[us] [is] человеком."
   },
   "IsHydrator": {
     "strNameFriendly": "Гидратор",
-    "strDesc": "[us] [является] гидратором."
+    "strDesc": "[us] [is] гидратором."
   },
   "IsIdentified": {
     "strNameFriendly": "Опознано",
@@ -3134,7 +3134,7 @@
   },
   "IsIgniter": {
     "strNameFriendly": "Воспламенитель",
-    "strDesc": "[us] [является] искрой или источником огня."
+    "strDesc": "[us] [is] искра или источник огня."
   },
   "IsImmuneCaffeine2": {
     "strNameFriendly": "Иммунитет к кофеину",
@@ -3170,7 +3170,7 @@
   },
   "IsImprisoned": {
     "strNameFriendly": "В заключении",
-    "strDesc": "[us] [отбывает] тюремный срок."
+    "strDesc": "[us] [is] заключенным, отбывающим тюремный срок."
   },
   "IsInContainer": {
     "strNameFriendly": "В контейнере",
@@ -3190,7 +3190,7 @@
   },
   "IsInstalled": {
     "strNameFriendly": "Установлен",
-    "strDesc": "[us] [установлен] как часть корабля."
+    "strDesc": "[us] [is] установленной частью корабля."
   },
   "IsIntelligentBeing": {
     "strNameFriendly": "Разумное существо",
@@ -3198,7 +3198,7 @@
   },
   "IsInUse": {
     "strNameFriendly": "Используется",
-    "strDesc": "[us] в данный момент [используется]."
+    "strDesc": "[us] в данный момент [is] используемым объектом."
   },
   "IsItemTile": {
     "strNameFriendly": "Тайл предмета",
@@ -3294,23 +3294,23 @@
   },
   "IsLitWall1x0WhiteCool": {
     "strNameFriendly": "Синий настенный светильник",
-    "strDesc": "[us] [является] синим настенным светильником 1x0."
+    "strDesc": "[us] [is] синим настенным светильником 1×0."
   },
   "IsLitWall1x0WhiteWarm": {
     "strNameFriendly": "Оранжевый настенный светильник",
-    "strDesc": "[us] [является] оранжевым настенным светильником 1x0."
+    "strDesc": "[us] [is] оранжевым настенным светильником 1×0."
   },
   "IsLitWall1x0VibrantGreen": {
     "strNameFriendly": "Зеленый настенный светильник",
-    "strDesc": "[us] [является] зеленым настенным светильником 1x0."
+    "strDesc": "[us] [is] зеленым настенным светильником 1×0."
   },
   "IsLitWall1x0VibrantPurple": {
     "strNameFriendly": "Фиолетовый настенный светильник",
-    "strDesc": "[us] [является] фиолетовым настенным светильником 1x0."
+    "strDesc": "[us] [is] фиолетовым настенным светильником 1×0."
   },
   "IsLitWall1x0VibrantRed": {
     "strNameFriendly": "Красный настенный светильник",
-    "strDesc": "[us] [является] красным настенным светильником 1x0."
+    "strDesc": "[us] [is] красным настенным светильником 1×0."
   },
   "IsLiquid": {
     "strNameFriendly": "Жидкость",
@@ -3326,11 +3326,11 @@
   },
   "IsLocked": {
     "strNameFriendly": "Заперто",
-    "strDesc": "[us] в данный момент [заперт]."
+    "strDesc": "[us] [is.aux] в данный момент заперт."
   },
   "IsLockKey": {
     "strNameFriendly": "Ключевой замок",
-    "strDesc": "[us] [является] механическим замком, требующим ключ."
+    "strDesc": "[us] [is] механическим замком, требующим ключа."
   },
   "IsLockPIN": {
     "strNameFriendly": "ПИН-замок",
@@ -3346,7 +3346,7 @@
   },
   "IsLong": {
     "strNameFriendly": "Длинный",
-    "strDesc": "[us] [имеет] длину 1 м или более, что затрудняет хранение в некоторых контейнерах."
+    "strDesc": "[us] [is] предметом длиной 1 м или более, что затрудняет хранение в некоторых контейнерах."
   },
   "IsLootSpawner": {
     "strNameFriendly": "Спавнер лута",
@@ -3362,19 +3362,19 @@
   },
   "IsMarketActor": {
     "strNameFriendly": "Субъект рынка",
-    "strDesc": "[us] [является] сущностью, которая является частью рыночной системы."
+    "strDesc": "[us] [is] сущностью, входящей в состав рыночной системы."
   },
   "IsMeat": {
     "strNameFriendly": "Мясо",
-    "strDesc": "[us] [является] мясом."
+    "strDesc": "[us] [is] мясом."
   },
   "IsMechanical": {
     "strNameFriendly": "Механический",
-    "strDesc": "[us] [является] механическим по своей природе."
+    "strDesc": "[us] [is] механическим по своей природе."
   },
   "IsMediaPlayer": {
     "strNameFriendly": "Медиаплеер",
-    "strDesc": "[us] [является] экранным устройством для воспроизведения электронных медиа."
+    "strDesc": "[us] [is] экранным устройством для воспроизведения электронных медиа."
   },
   "IsBCER": {
     "strNameFriendly": "Относится к BCER",
@@ -3390,7 +3390,7 @@
   },
   "IsERTH": {
     "strNameFriendly": "Относится к ERTH",
-    "strDesc": "[us] [относится] к Земле."
+    "strDesc": "[us] [is] связан с Землёй."
   },
   "IsJATL": {
     "strNameFriendly": "Относится к JATL",
@@ -3430,7 +3430,7 @@
   },
   "IsMilSpec": {
     "strNameFriendly": "Военный стандарт",
-    "strDesc": "[us] соответствует военным спецификациям и поэтому часто [является] незаконным для гражданского использования."
+    "strDesc": "[us] соответствует военным спецификациям и поэтому часто [is] незаконным для гражданского использования."
   },
   "IsMSHG": {
     "strNameFriendly": "Миньшэн",
@@ -3449,7 +3449,7 @@
     "strDesc": "[us] [is] компонентом мотора."
   },
   "IsMSS": {
-    "strNameFriendly": "Mobile Space Systems",
+    "strNameFriendly": "Мобильные космические системы",
     "strDesc": "[us] [является] предметом бренда Mobile Space Systems."
   },
   "IsMusicPlayer": {
@@ -3466,7 +3466,7 @@
   },
   "IsNB": {
     "strNameFriendly": "Небинарный",
-    "strDesc": "[us] [является] небинарным по гендерной принадлежности."
+    "strDesc": "[us] [is] небинарной личностью."
   },
   "IsNewPlayer": {
     "strNameFriendly": "Новый игрок",
@@ -3490,7 +3490,7 @@
   },
   "IsOff": {
     "strNameFriendly": "Выключено",
-    "strDesc": "[us] [выключен]."
+    "strDesc": "[us] [is] в выключенном состоянии."
   },
   "IsOgisoPoster": {
     "strNameFriendly": "Постер Огисо",
@@ -3502,15 +3502,15 @@
   },
   "IsOpticalZoom": {
     "strNameFriendly": "Оптический зум",
-    "strDesc": "[us] [является] устройством оптического зума."
+    "strDesc": "[us] [is] устройством оптического зума."
   },
   "IsOpening1cmDn": {
     "strNameFriendly": "Отверстие менее 1 см",
-    "strDesc": "[us] [является] чем-то с отверстием диаметром менее 1 см."
+    "strDesc": "[us] [is] чем-то с отверстием диаметром менее 1 см."
   },
   "IsOpening1cmUp": {
     "strNameFriendly": "Отверстие более 1 см",
-    "strDesc": "[us] [является] чем-то с отверстием диаметром более 1 см."
+    "strDesc": "[us] [is] чем-то с отверстием диаметром более 1 см."
   },
   "IsOpening10cmDn": {
     "strNameFriendly": "Отверстие менее 10 см",
@@ -3562,11 +3562,11 @@
   },
   "IsPastel": {
     "strNameFriendly": "Пастельный",
-    "strDesc": "[us] [имеет] пастельную расцветку."
+    "strDesc": "[us] [is] пастельной расцветкой."
   },
   "IsPatched": {
     "strNameFriendly": "Залатан",
-    "strDesc": "На [us] [наложена] заплатка для корпуса."
+    "strDesc": "[us] [has] заплатку на корпусе."
   },
   "IsPAX2020Long": {
     "strNameFriendly": "PAX2020Long",
@@ -3586,27 +3586,27 @@
   },
   "IsPDAVizReset": {
     "strNameFriendly": "Сброс визуализации КПК",
-    "strDesc": "[us] [требует] сброса пользовательского интерфейса визуализации КПК."
+    "strDesc": "[us] [is] объектом, для которого нужен сброс пользовательского интерфейса визуализации КПК."
   },
   "IsPearson": {
     "strNameFriendly": "Пирсон",
-    "strDesc": "[us] [является] предметом бренда Пирсон."
+    "strDesc": "[us] [is] предметом бренда Пирсон."
   },
   "IsPermitOKLGSalvage": {
     "strNameFriendly": "Лицензия на утилизацию ОКЛГ",
-    "strDesc": "[us] [является] лицензией на утилизацию заброшенных объектов на ОКЛГ."
+    "strDesc": "[us] [is] лицензией на утилизацию заброшенных объектов на ОКЛГ."
   },
   "IsPermitOKLGSalvageKiosk": {
     "strNameFriendly": "Киоск лицензий на утилизацию ОКЛГ",
-    "strDesc": "[us] [является] киоском, требующим лицензию на утилизацию ОКЛГ."
+    "strDesc": "[us] [is] киоском, для которого нужна лицензия на утилизацию ОКЛГ."
   },
   "IsPharmaCon": {
     "strNameFriendly": "ФармаКон",
-    "strDesc": "[us] [является] предметом бренда ФармаКон."
+    "strDesc": "[us] [is] предметом бренда ФармаКон."
   },
   "IsPhoebus": {
     "strNameFriendly": "Феб",
-    "strDesc": "[us] [является] предметом бренда Феб."
+    "strDesc": "[us] [is] предметом бренда Феб."
   },
   "IsPlaceholder": {
     "strNameFriendly": "Заполнитель",
@@ -4121,7 +4121,7 @@
     "strDesc": "[us] [is] предмет бренда Gott."
   },
   "IsGEC": {
-    "strNameFriendly": "Green Energy Company",
+    "strNameFriendly": "Компания «Зелёная энергия»",
     "strDesc": "[us] [is] предмет бренда Green Energy Company."
   },
   "IsGray": {
@@ -4350,7 +4350,7 @@
   },
   "DcBlood02": {
     "strNameFriendly": "Небольшая кровопотеря",
-    "strDesc": "У [us] [has] небольшая кровопотеря, что несколько сказывается на [us-pos] деятельности."
+    "strDesc": "У [us] [has] небольшая кровопотеря, что несколько сказывается на деятельности."
   },
   "DcBlood03": {
     "strDesc": "[us] [has] потерял много крови и скоро, вероятно, потребуется госпитализация.",
@@ -4441,7 +4441,7 @@
     "strNameFriendly": "Сильная гиперкапния"
   },
   "DcCO2Poisoning06": {
-    "strDesc": "[us] [is] страдает от мышечной дрожи, и [us-pos] тело [is] отказывает из-за гиперкапнии.",
+    "strDesc": "[us] [is] страдает от мышечной дрожи, и тело [is] отказывает из-за гиперкапнии.",
     "strNameFriendly": "Критическая гиперкапния"
   },
   "DcCO2Poisoning07": {
@@ -4461,7 +4461,7 @@
     "strNameFriendly": "Ожог горла и глаз"
   },
   "DcH2SO4Poisoning03": {
-    "strDesc": "[us] [has] получил смертельные кислотные ожоги [us-pos] кожи, глаз и горла. Смерть неизбежна.",
+    "strDesc": "[us] [has] получил смертельные кислотные ожоги своей кожи, глаз и горла. Смерть неизбежна.",
     "strNameFriendly": "Смертельное вдыхание паров серной кислоты"
   },
   "DcNH3Poisoning01": {
@@ -4473,7 +4473,7 @@
     "strNameFriendly": "Ожог горла и глаз"
   },
   "DcNH3Poisoning03": {
-    "strDesc": "[us] [has] получил смертельные едкие ожоги [us-pos] кожи, глаз и горла. Смерть неизбежна.",
+    "strDesc": "[us] [has] получил смертельные едкие ожоги своей кожи, глаз и горла. Смерть неизбежна.",
     "strNameFriendly": "Смертельное вдыхание паров аммиака"
   },
   "DcContact01": {
@@ -4521,11 +4521,11 @@
     "strNameFriendly": "Не обременен"
   },
   "DcEncumbrance02": {
-    "strDesc": "[us] [is] несет умеренный груз, и [us-pos] скорость передвижения снижена. [us] также [fatigues] быстрее.",
+    "strDesc": "[us] [is] несет умеренный груз, и скорость передвижения снижена. [us] также [fatigues] быстрее.",
     "strNameFriendly": "Обременен"
   },
   "DcEncumbrance03": {
-    "strDesc": "[us] [is] несет тяжелый груз, и [us-pos] скорость передвижения сильно снижена. [us] также [fatigues] намного быстрее.",
+    "strDesc": "[us] [is] несет тяжелый груз, и скорость передвижения сильно снижена. [us] также [fatigues] намного быстрее.",
     "strNameFriendly": "Изнемогает"
   },
   "DcEncumbrance04": {
@@ -4586,7 +4586,7 @@
   },
   "DcFatigue04": {
     "strNameFriendly": "Истощен",
-    "strDesc": "[us] [is] близок к [us-pos] физическому пределу."
+    "strDesc": "[us] [is] на грани своего физического предела."
   },
   "DcFatigue05": {
     "strDesc": "[us] [is] слишком истощен, чтобы двигаться.",
@@ -4795,7 +4795,7 @@
     "strNameFriendly": "Близость: Отчаяние"
   },
   "DcMeaning01": {
-    "strDesc": "[us] [feels], что [us-pos] мечты созвучны с реальностью.",
+    "strDesc": "[us] [feels], что мечты соответствуют реальности.",
     "strNameFriendly": "Смысл: Усердие"
   },
   "DcMeaning02": {
@@ -5415,51 +5415,51 @@
     "strDesc": "[us] [is] деревянный."
   },
   "DcTrainingMeleeArmed01": {
-    "strDesc": "[us] [has] повысил[us-ends] навык вооруженного ближнего боя более чем на 1%.",
+    "strDesc": "[us] [has] навык вооруженного ближнего боя, повышенный более чем на 1%.",
     "strNameFriendly": "Тренировка: Вооруженный ближний бой 1%"
   },
   "DcTrainingMeleeArmed05": {
-    "strDesc": "[us] [has] повысил[us-ends] навык вооруженного ближнего боя более чем на 5%.",
+    "strDesc": "[us] [has] навык вооруженного ближнего боя, повышенный более чем на 5%.",
     "strNameFriendly": "Тренировка: Вооруженный ближний бой 5%"
   },
   "DcTrainingMeleeArmed10": {
-    "strDesc": "[us] [has] повысил[us-ends] навык вооруженного ближнего боя более чем на 10%.",
+    "strDesc": "[us] [has] навык вооруженного ближнего боя, повышенный более чем на 10%.",
     "strNameFriendly": "Тренировка: Вооруженный ближний бой 10%"
   },
   "DcTrainingMeleeArmed25": {
-    "strDesc": "[us] [has] повысил[us-ends] навык вооруженного ближнего боя более чем на 25%.",
+    "strDesc": "[us] [has] уровень навыка вооруженного ближнего боя выше 25%.",
     "strNameFriendly": "Тренировка: Вооруженный ближний бой 25%"
   },
   "DcTrainingMeleeArmed50": {
-    "strDesc": "[us] [has] повысил[us-ends] навык вооруженного ближнего боя более чем на 50%.",
+    "strDesc": "[us] [has] уровень навыка вооруженного ближнего боя выше 50%.",
     "strNameFriendly": "Тренировка: Вооруженный ближний бой 50%"
   },
   "DcTrainingMeleeArmed75": {
-    "strDesc": "[us] [has] повысил[us-ends] навык вооруженного ближнего боя более чем на 75%.",
+    "strDesc": "[us] [has] уровень навыка вооруженного ближнего боя выше 75%.",
     "strNameFriendly": "Тренировка: Вооруженный ближний бой 75%"
   },
   "DcTrainingMeleeArmed85": {
-    "strDesc": "[us] [has] повысил[us-ends] навык вооруженного ближнего боя более чем на 85%.",
+    "strDesc": "[us] [has] уровень навыка вооруженного ближнего боя выше 85%.",
     "strNameFriendly": "Тренировка: Вооруженный ближний бой 85%"
   },
   "DcTrainingMeleeArmed90": {
-    "strDesc": "[us] [has] повысил[us-ends] навык вооруженного ближнего боя более чем на 90%.",
+    "strDesc": "[us] [has] уровень навыка вооруженного ближнего боя выше 90%.",
     "strNameFriendly": "Тренировка: Вооруженный ближний бой 90%"
   },
   "DcTrainingMeleeArmed95": {
-    "strDesc": "[us] [has] повысил[us-ends] навык вооруженного ближнего боя более чем на 95%.",
+    "strDesc": "[us] [has] уровень навыка вооруженного ближнего боя выше 95%.",
     "strNameFriendly": "Тренировка: Вооруженный ближний бой 95%"
   },
   "DcTrainingMeleeArmed98": {
-    "strDesc": "[us] [has] повысил[us-ends] навык вооруженного ближнего боя более чем на 98%.",
+    "strDesc": "[us] [has] уровень навыка вооруженного ближнего боя выше 98%.",
     "strNameFriendly": "Тренировка: Вооруженный ближний бой 98%"
   },
   "DcTrainingMeleeArmed99": {
-    "strDesc": "[us] [has] повысил[us-ends] навык вооруженного ближнего боя более чем на 99%.",
+    "strDesc": "[us] [has] уровень навыка вооруженного ближнего боя выше 99%.",
     "strNameFriendly": "Тренировка: Вооруженный ближний бой 99%"
   },
   "DcTrainingMeleeArmed100": {
-    "strDesc": "Отличная работа! [us] [has] завершил[us-ends] обучение вооруженному ближнему бою на 100%!",
+    "strDesc": "Отличная работа! [us] [has] уровень навыка вооруженного ближнего боя, равный 100%!",
     "strNameFriendly": "Тренировка: Вооруженный ближний бой 100%"
   },
   "DcTrainingMeleeUnarmed": {
@@ -5467,51 +5467,51 @@
     "strNameFriendly": "Тренировка: Безоружный ближний бой 0%"
   },
   "DcTrainingMeleeUnarmed01": {
-    "strDesc": "[us] [has] повысил[us-ends] навык безоружного ближнего боя более чем на 1%.",
+    "strDesc": "[us] [has] уровень навыка безоружного ближнего боя выше 1%.",
     "strNameFriendly": "Тренировка: Безоружный ближний бой 1%"
   },
   "DcTrainingMeleeUnarmed05": {
-    "strDesc": "[us] [has] повысил[us-ends] навык безоружного ближнего боя более чем на 5%.",
+    "strDesc": "[us] [has] уровень навыка безоружного ближнего боя выше 5%.",
     "strNameFriendly": "Тренировка: Безоружный ближний бой 5%"
   },
   "DcTrainingMeleeUnarmed10": {
-    "strDesc": "[us] [has] повысил[us-ends] навык безоружного ближнего боя более чем на 10%.",
+    "strDesc": "[us] [has] уровень навыка безоружного ближнего боя выше 10%.",
     "strNameFriendly": "Тренировка: Безоружный ближний бой 10%"
   },
   "DcTrainingMeleeUnarmed25": {
-    "strDesc": "[us] [has] повысил[us-ends] навык безоружного ближнего боя более чем на 25%.",
+    "strDesc": "[us] [has] уровень навыка безоружного ближнего боя выше 25%.",
     "strNameFriendly": "Тренировка: Безоружный ближний бой 25%"
   },
   "DcTrainingMeleeUnarmed50": {
-    "strDesc": "[us] [has] повысил[us-ends] навык безоружного ближнего боя более чем на 50%.",
+    "strDesc": "[us] [has] уровень навыка безоружного ближнего боя выше 50%.",
     "strNameFriendly": "Тренировка: Безоружный ближний бой 50%"
   },
   "DcTrainingMeleeUnarmed75": {
-    "strDesc": "[us] [has] повысил[us-ends] навык безоружного ближнего боя более чем на 75%.",
+    "strDesc": "[us] [has] уровень навыка безоружного ближнего боя выше 75%.",
     "strNameFriendly": "Тренировка: Безоружный ближний бой 75%"
   },
   "DcTrainingMeleeUnarmed85": {
-    "strDesc": "[us] [has] повысил[us-ends] навык безоружного ближнего боя более чем на 85%.",
+    "strDesc": "[us] [has] уровень навыка безоружного ближнего боя выше 85%.",
     "strNameFriendly": "Тренировка: Безоружный ближний бой 85%"
   },
   "DcTrainingMeleeUnarmed90": {
-    "strDesc": "[us] [has] повысил[us-ends] навык безоружного ближнего боя более чем на 90%.",
+    "strDesc": "[us] [has] уровень навыка безоружного ближнего боя выше 90%.",
     "strNameFriendly": "Тренировка: Безоружный ближний бой 90%"
   },
   "DcTrainingMeleeUnarmed95": {
-    "strDesc": "[us] [has] повысил[us-ends] навык безоружного ближнего боя более чем на 95%.",
+    "strDesc": "[us] [has] уровень навыка безоружного ближнего боя выше 95%.",
     "strNameFriendly": "Тренировка: Безоружный ближний бой 95%"
   },
   "DcTrainingMeleeUnarmed98": {
-    "strDesc": "[us] [has] повысил[us-ends] навык безоружного ближнего боя более чем на 98%.",
+    "strDesc": "[us] [has] уровень навыка безоружного ближнего боя выше 98%.",
     "strNameFriendly": "Тренировка: Безоружный ближний бой 98%"
   },
   "DcTrainingMeleeUnarmed99": {
-    "strDesc": "[us] [has] повысил[us-ends] навык безоружного ближнего боя более чем на 99%.",
+    "strDesc": "[us] [has] более 99% обучения безоружному ближнему бою.",
     "strNameFriendly": "Тренировка: Безоружный ближний бой 99%"
   },
   "DcTrainingMeleeUnarmed100": {
-    "strDesc": "Отличная работа! [us] [has] завершил[us-ends] обучение безоружному ближнему бою на 100%!",
+    "strDesc": "Отличная работа! [us] [has] 100% обучения безоружному ближнему бою!",
     "strNameFriendly": "Тренировка: Безоружный ближний бой 100%"
   },
   "DcWeird01": {
@@ -5655,18 +5655,18 @@
     "strNameFriendly": "Смерть от кровопотери"
   },
   "HasCommittedViolence": {
-    "strDesc": "[us] [has] недавно совершил[us-ends] акт насилия.",
+    "strDesc": "[us] [has] недавний опыт применения насилия.",
     "strNameFriendly": "Недавнее применение насилия"
   },
   "HasSufferedViolence": {
-    "strDesc": "[us] [has] недавно пострадал[us-ends] от насилия.",
+    "strDesc": "[us] [has] недавний опыт насилия.",
     "strNameFriendly": "Недавнее насилие над собой"
   },
   "HasFood": {
     "strDesc": "[us] [has] продукт питания."
   },
   "HasHadMeatyMeal": {
-    "strDesc": "[us] [has] недавно употребил[us-ends] в пищу странную мясную биомассу.",
+    "strDesc": "[us] [has] недавний опыт употребления в пищу странной мясной биомассы.",
     "strNameFriendly": "Недавно съедено странное мясо"
   },
   "HasHadTastyMeal": {
@@ -5678,7 +5678,7 @@
     "strNameFriendly": "В социальном бою"
   },
   "IsAccusingAlreadyWarned": {
-    "strDesc": "[us] [has] уже предупредил[us-ends] цель об обвинении.",
+    "strDesc": "[us] [has] уже предупреждение для цели об обвинении.",
     "strNameFriendly": "Обвинение: уже предупрежден"
   },
   "IsAccusingIllegalSalvage": {
@@ -5701,7 +5701,7 @@
     "strDesc": "[us] [has] ИИ."
   },
   "IsAIManual": {
-    "strDesc": "[us] [has] [us-pos] поведение переведено в ручной режим.",
+    "strDesc": "[us] [has] своё поведение, переведённое в ручной режим.",
     "strNameFriendly": "Поведение: Ручное"
   },
   "IsAIThinking": {
@@ -5788,11 +5788,11 @@
     "strNameFriendly": "Перезарядка ухода"
   },
   "IsRejectedLoopCooldown": {
-    "strDesc": "[us] недавно отклонил[us-ends] предложение перейти в петлю.",
+    "strDesc": "Предложение перейти в петлю недавно было отклонено [us-ins].",
     "strNameFriendly": "Перезарядка отклонения петли"
   },
   "IsSeekSocialDenyCooldown": {
-    "strDesc": "[us] недавно использовал[us-ends] «Поиск социального отказа» и пока не может использовать снова.",
+    "strDesc": "Недавнее применение [us-ins] «Поиска социального отказа» пока не может быть повторено.",
     "strNameFriendly": "Перезарядка социального отказа"
   },
   "IsFailedPortAuth": {
@@ -5848,7 +5848,7 @@
     "strNameFriendly": "Чувствует координацию"
   },
   "IsCrashCooldown": {
-    "strDesc": "[us] только что пережил[us-ends] срыв и пока не может подвергнуться другому социальному воздействию.",
+    "strDesc": "[us] только что после срыва и пока без возможности подвергнуться другому социальному воздействию.",
     "strNameFriendly": "Перезарядка срыва"
   },
   "IsCraven": {
@@ -5876,7 +5876,7 @@
     "strNameFriendly": "Громоздкость"
   },
   "IsDiligent": {
-    "strDesc": "[us] [shows] значительно большую заботу в [us-pos] работе, чем другие.",
+    "strDesc": "[us] [shows] значительно больше старания в своей работе, чем другие.",
     "strNameFriendly": "Усердие"
   },
   "IsDamagedElectrical": {
@@ -5904,15 +5904,15 @@
     "strNameFriendly": "Пробуждение"
   },
   "IsEmergencyOverride": {
-    "strDesc": "[us] [has] отменил[us-ends] корпоративную политику шлюзов из-за чрезвычайной ситуации.",
+    "strDesc": "[us] [has] случай переопределения корпоративной политики шлюзов из-за чрезвычайной ситуации.",
     "strNameFriendly": "Аварийное перекрытие"
   },
   "IsExercisingCardio": {
-    "strDesc": "[us] [is] работает над улучшением [us-pos] сердечно-сосудистой системы.",
+    "strDesc": "[us] [is] работает над улучшением своей сердечно-сосудистой системы.",
     "strNameFriendly": "Кардиотренировка"
   },
   "IsExercisingCardioHot": {
-    "strDesc": "[us] [is] усердно работает над улучшением [us-pos] сердечно-сосудистой системы.",
+    "strDesc": "[us] [is] усердно работает над улучшением своей сердечно-сосудистой системы.",
     "strNameFriendly": "Интенсивная кардиотренировка"
   },
   "IsExercisingStrength": {
@@ -6064,7 +6064,7 @@
     "strNameFriendly": "Использована нанороботическая первая помощь"
   },
   "IsSeekHygieneCooldown": {
-    "strDesc": "[us] [has] недавно пытался[ась] найти средство гигиены.",
+    "strDesc": "[us] [has] недавний опыт поиска средства гигиены.",
     "strNameFriendly": "Перезарядка поиска гигиены"
   },
   "StatAtrophy": {
@@ -6302,7 +6302,7 @@
   },
   "CareerCriminalPast": {
     "strNameFriendly": "Преступник",
-    "strDesc": "[us] [has] занимался[ась] преступной деятельностью."
+    "strDesc": "[us] [has] опыт преступной деятельности."
   },
   "CareerInfluencer": {
     "strNameFriendly": "Инфлюенсер",
@@ -6617,11 +6617,11 @@
     "strDesc": "[us] [is] черный."
   },
   "IsBlackBull": {
-    "strNameFriendly": "Black Bull",
+    "strNameFriendly": "Чёрный бык",
     "strDesc": "[us] [is] продукт бренда Black Bull."
   },
   "IsBlackWing": {
-    "strNameFriendly": "Black Wing",
+    "strNameFriendly": "Чёрное крыло",
     "strDesc": "[us] [is] предмет бренда Black Wing."
   },
   "IsBlade": {
@@ -6654,7 +6654,7 @@
   },
   "ToldMemoryEarth": {
     "strNameFriendly": "Рассказ о Земле",
-    "strDesc": "[us] [has] поделился воспоминанием о [us-pos]] доме на Земле"
+    "strDesc": "[us] [has] поделился воспоминанием о своем доме на Земле"
   },
   "HeardMemoryEarth": {
     "strNameFriendly": "Услышанное воспоминание о Земле",
@@ -6702,7 +6702,7 @@
   },
   "TinglingExtremeties": {
     "strNameFriendly": "Покалывание в конечностях",
-    "strDesc": "[us] [is] чувствует онемение и покалывание в [us-pos] конечностях."
+    "strDesc": "[us] [is] чувствует онемение и покалывание в конечностях."
   },
   "IsTreadmill": {
     "strNameFriendly": "Беговая дорожка",
@@ -7237,15 +7237,15 @@
     "strNameFriendly": "Макс. употр. никотина"
   },
   "Stunned": {
-    "strDesc": "[us] оглушен и не может двигаться в течение нескольких мгновений.",
+    "strDesc": "[us] [is] в состоянии оглушения и без возможности двигаться в течение нескольких мгновений.",
     "strNameFriendly": "Оглушение"
   },
   "Sweating": {
-    "strDesc": "[us] потеет.",
+    "strDesc": "[us] [is] в поту.",
     "strNameFriendly": "Потливость"
   },
   "SweatingHeavy": {
-    "strDesc": "[us] обильно потеет.",
+    "strDesc": "[us] [is] в обильном поту.",
     "strNameFriendly": "Обильное потоотделение"
   },
   "TeethBrushed": {
@@ -7265,7 +7265,7 @@
     "strNameFriendly": "Без сознания"
   },
   "Vomiting": {
-    "strDesc": "[us] рвет.",
+    "strDesc": "[us] [is] в приступе рвоты.",
     "strNameFriendly": "Рвота"
   },
   "Vulnerable": {
@@ -7273,7 +7273,7 @@
     "strNameFriendly": "Уязвимость"
   },
   "Weakness": {
-    "strDesc": "[us] чувствует слабость.",
+    "strDesc": "[us] [is] без сил.",
     "strNameFriendly": "Слабость"
   },
   "WeakStomachIllness": {
@@ -7281,39 +7281,39 @@
     "strNameFriendly": "Периодическое расстройство желудка"
   },
   "RefreshedBuildUp": {
-    "strDesc": "[us] постепенно восстанавливает силы.",
+    "strDesc": "[us] [is] в процессе восстановления сил.",
     "strNameFriendly": "Восстановление сил"
   },
   "RefreshedBuildUp2": {
-    "strDesc": "[us] постепенно восстанавливает силы.",
+    "strDesc": "[us] [is] в процессе восстановления сил.",
     "strNameFriendly": "Восстановление сил 2"
   },
   "RefreshedBuildUp3": {
-    "strDesc": "[us] постепенно восстанавливает силы.",
+    "strDesc": "[us] [is] в процессе восстановления сил.",
     "strNameFriendly": "Восстановление сил 3"
   },
   "RefreshedBuildUp4": {
-    "strDesc": "[us] постепенно восстанавливает силы.",
+    "strDesc": "[us] [is] в процессе восстановления сил.",
     "strNameFriendly": "Восстановление сил 4"
   },
   "Refreshed": {
-    "strDesc": "[us] чувствует себя отдохнувшим после короткого сна.",
+    "strDesc": "[us] [is] в бодром состоянии после короткого сна.",
     "strNameFriendly": "Короткий сон"
   },
   "Refreshed2": {
-    "strDesc": "[us] чувствует себя умеренно отдохнувшим после долгого сна.",
+    "strDesc": "[us] [is] в умеренно отдохнувшем состоянии после продолжительного сна.",
     "strNameFriendly": "Отдохнувший"
   },
   "Refreshed3": {
-    "strDesc": "[us] чувствует прилив сил после долгого сна. Это ощущение может длиться час или два.",
+    "strDesc": "[us] [is] в состоянии прилива сил после продолжительного сна. Это ощущение может длиться час или два.",
     "strNameFriendly": "Прилив сил"
   },
   "Refreshed4": {
-    "strDesc": "[us] чувствует себя бодрым, отдохнувшим и полным сил после редкого долгого сна. Это ощущение должно длиться несколько часов.",
+    "strDesc": "[us] [is] в оживлённом, отдохнувшем и полном сил состоянии после редкого продолжительного сна. Это ощущение должно длиться несколько часов.",
     "strNameFriendly": "Бодрость"
   },
   "DebugMemoryLoss": {
-    "strDesc": "У [us] форма повреждения мозга, из-за которой [us-obj] забывает, как общаться.",
+    "strDesc": "[us] [has] форму повреждения мозга, которая заставляет [us-obj] забыть, как общаться.",
     "strNameFriendly": "Повреждение мозга"
   },
   "DangerSense": {
@@ -7437,11 +7437,11 @@
     "strNameFriendly": "Тяжелый приступ грыжи диска"
   },
   "TraitChronicMangledHand": {
-    "strDesc": "В прошлом [us] получил тяжелую травму кисти, которая теперь снижает скорость работы.",
+    "strDesc": "[us] [has] застарелую тяжёлую травму кисти, которая теперь снижает скорость работы.",
     "strNameFriendly": "Изуродованная кисть"
   },
   "ChronicMangledHand": {
-    "strDesc": "В прошлом [us] получил тяжелую травму кисти, которая теперь снижает скорость работы.",
+    "strDesc": "[us] [has] застарелую тяжёлую травму кисти, которая теперь снижает скорость работы.",
     "strNameFriendly": "Изуродованная кисть"
   },
   "ChronicMangledHand2": {
@@ -7449,11 +7449,11 @@
     "strDesc": "У [us] острый приступ фантомной боли, зуда и онемения, исходящих от изуродованной кисти."
   },
   "TraitChronicTornACL": {
-    "strDesc": "В прошлом [us] порвал переднюю крестообразную связку, что иногда вызывает боль и снижает скорость передвижения.",
+    "strDesc": "[us] [has] застарелый разрыв передней крестообразной связки, который иногда вызывает боль и снижает скорость передвижения.",
     "strNameFriendly": "Разрыв ПКС"
   },
   "ChronicTornACL": {
-    "strDesc": "В прошлом [us] порвал переднюю крестообразную связку, что иногда вызывает боль и снижает скорость передвижения.",
+    "strDesc": "[us] [has] застарелый разрыв передней крестообразной связки, который иногда вызывает боль и снижает скорость передвижения.",
     "strNameFriendly": "Разрыв ПКС"
   },
   "ChronicTornACL2": {
@@ -7461,11 +7461,11 @@
     "strDesc": "У [us] острый приступ боли и тугоподвижности колена из-за разорванной ПКС."
   },
   "TraitChronicTornMCL": {
-    "strDesc": "В прошлом [us] порвал медиальную коллатеральную связку, что иногда вызывает боль и снижает скорость передвижения.",
+    "strDesc": "[us] [has] застарелый разрыв медиальной коллатеральной связки, который иногда вызывает боль и снижает скорость передвижения.",
     "strNameFriendly": "Разрыв МКС"
   },
   "ChronicTornMCL": {
-    "strDesc": "В прошлом [us] порвал медиальную коллатеральную связку, что иногда вызывает боль и снижает скорость передвижения.",
+    "strDesc": "[us] [has] застарелый разрыв медиальной коллатеральной связки, который иногда вызывает боль и снижает скорость передвижения.",
     "strNameFriendly": "Разрыв МКС"
   },
   "ChronicTornMCL2": {
@@ -7473,11 +7473,11 @@
     "strDesc": "У [us] острый приступ боли и тугоподвижности колена из-за [us-pos] разорванной МКС."
   },
   "TraitChronicTornMeniscus": {
-    "strDesc": "В прошлом [us] порвал мениск, что иногда вызывает боль и снижает скорость передвижения.",
+    "strDesc": "[us] [has] разрыв мениска в анамнезе, который иногда вызывает боль и снижает скорость передвижения.",
     "strNameFriendly": "Разрыв мениска"
   },
   "ChronicTornMeniscus": {
-    "strDesc": "В прошлом [us] порвал мениск, что иногда вызывает боль и снижает скорость передвижения.",
+    "strDesc": "[us] [has] разрыв мениска в анамнезе, который иногда вызывает боль и снижает скорость передвижения.",
     "strNameFriendly": "Разрыв мениска"
   },
   "ChronicTornMeniscus2": {
@@ -7513,7 +7513,7 @@
     "strNameFriendly": "Тендинит"
   },
   "ChronicTendonitis": {
-    "strDesc": "[us] страдает от тендинита, который иногда снижает скорость работы.",
+    "strDesc": "[us] [suffers] от тендинита, который иногда снижает скорость работы.",
     "strNameFriendly": "Тендинит"
   },
   "ChronicTendonitis2": {
@@ -7521,11 +7521,11 @@
     "strDesc": "У [us] острый приступ боли и тугоподвижности суставов из-за [us-pos] тендинита."
   },
   "TraitChronicArthritis": {
-    "strDesc": "[us] периодически испытывает генерализованную боль в суставах и мышцах из-за аутоиммунного ревматизма.",
+    "strDesc": "[us] [has] периодические генерализованные боли в суставах и мышцах из-за аутоиммунного ревматизма.",
     "strNameFriendly": "Артрит"
   },
   "ChronicArthritis": {
-    "strDesc": "[us] периодически испытывает генерализованную боль в суставах и мышцах из-за аутоиммунного ревматизма.",
+    "strDesc": "[us] [has] периодические генерализованные боли в суставах и мышцах из-за аутоиммунного ревматизма.",
     "strNameFriendly": "Артрит"
   },
   "ChronicArthritis2": {
@@ -9009,7 +9009,7 @@
   },
   "StatAge": {
     "strNameFriendly": "Возраст",
-    "strDesc": "[us-pos] возраст в годах."
+    "strDesc": "возраст [us-gen] в годах."
   },
   "StatAltruism": {
     "strDesc": "Насколько альтруистичным [us] [is] себя чувствует.",
@@ -9050,11 +9050,11 @@
   },
   "IsNotForSale": {
     "strNameFriendly": "Не продается",
-    "strDesc": "[us] не продается."
+    "strDesc": "[us] [is] не для продажи."
   },
   "IsNotTradingReactorParts": {
     "strNameFriendly": "Не торгует частями реактора",
-    "strDesc": "[us] не торгует частями реактора."
+    "strDesc": "[us] [is] не из торговцев частями реактора."
   },
   "IsAlarmSmoke": {
     "strNameFriendly": "Дымовой извещатель",
@@ -9154,23 +9154,23 @@
   },
   "IsCeramic": {
     "strNameFriendly": "Керамика",
-    "strDesc": "[us] — керамический предмет из силикатов."
+    "strDesc": "[us] [is] керамический предмет из силикатов."
   },
   "IsChambered556HG": {
     "strNameFriendly": "Под патроны 5.56 мм HG",
-    "strDesc": "[us] имеет патронник под боеприпасы 5,56 мм HG."
+    "strDesc": "[us] [is] с патронником под высококачественные боеприпасы 5,56 мм."
   },
   "IsChambered58": {
     "strNameFriendly": "Под патроны 5.8 мм",
-    "strDesc": "[us] имеет патронник под боеприпасы 5,8 мм."
+    "strDesc": "[us] [is] с патронником под боеприпасы 5,8 мм."
   },
   "IsChambered12GaugeHG": {
     "strNameFriendly": "Под патроны 12 калибра HG",
-    "strDesc": "[us] имеет патронник под боеприпасы 12 калибра HG."
+    "strDesc": "[us] [is] с патронником под высококачественные боеприпасы 12-го калибра."
   },
   "IsBCERVisaLocalSponsored": {
     "strNameFriendly": "Спонсируется местным отделением ГалКон",
-    "strDesc": "[us] спонсируется местным отделением Галилеевой Конфедерации."
+    "strDesc": "[us] [is] при спонсорской поддержке местного отделения Галилеевой Конфедерации."
   },
   "IsBCRSVisaLocalSponsored": {
     "strNameFriendly": "Спонсируется местным отделением CCRE",
@@ -9261,7 +9261,7 @@
     "strNameFriendly": "Связан с ГалФед"
   },
   "IsGasRequiresCleaning": {
-    "strDesc": "[us-pos] газовые кроты требуют очистки.",
+    "strDesc": "газовые кроты [us-gen] требуют очистки.",
     "strNameFriendly": "Газ требует очистки"
   },
   "IsHomeEncantado": {
@@ -9274,7 +9274,7 @@
   },
   "IsHomeownerBCER": {
     "strNameFriendly": "Владелец жилья в порту Мохаве",
-    "strDesc": "[us] владеет жилым домом в порту Мохаве, Церера."
+    "strDesc": "[us] [owns] жилым домом в порту Мохаве на Церере."
   },
   "IsHomeownerBCRS": {
     "strNameFriendly": "Владелец жилья на Кольцевой станции",
@@ -9345,7 +9345,7 @@
     "strNameFriendly": "Белый настенный светильник"
   },
   "IsMaintenanceTechNPC": {
-    "strDesc": "[us] занимается техническим обслуживанием станции.",
+    "strDesc": "[us] [is] лицом, ответственным за техническое обслуживание станции.",
     "strNameFriendly": "Техник по обслуживанию"
   },
   "IsMissileFuelAmount": {
@@ -9501,7 +9501,7 @@
     "strNameFriendly": "Пусковая установка ловушек"
   },
   "IsShipWeaponMissileLauncher": {
-    "strDesc": "[us] — пусковая установка ракет",
+    "strDesc": "[us] [is] пусковой установкой для ракет.",
     "strNameFriendly": "Пусковая установка ракет"
   },
   "IsShipWeaponMassThrower": {
@@ -9573,7 +9573,7 @@
     "strNameFriendly": "Режим цели: Не корабли"
   },
   "IsReloading": {
-    "strDesc": "[us] перезаряжается",
+    "strDesc": "[us] [is] на перезарядке.",
     "strNameFriendly": "Перезарядка"
   },
   "IsReloadingTrigger": {
@@ -9597,7 +9597,7 @@
     "strNameFriendly": "Связан с CCRE"
   },
   "IsStrataPermRes": {
-    "strDesc": "[us] имеет вид на жительство или рабочую визу.",
+    "strDesc": "[us] [is] постоянным резидентом или владельцем рабочей визы где-то.",
     "strNameFriendly": "ПМЖ"
   },
   "IsStrataEncantadoCitizen": {
@@ -9622,7 +9622,7 @@
   },
   "IsTitanShipyards": {
     "strNameFriendly": "Верфи Титана",
-    "strDesc": "[us] — предмет от Верфей Титана."
+    "strDesc": "[us] [is] предметом от Верфей Титана."
   },
   "IsToolFireExtinguisher": {
     "strNameFriendly": "Огнетушитель",
@@ -9637,7 +9637,7 @@
     "strNameFriendly": "Модификатор скорости добычи"
   },
   "DcPlotLonesome03": {
-    "strDesc": "[us] [wants] чувствовать себя нужным. Кажется, у всех остальных есть кто-то особенный, но только не у [us-obj].\n\n[us-contractIs] в отчаянии жаждет малейшего прикосновения теплой кожи, мимолетного страстного взгляда или флирта, обращенного в [us-pos] сторону.",
+    "strDesc": "[us] [wants] ощущать свою нужность. Кажется, у всех остальных есть кто-то особенный, но только не у [us-gen].\n\n[us-contractIs] в отчаянии от жажды малейшего прикосновения тёплой кожи, мимолётного страстного взгляда или флирта, обращённого в сторону [us-gen].",
     "strNameFriendly": "Одиночество"
   },
   "DcPlotLonesome04": {
@@ -9649,7 +9649,7 @@
     "strNameFriendly": "Амурный декор"
   },
   "ReplyLoverCooldown": {
-    "strDesc": "О [us] недавно [говорили] как о любовнике, и это нельзя повторить в течение нескольких секунд.",
+    "strDesc": "[us] [has] недавние упоминания о себе как о любовнике, и это нельзя повторить в течение нескольких секунд.",
     "strNameFriendly": "Недавнее упоминание как любовника"
   },
   "Plot_Meat_Started": {
@@ -9909,7 +9909,7 @@
     "strNameFriendly": "Ожидается прогресс Мяса"
   },
   "StatNoMeat": {
-    "strDesc": "[us] [нуждается] в перерыве от развития сюжета Мяса.",
+    "strDesc": "[us-dat] нужен перерыв от развития сюжета Мяса.",
     "strNameFriendly": "Прогресс Мяса приостановлен"
   },
   "StatMeatRate": {
@@ -9929,7 +9929,7 @@
     "strNameFriendly": "Таймер ReadyEvolve"
   },
   "IsReadyEvolve": {
-    "strDesc": "[us] [готов] к эволюции.",
+    "strDesc": "[us] в готовности к эволюции.",
     "strNameFriendly": "ReadyEvolve"
   },
   "IsReadyEvolveMax": {
@@ -9945,7 +9945,7 @@
     "strNameFriendly": "Таймер ReadyHarvest"
   },
   "IsReadyHarvest": {
-    "strDesc": "[us] [готов] дать урожай.",
+    "strDesc": "[us] в готовности дать урожай.",
     "strNameFriendly": "ReadyHarvest"
   },
   "IsReadyHarvestMax": {
@@ -9953,7 +9953,7 @@
     "strNameFriendly": "ReadyHarvestMax"
   },
   "StatAntiMeat": {
-    "strDesc": "[us] [применил] экспериментальное вирусное лечение, но, похоже, ничего не изменилось.",
+    "strDesc": "Для [us-gen] использовано экспериментальное вирусное лечение, но, похоже, ничего не изменилось.",
     "strNameFriendly": "Анти-Мясо"
   },
   "DcAntiMeat00": {
@@ -12533,7 +12533,7 @@
     "strNameFriendly": "Лихорадка"
   },
   "ForceRestock": {
-    "strDesc": "[us] [has] [us-pos] товары настроены на пополнение.",
+    "strDesc": "[us] [has] свои товары, настроенные на пополнение.",
     "strNameFriendly": "Принудительное пополнение"
   },
   "FracturedBone": {
@@ -12633,11 +12633,11 @@
     "strNameFriendly": "Электрошок"
   },
   "NanoFirstAid": {
-    "strDesc": "[us] использовал нанороботическую первую помощь, и [us-pos] раны начали заживать.",
+    "strDesc": "[us] использовал нанороботическую первую помощь, и раны начали заживать.",
     "strNameFriendly": "Использована нанороботическая первая помощь"
   },
   "NanoFirstAid2": {
-    "strDesc": "[us] [is] чувствует, как действие [us-pos] нанороботической первой помощи проходит.",
+    "strDesc": "[us] [is] в состоянии, когда действие нанороботической первой помощи проходит.",
     "strNameFriendly": "Действие нанороботической первой помощи проходит"
   },
   "Nausea": {
@@ -12665,7 +12665,7 @@
     "strNameFriendly": "Использовано обезболивающее (Без рецепта)"
   },
   "PainkillerMinor2": {
-    "strDesc": "[us] [is] чувствует, как действие [us-pos] безрецептурного обезболивающего проходит.",
+    "strDesc": "[us] [is] в состоянии, когда действие безрецептурного обезболивающего проходит.",
     "strNameFriendly": "Действие обезболивающего (Без рецепта) проходит"
   },
   "PainkillerPresc1": {
@@ -12829,7 +12829,7 @@
     "strNameFriendly": "Острая гиперкапния"
   },
   "DcCOPoisoning06": {
-    "strDesc": "[us] [is] страдает от мышечной дрожи, и [us-pos] тело [is] отказывает из-за гиперкапнии.",
+    "strDesc": "[us] [is] охвачен мышечной дрожью, и тело [is] в процессе отказа из-за гиперкапнии.",
     "strNameFriendly": "Критическая гиперкапния"
   },
   "DcCOPoisoning07": {
@@ -12841,7 +12841,7 @@
     "strNameFriendly": "Задохнулся от гиперкапнии"
   },
   "DcSmokePoisoning03": {
-    "strDesc": "[us] [has] получил смертельное отравление дымом, поразившее [us-pos] кожу, глаза и горло. Смерть неизбежна.",
+    "strDesc": "[us] [has] смертельное отравление дымом, поразившее кожу, глаза и горло. Смерть неизбежна.",
     "strNameFriendly": "Смертельное отравление дымом"
   },
   "DcFireChem01": {
@@ -13233,7 +13233,7 @@
     "strNameFriendly": "Радар заглушен"
   },
   "IsObliviousTempSleep": {
-    "strDesc": "[us] [is] совершенно не замечает [us-pos] окружение и детали.",
+    "strDesc": "[us] [is] в полном неведении относительно окружения и деталей.",
     "strNameFriendly": "Чувствует невнимательность"
   },
   "IsObtuseTempSleep": {
@@ -14070,7 +14070,7 @@
   },
   "IsZhuangzi": {
     "strNameFriendly": "Чжуан-цзы",
-    "strDesc": "[us] — это предмет бренда Чжуан-цзы."
+    "strDesc": "[us] [is] предметом бренда Чжуан-цзы."
   },
   "StatMiningProgress": {
     "strDesc": "Процент выполнения работ по добыче.",
@@ -14405,7 +14405,7 @@
     "strNameFriendly": "Обучение завершено: Паром"
   },
   "StationHasGrav": {
-    "strDesc": "[us] — это станция, которая всегда должна использовать гравитацию близлежащих планет.",
+    "strDesc": "[us] [is] станцией, которая всегда должна использовать гравитацию близлежащих планет.",
     "strNameFriendly": "Станция имеет гравитацию"
   },
   "StationSpawnsBlockade": {
@@ -14997,7 +14997,7 @@
     "strNameFriendly": "Щиплет горло и глаза"
   },
   "DcSmokePoisoning02": {
-    "strDesc": "[us] [feels], что дымный воздух жжет [us-pos] кожу, глаза и горло.",
+    "strDesc": "[us] [feels], что дымный воздух жжёт кожу, глаза и горло.",
     "strNameFriendly": "Жжет горло и глаза"
   },
   "IsEnemySpawnBlocked": {
