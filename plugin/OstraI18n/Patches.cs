@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Collections.Generic;
 using HarmonyLib;
 using TMPro;
@@ -852,6 +853,13 @@ namespace OstraI18n
             catch { }
         }
 
+        internal static string VerbPresent(string key, int personIdx, string fallback)
+        {
+            if (TryGetVerb(key, out var vf) && vf.Present != null && vf.Present.Length > 0)
+                return vf.Present[Math.Min(personIdx, vf.Present.Length - 1)];
+            return fallback;
+        }
+
         // Interaction.ApplyEffects -> localizes biography logs in character creation & in-game
         public static void InteractionApplyEffectsPostfix(List<string> aLog)
         {
@@ -875,19 +883,16 @@ namespace OstraI18n
                     }
                     if (s.Contains(" gains ") || s.Contains(" loses "))
                     {
+                        // VerbForms.Present is [1s, 2s, 3m, 3f, 3pl, 3n]
                         int personIdx = 2; // Default 3rd person singular
                         if (s.StartsWith("You ")) personIdx = 1; // 2nd person singular
-                        else if (s.StartsWith("They ")) personIdx = 7; // 3rd person plural
+                        else if (s.StartsWith("They ")) personIdx = 4; // 3rd person plural
 
-                        if (s.Contains(" gains ") && LangPack.Verbs.TryGetValue("gains", out var vg))
-                            s = s.Replace(" gains ", " " + vg.Present[personIdx] + " ");
-                        else if (s.Contains(" gains "))
-                            s = s.Replace(" gains ", " получает ");
+                        if (s.Contains(" gains "))
+                            s = s.Replace(" gains ", " " + VerbPresent("gains", personIdx, "получает") + " ");
 
-                        if (s.Contains(" loses ") && LangPack.Verbs.TryGetValue("loses", out var vl))
-                            s = s.Replace(" loses ", " " + vl.Present[personIdx] + " ");
-                        else if (s.Contains(" loses "))
-                            s = s.Replace(" loses ", " теряет ");
+                        if (s.Contains(" loses "))
+                            s = s.Replace(" loses ", " " + VerbPresent("loses", personIdx, "теряет") + " ");
 
                         aLog[i] = s;
                     }
@@ -1634,20 +1639,192 @@ namespace OstraI18n
             catch { }
         }
 
-        // Ostranauts.Core.LogHandler.LogMessage -> translates in-game action log messages (gains, loses, etc.)
-        public static void LogMessagePrefix(ref string logString)
+        public static class InteractionLogContext
         {
-            if (string.IsNullOrEmpty(logString) || !LangPack.Active || !string.Equals(LangPack.Code, "ru", StringComparison.OrdinalIgnoreCase)) return;
+            [ThreadStatic] public static Interaction CurrentIA;
+            [ThreadStatic] public static Dictionary<CondOwner, List<CondOwner>> AddedItemsMap = new Dictionary<CondOwner, List<CondOwner>>();
+            [ThreadStatic] public static Dictionary<CondOwner, List<CondOwner>> DroppedItemsMap = new Dictionary<CondOwner, List<CondOwner>>();
+        }
+
+        public static void InteractionApplyEffectsPrefix(Interaction __instance)
+        {
+            InteractionLogContext.CurrentIA = __instance;
+            if (InteractionLogContext.AddedItemsMap == null) InteractionLogContext.AddedItemsMap = new Dictionary<CondOwner, List<CondOwner>>();
+            if (InteractionLogContext.DroppedItemsMap == null) InteractionLogContext.DroppedItemsMap = new Dictionary<CondOwner, List<CondOwner>>();
+            InteractionLogContext.AddedItemsMap.Clear();
+            InteractionLogContext.DroppedItemsMap.Clear();
+        }
+
+        public static void InteractionApplyEffectsCtxPostfix()
+        {
+            InteractionLogContext.CurrentIA = null;
+        }
+
+        public static void CondOwnerAddCOPrefix(CondOwner __instance, CondOwner objCO)
+        {
+            if (InteractionLogContext.CurrentIA != null && objCO != null)
+            {
+                if (!InteractionLogContext.AddedItemsMap.ContainsKey(__instance)) InteractionLogContext.AddedItemsMap[__instance] = new List<CondOwner>();
+                InteractionLogContext.AddedItemsMap[__instance].Add(objCO);
+            }
+        }
+
+        public static void CondOwnerDropCOPrefix(CondOwner __instance, CondOwner objCO)
+        {
+            if (InteractionLogContext.CurrentIA != null && objCO != null)
+            {
+                if (!InteractionLogContext.DroppedItemsMap.ContainsKey(__instance)) InteractionLogContext.DroppedItemsMap[__instance] = new List<CondOwner>();
+                InteractionLogContext.DroppedItemsMap[__instance].Add(objCO);
+            }
+        }
+
+        // verbs.json is keyed by the English 3rd-person form the game itself emits
+        // ("gains", "gives", "takes", "loses"), while the log templates address the
+        // verb by its bare stem ("<verb:gain>"). Accept either spelling, otherwise
+        // the tag falls through to the raw English word.
+        private static bool TryGetVerb(string key, out OstraI18n.Core.VerbForms vf)
+        {
+            vf = null;
+            if (string.IsNullOrEmpty(key)) return false;
+            if (LangPack.Verbs.TryGetValue(key, out vf)) return true;
+            if (!key.EndsWith("s"))
+            {
+                if (LangPack.Verbs.TryGetValue(key + "s", out vf)) return true;
+                if (LangPack.Verbs.TryGetValue(key + "es", out vf)) return true;
+                if (key.EndsWith("y") && LangPack.Verbs.TryGetValue(key.Substring(0, key.Length - 1) + "ies", out vf)) return true;
+            }
+            vf = null;
+            return false;
+        }
+
+        private static string ProcessI18nTags(string text, CondOwner subject)
+        {
+            text = System.Text.RegularExpressions.Regex.Replace(text, @"<verb:(.*?)>", m =>
+            {
+                string verbKey = m.Groups[1].Value;
+                if (TryGetVerb(verbKey, out var vf) && vf.Present != null && vf.Present.Length > 0)
+                {
+                    int idx = string.Equals(subject.ShortName, LangPack.YouWord, StringComparison.OrdinalIgnoreCase) ? 1 : 2;
+                    return GrammarUtils.SetCase(vf.Present[Math.Min(idx, vf.Present.Length - 1)]);
+                }
+                return verbKey;
+            });
+
+            text = System.Text.RegularExpressions.Regex.Replace(text, @"<(acc|dat|gen|ins|prep|nom)>(.*?)</\1>", m =>
+            {
+                string caseCode = m.Groups[1].Value;
+                string itemsStr = m.Groups[2].Value;
+                
+                var parts = itemsStr.Split(new[] { ", " }, StringSplitOptions.None);
+                for (int i = 0; i < parts.Length; i++)
+                {
+                    string part = parts[i];
+                    if (string.IsNullOrWhiteSpace(part)) continue;
+                    
+                    string strName = part;
+                    string shortName = part;
+                    if (part.Contains("|"))
+                    {
+                        var s = part.Split('|');
+                        strName = s[0];
+                        shortName = s[1];
+                    }
+                    parts[i] = LangPack.Resolver.Resolve(strName, shortName, caseCode);
+                }
+                return string.Join(", ", parts);
+            });
+            return text;
+        }
+
+        public static bool CondOwnerLogMessagePrefix(CondOwner __instance, ref string strMsg, string strColor, string strOwner, string strShort)
+        {
+            if (string.IsNullOrEmpty(strMsg) || !LangPack.Active) return true;
+
             try
             {
-                if (logString.Contains(" gains "))
-                    logString = logString.Replace(" gains ", " получает ");
-                if (logString.Contains(" loses "))
-                    logString = logString.Replace(" loses ", " теряет ");
-                if (logString.Contains(" no longer "))
-                    logString = logString.Replace(" no longer ", " больше не ");
+                if (InteractionLogContext.CurrentIA != null && strMsg.EndsWith("."))
+                {
+                    var ia = InteractionLogContext.CurrentIA;
+                    string templateKey = null;
+                    string defaultTemplate = null;
+                    CondOwner subject = null;
+                    List<CondOwner> items = null;
+                    CondOwner target = null;
+
+                    if (strMsg.Contains(" gains "))
+                    {
+                        templateKey = "InteractionLog_Gains";
+                        defaultTemplate = "{0} <verb:gain> <acc>{1}</acc>.";
+                        subject = __instance;
+                        
+                        if (InteractionLogContext.AddedItemsMap.TryGetValue(subject, out var added))
+                        {
+                            items = new List<CondOwner>(added);
+                            added.Clear();
+                        }
+                    }
+                    else if (strMsg.Contains(" gives "))
+                    {
+                        templateKey = "InteractionLog_Gives";
+                        defaultTemplate = "{0} <verb:give> <acc>{1}</acc> to <dat>{2}</dat>.";
+                        subject = ia.objUs;
+                        target = ia.objThem;
+                        items = ia.aLootItemGiveContract;
+                    }
+                    else if (strMsg.Contains(" takes "))
+                    {
+                        templateKey = "InteractionLog_Takes";
+                        defaultTemplate = "{0} <verb:take> <acc>{1}</acc> from <gen>{2}</gen>.";
+                        subject = ia.objUs;
+                        target = ia.objThem;
+                        items = ia.aLootItemTakeContract;
+                    }
+                    else if (strMsg.Contains(" loses "))
+                    {
+                        templateKey = "InteractionLog_Loses";
+                        defaultTemplate = "{0} <verb:lose> <acc>{1}</acc>.";
+                        subject = __instance;
+                        if (InteractionLogContext.DroppedItemsMap.TryGetValue(subject, out var dropped))
+                        {
+                            items = new List<CondOwner>(dropped);
+                            dropped.Clear();
+                        }
+                    }
+
+                    if (templateKey != null)
+                    {
+                        string itemsStr = "";
+                        if (items != null && items.Count > 0)
+                        {
+                            itemsStr = string.Join(", ", items.Select(i => (i.strName ?? "") + "|" + (i.ShortName ?? "")));
+                        }
+                        else
+                        {
+                            var match = System.Text.RegularExpressions.Regex.Match(strMsg, @"^(.*?) (gains|gives|takes|loses) (.*?)(?: (to|from) (.*?))?\.$");
+                            if (match.Success) itemsStr = match.Groups[3].Value;
+                        }
+
+                        string targetStr = "";
+                        if (target != null) targetStr = (target.strName ?? "") + "|" + (target.ShortName ?? "");
+
+                        string template = LangPack.Strings.TryGetValue(templateKey, out var t) ? t : defaultTemplate;
+                        string formatted = string.Format(template, subject.ShortName, itemsStr, targetStr);
+
+                        strMsg = ProcessI18nTags(formatted, subject);
+                        return true;
+                    }
+                }
+
+                if (strMsg.Contains(" no longer "))
+                {
+                    strMsg = strMsg.Replace(" no longer ", LangPack.Strings.TryGetValue("no_longer", out var noLong) ? noLong : " больше не ");
+                }
             }
-            catch { }
+            catch (Exception ex)
+            {
+                Plugin.Log.LogError("[i18n] CondOwnerLogMessagePrefix error: " + ex);
+            }
+            return true;
         }
 
         private static readonly Dictionary<string, string> ObjectiveTranslations = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);

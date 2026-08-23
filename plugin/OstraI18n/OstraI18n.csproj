@@ -3,11 +3,17 @@
     <TargetFramework>netstandard2.1</TargetFramework>
     <AssemblyName>OstraI18n</AssemblyName>
     <LangVersion>latest</LangVersion>
+    <Configurations>Debug_v5;Release_v5;Debug_v6;Release_v6</Configurations>
   </PropertyGroup>
+  <PropertyGroup Condition="$(Configuration.EndsWith('_v6'))">
+    <DefineConstants>BEPINEX_V6</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="$(Configuration.EndsWith('_v5'))">
+    <DefineConstants>BEPINEX_V5</DefineConstants>
+  </PropertyGroup>
+  
   <ItemGroup>
-    <Reference Include="BepInEx.Core"><HintPath>..\..\bepinex6_be\extracted\BepInEx\core\BepInEx.Core.dll</HintPath><Private>false</Private></Reference>
-    <Reference Include="BepInEx.Unity.Mono"><HintPath>..\..\bepinex6_be\extracted\BepInEx\core\BepInEx.Unity.Mono.dll</HintPath><Private>false</Private></Reference>
-    <Reference Include="0Harmony"><HintPath>..\..\bepinex6_be\extracted\BepInEx\core\0Harmony.dll</HintPath><Private>false</Private></Reference>
+    <!-- Common dependencies -->
     <Reference Include="Assembly-CSharp"><HintPath>..\..\dll\Assembly-CSharp.dll</HintPath><Private>false</Private></Reference>
     <Reference Include="UnityEngine"><HintPath>F:\Games\Steam\steamapps\common\Ostranauts\Ostranauts_Data\Managed\UnityEngine.dll</HintPath><Private>false</Private></Reference>
     <Reference Include="UnityEngine.CoreModule"><HintPath>F:\Games\Steam\steamapps\common\Ostranauts\Ostranauts_Data\Managed\UnityEngine.CoreModule.dll</HintPath><Private>false</Private></Reference>
@@ -22,5 +28,16 @@
     <Reference Include="Unity.InputSystem"><HintPath>F:\Games\Steam\steamapps\common\Ostranauts\Ostranauts_Data\Managed\Unity.InputSystem.dll</HintPath><Private>false</Private></Reference>
 
     <ProjectReference Include="..\..\core\OstraI18n.Core\OstraI18n.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup Condition="$(Configuration.EndsWith('_v6'))">
+    <Reference Include="BepInEx.Core"><HintPath>..\..\bepinex6_be\extracted\BepInEx\core\BepInEx.Core.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="BepInEx.Unity.Mono"><HintPath>..\..\bepinex6_be\extracted\BepInEx\core\BepInEx.Unity.Mono.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="0Harmony"><HintPath>..\..\bepinex6_be\extracted\BepInEx\core\0Harmony.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+
+  <ItemGroup Condition="$(Configuration.EndsWith('_v5'))">
+    <Reference Include="BepInEx"><HintPath>..\..\bepinex5\extracted\BepInEx\core\BepInEx.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="0Harmony"><HintPath>..\..\bepinex5\extracted\BepInEx\core\0Harmony.dll</HintPath><Private>false</Private></Reference>
   </ItemGroup>
 </Project>

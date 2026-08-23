@@ -7,7 +7,9 @@ using System.Threading;
 using BepInEx;
 using BepInEx.Configuration;
 using BepInEx.Logging;
+#if BEPINEX_V6
 using BepInEx.Unity.Mono;
+#endif
 using HarmonyLib;
 using UnityEngine;
 
@@ -18,7 +20,7 @@ namespace OstraI18n
     {
         public const string GUID = "com.coreforge.ostra.i18n";
         public const string Name = "OstraI18n";
-        public const string Version = "2.0.0";
+        public const string Version = "2.2.0";
 
         internal static Plugin Instance;
         internal static ManualLogSource Log;
@@ -180,6 +182,17 @@ namespace OstraI18n
                     GrammarUtils.Verb(tdSays);
                     sw.AppendLine("Verb[says] " + pi + " -> '" + GrammarUtils.interactionOutput + "'");
                 }
+                // named_forms.json is keyed by the condowners record ID; a miss here means
+                // the log will print the nominative instead of the required case.
+                foreach (var id in new[] { "SOCReminisce", "SOCThrowPass", "ItmHatch01Closed", "WoundHead", "Videotape" })
+                    sw.AppendLine("acc[" + id + "] -> '" + (LangPack.Resolver != null ? LangPack.Resolver.Resolve(id, "<NO-TABLE-ENTRY>", "acc") : "<NO RESOLVER>") + "'");
+
+                // verbs.json is keyed by the 3rd-person form ("gains"); the interaction-log
+                // templates ask for the stem ("<verb:gain>"). Log both spellings so a key
+                // mismatch shows up here instead of as raw English in the game log.
+                foreach (var vk in new[] { "gain", "gains", "give", "gives", "take", "takes", "lose", "loses" })
+                    sw.AppendLine("verbtag[" + vk + "] 3sg -> '" + Patches.VerbPresent(vk, 2, "<UNRESOLVED>") + "'");
+
                 ent.InflectionIndex = GrammarUtils.PronounInflection.ThirdMasculine;
                 GrammarUtils.insertNoLonger = true;
                 GrammarUtils.interactionOutput.Clear(); GrammarUtils.caret = -1;
@@ -390,113 +403,149 @@ namespace OstraI18n
     // that single patch is skipped (vanilla behavior kept) instead of crashing the game.
     internal static class PatchRunner
     {
+        // Resolves a patch method by name without ever throwing AmbiguousMatchException:
+        // Type.GetMethod(string) blows up if two patch methods share a name, and that
+        // exception used to escape ApplyAll and kill the whole plugin in Awake().
+        private static MethodInfo M(string name)
+        {
+            MethodInfo found = null;
+            int count = 0;
+            foreach (var m in typeof(Patches).GetMethods(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Static))
+            {
+                if (m.Name != name) continue;
+                count++;
+                if (found == null) found = m;
+            }
+            if (count == 0)
+            {
+                Plugin.Log.LogError("[i18n] patch method not found: Patches." + name);
+                return null;
+            }
+            if (count > 1)
+                Plugin.Log.LogError("[i18n] AMBIGUOUS patch method Patches." + name + " (" + count + " overloads) - rename one of them; using the first");
+            return found;
+        }
+
         public static void ApplyAll(ref int ok, ref int failed)
+        {
+            try { ApplyAllCore(ref ok, ref failed); }
+            catch (Exception ex) { Plugin.Log.LogError("[i18n] patch pass aborted: " + ex); }
+        }
+
+        private static void ApplyAllCore(ref int ok, ref int failed)
         {
             var h = new Harmony(Plugin.GUID);
             var flagsPub = BindingFlags.Public | BindingFlags.Static;
             var flagsPriv = BindingFlags.NonPublic | BindingFlags.Static;
             var flagsInstPriv = BindingFlags.NonPublic | BindingFlags.Instance;
-            var t = typeof(Patches);
 
             TryPatch(h, typeof(Localisation), "Get", flagsPub,
-                null, t.GetMethod(nameof(Patches.LocalisationGetPostfix)), ref ok, ref failed);
+                null, M(nameof(Patches.LocalisationGetPostfix)), ref ok, ref failed);
             TryPatch(h, typeof(DataHandler), "UnpackTokens", flagsPriv,
-                null, t.GetMethod(nameof(Patches.UnpackTokensPostfix)), ref ok, ref failed);
+                null, M(nameof(Patches.UnpackTokensPostfix)), ref ok, ref failed);
             TryPatch(h, typeof(GrammarUtils), "Verb", flagsPub,
-                t.GetMethod(nameof(Patches.VerbPrefix)), null, ref ok, ref failed);
+                M(nameof(Patches.VerbPrefix)), null, ref ok, ref failed);
             TryPatch(h, typeof(GrammarUtils), "AttemptSubstitution", flagsPub,
-                t.GetMethod(nameof(Patches.AttemptSubstitutionPrefix)), null, ref ok, ref failed);
+                M(nameof(Patches.AttemptSubstitutionPrefix)), null, ref ok, ref failed);
             TryPatch(h, typeof(GrammarUtils), "AttemptProperName", flagsPub,
-                t.GetMethod(nameof(Patches.AttemptProperNamePrefix)), null, ref ok, ref failed);
+                M(nameof(Patches.AttemptProperNamePrefix)), null, ref ok, ref failed);
             TryPatch(h, typeof(TMPro.TMP_Settings), "get_instance", flagsPub,
                 null, typeof(FontFallback).GetMethod(nameof(FontFallback.AfterSettingsInit)), ref ok, ref failed);
             TryPatch(h, typeof(DataHandler), "GetString", flagsPub,
-                null, t.GetMethod(nameof(Patches.GetStringPostfix)), ref ok, ref failed);
+                null, M(nameof(Patches.GetStringPostfix)), ref ok, ref failed);
             TryPatch(h, typeof(GUIDuties), "SetCrew", flagsInstPriv,
-                null, t.GetMethod(nameof(Patches.DutiesSetCrewPostfix)), ref ok, ref failed);
+                null, M(nameof(Patches.DutiesSetCrewPostfix)), ref ok, ref failed);
             TryPatch(h, typeof(GUIChargenBody), "Awake", flagsInstPriv,
-                null, t.GetMethod(nameof(Patches.ChargenBodyAwakePostfix)), ref ok, ref failed);
+                null, M(nameof(Patches.ChargenBodyAwakePostfix)), ref ok, ref failed);
             var flagsInstPub = BindingFlags.Public | BindingFlags.Instance;
             TryPatch(h, typeof(GUIData), "Init", flagsInstPub,
-                null, t.GetMethod(nameof(Patches.GUIDataInitPostfix)), ref ok, ref failed);
+                null, M(nameof(Patches.GUIDataInitPostfix)), ref ok, ref failed);
             TryPatch(h, typeof(Ostranauts.Objectives.Objective), "MakeTutorialObjective", flagsPub,
-                null, t.GetMethod(nameof(Patches.MakeTutorialObjectivePostfix)), ref ok, ref failed);
+                null, M(nameof(Patches.MakeTutorialObjectivePostfix)), ref ok, ref failed);
             TryPatch(h, typeof(Ostranauts.Objectives.ObjectivePanel), "CompleteObjective", flagsInstPub,
-                null, t.GetMethod(nameof(Patches.ObjectivePanelCompleteObjectivePostfix)), ref ok, ref failed);
+                null, M(nameof(Patches.ObjectivePanelCompleteObjectivePostfix)), ref ok, ref failed);
             TryPatch(h, typeof(Ostranauts.ShipGUIs.ShipBroker.DerelictShipEntry), "SetData", flagsInstPub,
-                null, t.GetMethod(nameof(Patches.DerelictShipEntrySetDataPostfix)), ref ok, ref failed,
+                null, M(nameof(Patches.DerelictShipEntrySetDataPostfix)), ref ok, ref failed,
                 new Type[] { typeof(Ship), typeof(float) });
             TryPatch(h, typeof(Interaction), "ApplyEffects", flagsInstPub,
-                null, t.GetMethod(nameof(Patches.InteractionApplyEffectsPostfix)), ref ok, ref failed,
+                null, M(nameof(Patches.InteractionApplyEffectsPostfix)), ref ok, ref failed,
                 new Type[] { typeof(List<string>), typeof(bool) });
             TryPatch(h, typeof(Ledger), "RecordTransaction", flagsPub,
-                t.GetMethod(nameof(Patches.LedgerRecordTransactionPrefix)), null, ref ok, ref failed,
+                M(nameof(Patches.LedgerRecordTransactionPrefix)), null, ref ok, ref failed,
                 new Type[] { typeof(CondOwner), typeof(string), typeof(double), typeof(string), typeof(string), typeof(LedgerLI) });
             TryPatch(h, typeof(GUIPAXIntro), "Show", flagsInstPub,
-                null, t.GetMethod(nameof(Patches.GUIPAXIntroShowPostfix)), ref ok, ref failed);
+                null, M(nameof(Patches.GUIPAXIntroShowPostfix)), ref ok, ref failed);
             TryPatch(h, typeof(GUIChargenCareer), "PageEvent", flagsInstPriv,
-                null, t.GetMethod(nameof(Patches.GUIChargenCareerPageEventPostfix)), ref ok, ref failed,
+                null, M(nameof(Patches.GUIChargenCareerPageEventPostfix)), ref ok, ref failed,
                 new Type[] { typeof(JsonLifeEvent) });
             TryPatch(h, typeof(GUIRosterRow), "SetOwner", flagsInstPub,
-                null, t.GetMethod(nameof(Patches.GUIRosterRowSetOwnerPostfix)), ref ok, ref failed,
+                null, M(nameof(Patches.GUIRosterRowSetOwnerPostfix)), ref ok, ref failed,
                 new Type[] { typeof(string), typeof(JsonCompanyRules) });
             TryPatch(h, typeof(Ship), "LogGetHeader", flagsInstPub,
-                null, t.GetMethod(nameof(Patches.ShipLogGetHeaderPostfix)), ref ok, ref failed);
+                null, M(nameof(Patches.ShipLogGetHeaderPostfix)), ref ok, ref failed);
             TryPatch(h, typeof(ShipStatus), "PrintStatus", flagsPub,
-                null, t.GetMethod(nameof(Patches.ShipStatusPrintStatusPostfix)), ref ok, ref failed,
+                null, M(nameof(Patches.ShipStatusPrintStatusPostfix)), ref ok, ref failed,
                 new Type[] { typeof(CondOwner), typeof(string[]).MakeByRefType() });
             TryPatch(h, typeof(Ostranauts.ShipGUIs.MFD.MFDPage), "UpdateDisplay", flagsInstPriv,
-                t.GetMethod(nameof(Patches.MFDUpdateDisplayPrefix)), null, ref ok, ref failed);
+                M(nameof(Patches.MFDUpdateDisplayPrefix)), null, ref ok, ref failed);
             TryPatch(h, typeof(Ostranauts.ShipGUIs.NavStation.NavModBase), "Start", flagsInstPriv,
-                null, t.GetMethod(nameof(Patches.NavModBaseStartPostfix)), ref ok, ref failed);
+                null, M(nameof(Patches.NavModBaseStartPostfix)), ref ok, ref failed);
             TryPatch(h, typeof(Ostranauts.ShipGUIs.MFD.GUIMFDDisplay), "ShowMenu", flagsInstPriv,
-                null, t.GetMethod(nameof(Patches.GUIMFDDisplayShowMenuPostfix)), ref ok, ref failed);
+                null, M(nameof(Patches.GUIMFDDisplayShowMenuPostfix)), ref ok, ref failed);
             TryPatch(h, typeof(GUITooltip2), "SetToolTip", flagsPub,
-                t.GetMethod(nameof(Patches.TooltipSetToolTipPrefix)), null, ref ok, ref failed,
+                M(nameof(Patches.TooltipSetToolTipPrefix)), null, ref ok, ref failed,
                 new Type[] { typeof(string), typeof(string), typeof(bool), typeof(bool) });
             TryPatch(h, typeof(GUITooltip), "TooltipTextFormat4", flagsPriv | BindingFlags.Static,
-                null, t.GetMethod(nameof(Patches.TooltipTextFormat4Postfix)), ref ok, ref failed,
+                null, M(nameof(Patches.TooltipTextFormat4Postfix)), ref ok, ref failed,
                 new Type[] { typeof(Interaction) });
             TryPatch(h, typeof(GUIPDA), "ShowJobPaintUI", flagsInstPriv,
-                null, t.GetMethod(nameof(Patches.ShowJobPaintUIPostfix)), ref ok, ref failed);
-            TryPatch(h, typeof(Ostranauts.Core.LogHandler), "LogMessage", flagsInstPub,
-                t.GetMethod(nameof(Patches.LogMessagePrefix)), null, ref ok, ref failed,
-                new Type[] { typeof(string) });
+                null, M(nameof(Patches.ShowJobPaintUIPostfix)), ref ok, ref failed);
+            TryPatch(h, typeof(Interaction), "ApplyEffects", flagsInstPub,
+                M(nameof(Patches.InteractionApplyEffectsPrefix)),
+                M(nameof(Patches.InteractionApplyEffectsCtxPostfix)), ref ok, ref failed,
+                new Type[] { typeof(List<string>), typeof(bool) });
+            TryPatch(h, typeof(CondOwner), "AddCO", flagsInstPub,
+                M(nameof(Patches.CondOwnerAddCOPrefix)), null, ref ok, ref failed);
+            TryPatch(h, typeof(CondOwner), "DropCO", flagsInstPub,
+                M(nameof(Patches.CondOwnerDropCOPrefix)), null, ref ok, ref failed);
+            TryPatch(h, typeof(CondOwner), "LogMessage", flagsInstPub,
+                M(nameof(Patches.CondOwnerLogMessagePrefix)), null, ref ok, ref failed,
+                new Type[] { typeof(string), typeof(string), typeof(string), typeof(string) });
             TryPatch(h, typeof(Ostranauts.Objectives.ObjectivePanel), "SetData", flagsInstPub,
-                null, t.GetMethod(nameof(Patches.ObjectivePanelSetDataPostfix)), ref ok, ref failed,
+                null, M(nameof(Patches.ObjectivePanelSetDataPostfix)), ref ok, ref failed,
                 new Type[] { typeof(Ostranauts.Objectives.Objective), typeof(bool) });
             TryPatch(h, typeof(Ostranauts.Objectives.ObjectivePanel), "RefreshText", flagsInstPriv,
-                null, t.GetMethod(nameof(Patches.ObjectivePanelRefreshTextPostfix)), ref ok, ref failed);
+                null, M(nameof(Patches.ObjectivePanelRefreshTextPostfix)), ref ok, ref failed);
             TryPatch(h, typeof(Ostranauts.Objectives.ObjectivePlotPanel), "SetData", flagsInstPub,
-                null, t.GetMethod(nameof(Patches.ObjectivePlotPanelSetDataPostfix)), ref ok, ref failed,
+                null, M(nameof(Patches.ObjectivePlotPanelSetDataPostfix)), ref ok, ref failed,
                 new Type[] { typeof(Ostranauts.Objectives.Objective), typeof(bool), typeof(bool) });
             TryPatch(h, typeof(Interaction), "FailReasons", flagsInstPub,
-                null, t.GetMethod(nameof(Patches.FailReasonsPostfix)), ref ok, ref failed,
+                null, M(nameof(Patches.FailReasonsPostfix)), ref ok, ref failed,
                 new Type[] { typeof(bool), typeof(bool), typeof(bool) });
             TryPatch(h, typeof(GUIReactor), "Awake", flagsInstPriv,
-                null, t.GetMethod(nameof(Patches.GUIReactorAwakePostfix)), ref ok, ref failed);
+                null, M(nameof(Patches.GUIReactorAwakePostfix)), ref ok, ref failed);
             TryPatch(h, typeof(GUISaveIndicator), "EstablishSave", flagsInstPub,
-                null, t.GetMethod(nameof(Patches.SaveIndicatorEstablishSavePostfix)), ref ok, ref failed,
+                null, M(nameof(Patches.SaveIndicatorEstablishSavePostfix)), ref ok, ref failed,
                 new Type[] { typeof(bool) });
             TryPatch(h, typeof(GUISaveIndicator), "Reset", flagsInstPub,
-                null, t.GetMethod(nameof(Patches.SaveIndicatorResetPostfix)), ref ok, ref failed);
+                null, M(nameof(Patches.SaveIndicatorResetPostfix)), ref ok, ref failed);
             TryPatch(h, typeof(Ostranauts.ShipGUIs.NavStation.GUIMessageDisplay), "PreSetup", flagsInstPriv,
-                t.GetMethod(nameof(Patches.GUIMessageDisplayPreSetupPrefix)), null, ref ok, ref failed,
+                M(nameof(Patches.GUIMessageDisplayPreSetupPrefix)), null, ref ok, ref failed,
                 new Type[] { typeof(string) });
             TryPatch(h, typeof(Ostranauts.ShipGUIs.NavStation.GUIMessageDisplay), "Update", flagsInstPriv,
-                null, t.GetMethod(nameof(Patches.GUIMessageDisplayUpdatePostfix)), ref ok, ref failed);
+                null, M(nameof(Patches.GUIMessageDisplayUpdatePostfix)), ref ok, ref failed);
             TryPatch(h, typeof(Ostranauts.ShipGUIs.NavStation.GUIMessageDisplay), "AddMessage", flagsInstPub,
-                t.GetMethod(nameof(Patches.GUIMessageDisplayAddMessagePrefix)), null, ref ok, ref failed,
+                M(nameof(Patches.GUIMessageDisplayAddMessagePrefix)), null, ref ok, ref failed,
                 new Type[] { typeof(Ostranauts.Ships.Comms.ShipMessage) });
             TryPatch(h, typeof(Ostranauts.Trading.ShipMarket), "GetMarketDescription", flagsInstPub,
-                null, t.GetMethod(nameof(Patches.ShipMarketGetMarketDescriptionPostfix)), ref ok, ref failed);
+                null, M(nameof(Patches.ShipMarketGetMarketDescriptionPostfix)), ref ok, ref failed);
             TryPatch(h, typeof(Ostranauts.Core.Tutorials.RestoreNavStation), "OnQuickActionButton", flagsInstPriv,
-                null, t.GetMethod(nameof(Patches.RestoreNavStationOnQuickActionButtonPostfix)), ref ok, ref failed,
+                null, M(nameof(Patches.RestoreNavStationOnQuickActionButtonPostfix)), ref ok, ref failed,
                 new Type[] { typeof(GUIQuickActionButton) });
             TryPatch(h, typeof(GUIGameCredits), "Init", flagsPriv,
-                null, t.GetMethod(nameof(Patches.GUIGameCreditsInitPostfix)), ref ok, ref failed);
+                null, M(nameof(Patches.GUIGameCreditsInitPostfix)), ref ok, ref failed);
             TryPatch(h, typeof(Ostranauts.Objectives.ObjectiveTracker), "LoadObjectives", flagsInstPub,
-                null, t.GetMethod(nameof(Patches.ObjectiveTrackerLoadObjectivesPostfix)), ref ok, ref failed,
+                null, M(nameof(Patches.ObjectiveTrackerLoadObjectivesPostfix)), ref ok, ref failed,
                 new Type[] { typeof(JsonGameSave) });
         }
 
@@ -555,3 +604,4 @@ namespace OstraI18n
         }
     }
 }
+
