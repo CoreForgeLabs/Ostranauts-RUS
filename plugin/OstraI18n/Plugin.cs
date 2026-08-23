@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -347,6 +347,9 @@ namespace OstraI18n
                     "[us-subj] [says] hello.",
                     "[us-subj] [says] hello. Then [us-subj] [waves] and [us-subj] [is] ready.",
                     "[us-subj] [was] late.",
+                    "[us-subj] повысил[us-ends] навык.",
+                    "[us-subj] [is] поврежден[us-endsadj].",
+                    "[us-subj] пыта[us-endsrefl] уйти.",
                     "[us] [waves] back.",
                     "I see [us-obj]. [us-subj] [smiles].",
                     "[us-subj] [wants] [us-obj] back.",

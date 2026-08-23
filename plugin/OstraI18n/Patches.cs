@@ -125,25 +125,43 @@ namespace OstraI18n
         // Родовая парадигма опознаётся по данным, а не по списку глаголов: в русском
         // настоящем времени род не различается, поэтому Present[2] != Present[3]
         // (он/она) бывает только у прошедшего.
-        private static int GenderSlotForSecondPerson(OstraI18n.Core.VerbForms vf, GrammarUtils.SentenceEntity ent)
+        private const int SlotSecond = 1, SlotMasc = 2, SlotFem = 3, SlotPlural = 4;
+
+        // Категории согласования по роду, а не местоимения: раскрываются в окончание
+        // ("повысил[us-ends]" -> "повысила"). Для них второе лицо ОБЯЗАНО получить
+        // род персонажа. Обычные местоимения ("subj": ты/он/она) сюда попадать не
+        // должны -- иначе "ты" превратилось бы в "он".
+        private static readonly HashSet<string> GenderAgreementCategories =
+            new HashSet<string> { "ends", "endsadj", "endsrefl" };
+
+        // Русское второе лицо рода не имеет, а прошедшее время и краткое причастие --
+        // имеют. Игра сводит игрока к Second (COToPOSIndex возвращает 1 на IsPlayer,
+        // теряя пол), поэтому пол достаём обратно из условий персонажа.
+        private static int GenderSlot(GrammarUtils.SentenceEntity ent)
         {
-            const int second = 1, masc = 2, fem = 3, plural = 4;
-            if (vf.Present == null || vf.Present.Length < 4) return second;
-            if (vf.Present[masc] == vf.Present[fem]) return second;   // род не различается
             CondOwner co = ent != null ? ent.CondOwner : null;
             if (co == null)
             {
                 try { co = CrewSim.coPlayer; } catch { }
             }
-            if (co == null) return second;
+            if (co == null) return SlotSecond;
             try
             {
-                if (co.HasCond("IsFemale")) return fem;
-                if (co.HasCond("IsNB")) return plural;
-                if (co.HasCond("IsMale")) return masc;
+                if (co.HasCond("IsFemale")) return SlotFem;
+                if (co.HasCond("IsNB")) return SlotPlural;
+                if (co.HasCond("IsMale")) return SlotMasc;
             }
             catch { }
-            return second;
+            return SlotSecond;
+        }
+
+        private static int GenderSlotForSecondPerson(OstraI18n.Core.VerbForms vf, GrammarUtils.SentenceEntity ent)
+        {
+            if (vf.Present == null || vf.Present.Length < 4) return SlotSecond;
+            // Родовая парадигма опознаётся по данным: в русском настоящем времени род
+            // не различается, значит Present[он] != Present[она] бывает только у прошедшего.
+            if (vf.Present[SlotMasc] == vf.Present[SlotFem]) return SlotSecond;
+            return GenderSlot(ent);
         }
 
         // GrammarUtils.Verb -> Russian conjugation.
@@ -232,9 +250,23 @@ namespace OstraI18n
                     ? (int)GrammarUtils.PronounInflection.Second
                     : (int)ent.InflectionIndex;
 
+                if (GenderAgreementCategories.Contains(tokenData.category)
+                    && idx == SlotSecond)
+                {
+                    idx = GenderSlot(ent);
+                }
+
                 if (LangPack.Pronouns.TryGetValue(tokenData.category, out var forms))
                 {
-                    GrammarUtils.interactionOutput.Append(GrammarUtils.SetCase(forms[Math.Min(idx, forms.Length - 1)]));
+                    var ending = forms[Math.Min(idx, forms.Length - 1)];
+                    // Окончание приклеивается к предыдущему слову, поэтому ни SetCase,
+                    // ни пустую строку сюда пускать нельзя.
+                    if (ending.Length > 0)
+                    {
+                        GrammarUtils.interactionOutput.Append(
+                            GenderAgreementCategories.Contains(tokenData.category)
+                                ? ending : GrammarUtils.SetCase(ending));
+                    }
                 }
                 else if (GrammarUtils.partsOfSpeechStr.TryGetValue(tokenData.category, out var vanilla))
                 {
