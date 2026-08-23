@@ -275,8 +275,13 @@ namespace OstraI18n
                 if (!ent.named && ent.CondOwner != null && ent.InflectionIndex != GrammarUtils.PronounInflection.Second)
                 {
                     string text = ent.CondOwner.ShortName;
-                    if (DeclinableCases.Contains(tokenData.category) && LangPack.Resolver != null)
-                        text = LangPack.Resolver.Resolve(ent.CondOwner.strName, ent.CondOwner.ShortName, tokenData.category);
+                    // Роль "obj" -- это английское объектное дополнение; по-русски
+                    // ему соответствует винительный падеж. Для местоимений своя
+                    // таблица (меня/тебя/его), а вот именованная сущность до сих
+                    // пор оставалась в именительном: "Я вижу Вен Фан".
+                    var declineAs = tokenData.category == "obj" ? "acc" : tokenData.category;
+                    if (DeclinableCases.Contains(declineAs) && LangPack.Resolver != null)
+                        text = LangPack.Resolver.Resolve(ent.CondOwner.strName, ent.CondOwner.ShortName, declineAs);
 
                     AppendEntityText(ent, text);
                     if (tokenData.category == "subj")
@@ -1932,9 +1937,25 @@ namespace OstraI18n
                     }
                 }
 
+                // Сообщения игрового лога не проходят ни через Localisation.Get,
+                // ни через DataHandler.GetString, поэтому захардкоженные строки
+                // вроде "Welcome back, Captain." оставались английскими. Совпадение
+                // строгое, по всей строке: сообщения с подставленными именами и
+                // числами сюда не попадут, а значит и не будут испорчены.
+                if (LangPack.Strings.TryGetValue(strMsg, out var whole))
+                {
+                    strMsg = whole;
+                    return true;
+                }
+
                 if (strMsg.Contains(" no longer "))
                 {
                     strMsg = strMsg.Replace(" no longer ", LangPack.Strings.TryGetValue("no_longer", out var noLong) ? noLong : " больше не ");
+                }
+                else
+                {
+                    // Не нашли -- запишем в дамп, чтобы строка попала в следующий проход.
+                    try { I18n.RecordUntranslated("LOG", strMsg); } catch { }
                 }
             }
             catch (Exception ex)

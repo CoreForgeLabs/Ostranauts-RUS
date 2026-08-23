@@ -229,6 +229,25 @@ def build_release(version=None, only=None):
         print(f"\n[{i}/{len(targets) + 1}] Building OstraI18n ({config}) for BepInEx {bep}...")
         run_cmd(f"dotnet build plugin/OstraI18n/OstraI18n.csproj -c {config}")
 
+    # 2. Проверка качества шаблонов: релиз не должен молча увозить регрессию.
+    #    Сканер сверяет каждую русскую строку с её английским оригиналом.
+    print("")
+    print("[qa] Проверка грамматики шаблонов...")
+    qa_script = os.path.join(SCRIPT_DIR, "tools", "qa_scan_grammar.py")
+    if os.path.exists(qa_script):
+        res = subprocess.run([sys.executable, qa_script], cwd=SCRIPT_DIR,
+                             capture_output=True, text=True, encoding="utf-8")
+        for ln in [x for x in (res.stdout or "").splitlines() if x.strip()][-8:]:
+            print("   " + ln)
+    else:
+        print("   сканер не найден, пропускаю")
+    cov = os.path.join(SCRIPT_DIR, "tools", "qa_check_coverage.py")
+    if os.path.exists(cov):
+        res = subprocess.run([sys.executable, cov], cwd=SCRIPT_DIR,
+                             capture_output=True, text=True, encoding="utf-8")
+        for ln in [x for x in (res.stdout or "").splitlines() if x.strip()][:3]:
+            print("   " + ln)
+
     # 2. Assemble + zip
     print(f"\n[{len(targets) + 1}/{len(targets) + 1}] Assembling release bundles in 'Релиз'...")
     os.makedirs(RELEASE_ROOT, exist_ok=True)
