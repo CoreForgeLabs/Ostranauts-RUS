@@ -47,3 +47,23 @@ probe_*.py
 *.out
 LANGS.md
 OSTRA_I18N_GUIDE.md
+
+# Release artifacts (build_release.py regenerates them into "Релиз")
+Релиз/
+v6pre1/
+
+# Downloaded BepInEx frameworks (build dependencies, fetched separately)
+bepinex5/
+bepinex6/
+bepinex6_be/
+temp_bep/
+temp_bep5/
+temp_zip/
+bbepis.json
+
+# AI translation pipeline intermediates
+langs/ru/data_translated/
+langs/ru/data_backup_*/
+langs/ru/data/*_translated.json
+langs/ru/data/retry_queue*.json
+langs/ru/data/test_interactions*.json
