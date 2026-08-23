@@ -350,6 +350,7 @@ namespace OstraI18n
                     "[us-subj] повысил[us-ends] навык.",
                     "[us-subj] [is] поврежден[us-endsadj].",
                     "[us-subj] пыта[us-endsrefl] уйти.",
+                    "[them-subj] [wants] [us-obj] back.",
                     "[us] [waves] back.",
                     "I see [us-obj]. [us-subj] [smiles].",
                     "[us-subj] [wants] [us-obj] back.",

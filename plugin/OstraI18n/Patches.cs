@@ -224,6 +224,45 @@ namespace OstraI18n
             }
         }
 
+        // Кто был подлежащим в строке, которую движок собирает прямо сейчас.
+        // Нужно, чтобы отличить "он хочет его" (другой человек) от "он хочет себя".
+        // Буфер interactionOutput очищается перед каждой строкой, поэтому падение
+        // его длины -- это признак новой строки и повод забыть подлежащее.
+        private static string lastSubjectAlias;
+        private static int lastSubjectOutputLen = -1;
+
+        private static void RememberSubject(string alias)
+        {
+            lastSubjectAlias = alias;
+            lastSubjectOutputLen = GrammarUtils.interactionOutput.Length;
+        }
+
+        private static bool IsSameAsSubject(string alias)
+        {
+            if (lastSubjectAlias == null || alias == null) return false;
+            if (GrammarUtils.interactionOutput.Length < lastSubjectOutputLen)
+            {
+                lastSubjectAlias = null;   // буфер очистили -- это уже другая строка
+                return false;
+            }
+            return lastSubjectAlias == alias;
+        }
+
+        // Имя собственное не должно терять заглавную букву в середине фразы:
+        // SetCase() опускает регистр, и "Вен Фан" превращался в "вен Фан".
+        // Название предмета -- наоборот, обычное существительное, ему строчная нужна.
+        private static void AppendEntityText(GrammarUtils.SentenceEntity ent, string text)
+        {
+            bool properName = false;
+            try { properName = ent != null && ent.CondOwner != null && ent.CondOwner.HasCond("IsHuman"); }
+            catch { }
+            if (properName)
+                GrammarUtils.interactionOutput.Append(
+                    GrammarUtils.Capitalise() ? GrammarUtils.GetUpper(text) : text);
+            else
+                GrammarUtils.interactionOutput.Append(GrammarUtils.SetCase(text));
+        }
+
         // GrammarUtils.AttemptSubstitution -> Russian pronouns; English 's possessive removed
         public static bool AttemptSubstitutionPrefix(TokenData tokenData)
         {
@@ -239,8 +278,12 @@ namespace OstraI18n
                     if (DeclinableCases.Contains(tokenData.category) && LangPack.Resolver != null)
                         text = LangPack.Resolver.Resolve(ent.CondOwner.strName, ent.CondOwner.ShortName, tokenData.category);
 
-                    GrammarUtils.interactionOutput.Append(GrammarUtils.SetCase(text));
-                    if (tokenData.category == "subj") ent.lastSubjectiveWasPronoun = false;
+                    AppendEntityText(ent, text);
+                    if (tokenData.category == "subj")
+                    {
+                        ent.lastSubjectiveWasPronoun = false;
+                        RememberSubject(tokenData.alias);
+                    }
                     GrammarUtils.caret = GrammarUtils.interactionOutput.Length - 1;
                     ent.named = true;
                     return false;
@@ -256,7 +299,14 @@ namespace OstraI18n
                     idx = GenderSlot(ent);
                 }
 
-                if (LangPack.Pronouns.TryGetValue(tokenData.category, out var forms))
+                var category = tokenData.category;
+                if (category == "obj" && IsSameAsSubject(tokenData.alias)
+                    && LangPack.Pronouns.ContainsKey("objrefl"))
+                {
+                    category = "objrefl";   // "он хочет его" -> "он хочет себя"
+                }
+
+                if (LangPack.Pronouns.TryGetValue(category, out var forms))
                 {
                     var ending = forms[Math.Min(idx, forms.Length - 1)];
                     // Окончание приклеивается к предыдущему слову, поэтому ни SetCase,
@@ -268,11 +318,15 @@ namespace OstraI18n
                                 ? ending : GrammarUtils.SetCase(ending));
                     }
                 }
-                else if (GrammarUtils.partsOfSpeechStr.TryGetValue(tokenData.category, out var vanilla))
+                else if (GrammarUtils.partsOfSpeechStr.TryGetValue(category, out var vanilla))
                 {
                     GrammarUtils.interactionOutput.Append(GrammarUtils.SetCase(vanilla[Math.Min(idx, vanilla.Length - 1)]));
                 }
-                if (tokenData.category == "subj") ent.lastSubjectiveWasPronoun = true;
+                if (tokenData.category == "subj")
+                {
+                    ent.lastSubjectiveWasPronoun = true;
+                    RememberSubject(tokenData.alias);
+                }
                 return false;
             }
             catch (Exception ex)
@@ -297,7 +351,7 @@ namespace OstraI18n
                     return false;
                 }
                 if (ent.CondOwner == null) return false;
-                GrammarUtils.interactionOutput.Append(GrammarUtils.SetCase(ent.CondOwner.ShortName));
+                AppendEntityText(ent, ent.CondOwner.ShortName);
                 ent.lastSubjectiveWasPronoun = false;
                 ent.named = true;
                 return false;
