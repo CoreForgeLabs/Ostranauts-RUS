@@ -1,12 +1,12 @@
 <p align="center">
-  <img src="workshop/OstraI18n/preview.png" alt="OstraI18n Logo" width="280"/>
+  <img src="readme/preview.png" alt="OstraI18n Logo" width="280"/>
 </p>
 
-# OstraI18n — Полная русификация Ostranauts (v2.0)
+# OstraI18n — Локализация Ostranauts (v2.2)
 
 [![Game: Ostranauts](https://img.shields.io/badge/Game-Ostranauts-00e5ff?style=flat-square)](https://store.steampowered.com/app/1020210/Ostranauts/)
-[![Framework: BepInEx 6](https://img.shields.io/badge/Framework-BepInEx_6-green?style=flat-square)](https://github.com/BepInEx/BepInEx)
-[![Version: 2.0](https://img.shields.io/badge/Version-v2.0-orange?style=flat-square)](https://github.com/CoreForgeLabs/Ostranauts_i18n/releases)
+[![Framework: BepInEx 5 / 6](https://img.shields.io/badge/Framework-BepInEx_5_%2F_6-green?style=flat-square)](https://github.com/BepInEx/BepInEx)
+[![Version: 2.2](https://img.shields.io/badge/Version-v2.2-orange?style=flat-square)](https://github.com/CoreForgeLabs/Ostranauts_i18n/releases)
 [![Boosty](https://img.shields.io/badge/Поддержка-Boosty-red?style=flat-square)](https://boosty.to/coreforgelabs)
 
 Комплексный русификатор и система локализации для космического симулятора **Ostranauts**.  
@@ -49,13 +49,13 @@
 Огромное спасибо парням за поддержку проекта:
 
 - **Шейх:** Сергей Коршунов
-- **Адмиралы:** Миша Аверин, Towland
+- **Адмиралы:** Миша Аверин, Towland, Игорь Мирошниченко
 - **Капитаны:** Gundyar, Сергей Примаков, Zurics Game
 - **Юнга:** GreyViS, Pavel Bezik, LunarGoat, jard, languin, Анна Плагиатор
 
 ---
 
-## 🔧 Что входит в версию 2.0
+## 🔧 Что входит в версию 2.2
 
 | Компонент | Описание |
 |:---|:---|
@@ -70,13 +70,24 @@
 
 ## 📦 Установка
 
-1. Скачайте архив **`OstraI18n_v2.0.zip`** (на [Boosty](https://boosty.to/coreforgelabs) или в [Releases](https://github.com/CoreForgeLabs/Ostranauts_i18n/releases)).
-2. Распакуйте **всё содержимое архива** в корневую папку игры:
+1. Скачайте архив **`OstraI18n_v2.2.zip`** (на [Boosty](https://boosty.to/coreforgelabs) или в [Releases](https://github.com/CoreForgeLabs/Ostranauts_i18n/releases)).
+2. Внутри две папки — нужна **только одна**:
+
+   | Папка | Когда брать |
+   |:---|:---|
+   | **`BepInEx_6`** | рекомендуемый вариант |
+   | **`BepInEx_5`** | если по какой-то причине не подошёл первый |
+
+3. Скопируйте **содержимое** выбранной папки в корень игры:
    ```
    ...\Steam\steamapps\common\Ostranauts\
    ```
-   *(файлы `winhttp.dll` и `doorstop_config.ini` должны оказаться в одной папке с `Ostranauts.exe`)*
-3. Запустите игру через Steam. **Готово!**
+   Саму папку `BepInEx_6` / `BepInEx_5` копировать не нужно — только то, что внутри,
+   чтобы `winhttp.dll` оказался рядом с `Ostranauts.exe`.
+4. Запустите игру через Steam. **Готово!**
+
+> Две версии BepInEx одновременно не работают. Если раньше стоял другой вариант,
+> удалите старую папку `BepInEx` перед установкой.
 
 ---
 
@@ -85,13 +96,59 @@
 Для разработчиков и моддеров:
 
 ```bash
-# Сборка плагина и ядра (.NET 8 SDK / C#)
-dotnet build core/OstraI18n.Core/OstraI18n.Core.csproj -c Release
-dotnet build plugin/OstraI18n/OstraI18n.csproj -c Release
+# Плагин собирается под обе версии загрузчика: конфигурация выбирает,
+# с каким BepInEx линковаться. Ядро подтягивается как ProjectReference.
+dotnet build plugin/OstraI18n/OstraI18n.csproj -c Release_v6
+dotnet build plugin/OstraI18n/OstraI18n.csproj -c Release_v5
 
-# Сборка готового архива релиза
+# Архив релиза целиком: собирает обе версии, прогоняет проверки качества
+# и кладёт готовый zip в папку "Релиз"
 python build_release.py
+
+# Только одна версия
+python build_release.py 6
 ```
+
+### Проверки качества
+
+Сборка релиза не выпустит архив молча с регрессией — перед упаковкой прогоняются:
+
+```bash
+# Сверяет каждую русскую строку с её английским оригиналом и
+# классифицирует поломки шаблонов (потерянные токены, падежи, лицо)
+python tools/qa_scan_grammar.py
+
+# Падежные формы для всех записей condowners и глагольные парадигмы
+# для всех токенов английского корпуса
+python tools/qa_check_coverage.py
+```
+
+---
+
+## 🌍 Добавление нового языка
+
+Мод устроен как фреймворк локализации: русский и английский — это два
+языковых пака одного формата, а не «перевод и оригинал».
+
+```
+langs/
+├── languages.json      # манифест: какие языки доступны
+├── en/                 # английский пак
+└── ru/                 # русский пак
+    ├── pack.json       # местоимения, падежи, категории согласования
+    ├── verbs.json      # спряжение глаголов по лицам и родам
+    ├── strings.json    # строки интерфейса
+    ├── named_forms.json  # падежные формы названий предметов
+    ├── morph_rules.json  # суффиксные правила склонения
+    ├── data/           # переведённые категории игры (плоские *.json)
+    ├── images/         # локализованные текстуры и мануалы
+    └── fonts/          # шрифты для языка
+```
+
+Чтобы добавить язык, скопируйте `langs/ru` в `langs/<код>`, переведите
+содержимое и добавьте запись в `languages.json`. Грамматический движок
+читает `pack.json` и `verbs.json`, поэтому язык со своими падежами, родами
+и правилами согласования не требует правок в C#.
 
 ---
 
