@@ -192,8 +192,9 @@ def stage_variant(bep, display_ver, guide_text):
     # 5. Docs
     with open(os.path.join(stage_dir, "ИНСТРУКЦИЯ_ПО_УСТАНОВКЕ.txt"), "w", encoding="utf-8") as f:
         f.write(guide_text)
-    with open(os.path.join(stage_dir, "README.txt"), "w", encoding="utf-8") as f:
-        f.write(guide_text)
+    # README.txt в корень НЕ кладём: Windows не различает регистр, и наш файл
+    # затирает собственный ReadMe.txt игры при распаковке в корневую папку.
+    # Инструкции достаточно одной.
 
     # 6. ZIP
     zip_path = os.path.join(RELEASE_ROOT, f"{bundle_name}.zip")
