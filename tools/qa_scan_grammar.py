@@ -72,6 +72,11 @@ def known_token(t):
     if t in EN_TOKENS or t in VERB_KEYS or t.split(".")[0] in VERB_KEYS:
         return True
     # [them-gen] и подобные: базу знаем из EN, падеж добавлен модом.
+    # [us-custom-characterGenderCond|его|ее|их] -- штатный механизм игры
+    # (GrammarUtils.Custom): подставляет вариант по полу персонажа. Локализуются
+    # сами варианты, имя токена остаётся английским.
+    if "-custom-" in t:
+        return True
     if "-" in t:
         base, suffix = t.rsplit("-", 1)
         if suffix in MOD_SUFFIXES and (base in EN_TOKENS or any(
@@ -125,6 +130,8 @@ def scan_file(name):
 
         # 4. EN "[X]'s" -> RU обязан ставить [X-gen].
         for owner in set(re.findall(r"\[([^\[\]]+)\]'s", en_val)):
+            if re.search(r"\bсво(?:й|я|ё|е|и|его|ей|ему|им|их|ими|ю|ём|ем)\b", ru_val, re.I):
+                continue          # возвратное уже стоит -- падеж токену не нужен
             if owner in ru_tokens and (owner + "-gen") not in ru_tokens:
                 add("POSSESSIVE_LOST",
                     "EN [%s]'s -> RU [%s] в именительном; нужен [%s-gen]" % (owner, owner, owner))
