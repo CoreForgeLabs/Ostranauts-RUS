@@ -75,21 +75,22 @@ def make_install_guide(display_ver):
   Поддержка на Boosty: https://boosty.to/coreforgelabs
 ======================================================================
 
-КАКОЙ АРХИВ ВЫБРАТЬ:
+В АРХИВЕ ДВЕ ПАПКИ - НУЖНА ТОЛЬКО ОДНА:
 
-- OstraI18n_v{display_ver}_BepInEx6.zip - рекомендуемый вариант (BepInEx 6).
-- OstraI18n_v{display_ver}_BepInEx5.zip - если BepInEx 6 у вас не запускается
-  или уже установлен BepInEx 5.
+- BepInEx_6 - рекомендуемый вариант.
+- BepInEx_5 - если по какой-то причине не подошёл первый.
 
-Ставьте ТОЛЬКО ОДИН из архивов - две версии BepInEx одновременно не работают.
+Ставьте ТОЛЬКО ОДНУ из них: две версии BepInEx одновременно не работают.
 Если раньше стоял другой вариант, удалите старую папку BepInEx перед установкой.
 
 ИНСТРУКЦИЯ ПО УСТАНОВКЕ (В ОДИН ШАГ):
 
-1. Распакуйте ВСЁ содержимое этого архива (папку BepInEx, файлы winhttp.dll
-   и doorstop_config.ini) в корневую директорию игры Ostranauts:
+1. Откройте выбранную папку (BepInEx_6 или BepInEx_5) и скопируйте ВСЁ ЕЁ
+   СОДЕРЖИМОЕ - папку BepInEx, файлы winhttp.dll и doorstop_config.ini -
+   в корневую директорию игры Ostranauts:
    (например: Steam\\steamapps\\common\\Ostranauts\\)
    так, чтобы winhttp.dll оказался в одной папке с Ostranauts.exe.
+   Саму папку BepInEx_6 / BepInEx_5 копировать НЕ нужно - только её содержимое.
 2. Запустите игру.
 3. В Главном меню появится интерактивный космонавт с флагом переключения языка
    и информационная панель со ссылкой на Boosty.
@@ -164,11 +165,13 @@ def check_doorstop_pairing(bep, stage_dir):
     print("  + Doorstop %s и точка входа совпадают" % ("4" if doorstop4 else "3"))
 
 
-def stage_variant(bep, display_ver, guide_text):
-    """Assembles one ready-to-extract bundle for a single BepInEx flavour."""
+def stage_variant(bep, display_ver, bundle_dir):
+    """Собирает один вариант BepInEx в подпапку общего бандла.
+
+    Обе версии едут в ОДНОМ архиве отдельными папками: пользователь копирует
+    содержимое нужной, а не выбирает между двумя загрузками."""
     config, bepinex_src = VARIANTS[bep]
-    bundle_name = f"OstraI18n_v{display_ver}_BepInEx{bep}"
-    stage_dir = os.path.join(RELEASE_ROOT, bundle_name)
+    stage_dir = os.path.join(bundle_dir, f"BepInEx_{bep}")
     if os.path.exists(stage_dir):
         shutil.rmtree(stage_dir)
 
@@ -224,27 +227,9 @@ def stage_variant(bep, display_ver, guide_text):
         copy_filtered_tree(langs_src, langs_dest)
         print("  + langs/ (languages.json, ru, en)")
 
-    # 5. Docs
-    with open(os.path.join(stage_dir, "ИНСТРУКЦИЯ_ПО_УСТАНОВКЕ.txt"), "w", encoding="utf-8") as f:
-        f.write(guide_text)
-    # README.txt в корень НЕ кладём: Windows не различает регистр, и наш файл
-    # затирает собственный ReadMe.txt игры при распаковке в корневую папку.
-    # Инструкции достаточно одной.
+    print(f"  = {os.path.relpath(stage_dir, RELEASE_ROOT)}")
+    return stage_dir
 
-    # 6. ZIP
-    zip_path = os.path.join(RELEASE_ROOT, f"{bundle_name}.zip")
-    if os.path.exists(zip_path):
-        os.remove(zip_path)
-    with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as zipf:
-        for root, dirs, files in os.walk(stage_dir):
-            for file in files:
-                full_p = os.path.join(root, file)
-                rel_p = os.path.relpath(full_p, stage_dir)
-                zipf.write(full_p, arcname=rel_p)
-
-    zip_size_mb = os.path.getsize(zip_path) / (1024 * 1024)
-    print(f"  = {zip_path} ({zip_size_mb:.2f} MB)")
-    return stage_dir, zip_path, zip_size_mb
 
 def build_release(version=None, only=None):
     if not version:
@@ -266,7 +251,6 @@ def build_release(version=None, only=None):
         run_cmd(f"dotnet build plugin/OstraI18n/OstraI18n.csproj -c {config}")
 
     # 2. Проверка качества шаблонов: релиз не должен молча увозить регрессию.
-    #    Сканер сверяет каждую русскую строку с её английским оригиналом.
     print("")
     print("[qa] Проверка грамматики шаблонов...")
     qa_script = os.path.join(SCRIPT_DIR, "tools", "qa_scan_grammar.py")
@@ -275,8 +259,6 @@ def build_release(version=None, only=None):
                              capture_output=True, text=True, encoding="utf-8")
         for ln in [x for x in (res.stdout or "").splitlines() if x.strip()][-8:]:
             print("   " + ln)
-    else:
-        print("   сканер не найден, пропускаю")
     cov = os.path.join(SCRIPT_DIR, "tools", "qa_check_coverage.py")
     if os.path.exists(cov):
         res = subprocess.run([sys.executable, cov], cwd=SCRIPT_DIR,
@@ -284,21 +266,44 @@ def build_release(version=None, only=None):
         for ln in [x for x in (res.stdout or "").splitlines() if x.strip()][:3]:
             print("   " + ln)
 
-    # 2. Assemble + zip
-    print(f"\n[{len(targets) + 1}/{len(targets) + 1}] Assembling release bundles in 'Релиз'...")
+    # 3. Сборка одного архива с обеими версиями
+    print("")
+    print(f"[{len(targets) + 1}/{len(targets) + 1}] Сборка архива в 'Релиз'...")
     os.makedirs(RELEASE_ROOT, exist_ok=True)
-    guide_text = make_install_guide(display_ver)
-    results = []
-    for bep in targets:
-        print(f"\n-- BepInEx {bep} --")
-        results.append((bep,) + stage_variant(bep, display_ver, guide_text))
+    bundle_name = f"OstraI18n_v{display_ver}"
+    bundle_dir = os.path.join(RELEASE_ROOT, bundle_name)
+    if os.path.exists(bundle_dir):
+        shutil.rmtree(bundle_dir)
+    os.makedirs(bundle_dir)
 
-    print("\n" + "=" * 65)
-    print("  СБОРКА РЕЛИЗА УСПЕШНО ЗАВЕРШЕНА!")
-    print(f"  Папка релиза: {RELEASE_ROOT}")
-    for bep, stage_dir, zip_path, size in results:
-        print(f"  BepInEx {bep}: {os.path.basename(zip_path)} ({size:.2f} MB)")
+    for bep in targets:
+        print("")
+        print(f"-- BepInEx {bep} --")
+        stage_variant(bep, display_ver, bundle_dir)
+
+    guide_text = make_install_guide(display_ver)
+    with open(os.path.join(bundle_dir, "ИНСТРУКЦИЯ_ПО_УСТАНОВКЕ.txt"), "w",
+              encoding="utf-8") as f:
+        f.write(guide_text)
+
+    zip_path = os.path.join(RELEASE_ROOT, f"{bundle_name}.zip")
+    if os.path.exists(zip_path):
+        os.remove(zip_path)
+    with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as zipf:
+        for root, dirs, files in os.walk(bundle_dir):
+            for file in files:
+                full_p = os.path.join(root, file)
+                zipf.write(full_p, arcname=os.path.relpath(full_p, bundle_dir))
+    size_mb = os.path.getsize(zip_path) / (1024 * 1024)
+
+    print("")
     print("=" * 65)
+    print("  СБОРКА РЕЛИЗА УСПЕШНО ЗАВЕРШЕНА!")
+    print(f"  Архив: {zip_path} ({size_mb:.2f} MB)")
+    print(f"  Внутри: {', '.join('BepInEx_' + b for b in targets)}"
+          " + ИНСТРУКЦИЯ_ПО_УСТАНОВКЕ.txt")
+    print("=" * 65)
+
 
 if __name__ == "__main__":
     ver = None

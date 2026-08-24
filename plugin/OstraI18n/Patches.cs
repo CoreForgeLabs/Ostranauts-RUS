@@ -1955,7 +1955,13 @@ namespace OstraI18n
                 else
                 {
                     // Не нашли -- запишем в дамп, чтобы строка попала в следующий проход.
-                    try { I18n.RecordUntranslated("LOG", strMsg); } catch { }
+                    // Кроме служебных идентификаторов вроде "IsStartingLeftSneaker":
+                    // это внутренние маркеры состояний, а не текст для игрока, и
+                    // переводить их не нужно -- они бы только засоряли дамп.
+                    if (strMsg.IndexOf(' ') >= 0)
+                    {
+                        try { I18n.RecordUntranslated("LOG", strMsg); } catch { }
+                    }
                 }
             }
             catch (Exception ex)
