@@ -242,6 +242,30 @@ def stage_variant(bep, display_ver, bundle_dir):
     langs_dest = os.path.join(plugin_dest, "langs")
     if os.path.exists(langs_src):
         copy_filtered_tree(langs_src, langs_dest)
+        # Языковой пак -- это ПЛОСКИЕ файлы категорий в data/: у русского их 33,
+        # у английского те же 25. Подпапки внутри data/ есть только у английского
+        # (ships, loot, condtrigs...) -- это сырой дамп игры для конвейера
+        # перевода, 210 МБ, к паку отношения не имеющий. Английский остаётся
+        # полноценным языком фреймворка, просто без материалов сборки.
+        freed = 0
+        for lang in sorted(os.listdir(langs_dest)):
+            data_dir = os.path.join(langs_dest, lang, "data")
+            if not os.path.isdir(data_dir):
+                continue
+            for entry in sorted(os.listdir(data_dir)):
+                path = os.path.join(data_dir, entry)
+                drop = os.path.isdir(path) or entry.endswith("_translated.json")                     or entry.startswith("retry_queue") or entry.startswith("test_")
+                if not drop:
+                    continue
+                if os.path.isdir(path):
+                    freed += sum(os.path.getsize(os.path.join(r, f))
+                                 for r, _d, fs in os.walk(path) for f in fs)
+                    shutil.rmtree(path)
+                else:
+                    freed += os.path.getsize(path)
+                    os.remove(path)
+        if freed:
+            print(f"  - материалы конвейера исключены из поставки ({freed / 1048576:.0f} МБ)")
         print("  + langs/ (languages.json, ru, en)")
 
     print(f"  = {os.path.relpath(stage_dir, RELEASE_ROOT)}")
