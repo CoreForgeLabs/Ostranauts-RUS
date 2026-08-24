@@ -9,12 +9,30 @@ import os
 import sys
 import shutil
 import json
+import re
 from PIL import Image
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 GAME_DIR = os.environ.get("OSTRANAUTS_GAME_DIR", r"F:\Games\Steam\steamapps\common\Ostranauts")
 WORKSHOP_DIR = os.path.join(SCRIPT_DIR, "workshop", "OstraI18n")
-RELEASE_BEPINEX = os.path.join(SCRIPT_DIR, "Релиз", "OstraI18n_v2.0", "BepInEx")
+def _plugin_version():
+    """Версию берём из Plugin.cs, как это делает build_release.py: жёстко
+    прописанный путь к сборке v2.0 давно устарел, и копирование молча
+    пропускалось -- в пакет уезжал старый BepInEx или вовсе никакого."""
+    cs = os.path.join(SCRIPT_DIR, "plugin", "OstraI18n", "Plugin.cs")
+    try:
+        with open(cs, encoding="utf-8") as f:
+            m = re.search(r'Version\s*=\s*"([^"]+)"', f.read(), re.IGNORECASE)
+        if m:
+            v = m.group(1)
+            return "2.2" if v.startswith("2.2") else ("2.0" if v.startswith("2.0") else v)
+    except Exception:
+        pass
+    return "2.2"
+
+
+RELEASE_BEPINEX = os.path.join(SCRIPT_DIR, "Релиз",
+                               f"OstraI18n_v{_plugin_version()}", "BepInEx_6", "BepInEx")
 
 def main():
     print("=" * 60)
@@ -70,6 +88,10 @@ def main():
     dst_bepinex = os.path.join(WORKSHOP_DIR, "BepInEx")
     if os.path.exists(dst_bepinex):
         shutil.rmtree(dst_bepinex)
+    if not os.path.exists(RELEASE_BEPINEX):
+        print(f"ОШИБКА: не найден {RELEASE_BEPINEX}")
+        print("Сначала соберите релиз: python build_release.py")
+        sys.exit(1)
     if os.path.exists(RELEASE_BEPINEX):
         shutil.copytree(RELEASE_BEPINEX, dst_bepinex)
         print(f"[4/6] Скопированы файлы BepInEx/plugins/OstraI18n в {dst_bepinex}")

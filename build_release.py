@@ -68,7 +68,24 @@ def copy_filtered_tree(src, dst, ignore_exts=None, ignore_dirs=None):
             dst_f = os.path.join(target_dir, f)
             shutil.copy2(src_f, dst_f)
 
+GUIDE_SRC = os.path.join(SCRIPT_DIR, "readme", "Инструкция.txt")
+
+
 def make_install_guide(display_ver):
+    """Текст инструкции берём из readme/Инструкция.txt -- он правится руками и
+    является источником правды. Встроенный вариант ниже нужен только как
+    запасной, если файла нет: релиз не должен уехать вообще без инструкции.
+
+    Подстановка версии делается, только если в файле явно стоит {version} --
+    иначе текст копируется дословно, без сюрпризов для того, кто его писал."""
+    if os.path.exists(GUIDE_SRC):
+        with io.open(GUIDE_SRC, encoding="utf-8-sig") as f:
+            text = f.read()
+        if "{version}" in text:
+            text = text.replace("{version}", display_ver)
+        print(f"  + инструкция взята из {os.path.relpath(GUIDE_SRC, SCRIPT_DIR)}")
+        return text
+    print("  ! readme/Инструкция.txt не найден, использую встроенный текст")
     return f"""======================================================================
   OstraI18n - Полная русификация для Ostranauts (Версия v{display_ver})
   Автор модификации: CFLabs (CoreForgeLabs)
