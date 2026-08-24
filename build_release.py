@@ -18,6 +18,7 @@ import shutil
 import zipfile
 import re
 import subprocess
+import io
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 RELEASE_ROOT = os.path.join(SCRIPT_DIR, "Релиз")
@@ -130,6 +131,39 @@ def make_install_guide(display_ver):
 ======================================================================
 """
 
+def check_doorstop_pairing(bep, stage_dir):
+    """Doorstop 4 вызывает Doorstop.Entrypoint.Start() в целевой сборке.
+    BepInEx 5.4.22 такой точки входа не имеет -- он рассчитан на Doorstop 3,
+    и связка "ядро 5.4.22 + файлы Doorstop 4" не стартует МОЛЧА: winhttp
+    грузится, лог не появляется, мод как будто не установлен. Проверяем пару
+    здесь, а не в игре."""
+    cfg = os.path.join(stage_dir, "doorstop_config.ini")
+    if not os.path.exists(cfg):
+        print("  ! doorstop_config.ini отсутствует")
+        return
+    with io.open(cfg, encoding="utf-8", errors="ignore") as f:
+        text = f.read()
+    doorstop4 = "target_assembly" in text          # 4.x: snake_case
+    m = re.search(r"target_?[Aa]ssembly\s*=\s*(.+)", text)
+    target = m.group(1).strip().replace("\\", os.sep) if m else ""
+    dll = os.path.join(stage_dir, target)
+    if not os.path.exists(dll):
+        print("  ! целевая сборка не найдена: %s" % target)
+        return
+    with open(dll, "rb") as f:
+        blob = f.read()
+    has_entry = b"Doorstop" in blob
+    if doorstop4 and not has_entry:
+        print("  ! НЕСОВМЕСТИМО: конфиг от Doorstop 4, а в %s нет точки входа"
+              " Doorstop.Start -- мод не запустится и не скажет об этом."
+              % os.path.basename(target))
+        sys.exit(1)
+    if not doorstop4 and has_entry:
+        print("  ! конфиг от Doorstop 3, а сборка ждёт Doorstop 4")
+        sys.exit(1)
+    print("  + Doorstop %s и точка входа совпадают" % ("4" if doorstop4 else "3"))
+
+
 def stage_variant(bep, display_ver, guide_text):
     """Assembles one ready-to-extract bundle for a single BepInEx flavour."""
     config, bepinex_src = VARIANTS[bep]
@@ -157,6 +191,7 @@ def stage_variant(bep, display_ver, guide_text):
         if os.path.exists(junk_p):
             os.remove(junk_p)
     print(f"  + BepInEx {bep} framework (winhttp.dll, doorstop_config.ini, BepInEx/core/)")
+    check_doorstop_pairing(bep, stage_dir)
 
     # 2. Mod DLLs and runtime dependencies - taken from THIS configuration's output
     core_bin = os.path.join(SCRIPT_DIR, "core", "OstraI18n.Core", "bin", config, "netstandard2.1")
